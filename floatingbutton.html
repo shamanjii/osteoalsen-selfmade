@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osteopathie Hamburg - Joshua Alsen, Heilpraktiker & Osteopath in Hamburg Mitte. ✓ Krankenkassen-Erstattung ✓ VFO-zertifiziert ✓ Behandlung aller Altersgruppen ✓ Termin online buchen. Durchschnitt 25, 20146 Hamburg.">
+    <meta name="keywords" content="Osteopathie Hamburg, Osteopath Hamburg Mitte, Joshua Alsen, Heilpraktiker Hamburg, Craniosacrale Osteopathie, Viszerale Osteopathie, Parietale Osteopathie, Kinderosteopathie, Rückenschmerzen Hamburg, Migräne Behandlung, VFO Osteopath, Krankenkassen Osteopathie">
+    <meta name="author" content="Joshua Alsen">
+    
+    <title>Osteopathie Alsen - Osteopathie Hamburg I Joshua Alsen</title>
+    
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            .floating-contact {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.1rem;
+            }
+            
+            .sticky-cta-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .sticky-cta-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .sticky-cta-btn {
+                flex: 1;
+                max-width: 140px;
+                text-align: center;
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+        
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #ffffff;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            font-size: 1.1rem;
+        }
+        
+        /* Typography System - Verbessert */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+        }
+        
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        h4 {
+            font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            letter-spacing: -0.015em;
+        }
+        
+        p {
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.015em;
+            font-size: 1.1rem;
+        }
+        
+        /* Enhanced readability for longer text */
+        .hero-description, .faq-content p {
+            line-height: 1.9;
+            font-size: clamp(1.1rem, 2.2vw, 1.2rem);
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+        
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+        
+        .nav-menu a:hover {
+            color: #ffffff;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+        
+        .nav-cta {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff !important;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-cta:hover {
+            background: rgba(255, 255, 255, 0.25) !important;
+            color: #ffffff !important;
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,255,255,0.15);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            color: #1a202c;
+            padding: 140px 2rem 120px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: #1a202c;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            margin-bottom: 2.5rem;
+            color: #4a5568;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: #666;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #1a202c;
+            color: #ffffff;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .cta-button:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 32, 44, 0.3);
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-family: 'Epilogue', sans-serif;
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #1a202c;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        /* Background Sections */
+        .bg-light {
+            background: #f8f9fa;
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1201px) {
+            .benefits-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            border-color: #d1d5db;
+        }
+        
+        .benefit-card h3 {
+            font-family: 'Epilogue', sans-serif;
+            color: #1a202c;
+            margin-bottom: 0.8rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+        }
+        
+        .benefit-card p {
+            font-family: 'Instrument Sans', sans-serif;
+            color: #4a5568;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        /* Treatments Grid */
+        .treatments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .treatment-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .treatment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .treatment-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+            border-color: #1a202c;
+        }
+        
+        .treatment-card:hover::before {
+            left: 100%;
+        }
+        
+        .treatment-card:hover .treatment-number {
+            transform: scale(1.1);
+            background: #2d3748;
+        }
+        
+        .treatment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .treatment-number {
+            width: 40px;
+            height: 40px;
+            background: #1a202c;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .treatment-number span {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .treatment-card h3 {
+            font-family: 'Epilogue', sans-serif;
+            color: #1a202c;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: -0.015em;
+        }
+        
+        .treatment-card p {
+            font-family: 'Instrument Sans', sans-serif;
+            color: #4a5568;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 0;
+            font-weight: 400;
+        }
+        
+        /* Applications Grid */
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .application-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .application-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #cbd5e1;
+        }
+        
+        .application-card h3 {
+            font-family: 'Epilogue', sans-serif;
+            color: #1a202c;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.015em;
+        }
+        
+        .application-card p {
+            font-family: 'Instrument Sans', sans-serif;
+            color: #4a5568;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 0;
+            font-weight: 400;
+        }
+        
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.8rem 2rem;
+            text-align: left;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a202c;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            letter-spacing: -0.015em;
+            min-height: 44px;
+        }
+        
+        .faq-question:hover {
+            background: #f8f9fa;
+            padding-left: 2.5rem;
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover .faq-icon {
+            transform: rotate(90deg);
+            color: #1a202c;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+        }
+        
+        .faq-content {
+            padding: 0 2rem 2rem;
+            font-family: 'Instrument Sans', sans-serif;
+            color: #4a5568;
+            line-height: 1.8;
+            font-weight: 400;
+            font-size: 1.05rem;
+        }
+        
+        .faq-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .faq-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Contact Form Styles */
+        .contact-form {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            color: #1a202c;
+            font-size: 1rem;
+            letter-spacing: -0.005em;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1a202c;
+            box-shadow: 0 0 0 3px rgba(26, 32, 44, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-error {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #dc2626;
+        }
+        
+        .form-group.error .form-error {
+            display: block;
+        }
+        
+        .form-submit {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            letter-spacing: -0.005em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .form-submit:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(26, 32, 44, 0.25);
+        }
+        
+        .form-submit:hover::before {
+            left: 100%;
+        }
+        
+        .form-submit:disabled {
+            background: #a0aec0;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .form-success {
+            background: #059669;
+            color: #ffffff;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .required {
+            color: #dc2626;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        footer p:last-child {
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1rem;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .nav-menu a {
+                font-size: 1.1rem;
+                padding: 1rem 0;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+            
+            .hero {
+                padding: 120px 1rem 80px;
+            }
+            
+            .hero h1 {
+                font-size: clamp(2.2rem, 8vw, 2.8rem);
+            }
+            
+            .hero-subtitle {
+                font-size: clamp(1.1rem, 4vw, 1.3rem);
+            }
+            
+            .section-title {
+                font-size: clamp(1.8rem, 6vw, 2.2rem);
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+            
+            .benefits-grid,
+            .treatments-grid,
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .treatment-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .treatment-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .faq-question {
+                font-size: 1.1rem;
+                padding: 1.5rem 1.5rem;
+            }
+            
+            .faq-content {
+                padding: 0 1.5rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Smooth animations - Enhanced */
+        * {
+            transition: all 0.3s ease;
+        }
+        
+        /* Scroll Animation Classes */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered Animation for Grid Items */
+        .benefits-grid .benefit-card {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        
+        .benefits-grid .benefit-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .benefits-grid .benefit-card:nth-child(1).visible { transition-delay: 0.1s; }
+        .benefits-grid .benefit-card:nth-child(2).visible { transition-delay: 0.2s; }
+        .benefits-grid .benefit-card:nth-child(3).visible { transition-delay: 0.3s; }
+        .benefits-grid .benefit-card:nth-child(4).visible { transition-delay: 0.4s; }
+        
+        /* Treatment Cards Animation */
+        .treatments-grid .treatment-card {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        
+        .treatments-grid .treatment-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .treatments-grid .treatment-card:nth-child(1).visible { transition-delay: 0.1s; }
+        .treatments-grid .treatment-card:nth-child(2).visible { transition-delay: 0.2s; }
+        .treatments-grid .treatment-card:nth-child(3).visible { transition-delay: 0.3s; }
+        .treatments-grid .treatment-card:nth-child(4).visible { transition-delay: 0.4s; }
+        
+        /* Logo Animation */
+        .logo:hover .logo-icon {
+            transform: rotate(360deg);
+            transition: transform 0.6s ease;
+        }
+        
+        /* Section Title Animation */
+        .section-title {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .section-title.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Sticky CTA Bar */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            z-index: 999;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+        
+        .sticky-cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        
+        .sticky-cta-text {
+            color: #ffffff;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        
+        .sticky-cta-buttons {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+        
+        .sticky-cta-btn {
+            background: #ffffff;
+            color: #1a202c;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .sticky-cta-btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,255,255,0.25);
+        }
+        
+        .sticky-cta-btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .sticky-cta-btn.secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        .sticky-cta-close {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: color 0.2s ease;
+        }
+        
+        .sticky-cta-close:hover {
+            color: #ffffff;
+        }
+        
+        /* Floating Contact Button - Dezenter */
+        .floating-contact {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+        }
+        
+        .floating-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            cursor: pointer;
+            background: rgba(26, 32, 44, 0.9);
+            color: #ffffff;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .floating-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(26, 32, 44, 0.25);
+            background: rgba(26, 32, 44, 1);
+        }
+        
+        /* Remove old floating button styles */
+        .floating-phone,
+        .floating-email,
+        .floating-whatsapp,
+        .floating-main,
+        .floating-submenu {
+            display: none;
+        }
+        
+        /* Tooltip for floating button */
+        .floating-btn[data-tooltip]::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.8);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-family: 'Instrument Sans', sans-serif;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
+        }
+        
+        .floating-btn:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="#behandlungen">Behandlungen</a></li>
+                <li><a href="#anwendungen">Anwendungen</a></li>
+                <li><a href="#ueber-mich">Über mich</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#kontakt" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Osteopathie Hamburg<br>Joshua Alsen</h1>
+            <div class="hero-subtitle">Heilpraktiker & Osteopath in Hamburg Mitte</div>
+            <p class="hero-description">
+                In meiner Heilpraxis für Osteopathie in Hamburg biete ich osteopathische Behandlungen für Patienten jeden Alters an. Lassen Sie uns gemeinsam Ihre natürliche Balance wiederherstellen.
+            </p>
+            <a href="#kontakt" class="cta-button">Termin vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- Behandlungsbild Section -->
+    <section style="padding: 0; margin: 0;">
+        <div style="width: 100%; height: 400px; background: linear-gradient(rgba(26, 32, 44, 0.4), rgba(26, 32, 44, 0.4)), #f8f9fa; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div style="position: absolute; top: 10px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem; border-radius: 4px; font-size: 0.8rem; color: #666; z-index: 3;">
+                📷 Behandlungsbild hier einfügen
+            </div>
+            <div style="text-align: center; color: white; z-index: 2; position: relative;">
+                <h2 style="font-size: 2rem; font-weight: 300; margin: 0 0 1rem 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Professionelle osteopathische Behandlung in Hamburg</h2>
+                <p style="font-size: 1.1rem; margin: 0; max-width: 600px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Mit gezielten manuellen Techniken bringe ich Ihren Körper zurück in seine natürliche Balance</p>
+            </div>
+            
+            <!-- Blog Section -->
+            <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; margin-top: 2rem;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 1.5rem;">Mehr über Osteopathie erfahren</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Mehr über Osteopathie und ihre Anwendungsbereiche erfahren Sie in meinem Osteopathie Blog mit aktuellen Artikeln, Gesundheitstipps und Fachbeiträgen.
+                </p>
+                <a href="#blog" style="display: inline-flex; align-items: center; background: #1a202c; color: #ffffff; padding: 16px 24px; text-decoration: none; border-radius: 6px; font-weight: 500; transition: all 0.2s ease;">
+                    <span style="margin-right: 0.5rem;">📖</span>
+                    Zum Osteopathie Blog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Was ist Osteopathie -->
+    <section id="was-ist-osteopathie" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Was ist Osteopathie?</h2>
+            
+            <!-- Definition -->
+            <div style="max-width: 900px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-family: 'Instrument Sans', sans-serif; font-size: clamp(1.1rem, 2.5vw, 1.2rem); line-height: 1.8; color: #444; margin-bottom: 2rem; font-weight: 400;">
+                    Osteopathie ist eine eigenständige Form der Medizin, die auf der grundlegenden Überzeugung basiert, dass alle Teile des Organismus in einer wechselseitigen Beziehung zueinander stehen. In meiner Praxis in Hamburg Mitte nutze ich osteopathische Techniken, um die Harmonie von Struktur und Funktion des Körpers zu fördern, die Zirkulation zu verbessern und Barrieren für die Selbstregulation zu beseitigen.
+                </p>
+                <p style="font-family: 'Instrument Sans', sans-serif; font-size: clamp(1rem, 2.2vw, 1.1rem); line-height: 1.7; color: #555; font-style: italic; font-weight: 400;">
+                    Auf diese Art und Weise wird der Gesundheit neuer Raum geschaffen, der von ihr ausgefüllt werden darf. Für ein Leben in Wohlbefinden und Schmerzfreiheit.
+                </p>
+            </div>
+
+            <!-- Vorteile Grid -->
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Natürliche Schmerzlinderung</h3>
+                    <p>Behandlung von Schmerzen ohne Medikamente durch gezielte osteopathische Techniken</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Lösen von Blockaden</h3>
+                    <p>Befreiung eingeschränkter Beweglichkeit durch manuelle Therapie</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Verbesserte Zirkulation</h3>
+                    <p>Förderung von Durchblutung und Lymphfluss für bessere Regeneration</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Ganzheitliche Gesundheitsoptimierung</h3>
+                    <p>Körper, Geist und Seele in Balance für nachhaltiges Wohlbefinden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Behandlungen -->
+    <section id="behandlungen">
+        <div class="container">
+            <h2 class="section-title">Osteopathische Behandlungsarten in Hamburg</h2>
+            
+            <!-- Einleitungstext -->
+            <div style="max-width: 900px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-family: 'Instrument Sans', sans-serif; font-size: clamp(1.1rem, 2.5vw, 1.2rem); line-height: 1.8; color: #444; margin-bottom: 2rem; font-weight: 400;">
+                    Eine osteopathische Behandlung basiert auf den drei fundamentalen Säulen der Osteopathie. Diese ganzheitliche Herangehensweise ermöglicht es mir, Ihren Körper als Einheit zu betrachten und zu behandeln.
+                </p>
+                <p style="font-family: 'Instrument Sans', sans-serif; font-size: clamp(1rem, 2.2vw, 1.1rem); line-height: 1.7; color: #555; font-style: italic; font-weight: 400;">
+                    In der Regel bezieht jede Behandlung alle Aspekte mit ein, um optimale und nachhaltige Ergebnisse zu erzielen.
+                </p>
+            </div>
+            
+            <!-- Behandlungen Grid -->
+            <div class="treatments-grid">
+                <!-- Behandlung 1 -->
+                <div class="treatment-card">
+                    <div class="treatment-header">
+                        <div class="treatment-number">
+                            <span>1</span>
+                        </div>
+                        <h3>Craniosakrale Osteopathie</h3>
+                    </div>
+                    <p>
+                        Sanfte Manipulationen am Schädel und an der Wirbelsäule, die darauf abzielen, das Nervensystem zu harmonisieren und Heilungsprozesse zu unterstützen.
+                    </p>
+                </div>
+                
+                <!-- Behandlung 2 -->
+                <div class="treatment-card">
+                    <div class="treatment-header">
+                        <div class="treatment-number">
+                            <span>2</span>
+                        </div>
+                        <h3>Viszerale Osteopathie</h3>
+                    </div>
+                    <p>
+                        Manuelle Techniken, die auf die inneren Organe abzielen, um Funktionsstörungen zu korrigieren und die Organgesundheit zu fördern.
+                    </p>
+                </div>
+                
+                <!-- Behandlung 3 -->
+                <div class="treatment-card">
+                    <div class="treatment-header">
+                        <div class="treatment-number">
+                            <span>3</span>
+                        </div>
+                        <h3>Parietale Osteopathie</h3>
+                    </div>
+                    <p>
+                        Verwendung von Techniken wie Gelenkmobilisation und -manipulation, um Bewegungseinschränkungen in Gelenken und Wirbelsäule zu verbessern.
+                    </p>
+                </div>
+                
+                <!-- Behandlung 4 -->
+                <div class="treatment-card">
+                    <div class="treatment-header">
+                        <div class="treatment-number">
+                            <span>4</span>
+                        </div>
+                        <h3>Myofasziale Integration</h3>
+                    </div>
+                    <p>
+                        Behandlung des Bindegewebes, um Verspannungen und Verklebungen zu lösen und die Beweglichkeit zu verbessern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anwendungen -->
+    <section id="anwendungen" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Anwendungsbereiche der Osteopathie in Hamburg</h2>
+            
+            <!-- Einleitungstext -->
+            <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+                    Osteopathie kann bei einer Vielzahl von Beschwerden und Zuständen hilfreich sein
+                </p>
+            </div>
+
+            <!-- Anwendungsbereiche Grid -->
+            <div class="applications-grid">
+                <!-- Muskel-Skelett-Schmerzen -->
+                <div class="application-card">
+                    <h3>Rückenschmerzen und Muskel-Skelett-Beschwerden</h3>
+                    <p>
+                        Osteopathie ist besonders wirksam bei der Behandlung von Rückenschmerzen, Nackenschmerzen, Ischias, Gelenkschmerzen und Arthrose in Hamburg. Auch nach Unfällen können osteopathische Techniken zur Schmerzlinderung und Rehabilitation beitragen. Weitere häufige Beschwerden wie Tennisellenbogen und Tennisarm werden ebenfalls effektiv behandelt.
+                    </p>
+                </div>
+
+                <!-- Kopfschmerzen und Migräne -->
+                <div class="application-card">
+                    <h3>Kopfschmerzen und Migräne</h3>
+                    <p>
+                        Durch die Entspannung der Muskulatur und die Verbesserung der zerebralen Durchblutung kann Osteopathie die Ursachen von Spannungskopfschmerzen und Migräne behandeln und so nachhaltige Linderung verschaffen.
+                    </p>
+                </div>
+
+                <!-- Verdauungsprobleme -->
+                <div class="application-card">
+                    <h3>Verdauungsprobleme</h3>
+                    <p>
+                        Osteopathische Behandlungen können bei Verdauungsproblemen wie Blähungen, Verstopfung, Reizdarmsyndrom, Sodbrennen und Reflux unterstützen. Ziel ist es, die Funktion des Verdauungssystems zu verbessern und Beschwerden zu lindern.
+                    </p>
+                </div>
+
+                <!-- Chronische Schmerzen -->
+                <div class="application-card">
+                    <h3>Chronische Schmerzen</h3>
+                    <p>
+                        Eine ganzheitliche Herangehensweise der Osteopathie hilft, chronische Schmerzen zu lindern und die Lebensqualität bei chronischen Erkrankungen wie Fibromyalgie zu fördern.
+                    </p>
+                </div>
+
+                <!-- Schwindel und Gleichgewichtsstörungen -->
+                <div class="application-card">
+                    <h3>Schwindel und Gleichgewichtsstörungen</h3>
+                    <p>
+                        Durch gezielte osteopathische Techniken kann das Gleichgewicht verbessert und Schwindel gelindert werden. Dies unterstützt die allgemeine Stabilität und das Wohlbefinden.
+                    </p>
+                </div>
+
+                <!-- Atemwegserkrankungen -->
+                <div class="application-card">
+                    <h3>Atemwegserkrankungen</h3>
+                    <p>
+                        Osteopathie kann bei Asthma und chronischer Bronchitis helfen, indem sie die Atemmechanik und -effizienz verbessert, was zu einer erleichterten Atmung beiträgt.
+                    </p>
+                </div>
+
+                <!-- Sportverletzungen -->
+                <div class="application-card">
+                    <h3>Sportverletzungen</h3>
+                    <p>
+                        Die Rehabilitation und Prävention von Sportverletzungen wie Zerrungen, Verstauchungen, Sehnenentzündungen und Muskelverspannungen können durch osteopathische Behandlungen gefördert werden. Dies hilft, die sportliche Leistungsfähigkeit zu verbessern und die Genesung zu beschleunigen.
+                    </p>
+                </div>
+
+                <!-- Kiefergelenksbeschwerden (CMD) -->
+                <div class="application-card">
+                    <h3>Kiefergelenksbeschwerden (CMD)</h3>
+                    <p>
+                        Osteopathie kann bei Kiefergelenksdysfunktionen, Zähneknirschen, Kieferknacken und damit verbundenen Kopfschmerzen und Nackenbeschwerden helfen, die Beschwerden zu lindern und die Funktion zu verbessern.
+                    </p>
+                </div>
+
+                <!-- Neugeborene und Säuglinge -->
+                <div class="application-card">
+                    <h3>Neugeborene und Säuglinge</h3>
+                    <p>
+                        Osteopathische Behandlungen können Geburtstraumata, Schiefhals, Saug- und Schluckprobleme sowie Schlafstörungen und Koliken bei Neugeborenen und Säuglingen behandeln.
+                    </p>
+                </div>
+
+                <!-- Kinderosteopathie -->
+                <div class="application-card">
+                    <h3>Kinderosteopathie</h3>
+                    <p>
+                        Die Unterstützung von Kindern in ihrer körperlichen und geistigen Entwicklung ist ein weiterer wichtiger Anwendungsbereich der Osteopathie. Dies umfasst die Behandlung von Haltungsschäden, Wachstumsbeschwerden und Entwicklungsverzögerungen.
+                    </p>
+                </div>
+
+                <!-- Altersbedingte Beschwerden -->
+                <div class="application-card">
+                    <h3>Altersbedingte Beschwerden</h3>
+                    <p>
+                        Osteopathie kann Beschwerden im höheren Lebensalter wie Arthrose, Osteoporose, Bewegungseinschränkungen und allgemeine Altersbeschwerden lindern, um die Lebensqualität zu verbessern.
+                    </p>
+                </div>
+
+                <!-- Postoperative Rehabilitation -->
+                <div class="application-card">
+                    <h3>Postoperative Rehabilitation</h3>
+                    <p>
+                        Die Unterstützung des Heilungsprozesses nach Operationen durch Osteopathie fördert die Durchblutung und Mobilität, was die Genesung beschleunigt.
+                    </p>
+                </div>
+
+                <!-- Long Covid und Fatigue -->
+                <div class="application-card">
+                    <h3>Long Covid und Fatigue</h3>
+                    <p>
+                        Bei Long Covid und Fatigue kann Osteopathie durch die Anregung des Lymphstoffwechsels helfen, Erschöpfung, verminderte Belastbarkeit, Atembeschwerden, Muskelschmerzen und Symptome wie Gehirnnebel zu behandeln.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patientenstimmen Section -->
+    <section id="patientenstimmen">
+        <div class="container">
+            <h2 class="section-title">Patientenstimmen</h2>
+            
+            <!-- Einleitungstext -->
+            <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+                    Die Zufriedenheit meiner Patienten liegt mir sehr am Herzen. Hier finden Sie authentische Bewertungen und Erfahrungsberichte von Menschen, die ich in meiner Praxis behandeln durfte.
+                </p>
+            </div>
+
+            <!-- Bewertungen Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                
+                <!-- Platzhalter für Google Reviews -->
+                <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; border: 2px dashed #e2e8f0;">
+                            <span style="color: #999; font-size: 0.8rem;">Foto</span>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Patient/in</h4>
+                            <div style="display: flex; align-items: center;">
+                                <div style="color: #f59e0b; margin-right: 0.5rem;">★★★★★</div>
+                                <span style="color: #666; font-size: 0.9rem;">5,0 Sterne</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; font-style: italic; margin: 0;">
+                        "Hier wird zukünftig eine authentische Patientenbewertung stehen, die die Erfahrungen mit der osteopathischen Behandlung beschreibt."
+                    </p>
+                    <div style="position: absolute; top: 1rem; right: 1.5rem; color: #e2e8f0; font-size: 2rem;">❝</div>
+                </div>
+
+                <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; border: 2px dashed #e2e8f0;">
+                            <span style="color: #999; font-size: 0.8rem;">Foto</span>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Patient/in</h4>
+                            <div style="display: flex; align-items: center;">
+                                <div style="color: #f59e0b; margin-right: 0.5rem;">★★★★★</div>
+                                <span style="color: #666; font-size: 0.9rem;">5,0 Sterne</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; font-style: italic; margin: 0;">
+                        "Platzhalter für eine weitere Patientenbewertung, die die professionelle und einfühlsame Behandlung hervorhebt."
+                    </p>
+                    <div style="position: absolute; top: 1rem; right: 1.5rem; color: #e2e8f0; font-size: 2rem;">❝</div>
+                </div>
+
+                <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0; position: relative;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; border: 2px dashed #e2e8f0;">
+                            <span style="color: #999; font-size: 0.8rem;">Foto</span>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Patient/in</h4>
+                            <div style="display: flex; align-items: center;">
+                                <div style="color: #f59e0b; margin-right: 0.5rem;">★★★★★</div>
+                                <span style="color: #666; font-size: 0.9rem;">5,0 Sterne</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; font-style: italic; margin: 0;">
+                        "Hier könnte eine Bewertung über die erfolgreiche Behandlung und die spürbare Verbesserung der Beschwerden stehen."
+                    </p>
+                    <div style="position: absolute; top: 1rem; right: 1.5rem; color: #e2e8f0; font-size: 2rem;">❝</div>
+                </div>
+            </div>
+
+            <!-- Google Bewertungen Hinweis -->
+            <div style="text-align: center; padding: 2.5rem; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #1a202c; font-size: 1.3rem; font-weight: 500; margin-bottom: 1rem;">Ihre Meinung ist mir wichtig</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem;">
+                    Waren Sie bereits Patient in meiner Praxis? Ich würde mich sehr über Ihr Feedback freuen. Ihre Bewertung hilft anderen Patienten bei ihrer Entscheidung und mir dabei, meine Behandlung stetig zu verbessern.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#" style="display: inline-flex; align-items: center; background: #1a202c; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 500; transition: background-color 0.2s ease;">
+                        <span style="margin-right: 0.5rem;">⭐</span>
+                        Bewertung auf Google abgeben
+                    </a>
+                    <a href="#kontakt" style="display: inline-flex; align-items: center; background: transparent; color: #1a202c; padding: 12px 24px; text-decoration: none; border: 1px solid #1a202c; border-radius: 6px; font-weight: 500; transition: all 0.2s ease;">
+                        Direktes Feedback senden
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über mich -->
+    <section id="ueber-mich" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Über mich</h2>
+            
+            <!-- Profile Section -->
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="display: flex; gap: 4rem; align-items: flex-start; margin-bottom: 4rem; flex-wrap: wrap;">
+                    <!-- Profile Image Placeholder -->
+                    <div style="flex: 0 0 300px; text-align: center;">
+                        <div style="width: 300px; height: 400px; background: #f8f9fa; border: 2px dashed #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <span style="color: #999; font-size: 1rem;">Profilbild Joshua Alsen</span>
+                        </div>
+                        <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin: 0;">Joshua Alsen</h3>
+                    </div>
+                    
+                    <!-- Profile Text -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 1.5rem;">
+                            Geboren und aufgewachsen bin ich in Hamburg. Zur Osteopathie führte mich damals die Krebserkrankung meines Stiefvaters. Ich befand mich im Abitur und verbrachte mit ihm viel Zeit in Krankenhäusern. Während in mir der Wunsch wuchs, mich mit dem Thema Gesundheit zu beschäftigen, sank in mir die Befriedigung bei dem Gedanken, mich beruflich permanent in der Umgebung von Krankenhäusern zu bewegen.
+                        </p>
+                        
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 1.5rem;">
+                            Nachdem ich mein Abitur 2015 beendet habe entschied ich mich gegen ein Medizinstudium und studierte stattdessen Osteopathie in Vollzeit an der Osteopathie Schule Deutschland. Eine Alternative zur allopathischen Medizin, die auf philosophischen Prinzipien beruht und davon ausgeht, dass der Körper zur Selbstheilung fähig ist, entfachte Begeisterung in mir.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Weitere Texte aus dem Original -->
+                <div style="margin-bottom: 3rem;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 1.5rem;">
+                        Nach einer fundierten Ausbildung akademischer Osteopathie in Hamburg, blieb ich nach dem Abschluss meines Studiums im Oktober 2020 weiterhin an meiner Universität und arbeitete als Dolmetscher im Rahmen postgraduierter Kurse und Osteopathiekongressen eng mit zahlreichen internationalen Koryphäen der Osteopathie zusammen.
+                    </p>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 1.5rem;">
+                        Nach dem Bestehen meiner Heilpraktikerprüfung im Mai 2024 entschied ich mich, meinen Fokus auf den klinischen Alltag zu richten und mich mit einer eigenen Praxis selbstständig zu machen. Seitdem praktiziere ich mit großer Freude und Hingabe in meiner eigenen Praxis für Osteopathie in Hamburg.
+                    </p>
+                </div>
+                
+                <!-- VFO Zertifizierung -->
+                <div style="background: #f8f9fa; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <h3 style="color: #1a202c; font-size: 1.3rem; font-weight: 500; margin-bottom: 1.5rem;">Zertifiziertes Mitglied im Verband Freier Osteopathen e.V.</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin: 0;">
+                        Als osteopathisches Praxismitglied im Verband Freier Osteopathen e.V. (VFO) profitieren Sie von den zahlreichen Vorteilen eines anerkannten Berufsverbands. Die Mitgliedschaft gewährleistet nicht nur eine regelmäßige Qualitätssicherung durch fortlaufende Fortbildungen und strenge Ethikrichtlinien, sondern ermöglicht auch die Abrechnung mit den Kassen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifikationen & Zertifikate -->
+    <section id="qualifikationen">
+        <div class="container">
+            <h2 class="section-title">Qualifikationen & Zertifikate</h2>
+            
+            <!-- Einleitungstext -->
+            <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+                    Meine fundierte Ausbildung und kontinuierliche Weiterbildung stellen sicher, dass Sie eine Behandlung nach den höchsten osteopathischen Standards erhalten.
+                </p>
+            </div>
+
+            <!-- Hauptausbildung -->
+            <div style="margin-bottom: 4rem;">
+                <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="width: 80px; height: 80px; background: #1a202c; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 2rem; flex-shrink: 0;">
+                            <span style="color: white; font-size: 1.5rem; font-weight: 600;">B.Sc.</span>
+                        </div>
+                        <div>
+                            <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin: 0 0 0.5rem 0;">Bachelor of Science Osteopathie</h3>
+                            <p style="color: #666; font-size: 1.1rem; margin: 0; font-weight: 500;">Osteopathie Schule Deutschland (OSD), Hamburg</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Ausbildungsdauer</h4>
+                            <p style="color: #666; margin: 0;">2016 - 2020 (Vollzeitstudium)</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Ausbildungsumfang</h4>
+                            <p style="color: #666; margin: 0;">Über 5.000 Ausbildungsstunden</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Zertifizierung</h4>
+                            <p style="color: #666; margin: 0;">BAO-Zertifiziert</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Abschluss</h4>
+                            <p style="color: #666; margin: 0;">Oktober 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heilpraktikererlaubnis -->
+            <div style="margin-bottom: 4rem;">
+                <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 80px; height: 80px; background: #059669; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 2rem; flex-shrink: 0;">
+                            <span style="color: white; font-size: 1.2rem; font-weight: 600;">HP</span>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin: 0 0 0.5rem 0;">Heilpraktikererlaubnis</h3>
+                            <p style="color: #666; font-size: 1.1rem; margin: 0; font-weight: 500;">Staatliche Prüfung bestanden - Mai 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verbandsmitgliedschaften -->
+            <div style="margin-bottom: 4rem;">
+                <h3 style="color: #1a202c; font-size: 1.8rem; font-weight: 400; margin-bottom: 2rem; text-align: center;">Verbandsmitgliedschaften</h3>
+                
+                <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="width: 80px; height: 80px; background: #ffffff; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 2rem; flex-shrink: 0; border: 2px solid #e2e8f0; position: relative;">
+                            <!-- Hier wird das VFO Logo eingefügt -->
+                            <div style="position: absolute; top: -5px; right: -5px; background: rgba(255,255,255,0.9); padding: 0.2rem; border-radius: 4px; font-size: 0.6rem; color: #666; z-index: 2;">
+                                📷
+                            </div>
+                            <div style="text-align: center; color: #999; font-size: 0.8rem;">
+                                VFO<br>Logo
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="color: #1a202c; font-size: 1.3rem; font-weight: 500; margin: 0 0 0.5rem 0;">Verband Freier Osteopathen e.V. (VFO)</h4>
+                            <p style="color: #666; font-size: 1rem; margin: 0 0 1rem 0;">Zertifiziertes Praxismitglied</p>
+                        </div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 6px; border-left: 4px solid #1a202c;">
+                        <h5 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem;">Vorteile der VFO-Mitgliedschaft für Patienten:</h5>
+                        <ul style="color: #555; line-height: 1.6; margin: 0; padding-left: 1.5rem;">
+                            <li>Regelmäßige Qualitätssicherung durch fortlaufende Fortbildungen</li>
+                            <li>Strenge Ethikrichtlinien und Qualitätsstandards</li>
+                            <li>Kostenerstattung durch die meisten Krankenkassen möglich</li>
+                            <li>Behandlung nach anerkannten osteopathischen Standards</li>
+                            <li>Kontinuierliche fachliche Weiterentwicklung</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fortbildungen & Spezialisierungen -->
+            <div style="margin-bottom: 4rem;">
+                <h3 style="color: #1a202c; font-size: 1.8rem; font-weight: 400; margin-bottom: 2rem; text-align: center;">Fortbildungen & Spezialisierungen</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Dolmetschertätigkeit -->
+                    <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <div style="width: 50px; height: 50px; background: #7c3aed; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <span style="color: white; font-size: 1.2rem;">🌍</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Internationale Fortbildungen</h4>
+                        <p style="color: #666; line-height: 1.6; font-size: 1rem; margin: 0;">
+                            Dolmetschertätigkeit bei postgraduierten Kursen und Osteopathiekongressen mit internationalen Koryphäen der Osteopathie (2020-2024)
+                        </p>
+                    </div>
+                    
+                    <!-- Kontinuierliche Weiterbildung -->
+                    <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <div style="width: 50px; height: 50px; background: #059669; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <span style="color: white; font-size: 1.2rem;">📚</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Kontinuierliche Weiterbildung</h4>
+                        <p style="color: #666; line-height: 1.6; font-size: 1rem; margin: 0;">
+                            Regelmäßige Teilnahme an Fortbildungen und Fachkongressen zur Sicherstellung aktueller Behandlungsmethoden
+                        </p>
+                    </div>
+                    
+                    <!-- Akademische Forschung -->
+                    <div style="background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <div style="width: 50px; height: 50px; background: #dc2626; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <span style="color: white; font-size: 1.2rem;">🔬</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Akademische Verbindung</h4>
+                        <p style="color: #666; line-height: 1.6; font-size: 1rem; margin: 0;">
+                            Enge Verbindung zur Osteopathie Schule Deutschland und Zugang zu neuesten wissenschaftlichen Erkenntnissen
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qualitätssicherung & Standards -->
+            <div style="background: #f8f9fa; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Qualitätssicherung & Standards</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <span style="color: white; font-size: 1.3rem;">✓</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">BAO-Zertifizierung</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Ausbildung nach Standards der Bundesarbeitsgemeinschaft Osteopathie</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <span style="color: white; font-size: 1.3rem;">⚕</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Staatliche Anerkennung</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Heilpraktikererlaubnis nach bestandener staatlicher Prüfung</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <span style="color: white; font-size: 1.3rem;">🏥</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Krankenkassen anerkannt</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Kostenerstattung durch die meisten gesetzlichen Krankenkassen</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <span style="color: white; font-size: 1.3rem;">📈</span>
+                        </div>
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Kontinuierliche Fortbildung</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Regelmäßige Weiterbildungen zur Qualitätssicherung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Häufig gestellte Fragen zur Osteopathie in Hamburg</h2>
+            
+            <!-- FAQ Accordion -->
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(1)">
+                        <span>Wird die Osteopathie-Behandlung bei Ihnen von der Krankenkasse bezahlt?</span>
+                        <span class="faq-icon" id="icon-1">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-1">
+                        <div class="faq-content">
+                            <p>Ich bin Mitglied in einem Osteopathieverband und erfülle die Anforderungen der Krankenkassen für eine Kostenerstattung. Die meisten gesetzlichen Krankenkassen beteiligen sich an den Kosten für Osteopathie. Dafür reicht in der Regel ein formloses Rezept eines beliebigen Arztes, auf dem eine osteopathische Behandlung empfohlen wird.</p>
+                            <p>Private Krankenversicherungen übernehmen in der Regel die gesamten Kosten für osteopathische Behandlungen. Die genauen Bedingungen variieren je nach Tarif und Versicherungsunternehmen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(2)">
+                        <span>Wie viel kostet die osteopathische Behandlung?</span>
+                        <span class="faq-icon" id="icon-2">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-2">
+                        <div class="faq-content">
+                            <p>Ich berechne nach der Gebührenverordnung für Heilpraktiker. Eine reguläre osteopathische Behandlung dauert bei mir zwischen 45 und 60 Minuten und kostet ungefähr 120 Euro.</p>
+                            <p>Studierenden, Auszubildenden, Erwerbsunfähigen und Arbeitssuchenden biete ich einen Sozialrabatt für eine osteopathische Behandlung in Höhe von 90 Euro an.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(3)">
+                        <span>Wieviele Sitzungen benötige ich?</span>
+                        <span class="faq-icon" id="icon-3">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-3">
+                        <div class="faq-content">
+                            <p>Die Wirkung und Anzahl der benötigten Sitzungen variieren je nach individuellem Fall:</p>
+                            <p>Wenn Sie sich wegen akuter Schmerzen behandeln lassen, spüren Sie häufig bereits nach einer Sitzung eine merkliche Besserung. Meistens sind 1-3 Sitzungen im Abstand von 1-2 Wochen ausreichend.</p>
+                            <p>Bei chronischen Schmerzen sind meist mehrere Termine notwendig, bevor erste Erfolge sichtbar werden. Die Abstände zwischen den Sitzungen können länger sein.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(4)">
+                        <span>Kann ich auch ohne Rezept zum Osteopathen?</span>
+                        <span class="faq-icon" id="icon-4">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-4">
+                        <div class="faq-content">
+                            <p>Ja, Osteopathie ist eine Heilpraktikerleistung und kann ohne ärztliches Rezept in Anspruch genommen werden. Dies gilt sowohl für Privat- und Beihilfepatienten als auch für gesetzlich Versicherte.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(5)">
+                        <span>Wann sollte man nicht zur Osteopathie gehen?</span>
+                        <span class="faq-icon" id="icon-5">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-5">
+                        <div class="faq-content">
+                            <p>Die Osteopathie ist dank ihres ganzheitlichen Behandlungskonzepts ein wunderbar vielseitiges Instrument, das bei einer Vielzahl an Beschwerden zum Einsatz kommen kann.</p>
+                            <p>Schwere Verletzungen wie offene Wunden, Knochenbrüche oder Bänderrisse sollten Sie aber zuerst schulmedizinisch behandeln lassen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(6)">
+                        <span>Soll ich etwas zur Behandlung mitbringen?</span>
+                        <span class="faq-icon" id="icon-6">+</span>
+                    </button>
+                    <div class="faq-answer" id="answer-6">
+                        <div class="faq-content">
+                            <p>Falls Sie Arztbriefe sowie Röntgen- oder MRT-Bilder zu Ihren aktuellen Beschwerden haben, bringen Sie diese bitte zum ersten Termin mit.</p>
+                            <p>Eventuell möchten Sie sich bequeme Kleidung für die Behandlung mitbringen. Die körperliche Untersuchung findet zu Teilen in Unterwäsche oder in Sportkleidung statt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontakt-Hinweis -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <p style="font-size: 1.1rem; color: #444; margin: 0;">
+                    Sie haben weitere Fragen? Kontaktieren Sie mich gerne telefonisch oder schreiben Sie mir eine Mail.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt">
+        <div class="container">
+            <h2 class="section-title">Kontakt & Terminvereinbarung - Osteopathie Hamburg</h2>
+            
+            <!-- Einleitungstext -->
+            <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+                    Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihren Kontakt und berate Sie gerne zu Ihren individuellen Beschwerden.
+                </p>
+            </div>
+
+            <!-- Kontakt Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+                
+                <!-- Kontaktinformationen -->
+                <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Kontaktinformationen</h3>
+                    
+                    <!-- Praxisadresse -->
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #1a202c; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                                <span style="color: white; font-size: 1.2rem;">📍</span>
+                            </div>
+                            <div>
+                                <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.3rem 0;">Praxisadresse</h4>
+                                <p style="color: #666; margin: 0; line-height: 1.5;">
+                                    Durchschnitt 25<br>
+                                    20146 Hamburg<br>
+                                    Deutschland
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Telefon -->
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #059669; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                                <span style="color: white; font-size: 1.2rem;">📞</span>
+                            </div>
+                            <div>
+                                <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.3rem 0;">Telefon</h4>
+                                <p style="color: #666; margin: 0;">
+                                    <a href="tel:+4917643990001" style="color: #059669; text-decoration: none; font-weight: 500;">0176 4399 0001</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- E-Mail -->
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #dc2626; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                                <span style="color: white; font-size: 1.2rem;">✉️</span>
+                            </div>
+                            <div>
+                                <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.3rem 0;">E-Mail</h4>
+                                <p style="color: #666; margin: 0;">
+                                    <a href="mailto:praxis@osteoalsen.de" style="color: #dc2626; text-decoration: none; font-weight: 500;">praxis@osteoalsen.de</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Website -->
+                    <div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #7c3aed; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                                <span style="color: white; font-size: 1.2rem;">🌐</span>
+                            </div>
+                            <div>
+                                <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin: 0 0 0.3rem 0;">Website</h4>
+                                <p style="color: #666; margin: 0;">
+                                    <a href="https://www.osteoalsen.de" style="color: #7c3aed; text-decoration: none; font-weight: 500;">www.osteoalsen.de</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kontaktformular -->
+                <div class="contact-form">
+                    <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Nachricht senden</h3>
+                    
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="form-error">Bitte geben Sie Ihren Namen ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-Mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="form-error">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="form-error">Bitte geben Sie eine gültige Telefonnummer ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nachricht <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="Beschreiben Sie bitte Ihre Beschwerden oder Ihr Anliegen..." required></textarea>
+                            <div class="form-error">Bitte geben Sie Ihre Nachricht ein.</div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            Nachricht senden
+                        </button>
+                        
+                        <div class="form-success" id="successMessage">
+                            ✓ Vielen Dank für Ihre Nachricht! Ich melde mich schnellstmöglich bei Ihnen zurück.
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Sprechzeiten & Terminvereinbarung -->
+            <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 4rem;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Sprechzeiten & Termine</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                    <!-- Öffnungszeiten -->
+                    <div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 1.5rem; text-align: center;">Sprechzeiten</h4>
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #1a202c;">
+                            <div style="display: grid; gap: 0.5rem;">
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Montag:</span>
+                                    <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-top: 1px solid #e2e8f0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Dienstag:</span>
+                                    <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-top: 1px solid #e2e8f0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Mittwoch:</span>
+                                    <span style="color: #666;">08:00 - 18:00 Uhr</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-top: 1px solid #e2e8f0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Donnerstag:</span>
+                                    <span style="color: #666;">08:00 - 18:00 Uhr</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-top: 1px solid #e2e8f0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Freitag:</span>
+                                    <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-top: 1px solid #e2e8f0;">
+                                    <span style="color: #1a202c; font-weight: 500;">Samstag & Sonntag:</span>
+                                    <span style="color: #666;">Geschlossen</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 1rem; font-style: italic;">
+                            Termine nach individueller Vereinbarung auch außerhalb der regulären Zeiten möglich
+                        </p>
+                    </div>
+                    
+                    <!-- Terminvereinbarung -->
+                    <div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 1.5rem; text-align: center;">Terminvereinbarung</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <a href="tel:+4917643990001" style="display: flex; align-items: center; justify-content: center; background: #1a202c; color: #ffffff; padding: 16px 24px; text-decoration: none; border-radius: 6px; font-weight: 500; transition: background-color 0.2s ease;">
+                                <span style="margin-right: 0.5rem;">📞</span>
+                                Telefonisch: 0176 4399 0001
+                            </a>
+                            <a href="https://www.etermin.net/osteoalsen" target="_blank" style="display: flex; align-items: center; justify-content: center; background: transparent; color: #1a202c; padding: 16px 24px; text-decoration: none; border: 1px solid #1a202c; border-radius: 6px; font-weight: 500; transition: all 0.2s ease;">
+                                <span style="margin-right: 0.5rem;">🗓️</span>
+                                Online Terminbuchung
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Persönliche Beratung -->
+            <div style="background: #f8f9fa; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 1.5rem;">Persönliche Beratung</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Jeder Patient ist einzigartig. Gerne nehme ich mir Zeit für ein ausführliches Erstgespräch, um Ihre individuellen Beschwerden zu verstehen und einen passenden Behandlungsplan zu entwickeln.
+                </p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">📞</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Telefonische Erstberatung</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">15 Minuten kostenfrei</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">🩺</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Behandlung</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">45-60 Minuten, 120 Euro</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Krankenkasse</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">Erstattung möglich</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps Placeholder -->
+            <div style="margin-bottom: 4rem;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Anfahrt & Lage</h3>
+                
+                <div style="background: #f8f9fa; border: 2px dashed #e2e8f0; border-radius: 8px; height: 400px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <div style="text-align: center; color: #666;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+                        <h4 style="color: #1a202c; font-size: 1.2rem; font-weight: 500; margin-bottom: 0.5rem;">Google Maps Integration</h4>
+                        <p style="margin: 0; font-size: 1rem;">
+                            Hier wird die interaktive Karte eingebunden<br>
+                            <strong>Durchschnitt 25, 20146 Hamburg</strong>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Anfahrtshinweise -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- ÖPNV -->
+                    <div style="background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem; display: flex; align-items: center;">
+                            <span style="margin-right: 0.5rem;">🚇</span>
+                            Öffentliche Verkehrsmittel
+                        </h4>
+                        <p style="color: #666; line-height: 1.6; margin: 0;">
+                            <strong>U-Bahn:</strong> Rotherbaum (U1)<br>
+                            <strong>S-Bahn:</strong> Dammtor (S11, S21, S31)<br>
+                            <strong>Bus:</strong> Verschiedene Linien in der Nähe
+                        </p>
+                    </div>
+                    
+                    <!-- Parken -->
+                    <div style="background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem; display: flex; align-items: center;">
+                            <span style="margin-right: 0.5rem;">🚗</span>
+                            Parkmöglichkeiten
+                        </h4>
+                        <p style="color: #666; line-height: 1.6; margin: 0;">
+                            Begrenzte Straßenparkplätze in der Umgebung.<br>
+                            Parkhaus und öffentliche Parkplätze<br>
+                            in der näheren Umgebung verfügbar.
+                        </p>
+                    </div>
+                    
+                    <!-- Barrierefreiheit -->
+                    <div style="background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem; display: flex; align-items: center;">
+                            <span style="margin-right: 0.5rem;">♿</span>
+                            Barrierefreiheit
+                        </h4>
+                        <p style="color: #666; line-height: 1.6; margin: 0;">
+                            Bei Fragen zur Barrierefreiheit<br>
+                            kontaktieren Sie mich gerne vorab<br>
+                            telefonisch oder per E-Mail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kontaktformular Hinweis -->
+            <div style="background: #f8f9fa; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 1.5rem;">Persönliche Beratung</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Jeder Patient ist einzigartig. Gerne nehme ich mir Zeit für ein ausführliches Erstgespräch, um Ihre individuellen Beschwerden zu verstehen und einen passenden Behandlungsplan zu entwickeln.
+                </p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">📞</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Telefonische Erstberatung</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">15 Minuten kostenfrei</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">🩺</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Behandlung</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">45-60 Minuten, 120 Euro</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; min-width: 200px;">
+                        <div style="color: #1a202c; font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                        <h4 style="color: #1a202c; font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem 0;">Krankenkasse</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">Erstattung möglich</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section style="background: #f8f9fa; padding: 60px 0;">
+        <div class="container">
+            <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
+                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 1.5rem;">Mehr über Osteopathie erfahren</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Mehr über Osteopathie und ihre Anwendungsbereiche erfahren Sie in meinem Osteopathie Blog mit aktuellen Artikeln, Gesundheitstipps und Fachbeiträgen.
+                </p>
+                <a href="#blog" style="display: inline-flex; align-items: center; background: #1a202c; color: #ffffff; padding: 16px 24px; text-decoration: none; border-radius: 6px; font-weight: 500; transition: all 0.2s ease;">
+                    <span style="margin-right: 0.5rem;">📖</span>
+                    Zum Osteopathie Blog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky-cta" id="stickyCTA">
+        <div class="sticky-cta-content">
+            <div class="sticky-cta-text">
+                Bereit für Ihre osteopathische Behandlung in Hamburg?
+            </div>
+            <div class="sticky-cta-buttons">
+                <a href="tel:+4917643990001" class="sticky-cta-btn">
+                    📞 Jetzt anrufen
+                </a>
+                <a href="#kontakt" class="sticky-cta-btn secondary">
+                    📅 Termin buchen
+                </a>
+            </div>
+            <button class="sticky-cta-close" onclick="hideStickyCTA()">×</button>
+        </div>
+    </div>
+
+    <!-- Floating Contact Button - Nur Online Terminbuchung -->
+    <div class="floating-contact">
+        <a href="https://www.etermin.net/osteoalsen" target="_blank" class="floating-btn" data-tooltip="Online Termin buchen">
+            📅
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p>Heilpraxis für Osteopathie | Hamburg | Durchschnitt 25, 20146 Hamburg</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle Function - Enhanced
+        function toggleFAQ(id) {
+            // This function is now defined above in the DOMContentLoaded event
+        }
+
+        // Contact Form Validation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll Animation Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animatable elements
+            document.querySelectorAll('.section-title, .benefit-card, .treatment-card, .application-card').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Sticky CTA functionality
+            const stickyCTA = document.getElementById('stickyCTA');
+            let stickyShown = false;
+            let stickyHidden = false;
+
+            const stickyObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    // Show sticky CTA when user scrolls past hero section
+                    if (!entry.isIntersecting && !stickyShown && !stickyHidden) {
+                        setTimeout(() => {
+                            if (!stickyHidden) {
+                                stickyCTA.classList.add('visible');
+                                stickyShown = true;
+                            }
+                        }, 1000); // Delay for better UX
+                    }
+                });
+            }, { threshold: 0 });
+
+            // Observe hero section
+            const heroSection = document.querySelector('.hero');
+            if (heroSection) {
+                stickyObserver.observe(heroSection);
+            }
+
+            // Hide sticky CTA function
+            window.hideStickyCTA = function() {
+                stickyCTA.classList.remove('visible');
+                stickyHidden = true;
+            };
+
+            // Auto-hide sticky CTA when reaching contact section
+            const contactSection = document.getElementById('kontakt');
+            if (contactSection) {
+                const contactObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            stickyCTA.classList.remove('visible');
+                        } else if (stickyShown && !stickyHidden) {
+                            stickyCTA.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                contactObserver.observe(contactSection);
+            }
+
+            // Enhanced FAQ Animation
+            window.toggleFAQ = function(id) {
+                const answer = document.getElementById(`answer-${id}`);
+                const icon = document.getElementById(`icon-${id}`);
+                const question = icon.closest('.faq-question');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                        otherAnswer.classList.remove('active');
+                        const otherIcon = otherAnswer.parentElement.querySelector('.faq-icon');
+                        otherIcon.textContent = '+';
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                answer.classList.toggle('active');
+                
+                if (answer.classList.contains('active')) {
+                    icon.textContent = '−';
+                    icon.style.transform = 'rotate(180deg)';
+                    question.style.background = '#f1f5f9';
+                } else {
+                    icon.textContent = '+';
+                    icon.style.transform = 'rotate(0deg)';
+                    question.style.background = 'none';
+                }
+            };
+
+            // Form validation code
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^[\+]?[0-9\s\-\(\)]{7,}$/;
+
+            function validateField(field) {
+                const formGroup = field.closest('.form-group');
+                let isValid = true;
+
+                formGroup.classList.remove('error');
+
+                switch(field.type) {
+                    case 'text':
+                        if (field.required && field.value.trim().length < 2) {
+                            isValid = false;
+                            showFieldError(formGroup, 'Bitte geben Sie mindestens 2 Zeichen ein.');
+                        }
+                        break;
+                    
+                    case 'email':
+                        if (field.required && !emailPattern.test(field.value.trim())) {
+                            isValid = false;
+                            showFieldError(formGroup, 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+                        }
+                        break;
+                    
+                    case 'tel':
+                        if (field.value.trim() && !phonePattern.test(field.value.trim())) {
+                            isValid = false;
+                            showFieldError(formGroup, 'Bitte geben Sie eine gültige Telefonnummer ein.');
+                        }
+                        break;
+                    
+                    default:
+                        if (field.tagName === 'TEXTAREA' && field.required && field.value.trim().length < 10) {
+                            isValid = false;
+                            showFieldError(formGroup, 'Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein.');
+                        }
+                }
+
+                return isValid;
+            }
+
+            function showFieldError(formGroup, message) {
+                formGroup.classList.add('error');
+                const errorElement = formGroup.querySelector('.form-error');
+                if (errorElement) {
+                    errorElement.textContent = message;
+                }
+            }
+
+            // Real-time validation
+            form.querySelectorAll('input, textarea').forEach(field => {
+                field.addEventListener('blur', function() {
+                    validateField(this);
+                });
+
+                field.addEventListener('input', function() {
+                    const formGroup = this.closest('.form-group');
+                    if (formGroup.classList.contains('error')) {
+                        formGroup.classList.remove('error');
+                    }
+                });
+            });
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isFormValid = true;
+
+                form.querySelectorAll('input, textarea').forEach(field => {
+                    if (!validateField(field)) {
+                        isFormValid = false;
+                    }
+                });
+
+                if (!isFormValid) {
+                    const firstError = form.querySelector('.form-group.error');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Wird gesendet...';
+
+                setTimeout(() => {
+                    successMessage.style.display = 'block';
+                    form.reset();
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Nachricht senden';
+                    
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
