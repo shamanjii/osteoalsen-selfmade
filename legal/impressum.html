@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impressum der Heilpraxis für Osteopathie Joshua Alsen Hamburg. Rechtliche Angaben gemäß TMG und Heilpraktikergesetz.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Joshua Alsen">
+    
+    <title>Impressum - Osteopathie Hamburg | Joshua Alsen</title>
+    
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #ffffff;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            font-size: 1.1rem;
+        }
+        
+        /* Typography System */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+        }
+        
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        h4 {
+            font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            letter-spacing: -0.015em;
+        }
+        
+        p {
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.015em;
+            font-size: 1.1rem;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+        
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+        
+        .nav-menu a:hover, .nav-menu a.active {
+            color: #ffffff;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+        
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+        }
+        
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            color: #1a202c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin-top: 70px;
+            padding: 40px 0;
+            min-height: calc(100vh - 130px);
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .breadcrumb-nav a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .breadcrumb-nav a:hover {
+            color: #2d3748;
+        }
+        
+        .breadcrumb-separator {
+            color: #999;
+            margin: 0 0.25rem;
+        }
+        
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: #ffffff;
+        }
+        
+        .page-header h1 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-size: clamp(2.5rem, 4vw, 3.2rem);
+        }
+        
+        .page-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            color: #4a5568;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        
+        .content-section h2 {
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .content-section h3 {
+            color: #1a202c;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+        
+        .content-section h4 {
+            color: #1a202c;
+            margin: 1.5rem 0 0.75rem 0;
+            font-size: 1.2rem;
+        }
+        
+        .content-section p {
+            margin-bottom: 1rem;
+            color: #444;
+            line-height: 1.7;
+        }
+        
+        .content-section ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: #444;
+        }
+        
+        .content-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        /* Business Info Box */
+        .business-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a202c;
+            margin: 2rem 0;
+        }
+        
+        .business-info h4 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .business-info p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .business-info a {
+            color: #1a202c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .business-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .info-item {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .info-item h4 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-item p {
+            color: #666;
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .info-item a {
+            color: #1a202c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Important Notice */
+        .important-notice {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #0ea5e9;
+            margin: 2rem 0;
+        }
+        
+        .important-notice h4 {
+            color: #0369a1;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .important-notice p {
+            color: #0c4a6e;
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        footer p:last-child {
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+            
+            .business-info {
+                padding: 1.5rem;
+            }
+            
+            .info-item {
+                padding: 1.5rem;
+            }
+            
+            .important-notice {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="index.html#behandlungen">Behandlungen</a></li>
+                <li><a href="index.html#anwendungen">Anwendungen</a></li>
+                <li><a href="index.html#ueber-mich">Über mich</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="terminbuchung.html" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Impressum</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Impressum</h1>
+            <p class="page-subtitle">
+                Rechtliche Angaben gemäß § 5 TMG (Telemediengesetz) und Heilpraktikergesetz
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Hauptangaben -->
+            <div class="business-info">
+                <h4>🏥 Heilpraxis für Osteopathie Joshua Alsen</h4>
+                <p><strong>Rappstraße 7, 20146 Hamburg</strong></p>
+                <p><strong>Stresemannallee 118, 22529 Hamburg</strong></p>
+                <p>Telefon: <a href="tel:+4917643990001">0176 4399 0001</a></p>
+                <p>E-Mail: <a href="mailto:praxis@osteoalsen.de">praxis@osteoalsen.de</a></p>
+            </div>
+
+            <!-- Angaben zur Person -->
+            <div class="content-section">
+                <h2>Angaben zur Person</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>👤 Vertreten durch</h4>
+                        <p>Joshua Alsen<br>Einzelunternehmen</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>🎓 Berufsbezeichnung</h4>
+                        <p>Heilpraktiker<br>(verliehen in Deutschland)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aufsichtsbehörde & Mitgliedschaften -->
+            <div class="content-section">
+                <h2>Zuständige Behörden & Mitgliedschaften</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>🏛️ Zuständige Aufsichtsbehörde</h4>
+                        <p>Gesundheitsbehörde Hamburg<br>
+                        Billstraße 80<br>
+                        20539 Hamburg</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>🤝 Mitgliedschaften</h4>
+                        <p>Verband freier Osteopathen e.V. (VFO)<br>
+                        <a href="https://www.vfo.de" target="_blank">www.vfo.de</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steuerliche Angaben -->
+            <div class="content-section">
+                <h2>Steuerliche Angaben</h2>
+                
+                <div class="important-notice">
+                    <h4>💰 Umsatzsteuerbefreiung</h4>
+                    <p>Als freier Beruf nach § 4 Nr. 14 UStG von der Umsatzsteuer befreit.</p>
+                </div>
+            </div>
+
+            <!-- Berufshaftpflichtversicherung -->
+            <div class="content-section">
+                <h2>Berufshaftpflichtversicherung</h2>
+                
+                <p><strong>Versichert bei:</strong></p>
+                
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0; margin: 1.5rem 0;">
+                    <h4 style="color: #1a202c; margin-bottom: 1rem;">🛡️ Hiscox SA, Niederlassung für Deutschland</h4>
+                    
+                    <div style="display: grid; gap: 1rem; font-size: 1rem; color: #666;">
+                        <p><strong>Hauptbevollmächtigter:</strong> Markus Niederreiner</p>
+                        <p><strong>Adresse:</strong><br>
+                        Bernhard-Wicki-Straße 8<br>
+                        80636 München</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <div>
+                                <p><strong>Telefon:</strong> <a href="tel:+498954580170" style="color: #1a202c;">+49 (0)89 545801 700</a></p>
+                                <p><strong>Fax:</strong> +49 (0)89 545801 799</p>
+                            </div>
+                            <div>
+                                <p><strong>E-Mail:</strong> <a href="mailto:myhiscox@hiscoxdirekt.de" style="color: #1a202c;">myhiscox@hiscoxdirekt.de</a></p>
+                                <p><strong>Web:</strong> <a href="https://www.hiscox.de" target="_blank" style="color: #1a202c;">www.hiscox.de</a></p>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 1rem;"><strong>Registergericht:</strong> Amtsgericht München HRB 196892</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rechtliche Hinweise -->
+            <div class="content-section">
+                <h2>Rechtliche Hinweise</h2>
+                
+                <h3>Haftungsausschluss</h3>
+                <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+                
+                <h3>Haftung für Links</h3>
+                <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+                
+                <h3>Urheberrecht</h3>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            </div>
+
+            <!-- Kontakt für rechtliche Fragen -->
+            <div class="important-notice">
+                <h4>📋 Rechtliche Fragen?</h4>
+                <p>Bei rechtlichen Fragen zu diesem Impressum oder unseren Dienstleistungen kontaktieren Sie uns bitte unter: <strong>praxis@osteoalsen.de</strong></p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p>Heilpraxis für Osteopathie | Hamburg | <a href="legal/datenschutz.html" style="color: rgba(255,255,255,0.7);">Datenschutz</a> | <a href="legal/impressum.html" style="color: rgba(255,255,255,0.7);">Impressum</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

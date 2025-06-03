@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terminbuchung Osteopathie Hamburg - Joshua Alsen. ✓ Online buchen ✓ Kurzfristige Termine ✓ Rotherbaum & Eimsbüttel ✓ Krankenkassen-Erstattung. Jetzt Termin vereinbaren!">
+    <meta name="keywords" content="Osteopathie Termin Hamburg, Osteopath Terminbuchung, Joshua Alsen Termin, Osteopathie Hamburg buchen, Heilpraktiker Termin, Rotherbaum, Eimsbüttel">
+    <meta name="author" content="Joshua Alsen">
+    
+    <title>Termin buchen - Osteopathie Hamburg | Joshua Alsen</title>
+    
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Strukturierte Daten für lokales SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Osteopathie Alsen - Joshua Alsen",
+      "description": "Heilpraxis für Osteopathie in Hamburg mit zwei Standorten in Rotherbaum und Eimsbüttel",
+      "url": "https://www.osteoalsen.de",
+      "telephone": "+49176-4399-0001",
+      "email": "praxis@osteoalsen.de",
+      "founder": {
+        "@type": "Person",
+        "name": "Joshua Alsen",
+        "jobTitle": "Heilpraktiker und Osteopath"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Rappstraße 7",
+          "addressLocality": "Hamburg",
+          "addressRegion": "Hamburg",
+          "postalCode": "20146",
+          "addressCountry": "DE"
+        },
+        {
+          "@type": "PostalAddress", 
+          "streetAddress": "Stresemannallee 118",
+          "addressLocality": "Hamburg",
+          "addressRegion": "Hamburg", 
+          "postalCode": "22529",
+          "addressCountry": "DE"
+        }
+      ],
+      "openingHours": [
+        "Mo 09:00-14:00",
+        "Tu 09:00-14:00", 
+        "We 08:00-18:00",
+        "Th 08:00-18:00",
+        "Fr 09:00-14:00"
+      ],
+      "serviceType": "Osteopathie",
+      "areaServed": {
+        "@type": "City",
+        "name": "Hamburg"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #ffffff;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            font-size: 1.1rem;
+        }
+        
+        /* Typography System */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+        }
+        
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        p {
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.015em;
+            font-size: 1.1rem;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+        
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+        
+        .nav-menu a:hover, .nav-menu a.active {
+            color: #ffffff;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+        
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+        }
+        
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            color: #1a202c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin-top: 70px;
+            padding: 20px 0 60px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f5f9 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 20s ease-in-out infinite;
+            padding: 120px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(26, 32, 44, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(5, 150, 105, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .hero h1 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Trust badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            opacity: 0.8;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #4a5568;
+            font-weight: 400;
+        }
+        
+        .trust-badge .badge-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            margin-bottom: 2rem;
+            color: #4a5568;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            font-family: 'Epilogue', sans-serif;
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #1a202c;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        /* Background Sections */
+        .bg-light {
+            background: #f8f9fa;
+        }
+        
+        /* Info Cards */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .info-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 100%, rgba(26, 32, 44, 0.02) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-color: #cbd5e0;
+        }
+        
+        .info-card:hover::before {
+            opacity: 1;
+        }
+        
+        .info-card h4 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .info-card p {
+            color: #666;
+            margin: 0;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        footer p:last-child {
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .hero {
+                padding: 100px 0 40px;
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="index.html#behandlungen">Behandlungen</a></li>
+                <li><a href="index.html#anwendungen">Anwendungen</a></li>
+                <li><a href="index.html#ueber-mich">Über mich</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="terminbuchung.html" class="nav-cta active">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Kurzfristige Terminvergabe</h1>
+            <p class="hero-subtitle">Buchen Sie Ihren Osteopathie-Termin online in Hamburg-Rotherbaum oder Hamburg-Eimsbüttel</p>
+            
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="badge-icon">✓</div>
+                    <span>Sofortige Bestätigung</span>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon">⚡</div>
+                    <span>Kurzfristige Termine</span>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon">💳</div>
+                    <span>Kassenerstattung</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Terminbuchung -->
+    <section class="main-content">
+        <div class="container">
+            <div style="background: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 3rem;">
+                <h2 style="color: #1a202c; text-align: center; margin-bottom: 1.5rem; font-size: 1.8rem;">Online Terminbuchung Osteopathie Hamburg</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1.1rem;">
+                    Wählen Sie einen freien Termin in einer meiner Praxen in Hamburg aus. Sie erhalten eine sofortige Bestätigung per E-Mail.
+                </p>
+                
+                <!-- etermin iframe -->
+                <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 100%; margin: 0 auto;">
+                    <iframe id="etifr" src="https://www.eTermin.net/osteoalsen" height="800px" width="100%" scrolling="no" frameborder="0" style="min-height: 600px;"></iframe>
+                </div>
+            </div>
+
+            <!-- Wichtige Informationen -->
+            <div style="background: #f8f9fa; padding: 3rem; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 3rem;">
+                <h3 style="color: #1a202c; text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Wichtige Informationen zu Ihrem Termin</h3>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">⏱️</div>
+                        <h4>Behandlungsdauer</h4>
+                        <p>Eine osteopathische Behandlung dauert zwischen 45-60 Minuten und kostet 120 Euro.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div style="width: 60px; height: 60px; background: #059669; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">💰</div>
+                        <h4>Krankenkasse</h4>
+                        <p>Die meisten Krankenkassen erstatten einen Teil der Kosten. Ein formloses Rezept ist ausreichend.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div style="width: 60px; height: 60px; background: #dc2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">📋</div>
+                        <h4>Mitbringen</h4>
+                        <p>Bringen Sie bitte Arztbriefe, Röntgen- oder MRT-Bilder zu Ihren Beschwerden mit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprechzeiten -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Öffnungszeiten</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                <!-- Standort 1: Rappstraße -->
+                <div style="background: #ffffff; padding: 3rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: #1a202c; margin-bottom: 0.5rem;">📍 Standort Rotherbaum</h3>
+                        <p style="color: #666; font-weight: 500;">Rappstraße 7, 20146 Hamburg</p>
+                    </div>
+                    
+                    <div style="display: grid; gap: 0.5rem;">
+                        <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid #e2e8f0;">
+                            <span style="color: #1a202c; font-weight: 500; font-family: 'Epilogue', sans-serif;">Montag:</span>
+                            <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 1rem 0;">
+                            <span style="color: #1a202c; font-weight: 500; font-family: 'Epilogue', sans-serif;">Mittwoch:</span>
+                            <span style="color: #666;">08:00 - 18:00 Uhr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standort 2: Stresemannallee -->
+                <div style="background: #ffffff; padding: 3rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: #1a202c; margin-bottom: 0.5rem;">📍 Standort Eimsbüttel</h3>
+                        <p style="color: #666; font-weight: 500;">Stresemannallee 118, 22529 Hamburg</p>
+                    </div>
+                    
+                    <div style="display: grid; gap: 0.5rem;">
+                        <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid #e2e8f0;">
+                            <span style="color: #1a202c; font-weight: 500; font-family: 'Epilogue', sans-serif;">Dienstag:</span>
+                            <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid #e2e8f0;">
+                            <span style="color: #1a202c; font-weight: 500; font-family: 'Epilogue', sans-serif;">Donnerstag:</span>
+                            <span style="color: #666;">08:00 - 18:00 Uhr</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 1rem 0;">
+                            <span style="color: #1a202c; font-weight: 500; font-family: 'Epilogue', sans-serif;">Freitag:</span>
+                            <span style="color: #666;">09:00 - 14:00 Uhr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e2e8f0; max-width: 600px; margin: 0 auto;">
+                    <p style="color: #666; font-style: italic; margin: 0; font-size: 0.95rem;">
+                        <strong>Samstag & Sonntag:</strong> Geschlossen<br>
+                        Termine nach individueller Vereinbarung auch außerhalb der regulären Zeiten möglich
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Praxis & Anfahrt -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Praxen & Anfahrt</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                
+                <!-- Standort 1: Rotherbaum -->
+                <div style="background: #ffffff; padding: 3rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <h3 style="color: #1a202c; margin-bottom: 2rem; text-align: center;">📍 Praxis Rotherbaum</h3>
+                    
+                    <!-- Adresse -->
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; background: #1a202c; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; color: white; font-size: 1.2rem;">📍</div>
+                        <div>
+                            <h4 style="color: #1a202c; margin-bottom: 0.3rem;">Praxisadresse</h4>
+                            <p style="color: #666; margin: 0; line-height: 1.5;">
+                                Rappstraße 7<br>
+                                20146 Hamburg
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Öffnungszeiten -->
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">🕐 Sprechzeiten</h4>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px;">
+                            <p style="color: #666; margin: 0; line-height: 1.5;">
+                                <strong>Montag:</strong> 09:00 - 14:00 Uhr<br>
+                                <strong>Mittwoch:</strong> 08:00 - 18:00 Uhr
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Anfahrt -->
+                    <div>
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">🚇 Anfahrt</h4>
+                        <p style="color: #666; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+                            <strong>U-Bahn:</strong> U1 bis Hallerstraße (5 Min. Fußweg)<br>
+                            <strong>Bus:</strong> Linien 4, 5, 15 bis Grindelhof (5 Min. Fußweg)<br>
+                            <strong>Parken:</strong> Begrenzte Straßenparkplätze
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Standort 2: Eimsbüttel -->
+                <div style="background: #ffffff; padding: 3rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <h3 style="color: #1a202c; margin-bottom: 2rem; text-align: center;">📍 Praxis Eimsbüttel</h3>
+                    
+                    <!-- Adresse -->
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; background: #1a202c; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; color: white; font-size: 1.2rem;">📍</div>
+                        <div>
+                            <h4 style="color: #1a202c; margin-bottom: 0.3rem;">Praxisadresse</h4>
+                            <p style="color: #666; margin: 0; line-height: 1.5;">
+                                Stresemannallee 118<br>
+                                22529 Hamburg
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Öffnungszeiten -->
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">🕐 Sprechzeiten</h4>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px;">
+                            <p style="color: #666; margin: 0; line-height: 1.5;">
+                                <strong>Dienstag:</strong> 09:00 - 14:00 Uhr<br>
+                                <strong>Donnerstag:</strong> 08:00 - 18:00 Uhr<br>
+                                <strong>Freitag:</strong> 09:00 - 14:00 Uhr
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Anfahrt -->
+                    <div>
+                        <h4 style="color: #1a202c; margin-bottom: 1rem;">🚇 Anfahrt</h4>
+                        <p style="color: #666; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+                            <strong>U-Bahn:</strong> U2 bis Lutterothstraße (10 Min. Fußweg)<br>
+                            <strong>Bus:</strong> Linie 181 bis Sorthmannweg oder Eidelstedter Weg<br>
+                            <strong>Parken:</strong> Parkplätze verfügbar
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kontakt -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <div style="background: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; max-width: 600px; margin: 0 auto;">
+                    <h3 style="color: #1a202c; margin-bottom: 1.5rem;">📞 Kontakt</h3>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <a href="tel:+4917643990001" style="display: flex; align-items: center; color: #059669; text-decoration: none; font-weight: 500;">
+                            <span style="margin-right: 0.5rem;">📞</span>
+                            0176 4399 0001
+                        </a>
+                        <a href="mailto:praxis@osteoalsen.de" style="display: flex; align-items: center; color: #dc2626; text-decoration: none; font-weight: 500;">
+                            <span style="margin-right: 0.5rem;">✉️</span>
+                            praxis@osteoalsen.de
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ speziell für Termine -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Häufige Fragen zur Terminbuchung</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; gap: 1rem;">
+                    <!-- FAQ 1 -->
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button onclick="toggleFAQ(1)" style="width: 100%; background: none; border: none; padding: 1.5rem 2rem; text-align: left; font-family: 'Epilogue', sans-serif; font-size: 1.1rem; font-weight: 500; color: #1a202c; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Wie schnell bekomme ich einen Termin?</span>
+                            <span id="icon-1" style="font-size: 1.2rem; transition: transform 0.3s ease;">+</span>
+                        </button>
+                        <div id="answer-1" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 0 2rem 2rem; color: #666; line-height: 1.6;">
+                                In der Regel kann ich Ihnen innerhalb von 1-2 Wochen einen Termin anbieten. Bei akuten Beschwerden versuche ich, kurzfristige Termine zu ermöglichen.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button onclick="toggleFAQ(2)" style="width: 100%; background: none; border: none; padding: 1.5rem 2rem; text-align: left; font-family: 'Epilogue', sans-serif; font-size: 1.1rem; font-weight: 500; color: #1a202c; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Kann ich meinen Termin verschieben oder absagen?</span>
+                            <span id="icon-2" style="font-size: 1.2rem; transition: transform 0.3s ease;">+</span>
+                        </button>
+                        <div id="answer-2" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 0 2rem 2rem; color: #666; line-height: 1.6;">
+                                Termine können bis 24 Stunden vorher kostenfrei storniert oder verschoben werden. Bei kurzfristigeren Absagen behalte ich mir vor, die Behandlungskosten in Rechnung zu stellen.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button onclick="toggleFAQ(3)" style="width: 100%; background: none; border: none; padding: 1.5rem 2rem; text-align: left; font-family: 'Epilogue', sans-serif; font-size: 1.1rem; font-weight: 500; color: #1a202c; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Brauche ich ein Rezept für die Behandlung?</span>
+                            <span id="icon-3" style="font-size: 1.2rem; transition: transform 0.3s ease;">+</span>
+                        </button>
+                        <div id="answer-3" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 0 2rem 2rem; color: #666; line-height: 1.6;">
+                                Nein, ein Rezept ist nicht erforderlich. Für die Kostenerstattung durch die Krankenkasse ist jedoch eine formlose ärztliche Empfehlung hilfreich.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button onclick="toggleFAQ(4)" style="width: 100%; background: none; border: none; padding: 1.5rem 2rem; text-align: left; font-family: 'Epilogue', sans-serif; font-size: 1.1rem; font-weight: 500; color: #1a202c; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Was kostet die Behandlung?</span>
+                            <span id="icon-4" style="font-size: 1.2rem; transition: transform 0.3s ease;">+</span>
+                        </button>
+                        <div id="answer-4" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 0 2rem 2rem; color: #666; line-height: 1.6;">
+                                Eine osteopathische Behandlung (45-60 Minuten) kostet 120 Euro.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button onclick="toggleFAQ(5)" style="width: 100%; background: none; border: none; padding: 1.5rem 2rem; text-align: left; font-family: 'Epilogue', sans-serif; font-size: 1.1rem; font-weight: 500; color: #1a202c; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>In welcher Praxis findet mein Termin statt?</span>
+                            <span id="icon-5" style="font-size: 1.2rem; transition: transform 0.3s ease;">+</span>
+                        </button>
+                        <div id="answer-5" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 0 2rem 2rem; color: #666; line-height: 1.6;">
+                                Sie erhalten die genaue Praxisadresse bei der Terminbestätigung. Je nach verfügbaren Zeiten finden Termine in Hamburg-Rotherbaum (Rappstraße 7) oder Hamburg-Eimsbüttel (Stresemannallee 118) statt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p>Heilpraxis für Osteopathie | Hamburg | Rappstraße 7 & Stresemannallee 118</p>
+        </div>
+    </footer>
+
+    <!-- etermin Script -->
+    <script src="https://www.eTermin.net/js/resizecustomersitescroll.min.js" type="text/javascript"></script>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            // Close all other FAQs
+            for (let i = 1; i <= 5; i++) {
+                if (i !== id) {
+                    const otherAnswer = document.getElementById(`answer-${i}`);
+                    const otherIcon = document.getElementById(`icon-${i}`);
+                    if (otherAnswer && otherIcon) {
+                        otherAnswer.style.maxHeight = '0';
+                        otherIcon.textContent = '+';
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            }
+            
+            // Toggle current FAQ
+            if (answer.style.maxHeight === '0px' || !answer.style.maxHeight) {
+                answer.style.maxHeight = '200px';
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
