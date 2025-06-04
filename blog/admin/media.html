@@ -1,29 +1,4 @@
-.image-input-container {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-
-        .image-input-container input {
-            flex: 1;
-        }
-
-        .image-preview {
-            text-align: center;
-        }
-
-        .btn-sm {
-            padding: 0.5rem 0.75rem;
-            font-size: 0.875rem;
-        }
-
-        /* Image Picker Modal */
-        .image-picker-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-          <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -45,6 +20,117 @@
             line-height: 1.6;
         }
 
+        /* Header & Navigation */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: #ffffff;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+        }
+
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            color: #1a202c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -395,19 +481,29 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1><i class="fas fa-edit"></i> Post Editor</h1>
-        <div class="nav-buttons">
-            <a href="../index.html" class="nav-btn">
-                <i class="fas fa-home"></i> Blog ansehen
+        <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">CMS Dashboard</div>
+                </div>
             </a>
-            <a href="index.html" class="nav-btn">
-                <i class="fas fa-dashboard"></i> Dashboard
-            </a>
-            <a href="media.html" class="nav-btn">
-                <i class="fas fa-images"></i> Medien
-            </a>
-        </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">📊 Dashboard</a></li>
+                <li><a href="editor.html">✏️ Editor</a></li>
+                <li><a href="media.html" class="active">🖼️ Medien</a></li>
+                <li><a href="seo.html">🔍 SEO-Tools</a></li>
+                <li><a href="content-optimizer.html">🎯 Optimierer</a></li>
+                <li><a href="automation.html">🤖 Automatisierung</a></li>
+                <li><a href="performance.html">⚡ Performance</a></li>
+                <li><a href="analytics.html">📈 Analytics</a></li>
+                <li><a href="content-workflow.html">📝 Workflow</a></li>
+                <li><a href="../index.html" class="nav-cta">🌐 Blog ansehen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
     </header>
 
     <div class="container">
