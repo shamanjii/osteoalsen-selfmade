@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Blog CMS</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -13,60 +19,183 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8fafc;
-            color: #334155;
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
+            color: #2d3748;
+            background-color: #ffffff;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            font-size: 1.1rem;
         }
 
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        /* Typography System */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0;
         }
 
-        .header h1 {
-            font-size: 1.5rem;
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+        }
+
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 2.8rem);
             font-weight: 600;
+            letter-spacing: -0.025em;
         }
 
-        .nav-buttons {
+        h3 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h4 {
+            font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            letter-spacing: -0.015em;
+        }
+
+        p {
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.015em;
+            font-size: 1.1rem;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
             display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .nav-btn {
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 0.5rem;
         }
 
-        .nav-btn:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-1px);
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
         }
 
-        .nav-btn.primary {
-            background: rgba(255,255,255,0.9);
-            color: #667eea;
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
         }
 
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: #ffffff;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+        }
+
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            color: #1a202c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 2rem;
         }
 
+        /* Main Content */
+        .main-content {
+            margin-top: 90px;
+            padding: 40px 0;
+            min-height: calc(100vh - 130px);
+        }
+
+        /* Dashboard Specific Styles */
         .dashboard-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -80,6 +209,12 @@
             padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
         .dashboard-card h2 {
@@ -132,7 +267,7 @@
             padding: 1rem 1.5rem;
             border-bottom: 1px solid #e2e8f0;
             display: flex;
-            justify-content: between;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -363,36 +498,6 @@
             cursor: not-allowed;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            .dashboard-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .post-item {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-            }
-
-            .post-actions {
-                align-self: flex-end;
-            }
-
-            .search-bar {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .search-input {
-                width: 100%;
-            }
-        }
-
         .toast {
             position: fixed;
             top: 20px;
@@ -417,101 +522,175 @@
         .toast.error {
             background: #ef4444;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .post-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .post-actions {
+                align-self: flex-end;
+            }
+            
+            .search-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-input {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
-        <div class="nav-buttons">
-            <a href="../index.html" class="nav-btn">
-                <i class="fas fa-home"></i> Blog ansehen
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">CMS Dashboard</div>
+                </div>
             </a>
-            <a href="editor.html" class="nav-btn primary">
-                <i class="fas fa-plus"></i> Neuer Artikel
-            </a>
-            <a href="media.html" class="nav-btn">
-                <i class="fas fa-images"></i> Medien
-            </a>
-            <a href="seo.html" class="nav-btn">
-                <i class="fas fa-search"></i> SEO
-            </a>
-        </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">📊 Dashboard</a></li>
+                <li><a href="editor.html">✏️ Editor</a></li>
+                <li><a href="media.html">🖼️ Medien</a></li>
+                <li><a href="seo.html">🔍 SEO-Tools</a></li>
+                <li><a href="content-optimizer.html">🎯 Optimierer</a></li>
+                <li><a href="automation.html">🤖 Automatisierung</a></li>
+                <li><a href="performance.html">⚡ Performance</a></li>
+                <li><a href="analytics.html">📈 Analytics</a></li>
+                <li><a href="content-workflow.html">📝 Workflow</a></li>
+                <li><a href="../index.html" class="nav-cta">🌐 Blog ansehen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
     </header>
 
-    <div class="container">
-        <!-- Dashboard Statistiken -->
-        <div class="dashboard-grid">
-            <div class="dashboard-card">
-                <h2><i class="fas fa-chart-line"></i> Übersicht</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number" id="totalPosts">-</div>
-                        <div class="stat-label">Artikel gesamt</div>
+    <div class="main-content">
+        <div class="container">
+            <!-- Dashboard Statistiken -->
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h2><i class="fas fa-chart-line"></i> Übersicht</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalPosts">-</div>
+                            <div class="stat-label">Artikel gesamt</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="publishedPosts">-</div>
+                            <div class="stat-label">Veröffentlicht</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="draftPosts">-</div>
+                            <div class="stat-label">Entwürfe</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="scheduledPosts">-</div>
+                            <div class="stat-label">Geplant</div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="publishedPosts">-</div>
-                        <div class="stat-label">Veröffentlicht</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="draftPosts">-</div>
-                        <div class="stat-label">Entwürfe</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="scheduledPosts">-</div>
-                        <div class="stat-label">Geplant</div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h2><i class="fas fa-rocket"></i> Schnellaktionen</h2>
+                    <div class="quick-actions">
+                        <a href="editor.html" class="quick-action">
+                            <i class="fas fa-plus"></i>
+                            <div>Neuer Artikel</div>
+                        </a>
+                        <a href="media.html" class="quick-action">
+                            <i class="fas fa-upload"></i>
+                            <div>Medien hochladen</div>
+                        </a>
+                        <a href="seo.html" class="quick-action">
+                            <i class="fas fa-search"></i>
+                            <div>SEO optimieren</div>
+                        </a>
+                        <a href="#" class="quick-action" onclick="generateSitemap()">
+                            <i class="fas fa-sitemap"></i>
+                            <div>Sitemap erstellen</div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="dashboard-card">
-                <h2><i class="fas fa-rocket"></i> Schnellaktionen</h2>
-                <div class="quick-actions">
-                    <a href="editor.html" class="quick-action">
-                        <i class="fas fa-plus"></i>
-                        <div>Neuer Artikel</div>
-                    </a>
-                    <a href="media.html" class="quick-action">
-                        <i class="fas fa-upload"></i>
-                        <div>Medien hochladen</div>
-                    </a>
-                    <a href="seo.html" class="quick-action">
-                        <i class="fas fa-search"></i>
-                        <div>SEO optimieren</div>
-                    </a>
-                    <a href="#" class="quick-action" onclick="generateSitemap()">
-                        <i class="fas fa-sitemap"></i>
-                        <div>Sitemap erstellen</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Artikel Übersicht -->
-        <div class="recent-posts">
-            <div class="posts-table">
-                <div class="table-header">
-                    <h2><i class="fas fa-file-alt"></i> Artikel verwalten</h2>
-                    <div class="search-bar">
-                        <input type="text" class="search-input" id="searchInput" placeholder="Artikel suchen...">
-                        <select class="filter-select" id="statusFilter">
-                            <option value="all">Alle Status</option>
-                            <option value="published">Veröffentlicht</option>
-                            <option value="draft">Entwürfe</option>
-                            <option value="scheduled">Geplant</option>
-                        </select>
-                        <button class="nav-btn" onclick="loadPosts()">
-                            <i class="fas fa-sync"></i>
-                        </button>
+            <!-- Artikel Übersicht -->
+            <div class="recent-posts">
+                <div class="posts-table">
+                    <div class="table-header">
+                        <h2><i class="fas fa-file-alt"></i> Artikel verwalten</h2>
+                        <div class="search-bar">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Artikel suchen...">
+                            <select class="filter-select" id="statusFilter">
+                                <option value="all">Alle Status</option>
+                                <option value="published">Veröffentlicht</option>
+                                <option value="draft">Entwürfe</option>
+                                <option value="scheduled">Geplant</option>
+                            </select>
+                            <button class="nav-btn" onclick="loadPosts()" style="background: #667eea; color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">
+                                <i class="fas fa-sync"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="posts-list" id="postsList">
-                    <div class="loading">
-                        <i class="fas fa-spinner fa-spin"></i> Lade Artikel...
+                    <div class="posts-list" id="postsList">
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Lade Artikel...
+                        </div>
                     </div>
-                </div>
 
-                <div class="pagination" id="pagination" style="display: none;"></div>
+                    <div class="pagination" id="pagination" style="display: none;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -525,6 +704,13 @@
         const postsPerPage = 10;
         let totalPosts = 0;
         let allPosts = [];
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
 
         // Initialisierung
         document.addEventListener('DOMContentLoaded', function() {
@@ -604,7 +790,7 @@
                         <i class="fas fa-file-alt"></i>
                         <h3>Keine Artikel gefunden</h3>
                         <p>Erstellen Sie Ihren ersten Artikel!</p>
-                        <a href="editor.html" class="nav-btn primary" style="margin-top: 1rem;">
+                        <a href="editor.html" class="nav-btn primary" style="margin-top: 1rem; display: inline-block; background: #667eea; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;">
                             <i class="fas fa-plus"></i> Neuer Artikel
                         </a>
                     </div>
