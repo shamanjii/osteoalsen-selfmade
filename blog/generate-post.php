@@ -32,8 +32,8 @@ class PostGenerator {
     {meta_tags}
     {open_graph}
     
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/post.css">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -41,10 +41,10 @@ class PostGenerator {
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="/assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/css/style.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
