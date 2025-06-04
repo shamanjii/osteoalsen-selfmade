@@ -9,21 +9,25 @@
     <meta name="keywords" content="SEO Automatisierung, KI, Google Ranking, Content Optimierung">
     <meta name="author" content="Blog Autor">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://meinblog.de/posts/automatische-seo-optimierung.html">
+    <link rel="canonical" href="http://localhost:8888/blog/posts/automatische-seo-optimierung.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Die Macht der automatischen SEO-Optimierung">
     <meta property="og:description" content="Wie künstliche Intelligenz und Automatisierung die Suchmaschinenoptimierung revolutionieren und Zeit sparen.">
-    <meta property="og:url" content="https://meinblog.de/posts/automatische-seo-optimierung.html">
+    <meta property="og:url" content="http://localhost:8888/blog/posts/automatische-seo-optimierung.html">
     <meta property="og:site_name" content="Mein SEO Blog">
     <meta property="og:locale" content="de_DE">
-    <meta property="og:image" content="../uploads/images/seo-automation.jpg">
+    <meta property="og:image" content="/uploads/images/seo-automation.jpg">
     <meta property="og:image:alt" content="Die Macht der automatischen SEO-Optimierung">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Die Macht der automatischen SEO-Optimierung">
     <meta name="twitter:description" content="Wie künstliche Intelligenz und Automatisierung die Suchmaschinenoptimierung revolutionieren und Zeit sparen.">
-    <meta name="twitter:image" content="../uploads/images/seo-automation.jpg">
+    <meta name="twitter:image" content="/uploads/images/seo-automation.jpg">
     
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../assets/css/post.css">
     
     <!-- Schema.org JSON-LD -->
@@ -33,7 +37,7 @@
     "@type": "Article",
     "headline": "Die Macht der automatischen SEO-Optimierung",
     "description": "Wie k\u00fcnstliche Intelligenz und Automatisierung die Suchmaschinenoptimierung revolutionieren und Zeit sparen.",
-    "image": "../uploads/images/seo-automation.jpg",
+    "image": "/uploads/images/seo-automation.jpg",
     "author": {
         "@type": "Person",
         "name": "Blog Autor"
@@ -43,14 +47,14 @@
         "name": "Mein SEO Blog",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://meinblog.de/assets/logo.png"
+            "url": "http://localhost:8888/blog/assets/logo.png"
         }
     },
     "datePublished": "2025-06-03T14:30:00Z",
     "dateModified": "2025-06-03T14:30:00Z",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://meinblog.de/posts/automatische-seo-optimierung.html"
+        "@id": "http://localhost:8888/blog/posts/automatische-seo-optimierung.html"
     },
     "keywords": "SEO Automatisierung, KI, Google Ranking, Content Optimierung"
 }
@@ -60,37 +64,49 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/css/post.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <div class="container">
-                <a href="/" class="logo">Mein SEO Blog</a>
-                <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/admin">Admin</a></li>
-                    <li><a href="/about">Über</a></li>
-                    <li><a href="/contact">Kontakt</a></li>
-                </ul>
-            </div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="../../index.html#behandlungen">Behandlungen</a></li>
+                <li><a href="../../index.html#anwendungen">Anwendungen</a></li>
+                <li><a href="../../index.html#ueber-mich">Über mich</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html" class="active">Blog</a></li>
+                <li><a href="../../terminbuchung.html" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
         </nav>
     </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../index.html">Blog</a></li>
+                    <li><span aria-current="page">Die Macht der automatischen SEO-Optimierung</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
     <main class="main-content">
         <article class="post-article">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <ol>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><span aria-current="page">Die Macht der automatischen SEO-Optimierung</span></li>
-                    </ol>
-                </nav>
-                
                 <header class="post-header">
                     <h1 class="post-title">Die Macht der automatischen SEO-Optimierung</h1>
                     <div class="post-meta">
@@ -100,7 +116,7 @@
                         <span class="category-badge">SEO</span>
                     </div>
                     <div class="featured-image">
-            <img src="../uploads/images/seo-automation.jpg" 
+            <img src="/uploads/images/seo-automation.jpg" 
                  alt="Die Macht der automatischen SEO-Optimierung"
                  loading="lazy"
                  width="800" height="400">
@@ -108,7 +124,7 @@
                 </header>
                 
                 <div class="post-content">
-                    <h2 id="heading-1"><a href="/posts/willkommen-seo-blog.html" title="Willkommen auf meinem SEO-optimierten Blog">SEO-Automatisierung im Detail</a></h2><p>Die manuelle SEO-Optimierung jedes einzelnen Artikels kostet viel Zeit. Mit intelligenter Automatisierung können Sie diese Aufgaben dem System überlassen:</p><div class="table-of-contents">
+                    <h2 id="heading-1"><a href="/posts/willkommen-seo-<a href="/posts/willkommen-seo-blog.html" title="Willkommen auf meinem SEO-optimierten Blog">Blog</a>.html" title="Willkommen auf meinem SEO-optimierten Blog">SEO</a>-Automatisierung im Detail</h2><p>Die manuelle SEO-Optimierung jedes einzelnen Artikels kostet viel Zeit. Mit intelligenter Automatisierung können Sie diese Aufgaben dem System überlassen:</p><div class="table-of-contents">
             <h3>Inhaltsverzeichnis</h3>
             <ul><li class="toc-h2"><a href="#heading-1">SEO-Automatisierung im Detail</a></li><li class="toc-h3"><a href="#heading-2">Automatische Analysen</a></li><li class="toc-h3"><a href="#heading-3">Intelligente Vorschläge</a></li></ul></div><h3 id="heading-2">Automatische Analysen</h3><ul><li>Keyword-Dichte Berechnung</li><li>Lesbarkeits-Score</li><li>Content-Länge Bewertung</li><li>Überschriften-Struktur Check</li></ul><h3 id="heading-3">Intelligente Vorschläge</h3><p>Das System macht konkrete Verbesserungsvorschläge:</p><ul><li>Interne Verlinkungen zu relevanten Artikeln</li><li>Meta-Description Optimierung</li><li>Keyword-Platzierung Empfehlungen</li><li>Schema Markup Validierung</li></ul><p>Dadurch verbessert sich Ihr <a href="/posts/automatische-seo-optimierung.html" title="Die Macht der automatischen SEO-Optimierung">Google Ranking</a> automatisch, während Sie sich auf hochwertigen Content konzentrieren können.</p>
                 </div>
@@ -121,9 +137,9 @@
                     <div class="post-sharing">
                         <h3>Artikel teilen:</h3>
                         <div class="sharing-buttons">
-                            <a href="https://twitter.com/intent/tweet?text=Die Macht der automatischen SEO-Optimierung&url=https://meinblog.de/posts/automatische-seo-optimierung.html" target="_blank" class="share-twitter">Twitter</a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://meinblog.de/posts/automatische-seo-optimierung.html" target="_blank" class="share-facebook">Facebook</a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://meinblog.de/posts/automatische-seo-optimierung.html" target="_blank" class="share-linkedin">LinkedIn</a>
+                            <a href="https://twitter.com/intent/tweet?text=Die Macht der automatischen SEO-Optimierung&url=http://localhost:8888/blog/posts/automatische-seo-optimierung.html" target="_blank" class="share-twitter">🐦 Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8888/blog/posts/automatische-seo-optimierung.html" target="_blank" class="share-facebook">📘 Facebook</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://localhost:8888/blog/posts/automatische-seo-optimierung.html" target="_blank" class="share-linkedin">💼 LinkedIn</a>
                         </div>
                     </div>
                     
@@ -131,7 +147,7 @@
             <h3>Ähnliche Artikel</h3>
             <div class="related-grid"><article class="related-post">
                 <a href="/posts/willkommen-seo-blog.html">
-                    <img src="../uploads/images/seo-blog-header.jpg" alt="Willkommen auf meinem SEO-optimierten Blog" loading="lazy">
+                    <img src="/uploads/images/seo-blog-header.jpg" alt="Willkommen auf meinem SEO-optimierten Blog" loading="lazy">
                     <h4>Willkommen auf meinem SEO-optimierten Blog</h4>
                     <p>Erfahren Sie, wie dieser Blog automatisch für Suchmaschinen optimiert wird und welche Technologien zum Einsatz kommen.</p>
                 </a>
@@ -141,12 +157,12 @@
         </article>
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="container">
             <p>&copy; 2025 Mein SEO Blog. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
-                <a href="/impressum">Impressum</a>
-                <a href="/datenschutz">Datenschutz</a>
+                <a href="../../legal/impressum.html">Impressum</a>
+                <a href="../../legal/datenschutz.html">Datenschutz</a>
             </nav>
         </div>
     </footer>
@@ -156,7 +172,16 @@
     
     <!-- JSON-LD for Breadcrumbs -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://meinblog.de"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://meinblog.de/blog"},{"@type":"ListItem","position":3,"name":"Die Macht der automatischen SEO-Optimierung","item":"https://meinblog.de/posts/automatische-seo-optimierung.html"}]}
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"http://localhost:8888/blog"},{"@type":"ListItem","position":2,"name":"Blog","item":"http://localhost:8888/blog/blog"},{"@type":"ListItem","position":3,"name":"Die Macht der automatischen SEO-Optimierung","item":"http://localhost:8888/blog/posts/automatische-seo-optimierung.html"}]}
+    </script>
+
+    <script>
+        // Mobile Menu Toggle - Identisch mit index.html
+        document.getElementById("mobileMenuToggle").addEventListener("click", function() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+            this.textContent = navMenu.classList.contains("active") ? "✕" : "☰";
+        });
     </script>
 </body>
 </html>

@@ -623,19 +623,19 @@
                     <h2><i class="fas fa-chart-line"></i> Übersicht</h2>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number" id="totalPosts">-</div>
+                            <div class="stat-number" id="totalPosts">0</div>
                             <div class="stat-label">Artikel gesamt</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" id="publishedPosts">-</div>
+                            <div class="stat-number" id="publishedPosts">0</div>
                             <div class="stat-label">Veröffentlicht</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" id="draftPosts">-</div>
+                            <div class="stat-number" id="draftPosts">0</div>
                             <div class="stat-label">Entwürfe</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" id="scheduledPosts">-</div>
+                            <div class="stat-number" id="scheduledPosts">0</div>
                             <div class="stat-label">Geplant</div>
                         </div>
                     </div>
@@ -736,11 +736,11 @@
 
         async function loadStats() {
             try {
-                const response = await fetch('../api/posts.php?action=list&limit=1000');
-                const result = await response.json();
-
-                if (result.success) {
-                    const posts = result.data.posts;
+                // Versuche zuerst JSON-Datei zu laden
+                const response = await fetch('../data/posts.json');
+                
+                if (response.ok) {
+                    const posts = await response.json();
                     
                     const stats = {
                         total: posts.length,
@@ -753,27 +753,71 @@
                     document.getElementById('publishedPosts').textContent = stats.published;
                     document.getElementById('draftPosts').textContent = stats.draft;
                     document.getElementById('scheduledPosts').textContent = stats.scheduled;
+                } else {
+                    // Fallback: API verwenden falls JSON nicht verfügbar
+                    const apiResponse = await fetch('../api/posts.php?action=list&limit=1000');
+                    const result = await apiResponse.json();
+
+                    if (result.success) {
+                        const posts = result.data.posts;
+                        
+                        const stats = {
+                            total: posts.length,
+                            published: posts.filter(p => p.status === 'published').length,
+                            draft: posts.filter(p => p.status === 'draft').length,
+                            scheduled: posts.filter(p => p.status === 'scheduled').length
+                        };
+
+                        document.getElementById('totalPosts').textContent = stats.total;
+                        document.getElementById('publishedPosts').textContent = stats.published;
+                        document.getElementById('draftPosts').textContent = stats.draft;
+                        document.getElementById('scheduledPosts').textContent = stats.scheduled;
+                    }
                 }
             } catch (error) {
                 console.error('Fehler beim Laden der Statistiken:', error);
+                // Zeige Standard-Werte
+                document.getElementById('totalPosts').textContent = '0';
+                document.getElementById('publishedPosts').textContent = '0';
+                document.getElementById('draftPosts').textContent = '0';
+                document.getElementById('scheduledPosts').textContent = '0';
             }
         }
 
         async function loadPosts(page = 1) {
             try {
-                const offset = (page - 1) * postsPerPage;
-                const response = await fetch(`../api/posts.php?action=list&limit=${postsPerPage}&offset=${offset}`);
-                const result = await response.json();
-
-                if (result.success) {
-                    allPosts = result.data.posts;
-                    totalPosts = result.data.total;
+                // Versuche zuerst JSON-Datei zu laden
+                const response = await fetch('../data/posts.json');
+                
+                if (response.ok) {
+                    const posts = await response.json();
+                    
+                    // Paginierung simulieren
+                    const offset = (page - 1) * postsPerPage;
+                    const paginatedPosts = posts.slice(offset, offset + postsPerPage);
+                    
+                    allPosts = paginatedPosts;
+                    totalPosts = posts.length;
                     currentPage = page;
                     
                     displayPosts(allPosts);
                     updatePagination();
                 } else {
-                    showError('Fehler beim Laden der Artikel: ' + result.error);
+                    // Fallback: API verwenden
+                    const offset = (page - 1) * postsPerPage;
+                    const apiResponse = await fetch(`../api/posts.php?action=list&limit=${postsPerPage}&offset=${offset}`);
+                    const result = await apiResponse.json();
+
+                    if (result.success) {
+                        allPosts = result.data.posts;
+                        totalPosts = result.data.total;
+                        currentPage = page;
+                        
+                        displayPosts(allPosts);
+                        updatePagination();
+                    } else {
+                        showError('Fehler beim Laden der Artikel: ' + result.error);
+                    }
                 }
             } catch (error) {
                 console.error('Fehler beim Laden der Posts:', error);
@@ -805,7 +849,7 @@
                             ${escapeHtml(post.title)}
                         </a>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated_at)}</span>
+                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated_at || post.created_at)}</span>
                             <span><i class="fas fa-folder"></i> ${escapeHtml(post.category || 'Keine Kategorie')}</span>
                             <span class="post-status status-${post.status}">
                                 <i class="fas fa-${getStatusIcon(post.status)}"></i>
@@ -876,24 +920,48 @@
             const status = document.getElementById('statusFilter').value;
 
             try {
-                let url = `../api/posts.php?action=list&limit=1000`;
+                // Versuche zuerst JSON-Datei zu laden
+                const response = await fetch('../data/posts.json');
                 
-                if (status !== 'all') {
-                    url += `&status=${status}`;
-                }
-                
-                if (search) {
-                    url += `&search=${encodeURIComponent(search)}`;
-                }
-
-                const response = await fetch(url);
-                const result = await response.json();
-
-                if (result.success) {
-                    displayPosts(result.data.posts);
+                if (response.ok) {
+                    let posts = await response.json();
+                    
+                    // Filter anwenden
+                    if (status !== 'all') {
+                        posts = posts.filter(p => p.status === status);
+                    }
+                    
+                    if (search) {
+                        posts = posts.filter(p => 
+                            p.title.toLowerCase().includes(search.toLowerCase()) ||
+                            (p.excerpt && p.excerpt.toLowerCase().includes(search.toLowerCase())) ||
+                            (p.content && p.content.toLowerCase().includes(search.toLowerCase()))
+                        );
+                    }
+                    
+                    displayPosts(posts);
                     document.getElementById('pagination').style.display = 'none';
                 } else {
-                    showError('Fehler beim Filtern: ' + result.error);
+                    // Fallback: API verwenden
+                    let url = `../api/posts.php?action=list&limit=1000`;
+                    
+                    if (status !== 'all') {
+                        url += `&status=${status}`;
+                    }
+                    
+                    if (search) {
+                        url += `&search=${encodeURIComponent(search)}`;
+                    }
+
+                    const apiResponse = await fetch(url);
+                    const result = await apiResponse.json();
+
+                    if (result.success) {
+                        displayPosts(result.data.posts);
+                        document.getElementById('pagination').style.display = 'none';
+                    } else {
+                        showError('Fehler beim Filtern: ' + result.error);
+                    }
                 }
             } catch (error) {
                 console.error('Fehler beim Filtern:', error);
@@ -931,17 +999,58 @@
         async function generateSitemap() {
             try {
                 const response = await fetch('../generate-sitemap.php');
-                const result = await response.text();
                 
-                showToast('Sitemap erfolgreich generiert', 'success');
+                if (response.ok) {
+                    showToast('Sitemap erfolgreich generiert', 'success');
+                } else {
+                    showToast('Fehler beim Generieren der Sitemap', 'error');
+                }
             } catch (error) {
                 console.error('Fehler beim Generieren der Sitemap:', error);
-                showError('Fehler beim Generieren der Sitemap');
+                showToast('Fehler beim Generieren der Sitemap', 'error');
             }
         }
 
+        // Blog/Index Integration prüfen
+        async function checkBlogIntegration() {
+            try {
+                // Teste ob Blog-Index erreichbar ist
+                const response = await fetch('../index.html');
+                if (response.ok) {
+                    console.log('✅ Blog Index ist erreichbar');
+                } else {
+                    console.warn('⚠️ Blog Index nicht erreichbar');
+                }
+
+                // Teste Posts-Ordner
+                const postsResponse = await fetch('../posts/');
+                if (postsResponse.ok) {
+                    console.log('✅ Posts-Ordner ist erreichbar');
+                } else {
+                    console.warn('⚠️ Posts-Ordner nicht erreichbar');
+                }
+
+                // Teste Data-Ordner
+                const dataResponse = await fetch('../data/posts.json');
+                if (dataResponse.ok) {
+                    console.log('✅ Posts-Daten sind verfügbar');
+                } else {
+                    console.warn('⚠️ Posts-Daten nicht verfügbar');
+                }
+
+            } catch (error) {
+                console.error('Fehler bei der Blog-Integration:', error);
+            }
+        }
+
+        // Blog Integration beim Laden prüfen
+        document.addEventListener('DOMContentLoaded', function() {
+            checkBlogIntegration();
+        });
+
         // Hilfsfunktionen
         function escapeHtml(unsafe) {
+            if (!unsafe) return '';
             return unsafe
                 .replace(/&/g, "&amp;")
                 .replace(/</g, "&lt;")
@@ -951,7 +1060,10 @@
         }
 
         function formatDate(dateString) {
+            if (!dateString) return 'Unbekannt';
             const date = new Date(dateString);
+            if (isNaN(date.getTime())) return 'Unbekannt';
+            
             return date.toLocaleDateString('de-DE', {
                 year: 'numeric',
                 month: 'short',
@@ -1005,6 +1117,13 @@
             const container = document.getElementById('postsList');
             container.innerHTML = `<div class="error">${message}</div>`;
         }
+
+        // Auto-refresh alle 30 Sekunden
+        setInterval(() => {
+            if (document.visibilityState === 'visible') {
+                loadStats();
+            }
+        }, 30000);
     </script>
 </body>
 </html>

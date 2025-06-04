@@ -32,7 +32,11 @@ class PostGenerator {
     {meta_tags}
     {open_graph}
     
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google Fonts - Epilogue & Instrument Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../assets/css/post.css">
     
     <!-- Schema.org JSON-LD -->
@@ -44,37 +48,49 @@ class PostGenerator {
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/css/post.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <div class="container">
-                <a href="/" class="logo">{site_name}</a>
-                <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/admin">Admin</a></li>
-                    <li><a href="/about">Über</a></li>
-                    <li><a href="/contact">Kontakt</a></li>
-                </ul>
-            </div>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="../../index.html#behandlungen">Behandlungen</a></li>
+                <li><a href="../../index.html#anwendungen">Anwendungen</a></li>
+                <li><a href="../../index.html#ueber-mich">Über mich</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html" class="active">Blog</a></li>
+                <li><a href="../../terminbuchung.html" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
         </nav>
     </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../index.html">Blog</a></li>
+                    <li><span aria-current="page">{title}</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
     <main class="main-content">
         <article class="post-article">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <ol>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><span aria-current="page">{title}</span></li>
-                    </ol>
-                </nav>
-                
                 <header class="post-header">
                     <h1 class="post-title">{title}</h1>
                     <div class="post-meta">
@@ -98,9 +114,9 @@ class PostGenerator {
                     <div class="post-sharing">
                         <h3>Artikel teilen:</h3>
                         <div class="sharing-buttons">
-                            <a href="https://twitter.com/intent/tweet?text={title}&url={current_url}" target="_blank" class="share-twitter">Twitter</a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={current_url}" target="_blank" class="share-facebook">Facebook</a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={current_url}" target="_blank" class="share-linkedin">LinkedIn</a>
+                            <a href="https://twitter.com/intent/tweet?text={title}&url={current_url}" target="_blank" class="share-twitter">🐦 Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={current_url}" target="_blank" class="share-facebook">📘 Facebook</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={current_url}" target="_blank" class="share-linkedin">💼 LinkedIn</a>
                         </div>
                     </div>
                     
@@ -110,12 +126,12 @@ class PostGenerator {
         </article>
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="container">
             <p>&copy; 2025 {site_name}. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
-                <a href="/impressum">Impressum</a>
-                <a href="/datenschutz">Datenschutz</a>
+                <a href="../../legal/impressum.html">Impressum</a>
+                <a href="../../legal/datenschutz.html">Datenschutz</a>
             </nav>
         </div>
     </footer>
@@ -126,6 +142,15 @@ class PostGenerator {
     <!-- JSON-LD for Breadcrumbs -->
     <script type="application/ld+json">
     {breadcrumb_schema}
+    </script>
+
+    <script>
+        // Mobile Menu Toggle - Identisch mit index.html
+        document.getElementById("mobileMenuToggle").addEventListener("click", function() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+            this.textContent = navMenu.classList.contains("active") ? "✕" : "☰";
+        });
     </script>
 </body>
 </html>';
