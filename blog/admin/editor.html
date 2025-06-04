@@ -1012,6 +1012,39 @@ if (result.success) {
         </div>
     </div>
 
+    <!-- Image Picker Modal -->
+    <div id="imagePickerModal" class="image-picker-modal">
+        <div class="image-picker-content">
+            <div class="image-picker-header">
+                <div class="image-picker-title">Medien auswählen</div>
+                <button type="button" class="image-picker-close" onclick="closeImagePicker()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="image-picker-toolbar">
+                <input type="text" id="imagePickerSearch" class="image-picker-search" placeholder="Suchen...">
+                <button type="button" class="btn btn-secondary" onclick="refreshImagePicker()">
+                    <i class="fas fa-sync-alt"></i> Aktualisieren
+                </button>
+                <button type="button" class="btn btn-primary" onclick="triggerImageUpload()">
+                    <i class="fas fa-upload"></i> Hochladen
+                </button>
+            </div>
+            <div class="image-picker-grid" id="imagePickerGrid">
+                <div class="image-picker-loading">Lade Bilder...</div>
+            </div>
+            <div class="image-picker-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeImagePicker()">
+                    <i class="fas fa-times"></i> Abbrechen
+                </button>
+                <button type="button" class="btn btn-primary" id="selectImageBtn" onclick="selectPickedImage()" disabled>
+                    <i class="fas fa-check"></i> Bild auswählen
+                </button>
+            </div>
+            <input type="file" id="imagePickerUpload" multiple style="display:none;">
+        </div>
+    </div>
+
     <script>
         // Globale Variablen
         let editor;
