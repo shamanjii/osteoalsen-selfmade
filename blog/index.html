@@ -853,49 +853,70 @@
             
             <!-- Blog Grid -->
             <div class="blog-grid" id="blogGrid">
-                <!-- Blog Post 1 -->
-                <article class="blog-card" data-category="wissen">
-                    <div class="blog-image">
-                        <div class="blog-image-placeholder">Bild einfügen</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">📅 3. Juni 2025</span>
-                            <span class="blog-category">Wissen</span>
-                        </div>
-                        <h3 class="blog-title">Willkommen auf meinem SEO-optimierten Blog</h3>
-                        <p class="blog-excerpt">
-                            Erfahren Sie, wie dieser Blog automatisch für Suchmaschinen optimiert wird und welche Technologien zum Einsatz kommen...
-                        </p>
-                        <div class="blog-footer">
-                            <a href="posts/willkommen-seo-blog.html" class="read-more">Weiterlesen →</a>
-                            <span class="reading-time">⏱️ 3 Min.</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Post 2 -->
-                <article class="blog-card" data-category="wissen">
-                    <div class="blog-image">
-                        <div class="blog-image-placeholder">Bild einfügen</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">📅 3. Juni 2025</span>
-                            <span class="blog-category">Wissen</span>
-                        </div>
-                        <h3 class="blog-title">Die Macht der automatischen SEO-Optimierung</h3>
-                        <p class="blog-excerpt">
-                            Wie künstliche Intelligenz und Automatisierung die Suchmaschinenoptimierung revolutionieren und Zeit sparen...
-                        </p>
-                        <div class="blog-footer">
-                            <a href="posts/automatische-seo-optimierung.html" class="read-more">Weiterlesen →</a>
-                            <span class="reading-time">⏱️ 4 Min.</span>
-                        </div>
-                    </div>
-                </article>
-
+                <!-- Blog Posts werden per JavaScript geladen -->
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', async () => {
+                    const grid = document.getElementById('blogGrid');
+                    const count = document.getElementById('resultsCount');
+
+                    function renderPosts(posts) {
+                        grid.innerHTML = '';
+                        posts.forEach(post => {
+                            const article = document.createElement('article');
+                            article.className = 'blog-card';
+                            article.dataset.category = (post.category || '').toLowerCase();
+
+                            const date = new Date(post.published || post.created_at || post.updated);
+                            const formattedDate = isNaN(date) ? '' : date.toLocaleDateString('de-DE', {
+                                day: 'numeric',
+                                month: 'long',
+                                year: 'numeric'
+                            });
+
+                            article.innerHTML = `
+                                <div class="blog-image">
+                                    <div class="blog-image-placeholder">Bild einfügen</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">📅 ${formattedDate}</span>
+                                        <span class="blog-category">${post.category || ''}</span>
+                                    </div>
+                                    <h3 class="blog-title">${post.title}</h3>
+                                    <p class="blog-excerpt">${post.excerpt}</p>
+                                    <div class="blog-footer">
+                                        <a href="posts/${post.slug}.html" class="read-more">Weiterlesen →</a>
+                                        <span class="reading-time">⏱️ ${post.reading_time || ''} Min.</span>
+                                    </div>
+                                </div>`;
+
+                            grid.appendChild(article);
+                        });
+
+                        if (count) {
+                            count.textContent = `${posts.length} Artikel gefunden`;
+                        }
+                    }
+
+                    try {
+                        const response = await fetch('data/posts.json');
+                        if (!response.ok) throw new Error('Network response was not ok');
+                        const posts = await response.json();
+                        if (Array.isArray(posts)) {
+                            renderPosts(posts);
+                        } else if (posts.data && Array.isArray(posts.data.posts)) {
+                            renderPosts(posts.data.posts);
+                        } else {
+                            throw new Error('Invalid data');
+                        }
+                    } catch (err) {
+                        console.error('Fehler beim Laden der Posts:', err);
+                        grid.innerHTML = '<div class="no-results"><h3>Beiträge konnten nicht geladen werden.</h3></div>';
+                        if (count) count.textContent = '';
+                    }
+                });
+            </script>
         </div>
     </main>
 
