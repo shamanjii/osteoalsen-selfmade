@@ -1,78 +1,168 @@
-/* Basic Blog Styles */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Global Styles from main site for consistency */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1.1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 { font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 700; letter-spacing: -0.035em; }
+h2 { font-size: clamp(2.2rem, 4vw, 2.8rem); font-weight: 600; letter-spacing: -0.025em; }
+h3 { font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 600; letter-spacing: -0.02em; }
+h4 { font-size: clamp(1.3rem, 2.5vw, 1.5rem); font-weight: 600; letter-spacing: -0.015em; }
+
+p {
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.015em;
+    font-size: 1.1rem;
+}
+
+/* Layout Containers */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.site-header {
-    background: #fff;
-    border-bottom: 1px solid #e1e1e1;
-    padding: 1rem 0;
+/* Header & Navigation */
+.site-header, header {
+    background: #1a202c;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.main-nav .container {
+.main-nav, nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #007acc;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    gap: 0.8rem;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.015em;
+}
+
+.logo-subtitle {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.01em;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-menu a {
-    color: #333;
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+    letter-spacing: 0.005em;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #ffffff;
+}
+
+.nav-cta {
+    background: #ffffff;
+    color: #1a202c !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 500;
+    transition: all 0.3s ease;
+    letter-spacing: -0.005em;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-menu a:hover {
-    color: #007acc;
+.nav-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(26, 32, 44, 0.1), transparent);
+    transition: left 0.4s ease;
 }
 
+.nav-cta:hover {
+    background: #f7fafc !important;
+    color: #1a202c !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-cta:hover::before {
+    left: 100%;
+}
+
+/* Main Content wrapper */
 .main-content {
-    min-height: 80vh;
+    margin-top: 70px;
     padding: 2rem 0;
+    min-height: calc(100vh - 130px);
 }
 
-.site-footer {
-    background: #f8f9fa;
-    padding: 2rem 0;
+/* Footer */
+.site-footer, footer {
+    background: #1a202c;
+    color: #ffffff;
+    padding: 40px 0;
     text-align: center;
-    border-top: 1px solid #e1e1e1;
-}
-
-.footer-nav {
-    margin-top: 1rem;
 }
 
 .footer-nav a {
-    color: #666;
-    text-decoration: none;
+    color: #ffffff;
     margin: 0 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
