@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /data/
+
+Sitemap: https://meinblog.de/sitemap.xml
+Sitemap: https://meinblog.de/sitemap-index.xml
+
+Crawl-delay: 1

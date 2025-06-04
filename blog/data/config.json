@@ -1,0 +1,52 @@
+{
+  "site_name": "Mein SEO Blog",
+  "site_url": "http://localhost:8888/blog",
+  "description": "Ein professioneller Blog mit automatischer SEO-Optimierung",
+  "author": "Blog Autor",
+  "language": "de",
+  "timezone": "Europe/Berlin",
+  "posts_per_page": 10,
+  
+  "seo": {
+    "meta_description_length": 160,
+    "title_length_max": 60,
+    "keyword_density_min": 0.5,
+    "keyword_density_max": 3.0,
+    "min_word_count": 300,
+    "enable_sitemap": true,
+    "enable_schema": true,
+    "enable_open_graph": true
+  },
+  
+  "social": {
+    "twitter": "@meinblog",
+    "facebook": "meinblog",
+    "instagram": "meinblog",
+    "linkedin": "meinblog"
+  },
+  
+  "analytics": {
+    "google_analytics_id": "",
+    "google_search_console": "",
+    "enable_tracking": true
+  },
+  
+  "media": {
+    "max_upload_size": "10MB",
+    "allowed_types": ["jpg", "jpeg", "png", "gif", "webp"],
+    "auto_webp_conversion": true,
+    "thumbnail_sizes": {
+      "small": "150x150",
+      "medium": "300x200",
+      "large": "800x600"
+    }
+  },
+  
+  "performance": {
+    "enable_lazy_loading": true,
+    "enable_cache": true,
+    "cache_duration": 3600,
+    "minify_html": true,
+    "compress_images": true
+  }
+}

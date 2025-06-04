@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard - Blog CMS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .nav a.active {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+            fill: #4299e1;
+        }
+
+        .wide-card {
+            grid-column: 1 / -1;
+        }
+
+        .half-card {
+            grid-column: span 2;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+            border-color: #4299e1;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            color: #718096;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-change {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .change-positive {
+            background: rgba(56, 161, 105, 0.1);
+            color: #2f855a;
+        }
+
+        .change-negative {
+            background: rgba(229, 62, 62, 0.1);
+            color: #c53030;
+        }
+
+        .change-neutral {
+            background: rgba(113, 128, 150, 0.1);
+            color: #4a5568;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-top: 1rem;
+        }
+
+        .chart-small {
+            height: 250px;
+        }
+
+        .time-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .time-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .time-btn:hover {
+            border-color: #4299e1;
+            background: rgba(66, 153, 225, 0.05);
+        }
+
+        .time-btn.active {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            border-color: transparent;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .data-table th {
+            background: rgba(66, 153, 225, 0.05);
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .data-table tr:hover {
+            background: rgba(66, 153, 225, 0.02);
+        }
+
+        .keyword-rank {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .rank-top10 {
+            background: rgba(56, 161, 105, 0.1);
+            color: #2f855a;
+        }
+
+        .rank-top50 {
+            background: rgba(66, 153, 225, 0.1);
+            color: #2c5282;
+        }
+
+        .rank-lower {
+            background: rgba(237, 137, 54, 0.1);
+            color: #dd6b20;
+        }
+
+        .page-performance {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .performance-metric {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(247, 250, 252, 0.8);
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .perf-excellent { border-color: #38a169; }
+        .perf-good { border-color: #3182ce; }
+        .perf-fair { border-color: #ed8936; }
+        .perf-poor { border-color: #e53e3e; }
+
+        .performance-score {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .performance-label {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+
+        .top-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .content-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .content-item:last-child {
+            border-bottom: none;
+        }
+
+        .content-title {
+            font-weight: 500;
+            color: #2d3748;
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .content-metric {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .conversion-funnel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .funnel-stage {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .funnel-stage:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #718096;
+            font-size: 1.2rem;
+        }
+
+        .funnel-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .funnel-label {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+
+        .funnel-rate {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #4299e1;
+            margin-top: 0.25rem;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-success {
+            background: rgba(56, 161, 105, 0.1);
+            border: 1px solid rgba(56, 161, 105, 0.3);
+            color: #2f855a;
+        }
+
+        .alert-warning {
+            background: rgba(237, 137, 54, 0.1);
+            border: 1px solid rgba(237, 137, 54, 0.3);
+            color: #dd6b20;
+        }
+
+        .alert-info {
+            background: rgba(66, 153, 225, 0.1);
+            border: 1px solid rgba(66, 153, 225, 0.3);
+            color: #2c5282;
+        }
+
+        .heatmap-preview {
+            background: linear-gradient(45deg, 
+                rgba(56, 161, 105, 0.1) 0%, 
+                rgba(56, 161, 105, 0.3) 25%,
+                rgba(237, 137, 54, 0.3) 50%,
+                rgba(229, 62, 62, 0.3) 75%,
+                rgba(229, 62, 62, 0.1) 100%);
+            height: 200px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d3748;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #4299e1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .integration-status {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .integration-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 4px solid;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .integration-connected { border-color: #38a169; }
+        .integration-disconnected { border-color: #e53e3e; }
+        .integration-pending { border-color: #ed8936; }
+
+        .integration-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .icon-ga { background: #ea4335; }
+        .icon-gsc { background: #4285f4; }
+        .icon-gtm { background: #246fdb; }
+
+        .integration-info h4 {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #2d3748;
+        }
+
+        .integration-status-text {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+
+        .status-connected { color: #2f855a; }
+        .status-disconnected { color: #c53030; }
+        .status-pending { color: #dd6b20; }
+
+        @media (max-width: 1200px) {
+            .half-card {
+                grid-column: span 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .analytics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .conversion-funnel {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .funnel-stage:not(:last-child)::after {
+                content: '↓';
+                position: static;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Analytics Dashboard</h1>
+        <nav class="nav">
+            <a href="index.html">📊 Dashboard</a>
+            <a href="editor.html">✏️ Editor</a>
+            <a href="media.html">🖼️ Media</a>
+            <a href="seo.html">🔍 SEO-Tools</a>
+            <a href="content-optimizer.html">🎯 Optimierer</a>
+            <a href="analytics.html" class="active">📈 Analytics</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Integration Status -->
+        <div class="integration-status">
+            <div class="integration-card integration-connected">
+                <div class="integration-icon icon-ga">GA4</div>
+                <div class="integration-info">
+                    <h4>Google Analytics 4</h4>
+                    <div class="integration-status-text status-connected">✅ Verbunden</div>
+                </div>
+            </div>
+            <div class="integration-card integration-connected">
+                <div class="integration-icon icon-gsc">GSC</div>
+                <div class="integration-info">
+                    <h4>Search Console</h4>
+                    <div class="integration-status-text status-connected">✅ Verbunden</div>
+                </div>
+            </div>
+            <div class="integration-card integration-pending">
+                <div class="integration-icon icon-gtm">GTM</div>
+                <div class="integration-info">
+                    <h4>Tag Manager</h4>
+                    <div class="integration-status-text status-pending">⏳ Setup erforderlich</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zeitraum-Selektor -->
+        <div class="card">
+            <div class="time-selector">
+                <div class="time-btn active" onclick="changeTimeRange('7d')">7 Tage</div>
+                <div class="time-btn" onclick="changeTimeRange('30d')">30 Tage</div>
+                <div class="time-btn" onclick="changeTimeRange('90d')">90 Tage</div>
+                <div class="time-btn" onclick="changeTimeRange('12m')">12 Monate</div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid" id="key-metrics">
+            <div class="metric-card">
+                <div class="metric-value" id="total-users">24,567</div>
+                <div class="metric-label">Besucher</div>
+                <div class="metric-change change-positive">+12.4%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="page-views">89,234</div>
+                <div class="metric-label">Seitenaufrufe</div>
+                <div class="metric-change change-positive">+8.7%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="avg-session">3:42</div>
+                <div class="metric-label">Sitzungsdauer</div>
+                <div class="metric-change change-negative">-2.1%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="bounce-rate">32.4%</div>
+                <div class="metric-label">Absprungrate</div>
+                <div class="metric-change change-positive">-5.3%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="conversion-rate">2.8%</div>
+                <div class="metric-label">Conversion Rate</div>
+                <div class="metric-change change-positive">+0.4%</div>
+            </div>
+        </div>
+
+        <div class="analytics-grid">
+            <!-- Traffic Verlauf -->
+            <div class="card half-card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                    </svg>
+                    Traffic-Entwicklung
+                </h3>
+                <div class="chart-container">
+                    <canvas id="traffic-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Top Keywords -->
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    Top Keywords
+                </h3>
+                <div class="top-content" id="top-keywords">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        Lade Keyword-Daten...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Performance -->
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.65 6.35,20.04C5.96,20.43 5.35,20.43 4.96,20.04C3.68,18.76 2.78,17.2 2.35,15.47C2.12,14.58 2,13.65 2,12.72C2,7.95 5.91,4.04 10.69,4.04L12,3M12,8A5,5 0 0,1 17,13C17,13.04 17,13.08 17,13.12L19,12C19,12.32 19,12.66 19,13A7,7 0 0,1 12,20C10.75,20 9.55,19.71 8.47,19.2L9.77,17.5C10.5,17.8 11.2,18 12,18A5,5 0 0,0 17,13H12V8Z"/>
+                    </svg>
+                    Page Performance
+                </h3>
+                <div class="page-performance">
+                    <div class="performance-metric perf-excellent">
+                        <div class="performance-score" style="color: #38a169;">92</div>
+                        <div class="performance-label">Performance</div>
+                    </div>
+                    <div class="performance-metric perf-good">
+                        <div class="performance-score" style="color: #3182ce;">87</div>
+                        <div class="performance-label">SEO</div>
+                    </div>
+                    <div class="performance-metric perf-fair">
+                        <div class="performance-score" style="color: #ed8936;">76</div>
+                        <div class="performance-label">Accessibility</div>
+                    </div>
+                    <div class="performance-metric perf-good">
+                        <div class="performance-score" style="color: #3182ce;">84</div>
+                        <div class="performance-label">Best Practices</div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info" style="margin-top: 1rem;">
+                    <strong>Core Web Vitals:</strong> 2 von 3 Metriken bestanden. 
+                    <a href="#" onclick="showDetailedPerformance()" style="color: #2c5282;">Details anzeigen</a>
+                </div>
+            </div>
+
+            <!-- Top Content -->
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                    </svg>
+                    Beliebteste Inhalte
+                </h3>
+                <div class="top-content" id="top-content">
+                    <!-- Wird dynamisch geladen -->
+                </div>
+            </div>
+
+            <!-- Conversion Funnel -->
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M2,2V4H6.5L8,8H22L20,12H10L8.5,8H4V6H2V2M7,18A2,2 0 0,0 9,20A2,2 0 0,0 11,18A2,2 0 0,0 9,16A2,2 0 0,0 7,18M17,18A2,2 0 0,0 19,20A2,2 0 0,0 21,18A2,2 0 0,0 19,16A2,2 0 0,0 17,18Z"/>
+                    </svg>
+                    Conversion Funnel
+                </h3>
+                <div class="conversion-funnel">
+                    <div class="funnel-stage">
+                        <div class="funnel-number">24,567</div>
+                        <div class="funnel-label">Besucher</div>
+                    </div>
+                    <div class="funnel-stage">
+                        <div class="funnel-number">8,234</div>
+                        <div class="funnel-label">Engagement</div>
+                        <div class="funnel-rate">33.5%</div>
+                    </div>
+                    <div class="funnel-stage">
+                        <div class="funnel-number">1,456</div>
+                        <div class="funnel-label">Leads</div>
+                        <div class="funnel-rate">17.7%</div>
+                    </div>
+                    <div class="funnel-stage">
+                        <div class="funnel-number">687</div>
+                        <div class="funnel-label">Conversions</div>
+                        <div class="funnel-rate">47.2%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Console Data -->
+            <div class="card half-card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,7V13H12.5L16,10.5L17.5,12L12,17.5L6.5,12L8,10.5L11,13.5V7H11Z"/>
+                    </svg>
+                    Search Console Insights
+                </h3>
+                <div class="chart-container chart-small">
+                    <canvas id="search-console-chart"></canvas>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Durchschnittliche Position:</span>
+                        <strong style="color: #38a169;">12.4</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>CTR:</span>
+                        <strong style="color: #3182ce;">5.8%</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Impressions:</span>
+                        <strong style="color: #4299e1;">127,456</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heatmap Integration -->
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M17.66,11.2C17.43,10.9 17.15,10.64 16.89,10.38C16.22,9.78 15.46,9.35 14.82,8.72C13.33,7.26 13,4.85 13.95,3C13.78,3.04 13.6,3.08 13.43,3.12C11.55,3.69 10.75,5.4 10.75,7.45C10.75,9.84 11.31,10.74 12.46,12.3C13.07,13.1 14.05,14.08 14.56,15.26C15.21,16.78 15.21,18.54 14.56,20.06C14.27,20.67 13.88,21.25 13.43,21.76C15.31,21.2 16.11,19.5 16.11,17.45C16.11,15.06 15.55,14.16 14.4,12.6C13.79,11.8 12.81,10.82 12.3,9.64C11.65,8.12 11.65,6.36 12.3,4.84C12.59,4.23 12.98,3.65 13.43,3.14C11.55,3.7 10.75,5.4 10.75,7.45C10.75,9.84 11.31,10.74 12.46,12.3C13.07,13.1 14.05,14.08 14.56,15.26C15.21,16.78 15.21,18.54 14.56,20.06C14.05,21.24 13.07,22.22 12.46,23.02C11.31,24.58 10.75,25.48 10.75,27.87"/>
+                    </svg>
+                    Heatmap Integration
+                </h3>
+                <div class="heatmap-preview">
+                    🔥 Heatmap-Daten verfügbar
+                    <br><small>Klicken Sie hier für detaillierte Analyse</small>
+                </div>
+                <button class="btn btn-sm" onclick="openHeatmapAnalysis()" style="margin-top: 1rem; width: 100%;">
+                    Heatmap öffnen
+                </button>
+            </div>
+        </div>
+
+        <!-- Detaillierte Tabellen -->
+        <div class="card wide-card">
+            <h3>
+                <svg class="card-icon" viewBox="0 0 24 24">
+                    <path d="M3,3H21V5H3V3M3,7H21V9H3V7M3,11H21V13H3V11M3,15H21V17H3V15M3,19H21V21H3V19Z"/>
+                </svg>
+                Top Keywords Ranking
+            </h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Keyword</th>
+                        <th>Position</th>
+                        <th>Clicks</th>
+                        <th>Impressions</th>
+                        <th>CTR</th>
+                        <th>Trend</th>
+                    </tr>
+                </thead>
+                <tbody id="keywords-table">
+                    <!-- Wird dynamisch geladen -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Globale Variablen
+        let currentTimeRange = '7d';
+        let analyticsData = {};
+        let charts = {};
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeAnalytics();
+        });
+
+        // Analytics initialisieren
+        async function initializeAnalytics() {
+            await loadAnalyticsData();
+            initializeCharts();
+            updateKeyMetrics();
+            updateTopKeywords();
+            updateTopContent();
+            updateKeywordsTable();
+        }
+
+        // Analytics-Daten laden (simuliert)
+        async function loadAnalyticsData() {
+            // Simulierte API-Calls zu GA4 und Search Console
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            analyticsData = generateMockAnalyticsData();
+        }
+
+        // Mock-Daten generieren
+        function generateMockAnalyticsData() {
+            const now = new Date();
+            const days = getCurrentTimeRangeDays();
+            
+            // Traffic-Daten generieren
+            const trafficData = [];
+            const searchConsoleData = [];
+            
+            for (let i = days; i >= 0; i--) {
+                const date = new Date(now - i * 24 * 60 * 60 * 1000);
+                const baseUsers = 800 + Math.floor(Math.random() * 400);
+                const baseClicks = 120 + Math.floor(Math.random() * 80);
+                
+                trafficData.push({
+                    date: date.toISOString().split('T')[0],
+                    users: baseUsers + Math.floor(Math.sin(i / 7) * 200),
+                    pageViews: Math.floor((baseUsers + Math.floor(Math.sin(i / 7) * 200)) * (2.8 + Math.random() * 0.8)),
+                    sessions: Math.floor((baseUsers + Math.floor(Math.sin(i / 7) * 200)) * 0.85)
+                });
+                
+                searchConsoleData.push({
+                    date: date.toISOString().split('T')[0],
+                    clicks: baseClicks + Math.floor(Math.sin(i / 5) * 40),
+                    impressions: Math.floor((baseClicks + Math.floor(Math.sin(i / 5) * 40)) * (8 + Math.random() * 4)),
+                    ctr: (3 + Math.random() * 4).toFixed(2),
+                    position: (10 + Math.random() * 8).toFixed(1)
+                });
+            }
+            
+            // Keywords generieren
+            const keywords = [
+                { keyword: 'seo blog cms', position: 8, clicks: 234, impressions: 4521, ctr: 5.2, trend: 'up' },
+                { keyword: 'content management system', position: 12, clicks: 189, impressions: 3876, ctr: 4.9, trend: 'up' },
+                { keyword: 'wordpress alternative', position: 15, clicks: 145, impressions: 2987, ctr: 4.9, trend: 'down' },
+                { keyword: 'blog seo optimierung', position: 6, clicks: 298, impressions: 3421, ctr: 8.7, trend: 'up' },
+                { keyword: 'headless cms php', position: 23, clicks: 87, impressions: 1876, ctr: 4.6, trend: 'stable' },
+                { keyword: 'json blog system', position: 18, clicks: 123, impressions: 2456, ctr: 5.0, trend: 'up' },
+                { keyword: 'seo tools dashboard', position: 11, clicks: 167, impressions: 2987, ctr: 5.6, trend: 'up' },
+                { keyword: 'content optimizer', position: 9, clicks: 201, impressions: 3254, ctr: 6.2, trend: 'up' }
+            ];
+            
+            // Top Content generieren
+            const topContent = [
+                { title: 'SEO-Optimierung für Anfänger', views: 4521, conversions: 87 },
+                { title: 'Content Marketing Strategien 2024', views: 3876, conversions: 72 },
+                { title: 'WordPress vs. Headless CMS', views: 3421, conversions: 65 },
+                { title: 'Google Analytics 4 Setup Guide', views: 2987, conversions: 54 },
+                { title: 'Keyword Research Tools Vergleich', views: 2756, conversions: 48 },
+                { title: 'Page Speed Optimierung', views: 2456, conversions: 43 }
+            ];
+            
+            return {
+                traffic: trafficData,
+                searchConsole: searchConsoleData,
+                keywords,
+                topContent,
+                metrics: {
+                    totalUsers: 24567,
+                    pageViews: 89234,
+                    avgSession: '3:42',
+                    bounceRate: 32.4,
+                    conversionRate: 2.8
+                }
+            };
+        }
+
+        // Zeitraum-Tage berechnen
+        function getCurrentTimeRangeDays() {
+            switch(currentTimeRange) {
+                case '7d': return 7;
+                case '30d': return 30;
+                case '90d': return 90;
+                case '12m': return 365;
+                default: return 7;
+            }
+        }
+
+        // Charts initialisieren
+        function initializeCharts() {
+            initTrafficChart();
+            initSearchConsoleChart();
+        }
+
+        // Traffic-Chart
+        function initTrafficChart() {
+            const ctx = document.getElementById('traffic-chart').getContext('2d');
+            
+            charts.traffic = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: analyticsData.traffic.map(d => {
+                        const date = new Date(d.date);
+                        return date.toLocaleDateString('de-DE', { month: 'short', day: 'numeric' });
+                    }),
+                    datasets: [
+                        {
+                            label: 'Besucher',
+                            data: analyticsData.traffic.map(d => d.users),
+                            borderColor: '#4299e1',
+                            backgroundColor: 'rgba(66, 153, 225, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'Seitenaufrufe',
+                            data: analyticsData.traffic.map(d => d.pageViews),
+                            borderColor: '#38a169',
+                            backgroundColor: 'rgba(56, 161, 105, 0.1)',
+                            tension: 0.4,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Search Console Chart
+        function initSearchConsoleChart() {
+            const ctx = document.getElementById('search-console-chart').getContext('2d');
+            
+            charts.searchConsole = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: analyticsData.searchConsole.slice(-14).map(d => {
+                        const date = new Date(d.date);
+                        return date.toLocaleDateString('de-DE', { month: 'short', day: 'numeric' });
+                    }),
+                    datasets: [
+                        {
+                            label: 'Clicks',
+                            data: analyticsData.searchConsole.slice(-14).map(d => d.clicks),
+                            backgroundColor: 'rgba(66, 153, 225, 0.8)',
+                            borderColor: '#4299e1',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Impressions',
+                            data: analyticsData.searchConsole.slice(-14).map(d => Math.floor(d.impressions / 10)),
+                            backgroundColor: 'rgba(56, 161, 105, 0.8)',
+                            borderColor: '#38a169',
+                            borderWidth: 1,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            grid: {
+                                drawOnChartArea: false
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Key Metrics aktualisieren
+        function updateKeyMetrics() {
+            const metrics = analyticsData.metrics;
+            
+            document.getElementById('total-users').textContent = formatNumber(metrics.totalUsers);
+            document.getElementById('page-views').textContent = formatNumber(metrics.pageViews);
+            document.getElementById('avg-session').textContent = metrics.avgSession;
+            document.getElementById('bounce-rate').textContent = metrics.bounceRate + '%';
+            document.getElementById('conversion-rate').textContent = metrics.conversionRate + '%';
+            
+            // Animate numbers
+            animateNumbers();
+        }
+
+        // Top Keywords aktualisieren
+        function updateTopKeywords() {
+            const container = document.getElementById('top-keywords');
+            
+            const html = analyticsData.keywords.slice(0, 8).map(kw => `
+                <div class="content-item">
+                    <div class="content-title">${kw.keyword}</div>
+                    <div class="content-metric">#${kw.position}</div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = html;
+        }
+
+        // Top Content aktualisieren
+        function updateTopContent() {
+            const container = document.getElementById('top-content');
+            
+            const html = analyticsData.topContent.map(content => `
+                <div class="content-item">
+                    <div class="content-title">${content.title}</div>
+                    <div class="content-metric">${formatNumber(content.views)}</div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = html;
+        }
+
+        // Keywords-Tabelle aktualisieren
+        function updateKeywordsTable() {
+            const tbody = document.getElementById('keywords-table');
+            
+            const html = analyticsData.keywords.map(kw => `
+                <tr>
+                    <td>${kw.keyword}</td>
+                    <td><span class="keyword-rank ${getRankClass(kw.position)}">#${kw.position}</span></td>
+                    <td>${formatNumber(kw.clicks)}</td>
+                    <td>${formatNumber(kw.impressions)}</td>
+                    <td>${kw.ctr}%</td>
+                    <td>${getTrendIcon(kw.trend)}</td>
+                </tr>
+            `).join('');
+            
+            tbody.innerHTML = html;
+        }
+
+        // Zeitraum ändern
+        async function changeTimeRange(range) {
+            currentTimeRange = range;
+            
+            // UI aktualisieren
+            document.querySelectorAll('.time-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Daten neu laden
+            await loadAnalyticsData();
+            
+            // Charts aktualisieren
+            updateCharts();
+            updateKeyMetrics();
+            updateTopKeywords();
+            updateTopContent();
+            updateKeywordsTable();
+        }
+
+        // Charts aktualisieren
+        function updateCharts() {
+            // Traffic Chart
+            charts.traffic.data.labels = analyticsData.traffic.map(d => {
+                const date = new Date(d.date);
+                return date.toLocaleDateString('de-DE', { month: 'short', day: 'numeric' });
+            });
+            charts.traffic.data.datasets[0].data = analyticsData.traffic.map(d => d.users);
+            charts.traffic.data.datasets[1].data = analyticsData.traffic.map(d => d.pageViews);
+            charts.traffic.update();
+            
+            // Search Console Chart
+            const recentData = analyticsData.searchConsole.slice(-14);
+            charts.searchConsole.data.labels = recentData.map(d => {
+                const date = new Date(d.date);
+                return date.toLocaleDateString('de-DE', { month: 'short', day: 'numeric' });
+            });
+            charts.searchConsole.data.datasets[0].data = recentData.map(d => d.clicks);
+            charts.searchConsole.data.datasets[1].data = recentData.map(d => Math.floor(d.impressions / 10));
+            charts.searchConsole.update();
+        }
+
+        // Hilfsfunktionen
+        function formatNumber(num) {
+            return new Intl.NumberFormat('de-DE').format(num);
+        }
+
+        function getRankClass(position) {
+            if (position <= 10) return 'rank-top10';
+            if (position <= 50) return 'rank-top50';
+            return 'rank-lower';
+        }
+
+        function getTrendIcon(trend) {
+            switch(trend) {
+                case 'up': return '<span style="color: #38a169;">↗️ +2</span>';
+                case 'down': return '<span style="color: #e53e3e;">↘️ -3</span>';
+                default: return '<span style="color: #718096;">→ 0</span>';
+            }
+        }
+
+        function animateNumbers() {
+            // Einfache Zahl-Animation
+            const metrics = document.querySelectorAll('.metric-value');
+            metrics.forEach(metric => {
+                metric.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    metric.style.transform = 'scale(1)';
+                }, 200);
+            });
+        }
+
+        // Detaillierte Performance anzeigen
+        function showDetailedPerformance() {
+            alert('Detaillierte Core Web Vitals Analyse wird geöffnet...\n\n' +
+                  'LCP: 2.1s (Gut)\n' +
+                  'FID: 89ms (Gut)\n' +
+                  'CLS: 0.15 (Verbesserung erforderlich)\n\n' +
+                  'Empfehlung: Layout-Shifts durch feste Bildgrößen reduzieren.');
+        }
+
+        // Heatmap-Analyse öffnen
+        function openHeatmapAnalysis() {
+            alert('Heatmap-Integration wird geöffnet...\n\n' +
+                  '🔥 Hotspots erkannt:\n' +
+                  '• Header Navigation: 23% Interaktion\n' +
+                  '• CTA Buttons: 18% Klickrate\n' +
+                  '• Sidebar Links: 12% Engagement\n\n' +
+                  'Vollständige Analyse verfügbar in separatem Dashboard.');
+        }
+
+        // Real-time Updates simulieren
+        setInterval(() => {
+            // Simuliere Live-Daten Updates
+            const users = document.getElementById('total-users');
+            const currentValue = parseInt(users.textContent.replace(/[.,]/g, ''));
+            const newValue = currentValue + Math.floor(Math.random() * 5);
+            users.textContent = formatNumber(newValue);
+        }, 30000); // Alle 30 Sekunden
+
+        // Export-Funktionen
+        function exportAnalyticsReport() {
+            const report = generateAnalyticsReport();
+            downloadReport(report, 'analytics-report.txt');
+        }
+
+        function generateAnalyticsReport() {
+            const date = new Date().toLocaleDateString('de-DE');
+            
+            return `
+ANALYTICS DASHBOARD REPORT
+=========================
+
+Zeitraum: ${currentTimeRange}
+Erstellt: ${date}
+
+KEY METRICS
+-----------
+Besucher: ${analyticsData.metrics.totalUsers}
+Seitenaufrufe: ${analyticsData.metrics.pageViews}
+Durchschnittliche Sitzungsdauer: ${analyticsData.metrics.avgSession}
+Absprungrate: ${analyticsData.metrics.bounceRate}%
+Conversion Rate: ${analyticsData.metrics.conversionRate}%
+
+TOP KEYWORDS
+------------
+${analyticsData.keywords.map((kw, i) => `${i+1}. ${kw.keyword} (Position #${kw.position}, ${kw.clicks} Clicks)`).join('\n')}
+
+TOP CONTENT
+-----------
+${analyticsData.topContent.map((content, i) => `${i+1}. ${content.title} (${content.views} Views)`).join('\n')}
+
+PERFORMANCE SCORES
+------------------
+Performance: 92/100
+SEO: 87/100
+Accessibility: 76/100
+Best Practices: 84/100
+
+---
+Generiert von SEO Blog CMS - Analytics Dashboard
+            `.trim();
+        }
+
+        function downloadReport(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // GA4 Integration (für echte Implementierung)
+        async function initializeGA4() {
+            // Hier würde die echte GA4 API-Integration erfolgen
+            // gtag('config', 'GA_MEASUREMENT_ID');
+            console.log('GA4 Integration bereit für echte API-Keys');
+        }
+
+        // Search Console Integration (für echte Implementierung)  
+        async function initializeSearchConsole() {
+            // Hier würde die echte Search Console API-Integration erfolgen
+            // Google Search Console API v1
+            console.log('Search Console API bereit für echte Integration');
+        }
+    </script>
+</body>
+</html>

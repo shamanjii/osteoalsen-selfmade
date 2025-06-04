@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content-Optimierer - Blog CMS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .nav a.active {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .optimizer-layout {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+            fill: #4299e1;
+        }
+
+        .compact-card {
+            padding: 1.5rem;
+        }
+
+        .compact-card h4 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+        }
+
+        .score-panel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .score-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .score-item.excellent { border-color: #38a169; }
+        .score-item.good { border-color: #3182ce; }
+        .score-item.fair { border-color: #ed8936; }
+        .score-item.poor { border-color: #e53e3e; }
+
+        .score-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .score-label {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 0.25rem;
+        }
+
+        .score-status {
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .status-excellent { background: #c6f6d5; color: #2f855a; }
+        .status-good { background: #bee3f8; color: #2c5282; }
+        .status-fair { background: #fbb6ce; color: #b91c7c; }
+        .status-poor { background: #fed7d7; color: #c53030; }
+
+        .optimization-suggestions {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .suggestion-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: rgba(247, 250, 252, 0.8);
+            border-radius: 8px;
+            border-left: 4px solid;
+            transition: all 0.3s ease;
+        }
+
+        .suggestion-item:hover {
+            background: rgba(237, 242, 247, 0.9);
+        }
+
+        .suggestion-critical { border-color: #e53e3e; }
+        .suggestion-important { border-color: #ed8936; }
+        .suggestion-moderate { border-color: #3182ce; }
+        .suggestion-minor { border-color: #38a169; }
+
+        .suggestion-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.75rem;
+            margin-top: 0.1rem;
+            flex-shrink: 0;
+        }
+
+        .suggestion-content {
+            flex: 1;
+        }
+
+        .suggestion-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .suggestion-description {
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+
+        .suggestion-action {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+
+        .keyword-density-chart {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .keyword-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .keyword-bar:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .keyword-label {
+            min-width: 120px;
+            font-weight: 500;
+            color: #2d3748;
+        }
+
+        .keyword-progress {
+            flex: 1;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            margin: 0 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .keyword-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .density-optimal { background: linear-gradient(90deg, #38a169, #48bb78); }
+        .density-high { background: linear-gradient(90deg, #ed8936, #f6ad55); }
+        .density-low { background: linear-gradient(90deg, #3182ce, #4299e1); }
+        .density-excessive { background: linear-gradient(90deg, #e53e3e, #fc8181); }
+
+        .keyword-percentage {
+            min-width: 60px;
+            text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .related-post-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .related-post-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-color: #4299e1;
+        }
+
+        .related-post-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .related-post-meta {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-post-similarity {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            display: inline-block;
+        }
+
+        .content-gaps {
+            max-height: 350px;
+            overflow-y: auto;
+        }
+
+        .gap-item {
+            background: rgba(254, 251, 194, 0.3);
+            border: 1px solid #f6e05e;
+            border-radius: 6px;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .gap-topic {
+            font-weight: 600;
+            color: #744210;
+            margin-bottom: 0.25rem;
+        }
+
+        .gap-description {
+            font-size: 0.9rem;
+            color: #975a16;
+        }
+
+        .readability-details {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .readability-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .readability-metric:last-child {
+            margin-bottom: 0;
+        }
+
+        .metric-label {
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .metric-value {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .image-optimization {
+            border: 1px dashed #cbd5e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            background: rgba(247, 250, 252, 0.5);
+        }
+
+        .optimization-progress {
+            background: #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .progress-bar {
+            background: #f1f5f9;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4299e1, #3182ce);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-success {
+            background: rgba(56, 161, 105, 0.1);
+            border: 1px solid rgba(56, 161, 105, 0.3);
+            color: #2f855a;
+        }
+
+        .alert-warning {
+            background: rgba(237, 137, 54, 0.1);
+            border: 1px solid rgba(237, 137, 54, 0.3);
+            color: #dd6b20;
+        }
+
+        .alert-info {
+            background: rgba(66, 153, 225, 0.1);
+            border: 1px solid rgba(66, 153, 225, 0.3);
+            color: #2c5282;
+        }
+
+        @media (max-width: 1200px) {
+            .optimizer-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .score-panel {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .related-posts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Content-Optimierer</h1>
+        <nav class="nav">
+            <a href="index.html">📊 Dashboard</a>
+            <a href="editor.html">✏️ Editor</a>
+            <a href="media.html">🖼️ Media</a>
+            <a href="seo.html">🔍 SEO-Tools</a>
+            <a href="content-optimizer.html" class="active">🎯 Optimierer</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Post-Auswahl -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="form-group">
+                <label for="post-selector">Post für Optimierung auswählen:</label>
+                <select id="post-selector" class="form-control">
+                    <option value="">-- Post auswählen --</option>
+                </select>
+            </div>
+            <button class="btn" onclick="startOptimization()">Optimierung starten</button>
+        </div>
+
+        <div class="optimizer-layout" id="optimizer-content" style="display: none;">
+            <div class="main-content">
+                <!-- SEO-Score Dashboard -->
+                <div class="card">
+                    <h3>
+                        <svg class="card-icon" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        SEO-Score Übersicht
+                    </h3>
+                    
+                    <div class="score-panel" id="score-panel">
+                        <!-- Scores werden dynamisch geladen -->
+                    </div>
+                    
+                    <div class="alert alert-info" id="score-summary">
+                        Wählen Sie einen Post aus, um die Optimierung zu starten.
+                    </div>
+                </div>
+
+                <!-- Keyword-Density Checker -->
+                <div class="card">
+                    <h3>
+                        <svg class="card-icon" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                        Keyword-Density Analyse
+                    </h3>
+                    
+                    <div class="form-group">
+                        <label for="focus-keyword">Focus-Keyword:</label>
+                        <input type="text" id="focus-keyword" class="form-control" placeholder="Hauptkeyword eingeben...">
+                    </div>
+                    
+                    <button class="btn btn-sm" onclick="analyzeKeywordDensity()">Dichte analysieren</button>
+                    
+                    <div class="keyword-density-chart" id="keyword-chart" style="margin-top: 1.5rem;">
+                        <div style="text-align: center; color: #718096; padding: 2rem;">
+                            Focus-Keyword eingeben und analysieren
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optimierungs-Empfehlungen -->
+                <div class="card">
+                    <h3>
+                        <svg class="card-icon" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Optimierungs-Empfehlungen
+                    </h3>
+                    
+                    <div class="optimization-suggestions" id="optimization-suggestions">
+                        <div style="text-align: center; color: #718096; padding: 2rem;">
+                            Post auswählen um Empfehlungen zu erhalten
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!-- Readability Score -->
+                <div class="card compact-card">
+                    <h4>
+                        <svg class="card-icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                        Lesbarkeit
+                    </h4>
+                    
+                    <div class="readability-details" id="readability-details">
+                        <div style="text-align: center; color: #718096; padding: 1rem;">
+                            Keine Daten
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Alt-Text Suggestions -->
+                <div class="card compact-card">
+                    <h4>
+                        <svg class="card-icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z"/>
+                        </svg>
+                        Bild-Optimierung
+                    </h4>
+                    
+                    <div id="image-analysis">
+                        <div class="image-optimization">
+                            <p style="color: #718096; margin-bottom: 1rem;">Keine Bilder gefunden</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <div class="card compact-card">
+                    <h4>
+                        <svg class="card-icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+                        </svg>
+                        Verwandte Posts
+                    </h4>
+                    
+                    <div class="related-posts-grid" id="related-posts">
+                        <div style="text-align: center; color: #718096; padding: 1rem;">
+                            Keine verwandten Posts
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Gap Analysis -->
+                <div class="card compact-card">
+                    <h4>
+                        <svg class="card-icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V15H11V17M11,13H13V7H11V13Z"/>
+                        </svg>
+                        Content-Lücken
+                    </h4>
+                    
+                    <div class="content-gaps" id="content-gaps">
+                        <div style="text-align: center; color: #718096; padding: 1rem;">
+                            Keine Lücken erkannt
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Globale Variablen
+        let posts = [];
+        let currentPost = null;
+        let optimizationData = null;
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPosts();
+        });
+
+        // Posts laden
+        async function loadPosts() {
+            try {
+                const response = await fetch('../api/posts.php?action=list');
+                const data = await response.json();
+                posts = data.posts || [];
+                
+                const postSelector = document.getElementById('post-selector');
+                postSelector.innerHTML = '<option value="">-- Post auswählen --</option>';
+                
+                posts.forEach(post => {
+                    const option = document.createElement('option');
+                    option.value = post.id;
+                    option.textContent = post.title;
+                    postSelector.appendChild(option);
+                });
+                
+            } catch (error) {
+                console.error('Fehler beim Laden der Posts:', error);
+            }
+        }
+
+        // Optimierung starten
+        async function startOptimization() {
+            const postId = document.getElementById('post-selector').value;
+            if (!postId) {
+                alert('Bitte wählen Sie einen Post aus.');
+                return;
+            }
+            
+            currentPost = posts.find(p => p.id === postId);
+            if (!currentPost) return;
+            
+            // Interface anzeigen
+            document.getElementById('optimizer-content').style.display = 'grid';
+            
+            // Focus-Keyword setzen
+            document.getElementById('focus-keyword').value = currentPost.seo?.focus_keyword || '';
+            
+            // Optimierung durchführen
+            showLoadingState();
+            
+            setTimeout(() => {
+                performCompleteOptimization();
+            }, 1000);
+        }
+
+        // Loading-State anzeigen
+        function showLoadingState() {
+            document.getElementById('score-panel').innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                    <div style="width: 40px; height: 40px; border: 4px solid #e2e8f0; border-top: 4px solid #4299e1; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
+                    Analysiere Content...
+                </div>
+                <style>
+                    @keyframes spin {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                </style>
+            `;
+        }
+
+        // Vollständige Optimierung durchführen
+        function performCompleteOptimization() {
+            optimizationData = analyzePostCompletely(currentPost);
+            
+            displaySEOScores(optimizationData.scores);
+            displayOptimizationSuggestions(optimizationData.suggestions);
+            displayReadabilityDetails(optimizationData.readability);
+            displayImageAnalysis(optimizationData.images);
+            displayRelatedPosts(optimizationData.relatedPosts);
+            displayContentGaps(optimizationData.contentGaps);
+            
+            // Auto-Keyword-Analyse wenn Focus-Keyword gesetzt
+            if (currentPost.seo?.focus_keyword) {
+                analyzeKeywordDensity();
+            }
+        }
+
+        // Post komplett analysieren
+        function analyzePostCompletely(post) {
+            const content = post.content || '';
+            const title = post.title || '';
+            const metaDesc = post.meta_description || '';
+            
+            // SEO-Scores berechnen
+            const scores = calculateAllSEOScores(post);
+            
+            // Optimierungs-Empfehlungen
+            const suggestions = generateOptimizationSuggestions(post, scores);
+            
+            // Lesbarkeits-Analyse
+            const readability = performReadabilityAnalysis(content);
+            
+            // Bild-Analyse
+            const images = analyzeImages(content);
+            
+            // Verwandte Posts
+            const relatedPosts = findRelatedPosts(post);
+            
+            // Content-Lücken
+            const contentGaps = identifyContentGaps(post);
+            
+            return {
+                scores,
+                suggestions,
+                readability,
+                images,
+                relatedPosts,
+                contentGaps
+            };
+        }
+
+        // Alle SEO-Scores berechnen
+        function calculateAllSEOScores(post) {
+            const content = post.content || '';
+            const title = post.title || '';
+            const metaDesc = post.meta_description || '';
+            const wordCount = content.split(/\s+/).length;
+            
+            // Titel-Score
+            const titleScore = calculateTitleScore(title, post.seo?.focus_keyword);
+            
+            // Content-Score  
+            const contentScore = calculateContentScore(content, wordCount);
+            
+            // Meta-Score
+            const metaScore = calculateMetaScore(metaDesc, post.seo?.focus_keyword);
+            
+            // Bild-Score
+            const imageScore = calculateImageScore(content);
+            
+            // Link-Score
+            const linkScore = calculateLinkScore(content);
+            
+            // Gesamt-Score
+            const overallScore = Math.round((titleScore + contentScore + metaScore + imageScore + linkScore) / 5);
+            
+            return {
+                overall: overallScore,
+                title: titleScore,
+                content: contentScore,
+                meta: metaScore,
+                images: imageScore,
+                links: linkScore
+            };
+        }
+
+        // Titel-Score berechnen
+        function calculateTitleScore(title, focusKeyword) {
+            let score = 0;
+            
+            if (title.length >= 30 && title.length <= 60) score += 40;
+            else if (title.length >= 20 && title.length <= 70) score += 25;
+            else score += 10;
+            
+            if (focusKeyword && title.toLowerCase().includes(focusKeyword.toLowerCase())) {
+                score += 30;
+            }
+            
+            if (title.split(' ').length >= 4) score += 15;
+            if (/[!?]/.test(title)) score += 10;
+            if (!/^(der|die|das|ein|eine)\s/i.test(title)) score += 5;
+            
+            return Math.min(100, score);
+        }
+
+        // Content-Score berechnen
+        function calculateContentScore(content, wordCount) {
+            let score = 0;
+            
+            if (wordCount >= 300) score += 25;
+            if (wordCount >= 600) score += 15;
+            if (wordCount >= 1000) score += 10;
+            
+            const headings = (content.match(/<h[1-6][^>]*>/g) || []).length;
+            if (headings >= 2) score += 20;
+            
+            const paragraphs = content.split('</p>').length - 1;
+            if (paragraphs >= 3) score += 15;
+            
+            const lists = (content.match(/<(ul|ol)>/g) || []).length;
+            if (lists >= 1) score += 10;
+            
+            if (content.includes('<strong>') || content.includes('<b>')) score += 5;
+            
+            return Math.min(100, score);
+        }
+
+        // Meta-Score berechnen
+        function calculateMetaScore(metaDesc, focusKeyword) {
+            let score = 0;
+            
+            if (metaDesc.length >= 120 && metaDesc.length <= 160) score += 50;
+            else if (metaDesc.length >= 100 && metaDesc.length <= 180) score += 30;
+            else if (metaDesc.length > 0) score += 15;
+            
+            if (focusKeyword && metaDesc.toLowerCase().includes(focusKeyword.toLowerCase())) {
+                score += 30;
+            }
+            
+            if (/[.!?]$/.test(metaDesc)) score += 10;
+            if (metaDesc.split(' ').length >= 15) score += 10;
+            
+            return Math.min(100, score);
+        }
+
+        // Bild-Score berechnen
+        function calculateImageScore(content) {
+            const images = content.match(/<img[^>]*>/g) || [];
+            if (images.length === 0) return 50;
+            
+            let score = 0;
+            let altTextCount = 0;
+            let titleTextCount = 0;
+            
+            images.forEach(img => {
+                if (img.includes('alt=')) altTextCount++;
+                if (img.includes('title=')) titleTextCount++;
+            });
+            
+            const altRatio = altTextCount / images.length;
+            score += altRatio * 60;
+            
+            const titleRatio = titleTextCount / images.length;
+            score += titleRatio * 20;
+            
+            if (images.length <= 10) score += 20;
+            
+            return Math.min(100, score);
+        }
+
+        // Link-Score berechnen
+        function calculateLinkScore(content) {
+            const internalLinks = (content.match(/<a[^>]+href="[^"]*"[^>]*>/g) || [])
+                .filter(link => !link.includes('http'));
+            const externalLinks = (content.match(/<a[^>]+href="https?:\/\/[^"]*"[^>]*>/g) || []);
+            
+            let score = 0;
+            
+            if (internalLinks.length >= 2) score += 40;
+            else if (internalLinks.length >= 1) score += 25;
+            
+            if (externalLinks.length >= 1) score += 30;
+            if (externalLinks.length <= 5) score += 20;
+            
+            const totalLinks = internalLinks.length + externalLinks.length;
+            if (totalLinks >= 3 && totalLinks <= 8) score += 10;
+            
+            return Math.min(100, score);
+        }
+
+        // SEO-Scores anzeigen
+        function displaySEOScores(scores) {
+            const panel = document.getElementById('score-panel');
+            
+            panel.innerHTML = `
+                <div class="score-item ${getScoreClass(scores.overall)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.overall)}">${scores.overall}</div>
+                    <div class="score-label">Gesamt-Score</div>
+                    <div class="score-status ${getStatusClass(scores.overall)}">${getScoreLabel(scores.overall)}</div>
+                </div>
+                <div class="score-item ${getScoreClass(scores.title)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.title)}">${scores.title}</div>
+                    <div class="score-label">Titel</div>
+                    <div class="score-status ${getStatusClass(scores.title)}">${getScoreLabel(scores.title)}</div>
+                </div>
+                <div class="score-item ${getScoreClass(scores.content)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.content)}">${scores.content}</div>
+                    <div class="score-label">Content</div>
+                    <div class="score-status ${getStatusClass(scores.content)}">${getScoreLabel(scores.content)}</div>
+                </div>
+                <div class="score-item ${getScoreClass(scores.meta)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.meta)}">${scores.meta}</div>
+                    <div class="score-label">Meta</div>
+                    <div class="score-status ${getStatusClass(scores.meta)}">${getScoreLabel(scores.meta)}</div>
+                </div>
+                <div class="score-item ${getScoreClass(scores.images)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.images)}">${scores.images}</div>
+                    <div class="score-label">Bilder</div>
+                    <div class="score-status ${getStatusClass(scores.images)}">${getScoreLabel(scores.images)}</div>
+                </div>
+                <div class="score-item ${getScoreClass(scores.links)}">
+                    <div class="score-number" style="color: ${getScoreColor(scores.links)}">${scores.links}</div>
+                    <div class="score-label">Links</div>
+                    <div class="score-status ${getStatusClass(scores.links)}">${getScoreLabel(scores.links)}</div>
+                </div>
+            `;
+            
+            // Score-Zusammenfassung
+            const summary = document.getElementById('score-summary');
+            summary.className = `alert alert-${scores.overall >= 80 ? 'success' : scores.overall >= 60 ? 'warning' : 'info'}`;
+            summary.innerHTML = generateScoreSummary(scores);
+        }
+
+        // Score-Zusammenfassung generieren
+        function generateScoreSummary(scores) {
+            if (scores.overall >= 80) {
+                return '🎉 <strong>Ausgezeichnet!</strong> Ihr Content ist gut optimiert. Kleine Verbesserungen können noch mehr Wirkung erzielen.';
+            } else if (scores.overall >= 60) {
+                return '⚡ <strong>Gut!</strong> Ihr Content hat Potenzial. Folgen Sie den Empfehlungen für bessere Ergebnisse.';
+            } else {
+                return '🚀 <strong>Optimierungszeit!</strong> Mit den richtigen Anpassungen können Sie deutlich bessere Rankings erzielen.';
+            }
+        }
+
+        // Optimierungs-Empfehlungen generieren
+        function generateOptimizationSuggestions(post, scores) {
+            const suggestions = [];
+            const content = post.content || '';
+            const title = post.title || '';
+            const metaDesc = post.meta_description || '';
+            const focusKeyword = post.seo?.focus_keyword || '';
+            
+            // Titel-Empfehlungen
+            if (scores.title < 70) {
+                if (title.length < 30) {
+                    suggestions.push({
+                        priority: 'critical',
+                        category: 'Titel',
+                        title: 'Titel zu kurz',
+                        description: `Titel hat nur ${title.length} Zeichen. Empfohlen: 30-60 Zeichen.`,
+                        action: 'Titel erweitern für bessere Sichtbarkeit'
+                    });
+                }
+                
+                if (title.length > 60) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Titel',
+                        title: 'Titel zu lang',
+                        description: `Titel hat ${title.length} Zeichen. Optimal: 30-60 Zeichen.`,
+                        action: 'Titel kürzen für Google-Snippets'
+                    });
+                }
+                
+                if (focusKeyword && !title.toLowerCase().includes(focusKeyword.toLowerCase())) {
+                    suggestions.push({
+                        priority: 'critical',
+                        category: 'Titel',
+                        title: 'Focus-Keyword fehlt im Titel',
+                        description: `"${focusKeyword}" sollte im Titel erscheinen.`,
+                        action: 'Keyword natürlich in Titel integrieren'
+                    });
+                }
+            }
+            
+            // Content-Empfehlungen
+            if (scores.content < 70) {
+                const wordCount = content.split(/\s+/).length;
+                if (wordCount < 300) {
+                    suggestions.push({
+                        priority: 'critical',
+                        category: 'Content',
+                        title: 'Content zu kurz',
+                        description: `Nur ${wordCount} Wörter. Minimum: 300 Wörter für SEO.`,
+                        action: 'Content erweitern mit wertvollen Informationen'
+                    });
+                }
+                
+                const headings = (content.match(/<h[1-6][^>]*>/g) || []).length;
+                if (headings < 2) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Content',
+                        title: 'Zu wenig Überschriften',
+                        description: `Nur ${headings} Überschriften gefunden.`,
+                        action: 'H2/H3 Überschriften für bessere Struktur hinzufügen'
+                    });
+                }
+            }
+            
+            // Meta-Empfehlungen
+            if (scores.meta < 70) {
+                if (!metaDesc) {
+                    suggestions.push({
+                        priority: 'critical',
+                        category: 'Meta',
+                        title: 'Meta-Description fehlt',
+                        description: 'Keine Meta-Description vorhanden.',
+                        action: 'Überzeugende Meta-Description (120-160 Zeichen) erstellen'
+                    });
+                } else if (metaDesc.length < 120) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Meta',
+                        title: 'Meta-Description zu kurz',
+                        description: `Nur ${metaDesc.length} Zeichen. Optimal: 120-160.`,
+                        action: 'Meta-Description erweitern'
+                    });
+                }
+            }
+            
+            // Bild-Empfehlungen
+            if (scores.images < 70) {
+                const images = content.match(/<img[^>]*>/g) || [];
+                const altTexts = images.filter(img => img.includes('alt=')).length;
+                
+                if (images.length > 0 && altTexts < images.length) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Bilder',
+                        title: 'Alt-Text fehlt bei Bildern',
+                        description: `${images.length - altTexts} von ${images.length} Bildern ohne Alt-Text.`,
+                        action: 'Alt-Text für alle Bilder hinzufügen'
+                    });
+                }
+            }
+            
+            // Link-Empfehlungen
+            if (scores.links < 70) {
+                const internalLinks = (content.match(/<a[^>]+href="[^"]*"[^>]*>/g) || [])
+                    .filter(link => !link.includes('http')).length;
+                
+                if (internalLinks < 2) {
+                    suggestions.push({
+                        priority: 'moderate',
+                        category: 'Links',
+                        title: 'Zu wenig interne Links',
+                        description: `Nur ${internalLinks} interne Links gefunden.`,
+                        action: 'Mindestens 2-3 relevante interne Links hinzufügen'
+                    });
+                }
+            }
+            
+            // Keyword-Empfehlungen
+            if (focusKeyword) {
+                const keywordDensity = calculateKeywordDensity(content, focusKeyword);
+                if (keywordDensity < 0.5) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Keywords',
+                        title: 'Keyword-Dichte zu niedrig',
+                        description: `"${focusKeyword}" Dichte: ${keywordDensity.toFixed(2)}%. Empfohlen: 0.5-2.5%.`,
+                        action: 'Keyword natürlich öfter im Text verwenden'
+                    });
+                } else if (keywordDensity > 2.5) {
+                    suggestions.push({
+                        priority: 'important',
+                        category: 'Keywords',
+                        title: 'Keyword-Dichte zu hoch',
+                        description: `"${focusKeyword}" Dichte: ${keywordDensity.toFixed(2)}%. Risiko für Keyword-Stuffing.`,
+                        action: 'Keyword-Verwendung reduzieren'
+                    });
+                }
+            }
+            
+            return suggestions.sort((a, b) => {
+                const priorityOrder = { critical: 3, important: 2, moderate: 1, minor: 0 };
+                return priorityOrder[b.priority] - priorityOrder[a.priority];
+            });
+        }
+
+        // Optimierungs-Empfehlungen anzeigen
+        function displayOptimizationSuggestions(suggestions) {
+            const container = document.getElementById('optimization-suggestions');
+            
+            if (suggestions.length === 0) {
+                container.innerHTML = `
+                    <div class="alert alert-success">
+                        🎉 <strong>Großartig!</strong> Keine kritischen Optimierungen erforderlich.
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = suggestions.map(suggestion => `
+                <div class="suggestion-item suggestion-${suggestion.priority}">
+                    <svg class="suggestion-icon" viewBox="0 0 24 24" fill="${getPriorityColor(suggestion.priority)}">
+                        ${getPriorityIcon(suggestion.priority)}
+                    </svg>
+                    <div class="suggestion-content">
+                        <div class="suggestion-title">${suggestion.category}: ${suggestion.title}</div>
+                        <div class="suggestion-description">${suggestion.description}</div>
+                        <div class="suggestion-action">💡 ${suggestion.action}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Priority-Icons
+        function getPriorityIcon(priority) {
+            switch(priority) {
+                case 'critical': return '<path d="M12,2L13.09,8.26L22,9L17,14L18.18,22L12,19L5.82,22L7,14L2,9L10.91,8.26L12,2Z"/>';
+                case 'important': return '<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"/>';
+                case 'moderate': return '<path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>';
+                default: return '<path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>';
+            }
+        }
+
+        function getPriorityColor(priority) {
+            switch(priority) {
+                case 'critical': return '#e53e3e';
+                case 'important': return '#ed8936';
+                case 'moderate': return '#3182ce';
+                default: return '#38a169';
+            }
+        }
+
+        // Keyword-Density analysieren
+        function analyzeKeywordDensity() {
+            const focusKeyword = document.getElementById('focus-keyword').value.trim();
+            const chartContainer = document.getElementById('keyword-chart');
+            
+            if (!currentPost || !focusKeyword) {
+                chartContainer.innerHTML = '<div style="text-align: center; color: #718096; padding: 2rem;">Focus-Keyword eingeben</div>';
+                return;
+            }
+            
+            const content = currentPost.content || '';
+            const keywords = extractKeywordsWithDensity(content, focusKeyword);
+            
+            displayKeywordDensityChart(chartContainer, keywords, focusKeyword);
+        }
+
+        // Keywords mit Dichte extrahieren
+        function extractKeywordsWithDensity(content, focusKeyword) {
+            const text = content.toLowerCase().replace(/<[^>]*>/g, ' ').replace(/[^\w\s]/g, ' ');
+            const words = text.split(/\s+/).filter(word => word.length > 2);
+            const totalWords = words.length;
+            
+            const frequency = {};
+            words.forEach(word => {
+                frequency[word] = (frequency[word] || 0) + 1;
+            });
+            
+            // Top Keywords + Focus Keyword
+            const topKeywords = Object.entries(frequency)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 8)
+                .map(([word, count]) => ({
+                    word,
+                    count,
+                    density: ((count / totalWords) * 100).toFixed(2)
+                }));
+            
+            // Focus Keyword hinzufügen falls nicht in Top
+            const focusCount = frequency[focusKeyword.toLowerCase()] || 0;
+            const focusDensity = ((focusCount / totalWords) * 100).toFixed(2);
+            
+            if (!topKeywords.find(kw => kw.word === focusKeyword.toLowerCase())) {
+                topKeywords.unshift({
+                    word: focusKeyword.toLowerCase(),
+                    count: focusCount,
+                    density: focusDensity,
+                    isFocus: true
+                });
+            } else {
+                topKeywords.find(kw => kw.word === focusKeyword.toLowerCase()).isFocus = true;
+            }
+            
+            return topKeywords;
+        }
+
+        // Keyword-Density Chart anzeigen
+        function displayKeywordDensityChart(container, keywords, focusKeyword) {
+            container.innerHTML = keywords.map(kw => {
+                const densityClass = getDensityClass(parseFloat(kw.density), kw.isFocus);
+                const status = getDensityStatus(parseFloat(kw.density), kw.isFocus);
+                
+                return `
+                    <div class="keyword-bar">
+                        <div class="keyword-label">${kw.word}${kw.isFocus ? ' 🎯' : ''}</div>
+                        <div class="keyword-progress">
+                            <div class="keyword-fill ${densityClass}" style="width: ${Math.min(100, parseFloat(kw.density) * 20)}%"></div>
+                        </div>
+                        <div class="keyword-percentage" style="color: ${getDensityColor(parseFloat(kw.density), kw.isFocus)}">${kw.density}%</div>
+                    </div>
+                `;
+            }).join('') + `
+                <div style="margin-top: 1rem; padding: 1rem; background: #f8fafc; border-radius: 6px; font-size: 0.9rem;">
+                    <strong>Legende:</strong><br>
+                    🟢 Optimal (0.5-2.5%) | 🟡 Niedrig (<0.5%) | 🟠 Hoch (2.5-4%) | 🔴 Übermäßig (>4%)
+                </div>
+            `;
+        }
+
+        function getDensityClass(density, isFocus) {
+            if (!isFocus) return 'density-low';
+            if (density >= 0.5 && density <= 2.5) return 'density-optimal';
+            if (density > 2.5 && density <= 4) return 'density-high';
+            if (density > 4) return 'density-excessive';
+            return 'density-low';
+        }
+
+        function getDensityColor(density, isFocus) {
+            if (!isFocus) return '#4299e1';
+            if (density >= 0.5 && density <= 2.5) return '#38a169';
+            if (density > 2.5 && density <= 4) return '#ed8936';
+            if (density > 4) return '#e53e3e';
+            return '#3182ce';
+        }
+
+        // Keyword-Dichte berechnen
+        function calculateKeywordDensity(content, keyword) {
+            const text = content.toLowerCase().replace(/<[^>]*>/g, ' ');
+            const words = text.split(/\s+/).filter(word => word.length > 0);
+            const keywordCount = (text.match(new RegExp(keyword.toLowerCase(), 'g')) || []).length;
+            return words.length > 0 ? (keywordCount / words.length) * 100 : 0;
+        }
+
+        // Lesbarkeits-Analyse durchführen
+        function performReadabilityAnalysis(content) {
+            const text = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+            const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0);
+            const words = text.split(/\s+/).filter(w => w.length > 0);
+            const syllables = countSyllables(text);
+            
+            // Flesch Reading Ease (angepasst für Deutsch)
+            const avgWordsPerSentence = sentences.length > 0 ? words.length / sentences.length : 0;
+            const avgSyllablesPerWord = words.length > 0 ? syllables / words.length : 0;
+            
+            const fleschScore = Math.max(0, Math.min(100, 
+                180 - avgWordsPerSentence - (58.5 * avgSyllablesPerWord)
+            ));
+            
+            let level = 'Unbekannt';
+            if (fleschScore >= 80) level = 'Sehr einfach';
+            else if (fleschScore >= 70) level = 'Einfach';
+            else if (fleschScore >= 60) level = 'Normal';
+            else if (fleschScore >= 50) level = 'Mittelmäßig';
+            else if (fleschScore >= 30) level = 'Schwer';
+            else level = 'Sehr schwer';
+            
+            return {
+                score: Math.round(fleschScore),
+                level,
+                sentences: sentences.length,
+                words: words.length,
+                avgWordsPerSentence: avgWordsPerSentence.toFixed(1),
+                avgSyllablesPerWord: avgSyllablesPerWord.toFixed(1)
+            };
+        }
+
+        // Silben zählen
+        function countSyllables(text) {
+            const words = text.toLowerCase().match(/[a-zäöüß]+/g) || [];
+            return words.reduce((total, word) => {
+                const vowels = word.match(/[aeiouyäöü]/g) || [];
+                const syllableCount = Math.max(1, vowels.length);
+                return total + syllableCount;
+            }, 0);
+        }
+
+        // Lesbarkeits-Details anzeigen
+        function displayReadabilityDetails(readability) {
+            const container = document.getElementById('readability-details');
+            
+            const scoreColor = readability.score >= 70 ? '#38a169' : readability.score >= 50 ? '#ed8936' : '#e53e3e';
+            
+            container.innerHTML = `
+                <div style="text-align: center; margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; font-weight: bold; color: ${scoreColor};">${readability.score}</div>
+                    <div style="font-size: 0.9rem; color: #718096;">${readability.level}</div>
+                </div>
+                
+                <div class="readability-metric">
+                    <span class="metric-label">Wörter:</span>
+                    <span class="metric-value">${readability.words}</span>
+                </div>
+                <div class="readability-metric">
+                    <span class="metric-label">Sätze:</span>
+                    <span class="metric-value">${readability.sentences}</span>
+                </div>
+                <div class="readability-metric">
+                    <span class="metric-label">Wörter/Satz:</span>
+                    <span class="metric-value">${readability.avgWordsPerSentence}</span>
+                </div>
+                <div class="readability-metric">
+                    <span class="metric-label">Silben/Wort:</span>
+                    <span class="metric-value">${readability.avgSyllablesPerWord}</span>
+                </div>
+            `;
+        }
+
+        // Bild-Analyse durchführen
+        function analyzeImages(content) {
+            const images = content.match(/<img[^>]*>/g) || [];
+            
+            const analysis = images.map((img, index) => {
+                const altMatch = img.match(/alt="([^"]*)"/);
+                const srcMatch = img.match(/src="([^"]*)"/);
+                const titleMatch = img.match(/title="([^"]*)"/);
+                
+                return {
+                    index: index + 1,
+                    src: srcMatch ? srcMatch[1] : '',
+                    alt: altMatch ? altMatch[1] : '',
+                    title: titleMatch ? titleMatch[1] : '',
+                    hasAlt: !!altMatch,
+                    hasTitle: !!titleMatch
+                };
+            });
+            
+            return {
+                total: images.length,
+                withAlt: analysis.filter(img => img.hasAlt).length,
+                withTitle: analysis.filter(img => img.hasTitle).length,
+                images: analysis
+            };
+        }
+
+        // Bild-Analyse anzeigen
+        function displayImageAnalysis(imageData) {
+            const container = document.getElementById('image-analysis');
+            
+            if (imageData.total === 0) {
+                container.innerHTML = `
+                    <div class="image-optimization">
+                        <p style="color: #718096; margin-bottom: 1rem;">Keine Bilder gefunden</p>
+                        <small style="color: #a0aec0;">Bilder können die SEO und User Experience verbessern</small>
+                    </div>
+                `;
+                return;
+            }
+            
+            const altPercentage = (imageData.withAlt / imageData.total * 100).toFixed(0);
+            const scoreColor = altPercentage >= 100 ? '#38a169' : altPercentage >= 80 ? '#ed8936' : '#e53e3e';
+            
+            container.innerHTML = `
+                <div style="text-align: center; margin-bottom: 1rem;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: ${scoreColor};">${altPercentage}%</div>
+                    <div style="font-size: 0.8rem; color: #718096;">mit Alt-Text</div>
+                </div>
+                
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem;">Bilder gesamt:</span>
+                        <strong>${imageData.total}</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem;">Mit Alt-Text:</span>
+                        <strong style="color: #38a169;">${imageData.withAlt}</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="font-size: 0.9rem;">Ohne Alt-Text:</span>
+                        <strong style="color: #e53e3e;">${imageData.total - imageData.withAlt}</strong>
+                    </div>
+                </div>
+                
+                ${imageData.total - imageData.withAlt > 0 ? `
+                    <div class="alert alert-warning" style="margin: 0; padding: 0.75rem; font-size: 0.8rem;">
+                        <strong>Empfehlung:</strong> Alt-Text für alle Bilder hinzufügen
+                    </div>
+                ` : `
+                    <div class="alert alert-success" style="margin: 0; padding: 0.75rem; font-size: 0.8rem;">
+                        <strong>Perfekt!</strong> Alle Bilder haben Alt-Text
+                    </div>
+                `}
+            `;
+        }
+
+        // Verwandte Posts finden
+        function findRelatedPosts(currentPost) {
+            const currentKeywords = extractKeywords(currentPost.content || '').slice(0, 10);
+            const currentCategory = currentPost.category;
+            
+            return posts.filter(post => post.id !== currentPost.id)
+                .map(post => {
+                    const postKeywords = extractKeywords(post.content || '').slice(0, 10);
+                    const commonKeywords = currentKeywords.filter(kw1 => 
+                        postKeywords.some(kw2 => kw2.word === kw1.word)
+                    ).length;
+                    
+                    let similarity = commonKeywords * 10;
+                    if (post.category === currentCategory) similarity += 30;
+                    if (post.tags && currentPost.tags) {
+                        const commonTags = post.tags.filter(tag => currentPost.tags.includes(tag)).length;
+                        similarity += commonTags * 20;
+                    }
+                    
+                    return {
+                        post,
+                        similarity: Math.min(100, similarity),
+                        commonKeywords,
+                        sameCategory: post.category === currentCategory
+                    };
+                })
+                .filter(item => item.similarity > 20)
+                .sort((a, b) => b.similarity - a.similarity)
+                .slice(0, 6);
+        }
+
+        // Verwandte Posts anzeigen
+        function displayRelatedPosts(relatedPosts) {
+            const container = document.getElementById('related-posts');
+            
+            if (relatedPosts.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; color: #718096; padding: 1rem;">
+                        Keine stark verwandten Posts gefunden
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = relatedPosts.map(item => `
+                <div class="related-post-card" onclick="selectRelatedPost('${item.post.id}')">
+                    <div class="related-post-title">${item.post.title}</div>
+                    <div class="related-post-meta">
+                        ${item.post.category || 'Keine Kategorie'} • 
+                        ${item.commonKeywords} gemeinsame Keywords
+                    </div>
+                    <div class="related-post-similarity">${item.similarity}% Ähnlichkeit</div>
+                </div>
+            `).join('');
+        }
+
+        // Verwandten Post auswählen
+        function selectRelatedPost(postId) {
+            document.getElementById('post-selector').value = postId;
+            startOptimization();
+        }
+
+        // Content-Lücken identifizieren
+        function identifyContentGaps(post) {
+            const content = post.content || '';
+            const gaps = [];
+            
+            // Struktur-Lücken
+            const headings = (content.match(/<h[1-6][^>]*>/g) || []).length;
+            if (headings < 3) {
+                gaps.push({
+                    type: 'structure',
+                    topic: 'Überschriftenstruktur',
+                    description: 'Mehr H2/H3 Überschriften für bessere Gliederung hinzufügen'
+                });
+            }
+            
+            const lists = (content.match(/<(ul|ol)>/g) || []).length;
+            if (lists === 0) {
+                gaps.push({
+                    type: 'formatting',
+                    topic: 'Listen-Formatierung',
+                    description: 'Aufzählungen oder nummerierte Listen zur besseren Lesbarkeit'
+                });
+            }
+            
+            // Content-Lücken basierend auf Keyword-Analyse
+            if (post.seo?.focus_keyword) {
+                const keyword = post.seo.focus_keyword.toLowerCase();
+                const variations = generateKeywordVariations(keyword);
+                const missingVariations = variations.filter(variation => 
+                    !content.toLowerCase().includes(variation)
+                );
+                
+                if (missingVariations.length > 0) {
+                    gaps.push({
+                        type: 'keywords',
+                        topic: 'Keyword-Variationen',
+                        description: `Verwandte Begriffe nutzen: ${missingVariations.slice(0, 3).join(', ')}`
+                    });
+                }
+            }
+            
+            // FAQ-Potential
+            const questionWords = ['wie', 'was', 'wann', 'wo', 'warum', 'welche'];
+            const hasQuestions = questionWords.some(word => 
+                content.toLowerCase().includes(word) && content.includes('?')
+            );
+            
+            if (!hasQuestions) {
+                gaps.push({
+                    type: 'engagement',
+                    topic: 'FAQ-Sektion',
+                    description: 'Häufige Fragen und Antworten hinzufügen für mehr Nutzerinteraktion'
+                });
+            }
+            
+            // Call-to-Action
+            const cta = ['jetzt', 'hier', 'klicken', 'kontakt', 'mehr erfahren'];
+            const hasCTA = cta.some(word => content.toLowerCase().includes(word));
+            
+            if (!hasCTA) {
+                gaps.push({
+                    type: 'conversion',
+                    topic: 'Call-to-Action',
+                    description: 'Handlungsaufforderung für bessere Conversion-Rate hinzufügen'
+                });
+            }
+            
+            return gaps.slice(0, 5);
+        }
+
+        // Keyword-Variationen generieren
+        function generateKeywordVariations(keyword) {
+            const base = keyword.toLowerCase();
+            const variations = [
+                base + 'e',
+                base + 's',
+                base + 'n',
+                'beste ' + base,
+                base + ' tipps',
+                base + ' guide',
+                base + ' anleitung',
+                base + ' vergleich'
+            ];
+            
+            return variations;
+        }
+
+        // Content-Lücken anzeigen
+        function displayContentGaps(gaps) {
+            const container = document.getElementById('content-gaps');
+            
+            if (gaps.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; color: #718096; padding: 1rem;">
+                        <div style="color: #38a169; margin-bottom: 0.5rem;">✅</div>
+                        Keine größeren Content-Lücken erkannt
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = gaps.map(gap => `
+                <div class="gap-item">
+                    <div class="gap-topic">${gap.topic}</div>
+                    <div class="gap-description">${gap.description}</div>
+                </div>
+            `).join('');
+        }
+
+        // Keywords extrahieren (Hilfsfunktion)
+        function extractKeywords(text) {
+            const words = text.toLowerCase()
+                .replace(/<[^>]*>/g, ' ')
+                .replace(/[^\w\s]/g, '')
+                .split(/\s+/)
+                .filter(word => word.length > 3);
+            
+            const frequency = {};
+            words.forEach(word => {
+                frequency[word] = (frequency[word] || 0) + 1;
+            });
+            
+            return Object.entries(frequency)
+                .sort(([,a], [,b]) => b - a)
+                .map(([word, count]) => ({
+                    word,
+                    count,
+                    density: ((count / words.length) * 100).toFixed(2)
+                }));
+        }
+
+        // Hilfsfunktionen für Styling
+        function getScoreClass(score) {
+            if (score >= 80) return 'excellent';
+            if (score >= 60) return 'good';
+            if (score >= 40) return 'fair';
+            return 'poor';
+        }
+
+        function getScoreColor(score) {
+            if (score >= 80) return '#38a169';
+            if (score >= 60) return '#3182ce';
+            if (score >= 40) return '#ed8936';
+            return '#e53e3e';
+        }
+
+        function getScoreLabel(score) {
+            if (score >= 80) return 'Ausgezeichnet';
+            if (score >= 60) return 'Gut';
+            if (score >= 40) return 'Verbesserbar';
+            return 'Kritisch';
+        }
+
+        function getStatusClass(score) {
+            if (score >= 80) return 'status-excellent';
+            if (score >= 60) return 'status-good';
+            if (score >= 40) return 'status-fair';
+            return 'status-poor';
+        }
+
+        // Auto-Optimierung (experimentell)
+        function autoOptimize() {
+            if (!currentPost || !optimizationData) {
+                alert('Bitte führen Sie zuerst eine Analyse durch.');
+                return;
+            }
+            
+            const suggestions = optimizationData.suggestions.filter(s => 
+                s.priority === 'critical' || s.priority === 'important'
+            );
+            
+            if (suggestions.length === 0) {
+                alert('Keine automatischen Optimierungen verfügbar.');
+                return;
+            }
+            
+            const optimizationSummary = suggestions.map(s => `• ${s.category}: ${s.title}`).join('\n');
+            
+            if (confirm(`Folgende Optimierungen werden vorgeschlagen:\n\n${optimizationSummary}\n\nMöchten Sie diese automatisch anwenden?`)) {
+                // Hier würde die automatische Optimierung implementiert
+                alert('Auto-Optimierung wird in der nächsten Version verfügbar sein.');
+            }
+        }
+
+        // Export-Funktion für Optimierungsreport
+        function exportOptimizationReport() {
+            if (!currentPost || !optimizationData) {
+                alert('Bitte führen Sie zuerst eine Analyse durch.');
+                return;
+            }
+            
+            const report = generateOptimizationReport(currentPost, optimizationData);
+            
+            const blob = new Blob([report], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `seo-report-${currentPost.slug || 'post'}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Optimierungsreport generieren
+        function generateOptimizationReport(post, data) {
+            const date = new Date().toLocaleDateString('de-DE');
+            
+            return `
+SEO-OPTIMIERUNGSREPORT
+======================
+
+Post: ${post.title}
+Datum: ${date}
+URL: ${post.slug}
+
+SCORES
+------
+Gesamt-Score: ${data.scores.overall}/100
+- Titel: ${data.scores.title}/100
+- Content: ${data.scores.content}/100
+- Meta: ${data.scores.meta}/100
+- Bilder: ${data.scores.images}/100
+- Links: ${data.scores.links}/100
+
+LESBARKEIT
+----------
+Flesch-Score: ${data.readability.score}/100 (${data.readability.level})
+Wörter: ${data.readability.words}
+Sätze: ${data.readability.sentences}
+Durchschnittliche Wörter pro Satz: ${data.readability.avgWordsPerSentence}
+
+OPTIMIERUNGSEMPFEHLUNGEN
+-----------------------
+${data.suggestions.map((s, i) => `${i+1}. [${s.priority.toUpperCase()}] ${s.category}: ${s.title}
+   ${s.description}
+   Aktion: ${s.action}\n`).join('')}
+
+BILDER-ANALYSE
+--------------
+Gesamt: ${data.images.total}
+Mit Alt-Text: ${data.images.withAlt}
+Optimierungsgrad: ${data.images.total > 0 ? Math.round(data.images.withAlt/data.images.total*100) : 0}%
+
+CONTENT-LÜCKEN
+--------------
+${data.contentGaps.map((gap, i) => `${i+1}. ${gap.topic}: ${gap.description}`).join('\n')}
+
+VERWANDTE POSTS
+---------------
+${data.relatedPosts.map((rel, i) => `${i+1}. ${rel.post.title} (${rel.similarity}% Ähnlichkeit)`).join('\n')}
+
+---
+Generiert von SEO Blog CMS - Content-Optimierer
+            `.trim();
+        }
+    </script>
+</body>
+</html>

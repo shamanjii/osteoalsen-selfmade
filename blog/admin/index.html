@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Blog CMS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .nav-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.primary {
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .dashboard-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .dashboard-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1e293b;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f8fafc;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+
+        .recent-posts {
+            margin-top: 2rem;
+        }
+
+        .posts-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .table-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: between;
+            align-items: center;
+        }
+
+        .table-header h2 {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            width: 200px;
+        }
+
+        .filter-select {
+            padding: 0.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.875rem;
+        }
+
+        .posts-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .post-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .post-item:hover {
+            background: #f8fafc;
+        }
+
+        .post-item:last-child {
+            border-bottom: none;
+        }
+
+        .post-info {
+            flex: 1;
+        }
+
+        .post-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+            text-decoration: none;
+        }
+
+        .post-title:hover {
+            color: #667eea;
+        }
+
+        .post-meta {
+            font-size: 0.875rem;
+            color: #64748b;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .post-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .status-published {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-draft {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-scheduled {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .action-btn {
+            padding: 0.25rem 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .btn-edit {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .btn-edit:hover {
+            background: #e2e8f0;
+        }
+
+        .btn-delete {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+
+        .btn-delete:hover {
+            background: #fee2e2;
+        }
+
+        .btn-view {
+            background: #eff6ff;
+            color: #2563eb;
+        }
+
+        .btn-view:hover {
+            background: #dbeafe;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .quick-action {
+            background: white;
+            border: 2px dashed #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #64748b;
+        }
+
+        .quick-action:hover {
+            border-color: #667eea;
+            background: #f8fafc;
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .quick-action i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+        }
+
+        .error {
+            background: #fef2f2;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #dc2626;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #64748b;
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
+        .page-btn {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #e2e8f0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .page-btn:hover,
+        .page-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .post-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .post-actions {
+                align-self: flex-end;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-input {
+                width: 100%;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .toast.success {
+            background: #10b981;
+        }
+
+        .toast.error {
+            background: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+        <div class="nav-buttons">
+            <a href="../index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Blog ansehen
+            </a>
+            <a href="editor.html" class="nav-btn primary">
+                <i class="fas fa-plus"></i> Neuer Artikel
+            </a>
+            <a href="media.html" class="nav-btn">
+                <i class="fas fa-images"></i> Medien
+            </a>
+            <a href="seo.html" class="nav-btn">
+                <i class="fas fa-search"></i> SEO
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Dashboard Statistiken -->
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h2><i class="fas fa-chart-line"></i> Übersicht</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalPosts">-</div>
+                        <div class="stat-label">Artikel gesamt</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="publishedPosts">-</div>
+                        <div class="stat-label">Veröffentlicht</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="draftPosts">-</div>
+                        <div class="stat-label">Entwürfe</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="scheduledPosts">-</div>
+                        <div class="stat-label">Geplant</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h2><i class="fas fa-rocket"></i> Schnellaktionen</h2>
+                <div class="quick-actions">
+                    <a href="editor.html" class="quick-action">
+                        <i class="fas fa-plus"></i>
+                        <div>Neuer Artikel</div>
+                    </a>
+                    <a href="media.html" class="quick-action">
+                        <i class="fas fa-upload"></i>
+                        <div>Medien hochladen</div>
+                    </a>
+                    <a href="seo.html" class="quick-action">
+                        <i class="fas fa-search"></i>
+                        <div>SEO optimieren</div>
+                    </a>
+                    <a href="#" class="quick-action" onclick="generateSitemap()">
+                        <i class="fas fa-sitemap"></i>
+                        <div>Sitemap erstellen</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Artikel Übersicht -->
+        <div class="recent-posts">
+            <div class="posts-table">
+                <div class="table-header">
+                    <h2><i class="fas fa-file-alt"></i> Artikel verwalten</h2>
+                    <div class="search-bar">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Artikel suchen...">
+                        <select class="filter-select" id="statusFilter">
+                            <option value="all">Alle Status</option>
+                            <option value="published">Veröffentlicht</option>
+                            <option value="draft">Entwürfe</option>
+                            <option value="scheduled">Geplant</option>
+                        </select>
+                        <button class="nav-btn" onclick="loadPosts()">
+                            <i class="fas fa-sync"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="posts-list" id="postsList">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Lade Artikel...
+                    </div>
+                </div>
+
+                <div class="pagination" id="pagination" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast"></div>
+
+    <script>
+        // Globale Variablen
+        let currentPage = 1;
+        const postsPerPage = 10;
+        let totalPosts = 0;
+        let allPosts = [];
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStats();
+            loadPosts();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            // Such-Input
+            document.getElementById('searchInput').addEventListener('input', debounce(filterPosts, 300));
+            
+            // Status-Filter
+            document.getElementById('statusFilter').addEventListener('change', filterPosts);
+
+            // Enter-Taste für Suche
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    filterPosts();
+                }
+            });
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch('../api/posts.php?action=list&limit=1000');
+                const result = await response.json();
+
+                if (result.success) {
+                    const posts = result.data.posts;
+                    
+                    const stats = {
+                        total: posts.length,
+                        published: posts.filter(p => p.status === 'published').length,
+                        draft: posts.filter(p => p.status === 'draft').length,
+                        scheduled: posts.filter(p => p.status === 'scheduled').length
+                    };
+
+                    document.getElementById('totalPosts').textContent = stats.total;
+                    document.getElementById('publishedPosts').textContent = stats.published;
+                    document.getElementById('draftPosts').textContent = stats.draft;
+                    document.getElementById('scheduledPosts').textContent = stats.scheduled;
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Statistiken:', error);
+            }
+        }
+
+        async function loadPosts(page = 1) {
+            try {
+                const offset = (page - 1) * postsPerPage;
+                const response = await fetch(`../api/posts.php?action=list&limit=${postsPerPage}&offset=${offset}`);
+                const result = await response.json();
+
+                if (result.success) {
+                    allPosts = result.data.posts;
+                    totalPosts = result.data.total;
+                    currentPage = page;
+                    
+                    displayPosts(allPosts);
+                    updatePagination();
+                } else {
+                    showError('Fehler beim Laden der Artikel: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Posts:', error);
+                showError('Fehler beim Laden der Artikel');
+            }
+        }
+
+        function displayPosts(posts) {
+            const container = document.getElementById('postsList');
+            
+            if (posts.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Keine Artikel gefunden</h3>
+                        <p>Erstellen Sie Ihren ersten Artikel!</p>
+                        <a href="editor.html" class="nav-btn primary" style="margin-top: 1rem;">
+                            <i class="fas fa-plus"></i> Neuer Artikel
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = posts.map(post => `
+                <div class="post-item">
+                    <div class="post-info">
+                        <a href="editor.html?edit=${post.id}" class="post-title">
+                            ${escapeHtml(post.title)}
+                        </a>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated_at)}</span>
+                            <span><i class="fas fa-folder"></i> ${escapeHtml(post.category || 'Keine Kategorie')}</span>
+                            <span class="post-status status-${post.status}">
+                                <i class="fas fa-${getStatusIcon(post.status)}"></i>
+                                ${getStatusText(post.status)}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <a href="editor.html?edit=${post.id}" class="action-btn btn-edit" title="Bearbeiten">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a href="../posts/${post.slug}.html" target="_blank" class="action-btn btn-view" title="Ansehen">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <button onclick="deletePost('${post.id}')" class="action-btn btn-delete" title="Löschen">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updatePagination() {
+            const container = document.getElementById('pagination');
+            const totalPages = Math.ceil(totalPosts / postsPerPage);
+
+            if (totalPages <= 1) {
+                container.style.display = 'none';
+                return;
+            }
+
+            container.style.display = 'flex';
+            
+            let paginationHTML = '';
+
+            // Vorherige Seite
+            paginationHTML += `
+                <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="loadPosts(${currentPage - 1})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            `;
+
+            // Seitenzahlen
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    paginationHTML += `
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="loadPosts(${i})">
+                            ${i}
+                        </button>
+                    `;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    paginationHTML += '<span class="page-btn" disabled>...</span>';
+                }
+            }
+
+            // Nächste Seite
+            paginationHTML += `
+                <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="loadPosts(${currentPage + 1})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            `;
+
+            container.innerHTML = paginationHTML;
+        }
+
+        async function filterPosts() {
+            const search = document.getElementById('searchInput').value.trim();
+            const status = document.getElementById('statusFilter').value;
+
+            try {
+                let url = `../api/posts.php?action=list&limit=1000`;
+                
+                if (status !== 'all') {
+                    url += `&status=${status}`;
+                }
+                
+                if (search) {
+                    url += `&search=${encodeURIComponent(search)}`;
+                }
+
+                const response = await fetch(url);
+                const result = await response.json();
+
+                if (result.success) {
+                    displayPosts(result.data.posts);
+                    document.getElementById('pagination').style.display = 'none';
+                } else {
+                    showError('Fehler beim Filtern: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Fehler beim Filtern:', error);
+                showError('Fehler beim Filtern der Artikel');
+            }
+        }
+
+        async function deletePost(postId) {
+            if (!confirm('Sind Sie sicher, dass Sie diesen Artikel löschen möchten?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('../api/posts.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action: 'delete', id: postId })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showToast('Artikel erfolgreich gelöscht', 'success');
+                    loadPosts(currentPage);
+                    loadStats();
+                } else {
+                    showError('Fehler beim Löschen: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Fehler beim Löschen:', error);
+                showError('Fehler beim Löschen des Artikels');
+            }
+        }
+
+        async function generateSitemap() {
+            try {
+                const response = await fetch('../generate-sitemap.php');
+                const result = await response.text();
+                
+                showToast('Sitemap erfolgreich generiert', 'success');
+            } catch (error) {
+                console.error('Fehler beim Generieren der Sitemap:', error);
+                showError('Fehler beim Generieren der Sitemap');
+            }
+        }
+
+        // Hilfsfunktionen
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('de-DE', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function getStatusIcon(status) {
+            const icons = {
+                'published': 'check',
+                'draft': 'edit',
+                'scheduled': 'clock'
+            };
+            return icons[status] || 'edit';
+        }
+
+        function getStatusText(status) {
+            const texts = {
+                'published': 'Veröffentlicht',
+                'draft': 'Entwurf',
+                'scheduled': 'Geplant'
+            };
+            return texts[status] || 'Unbekannt';
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type} show`;
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        function showError(message) {
+            const container = document.getElementById('postsList');
+            container.innerHTML = `<div class="error">${message}</div>`;
+        }
+    </script>
+</body>
+</html>

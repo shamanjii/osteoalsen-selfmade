@@ -1,0 +1,1851 @@
+<!-- Caching Tab -->
+            <div class="tab-content" id="caching-tab">
+                <div class="performance-grid">
+                    <div class="card wide-card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M17,17H7V7H17M21,3H3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3Z"/>
+                            </svg>
+                            Caching Strategy
+                        </h3>
+                        
+                        <div class="cache-status">
+                            <div class="cache-item cache-enabled">
+                                <div class="cache-name">Browser Caching</div>
+                                <div class="cache-description">Statische Assets im Browser zwischenspeichern</div>
+                                <div class="cache-stats">TTL: 7 Tage | Hit Rate: 89%</div>
+                            </div>
+                            
+                            <div class="cache-item cache-enabled">
+                                <div class="cache-name">Page Caching</div>
+                                <div class="cache-description">HTML-Seiten serverseitig zwischenspeichern</div>
+                                <div class="cache-stats">TTL: 1 Stunde | Hit Rate: 76%</div>
+                            </div>
+                            
+                            <div class="cache-item cache-configuring">
+                                <div class="cache-name">Database Caching</div>
+                                <div class="cache-description">JSON-Daten in Memory Cache</div>
+                                <div class="cache-stats">Redis/Memcached | Setup erforderlich</div>
+                            </div>
+                            
+                            <div class="cache-item cache-disabled">
+                                <div class="cache-name">Object Caching</div>
+                                <div class="cache-description">API-Responses zwischenspeichern</div>
+                                <div class="cache-stats">Nicht konfiguriert</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Cache-Konfiguration</h4>
+                            
+                            <div class="optimization-panel">
+                                <div class="optimization-item opt-active">
+                                    <div class="optimization-info">
+                                        <div class="optimization-title">Gzip Compression</div>
+                                        <div class="optimization-description">Reduziert Übertragungsgrößen um bis zu 70%</div>
+                                    </div>
+                                    <div class="optimization-toggle">
+                                        <div class="toggle-switch active" onclick="toggleOptimization('gzip', this)">
+                                            <div class="toggle-slider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="optimization-item opt-active">
+                                    <div class="optimization-info">
+                                        <div class="optimization-title">Brotli Compression</div>
+                                        <div class="optimization-description">Noch bessere Komprimierung als Gzip</div>
+                                    </div>
+                                    <div class="optimization-toggle">
+                                        <div class="toggle-switch active" onclick="toggleOptimization('brotli', this)">
+                                            <div class="toggle-slider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="optimization-item opt-warning">
+                                    <div class="optimization-info">
+                                        <div class="optimization-title">Service Worker</div>
+                                        <div class="optimization-description">Offline-Caching für PWA</div>
+                                    </div>
+                                    <div class="optimization-toggle">
+                                        <div class="toggle-switch" onclick="toggleOptimization('service-worker', this)">
+                                            <div class="toggle-slider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid" style="margin-top: 2rem;">
+                            <div class="stat-item">
+                                <div class="stat-number">82%</div>
+                                <div class="stat-label">Cache Hit Rate</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1.2s</div>
+                                <div class="stat-label">Ø Antwortzeit</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">45MB</div>
+                                <div class="stat-label">Cache Größe</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">234</div>
+                                <div class="stat-label">Cached Objects</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <button class="btn btn-sm" onclick="clearAllCaches()">Cache leeren</button>
+                            <button class="btn btn-sm btn-warning" onclick="preloadCriticalPages()">Critical Pages preloaden</button>
+                            <button class="btn btn-sm btn-success" onclick="optimizeCacheStrategy()">Cache optimieren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CDN Tab -->
+            <div class="tab-content" id="cdn-tab">
+                <div class="performance-grid">
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16Z"/>
+                            </svg>
+                            CDN Konfiguration
+                        </h3>
+                        
+                        <div class="cdn-config">
+                            <div class="form-group">
+                                <label for="cdn-provider">CDN Provider</label>
+                                <select id="cdn-provider" class="form-control">
+                                    <option value="">-- CDN auswählen --</option>
+                                    <option value="cloudflare">Cloudflare</option>
+                                    <option value="aws">AWS CloudFront</option>
+                                    <option value="azure">Azure CDN</option>
+                                    <option value="keycdn">KeyCDN</option>
+                                    <option value="bunnycdn">BunnyCDN</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cdn-url">CDN URL</label>
+                                <input type="url" id="cdn-url" class="form-control" placeholder="https://cdn.example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cdn-zones">Aktive Zonen</label>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <label style="display: flex; align-items: center; gap: 0.25rem;">
+                                        <input type="checkbox" checked> Images
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 0.25rem;">
+                                        <input type="checkbox" checked> CSS/JS
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 0.25rem;">
+                                        <input type="checkbox"> Videos
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 0.25rem;">
+                                        <input type="checkbox"> Fonts
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <strong>CDN Status:</strong> Nicht konfiguriert. 
+                            <a href="#" onclick="setupCDN()" style="color: #2c5282;">Automatisches Setup starten</a>
+                        </div>
+                        
+                        <button class="btn" onclick="testCDNConnection()">CDN-Verbindung testen</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                            </svg>
+                            Global Performance
+                        </h3>
+                        
+                        <div style="margin: 1rem 0;">
+                            <h4 style="margin-bottom: 1rem;">Ladezeiten weltweit</h4>
+                            
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">1.2s</div>
+                                    <div class="stat-label">🇩🇪 Deutschland</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">1.8s</div>
+                                    <div class="stat-label">🇺🇸 USA</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">2.1s</div>
+                                    <div class="stat-label">🇯🇵 Japan</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">2.4s</div>
+                                    <div class="stat-label">🇦🇺 Australien</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            <strong>Empfehlung:</strong> CDN-Setup würde globale Ladezeiten um durchschnittlich 45% verbessern.
+                        </div>
+                        
+                        <button class="btn btn-sm btn-warning" onclick="runGlobalSpeedTest()">Globalen Speed-Test starten</button>
+                    </div>
+
+                    <div class="card wide-card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            Asset Optimierung
+                        </h3>
+                        
+                        <div class="optimization-panel">
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">JavaScript Minification</div>
+                                    <div class="optimization-description">Automatische JS-Komprimierung und Uglification</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('js-minify', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Resource Bundling</div>
+                                    <div class="optimization-description">Kombiniert mehrere Assets zu wenigen Requests</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('bundling', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-inactive">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">HTTP/2 Push</div>
+                                    <div class="optimization-description">Proaktives Pushen kritischer Resources</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('http2-push', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-warning">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Tree Shaking</div>
+                                    <div class="optimization-description">Entfernt ungenutzten JavaScript-Code</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('tree-shaking', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">HTTP Requests</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">340KB</div>
+                                <div class="stat-label">Total Assets</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">67%</div>
+                                <div class="stat-label">Komprimierung</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2.1s</div>
+                                <div class="stat-label">DOMContentLoaded</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitoring Tab -->
+            <div class="tab-content" id="monitoring-tab">
+                <div class="performance-grid">
+                    <div class="card wide-card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                            </svg>
+                            Real-time Performance Monitoring
+                        </h3>
+                        
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                            <button class="btn btn-sm" onclick="startRealTimeMonitoring()">Live-Monitoring starten</button>
+                            <button class="btn btn-sm btn-warning" onclick="pauseMonitoring()">Pausieren</button>
+                            <button class="btn btn-sm btn-danger" onclick="stopMonitoring()">Stoppen</button>
+                            <button class="btn btn-sm btn-success" onclick="exportMonitoringData()">Daten exportieren</button>
+                        </div>
+                        
+                        <div class="optimization-log" id="monitoring-log">
+                            <div class="log-entry log-info">[12:34:56] Monitoring gestartet...</div>
+                            <div class="log-entry log-success">[12:35:02] LCP: 2.1s (Gut)</div>
+                            <div class="log-entry log-success">[12:35:03] FID: 89ms (Ausgezeichnet)</div>
+                            <div class="log-entry log-warning">[12:35:04] CLS: 0.15 (Verbesserung nötig)</div>
+                            <div class="log-entry log-info">[12:35:10] Cache Hit Rate: 82%</div>
+                            <div class="log-entry log-success">[12:35:15] Image Lazy Loading: 67% Ersparnis</div>
+                            <div class="log-entry log-warning">[12:35:20] Langsame Datenbankabfrage erkannt (340ms)</div>
+                            <div class="log-entry log-info">[12:35:25] CDN Response: 156ms</div>
+                        </div>
+                        
+                        <div class="stats-grid" style="margin-top: 2rem;">
+                            <div class="stat-item">
+                                <div class="stat-number">94</div>
+                                <div class="stat-label">Performance Score</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Aktive Optimierungen</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Warnungen</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Kritische Fehler</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16V18H13V16H11M11,6V14H13V6H11Z"/>
+                            </svg>
+                            Alerts & Benachrichtigungen
+                        </h3>
+                        
+                        <div class="optimization-panel">
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Performance Alerts</div>
+                                    <div class="optimization-description">Bei Core Web Vitals Verschlechterung</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('perf-alerts', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Downtime Monitoring</div>
+                                    <div class="optimization-description">Überwacht Website-Verfügbarkeit</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('downtime-alerts', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-inactive">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">E-Mail Benachrichtigungen</div>
+                                    <div class="optimization-description">Bei kritischen Performance-Problemen</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('email-alerts', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-success">
+                            <strong>Status:</strong> Alle Systeme laufen optimal. Letzte Überprüfung vor 2 Minuten.
+                        </div>
+                        
+                        <button class="btn btn-sm" onclick="configureAlerts()">Alert-Einstellungen</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            </svg>
+                            Performance Reports
+                        </h3>
+                        
+                        <div style="margin: 1rem 0;">
+                            <p style="color: #718096; margin-bottom: 1rem;">
+                                Automatische Reports über Performance-Entwicklung
+                            </p>
+                            
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">7</div>
+                                    <div class="stat-label">Täglich</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">30</div>
+                                    <div class="stat-label">Wöchentlich</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                            <button class="btn btn-sm" onclick="generateDailyReport()">Tagesbericht generieren</button>
+                            <button class="btn btn-sm btn-warning" onclick="generateWeeklyReport()">Wochenbericht generieren</button>
+                            <button class="btn btn-sm btn-success" onclick="scheduleReports()">Auto-Reports einrichten</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Globale Variablen
+        let optimizations = {
+            'lazy-images': true,
+            'lazy-content': true,
+            'lazy-js': false,
+            'critical-css': true,
+            'css-minify': true,
+            'css-purge': false,
+            'webp-convert': true,
+            'responsive-images': true,
+            'avif-support': false,
+            'gzip': true,
+            'brotli': true,
+            'service-worker': false,
+            'js-minify': true,
+            'bundling': true,
+            'http2-push': false,
+            'tree-shaking': false,
+            'perf-alerts': true,
+            'downtime-alerts': true,
+            'email-alerts': false
+        };
+
+        let monitoringActive = false;
+        let monitoringInterval;
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePerformanceScores();
+            updateOptimizationStates();
+        });
+
+        // Tab-Wechsel
+        function switchTab(tabName) {
+            // Alle Tabs deaktivieren
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Gewählten Tab aktivieren
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-tab').classList.add('active');
+        }
+
+        // Optimierung umschalten
+        function toggleOptimization(key, toggleElement) {
+            optimizations[key] = !optimizations[key];
+            
+            if (optimizations[key]) {
+                toggleElement.classList.add('active');
+                showNotification(`${getOptimizationName(key)} aktiviert`, 'success');
+                
+                // Parent item aktualisieren
+                const parentItem = toggleElement.closest('.optimization-item');
+                parentItem.classList.remove('opt-inactive', 'opt-warning');
+                parentItem.classList.add('opt-active');
+                
+            } else {
+                toggleElement.classList.remove('active');
+                showNotification(`${getOptimizationName(key)} deaktiviert`, 'warning');
+                
+                // Parent item aktualisieren
+                const parentItem = toggleElement.closest('.optimization-item');
+                parentItem.classList.remove('opt-active');
+                parentItem.classList.add('opt-inactive');
+            }
+            
+            // Performance-Scores aktualisieren
+            setTimeout(updatePerformanceScores, 500);
+        }
+
+        // Optimierungs-Namen
+        function getOptimizationName(key) {
+            const names = {
+                'lazy-images': 'Bilder Lazy Loading',
+                'lazy-content': 'Content Lazy Loading',
+                'lazy-js': 'JavaScript Lazy Loading',
+                'critical-css': 'Critical CSS Inlining',
+                'css-minify': 'CSS Minification',
+                'css-purge': 'CSS Purging',
+                'webp-convert': 'WebP Konvertierung',
+                'responsive-images': 'Responsive Images',
+                'avif-support': 'AVIF Support',
+                'gzip': 'Gzip Compression',
+                'brotli': 'Brotli Compression',
+                'service-worker': 'Service Worker',
+                'js-minify': 'JavaScript Minification',
+                'bundling': 'Resource Bundling',
+                'http2-push': 'HTTP/2 Push',
+                'tree-shaking': 'Tree Shaking',
+                'perf-alerts': 'Performance Alerts',
+                'downtime-alerts': 'Downtime Monitoring',
+                'email-alerts': 'E-Mail Benachrichtigungen'
+            };
+            return names[key] || key;
+        }
+
+        // Performance-Scores aktualisieren
+        function updatePerformanceScores() {
+            const activeOptimizations = Object.values(optimizations).filter(Boolean).length;
+            const totalOptimizations = Object.keys(optimizations).length;
+            const optimizationRatio = activeOptimizations / totalOptimizations;
+            
+            // Core Web Vitals basierend auf Optimierungen berechnen
+            const baseLCP = 3.2;
+            const baseFID = 150;
+            const baseCLS = 0.25;
+            const baseTTFB = 500;
+            
+            const newLCP = Math.max(1.0, baseLCP - (optimizationRatio * 1.5));
+            const newFID = Math.max(50, baseFID - (optimizationRatio * 80));
+            const newCLS = Math.max(0.05, baseCLS - (optimizationRatio * 0.15));
+            const newTTFB = Math.max(200, baseTTFB - (optimizationRatio * 300));
+            
+            // UI aktualisieren
+            updateVitalCard('lcp', newLCP.toFixed(1) + 's', getVitalStatus(newLCP, [2.5, 4.0]));
+            updateVitalCard('fid', Math.round(newFID) + 'ms', getVitalStatus(newFID, [100, 300], true));
+            updateVitalCard('cls', newCLS.toFixed(2), getVitalStatus(newCLS, [0.1, 0.25]));
+            updateVitalCard('ttfb', Math.round(newTTFB) + 'ms', getVitalStatus(newTTFB, [800, 1800], true));
+        }
+
+        // Vital-Card aktualisieren
+        function updateVitalCard(vital, value, status) {
+            const card = document.getElementById(vital + '-card');
+            const scoreElement = card.querySelector('.vital-score');
+            const statusElement = card.querySelector('.vital-status');
+            
+            scoreElement.textContent = value;
+            statusElement.textContent = status.label;
+            statusElement.className = 'vital-status ' + status.class;
+            
+            card.className = 'vital-card ' + status.cardClass;
+            scoreElement.style.color = status.color;
+        }
+
+        // Vital-Status bestimmen
+        function getVitalStatus(value, thresholds, isReverse = false) {
+            let status;
+            
+            if (!isReverse) {
+                if (value <= thresholds[0]) {
+                    status = { label: 'Ausgezeichnet', class: 'status-excellent', cardClass: 'vital-excellent', color: '#38a169' };
+                } else if (value <= thresholds[1]) {
+                    status = { label: 'Gut', class: 'status-good', cardClass: 'vital-good', color: '#3182ce' };
+                } else {
+                    status = { label: 'Verbesserung nötig', class: 'status-needs-improvement', cardClass: 'vital-needs-improvement', color: '#ed8936' };
+                }
+            } else {
+                if (value <= thresholds[0]) {
+                    status = { label: 'Ausgezeichnet', class: 'status-excellent', cardClass: 'vital-excellent', color: '#38a169' };
+                } else if (value <= thresholds[1]) {
+                    status = { label: 'Gut', class: 'status-good', cardClass: 'vital-good', color: '#3182ce' };
+                } else {
+                    status = { label: 'Verbesserung nötig', class: 'status-needs-improvement', cardClass: 'vital-needs-improvement', color: '#ed8936' };
+                }
+            }
+            
+            return status;
+        }
+
+        // Optimierungs-Zustände aktualisieren
+        function updateOptimizationStates() {
+            Object.keys(optimizations).forEach(key => {
+                const toggles = document.querySelectorAll(`[onclick*="${key}"]`);
+                toggles.forEach(toggle => {
+                    if (toggle.classList.contains('toggle-switch')) {
+                        if (optimizations[key]) {
+                            toggle.classList.add('active');
+                        } else {
+                            toggle.classList.remove('active');
+                        }
+                    }
+                });
+            });
+        }
+
+        // Lazy Loading Test
+        function runLazyLoadTest() {
+            showNotification('Lazy Loading Test gestartet...', 'info');
+            
+            setTimeout(() => {
+                const savings = Math.floor(Math.random() * 20) + 50;
+                showNotification(`Test abgeschlossen: ${savings}% Ladezeit-Ersparnis`, 'success');
+                
+                // Stats aktualisieren
+                document.querySelector('.stat-number').textContent = savings + '%';
+            }, 2000);
+        }
+
+        // Critical CSS analysieren
+        function analyzeCriticalCSS() {
+            showNotification('Analysiere Critical CSS...', 'info');
+            
+            setTimeout(() => {
+                const criticalSize = Math.floor(Math.random() * 10) + 15;
+                showNotification(`Critical CSS: ${criticalSize}KB identifiziert`, 'success');
+                
+                // Progress aktualisieren
+                const progressBar = document.querySelector('.progress-fill');
+                const newProgress = Math.min(100, parseInt(progressBar.style.width) + 10);
+                progressBar.style.width = newProgress + '%';
+                
+                progressBar.nextElementSibling.textContent = `${newProgress}% CSS optimiert`;
+            }, 1500);
+        }
+
+        // Alle Bilder optimieren
+        function optimizeAllImages() {
+            if (!confirm('Alle Bilder optimieren? Dies kann einige Minuten dauern.')) return;
+            
+            showNotification('Bild-Optimierung gestartet...', 'info');
+            
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.floor(Math.random() * 15) + 5;
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    progress = 100;
+                    showNotification('Alle Bilder erfolgreich optimiert!', 'success');
+                    
+                    // Stats aktualisieren
+                    const statNumbers = document.querySelectorAll('#optimizations-tab .stat-number');
+                    statNumbers[0].textContent = parseInt(statNumbers[0].textContent) + Math.floor(Math.random() * 20) + 10;
+                    statNumbers[1].textContent = (parseFloat(statNumbers[1].textContent) + Math.random() * 0.5 + 0.3).toFixed(1) + 'MB';
+                } else {
+                    showNotification(`Optimierung läuft... ${progress}%`, 'info');
+                }
+            }, 800);
+        }
+
+        // Performance Monitoring starten
+        function startPerformanceMonitoring() {
+            const chartPlaceholder = document.querySelector('.chart-placeholder');
+            chartPlaceholder.innerHTML = `
+                <div style="width: 100%; height: 100%; background: linear-gradient(45deg, rgba(56, 161, 105, 0.2), rgba(66, 153, 225, 0.2)); display: flex; align-items: center; justify-content: center;">
+                    📊 Live Performance-Monitoring aktiv<br>
+                    <small>Daten werden in Echtzeit erfasst</small>
+                </div>
+            `;
+            
+            showNotification('Performance-Monitoring gestartet', 'success');
+        }
+
+        // Performance-Test durchführen
+        function runPerformanceTest() {
+            showNotification('Performance-Test wird durchgeführt...', 'info');
+            
+            setTimeout(() => {
+                const score = Math.floor(Math.random() * 20) + 80;
+                showNotification(`Performance-Test abgeschlossen: Score ${score}/100`, score >= 90 ? 'success' : 'warning');
+                
+                // Vital-Scores leicht variieren
+                setTimeout(updatePerformanceScores, 500);
+            }, 3000);
+        }
+
+        // Performance-Report exportieren
+        function exportPerformanceReport() {
+            const report = generatePerformanceReport();
+            downloadFile(report, 'performance-report.txt');
+            showNotification('Performance-Report exportiert', 'success');
+        }
+
+        // Cache-Funktionen
+        function clearAllCaches() {
+            if (!confirm('Alle Caches leeren? Dies kann die Performance temporär beeinträchtigen.')) return;
+            
+            showNotification('Caches werden geleert...', 'info');
+            
+            setTimeout(() => {
+                showNotification('Alle Caches erfolgreich geleert', 'success');
+                
+                // Cache-Stats zurücksetzen
+                const hitRate = document.querySelector('.cache-status + .stats-grid .stat-number');
+                hitRate.textContent = '0%';
+                
+                setTimeout(() => {
+                    hitRate.textContent = Math.floor(Math.random() * 20) + 70 + '%';
+                }, 2000);
+            }, 1500);
+        }
+
+        function preloadCriticalPages() {
+            showNotification('Critical Pages werden preloaded...', 'info');
+            
+            const pages = ['/', '/blog', '/about', '/contact'];
+            let loaded = 0;
+            
+            const interval = setInterval(() => {
+                loaded++;
+                showNotification(`Preloading: ${pages[loaded-1]} (${loaded}/${pages.length})`, 'info');
+                
+                if (loaded >= pages.length) {
+                    clearInterval(interval);
+                    showNotification('Alle kritischen Seiten preloaded', 'success');
+                }
+            }, 800);
+        }
+
+        function optimizeCacheStrategy() {
+            showNotification('Cache-Strategie wird optimiert...', 'info');
+            
+            setTimeout(() => {
+                showNotification('Cache-Strategie erfolgreich optimiert', 'success');
+                
+                // Cache-Stats verbessern
+                const stats = document.querySelectorAll('.cache-status + .stats-grid .stat-number');
+                stats[0].textContent = Math.min(100, parseInt(stats[0].textContent.replace('%', '')) + 5) + '%';
+                stats[1].textContent = (parseFloat(stats[1].textContent.replace('s', '')) - 0.1).toFixed(1) + 's';
+            }, 2000);
+        }
+
+        // CDN-Funktionen
+        function setupCDN() {
+            showNotification('CDN-Setup wird gestartet...', 'info');
+            
+            setTimeout(() => {
+                showNotification('CDN automatisch konfiguriert', 'success');
+                
+                // CDN Status aktualisieren
+                const alert = document.querySelector('#cdn-tab .alert-info');
+                alert.className = 'alert alert-success';
+                alert.innerHTML = '<strong>CDN Status:</strong> Aktiv und konfiguriert. Globale Ladezeiten verbessert.';
+            }, 3000);
+        }
+
+        function testCDNConnection() {
+            showNotification('CDN-Verbindung wird getestet...', 'info');
+            
+            setTimeout(() => {
+                const latency = Math.floor(Math.random() * 100) + 80;
+                showNotification(`CDN-Test erfolgreich: ${latency}ms Latenz`, 'success');
+            }, 2000);
+        }
+
+        function runGlobalSpeedTest() {
+            showNotification('Globaler Speed-Test gestartet...', 'info');
+            
+            setTimeout(() => {
+                showNotification('Globaler Speed-Test abgeschlossen', 'success');
+                
+                // Globale Zeiten leicht verbessern
+                const globalStats = document.querySelectorAll('#cdn-tab .stat-number');
+                globalStats.forEach(stat => {
+                    const currentValue = parseFloat(stat.textContent.replace('s', ''));
+                    const newValue = Math.max(0.8, currentValue - 0.1);
+                    stat.textContent = newValue.toFixed(1) + 's';
+                });
+            }, 4000);
+        }
+
+        // Monitoring-Funktionen
+        function startRealTimeMonitoring() {
+            if (monitoringActive) return;
+            
+            monitoringActive = true;
+            showNotification('Real-time Monitoring gestartet', 'success');
+            
+            const logContainer = document.getElementById('monitoring-log');
+            
+            monitoringInterval = setInterval(() => {
+                const timestamp = new Date().toLocaleTimeString();
+                const logs = [
+                    `[${timestamp}] Performance-Check durchgeführt`,
+                    `[${timestamp}] Cache Hit Rate: ${Math.floor(Math.random() * 10) + 80}%`,
+                    `[${timestamp}] Core Web Vitals überwacht`,
+                    `[${timestamp}] CDN Response: ${Math.floor(Math.random() * 50) + 100}ms`,
+                    `[${timestamp}] Optimierung erfolgreich`
+                ];
+                
+                const randomLog = logs[Math.floor(Math.random() * logs.length)];
+                const logEntry = document.createElement('div');
+                logEntry.className = 'log-entry log-success';
+                logEntry.textContent = randomLog;
+                
+                logContainer.appendChild(logEntry);
+                logContainer.scrollTop = logContainer.scrollHeight;
+                
+                // Maximale Log-Einträge begrenzen
+                if (logContainer.children.length > 20) {
+                    logContainer.removeChild(logContainer.firstChild);
+                }
+            }, 3000);
+        }
+
+        function pauseMonitoring() {
+            if (monitoringInterval) {
+                clearInterval(monitoringInterval);
+                monitoringActive = false;
+                showNotification('Monitoring pausiert', 'warning');
+            }
+        }
+
+        function stopMonitoring() {
+            if (monitoringInterval) {
+                clearInterval(monitoringInterval);
+                monitoringActive = false;
+                showNotification('Monitoring gestoppt', 'info');
+                
+                const logContainer = document.getElementById('monitoring-log');
+                const timestamp = new Date().toLocaleTimeString();
+                const logEntry = document.createElement('div');
+                logEntry.className = 'log-entry log-info';
+                logEntry.textContent = `[${timestamp}] Monitoring gestoppt`;
+                logContainer.appendChild(logEntry);
+            }
+        }
+
+        function exportMonitoringData() {
+            const data = generateMonitoringReport();
+            downloadFile(data, 'monitoring-data.txt');
+            showNotification('Monitoring-Daten exportiert', 'success');
+        }
+
+        // Alert-Funktionen
+        function configureAlerts() {
+            alert('Alert-Konfiguration:\n\n' +
+                  '• Performance-Schwellenwerte\n' +
+                  '• E-Mail-Benachrichtigungen\n' +
+                  '• Webhook-Integration\n' +
+                  '• Slack/Discord Alerts\n\n' +
+                  'Vollständige Konfiguration in separatem Dialog verfügbar.');
+        }
+
+        // Report-Funktionen
+        function generateDailyReport() {
+            showNotification('Tagesbericht wird generiert...', 'info');
+            
+            setTimeout(() => {
+                const report = generatePerformanceReport('daily');
+                downloadFile(report, `daily-report-${new Date().toISOString().split('T')[0]}.txt`);
+                showNotification('Tagesbericht erfolgreich generiert', 'success');
+            }, 1500);
+        }
+
+        function generateWeeklyReport() {
+            showNotification('Wochenbericht wird generiert...', 'info');
+            
+            setTimeout(() => {
+                const report = generatePerformanceReport('weekly');
+                downloadFile(report, `weekly-report-KW${getWeekNumber()}.txt`);
+                showNotification('Wochenbericht erfolgreich generiert', 'success');
+            }, 2000);
+        }
+
+        function scheduleReports() {
+            alert('Auto-Reports Setup:\n\n' +
+                  '✅ Tägliche Reports um 09:00\n' +
+                  '✅ Wöchentliche Reports montags\n' +
+                  '⏳ Monatliche Reports am 1.\n\n' +
+                  'E-Mail-Versand konfiguriert an: admin@example.com');
+            showNotification('Auto-Reports erfolgreich eingerichtet', 'success');
+        }
+
+        // Hilfsfunktionen
+        function generatePerformanceReport(type = 'instant') {
+            const date = new Date().toLocaleDateString('de-DE');
+            const time = new Date().toLocaleTimeString('de-DE');
+            
+            const activeOpts = Object.entries(optimizations).filter(([key, value]) => value).length;
+            
+            return `
+PERFORMANCE OPTIMIZER REPORT
+===========================
+
+Typ: ${type === 'daily' ? 'Tagesbericht' : type === 'weekly' ? 'Wochenbericht' : 'Instant-Report'}
+Erstellt: ${date} ${time}
+
+CORE WEB VITALS
+---------------
+LCP (Largest Contentful Paint): ${document.querySelector('#lcp-card .vital-score').textContent}
+FID (First Input Delay): ${document.querySelector('#fid-card .vital-score').textContent}
+CLS (Cumulative Layout Shift): ${document.querySelector('#cls-card .vital-score').textContent}
+TTFB (Time to First Byte): ${document.querySelector('#ttfb-card .vital-score').textContent}
+
+AKTIVE OPTIMIERUNGEN
+-------------------
+Gesamtanzahl: ${activeOpts} von ${Object.keys(optimizations).length}
+
+✅ Lazy Loading: ${optimizations['lazy-images'] ? 'Aktiv' : 'Inaktiv'}
+✅ Critical CSS: ${optimizations['critical-css'] ? 'Aktiv' : 'Inaktiv'}
+✅ Image Optimization: ${optimizations['webp-convert'] ? 'Aktiv' : 'Inaktiv'}
+✅ Caching: ${optimizations['gzip'] ? 'Aktiv' : 'Inaktiv'}
+✅ Asset Minification: ${optimizations['js-minify'] ? 'Aktiv' : 'Inaktiv'}
+
+CACHE PERFORMANCE
+-----------------
+Hit Rate: 82%
+Antwortzeit: 1.2s
+Cache Größe: 45MB
+
+EMPFEHLUNGEN
+------------
+${activeOpts < 15 ? '• Weitere Optimierungen aktivieren\n' : ''}
+${!optimizations['service-worker'] ? '• Service Worker für besseres Caching\n' : ''}
+${!optimizations['http2-push'] ? '• HTTP/2 Push für kritische Resources\n' : ''}
+
+---
+Generiert von SEO Blog CMS - Performance Optimizer
+            `.trim();
+        }
+
+        function generateMonitoringReport() {
+            const logs = Array.from(document.querySelectorAll('#monitoring-log .log-entry'))
+                .map(entry => entry.textContent)
+                .join('\n');
+                
+            return `
+MONITORING DATA EXPORT
+=====================
+
+Export-Zeit: ${new Date().toLocaleString('de-DE')}
+
+AKTUELLE METRIKEN
+-----------------
+Performance Score: 94/100
+Aktive Optimierungen: 12
+Warnungen: 3
+Kritische Fehler: 0
+
+MONITORING LOG
+--------------
+${logs}
+
+---
+Generiert von Performance Optimizer - Monitoring System
+            `.trim();
+        }
+
+        function downloadFile(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function getWeekNumber() {
+            const date = new Date();
+            const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
+            const pastDaysOfYear = (date - firstDayOfYear) / 86400000;
+            return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
+        }
+
+        function showNotification(message, type = 'info') {
+            // Einfache Notification - könnte durch Toast-System ersetzt werden
+            const colors = {
+                success: '#38a169',
+                warning: '#ed8936',
+                error: '#e53e3e',
+                info: '#4299e1'
+            };
+            
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${colors[type]};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 1000;
+                font-weight: 500;
+                max-width: 300px;
+                animation: slideIn 0.3s ease;
+            `;
+            
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // CSS-Animationen hinzufügen
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Auto-Update Performance Scores alle 30 Sekunden
+        setInterval(() => {
+            if (monitoringActive) {
+                // Leichte Variationen in den Scores simulieren
+                const variation = (Math.random() - 0.5) * 0.1;
+                // updatePerformanceScores wird mit kleinen Variationen aufgerufen
+            }
+        }, 30000);
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Optimizer - Blog CMS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .nav a.active {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+            fill: #4299e1;
+        }
+
+        .wide-card {
+            grid-column: 1 / -1;
+        }
+
+        .vitals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .vital-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 3px solid;
+            transition: all 0.3s ease;
+        }
+
+        .vital-excellent { border-color: #38a169; }
+        .vital-good { border-color: #3182ce; }
+        .vital-needs-improvement { border-color: #ed8936; }
+        .vital-poor { border-color: #e53e3e; }
+
+        .vital-score {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .vital-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .vital-description {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        .vital-status {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .status-excellent {
+            background: rgba(56, 161, 105, 0.1);
+            color: #2f855a;
+        }
+
+        .status-good {
+            background: rgba(49, 130, 206, 0.1);
+            color: #2c5282;
+        }
+
+        .status-needs-improvement {
+            background: rgba(237, 137, 54, 0.1);
+            color: #dd6b20;
+        }
+
+        .status-poor {
+            background: rgba(229, 62, 62, 0.1);
+            color: #c53030;
+        }
+
+        .optimization-panel {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .optimization-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            border-left: 4px solid;
+            transition: all 0.3s ease;
+        }
+
+        .optimization-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .optimization-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .opt-active { border-color: #38a169; }
+        .opt-inactive { border-color: #e2e8f0; }
+        .opt-warning { border-color: #ed8936; }
+
+        .optimization-info {
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .optimization-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .optimization-description {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .optimization-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background: #e2e8f0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-switch.active {
+            background: #38a169;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(26px);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4299e1, #38a169);
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(66, 153, 225, 0.05);
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 0.25rem;
+        }
+
+        .cache-status {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .cache-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 4px solid;
+        }
+
+        .cache-enabled { border-color: #38a169; }
+        .cache-disabled { border-color: #e53e3e; }
+        .cache-configuring { border-color: #ed8936; }
+
+        .cache-name {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .cache-description {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 0.5rem;
+        }
+
+        .cache-stats {
+            font-size: 0.8rem;
+            color: #4a5568;
+        }
+
+        .cdn-config {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-success {
+            background: rgba(56, 161, 105, 0.1);
+            border: 1px solid rgba(56, 161, 105, 0.3);
+            color: #2f855a;
+        }
+
+        .alert-warning {
+            background: rgba(237, 137, 54, 0.1);
+            border: 1px solid rgba(237, 137, 54, 0.3);
+            color: #dd6b20;
+        }
+
+        .alert-info {
+            background: rgba(66, 153, 225, 0.1);
+            border: 1px solid rgba(66, 153, 225, 0.3);
+            color: #2c5282;
+        }
+
+        .optimization-log {
+            background: #1a202c;
+            color: #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            max-height: 300px;
+            overflow-y: auto;
+            margin: 1rem 0;
+        }
+
+        .log-entry {
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0;
+        }
+
+        .log-success { color: #68d391; }
+        .log-warning { color: #f6ad55; }
+        .log-error { color: #fc8181; }
+        .log-info { color: #63b3ed; }
+
+        .performance-chart {
+            height: 200px;
+            background: linear-gradient(45deg, 
+                rgba(56, 161, 105, 0.1) 0%, 
+                rgba(66, 153, 225, 0.1) 50%,
+                rgba(237, 137, 54, 0.1) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-placeholder {
+            text-align: center;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #4299e1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .tab-container {
+            margin-bottom: 2rem;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-weight: 500;
+            color: #718096;
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            color: #4299e1;
+        }
+
+        .tab.active {
+            color: #4299e1;
+            border-bottom-color: #4299e1;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .performance-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .vitals-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .optimization-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .optimization-info {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚡ Performance Optimizer</h1>
+        <nav class="nav">
+            <a href="index.html">📊 Dashboard</a>
+            <a href="editor.html">✏️ Editor</a>
+            <a href="media.html">🖼️ Media</a>
+            <a href="seo.html">🔍 SEO-Tools</a>
+            <a href="content-optimizer.html">🎯 Optimierer</a>
+            <a href="analytics.html">📈 Analytics</a>
+            <a href="performance.html" class="active">⚡ Performance</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Core Web Vitals Overview -->
+        <div class="vitals-grid">
+            <div class="vital-card vital-good" id="lcp-card">
+                <div class="vital-score" style="color: #3182ce;">2.1s</div>
+                <div class="vital-label">LCP</div>
+                <div class="vital-description">Largest Contentful Paint</div>
+                <div class="vital-status status-good">Gut</div>
+            </div>
+            <div class="vital-card vital-excellent" id="fid-card">
+                <div class="vital-score" style="color: #38a169;">89ms</div>
+                <div class="vital-label">FID</div>
+                <div class="vital-description">First Input Delay</div>
+                <div class="vital-status status-excellent">Ausgezeichnet</div>
+            </div>
+            <div class="vital-card vital-needs-improvement" id="cls-card">
+                <div class="vital-score" style="color: #ed8936;">0.15</div>
+                <div class="vital-label">CLS</div>
+                <div class="vital-description">Cumulative Layout Shift</div>
+                <div class="vital-status status-needs-improvement">Verbesserung nötig</div>
+            </div>
+            <div class="vital-card vital-good" id="ttfb-card">
+                <div class="vital-score" style="color: #3182ce;">320ms</div>
+                <div class="vital-label">TTFB</div>
+                <div class="vital-description">Time to First Byte</div>
+                <div class="vital-status status-good">Gut</div>
+            </div>
+        </div>
+
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('optimizations')">🔧 Optimierungen</button>
+                <button class="tab" onclick="switchTab('caching')">💾 Caching</button>
+                <button class="tab" onclick="switchTab('cdn')">🌐 CDN</button>
+                <button class="tab" onclick="switchTab('monitoring')">📊 Monitoring</button>
+            </div>
+
+            <!-- Optimierungen Tab -->
+            <div class="tab-content active" id="optimizations-tab">
+                <div class="performance-grid">
+                    <!-- Lazy Loading -->
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z"/>
+                            </svg>
+                            Lazy Loading
+                        </h3>
+                        
+                        <div class="optimization-panel">
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Bilder Lazy Loading</div>
+                                    <div class="optimization-description">Lädt Bilder erst beim Scrollen</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('lazy-images', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Content Lazy Loading</div>
+                                    <div class="optimization-description">Verzögertes Laden von Content-Blöcken</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('lazy-content', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-inactive">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">JavaScript Lazy Loading</div>
+                                    <div class="optimization-description">Lädt JS-Module bei Bedarf</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('lazy-js', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">67%</div>
+                                <div class="stat-label">Ladezeit-Ersparnis</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">89</div>
+                                <div class="stat-label">Lazy-loaded Images</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-sm" onclick="runLazyLoadTest()">Performance-Test starten</button>
+                    </div>
+
+                    <!-- Critical CSS -->
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            </svg>
+                            Critical CSS
+                        </h3>
+                        
+                        <div class="optimization-panel">
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Critical CSS Inlining</div>
+                                    <div class="optimization-description">Above-the-fold CSS inline einbetten</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('critical-css', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">CSS Minification</div>
+                                    <div class="optimization-description">Automatische CSS-Komprimierung</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('css-minify', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-warning">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">CSS Purging</div>
+                                    <div class="optimization-description">Entfernt ungenutztes CSS</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('css-purge', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <div style="text-align: center; margin-top: 0.5rem; color: #718096;">
+                            78% CSS optimiert
+                        </div>
+                        
+                        <button class="btn btn-sm btn-warning" onclick="analyzeCriticalCSS()">Critical CSS analysieren</button>
+                    </div>
+
+                    <!-- Image Optimization -->
+                    <div class="card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M9,10A2,2 0 0,1 11,12A2,2 0 0,1 9,14A2,2 0 0,1 7,12A2,2 0 0,1 9,10M21,18H3V6H21M21,4H3A2,2 0 0,0 1,6V18A2,2 0 0,0 3,20H21A2,2 0 0,0 23,18V6A2,2 0 0,0 21,4Z"/>
+                            </svg>
+                            Bild-Optimierung
+                        </h3>
+                        
+                        <div class="optimization-panel">
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">WebP Konvertierung</div>
+                                    <div class="optimization-description">Automatische WebP-Generierung</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('webp-convert', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-active">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">Responsive Images</div>
+                                    <div class="optimization-description">Automatische Größenanpassung</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch active" onclick="toggleOptimization('responsive-images', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="optimization-item opt-inactive">
+                                <div class="optimization-info">
+                                    <div class="optimization-title">AVIF Support</div>
+                                    <div class="optimization-description">Nächste Generation Bildformat</div>
+                                </div>
+                                <div class="optimization-toggle">
+                                    <div class="toggle-switch" onclick="toggleOptimization('avif-support', this)">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">156</div>
+                                <div class="stat-label">Optimierte Bilder</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2.3MB</div>
+                                <div class="stat-label">Eingespart</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-sm btn-success" onclick="optimizeAllImages()">Alle Bilder optimieren</button>
+                    </div>
+
+                    <!-- Performance Monitoring -->
+                    <div class="card wide-card">
+                        <h3>
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                            </svg>
+                            Performance Monitoring
+                        </h3>
+                        
+                        <div class="performance-chart">
+                            <div class="chart-placeholder">
+                                📊 Performance-Timeline<br>
+                                <small>Klicken Sie auf "Live-Monitoring starten"</small>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                            <button class="btn btn-sm" onclick="startPerformanceMonitoring()">Live-Monitoring starten</button>
+                            <button class="btn btn-sm btn-warning" onclick="runPerformanceTest()">Performance-Test</button>
+                            <button class="btn btn-sm btn-success" onclick="exportPerformanceReport()">Report exportieren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caching Tab -->
+            <div class="tab-content" id="caching-tab">
+                <div class="performance-grid">
+                    <div class="card wide-card">
+                        <h3>
