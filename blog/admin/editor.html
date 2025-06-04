@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Editor - Blog CMS</title>
+    <title>Post Editor - Osteopathie Blog Hamburg</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <!-- Google Fonts - Epilogue & Instrument Sans -->
@@ -685,11 +685,10 @@
                         <label for="category">Kategorie</label>
                         <select id="category" name="category">
                             <option value="">Kategorie wählen</option>
-                            <option value="behandlung">Behandlung</option>
-                            <option value="prävention">Prävention</option>
-                            <option value="gesundheit">Gesundheit</option>
-                            <option value="tipps">Tipps</option>
-                            <option value="wissen">Wissen</option>
+                            <option value="Anwendungsbereiche">Anwendungsbereiche</option>
+                            <option value="Forschung">Forschung</option>
+                            <option value="Wissenswertes">Wissenswertes</option>
+                            <option value="Geschichte der Osteopathie">Geschichte der Osteopathie</option>
                         </select>
                     </div>
 
@@ -801,33 +800,7 @@
                     </button>
                 </div>
 
-                <div id="saveStatus"></div>
-            </div>
-
-            <!-- SEO Preview -->
-            <div class="seo-preview">
-                <h3><i class="fas fa-search"></i> SEO-Vorschau</h3>
-                
-                <div class="google-preview">
-                    <div class="google-title" id="previewTitle">Ihr Artikel-Titel</div>
-                    <div class="google-url" id="previewUrl">https://osteoalsen.de/blog/posts/artikel-url.html</div>
-                    <div class="google-description" id="previewDescription">Ihre Meta-Description wird hier angezeigt...</div>
-                </div>
-
-                <div class="seo-score">
-                    <div class="score-item">
-                        <div class="score-value score-good" id="titleScore">0</div>
-                        <div class="score-label">Titel</div>
-                    </div>
-                    <div class="score-item">
-                        <div class="score-value score-good" id="contentScore">0</div>
-                        <div class="score-label">Inhalt</div>
-                    </div>
-                    <div class="score-item">
-                        <div class="score-value score-good" id="seoScore">0</div>
-                        <div class="score-label">SEO</div>
-                    </div>
-                </div>
+                <div id="saveStatus">                </div>
             </div>
 
             <!-- Live Preview -->
@@ -1257,7 +1230,7 @@
                 showMessage('Speichere...', 'info');
                 
                 // API Call
-                const response = await fetch('api/posts.php', {
+                const response = await fetch('../api/posts.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1309,7 +1282,7 @@
 
         async function regenerateSitemap() {
             try {
-                await fetch('generate-sitemap.php');
+                await fetch('../generate-sitemap.php');
             } catch (error) {
                 console.log('Sitemap regeneration failed:', error);
             }
@@ -1317,7 +1290,7 @@
 
         async function regeneratePosts() {
             try {
-                await fetch('generate-post.php', {
+                await fetch('../generate-post.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -1332,7 +1305,7 @@
 
         async function loadPostForEditing(postId) {
             try {
-                const response = await fetch(`api/posts.php?action=get&id=${postId}`);
+                const response = await fetch(`../api/posts.php?action=get&id=${postId}`);
                 const result = await response.json();
 
                 if (result.success && result.post) {
@@ -1460,3 +1433,28 @@
     </script>
 </body>
 </html>
+
+            <!-- SEO Preview -->
+            <div class="seo-preview">
+                <h3><i class="fas fa-search"></i> SEO-Vorschau</h3>
+                
+                <div class="google-preview">
+                    <div class="google-title" id="previewTitle">Ihr Artikel-Titel</div>
+                    <div class="google-url" id="previewUrl">https://osteoalsen.de/blog/posts/artikel-url.html</div>
+                    <div class="google-description" id="previewDescription">Ihre Meta-Description wird hier angezeigt...</div>
+                </div>
+
+                <div class="seo-score">
+                    <div class="score-item">
+                        <div class="score-value score-good" id="titleScore">0</div>
+                        <div class="score-label">Titel</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value score-good" id="contentScore">0</div>
+                        <div class="score-label">Inhalt</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value score-good" id="seoScore">0</div>
+                        <div class="score-label">SEO</div>
+                    </div>
+                </div>

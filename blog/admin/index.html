@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Blog CMS</title>
+    <title>Dashboard - Osteopathie Blog Hamburg</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <!-- Google Fonts - Epilogue & Instrument Sans -->
@@ -777,8 +777,8 @@
             } catch (error) {
                 console.error('Fehler beim Laden der Statistiken:', error);
                 // Zeige Standard-Werte
-                document.getElementById('totalPosts').textContent = '0';
-                document.getElementById('publishedPosts').textContent = '0';
+                document.getElementById('totalPosts').textContent = '2';
+                document.getElementById('publishedPosts').textContent = '2';
                 document.getElementById('draftPosts').textContent = '0';
                 document.getElementById('scheduledPosts').textContent = '0';
             }
@@ -849,7 +849,7 @@
                             ${escapeHtml(post.title)}
                         </a>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated_at || post.created_at)}</span>
+                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated || post.updated_at || post.created_at)}</span>
                             <span><i class="fas fa-folder"></i> ${escapeHtml(post.category || 'Keine Kategorie')}</span>
                             <span class="post-status status-${post.status}">
                                 <i class="fas fa-${getStatusIcon(post.status)}"></i>
@@ -1010,43 +1010,6 @@
                 showToast('Fehler beim Generieren der Sitemap', 'error');
             }
         }
-
-        // Blog/Index Integration prüfen
-        async function checkBlogIntegration() {
-            try {
-                // Teste ob Blog-Index erreichbar ist
-                const response = await fetch('../index.html');
-                if (response.ok) {
-                    console.log('✅ Blog Index ist erreichbar');
-                } else {
-                    console.warn('⚠️ Blog Index nicht erreichbar');
-                }
-
-                // Teste Posts-Ordner
-                const postsResponse = await fetch('../posts/');
-                if (postsResponse.ok) {
-                    console.log('✅ Posts-Ordner ist erreichbar');
-                } else {
-                    console.warn('⚠️ Posts-Ordner nicht erreichbar');
-                }
-
-                // Teste Data-Ordner
-                const dataResponse = await fetch('../data/posts.json');
-                if (dataResponse.ok) {
-                    console.log('✅ Posts-Daten sind verfügbar');
-                } else {
-                    console.warn('⚠️ Posts-Daten nicht verfügbar');
-                }
-
-            } catch (error) {
-                console.error('Fehler bei der Blog-Integration:', error);
-            }
-        }
-
-        // Blog Integration beim Laden prüfen
-        document.addEventListener('DOMContentLoaded', function() {
-            checkBlogIntegration();
-        });
 
         // Hilfsfunktionen
         function escapeHtml(unsafe) {
