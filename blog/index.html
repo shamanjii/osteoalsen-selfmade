@@ -3,56 +3,1076 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Blog - Neueste Beiträge</title>
-    <meta name="description" content="Aktuelle Blog-Beiträge über SEO, Online Marketing und Webentwicklung">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Osteopathie Blog Hamburg - Gesundheitstipps & Fachwissen | Joshua Alsen</title>
+    <meta name="description" content="Osteopathie Blog Hamburg: Aktuelle Artikel über Osteopathie, Gesundheitstipps, Behandlungsmethoden und Fachwissen von Joshua Alsen, Osteopath in Hamburg Mitte.">
+    <meta name="keywords" content="Osteopathie Blog Hamburg, Gesundheitstipps, Osteopathie Artikel, Behandlungsmethoden, Joshua Alsen Blog, Osteopath Hamburg, Gesundheit Hamburg">
+    <meta name="author" content="Joshua Alsen">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Osteopathie Blog Hamburg - Gesundheitstipps & Fachwissen">
+    <meta property="og:description" content="Entdecken Sie fundierte Artikel über Osteopathie, Gesundheitstipps und Behandlungsmethoden von Joshua Alsen, Osteopath in Hamburg.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.osteoalsen.de/blog/">
+    <meta property="og:image" content="https://www.osteoalsen.de/blog/assets/images/default-og.jpg">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Osteopathie Blog Hamburg - Gesundheitstipps & Fachwissen">
+    <meta name="twitter:description" content="Entdecken Sie fundierte Artikel über Osteopathie, Gesundheitstipps und Behandlungsmethoden von Joshua Alsen, Osteopath in Hamburg.">
+    <meta name="twitter:image" content="https://www.osteoalsen.de/blog/assets/images/default-og.jpg">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Osteopathie Blog Hamburg",
+        "description": "Blog über Osteopathie, Gesundheitstipps und Behandlungsmethoden",
+        "url": "https://www.osteoalsen.de/blog/",
+        "author": {
+            "@type": "Person",
+            "name": "Joshua Alsen",
+            "jobTitle": "Osteopath",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Durchschnitt 25",
+                "addressLocality": "Hamburg",
+                "postalCode": "20146",
+                "addressCountry": "DE"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Osteopathie Alsen",
+            "url": "https://www.osteoalsen.de"
+        }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.osteoalsen.de/blog/">
+    
+    <!-- Google Fonts - Same as main site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #ffffff;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            font-size: 1.1rem;
+        }
+        
+        /* Typography System - Same as main site */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+        }
+        
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        p {
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.015em;
+            font-size: 1.1rem;
+        }
+        
+        /* Header & Navigation - Same as main site */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+        
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+        
+        .nav-menu a:hover, .nav-menu a.active {
+            color: #ffffff;
+        }
+        
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+        }
+        
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Blog Hero Section */
+        .blog-hero {
+            background: #ffffff;
+            color: #1a202c;
+            padding: 140px 2rem 80px;
+            text-align: center;
+            margin-top: 70px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .blog-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .blog-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #1a202c;
+        }
+        
+        .blog-hero-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+        
+        .blog-hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .breadcrumb a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .breadcrumb a:hover {
+            color: #4a5568;
+        }
+        
+        /* Main Content */
+        .main {
+            padding: 60px 0;
+            background: #f8fafc;
+        }
+        
+        .blog-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .posts-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .posts-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .posts-stats {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .stat-number {
+            font-weight: 600;
+            color: #1a202c;
+        }
+        
+        /* Posts Grid */
+        .posts-grid {
+            padding: 2rem;
+        }
+        
+        .post-card {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border-color: #e2e8f0;
+        }
+        
+        .post-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .post-card:hover .post-image {
+            transform: scale(1.05);
+        }
+        
+        .post-content {
+            padding: 2rem;
+        }
+        
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        
+        .post-date {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .post-keywords {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 0.25rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .post-card h3 {
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .post-card h3 a {
+            color: #1a202c;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        
+        .post-card h3 a:hover {
+            color: #4a5568;
+        }
+        
+        .post-excerpt {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        .read-more {
+            color: #1a202c;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+        }
+        
+        .read-more:hover {
+            background: #f8fafc;
+            border-color: #1a202c;
+            transform: translateX(4px);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .sidebar-widget {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .widget-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.015em;
+        }
+        
+        /* About Widget */
+        .about-author {
+            text-align: center;
+        }
+        
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            border: 3px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: #666;
+        }
+        
+        .author-name {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+        
+        .author-title {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .author-bio {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #1a202c;
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            gap: 0.5rem;
+        }
+        
+        .contact-btn:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
+        }
+        
+        /* Categories Widget */
+        .categories-list {
+            list-style: none;
+        }
+        
+        .categories-list li {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.75rem 0;
+        }
+        
+        .categories-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .categories-list a {
+            color: #4a5568;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+        
+        .categories-list a:hover {
+            color: #1a202c;
+        }
+        
+        .category-count {
+            background: #f1f5f9;
+            color: #666;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        /* Tags Widget */
+        .tags-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: #f8fafc;
+            color: #4a5568;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tag:hover {
+            background: #1a202c;
+            color: #ffffff;
+            border-color: #1a202c;
+        }
+        
+        /* Newsletter Widget */
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .newsletter-input {
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease;
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            border-color: #1a202c;
+            box-shadow: 0 0 0 3px rgba(26, 32, 44, 0.1);
+        }
+        
+        .newsletter-btn {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        
+        .newsletter-btn:hover {
+            background: #2d3748;
+        }
+        
+        /* Loading, Error, No Posts */
+        .loading, .error, .no-posts {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #f1f5f9;
+        }
+        
+        .loading p, .error p, .no-posts p {
+            color: #64748b;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .no-posts h3 {
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .error {
+            background: #fef2f2;
+            border-color: #fecaca;
+            color: #991b1b;
+        }
+        
+        /* Back to Main Site */
+        .back-to-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1a202c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .back-to-main:hover {
+            color: #4a5568;
+            transform: translateX(-4px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        footer p:last-child {
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        footer a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .blog-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .sidebar {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 1rem;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .nav-menu a {
+                font-size: 1.1rem;
+                padding: 1rem 0;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+            
+            .blog-hero {
+                padding: 120px 1rem 60px;
+            }
+            
+            .blog-hero h1 {
+                font-size: clamp(2.2rem, 8vw, 2.8rem);
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .posts-header,
+            .posts-grid {
+                padding: 1.5rem;
+            }
+            
+            .post-content {
+                padding: 1.5rem;
+            }
+            
+            .sidebar {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Smooth animations */
+        .post-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .post-card:nth-child(1) { animation-delay: 0.1s; }
+        .post-card:nth-child(2) { animation-delay: 0.2s; }
+        .post-card:nth-child(3) { animation-delay: 0.3s; }
+        .post-card:nth-child(4) { animation-delay: 0.4s; }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #1a202c;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
+        }
+        
+        .scroll-to-top:hover {
+            background: #2d3748;
+            transform: translateY(-4px);
+        }
+        
+        .scroll-to-top.visible {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <img src="assets/images/logo.png" alt="Blog Logo" class="logo">
-                <h1>SEO Blog</h1>
-                <p>Tipps und Tricks für bessere Suchmaschinenoptimierung</p>
-            </div>
-        </div>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="../" class="logo">
+                <div class="logo-icon">OA</div>
+                <div class="logo-text">
+                    <div class="logo-title">Osteopathie Alsen</div>
+                    <div class="logo-subtitle">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../#home">Home</a></li>
+                <li><a href="../#was-ist-osteopathie">Osteopathie</a></li>
+                <li><a href="../#behandlungen">Behandlungen</a></li>
+                <li><a href="../#anwendungen">Anwendungen</a></li>
+                <li><a href="../#ueber-mich">Über mich</a></li>
+                <li><a href="../#faq">FAQ</a></li>
+                <li><a href="./" class="active">Blog</a></li>
+                <li><a href="../#kontakt" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
     </header>
 
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <nav class="breadcrumb">
+                <a href="../">Osteopathie Alsen</a>
+                <span>→</span>
+                <span>Blog</span>
+            </nav>
+            <h1>Osteopathie Blog</h1>
+            <div class="blog-hero-subtitle">Gesundheitstipps & Fachwissen aus Hamburg</div>
+            <p class="blog-hero-description">
+                Entdecken Sie fundierte Artikel über Osteopathie, Gesundheitstipps und Behandlungsmethoden. 
+                Als Osteopath in Hamburg teile ich hier mein Fachwissen und praktische Tipps für Ihr Wohlbefinden.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
     <main class="main">
         <div class="container">
-            <section class="hero">
-                <h2>Neueste Blog-Beiträge</h2>
-                <p>Bleib auf dem Laufenden mit aktuellen SEO-Trends und Strategien</p>
-            </section>
-
-            <section class="posts-grid" id="postsContainer">
-                <!-- Posts werden hier dynamisch geladen -->
-                <div class="loading">
-                    <p>Lade Beiträge...</p>
+            <a href="../" class="back-to-main">
+                <span>←</span>
+                Zurück zur Hauptseite
+            </a>
+            
+            <div class="blog-content">
+                <!-- Posts Section -->
+                <div class="posts-section">
+                    <div class="posts-header">
+                        <h2 style="color: #1a202c; font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem;">Neueste Beiträge</h2>
+                        <div class="posts-stats" id="postsStats">
+                            <div class="stat-item">
+                                <span>📅</span>
+                                <span>Letztes Update: <span class="stat-number" id="lastUpdate">Heute</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="posts-grid" id="postsContainer">
+                        <!-- Posts werden hier dynamisch geladen -->
+                        <div class="loading">
+                            <p>📖 Lade Beiträge...</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-
-            <div class="pagination" id="pagination" style="display: none;">
-                <!-- Pagination wird hier generiert -->
+                
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Author Widget -->
+                    <div class="sidebar-widget about-author">
+                        <h3 class="widget-title">Über den Autor</h3>
+                        <div class="author-avatar">👨‍⚕️</div>
+                        <div class="author-name">Joshua Alsen</div>
+                        <div class="author-title">Osteopath & Heilpraktiker</div>
+                        <p class="author-bio">
+                            Als Osteopath in Hamburg teile ich mein Fachwissen über ganzheitliche Gesundheit, 
+                            Behandlungsmethoden und Tipps für ein schmerzfreies Leben.
+                        </p>
+                        <a href="../#kontakt" class="contact-btn">
+                            <span>📞</span>
+                            Termin vereinbaren
+                        </a>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Kategorien</h3>
+                        <ul class="categories-list">
+                            <li><a href="#osteopathie">Osteopathie <span class="category-count">8</span></a></li>
+                            <li><a href="#gesundheitstipps">Gesundheitstipps <span class="category-count">12</span></a></li>
+                            <li><a href="#behandlungsmethoden">Behandlungsmethoden <span class="category-count">6</span></a></li>
+                            <li><a href="#rueckenschmerzen">Rückenschmerzen <span class="category-count">5</span></a></li>
+                            <li><a href="#kopfschmerzen">Kopfschmerzen <span class="category-count">4</span></a></li>
+                            <li><a href="#sportverletzungen">Sportverletzungen <span class="category-count">3</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Popular Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Beliebte Themen</h3>
+                        <div class="tags-cloud">
+                            <a href="#osteopathie-hamburg" class="tag">Osteopathie Hamburg</a>
+                            <a href="#rueckenschmerzen" class="tag">Rückenschmerzen</a>
+                            <a href="#migräne" class="tag">Migräne</a>
+                            <a href="#verspannungen" class="tag">Verspannungen</a>
+                            <a href="#entspannung" class="tag">Entspannung</a>
+                            <a href="#gesunde-haltung" class="tag">Gesunde Haltung</a>
+                            <a href="#selbstheilung" class="tag">Selbstheilung</a>
+                            <a href="#prävention" class="tag">Prävention</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                            Erhalten Sie regelmäßig neue Gesundheitstipps und Artikel direkt in Ihr Postfach.
+                        </p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" class="newsletter-input" placeholder="Ihre E-Mail-Adresse" required>
+                            <button type="submit" class="newsletter-btn">📧 Anmelden</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Quick Contact Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Schneller Kontakt</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; color: #4a5568;">
+                                <span style="color: #1a202c; font-size: 1.1rem;">📍</span>
+                                <span style="font-size: 0.9rem;">Durchschnitt 25, 20146 Hamburg</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem; color: #4a5568;">
+                                <span style="color: #1a202c; font-size: 1.1rem;">📞</span>
+                                <a href="tel:+4917643990001" style="color: #059669; text-decoration: none; font-weight: 500; font-size: 0.9rem;">0176 4399 0001</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem; color: #4a5568;">
+                                <span style="color: #1a202c; font-size: 1.1rem;">✉️</span>
+                                <a href="mailto:praxis@osteoalsen.de" style="color: #059669; text-decoration: none; font-weight: 500; font-size: 0.9rem;">praxis@osteoalsen.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <p>&copy; 2025 SEO Blog. Alle Rechte vorbehalten.</p>
-            <nav class="footer-nav">
-                <a href="../legal/impressum.html">Impressum</a>
-                <a href="../legal/datenschutz.html">Datenschutz</a>
-                <a href="admin/">Admin</a>
-            </nav>
+            <p>&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p>Osteopathie Blog Hamburg | <a href="../legal/impressum.html">Impressum</a> | <a href="../legal/datenschutz.html">Datenschutz</a></p>
         </div>
     </footer>
 
-    <script src="assets/js/blog.js"></script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
     <script>
-        // Posts laden beim Seitenaufruf
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Newsletter Form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            
+            // Hier würdest du normalerweise die E-Mail an deinen Newsletter-Service senden
+            alert('✅ Vielen Dank! Sie haben sich erfolgreich für den Newsletter angemeldet.');
+            this.reset();
+        });
+
+        // Load Blog Posts
         document.addEventListener('DOMContentLoaded', function() {
             loadBlogPosts();
         });
@@ -68,7 +1088,12 @@
                     container.innerHTML = `
                         <div class="no-posts">
                             <h3>Noch keine Beiträge vorhanden</h3>
-                            <p>Die ersten Blog-Posts sind in Vorbereitung!</p>
+                            <p>Die ersten Blog-Posts über Osteopathie und Gesundheit sind in Vorbereitung!</p>
+                            <p style="margin-top: 1rem;">
+                                <a href="../#kontakt" style="color: #1a202c; text-decoration: none; font-weight: 500;">
+                                    Kontaktieren Sie mich für individuelle Beratung →
+                                </a>
+                            </p>
                         </div>
                     `;
                     return;
@@ -80,39 +1105,169 @@
                 // Posts nach Datum sortieren (neueste zuerst)
                 publishedPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+                // Update stats
+                document.getElementById('totalPostsCount').textContent = publishedPosts.length;
+                
+                if (publishedPosts.length > 0) {
+                    const lastPost = new Date(publishedPosts[0].publishedAt);
+                    const today = new Date();
+                    const diffTime = Math.abs(today - lastPost);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    
+                    let lastUpdateText = 'Heute';
+                    if (diffDays === 1) lastUpdateText = 'Gestern';
+                    else if (diffDays > 1) lastUpdateText = `vor ${diffDays} Tagen`;
+                    
+                    document.getElementById('lastUpdate').textContent = lastUpdateText;
+                }
+
                 // Posts HTML generieren
-                const postsHTML = publishedPosts.map(post => `
-                    <article class="post-card">
-                        ${post.image ? `<img src="${post.image}" alt="${post.altText || post.title}" class="post-image">` : ''}
+                const postsHTML = publishedPosts.map((post, index) => `
+                    <article class="post-card" style="animation-delay: ${(index + 1) * 0.1}s">
+                        ${post.image ? `
+                            <div style="overflow: hidden;">
+                                <img src="${post.image}" alt="${post.altText || post.title}" class="post-image">
+                            </div>
+                        ` : ''}
                         <div class="post-content">
                             <div class="post-meta">
-                                <time datetime="${post.publishedAt}">
-                                    ${new Date(post.publishedAt).toLocaleDateString('de-DE', {
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric'
-                                    })}
-                                </time>
-                                ${post.keywords ? `<span class="post-keywords">${post.keywords.split(',').slice(0, 3).join(', ')}</span>` : ''}
+                                <div class="post-date">
+                                    <span>📅</span>
+                                    <time datetime="${post.publishedAt}">
+                                        ${new Date(post.publishedAt).toLocaleDateString('de-DE', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        })}
+                                    </time>
+                                </div>
+                                ${post.keywords ? `
+                                    <span class="post-keywords">
+                                        ${post.keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ')}
+                                    </span>
+                                ` : ''}
                             </div>
                             <h3><a href="posts/${post.slug}.html">${post.title}</a></h3>
                             <p class="post-excerpt">${post.excerpt}</p>
-                            <a href="posts/${post.slug}.html" class="read-more">Weiterlesen →</a>
+                            <a href="posts/${post.slug}.html" class="read-more">
+                                <span>Artikel lesen</span>
+                                <span>→</span>
+                            </a>
                         </div>
                     </article>
                 `).join('');
 
                 container.innerHTML = postsHTML;
+
+                // SEO: Update page title with post count
+                if (publishedPosts.length > 0) {
+                    document.title = `Osteopathie Blog Hamburg (${publishedPosts.length} Artikel) - Gesundheitstipps | Joshua Alsen`;
+                }
                 
             } catch (error) {
                 console.error('Fehler beim Laden der Posts:', error);
                 document.getElementById('postsContainer').innerHTML = `
                     <div class="error">
-                        <p>Fehler beim Laden der Blog-Posts. Bitte versuche es später erneut.</p>
+                        <h3>Fehler beim Laden</h3>
+                        <p>Die Blog-Posts konnten nicht geladen werden. Bitte versuchen Sie es später erneut.</p>
+                        <p style="margin-top: 1rem;">
+                            <a href="../#kontakt" style="color: #991b1b; text-decoration: none; font-weight: 500;">
+                                Kontaktieren Sie mich direkt →
+                            </a>
+                        </p>
                     </div>
                 `;
             }
         }
+
+        // Schema.org Article List for SEO
+        function updateSchemaMarkup(posts) {
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": "Osteopathie Blog Hamburg - Artikel",
+                "description": "Blog-Artikel über Osteopathie, Gesundheitstipps und Behandlungsmethoden von Joshua Alsen",
+                "itemListElement": posts.map((post, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "item": {
+                        "@type": "BlogPosting",
+                        "headline": post.title,
+                        "description": post.excerpt,
+                        "url": `https://www.osteoalsen.de/blog/posts/${post.slug}.html`,
+                        "datePublished": post.publishedAt,
+                        "author": {
+                            "@type": "Person",
+                            "name": "Joshua Alsen"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Osteopathie Alsen"
+                        }
+                    }
+                }))
+            };
+
+            // Add schema to head
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(schema);
+            document.head.appendChild(script);
+        }
+
+        // Enhanced category and tag filtering (for future use)
+        function filterPostsByCategory(category) {
+            // Implementierung für Kategorie-Filterung
+            console.log('Filter by category:', category);
+        }
+
+        function filterPostsByTag(tag) {
+            // Implementierung für Tag-Filterung
+            console.log('Filter by tag:', tag);
+        }
+
+        // Add click handlers for categories and tags
+        document.querySelectorAll('.categories-list a, .tag').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    const term = href.substring(1);
+                    if (this.classList.contains('tag')) {
+                        filterPostsByTag(term);
+                    } else {
+                        filterPostsByCategory(term);
+                    }
+                }
+            });
+        });
+
+        // Track reading time for analytics
+        function calculateReadingTime(text) {
+            const wordsPerMinute = 200;
+            const words = text.split(/\s+/).length;
+            const readingTime = Math.ceil(words / wordsPerMinute);
+            return readingTime;
+        }
+
+        // SEO: Add meta description based on latest posts
+        function updateMetaDescription(posts) {
+            if (posts.length > 0) {
+                const latestTopics = posts.slice(0, 3).map(post => 
+                    post.title.split(':')[0].trim()
+                ).join(', ');
+                
+                const metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc) {
+                    metaDesc.content = `Osteopathie Blog Hamburg: Aktuelle Artikel über ${latestTopics} und mehr. Gesundheitstipps von Joshua Alsen, Osteopath in Hamburg Mitte.`;
+                }
+            }
+        }
     </script>
 </body>
-</html>
+</html>📝</span>
+                                <span class="stat-number" id="totalPostsCount">0</span>
+                                <span>Artikel</span>
+                            </div>
+                            <div class="stat-item">
+                                <span>

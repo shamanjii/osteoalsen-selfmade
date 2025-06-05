@@ -64,7 +64,7 @@
         }
 
         .panel {
-            display: none !important;
+            display: none;
             background: white;
             padding: 30px;
             border-radius: 12px;
@@ -72,7 +72,7 @@
         }
 
         .panel.active {
-            display: block !important;
+            display: block;
         }
 
         .form-group {
@@ -135,6 +135,24 @@
         .btn-small {
             padding: 8px 16px;
             font-size: 12px;
+        }
+
+        .upload-area {
+            border: 2px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .upload-area:hover {
+            border-color: #3b82f6;
+        }
+
+        .upload-area.dragover {
+            border-color: #3b82f6;
+            background: #f0f9ff;
         }
 
         .posts-list {
@@ -259,9 +277,9 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active" onclick="showPanel('editor')">✏️ Editor</button>
-            <button class="tab" onclick="showPanel('posts')">📝 Posts</button>
-            <button class="tab" onclick="showPanel('seo')">🎯 SEO Tools</button>
+            <button class="tab active" data-panel="editor">✏️ Editor</button>
+            <button class="tab" data-panel="posts">📝 Posts</button>
+            <button class="tab" data-panel="seo">🎯 SEO Tools</button>
         </div>
 
         <!-- Editor Panel -->
@@ -271,17 +289,17 @@
             <form id="postForm">
                 <div class="form-group">
                     <label for="title">Titel</label>
-                    <input type="text" id="title" placeholder="Dein Blog-Post Titel" oninput="updateSEOPreview()">
+                    <input type="text" id="title" placeholder="Dein Blog-Post Titel">
                 </div>
 
                 <div class="form-group">
                     <label for="slug">URL-Slug</label>
-                    <input type="text" id="slug" placeholder="automatisch-generiert" oninput="updateSEOPreview()">
+                    <input type="text" id="slug" placeholder="automatisch-generiert">
                 </div>
 
                 <div class="form-group">
                     <label for="excerpt">Meta Description</label>
-                    <textarea id="excerpt" placeholder="Kurze Beschreibung für SEO (max. 160 Zeichen)" maxlength="160" oninput="updateSEOPreview()"></textarea>
+                    <textarea id="excerpt" placeholder="Kurze Beschreibung für SEO (max. 160 Zeichen)" maxlength="160"></textarea>
                     <small id="excerptCount">0/160 Zeichen</small>
                 </div>
 
@@ -293,13 +311,17 @@
                 <div class="form-group">
                     <label for="keywords">SEO Keywords</label>
                     <input type="text" id="keywords" placeholder="keyword1, keyword2, keyword3">
-                    <button type="button" class="btn-secondary btn-small" onclick="generateKeywords()" style="margin-top: 10px;">🎯 Keywords generieren</button>
+                    <button type="button" class="btn-secondary btn-small" id="generateKeywordsBtn" style="margin-top: 10px;">🎯 Keywords generieren</button>
                 </div>
 
                 <div class="form-group">
-                    <label for="image">Beitragsbild URL</label>
-                    <input type="text" id="image" placeholder="https://example.com/image.jpg">
-                    <button type="button" class="btn-secondary btn-small" onclick="generateAltText()" style="margin-top: 10px;">🖼️ Alt-Text generieren</button>
+                    <label>Beitragsbild</label>
+                    <div class="upload-area" id="uploadArea">
+                        <p>📷 Datei hier ablegen oder klicken zum Auswählen</p>
+                        <input type="file" id="imageFile" accept="image/*" style="display: none;">
+                    </div>
+                    <input type="text" id="image" placeholder="Oder Bild-URL eingeben" style="margin-top: 10px;">
+                    <button type="button" class="btn-secondary btn-small" id="generateAltTextBtn" style="margin-top: 10px;">🖼️ Alt-Text generieren</button>
                 </div>
 
                 <div class="form-group">
@@ -355,7 +377,7 @@
                 <textarea id="analyzeText" placeholder="Füge deinen Text hier ein für SEO-Analyse" rows="8"></textarea>
             </div>
 
-            <button type="button" class="btn" onclick="analyzeSEO()">🔍 SEO Analyse starten</button>
+            <button type="button" class="btn" id="analyzeSEOBtn">🔍 SEO Analyse starten</button>
 
             <div id="seoResults" style="display: none; margin-top: 20px;">
                 <h3>📊 SEO Analyse Ergebnisse</h3>
@@ -366,16 +388,15 @@
 
     <script>
         // Globale Variablen
-        let posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+        let posts = [];
 
         // Tab Navigation
         function showPanel(panelId) {
-            console.log('Wechsle zu Panel:', panelId); // Debug
+            console.log('Wechsle zu Panel:', panelId);
             
             // Alle Panels ausblenden
             document.querySelectorAll('.panel').forEach(panel => {
                 panel.classList.remove('active');
-                panel.style.display = 'none';
             });
             
             // Alle Tabs deaktivieren
@@ -385,13 +406,12 @@
             
             // Gewähltes Panel anzeigen
             const targetPanel = document.getElementById(panelId);
-            const clickedTab = event.target;
-            
             if (targetPanel) {
                 targetPanel.classList.add('active');
-                targetPanel.style.display = 'block';
             }
             
+            // Den geklickten Tab aktivieren
+            const clickedTab = document.querySelector(`[data-panel="${panelId}"]`);
             if (clickedTab) {
                 clickedTab.classList.add('active');
             }
@@ -402,38 +422,9 @@
             }
         }
 
-        // Globale Funktionen verfügbar machen
-        window.showPanel = showPanel;
-        window.editPost = editPost;
-        window.deletePost = deletePost;
-        window.viewPost = viewPost;
-        window.generateKeywords = generateKeywords;
-        window.generateAltText = generateAltText;
-        window.analyzeSEO = analyzeSEO;
-
-        // SEO Preview Update
-        function updateSEOPreview() {
-            const title = document.getElementById('title').value || 'Dein Titel hier...';
-            const slug = document.getElementById('slug').value || generateSlug(title);
-            const excerpt = document.getElementById('excerpt').value || 'Deine Meta Description hier...';
-
-            document.getElementById('previewTitle').textContent = title;
-            document.getElementById('previewUrl').textContent = `https://deine-domain.de/blog/${slug}`;
-            document.getElementById('previewDescription').textContent = excerpt;
-
-            // Zeichenzähler für Meta Description
-            const excerptCount = document.getElementById('excerptCount');
-            excerptCount.textContent = `${excerpt.length}/160 Zeichen`;
-            excerptCount.style.color = excerpt.length > 160 ? '#ef4444' : '#6b7280';
-
-            // Auto-Slug generierung
-            if (!document.getElementById('slug').value) {
-                document.getElementById('slug').value = generateSlug(title);
-            }
-        }
-
         // Slug generieren
         function generateSlug(title) {
+            if (!title) return '';
             return title
                 .toLowerCase()
                 .replace(/ä/g, 'ae')
@@ -444,7 +435,31 @@
                 .replace(/^-+|-+$/g, '');
         }
 
-        // Keywords generieren (vereinfacht)
+        // SEO Preview Update
+        function updateSEOPreview() {
+            const title = document.getElementById('title').value || 'Dein Titel hier...';
+            const excerpt = document.getElementById('excerpt').value || 'Deine Meta Description hier...';
+            
+            // Auto-Slug generierung
+            const slugField = document.getElementById('slug');
+            if (!slugField.value && title !== 'Dein Titel hier...') {
+                slugField.value = generateSlug(title);
+            }
+            
+            const slug = slugField.value || 'dein-slug';
+
+            document.getElementById('previewTitle').textContent = title;
+            document.getElementById('previewUrl').textContent = `https://deine-domain.de/blog/${slug}`;
+            document.getElementById('previewDescription').textContent = excerpt;
+
+            // Zeichenzähler für Meta Description
+            const excerptCount = document.getElementById('excerptCount');
+            const realExcerpt = document.getElementById('excerpt').value;
+            excerptCount.textContent = `${realExcerpt.length}/160 Zeichen`;
+            excerptCount.style.color = realExcerpt.length > 160 ? '#ef4444' : '#6b7280';
+        }
+
+        // Keywords generieren
         function generateKeywords() {
             const title = document.getElementById('title').value;
             const content = document.getElementById('content').value;
@@ -454,12 +469,19 @@
                 return;
             }
 
-            // Einfache Keyword-Extraktion basierend auf häufigen Wörtern
+            // Einfache Keyword-Extraktion
             const text = (title + ' ' + content).toLowerCase();
             const words = text.match(/\b\w{4,}\b/g) || [];
-            const wordCount = {};
             
-            words.forEach(word => {
+            // Deutsche Stopwörter
+            const stopwords = ['aber', 'alle', 'auch', 'auf', 'aus', 'bei', 'bin', 'bis', 'das', 'dem', 'den', 'der', 'des', 'die', 'ein', 'eine', 'einem', 'einen', 'einer', 'eines', 'für', 'haben', 'hat', 'ich', 'ihr', 'ihre', 'ihrem', 'ihren', 'ihrer', 'ihres', 'ist', 'mit', 'nach', 'nicht', 'oder', 'sein', 'seine', 'seinem', 'seinen', 'seiner', 'seines', 'sich', 'sie', 'sind', 'über', 'und', 'von', 'war', 'waren', 'wird', 'wir', 'wurde', 'wurden', 'zum', 'zur'];
+            
+            const filteredWords = words.filter(word => 
+                !stopwords.includes(word) && word.length >= 4
+            );
+            
+            const wordCount = {};
+            filteredWords.forEach(word => {
                 wordCount[word] = (wordCount[word] || 0) + 1;
             });
 
@@ -478,7 +500,7 @@
             document.getElementById('keywordSuggestions').style.display = 'block';
         }
 
-        // Alt-Text generieren (vereinfacht)
+        // Alt-Text generieren
         function generateAltText() {
             const title = document.getElementById('title').value;
             const keywords = document.getElementById('keywords').value;
@@ -488,59 +510,29 @@
                 return;
             }
 
-            const altText = `Beitragsbild zu: ${title}`;
+            let altText = `Beitragsbild zu: ${title}`;
+            
+            if (keywords) {
+                const firstKeywords = keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ');
+                altText = `${altText}. Keywords: ${firstKeywords}`;
+            }
+            
             document.getElementById('altText').value = altText;
         }
 
-        // Post speichern
-        document.getElementById('postForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = '💾 Speichere...';
-            submitButton.disabled = true;
-            
-            try {
-                const post = {
-                    title: document.getElementById('title').value,
-                    slug: document.getElementById('slug').value,
-                    excerpt: document.getElementById('excerpt').value,
-                    content: document.getElementById('content').value,
-                    keywords: document.getElementById('keywords').value,
-                    image: document.getElementById('image').value,
-                    altText: document.getElementById('altText').value,
-                    status: 'published'
-                };
-
-                const response = await fetch('../api/posts.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(post)
-                });
-
-                const result = await response.json();
-
-                if (result.success) {
-                    alert('✅ Post erfolgreich veröffentlicht!');
-                    
-                    // Form zurücksetzen
-                    this.reset();
+        // Datei-Upload
+        function handleFileUpload(file) {
+            if (file && file.type.startsWith('image/')) {
+                // In einer echten Anwendung würdest du hier die Datei hochladen
+                // Für Demo-Zwecke erstellen wir eine lokale URL
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('image').value = e.target.result;
                     updateSEOPreview();
-                    document.getElementById('keywordSuggestions').style.display = 'none';
-                } else {
-                    throw new Error(result.error || 'Unbekannter Fehler');
-                }
-            } catch (error) {
-                console.error('Fehler:', error);
-                alert('❌ Fehler beim Speichern: ' + error.message);
-            } finally {
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
+                };
+                reader.readAsDataURL(file);
             }
-        });
+        }
 
         // Posts laden
         async function loadPosts() {
@@ -634,75 +626,6 @@
         // Post ansehen
         function viewPost(slug) {
             window.open(`../posts/${slug}.html`, '_blank');
-
-        // Posts laden
-        function loadPosts() {
-            const postsList = document.getElementById('postsList');
-            const totalPosts = posts.length;
-            const publishedPosts = posts.filter(p => p.status === 'published').length;
-            const draftPosts = posts.filter(p => p.status === 'draft').length;
-
-            // Statistiken aktualisieren
-            document.getElementById('totalPosts').textContent = totalPosts;
-            document.getElementById('publishedPosts').textContent = publishedPosts;
-            document.getElementById('draftPosts').textContent = draftPosts;
-
-            // Posts auflisten
-            if (posts.length === 0) {
-                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
-                return;
-            }
-
-            postsList.innerHTML = posts.map(post => `
-                <div class="post-item">
-                    <h3>${post.title}</h3>
-                    <div class="post-meta">
-                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
-                        Keywords: ${post.keywords || 'Keine'}
-                    </div>
-                    <p>${post.excerpt}</p>
-                    <div class="post-actions">
-                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
-                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
-                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Post bearbeiten
-        function editPost(postId) {
-            const post = posts.find(p => p.id === postId);
-            if (!post) return;
-
-            document.getElementById('title').value = post.title;
-            document.getElementById('slug').value = post.slug;
-            document.getElementById('excerpt').value = post.excerpt;
-            document.getElementById('content').value = post.content;
-            document.getElementById('keywords').value = post.keywords || '';
-            document.getElementById('image').value = post.image || '';
-            document.getElementById('altText').value = post.altText || '';
-
-            updateSEOPreview();
-            showPanel('editor');
-            
-            // Post aus Liste entfernen für Update
-            posts = posts.filter(p => p.id !== postId);
-            localStorage.setItem('blogPosts', JSON.stringify(posts));
-        }
-
-        // Post löschen
-        function deletePost(postId) {
-            if (confirm('Post wirklich löschen?')) {
-                posts = posts.filter(p => p.id !== postId);
-                localStorage.setItem('blogPosts', JSON.stringify(posts));
-                loadPosts();
-            }
-        }
-
-        // Post ansehen
-        function viewPost(slug) {
-            window.open(`/blog/posts/${slug}.html`, '_blank');
         }
 
         // SEO Analyse
@@ -754,64 +677,120 @@
             document.getElementById('seoResults').style.display = 'block';
         }
 
-        // SEO Analyse
-        function analyzeSEO() {
-            const text = document.getElementById('analyzeText').value;
-            if (!text) {
-                alert('Bitte gib Text für die SEO-Analyse ein');
-                return;
-            }
-
-            const words = text.split(/\s+/).length;
-            const sentences = text.split(/[.!?]+/).length - 1;
-            const avgWordsPerSentence = Math.round(words / sentences);
-            
-            const headings = (text.match(/<h[1-6][^>]*>/gi) || []).length;
-            const links = (text.match(/<a[^>]*>/gi) || []).length;
-            const images = (text.match(/<img[^>]*>/gi) || []).length;
-
-            const results = `
-                <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>📊 Text-Statistiken</h4>
-                    <p><strong>Wörter:</strong> ${words} (Empfohlen: 800-2000)</p>
-                    <p><strong>Sätze:</strong> ${sentences}</p>
-                    <p><strong>Durchschnittliche Satzlänge:</strong> ${avgWordsPerSentence} Wörter</p>
-                </div>
-                
-                <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>🏗️ Struktur</h4>
-                    <p><strong>Überschriften:</strong> ${headings} ${headings < 3 ? '⚠️ Mehr Überschriften empfohlen' : '✅'}</p>
-                    <p><strong>Links:</strong> ${links} ${links < 2 ? '⚠️ Mehr interne/externe Links empfohlen' : '✅'}</p>
-                    <p><strong>Bilder:</strong> ${images} ${images < 1 ? '⚠️ Mindestens ein Bild empfohlen' : '✅'}</p>
-                </div>
-
-                <div style="background: #fefce8; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>💡 SEO Empfehlungen</h4>
-                    <ul style="margin-left: 20px;">
-                        ${words < 800 ? '<li>⚠️ Text sollte mindestens 800 Wörter haben</li>' : ''}
-                        ${avgWordsPerSentence > 20 ? '<li>⚠️ Sätze sind zu lang - unter 20 Wörter pro Satz empfohlen</li>' : ''}
-                        ${headings < 3 ? '<li>⚠️ Verwende mehr Überschriften (H2, H3) für bessere Struktur</li>' : ''}
-                        ${links < 2 ? '<li>⚠️ Füge interne und externe Links hinzu</li>' : ''}
-                        ${images < 1 ? '<li>⚠️ Mindestens ein Bild mit Alt-Text hinzufügen</li>' : ''}
-                        <li>✅ Verwende Keywords natürlich im Text</li>
-                        <li>✅ Meta Description unter 160 Zeichen halten</li>
-                    </ul>
-                </div>
-            `;
-
-            document.getElementById('seoAnalysisContent').innerHTML = results;
-            document.getElementById('seoResults').style.display = 'block';
-        }
-
-        // Initialisierung
+        // Event Listeners
         document.addEventListener('DOMContentLoaded', function() {
-            updateSEOPreview();
-            
-            // Zeichenzähler für Meta Description
-            document.getElementById('excerpt').addEventListener('input', function() {
-                updateSEOPreview();
+            // Tab Navigation
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const panelId = this.getAttribute('data-panel');
+                    showPanel(panelId);
+                });
             });
+
+            // Eingabe-Event-Listener für Auto-Updates
+            document.getElementById('title').addEventListener('input', updateSEOPreview);
+            document.getElementById('slug').addEventListener('input', updateSEOPreview);
+            document.getElementById('excerpt').addEventListener('input', updateSEOPreview);
+
+            // Button-Event-Listener
+            document.getElementById('generateKeywordsBtn').addEventListener('click', generateKeywords);
+            document.getElementById('generateAltTextBtn').addEventListener('click', generateAltText);
+            document.getElementById('analyzeSEOBtn').addEventListener('click', analyzeSEO);
+
+            // Upload-Area
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('imageFile');
+
+            uploadArea.addEventListener('click', () => fileInput.click());
+            
+            fileInput.addEventListener('change', function(e) {
+                if (e.target.files[0]) {
+                    handleFileUpload(e.target.files[0]);
+                }
+            });
+
+            uploadArea.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+
+            uploadArea.addEventListener('dragleave', function() {
+                uploadArea.classList.remove('dragover');
+            });
+
+            uploadArea.addEventListener('drop', function(e) {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                if (e.dataTransfer.files[0]) {
+                    handleFileUpload(e.dataTransfer.files[0]);
+                }
+            });
+
+            // Post Form Submit
+            document.getElementById('postForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const submitButton = this.querySelector('button[type="submit"]');
+                const originalText = submitButton.textContent;
+                submitButton.textContent = '💾 Speichere...';
+                submitButton.disabled = true;
+                
+                try {
+                    const post = {
+                        title: document.getElementById('title').value,
+                        slug: document.getElementById('slug').value,
+                        excerpt: document.getElementById('excerpt').value,
+                        content: document.getElementById('content').value,
+                        keywords: document.getElementById('keywords').value,
+                        image: document.getElementById('image').value,
+                        altText: document.getElementById('altText').value,
+                        status: 'published'
+                    };
+
+                    if (!post.title || !post.content) {
+                        throw new Error('Titel und Inhalt sind erforderlich');
+                    }
+
+                    const response = await fetch('../api/posts.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(post)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        alert('✅ Post erfolgreich veröffentlicht!');
+                        
+                        // Form zurücksetzen
+                        this.reset();
+                        updateSEOPreview();
+                        document.getElementById('keywordSuggestions').style.display = 'none';
+                        
+                        // Posts neu laden
+                        loadPosts();
+                    } else {
+                        throw new Error(result.error || 'Unbekannter Fehler');
+                    }
+                } catch (error) {
+                    console.error('Fehler:', error);
+                    alert('❌ Fehler beim Speichern: ' + error.message);
+                } finally {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                }
+            });
+
+            // Initiale SEO Preview
+            updateSEOPreview();
         });
+
+        // Globale Funktionen (für onclick in HTML)
+        window.editPost = editPost;
+        window.deletePost = deletePost;
+        window.viewPost = viewPost;
     </script>
 </body>
 </html>
