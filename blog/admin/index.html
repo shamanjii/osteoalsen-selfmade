@@ -3,14 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Osteopathie Blog Hamburg</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts - Epilogue & Instrument Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <title>Blog Admin - Schlanke Version</title>
     <style>
         * {
             margin: 0;
@@ -19,1077 +12,806 @@
         }
 
         body {
-            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background-color: #ffffff;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-            font-size: 1.1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
         }
 
-        /* Typography System */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        h1 {
-            font-size: clamp(2.8rem, 5vw, 4rem);
-            font-weight: 700;
-            letter-spacing: -0.035em;
-        }
-
-        h2 {
-            font-size: clamp(2.2rem, 4vw, 2.8rem);
-            font-weight: 600;
-            letter-spacing: -0.025em;
-        }
-
-        h3 {
-            font-size: clamp(1.6rem, 3vw, 2rem);
-            font-weight: 600;
-            letter-spacing: -0.02em;
-        }
-
-        h4 {
-            font-size: clamp(1.3rem, 2.5vw, 1.5rem);
-            font-weight: 600;
-            letter-spacing: -0.015em;
-        }
-
-        p {
-            font-family: 'Instrument Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.8;
-            letter-spacing: 0.015em;
-            font-size: 1.1rem;
-        }
-
-        /* Header & Navigation */
-        header {
-            background: #1a202c;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0.8rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            gap: 0.8rem;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1a202c;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-        }
-
-        .logo-title {
-            font-family: 'Epilogue', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #ffffff;
-            letter-spacing: -0.015em;
-        }
-
-        .logo-subtitle {
-            font-family: 'Instrument Sans', sans-serif;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: 300;
-            letter-spacing: 0.01em;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.8);
-            font-family: 'Instrument Sans', sans-serif;
-            font-weight: 400;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-            padding: 0.5rem 0;
-            letter-spacing: 0.005em;
-        }
-
-        .nav-menu a:hover, .nav-menu a.active {
-            color: #ffffff;
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #ffffff;
-            cursor: pointer;
-            font-family: 'Epilogue', sans-serif;
-            font-weight: 500;
-        }
-
-        .nav-cta {
-            background: #ffffff;
-            color: #1a202c !important;
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
-            font-family: 'Epilogue', sans-serif;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            letter-spacing: -0.005em;
-        }
-
-        .nav-cta:hover {
-            background: #f7fafc !important;
-            color: #1a202c !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 20px;
         }
 
-        /* Main Content */
-        .main-content {
-            margin-top: 90px;
-            padding: 40px 0;
-            min-height: calc(100vh - 130px);
-        }
-
-        /* Dashboard Specific Styles */
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .dashboard-card {
+        .header {
             background: white;
+            padding: 20px;
             border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
-        .dashboard-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .dashboard-card h2 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .header h1 {
             color: #1e293b;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
         }
 
-        .stat-item {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            background: #f8fafc;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
-            color: #64748b;
-        }
-
-        .recent-posts {
-            margin-top: 2rem;
-        }
-
-        .posts-table {
+        .tab {
+            padding: 12px 24px;
             background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .table-header {
+        .tab.active {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .tab:hover:not(.active) {
             background: #f1f5f9;
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid #e2e8f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        .table-header h2 {
-            font-size: 1.25rem;
-            margin: 0;
+        .panel {
+            display: none !important;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .search-bar {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
+        .panel.active {
+            display: block !important;
         }
 
-        .search-input {
-            padding: 0.5rem 1rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 0.875rem;
-            width: 200px;
+        .form-group {
+            margin-bottom: 20px;
         }
 
-        .filter-select {
-            padding: 0.5rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 0.875rem;
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 12px;
         }
 
         .posts-list {
-            max-height: 500px;
-            overflow-y: auto;
+            margin-top: 30px;
         }
 
         .post-item {
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid #f1f5f9;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s ease;
-        }
-
-        .post-item:hover {
             background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3b82f6;
         }
 
-        .post-item:last-child {
-            border-bottom: none;
-        }
-
-        .post-info {
-            flex: 1;
-        }
-
-        .post-title {
-            font-weight: 600;
+        .post-item h3 {
+            margin-bottom: 8px;
             color: #1e293b;
-            margin-bottom: 0.25rem;
-            text-decoration: none;
-        }
-
-        .post-title:hover {
-            color: #667eea;
         }
 
         .post-meta {
-            font-size: 0.875rem;
-            color: #64748b;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .post-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .status-published {
-            background: #d1fae5;
-            color: #065f46;
-        }
-
-        .status-draft {
-            background: #fef3c7;
-            color: #92400e;
-        }
-
-        .status-scheduled {
-            background: #dbeafe;
-            color: #1e40af;
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
 
         .post-actions {
             display: flex;
-            gap: 0.5rem;
+            gap: 10px;
         }
 
-        .action-btn {
-            padding: 0.25rem 0.5rem;
-            border: none;
+        .seo-preview {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #0ea5e9;
+        }
+
+        .seo-preview h4 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+
+        .seo-title {
+            color: #1d4ed8;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .seo-url {
+            color: #059669;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .seo-description {
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .keyword-suggestions {
+            background: #fef3c7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .keyword-tag {
+            display: inline-block;
+            background: #fbbf24;
+            color: #92400e;
+            padding: 4px 8px;
             border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.75rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
+            font-size: 12px;
+            margin: 2px;
         }
 
-        .btn-edit {
-            background: #f1f5f9;
-            color: #475569;
-        }
-
-        .btn-edit:hover {
-            background: #e2e8f0;
-        }
-
-        .btn-delete {
-            background: #fef2f2;
-            color: #dc2626;
-        }
-
-        .btn-delete:hover {
-            background: #fee2e2;
-        }
-
-        .btn-view {
-            background: #eff6ff;
-            color: #2563eb;
-        }
-
-        .btn-view:hover {
-            background: #dbeafe;
-        }
-
-        .quick-actions {
+        .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
-        .quick-action {
+        .stat-card {
             background: white;
-            border: 2px dashed #e2e8f0;
-            border-radius: 12px;
-            padding: 2rem;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #64748b;
         }
 
-        .quick-action:hover {
-            border-color: #667eea;
-            background: #f8fafc;
-            color: #667eea;
-            transform: translateY(-2px);
-        }
-
-        .quick-action i {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3b82f6;
             display: block;
         }
 
-        .loading {
-            text-align: center;
-            padding: 2rem;
-            color: #64748b;
+        .stat-label {
+            color: #6b7280;
+            font-size: 14px;
+            margin-top: 5px;
         }
 
-        .error {
-            background: #fef2f2;
-            color: #dc2626;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            border-left: 4px solid #dc2626;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 3rem;
-            color: #64748b;
-        }
-
-        .empty-state i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #cbd5e1;
-        }
-
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-            padding: 1rem;
-        }
-
-        .page-btn {
-            padding: 0.5rem 0.75rem;
-            border: 1px solid #e2e8f0;
-            background: white;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .page-btn:hover,
-        .page-btn.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-
-        .page-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .toast {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            color: white;
-            font-weight: 500;
-            z-index: 1000;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .toast.show {
-            transform: translateX(0);
-        }
-
-        .toast.success {
-            background: #10b981;
-        }
-
-        .toast.error {
-            background: #ef4444;
-        }
-
-        /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .nav-menu {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background: #1a202c;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 2rem;
-                padding: 2rem 0;
-                transition: left 0.3s ease;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            }
-            
-            .nav-menu.active {
-                left: 0;
-            }
-            
-            .mobile-menu-toggle {
-                display: block;
-                min-height: 44px;
-                min-width: 44px;
-            }
-            
-            .logo-text {
-                display: none;
-            }
-            
-            nav {
-                padding: 0.8rem 1rem;
+            .tabs {
+                flex-wrap: wrap;
             }
             
             .container {
-                padding: 0 1rem;
-            }
-            
-            .dashboard-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .post-item {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-            }
-            
-            .post-actions {
-                align-self: flex-end;
-            }
-            
-            .search-bar {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .search-input {
-                width: 100%;
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html" class="logo">
-                <div class="logo-icon">OA</div>
-                <div class="logo-text">
-                    <div class="logo-title">Osteopathie Alsen</div>
-                    <div class="logo-subtitle">CMS Dashboard</div>
-                </div>
-            </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">📊 Dashboard</a></li>
-                <li><a href="editor.html">✏️ Editor</a></li>
-                <li><a href="media.html">🖼️ Medien</a></li>
-                <li><a href="seo.html">🔍 SEO-Tools</a></li>
-                <li><a href="content-optimizer.html">🎯 Optimierer</a></li>
-                <li><a href="automation.html">🤖 Automatisierung</a></li>
-                <li><a href="performance.html">⚡ Performance</a></li>
-                <li><a href="analytics.html">📈 Analytics</a></li>
-                <li><a href="content-workflow.html">📝 Workflow</a></li>
-                <li><a href="../index.html" class="nav-cta">🌐 Blog ansehen</a></li>
-            </ul>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 SEO Blog Admin</h1>
+            <p>Schlanke Verwaltung für deine SEO-optimierten Blog-Posts</p>
+        </div>
 
-    <div class="main-content">
-        <div class="container">
-            <!-- Dashboard Statistiken -->
-            <div class="dashboard-grid">
-                <div class="dashboard-card">
-                    <h2><i class="fas fa-chart-line"></i> Übersicht</h2>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number" id="totalPosts">0</div>
-                            <div class="stat-label">Artikel gesamt</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="publishedPosts">0</div>
-                            <div class="stat-label">Veröffentlicht</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="draftPosts">0</div>
-                            <div class="stat-label">Entwürfe</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="scheduledPosts">0</div>
-                            <div class="stat-label">Geplant</div>
-                        </div>
-                    </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showPanel('editor')">✏️ Editor</button>
+            <button class="tab" onclick="showPanel('posts')">📝 Posts</button>
+            <button class="tab" onclick="showPanel('seo')">🎯 SEO Tools</button>
+        </div>
+
+        <!-- Editor Panel -->
+        <div id="editor" class="panel active">
+            <h2>Neuen Blog-Post erstellen</h2>
+            
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="title">Titel</label>
+                    <input type="text" id="title" placeholder="Dein Blog-Post Titel" oninput="updateSEOPreview()">
                 </div>
 
-                <div class="dashboard-card">
-                    <h2><i class="fas fa-rocket"></i> Schnellaktionen</h2>
-                    <div class="quick-actions">
-                        <a href="editor.html" class="quick-action">
-                            <i class="fas fa-plus"></i>
-                            <div>Neuer Artikel</div>
-                        </a>
-                        <a href="media.html" class="quick-action">
-                            <i class="fas fa-upload"></i>
-                            <div>Medien hochladen</div>
-                        </a>
-                        <a href="seo.html" class="quick-action">
-                            <i class="fas fa-search"></i>
-                            <div>SEO optimieren</div>
-                        </a>
-                        <a href="#" class="quick-action" onclick="generateSitemap()">
-                            <i class="fas fa-sitemap"></i>
-                            <div>Sitemap erstellen</div>
-                        </a>
-                    </div>
+                <div class="form-group">
+                    <label for="slug">URL-Slug</label>
+                    <input type="text" id="slug" placeholder="automatisch-generiert" oninput="updateSEOPreview()">
+                </div>
+
+                <div class="form-group">
+                    <label for="excerpt">Meta Description</label>
+                    <textarea id="excerpt" placeholder="Kurze Beschreibung für SEO (max. 160 Zeichen)" maxlength="160" oninput="updateSEOPreview()"></textarea>
+                    <small id="excerptCount">0/160 Zeichen</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Inhalt</label>
+                    <textarea id="content" placeholder="Dein Blog-Post Inhalt in HTML oder Markdown" rows="15"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords">SEO Keywords</label>
+                    <input type="text" id="keywords" placeholder="keyword1, keyword2, keyword3">
+                    <button type="button" class="btn-secondary btn-small" onclick="generateKeywords()" style="margin-top: 10px;">🎯 Keywords generieren</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Beitragsbild URL</label>
+                    <input type="text" id="image" placeholder="https://example.com/image.jpg">
+                    <button type="button" class="btn-secondary btn-small" onclick="generateAltText()" style="margin-top: 10px;">🖼️ Alt-Text generieren</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="altText">Alt-Text für Bild</label>
+                    <input type="text" id="altText" placeholder="Automatisch generierter Alt-Text">
+                </div>
+
+                <div class="seo-preview">
+                    <h4>🔍 SEO Vorschau</h4>
+                    <div class="seo-title" id="previewTitle">Dein Titel hier...</div>
+                    <div class="seo-url" id="previewUrl">https://deine-domain.de/blog/slug</div>
+                    <div class="seo-description" id="previewDescription">Deine Meta Description hier...</div>
+                </div>
+
+                <div class="keyword-suggestions" id="keywordSuggestions" style="display: none;">
+                    <h5>💡 Keyword Vorschläge:</h5>
+                    <div id="suggestedKeywords"></div>
+                </div>
+
+                <button type="submit" class="btn">📤 Post veröffentlichen</button>
+            </form>
+        </div>
+
+        <!-- Posts Panel -->
+        <div id="posts" class="panel">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" id="totalPosts">0</span>
+                    <div class="stat-label">Gesamt Posts</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="publishedPosts">0</span>
+                    <div class="stat-label">Veröffentlicht</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="draftPosts">0</span>
+                    <div class="stat-label">Entwürfe</div>
                 </div>
             </div>
 
-            <!-- Artikel Übersicht -->
-            <div class="recent-posts">
-                <div class="posts-table">
-                    <div class="table-header">
-                        <h2><i class="fas fa-file-alt"></i> Artikel verwalten</h2>
-                        <div class="search-bar">
-                            <input type="text" class="search-input" id="searchInput" placeholder="Artikel suchen...">
-                            <select class="filter-select" id="statusFilter">
-                                <option value="all">Alle Status</option>
-                                <option value="published">Veröffentlicht</option>
-                                <option value="draft">Entwürfe</option>
-                                <option value="scheduled">Geplant</option>
-                            </select>
-                            <button class="nav-btn" onclick="loadPosts()" style="background: #667eea; color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">
-                                <i class="fas fa-sync"></i>
-                            </button>
-                        </div>
-                    </div>
+            <h2>Alle Blog-Posts</h2>
+            <div class="posts-list" id="postsList">
+                <!-- Posts werden hier dynamisch geladen -->
+            </div>
+        </div>
 
-                    <div class="posts-list" id="postsList">
-                        <div class="loading">
-                            <i class="fas fa-spinner fa-spin"></i> Lade Artikel...
-                        </div>
-                    </div>
+        <!-- SEO Tools Panel -->
+        <div id="seo" class="panel">
+            <h2>🎯 SEO Tools</h2>
+            
+            <div class="form-group">
+                <label for="analyzeText">Text für SEO-Analyse</label>
+                <textarea id="analyzeText" placeholder="Füge deinen Text hier ein für SEO-Analyse" rows="8"></textarea>
+            </div>
 
-                    <div class="pagination" id="pagination" style="display: none;"></div>
-                </div>
+            <button type="button" class="btn" onclick="analyzeSEO()">🔍 SEO Analyse starten</button>
+
+            <div id="seoResults" style="display: none; margin-top: 20px;">
+                <h3>📊 SEO Analyse Ergebnisse</h3>
+                <div id="seoAnalysisContent"></div>
             </div>
         </div>
     </div>
 
-    <!-- Toast Notifications -->
-    <div id="toast" class="toast"></div>
-
     <script>
         // Globale Variablen
-        let currentPage = 1;
-        const postsPerPage = 10;
-        let totalPosts = 0;
-        let allPosts = [];
+        let posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
 
-        // Mobile Menu Toggle
-        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('active');
-            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
-        });
-
-        // Initialisierung
-        document.addEventListener('DOMContentLoaded', function() {
-            loadStats();
-            loadPosts();
-            setupEventListeners();
-        });
-
-        function setupEventListeners() {
-            // Such-Input
-            document.getElementById('searchInput').addEventListener('input', debounce(filterPosts, 300));
+        // Tab Navigation
+        function showPanel(panelId) {
+            console.log('Wechsle zu Panel:', panelId); // Debug
             
-            // Status-Filter
-            document.getElementById('statusFilter').addEventListener('change', filterPosts);
-
-            // Enter-Taste für Suche
-            document.getElementById('searchInput').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    filterPosts();
-                }
+            // Alle Panels ausblenden
+            document.querySelectorAll('.panel').forEach(panel => {
+                panel.classList.remove('active');
+                panel.style.display = 'none';
             });
-        }
-
-        async function loadStats() {
-            try {
-                // Versuche zuerst JSON-Datei zu laden
-                const response = await fetch('../data/posts.json');
-                
-                if (response.ok) {
-                    const posts = await response.json();
-                    
-                    const stats = {
-                        total: posts.length,
-                        published: posts.filter(p => p.status === 'published').length,
-                        draft: posts.filter(p => p.status === 'draft').length,
-                        scheduled: posts.filter(p => p.status === 'scheduled').length
-                    };
-
-                    document.getElementById('totalPosts').textContent = stats.total;
-                    document.getElementById('publishedPosts').textContent = stats.published;
-                    document.getElementById('draftPosts').textContent = stats.draft;
-                    document.getElementById('scheduledPosts').textContent = stats.scheduled;
-                } else {
-                    // Fallback: API verwenden falls JSON nicht verfügbar
-                    const apiResponse = await fetch('../api/posts.php?action=list&limit=1000');
-                    const result = await apiResponse.json();
-
-                    if (result.success) {
-                        const posts = result.data.posts;
-                        
-                        const stats = {
-                            total: posts.length,
-                            published: posts.filter(p => p.status === 'published').length,
-                            draft: posts.filter(p => p.status === 'draft').length,
-                            scheduled: posts.filter(p => p.status === 'scheduled').length
-                        };
-
-                        document.getElementById('totalPosts').textContent = stats.total;
-                        document.getElementById('publishedPosts').textContent = stats.published;
-                        document.getElementById('draftPosts').textContent = stats.draft;
-                        document.getElementById('scheduledPosts').textContent = stats.scheduled;
-                    }
-                }
-            } catch (error) {
-                console.error('Fehler beim Laden der Statistiken:', error);
-                // Zeige Standard-Werte
-                document.getElementById('totalPosts').textContent = '2';
-                document.getElementById('publishedPosts').textContent = '2';
-                document.getElementById('draftPosts').textContent = '0';
-                document.getElementById('scheduledPosts').textContent = '0';
-            }
-        }
-
-        async function loadPosts(page = 1) {
-            try {
-                // Versuche zuerst JSON-Datei zu laden
-                const response = await fetch('../data/posts.json');
-                
-                if (response.ok) {
-                    const posts = await response.json();
-                    
-                    // Paginierung simulieren
-                    const offset = (page - 1) * postsPerPage;
-                    const paginatedPosts = posts.slice(offset, offset + postsPerPage);
-                    
-                    allPosts = paginatedPosts;
-                    totalPosts = posts.length;
-                    currentPage = page;
-                    
-                    displayPosts(allPosts);
-                    updatePagination();
-                } else {
-                    // Fallback: API verwenden
-                    const offset = (page - 1) * postsPerPage;
-                    const apiResponse = await fetch(`../api/posts.php?action=list&limit=${postsPerPage}&offset=${offset}`);
-                    const result = await apiResponse.json();
-
-                    if (result.success) {
-                        allPosts = result.data.posts;
-                        totalPosts = result.data.total;
-                        currentPage = page;
-                        
-                        displayPosts(allPosts);
-                        updatePagination();
-                    } else {
-                        showError('Fehler beim Laden der Artikel: ' + result.error);
-                    }
-                }
-            } catch (error) {
-                console.error('Fehler beim Laden der Posts:', error);
-                showError('Fehler beim Laden der Artikel');
-            }
-        }
-
-        function displayPosts(posts) {
-            const container = document.getElementById('postsList');
             
-            if (posts.length === 0) {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <i class="fas fa-file-alt"></i>
-                        <h3>Keine Artikel gefunden</h3>
-                        <p>Erstellen Sie Ihren ersten Artikel!</p>
-                        <a href="editor.html" class="nav-btn primary" style="margin-top: 1rem; display: inline-block; background: #667eea; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;">
-                            <i class="fas fa-plus"></i> Neuer Artikel
-                        </a>
-                    </div>
-                `;
-                return;
-            }
-
-            container.innerHTML = posts.map(post => `
-                <div class="post-item">
-                    <div class="post-info">
-                        <a href="editor.html?edit=${post.id}" class="post-title">
-                            ${escapeHtml(post.title)}
-                        </a>
-                        <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> ${formatDate(post.updated || post.updated_at || post.created_at)}</span>
-                            <span><i class="fas fa-folder"></i> ${escapeHtml(post.category || 'Keine Kategorie')}</span>
-                            <span class="post-status status-${post.status}">
-                                <i class="fas fa-${getStatusIcon(post.status)}"></i>
-                                ${getStatusText(post.status)}
-                            </span>
-                        </div>
-                    </div>
-                    <div class="post-actions">
-                        <a href="editor.html?edit=${post.id}" class="action-btn btn-edit" title="Bearbeiten">
-                            <i class="fas fa-edit"></i>
-                        </a>
-                        <a href="../posts/${post.slug}.html" target="_blank" class="action-btn btn-view" title="Ansehen">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <button onclick="deletePost('${post.id}')" class="action-btn btn-delete" title="Löschen">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function updatePagination() {
-            const container = document.getElementById('pagination');
-            const totalPages = Math.ceil(totalPosts / postsPerPage);
-
-            if (totalPages <= 1) {
-                container.style.display = 'none';
-                return;
-            }
-
-            container.style.display = 'flex';
+            // Alle Tabs deaktivieren
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
             
-            let paginationHTML = '';
-
-            // Vorherige Seite
-            paginationHTML += `
-                <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="loadPosts(${currentPage - 1})">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-            `;
-
-            // Seitenzahlen
-            for (let i = 1; i <= totalPages; i++) {
-                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
-                    paginationHTML += `
-                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="loadPosts(${i})">
-                            ${i}
-                        </button>
-                    `;
-                } else if (i === currentPage - 3 || i === currentPage + 3) {
-                    paginationHTML += '<span class="page-btn" disabled>...</span>';
-                }
+            // Gewähltes Panel anzeigen
+            const targetPanel = document.getElementById(panelId);
+            const clickedTab = event.target;
+            
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+                targetPanel.style.display = 'block';
+            }
+            
+            if (clickedTab) {
+                clickedTab.classList.add('active');
             }
 
-            // Nächste Seite
-            paginationHTML += `
-                <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="loadPosts(${currentPage + 1})">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            `;
-
-            container.innerHTML = paginationHTML;
-        }
-
-        async function filterPosts() {
-            const search = document.getElementById('searchInput').value.trim();
-            const status = document.getElementById('statusFilter').value;
-
-            try {
-                // Versuche zuerst JSON-Datei zu laden
-                const response = await fetch('../data/posts.json');
-                
-                if (response.ok) {
-                    let posts = await response.json();
-                    
-                    // Filter anwenden
-                    if (status !== 'all') {
-                        posts = posts.filter(p => p.status === status);
-                    }
-                    
-                    if (search) {
-                        posts = posts.filter(p => 
-                            p.title.toLowerCase().includes(search.toLowerCase()) ||
-                            (p.excerpt && p.excerpt.toLowerCase().includes(search.toLowerCase())) ||
-                            (p.content && p.content.toLowerCase().includes(search.toLowerCase()))
-                        );
-                    }
-                    
-                    displayPosts(posts);
-                    document.getElementById('pagination').style.display = 'none';
-                } else {
-                    // Fallback: API verwenden
-                    let url = `../api/posts.php?action=list&limit=1000`;
-                    
-                    if (status !== 'all') {
-                        url += `&status=${status}`;
-                    }
-                    
-                    if (search) {
-                        url += `&search=${encodeURIComponent(search)}`;
-                    }
-
-                    const apiResponse = await fetch(url);
-                    const result = await apiResponse.json();
-
-                    if (result.success) {
-                        displayPosts(result.data.posts);
-                        document.getElementById('pagination').style.display = 'none';
-                    } else {
-                        showError('Fehler beim Filtern: ' + result.error);
-                    }
-                }
-            } catch (error) {
-                console.error('Fehler beim Filtern:', error);
-                showError('Fehler beim Filtern der Artikel');
+            // Posts laden wenn Posts-Panel geöffnet wird
+            if (panelId === 'posts') {
+                loadPosts();
             }
         }
 
-        async function deletePost(postId) {
-            if (!confirm('Sind Sie sicher, dass Sie diesen Artikel löschen möchten?')) {
+        // Globale Funktionen verfügbar machen
+        window.showPanel = showPanel;
+        window.editPost = editPost;
+        window.deletePost = deletePost;
+        window.viewPost = viewPost;
+        window.generateKeywords = generateKeywords;
+        window.generateAltText = generateAltText;
+        window.analyzeSEO = analyzeSEO;
+
+        // SEO Preview Update
+        function updateSEOPreview() {
+            const title = document.getElementById('title').value || 'Dein Titel hier...';
+            const slug = document.getElementById('slug').value || generateSlug(title);
+            const excerpt = document.getElementById('excerpt').value || 'Deine Meta Description hier...';
+
+            document.getElementById('previewTitle').textContent = title;
+            document.getElementById('previewUrl').textContent = `https://deine-domain.de/blog/${slug}`;
+            document.getElementById('previewDescription').textContent = excerpt;
+
+            // Zeichenzähler für Meta Description
+            const excerptCount = document.getElementById('excerptCount');
+            excerptCount.textContent = `${excerpt.length}/160 Zeichen`;
+            excerptCount.style.color = excerpt.length > 160 ? '#ef4444' : '#6b7280';
+
+            // Auto-Slug generierung
+            if (!document.getElementById('slug').value) {
+                document.getElementById('slug').value = generateSlug(title);
+            }
+        }
+
+        // Slug generieren
+        function generateSlug(title) {
+            return title
+                .toLowerCase()
+                .replace(/ä/g, 'ae')
+                .replace(/ö/g, 'oe')
+                .replace(/ü/g, 'ue')
+                .replace(/ß/g, 'ss')
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '');
+        }
+
+        // Keywords generieren (vereinfacht)
+        function generateKeywords() {
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            
+            if (!title && !content) {
+                alert('Bitte gib zuerst einen Titel und Inhalt ein');
                 return;
             }
 
+            // Einfache Keyword-Extraktion basierend auf häufigen Wörtern
+            const text = (title + ' ' + content).toLowerCase();
+            const words = text.match(/\b\w{4,}\b/g) || [];
+            const wordCount = {};
+            
+            words.forEach(word => {
+                wordCount[word] = (wordCount[word] || 0) + 1;
+            });
+
+            const keywords = Object.entries(wordCount)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10)
+                .map(entry => entry[0]);
+
+            document.getElementById('keywords').value = keywords.join(', ');
+            
+            // Vorschläge anzeigen
+            const suggestionsDiv = document.getElementById('suggestedKeywords');
+            suggestionsDiv.innerHTML = keywords.map(keyword => 
+                `<span class="keyword-tag">${keyword}</span>`
+            ).join('');
+            document.getElementById('keywordSuggestions').style.display = 'block';
+        }
+
+        // Alt-Text generieren (vereinfacht)
+        function generateAltText() {
+            const title = document.getElementById('title').value;
+            const keywords = document.getElementById('keywords').value;
+            
+            if (!title) {
+                alert('Bitte gib zuerst einen Titel ein');
+                return;
+            }
+
+            const altText = `Beitragsbild zu: ${title}`;
+            document.getElementById('altText').value = altText;
+        }
+
+        // Post speichern
+        document.getElementById('postForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = '💾 Speichere...';
+            submitButton.disabled = true;
+            
             try {
+                const post = {
+                    title: document.getElementById('title').value,
+                    slug: document.getElementById('slug').value,
+                    excerpt: document.getElementById('excerpt').value,
+                    content: document.getElementById('content').value,
+                    keywords: document.getElementById('keywords').value,
+                    image: document.getElementById('image').value,
+                    altText: document.getElementById('altText').value,
+                    status: 'published'
+                };
+
                 const response = await fetch('../api/posts.php', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ action: 'delete', id: postId })
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(post)
                 });
 
                 const result = await response.json();
 
                 if (result.success) {
-                    showToast('Artikel erfolgreich gelöscht', 'success');
-                    loadPosts(currentPage);
-                    loadStats();
+                    alert('✅ Post erfolgreich veröffentlicht!');
+                    
+                    // Form zurücksetzen
+                    this.reset();
+                    updateSEOPreview();
+                    document.getElementById('keywordSuggestions').style.display = 'none';
                 } else {
-                    showError('Fehler beim Löschen: ' + result.error);
+                    throw new Error(result.error || 'Unbekannter Fehler');
                 }
             } catch (error) {
-                console.error('Fehler beim Löschen:', error);
-                showError('Fehler beim Löschen des Artikels');
+                console.error('Fehler:', error);
+                alert('❌ Fehler beim Speichern: ' + error.message);
+            } finally {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
             }
-        }
+        });
 
-        async function generateSitemap() {
+        // Posts laden
+        async function loadPosts() {
             try {
-                const response = await fetch('../generate-sitemap.php');
+                const response = await fetch('../api/posts.php');
+                const result = await response.json();
                 
-                if (response.ok) {
-                    showToast('Sitemap erfolgreich generiert', 'success');
+                if (result.success) {
+                    posts = result.data;
                 } else {
-                    showToast('Fehler beim Generieren der Sitemap', 'error');
+                    posts = [];
                 }
             } catch (error) {
-                console.error('Fehler beim Generieren der Sitemap:', error);
-                showToast('Fehler beim Generieren der Sitemap', 'error');
+                console.error('Fehler beim Laden der Posts:', error);
+                posts = [];
+            }
+
+            const postsList = document.getElementById('postsList');
+            const totalPosts = posts.length;
+            const publishedPosts = posts.filter(p => p.status === 'published').length;
+            const draftPosts = posts.filter(p => p.status === 'draft').length;
+
+            // Statistiken aktualisieren
+            document.getElementById('totalPosts').textContent = totalPosts;
+            document.getElementById('publishedPosts').textContent = publishedPosts;
+            document.getElementById('draftPosts').textContent = draftPosts;
+
+            // Posts auflisten
+            if (posts.length === 0) {
+                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
+                return;
+            }
+
+            postsList.innerHTML = posts.map(post => `
+                <div class="post-item">
+                    <h3>${post.title}</h3>
+                    <div class="post-meta">
+                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
+                        Keywords: ${post.keywords || 'Keine'}
+                    </div>
+                    <p>${post.excerpt}</p>
+                    <div class="post-actions">
+                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
+                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
+                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Post bearbeiten
+        function editPost(postId) {
+            const post = posts.find(p => p.id === postId);
+            if (!post) return;
+
+            document.getElementById('title').value = post.title;
+            document.getElementById('slug').value = post.slug;
+            document.getElementById('excerpt').value = post.excerpt;
+            document.getElementById('content').value = post.content;
+            document.getElementById('keywords').value = post.keywords || '';
+            document.getElementById('image').value = post.image || '';
+            document.getElementById('altText').value = post.altText || '';
+
+            updateSEOPreview();
+            showPanel('editor');
+        }
+
+        // Post löschen
+        async function deletePost(postId) {
+            if (!confirm('Post wirklich löschen?')) return;
+
+            try {
+                const response = await fetch(`../api/posts.php?id=${postId}`, {
+                    method: 'DELETE'
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('✅ Post gelöscht!');
+                    loadPosts();
+                } else {
+                    throw new Error(result.error || 'Fehler beim Löschen');
+                }
+            } catch (error) {
+                console.error('Fehler:', error);
+                alert('❌ Fehler beim Löschen: ' + error.message);
             }
         }
 
-        // Hilfsfunktionen
-        function escapeHtml(unsafe) {
-            if (!unsafe) return '';
-            return unsafe
-                .replace(/&/g, "&amp;")
-                .replace(/</g, "&lt;")
-                .replace(/>/g, "&gt;")
-                .replace(/"/g, "&quot;")
-                .replace(/'/g, "&#039;");
+        // Post ansehen
+        function viewPost(slug) {
+            window.open(`../posts/${slug}.html`, '_blank');
+
+        // Posts laden
+        function loadPosts() {
+            const postsList = document.getElementById('postsList');
+            const totalPosts = posts.length;
+            const publishedPosts = posts.filter(p => p.status === 'published').length;
+            const draftPosts = posts.filter(p => p.status === 'draft').length;
+
+            // Statistiken aktualisieren
+            document.getElementById('totalPosts').textContent = totalPosts;
+            document.getElementById('publishedPosts').textContent = publishedPosts;
+            document.getElementById('draftPosts').textContent = draftPosts;
+
+            // Posts auflisten
+            if (posts.length === 0) {
+                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
+                return;
+            }
+
+            postsList.innerHTML = posts.map(post => `
+                <div class="post-item">
+                    <h3>${post.title}</h3>
+                    <div class="post-meta">
+                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
+                        Keywords: ${post.keywords || 'Keine'}
+                    </div>
+                    <p>${post.excerpt}</p>
+                    <div class="post-actions">
+                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
+                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
+                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
+                    </div>
+                </div>
+            `).join('');
         }
 
-        function formatDate(dateString) {
-            if (!dateString) return 'Unbekannt';
-            const date = new Date(dateString);
-            if (isNaN(date.getTime())) return 'Unbekannt';
+        // Post bearbeiten
+        function editPost(postId) {
+            const post = posts.find(p => p.id === postId);
+            if (!post) return;
+
+            document.getElementById('title').value = post.title;
+            document.getElementById('slug').value = post.slug;
+            document.getElementById('excerpt').value = post.excerpt;
+            document.getElementById('content').value = post.content;
+            document.getElementById('keywords').value = post.keywords || '';
+            document.getElementById('image').value = post.image || '';
+            document.getElementById('altText').value = post.altText || '';
+
+            updateSEOPreview();
+            showPanel('editor');
             
-            return date.toLocaleDateString('de-DE', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
+            // Post aus Liste entfernen für Update
+            posts = posts.filter(p => p.id !== postId);
+            localStorage.setItem('blogPosts', JSON.stringify(posts));
+        }
+
+        // Post löschen
+        function deletePost(postId) {
+            if (confirm('Post wirklich löschen?')) {
+                posts = posts.filter(p => p.id !== postId);
+                localStorage.setItem('blogPosts', JSON.stringify(posts));
+                loadPosts();
+            }
+        }
+
+        // Post ansehen
+        function viewPost(slug) {
+            window.open(`/blog/posts/${slug}.html`, '_blank');
+        }
+
+        // SEO Analyse
+        function analyzeSEO() {
+            const text = document.getElementById('analyzeText').value;
+            if (!text) {
+                alert('Bitte gib Text für die SEO-Analyse ein');
+                return;
+            }
+
+            const words = text.split(/\s+/).length;
+            const sentences = text.split(/[.!?]+/).length - 1;
+            const avgWordsPerSentence = Math.round(words / sentences);
+            
+            const headings = (text.match(/<h[1-6][^>]*>/gi) || []).length;
+            const links = (text.match(/<a[^>]*>/gi) || []).length;
+            const images = (text.match(/<img[^>]*>/gi) || []).length;
+
+            const results = `
+                <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>📊 Text-Statistiken</h4>
+                    <p><strong>Wörter:</strong> ${words} (Empfohlen: 800-2000)</p>
+                    <p><strong>Sätze:</strong> ${sentences}</p>
+                    <p><strong>Durchschnittliche Satzlänge:</strong> ${avgWordsPerSentence} Wörter</p>
+                </div>
+                
+                <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>🏗️ Struktur</h4>
+                    <p><strong>Überschriften:</strong> ${headings} ${headings < 3 ? '⚠️ Mehr Überschriften empfohlen' : '✅'}</p>
+                    <p><strong>Links:</strong> ${links} ${links < 2 ? '⚠️ Mehr interne/externe Links empfohlen' : '✅'}</p>
+                    <p><strong>Bilder:</strong> ${images} ${images < 1 ? '⚠️ Mindestens ein Bild empfohlen' : '✅'}</p>
+                </div>
+
+                <div style="background: #fefce8; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>💡 SEO Empfehlungen</h4>
+                    <ul style="margin-left: 20px;">
+                        ${words < 800 ? '<li>⚠️ Text sollte mindestens 800 Wörter haben</li>' : ''}
+                        ${avgWordsPerSentence > 20 ? '<li>⚠️ Sätze sind zu lang - unter 20 Wörter pro Satz empfohlen</li>' : ''}
+                        ${headings < 3 ? '<li>⚠️ Verwende mehr Überschriften (H2, H3) für bessere Struktur</li>' : ''}
+                        ${links < 2 ? '<li>⚠️ Füge interne und externe Links hinzu</li>' : ''}
+                        ${images < 1 ? '<li>⚠️ Mindestens ein Bild mit Alt-Text hinzufügen</li>' : ''}
+                        <li>✅ Verwende Keywords natürlich im Text</li>
+                        <li>✅ Meta Description unter 160 Zeichen halten</li>
+                    </ul>
+                </div>
+            `;
+
+            document.getElementById('seoAnalysisContent').innerHTML = results;
+            document.getElementById('seoResults').style.display = 'block';
+        }
+
+        // SEO Analyse
+        function analyzeSEO() {
+            const text = document.getElementById('analyzeText').value;
+            if (!text) {
+                alert('Bitte gib Text für die SEO-Analyse ein');
+                return;
+            }
+
+            const words = text.split(/\s+/).length;
+            const sentences = text.split(/[.!?]+/).length - 1;
+            const avgWordsPerSentence = Math.round(words / sentences);
+            
+            const headings = (text.match(/<h[1-6][^>]*>/gi) || []).length;
+            const links = (text.match(/<a[^>]*>/gi) || []).length;
+            const images = (text.match(/<img[^>]*>/gi) || []).length;
+
+            const results = `
+                <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>📊 Text-Statistiken</h4>
+                    <p><strong>Wörter:</strong> ${words} (Empfohlen: 800-2000)</p>
+                    <p><strong>Sätze:</strong> ${sentences}</p>
+                    <p><strong>Durchschnittliche Satzlänge:</strong> ${avgWordsPerSentence} Wörter</p>
+                </div>
+                
+                <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>🏗️ Struktur</h4>
+                    <p><strong>Überschriften:</strong> ${headings} ${headings < 3 ? '⚠️ Mehr Überschriften empfohlen' : '✅'}</p>
+                    <p><strong>Links:</strong> ${links} ${links < 2 ? '⚠️ Mehr interne/externe Links empfohlen' : '✅'}</p>
+                    <p><strong>Bilder:</strong> ${images} ${images < 1 ? '⚠️ Mindestens ein Bild empfohlen' : '✅'}</p>
+                </div>
+
+                <div style="background: #fefce8; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                    <h4>💡 SEO Empfehlungen</h4>
+                    <ul style="margin-left: 20px;">
+                        ${words < 800 ? '<li>⚠️ Text sollte mindestens 800 Wörter haben</li>' : ''}
+                        ${avgWordsPerSentence > 20 ? '<li>⚠️ Sätze sind zu lang - unter 20 Wörter pro Satz empfohlen</li>' : ''}
+                        ${headings < 3 ? '<li>⚠️ Verwende mehr Überschriften (H2, H3) für bessere Struktur</li>' : ''}
+                        ${links < 2 ? '<li>⚠️ Füge interne und externe Links hinzu</li>' : ''}
+                        ${images < 1 ? '<li>⚠️ Mindestens ein Bild mit Alt-Text hinzufügen</li>' : ''}
+                        <li>✅ Verwende Keywords natürlich im Text</li>
+                        <li>✅ Meta Description unter 160 Zeichen halten</li>
+                    </ul>
+                </div>
+            `;
+
+            document.getElementById('seoAnalysisContent').innerHTML = results;
+            document.getElementById('seoResults').style.display = 'block';
+        }
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSEOPreview();
+            
+            // Zeichenzähler für Meta Description
+            document.getElementById('excerpt').addEventListener('input', function() {
+                updateSEOPreview();
             });
-        }
-
-        function getStatusIcon(status) {
-            const icons = {
-                'published': 'check',
-                'draft': 'edit',
-                'scheduled': 'clock'
-            };
-            return icons[status] || 'edit';
-        }
-
-        function getStatusText(status) {
-            const texts = {
-                'published': 'Veröffentlicht',
-                'draft': 'Entwurf',
-                'scheduled': 'Geplant'
-            };
-            return texts[status] || 'Unbekannt';
-        }
-
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        }
-
-        function showToast(message, type = 'success') {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.className = `toast ${type} show`;
-            
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
-        }
-
-        function showError(message) {
-            const container = document.getElementById('postsList');
-            container.innerHTML = `<div class="error">${message}</div>`;
-        }
-
-        // Auto-refresh alle 30 Sekunden
-        setInterval(() => {
-            if (document.visibilityState === 'visible') {
-                loadStats();
-            }
-        }, 30000);
+        });
     </script>
-    <script src="../assets/js/seo-boost-state.js"></script>
-    <script src="../assets/js/seo-boost-api.js"></script>
-    <script src="../assets/js/navigation-master.js"></script>
 </body>
 </html>

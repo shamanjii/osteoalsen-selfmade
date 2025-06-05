@@ -1,12 +1,18 @@
 User-agent: *
 Allow: /
 
-User-agent: *
-Disallow: /admin/
-Disallow: /api/
-Disallow: /data/
+# Sitemap
+Sitemap: https://deine-domain.de/blog/sitemap.xml
 
-Sitemap: https://meinblog.de/sitemap.xml
-Sitemap: https://meinblog.de/sitemap-index.xml
+# Disallow admin areas
+Disallow: /blog/admin/
+Disallow: /blog/api/
+Disallow: /blog/data/
 
+# Allow important directories
+Allow: /blog/posts/
+Allow: /blog/assets/
+Allow: /blog/uploads/
+
+# Crawl delay (optional)
 Crawl-delay: 1
