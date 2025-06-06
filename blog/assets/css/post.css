@@ -253,6 +253,44 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Highlighted Quote */
+.quote {
+    background: #f8fafc;
+    border-left: 4px solid #94a3b8;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #334155;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Callout Box */
+.callout {
+    background: #ecfdf5;
+    border: 2px solid #34d399;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Related Posts */
+.related-posts {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+.related-posts ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+.related-posts a {
+    text-decoration: none;
+    color: #0369a1;
+}
+
 /* Links Styling - Improved */
 .post-content a {
     color: #059669;
@@ -513,5 +551,9 @@ p {
     .cta-section {
         margin: 2rem 0;
         padding: 1.5rem;
+    }
+
+    .related-posts ul {
+        flex-direction: column;
     }
 }

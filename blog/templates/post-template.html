@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} | www.osteoalsen.de</title>
+    <meta name="description" content="{{description}}">
+    <link rel="canonical" href="https://www.osteoalsen.de/blog/{{slug}}.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{title}}",
+      "description": "{{description}}",
+      "image": "{{image}}",
+      "datePublished": "{{date}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{author}}"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="../assets/css/post.css">
+</head>
+<body>
+<article>
+    <header class="article-header">
+        <img src="{{image}}" alt="">
+        <h1>{{title}}</h1>
+        <p class="meta">Von {{author}} am <time datetime="{{date}}">{{date}}</time></p>
+    </header>
+    <section class="article-body">
+{{content}}
+    </section>
+    <footer class="article-footer">
+        <div class="related-posts">
+{{related}}
+        </div>
+    </footer>
+</article>
+</body>
+</html>
