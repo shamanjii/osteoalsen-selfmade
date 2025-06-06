@@ -1,0 +1,55 @@
+# Data-Verzeichnis Sicherheitskonfiguration
+# Speichern als: blog/data/.htaccess
+
+# Alle JSON-Dateien vor direktem Zugriff schützen
+<Files "*.json">
+    # Nur für Admin-Scripts erlauben, nicht für Browser
+    <RequireAll>
+        Require all denied
+    </RequireAll>
+</Files>
+
+# Directory Browsing verhindern
+Options -Indexes
+
+# Nur der Blog selbst darf auf diese Dateien zugreifen
+# Externe Zugriffe blockieren
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Nur lokale Anfragen von der gleichen Domain erlauben
+    RewriteCond %{HTTP_REFERER} !^https?://(www\.)?localhost [NC]
+    RewriteCond %{HTTP_REFERER} !^https?://(www\.)?ihre-domain\.de [NC]
+    RewriteRule \.(json)$ - [F,L]
+</IfModule>
+
+# Cache-Control für JSON-Dateien
+<IfModule mod_headers.c>
+    <FilesMatch "\.(json)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+# JSON-Dateien vor direktem Browser-Zugriff schützen
+<Files "*.json">
+    # Nur für gleiche Domain erlauben
+    SetEnvIf Referer "^https?://localhost" local_ref
+    SetEnvIf Referer "^https?://ihre-domain\.de" local_ref
+    
+    <RequireAll>
+        Require env local_ref
+    </RequireAll>
+</Files>
+
+# Directory Browsing verhindern
+Options -Indexes
+
+# Cache-Control für JSON
+<IfModule mod_headers.c>
+    <FilesMatch "\.json$">
+        Header set Cache-Control "no-cache, private"
+        Header set X-Robots-Tag "noindex, nofollow"
+    </FilesMatch>
+</IfModule>

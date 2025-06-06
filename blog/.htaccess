@@ -1,89 +1,20 @@
-# Admin-spezifische .htaccess - Optimiert für Sicherheit und Funktionalität
-# Diese Datei sollte in /blog/admin/.htaccess gespeichert werden
+# Globale Blog-Sicherheit
+# Datei: blog/.htaccess
 
-# CSP für Admin-Bereich - Sicherer aber funktional
-<IfModule mod_headers.c>
-    Header always unset Content-Security-Policy
-    
-    # Sichere CSP mit Hashes für Inline-Scripts
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-[HASH_WIRD_GENERIERT]' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self'"
-    
-    # Entwicklungsmodus - Weniger restriktiv (nur für Entwicklung verwenden!)
-    # Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https:; connect-src 'self'"
-</IfModule>
-
-# Zusätzliche Sicherheits-Header
-<IfModule mod_headers.c>
-    # XSS-Schutz
-    Header always set X-XSS-Protection "1; mode=block"
-    
-    # Content-Type-Sniffing verhindern
-    Header always set X-Content-Type-Options "nosniff"
-    
-    # Clickjacking-Schutz (nur für Admin-Bereich)
-    Header always set X-Frame-Options "DENY"
-    
-    # Referrer-Policy
-    Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    
-    # Feature-Policy / Permissions-Policy
-    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-</IfModule>
-
-# Admin-Bereich schützen mit HTTP Basic Auth
-# WICHTIG: Entkommentieren und Pfad anpassen!
-# AuthType Basic
-# AuthName "Blog Admin - Zugang beschränkt"
-# AuthUserFile /var/www/html/blog/admin/.htpasswd
-# Require valid-user
-
-# Alternative: IP-basierte Beschränkung
-# <RequireAll>
-#     Require ip 192.168.1
-#     Require ip 127.0.0.1
-# </RequireAll>
-
-# Sensible Dateien vor direktem Zugriff schützen
-<Files "*.log">
-    Order Allow,Deny
-    Deny from all
+# .htaccess Dateien vor Zugriff schützen
+<Files ".htaccess">
+    Require all denied
 </Files>
 
-<Files "*.json">
-    Order Allow,Deny
-    Deny from all
-</Files>
-
-<FilesMatch "\.(bak|backup|old|tmp)$">
-    Order Allow,Deny
-    Deny from all
+# Alle versteckten Dateien schützen
+<FilesMatch "^\.">
+    Require all denied
 </FilesMatch>
 
-# Cache-Control für Admin-Assets
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType text/css "access plus 1 hour"
-    ExpiresByType application/javascript "access plus 1 hour"
-    ExpiresByType text/html "access plus 0 seconds"
-</IfModule>
+# Directory Listing global deaktivieren
+Options -Indexes
 
-# Komprimierung auch für Admin-Bereich
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json text/xml
-</IfModule>
-
-# Rate Limiting für API-Calls (falls mod_evasive verfügbar)
-# <IfModule mod_evasive24.c>
-#     DOSHashTableSize    512
-#     DOSPageCount        10
-#     DOSPageInterval     1
-#     DOSSiteCount        50
-#     DOSSiteInterval     1
-#     DOSBlockingPeriod   600
-# </IfModule>
-
-# Logging für Admin-Aktionen
-<IfModule mod_log_config.c>
-    LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" admin
-    # CustomLog /var/log/apache2/blog_admin.log admin
-</IfModule>
+# Sensible Dateien schützen
+<FilesMatch "\.(log|bak|backup|tmp|old|orig|save)$">
+    Require all denied
+</FilesMatch>
