@@ -75,11 +75,15 @@ function generateKeywords($title, $content) {
 
 function createPostFile($post) {
     $config = loadConfig();
+    $allPosts = loadPosts();
     $postDir = '../posts';
     
     if (!is_dir($postDir)) {
         mkdir($postDir, 0755, true);
     }
+    
+    // Verwandte Posts finden (basierend auf Keywords)
+    $relatedPosts = findRelatedPosts($post, $allPosts);
     
     $template = '<!DOCTYPE html>
 <html lang="de">
@@ -104,7 +108,11 @@ function createPostFile($post) {
     <meta name="twitter:description" content="' . htmlspecialchars($post['excerpt']) . '">
     <meta name="twitter:image" content="' . htmlspecialchars($post['image'] ?: $config['site_url'] . '/blog/assets/images/default-og.jpg') . '">
     
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../assets/css/post.css">
     <link rel="canonical" href="' . htmlspecialchars($config['site_url'] . '/blog/posts/' . $post['slug'] . '.html') . '">
 </head>
@@ -124,7 +132,7 @@ function createPostFile($post) {
                     <h1>' . htmlspecialchars($post['title']) . '</h1>
                     <div class="post-meta">
                         <time datetime="' . $post['publishedAt'] . '">
-                            ' . date('d. F Y', strtotime($post['publishedAt'])) . '
+                            📅 ' . date('d. F Y', strtotime($post['publishedAt'])) . '
                         </time>
                         ' . ($post['keywords'] ? '<span class="post-keywords">' . htmlspecialchars($post['keywords']) . '</span>' : '') . '
                     </div>
@@ -133,6 +141,41 @@ function createPostFile($post) {
                 
                 <div class="post-content">
                     ' . $post['content'] . '
+                    
+                    <!-- Interne Links Sektion -->
+                    <div class="internal-links-section">
+                        <h4>🔗 Weitere hilfreiche Links</h4>
+                        <div class="internal-links-grid">
+                            <div class="internal-link-card">
+                                <a href="../#kontakt">🏥 Termin vereinbaren</a>
+                                <p>Buchen Sie direkt einen Termin in meiner Praxis in Hamburg Mitte</p>
+                            </div>
+                            <div class="internal-link-card">
+                                <a href="../#behandlungen">🩺 Behandlungsmethoden</a>
+                                <p>Erfahren Sie mehr über meine osteopathischen Behandlungsansätze</p>
+                            </div>
+                            <div class="internal-link-card">
+                                <a href="../#was-ist-osteopathie">ℹ️ Was ist Osteopathie?</a>
+                                <p>Grundlagen und Prinzipien der osteopathischen Medizin</p>
+                            </div>
+                            <div class="internal-link-card">
+                                <a href="../">🏠 Blog Übersicht</a>
+                                <p>Alle Artikel über Osteopathie und Gesundheitstipps</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    ' . generateRelatedPostsSection($relatedPosts) . '
+                    
+                    <!-- Call-to-Action -->
+                    <div class="cta-section">
+                        <h4>💬 Haben Sie Fragen zu diesem Artikel?</h4>
+                        <p>Als Osteopath in Hamburg berate ich Sie gerne persönlich zu Ihren Beschwerden und den passenden Behandlungsmöglichkeiten.</p>
+                        <a href="../#kontakt" class="cta-button">
+                            <span>📞</span>
+                            Jetzt Termin vereinbaren
+                        </a>
+                    </div>
                 </div>
             </article>
         </div>
@@ -140,7 +183,8 @@ function createPostFile($post) {
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; ' . date('Y') . ' ' . htmlspecialchars($config['site_name']) . '. Alle Rechte vorbehalten.</p>
+            <p>&copy; ' . date('Y') . ' ' . htmlspecialchars($config['site_name']) . ' - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p>Osteopathie Hamburg | <a href="../legal/impressum.html">Impressum</a> | <a href="../legal/datenschutz.html">Datenschutz</a></p>
         </div>
     </footer>
 </body>
@@ -148,6 +192,57 @@ function createPostFile($post) {
 
     $filename = $postDir . '/' . $post['slug'] . '.html';
     return file_put_contents($filename, $template);
+}
+
+// Verwandte Posts finden
+function findRelatedPosts($currentPost, $allPosts) {
+    $related = [];
+    $currentKeywords = explode(',', strtolower($currentPost['keywords'] ?: ''));
+    $currentKeywords = array_map('trim', $currentKeywords);
+    
+    foreach ($allPosts as $post) {
+        if ($post['id'] == $currentPost['id'] || $post['status'] !== 'published') {
+            continue;
+        }
+        
+        $postKeywords = explode(',', strtolower($post['keywords'] ?: ''));
+        $postKeywords = array_map('trim', $postKeywords);
+        
+        $intersection = array_intersect($currentKeywords, $postKeywords);
+        if (count($intersection) > 0) {
+            $post['relevance'] = count($intersection);
+            $related[] = $post;
+        }
+    }
+    
+    // Nach Relevanz sortieren
+    usort($related, function($a, $b) {
+        return $b['relevance'] - $a['relevance'];
+    });
+    
+    return array_slice($related, 0, 3);
+}
+
+// Verwandte Posts HTML generieren
+function generateRelatedPostsSection($relatedPosts) {
+    if (empty($relatedPosts)) {
+        return '';
+    }
+    
+    $html = '<div class="internal-links-section">
+                <h4>📚 Verwandte Artikel</h4>
+                <div class="internal-links-grid">';
+    
+    foreach ($relatedPosts as $post) {
+        $html .= '<div class="internal-link-card">
+                    <a href="' . htmlspecialchars($post['slug']) . '.html">' . htmlspecialchars($post['title']) . '</a>
+                    <p>' . htmlspecialchars(substr($post['excerpt'], 0, 100)) . '...</p>
+                  </div>';
+    }
+    
+    $html .= '</div></div>';
+    
+    return $html;
 }
 
 // Request-Methode bestimmen
