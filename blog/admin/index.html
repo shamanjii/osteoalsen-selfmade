@@ -366,30 +366,30 @@
                 <div class="form-group">
                     <label for="categories">Kategorien</label>
                     <div class="categories-selector">
-                        <div class="checkbox-group">
+                       <div class="checkbox-group">
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="osteopathie">
-                                <span>Osteopathie</span>
+                                <input type="checkbox" name="categories" value="anwendungsbereiche">
+                                <span>Anwendungsbereiche der Osteopathie</span>
                             </label>
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="gesundheitstipps">
-                                <span>Gesundheitstipps</span>
+                                <input type="checkbox" name="categories" value="geschichte">
+                                <span>Geschichte der Osteopathie</span>
                             </label>
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="behandlungsmethoden">
-                                <span>Behandlungsmethoden</span>
+                                <input type="checkbox" name="categories" value="forschung">
+                                <span>Forschung in der Osteopathie</span>
                             </label>
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="rueckenschmerzen">
-                                <span>Rückenschmerzen</span>
+                                <input type="checkbox" name="categories" value="wissenswertes">
+                                <span>Wissenswertes rund um Osteopathie</span>
                             </label>
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="kopfschmerzen">
-                                <span>Kopfschmerzen</span>
+                                <input type="checkbox" name="categories" value="patientenberichte">
+                                <span>Patientenberichte & Erfahrungen</span>
                             </label>
                             <label class="checkbox-item">
-                                <input type="checkbox" name="categories" value="sportverletzungen">
-                                <span>Sportverletzungen</span>
+                                <input type="checkbox" name="categories" value="praevention">
+                                <span>Prävention & Gesundheitsvorsorge</span>
                             </label>
                         </div>
                     </div>
@@ -1027,6 +1027,145 @@
         window.deletePost = deletePost;
         window.viewPost = viewPost;
         window.showPanel = showPanel;
+
+        // AUTO-SLUG UND UI FEATURES - DAUERHAFTER FIX
+function generateSlug(title) {
+    if (!title) return '';
+    return title
+        .toLowerCase()
+        .trim()
+        .replace(/ä/g, 'ae')
+        .replace(/ö/g, 'oe') 
+        .replace(/ü/g, 'ue')
+        .replace(/ß/g, 'ss')
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+function updateSEOPreview() {
+    const titleField = document.getElementById('title');
+    const slugField = document.getElementById('slug');
+    const excerptField = document.getElementById('excerpt');
+    
+    const title = titleField?.value || 'Dein Titel hier...';
+    const excerpt = excerptField?.value || 'Deine Meta Description hier...';
+    
+    // Auto-Slug nur wenn leer
+    if (slugField && title !== 'Dein Titel hier...' && title.trim()) {
+        if (!slugField.value || slugField.value.trim() === '') {
+            slugField.value = generateSlug(title);
+        }
+    }
+    
+    const slug = slugField?.value || 'dein-slug';
+
+    // SEO Preview aktualisieren
+    const previewTitle = document.getElementById('previewTitle');
+    const previewUrl = document.getElementById('previewUrl');
+    const previewDescription = document.getElementById('previewDescription');
+    
+    if (previewTitle) previewTitle.textContent = title;
+    if (previewUrl) previewUrl.textContent = `https://deine-domain.de/blog/${slug}`;
+    if (previewDescription) previewDescription.textContent = excerpt;
+
+    // Zeichenzähler
+    const excerptCount = document.getElementById('excerptCount');
+    if (excerptCount && excerptField) {
+        const length = excerptField.value.length;
+        excerptCount.textContent = `${length}/160 Zeichen`;
+        excerptCount.style.color = length > 160 ? '#ef4444' : '#6b7280';
+    }
+}
+
+function generateKeywords() {
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    
+    if (!title && !content) {
+        alert('Bitte gib zuerst einen Titel und Inhalt ein');
+        return;
+    }
+
+    const text = (title + ' ' + content).toLowerCase();
+    const words = text.match(/\b\w{4,}\b/g) || [];
+    
+    const stopwords = ['aber', 'alle', 'auch', 'auf', 'aus', 'bei', 'bin', 'bis', 'das', 'dem', 'den', 'der', 'des', 'die', 'ein', 'eine', 'einem', 'einen', 'einer', 'eines', 'für', 'haben', 'hat', 'ich', 'ihr', 'ihre', 'ihrem', 'ihren', 'ihrer', 'ihres', 'ist', 'mit', 'nach', 'nicht', 'oder', 'sein', 'seine', 'seinem', 'seinen', 'seiner', 'seines', 'sich', 'sie', 'sind', 'über', 'und', 'von', 'war', 'waren', 'wird', 'wir', 'wurde', 'wurden', 'zum', 'zur'];
+    
+    const filteredWords = words.filter(word => 
+        !stopwords.includes(word) && word.length >= 4
+    );
+    
+    const wordCount = {};
+    filteredWords.forEach(word => {
+        wordCount[word] = (wordCount[word] || 0) + 1;
+    });
+
+    const keywords = Object.entries(wordCount)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(entry => entry[0]);
+
+    document.getElementById('keywords').value = keywords.join(', ');
+    
+    const suggestionsDiv = document.getElementById('suggestedKeywords');
+    if (suggestionsDiv) {
+        suggestionsDiv.innerHTML = keywords.map(keyword => 
+            `<span class="keyword-tag">${keyword}</span>`
+        ).join('');
+        document.getElementById('keywordSuggestions').style.display = 'block';
+    }
+}
+
+function generateAltText() {
+    const title = document.getElementById('title').value;
+    const keywords = document.getElementById('keywords').value;
+    
+    if (!title) {
+        alert('Bitte gib zuerst einen Titel ein');
+        return;
+    }
+
+    let altText = `Beitragsbild zu: ${title}`;
+    
+    if (keywords) {
+        const firstKeywords = keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ');
+        altText = `${altText}. Keywords: ${firstKeywords}`;
+    }
+    
+    document.getElementById('altText').value = altText;
+}
+
+// Event Listeners in der DOMContentLoaded Funktion hinzufügen
+// SUCHEN Sie diese Zeile und fügen Sie dahinter ein:
+// document.addEventListener('DOMContentLoaded', function() {
+
+// FÜGEN SIE DIESE ZEILEN IN DIE BESTEHENDE DOMContentLoaded FUNKTION EIN:
+const titleField = document.getElementById('title');
+const slugField = document.getElementById('slug');
+const excerptField = document.getElementById('excerpt');
+
+if (titleField) titleField.addEventListener('input', updateSEOPreview);
+if (slugField) slugField.addEventListener('input', updateSEOPreview);
+if (excerptField) excerptField.addEventListener('input', updateSEOPreview);
+
+const generateKeywordsBtn = document.getElementById('generateKeywordsBtn');
+const generateAltTextBtn = document.getElementById('generateAltTextBtn');
+
+if (generateKeywordsBtn) generateKeywordsBtn.addEventListener('click', generateKeywords);
+if (generateAltTextBtn) generateAltTextBtn.addEventListener('click', generateAltText);
+
+// Zeichenzähler hinzufügen
+const excerptFieldForCounter = document.getElementById('excerpt');
+if (excerptFieldForCounter && !document.getElementById('excerptCount')) {
+    const counterDiv = document.createElement('small');
+    counterDiv.id = 'excerptCount';
+    counterDiv.textContent = '0/160 Zeichen';
+    counterDiv.style.color = '#6b7280';
+    excerptFieldForCounter.parentNode.appendChild(counterDiv);
+}
+
+updateSEOPreview();
     </script>
 </body>
 </html>
