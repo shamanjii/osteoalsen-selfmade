@@ -510,8 +510,9 @@
     <script>
         // Globale Variablen
         let posts = [];
+        let currentEditingPostId = null;
 
-        // Tab Navigation - KORRIGIERTE VERSION
+        // Tab Navigation
         function showPanel(panelId) {
             console.log('🔄 Wechsle zu Panel:', panelId);
             
@@ -530,17 +531,13 @@
             if (targetPanel) {
                 targetPanel.classList.add('active');
                 console.log('✅ Panel aktiviert:', panelId);
-            } else {
-                console.error('❌ Panel nicht gefunden:', panelId);
             }
             
-            // Den geklickten Tab aktivieren - VERBESSERT
+            // Den geklickten Tab aktivieren
             const clickedTab = document.querySelector(`[data-panel="${panelId}"]`);
             if (clickedTab) {
                 clickedTab.classList.add('active');
                 console.log('✅ Tab aktiviert für Panel:', panelId);
-            } else {
-                console.error('❌ Tab nicht gefunden für Panel:', panelId);
             }
 
             // Posts laden wenn Posts-Panel geöffnet wird
@@ -660,137 +657,7 @@
             }
         }
 
-        // Posts laden - VERBESSERTE VERSION
- async function loadPosts() {
-    console.log('📥 Lade Posts...');
-    
-    try {
-        // Prioritäre Reihenfolge der API-Endpunkte
-        const apiEndpoints = [
-            '../api/posts.php',      // Standard PHP-API
-            'api/posts.php',         // Relativer Pfad
-            '../data/posts.json'     // Fallback: Direkte JSON
-        ];
-        
-        let response = null;
-        let usedEndpoint = null;
-        
-        // Teste jeden Endpunkt
-        for (const endpoint of apiEndpoints) {
-            try {
-                console.log(`🔄 Teste: ${endpoint}`);
-                response = await fetch(endpoint);
-                
-                if (response.ok) {
-                    usedEndpoint = endpoint;
-                    console.log(`✅ Erfolgreicher Endpunkt: ${endpoint}`);
-                    break;
-                }
-            } catch (error) {
-                console.log(`❌ Endpunkt fehlgeschlagen: ${endpoint} - ${error.message}`);
-                continue;
-            }
-        }
-        
-        if (!response || !response.ok) {
-            throw new Error(`Alle API-Endpunkte fehlgeschlagen. Letzter Status: ${response?.status || 'Keine Antwort'}`);
-        }
-        
-        const contentType = response.headers.get('Content-Type');
-        console.log(`📄 Content-Type: ${contentType}`);
-        
-        const text = await response.text();
-        console.log(`📊 Response-Länge: ${text.length} Zeichen`);
-        
-        let data;
-        try {
-            data = JSON.parse(text);
-        } catch (jsonError) {
-            console.error('❌ JSON-Parse-Fehler:', jsonError);
-            throw new Error(`Ungültige JSON-Antwort von ${usedEndpoint}`);
-        }
-        
-        // Verschiedene API-Response-Formate handhaben
-        if (data.success && Array.isArray(data.data)) {
-            posts = data.data;
-            console.log(`✅ Posts via API geladen: ${posts.length} Einträge`);
-        } else if (Array.isArray(data)) {
-            posts = data;
-            console.log(`✅ Posts direkt geladen: ${posts.length} Einträge`);
-        } else {
-            console.warn('⚠️ Unerwartetes Response-Format:', data);
-            posts = [];
-        }
-        
-    } catch (error) {
-        console.error('❌ Load-Posts-Fehler:', error);
-        posts = [];
-        
-        alert(`❌ Posts konnten nicht geladen werden!\n\nFehler: ${error.message}\n\nPrüfen Sie:\n• Ist ../api/posts.php erreichbar?\n• Existiert ../data/posts.json?\n• Läuft der Webserver?`);
-    }
-
-    updatePostsUI();
-    return posts;
-}
-
-        // Posts UI aktualisieren
-        function updatePostsUI() {
-            const totalPosts = posts.length;
-            const publishedPosts = posts.filter(p => p.status === 'published').length;
-            const draftPosts = posts.filter(p => p.status === 'draft').length;
-
-            // Statistiken aktualisieren
-            const totalPostsEl = document.getElementById('totalPosts');
-            const publishedPostsEl = document.getElementById('publishedPosts');
-            const draftPostsEl = document.getElementById('draftPosts');
-            
-            if (totalPostsEl) totalPostsEl.textContent = totalPosts;
-            if (publishedPostsEl) publishedPostsEl.textContent = publishedPosts;
-            if (draftPostsEl) draftPostsEl.textContent = draftPosts;
-
-            // Posts auflisten
-            const postsList = document.getElementById('postsList');
-            
-            if (!postsList) {
-                console.warn('⚠️ Element #postsList nicht gefunden');
-                return;
-            }
-            
-            if (posts.length === 0) {
-                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
-                return;
-            }
-
-            postsList.innerHTML = posts.map(post => `
-                <div class="post-item">
-                    <h3>${post.title}</h3>
-                    <div class="post-meta">
-                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
-                        Keywords: ${post.keywords || 'Keine'}
-                    </div>
-                    <p>${post.excerpt}</p>
-                    <div class="post-actions">
-                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
-                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
-                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-let currentEditingPostId = null;
-
-        // Post bearbeiten
-       async function editPost(postId) {
-    console.log('📝 Bearbeite Post:', postId);
-    
-    const post = posts.find(p => p.id == postId);
-    if (!post) {
-        alert('❌ Post nicht gefunden!');
-        return;
-    }
-
-// Posts laden - VERBESSERTE VERSION
+        // Posts laden
         async function loadPosts() {
             console.log('📥 Lade Posts...');
             
@@ -907,9 +774,6 @@ let currentEditingPostId = null;
                 </div>
             `).join('');
         }
-
-        // Globale Variable für Edit-Modus
-        let currentEditingPostId = null;
 
         // Post bearbeiten
         async function editPost(postId) {
