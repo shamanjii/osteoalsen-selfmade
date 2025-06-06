@@ -904,14 +904,69 @@
                 }
             });
 
-            // Initiale SEO Preview
+// Initiale SEO Preview
             updateSEOPreview();
+            
+            // Event Listener für Kategorien/Tags
+            document.querySelectorAll('input[name="categories"], input[name="tags"]').forEach(checkbox => {
+                checkbox.addEventListener('change', updateKeywordsFromSelection);
+            });
         });
 
         // Globale Funktionen (für onclick in HTML)
         window.editPost = editPost;
         window.deletePost = deletePost;
         window.viewPost = viewPost;
+
+        // Kategorien und Tags Funktionalität
+        function getSelectedCategories() {
+            const checkboxes = document.querySelectorAll('input[name="categories"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        function getSelectedTags() {
+            const checkboxes = document.querySelectorAll('input[name="tags"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        function updateKeywordsFromSelection() {
+            const categories = getSelectedCategories();
+            const tags = getSelectedTags();
+            const currentKeywords = document.getElementById('keywords').value;
+            
+            const selectedTerms = [...categories, ...tags];
+            const existingKeywords = currentKeywords ? currentKeywords.split(',').map(k => k.trim()) : [];
+            const allKeywords = [...new Set([...existingKeywords, ...selectedTerms])];
+            
+            document.getElementById('keywords').value = allKeywords.join(', ');
+        }
+    
+    </script>
+</body>
+</html>es() {
+            const checkboxes = document.querySelectorAll('input[name="categories"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        function getSelectedTags() {
+            const checkboxes = document.querySelectorAll('input[name="tags"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        function updateKeywordsFromSelection() {
+            const categories = getSelectedCategories();
+            const tags = getSelectedTags();
+            const currentKeywords = document.getElementById('keywords').value;
+            
+            const selectedTerms = [...categories, ...tags];
+            const existingKeywords = currentKeywords ? currentKeywords.split(',').map(k => k.trim()) : [];
+            const allKeywords = [...new Set([...existingKeywords, ...selectedTerms])];
+            
+            document.getElementById('keywords').value = allKeywords.join(', ');
+        }
+
+     
+    
     </script>
 </body>
 </html>
