@@ -258,6 +258,55 @@
             margin-top: 5px;
         }
 
+        /* Kategorien/Tags Interface */
+.categories-selector, .tags-selector {
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f8fafc;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: normal;
+    margin: 0;
+}
+
+.checkbox-item:hover {
+    background: #f0f9ff;
+    border-color: #3b82f6;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"]:checked + span {
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.checkbox-item span {
+    font-size: 0.9rem;
+    color: #374151;
+}
+
         @media (max-width: 768px) {
             .tabs {
                 flex-wrap: wrap;
@@ -312,6 +361,78 @@
                     <label for="keywords">SEO Keywords</label>
                     <input type="text" id="keywords" placeholder="keyword1, keyword2, keyword3">
                     <button type="button" class="btn-secondary btn-small" id="generateKeywordsBtn" style="margin-top: 10px;">🎯 Keywords generieren</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="categories">Kategorien</label>
+                    <div class="categories-selector">
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="osteopathie">
+                                <span>Osteopathie</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="gesundheitstipps">
+                                <span>Gesundheitstipps</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="behandlungsmethoden">
+                                <span>Behandlungsmethoden</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="rueckenschmerzen">
+                                <span>Rückenschmerzen</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="kopfschmerzen">
+                                <span>Kopfschmerzen</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="categories" value="sportverletzungen">
+                                <span>Sportverletzungen</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags (Beliebte Themen)</label>
+                    <div class="tags-selector">
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="osteopathie-hamburg">
+                                <span>Osteopathie Hamburg</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="rueckenschmerzen">
+                                <span>Rückenschmerzen</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="migraene">
+                                <span>Migräne</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="verspannungen">
+                                <span>Verspannungen</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="entspannung">
+                                <span>Entspannung</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="gesunde-haltung">
+                                <span>Gesunde Haltung</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="selbstheilung">
+                                <span>Selbstheilung</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="tags" value="praevention">
+                                <span>Prävention</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-group">
