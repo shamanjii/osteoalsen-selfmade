@@ -661,61 +661,206 @@
         }
 
         // Posts laden - VERBESSERTE VERSION
+ async function loadPosts() {
+    console.log('📥 Lade Posts...');
+    
+    try {
+        // Prioritäre Reihenfolge der API-Endpunkte
+        const apiEndpoints = [
+            '../api/posts.php',      // Standard PHP-API
+            'api/posts.php',         // Relativer Pfad
+            '../data/posts.json'     // Fallback: Direkte JSON
+        ];
+        
+        let response = null;
+        let usedEndpoint = null;
+        
+        // Teste jeden Endpunkt
+        for (const endpoint of apiEndpoints) {
+            try {
+                console.log(`🔄 Teste: ${endpoint}`);
+                response = await fetch(endpoint);
+                
+                if (response.ok) {
+                    usedEndpoint = endpoint;
+                    console.log(`✅ Erfolgreicher Endpunkt: ${endpoint}`);
+                    break;
+                }
+            } catch (error) {
+                console.log(`❌ Endpunkt fehlgeschlagen: ${endpoint} - ${error.message}`);
+                continue;
+            }
+        }
+        
+        if (!response || !response.ok) {
+            throw new Error(`Alle API-Endpunkte fehlgeschlagen. Letzter Status: ${response?.status || 'Keine Antwort'}`);
+        }
+        
+        const contentType = response.headers.get('Content-Type');
+        console.log(`📄 Content-Type: ${contentType}`);
+        
+        const text = await response.text();
+        console.log(`📊 Response-Länge: ${text.length} Zeichen`);
+        
+        let data;
+        try {
+            data = JSON.parse(text);
+        } catch (jsonError) {
+            console.error('❌ JSON-Parse-Fehler:', jsonError);
+            throw new Error(`Ungültige JSON-Antwort von ${usedEndpoint}`);
+        }
+        
+        // Verschiedene API-Response-Formate handhaben
+        if (data.success && Array.isArray(data.data)) {
+            posts = data.data;
+            console.log(`✅ Posts via API geladen: ${posts.length} Einträge`);
+        } else if (Array.isArray(data)) {
+            posts = data;
+            console.log(`✅ Posts direkt geladen: ${posts.length} Einträge`);
+        } else {
+            console.warn('⚠️ Unerwartetes Response-Format:', data);
+            posts = [];
+        }
+        
+    } catch (error) {
+        console.error('❌ Load-Posts-Fehler:', error);
+        posts = [];
+        
+        alert(`❌ Posts konnten nicht geladen werden!\n\nFehler: ${error.message}\n\nPrüfen Sie:\n• Ist ../api/posts.php erreichbar?\n• Existiert ../data/posts.json?\n• Läuft der Webserver?`);
+    }
+
+    updatePostsUI();
+    return posts;
+}
+
+        // Posts UI aktualisieren
+        function updatePostsUI() {
+            const totalPosts = posts.length;
+            const publishedPosts = posts.filter(p => p.status === 'published').length;
+            const draftPosts = posts.filter(p => p.status === 'draft').length;
+
+            // Statistiken aktualisieren
+            const totalPostsEl = document.getElementById('totalPosts');
+            const publishedPostsEl = document.getElementById('publishedPosts');
+            const draftPostsEl = document.getElementById('draftPosts');
+            
+            if (totalPostsEl) totalPostsEl.textContent = totalPosts;
+            if (publishedPostsEl) publishedPostsEl.textContent = publishedPosts;
+            if (draftPostsEl) draftPostsEl.textContent = draftPosts;
+
+            // Posts auflisten
+            const postsList = document.getElementById('postsList');
+            
+            if (!postsList) {
+                console.warn('⚠️ Element #postsList nicht gefunden');
+                return;
+            }
+            
+            if (posts.length === 0) {
+                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
+                return;
+            }
+
+            postsList.innerHTML = posts.map(post => `
+                <div class="post-item">
+                    <h3>${post.title}</h3>
+                    <div class="post-meta">
+                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
+                        Keywords: ${post.keywords || 'Keine'}
+                    </div>
+                    <p>${post.excerpt}</p>
+                    <div class="post-actions">
+                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
+                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
+                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+let currentEditingPostId = null;
+
+        // Post bearbeiten
+       async function editPost(postId) {
+    console.log('📝 Bearbeite Post:', postId);
+    
+    const post = posts.find(p => p.id == postId);
+    if (!post) {
+        alert('❌ Post nicht gefunden!');
+        return;
+    }
+
+// Posts laden - VERBESSERTE VERSION
         async function loadPosts() {
             console.log('📥 Lade Posts...');
             
             try {
-                // Mehrere Versuche mit verschiedenen Pfaden
-                const possiblePaths = [
-                    '../data/posts.json',
-                    './data/posts.json',
-                    'data/posts.json',
-                    '../api/posts.php',
-                    './api/posts.php',
-                    'api/posts.php'
+                // Prioritäre Reihenfolge der API-Endpunkte
+                const apiEndpoints = [
+                    '../api/posts.php',      // Standard PHP-API
+                    'api/posts.php',         // Relativer Pfad
+                    '../data/posts.json'     // Fallback: Direkte JSON
                 ];
                 
                 let response = null;
-                let lastError = null;
+                let usedEndpoint = null;
                 
-                for (const path of possiblePaths) {
+                // Teste jeden Endpunkt
+                for (const endpoint of apiEndpoints) {
                     try {
-                        console.log(`🔄 Versuche Pfad: ${path}`);
-                        response = await fetch(path);
+                        console.log(`🔄 Teste: ${endpoint}`);
+                        response = await fetch(endpoint);
+                        
                         if (response.ok) {
-                            console.log(`✅ Erfolgreicher Pfad: ${path}`);
+                            usedEndpoint = endpoint;
+                            console.log(`✅ Erfolgreicher Endpunkt: ${endpoint}`);
                             break;
                         }
                     } catch (error) {
-                        console.log(`❌ Pfad fehlgeschlagen: ${path} - ${error.message}`);
-                        lastError = error;
+                        console.log(`❌ Endpunkt fehlgeschlagen: ${endpoint} - ${error.message}`);
                         continue;
                     }
                 }
                 
                 if (!response || !response.ok) {
-                    throw new Error(`API nicht erreichbar. Letzter Fehler: ${lastError?.message || 'Unbekannt'}`);
+                    throw new Error(`Alle API-Endpunkte fehlgeschlagen. Letzter Status: ${response?.status || 'Keine Antwort'}`);
                 }
                 
-                const result = await response.json();
+                const contentType = response.headers.get('Content-Type');
+                console.log(`📄 Content-Type: ${contentType}`);
                 
-                if (result.success) {
-                    posts = result.data || [];
+                const text = await response.text();
+                console.log(`📊 Response-Länge: ${text.length} Zeichen`);
+                
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (jsonError) {
+                    console.error('❌ JSON-Parse-Fehler:', jsonError);
+                    throw new Error(`Ungültige JSON-Antwort von ${usedEndpoint}`);
+                }
+                
+                // Verschiedene API-Response-Formate handhaben
+                if (data.success && Array.isArray(data.data)) {
+                    posts = data.data;
                     console.log(`✅ Posts via API geladen: ${posts.length} Einträge`);
-                } else if (Array.isArray(result)) {
-                    posts = result;
+                } else if (Array.isArray(data)) {
+                    posts = data;
                     console.log(`✅ Posts direkt geladen: ${posts.length} Einträge`);
                 } else {
+                    console.warn('⚠️ Unerwartetes Response-Format:', data);
                     posts = [];
-                    console.warn('⚠️ Keine Posts gefunden');
                 }
+                
             } catch (error) {
-                console.error('❌ Fehler beim Laden der Posts:', error);
+                console.error('❌ Load-Posts-Fehler:', error);
                 posts = [];
+                
+                alert(`❌ Posts konnten nicht geladen werden!\n\nFehler: ${error.message}\n\nPrüfen Sie:\n• Ist ../api/posts.php erreichbar?\n• Existiert ../data/posts.json?\n• Läuft der Webserver?`);
             }
 
-            // UI aktualisieren
             updatePostsUI();
+            return posts;
         }
 
         // Posts UI aktualisieren
@@ -763,36 +908,91 @@
             `).join('');
         }
 
+        // Globale Variable für Edit-Modus
+        let currentEditingPostId = null;
+
         // Post bearbeiten
-        function editPost(postId) {
+        async function editPost(postId) {
             console.log('📝 Bearbeite Post:', postId);
             
             const post = posts.find(p => p.id == postId);
             if (!post) {
-                alert('Post nicht gefunden!');
+                alert('❌ Post nicht gefunden!');
                 return;
             }
 
+            // 🔄 EDIT-MODUS AKTIVIEREN
+            currentEditingPostId = postId;
+            
             // Felder füllen
-            document.getElementById('title').value = post.title;
-            document.getElementById('slug').value = post.slug;
-            document.getElementById('excerpt').value = post.excerpt;
+            document.getElementById('title').value = post.title || '';
+            document.getElementById('slug').value = post.slug || '';
+            document.getElementById('excerpt').value = post.excerpt || '';
             document.getElementById('content').value = post.content || '';
             document.getElementById('keywords').value = post.keywords || '';
             document.getElementById('image').value = post.image || '';
             document.getElementById('altText').value = post.altText || '';
 
+            // Kategorien und Tags setzen (falls vorhanden)
+            if (post.categories && Array.isArray(post.categories)) {
+                setSelectedCategories(post.categories);
+            }
+            if (post.tags && Array.isArray(post.tags)) {
+                setSelectedTags(post.tags);
+            }
+
+            // Preview aktualisieren
             updateSEOPreview();
+            
+            // 🔄 SUBMIT-BUTTON TEXT ÄNDERN
+            const submitBtn = document.querySelector('#postForm button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.textContent = '📝 Post aktualisieren';
+                submitBtn.style.background = '#059669';
+            }
+            
+            // Zum Editor wechseln
             showPanel('editor');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            console.log('✅ Post-Daten geladen für Bearbeitung');
         }
 
         // Post löschen
-        function deletePost(postId) {
-            if (!confirm('Post wirklich löschen?')) return;
+        async function deletePost(postId) {
+            if (!confirm('Post wirklich löschen?\n\nDies entfernt:\n• Den Eintrag aus posts.json\n• Die HTML-Datei aus /posts/')) return;
 
-            posts = posts.filter(p => p.id !== postId);
-            updatePostsUI();
-            alert('✅ Post gelöscht!');
+            try {
+                console.log('🗑️ Lösche Post:', postId);
+                
+                const response = await fetch(`../api/posts.php?id=${postId}`, {
+                    method: 'DELETE'
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    console.log('✅ Post server-seitig gelöscht');
+                    
+                    // Aus lokalem Array entfernen
+                    posts = posts.filter(p => p.id != postId);
+                    updatePostsUI();
+                    
+                    alert('✅ Post erfolgreich gelöscht!\n• JSON-Datei aktualisiert\n• HTML-Datei entfernt');
+                } else {
+                    throw new Error(result.error || 'Löschung fehlgeschlagen');
+                }
+                
+            } catch (error) {
+                console.error('❌ Lösch-Fehler:', error);
+                alert('❌ Fehler beim Löschen: ' + error.message + '\n\nMögliche Ursachen:\n• API nicht erreichbar\n• Keine Schreibrechte\n• Post existiert nicht');
+            }
         }
 
         // Post ansehen
@@ -947,7 +1147,7 @@
                 });
             }
 
-            // Post Form Submit
+            // Post Form Submit - KORRIGIERTE VERSION MIT EDIT-MODUS
             const postForm = document.getElementById('postForm');
             if (postForm) {
                 postForm.addEventListener('submit', async function(e) {
@@ -955,7 +1155,9 @@
                     
                     const submitButton = this.querySelector('button[type="submit"]');
                     const originalText = submitButton.textContent;
-                    submitButton.textContent = '💾 Speichere...';
+                    const isEditing = currentEditingPostId !== null;
+                    
+                    submitButton.textContent = isEditing ? '💾 Aktualisiere...' : '💾 Speichere...';
                     submitButton.disabled = true;
                     
                     try {
@@ -976,31 +1178,84 @@
                             throw new Error('Titel und Inhalt sind erforderlich');
                         }
 
-                        // Simuliere API-Aufruf für Demo
-                        await new Promise(resolve => setTimeout(resolve, 1000));
-                        
-                        // Füge Post zur lokalen Liste hinzu für Demo
-                        const newPost = {
-                            ...post,
-                            id: Date.now(),
-                            publishedAt: new Date().toISOString().slice(0, 19).replace('T', ' ')
-                        };
-                        
-                        posts.unshift(newPost);
-                        
-                        alert('✅ Post erfolgreich veröffentlicht!');
+                        let response, result;
+
+                        if (isEditing) {
+                            // 🔄 UPDATE BESTEHENDER POST
+                            post.id = currentEditingPostId;
+                            
+                            response = await fetch('../api/posts.php', {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(post)
+                            });
+                            
+                            if (!response.ok) {
+                                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                            }
+                            
+                            result = await response.json();
+                            
+                            if (result.success) {
+                                alert(`✅ Post erfolgreich aktualisiert!\n📄 HTML: posts/${result.data.slug}.html`);
+                                
+                                // Lokalen Array aktualisieren
+                                const index = posts.findIndex(p => p.id == currentEditingPostId);
+                                if (index !== -1) {
+                                    posts[index] = result.data;
+                                }
+                                
+                                // Edit-Modus beenden
+                                currentEditingPostId = null;
+                                
+                            } else {
+                                throw new Error(result.error || 'Update fehlgeschlagen');
+                            }
+                            
+                        } else {
+                            // ➕ NEUER POST ERSTELLEN
+                            response = await fetch('../api/posts.php', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(post)
+                            });
+                            
+                            if (!response.ok) {
+                                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                            }
+                            
+                            result = await response.json();
+                            
+                            if (result.success) {
+                                alert(`✅ Post erfolgreich veröffentlicht!\n📄 HTML: posts/${result.data.slug}.html`);
+                                
+                                // Neuen Post zur Liste hinzufügen
+                                posts.unshift(result.data);
+                                
+                            } else {
+                                throw new Error(result.error || 'Erstellung fehlgeschlagen');
+                            }
+                        }
                         
                         // Form zurücksetzen
                         this.reset();
                         updateSEOPreview();
                         document.getElementById('keywordSuggestions').style.display = 'none';
                         
+                        // Submit-Button zurücksetzen
+                        submitButton.textContent = '📤 Post veröffentlichen';
+                        submitButton.style.background = '#3b82f6';
+                        
                         // Posts UI aktualisieren
                         updatePostsUI();
                         
                     } catch (error) {
-                        console.error('Fehler:', error);
-                        alert('❌ Fehler beim Speichern: ' + error.message);
+                        console.error('❌ Post-Fehler:', error);
+                        alert('❌ Fehler beim Speichern: ' + error.message + '\n\nPrüfen Sie:\n• Ist die API erreichbar?\n• Sind die Schreibrechte korrekt?\n• Läuft PHP?');
                     } finally {
                         submitButton.textContent = originalText;
                         submitButton.disabled = false;
@@ -1027,145 +1282,6 @@
         window.deletePost = deletePost;
         window.viewPost = viewPost;
         window.showPanel = showPanel;
-
-        // AUTO-SLUG UND UI FEATURES - DAUERHAFTER FIX
-function generateSlug(title) {
-    if (!title) return '';
-    return title
-        .toLowerCase()
-        .trim()
-        .replace(/ä/g, 'ae')
-        .replace(/ö/g, 'oe') 
-        .replace(/ü/g, 'ue')
-        .replace(/ß/g, 'ss')
-        .replace(/[^a-z0-9\s]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/^-+|-+$/g, '');
-}
-
-function updateSEOPreview() {
-    const titleField = document.getElementById('title');
-    const slugField = document.getElementById('slug');
-    const excerptField = document.getElementById('excerpt');
-    
-    const title = titleField?.value || 'Dein Titel hier...';
-    const excerpt = excerptField?.value || 'Deine Meta Description hier...';
-    
-    // Auto-Slug nur wenn leer
-    if (slugField && title !== 'Dein Titel hier...' && title.trim()) {
-        if (!slugField.value || slugField.value.trim() === '') {
-            slugField.value = generateSlug(title);
-        }
-    }
-    
-    const slug = slugField?.value || 'dein-slug';
-
-    // SEO Preview aktualisieren
-    const previewTitle = document.getElementById('previewTitle');
-    const previewUrl = document.getElementById('previewUrl');
-    const previewDescription = document.getElementById('previewDescription');
-    
-    if (previewTitle) previewTitle.textContent = title;
-    if (previewUrl) previewUrl.textContent = `https://deine-domain.de/blog/${slug}`;
-    if (previewDescription) previewDescription.textContent = excerpt;
-
-    // Zeichenzähler
-    const excerptCount = document.getElementById('excerptCount');
-    if (excerptCount && excerptField) {
-        const length = excerptField.value.length;
-        excerptCount.textContent = `${length}/160 Zeichen`;
-        excerptCount.style.color = length > 160 ? '#ef4444' : '#6b7280';
-    }
-}
-
-function generateKeywords() {
-    const title = document.getElementById('title').value;
-    const content = document.getElementById('content').value;
-    
-    if (!title && !content) {
-        alert('Bitte gib zuerst einen Titel und Inhalt ein');
-        return;
-    }
-
-    const text = (title + ' ' + content).toLowerCase();
-    const words = text.match(/\b\w{4,}\b/g) || [];
-    
-    const stopwords = ['aber', 'alle', 'auch', 'auf', 'aus', 'bei', 'bin', 'bis', 'das', 'dem', 'den', 'der', 'des', 'die', 'ein', 'eine', 'einem', 'einen', 'einer', 'eines', 'für', 'haben', 'hat', 'ich', 'ihr', 'ihre', 'ihrem', 'ihren', 'ihrer', 'ihres', 'ist', 'mit', 'nach', 'nicht', 'oder', 'sein', 'seine', 'seinem', 'seinen', 'seiner', 'seines', 'sich', 'sie', 'sind', 'über', 'und', 'von', 'war', 'waren', 'wird', 'wir', 'wurde', 'wurden', 'zum', 'zur'];
-    
-    const filteredWords = words.filter(word => 
-        !stopwords.includes(word) && word.length >= 4
-    );
-    
-    const wordCount = {};
-    filteredWords.forEach(word => {
-        wordCount[word] = (wordCount[word] || 0) + 1;
-    });
-
-    const keywords = Object.entries(wordCount)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
-        .map(entry => entry[0]);
-
-    document.getElementById('keywords').value = keywords.join(', ');
-    
-    const suggestionsDiv = document.getElementById('suggestedKeywords');
-    if (suggestionsDiv) {
-        suggestionsDiv.innerHTML = keywords.map(keyword => 
-            `<span class="keyword-tag">${keyword}</span>`
-        ).join('');
-        document.getElementById('keywordSuggestions').style.display = 'block';
-    }
-}
-
-function generateAltText() {
-    const title = document.getElementById('title').value;
-    const keywords = document.getElementById('keywords').value;
-    
-    if (!title) {
-        alert('Bitte gib zuerst einen Titel ein');
-        return;
-    }
-
-    let altText = `Beitragsbild zu: ${title}`;
-    
-    if (keywords) {
-        const firstKeywords = keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ');
-        altText = `${altText}. Keywords: ${firstKeywords}`;
-    }
-    
-    document.getElementById('altText').value = altText;
-}
-
-// Event Listeners in der DOMContentLoaded Funktion hinzufügen
-// SUCHEN Sie diese Zeile und fügen Sie dahinter ein:
-// document.addEventListener('DOMContentLoaded', function() {
-
-// FÜGEN SIE DIESE ZEILEN IN DIE BESTEHENDE DOMContentLoaded FUNKTION EIN:
-const titleField = document.getElementById('title');
-const slugField = document.getElementById('slug');
-const excerptField = document.getElementById('excerpt');
-
-if (titleField) titleField.addEventListener('input', updateSEOPreview);
-if (slugField) slugField.addEventListener('input', updateSEOPreview);
-if (excerptField) excerptField.addEventListener('input', updateSEOPreview);
-
-const generateKeywordsBtn = document.getElementById('generateKeywordsBtn');
-const generateAltTextBtn = document.getElementById('generateAltTextBtn');
-
-if (generateKeywordsBtn) generateKeywordsBtn.addEventListener('click', generateKeywords);
-if (generateAltTextBtn) generateAltTextBtn.addEventListener('click', generateAltText);
-
-// Zeichenzähler hinzufügen
-const excerptFieldForCounter = document.getElementById('excerpt');
-if (excerptFieldForCounter && !document.getElementById('excerptCount')) {
-    const counterDiv = document.createElement('small');
-    counterDiv.id = 'excerptCount';
-    counterDiv.textContent = '0/160 Zeichen';
-    counterDiv.style.color = '#6b7280';
-    excerptFieldForCounter.parentNode.appendChild(counterDiv);
-}
-
-updateSEOPreview();
     </script>
 </body>
 </html>
