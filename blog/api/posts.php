@@ -1,35 +1,117 @@
 <?php
-header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
-header('Access-Control-Allow-Headers: Content-Type');
+// Fehlerbehandlung aktivieren
+error_reporting(E_ALL);
+ini_set('display_errors', 0); // Keine Fehler in Output
+ini_set('log_errors', 1);
 
-// Konfiguration
-$postsFile = '../data/posts.json';
-$configFile = '../data/config.json';
+// JSON-Header setzen
+header('Content-Type: application/json; charset=utf-8');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Accept');
+
+// Preflight OPTIONS Request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+// Konfiguration mit absoluten Pfaden
+$baseDir = dirname(__FILE__);
+$postsFile = $baseDir . '/../data/posts.json';
+$configFile = $baseDir . '/../data/config.json';
+
+// Debugging-Funktion
+function debugLog($message) {
+    error_log("[BLOG-API] " . $message);
+}
+
+// JSON-Response senden
+function sendResponse($success, $data = null, $error = null, $httpCode = 200) {
+    http_response_code($httpCode);
+    
+    $response = [
+        'success' => $success,
+        'timestamp' => date('c'),
+        'method' => $_SERVER['REQUEST_METHOD']
+    ];
+    
+    if ($data !== null) {
+        $response['data'] = $data;
+    }
+    
+    if ($error !== null) {
+        $response['error'] = $error;
+    }
+    
+    echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    exit();
+}
 
 // Hilfsfunktionen
 function loadPosts() {
     global $postsFile;
+    
+    debugLog("Lade Posts aus: " . $postsFile);
+    
     if (!file_exists($postsFile)) {
+        debugLog("Posts-Datei existiert nicht, erstelle neue");
         return [];
     }
+    
     $content = file_get_contents($postsFile);
-    return json_decode($content, true) ?: [];
+    if ($content === false) {
+        debugLog("Fehler beim Lesen der Posts-Datei");
+        return [];
+    }
+    
+    $posts = json_decode($content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        debugLog("JSON-Decode-Fehler: " . json_last_error_msg());
+        return [];
+    }
+    
+    debugLog("Posts geladen: " . count($posts) . " Einträge");
+    return $posts ?: [];
 }
 
 function savePosts($posts) {
     global $postsFile;
+    
+    debugLog("Speichere " . count($posts) . " Posts");
+    
+    // Verzeichnis erstellen falls nicht vorhanden
     $dir = dirname($postsFile);
     if (!is_dir($dir)) {
-        mkdir($dir, 0755, true);
+        if (!mkdir($dir, 0755, true)) {
+            debugLog("Fehler beim Erstellen des Verzeichnisses: " . $dir);
+            return false;
+        }
     }
-    return file_put_contents($postsFile, json_encode($posts, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    
+    $json = json_encode($posts, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    if ($json === false) {
+        debugLog("JSON-Encode-Fehler: " . json_last_error_msg());
+        return false;
+    }
+    
+    $result = file_put_contents($postsFile, $json, LOCK_EX);
+    if ($result === false) {
+        debugLog("Fehler beim Schreiben der Posts-Datei");
+        return false;
+    }
+    
+    debugLog("Posts erfolgreich gespeichert");
+    return true;
 }
 
 function loadConfig() {
     global $configFile;
+    
+    debugLog("Lade Config aus: " . $configFile);
+    
     if (!file_exists($configFile)) {
+        debugLog("Config-Datei existiert nicht, verwende Defaults");
         return [
             'site_name' => 'SEO Blog',
             'site_url' => 'https://example.com',
@@ -37,8 +119,20 @@ function loadConfig() {
             'author' => 'Blog Author'
         ];
     }
+    
     $content = file_get_contents($configFile);
-    return json_decode($content, true) ?: [];
+    if ($content === false) {
+        debugLog("Fehler beim Lesen der Config-Datei");
+        return [];
+    }
+    
+    $config = json_decode($content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        debugLog("Config JSON-Decode-Fehler: " . json_last_error_msg());
+        return [];
+    }
+    
+    return $config ?: [];
 }
 
 function generateSlug($title) {
@@ -49,41 +143,34 @@ function generateSlug($title) {
     return $slug;
 }
 
-function generateKeywords($title, $content) {
-    $text = strtolower($title . ' ' . strip_tags($content));
+function validatePost($post) {
+    $errors = [];
     
-    // Stopwörter entfernen
-    $stopwords = ['der', 'die', 'das', 'und', 'oder', 'aber', 'mit', 'von', 'zu', 'in', 'auf', 'für', 'ist', 'sind', 'wird', 'werden', 'haben', 'hat', 'sein', 'eine', 'ein', 'einer', 'eines', 'dem', 'den', 'des', 'im', 'am', 'an', 'als', 'wie', 'bei', 'nach', 'vor', 'über', 'unter', 'durch', 'um', 'so', 'nicht', 'nur', 'auch', 'noch', 'mehr', 'sehr', 'kann', 'könnte', 'sollte', 'würde', 'wenn', 'dann', 'dass', 'weil', 'da', 'wo', 'wie', 'was', 'wer', 'wann', 'warum'];
+    if (empty($post['title'])) {
+        $errors[] = 'Titel ist erforderlich';
+    }
     
-    // Wörter extrahieren (mindestens 4 Zeichen)
-    preg_match_all('/\b\w{4,}\b/', $text, $matches);
-    $words = $matches[0];
+    if (empty($post['content'])) {
+        $errors[] = 'Inhalt ist erforderlich';
+    }
     
-    // Stopwörter filtern
-    $words = array_filter($words, function($word) use ($stopwords) {
-        return !in_array($word, $stopwords);
-    });
+    if (strlen($post['excerpt'] ?? '') > 160) {
+        $errors[] = 'Meta Description darf maximal 160 Zeichen haben';
+    }
     
-    // Häufigkeit zählen
-    $wordCount = array_count_values($words);
-    arsort($wordCount);
-    
-    // Top 10 Keywords zurückgeben
-    $keywords = array_slice(array_keys($wordCount), 0, 10);
-    return implode(', ', $keywords);
+    return $errors;
 }
 
 function createPostFile($post) {
     $config = loadConfig();
-    $allPosts = loadPosts();
-    $postDir = '../posts';
+    $postDir = dirname(__FILE__) . '/../posts';
     
     if (!is_dir($postDir)) {
-        mkdir($postDir, 0755, true);
+        if (!mkdir($postDir, 0755, true)) {
+            debugLog("Fehler beim Erstellen des Posts-Verzeichnisses");
+            return false;
+        }
     }
-    
-    // Verwandte Posts finden (basierend auf Keywords)
-    $relatedPosts = findRelatedPosts($post, $allPosts);
     
     $template = '<!DOCTYPE html>
 <html lang="de">
@@ -94,24 +181,6 @@ function createPostFile($post) {
     <meta name="description" content="' . htmlspecialchars($post['excerpt']) . '">
     <meta name="keywords" content="' . htmlspecialchars($post['keywords']) . '">
     <meta name="author" content="' . htmlspecialchars($config['author']) . '">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="' . htmlspecialchars($post['title']) . '">
-    <meta property="og:description" content="' . htmlspecialchars($post['excerpt']) . '">
-    <meta property="og:image" content="' . htmlspecialchars($post['image'] ?: $config['site_url'] . '/blog/assets/images/default-og.jpg') . '">
-    <meta property="og:url" content="' . htmlspecialchars($config['site_url'] . '/blog/posts/' . $post['slug'] . '.html') . '">
-    <meta property="og:type" content="article">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="' . htmlspecialchars($post['title']) . '">
-    <meta name="twitter:description" content="' . htmlspecialchars($post['excerpt']) . '">
-    <meta name="twitter:image" content="' . htmlspecialchars($post['image'] ?: $config['site_url'] . '/blog/assets/images/default-og.jpg') . '">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../assets/css/post.css">
     <link rel="canonical" href="' . htmlspecialchars($config['site_url'] . '/blog/posts/' . $post['slug'] . '.html') . '">
@@ -141,41 +210,6 @@ function createPostFile($post) {
                 
                 <div class="post-content">
                     ' . $post['content'] . '
-                    
-                    <!-- Interne Links Sektion -->
-                    <div class="internal-links-section">
-                        <h4>🔗 Weitere hilfreiche Links</h4>
-                        <div class="internal-links-grid">
-                            <div class="internal-link-card">
-                                <a href="../#kontakt">🏥 Termin vereinbaren</a>
-                                <p>Buchen Sie direkt einen Termin in meiner Praxis in Hamburg Mitte</p>
-                            </div>
-                            <div class="internal-link-card">
-                                <a href="../#behandlungen">🩺 Behandlungsmethoden</a>
-                                <p>Erfahren Sie mehr über meine osteopathischen Behandlungsansätze</p>
-                            </div>
-                            <div class="internal-link-card">
-                                <a href="../#was-ist-osteopathie">ℹ️ Was ist Osteopathie?</a>
-                                <p>Grundlagen und Prinzipien der osteopathischen Medizin</p>
-                            </div>
-                            <div class="internal-link-card">
-                                <a href="../">🏠 Blog Übersicht</a>
-                                <p>Alle Artikel über Osteopathie und Gesundheitstipps</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    ' . generateRelatedPostsSection($relatedPosts) . '
-                    
-                    <!-- Call-to-Action -->
-                    <div class="cta-section">
-                        <h4>💬 Haben Sie Fragen zu diesem Artikel?</h4>
-                        <p>Als Osteopath in Hamburg berate ich Sie gerne persönlich zu Ihren Beschwerden und den passenden Behandlungsmöglichkeiten.</p>
-                        <a href="../#kontakt" class="cta-button">
-                            <span>📞</span>
-                            Jetzt Termin vereinbaren
-                        </a>
-                    </div>
                 </div>
             </article>
         </div>
@@ -183,146 +217,131 @@ function createPostFile($post) {
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; ' . date('Y') . ' ' . htmlspecialchars($config['site_name']) . ' - Joshua Alsen. Alle Rechte vorbehalten.</p>
-            <p>Osteopathie Hamburg | <a href="../legal/impressum.html">Impressum</a> | <a href="../legal/datenschutz.html">Datenschutz</a></p>
+            <p>&copy; ' . date('Y') . ' ' . htmlspecialchars($config['site_name']) . '. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 </body>
 </html>';
 
     $filename = $postDir . '/' . $post['slug'] . '.html';
-    return file_put_contents($filename, $template);
-}
-
-// Verwandte Posts finden
-function findRelatedPosts($currentPost, $allPosts) {
-    $related = [];
-    $currentKeywords = explode(',', strtolower($currentPost['keywords'] ?: ''));
-    $currentKeywords = array_map('trim', $currentKeywords);
+    $result = file_put_contents($filename, $template);
     
-    foreach ($allPosts as $post) {
-        if ($post['id'] == $currentPost['id'] || $post['status'] !== 'published') {
-            continue;
-        }
-        
-        $postKeywords = explode(',', strtolower($post['keywords'] ?: ''));
-        $postKeywords = array_map('trim', $postKeywords);
-        
-        $intersection = array_intersect($currentKeywords, $postKeywords);
-        if (count($intersection) > 0) {
-            $post['relevance'] = count($intersection);
-            $related[] = $post;
-        }
+    if ($result === false) {
+        debugLog("Fehler beim Erstellen der HTML-Datei: " . $filename);
+        return false;
     }
     
-    // Nach Relevanz sortieren
-    usort($related, function($a, $b) {
-        return $b['relevance'] - $a['relevance'];
-    });
-    
-    return array_slice($related, 0, 3);
+    debugLog("HTML-Datei erstellt: " . $filename);
+    return true;
 }
 
-// Verwandte Posts HTML generieren
-function generateRelatedPostsSection($relatedPosts) {
-    if (empty($relatedPosts)) {
-        return '';
-    }
-    
-    $html = '<div class="internal-links-section">
-                <h4>📚 Verwandte Artikel</h4>
-                <div class="internal-links-grid">';
-    
-    foreach ($relatedPosts as $post) {
-        $html .= '<div class="internal-link-card">
-                    <a href="' . htmlspecialchars($post['slug']) . '.html">' . htmlspecialchars($post['title']) . '</a>
-                    <p>' . htmlspecialchars(substr($post['excerpt'], 0, 100)) . '...</p>
-                  </div>';
-    }
-    
-    $html .= '</div></div>';
-    
-    return $html;
-}
-
-// Request-Methode bestimmen
-$method = $_SERVER['REQUEST_METHOD'];
-
+// Request-Verarbeitung
 try {
+    $method = $_SERVER['REQUEST_METHOD'];
+    debugLog("Request: " . $method . " " . $_SERVER['REQUEST_URI']);
+    
     switch ($method) {
         case 'GET':
-            // Alle Posts abrufen
+            // Posts abrufen
             $posts = loadPosts();
-            echo json_encode(['success' => true, 'data' => $posts]);
+            sendResponse(true, $posts);
             break;
             
         case 'POST':
             // Neuen Post erstellen
-            $input = json_decode(file_get_contents('php://input'), true);
+            $input = file_get_contents('php://input');
+            debugLog("POST Input: " . substr($input, 0, 200) . "...");
             
-            if (!$input || !isset($input['title']) || !isset($input['content'])) {
-                throw new Exception('Titel und Inhalt sind erforderlich');
+            if (empty($input)) {
+                sendResponse(false, null, 'Keine Daten empfangen', 400);
             }
             
+            $postData = json_decode($input, true);
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                sendResponse(false, null, 'Ungültiges JSON: ' . json_last_error_msg(), 400);
+            }
+            
+            // Validierung
+            $errors = validatePost($postData);
+            if (!empty($errors)) {
+                sendResponse(false, null, implode(', ', $errors), 400);
+            }
+            
+            // Post-Daten vorbereiten
             $posts = loadPosts();
             
             $post = [
                 'id' => time(),
-                'title' => $input['title'],
-                'slug' => $input['slug'] ?: generateSlug($input['title']),
-                'excerpt' => $input['excerpt'] ?: substr(strip_tags($input['content']), 0, 160),
-                'content' => $input['content'],
-                'keywords' => $input['keywords'] ?: generateKeywords($input['title'], $input['content']),
-                'image' => $input['image'] ?? '',
-                'altText' => $input['altText'] ?? '',
+                'title' => $postData['title'],
+                'slug' => $postData['slug'] ?: generateSlug($postData['title']),
+                'excerpt' => $postData['excerpt'] ?: substr(strip_tags($postData['content']), 0, 160),
+                'content' => $postData['content'],
+                'keywords' => $postData['keywords'] ?? '',
+                'image' => $postData['image'] ?? '',
+                'altText' => $postData['altText'] ?? '',
                 'publishedAt' => date('Y-m-d H:i:s'),
-                'status' => $input['status'] ?? 'published'
+                'status' => $postData['status'] ?? 'published'
             ];
             
             // Slug eindeutig machen
             $originalSlug = $post['slug'];
             $counter = 1;
-            while (array_filter($posts, function($p) use ($post) { return $p['slug'] === $post['slug']; })) {
+            while (array_filter($posts, function($p) use ($post) { 
+                return $p['slug'] === $post['slug']; 
+            })) {
                 $post['slug'] = $originalSlug . '-' . $counter++;
             }
             
+            // Post hinzufügen
             array_unshift($posts, $post);
             
-            if (savePosts($posts) && createPostFile($post)) {
-                echo json_encode(['success' => true, 'data' => $post]);
-            } else {
-                throw new Exception('Fehler beim Speichern des Posts');
+            // Speichern
+            if (!savePosts($posts)) {
+                sendResponse(false, null, 'Fehler beim Speichern der Posts', 500);
             }
+            
+            // HTML-Datei erstellen
+            if (!createPostFile($post)) {
+                debugLog("Warnung: HTML-Datei konnte nicht erstellt werden");
+            }
+            
+            sendResponse(true, $post);
             break;
             
         case 'PUT':
             // Post aktualisieren
-            $input = json_decode(file_get_contents('php://input'), true);
+            $input = file_get_contents('php://input');
+            $postData = json_decode($input, true);
             
-            if (!$input || !isset($input['id'])) {
-                throw new Exception('Post-ID ist erforderlich');
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                sendResponse(false, null, 'Ungültiges JSON', 400);
+            }
+            
+            if (empty($postData['id'])) {
+                sendResponse(false, null, 'Post-ID ist erforderlich', 400);
             }
             
             $posts = loadPosts();
             $found = false;
             
             for ($i = 0; $i < count($posts); $i++) {
-                if ($posts[$i]['id'] == $input['id']) {
-                    $posts[$i] = array_merge($posts[$i], $input);
+                if ($posts[$i]['id'] == $postData['id']) {
+                    $posts[$i] = array_merge($posts[$i], $postData);
                     $found = true;
                     break;
                 }
             }
             
             if (!$found) {
-                throw new Exception('Post nicht gefunden');
+                sendResponse(false, null, 'Post nicht gefunden', 404);
             }
             
-            if (savePosts($posts) && createPostFile($posts[$i])) {
-                echo json_encode(['success' => true, 'data' => $posts[$i]]);
-            } else {
-                throw new Exception('Fehler beim Aktualisieren des Posts');
+            if (!savePosts($posts)) {
+                sendResponse(false, null, 'Fehler beim Aktualisieren', 500);
             }
+            
+            createPostFile($posts[$i]);
+            sendResponse(true, $posts[$i]);
             break;
             
         case 'DELETE':
@@ -330,7 +349,7 @@ try {
             $id = $_GET['id'] ?? null;
             
             if (!$id) {
-                throw new Exception('Post-ID ist erforderlich');
+                sendResponse(false, null, 'Post-ID ist erforderlich', 400);
             }
             
             $posts = loadPosts();
@@ -339,7 +358,7 @@ try {
             for ($i = 0; $i < count($posts); $i++) {
                 if ($posts[$i]['id'] == $id) {
                     // HTML-Datei löschen
-                    $filename = '../posts/' . $posts[$i]['slug'] . '.html';
+                    $filename = dirname(__FILE__) . '/../posts/' . $posts[$i]['slug'] . '.html';
                     if (file_exists($filename)) {
                         unlink($filename);
                     }
@@ -351,22 +370,25 @@ try {
             }
             
             if (!$found) {
-                throw new Exception('Post nicht gefunden');
+                sendResponse(false, null, 'Post nicht gefunden', 404);
             }
             
-            if (savePosts($posts)) {
-                echo json_encode(['success' => true, 'message' => 'Post gelöscht']);
-            } else {
-                throw new Exception('Fehler beim Löschen des Posts');
+            if (!savePosts($posts)) {
+                sendResponse(false, null, 'Fehler beim Löschen', 500);
             }
+            
+            sendResponse(true, ['message' => 'Post gelöscht']);
             break;
             
         default:
-            throw new Exception('Methode nicht unterstützt');
+            sendResponse(false, null, 'Methode nicht unterstützt', 405);
     }
     
 } catch (Exception $e) {
-    http_response_code(400);
-    echo json_encode(['success' => false, 'error' => $e->getMessage()]);
+    debugLog("Exception: " . $e->getMessage());
+    sendResponse(false, null, 'Server-Fehler: ' . $e->getMessage(), 500);
+} catch (Error $e) {
+    debugLog("Error: " . $e->getMessage());
+    sendResponse(false, null, 'Schwerwiegender Fehler', 500);
 }
 ?>

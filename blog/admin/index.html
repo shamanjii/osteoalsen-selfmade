@@ -655,29 +655,57 @@ function handleFileUpload(file) {
     }
 }
 
-// Posts laden - VERBESSERTE VERSION
+// Posts laden - KORRIGIERTE VERSION
 async function loadPosts() {
     console.log('📥 Lade Posts...');
     
     try {
-        // Mehrere Versuche mit verschiedenen Pfaden
+        // Verbesserte Pfad-Reihenfolge - beginne mit direktem JSON
         const possiblePaths = [
-            '../api/posts.php',
+            '../data/posts.json',  // Direkter Zugriff auf JSON-Datei
+            '../api/posts.php',     // API über relative Pfade
             './api/posts.php',
             'api/posts.php',
             '/blog/api/posts.php'
         ];
         
         let response = null;
+        let result = null;
         let lastError = null;
         
         for (const path of possiblePaths) {
             try {
                 console.log(`🔄 Versuche Pfad: ${path}`);
-                response = await fetch(path);
+                response = await fetch(path, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    cache: 'no-cache'
+                });
+                
                 if (response.ok) {
                     console.log(`✅ Erfolgreicher Pfad: ${path}`);
-                    break;
+                    
+                    // Unterscheide zwischen JSON-Datei und API
+                    if (path.endsWith('.json')) {
+                        // Direkter JSON-Zugriff
+                        const jsonData = await response.json();
+                        posts = Array.isArray(jsonData) ? jsonData : [];
+                        console.log(`✅ JSON direkt geladen: ${posts.length} Posts`);
+                        updatePostsUI();
+                        return;
+                    } else {
+                        // API-Zugriff
+                        result = await response.json();
+                        if (result.success && result.data) {
+                            posts = result.data;
+                            console.log(`✅ API Posts geladen: ${posts.length} Einträge`);
+                            updatePostsUI();
+                            return;
+                        }
+                    }
                 }
             } catch (error) {
                 console.log(`❌ Pfad fehlgeschlagen: ${path} - ${error.message}`);
@@ -686,37 +714,40 @@ async function loadPosts() {
             }
         }
         
-        if (!response || !response.ok) {
-            throw new Error(`API nicht erreichbar. Letzter Fehler: ${lastError?.message || 'Unbekannt'}`);
-        }
+        // Wenn alle Pfade fehlschlagen
+        throw new Error(`Alle Pfade fehlgeschlagen. Letzter Fehler: ${lastError?.message || 'Unbekannt'}`);
         
-        const result = await response.json();
-        
-        if (result.success) {
-            posts = result.data || [];
-            console.log(`✅ Posts geladen: ${posts.length} Einträge`);
-        } else {
-            posts = [];
-            console.warn('⚠️ API Antwort ohne Erfolg:', result.error);
-        }
     } catch (error) {
         console.error('❌ Fehler beim Laden der Posts:', error);
         
-        // Fallback: Versuche direkt posts.json zu laden
-        try {
-            console.log('🔄 Fallback: Lade posts.json direkt...');
-            const directResponse = await fetch('../data/posts.json');
-            if (directResponse.ok) {
-                posts = await directResponse.json();
-                console.log(`✅ Fallback erfolgreich: ${posts.length} Posts aus JSON`);
-            } else {
-                posts = [];
-            }
-        } catch (fallbackError) {
-            console.error('❌ Auch Fallback fehlgeschlagen:', fallbackError);
-            posts = [];
+        // Als letzter Fallback: Leeres Array setzen
+        posts = [];
+        
+        // UI mit Fehlermeldung aktualisieren
+        updatePostsUI();
+        
+        // Benutzerfreundliche Fehlermeldung
+        const postsList = document.getElementById('postsList');
+        if (postsList) {
+            postsList.innerHTML = `
+                <div style="text-align: center; padding: 2rem; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; color: #991b1b;">
+                    <h3>⚠️ Posts konnten nicht geladen werden</h3>
+                    <p>Mögliche Ursachen:</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Die posts.json Datei existiert nicht</li>
+                        <li>Die API ist nicht erreichbar</li>
+                        <li>Fehlende Berechtigungen</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <button onclick="loadPosts()" style="background: #991b1b; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">
+                            🔄 Erneut versuchen
+                        </button>
+                    </p>
+                </div>
+            `;
         }
     }
+}
 
     // UI aktualisieren
     updatePostsUI();

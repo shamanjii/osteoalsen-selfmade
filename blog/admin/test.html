@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Admin - Test Version</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .status.ok { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .status.warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        
+        .form-group {
+            margin: 15px 0;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .btn:hover { background: #0056b3; }
+        .btn:disabled { background: #6c757d; cursor: not-allowed; }
+        
+        .log {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        
+        .log-entry {
+            margin: 2px 0;
+            padding: 2px;
+        }
+        
+        .log-error { color: #dc3545; }
+        .log-success { color: #28a745; }
+        .log-info { color: #007bff; }
+        .log-warning { color: #ffc107; color: #000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Blog Admin - Test & Debug</h1>
+        
+        <!-- Status Anzeige -->
+        <div id="systemStatus">
+            <div class="status warning">🔄 System wird geprüft...</div>
+        </div>
+        
+        <!-- Test Buttons -->
+        <div style="margin: 20px 0;">
+            <button class="btn" onclick="testAPI()">📡 API testen</button>
+            <button class="btn" onclick="testJSON()">📄 JSON testen</button>
+            <button class="btn" onclick="testConfig()">⚙️ Config testen</button>
+            <button class="btn" onclick="testPHP()">🐘 PHP testen</button>
+            <button class="btn" onclick="clearLog()">🗑️ Log leeren</button>
+        </div>
+        
+        <!-- Minimales Post-Formular -->
+        <div style="border-top: 2px solid #eee; padding-top: 20px;">
+            <h2>✏️ Minimal Post Test</h2>
+            <form id="testForm">
+                <div class="form-group">
+                    <label>Titel:</label>
+                    <input type="text" id="title" value="Test Post " placeholder="Test Titel">
+                </div>
+                
+                <div class="form-group">
+                    <label>Inhalt:</label>
+                    <textarea id="content" rows="4" placeholder="Test Inhalt"><h2>Test Post</h2><p>Dies ist ein Test-Beitrag.</p></textarea>
+                </div>
+                
+                <button type="submit" class="btn" id="submitBtn">💾 Test Post speichern</button>
+            </form>
+        </div>
+        
+        <!-- Debug Log -->
+        <div class="log" id="debugLog">
+            <strong>Debug Log:</strong><br>
+            <div id="logEntries"></div>
+        </div>
+    </div>
+
+    <script>
+        let logEntries = [];
+        
+        // Logging
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = `[${timestamp}] ${message}`;
+            
+            const logDiv = document.createElement('div');
+            logDiv.className = `log-entry log-${type}`;
+            logDiv.textContent = entry;
+            
+            document.getElementById('logEntries').appendChild(logDiv);
+            
+            // Scroll to bottom
+            const logContainer = document.getElementById('debugLog');
+            logContainer.scrollTop = logContainer.scrollHeight;
+            
+            console.log(entry);
+        }
+        
+        // Status Update
+        function updateStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('systemStatus');
+            const className = type === 'success' ? 'ok' : type;
+            statusDiv.innerHTML = `<div class="status ${className}">${message}</div>`;
+        }
+        
+        // API Test
+        async function testAPI() {
+            log('🧪 Teste API-Verbindung...', 'info');
+            
+            try {
+                const response = await fetch('../api/posts.php');
+                log(`API Response Status: ${response.status}`, response.ok ? 'success' : 'error');
+                
+                const text = await response.text();
+                log(`API Response: ${text.substring(0, 100)}...`, 'info');
+                
+                if (response.ok) {
+                    try {
+                        const data = JSON.parse(text);
+                        log(`✅ API funktioniert! ${data.data?.length || 0} Posts gefunden`, 'success');
+                        updateStatus('✅ API funktioniert', 'success');
+                    } catch (e) {
+                        log(`❌ API Response ist kein JSON: ${e.message}`, 'error');
+                        updateStatus('❌ API gibt ungültiges JSON zurück', 'error');
+                    }
+                } else {
+                    log(`❌ API Fehler: ${response.status}`, 'error');
+                    updateStatus(`❌ API Fehler: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`❌ API nicht erreichbar: ${error.message}`, 'error');
+                updateStatus('❌ API nicht erreichbar', 'error');
+            }
+        }
+        
+        // JSON Test
+        async function testJSON() {
+            log('📄 Teste JSON-Datei...', 'info');
+            
+            try {
+                const response = await fetch('../data/posts.json');
+                log(`JSON Status: ${response.status}`, response.ok ? 'success' : 'error');
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    log(`✅ JSON lesbar! ${data.length} Posts gefunden`, 'success');
+                } else {
+                    log(`❌ JSON nicht lesbar: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`❌ JSON Fehler: ${error.message}`, 'error');
+            }
+        }
+        
+        // Config Test
+        async function testConfig() {
+            log('⚙️ Teste Config-Datei...', 'info');
+            
+            try {
+                const response = await fetch('../data/config.json');
+                log(`Config Status: ${response.status}`, response.ok ? 'success' : 'error');
+                
+                if (response.ok) {
+                    const config = await response.json();
+                    log(`✅ Config lesbar! Site: ${config.site_name}`, 'success');
+                } else {
+                    log(`❌ Config nicht lesbar: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`❌ Config Fehler: ${error.message}`, 'error');
+            }
+        }
+        
+        // PHP Test
+        async function testPHP() {
+            log('🐘 Teste PHP-Umgebung...', 'info');
+            
+            try {
+                // Test mit einfacher PHP-Info
+                const response = await fetch('../api/posts.php', {
+                    method: 'OPTIONS'
+                });
+                
+                log(`PHP OPTIONS Status: ${response.status}`, response.ok ? 'success' : 'warning');
+                
+                // Headers prüfen
+                const contentType = response.headers.get('Content-Type');
+                log(`Content-Type: ${contentType}`, 'info');
+                
+                if (contentType && contentType.includes('json')) {
+                    log('✅ PHP scheint zu funktionieren (JSON Content-Type)', 'success');
+                } else {
+                    log('⚠️ PHP möglicherweise nicht aktiv (kein JSON Content-Type)', 'warning');
+                }
+                
+            } catch (error) {
+                log(`❌ PHP Test Fehler: ${error.message}`, 'error');
+            }
+        }
+        
+        // Post Test
+        async function testPost() {
+            log('💾 Teste Post-Speicherung...', 'info');
+            
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            
+            if (!title || !content) {
+                log('❌ Titel und Inhalt erforderlich', 'error');
+                return;
+            }
+            
+            const postData = {
+                title: title + new Date().getTime(),
+                content: content,
+                excerpt: 'Test Post Beschreibung',
+                keywords: 'test, debug',
+                status: 'draft'
+            };
+            
+            try {
+                log(`Sende Post-Daten: ${JSON.stringify(postData)}`, 'info');
+                
+                const response = await fetch('../api/posts.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(postData)
+                });
+                
+                log(`Post Response Status: ${response.status}`, response.ok ? 'success' : 'error');
+                
+                const responseText = await response.text();
+                log(`Post Response: ${responseText}`, 'info');
+                
+                if (response.ok) {
+                    const result = JSON.parse(responseText);
+                    if (result.success) {
+                        log('✅ Post erfolgreich gespeichert!', 'success');
+                        updateStatus('✅ Post-Speicherung funktioniert', 'success');
+                    } else {
+                        log(`❌ Post-Fehler: ${result.error}`, 'error');
+                    }
+                } else {
+                    log(`❌ HTTP Fehler beim Post speichern`, 'error');
+                }
+                
+            } catch (error) {
+                log(`❌ Post-Test Fehler: ${error.message}`, 'error');
+            }
+        }
+        
+        // Log leeren
+        function clearLog() {
+            document.getElementById('logEntries').innerHTML = '';
+            log('🗑️ Log geleert', 'info');
+        }
+        
+        // Form Submit
+        document.getElementById('testForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.textContent = '💾 Speichere...';
+            
+            testPost().finally(() => {
+                btn.disabled = false;
+                btn.textContent = '💾 Test Post speichern';
+            });
+        });
+        
+        // Auto-Start
+        document.addEventListener('DOMContentLoaded', function() {
+            log('🚀 Test-Admin gestartet', 'info');
+            log(`URL: ${window.location.href}`, 'info');
+            log(`Protocol: ${window.location.protocol}`, 'info');
+            
+            // Automatische Tests
+            setTimeout(testAPI, 1000);
+            setTimeout(testJSON, 2000);
+            setTimeout(testConfig, 3000);
+        });
+    </script>
+</body>
+</html>
