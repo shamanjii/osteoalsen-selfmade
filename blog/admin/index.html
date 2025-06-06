@@ -509,464 +509,557 @@
 
     <script>
         // Globale Variablen
-        let posts = [];
+let posts = [];
 
-        // Tab Navigation
-        function showPanel(panelId) {
-            console.log('Wechsle zu Panel:', panelId);
-            
-            // Alle Panels ausblenden
-            document.querySelectorAll('.panel').forEach(panel => {
-                panel.classList.remove('active');
-            });
-            
-            // Alle Tabs deaktivieren
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Gewähltes Panel anzeigen
-            const targetPanel = document.getElementById(panelId);
-            if (targetPanel) {
-                targetPanel.classList.add('active');
-            }
-            
-            // Den geklickten Tab aktivieren
-            const clickedTab = document.querySelector(`[data-panel="${panelId}"]`);
-            if (clickedTab) {
-                clickedTab.classList.add('active');
-            }
+// Tab Navigation
+function showPanel(panelId) {
+    console.log('Wechsle zu Panel:', panelId);
+    
+    // Alle Panels ausblenden
+    document.querySelectorAll('.panel').forEach(panel => {
+        panel.classList.remove('active');
+    });
+    
+    // Alle Tabs deaktivieren
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Gewähltes Panel anzeigen
+    const targetPanel = document.getElementById(panelId);
+    if (targetPanel) {
+        targetPanel.classList.add('active');
+    }
+    
+    // Den geklickten Tab aktivieren
+    const clickedTab = document.querySelector(`[data-panel="${panelId}"]`);
+    if (clickedTab) {
+        clickedTab.classList.add('active');
+    }
 
-            // Posts laden wenn Posts-Panel geöffnet wird
-            if (panelId === 'posts') {
-                loadPosts();
-            }
-        }
+    // Posts laden wenn Posts-Panel geöffnet wird ODER wenn noch nicht geladen
+    if (panelId === 'posts' || posts.length === 0) {
+        loadPosts();
+    }
+}
 
-        // Slug generieren
-        function generateSlug(title) {
-            if (!title) return '';
-            return title
-                .toLowerCase()
-                .replace(/ä/g, 'ae')
-                .replace(/ö/g, 'oe')
-                .replace(/ü/g, 'ue')
-                .replace(/ß/g, 'ss')
-                .replace(/[^a-z0-9]+/g, '-')
-                .replace(/^-+|-+$/g, '');
-        }
+// Slug generieren
+function generateSlug(title) {
+    if (!title) return '';
+    return title
+        .toLowerCase()
+        .replace(/ä/g, 'ae')
+        .replace(/ö/g, 'oe')
+        .replace(/ü/g, 'ue')
+        .replace(/ß/g, 'ss')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
 
-        // SEO Preview Update
-        function updateSEOPreview() {
-            const title = document.getElementById('title').value || 'Dein Titel hier...';
-            const excerpt = document.getElementById('excerpt').value || 'Deine Meta Description hier...';
-            
-            // Auto-Slug generierung
-            const slugField = document.getElementById('slug');
-            if (!slugField.value && title !== 'Dein Titel hier...') {
-                slugField.value = generateSlug(title);
-            }
-            
-            const slug = slugField.value || 'dein-slug';
+// SEO Preview Update
+function updateSEOPreview() {
+    const title = document.getElementById('title').value || 'Dein Titel hier...';
+    const excerpt = document.getElementById('excerpt').value || 'Deine Meta Description hier...';
+    
+    // Auto-Slug generierung
+    const slugField = document.getElementById('slug');
+    if (!slugField.value && title !== 'Dein Titel hier...') {
+        slugField.value = generateSlug(title);
+    }
+    
+    const slug = slugField.value || 'dein-slug';
 
-            document.getElementById('previewTitle').textContent = title;
-            document.getElementById('previewUrl').textContent = `https://deine-domain.de/blog/${slug}`;
-            document.getElementById('previewDescription').textContent = excerpt;
+    document.getElementById('previewTitle').textContent = title;
+    document.getElementById('previewUrl').textContent = `https://deine-domain.de/blog/${slug}`;
+    document.getElementById('previewDescription').textContent = excerpt;
 
-            // Zeichenzähler für Meta Description
-            const excerptCount = document.getElementById('excerptCount');
-            const realExcerpt = document.getElementById('excerpt').value;
-            excerptCount.textContent = `${realExcerpt.length}/160 Zeichen`;
-            excerptCount.style.color = realExcerpt.length > 160 ? '#ef4444' : '#6b7280';
-        }
+    // Zeichenzähler für Meta Description
+    const excerptCount = document.getElementById('excerptCount');
+    const realExcerpt = document.getElementById('excerpt').value;
+    excerptCount.textContent = `${realExcerpt.length}/160 Zeichen`;
+    excerptCount.style.color = realExcerpt.length > 160 ? '#ef4444' : '#6b7280';
+}
 
-        // Keywords generieren
-        function generateKeywords() {
-            const title = document.getElementById('title').value;
-            const content = document.getElementById('content').value;
-            
-            if (!title && !content) {
-                alert('Bitte gib zuerst einen Titel und Inhalt ein');
-                return;
-            }
+// Keywords generieren
+function generateKeywords() {
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    
+    if (!title && !content) {
+        alert('Bitte gib zuerst einen Titel und Inhalt ein');
+        return;
+    }
 
-            // Einfache Keyword-Extraktion
-            const text = (title + ' ' + content).toLowerCase();
-            const words = text.match(/\b\w{4,}\b/g) || [];
-            
-            // Deutsche Stopwörter
-            const stopwords = ['aber', 'alle', 'auch', 'auf', 'aus', 'bei', 'bin', 'bis', 'das', 'dem', 'den', 'der', 'des', 'die', 'ein', 'eine', 'einem', 'einen', 'einer', 'eines', 'für', 'haben', 'hat', 'ich', 'ihr', 'ihre', 'ihrem', 'ihren', 'ihrer', 'ihres', 'ist', 'mit', 'nach', 'nicht', 'oder', 'sein', 'seine', 'seinem', 'seinen', 'seiner', 'seines', 'sich', 'sie', 'sind', 'über', 'und', 'von', 'war', 'waren', 'wird', 'wir', 'wurde', 'wurden', 'zum', 'zur'];
-            
-            const filteredWords = words.filter(word => 
-                !stopwords.includes(word) && word.length >= 4
-            );
-            
-            const wordCount = {};
-            filteredWords.forEach(word => {
-                wordCount[word] = (wordCount[word] || 0) + 1;
-            });
+    // Einfache Keyword-Extraktion
+    const text = (title + ' ' + content).toLowerCase();
+    const words = text.match(/\b\w{4,}\b/g) || [];
+    
+    // Deutsche Stopwörter
+    const stopwords = ['aber', 'alle', 'auch', 'auf', 'aus', 'bei', 'bin', 'bis', 'das', 'dem', 'den', 'der', 'des', 'die', 'ein', 'eine', 'einem', 'einen', 'einer', 'eines', 'für', 'haben', 'hat', 'ich', 'ihr', 'ihre', 'ihrem', 'ihren', 'ihrer', 'ihres', 'ist', 'mit', 'nach', 'nicht', 'oder', 'sein', 'seine', 'seinem', 'seinen', 'seiner', 'seines', 'sich', 'sie', 'sind', 'über', 'und', 'von', 'war', 'waren', 'wird', 'wir', 'wurde', 'wurden', 'zum', 'zur'];
+    
+    const filteredWords = words.filter(word => 
+        !stopwords.includes(word) && word.length >= 4
+    );
+    
+    const wordCount = {};
+    filteredWords.forEach(word => {
+        wordCount[word] = (wordCount[word] || 0) + 1;
+    });
 
-            const keywords = Object.entries(wordCount)
-                .sort((a, b) => b[1] - a[1])
-                .slice(0, 10)
-                .map(entry => entry[0]);
+    const keywords = Object.entries(wordCount)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(entry => entry[0]);
 
-            document.getElementById('keywords').value = keywords.join(', ');
-            
-            // Vorschläge anzeigen
-            const suggestionsDiv = document.getElementById('suggestedKeywords');
-            suggestionsDiv.innerHTML = keywords.map(keyword => 
-                `<span class="keyword-tag">${keyword}</span>`
-            ).join('');
-            document.getElementById('keywordSuggestions').style.display = 'block';
-        }
+    document.getElementById('keywords').value = keywords.join(', ');
+    
+    // Vorschläge anzeigen
+    const suggestionsDiv = document.getElementById('suggestedKeywords');
+    suggestionsDiv.innerHTML = keywords.map(keyword => 
+        `<span class="keyword-tag">${keyword}</span>`
+    ).join('');
+    document.getElementById('keywordSuggestions').style.display = 'block';
+}
 
-        // Alt-Text generieren
-        function generateAltText() {
-            const title = document.getElementById('title').value;
-            const keywords = document.getElementById('keywords').value;
-            
-            if (!title) {
-                alert('Bitte gib zuerst einen Titel ein');
-                return;
-            }
+// Alt-Text generieren
+function generateAltText() {
+    const title = document.getElementById('title').value;
+    const keywords = document.getElementById('keywords').value;
+    
+    if (!title) {
+        alert('Bitte gib zuerst einen Titel ein');
+        return;
+    }
 
-            let altText = `Beitragsbild zu: ${title}`;
-            
-            if (keywords) {
-                const firstKeywords = keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ');
-                altText = `${altText}. Keywords: ${firstKeywords}`;
-            }
-            
-            document.getElementById('altText').value = altText;
-        }
+    let altText = `Beitragsbild zu: ${title}`;
+    
+    if (keywords) {
+        const firstKeywords = keywords.split(',').slice(0, 2).map(k => k.trim()).join(', ');
+        altText = `${altText}. Keywords: ${firstKeywords}`;
+    }
+    
+    document.getElementById('altText').value = altText;
+}
 
-        // Datei-Upload
-        function handleFileUpload(file) {
-            if (file && file.type.startsWith('image/')) {
-                // In einer echten Anwendung würdest du hier die Datei hochladen
-                // Für Demo-Zwecke erstellen wir eine lokale URL
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById('image').value = e.target.result;
-                    updateSEOPreview();
-                };
-                reader.readAsDataURL(file);
-            }
-        }
+// Datei-Upload
+function handleFileUpload(file) {
+    if (file && file.type.startsWith('image/')) {
+        // In einer echten Anwendung würdest du hier die Datei hochladen
+        // Für Demo-Zwecke erstellen wir eine lokale URL
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('image').value = e.target.result;
+            updateSEOPreview();
+        };
+        reader.readAsDataURL(file);
+    }
+}
 
-        // Posts laden
-        async function loadPosts() {
+// Posts laden - VERBESSERTE VERSION
+async function loadPosts() {
+    console.log('📥 Lade Posts...');
+    
+    try {
+        // Mehrere Versuche mit verschiedenen Pfaden
+        const possiblePaths = [
+            '../api/posts.php',
+            './api/posts.php',
+            'api/posts.php',
+            '/blog/api/posts.php'
+        ];
+        
+        let response = null;
+        let lastError = null;
+        
+        for (const path of possiblePaths) {
             try {
-                const response = await fetch('../api/posts.php');
-                const result = await response.json();
-                
-                if (result.success) {
-                    posts = result.data;
-                } else {
-                    posts = [];
+                console.log(`🔄 Versuche Pfad: ${path}`);
+                response = await fetch(path);
+                if (response.ok) {
+                    console.log(`✅ Erfolgreicher Pfad: ${path}`);
+                    break;
                 }
             } catch (error) {
-                console.error('Fehler beim Laden der Posts:', error);
+                console.log(`❌ Pfad fehlgeschlagen: ${path} - ${error.message}`);
+                lastError = error;
+                continue;
+            }
+        }
+        
+        if (!response || !response.ok) {
+            throw new Error(`API nicht erreichbar. Letzter Fehler: ${lastError?.message || 'Unbekannt'}`);
+        }
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            posts = result.data || [];
+            console.log(`✅ Posts geladen: ${posts.length} Einträge`);
+        } else {
+            posts = [];
+            console.warn('⚠️ API Antwort ohne Erfolg:', result.error);
+        }
+    } catch (error) {
+        console.error('❌ Fehler beim Laden der Posts:', error);
+        
+        // Fallback: Versuche direkt posts.json zu laden
+        try {
+            console.log('🔄 Fallback: Lade posts.json direkt...');
+            const directResponse = await fetch('../data/posts.json');
+            if (directResponse.ok) {
+                posts = await directResponse.json();
+                console.log(`✅ Fallback erfolgreich: ${posts.length} Posts aus JSON`);
+            } else {
                 posts = [];
             }
+        } catch (fallbackError) {
+            console.error('❌ Auch Fallback fehlgeschlagen:', fallbackError);
+            posts = [];
+        }
+    }
 
-            const postsList = document.getElementById('postsList');
-            const totalPosts = posts.length;
-            const publishedPosts = posts.filter(p => p.status === 'published').length;
-            const draftPosts = posts.filter(p => p.status === 'draft').length;
+    // UI aktualisieren
+    updatePostsUI();
+}
 
-            // Statistiken aktualisieren
-            document.getElementById('totalPosts').textContent = totalPosts;
-            document.getElementById('publishedPosts').textContent = publishedPosts;
-            document.getElementById('draftPosts').textContent = draftPosts;
+// Posts UI aktualisieren - NEUE FUNKTION
+function updatePostsUI() {
+    const postsList = document.getElementById('postsList');
+    const totalPosts = posts.length;
+    const publishedPosts = posts.filter(p => p.status === 'published').length;
+    const draftPosts = posts.filter(p => p.status === 'draft').length;
 
-            // Posts auflisten
-            if (posts.length === 0) {
-                postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
-                return;
+    // Statistiken aktualisieren
+    const totalPostsEl = document.getElementById('totalPosts');
+    const publishedPostsEl = document.getElementById('publishedPosts');
+    const draftPostsEl = document.getElementById('draftPosts');
+    
+    if (totalPostsEl) totalPostsEl.textContent = totalPosts;
+    if (publishedPostsEl) publishedPostsEl.textContent = publishedPosts;
+    if (draftPostsEl) draftPostsEl.textContent = draftPosts;
+
+    // Posts auflisten
+    if (!postsList) {
+        console.warn('⚠️ Element #postsList nicht gefunden');
+        return;
+    }
+    
+    if (posts.length === 0) {
+        postsList.innerHTML = '<p>Noch keine Posts vorhanden. Erstelle deinen ersten Post im Editor!</p>';
+        return;
+    }
+
+    postsList.innerHTML = posts.map(post => `
+        <div class="post-item">
+            <h3>${post.title}</h3>
+            <div class="post-meta">
+                Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
+                Keywords: ${post.keywords || 'Keine'}
+            </div>
+            <p>${post.excerpt}</p>
+            <div class="post-actions">
+                <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
+                <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
+                <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Post bearbeiten - VERBESSERTE VERSION
+function editPost(postId) {
+    console.log('📝 Bearbeite Post:', postId);
+    
+    const post = posts.find(p => p.id == postId); // == statt === für flexible Typvergleiche
+    if (!post) {
+        console.error('❌ Post nicht gefunden:', postId);
+        alert('Post nicht gefunden! Möglicherweise wurden die Posts noch nicht geladen.');
+        return;
+    }
+
+    // Felder füllen
+    const fields = [
+        { id: 'title', value: post.title },
+        { id: 'slug', value: post.slug },
+        { id: 'excerpt', value: post.excerpt },
+        { id: 'content', value: post.content },
+        { id: 'keywords', value: post.keywords || '' },
+        { id: 'image', value: post.image || '' },
+        { id: 'altText', value: post.altText || '' }
+    ];
+    
+    fields.forEach(field => {
+        const element = document.getElementById(field.id);
+        if (element) {
+            element.value = field.value;
+        } else {
+            console.warn(`⚠️ Feld ${field.id} nicht gefunden`);
+        }
+    });
+
+    // Kategorien und Tags auswählen
+    setSelectedCategories(post.categories || []);
+    setSelectedTags(post.tags || []);
+
+    updateSEOPreview();
+    showPanel('editor');
+    
+    console.log('✅ Post in Editor geladen');
+}
+
+// Post löschen
+async function deletePost(postId) {
+    if (!confirm('Post wirklich löschen?')) return;
+
+    try {
+        const response = await fetch(`../api/posts.php?id=${postId}`, {
+            method: 'DELETE'
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            alert('✅ Post gelöscht!');
+            loadPosts(); // Posts neu laden
+        } else {
+            throw new Error(result.error || 'Fehler beim Löschen');
+        }
+    } catch (error) {
+        console.error('Fehler:', error);
+        alert('❌ Fehler beim Löschen: ' + error.message);
+    }
+}
+
+// Post ansehen
+function viewPost(slug) {
+    window.open(`../posts/${slug}.html`, '_blank');
+}
+
+// SEO Analyse
+function analyzeSEO() {
+    const text = document.getElementById('analyzeText').value;
+    if (!text) {
+        alert('Bitte gib Text für die SEO-Analyse ein');
+        return;
+    }
+
+    const words = text.split(/\s+/).length;
+    const sentences = text.split(/[.!?]+/).length - 1;
+    const avgWordsPerSentence = Math.round(words / sentences);
+    
+    const headings = (text.match(/<h[1-6][^>]*>/gi) || []).length;
+    const links = (text.match(/<a[^>]*>/gi) || []).length;
+    const images = (text.match(/<img[^>]*>/gi) || []).length;
+
+    const results = `
+        <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 10px 0;">
+            <h4>📊 Text-Statistiken</h4>
+            <p><strong>Wörter:</strong> ${words} (Empfohlen: 800-2000)</p>
+            <p><strong>Sätze:</strong> ${sentences}</p>
+            <p><strong>Durchschnittliche Satzlänge:</strong> ${avgWordsPerSentence} Wörter</p>
+        </div>
+        
+        <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 10px 0;">
+            <h4>🏗️ Struktur</h4>
+            <p><strong>Überschriften:</strong> ${headings} ${headings < 3 ? '⚠️ Mehr Überschriften empfohlen' : '✅'}</p>
+            <p><strong>Links:</strong> ${links} ${links < 2 ? '⚠️ Mehr interne/externe Links empfohlen' : '✅'}</p>
+            <p><strong>Bilder:</strong> ${images} ${images < 1 ? '⚠️ Mindestens ein Bild empfohlen' : '✅'}</p>
+        </div>
+
+        <div style="background: #fefce8; padding: 20px; border-radius: 8px; margin: 10px 0;">
+            <h4>💡 SEO Empfehlungen</h4>
+            <ul style="margin-left: 20px;">
+                ${words < 800 ? '<li>⚠️ Text sollte mindestens 800 Wörter haben</li>' : ''}
+                ${avgWordsPerSentence > 20 ? '<li>⚠️ Sätze sind zu lang - unter 20 Wörter pro Satz empfohlen</li>' : ''}
+                ${headings < 3 ? '<li>⚠️ Verwende mehr Überschriften (H2, H3) für bessere Struktur</li>' : ''}
+                ${links < 2 ? '<li>⚠️ Füge interne und externe Links hinzu</li>' : ''}
+                ${images < 1 ? '<li>⚠️ Mindestens ein Bild mit Alt-Text hinzufügen</li>' : ''}
+                <li>✅ Verwende Keywords natürlich im Text</li>
+                <li>✅ Meta Description unter 160 Zeichen halten</li>
+            </ul>
+        </div>
+    `;
+
+    document.getElementById('seoAnalysisContent').innerHTML = results;
+    document.getElementById('seoResults').style.display = 'block';
+}
+
+// Kategorien und Tags Funktionalität
+function getSelectedCategories() {
+    const checkboxes = document.querySelectorAll('input[name="categories"]:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+function getSelectedTags() {
+    const checkboxes = document.querySelectorAll('input[name="tags"]:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+function setSelectedCategories(categories) {
+    document.querySelectorAll('input[name="categories"]').forEach(cb => {
+        cb.checked = categories.includes(cb.value);
+    });
+}
+
+function setSelectedTags(tags) {
+    document.querySelectorAll('input[name="tags"]').forEach(cb => {
+        cb.checked = tags.includes(cb.value);
+    });
+}
+
+function updateKeywordsFromSelection() {
+    const categories = getSelectedCategories();
+    const tags = getSelectedTags();
+    const currentKeywords = document.getElementById('keywords').value;
+    
+    const selectedTerms = [...categories, ...tags];
+    const existingKeywords = currentKeywords ? currentKeywords.split(',').map(k => k.trim()) : [];
+    const allKeywords = [...new Set([...existingKeywords, ...selectedTerms])];
+    
+    document.getElementById('keywords').value = allKeywords.join(', ');
+}
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Admin Panel wird initialisiert...');
+    
+    // Posts sofort beim Laden initialisieren
+    loadPosts();
+    
+    // Tab Navigation
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            const panelId = this.getAttribute('data-panel');
+            showPanel(panelId);
+        });
+    });
+
+    // Eingabe-Event-Listener für Auto-Updates
+    const titleField = document.getElementById('title');
+    const slugField = document.getElementById('slug');
+    const excerptField = document.getElementById('excerpt');
+    
+    if (titleField) titleField.addEventListener('input', updateSEOPreview);
+    if (slugField) slugField.addEventListener('input', updateSEOPreview);
+    if (excerptField) excerptField.addEventListener('input', updateSEOPreview);
+
+    // Button-Event-Listener
+    const generateKeywordsBtn = document.getElementById('generateKeywordsBtn');
+    const generateAltTextBtn = document.getElementById('generateAltTextBtn');
+    const analyzeSEOBtn = document.getElementById('analyzeSEOBtn');
+    
+    if (generateKeywordsBtn) generateKeywordsBtn.addEventListener('click', generateKeywords);
+    if (generateAltTextBtn) generateAltTextBtn.addEventListener('click', generateAltText);
+    if (analyzeSEOBtn) analyzeSEOBtn.addEventListener('click', analyzeSEO);
+
+    // Upload-Area
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('imageFile');
+
+    if (uploadArea && fileInput) {
+        uploadArea.addEventListener('click', () => fileInput.click());
+        
+        fileInput.addEventListener('change', function(e) {
+            if (e.target.files[0]) {
+                handleFileUpload(e.target.files[0]);
             }
+        });
 
-            postsList.innerHTML = posts.map(post => `
-                <div class="post-item">
-                    <h3>${post.title}</h3>
-                    <div class="post-meta">
-                        Veröffentlicht: ${new Date(post.publishedAt).toLocaleDateString('de-DE')} | 
-                        Keywords: ${post.keywords || 'Keine'}
-                    </div>
-                    <p>${post.excerpt}</p>
-                    <div class="post-actions">
-                        <button class="btn-secondary btn-small" onclick="editPost(${post.id})">✏️ Bearbeiten</button>
-                        <button class="btn-secondary btn-small" onclick="deletePost(${post.id})">🗑️ Löschen</button>
-                        <button class="btn-secondary btn-small" onclick="viewPost('${post.slug}')">👁️ Ansehen</button>
-                    </div>
-                </div>
-            `).join('');
-        }
+        uploadArea.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
 
-        // Post bearbeiten
-        function editPost(postId) {
-            const post = posts.find(p => p.id === postId);
-            if (!post) return;
+        uploadArea.addEventListener('dragleave', function() {
+            uploadArea.classList.remove('dragover');
+        });
 
-            document.getElementById('title').value = post.title;
-            document.getElementById('slug').value = post.slug;
-            document.getElementById('excerpt').value = post.excerpt;
-            document.getElementById('content').value = post.content;
-            document.getElementById('keywords').value = post.keywords || '';
-            document.getElementById('image').value = post.image || '';
-            document.getElementById('altText').value = post.altText || '';
+        uploadArea.addEventListener('drop', function(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            if (e.dataTransfer.files[0]) {
+                handleFileUpload(e.dataTransfer.files[0]);
+            }
+        });
+    }
 
-            updateSEOPreview();
-            showPanel('editor');
-        }
-
-        // Post löschen
-        async function deletePost(postId) {
-            if (!confirm('Post wirklich löschen?')) return;
-
+    // Post Form Submit
+    const postForm = document.getElementById('postForm');
+    if (postForm) {
+        postForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = '💾 Speichere...';
+            submitButton.disabled = true;
+            
             try {
-                const response = await fetch(`../api/posts.php?id=${postId}`, {
-                    method: 'DELETE'
+                const post = {
+                    title: document.getElementById('title').value,
+                    slug: document.getElementById('slug').value,
+                    excerpt: document.getElementById('excerpt').value,
+                    content: document.getElementById('content').value,
+                    keywords: document.getElementById('keywords').value,
+                    image: document.getElementById('image').value,
+                    altText: document.getElementById('altText').value,
+                    categories: getSelectedCategories(),
+                    tags: getSelectedTags(),
+                    status: 'published'
+                };
+
+                if (!post.title || !post.content) {
+                    throw new Error('Titel und Inhalt sind erforderlich');
+                }
+
+                const response = await fetch('../api/posts.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(post)
                 });
 
                 const result = await response.json();
 
                 if (result.success) {
-                    alert('✅ Post gelöscht!');
+                    alert('✅ Post erfolgreich veröffentlicht!');
+                    
+                    // Form zurücksetzen
+                    this.reset();
+                    updateSEOPreview();
+                    document.getElementById('keywordSuggestions').style.display = 'none';
+                    
+                    // Posts neu laden
                     loadPosts();
                 } else {
-                    throw new Error(result.error || 'Fehler beim Löschen');
+                    throw new Error(result.error || 'Unbekannter Fehler');
                 }
             } catch (error) {
                 console.error('Fehler:', error);
-                alert('❌ Fehler beim Löschen: ' + error.message);
+                alert('❌ Fehler beim Speichern: ' + error.message);
+            } finally {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
             }
-        }
-
-        // Post ansehen
-        function viewPost(slug) {
-            window.open(`../posts/${slug}.html`, '_blank');
-        }
-
-        // SEO Analyse
-        function analyzeSEO() {
-            const text = document.getElementById('analyzeText').value;
-            if (!text) {
-                alert('Bitte gib Text für die SEO-Analyse ein');
-                return;
-            }
-
-            const words = text.split(/\s+/).length;
-            const sentences = text.split(/[.!?]+/).length - 1;
-            const avgWordsPerSentence = Math.round(words / sentences);
-            
-            const headings = (text.match(/<h[1-6][^>]*>/gi) || []).length;
-            const links = (text.match(/<a[^>]*>/gi) || []).length;
-            const images = (text.match(/<img[^>]*>/gi) || []).length;
-
-            const results = `
-                <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>📊 Text-Statistiken</h4>
-                    <p><strong>Wörter:</strong> ${words} (Empfohlen: 800-2000)</p>
-                    <p><strong>Sätze:</strong> ${sentences}</p>
-                    <p><strong>Durchschnittliche Satzlänge:</strong> ${avgWordsPerSentence} Wörter</p>
-                </div>
-                
-                <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>🏗️ Struktur</h4>
-                    <p><strong>Überschriften:</strong> ${headings} ${headings < 3 ? '⚠️ Mehr Überschriften empfohlen' : '✅'}</p>
-                    <p><strong>Links:</strong> ${links} ${links < 2 ? '⚠️ Mehr interne/externe Links empfohlen' : '✅'}</p>
-                    <p><strong>Bilder:</strong> ${images} ${images < 1 ? '⚠️ Mindestens ein Bild empfohlen' : '✅'}</p>
-                </div>
-
-                <div style="background: #fefce8; padding: 20px; border-radius: 8px; margin: 10px 0;">
-                    <h4>💡 SEO Empfehlungen</h4>
-                    <ul style="margin-left: 20px;">
-                        ${words < 800 ? '<li>⚠️ Text sollte mindestens 800 Wörter haben</li>' : ''}
-                        ${avgWordsPerSentence > 20 ? '<li>⚠️ Sätze sind zu lang - unter 20 Wörter pro Satz empfohlen</li>' : ''}
-                        ${headings < 3 ? '<li>⚠️ Verwende mehr Überschriften (H2, H3) für bessere Struktur</li>' : ''}
-                        ${links < 2 ? '<li>⚠️ Füge interne und externe Links hinzu</li>' : ''}
-                        ${images < 1 ? '<li>⚠️ Mindestens ein Bild mit Alt-Text hinzufügen</li>' : ''}
-                        <li>✅ Verwende Keywords natürlich im Text</li>
-                        <li>✅ Meta Description unter 160 Zeichen halten</li>
-                    </ul>
-                </div>
-            `;
-
-            document.getElementById('seoAnalysisContent').innerHTML = results;
-            document.getElementById('seoResults').style.display = 'block';
-        }
-
-        // Event Listeners
-        document.addEventListener('DOMContentLoaded', function() {
-            // Tab Navigation
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const panelId = this.getAttribute('data-panel');
-                    showPanel(panelId);
-                });
-            });
-
-            // Eingabe-Event-Listener für Auto-Updates
-            document.getElementById('title').addEventListener('input', updateSEOPreview);
-            document.getElementById('slug').addEventListener('input', updateSEOPreview);
-            document.getElementById('excerpt').addEventListener('input', updateSEOPreview);
-
-            // Button-Event-Listener
-            document.getElementById('generateKeywordsBtn').addEventListener('click', generateKeywords);
-            document.getElementById('generateAltTextBtn').addEventListener('click', generateAltText);
-            document.getElementById('analyzeSEOBtn').addEventListener('click', analyzeSEO);
-
-            // Upload-Area
-            const uploadArea = document.getElementById('uploadArea');
-            const fileInput = document.getElementById('imageFile');
-
-            uploadArea.addEventListener('click', () => fileInput.click());
-            
-            fileInput.addEventListener('change', function(e) {
-                if (e.target.files[0]) {
-                    handleFileUpload(e.target.files[0]);
-                }
-            });
-
-            uploadArea.addEventListener('dragover', function(e) {
-                e.preventDefault();
-                uploadArea.classList.add('dragover');
-            });
-
-            uploadArea.addEventListener('dragleave', function() {
-                uploadArea.classList.remove('dragover');
-            });
-
-            uploadArea.addEventListener('drop', function(e) {
-                e.preventDefault();
-                uploadArea.classList.remove('dragover');
-                if (e.dataTransfer.files[0]) {
-                    handleFileUpload(e.dataTransfer.files[0]);
-                }
-            });
-
-            // Post Form Submit
-            document.getElementById('postForm').addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                const submitButton = this.querySelector('button[type="submit"]');
-                const originalText = submitButton.textContent;
-                submitButton.textContent = '💾 Speichere...';
-                submitButton.disabled = true;
-                
-                try {
-                    const post = {
-                        title: document.getElementById('title').value,
-                        slug: document.getElementById('slug').value,
-                        excerpt: document.getElementById('excerpt').value,
-                        content: document.getElementById('content').value,
-                        keywords: document.getElementById('keywords').value,
-                        image: document.getElementById('image').value,
-                        altText: document.getElementById('altText').value,
-                        status: 'published'
-                    };
-
-                    if (!post.title || !post.content) {
-                        throw new Error('Titel und Inhalt sind erforderlich');
-                    }
-
-                    const response = await fetch('../api/posts.php', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(post)
-                    });
-
-                    const result = await response.json();
-
-                    if (result.success) {
-                        alert('✅ Post erfolgreich veröffentlicht!');
-                        
-                        // Form zurücksetzen
-                        this.reset();
-                        updateSEOPreview();
-                        document.getElementById('keywordSuggestions').style.display = 'none';
-                        
-                        // Posts neu laden
-                        loadPosts();
-                    } else {
-                        throw new Error(result.error || 'Unbekannter Fehler');
-                    }
-                } catch (error) {
-                    console.error('Fehler:', error);
-                    alert('❌ Fehler beim Speichern: ' + error.message);
-                } finally {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                }
-            });
-
-// Initiale SEO Preview
-            updateSEOPreview();
-            
-            // Event Listener für Kategorien/Tags
-            document.querySelectorAll('input[name="categories"], input[name="tags"]').forEach(checkbox => {
-                checkbox.addEventListener('change', updateKeywordsFromSelection);
-            });
         });
+    }
 
-        // Globale Funktionen (für onclick in HTML)
-        window.editPost = editPost;
-        window.deletePost = deletePost;
-        window.viewPost = viewPost;
-
-        // Kategorien und Tags Funktionalität
-        function getSelectedCategories() {
-            const checkboxes = document.querySelectorAll('input[name="categories"]:checked');
-            return Array.from(checkboxes).map(cb => cb.value);
-        }
-
-        function getSelectedTags() {
-            const checkboxes = document.querySelectorAll('input[name="tags"]:checked');
-            return Array.from(checkboxes).map(cb => cb.value);
-        }
-
-        function updateKeywordsFromSelection() {
-            const categories = getSelectedCategories();
-            const tags = getSelectedTags();
-            const currentKeywords = document.getElementById('keywords').value;
-            
-            const selectedTerms = [...categories, ...tags];
-            const existingKeywords = currentKeywords ? currentKeywords.split(',').map(k => k.trim()) : [];
-            const allKeywords = [...new Set([...existingKeywords, ...selectedTerms])];
-            
-            document.getElementById('keywords').value = allKeywords.join(', ');
-        }
+    // Initiale SEO Preview
+    updateSEOPreview();
     
-    </script>
-</body>
-</html>es() {
-            const checkboxes = document.querySelectorAll('input[name="categories"]:checked');
-            return Array.from(checkboxes).map(cb => cb.value);
-        }
-
-        function getSelectedTags() {
-            const checkboxes = document.querySelectorAll('input[name="tags"]:checked');
-            return Array.from(checkboxes).map(cb => cb.value);
-        }
-
-        function updateKeywordsFromSelection() {
-            const categories = getSelectedCategories();
-            const tags = getSelectedTags();
-            const currentKeywords = document.getElementById('keywords').value;
-            
-            const selectedTerms = [...categories, ...tags];
-            const existingKeywords = currentKeywords ? currentKeywords.split(',').map(k => k.trim()) : [];
-            const allKeywords = [...new Set([...existingKeywords, ...selectedTerms])];
-            
-            document.getElementById('keywords').value = allKeywords.join(', ');
-        }
-
-     
+    // Event Listener für Kategorien/Tags
+    document.querySelectorAll('input[name="categories"], input[name="tags"]').forEach(checkbox => {
+        checkbox.addEventListener('change', updateKeywordsFromSelection);
+    });
     
+    console.log('✅ Admin Panel initialisiert');
+});
+
+// Globale Funktionen für onclick in HTML
+window.editPost = editPost;
+window.deletePost = deletePost;
+window.viewPost = viewPost;
     </script>
 </body>
 </html>
