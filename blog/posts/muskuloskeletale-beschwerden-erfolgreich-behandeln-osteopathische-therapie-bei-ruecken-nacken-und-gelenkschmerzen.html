@@ -6,7 +6,7 @@
     <title>Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen | Osteopathie Hamburg - Joshua Alsen</title>
     <meta name="description" content=" Erfahren Sie, wie osteopathische Behandlung bei Rückenschmerzen, Ischias, Arthrose und Tennisarm nachhaltige Linderung schafft. Termin in Hamburg vereinbaren.">
     <meta name="keywords" content="Osteopathie Hamburg, Osteopath Hamburg, muskuloskeletale Beschwerden, osteopathische Behandlung, Rückenschmerzen, Nackenschmerzen, Ischias, Gelenkschmerzen, Arthrose, Tennisellenbogen, anwendungsbereiche, osteopathie-hamburg, verspannungen, rueckenschmerzen">
-    <meta name="author" content="Dein Name">
+    <meta name="author" content="Joshua Alsen">
     
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -37,11 +37,11 @@
         "headline": "Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen",
         "description": " Erfahren Sie, wie osteopathische Behandlung bei Rückenschmerzen, Ischias, Arthrose und Tennisarm nachhaltige Linderung schafft. Termin in Hamburg vereinbaren.",
         "image": "https://schmerztherapie-ganzheitlich.de/media/fotolia_138675008_m.jpg",
-        "datePublished": "2025-06-06",
-        "dateModified": "2025-06-06",
+        "datePublished": "2025-06-06 20:46:19",
+        "dateModified": "2025-06-06 20:46:19",
         "author": {
             "@type": "Person",
-            "name": "Dein Name",
+            "name": "Joshua Alsen",
             "jobTitle": "Heilpraktiker und Osteopath"
         },
         "publisher": {
@@ -51,31 +51,43 @@
     }
     </script>
     
-    <!-- Google Fonts - Same as index -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" href="../../assets/images/favicon.ico">
+    <link rel="icon" href="../assets/images/favicon.ico">
     
     <style>
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.7;
             color: #2d3748;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            background: #f8fafc;
             font-size: 16px;
             font-weight: 400;
+            overflow-x: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        /* Header & Navigation - Exact same as index */
+        body.loaded {
+            opacity: 1;
+        }
+
+        /* Header & Navigation */
         header {
             background: #1a202c;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -83,6 +95,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            height: 70px;
         }
         
         nav {
@@ -92,6 +105,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100%;
         }
         
         .logo {
@@ -182,22 +196,8 @@
             font-weight: 500;
             transition: all 0.3s ease;
             letter-spacing: -0.005em;
-            position: relative;
-            overflow: hidden;
             text-decoration: none;
             white-space: nowrap;
-            min-width: max-content;
-        }
-        
-        .nav-cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(26, 32, 44, 0.1), transparent);
-            transition: left 0.4s ease;
         }
         
         .nav-cta:hover {
@@ -206,15 +206,28 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        
-        .nav-cta:hover::before {
-            left: 100%;
+
+        /* Reading Progress */
+        .reading-progress {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: rgba(26, 32, 44, 0.1);
+            z-index: 999;
+        }
+
+        .reading-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #1a202c, #2d3748);
+            width: 0%;
+            transition: width 0.3s ease;
         }
 
         /* Breadcrumb */
         .breadcrumb {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: white;
             border-bottom: 1px solid #e2e8f0;
             padding: 1rem 0;
             margin-top: 70px;
@@ -246,43 +259,73 @@
             color: #94a3b8;
         }
 
-        /* Main Layout */
+        /* Prevent FOUC (Flash of Unstyled Content) */
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 2rem;
             display: grid;
             grid-template-columns: 1fr 320px;
-            gap: 4rem;
+            gap: 3rem;
             align-items: start;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        /* Article */
+        .main-container.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Article - Prevent flash */
         .article {
             background: white;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             overflow: hidden;
             border: 1px solid #f1f5f9;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
+        .article.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* COMPLETE HEADER FIX - Clean layout without overlapping */
         .article-header {
-            padding: 3rem 3rem 2rem;
+            padding: 3rem;
             background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            display: block;
+        }
+
+        .article-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 700;
+            line-height: 1.3;
+            color: #1a202c;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+            display: block;
+            width: 100%;
         }
 
         .article-meta {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: 1rem;
+            margin-bottom: 2rem;
             font-size: 0.875rem;
             color: #64748b;
             flex-wrap: wrap;
         }
 
         .meta-item {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background: white;
@@ -290,20 +333,11 @@
             border-radius: 25px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             border: 1px solid #f1f5f9;
-        }
-
-        .article-title {
-            font-family: 'Epilogue', sans-serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            line-height: 1.2;
-            color: #1a202c;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
+            white-space: nowrap;
         }
 
         .article-excerpt {
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             color: #4a5568;
             line-height: 1.6;
             margin-bottom: 2rem;
@@ -311,52 +345,78 @@
             background: #f8fafc;
             border-radius: 12px;
             border-left: 4px solid #1a202c;
+            display: block;
+            width: 100%;
         }
 
         .featured-image {
             width: 100%;
-            height: 400px;
+            max-width: 100%;
+            height: 300px;
             object-fit: cover;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin-bottom: 0;
         }
 
+        /* ARTICLE CONTENT - Clean and simple */
         .article-content {
             padding: 3rem;
+            background: white;
+        }
+
+        .article-content > * {
+            margin-bottom: 1.5rem;
         }
 
         .article-content h2 {
             font-family: 'Epilogue', sans-serif;
-            font-size: 1.875rem;
+            font-size: 1.75rem;
             font-weight: 600;
             color: #1a202c;
-            margin: 2.5rem 0 1.5rem;
+            margin: 3rem 0 1.5rem 0;
             line-height: 1.3;
             padding-bottom: 0.75rem;
             border-bottom: 2px solid #f1f5f9;
         }
 
+        .article-content h2:first-child {
+            margin-top: 0;
+        }
+
         .article-content h3 {
             font-family: 'Epilogue', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
             color: #1a202c;
-            margin: 2rem 0 1rem;
+            margin: 2.5rem 0 1rem 0;
             line-height: 1.4;
         }
 
         .article-content h4 {
             font-family: 'Epilogue', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 500;
             color: #2d3748;
-            margin: 1.5rem 0 0.75rem;
+            margin: 2rem 0 0.75rem 0;
         }
 
         .article-content p {
             margin-bottom: 1.5rem;
             line-height: 1.8;
             color: #374151;
+            font-size: 1rem;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
         }
 
         .article-content ul, .article-content ol {
@@ -406,13 +466,24 @@
             font-weight: 600;
         }
 
-        /* Sidebar */
+        /* Sidebar - Prevent flash */
         .sidebar {
             position: sticky;
-            top: 160px;
+            top: 120px;
             height: fit-content;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
+        .sidebar.loaded {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Sidebar sections - Staggered loading */
         .sidebar-section {
             background: white;
             border-radius: 16px;
@@ -420,11 +491,19 @@
             padding: 2rem;
             margin-bottom: 2rem;
             border: 1px solid #f1f5f9;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .sidebar-section.loaded {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .sidebar-section h3 {
             font-family: 'Epilogue', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: #1a202c;
             margin-bottom: 1.5rem;
@@ -440,17 +519,17 @@
         }
 
         .toc-list li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
         .toc-list a {
             color: #64748b;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.2s ease;
             display: block;
-            padding: 0.75rem 1rem;
-            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
             border-left: 3px solid transparent;
         }
 
@@ -467,8 +546,8 @@
         }
 
         .author-avatar {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 auto 1rem;
@@ -479,6 +558,7 @@
             justify-content: center;
             color: #94a3b8;
             font-size: 0.8rem;
+            font-weight: 600;
         }
 
         .author-name {
@@ -486,17 +566,17 @@
             font-weight: 600;
             color: #1a202c;
             margin-bottom: 0.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .author-title {
             color: #64748b;
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             margin-bottom: 1rem;
         }
 
         .author-bio {
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             color: #64748b;
             line-height: 1.6;
             margin-bottom: 1.5rem;
@@ -513,11 +593,11 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.75rem 1rem;
+            padding: 0.7rem 1rem;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 500;
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             transition: all 0.3s ease;
             font-family: 'Epilogue', sans-serif;
         }
@@ -568,7 +648,7 @@
         .related-post-title a {
             color: #1a202c;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             line-height: 1.4;
             transition: color 0.2s ease;
         }
@@ -578,7 +658,7 @@
         }
 
         .related-post-excerpt {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #94a3b8;
             line-height: 1.5;
         }
@@ -590,18 +670,14 @@
             padding: 1.5rem;
         }
 
-        .quick-info h4 {
-            font-family: 'Epilogue', sans-serif;
-            color: #1a202c;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
         .info-item {
             margin-bottom: 1rem;
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             line-height: 1.6;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
         }
 
         .info-item strong {
@@ -627,25 +703,9 @@
             overflow: hidden;
         }
 
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.03) 50%, transparent 51%);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
         .cta-section h3 {
             font-family: 'Epilogue', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
@@ -714,6 +774,7 @@
             font-family: 'Epilogue', sans-serif;
             color: #1a202c;
             margin-bottom: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .share-buttons {
@@ -743,7 +804,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer - Same as index */
+        /* Footer */
         .footer {
             background: #1a202c;
             color: white;
@@ -773,7 +834,7 @@
             color: white;
         }
 
-        /* Mobile Navigation - Same as index */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -840,11 +901,12 @@
             .main-container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-                padding: 2rem 1rem;
+                padding: 1rem;
             }
             
             .sidebar {
                 position: static;
+                max-height: none;
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                 gap: 1rem;
@@ -871,6 +933,10 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .featured-image {
+                height: 200px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -881,83 +947,112 @@
             .cta-section {
                 padding: 2rem 1.5rem;
             }
+
+            .sidebar-section {
+                padding: 1rem;
+            }
         }
 
-        /* Reading Progress */
-        .reading-progress {
+        /* Back to top button */
+        .back-to-top {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: rgba(26, 32, 44, 0.1);
-            z-index: 1001;
-        }
-
-        .reading-progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #1a202c, #2d3748);
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-
-        /* Animations - Same smooth style as index */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: #1a202c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
             opacity: 0;
-            animation: fadeInUp 0.6s ease forwards;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
         }
 
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
-
-        .article, .sidebar-section {
-            animation: fadeInUp 0.6s ease-out;
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        .sidebar-section:nth-child(2) {
-            animation-delay: 0.1s;
+        .back-to-top:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
         }
 
-        .sidebar-section:nth-child(3) {
-            animation-delay: 0.2s;
+        /* Remove problematic CSS rules */
+        /* Fix for overlapping content in header - REMOVED ALL COMPLEX POSITIONING */
+
+        /* Mobile fixes for header */
+        @media (max-width: 768px) {
+            .article-header {
+                padding: 2rem 1.5rem;
+            }
+            
+            .article-meta {
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .meta-item {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .article-title {
+                font-size: clamp(1.3rem, 5vw, 1.8rem);
+                margin: 0 0 1.5rem 0;
+                order: 2;
+            }
+            
+            .article-meta {
+                order: 1;
+            }
+            
+            .article-excerpt {
+                margin: 1.5rem 0;
+                padding: 1rem;
+                font-size: 1rem;
+                order: 3;
+            }
+            
+            .featured-image {
+                height: 200px;
+                margin: 1.5rem 0 0 0;
+                order: 4;
+            }
+            
+            .article-content {
+                padding: 2rem 1.5rem;
+            }
         }
 
-        .sidebar-section:nth-child(4) {
-            animation-delay: 0.3s;
+        @media (max-width: 480px) {
+            .article-header {
+                padding: 1.5rem 1rem;
+            }
+            
+            .article-content {
+                padding: 1.5rem 1rem;
+            }
+            
+            .article-meta {
+                gap: 0.25rem;
+            }
+            
+            .meta-item {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+            }
         }
-
-        .sidebar-section:nth-child(4) {
-        animation-delay: 0.3s;
-    }
-    
-    /* DEBUG STYLES - HIER HINZUFÜGEN */
-    .main-container {
-        background: rgba(255, 0, 0, 0.1) !important;
-        border: 2px solid red !important;
-    }
-
-    .article {
-        background: rgba(0, 255, 0, 0.1) !important;
-        border: 2px solid green !important;
-        position: relative !important;
-        z-index: 10 !important;
-    }
-
-    .article-content {
-        background: rgba(0, 0, 255, 0.1) !important;
-        border: 1px solid blue !important;
     </style>
 </head>
 <body>
@@ -966,7 +1061,7 @@
         <div class="reading-progress-bar" id="readingProgress"></div>
     </div>
 
-    <!-- Header - Exact same as index -->
+    <!-- Header -->
     <header>
         <nav>
             <a href="../../" class="logo">
@@ -1004,12 +1099,14 @@
     <!-- Main Content -->
     <main class="main-container">
         <!-- Article -->
-        <article class="article fade-in">
+        <article class="article">
             <header class="article-header">
+                <h1 class="article-title">Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen</h1>
+                
                 <div class="article-meta">
                     <div class="meta-item">
                         <span>📅</span>
-                        <time datetime="2025-06-06">06. Juni 2025</time>
+                        <time datetime="2025-06-06 20:46:19">06. Juni 2025</time>
                     </div>
                     <div class="meta-item">
                         <span>⏱️</span>
@@ -1017,18 +1114,19 @@
                     </div>
                     <div class="meta-item">
                         <span>👨‍⚕️</span>
-                        <span>Dein Name</span>
+                        <span>Joshua Alsen</span>
                     </div>
                 </div>
                 
-                <h1 class="article-title">Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen</h1>
                 <div class="article-excerpt"> Erfahren Sie, wie osteopathische Behandlung bei Rückenschmerzen, Ischias, Arthrose und Tennisarm nachhaltige Linderung schafft. Termin in Hamburg vereinbaren.</div>
                 
                 <img src="https://schmerztherapie-ganzheitlich.de/media/fotolia_138675008_m.jpg" alt="Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen" class="featured-image" onerror="this.style.display='none';">
             </header>
             
             <div class="article-content" id="articleContent">
-                <p>Muskuloskeletale Beschwerden gehören zu den häufigsten Gründen, weshalb Patienten meine osteopathische Praxis aufsuchen. Ob chronische Rückenschmerzen, hartnäckige Nackenverspannungen oder schmerzhafte Gelenkprobleme – diese Beschwerden beeinträchtigen die Lebensqualität erheblich und erfordern eine ganzheitliche Behandlungsweise.</p>
+                <h1>Muskuloskeletale Beschwerden erfolgreich behandeln: Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen</h1>
+
+<p>Muskuloskeletale Beschwerden gehören zu den häufigsten Gründen, weshalb Patienten meine osteopathische Praxis aufsuchen. Ob chronische Rückenschmerzen, hartnäckige Nackenverspannungen oder schmerzhafte Gelenkprobleme – diese Beschwerden beeinträchtigen die Lebensqualität erheblich und erfordern eine ganzheitliche Behandlungsweise.</p>
 
 <p>In meiner langjährigen Praxis habe ich festgestellt, dass muskuloskeletale Probleme selten isoliert auftreten. Vielmehr sind sie Teil eines komplexen Zusammenspiels von Körperstrukturen, Bewegungsmustern und oft auch emotionalen Belastungen. Hier setzt die osteopathische Behandlung an.</p>
 
@@ -1129,8 +1227,6 @@
 <p>Die osteopathische Behandlung bietet bei vielen Beschwerden des Bewegungsapparates eine sanfte und effektive Alternative oder Ergänzung zu konventionellen Therapien. Durch die manuelle Diagnostik und Behandlung kann ich oft Funktionsstörungen erkennen und korrigieren, bevor sie zu chronischen Problemen werden.</p>
 
 <p>Wenn Sie unter muskuloskeletalen Beschwerden leiden und sich eine ganzheitliche Behandlung wünschen, vereinbaren Sie gerne einen Termin in meiner osteopathischen Praxis. Gemeinsam finden wir einen Weg zu mehr Beweglichkeit und Wohlbefinden.</p>
-
-
             </div>
 
             <!-- CTA Section -->
@@ -1166,7 +1262,7 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <!-- Table of Contents -->
-            <div class="sidebar-section fade-in stagger-1">
+            <div class="sidebar-section">
                 <h3>📋 Inhaltsverzeichnis</h3>
                 <ul class="toc-list" id="tocList">
                     <!-- Wird automatisch generiert -->
@@ -1174,12 +1270,12 @@
             </div>
 
             <!-- Author Card -->
-            <div class="sidebar-section fade-in stagger-2">
+            <div class="sidebar-section">
                 <div class="author-card">
                     <div class="author-avatar">
-                        <img src="../../assets/images/joshua-alsen-profile.jpg" alt="Dein Name" onerror="this.style.display='none'; this.parentElement.innerHTML='JA';">
+                        <img src="../assets/images/joshua-alsen-profile.jpg" alt="Joshua Alsen" onerror="this.style.display='none'; this.parentElement.innerHTML='JA';">
                     </div>
-                    <div class="author-name">Dein Name</div>
+                    <div class="author-name">Joshua Alsen</div>
                     <div class="author-title">Heilpraktiker & Osteopath</div>
                     <div class="author-bio">
                         Erfahrener Osteopath in Hamburg mit ganzheitlichem Behandlungsansatz. Spezialisiert auf strukturelle, viszerale und kraniosakrale Techniken.
@@ -1192,60 +1288,49 @@
             </div>
 
             <!-- Related Posts -->
-            <div class="sidebar-section fade-in stagger-3">
+            <div class="sidebar-section">
                 <h3>📖 Verwandte Artikel</h3>
                 <ul class="related-posts-list">
-                    
-                        <div class="related-posts-grid">
-                    <div class="related-post-card">
-                        <h4><a href="postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen.html">Postoperative Rehabilitation mit Osteopathie – Optimale Heilung nach Operationen</a></h4>
-                        <p>Postoperative Rehabilitation mit Osteopathie: Schnellere Heilung, weniger Schmerzen und bessere Narbenbildung nach Operationen. Osteopath Hamburg....</p>
-                    </div>
-                    <div class="related-post-card">
-                        <h4><a href="sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen.html">Sportverletzungen und Rehabilitation – Osteopathie für aktive Menschen</a></h4>
-                        <p>Sportverletzungen osteopathisch behandeln: Schnellere Heilung und optimale Rehabilitation für Sportler. Osteopath Hamburg für aktive Menschen....</p>
-                    </div>
-                    <div class="related-post-card">
-                        <h4><a href="schwindel-und-gleichgewichtsstoerungen-osteopathische-hilfe-fuer-mehr-stabilitaet.html">Schwindel und Gleichgewichtsstörungen – Osteopathische Hilfe für mehr Stabilität</a></h4>
-                        <p>Schwindel osteopathisch behandeln: Erfahren Sie, wie ganzheitliche Therapie bei Gleichgewichtsstörungen hilft. Professionelle Osteopathie Hamburg....</p>
-                    </div></div>
-                    else
                     <li class="related-post-item">
                         <div class="related-post-title">
-                            <a href="muskuloskeletale-beschwerden-erfolgreich-behandeln-osteopathische-therapie-bei-ruecken-nacken-und-gelenkschmerzen.html">
-                                Muskuloskeletale Beschwerden behandeln
+                            <a href="schwindel-und-gleichgewichtsstoerungen-osteopathische-hilfe-fuer-mehr-stabilitaet.html">
+                                Schwindel und Gleichgewichtsstörungen – Osteopathische Hilfe für mehr Stabilität
                             </a>
                         </div>
                         <div class="related-post-excerpt">
-                            Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen...
+                            Schwindel osteopathisch behandeln: Erfahren Sie, wie ganzheitliche Therapie bei Gleichgewichtsstöru...
                         </div>
                     </li>
                     <li class="related-post-item">
                         <div class="related-post-title">
                             <a href="chronische-schmerzen-mit-osteopathie-behandeln-ganzheitliche-ansaetze-fuer-dauerhafte-linderung.html">
-                                Chronische Schmerzen behandeln
+                                Chronische Schmerzen mit Osteopathie behandeln – Ganzheitliche Ansätze für dauerhafte Linderung
                             </a>
                         </div>
                         <div class="related-post-excerpt">
-                            Ganzheitliche Ansätze für dauerhafte Schmerzlinderung...
+                            Erfahren Sie, wie Osteopathie bei chronischen Schmerzen hilft. Ganzheitliche Behandlungsansätze fü...
                         </div>
                     </li>
                     <li class="related-post-item">
                         <div class="related-post-title">
-                            <a href="sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen.html">
-                                Sportverletzungen & Rehabilitation
+                            <a href="postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen.html">
+                                Postoperative Rehabilitation mit Osteopathie – Optimale Heilung nach Operationen
                             </a>
                         </div>
                         <div class="related-post-excerpt">
-                            Osteopathie für aktive Menschen und Sportler...
+                            Postoperative Rehabilitation mit Osteopathie: Schnellere Heilung, weniger Schmerzen und bessere Narb...
                         </div>
                     </li>
+                    
+                    
+                    
+                    
                     
                 </ul>
             </div>
 
             <!-- Quick Info -->
-            <div class="sidebar-section fade-in stagger-4">
+            <div class="sidebar-section">
                 <h3>ℹ️ Praxis-Infos</h3>
                 <div class="quick-info">
                     <div class="info-item">
@@ -1272,7 +1357,7 @@
         </aside>
     </main>
 
-    <!-- Footer - Same style as index -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-nav">
@@ -1283,7 +1368,7 @@
                 <a href="../../#kontakt">Kontakt</a>
                 <a href="../../terminbuchung.html">Termin buchen</a>
             </div>
-            <p style="margin-bottom: 10px; font-size: 0.9rem;">&copy; 2025 Osteopathie Alsen - Dein Name. Alle Rechte vorbehalten.</p>
+            <p style="margin-bottom: 10px; font-size: 0.9rem;">&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
             <p style="margin-bottom: 10px; font-size: 0.9rem;">Heilpraxis für Osteopathie | Hamburg | Durchschnitt 25, 20146 Hamburg</p>
             <p style="opacity: 0.7; margin-bottom: 0; font-size: 0.9rem;">
                 <a href="../../legal/impressum.html" style="color: #e2e8f0; text-decoration: none; margin: 0 1rem; transition: color 0.2s ease;">Impressum</a> | 
@@ -1292,15 +1377,58 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
     <script>
+        // Initialize all functions when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Immediate actions to prevent FOUC
+            document.body.classList.add('loaded');
+            
+            // Small delay to allow fonts to load
+            setTimeout(() => {
+                document.querySelector('.main-container').classList.add('loaded');
+                document.querySelector('.article').classList.add('loaded');
+                document.querySelector('.sidebar').classList.add('loaded');
+                
+                // Stagger sidebar sections
+                const sidebarSections = document.querySelectorAll('.sidebar-section');
+                sidebarSections.forEach((section, index) => {
+                    setTimeout(() => {
+                        section.classList.add('loaded');
+                    }, index * 100);
+                });
+                
+                // Initialize blog functionality after visual loading
+                setTimeout(() => {
+                    initializeBlogPost();
+                }, 300);
+            }, 100);
+        });
+
+        function initializeBlogPost() {
+            generateTableOfContents();
+            setupSmoothScroll();
+            highlightActiveTOC();
+            setupReadingProgress();
+            setupMobileMenu();
+            setupExternalLinks();
+            setupBackToTop();
+        }
+
         // Table of Contents Generator
         function generateTableOfContents() {
             const tocList = document.getElementById('tocList');
             const content = document.getElementById('articleContent');
+            
+            if (!tocList || !content) return;
+            
             const headings = content.querySelectorAll('h2, h3');
             
             if (headings.length === 0) {
-                tocList.closest('.sidebar-section').style.display = 'none';
+                const tocSection = tocList.closest('.sidebar-section');
+                if (tocSection) tocSection.style.display = 'none';
                 return;
             }
             
@@ -1323,10 +1451,10 @@
 
         // Smooth scroll for TOC links
         function setupSmoothScroll() {
-            document.querySelectorAll('.toc-list a').forEach(link => {
-                link.addEventListener('click', function(e) {
+            document.addEventListener('click', function(e) {
+                if (e.target.matches('.toc-list a')) {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
+                    const target = document.querySelector(e.target.getAttribute('href'));
                     if (target) {
                         const headerHeight = 140;
                         const targetPosition = target.offsetTop - headerHeight;
@@ -1335,7 +1463,7 @@
                             behavior: 'smooth'
                         });
                     }
-                });
+                }
             });
         }
 
@@ -1343,6 +1471,8 @@
         function highlightActiveTOC() {
             const tocLinks = document.querySelectorAll('.toc-list a');
             const headings = document.querySelectorAll('#articleContent h2, #articleContent h3');
+            
+            if (tocLinks.length === 0 || headings.length === 0) return;
             
             function updateActiveTOC() {
                 let activeIndex = -1;
@@ -1368,9 +1498,9 @@
             const progressBar = document.getElementById('readingProgress');
             const article = document.getElementById('articleContent');
             
+            if (!progressBar || !article) return;
+            
             function updateProgress() {
-                if (!article) return;
-                
                 const articleTop = article.offsetTop;
                 const articleHeight = article.offsetHeight;
                 const scrollTop = window.pageYOffset;
@@ -1388,33 +1518,33 @@
             updateProgress();
         }
 
-        // Mobile menu functionality - Same as index
+        // Mobile menu functionality
         function setupMobileMenu() {
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
             const navMenu = document.getElementById('navMenu');
 
-            if (mobileMenuToggle && navMenu) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                    this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
-                });
+            if (!mobileMenuToggle || !navMenu) return;
 
-                // Close mobile menu when clicking on a link
-                navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', function() {
-                        navMenu.classList.remove('active');
-                        mobileMenuToggle.textContent = '☰';
-                    });
-                });
+            mobileMenuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+            });
 
-                // Close mobile menu when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!e.target.closest('nav')) {
-                        navMenu.classList.remove('active');
-                        mobileMenuToggle.textContent = '☰';
-                    }
-                });
-            }
+            // Close mobile menu when clicking on a link
+            navMenu.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('nav')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                }
+            });
         }
 
         // External links in new tab
@@ -1427,88 +1557,27 @@
             });
         }
 
-        // Initialize all functions
-        document.addEventListener('DOMContentLoaded', function() {
-            generateTableOfContents();
-            setupSmoothScroll();
-            highlightActiveTOC();
-            setupReadingProgress();
-            setupMobileMenu();
-            setupExternalLinks();
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe sidebar sections for staggered animation
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.sidebar-section').forEach((section, index) => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-                observer.observe(section);
-            });
-        });
-
         // Back to top functionality
-        function addBackToTop() {
-            const backToTop = document.createElement('div');
-            backToTop.innerHTML = '↑';
-            backToTop.style.cssText = `
-                position: fixed;
-                bottom: 2rem;
-                right: 2rem;
-                width: 50px;
-                height: 50px;
-                background: #1a202c;
-                color: white;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                font-size: 1.5rem;
-                font-weight: bold;
-                opacity: 0;
-                transition: all 0.3s ease;
-                z-index: 1000;
-                box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
-            `;
+        function setupBackToTop() {
+            const backToTop = document.getElementById('backToTop');
             
-            document.body.appendChild(backToTop);
+            if (!backToTop) return;
             
-            window.addEventListener('scroll', () => {
+            window.addEventListener('scroll', function() {
                 if (window.pageYOffset > 500) {
-                    backToTop.style.opacity = '1';
-                    backToTop.style.transform = 'translateY(0)';
+                    backToTop.classList.add('visible');
                 } else {
-                    backToTop.style.opacity = '0';
-                    backToTop.style.transform = 'translateY(10px)';
+                    backToTop.classList.remove('visible');
                 }
             });
             
-            backToTop.addEventListener('click', () => {
+            backToTop.addEventListener('click', function() {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
             });
         }
-
-        // Initialize back to top
-        addBackToTop();
     </script>
 </body>
-</html>cd blog
+</html>
