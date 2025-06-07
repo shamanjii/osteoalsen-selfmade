@@ -1,0 +1,7 @@
+# 301 Weiterleitungen von alter Domain
+RedirectMatch 301 ^(.*)$ https://www.osteoalsen.de$1
+
+# SSL erzwingen
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osteopathie Blog - Gesundheitstipps & Fachbeiträge | Joshua Alsen Hamburg</title>
+    <meta name="description" content="Entdecken Sie hilfreiche Artikel zu Osteopathie, Rückenschmerzen, Migräne und Sportverletzungen. Fachkompetente Beiträge von Osteopath Joshua Alsen aus Hamburg.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+
+        /* Header & Navigation - Übernommen von Hauptseite */
+        header {
+            background: #1a202c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.8rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.015em;
+        }
+        
+        .logo-subtitle {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Instrument Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+            letter-spacing: 0.005em;
+        }
+        
+        .nav-menu a:hover {
+            color: #ffffff;
+        }
+        
+        .nav-menu a.active {
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+        }
+        
+        .nav-cta {
+            background: #ffffff;
+            color: #1a202c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.005em;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            white-space: nowrap;
+            min-width: max-content;
+        }
+        
+        .nav-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(26, 32, 44, 0.1), transparent);
+            transition: left 0.4s ease;
+        }
+        
+        .nav-cta:hover {
+            background: #f7fafc !important;
+            color: #1a202c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .nav-cta:hover::before {
+            left: 100%;
+        }
+
+        /* Search & Filter Section */
+        .search-filter-section {
+            max-width: 1200px;
+            margin: -3rem auto 0;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 3rem 1rem 1.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #1a202c;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(26, 32, 44, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+            font-size: 1.2rem;
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-tag {
+            padding: 0.5rem 1rem;
+            background: #f1f5f9;
+            color: #475569;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .filter-tag:hover,
+        .filter-tag.active {
+            background: #1a202c;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 32, 44, 0.25);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Posts Grid */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .post-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #f1f5f9;
+            position: relative;
+        }
+
+        .post-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1a202c, #4a5568, #1a202c);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-card:hover::before {
+            opacity: 1;
+        }
+
+        .post-image-container {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+            background: linear-gradient(45deg, #f1f5f9, #e2e8f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .post-card:hover .post-image {
+            transform: scale(1.05);
+        }
+
+        .image-placeholder {
+            color: #94a3b8;
+            font-size: 3rem;
+        }
+
+        .post-content {
+            padding: 2rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .post-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .post-category {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .post-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .post-title a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .post-title a:hover {
+            color: #4a5568;
+        }
+
+        .post-excerpt {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1a202c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+        }
+
+        .read-more:hover {
+            background: #1a202c;
+            color: white;
+            border-color: #1a202c;
+            transform: translateX(4px);
+        }
+
+        .read-more-arrow {
+            transition: transform 0.2s ease;
+        }
+
+        .read-more:hover .read-more-arrow {
+            transform: translateX(4px);
+        }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #1a202c;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 4rem 0;
+        }
+
+        .newsletter-title {
+            font-family: 'Epilogue', sans-serif;
+            font-size: 1.8rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-subtitle {
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .newsletter-button {
+            padding: 0.75rem 1.5rem;
+            background: #1a202c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .newsletter-button:hover {
+            background: #2d3748;
+        }
+
+        /* Footer */
+        .blog-footer {
+            background: #1a202c;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-nav {
+            margin-bottom: 2rem;
+        }
+
+        .footer-nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            color: white;
+        }
+
+        /* Mobile Responsiveness - Erweitert für Navigation */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a202c;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                margin: 0;
+            }
+            
+            .nav-menu a {
+                font-size: 1.1rem;
+                padding: 1rem 0;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                width: 80%;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            .nav-menu .nav-cta {
+                background: #ffffff !important;
+                color: #1a202c !important;
+                padding: 1rem 2rem !important;
+                border-radius: 8px !important;
+                font-weight: 600 !important;
+                font-size: 1.1rem !important;
+                width: 80% !important;
+                text-align: center !important;
+                margin-top: 1rem;
+            }
+            
+            .nav-menu .nav-cta:hover {
+                background: #f7fafc !important;
+                color: #1a202c !important;
+                transform: none !important;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+            
+            nav {
+                padding: 0.8rem 1rem;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .search-container {
+                margin: -2rem auto 0;
+                padding: 1.5rem;
+            }
+
+            .filter-tags {
+                justify-content: flex-start;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+
+        /* Tablet Responsiveness */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            nav {
+                padding: 0.8rem 1.5rem;
+            }
+            
+            .nav-menu {
+                gap: 1.5rem;
+            }
+            
+            .nav-menu a {
+                font-size: 0.9rem;
+            }
+            
+            .nav-cta {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.9rem !important;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 480px) {
+            .nav-menu a {
+                font-size: 1rem;
+                width: 90%;
+            }
+            
+            .nav-menu .nav-cta {
+                width: 90% !important;
+                padding: 0.875rem 1.5rem !important;
+                font-size: 1rem !important;
+            }
+        }
+
+        /* Header - Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateX(0px) translateY(0px); }
+            50% { transform: translateX(-10px) translateY(-5px); }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+        .stagger-6 { animation-delay: 0.6s; }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header style="background: #1a202c; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <nav style="max-width: 1200px; margin: 0 auto; padding: 0.8rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none; gap: 0.8rem;">
+                <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #1a202c; font-weight: 600; font-size: 1.2rem;">OA</div>
+                <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                    <div style="font-family: 'Epilogue', sans-serif; font-size: 1.4rem; font-weight: 600; color: #ffffff; letter-spacing: -0.015em;">Osteopathie Alsen</div>
+                    <div style="font-family: 'Instrument Sans', sans-serif; font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); font-weight: 300; letter-spacing: 0.01em;">Joshua Alsen</div>
+                </div>
+            </a>
+            <ul style="display: flex; list-style: none; gap: 2rem; align-items: center; margin: 0; padding: 0;" id="navMenu">
+                <li><a href="../index.html#home" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">Home</a></li>
+                <li><a href="../index.html#was-ist-osteopathie" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">Osteopathie</a></li>
+                <li><a href="../index.html#behandlungen" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">Behandlungen</a></li>
+                <li><a href="../index.html#anwendungen" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">Anwendungen</a></li>
+                <li><a href="../index.html#ueber-mich" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">Über mich</a></li>
+                <li><a href="../index.html#faq" style="text-decoration: none; color: rgba(255, 255, 255, 0.8); font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em;">FAQ</a></li>
+                <li><a href="index.html" style="text-decoration: none; color: #ffffff; font-family: 'Instrument Sans', sans-serif; font-weight: 400; font-size: 0.95rem; transition: color 0.2s ease; padding: 0.5rem 0; letter-spacing: 0.005em; border-bottom: 2px solid #ffffff;">Blog</a></li>
+                <li><a href="../index.html#kontakt" class="nav-cta">Termin buchen</a></li>
+            </ul>
+            <button style="display: none; background: none; border: none; font-size: 1.5rem; color: #ffffff; cursor: pointer; font-family: 'Epilogue', sans-serif; font-weight: 500;" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); color: white; padding: 140px 2rem 120px; text-align: center; margin-top: 70px; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.05;"></div>
+        
+        <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+            <nav style="margin-bottom: 2rem; opacity: 0.8; text-align: center;">
+                <a href="../index.html" style="color: #e2e8f0; text-decoration: none; transition: color 0.2s ease;">Home</a> 
+                <span style="margin: 0 0.5rem; color: #94a3b8;">→</span> 
+                <span style="color: white;">Blog</span>
+            </nav>
+            
+            <h1 style="font-family: 'Epilogue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em; background: linear-gradient(45deg, #ffffff, #e2e8f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Osteopathie Blog</h1>
+            <p style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Fachkompetente Artikel zu Osteopathie, Gesundheitstipps und ganzheitlicher Therapie von Joshua Alsen
+            </p>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="search-filter-section">
+        <div class="search-container fade-in">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Blog durchsuchen..." id="searchInput">
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="filter-tags">
+                <a href="#" class="filter-tag active" data-category="alle">Alle Artikel</a>
+                <a href="#" class="filter-tag" data-category="rueckenschmerzen">Rückenschmerzen</a>
+                <a href="#" class="filter-tag" data-category="kopfschmerzen">Kopfschmerzen</a>
+                <a href="#" class="filter-tag" data-category="sportverletzungen">Sportverletzungen</a>
+                <a href="#" class="filter-tag" data-category="osteopathie">Osteopathie</a>
+                <a href="#" class="filter-tag" data-category="gesundheitstipps">Gesundheitstipps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-header fade-in stagger-1">
+            <h2 class="section-title">Aktuelle Beiträge</h2>
+            <p class="section-subtitle">
+                Entdecken Sie hilfreiche Artikel zu Osteopathie, Beschwerdebildern und Gesundheitstipps
+            </p>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="posts-grid" id="postsContainer">
+            <!-- Loading State -->
+            <div class="loading" id="loadingState">
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+
+        <!-- Author Box -->
+        <section class="author-box fade-in stagger-1" style="background: white; border-radius: 16px; padding: 3rem; margin: 4rem 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0;">
+            <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+                <!-- Author Image -->
+                <div style="flex: 0 0 150px;">
+                    <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #f1f5f9, #e2e8f0); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #1a202c; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 5px; right: 5px; background: rgba(255,255,255,0.9); padding: 0.3rem; border-radius: 50%; font-size: 0.7rem; color: #666; z-index: 2;">📷</div>
+                        <span style="color: #94a3b8; font-size: 1rem; text-align: center;">Joshua Alsen<br>Profilbild</span>
+                    </div>
+                </div>
+                
+                <!-- Author Info -->
+                <div style="flex: 1; min-width: 300px;">
+                    <div style="margin-bottom: 1rem;">
+                        <h3 style="font-family: 'Epilogue', sans-serif; font-size: 1.8rem; color: #1a202c; margin-bottom: 0.5rem; font-weight: 600;">Joshua Alsen</h3>
+                        <p style="color: #4a5568; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Heilpraktiker & Osteopath</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                            <span style="background: #1a202c; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">VFO-zertifiziert</span>
+                            <span style="background: #059669; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">Hamburg-Eimsbüttel</span>
+                            <span style="background: #7c3aed; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">B.Sc. Osteopathie</span>
+                        </div>
+                    </div>
+                    
+                    <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.5rem; font-size: 1rem;">
+                        Als erfahrener Osteopath in Hamburg teile ich in diesem Blog mein Fachwissen über ganzheitliche Behandlungsmethoden, Gesundheitstipps und die vielfältigen Anwendungsbereiche der Osteopathie. Mein Ziel ist es, Ihnen zu helfen, Ihre Gesundheit besser zu verstehen und nachhaltige Lösungen für Ihre Beschwerden zu finden.
+                    </p>
+                    
+                    <!-- Author Links -->
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="../index.html#ueber-mich" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #1a202c; color: white; padding: 0.75rem 1.25rem; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.2s ease; font-size: 0.9rem;">
+                            <span>👨‍⚕️</span>
+                            Über Joshua Alsen
+                        </a>
+                        <a href="../index.html#kontakt" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #1a202c; padding: 0.75rem 1.25rem; text-decoration: none; border: 2px solid #1a202c; border-radius: 8px; font-weight: 500; transition: all 0.2s ease; font-size: 0.9rem;">
+                            <span>📅</span>
+                            Termin vereinbaren
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section fade-in stagger-2">
+            <h3 class="newsletter-title">Bleiben Sie informiert</h3>
+            <p class="newsletter-subtitle">
+                Erhalten Sie neue Artikel und Gesundheitstipps direkt in Ihr Postfach
+            </p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Ihre E-Mail-Adresse">
+                <button type="submit" class="newsletter-button">Abonnieren</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #1a202c; color: #ffffff; padding: 40px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <p style="margin-bottom: 10px; font-size: 0.9rem;">&copy; 2025 Osteopathie Alsen - Joshua Alsen. Alle Rechte vorbehalten.</p>
+            <p style="margin-bottom: 10px; font-size: 0.9rem;">Heilpraxis für Osteopathie | Hamburg | Durchschnitt 25, 20146 Hamburg</p>
+            <p style="opacity: 0.7; margin-bottom: 0; font-size: 0.9rem;">
+                <a href="../legal/impressum.html" style="color: #e2e8f0; text-decoration: none; margin: 0 1rem; transition: color 0.2s ease;">Impressum</a> | 
+                <a href="../legal/datenschutz.html" style="color: #e2e8f0; text-decoration: none; margin: 0 1rem; transition: color 0.2s ease;">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Blog functionality
+        let allPosts = [];
+        let filteredPosts = [];
+
+        // Sample blog posts data (erweitert aus der JSON)
+        const blogPosts = [
+            {
+                id: 1,
+                title: "Postoperative Rehabilitation mit Osteopathie – Optimale Heilung nach Operationen",
+                excerpt: "Erfahren Sie, wie osteopathische Behandlung nach Operationen die Heilung beschleunigt und Komplikationen vorbeugt.",
+                category: "osteopathie",
+                date: "2025-06-06",
+                image: null,
+                slug: "postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen"
+            },
+            {
+                id: 2,
+                title: "Osteopathie im Alter – Mobilität und Lebensqualität erhalten",
+                excerpt: "Sanfte osteopathische Behandlung für Senioren: Schmerzen lindern und Mobilität verbessern.",
+                category: "osteopathie",
+                date: "2025-06-06",
+                image: null,
+                slug: "osteopathie-im-alter-mobilitaet-und-lebensqualitaet-in-den-besten-jahren-erhalten"
+            },
+            {
+                id: 3,
+                title: "CMD und Kiefergelenksbeschwerden osteopathisch behandeln",
+                excerpt: "Ganzheitliche Therapie bei Kiefergelenksstörungen und Zähneknirschen durch Osteopathie.",
+                category: "kopfschmerzen",
+                date: "2025-06-06",
+                image: null,
+                slug: "cmd-und-kiefergelenksbeschwerden-osteopathische-behandlung-von-kieferproblemen"
+            },
+            {
+                id: 4,
+                title: "Sportverletzungen und Rehabilitation – Osteopathie für aktive Menschen",
+                excerpt: "Schnellere Heilung und optimale Rehabilitation für Sportler durch osteopathische Behandlung.",
+                category: "sportverletzungen",
+                date: "2025-06-06",
+                image: null,
+                slug: "sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen"
+            },
+            {
+                id: 5,
+                title: "Schwindel und Gleichgewichtsstörungen osteopathisch behandeln",
+                excerpt: "Erfahren Sie, wie ganzheitliche Therapie bei Gleichgewichtsstörungen hilft.",
+                category: "gesundheitstipps",
+                date: "2025-06-06",
+                image: null,
+                slug: "schwindel-und-gleichgewichtsstoerungen-osteopathische-hilfe-fuer-mehr-stabilitaet"
+            },
+            {
+                id: 6,
+                title: "Chronische Schmerzen mit Osteopathie behandeln",
+                excerpt: "Ganzheitliche Behandlungsansätze für nachhaltige Schmerzlinderung bei chronischen Beschwerden.",
+                category: "osteopathie",
+                date: "2025-06-06",
+                image: null,
+                slug: "chronische-schmerzen-mit-osteopathie-behandeln-ganzheitliche-ansaetze-fuer-dauerhafte-linderung"
+            },
+            {
+                id: 7,
+                title: "Osteopathie bei Verdauungsbeschwerden",
+                excerpt: "Wenn der Bauch aus dem Gleichgewicht gerät - viszerale Osteopathie hilft bei Verdauungsproblemen.",
+                category: "gesundheitstipps",
+                date: "2025-06-06",
+                image: null,
+                slug: "osteopathie-bei-verdauungsbeschwerden-wenn-der-bauch-aus-dem-gleichgewicht-geraet"
+            },
+            {
+                id: 8,
+                title: "Osteopathie bei Kopfschmerzen und Migräne",
+                excerpt: "Ganzheitliche Behandlung von Kopfschmerzen und Migräne in Hamburg-Eimsbüttel.",
+                category: "kopfschmerzen",
+                date: "2025-06-06",
+                image: null,
+                slug: "osteopathie-bei-kopfschmerzen-und-migraene-ganzheitliche-behandlung-in-hamburg"
+            },
+            {
+                id: 9,
+                title: "Muskuloskeletale Beschwerden erfolgreich behandeln",
+                excerpt: "Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen für nachhaltige Linderung.",
+                category: "rueckenschmerzen",
+                date: "2025-06-06",
+                image: null,
+                slug: "muskuloskeletale-beschwerden-erfolgreich-behandeln-osteopathische-therapie-bei-ruecken-nacken-und-gelenkschmerzen"
+            }
+        ];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            allPosts = [...blogPosts];
+            filteredPosts = [...allPosts];
+            
+            // Initialize mobile menu
+            initializeMobileMenu();
+            
+            // Initial load
+            setTimeout(() => {
+                renderPosts();
+                initializeFilters();
+                updateSearchInitialization();
+                initializeAnimations();
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        function initializeMobileMenu() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+                });
+
+                // Close mobile menu when clicking on a link
+                document.querySelectorAll('.nav-menu a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        mobileMenuToggle.textContent = '☰';
+                    });
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('nav')) {
+                        navMenu.classList.remove('active');
+                        mobileMenuToggle.textContent = '☰';
+                    }
+                });
+            }
+        }
+
+        function renderPosts() {
+            const container = document.getElementById('postsContainer');
+            const loadingState = document.getElementById('loadingState');
+            
+            loadingState.style.display = 'none';
+            
+            if (filteredPosts.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: #64748b;">
+                        <h3 style="margin-bottom: 1rem;">Keine Artikel gefunden</h3>
+                        <p>Versuchen Sie es mit anderen Suchbegriffen oder Kategorien.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const postsHTML = filteredPosts.map((post, index) => {
+                const categoryNames = {
+                    'osteopathie': 'Osteopathie',
+                    'rueckenschmerzen': 'Rückenschmerzen',
+                    'kopfschmerzen': 'Kopfschmerzen',
+                    'sportverletzungen': 'Sportverletzungen',
+                    'gesundheitstipps': 'Gesundheitstipps'
+                };
+
+                return `
+                    <article class="post-card fade-in stagger-${Math.min(index + 1, 6)}">
+                        <div class="post-image-container">
+                            ${post.image ? 
+                                `<img src="${post.image}" alt="${post.title}" class="post-image">` :
+                                `<div class="image-placeholder">📄</div>`
+                            }
+                        </div>
+                        
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <span>📅</span>
+                                    <time datetime="${post.date}">
+                                        ${new Date(post.date).toLocaleDateString('de-DE', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        })}
+                                    </time>
+                                </div>
+                                <span class="post-category">${categoryNames[post.category] || 'Artikel'}</span>
+                            </div>
+                            
+                            <h3 class="post-title">
+                                <a href="posts/${post.slug}.html">${post.title}</a>
+                            </h3>
+                            
+                            <p class="post-excerpt">${post.excerpt}</p>
+                            
+                            <a href="posts/${post.slug}.html" class="read-more">
+                                <span>Artikel lesen</span>
+                                <span class="read-more-arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+
+            container.innerHTML = postsHTML;
+        }
+
+        function initializeFilters() {
+            const filterTags = document.querySelectorAll('.filter-tag');
+            
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tags
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tag
+                    this.classList.add('active');
+                    
+                    // Filter posts
+                    const category = this.dataset.category;
+                    
+                    if (category === 'alle') {
+                        filteredPosts = [...allPosts];
+                    } else {
+                        filteredPosts = allPosts.filter(post => post.category === category);
+                    }
+                    
+                    renderPosts();
+                    initializeAnimations();
+                });
+            });
+        }
+
+        function initializeSearch() {
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+            
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    const searchTerm = this.value.toLowerCase().trim();
+                    
+                    if (searchTerm === '') {
+                        filteredPosts = [...allPosts];
+                    } else {
+                        filteredPosts = allPosts.filter(post => 
+                            post.title.toLowerCase().includes(searchTerm) ||
+                            post.excerpt.toLowerCase().includes(searchTerm) ||
+                            post.category.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    
+                    renderPosts();
+                    initializeAnimations();
+                }, 300);
+            });
+        }
+
+        function initializeAnimations() {
+            // Re-trigger fade-in animations for new content
+            const animatedElements = document.querySelectorAll('.fade-in');
+            animatedElements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    el.style.transition = 'all 0.6s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        }
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('.newsletter-input').value;
+            
+            if (email) {
+                alert('Vielen Dank für Ihr Interesse! Die Newsletter-Funktion wird bald verfügbar sein.');
+                this.querySelector('.newsletter-input').value = '';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements on scroll
+        function observeElements() {
+            document.querySelectorAll('.post-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // Call observeElements after rendering posts
+        setTimeout(observeElements, 100);
+
+        // Add loading state when filtering
+        function showLoading() {
+            const container = document.getElementById('postsContainer');
+            container.innerHTML = `
+                <div class="loading" style="grid-column: 1 / -1;">
+                    <div class="loading-spinner"></div>
+                </div>
+            `;
+        }
+
+        // Enhanced filter function with loading
+        function filterPostsWithLoading(category) {
+            showLoading();
+            
+            setTimeout(() => {
+                if (category === 'alle') {
+                    filteredPosts = [...allPosts];
+                } else {
+                    filteredPosts = allPosts.filter(post => post.category === category);
+                }
+                
+                renderPosts();
+                initializeAnimations();
+                observeElements();
+            }, 300);
+        }
+
+        // Back to top functionality
+        function addBackToTop() {
+            const backToTop = document.createElement('div');
+            backToTop.innerHTML = '↑';
+            backToTop.style.cssText = `
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
+                width: 50px;
+                height: 50px;
+                background: #1a202c;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: bold;
+                opacity: 0;
+                transition: all 0.3s ease;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
+            `;
+            
+            document.body.appendChild(backToTop);
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 500) {
+                    backToTop.style.opacity = '1';
+                    backToTop.style.transform = 'translateY(0)';
+                } else {
+                    backToTop.style.opacity = '0';
+                    backToTop.style.transform = 'translateY(10px)';
+                }
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Initialize back to top
+        addBackToTop();
+
+        // Add search highlights
+        function highlightSearchTerm(text, term) {
+            if (!term) return text;
+            const regex = new RegExp(`(${term})`, 'gi');
+            return text.replace(regex, '<mark style="background: #fef3c7; padding: 1px 2px; border-radius: 2px;">$1</mark>');
+        }
+
+        // Enhanced search with highlighting
+        function enhancedSearch(searchTerm) {
+            const container = document.getElementById('postsContainer');
+            
+            if (searchTerm === '') {
+                filteredPosts = [...allPosts];
+                renderPosts();
+                return;
+            }
+            
+            filteredPosts = allPosts.filter(post => 
+                post.title.toLowerCase().includes(searchTerm) ||
+                post.excerpt.toLowerCase().includes(searchTerm) ||
+                post.category.toLowerCase().includes(searchTerm)
+            );
+            
+            // Render with highlights
+            const postsHTML = filteredPosts.map((post, index) => {
+                const categoryNames = {
+                    'osteopathie': 'Osteopathie',
+                    'rueckenschmerzen': 'Rückenschmerzen',
+                    'kopfschmerzen': 'Kopfschmerzen',
+                    'sportverletzungen': 'Sportverletzungen',
+                    'gesundheitstipps': 'Gesundheitstipps'
+                };
+
+                const highlightedTitle = highlightSearchTerm(post.title, searchTerm);
+                const highlightedExcerpt = highlightSearchTerm(post.excerpt, searchTerm);
+
+                return `
+                    <article class="post-card fade-in stagger-${Math.min(index + 1, 6)}">
+                        <div class="post-image-container">
+                            ${post.image ? 
+                                `<img src="${post.image}" alt="${post.title}" class="post-image">` :
+                                `<div class="image-placeholder">📄</div>`
+                            }
+                        </div>
+                        
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <span>📅</span>
+                                    <time datetime="${post.date}">
+                                        ${new Date(post.date).toLocaleDateString('de-DE', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        })}
+                                    </time>
+                                </div>
+                                <span class="post-category">${categoryNames[post.category] || 'Artikel'}</span>
+                            </div>
+                            
+                            <h3 class="post-title">
+                                <a href="posts/${post.slug}.html">${highlightedTitle}</a>
+                            </h3>
+                            
+                            <p class="post-excerpt">${highlightedExcerpt}</p>
+                            
+                            <a href="posts/${post.slug}.html" class="read-more">
+                                <span>Artikel lesen</span>
+                                <span class="read-more-arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+
+            if (filteredPosts.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;">🔍</div>
+                        <h3 style="margin-bottom: 1rem; color: #1a202c;">Keine Artikel gefunden</h3>
+                        <p style="color: #64748b; margin-bottom: 2rem;">Leider konnten wir keine Artikel zu "${searchTerm}" finden.</p>
+                        <button onclick="clearSearch()" style="background: #1a202c; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer;">
+                            Alle Artikel anzeigen
+                        </button>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = postsHTML;
+            }
+            
+            initializeAnimations();
+        }
+
+        // Clear search function
+        window.clearSearch = function() {
+            document.getElementById('searchInput').value = '';
+            filteredPosts = [...allPosts];
+            renderPosts();
+            initializeAnimations();
+        }
+
+        // Update search initialization
+        function updateSearchInitialization() {
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+            
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    const searchTerm = this.value.toLowerCase().trim();
+                    enhancedSearch(searchTerm);
+                }, 300);
+            });
+        }
+
+        // Replace the old search initialization
+        // initializeSearch(); // Remove this line and call updateSearchInitialization instead
+    </script>
+</body>
+</html>
