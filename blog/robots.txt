@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://deine-domain.de/blog/sitemap.xml
+Sitemap: https://osteoalsen.de/blog/sitemap.xml
 
 # Disallow admin areas
 Disallow: /blog/admin/
