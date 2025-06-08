@@ -1000,17 +1000,28 @@
         }
         
         @media (max-width: 480px) {
-            .floating-booking {
-                bottom: 1rem;
-                right: 1rem;
-            }
-            
-            .floating-booking-btn {
-                padding: 0.75rem 1rem;
-                font-size: 0.85rem;
-                gap: 0.5rem;
-            }
-        }
+    .floating-booking {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .floating-booking-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        gap: 0.5rem;
+    }
+}
+
+/* Smooth Fade für Floating Booking Button */
+.floating-booking {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s cubic-bezier(.4,0,.2,1);
+}
+.floating-booking.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
     </style>
 </head>
 <body>
@@ -1038,30 +1049,27 @@
         </nav>
     </header>
 
-   <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Osteopathie Hamburg<br>Joshua Alsen</h1>
-            <div class="hero-subtitle">Heilpraktiker & Osteopath in Hamburg Mitte</div>
-            <p class="hero-description">
-                In meiner Heilpraxis für Osteopathie in Hamburg biete ich osteopathische Behandlungen für Patienten jeden Alters an. Lassen Sie uns gemeinsam Ihre natürliche Balance wiederherstellen.
-            </p>
-            <a href="#kontakt" class="cta-button">Termin vereinbaren</a>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Osteopathie Hamburg<br>Joshua Alsen</h1>
+        <div class="hero-subtitle">Heilpraktiker & Osteopath in Hamburg Mitte</div>
+        <p class="hero-description">
+            In meiner Heilpraxis für Osteopathie in Hamburg biete ich osteopathische Behandlungen für Patienten jeden Alters an. Lassen Sie uns gemeinsam Ihre natürliche Balance wiederherstellen.
+        </p>
+        <a href="#kontakt" class="cta-button">Termin vereinbaren</a>
+    </div>
+</section>
 
-    <!-- Behandlungsbild Section -->
-    <section style="padding: 0; margin: 0;">
-        <div style="width: 100%; height: 400px; background: linear-gradient(rgba(26, 32, 44, 0.4), rgba(26, 32, 44, 0.4)), #f8f9fa; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative;">
-            <div style="position: absolute; top: 10px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem; border-radius: 4px; font-size: 0.8rem; color: #666; z-index: 3;">
-                📷 Behandlungsbild hier einfügen
-            </div>
-            <div style="text-align: center; color: white; z-index: 2; position: relative;">
-                <h2 style="font-size: 2rem; font-weight: 300; margin: 0 0 1rem 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Professionelle osteopathische Behandlung in Hamburg</h2>
-                <p style="font-size: 1.1rem; margin: 0; max-width: 600px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Mit gezielten manuellen Techniken bringe ich Ihren Körper zurück in seine natürliche Balance</p>
-            </div>
+<!-- Behandlungsbild Section -->
+<section style="padding: 0; margin: 0;">
+    <div id="behandlungsbild" style="width: 100%; height: 400px; background: linear-gradient(rgba(26, 32, 44, 0.4), rgba(26, 32, 44, 0.4)), url('assets/images/joshua-alsen-osteopath-hamburg.jpg') center/cover; display: flex; align-items: center; justify-content: center; position: relative;">
+        <div style="text-align: center; color: white; z-index: 2; position: relative;">
+            <h2 style="font-size: 2rem; font-weight: 300; margin: 0 0 1rem 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Professionelle osteopathische Behandlung in Hamburg</h2>
+            <p style="font-size: 1.1rem; margin: 0; max-width: 600px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Mit gezielten manuellen Techniken bringe ich Ihren Körper zurück in seine natürliche Balance</p>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Was ist Osteopathie -->
     <section id="was-ist-osteopathie" class="bg-light">
@@ -1078,30 +1086,145 @@
                 </p>
             </div>
 
-            <!-- Vorteile Grid -->
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <h3>Natürliche Schmerzlinderung</h3>
-                    <p>Behandlung von Schmerzen ohne Medikamente durch gezielte osteopathische Techniken</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <h3>Lösen von Blockaden</h3>
-                    <p>Befreiung eingeschränkter Beweglichkeit durch manuelle Therapie</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <h3>Verbesserte Zirkulation</h3>
-                    <p>Förderung von Durchblutung und Lymphfluss für bessere Regeneration</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <h3>Ganzheitliche Gesundheitsoptimierung</h3>
-                    <p>Körper, Geist und Seele in Balance für nachhaltiges Wohlbefinden</p>
-                </div>
+    <!-- Vorteile Grid -->
+<div class="benefits-section">
+    <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="blog/assets/icons/icon2.png" alt="" aria-hidden="true">
+            </div>
+            <div class="benefit-content">
+                <h3>Natürliche Schmerzlinderung</h3>
+                <p>Behandlung von Schmerzen ohne Medikamente durch gezielte osteopathische Techniken</p>
             </div>
         </div>
-    </section>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="blog/assets/icons/icon3.png" alt="" aria-hidden="true">
+            </div>
+            <div class="benefit-content">
+                <h3>Lösen von Blockaden</h3>
+                <p>Befreiung eingeschränkter Beweglichkeit durch manuelle Therapie</p>
+            </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="blog/assets/icons/icon4.png" alt="" aria-hidden="true">
+            </div>
+            <div class="benefit-content">
+                <h3>Verbesserte Zirkulation</h3>
+                <p>Förderung von Durchblutung und Lymphfluss für bessere Regeneration</p>
+            </div>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="blog/assets/icons/icon1.png" alt="" aria-hidden="true">
+            </div>
+            <div class="benefit-content">
+                <h3>Ganzheitliche Gesundheitsoptimierung</h3>
+                <p>Körper, Geist und Seele in Balance für nachhaltiges Wohlbefinden</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.benefits-section {
+    padding: 4rem 0;
+    background: var(--bg-light, #f8f9fa);
+}
+
+.benefits-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Desktop: 4er Grid */
+@media (min-width: 1200px) {
+    .benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet: 2er Grid */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+    }
+}
+
+/* Mobile: 1er Grid */
+@media (max-width: 767px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+.benefit-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color, #e2e8f0);
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.benefit-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.benefit-content {
+    flex: 1;
+}
+
+.benefit-content h3 {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--heading-color, #1a202c);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.benefit-content p {
+    font-family: 'Instrument Sans', sans-serif;
+    color: var(--text-color, #4a5568);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+</style>
 
     <!-- Behandlungen -->
     <section id="behandlungen">
@@ -1159,18 +1282,6 @@
                     </p>
                 </div>
                 
-                <!-- Behandlung 4 -->
-                <div class="treatment-card">
-                    <div class="treatment-header">
-                        <div class="treatment-number">
-                            <span>4</span>
-                        </div>
-                        <h3>Myofasziale Integration</h3>
-                    </div>
-                    <p>
-                        Behandlung des Bindegewebes, um Verspannungen und Verklebungen zu lösen und die Beweglichkeit zu verbessern.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
@@ -1187,234 +1298,407 @@
                 </p>
             </div>
 
-            <!-- Anwendungsbereiche Grid -->
-            <div class="applications-grid">
-                <!-- Muskel-Skelett-Schmerzen -->
-                <div class="application-card">
-                    <h3>Rückenschmerzen und Muskel-Skelett-Beschwerden</h3>
-                    <p>
-                        Osteopathie ist besonders wirksam bei der Behandlung von Rückenschmerzen, Nackenschmerzen, Ischias, Gelenkschmerzen und Arthrose in Hamburg. Auch nach Unfällen können osteopathische Techniken zur Schmerzlinderung und Rehabilitation beitragen. Weitere häufige Beschwerden wie Tennisellenbogen und Tennisarm werden ebenfalls effektiv behandelt.
-                    </p>
-                </div>
+          <!-- Anwendungsbereiche Grid -->
+<div class="applications-grid">
+    <!-- Muskel-Skelett-Schmerzen -->
+    <div class="application-card">
+        <a href="blog/posts/muskuloskeletale-beschwerden-erfolgreich-behandeln-osteopathische-therapie-bei-ruecken-nacken-und-gelenkschmerzen.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Rückenschmerzen und Muskel-Skelett-Beschwerden</h3>
+            <p>
+                Osteopathie ist besonders wirksam bei der Behandlung von Rückenschmerzen, Nackenschmerzen, Ischias, Gelenkschmerzen und Arthrose in Hamburg. Auch nach Unfällen können osteopathische Techniken zur Schmerzlinderung und Rehabilitation beitragen. Weitere häufige Beschwerden wie Tennisellenbogen und Tennisarm werden ebenfalls effektiv behandelt.
+            </p>
+        </a>
+    </div>
 
-                <!-- Kopfschmerzen und Migräne -->
-                <div class="application-card">
-                    <h3>Kopfschmerzen und Migräne</h3>
-                    <p>
-                        Durch die Entspannung der Muskulatur und die Verbesserung der zerebralen Durchblutung kann Osteopathie die Ursachen von Spannungskopfschmerzen und Migräne behandeln und so nachhaltige Linderung verschaffen.
-                    </p>
-                </div>
+    <!-- Kopfschmerzen und Migräne -->
+    <div class="application-card">
+        <a href="blog/posts/osteopathie-bei-kopfschmerzen-und-migraene-ganzheitliche-behandlung-in-hamburg.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Kopfschmerzen und Migräne</h3>
+            <p>
+                Durch die Entspannung der Muskulatur und die Verbesserung der zerebralen Durchblutung kann Osteopathie die Ursachen von Spannungskopfschmerzen und Migräne behandeln und so nachhaltige Linderung verschaffen.
+            </p>
+        </a>
+    </div>
 
-                <!-- Verdauungsprobleme -->
-                <div class="application-card">
-                    <h3>Verdauungsprobleme</h3>
-                    <p>
-                        Osteopathische Behandlungen können bei Verdauungsproblemen wie Blähungen, Verstopfung, Reizdarmsyndrom, Sodbrennen und Reflux unterstützen. Ziel ist es, die Funktion des Verdauungssystems zu verbessern und Beschwerden zu lindern.
-                    </p>
-                </div>
+    <!-- Verdauungsprobleme -->
+    <div class="application-card">
+        <a href="blog/posts/osteopathie-bei-verdauungsbeschwerden-wenn-der-bauch-aus-dem-gleichgewicht-geraet.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Verdauungsprobleme</h3>
+            <p>
+                Osteopathische Behandlungen können bei Verdauungsproblemen wie Blähungen, Verstopfung, Reizdarmsyndrom, Sodbrennen und Reflux unterstützen. Ziel ist es, die Funktion des Verdauungssystems zu verbessern und Beschwerden zu lindern.
+            </p>
+        </a>
+    </div>
 
-                <!-- Chronische Schmerzen -->
-                <div class="application-card">
-                    <h3>Chronische Schmerzen</h3>
-                    <p>
-                        Eine ganzheitliche Herangehensweise der Osteopathie hilft, chronische Schmerzen zu lindern und die Lebensqualität bei chronischen Erkrankungen wie Fibromyalgie zu fördern.
-                    </p>
-                </div>
+    <!-- Chronische Schmerzen -->
+    <div class="application-card">
+        <a href="blog/posts/chronische-schmerzen-mit-osteopathie-behandeln-ganzheitliche-ansaetze-fuer-dauerhafte-linderung.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Chronische Schmerzen</h3>
+            <p>
+                Eine ganzheitliche Herangehensweise der Osteopathie hilft, chronische Schmerzen zu lindern und die Lebensqualität bei chronischen Erkrankungen wie Fibromyalgie zu fördern.
+            </p>
+        </a>
+    </div>
 
-                <!-- Schwindel und Gleichgewichtsstörungen -->
-                <div class="application-card">
-                    <h3>Schwindel und Gleichgewichtsstörungen</h3>
-                    <p>
-                        Durch gezielte osteopathische Techniken kann das Gleichgewicht verbessert und Schwindel gelindert werden. Dies unterstützt die allgemeine Stabilität und das Wohlbefinden.
-                    </p>
-                </div>
+    <!-- Schwindel und Gleichgewichtsstörungen -->
+    <div class="application-card">
+        <h3>Schwindel und Gleichgewichtsstörungen</h3>
+        <p>
+            Durch gezielte osteopathische Techniken kann das Gleichgewicht verbessert und Schwindel gelindert werden. Dies unterstützt die allgemeine Stabilität und das Wohlbefinden.
+        </p>
+    </div>
 
-                <!-- Atemwegserkrankungen -->
-                <div class="application-card">
-                    <h3>Atemwegserkrankungen</h3>
-                    <p>
-                        Osteopathie kann bei Asthma und chronischer Bronchitis helfen, indem sie die Atemmechanik und -effizienz verbessert, was zu einer erleichterten Atmung beiträgt.
-                    </p>
-                </div>
+    <!-- Atemwegserkrankungen -->
+    <div class="application-card">
+        <h3>Atemwegserkrankungen</h3>
+        <p>
+            Osteopathie kann bei Asthma und chronischer Bronchitis helfen, indem sie die Atemmechanik und -effizienz verbessert, was zu einer erleichterten Atmung beiträgt.
+        </p>
+    </div>
 
-                <!-- Sportverletzungen -->
-                <div class="application-card">
-                    <h3>Sportverletzungen</h3>
-                    <p>
-                        Die Rehabilitation und Prävention von Sportverletzungen wie Zerrungen, Verstauchungen, Sehnenentzündungen und Muskelverspannungen können durch osteopathische Behandlungen gefördert werden. Dies hilft, die sportliche Leistungsfähigkeit zu verbessern und die Genesung zu beschleunigen.
-                    </p>
-                </div>
+    <!-- Sportverletzungen -->
+    <div class="application-card">
+        <a href="blog/posts/sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Sportverletzungen</h3>
+            <p>
+                Die Rehabilitation und Prävention von Sportverletzungen wie Zerrungen, Verstauchungen, Sehnenentzündungen und Muskelverspannungen können durch osteopathische Behandlungen gefördert werden. Dies hilft, die sportliche Leistungsfähigkeit zu verbessern und die Genesung zu beschleunigen.
+            </p>
+        </a>
+    </div>
 
-                <!-- Kiefergelenksbeschwerden (CMD) -->
-                <div class="application-card">
-                    <h3>Kiefergelenksbeschwerden (CMD)</h3>
-                    <p>
-                        Osteopathie kann bei Kiefergelenksdysfunktionen, Zähneknirschen, Kieferknacken und damit verbundenen Kopfschmerzen und Nackenbeschwerden helfen, die Beschwerden zu lindern und die Funktion zu verbessern.
-                    </p>
-                </div>
+    <!-- Kiefergelenksbeschwerden (CMD) -->
+    <div class="application-card">
+        <a href="blog/posts/cmd-und-kiefergelenksbeschwerden-osteopathische-behandlung-von-kieferproblemen.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Kiefergelenksbeschwerden (CMD)</h3>
+            <p>
+                Osteopathie kann bei Kiefergelenksdysfunktionen, Zähneknirschen, Kieferknacken und damit verbundenen Kopfschmerzen und Nackenbeschwerden helfen, die Beschwerden zu lindern und die Funktion zu verbessern.
+            </p>
+        </a>
+    </div>
 
-                <!-- Neugeborene und Säuglinge -->
-                <div class="application-card">
-                    <h3>Neugeborene und Säuglinge</h3>
-                    <p>
-                        Osteopathische Behandlungen können Geburtstraumata, Schiefhals, Saug- und Schluckprobleme sowie Schlafstörungen und Koliken bei Neugeborenen und Säuglingen behandeln.
-                    </p>
-                </div>
+    <!-- Kinderosteopathie -->
+    <div class="application-card">
+        <h3>Kinderosteopathie</h3>
+        <p>
+            Die Unterstützung von Kindern in ihrer körperlichen und geistigen Entwicklung ist ein weiterer wichtiger Anwendungsbereich der Osteopathie. Dies umfasst die Behandlung von Haltungsschäden, Wachstumsbeschwerden und Entwicklungsverzögerungen.
+        </p>
+    </div>
 
-                <!-- Kinderosteopathie -->
-                <div class="application-card">
-                    <h3>Kinderosteopathie</h3>
-                    <p>
-                        Die Unterstützung von Kindern in ihrer körperlichen und geistigen Entwicklung ist ein weiterer wichtiger Anwendungsbereich der Osteopathie. Dies umfasst die Behandlung von Haltungsschäden, Wachstumsbeschwerden und Entwicklungsverzögerungen.
-                    </p>
-                </div>
+    <!-- Altersbedingte Beschwerden -->
+    <div class="application-card">
+        <h3>Altersbedingte Beschwerden</h3>
+        <p>
+            Osteopathie kann Beschwerden im höheren Lebensalter wie Arthrose, Osteoporose, Bewegungseinschränkungen und allgemeine Altersbeschwerden lindern, um die Lebensqualität zu verbessern.
+        </p>
+    </div>
 
-                <!-- Altersbedingte Beschwerden -->
-                <div class="application-card">
-                    <h3>Altersbedingte Beschwerden</h3>
-                    <p>
-                        Osteopathie kann Beschwerden im höheren Lebensalter wie Arthrose, Osteoporose, Bewegungseinschränkungen und allgemeine Altersbeschwerden lindern, um die Lebensqualität zu verbessern.
-                    </p>
-                </div>
+    <!-- Postoperative Rehabilitation -->
+    <div class="application-card">
+        <a href="blog/posts/postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen.html" style="text-decoration: none; color: inherit; display: block;">
+            <h3 style="text-decoration: none; cursor: pointer;">Postoperative Rehabilitation</h3>
+            <p>
+                Die Unterstützung des Heilungsprozesses nach Operationen durch Osteopathie fördert die Durchblutung und Mobilität, was die Genesung beschleunigt.
+            </p>
+        </a>
+    </div>
 
-                <!-- Postoperative Rehabilitation -->
-                <div class="application-card">
-                    <h3>Postoperative Rehabilitation</h3>
-                    <p>
-                        Die Unterstützung des Heilungsprozesses nach Operationen durch Osteopathie fördert die Durchblutung und Mobilität, was die Genesung beschleunigt.
-                    </p>
-                </div>
-
-                <!-- Long Covid und Fatigue -->
-                <div class="application-card">
-                    <h3>Long Covid und Fatigue</h3>
-                    <p>
-                        Bei Long Covid und Fatigue kann Osteopathie durch die Anregung des Lymphstoffwechsels helfen, Erschöpfung, verminderte Belastbarkeit, Atembeschwerden, Muskelschmerzen und Symptome wie Gehirnnebel zu behandeln.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Long Covid und Fatigue -->
+    <div class="application-card">
+        <h3>Long Covid und Fatigue</h3>
+        <p>
+            Bei Long Covid und Fatigue kann Osteopathie durch die Anregung des Lymphstoffwechsels helfen, Erschöpfung, verminderte Belastbarkeit, Atembeschwerden, Muskelschmerzen und Symptome wie Gehirnnebel zu behandeln.
+        </p>
+    </div>
+</div>
 
  <!-- Patientenstimmen Section -->
 <section id="bewertungen" class="bg-white">
     <div class="container">
         <h2 class="section-title">Patientenstimmen</h2>
         
-        <!-- Einleitungstext -->
         <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
             <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
-                Die Zufriedenheit meiner Patienten liegt mir sehr am Herzen. Hier finden Sie authentische Bewertungen und Erfahrungsberichte von Menschen, die ich in meiner Praxis behandeln durfte.
+                Die Zufriedenheit meiner Patienten liegt mir sehr am Herzen. Hier finden Sie authentische Google-Bewertungen meiner Praxis.
             </p>
         </div>
 
-        <!-- Bewertungen Slider -->
-        <div class="reviews-slider-container" style="position: relative; max-width: 1000px; margin: 0 auto;">
-            <!-- Slider Wrapper -->
-            <div class="reviews-slider" id="reviewsSlider" style="overflow: hidden; border-radius: 12px;">
-                <div class="reviews-track" id="reviewsTrack" style="display: flex; transition: transform 0.5s ease; width: 500%;">
-                    
-                    <!-- Bewertung 1 -->
-                    <div class="review-slide" style="min-width: 20%; padding: 0 1rem;">
-                        <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                                <p style="font-style: italic; color: #444; line-height: 1.6; font-size: 1rem; margin-bottom: 1.5rem;">
-                                    "Herr Alsen ist ein sehr kompetenter und einfühlsamer Osteopath. Nach nur wenigen Behandlungen waren meine chronischen Rückenschmerzen deutlich besser. Sehr empfehlenswert!"
-                                </p>
-                            </div>
-                            <div>
-                                <div style="font-weight: 600; color: #1a202c; margin-bottom: 0.25rem;">Maria S.</div>
-                                <div style="color: #666; font-size: 0.9rem;">vor 2 Wochen</div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="reviews-wrapper">
+            <div class="reviews-slider">
+                <div class="reviews-track" id="reviewsTrack"></div>
+            </div>
+            <button class="slider-nav prev" aria-label="Vorherige Bewertung">←</button>
+            <button class="slider-nav next" aria-label="Nächste Bewertung">→</button>
+            <div class="slider-dots"></div>
+        </div>
 
-                    <!-- Bewertung 2 -->
-                    <div class="review-slide" style="min-width: 20%; padding: 0 1rem;">
-                        <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                                <p style="font-style: italic; color: #444; line-height: 1.6; font-size: 1rem; margin-bottom: 1.5rem;">
-                                    "Professionelle Behandlung in angenehmer Atmosphäre. Die Terminvereinbarung war unkompliziert und die Behandlung sehr effektiv. Kann ich nur weiterempfehlen."
-                                </p>
-                            </div>
-                            <div>
-                                <div style="font-weight: 600; color: #1a202c; margin-bottom: 0.25rem;">Thomas K.</div>
-                                <div style="color: #666; font-size: 0.9rem;">vor 1 Monat</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bewertung 3 -->
-                    <div class="review-slide" style="min-width: 20%; padding: 0 1rem;">
-                        <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                                <p style="font-style: italic; color: #444; line-height: 1.6; font-size: 1rem; margin-bottom: 1.5rem;">
-                                    "Endlich wieder schmerzfrei! Herr Alsen hat sich viel Zeit genommen und die Ursache meiner Beschwerden gefunden. Die Praxis ist sehr schön und modern eingerichtet."
-                                </p>
-                            </div>
-                            <div>
-                                <div style="font-weight: 600; color: #1a202c; margin-bottom: 0.25rem;">Anna L.</div>
-                                <div style="color: #666; font-size: 0.9rem;">vor 3 Wochen</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bewertung 4 -->
-                    <div class="review-slide" style="min-width: 20%; padding: 0 1rem;">
-                        <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                                <p style="font-style: italic; color: #444; line-height: 1.6; font-size: 1rem; margin-bottom: 1.5rem;">
-                                    "Sehr kompetente und ganzheitliche Behandlung. Ich fühlte mich vom ersten Moment an gut aufgehoben. Die Schmerzen sind nach wenigen Sitzungen verschwunden."
-                                </p>
-                            </div>
-                            <div>
-                                <div style="font-weight: 600; color: #1a202c; margin-bottom: 0.25rem;">Michael R.</div>
-                                <div style="color: #666; font-size: 0.9rem;">vor 2 Monaten</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bewertung 5 -->
-                    <div class="review-slide" style="min-width: 20%; padding: 0 1rem;">
-                        <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                                <p style="font-style: italic; color: #444; line-height: 1.6; font-size: 1rem; margin-bottom: 1.5rem;">
-                                    "Hervorragende osteopathische Behandlung! Die Praxis ist zentral gelegen und sehr gut erreichbar. Herr Alsen nimmt sich viel Zeit und erklärt alles sehr verständlich."
-                                </p>
-                            </div>
-                            <div>
-                                <div style="font-weight: 600; color: #1a202c; margin-bottom: 0.25rem;">Sabine W.</div>
-                                <div style="color: #666; font-size: 0.9rem;">vor 1 Monat</div>
-                            </div>
-                        </div>
-                    </div>
-
+        <!-- Google Bewertungen Hinweis -->
+        <div style="margin-top: 4rem;">
+            <div style="text-align: center; padding: 2.5rem; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #1a202c; font-size: 1.3rem; font-weight: 500; margin-bottom: 1rem;">Ihre Meinung ist mir wichtig</h3>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 2rem;">
+                    Waren Sie bereits Patient in meiner Praxis? Ich würde mich sehr über Ihr Feedback freuen. Ihre Bewertung hilft anderen Patienten bei ihrer Entscheidung und mir dabei, meine Behandlung stetig zu verbessern.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://g.page/r/CW3UmxenXb1YEBI/review" target="_blank" style="display: inline-flex; align-items: center; background: #1a202c; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 500; transition: background-color 0.2s ease;">
+                        <span style="margin-right: 0.5rem;">⭐</span>
+                        Bewertung auf Google abgeben
+                    </a>
+                    <a href="#kontakt" style="display: inline-flex; align-items: center; background: transparent; color: #1a202c; padding: 12px 24px; text-decoration: none; border: 1px solid #1a202c; border-radius: 6px; font-weight: 500; transition: all 0.2s ease;">
+                        Direktes Feedback senden
+                    </a>
                 </div>
             </div>
-
-            <!-- Navigation Buttons -->
-            <button class="slider-btn prev" id="prevBtn" style="position: absolute; left: -60px; top: 50%; transform: translateY(-50%); background: #ffffff; border: 1px solid #e2e8f0; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
-                <span style="color: #1a202c; font-size: 1.2rem;">‹</span>
-            </button>
-            
-            <button class="slider-btn next" id="nextBtn" style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); background: #ffffff; border: 1px solid #e2e8f0; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
-                <span style="color: #1a202c; font-size: 1.2rem;">›</span>
-            </button>
-
-            <!-- Dots Indicator -->
-            <div class="slider-dots" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
-                <button class="dot active" data-slide="0" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: #1a202c; cursor: pointer; transition: all 0.3s ease;"></button>
-                <button class="dot" data-slide="1" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: #cbd5e0; cursor: pointer; transition: all 0.3s ease;"></button>
-                <button class="dot" data-slide="2" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: #cbd5e0; cursor: pointer; transition: all 0.3s ease;"></button>
-                <button class="dot" data-slide="3" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: #cbd5e0; cursor: pointer; transition: all 0.3s ease;"></button>
-                <button class="dot" data-slide="4" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: #cbd5e0; cursor: pointer; transition: all 0.3s ease;"></button>
-            </div>
         </div>
+    </div>
+</section>
+
+<style>
+.reviews-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 60px;
+}
+
+.reviews-slider {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.review-card {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 3rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: #1a202c;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.slider-nav:hover {
+    background: #2d3748;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-nav.prev { left: 0; }
+.slider-nav.next { right: 0; }
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 2.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+}
+
+.dot.active {
+    background: #1a202c;
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    .reviews-wrapper {
+        padding: 0 40px;
+    }
+    
+    .review-card {
+        padding: 2rem;
+    }
+    
+    .slider-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const reviews = [
+    {
+        text: "Joshua ist ein sehr netter und einfühlsamer Osteopath. Das war meine erste osteopathische Behandlung und ich habe mich sofort sehr wohl gefühlt. Meine Knieschmerzen waren direkt nach der ersten Behandlung viel besser und ich habe mich allgemein deutlich ausgeglichener gefühlt.",
+        author: "Theresa Behrendt",
+        rating: 5,
+        date: "vor 1 Tag"
+    },
+    {
+        text: "Ich hatte nach einem Lumbago erhebliche Beschwerden, die mich stark einschränkten. Nach der Behandlung bei Joshua Alsen sind diese Schmerzen verschwunden – ein unglaubliches Gefühl! Joshua nimmt sich wirklich viel Zeit für seine Patienten.",
+        author: "Evgeniya Englert",
+        rating: 5,
+        date: "vor einer Woche"
+    },
+    {
+        text: "Ich möchte es kurz halten, den ihr müsst es selber erleben. Kompetenz und Empathie, so stellt man sich einen guten Heilpraktiker vor, und Das besitzt Joshua ohne Zweifel. Meine Rückenschmerzen wurden gelindert, geh bald wegen meine Schulter hin. Geht hin, ihr werdet nicht enttäuscht!",
+        author: "Yusuf Verus",
+        rating: 5,
+        date: "vor 2 Wochen"
+    },
+    {
+        text: "Meine erste Behandlung bei Joshua und ich kann berichten: es war sehr gut, nach einer Stunde konnte ich schmerzfrei die Praxis verlassen. Dazu noch kompetent, nett und hat alle Fragen beantwortet. Absolut zu empfehlen.",
+        author: "Ines Virde",
+        rating: 5,
+        date: "vor 2 Wochen"
+    },
+    {
+        text: "Sehr kompetenter und einfühlsamer Osteopath. Die Behandlung ist professionell, individuell abgestimmt und findet in einer angenehmen Atmosphäre statt. Absolut empfehlenswert!",
+        author: "Shayan",
+        rating: 5,
+        date: "vor einem Monat"
+    },
+    {
+        text: "Joshua zeigt sehr viel Expertise und hat eine sehr angenehme und beruhigende Art. Ich habe mich während der Behandlung gut aufgehoben gefühlt und bin mehrere Male wiedergekommen.",
+        author: "Daniela D.",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Ich fühlte mich sehr wohl, Herr Alsen versteht was von seinem Fach, ich komme gerne wieder.",
+        author: "Andre Wagner",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Ich fühlte mich sofort willkommen. Herr Alsen hat mich sowohl professionell als auch empathisch behandelt. Ich freue mich schon auf den nächsten Termin und auf eine deutliche Schmerzreduktion!",
+        author: "Henrike Müller",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Sehr gute, seriöse Behandlung. Gründliche und gleichzeitig empathische Herangehensweise!",
+        author: "F. D. Knop",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Vertrauensvolle Atmosphäre, spürbares Interesse an den Baustellen im Körper, aufmerksamer Therapeut. Für mich die beste Mischung, um mit der Behandlung weiterzumachen.",
+        author: "Thomas Wahl-Jepsen",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Ich kann Herr Alsen wärmstens weiterempfehlen. Die Behandlung ist professionell, individuell abgestimmt und die Beschwerden haben sich direkt verbessert!",
+        author: "Louis Weisner",
+        rating: 5,
+        date: "vor 7 Monaten"
+    },
+    {
+        text: "Ich kam mit akuten, starken Kopf und Nackenschmerzen. Ich wurde kompetent beraten und durfte nach der Behandlung schmerzfrei nach Hause gehen. Vielen Dank!",
+        author: "Sukie",
+        rating: 5,
+        date: "vor 8 Monaten"
+    },
+    {
+        text: "Herr Alsen untersucht und behandelt sehr gewissenhaft und kompetent und sehr einfühlsam. Wer etwas für sein seelisches und körperliches Wohlbefinden tun möchte, geht zu Herrn Alsen in Behandlung!",
+        author: "Dorotheas Farbklangpoesie",
+        rating: 5,
+        date: "vor 8 Monaten"
+    },
+    {
+        text: "Ich bin wegen Schulterproblemen gekommen und habe die Praxis mit einer direkt spürbaren Verbesserung verlassen. Sehr professionell und freundlich!",
+        author: "Sebastian",
+        rating: 5,
+        date: "vor 8 Monaten"
+    },
+    {
+        text: "Schon die erste Therapiestunde bei Joshua hat mir sehr gut getan und positive Prozesse in meinem Körper in Gang gesetzt! Ich fühle mich beweglicher und wieder besser im Gleichgewicht.",
+        author: "AundB R.",
+        rating: 5,
+        date: "vor 8 Monaten"
+    }
+];
+
+    const track = document.getElementById('reviewsTrack');
+    const dotsContainer = document.querySelector('.slider-dots');
+    let currentSlide = 0;
+
+    // Reviews einfügen
+    reviews.forEach(review => {
+        const slide = document.createElement('div');
+        slide.className = 'review-card';
+        slide.innerHTML = `
+            <div style="text-align: center;">
+                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">
+                    ${'★'.repeat(review.rating)}
+                </div>
+                <p style="font-style: italic; color: #444; line-height: 1.6; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    "${review.text}"
+                </p>
+                <div style="font-weight: 600; color: #1a202c; font-size: 1.1rem;">${review.author}</div>
+                <div style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">${review.date}</div>
+            </div>
+        `;
+        track.appendChild(slide);
+    });
+
+    // Dots erstellen
+    reviews.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = `dot${i === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goToSlide(index) {
+        currentSlide = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    // Navigation
+    document.querySelector('.prev').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + reviews.length) % reviews.length;
+        goToSlide(currentSlide);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % reviews.length;
+        goToSlide(currentSlide);
+    });
+
+    // Autoplay
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % reviews.length;
+        goToSlide(currentSlide);
+    }, 5000);
+});
+</script>
 
         <!-- Google Bewertungen Hinweis -->
         <div style="margin-top: 4rem;">
@@ -1477,74 +1761,69 @@
 // Slider JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.getElementById('reviewsTrack');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const dots = document.querySelectorAll('.dot');
-    
+    const dotsContainer = document.querySelector('.slider-dots');
     let currentSlide = 0;
-    const totalSlides = 5;
-    
-    function updateSlider() {
-        const isMobile = window.innerWidth <= 768;
-        const slideWidth = isMobile ? 100 : 20;
-        track.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
-        
-        // Update dots
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentSlide);
-            dot.style.background = index === currentSlide ? '#1a202c' : '#cbd5e0';
+
+    // Bestehende Reviews und Dots entfernen
+    track.innerHTML = '';
+    dotsContainer.innerHTML = '';
+
+    // Reviews einfügen
+    reviews.forEach((review, index) => {
+        // Review Card erstellen
+        const slide = document.createElement('div');
+        slide.className = 'review-card';
+        slide.innerHTML = `
+            <div style="text-align: center;">
+                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">
+                    ${'★'.repeat(review.rating)}
+                </div>
+                <p style="font-style: italic; color: #444; line-height: 1.6; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    "${review.text}"
+                </p>
+                <div style="font-weight: 600; color: #1a202c; font-size: 1.1rem;">${review.author}</div>
+                <div style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">${review.date}</div>
+            </div>
+        `;
+        track.appendChild(slide);
+
+        // Dot für jede Review erstellen
+        const dot = document.createElement('button');
+        dot.className = `dot${index === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goToSlide(index) {
+        currentSlide = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        // Dots aktualisieren
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
         });
     }
-    
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlider();
-    }
-    
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlider();
-    }
-    
-    // Event Listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-    
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentSlide = index;
-            updateSlider();
-        });
+
+    // Navigation Buttons
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    prevBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + reviews.length) % reviews.length;
+        goToSlide(currentSlide);
     });
-    
-    // Auto-play (optional)
-    setInterval(nextSlide, 5000);
-    
-    // Touch/Swipe Support für Mobile
-    let startX = 0;
-    let startY = 0;
-    
-    track.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        startY = e.touches[0].clientY;
+
+    nextBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % reviews.length;
+        goToSlide(currentSlide);
     });
-    
-    track.addEventListener('touchend', (e) => {
-        const endX = e.changedTouches[0].clientX;
-        const endY = e.changedTouches[0].clientY;
-        const diffX = startX - endX;
-        const diffY = startY - endY;
-        
-        // Nur horizontal swipen
-        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-            if (diffX > 0) {
-                nextSlide();
-            } else {
-                prevSlide();
-            }
-        }
-    });
+
+    // Auto-Slide
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % reviews.length;
+        goToSlide(currentSlide);
+    }, 5000);
 });
+
 </script>
 
     <!-- Über mich -->
@@ -1731,45 +2010,63 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <!-- Qualitätssicherung & Standards -->
-            <div style="background: #f8f9fa; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Qualitätssicherung & Standards</h3>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                            <span style="color: white; font-size: 1.3rem;">✓</span>
-                        </div>
-                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">BAO-Zertifizierung</h4>
-                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Ausbildung nach Standards der Bundesarbeitsgemeinschaft Osteopathie</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                            <span style="color: white; font-size: 1.3rem;">⚕</span>
-                        </div>
-                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Staatliche Anerkennung</h4>
-                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Heilpraktikererlaubnis nach bestandener staatlicher Prüfung</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                            <span style="color: white; font-size: 1.3rem;">🏥</span>
-                        </div>
-                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Krankenkassen anerkannt</h4>
-                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Kostenerstattung durch die meisten gesetzlichen Krankenkassen</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                            <span style="color: white; font-size: 1.3rem;">📈</span>
-                        </div>
-                        <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Kontinuierliche Fortbildung</h4>
-                        <p style="color: #666; font-size: 0.95rem; margin: 0;">Regelmäßige Weiterbildungen zur Qualitätssicherung</p>
-                    </div>
-                </div>
+            <div class="qualitaet-grid-block">
+    <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; text-align: center;">Qualitätssicherung & Standards</h3>
+    <div class="qualitaet-grid">
+        <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <span style="color: white; font-size: 1.3rem;">✓</span>
             </div>
+            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">BAO-Zertifizierung</h4>
+            <p style="color: #666; font-size: 0.95rem; margin: 0;">Ausbildung nach Standards der Bundesarbeitsgemeinschaft Osteopathie</p>
         </div>
-    </section>
+        <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <span style="color: white; font-size: 1.3rem;">⚕</span>
+            </div>
+            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Staatliche Anerkennung</h4>
+            <p style="color: #666; font-size: 0.95rem; margin: 0;">Heilpraktikererlaubnis nach bestandener staatlicher Prüfung</p>
+        </div>
+        <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <span style="color: white; font-size: 1.3rem;">🏥</span>
+            </div>
+            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Krankenkassen anerkannt</h4>
+            <p style="color: #666; font-size: 0.95rem; margin: 0;">Kostenerstattung durch die meisten gesetzlichen Krankenkassen</p>
+        </div>
+        <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: #1a202c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <span style="color: white; font-size: 1.3rem;">📈</span>
+            </div>
+            <h4 style="color: #1a202c; font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Kontinuierliche Fortbildung</h4>
+            <p style="color: #666; font-size: 0.95rem; margin: 0;">Regelmäßige Weiterbildungen zur Qualitätssicherung</p>
+        </div>
+    </div>
+</div>
+<style>
+.qualitaet-grid-block {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 3rem;
+}
+.qualitaet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+@media (max-width: 900px) {
+    .qualitaet-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .qualitaet-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 
     <!-- FAQ -->
     <section id="faq" class="bg-light">
@@ -2391,27 +2688,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Floating Booking Button functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const floatingBookingBtn = document.querySelector('.floating-booking-btn');
-            
-            if (floatingBookingBtn) {
-                floatingBookingBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    // Hier kannst du deine Booking-Logik einfügen
-                    // Beispiel: window.open('https://deine-booking-url.com', '_blank');
-                    // Oder: document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'});
-                    
-                    // Temporär: Scroll zur Kontakt-Sektion
-                    const kontaktSection = document.getElementById('kontakt');
-                    if (kontaktSection) {
-                        kontaktSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+document.addEventListener('DOMContentLoaded', function() {
+    const floatingBooking = document.querySelector('.floating-booking');
+    const floatingBookingBtn = document.querySelector('.floating-booking-btn');
+    const section3 = document.getElementById('behandlungsbild'); // Bild unter Hero
+    // Button initial ausblenden
+    if (floatingBooking) {
+    floatingBooking.classList.remove('visible');
+}
+
+function toggleFloatingBooking() {
+    if (!floatingBooking || !section3) return;
+    const sectionTop = section3.getBoundingClientRect().top + window.scrollY;
+    if (window.scrollY + 100 >= sectionTop) {
+        floatingBooking.classList.add('visible');
+    } else {
+        floatingBooking.classList.remove('visible');
+    }
+}
+
+    window.addEventListener('scroll', toggleFloatingBooking);
+    toggleFloatingBooking();
+
+    if (floatingBookingBtn) {
+        floatingBookingBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const kontaktSection = document.getElementById('kontakt');
+            if (kontaktSection) {
+                kontaktSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const terminUrl = '/terminbuchung.html';
+    document.querySelectorAll('a, button').forEach(el => {
+        if (el.textContent && el.textContent.toLowerCase().includes('termin')) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = terminUrl;
+            });
+        }
+    });
+});
     </script>
 
     <!-- Floating Booking Button -->
@@ -2421,6 +2744,103 @@ document.addEventListener('DOMContentLoaded', function() {
             <span>Termin online buchen</span>
         </a>
     </div>
+
+<script>
+// Einzige Review-Slider Initialisierung
+document.addEventListener('DOMContentLoaded', function() {
+    const reviews = [
+        {
+            text: "Joshua ist ein sehr netter und einfühlsamer Osteopath. Das war meine erste osteopathische Behandlung und ich habe mich sofort sehr wohl gefühlt. Meine Knieschmerzen waren direkt nach der ersten Behandlung viel besser und ich habe mich allgemein deutlich ausgeglichener gefühlt.",
+            author: "Theresa Behrendt",
+            rating: 5,
+            date: "vor 1 Tag"
+        },
+        {
+            text: "Ich hatte nach einem Lumbago erhebliche Beschwerden, die mich stark einschränkten. Nach der Behandlung bei Joshua Alsen sind diese Schmerzen verschwunden – ein unglaubliches Gefühl! Joshua nimmt sich wirklich viel Zeit für seine Patienten.",
+            author: "Evgeniya Englert",
+            rating: 5,
+            date: "vor einer Woche"
+        },
+        {
+            text: "Ich möchte es kurz halten, den ihr müsst es selber erleben. Kompetenz und Empathie, so stellt man sich einen guten Heilpraktiker vor, und Das besitzt Joshua ohne Zweifel. Meine Rückenschmerzen wurden gelindert, geh bald wegen meine Schulter hin. Geht hin, ihr werdet nicht enttäuscht!",
+            author: "Yusuf Verus",
+            rating: 5,
+            date: "vor 2 Wochen"
+        },
+        {
+            text: "Meine erste Behandlung bei Joshua und ich kann berichten: es war sehr gut, nach einer Stunde konnte ich schmerzfrei die Praxis verlassen. Dazu noch kompetent, nett und hat alle Fragen beantwortet. Absolut zu empfehlen.",
+            author: "Ines Virde",
+            rating: 5,
+            date: "vor 2 Wochen"
+        },
+        {
+            text: "Sehr kompetenter und einfühlsamer Osteopath. Die Behandlung ist professionell, individuell abgestimmt und findet in einer angenehmen Atmosphäre statt. Absolut empfehlenswert!",
+            author: "Shayan",
+            rating: 5,
+            date: "vor einem Monat"
+        }
+    ];
+
+    const track = document.getElementById('reviewsTrack');
+    if (!track) return;
+    
+    // Bestehende Reviews entfernen
+    track.innerHTML = '';
+
+    // Reviews einfügen
+    reviews.forEach(review => {
+        const slide = document.createElement('div');
+        slide.className = 'review-card';
+        slide.innerHTML = `
+            <div style="text-align: center;">
+                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1rem;">
+                    ${'★'.repeat(review.rating)}
+                </div>
+                <p style="font-style: italic; color: #444; line-height: 1.6; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    "${review.text}"
+                </p>
+                <div style="font-weight: 600; color: #1a202c; font-size: 1.1rem;">${review.author}</div>
+                <div style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">${review.date}</div>
+            </div>
+        `;
+        track.appendChild(slide);
+    });
+
+    const dotsContainer = document.querySelector('.slider-dots');
+    let currentSlide = 0;
+
+    // Dots erstellen
+    dotsContainer.innerHTML = ''; // Bestehende Dots entfernen
+    reviews.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = `dot${i === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goToSlide(index) {
+        currentSlide = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    // Navigation
+    document.querySelector('.prev').addEventListener('click', () => {
+        goToSlide((currentSlide - 1 + reviews.length) % reviews.length);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        goToSlide((currentSlide + 1) % reviews.length);
+    });
+
+    // Autoplay
+    setInterval(() => {
+        goToSlide((currentSlide + 1) % reviews.length);
+    }, 5000);
+});
+</script>
 
 </body>
 </html>
