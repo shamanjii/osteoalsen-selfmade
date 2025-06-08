@@ -241,3 +241,29 @@ body {
         padding: 1rem;
     }
 }
+
+/* Einzelner Blogartikel */
+.blog-post {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 2rem;
+}
+.blog-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+}
+.blog-meta {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+.blog-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 1.2rem;
+}
