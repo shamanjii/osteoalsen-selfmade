@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Debug Tool</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .debug-panel {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .warning { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; }
+        .info { background: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid #e9ecef;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .post-preview {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .post-title {
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 8px;
+        }
+        .post-meta {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        .post-excerpt {
+            color: #495057;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 Blog Debug Tool</h1>
+    
+    <div class="debug-panel">
+        <h2>Status Check</h2>
+        <div id="statusContainer">
+            <div class="info">Starte Diagnose...</div>
+        </div>
+        
+        <button onclick="runDiagnosis()">🔍 Diagnose starten</button>
+        <button onclick="testPostsJson()">📄 posts.json testen</button>
+        <button onclick="fixWithStaticData()">🔧 Mit statischen Daten reparieren</button>
+        <button onclick="generateNewPostsJson()">📝 Neue posts.json generieren</button>
+    </div>
+
+    <div class="debug-panel">
+        <h2>Log Output</h2>
+        <pre id="logOutput">Bereit für Tests...</pre>
+    </div>
+
+    <div class="debug-panel">
+        <h2>Posts Vorschau</h2>
+        <div id="postsPreview">
+            <div class="info">Keine Posts geladen</div>
+        </div>
+    </div>
+
+    <script>
+        let logOutput = '';
+        
+        function log(message) {
+            logOutput += new Date().toLocaleTimeString() + ': ' + message + '\n';
+            document.getElementById('logOutput').textContent = logOutput;
+            console.log(message);
+        }
+
+        async function runDiagnosis() {
+            const statusContainer = document.getElementById('statusContainer');
+            statusContainer.innerHTML = '<div class="info">Führe Diagnose durch...</div>';
+            log('=== DIAGNOSE GESTARTET ===');
+            
+            // Test 1: Prüfe aktuellen Pfad
+            log('Aktueller Pfad: ' + window.location.href);
+            log('Erwarteter posts.json Pfad: ' + new URL('data/posts.json', window.location.href).href);
+            
+            // Test 2: Versuche posts.json zu laden
+            try {
+                log('Versuche posts.json zu laden...');
+                const response = await fetch('data/posts.json');
+                log('Response Status: ' + response.status);
+                log('Response OK: ' + response.ok);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    log('✅ posts.json erfolgreich geladen!');
+                    log('Anzahl Posts: ' + data.length);
+                    statusContainer.innerHTML = '<div class="success">✅ posts.json wurde erfolgreich geladen (' + data.length + ' Posts)</div>';
+                    
+                    // Zeige Posts an
+                    displayPosts(data);
+                } else {
+                    throw new Error('HTTP ' + response.status);
+                }
+            } catch (error) {
+                log('❌ Fehler beim Laden von posts.json: ' + error.message);
+                statusContainer.innerHTML = '<div class="error">❌ posts.json konnte nicht geladen werden: ' + error.message + '</div>';
+                
+                // Test 3: Prüfe ob Datei existiert
+                await testFileExistence();
+            }
+            
+            // Test 4: Prüfe Browser-Kompatibilität
+            log('Browser: ' + navigator.userAgent);
+            log('Fetch unterstützt: ' + (typeof fetch !== 'undefined'));
+            log('Promise unterstützt: ' + (typeof Promise !== 'undefined'));
+        }
+
+        async function testFileExistence() {
+            log('Teste Dateisystem-Zugriff...');
+            
+            // Teste verschiedene Pfade
+            const testPaths = [
+                'data/posts.json',
+                './data/posts.json',
+                '/blog/data/posts.json',
+                '../blog/data/posts.json'
+            ];
+            
+            for (const path of testPaths) {
+                try {
+                    log('Teste Pfad: ' + path);
+                    const response = await fetch(path);
+                    if (response.ok) {
+                        log('✅ Gefunden unter: ' + path);
+                        return;
+                    } else {
+                        log('❌ Nicht gefunden: ' + path + ' (Status: ' + response.status + ')');
+                    }
+                } catch (error) {
+                    log('❌ Fehler bei Pfad ' + path + ': ' + error.message);
+                }
+            }
+        }
+
+        async function testPostsJson() {
+            log('=== TESTE posts.json DIREKT ===');
+            
+            try {
+                const response = await fetch('data/posts.json');
+                const text = await response.text();
+                log('Raw Response:');
+                log(text.substring(0, 500) + '...');
+                
+                try {
+                    const json = JSON.parse(text);
+                    log('✅ JSON ist valide');
+                    log('Struktur: ' + JSON.stringify(Object.keys(json[0] || {}), null, 2));
+                } catch (e) {
+                    log('❌ JSON Parse Fehler: ' + e.message);
+                }
+            } catch (error) {
+                log('❌ Fetch Fehler: ' + error.message);
+            }
+        }
+
+        function fixWithStaticData() {
+            log('=== REPARIERE MIT STATISCHEN DATEN ===');
+            
+            const staticPosts = [
+                {
+                    id: 1749246793,
+                    title: "Postoperative Rehabilitation mit Osteopathie – Optimale Heilung nach Operationen",
+                    excerpt: "Erfahren Sie, wie osteopathische Behandlung nach Operationen die Heilung beschleunigt, Komplikationen vorbeugt und den Rehabilitationsprozess optimiert.",
+                    category: "osteopathie",
+                    date: "2025-06-06",
+                    slug: "postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen",
+                    keywords: "postoperative Rehabilitation, Osteopathie, Heilung, Operation"
+                },
+                {
+                    id: 1749246431,
+                    title: "Osteopathie im Alter – Mobilität und Lebensqualität erhalten",
+                    excerpt: "Sanfte osteopathische Behandlung für Senioren: Schmerzen lindern, Mobilität verbessern und die Lebensqualität in den besten Jahren steigern.",
+                    category: "osteopathie",
+                    date: "2025-06-05",
+                    slug: "osteopathie-im-alter-mobilitaet-und-lebensqualitaet-in-den-besten-jahren-erhalten",
+                    keywords: "Osteopathie, Senioren, Mobilität, Lebensqualität"
+                },
+                {
+                    id: 1749246030,
+                    title: "CMD und Kiefergelenksbeschwerden osteopathisch behandeln",
+                    excerpt: "Ganzheitliche Therapie bei Kiefergelenksstörungen und Zähneknirschen durch Osteopathie. Ursachen verstehen und nachhaltig behandeln.",
+                    category: "kopfschmerzen",
+                    date: "2025-06-04",
+                    slug: "cmd-und-kiefergelenksbeschwerden-osteopathische-behandlung-von-kieferproblemen",
+                    keywords: "CMD, Kiefergelenk, Kopfschmerzen, Zähneknirschen"
+                },
+                {
+                    id: 1749245844,
+                    title: "Sportverletzungen und Rehabilitation – Osteopathie für aktive Menschen",
+                    excerpt: "Schnellere Heilung und optimale Rehabilitation für Sportler durch osteopathische Behandlung. Verletzungen vorbeugen und Performance steigern.",
+                    category: "sportverletzungen",
+                    date: "2025-06-03",
+                    slug: "sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen",
+                    keywords: "Sportverletzungen, Rehabilitation, Sport, Osteopathie"
+                },
+                {
+                    id: 1749245435,
+                    title: "Schwindel und Gleichgewichtsstörungen osteopathisch behandeln",
+                    excerpt: "Erfahren Sie, wie ganzheitliche osteopathische Therapie bei Gleichgewichtsstörungen und Schwindel hilft. Ursachen finden und verstehen.",
+                    category: "gesundheitstipps",
+                    date: "2025-06-02",
+                    slug: "schwindel-und-gleichgewichtsstoerungen-osteopathische-hilfe-fuer-mehr-stabilitaet",
+                    keywords: "Schwindel, Gleichgewichtsstörungen, Gesundheitstipps"
+                },
+                {
+                    id: 1749243862,
+                    title: "Osteopathie bei Verdauungsbeschwerden",
+                    excerpt: "Wenn der Bauch aus dem Gleichgewicht gerät - viszerale Osteopathie hilft bei Verdauungsproblemen und funktionellen Magen-Darm-Beschwerden.",
+                    category: "gesundheitstipps",
+                    date: "2025-05-31",
+                    slug: "osteopathie-bei-verdauungsbeschwerden-wenn-der-bauch-aus-dem-gleichgewicht-geraet",
+                    keywords: "Verdauungsbeschwerden, viszerale Osteopathie, Gesundheitstipps"
+                },
+                {
+                    id: 1749243507,
+                    title: "Osteopathie bei Kopfschmerzen und Migräne",
+                    excerpt: "Ganzheitliche Behandlung von Kopfschmerzen und Migräne in Hamburg-Eimsbüttel. Ursachen verstehen und nachhaltig therapieren.",
+                    category: "kopfschmerzen",
+                    date: "2025-05-30",
+                    slug: "osteopathie-bei-kopfschmerzen-und-migraene-ganzheitliche-behandlung-in-hamburg",
+                    keywords: "Kopfschmerzen, Migräne, Osteopathie, Hamburg"
+                },
+                {
+                    id: 1749242779,
+                    title: "Muskuloskeletale Beschwerden erfolgreich behandeln",
+                    excerpt: "Osteopathische Therapie bei Rücken-, Nacken- und Gelenkschmerzen für nachhaltige Linderung. Strukturelle Osteopathie im Fokus.",
+                    category: "rueckenschmerzen",
+                    date: "2025-05-29",
+                    slug: "muskuloskeletale-beschwerden-erfolgreich-behandeln-osteopathische-therapie-bei-ruecken-nacken-und-gelenkschmerzen",
+                    keywords: "Rückenschmerzen, muskuloskeletale Beschwerden, Gelenkschmerzen"
+                }
+            ];
+            
+            log('✅ Statische Daten geladen: ' + staticPosts.length + ' Posts');
+            displayPosts(staticPosts);
+            
+            // Erstelle Download-Link für posts.json
+            const jsonBlob = new Blob([JSON.stringify(staticPosts, null, 2)], { type: 'application/json' });
+            const jsonUrl = URL.createObjectURL(jsonBlob);
+            
+            const downloadLink = document.createElement('a');
+            downloadLink.href = jsonUrl;
+            downloadLink.download = 'posts.json';
+            downloadLink.textContent = '📥 posts.json herunterladen';
+            downloadLink.style.display = 'inline-block';
+            downloadLink.style.margin = '10px';
+            downloadLink.style.padding = '10px 15px';
+            downloadLink.style.background = '#28a745';
+            downloadLink.style.color = 'white';
+            downloadLink.style.textDecoration = 'none';
+            downloadLink.style.borderRadius = '6px';
+            
+            document.getElementById('statusContainer').appendChild(downloadLink);
+        }
+
+        function displayPosts(posts) {
+            const container = document.getElementById('postsPreview');
+            const categoryNames = {
+                'osteopathie': 'Osteopathie',
+                'rueckenschmerzen': 'Rückenschmerzen', 
+                'kopfschmerzen': 'Kopfschmerzen',
+                'sportverletzungen': 'Sportverletzungen',
+                'gesundheitstipps': 'Gesundheitstipps'
+            };
+            
+            const postsHTML = posts.map(post => `
+                <div class="post-preview">
+                    <div class="post-title">${post.title}</div>
+                    <div class="post-meta">
+                        📅 ${post.date} | 📂 ${categoryNames[post.category] || post.category} | 🆔 ${post.id}
+                    </div>
+                    <div class="post-excerpt">${post.excerpt}</div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = `<div class="posts-grid">${postsHTML}</div>`;
+        }
+
+        function generateNewPostsJson() {
+            log('=== GENERIERE NEUE posts.json ===');
+            
+            // Diese Funktion würde eine neue posts.json mit erweiterten Feldern erstellen
+            const enhancedPosts = [
+                {
+                    "id": 1749246793,
+                    "title": "Postoperative Rehabilitation mit Osteopathie – Optimale Heilung nach Operationen",
+                    "slug": "postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen",
+                    "excerpt": "Erfahren Sie, wie osteopathische Behandlung nach Operationen die Heilung beschleunigt, Komplikationen vorbeugt und den Rehabilitationsprozess optimiert. Evidenzbasierte Ansätze für nachhaltige Genesung.",
+                    "content": "Vollständiger Artikel-Inhalt würde hier stehen...",
+                    "category": "osteopathie",
+                    "keywords": "postoperative Rehabilitation, Osteopathie, Heilung, Operation, Nachsorge",
+                    "publishedAt": "2025-06-06 10:00:00",
+                    "updatedAt": "2025-06-06 10:00:00",
+                    "author": "Joshua Alsen",
+                    "readingTime": 8,
+                    "image": "assets/images/postoperative-rehabilitation.jpg",
+                    "featured": false,
+                    "metaDescription": "Osteopathische postoperative Rehabilitation für optimale Heilung nach Operationen. Evidenzbasierte Behandlungsansätze von Heilpraktiker Joshua Alsen in Hamburg.",
+                    "tags": ["Rehabilitation", "Operation", "Heilung", "Nachsorge", "Genesung"]
+                }
+                // Weitere Posts würden hier folgen...
+            ];
+            
+            const jsonString = JSON.stringify(enhancedPosts, null, 2);
+            log('Generierte JSON Struktur:');
+            log(jsonString.substring(0, 800) + '...');
+            
+            // Download-Link erstellen
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'posts-enhanced.json';
+            link.textContent = '📥 Erweiterte posts.json herunterladen';
+            link.style.display = 'inline-block';
+            link.style.margin = '10px';
+            link.style.padding = '10px 15px';
+            link.style.background = '#17a2b8';
+            link.style.color = 'white';
+            link.style.textDecoration = 'none';
+            link.style.borderRadius = '6px';
+            
+            document.getElementById('statusContainer').appendChild(link);
+        }
+
+        // Auto-start diagnosis
+        window.addEventListener('load', () => {
+            setTimeout(runDiagnosis, 1000);
+        });
+    </script>
+</body>
+</html>

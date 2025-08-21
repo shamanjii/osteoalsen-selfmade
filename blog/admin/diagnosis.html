@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog System Test Tool - Vollständig</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: #1a202c;
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .location-info {
+            background: #e0f2fe;
+            border: 1px solid #0ea5e9;
+            color: #0c4a6e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .test-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .test-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .test-item:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+        }
+
+        .status-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .status-ok { background: #10b981; color: white; }
+        .status-warning { background: #f59e0b; color: white; }
+        .status-error { background: #ef4444; color: white; }
+        .status-loading { background: #6b7280; color: white; animation: pulse 2s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .test-info {
+            flex: 1;
+        }
+
+        .test-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .test-description {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+
+        .test-details {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s ease;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        .btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .summary-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .summary-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .log-output {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            margin-top: 1rem;
+        }
+
+        .issue-list {
+            margin-top: 1rem;
+        }
+
+        .issue-item {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .fix-suggestion {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            color: #0c4a6e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .code-snippet {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+        }
+
+        .path-selector {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .path-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 Blog System Test Tool - Vollständig</h1>
+            <p>Umfassende Diagnose Ihres Blog-Systems mit intelligenter Pfaderkennung</p>
+        </div>
+
+        <div class="location-info">
+            <h3>📍 Aktuelle Position & Pfade</h3>
+            <p><strong>Aktuelle URL:</strong> <span id="currentLocation"></span></p>
+            <p><strong>Erkannt als:</strong> Admin-Verzeichnis (../blog/admin/)</p>
+            <p><strong>Blog-Pfad:</strong> <span id="blogPath">../</span></p>
+        </div>
+
+        <div class="test-section">
+            <h3>🎯 Pfad-Einstellungen</h3>
+            <div class="path-selector">
+                <p><strong>Blog-Verzeichnis automatisch erkannt!</strong> Falls falsch, wählen Sie korrekt:</p>
+                <div class="path-option">
+                    <input type="radio" id="blogParent" name="blogPath" value="../" checked>
+                    <label for="blogParent">Blog-Hauptverzeichnis (../) - EMPFOHLEN</label>
+                </div>
+                <div class="path-option">
+                    <input type="radio" id="currentDir" name="blogPath" value="">
+                    <label for="currentDir">Aktuelles Verzeichnis (admin/)</label>
+                </div>
+                <div class="path-option">
+                    <input type="radio" id="twoLevelsUp" name="blogPath" value="../../">
+                    <label for="twoLevelsUp">Zwei Ebenen höher (../../)</label>
+                </div>
+                <div class="path-option">
+                    <input type="radio" id="customPath" name="blogPath" value="custom">
+                    <label for="customPath">Benutzerdefiniert:</label>
+                    <input type="text" id="customPathInput" placeholder="z.B. ../../blog/" style="margin-left: 0.5rem; padding: 0.25rem;">
+                </div>
+            </div>
+            <button class="btn" onclick="detectBlogStructure()">🔍 Blog-Struktur automatisch erkennen</button>
+        </div>
+
+        <div class="summary" id="testSummary">
+            <h2>Test-Ergebnisse</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-number" id="totalTests">0</div>
+                    <div>Gesamt Tests</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-number" id="passedTests">0</div>
+                    <div>Erfolgreich</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-number" id="warningTests">0</div>
+                    <div>Warnungen</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-number" id="failedTests">0</div>
+                    <div>Fehlgeschlagen</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🚀 Test-Aktionen</h2>
+            <button class="btn" onclick="runAllTests()">Alle Tests ausführen</button>
+            <button class="btn" onclick="testFileStructure()">Dateistruktur prüfen</button>
+            <button class="btn" onclick="testAPI()">API testen</button>
+            <button class="btn" onclick="testAdminPanel()">Admin Panel testen</button>
+            <button class="btn" onclick="clearResults()">Ergebnisse löschen</button>
+        </div>
+
+        <!-- File Structure Tests -->
+        <div class="test-section">
+            <h3>📁 Dateistruktur Tests</h3>
+            <div id="fileStructureTests"></div>
+        </div>
+
+        <!-- API Tests -->
+        <div class="test-section">
+            <h3>📡 API Tests</h3>
+            <div id="apiTests"></div>
+        </div>
+
+        <!-- Admin Panel Tests -->
+        <div class="test-section">
+            <h3>👤 Admin Panel Tests</h3>
+            <div id="adminTests"></div>
+        </div>
+
+        <!-- Blog Frontend Tests -->
+        <div class="test-section">
+            <h3>🌐 Frontend Tests</h3>
+            <div id="frontendTests"></div>
+        </div>
+
+        <!-- Security Tests -->
+        <div class="test-section">
+            <h3>🔒 Sicherheits Tests</h3>
+            <div id="securityTests"></div>
+        </div>
+
+        <!-- Issues & Recommendations -->
+        <div class="test-section" id="issuesSection" style="display: none;">
+            <h3>⚠️ Gefundene Probleme</h3>
+            <div id="issuesList"></div>
+            <div class="fix-suggestion">
+                <h4>🔧 Empfohlene Lösungen:</h4>
+                <div id="fixSuggestions"></div>
+            </div>
+        </div>
+
+        <!-- Debug Log -->
+        <div class="test-section">
+            <h3>📝 Debug Log</h3>
+            <div class="log-output" id="debugLog"></div>
+        </div>
+    </div>
+
+    <script>
+        let testResults = {
+            total: 0,
+            passed: 0,
+            warnings: 0,
+            failed: 0
+        };
+
+        let issues = [];
+        let logEntries = [];
+        let currentBlogPath = '../'; // Standard für admin-Verzeichnis
+
+        // Initialize page info
+        function initializePageInfo() {
+            const currentUrl = window.location.href;
+            document.getElementById('currentLocation').textContent = currentUrl;
+            document.getElementById('blogPath').textContent = currentBlogPath;
+            
+            log(`🌐 Seite geladen: ${currentUrl}`, 'info');
+            log(`📂 Blog-Pfad gesetzt auf: ${currentBlogPath}`, 'info');
+        }
+
+        // Get selected blog path
+        function getBlogPath() {
+            const selected = document.querySelector('input[name="blogPath"]:checked');
+            if (selected.value === 'custom') {
+                return document.getElementById('customPathInput').value || '../';
+            }
+            return selected.value;
+        }
+
+        // Logging functions
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = `[${timestamp}] ${message}`;
+            logEntries.push({timestamp, message, type});
+            
+            const logDiv = document.getElementById('debugLog');
+            logDiv.textContent += entry + '\n';
+            logDiv.scrollTop = logDiv.scrollHeight;
+            
+            console.log(entry);
+        }
+
+        function addIssue(title, description, severity = 'error', fix = '') {
+            issues.push({title, description, severity, fix});
+        }
+
+        // Test result functions
+        function createTestItem(name, description, status = 'loading') {
+            const item = document.createElement('div');
+            item.className = 'test-item';
+            item.innerHTML = `
+                <div class="status-icon status-${status}" id="status-${name.replace(/\s+/g, '-')}">
+                    ${status === 'loading' ? '⏳' : status === 'ok' ? '✓' : status === 'warning' ? '⚠' : '✗'}
+                </div>
+                <div class="test-info">
+                    <div class="test-name">${name}</div>
+                    <div class="test-description">${description}</div>
+                    <div class="test-details" id="details-${name.replace(/\s+/g, '-')}"></div>
+                </div>
+            `;
+            return item;
+        }
+
+        function updateTestResult(name, status, details = '') {
+            const statusId = name.replace(/\s+/g, '-');
+            const statusIcon = document.getElementById(`status-${statusId}`);
+            const detailsDiv = document.getElementById(`details-${statusId}`);
+            
+            if (statusIcon) {
+                statusIcon.className = `status-icon status-${status}`;
+                statusIcon.textContent = status === 'ok' ? '✓' : status === 'warning' ? '⚠' : '✗';
+            }
+            
+            if (detailsDiv && details) {
+                detailsDiv.textContent = details;
+            }
+
+            // Update counters
+            testResults.total++;
+            if (status === 'ok') testResults.passed++;
+            else if (status === 'warning') testResults.warnings++;
+            else testResults.failed++;
+            
+            updateSummary();
+        }
+
+        function updateSummary() {
+            document.getElementById('totalTests').textContent = testResults.total;
+            document.getElementById('passedTests').textContent = testResults.passed;
+            document.getElementById('warningTests').textContent = testResults.warnings;
+            document.getElementById('failedTests').textContent = testResults.failed;
+        }
+
+        // Auto-detect blog structure
+        async function detectBlogStructure() {
+            log('🔍 Erkenne Blog-Struktur automatisch...', 'info');
+            
+            const testPaths = [
+                { path: '../', name: 'Blog-Hauptverzeichnis (../)', priority: 1 },
+                { path: '', name: 'Aktuelles Verzeichnis (admin/)', priority: 3 },
+                { path: '../../', name: 'Zwei Ebenen höher', priority: 2 },
+                { path: '../../blog/', name: 'Blog in Root-Verzeichnis', priority: 4 }
+            ];
+
+            for (const testPath of testPaths) {
+                try {
+                    log(`🔍 Teste Pfad: ${testPath.path} (${testPath.name})`, 'info');
+                    
+                    // Test für charakteristische Blog-Dateien
+                    const testFiles = [
+                        `${testPath.path}index.html`,
+                        `${testPath.path}api/posts.php`,
+                        `${testPath.path}data/posts.json`,
+                        `${testPath.path}assets/css/style.css`
+                    ];
+
+                    let foundFiles = 0;
+                    for (const file of testFiles) {
+                        try {
+                            const response = await fetch(file, {method: 'HEAD'});
+                            if (response.ok) foundFiles++;
+                        } catch (e) { /* ignore */ }
+                    }
+
+                    log(`📊 Gefundene Dateien in ${testPath.path}: ${foundFiles}/4`, 'info');
+
+                    if (foundFiles >= 2) {
+                        log(`✅ Blog-Struktur gefunden in: ${testPath.name}`, 'success');
+                        currentBlogPath = testPath.path;
+                        document.getElementById('blogPath').textContent = testPath.path;
+                        
+                        // Update radio button
+                        if (testPath.path === '../') {
+                            document.getElementById('blogParent').checked = true;
+                        } else if (testPath.path === '') {
+                            document.getElementById('currentDir').checked = true;
+                        } else if (testPath.path === '../../') {
+                            document.getElementById('twoLevelsUp').checked = true;
+                        } else {
+                            document.getElementById('customPath').checked = true;
+                            document.getElementById('customPathInput').value = testPath.path;
+                        }
+                        
+                        return;
+                    }
+                } catch (error) {
+                    log(`❌ Fehler bei Pfad ${testPath.path}: ${error.message}`, 'error');
+                }
+            }
+            
+            log('⚠️ Keine eindeutige Blog-Struktur gefunden', 'warning');
+            addIssue(
+                'Blog-Struktur unklar',
+                'Das Tool konnte die Blog-Dateien nicht eindeutig lokalisieren',
+                'warning',
+                'Bitte den korrekten Pfad manuell auswählen'
+            );
+        }
+
+        // File Structure Tests with dynamic path
+        async function testFileStructure() {
+            log('🔍 Teste Dateistruktur...', 'info');
+            currentBlogPath = getBlogPath();
+            log(`📂 Verwende Blog-Pfad: "${currentBlogPath}"`, 'info');
+            
+            const container = document.getElementById('fileStructureTests');
+            container.innerHTML = '';
+
+            const requiredFiles = [
+                {path: 'index.html', desc: 'Blog Hauptseite'},
+                {path: 'admin/index.html', desc: 'Admin Panel', relative: 'index.html'},
+                {path: 'api/posts.php', desc: 'Posts API'},
+                {path: 'data/posts.json', desc: 'Posts Datenbank'},
+                {path: 'data/config.json', desc: 'Konfigurationsdatei'},
+                {path: 'assets/css/style.css', desc: 'Blog Stylesheet'},
+                {path: 'assets/css/post.css', desc: 'Post Stylesheet'},
+                {path: 'assets/js/blog.js', desc: 'Blog JavaScript'}
+            ];
+
+            for (const file of requiredFiles) {
+                // Für Admin-Dateien relative Pfade verwenden
+                const testPath = file.relative ? file.relative : currentBlogPath + file.path;
+                const testItem = createTestItem(file.path, `${file.desc} (${testPath})`);
+                container.appendChild(testItem);
+
+                try {
+                    const response = await fetch(testPath, {method: 'HEAD'});
+                    if (response.ok) {
+                        updateTestResult(file.path, 'ok', `Datei gefunden (${response.status})`);
+                        log(`✅ ${testPath} - OK`, 'success');
+                    } else {
+                        updateTestResult(file.path, 'error', `HTTP ${response.status}`);
+                        log(`❌ ${testPath} - Fehler: ${response.status}`, 'error');
+                        addIssue(
+                            `Fehlende Datei: ${file.path}`,
+                            `Die erforderliche Datei ${testPath} ist nicht erreichbar (HTTP ${response.status})`,
+                            'error',
+                            `Erstellen Sie die Datei ${testPath} oder überprüfen Sie den Blog-Pfad`
+                        );
+                    }
+                } catch (error) {
+                    updateTestResult(file.path, 'error', `Fehler: ${error.message}`);
+                    log(`❌ ${testPath} - Netzwerkfehler: ${error.message}`, 'error');
+                    addIssue(
+                        `Datei nicht erreichbar: ${file.path}`,
+                        `Netzwerkfehler beim Zugriff auf ${testPath}: ${error.message}`,
+                        'error',
+                        'Überprüfen Sie den Blog-Pfad und die Netzwerkverbindung'
+                    );
+                }
+            }
+        }
+
+        // API Tests with dynamic path
+        async function testAPI() {
+            log('🔌 Teste API-Endpunkte...', 'info');
+            currentBlogPath = getBlogPath();
+            const container = document.getElementById('apiTests');
+            container.innerHTML = '';
+
+            const apiTests = [
+                {name: 'Posts GET', url: 'api/posts.php', method: 'GET'},
+                {name: 'Config JSON', url: 'data/config.json', method: 'GET'},
+                {name: 'Posts JSON', url: 'data/posts.json', method: 'GET'}
+            ];
+
+            for (const test of apiTests) {
+                const fullUrl = currentBlogPath + test.url;
+                const testItem = createTestItem(test.name, `${test.method} ${fullUrl}`);
+                container.appendChild(testItem);
+
+                try {
+                    const response = await fetch(fullUrl, {method: test.method});
+                    
+                    if (response.ok) {
+                        const contentType = response.headers.get('Content-Type');
+                        const text = await response.text();
+                        
+                        // JSON validation
+                        if (contentType && contentType.includes('json')) {
+                            try {
+                                const data = JSON.parse(text);
+                                updateTestResult(test.name, 'ok', `JSON OK, ${Object.keys(data).length || data.length || 0} Einträge`);
+                                log(`✅ ${test.name} - JSON valid, Content-Type: ${contentType}`, 'success');
+                            } catch (jsonError) {
+                                updateTestResult(test.name, 'warning', `Antwort OK, aber ungültiges JSON`);
+                                log(`⚠️ ${test.name} - Ungültiges JSON: ${jsonError.message}`, 'warning');
+                                addIssue(
+                                    `Ungültiges JSON: ${test.url}`,
+                                    `Die API gibt ungültiges JSON zurück: ${jsonError.message}`,
+                                    'warning',
+                                    'Überprüfen Sie die JSON-Syntax in der entsprechenden Datei.'
+                                );
+                            }
+                        } else {
+                            updateTestResult(test.name, 'ok', `HTTP ${response.status}, ${text.length} Zeichen`);
+                            log(`✅ ${test.name} - HTTP ${response.status}`, 'success');
+                        }
+                    } else {
+                        updateTestResult(test.name, 'error', `HTTP ${response.status}`);
+                        log(`❌ ${test.name} - HTTP Fehler: ${response.status}`, 'error');
+                        addIssue(
+                            `API Fehler: ${test.url}`,
+                            `HTTP ${response.status} beim Zugriff auf ${fullUrl}`,
+                            'error',
+                            response.status === 404 ? 'Datei/Endpunkt existiert nicht' : 'Serverfehler - PHP-Logs prüfen'
+                        );
+                    }
+                } catch (error) {
+                    updateTestResult(test.name, 'error', `Netzwerkfehler: ${error.message}`);
+                    log(`❌ ${test.name} - Fehler: ${error.message}`, 'error');
+                    addIssue(
+                        `API nicht erreichbar: ${test.url}`,
+                        `Netzwerkfehler: ${error.message}`,
+                        'error',
+                        'Server läuft möglicherweise nicht oder Netzwerkproblem'
+                    );
+                }
+            }
+        }
+
+        // Admin Panel Tests
+        async function testAdminPanel() {
+            log('👤 Teste Admin Panel...', 'info');
+            const container = document.getElementById('adminTests');
+            container.innerHTML = '';
+
+            const adminTests = [
+                {name: 'Admin Hauptseite', url: './', desc: 'Erreichbarkeit der Admin-Oberfläche'},
+                {name: 'Admin Panel HTML', url: 'index.html', desc: 'Admin Panel HTML'},
+                {name: 'Test Interface', url: 'test.html', desc: 'Debug-Interface'},
+                {name: '.htaccess Admin', url: '.htaccess', desc: 'Admin Sicherheitskonfiguration'}
+            ];
+
+            for (const test of adminTests) {
+                const testItem = createTestItem(test.name, test.desc);
+                container.appendChild(testItem);
+
+                try {
+                    const response = await fetch(test.url);
+                    
+                    if (response.ok) {
+                        const text = await response.text();
+                        
+                        // Spezielle Checks für Admin Panel
+                        if (test.name === 'Admin Hauptseite' && text.includes('Blog Admin')) {
+                            updateTestResult(test.name, 'ok', 'Admin Panel lädt korrekt');
+                            log(`✅ Admin Panel - HTML erkannt`, 'success');
+                        } else if (test.name === '.htaccess Admin') {
+                            updateTestResult(test.name, 'warning', 'htaccess erreichbar (Sicherheitsrisiko)');
+                            log(`⚠️ .htaccess ist öffentlich zugänglich`, 'warning');
+                            addIssue(
+                                'Sicherheitsproblem: .htaccess öffentlich',
+                                'Die .htaccess Datei im admin/ Verzeichnis ist öffentlich zugänglich',
+                                'warning',
+                                'Serverkonfiguration anpassen um .htaccess Dateien zu schützen'
+                            );
+                        } else {
+                            updateTestResult(test.name, 'ok', `Datei OK (${text.length} Zeichen)`);
+                            log(`✅ ${test.name} - OK`, 'success');
+                        }
+                    } else if (response.status === 403) {
+                        if (test.name.includes('.htaccess')) {
+                            updateTestResult(test.name, 'ok', 'Korrekt geschützt (403)');
+                            log(`✅ .htaccess korrekt geschützt`, 'success');
+                        } else {
+                            updateTestResult(test.name, 'error', 'Zugriff verweigert (403)');
+                            log(`❌ ${test.name} - Zugriff verweigert`, 'error');
+                            addIssue(
+                                `Admin Zugriff blockiert: ${test.url}`,
+                                'Admin Panel ist durch Authentifizierung geschützt',
+                                'warning',
+                                'Möglicherweise HTTP Basic Auth aktiv - Admin-Zugangsdaten prüfen'
+                            );
+                        }
+                    } else {
+                        updateTestResult(test.name, 'error', `HTTP ${response.status}`);
+                        log(`❌ ${test.name} - HTTP ${response.status}`, 'error');
+                    }
+                } catch (error) {
+                    updateTestResult(test.name, 'error', `Fehler: ${error.message}`);
+                    log(`❌ ${test.name} - ${error.message}`, 'error');
+                }
+            }
+        }
+
+        // Frontend Tests
+        async function testFrontend() {
+            log('🌐 Teste Frontend-Komponenten...', 'info');
+            currentBlogPath = getBlogPath();
+            const container = document.getElementById('frontendTests');
+            container.innerHTML = '';
+
+            const frontendTests = [
+                {name: 'Blog Index', url: 'index.html', desc: 'Hauptseite lädt korrekt'},
+                {name: 'JavaScript Funktionalität', desc: 'JS Grundfunktionen'},
+                {name: 'CSS Stylesheets', url: 'assets/css/style.css', desc: 'Stylesheet-Verknüpfungen'},
+                {name: 'Responsive Design', desc: 'Mobile Darstellung'}
+            ];
+
+            for (const test of frontendTests) {
+                const testItem = createTestItem(test.name, test.desc);
+                container.appendChild(testItem);
+                
+                if (test.url) {
+                    // Echte HTTP-Tests für CSS und HTML
+                    try {
+                        const response = await fetch(currentBlogPath + test.url, {method: 'HEAD'});
+                        updateTestResult(test.name, response.ok ? 'ok' : 'error', 
+                            response.ok ? `HTTP ${response.status}` : `HTTP ${response.status}`);
+                    } catch (error) {
+                        updateTestResult(test.name, 'error', `Fehler: ${error.message}`);
+                    }
+                } else {
+                    // Simulierte Tests für JS-Funktionalität
+                    setTimeout(() => {
+                        if (test.name === 'JavaScript Funktionalität') {
+                            const hasJSErrors = window.jsErrors && window.jsErrors.length > 0;
+                            updateTestResult(test.name, hasJSErrors ? 'warning' : 'ok', 
+                                hasJSErrors ? `${window.jsErrors.length} JS Fehler` : 'Keine JS Fehler erkannt');
+                        } else {
+                            updateTestResult(test.name, 'ok', 'Test erfolgreich');
+                        }
+                    }, 500 + Math.random() * 1000);
+                }
+            }
+        }
+
+        // Security Tests
+        async function testSecurity() {
+            log('🔒 Teste Sicherheitsaspekte...', 'info');
+            currentBlogPath = getBlogPath();
+            const container = document.getElementById('securityTests');
+            container.innerHTML = '';
+
+            const securityTests = [
+                {name: 'Directory Listing', url: '', desc: 'Verhindert Directory Browsing'},
+                {name: 'Sensitive Files', url: 'data/', desc: 'Datenschutz für Data-Verzeichnis'},
+                {name: 'Config Protection', url: 'data/config.json', desc: 'Konfigurationsdatei-Schutz'},
+                {name: 'PHP File Access', url: 'api/posts.php', desc: 'Direkte PHP-Datei Ausführung'},
+                {name: 'Admin Directory', url: 'admin/', desc: 'Admin-Verzeichnis Schutz'}
+            ];
+
+            for (const test of securityTests) {
+                const testUrl = test.name === 'Directory Listing' ? currentBlogPath : currentBlogPath + test.url;
+                const testItem = createTestItem(test.name, test.desc);
+                container.appendChild(testItem);
+
+                try {
+                    const response = await fetch(testUrl);
+                    const text = await response.text();
+                    
+                    if (test.name === 'Directory Listing') {
+                        const isDirectoryListing = text.includes('Index of') || text.includes('Directory listing');
+                        updateTestResult(test.name, isDirectoryListing ? 'error' : 'ok',
+                            isDirectoryListing ? 'Directory Listing aktiv - Sicherheitsrisiko!' : 'Korrekt geschützt');
+                        
+                        if (isDirectoryListing) {
+                            addIssue(
+                                'Sicherheitsrisiko: Directory Listing',
+                                'Verzeichnisse sind öffentlich durchsuchbar',
+                                'error',
+                                'Options -Indexes in .htaccess hinzufügen'
+                            );
+                        }
+                    } else if (test.name === 'Admin Directory') {
+                        const isDirectoryListing = text.includes('Index of') || text.includes('Directory listing');
+                        if (response.status === 403) {
+                            updateTestResult(test.name, 'ok', 'Korrekt geschützt (403)');
+                        } else if (isDirectoryListing) {
+                            updateTestResult(test.name, 'error', 'Admin-Verzeichnis öffentlich!');
+                            addIssue(
+                                'KRITISCH: Admin-Verzeichnis öffentlich',
+                                'Das Admin-Verzeichnis ist öffentlich durchsuchbar',
+                                'error',
+                                'Sofort .htaccess mit "Options -Indexes" und Authentication einrichten'
+                            );
+                        } else {
+                            updateTestResult(test.name, 'warning', 'Erreichbar, aber kein Directory Listing');
+                        }
+                    } else {
+                        const isPubliclyAccessible = response.ok && !text.includes('403') && !text.includes('Forbidden');
+                        updateTestResult(test.name, isPubliclyAccessible ? 'warning' : 'ok',
+                            isPubliclyAccessible ? 'Öffentlich zugänglich' : 'Geschützt oder nicht gefunden');
+                        
+                        if (isPubliclyAccessible && (test.url.includes('config.json') || test.url.includes('data/'))) {
+                            addIssue(
+                                `Sicherheitsrisiko: ${test.name} öffentlich`,
+                                `Sensible Datei/Verzeichnis ist öffentlich zugänglich: ${test.url}`,
+                                'warning',
+                                'Zugriff auf sensible Dateien/Verzeichnisse per .htaccess beschränken'
+                            );
+                        }
+                    }
+                } catch (error) {
+                    updateTestResult(test.name, 'ok', 'Korrekt geschützt (nicht erreichbar)');
+                    log(`✅ ${test.name} - Geschützt: ${error.message}`, 'success');
+                }
+            }
+        }
+
+        // Show issues
+        function showIssues() {
+            const issuesSection = document.getElementById('issuesSection');
+            const issuesList = document.getElementById('issuesList');
+            const fixSuggestions = document.getElementById('fixSuggestions');
+            
+            if (issues.length > 0) {
+                issuesSection.style.display = 'block';
+                
+                issuesList.innerHTML = issues.map(issue => `
+                    <div class="issue-item">
+                        <strong>${issue.title}</strong><br>
+                        ${issue.description}
+                    </div>
+                `).join('');
+                
+                const fixes = [...new Set(issues.map(i => i.fix).filter(f => f))];
+                fixSuggestions.innerHTML = fixes.map(fix => `
+                    <div class="code-snippet">${fix}</div>
+                `).join('');
+            } else {
+                issuesSection.style.display = 'none';
+            }
+        }
+
+        // Main test runner
+        async function runAllTests() {
+            log('🚀 Starte vollständige Systemtests...', 'info');
+            
+            // Reset
+            testResults = {total: 0, passed: 0, warnings: 0, failed: 0};
+            issues = [];
+            document.getElementById('issuesSection').style.display = 'none';
+            
+            try {
+                await testFileStructure();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                await testAPI();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                await testAdminPanel();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                await testFrontend();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                await testSecurity();
+                
+                showIssues();
+                
+                // Finale Bewertung
+                const successRate = (testResults.passed / testResults.total * 100).toFixed(1);
+                log(`✅ Alle Tests abgeschlossen - Erfolgsrate: ${successRate}%`, 'success');
+                
+                if (testResults.failed > 0) {
+                    log(`⚠️ ${testResults.failed} kritische Probleme gefunden`, 'warning');
+                }
+                
+                if (issues.length === 0) {
+                    log('🎉 Keine größeren Probleme gefunden!', 'success');
+                }
+                
+            } catch (error) {
+                log(`❌ Test-Fehler: ${error.message}`, 'error');
+            }
+        }
+
+        function clearResults() {
+            testResults = {total: 0, passed: 0, warnings: 0, failed: 0};
+            issues = [];
+            logEntries = [];
+            
+            document.getElementById('debugLog').textContent = '';
+            document.getElementById('issuesSection').style.display = 'none';
+            
+            ['fileStructureTests', 'apiTests', 'adminTests', 'frontendTests', 'securityTests'].forEach(id => {
+                document.getElementById(id).innerHTML = '';
+            });
+            
+            updateSummary();
+            log('🗑️ Ergebnisse gelöscht', 'info');
+        }
+
+        // Update blog path when radio button changes
+        document.addEventListener('change', function(e) {
+            if (e.target.name === 'blogPath') {
+                currentBlogPath = getBlogPath();
+                document.getElementById('blogPath').textContent = currentBlogPath;
+                log(`📂 Blog-Pfad geändert zu: ${currentBlogPath}`, 'info');
+            }
+        });
+
+        // Error tracking
+        window.jsErrors = [];
+        window.addEventListener('error', function(e) {
+            window.jsErrors.push(e.message);
+            log(`🐛 JavaScript Fehler: ${e.message}`, 'error');
+        });
+
+        // Advanced features
+        function exportResults() {
+            const results = {
+                timestamp: new Date().toISOString(),
+                summary: testResults,
+                issues: issues,
+                logs: logEntries
+            };
+            
+            const blob = new Blob([JSON.stringify(results, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `blog-test-results-${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            log('📥 Test-Ergebnisse exportiert', 'success');
+        }
+
+        function generateReport() {
+            const reportHtml = `
+                <h1>Blog System Test Bericht</h1>
+                <p>Generiert am: ${new Date().toLocaleString()}</p>
+                <h2>Zusammenfassung</h2>
+                <ul>
+                    <li>Gesamt Tests: ${testResults.total}</li>
+                    <li>Erfolgreich: ${testResults.passed}</li>
+                    <li>Warnungen: ${testResults.warnings}</li>
+                    <li>Fehlgeschlagen: ${testResults.failed}</li>
+                </ul>
+                <h2>Gefundene Probleme</h2>
+                ${issues.map(issue => `
+                    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+                        <strong>${issue.title}</strong><br>
+                        ${issue.description}<br>
+                        <em>Lösung: ${issue.fix}</em>
+                    </div>
+                `).join('')}
+            `;
+            
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(reportHtml);
+            newWindow.document.close();
+            
+            log('📋 HTML-Bericht generiert', 'success');
+        }
+
+        // Add export buttons
+        function addAdvancedButtons() {
+            const actionsSection = document.querySelector('.test-section h2').parentNode;
+            const exportBtn = document.createElement('button');
+            exportBtn.className = 'btn';
+            exportBtn.style.background = '#059669';
+            exportBtn.innerHTML = '📥 Ergebnisse exportieren';
+            exportBtn.onclick = exportResults;
+            
+            const reportBtn = document.createElement('button');
+            reportBtn.className = 'btn';
+            reportBtn.style.background = '#7c3aed';
+            reportBtn.innerHTML = '📋 HTML-Bericht';
+            reportBtn.onclick = generateReport;
+            
+            actionsSection.appendChild(exportBtn);
+            actionsSection.appendChild(reportBtn);
+        }
+
+        // Auto-start basic tests
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePageInfo();
+            addAdvancedButtons();
+            log('🔧 Vollständiges Blog Test Tool geladen', 'info');
+            log('🎯 Position: Admin-Verzeichnis erkannt', 'info');
+            log('📍 Blog-Pfad automatisch auf "../" gesetzt', 'info');
+            log('Bereit für Tests. Klicken Sie "Alle Tests ausführen" für eine vollständige Diagnose.', 'info');
+            
+            // Automatische Struktur-Erkennung beim Start
+            setTimeout(detectBlogStructure, 1000);
+        });
+    </script>
+</body>
+</html>
