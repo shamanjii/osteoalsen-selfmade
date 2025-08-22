@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
+  <!-- SAFE MOBILE V3 (typography/layout only on small screens) -->
+  <style id="mobile-v3-overrides">
+    @media (max-width: 640px) {
+      html, body { max-width: 100%; overflow-x: hidden; }
+      body { padding-bottom: 88px; }
+      h1 { font-size: clamp(1.8rem, 6.5vw, 2.2rem) !important; line-height: 1.2; }
+      h2, .section-title { font-size: clamp(1.4rem, 5.6vw, 1.9rem) !important; line-height: 1.25; }
+      h3 { font-size: clamp(1.1rem, 4.8vw, 1.4rem) !important; line-height: 1.3; }
+      p, li { font-size: clamp(1rem, 4.2vw, 1.125rem) !important; }
+      .container, main, section {
+        padding-left: min(20px, 4vw) !important;
+        padding-right: min(20px, 4vw) !important;
+      }
+      .applications-grid,
+      .benefits-grid,
+      .qualitaet-grid,
+      .treatments-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+      .application-card,
+      .benefit-item {
+        padding: 1rem !important;
+      }
+      img, video { max-width: 100% !important; height: auto !important; }
+      .sticky-cta-btn { font-size: 0.95rem !important; padding: 0.6rem 1rem !important; }
+      .sticky-cta-content { gap: .75rem !important; }
+    }
+  </style>
+
+
 <!-- SAFE MOBILE/PERF CSS (non-breaking) -->
   <style id="mobile-safe-additions">
     img, video { max-width: 100%; height: auto; }
