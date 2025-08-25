@@ -24,6 +24,31 @@ function initializeCenteredNavigation() {
     // Interaktivität hinzufügen
     setupNavigationInteractions();
     markActiveLink();
+
+    // Dynamischen Abstand für Nav-Leisten basierend auf der Logo‑Breite berechnen
+    // Initiale Berechnung des Abstands nach DOMContentLoaded. Da sich
+    // die Abmessungen des Logos noch durch Schrift‑ oder Bildladezeiten
+    // verändern können, lösen wir weitere Berechnungen über das
+    // load‑Event, die Font‑API und einen ResizeObserver aus.
+    updateLogoSpacing();
+    // Bei Resize erneut berechnen (mit Debounce, um zu viele Aufrufe zu vermeiden)
+    window.addEventListener('resize', debounce(updateLogoSpacing, 100));
+    // Nach vollständigem Laden (inkl. Bilder) erneut berechnen
+    window.addEventListener('load', updateLogoSpacing);
+    // Fonts können nach DOMContentLoaded asynchron laden – danach neu berechnen
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => {
+            updateLogoSpacing();
+        });
+    }
+    // Wenn verfügbar, beobachte Größenänderungen des Logo‑Containers
+    if (typeof ResizeObserver !== 'undefined') {
+        const logoContainer = document.querySelector('.logo-center');
+        const observer = new ResizeObserver(() => {
+            updateLogoSpacing();
+        });
+        if (logoContainer) observer.observe(logoContainer);
+    }
     
     // DEBUG: Verfügbare Sections loggen
     logAvailableSections();
@@ -486,6 +511,57 @@ function markActiveLink() {
     });
 }
 
+/**
+ * Aktualisiert dynamisch den Abstand zwischen den Navigationsabschnitten
+ * und dem zentrierten Logo. Der Abstand entspricht der halben Breite
+ * des Logos plus einem kleinen Sicherheitsabstand. Dadurch wird
+ * gewährleistet, dass die Navigationselemente das Logo bei
+ * unterschiedlichen Bildschirmgrößen nicht überlappen.
+ */
+function updateLogoSpacing() {
+    const logoContainer = document.querySelector('.logo-center');
+    const navLeft = document.querySelector('.nav-left');
+    const navRight = document.querySelector('.nav-right');
+    if (!logoContainer || !navLeft || !navRight) return;
+    // Bestimme die aktuelle Breite des Logos (einschließlich Polsterung)
+    const logoWidth = logoContainer.getBoundingClientRect().width || 0;
+    // halbe Breite + Sicherheitsabstand (16px)
+    // Grundabstand: halbe Logo‑Breite plus kleiner Puffer
+    let spacing = Math.round(logoWidth / 2 + 16);
+    // Maximal dürfen die Abstände nicht mehr als ein Viertel der
+    // Gesamtbreite der Navigationsleiste einnehmen, damit die Links
+    // genügend Platz behalten. Ermittele Containerbreite und begrenze.
+    const navContainer = document.querySelector('.nav-container');
+    if (navContainer) {
+        const maxSpacing = navContainer.getBoundingClientRect().width * 0.25;
+        if (spacing > maxSpacing) spacing = maxSpacing;
+    }
+    // Wende den Abstand per inline‑Style an. Inline‑Styles überschreiben
+    // die CSS‑Definitionen aus injectCenteredNavigationCSS().
+    navLeft.style.marginRight = `${spacing}px`;
+    navRight.style.marginLeft = `${spacing}px`;
+}
+
+/**
+ * Kleine Dienstfunktion zum Debouncen von Ereignislisten. Sie verhindert,
+ * dass updateLogoSpacing bei schnellen Fenstergrößenänderungen zu oft
+ * ausgeführt wird.
+ * @param {Function} func - die Funktion, die aufgerufen werden soll
+ * @param {number} wait - Wartezeit in Millisekunden
+ * @returns {Function}
+ */
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        const later = () => {
+            timeout = null;
+            func.apply(this, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
 // PREMIUM CSS für zentrierte Navigation
 function injectCenteredNavigationCSS() {
     const centeredCSS = `
@@ -528,6 +604,15 @@ function injectCenteredNavigationCSS() {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 1.5rem; /* Reduziertes Container-Padding */
+            /*
+              Standardmäßig verwenden wir Flexbox für die horizontale
+              Ausrichtung des Inhalts. Die linke und rechte Navigation
+              verteilen sich gleichmäßig dank flex:1 und bleiben von
+              einem absolut zentrierten Logo getrennt. Dieser Ansatz
+              behält das etablierte Look‑and‑Feel bei und erlaubt uns
+              über margin‑Werte den Abstand zum Logo dynamisch zu
+              steuern.
+            */
             display: flex;
             align-items: center;
             height: 80px;
@@ -543,6 +628,11 @@ function injectCenteredNavigationCSS() {
             align-items: center;
         }
         .logo-center {
+            /*
+              Das Logo ist absolut positioniert und horizontal zentriert.
+              Diese Positionierung sorgt dafür, dass sich die Navigation
+              symmetrisch links und rechts um das Logo herum anordnet.
+            */
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -554,21 +644,47 @@ function injectCenteredNavigationCSS() {
         
         /* Navigation Sections nehmen verfügbaren Platz - EINFACH */
         .nav-left {
+            /*
+              Die linke Navigationsspalte nimmt eine flexible Breite ein und richtet
+              ihre Einträge nach rechts aus, damit das zentrierte Logo nicht
+              überlappt. Mit der Verwendung von clamp() reduzieren wir den
+              notwendigen Abstand zum Logo automatisch bei kleineren Breiten.
+            */
+            /* Die Navigation nimmt eine flexible Breite ein. Der per
+               JavaScript gesetzte margin trennt sie vom Logo. */
             flex: 1;
             display: flex;
             align-items: center;
             gap: 1.2rem;
             justify-content: flex-end;
             padding-right: 2rem;
+            /* Der Abstand zum zentralen Logo wird dynamisch per JavaScript
+               anhand der tatsächlichen Logo‑Breite gesetzt. Hier wird
+               lediglich ein Basiswert gesetzt, der von JS überschrieben
+               wird. */
+            margin-right: 0;
         }
         
         .nav-right {
+            /*
+              Rechte Navigationsspalte spiegelt die linke und richtet Inhalte
+              nach links aus. Auch hier sorgt clamp() dafür, dass der Abstand
+              zur Mitte bei kleineren Displays schrumpft und somit mehr Raum
+              für die Menüpunkte entsteht.
+            */
+            /* Die Navigation nimmt eine flexible Breite ein. Der per
+               JavaScript gesetzte margin trennt sie vom Logo. */
             flex: 1;
             display: flex;
             align-items: center;
             gap: 1.2rem;
             justify-content: flex-start;
             padding-left: 2rem;
+            /* Der Abstand zum zentralen Logo wird dynamisch per JavaScript
+               anhand der tatsächlichen Logo‑Breite gesetzt. Hier wird
+               lediglich ein Basiswert gesetzt, der von JS überschrieben
+               wird. */
+            margin-left: 0;
         }
         
         .nav-link {
@@ -670,9 +786,17 @@ function injectCenteredNavigationCSS() {
         }
         
         .logo-image {
+            /*
+              Das Logo passt seine Höhe wie gehabt über clamp() an die
+              Bildschirmbreite an. Zusätzlich wird die maximale Breite
+              dynamisch begrenzt, um bei mittleren Bildschirmgrößen genug
+              Platz für die Navigationslinks zu lassen. Der Wert wächst
+              zwischen 150px und 20% der Viewportbreite und ist auf
+              280px nach oben begrenzt.
+            */
             height: clamp(35px, 5vw, 50px);
             width: auto;
-            max-width: 280px;
+            max-width: clamp(150px, 20vw, 280px);
             object-fit: contain;
             transition: all 0.3s ease;
             filter: brightness(1) contrast(1.1);
@@ -875,13 +999,15 @@ function injectCenteredNavigationCSS() {
             .nav-left {
                 gap: 1.8rem;
                 padding-right: 2rem;
-                margin-right: 180px; /* Mehr Logo-Platz */
+                /* Der tatsächliche Abstand wird per JavaScript gesetzt. */
+                margin-right: 0;
             }
             
             .nav-right {
                 gap: 1.8rem;
                 padding-left: 2rem;
-                margin-left: 180px; /* Mehr Logo-Platz */
+                /* Der tatsächliche Abstand wird per JavaScript gesetzt. */
+                margin-left: 0;
             }
         }
         
@@ -894,13 +1020,15 @@ function injectCenteredNavigationCSS() {
             .nav-left {
                 gap: 0.6rem;
                 padding-right: 0.3rem;
-                margin-right: 140px; /* Angepasst für Tablet */
+                /* Der tatsächliche Abstand wird per JavaScript gesetzt. */
+                margin-right: 0;
             }
             
             .nav-right {
                 gap: 0.6rem;
                 padding-left: 0.3rem;
-                margin-left: 140px; /* Angepasst für Tablet */
+                /* Der tatsächliche Abstand wird per JavaScript gesetzt. */
+                margin-left: 0;
             }
             
             .nav-link {
@@ -914,8 +1042,11 @@ function injectCenteredNavigationCSS() {
             }
         }
         
-        /* Mobile - Logo links, Hamburger rechts */
-        @media (max-width: 768px) {
+        /* Mobile – Logo links, Hamburger rechts.
+           Der Breakpoint wurde von 768px auf 1100px erhöht, sodass das
+           Hamburger-Menü früher aktiviert wird und die Navigation nicht
+           in mittleren Bildschirmgrößen kollidiert. */
+        @media (max-width: 1100px) {
             .nav-container {
                 display: flex;
                 justify-content: space-between;
@@ -935,13 +1066,14 @@ function injectCenteredNavigationCSS() {
             }
             
             .logo-image {
-                height: clamp(28px, 4vw, 35px);
-                max-width: 200px;
+                /* Im Hamburger‑Menü darf das Logo etwas größer erscheinen. */
+                height: clamp(35px, 6vw, 55px);
+                max-width: 260px;
             }
             
             .logo-text-fallback {
-                font-size: clamp(0.9rem, 4vw, 1.2rem);
-                letter-spacing: 0.1em;
+                font-size: clamp(1rem, 6vw, 1.6rem);
+                letter-spacing: 0.12em;
                 font-weight: 800;
             }
             
@@ -956,6 +1088,32 @@ function injectCenteredNavigationCSS() {
             
             body.menu-open {
                 overflow: hidden;
+            }
+        }
+
+        /*
+           Intermediate Breakpoint: zwischen 1100px und 1250px kann die
+           Desktop-Navigation knapp werden. Wir verstecken bei diesen
+           Größen die weniger wichtigen Links (FAQ und Blog) auf der
+           rechten Seite. Sie bleiben im Hamburger-Menü verfügbar.
+        */
+        @media (max-width: 1250px) and (min-width: 1101px) {
+            .nav-right .nav-link[data-text="FAQ"],
+            .nav-right .nav-link[data-text="Blog"] {
+                display: none;
+            }
+            /* Leicht engerer Abstand zwischen den verbleibenden rechten Links */
+            .nav-right {
+                gap: 1rem;
+            }
+
+            /* Auch links das längere Element ausblenden, um Überlappungen mit dem
+               Logo zu vermeiden. Die Links bleiben im Burger-Menü erhalten. */
+            .nav-left .nav-link[data-text="Anwendungen"] {
+                display: none;
+            }
+            .nav-left {
+                gap: 1rem;
             }
         }
         
@@ -986,7 +1144,7 @@ function injectCenteredNavigationCSS() {
             padding-top: 80px;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
             body {
                 padding-top: 70px;
             }

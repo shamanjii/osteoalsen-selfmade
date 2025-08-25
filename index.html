@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
+  <!-- SAFE MOBILE V3 (typography/layout only on small screens) -->
+  <style id="mobile-v3-overrides">
+    @media (max-width: 640px) {
+      html, body { max-width: 100%; overflow-x: hidden; }
+      body { padding-bottom: 88px; }
+      h1 { font-size: clamp(1.8rem, 6.5vw, 2.2rem) !important; line-height: 1.2; }
+      h2, .section-title { font-size: clamp(1.4rem, 5.6vw, 1.9rem) !important; line-height: 1.25; }
+      h3 { font-size: clamp(1.1rem, 4.8vw, 1.4rem) !important; line-height: 1.3; }
+      p, li { font-size: clamp(1rem, 4.2vw, 1.125rem) !important; }
+      .container, main, section {
+        padding-left: min(20px, 4vw) !important;
+        padding-right: min(20px, 4vw) !important;
+      }
+      .applications-grid,
+      .benefits-grid,
+      .qualitaet-grid,
+      .treatments-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+      .application-card,
+      .benefit-item {
+        padding: 1rem !important;
+      }
+      img, video { max-width: 100% !important; height: auto !important; }
+      .sticky-cta-btn { font-size: 0.95rem !important; padding: 0.6rem 1rem !important; }
+      .sticky-cta-content { gap: .75rem !important; }
+    }
+  </style>
+
+
+<!-- SAFE MOBILE/PERF CSS (non-breaking) -->
+  <style id="mobile-safe-additions">
+    img, video { max-width: 100%; height: auto; }
+    @media (max-width: 640px) {
+      main, section { padding-left: min(24px, 4vw); padding-right: min(24px, 4vw); }
+    }
+  </style>
+
+  <link rel="preload" as="image" href="assets/joshua-alsen-profil.jpg">
+
   <!-- SAFE SEO ADDITIONS (non-breaking) -->
   <link rel="canonical" href="https://www.osteoalsen.de/">
   <meta property="og:type" content="website">
@@ -1855,20 +1897,17 @@ section .container {
    "name":"Wie viel kostet die osteopathische Behandlung?",
    "acceptedAnswer":{"@type":"Answer","text":"45–60 Minuten, 150 Euro."}
   }
-  /* TODO: Füge weitere Fragen/Antworten passend zum sichtbaren FAQ hinzu */
  ]
 }
 </script>
 
 <script>
-// Non-breaking FAQ toggle (adds/removes .active on answer; updates +/- icon)
 function toggleFAQ(i){
   var ans = document.getElementById('answer-' + i);
   var ico = document.getElementById('icon-' + i);
   if (!ans) return;
   var open = ans.classList.toggle('active');
   if (ico) ico.textContent = open ? '–' : '+';
-  // Accessibility hint
   var qs = document.querySelector('[aria-controls="answer-' + i + '"]');
   if (qs) qs.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
@@ -2548,7 +2587,7 @@ function toggleFAQ(i){
                 <div style="flex: 0 0 300px; text-align: center; align-self: flex-start; margin-top: -2rem;">
                     <img src="assets/joshua-alsen-dozent.jpeg" 
                          alt="Joshua Alsen - Osteopath in Hamburg" 
-                         style="width: 100%; height: 400px; border-radius: 8px; object-fit: cover; margin-bottom: 1rem; display: block;">
+                         style="width: 100%; height: 400px; border-radius: 8px; object-fit: cover; margin-bottom: 1rem; display: block;" loading="lazy" decoding="async">
                 </div>
                 
                 <!-- Profile Text -->
@@ -2579,7 +2618,7 @@ function toggleFAQ(i){
                 <div style="display: flex; align-items: center; gap: 2rem;">
                     <!-- VFO Logo -->
                     <div style="flex-shrink: 0;">
-                        <img src="assets/vfo-logo.jpeg" alt="VFO Logo - Verband Freier Osteopathen" style="width: 300px; height: 300px; object-fit: contain; border-radius: 6px;">
+                        <img src="assets/vfo-logo.jpeg" alt="VFO Logo - Verband Freier Osteopathen" style="width: 300px; height: 300px; object-fit: contain; border-radius: 6px;" loading="lazy" decoding="async">
                     </div>
                     
                     <!-- VFO Text -->
@@ -2657,7 +2696,7 @@ function toggleFAQ(i){
             <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                 <div style="display: flex; align-items: center; margin-bottom: 2rem;">
                     <div style="width: 80px; height: 80px; margin-right: 2rem; flex-shrink: 0;">
-                        <img src="assets/osd-logo.webp" alt="OSD Logo - Osteopathie Schule Deutschland" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+                        <img src="assets/osd-logo.webp" alt="OSD Logo - Osteopathie Schule Deutschland" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;" loading="lazy" decoding="async">
                     </div>
                     <div>
                         <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin: 0 0 0.5rem 0;">Bachelor of Science Osteopathie</h3>
@@ -2686,7 +2725,7 @@ function toggleFAQ(i){
             <div style="background: #ffffff; padding: 3rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                 <div style="display: flex; align-items: center;">
                     <div style="width: 80px; height: 80px; margin-right: 2rem; flex-shrink: 0;">
-                        <img src="assets/hamburg-wappen.webp" alt="Hamburg Wappen" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+                        <img src="assets/hamburg-wappen.webp" alt="Hamburg Wappen" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;" loading="lazy" decoding="async">
                     </div>
                     <div style="flex: 1;">
                         <h3 style="color: #1a202c; font-size: 1.5rem; font-weight: 500; margin: 0 0 0.5rem 0;">Heilpraktikererlaubnis</h3>
@@ -3339,7 +3378,7 @@ function toggleFAQ(i){
             <div class="footer-content">
                 <!-- Logo Section - Links -->
                 <div class="footer-logo-section">
-                    <img src="assets/oa-logo-short.webp" alt="Osteopathie Alsen Logo" class="footer-logo-img">
+                    <img src="assets/oa-logo-short.webp" alt="Osteopathie Alsen Logo" class="footer-logo-img" loading="lazy" decoding="async">
                 </div>
 
                 <!-- Spalte 1: Osteopathie Alsen -->

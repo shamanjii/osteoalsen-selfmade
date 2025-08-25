@@ -1,6 +1,7 @@
 /**
  * FINALE NAVIGATION - Zentriertes OSTEOPATHIE ALSEN Logo
  * Menüpunkte symmetrisch links und rechts verteilt
+ * Version: FIXED CROSS-PAGE LINKS - Nur Pfad-Korrekturen
  */
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -24,11 +25,312 @@ function initializeCenteredNavigation() {
     setupNavigationInteractions();
     markActiveLink();
     
+    // DEBUG: Verfügbare Sections loggen
+    logAvailableSections();
+    
+    // Scroll-Offset für Navigation Links - VERBESSERT
+    setupSmoothScrolling();
+    
+    // Prüfe ob nach dem Laden zu einer Section gescrollt werden soll
+    checkForDelayedScroll();
+    
     console.log("✅ Zentrierte Navigation geladen");
 }
 
+function checkForDelayedScroll() {
+    // Prüfe sessionStorage für gespeicherte Scroll-Ziele
+    const scrollTarget = sessionStorage.getItem('scrollToSection');
+    if (scrollTarget) {
+        console.log(`🎯 Verzögertes Scrollen zu: ${scrollTarget}`);
+        sessionStorage.removeItem('scrollToSection');
+        
+        // Warte kurz bis die Seite vollständig geladen ist
+        setTimeout(() => {
+            const target = findScrollTarget(scrollTarget);
+            if (target) {
+                const offset = 100;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                // Auch beim verzögerten Scrollen smooth scroll verwenden
+                if ('scrollBehavior' in document.documentElement.style) {
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    smoothScrollTo(targetPosition, 800);
+                }
+                
+                highlightTargetSection(target);
+                console.log(`✅ Verzögertes Scrollen erfolgreich zu: ${scrollTarget}`);
+            } else {
+                console.warn(`❌ Verzögertes Scroll-Ziel nicht gefunden: ${scrollTarget}`);
+                tryAlternativeScrollTargets(scrollTarget, 100);
+            }
+        }, 500);
+    }
+    
+    // Prüfe auch URL-Hash für direktes Laden
+    const urlHash = window.location.hash;
+    if (urlHash && urlHash.length > 1) {
+        const hashTarget = urlHash.substring(1);
+        console.log(`🔗 URL-Hash erkannt: ${hashTarget}`);
+        
+        setTimeout(() => {
+            const target = findScrollTarget(hashTarget);
+            if (target) {
+                const offset = 100;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                // URL-Hash Scroll auch smooth
+                if ('scrollBehavior' in document.documentElement.style) {
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    smoothScrollTo(targetPosition, 800);
+                }
+                
+                highlightTargetSection(target);
+                console.log(`✅ URL-Hash Scroll erfolgreich zu: ${hashTarget}`);
+            }
+        }, 300);
+    }
+}
+
+function logAvailableSections() {
+    console.log("🔍 Verfügbare Sections auf der Seite:");
+    const sections = document.querySelectorAll('section[id], div[id], article[id]');
+    sections.forEach(section => {
+        console.log(`- ID: "${section.id}" | Tag: ${section.tagName} | Text: "${section.textContent.substring(0, 50)}..."`);
+    });
+}
+
+function setupSmoothScrolling() {
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            const currentPath = window.location.pathname;
+            const currentFile = currentPath.split('/').pop() || 'index.html';
+            
+            console.log(`🔗 Link geklickt: ${href} | Aktuelle Seite: ${currentFile}`);
+            
+            // Prüfe ob Link zu einer anderen Seite mit Anchor führt
+            if (href.includes('#')) {
+                const [linkPath, targetId] = href.split('#');
+                
+                // Bestimme ob wir zur Startseite wechseln müssen
+                const needsPageChange = (
+                    (linkPath && linkPath.includes('index.html')) || // explizit index.html
+                    (linkPath === '../' || linkPath === '../../') || // relative Pfade
+                    (currentFile !== 'index.html' && linkPath === '') // auf anderer Seite, Link zu Section
+                );
+                
+                console.log(`🔍 Needs page change: ${needsPageChange} | Link path: "${linkPath}" | Target: ${targetId}`);
+                
+                // Falls wir zur Startseite wechseln müssen
+                if (needsPageChange && targetId) {
+                    console.log(`🔄 Navigiere zur Startseite mit Section: ${targetId}`);
+                    e.preventDefault();
+                    
+                    // Speichere Ziel-Section für nach dem Laden
+                    sessionStorage.setItem('scrollToSection', targetId);
+                    
+                    // Bestimme korrekten Pfad zur Startseite
+                    let indexPath = 'index.html';
+                    if (currentPath.includes('/blog/posts/')) {
+                        indexPath = '../../index.html';
+                    } else if (currentPath.includes('/blog/')) {
+                        indexPath = '../index.html';
+                    } else if (currentPath.includes('/legal/')) {
+                        indexPath = '../index.html';
+                    }
+                    
+                    console.log(`🔄 Wechsle zu: ${indexPath}`);
+                    window.location.href = indexPath;
+                    return;
+                }
+                
+                // Wenn wir bereits auf der richtigen Seite sind, scrolle direkt
+                if (targetId && currentFile === 'index.html') {
+                    console.log(`✅ Bereits auf Startseite, scrolle zu: ${targetId}`);
+                    e.preventDefault();
+                    const offset = 100;
+                    
+                    // Verbesserte Target-Suche mit Fallbacks
+                    let target = findScrollTarget(targetId);
+                    
+                    if (target) {
+                        console.log(`✅ Scrolle zu Section: ${targetId} (${target.tagName}#${target.id})`);
+                        
+                        // VERBESSERTER SMOOTH SCROLL mit verschiedenen Methoden
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        
+                        // Methode 1: Moderne scroll() API mit smooth behavior
+                        if ('scrollBehavior' in document.documentElement.style) {
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        } else {
+                            // Fallback für ältere Browser: Animiertes Scrollen
+                            smoothScrollTo(targetPosition, 800);
+                        }
+                        
+                        // Visual Feedback: Kurz Section highlighten
+                        highlightTargetSection(target);
+                        
+                    } else {
+                        console.warn(`❌ Section nicht gefunden: ${targetId}`);
+                        // Fallback: Versuche alternative IDs
+                        tryAlternativeScrollTargets(targetId, offset);
+                    }
+                }
+            }
+        });
+    });
+}
+
+function findScrollTarget(targetId) {
+    // Direkte ID-Suche
+    let target = document.getElementById(targetId);
+    if (target) return target;
+    
+    // Fallback-Suchen für häufige Variationen
+    const alternatives = getAlternativeIds(targetId);
+    
+    for (const altId of alternatives) {
+        target = document.getElementById(altId);
+        if (target) {
+            console.log(`📍 Alternative gefunden: ${targetId} → ${altId}`);
+            return target;
+        }
+    }
+    
+    // Suche nach data-section Attribut
+    target = document.querySelector(`[data-section="${targetId}"]`);
+    if (target) {
+        console.log(`📍 Data-section gefunden: ${targetId}`);
+        return target;
+    }
+    
+    return null;
+}
+
+function getAlternativeIds(originalId) {
+    const alternatives = [];
+    
+    switch(originalId) {
+        case 'was-ist-osteopathie':
+            // KEINE 'osteopathie' als Alternative - das ist der Hero!
+            alternatives.push('about-osteopathy', 'osteopathy', 'was-ist', 'definition', 'osteopathie-info');
+            break;
+        case 'anwendungsbereiche':
+            alternatives.push('anwendungen', 'applications', 'bereiche', 'treatment-areas', 'treatments');
+            break;
+        case 'behandlungen':
+            alternatives.push('treatments', 'therapy', 'therapie', 'services');
+            break;
+        case 'ueber-mich':
+            alternatives.push('about', 'about-me', 'über-mich', 'profile');
+            break;
+        case 'home':
+            alternatives.push('hero', 'start', 'top', 'main');
+            break;
+    }
+    
+    return alternatives;
+}
+
+function tryAlternativeScrollTargets(targetId, offset) {
+    // Versuche basierend auf Text-Content zu finden
+    const keywords = getKeywordsForSection(targetId);
+    
+    for (const keyword of keywords) {
+        const sections = document.querySelectorAll('section, div, article');
+        for (const section of sections) {
+            const text = section.textContent.toLowerCase();
+            if (text.includes(keyword.toLowerCase()) && section.offsetHeight > 100) {
+                console.log(`📍 Text-basierte Alternative gefunden für ${targetId}: ${keyword}`);
+                const targetPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                // Auch hier verbesserten Smooth Scroll verwenden
+                if ('scrollBehavior' in document.documentElement.style) {
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    smoothScrollTo(targetPosition, 800);
+                }
+                
+                highlightTargetSection(section);
+                return;
+            }
+        }
+    }
+    
+    console.warn(`❌ Keine Alternative für ${targetId} gefunden`);
+}
+
+// Fallback Smooth Scroll für ältere Browser
+function smoothScrollTo(targetY, duration) {
+    const startY = window.pageYOffset;
+    const difference = targetY - startY;
+    const startTime = performance.now();
+    
+    function step(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Smooth easing function
+        const ease = easeInOutCubic(progress);
+        
+        window.scrollTo(0, startY + (difference * ease));
+        
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        }
+    }
+    
+    requestAnimationFrame(step);
+}
+
+// Easing function für smooth animation
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+}
+
+// Visual Feedback: Section kurz highlighten
+function highlightTargetSection(target) {
+    // Füge temporäre highlight Klasse hinzu
+    target.style.transition = 'box-shadow 0.3s ease';
+    target.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.3)';
+    
+    // Nach 1 Sekunde wieder entfernen
+    setTimeout(() => {
+        target.style.boxShadow = '';
+        setTimeout(() => {
+            target.style.transition = '';
+        }, 300);
+    }, 1000);
+}
+
+function getKeywordsForSection(sectionId) {
+    const keywordMap = {
+        'was-ist-osteopathie': ['was ist osteopathie', 'definition osteopathie', 'grundlagen osteopathie', 'osteopathie definition'],
+        'anwendungsbereiche': ['anwendungsbereiche', 'anwendungen', 'bereiche', 'indikationen'],
+        'behandlungen': ['behandlungen', 'therapie', 'behandlung', 'methoden'],
+        'ueber-mich': ['über mich', 'praxis', 'therapeut', 'qualifikation'],
+        'faq': ['faq', 'häufige fragen', 'fragen', 'antworten']
+    };
+    
+    return keywordMap[sectionId] || [sectionId];
+}
+
 function generateCenteredNavigationHTML() {
-    // Intelligente Pfad-Erkennung
+    // KORRIGIERTE Pfad-Erkennung - nur Links angepasst für Cross-Page Navigation
     const currentPath = window.location.pathname;
     const isInBlog = currentPath.includes("/blog/");
     const isInBlogPost = currentPath.includes("/blog/posts/");
@@ -51,20 +353,21 @@ function generateCenteredNavigationHTML() {
         blogUrl = "blog/";
     }
     
+    // WICHTIG: Alle Section-Links führen explizit zu index.html#section
     return `
         <nav class="centered-navigation">
-            <div class="nav-container">
-                <!-- LINKE NAVIGATION -->
-                <div class="nav-section nav-left">
-                    <a href="${baseUrl}#home" class="nav-link" data-text="Home">Home</a>
-                    <a href="${baseUrl}#was-ist-osteopathie" class="nav-link" data-text="Osteopathie">Osteopathie</a>
-                    <a href="${baseUrl}#behandlungen" class="nav-link" data-text="Behandlungen">Behandlungen</a>
-                    <a href="${baseUrl}#anwendungsbereiche" class="nav-link" data-text="Anwendungen">Anwendungen</a>
-                </div>
+        <div class="nav-container">
+            <!-- LINKE NAVIGATION -->
+            <div class="nav-section nav-left">
+                <a href="${baseUrl}index.html#home" class="nav-link" data-text="Home">Home</a>
+                <a href="${baseUrl}index.html#was-ist-osteopathie" class="nav-link" data-text="Osteopathie">Osteopathie</a>
+                <a href="${baseUrl}index.html#behandlungen" class="nav-link" data-text="Behandlungen">Behandlungen</a>
+                <a href="${baseUrl}index.html#anwendungsbereiche" class="nav-link" data-text="Anwendungen">Anwendungen</a>
+            </div>
                 
                 <!-- ZENTRIERTES LOGO -->
                 <div class="logo-center">
-                    <a href="${baseUrl}" class="brand-logo">
+                    <a href="${baseUrl}index.html" class="brand-logo">
                         <img src="${baseUrl}blog/assets/images/logo.webp" alt="Osteopathie Alsen Logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span class="logo-text-fallback" style="display: none;">OSTEOPATHIE ALSEN</span>
                     </a>
@@ -72,9 +375,9 @@ function generateCenteredNavigationHTML() {
                 
                 <!-- RECHTE NAVIGATION -->
                 <div class="nav-section nav-right">
-                    <a href="${baseUrl}#ueber-mich" class="nav-link" data-text="Über mich">Über mich</a>
-                    <a href="${baseUrl}#faq" class="nav-link" data-text="FAQ">FAQ</a>
-                    <a href="${baseUrl}${blogUrl}" class="nav-link" data-text="Blog">Blog</a>
+                    <a href="${baseUrl}index.html#ueber-mich" class="nav-link" data-text="Über mich">Über mich</a>
+                    <a href="${baseUrl}index.html#faq" class="nav-link" data-text="FAQ">FAQ</a>
+                    <a href="${baseUrl}${blogUrl}index.html" class="nav-link" data-text="Blog">Blog</a>
                     <a href="${baseUrl}terminbuchung.html" class="cta-link">
                         <span class="cta-icon">📅</span>
                         <span>Termin buchen</span>
@@ -89,20 +392,20 @@ function generateCenteredNavigationHTML() {
                 </button>
                 
                 <!-- MOBILE MENU -->
-                <div class="mobile-menu" id="mobileMenu">
-                    <div class="mobile-menu-content">
-                        <a href="${baseUrl}#home" class="mobile-nav-link">Home</a>
-                        <a href="${baseUrl}#was-ist-osteopathie" class="mobile-nav-link">Osteopathie</a>
-                        <a href="${baseUrl}#behandlungen" class="mobile-nav-link">Behandlungen</a>
-                        <a href="${baseUrl}#anwendungsbereiche" class="mobile-nav-link">Anwendungen</a>
-                        <a href="${baseUrl}#ueber-mich" class="mobile-nav-link">Über mich</a>
-                        <a href="${baseUrl}#faq" class="mobile-nav-link">FAQ</a>
-                        <a href="${baseUrl}${blogUrl}" class="mobile-nav-link">Blog</a>
-                        <a href="${baseUrl}terminbuchung.html" class="mobile-cta-link">
-                            📅 Termin buchen
-                        </a>
-                    </div>
-                </div>
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <a href="${baseUrl}index.html#home" class="mobile-nav-link">Home</a>
+        <a href="${baseUrl}index.html#was-ist-osteopathie" class="mobile-nav-link">Was ist Osteopathie?</a>
+        <a href="${baseUrl}index.html#behandlungen" class="mobile-nav-link">Behandlungen</a>
+        <a href="${baseUrl}index.html#anwendungsbereiche" class="mobile-nav-link">Anwendungsbereiche</a>
+        <a href="${baseUrl}index.html#ueber-mich" class="mobile-nav-link">Über mich</a>
+        <a href="${baseUrl}index.html#faq" class="mobile-nav-link">FAQ</a>
+        <a href="${baseUrl}${blogUrl}index.html" class="mobile-nav-link">Blog</a>
+        <a href="${baseUrl}terminbuchung.html" class="mobile-cta-link">
+            📅 Termin buchen
+        </a>
+    </div>
+</div>
             </div>
         </nav>
     `;
@@ -186,26 +489,6 @@ function markActiveLink() {
 // PREMIUM CSS für zentrierte Navigation
 function injectCenteredNavigationCSS() {
     const centeredCSS = `
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
            ZENTRIERTE PREMIUM NAVIGATION
         ==================================== */
@@ -219,11 +502,22 @@ function injectCenteredNavigationCSS() {
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
             backdrop-filter: blur(10px);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(0); /* Startet sichtbar */
         }
         
         .header.scrolled {
             background: rgba(45, 55, 72, 0.95);
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* HEADER VERSTECKEN BEIM RUNTERSCROLLEN */
+        .header.hidden {
+            transform: translateY(-100%); /* Scrollt nach oben aus dem Bild */
+        }
+        
+        /* HEADER ZEIGEN BEIM HOCHSCROLLEN */
+        .header.visible {
+            transform: translateY(0); /* Scrollt wieder ins Bild */
         }
         
         .centered-navigation {
@@ -233,50 +527,48 @@ function injectCenteredNavigationCSS() {
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 1rem;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
+            padding: 0 1.5rem; /* Reduziertes Container-Padding */
+            display: flex;
             align-items: center;
             height: 80px;
-            gap: 1rem;
+            position: relative;
         }
         
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
-           NAVIGATION SECTIONS
+           NAVIGATION SECTIONS - EINFACH SICHTBAR
         ==================================== */
         
         .nav-section {
             display: flex;
             align-items: center;
-            gap: 1rem;
+        }
+        .logo-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
+        /* Navigation Sections nehmen verfügbaren Platz - EINFACH */
         .nav-left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
             justify-content: flex-end;
+            padding-right: 2rem;
         }
         
         .nav-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
             justify-content: flex-start;
+            padding-left: 2rem;
         }
         
         .nav-link {
@@ -284,8 +576,8 @@ function injectCenteredNavigationCSS() {
             text-decoration: none;
             font-family: "Instrument Sans", sans-serif;
             font-weight: 500;
-            font-size: 0.95rem;
-            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem; /* Kleinere Schrift */
+            padding: 0.8rem 0.5rem; /* Kompaktere Links */
             border-radius: 8px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
@@ -330,31 +622,16 @@ function injectCenteredNavigationCSS() {
             box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
         }
         
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
            ZENTRIERTES LOGO
         ==================================== */
         
+        /* PERFEKTE LOGO-ZENTRIERUNG */
         .logo-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -423,26 +700,6 @@ function injectCenteredNavigationCSS() {
             text-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
         }
         
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
            CTA BUTTON
         ==================================== */
@@ -455,8 +712,8 @@ function injectCenteredNavigationCSS() {
             text-decoration: none;
             font-family: "Epilogue", sans-serif;
             font-weight: 600;
-            font-size: 0.9rem;
-            padding: 0.85rem 1.5rem;
+            font-size: 0.85rem; /* Kleinere Schrift */
+            padding: 0.75rem 1rem; /* Kompakterer CTA */
             border-radius: 12px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
@@ -496,26 +753,6 @@ function injectCenteredNavigationCSS() {
             font-size: 1rem;
         }
         
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
            MOBILE NAVIGATION
         ==================================== */
@@ -624,71 +861,66 @@ function injectCenteredNavigationCSS() {
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
         }
         
-        
-        /* Layout-optimierte Navigation */
-        .nav-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 2rem !important;
-        }
-        
-        /* Responsive Container */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem !important;
-            }
-        }
-        
-        /* Entferne mögliche Sidebar-Navigation */
-        .nav-sidebar,
-        .sidebar-nav {
-            display: none !important;
-        }
         /* ====================================
            RESPONSIVE BREAKPOINTS
         ==================================== */
         
-        /* Large Desktop */
+        /* Large Desktop - Optimiert für große Bildschirme */
         @media (min-width: 1400px) {
             .nav-container {
                 max-width: 1600px;
+                padding: 0 2rem; /* Mehr Platz bei großen Bildschirmen */
             }
             
-            .logo-text {
-                font-size: 2rem;
+            .nav-left {
+                gap: 1.8rem;
+                padding-right: 2rem;
+                margin-right: 180px; /* Mehr Logo-Platz */
+            }
+            
+            .nav-right {
+                gap: 1.8rem;
+                padding-left: 2rem;
+                margin-left: 180px; /* Mehr Logo-Platz */
             }
         }
         
-        /* Tablet */
+        /* Tablet - Ultra-kompakt */
         @media (max-width: 1024px) {
             .nav-container {
-                padding: 0 1rem;
-                gap: 0.5rem;
+                padding: 0 0.5rem; /* Minimales Container-Padding */
+            }
+            
+            .nav-left {
+                gap: 0.6rem;
+                padding-right: 0.3rem;
+                margin-right: 140px; /* Angepasst für Tablet */
+            }
+            
+            .nav-right {
+                gap: 0.6rem;
+                padding-left: 0.3rem;
+                margin-left: 140px; /* Angepasst für Tablet */
             }
             
             .nav-link {
-                padding: 0.7rem 0.8rem;
-                font-size: 0.85rem;
-            }
-            
-            .logo-text {
-                font-size: clamp(1rem, 2.2vw, 1.4rem);
-                letter-spacing: 0.12em;
+                padding: 0.6rem 0.4rem; /* Sehr kompakte Links */
+                font-size: 0.8rem;
             }
             
             .cta-link {
-                padding: 0.8rem 1rem;
-                font-size: 0.8rem;
+                padding: 0.7rem 0.6rem; /* Sehr kompakter CTA */
+                font-size: 0.75rem;
             }
         }
         
-        /* Mobile */
+        /* Mobile - Logo links, Hamburger rechts */
         @media (max-width: 768px) {
             .nav-container {
-                grid-template-columns: 1fr auto auto;
+                display: flex;
+                justify-content: space-between;
                 height: 70px;
                 padding: 0 0.75rem;
-                gap: 0.5rem;
             }
             
             .nav-section {
@@ -696,7 +928,8 @@ function injectCenteredNavigationCSS() {
             }
             
             .logo-center {
-                order: -1;
+                position: static;
+                transform: none;
                 flex: 1;
                 justify-content: flex-start;
             }
@@ -759,9 +992,26 @@ function injectCenteredNavigationCSS() {
             }
         }
         
-        /* Smooth Scroll */
+        /* Smooth Scroll - VERBESSERT */
         html {
             scroll-behavior: smooth;
+        }
+        
+        /* Smooth Scroll für alle Elemente aktivieren */
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        /* Scroll-Padding für bessere Anchor-Positionierung */
+        html {
+            scroll-padding-top: 100px; /* Berücksichtigt Header-Höhe */
+        }
+        
+        /* Für noch smoothere Scrolls in modernen Browsern */
+        @supports (scroll-behavior: smooth) {
+            html {
+                scroll-behavior: smooth;
+            }
         }
         
         /* Performance Optimierungen */
@@ -773,19 +1023,39 @@ function injectCenteredNavigationCSS() {
             will-change: transform;
         }
         
-        /* Focus States für Accessibility */
+        /* Focus States für Accessibility - KEIN WEISSER RAND */
         .nav-link:focus,
         .cta-link:focus,
         .brand-logo:focus,
         .mobile-nav-link:focus,
         .mobile-cta-link:focus {
-            outline: 3px solid rgba(255, 255, 255, 0.6);
-            outline-offset: 2px;
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3) !important;
         }
         
         .mobile-toggle:focus {
-            outline: 2px solid rgba(255, 255, 255, 0.6);
-            outline-offset: 2px;
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3) !important;
+        }
+        
+        /* Entfernt alle Standard-Outline Effekte */
+        .nav-link,
+        .cta-link,
+        .brand-logo,
+        .mobile-nav-link,
+        .mobile-cta-link,
+        .mobile-toggle {
+            outline: none !important;
+        }
+        
+        .nav-link:active,
+        .cta-link:active,
+        .brand-logo:active,
+        .mobile-nav-link:active,
+        .mobile-cta-link:active,
+        .mobile-toggle:active {
+            outline: none !important;
+            box-shadow: none !important;
         }
     `;
     
@@ -804,56 +1074,68 @@ function injectCenteredNavigationCSS() {
 // CSS sofort laden
 injectCenteredNavigationCSS();
 
-// Scroll-Effekt
+// Erweiterte Scroll-Funktionalität für Auto-Hide Header
 let scrollTimeout;
+let lastScrollY = 0;
+let ticking = false;
+
 window.addEventListener("scroll", function() {
-    const header = document.querySelector(".header");
-    if (header) {
-        clearTimeout(scrollTimeout);
-        
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-        
-        scrollTimeout = setTimeout(() => {
-            // Performance optimization
-        }, 10);
-    }
+    lastScrollY = window.scrollY;
+    requestTick();
 });
 
-// Debug
+function requestTick() {
+    if (!ticking) {
+        requestAnimationFrame(updateHeader);
+        ticking = true;
+    }
+}
+
+function updateHeader() {
+    const header = document.querySelector(".header");
+    if (!header) {
+        ticking = false;
+        return;
+    }
+    
+    const currentScrollY = lastScrollY;
+    const scrollDelta = currentScrollY - (window.previousScrollY || 0);
+    
+    // Header-Status basierend auf Scroll-Richtung und Position
+    if (currentScrollY <= 50) {
+        // Oben auf der Seite - Header immer sichtbar
+        header.classList.remove("hidden", "scrolled");
+        header.classList.add("visible");
+    } else if (currentScrollY > 50) {
+        // Nicht mehr ganz oben - "scrolled" Stil aktivieren
+        header.classList.add("scrolled");
+        
+        if (scrollDelta > 5) {
+            // Runterscrollen - Header verstecken
+            header.classList.remove("visible");
+            header.classList.add("hidden");
+        } else if (scrollDelta < -5) {
+            // Hochscrollen - Header zeigen
+            header.classList.remove("hidden");
+            header.classList.add("visible");
+        }
+    }
+    
+    // Scroll-Position für nächste Iteration speichern
+    window.previousScrollY = currentScrollY;
+    ticking = false;
+}
+
+// Initialisierung
+document.addEventListener("DOMContentLoaded", function() {
+    window.previousScrollY = window.scrollY;
+});
+
+// Debug Logging
 console.log("🎯 Zentrierte Navigation geladen");
 console.log("📱 Mobile-responsive aktiv");
 console.log("✨ Premium Animationen aktiviert");
-// === SIDEBAR KILLER - Hinzugefügt durch PHP Script ===
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("🔥 Sidebar Killer aktiviert in shared-header.js");
-    
-    // Sofortige Sidebar-Elimination
-    setTimeout(function() {
-        const sidebarElements = document.querySelectorAll(
-  ".sidebar:not(.legitimate):not([data-sidebar-killer-ignore]), " +
-  ".side-nav:not(.legitimate):not([data-sidebar-killer-ignore]), " +
-  "aside:not(.legitimate):not([data-sidebar-killer-ignore])"
-);
-// Schütze spezifische Elemente vor Löschung
-const protectedElements = document.querySelectorAll('[data-sidebar-killer-ignore], .legitimate, .newsletter-form, .author-card, .toc-list');
-protectedElements.forEach(el => {
-    el.setAttribute('data-protected', 'true');
-});
-        sidebarElements.forEach(el => {
-            if (!el.closest("header") && !el.closest(".centered-navigation")) {
-                el.remove();
-                console.log("🗑️ Sidebar entfernt:", el);
-            }
-        });
-    }, 2000);
-    
-    // Layout korrigieren
-    document.body.style.overflowX = "hidden";
-    
-    // Container optimieren
-   // Container-Optimierung entfernt, damit Grid und Layout erhalten bleiben
-});
+console.log("🔍 Erweiterte Link-Suche aktiviert");
+console.log("🔄 Cross-Page Navigation aktiviert");
+console.log("📜 Auto-Hide Header aktiviert");
+console.log("🚫 Sidebar Killer DEAKTIVIERT - Blog-freundlich");
