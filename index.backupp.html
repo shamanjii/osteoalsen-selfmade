@@ -29,36 +29,6 @@
       img, video { max-width: 100% !important; height: auto !important; }
       .sticky-cta-btn { font-size: 0.95rem !important; padding: 0.6rem 1rem !important; }
       .sticky-cta-content { gap: .75rem !important; }
-
-      /* Volle Breite für Container und Grid-Layouts auf kleinen Bildschirmen */
-      .container { max-width: 100% !important; width: 100% !important; }
-      section > .container { max-width: 100% !important; width: 100% !important; }
-
-      /* Alle flex-Layouts stapeln und Zwischenräume reduzieren */
-      [style*="display: flex"][style*="gap"] {
-        flex-direction: column !important;
-        gap: 1.5rem !important;
-      }
-
-      /* Verhindert, dass fixe Flexbreiten (z. B. 0 0 300px) die Breite einschränken */
-      [style*="flex: 0 0"] {
-        flex: 1 0 100% !important;
-        max-width: 100% !important;
-      }
-
-      /* Profil‑ und Dozentenfotos in neuen Abschnitten zentrieren */
-      #profil-intro img, #dozent-photo img {
-        max-width: 320px !important;
-        width: 80% !important;
-      }
-
-      /* Sticky‑CTA breiter zentrieren statt rechts unten */
-      .sticky-cta {
-        right: 50% !important;
-        transform: translateX(50%) !important;
-        left: auto !important;
-        width: auto !important;
-      }
     }
   </style>
 
@@ -1363,15 +1333,6 @@ section .container {
 </section>
 
 <!-- Joshua Alsen Vorstellung Section -->
-<!-- Profilbild und Namensvorstellung: erscheint direkt nach der Hero‑Section -->
-<section id="profil-intro" class="bg-light" style="padding: 40px 0; text-align: center;">
-  <div class="container">
-    <p style="font-family: 'Instrument Sans', sans-serif; font-size: 1rem; color: #666; margin-bottom: 0.5rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">
-      Mein Name ist Joshua&nbsp;Alsen
-    </p>
-    <img src="assets/joshua-alsen-profil.jpg" alt="Profilfoto Joshua Alsen" style="max-width: 360px; width: 80%; height: auto; border-radius: 12px; margin: 0 auto; display: block;">
-  </div>
-</section>
 <section style="padding: 80px 0; background: #ffffff;">
     <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
@@ -2152,13 +2113,6 @@ function toggleFAQ(i){
     </div>
 </section>
 
-<!-- Dozent‑Foto Section: Dieses Bild zeigt Joshua Alsen als Dozent und wird oberhalb des Abschnitts "Über mich" dargestellt -->
-<section id="dozent-photo" class="bg-white" style="padding: 40px 0; text-align: center;">
-  <div class="container">
-    <img src="assets/joshua-alsen-dozent.jpeg" alt="Joshua Alsen als Dozent" style="max-width: 360px; width: 80%; height: auto; border-radius: 12px; margin: 0 auto; display: block;">
-  </div>
-</section>
-
 <style>
 /* ========================================
    PATIENTENSTIMMEN STYLES - NAMESPACE ISOLIERT
@@ -2629,6 +2583,13 @@ function toggleFAQ(i){
         <!-- Profile Section -->
         <div style="max-width: 1000px; margin: 0 auto;">
             <div style="display: flex; gap: 4rem; align-items: flex-start; margin-bottom: 4rem; flex-wrap: wrap;">
+                <!-- Profile Image - jetzt höher positioniert -->
+                <div style="flex: 0 0 300px; text-align: center; align-self: flex-start; margin-top: -2rem;">
+                    <img src="assets/joshua-alsen-dozent.jpeg" 
+                         alt="Joshua Alsen - Osteopath in Hamburg" 
+                         style="width: 100%; height: 400px; border-radius: 8px; object-fit: cover; margin-bottom: 1rem; display: block;" loading="lazy" decoding="async">
+                </div>
+                
                 <!-- Profile Text -->
                 <div style="flex: 1; min-width: 300px;">
                     <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 1.5rem; font-weight: 400;">
