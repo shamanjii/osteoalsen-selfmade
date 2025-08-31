@@ -1083,6 +1083,395 @@
 
   </style>
 
+  <style>
+/* ========================================
+   MOBILE-ONLY OPTIMIERUNGEN
+   (Desktop bleibt unberührt)
+   ======================================== */
+
+@media (max-width: 640px) {
+    
+    /* =============================================
+       1. HERO SECTION - VOLLSCREEN & PROPORTIONEN
+       ============================================= */
+    
+    .hero {
+        min-height: calc(100vh - 80px) !important; /* Vollbildschirm minus Header */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 80px 16px 40px !important; /* Mehr Padding oben für Header */
+        margin-top: 0 !important; /* Entferne margin-top */
+    }
+    
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100% !important;
+    }
+    
+   @media (max-width: 640px) {
+    /* Hero Section Fix */
+    .hero h1 {
+        font-family: 'Epilogue', sans-serif !important;
+        font-size: clamp(2.8rem, 5vw, 4rem) !important;
+        font-weight: 300 !important;
+        letter-spacing: -0.02em !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
+        color: #1a202c !important;
+    }
+    
+    .hero-subtitle {
+        font-family: 'Instrument Sans', sans-serif !important;
+        font-size: clamp(1.2rem, 3vw, 1.4rem) !important;
+        margin-bottom: 2.5rem !important;
+        color: #4a5568 !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.01em !important;
+    }
+    
+    .hero-description {
+        font-family: 'Instrument Sans', sans-serif !important;
+        font-size: 1.1rem !important;
+        margin-bottom: 3rem !important;
+        color: #666 !important;
+        line-height: 1.7 !important;
+    }
+}
+    
+    /* =============================================
+       2. "WAS IST OSTEOPATHIE" SEKTION - BILD/TEXT BALANCE
+       ============================================= */
+    
+    /* Profilfoto in der mobilen "Was ist Osteopathie" Sektion optimieren */
+    section:nth-of-type(3) {
+        padding: 60px 0 !important;
+    }
+    
+    section:nth-of-type(3) .container > div {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    /* Bild kleiner machen */
+    section:nth-of-type(3) .desktop-only {
+        width: 200px !important;
+        height: 250px !important;
+        margin: 0 auto !important;
+        order: -1 !important; /* Bild nach oben */
+        border-radius: 12px !important;
+        overflow: hidden !important;
+    }
+    
+    section:nth-of-type(3) .desktop-only img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    /* Text optimieren */
+    section:nth-of-type(3) div:first-child {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    section:nth-of-type(3) h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
+        margin-bottom: 1.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    section:nth-of-type(3) p {
+        font-size: clamp(1rem, 4vw, 1.1rem) !important;
+        line-height: 1.7 !important;
+        margin-bottom: 1.5rem !important;
+        text-align: left !important;
+    }
+    
+    /* Vorteile Icons kompakter machen */
+    section:nth-of-type(3) div:last-child > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        margin-top: 2rem !important;
+        max-width: 320px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    section:nth-of-type(3) div:last-child > div:last-child > div {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.75rem !important;
+        text-align: left !important;
+        padding: 0.5rem !important;
+        background: rgba(26, 32, 44, 0.05) !important;
+        border-radius: 8px !important;
+    }
+    
+    section:nth-of-type(3) div:last-child > div:last-child > div > div:first-child {
+        width: 28px !important;
+        height: 28px !important;
+        flex-shrink: 0 !important;
+    }
+    
+    section:nth-of-type(3) div:last-child > div:last-child > div > span {
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* =============================================
+       3. BEHANDLUNGSARTEN SEKTION - KOMPAKTER
+       ============================================= */
+    
+    /* Behandlungsarten Header kompakter */
+    .treatments-grid {
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+    
+    .treatment-card {
+        padding: 1.8rem !important;
+        border-radius: 12px !important;
+    }
+    
+    .treatment-header {
+        flex-direction: row !important;
+        text-align: left !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    .treatment-number {
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .treatment-card h3 {
+        font-size: 1.2rem !important;
+        margin: 0 !important;
+        line-height: 1.3 !important;
+    }
+    
+    .treatment-card p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        margin: 0 0 1rem 0 !important;
+    }
+    
+    /* Behandlungsvorteile kompakter */
+    .treatment-benefits {
+        margin-top: 1rem !important;
+        padding-top: 1rem !important;
+    }
+    
+    .benefit-item {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.6rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    /* Integration Notice kompakter */
+    .integration-notice {
+        padding: 1.8rem !important;
+        margin-top: 2.5rem !important;
+        text-align: center !important;
+    }
+    
+    .integration-notice h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .integration-notice p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* =============================================
+       4. ANWENDUNGSBEREICHE - KOMPAKTER LAYOUT
+       ============================================= */
+    
+    #anwendungen .container > div:first-child {
+        margin-bottom: 3rem !important;
+    }
+    
+    #anwendungen .container > div:first-child h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
+        margin-bottom: 1.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    #anwendungen .container > div:first-child p {
+        font-size: clamp(1rem, 4vw, 1.1rem) !important;
+        line-height: 1.6 !important;
+        max-width: 95% !important;
+    }
+    
+    /* Application Cards kompakter */
+    .applications-grid {
+        gap: 1.2rem !important;
+    }
+    
+    .application-card {
+        padding: 1.5rem !important;
+        border-radius: 10px !important;
+    }
+    
+    .application-card h3 {
+        font-size: 1.1rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .application-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+    }
+    
+    /* =============================================
+       5. ALLGEMEINE VERBESSERUNGEN
+       ============================================= */
+    
+    /* Section Titles einheitlich */
+    .section-title {
+        font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
+        margin-bottom: 2rem !important;
+        line-height: 1.2 !important;
+        padding: 0 16px !important;
+    }
+    
+    /* Container Padding einheitlich */
+    section .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Section Spacing */
+    section {
+        padding: 50px 0 !important;
+    }
+    
+    /* Buttons optimieren */
+    .cta-button,
+    .cta-button-secondary {
+        width: 100% !important;
+        max-width: 280px !important;
+        padding: 14px 20px !important;
+        font-size: 15px !important;
+        text-align: center !important;
+        border-radius: 8px !important;
+    }
+    
+    .hero-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+    
+    /* =============================================
+       6. SCROLL VERHALTEN
+       ============================================= */
+    
+    html {
+        scroll-behavior: smooth !important;
+        scroll-padding-top: 100px !important;
+    }
+    
+    section {
+        scroll-margin-top: 100px !important;
+    }
+    
+    /* Body Padding für Header */
+    body {
+        padding-top: 80px !important;
+    }
+}
+
+/* =============================================
+   7. SEHR KLEINE BILDSCHIRME (unter 480px)
+   ============================================= */
+
+@media (max-width: 480px) {
+    
+    .hero {
+        padding: 60px 12px 30px !important;
+    }
+    
+    .hero h1 {
+        font-size: clamp(2rem, 7vw, 2.4rem) !important;
+    }
+    
+    .hero-description {
+        max-width: 95% !important;
+        font-size: 1rem !important;
+    }
+    
+    .section-title {
+        font-size: clamp(1.6rem, 5.5vw, 1.9rem) !important;
+        padding: 0 12px !important;
+    }
+    
+    section .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .treatment-card,
+    .application-card {
+        padding: 1.3rem !important;
+    }
+    
+    section:nth-of-type(3) .desktop-only {
+        width: 160px !important;
+        height: 200px !important;
+    }
+    
+    section:nth-of-type(3) div:last-child > div:last-child {
+        max-width: 280px !important;
+    }
+    
+    section:nth-of-type(3) div:last-child > div:last-child > div > span {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* =============================================
+   8. DEBUGGING HILFE (Optional - kann entfernt werden)
+   ============================================= */
+
+@media (max-width: 640px) {
+    /* Temporäre Debugging-Hilfe - auskommentieren um zu sehen ob CSS greift */
+    /*
+    .hero {
+        border: 2px solid red !important;
+    }
+    
+    section:nth-of-type(3) {
+        border: 2px solid blue !important;
+    }
+    */
+}
+</style>
+
 
 <!-- SAFE MOBILE/PERF CSS (non-breaking) -->
   <style id="mobile-safe-additions">
