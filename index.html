@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
 
-  
+  <!-- SAFE MOBILE V3 (typography/layout only on small screens) -->
   <!-- OPTIMIERTE MOBILE STYLES -->
   <style id="mobile-optimized">
     /* ========================================
-       MOBILE FIRST OPTIMIERUNG
+       MOBILE FIRST OPTIMIERUNG - KONSOLIDIERT
        ======================================== */
     
     /* BASE RESPONSIVE FOUNDATION */
@@ -47,35 +47,6 @@
             padding-right: 20px !important;
         }
         
-        /* TYPOGRAPHY SCALE */
-        h1 {
-            font-size: clamp(2.2rem, 8vw, 2.8rem) !important;
-            font-weight: 300 !important;
-            letter-spacing: -0.02em !important;
-            line-height: 1.2 !important;
-            margin-bottom: 1rem !important;
-        }
-        
-        h2,
-        .section-title {
-            font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
-            line-height: 1.25 !important;
-            margin-bottom: 2rem !important;
-            padding: 0 !important;
-            text-align: center !important;
-        }
-        
-        h3 {
-            font-size: clamp(1.4rem, 4.8vw, 1.6rem) !important;
-            line-height: 1.3 !important;
-        }
-        
-        p,
-        li {
-            font-size: clamp(1rem, 4.2vw, 1.1rem) !important;
-            line-height: 1.7 !important;
-        }
-        
         /* HERO SECTION */
         .hero {
             min-height: calc(100vh - 80px) !important;
@@ -94,6 +65,14 @@
             flex-direction: column !important;
             justify-content: center !important;
             align-items: center !important;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.2rem, 8vw, 2.8rem) !important;
+            font-weight: 300 !important;
+            letter-spacing: -0.02em !important;
+            line-height: 1.2 !important;
+            margin-bottom: 1rem !important;
         }
         
         .hero-subtitle {
@@ -132,6 +111,27 @@
             justify-content: center !important;
         }
         
+        /* TYPOGRAPHY */
+        h2,
+        .section-title {
+            font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
+            line-height: 1.25 !important;
+            margin-bottom: 2rem !important;
+            padding: 0 !important;
+            text-align: center !important;
+        }
+        
+        h3 {
+            font-size: clamp(1.4rem, 4.8vw, 1.6rem) !important;
+            line-height: 1.3 !important;
+        }
+        
+        p,
+        li {
+            font-size: clamp(1rem, 4.2vw, 1.1rem) !important;
+            line-height: 1.7 !important;
+        }
+        
         /* GRIDS */
         .applications-grid,
         .benefits-grid,
@@ -149,7 +149,7 @@
             margin-bottom: 1rem !important;
         }
         
-        /* TREATMENT CARDS */
+        /* TREATMENT CARDS LAYOUT */
         .treatment-header {
             flex-direction: row !important;
             text-align: left !important;
@@ -172,7 +172,7 @@
             scroll-margin-top: 100px !important;
         }
         
-        /* PROFILFOTO SECTION (Was ist Osteopathie) */
+        /* WAS IST OSTEOPATHIE SECTION */
         section:nth-of-type(3) {
             padding: 60px 0 !important;
         }
@@ -201,9 +201,17 @@
             object-fit: cover !important;
         }
         
-        /* MOBILE PROFIL INTRO */
+        /* MOBILE VISIBILITY */
         #profil-intro,
         #dozent-photo {
+            display: block !important;
+        }
+        
+        .desktop-only {
+            display: none !important;
+        }
+        
+        .mobile-only {
             display: block !important;
         }
         
@@ -223,11 +231,11 @@
             padding: 2rem !important;
         }
         
-        /* FORMS */
+        /* FORM INPUTS - iOS ZOOM PREVENTION */
         input,
         textarea,
         select {
-            font-size: 16px !important; /* Verhindert Zoom auf iOS */
+            font-size: 16px !important;
         }
         
         /* FLOATING BOOKING */
@@ -241,14 +249,23 @@
             font-size: 0.9rem !important;
         }
         
-        /* NAVIGATION FIX */
-        .desktop-only {
-            display: none !important;
+        /* VFO SECTION */
+        .vfo-section > div {
+            flex-direction: column !important;
+            text-align: center !important;
+            gap: 2rem !important;
         }
         
-        /* VISIBILITY CONTROLS */
-        .mobile-only {
-            display: block !important;
+        .vfo-logo {
+            order: -1 !important;
+            max-width: 150px !important;
+            margin: 0 auto !important;
+        }
+        
+        /* QUALIFIKATIONEN GRID */
+        .qualitaet-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 1.5rem !important;
         }
     }
 
@@ -297,6 +314,12 @@
             height: 200px !important;
         }
         
+        /* QUALITAET GRID 1 SPALTE */
+        .qualitaet-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+        
         /* FLOATING BUTTON KLEINER */
         .floating-booking {
             bottom: 1rem !important;
@@ -307,10 +330,6 @@
             padding: 0.75rem 1rem !important;
             font-size: 0.85rem !important;
             gap: 0.5rem !important;
-        }
-        
-        .floating-booking-icon {
-            font-size: 1.1rem !important;
         }
     }
 
@@ -334,7 +353,7 @@
     }
 
     /* ========================================
-       SCROLL BEHAVIOR
+       SCROLL BEHAVIOR & FLOATING BUTTON
        ======================================== */
     html {
         scroll-padding-top: 100px !important;
@@ -346,9 +365,6 @@
         }
     }
 
-    /* ========================================
-       FLOATING BOOKING VISIBILITY
-       ======================================== */
     .floating-booking {
         opacity: 0;
         pointer-events: none;
@@ -360,31 +376,6 @@
         pointer-events: auto;
     }
   </style>
-
-  <link rel="preload" as="image" href="assets/joshua-alsen-profil.jpg">
-
-  <!-- SAFE SEO ADDITIONS (non-breaking) -->
-  <link rel="canonical" href="https://www.osteoalsen.de/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Osteopathie Hamburg – Joshua Alsen">
-  <meta property="og:description" content="Osteopathie in Hamburg-Rotherbaum &amp; Eimsbüttel. Behandlung 45–60 Min., 150 €. Kostenerstattung möglich.">
-  <meta property="og:url" content="https://www.osteoalsen.de/">
-  <meta property="og:image" content="https://www.osteoalsen.de/assets/hero.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osteopathie Hamburg - Joshua Alsen, Heilpraktiker & Osteopath in Hamburg Mitte. ✓ Krankenkassen-Erstattung ✓ VFO-zertifiziert ✓ Behandlung aller Altersgruppen ✓ Termin online buchen. Rappstraße 7, 20146 Hamburg.">
-    <meta name="keywords" content="Osteopathie Hamburg, Osteopath Hamburg Mitte, Joshua Alsen, Heilpraktiker Hamburg, Craniosacrale Osteopathie, Viszerale Osteopathie, Parietale Osteopathie, Kinderosteopathie, Rückenschmerzen Hamburg, Migräne Behandlung, VFO Osteopath, Krankenkassen Osteopathie">
-    <meta name="author" content="Joshua Alsen">
-    
-    <title>Osteopathie Alsen - Osteopathie Hamburg I Joshua Alsen</title>
-    
-    <!-- Google Fonts - Epilogue & Instrument Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    
     <style>
         * {
             margin: 0;
