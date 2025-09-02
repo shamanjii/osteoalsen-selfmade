@@ -2,85 +2,13 @@
 <html lang="de">
 <head>
 
-<!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS V23 - BURGER MENU FIX -->
-<style id="mobile-optimized-v23">
+<!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS V24 - NAVIGATION KONFLIKTE ENTFERNT -->
+<style id="mobile-optimized-v24">
 /* ========================================
-   MOBILE-FIRST RESPONSIVE OPTIMIERUNG V23
-   BURGER MENU FIX HINZUGEFÜGT
+   MOBILE-FIRST RESPONSIVE OPTIMIERUNG V24
+   ALLE NAVIGATION/MENU ANPASSUNGEN ENTFERNT
+   SHARED-HEADER.JS ÜBERNIMMT KOMPLETTE KONTROLLE
    ======================================== */
-
-/* KRITISCHER BURGER MENU FIX */
-@media (max-width: 768px) {
-  /* Mobile Menu standardmäßig versteckt */
-  .nav-menu {
-    position: fixed !important;
-    top: 70px !important;
-    left: -100% !important; /* WICHTIG: Menu ist standardmäßig versteckt */
-    width: 100% !important;
-    height: calc(100vh - 70px) !important;
-    background: #1a202c !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    gap: 2rem !important;
-    padding: 2rem 0 !important;
-    transition: left 0.3s ease !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
-    z-index: 999 !important;
-  }
-  
-  /* Menu nur sichtbar wenn .active Klasse gesetzt ist */
-  .nav-menu.active {
-    left: 0 !important;
-  }
-  
-  /* Mobile Menu Toggle Button sichtbar machen */
-  .mobile-menu-toggle {
-    display: block !important;
-    background: none !important;
-    border: none !important;
-    color: #ffffff !important;
-    font-size: 1.5rem !important;
-    cursor: pointer !important;
-    padding: 0.5rem !important;
-    min-height: 48px !important;
-    min-width: 48px !important;
-    z-index: 1001 !important;
-  }
-  
-  /* Hamburger Menu Icon */
-  .mobile-menu-toggle::before {
-    content: '☰' !important;
-  }
-  
-  /* X Icon wenn Menu offen */
-  .mobile-menu-toggle.active::before {
-    content: '✕' !important;
-  }
-  
-  /* Desktop Navigation auf Mobile verstecken */
-  .nav-menu:not(.mobile-menu-content) {
-    display: none !important;
-  }
-  
-  /* Menu Links Touch-optimiert */
-  .nav-menu a {
-    font-size: 1.1rem !important;
-    padding: 1rem 0 !important;
-    min-height: 48px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-  
-  .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.1) !important;
-  }
-}
 
 /* GLOBAL MOBILE SETTINGS */
 @media (max-width: 768px) {
@@ -1079,7 +1007,7 @@
   }
 }
 
-/* SCROLL & NAVIGATION FIXES */
+/* SCROLL & NAVIGATION FIXES - Nur Minimal, KEINE Menu-Eingriffe */
 @media (max-width: 768px) {
   html {
     scroll-behavior: smooth !important;
@@ -1092,23 +1020,7 @@
     z-index: 1 !important;
   }
   
-  /* Navigation Menu */
-  .nav-menu {
-    font-size: 1.1rem !important;
-  }
-  
-  .nav-menu a {
-    min-height: 48px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 1rem !important;
-  }
-  
-  /* Header compatibility */
-  .header {
-    z-index: 1000 !important;
-  }
+  /* WICHTIG: Keinerlei Navigation/Menu Styles hier - shared-header.js übernimmt */
 }
 
 /* ACCESSIBILITY & TOUCH TARGETS */
@@ -2229,38 +2141,27 @@ footer {
 }
         
         /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            body {
-                font-size: 1rem;
-            }
-            
-            .nav-menu {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background: #1a202c;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 2rem;
-                padding: 2rem 0;
-                transition: left 0.3s ease;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            }
-            
-            .nav-menu a {
-                font-size: 1.1rem;
-                padding: 1rem 0;
-                min-height: 44px;
-                display: flex;
-                align-items: center;
-            }
-            
-            .nav-menu.active {
-                left: 0;
-            }
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed !important;
+        top: 70px !important;
+        left: -100% !important;  /* Wichtig: initial außerhalb des Viewports */
+        width: 100% !important;
+        height: calc(100vh - 70px) !important;
+        background: #1a202c !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 2rem !important;
+        padding: 2rem 0 !important;
+        transition: left 0.3s ease !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    }
+    
+    .nav-menu.active {
+        left: 0 !important;  /* Nur wenn .active Klasse gesetzt */
+    }
+}
             
             .mobile-menu-toggle {
                 display: block;
@@ -2539,25 +2440,35 @@ section .container {
 }
 </style>
 <style>
-/* Mobile Menü auf Desktop ausblenden */
-.mobile-menu-content {
-  display: none !important;
+/* KORRIGIERTES MOBILES MENU */
+.mobile-menu,
+.mobile-menu-content { 
+    display: none; 
 }
+
 @media (max-width: 900px) {
-  .mobile-menu-content {
-    display: flex !important;
-  }
+    .mobile-menu.active { 
+        display: block; 
+    }
+    .mobile-menu.active .mobile-menu-content { 
+        display: flex; 
+    }
 }
-</style>
-<style>
-/* Mobile Menü-Overlay auf Desktop ausblenden */
-.mobile-menu {
-  display: none !important;
-}
-@media (max-width: 900px) {
-  .mobile-menu {
-    display: block !important;
-  }
+
+/* Navigation Menu Fix */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #1a202c;
+        transition: left 0.3s ease;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
 }
 </style>
 
@@ -5171,6 +5082,52 @@ function initReviewsSlider() {
 
 <!-- SHARED HEADER LADEN - WICHTIG! -->
 <script src="shared-header.js"></script>
+
+<!-- Mobile Menu Fix -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Stelle sicher, dass das Menü initial geschlossen ist
+    const navMenu = document.querySelector('.nav-menu');
+    if(navMenu) {
+        navMenu.classList.remove('active');
+    }
+    
+    // Toggle-Funktion für den Burger-Button
+    const burgerButton = document.querySelector('.mobile-menu-toggle');
+    if(burgerButton) {
+        burgerButton.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const burgerButton = document.querySelector('.mobile-menu-toggle');
+    
+    if(burgerButton) {
+        burgerButton.addEventListener('click', function() {
+            if(navMenu) navMenu.classList.toggle('active');
+            if(mobileMenu) mobileMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    }
+
+    // Close menu when clicking links
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            if(navMenu) navMenu.classList.remove('active');
+            if(mobileMenu) mobileMenu.classList.remove('active');
+            if(burgerButton) burgerButton.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </body>
 </html>
