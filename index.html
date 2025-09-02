@@ -2,12 +2,85 @@
 <html lang="de">
 <head>
 
- <!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS V21 - STRUKTURFEHLER KORRIGIERT -->
-<style id="mobile-optimized-v21">
+<!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS V23 - BURGER MENU FIX -->
+<style id="mobile-optimized-v23">
 /* ========================================
-   MOBILE-FIRST RESPONSIVE OPTIMIERUNG V21
-   ALLE PROBLEME KORRIGIERT + STRUKTURFEHLER BEHOBEN
+   MOBILE-FIRST RESPONSIVE OPTIMIERUNG V23
+   BURGER MENU FIX HINZUGEFÜGT
    ======================================== */
+
+/* KRITISCHER BURGER MENU FIX */
+@media (max-width: 768px) {
+  /* Mobile Menu standardmäßig versteckt */
+  .nav-menu {
+    position: fixed !important;
+    top: 70px !important;
+    left: -100% !important; /* WICHTIG: Menu ist standardmäßig versteckt */
+    width: 100% !important;
+    height: calc(100vh - 70px) !important;
+    background: #1a202c !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    padding: 2rem 0 !important;
+    transition: left 0.3s ease !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    z-index: 999 !important;
+  }
+  
+  /* Menu nur sichtbar wenn .active Klasse gesetzt ist */
+  .nav-menu.active {
+    left: 0 !important;
+  }
+  
+  /* Mobile Menu Toggle Button sichtbar machen */
+  .mobile-menu-toggle {
+    display: block !important;
+    background: none !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: 1.5rem !important;
+    cursor: pointer !important;
+    padding: 0.5rem !important;
+    min-height: 48px !important;
+    min-width: 48px !important;
+    z-index: 1001 !important;
+  }
+  
+  /* Hamburger Menu Icon */
+  .mobile-menu-toggle::before {
+    content: '☰' !important;
+  }
+  
+  /* X Icon wenn Menu offen */
+  .mobile-menu-toggle.active::before {
+    content: '✕' !important;
+  }
+  
+  /* Desktop Navigation auf Mobile verstecken */
+  .nav-menu:not(.mobile-menu-content) {
+    display: none !important;
+  }
+  
+  /* Menu Links Touch-optimiert */
+  .nav-menu a {
+    font-size: 1.1rem !important;
+    padding: 1rem 0 !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
 
 /* GLOBAL MOBILE SETTINGS */
 @media (max-width: 768px) {
