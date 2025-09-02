@@ -2,10 +2,11 @@
 <html lang="de">
 <head>
 
-  <!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS -->
-<style id="mobile-optimized-v4">
+ <!-- COMPREHENSIVE MOBILE-FIRST RESPONSIVE CSS V21 - STRUKTURFEHLER KORRIGIERT -->
+<style id="mobile-optimized-v21">
 /* ========================================
-   MOBILE-FIRST RESPONSIVE OPTIMIERUNG
+   MOBILE-FIRST RESPONSIVE OPTIMIERUNG V21
+   ALLE PROBLEME KORRIGIERT + STRUKTURFEHLER BEHOBEN
    ======================================== */
 
 /* GLOBAL MOBILE SETTINGS */
@@ -14,16 +15,19 @@
     max-width: 100%; 
     overflow-x: hidden; 
     font-size: 16px;
+    width: 100%;
   }
   
   body { 
     padding-top: 80px !important;
-    padding-bottom: 100px;
+    padding-bottom: 100px !important;
+    margin: 0 !important;
+    position: relative !important;
   }
   
   * {
-    max-width: 100%;
-    box-sizing: border-box;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 }
 
@@ -61,24 +65,35 @@
   }
 }
 
-/* CONTAINER & SPACING - Mobile First */
+/* CONTAINER & SPACING - Erweitert für bessere Lesbarkeit */
 @media (max-width: 768px) {
   .container, 
   main, 
   section {
-    padding-left: clamp(16px, 5vw, 24px) !important;
-    padding-right: clamp(16px, 5vw, 24px) !important;
+    padding-left: clamp(20px, 5vw, 30px) !important;
+    padding-right: clamp(20px, 5vw, 30px) !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: relative !important;
   }
   
-  /* Erste Section - Hero weniger Padding */
+  /* Mehr Platz für bessere Lesbarkeit */
+  .bg-light {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
+  /* Hero weniger gedrängt */
   .hero {
     padding-top: 2rem !important;
-    padding-bottom: 3rem !important;
+    padding-bottom: 4rem !important;
   }
 }
 
@@ -125,109 +140,179 @@
   }
 }
 
-/* JOSHUA ALSEN VORSTELLUNG SECTION */
+/* JOSHUA ALSEN VORSTELLUNG SECTION - Komplett überarbeitet */
 @media (max-width: 768px) {
-  /* Grid zu Single Column */
-  section[style*="grid-template-columns: 1fr 1fr"] > div > div:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2rem !important;
-    text-align: center !important;
+  /* Sicherstellen, dass das Profilfoto UNTER Hero und ÜBER "Was ist Osteopathie" erscheint */
+  section[style*="padding: 80px 0; background: #ffffff;"]:first-of-type {
+    order: -1 !important;
+    padding: 2rem 0 !important;
   }
   
-  /* Profilfoto zuerst anzeigen */
-  section[style*="grid-template-columns: 1fr 1fr"] > div > div:first-child > div:nth-child(2) {
+  /* Grid zu flexbox für bessere mobile Kontrolle */
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  
+  /* Profilfoto zuerst, größer und zentriert */
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child {
     order: -1 !important;
-    max-width: 280px !important;
+    max-width: 320px !important;
+    width: 100% !important;
     margin: 0 auto 2rem !important;
   }
   
-  section[style*="grid-template-columns: 1fr 1fr"] > div > div:first-child > div:nth-child(2) > div {
-    height: 350px !important;
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child > div {
+    height: 400px !important;
     border-radius: 12px !important;
+    overflow: hidden !important;
   }
   
-  /* Vorteile Icons vertikal */
-  section[style*="grid-template-columns: 1fr 1fr"] > div > div:first-child > div:first-child > div:last-child {
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  
+  /* Text-Content verbessert */
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child {
+    order: 1 !important;
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+  
+  /* Vorteile Icons vertikal, besser lesbar */
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child > div:last-child {
     display: flex !important;
     flex-direction: column !important;
-    gap: 1rem !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
+    gap: 1.2rem !important;
+    max-width: 100% !important;
+    margin: 2rem 0 !important;
+  }
+  
+  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child > div:last-child > div {
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 0.8rem !important;
+    background: #f8f9fa !important;
+    border-radius: 8px !important;
   }
 }
 
-/* BEHANDLUNGEN SECTION */
+/* BEHANDLUNGEN SECTION - Mehr Platz und bessere Lesbarkeit */
 @media (max-width: 768px) {
   .treatments-grid {
     grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    gap: 2.5rem !important;
   }
   
   .treatment-card {
-    padding: 1.5rem !important;
+    padding: 2rem 1.5rem !important;
+    min-height: auto !important;
+    margin-bottom: 1rem !important;
   }
   
   .treatment-header {
     flex-direction: column !important;
     text-align: center !important;
     align-items: center !important;
+    margin-bottom: 1.5rem !important;
   }
   
   .treatment-number {
     margin-right: 0 !important;
     margin-bottom: 1rem !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .treatment-card h3 {
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .treatment-card p {
+    text-align: left !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1.5rem !important;
   }
   
   .treatment-benefits {
-    margin-top: 1rem !important;
+    margin-top: 1.5rem !important;
+    padding-top: 1.5rem !important;
   }
   
   .benefit-item {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.8rem !important;
+    line-height: 1.5 !important;
   }
 }
 
-/* ANWENDUNGEN SECTION */
+/* ANWENDUNGEN SECTION - Verbesserte Lesbarkeit */
 @media (max-width: 768px) {
   .applications-grid {
     grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    gap: 2rem !important;
+    margin-top: 2rem !important;
   }
   
   .application-card {
-    padding: 1.5rem !important;
+    padding: 2rem 1.5rem !important;
+    min-height: auto !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
   }
   
   .application-card h3 {
-    font-size: 1.2rem !important;
-    margin-bottom: 0.8rem !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.3 !important;
+    color: #1a202c !important;
   }
   
   .application-card p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    color: #4a5568 !important;
+    margin: 0 !important;
+  }
+  
+  .application-card a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block !important;
   }
 }
 
-/* PATIENTENSTIMMEN SECTION */
+/* PATIENTENSTIMMEN SECTION - Mehr Platz und Joshua-Dozent Bild Fix */
 @media (max-width: 768px) {
   .reviews-wrapper {
-    padding: 0 20px !important;
+    padding: 0 24px !important;
+    margin-bottom: 3rem !important;
   }
   
   .review-card {
-    padding: 2rem 1.5rem !important;
+    padding: 2.5rem 1.8rem !important;
+    min-height: 300px !important;
+    display: flex !important;
+    align-items: center !important;
   }
   
   .review-text {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 2rem !important;
   }
   
   .review-author {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
   .reviews-slider-nav {
@@ -235,198 +320,459 @@
   }
   
   .google-rating {
-    flex-direction: column !important;
-    gap: 0.5rem !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
     text-align: center !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Joshua Dozent Bild direkt nach Patientenstimmen */
+  #bewertungen {
+    position: relative !important;
+  }
+  
+  #bewertungen::after {
+    content: '';
+    display: block !important;
+    width: 100% !important;
+    height: 400px !important;
+    background-image: url('assets/joshua-alsen-dozent.jpeg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 12px !important;
+    margin: 3rem auto 0 !important;
+    max-width: 300px !important;
   }
 }
 
-/* ÜBER MICH SECTION */
+/* ÜBER MICH SECTION - Vollständig überarbeitet */
 @media (max-width: 768px) {
+  /* Joshua-Dozent Bild: Alternative Lösung via CSS */
+  #ueber-mich::before {
+    content: '';
+    display: block !important;
+    width: 280px !important;
+    height: 350px !important;
+    background-image: url('assets/joshua-alsen-dozent.jpeg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 12px !important;
+    margin: 0 auto 3rem !important;
+  }
+  
   #ueber-mich .container > div > div:first-child {
     display: flex !important;
     flex-direction: column !important;
-    gap: 2rem !important;
+    gap: 2.5rem !important;
     text-align: center !important;
+    align-items: center !important;
   }
   
-  #ueber-mich .container > div > div:first-child > div:nth-child(1) {
-    order: 1 !important;
-    max-width: 250px !important;
-    margin: 0 auto !important;
+  /* Verstecke das original Image, da es via CSS eingefügt wird */
+  #ueber-mich .container > div > div:first-child > div:first-child {
+    display: none !important;
   }
   
   #ueber-mich .container > div > div:first-child > div:nth-child(2) {
-    order: -1 !important;
+    order: 1 !important;
+    text-align: left !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
   }
   
-  /* VFO Logo Sektion */
+  /* VFO Logo Section komplett überarbeitet */
   #ueber-mich .container > div:last-child > div:last-child {
     display: flex !important;
     flex-direction: column !important;
     text-align: center !important;
-    gap: 1.5rem !important;
+    gap: 2rem !important;
+    padding: 2.5rem 1.5rem !important;
+    background: #ffffff !important;
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
   }
   
   #ueber-mich .container > div:last-child > div:last-child > div:first-child {
     max-width: 200px !important;
     margin: 0 auto !important;
+    order: -1 !important;
   }
   
   #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
     width: 100% !important;
     height: auto !important;
+    object-fit: contain !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) {
+    order: 1 !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    text-align: left !important;
   }
 }
 
-/* QUALIFIKATIONEN SECTION */
+/* QUALIFIKATIONEN SECTION - Kästchen und Layout Fix */
 @media (max-width: 768px) {
+  /* Hauptausbildung Block */
+  #qualifikationen .container > div:first-child,
+  #qualifikationen .container > div:nth-child(2) {
+    margin-bottom: 3rem !important;
+  }
+  
+  #qualifikationen .container > div:first-child > div,
+  #qualifikationen .container > div:nth-child(2) > div {
+    padding: 2.5rem 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Logo Container Fix */
+  #qualifikationen .container > div:first-child > div > div:first-child,
+  #qualifikationen .container > div:nth-child(2) > div > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  #qualifikationen .container > div:first-child > div > div:first-child > div:first-child,
+  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:first-child {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  
+  #qualifikationen .container > div:first-child > div > div:first-child > div:first-child img,
+  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:first-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+  
+  /* Text neben Logo */
+  #qualifikationen .container > div:first-child > div > div:first-child > div:nth-child(2),
+  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:nth-child(2) {
+    text-align: center !important;
+  }
+  
+  /* Grid unter Hauptausbildung */
+  #qualifikationen .container > div:first-child > div > div:nth-child(2) {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  #qualifikationen .container > div:first-child > div > div:nth-child(2) > div {
+    text-align: center !important;
+    padding: 1rem !important;
+    background: #f8f9fa !important;
+    border-radius: 6px !important;
+  }
+  
+  /* Qualitäts-Grid */
   .qualitaet-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
   
-  .qualitaet-grid-block {
-    padding: 2rem 1.5rem !important;
+  .qualitaet-grid > div {
+    text-align: center !important;
+    padding: 1.5rem !important;
+    background: #f8f9fa !important;
+    border-radius: 8px !important;
   }
   
+  .qualitaet-grid-block {
+    padding: 2.5rem 1.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  /* Fortbildungen Grid */
   .fortbildungen-grid {
     grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    gap: 2rem !important;
   }
   
   .fortbildung-card {
-    padding: 2rem 1.5rem !important;
+    padding: 2.5rem 1.5rem !important;
   }
   
-  /* Logo Containers kleiner */
-  #qualifikationen .container > div:first-child div:first-child div:first-child,
-  #qualifikationen .container > div:nth-child(2) div:first-child div:first-child {
-    width: 60px !important;
-    height: 60px !important;
+  .icon-box {
+    margin: 0 auto 1.5rem !important;
   }
 }
 
-/* FAQ SECTION */
+/* FAQ SECTION - Mehr Platz und bessere Lesbarkeit */
 @media (max-width: 768px) {
   .faq-container {
     padding: 0 !important;
   }
   
   .faq-item {
-    margin-bottom: 0.8rem !important;
+    margin-bottom: 1rem !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
   }
   
   .faq-question {
-    padding: 1.2rem 1rem !important;
-    font-size: 1rem !important;
+    padding: 1.5rem 1.2rem !important;
+    font-size: 1.05rem !important;
     line-height: 1.4 !important;
+    min-height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .faq-question span:first-child {
+    flex: 1 !important;
+    padding-right: 1rem !important;
+    text-align: left !important;
   }
   
   .faq-question:hover {
-    padding-left: 1.2rem !important;
+    padding-left: 1.5rem !important;
+    background: #f1f5f9 !important;
   }
   
   .faq-content {
-    padding: 0 1rem 1.5rem !important;
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
+    padding: 0 1.2rem 2rem !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+  }
+  
+  .faq-content p {
+    margin-bottom: 1rem !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
   }
   
   .faq-icon {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
+    min-width: 24px !important;
+    text-align: center !important;
   }
 }
 
-/* KONTAKT SECTION */
+/* KONTAKT SECTION - Alle Layout-Probleme behoben */
 @media (max-width: 768px) {
-  /* Hauptkontakt Block */
+  /* Hauptkontakt Block - komplett überarbeitet */
+  #kontakt .container > div:nth-child(2) {
+    margin-bottom: 3rem !important;
+  }
+  
   #kontakt .container > div:nth-child(2) > div:first-child {
     display: flex !important;
     flex-direction: column !important;
-    gap: 2rem !important;
+    gap: 2.5rem !important;
     text-align: center !important;
-    padding: 2rem 1.5rem !important;
+    padding: 3rem 2rem !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
   }
   
-  #kontakt .container > div:nth-child(2) > div:first-child > div {
-    justify-content: center !important;
-    flex-wrap: wrap !important;
+  #kontakt .container > div:nth-child(2) > div:first-child h3 {
+    font-size: 1.4rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+  
+  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    min-width: 200px !important;
   }
   
   /* Online Terminbuchung Button */
-  #kontakt .container > div:nth-child(2) > div:first-child > div > div:nth-child(2) a {
-    padding: 12px 18px !important;
-    font-size: 0.95rem !important;
+  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) a {
+    padding: 14px 20px !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+    max-width: 250px !important;
+    text-align: center !important;
   }
   
-  /* Praxisstandorte */
+  /* Praxisstandorte - Grid Fix */
   #kontakt .container > div:nth-child(3) {
-    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 2rem !important;
   }
   
   #kontakt .container > div:nth-child(3) > div {
-    padding: 2rem 1.5rem !important;
+    padding: 2.5rem 2rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
   }
   
-  /* Kontaktformular Grid */
+  #kontakt .container > div:nth-child(3) h3 {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Kontaktformular und Anfahrt Grid */
   #kontakt .container > div:nth-child(4) {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+  }
+  
+  #kontakt .container > div:nth-child(4) > div {
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   .contact-form {
-    padding: 2rem 1.5rem !important;
+    padding: 2.5rem 2rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem !important;
   }
   
   .form-group input,
   .form-group textarea {
     font-size: 16px !important; /* Verhindert Zoom auf iOS */
+    padding: 12px 16px !important;
+    width: 100% !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .form-group textarea {
+    min-height: 120px !important;
+    resize: vertical !important;
+  }
+  
+  .form-submit {
+    width: 100% !important;
+    padding: 16px 24px !important;
+    font-size: 1rem !important;
+    min-height: 48px !important;
+  }
+  
+  /* Anfahrt-Info Box */
+  #kontakt .container > div:nth-child(4) > div:nth-child(2) {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  #kontakt .container > div:nth-child(4) > div:nth-child(2) > div {
+    margin-bottom: 2rem !important;
+  }
+  
+  #kontakt .container > div:nth-child(4) > div:nth-child(2) > div h4 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+  }
+  
+  /* Google Maps Placeholder */
+  #kontakt .container > div:nth-child(5) > div {
+    height: 300px !important;
+    margin: 2rem 0 !important;
   }
   
   /* Persönliche Beratung CTA */
   #kontakt .container > div:last-child {
-    padding: 2rem 1.5rem !important;
+    padding: 3rem 2rem !important;
+    text-align: center !important;
   }
   
   #kontakt .container > div:last-child > div:last-child {
+    display: flex !important;
     flex-direction: column !important;
-    gap: 1rem !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
   }
   
   #kontakt .container > div:last-child > div:last-child > a {
     width: 100% !important;
     max-width: 280px !important;
     justify-content: center !important;
-    margin: 0 auto !important;
-  }
-  
-  /* Google Maps Placeholder */
-  #kontakt .container > div:nth-child(5) > div {
-    height: 300px !important;
+    text-align: center !important;
+    padding: 16px 24px !important;
+    display: flex !important;
+    align-items: center !important;
   }
 }
 
-/* FOOTER SECTION */
+/* FOOTER SECTION - Komplett überarbeitet für Mobile */
 @media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr !important;
-    gap: 2.5rem !important;
-    text-align: center !important;
+  footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
+  .footer-main {
+    padding: 4rem 0 3rem !important;
+  }
+  
+  .footer-container {
+    padding: 0 2rem !important;
+  }
+  
+  .footer-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  
+  /* Logo Section zuerst */
   .footer-logo-section {
     order: -1 !important;
     justify-content: center !important;
+    margin-bottom: 1rem !important;
   }
   
   .footer-logo-img {
-    width: 80px !important;
-    height: 80px !important;
+    width: 120px !important;
+    height: 120px !important;
   }
   
+  /* Alle Footer Columns als vertikale Liste */
   .footer-column {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1.5rem !important;
     text-align: center !important;
   }
   
@@ -434,94 +780,243 @@
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 0.8rem !important;
+    gap: 1rem !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   
-  .footer-contact {
+  .footer-nav-links li {
+    margin: 0 !important;
+    width: auto !important;
+  }
+  
+  .footer-nav-links a {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    display: block !important;
+    text-align: center !important;
+    min-height: 44px !important;
+    display: flex !important;
     align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Kontakt Section im Footer */
+  .footer-contact {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+    width: 100% !important;
   }
   
   .contact-item {
-    justify-content: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     text-align: center !important;
+    gap: 0.5rem !important;
+    padding: 1rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    max-width: 280px !important;
   }
   
-  .footer-main {
-    padding: 3rem 0 2rem !important;
+  .contact-icon {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
-  .footer-container {
-    padding: 0 1rem !important;
+  .contact-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.3rem !important;
+  }
+  
+  .contact-info span {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    color: #a0aec0 !important;
+  }
+  
+  .contact-info small {
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #718096 !important;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    padding: 2rem 0 !important;
+  }
+  
+  .footer-bottom-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0 2rem !important;
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
   }
 }
 
-/* BUTTONS & INTERACTIVE ELEMENTS */
+/* BUTTONS & INTERACTIVE ELEMENTS - Touch-Optimized */
 @media (max-width: 768px) {
   .cta-button,
   .cta-button-secondary,
   .form-submit {
-    min-height: 44px !important; /* Touch-friendly */
+    min-height: 48px !important; /* Touch-friendly */
     font-size: 1rem !important;
-    padding: 12px 20px !important;
+    padding: 14px 24px !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+  }
+  
+  .cta-button {
+    background: #1a202c !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .cta-button-secondary {
+    background: #fff !important;
+    color: #1a202c !important;
+    border: 2px solid #1a202c !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   
   /* Floating Booking Button */
   .floating-booking {
-    bottom: 1rem !important;
-    right: 1rem !important;
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+    z-index: 999 !important;
   }
   
   .floating-booking-btn {
-    padding: 12px 16px !important;
-    font-size: 0.9rem !important;
-    gap: 0.4rem !important;
+    padding: 14px 18px !important;
+    font-size: 0.95rem !important;
+    gap: 0.5rem !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 20px rgba(26, 32, 44, 0.3) !important;
+  }
+  
+  /* Button Hover States für Touch */
+  .cta-button:hover,
+  .cta-button:focus {
+    background: #2d3748 !important;
+    transform: translateY(-1px) !important;
+  }
+  
+  .cta-button-secondary:hover,
+  .cta-button-secondary:focus {
+    background: #f8f9fa !important;
+    border-color: #2d3748 !important;
+    transform: translateY(-1px) !important;
   }
 }
 
-/* IMAGES & MEDIA */
+/* IMAGES & MEDIA - Overflow Prevention */
 @media (max-width: 768px) {
   img, video { 
     max-width: 100% !important; 
-    height: auto !important; 
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
   
-  /* Prevent image overflow */
+  /* Prevent image overflow in cards */
   .hero img,
   .treatment-card img,
-  .application-card img {
+  .application-card img,
+  .benefit-card img {
     border-radius: 8px !important;
     object-fit: cover !important;
+    width: 100% !important;
+  }
+  
+  /* Specific image fixes */
+  .footer-logo-img {
+    filter: brightness(0) invert(1) !important;
+  }
+  
+  /* Profile images */
+  section img[src*="joshua-alsen-profil.jpg"],
+  section img[src*="joshua-alsen-dozent.jpeg"] {
+    max-width: 300px !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    margin: 0 auto !important;
   }
 }
 
-/* GRIDS & LAYOUTS - Fallback */
+/* GRIDS & LAYOUTS - Comprehensive Fallback */
 @media (max-width: 768px) {
   .benefits-grid,
   .applications-grid,
   .treatments-grid,
   .qualitaet-grid,
   .fortbildungen-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    width: 100% !important;
   }
   
   .benefit-card,
   .application-card,
   .treatment-card,
   .fortbildung-card {
-    padding: 1.5rem !important;
-    margin-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2rem 1.5rem !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Prevent any grid from breaking */
+  .grid,
+  [class*="grid"],
+  [style*="grid"],
+  [style*="display: grid"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
   }
 }
 
 /* SCROLL & NAVIGATION FIXES */
 @media (max-width: 768px) {
   html {
+    scroll-behavior: smooth !important;
     scroll-padding-top: 100px !important;
   }
   
   section {
     scroll-margin-top: 100px !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
   
   /* Navigation Menu */
@@ -530,9 +1025,16 @@
   }
   
   .nav-menu a {
-    min-height: 44px !important;
+    min-height: 48px !important;
     display: flex !important;
     align-items: center !important;
+    justify-content: center !important;
+    padding: 1rem !important;
+  }
+  
+  /* Header compatibility */
+  .header {
+    z-index: 1000 !important;
   }
 }
 
@@ -540,81 +1042,179 @@
 @media (max-width: 768px) {
   button,
   .button,
-  a[href] {
-    min-height: 44px !important;
-    min-width: 44px !important;
+  a[href],
+  .faq-question,
+  .treatment-card,
+  .application-card {
+    min-height: 48px !important;
+    min-width: 48px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
   }
   
   /* Ensure text doesn't get too small */
   small,
   .small-text {
     font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Focus states for accessibility */
+  button:focus,
+  a:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #1a202c !important;
+    outline-offset: 2px !important;
   }
 }
 
-/* PERFORMANCE OPTIMIZATIONS */
+/* PERFORMANCE OPTIMIZATIONS & OVERFLOW PREVENTION */
 @media (max-width: 768px) {
-  /* Reduce animations on mobile */
+  /* Reduce animations on mobile for better performance */
   * {
     transition-duration: 0.2s !important;
+    transform: none !important;
   }
   
-  /* Prevent horizontal scrolling issues */
+  /* Critical overflow prevention */
   body {
     position: relative !important;
     overflow-x: hidden !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+  }
+  
+  /* Prevent horizontal scrolling issues */
+  .container,
+  section,
+  div,
+  main {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Text overflow prevention */
+  h1, h2, h3, h4, h5, h6, p, li, span, a {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    max-width: 100% !important;
+  }
+  
+  /* Flex container fixes */
+  .hero-buttons,
+  .footer-content,
+  .contact-item,
+  .treatment-header {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    max-width: 100% !important;
+  }
+  
+  /* Remove problematic negative margins */
+  * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Specific margin exceptions where needed */
+  .container {
+    margin: 0 auto !important;
+  }
+  
+  .section-title {
+    margin: 0 auto 2rem !important;
   }
 }
 
-/* VERY SMALL SCREENS */
+/* VERY SMALL SCREENS - Additional fixes */
 @media (max-width: 480px) {
   .container {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
   
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
   .hero h1 {
-    font-size: clamp(1.6rem, 9vw, 2.2rem) !important;
+    font-size: clamp(1.8rem, 9vw, 2.4rem) !important;
+    line-height: 1.1 !important;
   }
   
   .section-title {
-    font-size: clamp(1.3rem, 7vw, 1.8rem) !important;
+    font-size: clamp(1.4rem, 7vw, 1.9rem) !important;
   }
   
   .contact-form,
   .treatment-card,
   .application-card,
   .benefit-card {
-    padding: 1.2rem !important;
+    padding: 1.5rem 1.2rem !important;
   }
   
   .floating-booking-btn {
-    font-size: 0.8rem !important;
-    padding: 10px 12px !important;
+    font-size: 0.85rem !important;
+    padding: 12px 16px !important;
+  }
+  
+  .faq-question {
+    padding: 1.2rem 1rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .footer-logo-img {
+    width: 100px !important;
+    height: 100px !important;
   }
 }
 
-/* FIX SPECIFIC OVERFLOW ISSUES */
+/* TEXT OVERLAP PREVENTION */
 @media (max-width: 768px) {
-  /* Prevent any element from overflowing */
-  * {
-    max-width: 100% !important;
+  /* Ensure proper spacing between elements */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem !important;
+    margin-top: 0 !important;
+    clear: both !important;
+    position: relative !important;
+    z-index: 10 !important;
   }
   
-  /* Special handling for flex containers */
-  .hero-buttons,
-  .footer-content,
-  .contact-item {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+  p, li {
+    margin-bottom: 1rem !important;
+    margin-top: 0 !important;
+    clear: both !important;
   }
   
-  /* Ensure no negative margins cause issues */
-  section,
-  .container,
-  .grid {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  /* Section separation */
+  section + section {
+    margin-top: 0 !important;
+    clear: both !important;
+  }
+  
+  /* Card spacing */
+  .benefit-card,
+  .treatment-card,
+  .application-card {
+    margin-bottom: 1.5rem !important;
+    clear: both !important;
+    position: relative !important;
+  }
+  
+  /* Prevent floating elements from overlapping */
+  .floating-booking {
+    z-index: 999 !important;
+    position: fixed !important;
+  }
+  
+  /* Footer separation */
+  footer {
+    clear: both !important;
+    margin-top: 3rem !important;
   }
 }
 </style>
