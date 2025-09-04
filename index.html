@@ -73,28 +73,36 @@
   section {
     padding-left: clamp(20px, 5vw, 30px) !important;
     padding-right: clamp(20px, 5vw, 30px) !important;
+    width: 100% !important;  /* Dies ist wichtig */
+    max-width: 100% !important;  /* Dies auch */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Entferne einschränkende Breiten */
+  section .container {
+    padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
-  
+
+  /* Stelle sicher, dass der Content die volle Breite nutzt */
+  .section-content,
+  .review-card,
+  .application-card,
+  .treatment-card,
+  .benefit-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
   section {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
     position: relative !important;
-  }
-  
-  /* Mehr Platz für bessere Lesbarkeit */
-  .bg-light {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-  }
-  
-  /* Hero weniger gedrängt */
-  .hero {
-    padding-top: 2rem !important;
-    padding-bottom: 4rem !important;
   }
 }
 
@@ -141,49 +149,93 @@
   }
 }
 
-/* JOSHUA ALSEN VORSTELLUNG SECTION - Komplett überarbeitet */
+/* JOSHUA ALSEN VORSTELLUNG SECTION - Neu strukturiert */
 @media (max-width: 768px) {
-  /* Sicherstellen, dass das Profilfoto UNTER Hero und ÜBER "Was ist Osteopathie" erscheint */
-  section[style*="padding: 80px 0; background: #ffffff;"]:first-of-type {
-    order: -1 !important;
-    padding: 2rem 0 !important;
-  }
-  
-  /* Grid zu flexbox für bessere mobile Kontrolle */
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2.5rem !important;
+    section[style*="padding: 80px 0; background: #ffffff;"] {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div {
+        display: block !important;  /* Ändert Grid zu Block für mobile */
+    }
+
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) {
+        width: 100vw !important;
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+        margin-bottom: 2rem !important;
+        height: auto !important;
+    }
+
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        border-radius: 0 !important;
+    }
+}
+
+/* JOSHUA ALSEN VORSTELLUNG SECTION - Neu strukturiert */
+@media (max-width: 768px) {
+    section[style*="padding: 80px 0; background: #ffffff;"] {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100vw !important;
+        overflow: hidden !important;
+    }
+
+    section[style*="padding: 80px 0; background: #ffffff;"] .container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Wichtig: Entferne die doppelten Container-Styles */
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Profilbild-Container */
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) {
+        order: -1 !important;
+        width: 100vw !important;
+        height: 400px !important; /* Reduzierte Höhe */
+        position: relative !important;
+        left: 50% !important;
+        right: 50% !important;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
+        overflow: hidden !important; /* Wichtig für die Abrundung */
+    }
+
+    /* Profilbild selbst */
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center 30% !important;
+    }
+
+
+    /* Text-Content */
+    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child {
+        padding: 0 1rem !important;
+        text-align: center !important;
+    }
+}
+
+/* Name und Überschrift mittig */
+section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child p,
+section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child h2 {
     text-align: center !important;
-    align-items: center !important;
-  }
-  
-  /* Profilfoto zuerst, größer und zentriert */
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child {
-    order: -1 !important;
-    max-width: 320px !important;
-    width: 100% !important;
-    margin: 0 auto 2rem !important;
-  }
-  
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child > div {
-    height: 400px !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-  }
-  
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:last-child img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-  
-  /* Text-Content verbessert */
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child {
-    order: 1 !important;
-    text-align: left !important;
-    max-width: 100% !important;
-  }
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
   
   /* Vorteile Icons vertikal, besser lesbar */
   section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child > div:last-child {
@@ -200,6 +252,39 @@
     padding: 0.8rem !important;
     background: #f8f9fa !important;
     border-radius: 8px !important;
+  }
+
+  /* CONTAINER & SPACING - Erweitert für bessere Lesbarkeit */
+@media (max-width: 768px) {
+  .container, 
+  main, 
+  section {
+    padding-left: clamp(15px, 3vw, 20px) !important;
+    padding-right: clamp(15px, 3vw, 20px) !important;
+    width: 100% !important;  /* Dies ist wichtig */
+    max-width: 100% !important;  /* Dies auch */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Entferne einschränkende Breiten */
+  section .container {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Stelle sicher, dass der Content die volle Breite nutzt */
+  .section-content,
+  .review-card,
+  .application-card,
+  .treatment-card,
+  .benefit-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
   }
 }
 
@@ -251,6 +336,45 @@
     font-size: 0.95rem !important;
     margin-bottom: 0.8rem !important;
     line-height: 1.5 !important;
+  }
+}
+
+/* Integration Notice - Mobile Fix - Verstärkte Spezifität */
+@media (max-width: 768px) {
+  section .integration-notice {
+    padding: 1.5rem 1rem !important;
+    margin: 2rem auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: calc(100% - 2rem) !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+  
+  section .integration-notice::before {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 1rem !important;
+    top: -17px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  
+  section .integration-notice h3 {
+    font-size: 1.1rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.3 !important;
+    padding: 0 !important;
+  }
+  
+  section .integration-notice p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
@@ -328,28 +452,12 @@
     margin-bottom: 2rem !important;
   }
   
-  /* Joshua Dozent Bild direkt nach Patientenstimmen */
-  #bewertungen {
-    position: relative !important;
-  }
   
-  #bewertungen::after {
-    content: '';
-    display: block !important;
-    width: 100% !important;
-    height: 400px !important;
-    background-image: url('assets/joshua-alsen-dozent.jpeg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    border-radius: 12px !important;
-    margin: 3rem auto 0 !important;
-    max-width: 300px !important;
-  }
 }
 
-/* ÜBER MICH SECTION - Vollständig überarbeitet */
+/* ÜBER MICH SECTION - MOBILE OPTIMIERT */
 @media (max-width: 768px) {
+  
   /* Joshua-Dozent Bild: Alternative Lösung via CSS */
   #ueber-mich::before {
     content: '';
@@ -364,6 +472,7 @@
     margin: 0 auto 3rem !important;
   }
   
+  /* Über Mich Container Layout */
   #ueber-mich .container > div > div:first-child {
     display: flex !important;
     flex-direction: column !important;
@@ -377,51 +486,189 @@
     display: none !important;
   }
   
-  #ueber-mich .container > div > div:first-child > div:nth-child(2) {
+  /* Über Mich Textblöcke - EINHEITLICHE VOLLE BREITE */
+  #ueber-mich .container > div > div:first-child > div:nth-child(2),
+  #ueber-mich .container > div > div:first-child > div:nth-child(3) {
     order: 1 !important;
     text-align: left !important;
+    width: 100% !important;
     max-width: 100% !important;
     padding: 0 1rem !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
   }
   
-  /* VFO Logo Section komplett überarbeitet */
+  /* Alle Über Mich Paragraphen einheitlich */
+  #ueber-mich .container > div > div:first-child p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.6 !important;
+    font-size: 1rem !important;
+  }
+}
+  
+  /* VFO SECTION - MOBILE OPTIMIERT */
+@media (max-width: 768px) {
+  
+  /* VFO Grundlegendes Layout - mehr Platz und Luft */
   #ueber-mich .container > div:last-child > div:last-child {
-    display: flex !important;
-    flex-direction: column !important;
+    display: block !important;
     text-align: center !important;
-    gap: 2rem !important;
-    padding: 2.5rem 1.5rem !important;
+    padding: 2rem 1rem !important;
     background: #ffffff !important;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     border: 1px solid #e2e8f0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    min-height: auto !important;
   }
   
+  /* VFO Logo Container */
   #ueber-mich .container > div:last-child > div:last-child > div:first-child {
-    max-width: 200px !important;
-    margin: 0 auto !important;
-    order: -1 !important;
+    max-width: 160px !important;
+    width: 100% !important;
+    margin: 0 auto 2rem auto !important;
+    order: initial !important;
+    display: block !important;
+    text-align: center !important;
   }
   
+  /* VFO Logo Image */
   #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
     width: 100% !important;
     height: auto !important;
+    max-height: 160px !important;
     object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 8px !important;
   }
   
+  /* VFO Text Container - VOLLE BREITE */
   #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) {
-    order: 1 !important;
+    order: initial !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* VFO Überschrift */
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    color: #1a202c !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-weight: 500 !important;
+  }
+  
+  /* VFO Text - OPTIMIERTE BREITE */
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    color: #444 !important;
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+}
+  
+  /* Container-Sicherheitsmaßnahmen */
+  #ueber-mich .container > div:last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;  /* Minimales Container-Padding */
+  }
+  
+  /* Übergeordnete div Sicherheit */
+  #ueber-mich .container > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin-bottom: 2rem !important;  /* Abstand zwischen Elementen */
+  }
+}
+
+/* Für mittelgroße mobile Bildschirme (Tablets im Hochformat) */
+@media (max-width: 600px) and (min-width: 481px) {
+  #ueber-mich .container > div:last-child > div:last-child {
+    padding: 2.5rem 1.25rem !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:first-child {
+    max-width: 160px !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
+    max-height: 160px !important;
+  }
+}
+
+/* Für sehr kleine Bildschirme - aber mit besserer Lesbarkeit */
+@media (max-width: 480px) {
+  #ueber-mich .container > div:last-child > div:last-child {
+    padding: 2rem 1rem !important;  /* Weniger Padding aber immer noch ausreichend */
+    border-radius: 8px !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:first-child {
+    max-width: 140px !important;  /* Kleineres Logo aber immer noch gut sichtbar */
+    margin-bottom: 2rem !important;
+  }
+  
+  #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
+    max-height: 140px !important;
   }
   
   #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
-    font-size: 1.3rem !important;
-    margin-bottom: 1rem !important;
-    text-align: center !important;
+    font-size: 1.25rem !important;  /* Immer noch gut lesbar */
+    margin-bottom: 1.25rem !important;
   }
   
   #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
-    font-size: 1.05rem !important;
-    line-height: 1.7 !important;
-    text-align: left !important;
+    font-size: 1rem !important;  /* Größer als in V1 */
+    line-height: 1.65 !important;  /* Bessere Lesbarkeit */
+  }
+  
+  /* Extra Padding für den Container bei sehr kleinen Bildschirmen */
+  #ueber-mich .container > div:last-child {
+    padding: 0 0.75rem !important;
+  }
+}
+
+/* Zusätzliche Verbesserungen für alle mobilen Größen */
+@media (max-width: 768px) {
+  /* Verhindere dass Text zu breit wird */
+  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+    max-width: 100% !important;
+    text-align: justify !important;  /* Blocksatz für professionelleres Aussehen */
+    text-justify: inter-word !important;
+  }
+  
+  /* Bessere Schatten für moderne Optik */
+  #ueber-mich .container > div:last-child > div:last-child {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    transition: box-shadow 0.3s ease !important;
+  }
+  
+  /* Hover-Effekt auch für mobile (Touch) */
+  #ueber-mich .container > div:last-child > div:last-child:active {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
   }
 }
 
@@ -1265,6 +1512,31 @@
     margin-top: 3rem !important;
   }
 }
+
+  /* ÜBER MICH TEXTBLÖCKE VERBINDEN - NUR MOBILE */
+@media (max-width: 768px) {
+  /* Profile Text Container - alle Texte in einen zusammenhängenden Block */
+  #ueber-mich .container > div > div:first-child {
+    display: block !important;
+  }
+  
+  /* Weitere Texte Container - entferne negative margin */
+  #ueber-mich .container > div > div:first-child + div {
+    margin-top: 0 !important;
+  }
+  
+  /* Alle Paragraphen als zusammenhängender Textfluss */
+  #ueber-mich .container > div > div:first-child p,
+  #ueber-mich .container > div > div:first-child + div p {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Letzter Paragraph ohne Bottom-Margin */
+  #ueber-mich .container > div > div:first-child + div p:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 </style>
 
   <link rel="preload" as="image" href="assets/joshua-alsen-profil.jpg">
@@ -3151,7 +3423,7 @@ function toggleFAQ(i){
             <h2 style="font-family: 'Epilogue', sans-serif; font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 300; color: #1a202c; margin-bottom: 2rem; line-height: 1.1; letter-spacing: -0.03em;">
                 Anwendungsbereiche der<br>Osteopathie in Hamburg
             </h2>
-            <div style="width: 80px; height: 3px; background: linear-gradient(90deg, #1a202c 0%, #4a5568 100%); margin: 0 auto 2.5rem;"></div>
+            <div style="width: 80px; height: 3px; background: linear-gradient(90deg, #1a202c 0%, #4a5568 100%); margin: 0 auto 2.5rem; display: block;"></div>
             <p style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); line-height: 1.8; color: #555; max-width: 700px; margin: 0 auto; font-weight: 400;">
                 Osteopathie kann bei einer Vielzahl von Beschwerden und Zuständen hilfreich sein. Um mehr über die Behandlung eines bestimmten Beschwerdebilds zu erfahren, klicken Sie einfach auf das jeweilige Kästchen.
             </p>
