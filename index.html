@@ -80,11 +80,13 @@
   }
   
   /* Entferne einschränkende Breiten */
-  section .container {
-    padding: 0 !important;
+ section .container {
+    padding-top: 0 !important;     /* ✅ Nur vertikales Padding auf 0 */
+    padding-bottom: 0 !important;  /* ✅ Nur vertikales Padding auf 0 */
+    /* padding-left und padding-right werden NICHT überschrieben */
     width: 100% !important;
     max-width: 100% !important;
-  }
+}
 
   /* Stelle sicher, dass der Content die volle Breite nutzt */
   .section-content,
