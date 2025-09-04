@@ -1537,6 +1537,314 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
   }
 }
 
+/* KRITISCHE OVERRIDE RULES - HÖCHSTE PRIORITÄT */
+@media (max-width: 768px) {
+    
+    /* 1. HYPHENS GLOBAL DEAKTIVIEREN - VERSTÄRKT */
+    html * {
+        hyphens: none !important;
+        -webkit-hyphens: none !important;
+        -moz-hyphens: none !important;
+        -ms-hyphens: none !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        word-wrap: normal !important;
+    }
+    
+    /* 2. ÜBERSCHRIFTEN - SPEZIFISCHE SELEKTOREN */
+    body h1, body h2, body h3, body h4, body h5, body h6,
+    body .section-title, body .hero h1, body .hero-subtitle {
+        hyphens: none !important;
+        -webkit-hyphens: none !important;
+        word-break: keep-all !important;
+        white-space: normal !important;
+        text-align: center !important;
+        word-wrap: normal !important;
+        overflow-wrap: normal !important;
+    }
+    
+    /* 3. CONTAINER - MAXIMALE BREITE ERZWINGEN */
+    body .container,
+    body section .container,
+    body main .container,
+    body div.container {
+        padding-left: clamp(25px, 5vw, 35px) !important;
+        padding-right: clamp(25px, 5vw, 35px) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* 4. CARDS UND CONTENT - VOLLE BREITE */
+    body .treatment-card,
+    body .application-card,
+    body .benefit-card,
+    body .review-card,
+    body .fortbildung-card,
+    body .contact-form,
+    body .faq-content,
+    body .integration-notice,
+    body .qualitaet-grid > div,
+    body .qualitaet-grid-block {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 2rem clamp(1.5rem, 4vw, 2.5rem) !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* 5. HERO SECTION - SPEZIFISCH */
+    body .hero {
+        padding-left: clamp(1.5rem, 4vw, 2rem) !important;
+        padding-right: clamp(1.5rem, 4vw, 2rem) !important;
+        text-align: center !important;
+    }
+    
+    body .hero h1 {
+        font-size: clamp(2rem, 7vw, 2.8rem) !important;
+        line-height: 1.15 !important;
+        hyphens: none !important;
+        word-break: normal !important;
+        text-align: center !important;
+    }
+    
+    body .hero-subtitle {
+        font-size: clamp(1.1rem, 4vw, 1.3rem) !important;
+        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
+        text-align: center !important;
+    }
+    
+    body .hero-description {
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    /* 6. SECTION TITLES - KEINE HYPHENS */
+    body section h2,
+    body section .section-title {
+        font-size: clamp(1.6rem, 5vw, 2rem) !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
+        hyphens: none !important;
+        word-break: normal !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* 7. QUALIFIKATIONEN SECTION - DIREKTE SELEKTOREN */
+    body #qualifikationen .container > div:first-child > div,
+    body #qualifikationen .container > div:nth-child(2) > div {
+        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    body #qualifikationen h3 {
+        font-size: clamp(1.25rem, 4.5vw, 1.5rem) !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        hyphens: none !important;
+        word-break: normal !important;
+    }
+    
+    /* 8. ÜBER MICH SECTION - VFO BOX */
+    body #ueber-mich .container > div:last-child > div:last-child {
+        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
+        font-size: clamp(1.3rem, 4.5vw, 1.5rem) !important;
+        text-align: center !important;
+        hyphens: none !important;
+        word-break: normal !important;
+    }
+    
+    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        line-height: 1.65 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: justify !important;
+        hyphens: none !important;
+    }
+    
+    /* 9. KONTAKT SECTION */
+    body .contact-form {
+        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    body #kontakt .container > div:nth-child(4) > div:nth-child(2) {
+        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* 10. BEHANDLUNGEN & ANWENDUNGEN */
+    body .treatment-card h3,
+    body .application-card h3 {
+        font-size: clamp(1.2rem, 4.5vw, 1.4rem) !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        hyphens: none !important;
+        word-break: normal !important;
+    }
+    
+    body .treatment-card p,
+    body .application-card p {
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        line-height: 1.7 !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+    
+    /* 11. FAQ SECTION */
+    body .faq-question {
+        padding: 1.8rem clamp(1.5rem, 4vw, 2rem) !important;
+        font-size: clamp(1.05rem, 4vw, 1.2rem) !important;
+        hyphens: none !important;
+        word-break: normal !important;
+    }
+    
+    body .faq-question span:first-child {
+        width: 100% !important;
+        max-width: calc(100% - 3rem) !important;
+        padding-right: 1rem !important;
+    }
+    
+    body .faq-content {
+        padding: 0 clamp(1.5rem, 4vw, 2rem) 2rem !important;
+        width: 100% !important;
+    }
+    
+    body .faq-content p {
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        line-height: 1.7 !important;
+        width: 100% !important;
+    }
+    
+    /* 12. REVIEWS SECTION */
+    body .reviews-wrapper {
+        padding: 0 clamp(1.5rem, 4vw, 2rem) !important;
+        width: 100% !important;
+    }
+    
+    body .review-card {
+        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    body .review-text {
+        font-size: clamp(1.05rem, 4vw, 1.15rem) !important;
+        line-height: 1.7 !important;
+        text-align: center !important;
+    }
+    
+    /* 13. PARAGRAPHEN GLOBAL */
+    body p {
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        hyphens: none !important;
+    }
+    
+    /* 14. BUTTONS */
+    body .cta-button,
+    body .cta-button-secondary,
+    body .form-submit {
+        width: 100% !important;
+        max-width: clamp(280px, 80vw, 320px) !important;
+        padding: 16px 24px !important;
+        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+        margin: 0 auto 1rem !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    
+    /* 15. DEBUGGING - FORCE VISIBILITY */
+    body * {
+        visibility: visible !important;
+    }
+    
+    body .hidden,
+    body [style*="display: none"] {
+        display: none !important;
+    }
+    
+    /* 16. GRID FALLBACKS */
+    body .benefits-grid,
+    body .applications-grid,
+    body .treatments-grid,
+    body .qualitaet-grid,
+    body .fortbildungen-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        width: 100% !important;
+    }
+    
+    /* 17. TEXT ALIGNMENT FIXES */
+    body h1, body h2, body h3, body h4 {
+        text-align: center !important;
+    }
+    
+    body p, body li {
+        text-align: left !important;
+    }
+    
+    /* 18. FINAL OVERRIDES - NUCLEAR OPTION */
+    html body .container *,
+    html body section *,
+    html body main * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* SMALL SCREENS - ZUSÄTZLICHE FIXES */
+@media (max-width: 480px) {
+    body .container,
+    body section .container {
+        padding-left: clamp(1.5rem, 4vw, 2rem) !important;
+        padding-right: clamp(1.5rem, 4vw, 2rem) !important;
+    }
+    
+    body .treatment-card,
+    body .application-card,
+    body .contact-form,
+    body .review-card {
+        padding: 2rem clamp(1.5rem, 4vw, 2rem) !important;
+    }
+    
+    body h2, body .section-title {
+        font-size: clamp(1.5rem, 6vw, 1.9rem) !important;
+        padding: 0 clamp(0.5rem, 2vw, 1rem) !important;
+    }
+    
+    body p {
+        font-size: clamp(0.95rem, 4vw, 1.05rem) !important;
+    }
+}
+
 </style>
 
   <link rel="preload" as="image" href="assets/joshua-alsen-profil.jpg">
