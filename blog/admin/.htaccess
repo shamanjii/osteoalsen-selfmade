@@ -1,75 +1,44 @@
-# Admin-Verzeichnis Sicherheitskonfiguration
-# Speichern als: blog/admin/.htaccess
+# =========================
+# Blog Admin Security Config
+# =========================
 
-# Zusätzliche Sicherheits-Header
+# 1) Core Security Headers
 <IfModule mod_headers.c>
-    # XSS-Schutz
+    # XSS Protection
     Header always set X-XSS-Protection "1; mode=block"
-    
-    # Content-Type-Sniffing verhindern
+
+    # Prevent MIME-type sniffing
     Header always set X-Content-Type-Options "nosniff"
-    
-    # Clickjacking-Schutz
+
+    # Clickjacking Protection
     Header always set X-Frame-Options "DENY"
-    
-    # Referrer-Policy
+
+    # Referrer Policy
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-</IfModule>
 
-# Directory Browsing verhindern
-Options -Indexes
-
-# Sensible Dateien schützen
-<Files "*.log">
-    Require all denied
-</Files>
-
-<Files "*.json">
-    Require all denied
-</Files>
-
-<FilesMatch "\.(bak|backup|old|tmp)$">
-    Require all denied
-</FilesMatch>
-
-# Optional: HTTP Basic Auth (entkommentieren falls gewünscht)
-# AuthType Basic
-# AuthName "Blog Admin - Zugang beschränkt"
-# AuthUserFile /pfad/zu/blog/admin/.htpasswd
-# Require valid-user
-
-# Optional: IP-basierte Beschränkung (entkommentieren und IP anpassen)
-# <RequireAll>
-#     Require ip 192.168.1.0/24
-#     Require ip 127.0.0.1
-# </RequireAll>
-
-# OPTIONAL: HTTP Basic Auth (entkommentieren falls gewünscht)
-# AuthType Basic
-# AuthName "Blog Admin - Authentifizierung erforderlich"
-# AuthUserFile /pfad/zu/blog/admin/.htpasswd
-# Require valid-user
-
-# OPTIONAL: IP-Beschränkung (anpassen an Ihre IP)
-# <RequireAll>
-#     Require ip 127.0.0.1
-#     Require ip 192.168.1.0/24
-#     # Ihre öffentliche IP hier hinzufügen
-# </RequireAll>
-
-# Sicherheits-Header
-<IfModule mod_headers.c>
-    Header always set X-Frame-Options "DENY"
-    Header always set X-XSS-Protection "1; mode=block"
-    Header always set X-Content-Type-Options "nosniff"
-    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # Basic Content Security Policy (CSP)
+    # You can adjust as needed if external scripts are added later
     Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"
 </IfModule>
 
-# Directory Listing verhindern
+# 2) Disable Directory Browsing
 Options -Indexes
 
-# Sensible Admin-Dateien schützen
-<FilesMatch "\.(log|tmp|bak)$">
+# 3) Protect Sensitive Files
+<FilesMatch "\.(log|tmp|bak|json|backup|old)$">
     Require all denied
 </FilesMatch>
+
+# 4) Optional: HTTP Basic Authentication
+# Uncomment and set the real server path to .htpasswd for extra security
+# AuthType Basic
+# AuthName "Blog Admin - Restricted Access"
+# AuthUserFile /var/www/html/blog/admin/.htpasswd
+# Require valid-user
+
+# 5) Optional: IP Restriction (Uncomment and customize your IPs)
+# <RequireAll>
+#     Require ip 127.0.0.1
+#     Require ip 192.168.1.0/24
+#     # Add your public IP here
+# </RequireAll>
