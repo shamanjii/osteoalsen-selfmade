@@ -1,18 +1,19 @@
-
-
 /* ========================================
    MOBILE-FIRST RESPONSIVE OPTIMIERUNG V24
    ALLE NAVIGATION/MENU ANPASSUNGEN ENTFERNT
    SHARED-HEADER.JS ÜBERNIMMT KOMPLETTE KONTROLLE
    ======================================== */
 
-/* GLOBAL MOBILE SETTINGS */
-@media (max-width: 768px) {
+/* SINGLE MOBILE MEDIA WRAPPER */
+@media only screen and (max-width: 768px) {
+
+  /* GLOBAL MOBILE SETTINGS */
   html, body { 
     max-width: 100%; 
     overflow-x: hidden; 
     font-size: 16px;
     width: 100%;
+  }
 
   body { 
     padding-top: 80px !important;
@@ -20,15 +21,15 @@
     margin: 0 !important;
     position: relative !important;
   }
-  
+
   * {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-}
 
-/* TYPOGRAPHY - Mobile Optimized */
-@media (max-width: 768px) {
+  /* ========================================
+     TYPOGRAPHY - Mobile Optimized
+  ======================================== */
   h1 { 
     font-size: clamp(1.8rem, 7vw, 2.4rem) !important; 
     line-height: 1.15 !important; 
@@ -59,31 +60,31 @@
     line-height: 1.6 !important;
     margin-bottom: 1rem !important;
   }
-}
 
-/* CONTAINER & SPACING - Erweitert für bessere Lesbarkeit */
-@media (max-width: 768px) {
+  /* ========================================
+     CONTAINER & SPACING
+     Erweitert für bessere Lesbarkeit
+  ======================================== */
   .container, 
   main, 
   section {
     padding-left: clamp(20px, 5vw, 30px) !important;
     padding-right: clamp(20px, 5vw, 30px) !important;
-    width: 100% !important;  /* Dies ist wichtig */
-    max-width: 100% !important;  /* Dies auch */
+    width: 100% !important;  /* Important for full width */
+    max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
   
-  /* Entferne einschränkende Breiten */
- section .container {
-    padding-top: 0 !important;     /* ✅ Nur vertikales Padding auf 0 */
-    padding-bottom: 0 !important;  /* ✅ Nur vertikales Padding auf 0 */
-    /* padding-left und padding-right werden NICHT überschrieben */
+  /* Remove restrictive widths */
+  section .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-}
+  }
 
-  /* Stelle sicher, dass der Content die volle Breite nutzt */
+  /* Ensure content uses full width */
   .section-content,
   .review-card,
   .application-card,
@@ -101,10 +102,10 @@
     padding-bottom: 4rem !important;
     position: relative !important;
   }
-}
 
-/* HERO SECTION - Mobile Optimized */
-@media (max-width: 768px) {
+  /* ========================================
+     HERO SECTION - Mobile Optimized
+  ======================================== */
   .hero {
     text-align: center !important;
     padding-left: 1rem !important;
@@ -144,7 +145,8 @@
     font-size: 1rem !important;
     text-align: center !important;
   }
-}
+
+} /* <-- Closing brace for entire mobile block */
 
 /* JOSHUA ALSEN VORSTELLUNG SECTION - Neu strukturiert */
 @media (max-width: 768px) {
@@ -599,7 +601,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     overflow-x: hidden !important;
     margin-bottom: 2rem !important;  /* Abstand zwischen Elementen */
   }
-}
+
 
 /* Für mittelgroße mobile Bildschirme (Tablets im Hochformat) */
 @media (max-width: 600px) and (min-width: 481px) {
