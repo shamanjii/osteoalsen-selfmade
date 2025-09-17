@@ -1886,7 +1886,6 @@ section {
 
     #ueber-mich .container>div>div:first-child>div:nth-child(2) {
         order: -1;
-        height: 400px !important;
         max-width: 350px;
         margin: 0 auto;
     }

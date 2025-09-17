@@ -208,7 +208,6 @@
   section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:nth-child(2) {
     order: -1 !important;
     width: 100vw !important;
-    height: 400px !important;
     /* Reduzierte Höhe */
     position: relative !important;
     left: 50% !important;
@@ -465,66 +464,122 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
 /* ÜBER MICH SECTION - MOBILE OPTIMIERT */
 @media (max-width: 768px) {
 
+  /* Über Mich Section - Reduce excessive padding */
+  #ueber-mich {
+    padding: 1.5rem 0 !important;
+  }
+
   /* Joshua-Dozent Bild: Alternative Lösung via CSS */
   #ueber-mich::before {
     content: '';
     display: block !important;
-    width: 280px !important;
-    height: 350px !important;
+    width: 220px !important;
+    height: 280px !important;
     background-image: url('assets/joshua-alsen-dozent.jpeg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    border-radius: 12px !important;
-    margin: 0 auto 3rem !important;
+    border-radius: 10px !important;
+    margin: 0 auto 1.5rem !important;
   }
 
-  /* Über Mich Container Layout */
-  #ueber-mich .container>div>div:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2.5rem !important;
-    text-align: center !important;
-    align-items: center !important;
+  /* Main Profile Section Container - Remove scrollable area */
+  #ueber-mich .container>div:first-child {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+  }
+
+  #ueber-mich .container>div:first-child>div:first-child {
+    display: block !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+    margin-bottom: 2rem !important;
+    flex-wrap: nowrap !important;
+  }
+
+  /* Profile Text Container - Remove min-width that causes scroll */
+  #ueber-mich .container>div:first-child>div:first-child>div:nth-child(2) {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
   }
 
   /* Verstecke das original Image, da es via CSS eingefügt wird */
-  #ueber-mich .container>div>div:first-child>div:first-child {
+  #ueber-mich .container>div:first-child>div:first-child>div:first-child {
     display: none !important;
   }
 
   /* Über Mich Textblöcke - EINHEITLICHE VOLLE BREITE */
-  #ueber-mich .container>div>div:first-child>div:nth-child(2),
-  #ueber-mich .container>div>div:first-child>div:nth-child(3) {
+  #ueber-mich .container>div:first-child>div:first-child>div:nth-child(2),
+  #ueber-mich .container>div:first-child>div:first-child>div:nth-child(3) {
     order: 1 !important;
     text-align: left !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 1rem !important;
+    padding: 0 !important;
     margin: 0 !important;
+    box-sizing: border-box !important;
+    min-width: auto !important;
+    flex: none !important;
+  }
+
+  /* Alle Über Mich Paragraphen einheitlich - No scroll */
+  #ueber-mich .container>div:first-child p,
+  #ueber-mich .container>div:first-child>div p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.5 !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Additional text section - Remove scroll issues */
+  #ueber-mich .container>div:first-child+div {
+    margin-bottom: 1.25rem !important;
+    margin-top: -0.5rem !important;
+    padding: 0 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box !important;
   }
 
-  /* Alle Über Mich Paragraphen einheitlich */
-  #ueber-mich .container>div>div:first-child p {
+  /* Additional text paragraphs */
+  #ueber-mich .container>div:first-child+div p {
     width: 100% !important;
     max-width: 100% !important;
-    margin-bottom: 1.5rem !important;
-    line-height: 1.6 !important;
-    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.5 !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
 /* VFO SECTION - MOBILE OPTIMIERT */
 @media (max-width: 768px) {
 
-  /* VFO Grundlegendes Layout - mehr Platz und Luft */
+  /* VFO Grundlegendes Layout - kompakter für mobile */
   #ueber-mich .container>div:last-child>div:last-child {
     display: block !important;
     text-align: center !important;
-    padding: 2rem 1rem !important;
+    padding: 1.5rem 1rem !important;
     background: #ffffff !important;
-    border-radius: 12px !important;
+    border-radius: 8px !important;
     border: 1px solid #e2e8f0 !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -535,9 +590,9 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
 
   /* VFO Logo Container */
   #ueber-mich .container>div:last-child>div:last-child>div:first-child {
-    max-width: 160px !important;
+    max-width: 120px !important;
     width: 100% !important;
-    margin: 0 auto 2rem auto !important;
+    margin: 0 auto 1.5rem auto !important;
     order: initial !important;
     display: block !important;
     text-align: center !important;
@@ -547,11 +602,11 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
   #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
     width: 100% !important;
     height: auto !important;
-    max-height: 160px !important;
+    max-height: 120px !important;
     object-fit: contain !important;
     display: block !important;
     margin: 0 auto !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
   }
 
   /* VFO Text Container - VOLLE BREITE */
@@ -566,8 +621,8 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
 
   /* VFO Überschrift */
   #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) h3 {
-    font-size: 1.3rem !important;
-    margin-bottom: 1.5rem !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
     text-align: center !important;
     line-height: 1.3 !important;
     color: #1a202c !important;
@@ -579,11 +634,11 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
 
   /* VFO Text - OPTIMIERTE BREITE */
   #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
     text-align: left !important;
     color: #444 !important;
-    margin: 0 0 1.5rem 0 !important;
+    margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -594,74 +649,121 @@ section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:
 
 }
 
-/* Container-Sicherheitsmaßnahmen */
-#ueber-mich .container>div:last-child {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 1rem !important;
-  /* Minimales Container-Padding */
-}
+/* Container-Sicherheitsmaßnahmen - Remove ALL scroll issues */
+@media (max-width: 768px) {
 
-/* Übergeordnete div Sicherheit */
-#ueber-mich .container>div {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-  margin-bottom: 2rem !important;
-  /* Abstand zwischen Elementen */
+  /* CRITICAL: Force all containers to fit screen width */
+  #ueber-mich,
+  #ueber-mich .container,
+  #ueber-mich .container>div,
+  #ueber-mich .container>div>div {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Remove all problematic inline styles */
+  #ueber-mich .container>div:first-child {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Force text containers to not exceed viewport */
+  #ueber-mich .container>div:first-child>div:first-child,
+  #ueber-mich .container>div:first-child+div {
+    display: block !important;
+    flex: none !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Force ALL text elements to fit */
+  #ueber-mich div[style*="flex"],
+  #ueber-mich div[style*="min-width"] {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure VFO section doesn't create scroll */
+  #ueber-mich .container>div:last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+  }
 }
 
 
 /* Für mittelgroße mobile Bildschirme (Tablets im Hochformat) */
 @media (max-width: 600px) and (min-width: 481px) {
   #ueber-mich .container>div:last-child>div:last-child {
-    padding: 2.5rem 1.25rem !important;
-  }
-
-  #ueber-mich .container>div:last-child>div:last-child>div:first-child {
-    max-width: 160px !important;
-  }
-
-  #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
-    max-height: 160px !important;
-  }
-}
-
-/* Für sehr kleine Bildschirme - aber mit besserer Lesbarkeit */
-@media (max-width: 480px) {
-  #ueber-mich .container>div:last-child>div:last-child {
-    padding: 2rem 1rem !important;
-    /* Weniger Padding aber immer noch ausreichend */
-    border-radius: 8px !important;
+    padding: 1.75rem 1.25rem !important;
   }
 
   #ueber-mich .container>div:last-child>div:last-child>div:first-child {
     max-width: 140px !important;
-    /* Kleineres Logo aber immer noch gut sichtbar */
-    margin-bottom: 2rem !important;
   }
 
   #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
     max-height: 140px !important;
   }
+}
+
+/* Für sehr kleine Bildschirme - kompakter */
+@media (max-width: 480px) {
+  #ueber-mich .container>div:last-child>div:last-child {
+    padding: 1.5rem 1rem !important;
+    border-radius: 6px !important;
+  }
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child {
+    max-width: 100px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
+    max-height: 100px !important;
+  }
 
   #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) h3 {
-    font-size: 1.25rem !important;
-    /* Immer noch gut lesbar */
-    margin-bottom: 1.25rem !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
-    font-size: 1rem !important;
-    /* Größer als in V1 */
-    line-height: 1.65 !important;
-    /* Bessere Lesbarkeit */
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
   }
 
   /* Extra Padding für den Container bei sehr kleinen Bildschirmen */
   #ueber-mich .container>div:last-child {
     padding: 0 0.75rem !important;
+  }
+
+  /* Kompaktere Abstände für kleine Bildschirme */
+  #ueber-mich {
+    padding: 1.5rem 0 !important;
+  }
+
+  #ueber-mich::before {
+    width: 200px !important;
+    height: 250px !important;
+    margin: 0 auto 1.5rem !important;
   }
 }
 
