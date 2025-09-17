@@ -982,7 +982,21 @@
             }
 
             .hero {
-                padding: 4rem var(--container-padding) 3rem;
+                padding: 3rem var(--container-padding) 2.5rem;
+            }
+
+            .hero-title {
+                font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+                line-height: 1.1 !important;
+                word-break: normal !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto !important;
+            }
+
+            .hero-subtitle {
+                font-size: clamp(1rem, 4vw, 1.2rem) !important;
+                line-height: 1.4 !important;
+                margin-bottom: 2rem !important;
             }
 
             .search-section {
@@ -990,22 +1004,50 @@
             }
 
             .search-container {
-                padding: 2rem 1.5rem;
+                padding: 1.5rem 1rem;
             }
 
             .main-content {
-                margin: 3rem auto;
+                margin: 2rem auto;
             }
 
             .posts-grid {
                 grid-template-columns: 1fr !important;
                 gap: 1.5rem;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
 
             .post-card {
                 margin: 0 auto;
                 max-width: 100%;
+            }
+
+            .post-content {
+                padding: 1.5rem !important;
+            }
+
+            .post-title {
+                font-size: clamp(1.1rem, 4.5vw, 1.4rem) !important;
+                line-height: 1.25 !important;
+                word-break: normal !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .post-excerpt {
+                font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+                line-height: 1.5 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .post-meta {
+                margin-bottom: 0.75rem !important;
+                gap: 0.5rem !important;
+            }
+
+            .meta-item {
+                font-size: clamp(0.8rem, 3vw, 0.9rem) !important;
             }
 
             .featured-post {
@@ -1014,24 +1056,38 @@
             }
 
             .featured-post .post-content {
+                padding: 1.5rem;
+            }
+
+            .featured-post .post-title {
+                font-size: clamp(1.3rem, 5vw, 1.6rem) !important;
+            }
+
+            .author-section {
+                margin: 3rem 0;
                 padding: 2rem;
             }
 
             .author-content {
                 text-align: center;
                 flex-direction: column;
+                gap: 1.5rem;
             }
 
             .author-image {
                 margin: 0 auto;
+                width: 100px;
+                height: 100px;
             }
 
             .newsletter {
-                padding: 3rem 2rem;
+                padding: 2rem 1.5rem;
+                margin: 3rem 0;
             }
 
             .newsletter-form {
                 flex-direction: column;
+                gap: 0.75rem;
             }
 
             .category-filter {
@@ -1044,18 +1100,41 @@
                 gap: 1rem;
                 text-align: center;
             }
+
+            .section-title {
+                font-size: clamp(1.5rem, 5vw, 2rem) !important;
+                line-height: 1.2 !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .section-subtitle {
+                font-size: clamp(1rem, 4vw, 1.1rem) !important;
+                line-height: 1.5 !important;
+            }
         }
 
         @media (max-width: 480px) {
             .hero-title {
-                font-size: 2.5rem;
+                font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
             }
 
             .newsletter-title {
-                font-size: var(--font-size-2xl);
+                font-size: clamp(1.4rem, 5vw, 1.8rem) !important;
             }
 
             .search-container {
+                padding: 1.25rem 0.75rem;
+            }
+
+            .post-content {
+                padding: 1.25rem !important;
+            }
+
+            .author-section {
+                padding: 1.5rem;
+            }
+
+            .newsletter {
                 padding: 1.5rem 1rem;
             }
         }
