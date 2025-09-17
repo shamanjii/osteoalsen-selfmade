@@ -8,14 +8,15 @@
 @media only screen and (max-width: 768px) {
 
   /* GLOBAL MOBILE SETTINGS */
-  html, body { 
-    max-width: 100%; 
-    overflow-x: hidden; 
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-size: 16px;
     width: 100%;
   }
 
-  body { 
+  body {
     padding-top: 80px !important;
     padding-bottom: 100px !important;
     margin: 0 !important;
@@ -30,33 +31,35 @@
   /* ========================================
      TYPOGRAPHY - Mobile Optimized
   ======================================== */
-  h1 { 
-    font-size: clamp(1.8rem, 7vw, 2.4rem) !important; 
-    line-height: 1.15 !important; 
+  h1 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
+    line-height: 1.15 !important;
     margin-bottom: 1rem !important;
   }
-  
-  h2, .section-title { 
-    font-size: clamp(1.5rem, 6vw, 2rem) !important; 
-    line-height: 1.2 !important; 
+
+  h2,
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
     text-align: center !important;
     padding: 0 1rem !important;
   }
-  
-  h3 { 
-    font-size: clamp(1.2rem, 5vw, 1.5rem) !important; 
-    line-height: 1.25 !important; 
+
+  h3 {
+    font-size: clamp(1.2rem, 5vw, 1.5rem) !important;
+    line-height: 1.25 !important;
     margin-bottom: 1rem !important;
   }
-  
+
   h4 {
     font-size: clamp(1.1rem, 4.5vw, 1.3rem) !important;
     line-height: 1.3 !important;
   }
-  
-  p, li { 
-    font-size: clamp(1rem, 4vw, 1.1rem) !important; 
+
+  p,
+  li {
+    font-size: clamp(1rem, 4vw, 1.1rem) !important;
     line-height: 1.6 !important;
     margin-bottom: 1rem !important;
   }
@@ -65,17 +68,16 @@
      CONTAINER & SPACING
      Erweitert für bessere Lesbarkeit
   ======================================== */
-  .container, 
-  main, 
+  .container,
+  main,
   section {
-    padding-left: clamp(20px, 5vw, 30px) !important;
-    padding-right: clamp(20px, 5vw, 30px) !important;
-    width: 100% !important;  /* Important for full width */
+    width: 100% !important;
+    /* Important for full width */
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  
+
   /* Remove restrictive widths */
   section .container {
     padding-top: 0 !important;
@@ -111,32 +113,32 @@
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  
+
   .hero h1 {
     font-size: clamp(2rem, 8vw, 2.6rem) !important;
     line-height: 1.1 !important;
     margin-bottom: 1rem !important;
   }
-  
+
   .hero-subtitle {
     font-size: clamp(1.1rem, 4.5vw, 1.3rem) !important;
     margin-bottom: 1.5rem !important;
     padding: 0 0.5rem !important;
   }
-  
+
   .hero-description {
     font-size: clamp(1rem, 4vw, 1.1rem) !important;
     margin-bottom: 2rem !important;
     padding: 0 0.5rem !important;
   }
-  
+
   .hero-buttons {
     flex-direction: column !important;
     align-items: center !important;
     gap: 1rem !important;
     padding: 0 1rem !important;
   }
-  
+
   .cta-button,
   .cta-button-secondary {
     width: 100% !important;
@@ -146,126 +148,132 @@
     text-align: center !important;
   }
 
-} /* <-- Closing brace for entire mobile block */
+}
+
+/* <-- Closing brace for entire mobile block */
 
 /* JOSHUA ALSEN VORSTELLUNG SECTION - Neu strukturiert */
 @media (max-width: 768px) {
-    section[style*="padding: 80px 0; background: #ffffff;"] {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div {
-        display: block !important;  /* Ändert Grid zu Block für mobile */
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div {
+    display: block !important;
+    /* Ändert Grid zu Block für mobile */
+  }
 
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) {
-        width: 100vw !important;
-        margin-left: -1rem !important;
-        margin-right: -1rem !important;
-        margin-bottom: 2rem !important;
-        height: auto !important;
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:nth-child(2) {
+    width: 100vw !important;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+    margin-bottom: 2rem !important;
+    height: auto !important;
+  }
 
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: cover !important;
-        border-radius: 0 !important;
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:nth-child(2) img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+  }
 }
 
 /* JOSHUA ALSEN VORSTELLUNG SECTION - Neu strukturiert */
 @media (max-width: 768px) {
-    section[style*="padding: 80px 0; background: #ffffff;"] {
-        padding: 0 !important;
-        margin: 0 !important;
-        width: 100vw !important;
-        overflow: hidden !important;
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    overflow: hidden !important;
+  }
 
-    section[style*="padding: 80px 0; background: #ffffff;"] .container {
-        padding: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
+  section[style*="padding: 80px 0; background: #ffffff;"] .container {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 
-    /* Wichtig: Entferne die doppelten Container-Styles */
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 2rem !important;
-        width: 100% !important;
-        margin: 0 !important;
-    }
+  /* Wichtig: Entferne die doppelten Container-Styles */
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
 
-    /* Profilbild-Container */
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) {
-        order: -1 !important;
-        width: 100vw !important;
-        height: 400px !important; /* Reduzierte Höhe */
-        position: relative !important;
-        left: 50% !important;
-        right: 50% !important;
-        margin-left: -50vw !important;
-        margin-right: -50vw !important;
-        overflow: hidden !important; /* Wichtig für die Abrundung */
-    }
+  /* Profilbild-Container */
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:nth-child(2) {
+    order: -1 !important;
+    width: 100vw !important;
+    height: 400px !important;
+    /* Reduzierte Höhe */
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    overflow: hidden !important;
+    /* Wichtig für die Abrundung */
+  }
 
-    /* Profilbild selbst */
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:nth-child(2) img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        object-position: center 30% !important;
-    }
+  /* Profilbild selbst */
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:nth-child(2) img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 30% !important;
+  }
 
 
-    /* Text-Content */
-    section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child {
-        padding: 0 1rem !important;
-        text-align: center !important;
-    }
+  /* Text-Content */
+  section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:first-child {
+    padding: 0 1rem !important;
+    text-align: center !important;
+  }
 }
 
 /* Name und Überschrift mittig */
-section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child p,
-section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:first-child h2 {
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:first-child p,
+section[style*="padding: 80px 0; background: #ffffff;"] .container>div>div:first-child h2 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-  
-  /* Vorteile Icons vertikal, besser lesbar */
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child > div:last-child {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 1.2rem !important;
-    max-width: 100% !important;
-    margin: 2rem 0 !important;
-  }
-  
-  section[style*="grid-template-columns: 1fr 1fr"] .container > div:first-child > div:first-child > div:last-child > div {
-    justify-content: flex-start !important;
-    align-items: center !important;
-    padding: 0.8rem !important;
-    background: #f8f9fa !important;
-    border-radius: 8px !important;
-  }
 
-  /* CONTAINER & SPACING - Erweitert für bessere Lesbarkeit */
+/* Vorteile Icons vertikal, besser lesbar */
+section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:first-child>div:last-child {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.2rem !important;
+  max-width: 100% !important;
+  margin: 2rem 0 !important;
+}
+
+section[style*="grid-template-columns: 1fr 1fr"] .container>div:first-child>div:first-child>div:last-child>div {
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 0.8rem !important;
+  background: #f8f9fa !important;
+  border-radius: 8px !important;
+}
+
+/* CONTAINER & SPACING - Erweitert für bessere Lesbarkeit */
 @media (max-width: 768px) {
-  .container, 
-  main, 
+
+  .container,
+  main,
   section {
-    padding-left: clamp(15px, 3vw, 20px) !important;
-    padding-right: clamp(15px, 3vw, 20px) !important;
-    width: 100% !important;  /* Dies ist wichtig */
-    max-width: 100% !important;  /* Dies auch */
+    width: 100% !important;
+    /* Dies ist wichtig */
+    max-width: 100% !important;
+    /* Dies auch */
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  
+
   /* Entferne einschränkende Breiten */
   section .container {
     padding: 0 !important;
@@ -293,44 +301,44 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     grid-template-columns: 1fr !important;
     gap: 2.5rem !important;
   }
-  
+
   .treatment-card {
     padding: 2rem 1.5rem !important;
     min-height: auto !important;
     margin-bottom: 1rem !important;
   }
-  
+
   .treatment-header {
     flex-direction: column !important;
     text-align: center !important;
     align-items: center !important;
     margin-bottom: 1.5rem !important;
   }
-  
+
   .treatment-number {
     margin-right: 0 !important;
     margin-bottom: 1rem !important;
     width: 50px !important;
     height: 50px !important;
   }
-  
+
   .treatment-card h3 {
     text-align: center !important;
     margin-bottom: 1.5rem !important;
     font-size: 1.3rem !important;
   }
-  
+
   .treatment-card p {
     text-align: left !important;
     line-height: 1.7 !important;
     margin-bottom: 1.5rem !important;
   }
-  
+
   .treatment-benefits {
     margin-top: 1.5rem !important;
     padding-top: 1.5rem !important;
   }
-  
+
   .benefit-item {
     font-size: 0.95rem !important;
     margin-bottom: 0.8rem !important;
@@ -351,7 +359,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     position: relative !important;
     overflow: visible !important;
   }
-  
+
   section .integration-notice::before {
     width: 35px !important;
     height: 35px !important;
@@ -360,7 +368,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
-  
+
   section .integration-notice h3 {
     font-size: 1.1rem !important;
     margin-top: 1.5rem !important;
@@ -368,7 +376,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     line-height: 1.3 !important;
     padding: 0 !important;
   }
-  
+
   section .integration-notice p {
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
@@ -384,7 +392,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     gap: 2rem !important;
     margin-top: 2rem !important;
   }
-  
+
   .application-card {
     padding: 2rem 1.5rem !important;
     min-height: auto !important;
@@ -392,21 +400,21 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     border: 1px solid #e2e8f0 !important;
     border-radius: 8px !important;
   }
-  
+
   .application-card h3 {
     font-size: 1.25rem !important;
     margin-bottom: 1rem !important;
     line-height: 1.3 !important;
     color: #1a202c !important;
   }
-  
+
   .application-card p {
     font-size: 1.05rem !important;
     line-height: 1.7 !important;
     color: #4a5568 !important;
     margin: 0 !important;
   }
-  
+
   .application-card a {
     text-decoration: none !important;
     color: inherit !important;
@@ -420,29 +428,29 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     padding: 0 24px !important;
     margin-bottom: 3rem !important;
   }
-  
+
   .review-card {
     padding: 2.5rem 1.8rem !important;
     min-height: 300px !important;
     display: flex !important;
     align-items: center !important;
   }
-  
+
   .review-text {
     font-size: 1.1rem !important;
     line-height: 1.7 !important;
     margin-bottom: 2rem !important;
   }
-  
+
   .review-author {
     font-size: 1.1rem !important;
     margin-bottom: 0.5rem !important;
   }
-  
+
   .reviews-slider-nav {
     display: none !important;
   }
-  
+
   .google-rating {
     flex-direction: row !important;
     gap: 1rem !important;
@@ -450,13 +458,13 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     justify-content: center !important;
     margin-bottom: 2rem !important;
   }
-  
-  
+
+
 }
 
 /* ÜBER MICH SECTION - MOBILE OPTIMIERT */
 @media (max-width: 768px) {
-  
+
   /* Joshua-Dozent Bild: Alternative Lösung via CSS */
   #ueber-mich::before {
     content: '';
@@ -470,24 +478,24 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     border-radius: 12px !important;
     margin: 0 auto 3rem !important;
   }
-  
+
   /* Über Mich Container Layout */
-  #ueber-mich .container > div > div:first-child {
+  #ueber-mich .container>div>div:first-child {
     display: flex !important;
     flex-direction: column !important;
     gap: 2.5rem !important;
     text-align: center !important;
     align-items: center !important;
   }
-  
+
   /* Verstecke das original Image, da es via CSS eingefügt wird */
-  #ueber-mich .container > div > div:first-child > div:first-child {
+  #ueber-mich .container>div>div:first-child>div:first-child {
     display: none !important;
   }
-  
+
   /* Über Mich Textblöcke - EINHEITLICHE VOLLE BREITE */
-  #ueber-mich .container > div > div:first-child > div:nth-child(2),
-  #ueber-mich .container > div > div:first-child > div:nth-child(3) {
+  #ueber-mich .container>div>div:first-child>div:nth-child(2),
+  #ueber-mich .container>div>div:first-child>div:nth-child(3) {
     order: 1 !important;
     text-align: left !important;
     width: 100% !important;
@@ -496,9 +504,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     margin: 0 !important;
     box-sizing: border-box !important;
   }
-  
+
   /* Alle Über Mich Paragraphen einheitlich */
-  #ueber-mich .container > div > div:first-child p {
+  #ueber-mich .container>div>div:first-child p {
     width: 100% !important;
     max-width: 100% !important;
     margin-bottom: 1.5rem !important;
@@ -506,12 +514,12 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     font-size: 1rem !important;
   }
 }
-  
-  /* VFO SECTION - MOBILE OPTIMIERT */
+
+/* VFO SECTION - MOBILE OPTIMIERT */
 @media (max-width: 768px) {
-  
+
   /* VFO Grundlegendes Layout - mehr Platz und Luft */
-  #ueber-mich .container > div:last-child > div:last-child {
+  #ueber-mich .container>div:last-child>div:last-child {
     display: block !important;
     text-align: center !important;
     padding: 2rem 1rem !important;
@@ -524,9 +532,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     box-sizing: border-box !important;
     min-height: auto !important;
   }
-  
+
   /* VFO Logo Container */
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child {
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child {
     max-width: 160px !important;
     width: 100% !important;
     margin: 0 auto 2rem auto !important;
@@ -534,9 +542,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     display: block !important;
     text-align: center !important;
   }
-  
+
   /* VFO Logo Image */
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
     width: 100% !important;
     height: auto !important;
     max-height: 160px !important;
@@ -545,9 +553,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     margin: 0 auto !important;
     border-radius: 8px !important;
   }
-  
+
   /* VFO Text Container - VOLLE BREITE */
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) {
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) {
     order: initial !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -555,9 +563,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     padding: 0 !important;
     box-sizing: border-box !important;
   }
-  
+
   /* VFO Überschrift */
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) h3 {
     font-size: 1.3rem !important;
     margin-bottom: 1.5rem !important;
     text-align: center !important;
@@ -568,9 +576,9 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     max-width: 100% !important;
     font-weight: 500 !important;
   }
-  
+
   /* VFO Text - OPTIMIERTE BREITE */
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
     font-size: 1rem !important;
     line-height: 1.6 !important;
     text-align: left !important;
@@ -585,112 +593,122 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
   }
 
 }
-  
-  /* Container-Sicherheitsmaßnahmen */
-  #ueber-mich .container > div:last-child {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 1rem !important;  /* Minimales Container-Padding */
-  }
-  
-  /* Übergeordnete div Sicherheit */
-  #ueber-mich .container > div {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    margin-bottom: 2rem !important;  /* Abstand zwischen Elementen */
-  }
+
+/* Container-Sicherheitsmaßnahmen */
+#ueber-mich .container>div:last-child {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 1rem !important;
+  /* Minimales Container-Padding */
+}
+
+/* Übergeordnete div Sicherheit */
+#ueber-mich .container>div {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin-bottom: 2rem !important;
+  /* Abstand zwischen Elementen */
+}
 
 
 /* Für mittelgroße mobile Bildschirme (Tablets im Hochformat) */
 @media (max-width: 600px) and (min-width: 481px) {
-  #ueber-mich .container > div:last-child > div:last-child {
+  #ueber-mich .container>div:last-child>div:last-child {
     padding: 2.5rem 1.25rem !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child {
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child {
     max-width: 160px !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
     max-height: 160px !important;
   }
 }
 
 /* Für sehr kleine Bildschirme - aber mit besserer Lesbarkeit */
 @media (max-width: 480px) {
-  #ueber-mich .container > div:last-child > div:last-child {
-    padding: 2rem 1rem !important;  /* Weniger Padding aber immer noch ausreichend */
+  #ueber-mich .container>div:last-child>div:last-child {
+    padding: 2rem 1rem !important;
+    /* Weniger Padding aber immer noch ausreichend */
     border-radius: 8px !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child {
-    max-width: 140px !important;  /* Kleineres Logo aber immer noch gut sichtbar */
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child {
+    max-width: 140px !important;
+    /* Kleineres Logo aber immer noch gut sichtbar */
     margin-bottom: 2rem !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:first-child img {
+
+  #ueber-mich .container>div:last-child>div:last-child>div:first-child img {
     max-height: 140px !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
-    font-size: 1.25rem !important;  /* Immer noch gut lesbar */
+
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) h3 {
+    font-size: 1.25rem !important;
+    /* Immer noch gut lesbar */
     margin-bottom: 1.25rem !important;
   }
-  
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
-    font-size: 1rem !important;  /* Größer als in V1 */
-    line-height: 1.65 !important;  /* Bessere Lesbarkeit */
+
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
+    font-size: 1rem !important;
+    /* Größer als in V1 */
+    line-height: 1.65 !important;
+    /* Bessere Lesbarkeit */
   }
-  
+
   /* Extra Padding für den Container bei sehr kleinen Bildschirmen */
-  #ueber-mich .container > div:last-child {
+  #ueber-mich .container>div:last-child {
     padding: 0 0.75rem !important;
   }
 }
 
 /* Zusätzliche Verbesserungen für alle mobilen Größen */
 @media (max-width: 768px) {
+
   /* Verhindere dass Text zu breit wird */
-  #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
+  #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
     max-width: 100% !important;
-    text-align: justify !important;  /* Blocksatz für professionelleres Aussehen */
+    text-align: justify !important;
+    /* Blocksatz für professionelleres Aussehen */
     text-justify: inter-word !important;
   }
-  
+
   /* Bessere Schatten für moderne Optik */
-  #ueber-mich .container > div:last-child > div:last-child {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+  #ueber-mich .container>div:last-child>div:last-child {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
     transition: box-shadow 0.3s ease !important;
   }
-  
+
   /* Hover-Effekt auch für mobile (Touch) */
-  #ueber-mich .container > div:last-child > div:last-child:active {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  #ueber-mich .container>div:last-child>div:last-child:active {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   }
 }
 
 /* QUALIFIKATIONEN SECTION - Kästchen und Layout Fix */
 @media (max-width: 768px) {
+
   /* Hauptausbildung Block */
-  #qualifikationen .container > div:first-child,
-  #qualifikationen .container > div:nth-child(2) {
+  #qualifikationen .container>div:first-child,
+  #qualifikationen .container>div:nth-child(2) {
     margin-bottom: 3rem !important;
   }
-  
-  #qualifikationen .container > div:first-child > div,
-  #qualifikationen .container > div:nth-child(2) > div {
+
+  #qualifikationen .container>div:first-child>div,
+  #qualifikationen .container>div:nth-child(2)>div {
     padding: 2.5rem 1.5rem !important;
     display: flex !important;
     flex-direction: column !important;
     text-align: center !important;
     gap: 1.5rem !important;
   }
-  
+
   /* Logo Container Fix */
-  #qualifikationen .container > div:first-child > div > div:first-child,
-  #qualifikationen .container > div:nth-child(2) > div > div:first-child {
+  #qualifikationen .container>div:first-child>div>div:first-child,
+  #qualifikationen .container>div:nth-child(2)>div>div:first-child {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -698,71 +716,71 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     gap: 1rem !important;
     margin-bottom: 0 !important;
   }
-  
-  #qualifikationen .container > div:first-child > div > div:first-child > div:first-child,
-  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:first-child {
+
+  #qualifikationen .container>div:first-child>div>div:first-child>div:first-child,
+  #qualifikationen .container>div:nth-child(2)>div>div:first-child>div:first-child {
     width: 80px !important;
     height: 80px !important;
     margin: 0 !important;
     flex-shrink: 0 !important;
   }
-  
-  #qualifikationen .container > div:first-child > div > div:first-child > div:first-child img,
-  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:first-child img {
+
+  #qualifikationen .container>div:first-child>div>div:first-child>div:first-child img,
+  #qualifikationen .container>div:nth-child(2)>div>div:first-child>div:first-child img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
   }
-  
+
   /* Text neben Logo */
-  #qualifikationen .container > div:first-child > div > div:first-child > div:nth-child(2),
-  #qualifikationen .container > div:nth-child(2) > div > div:first-child > div:nth-child(2) {
+  #qualifikationen .container>div:first-child>div>div:first-child>div:nth-child(2),
+  #qualifikationen .container>div:nth-child(2)>div>div:first-child>div:nth-child(2) {
     text-align: center !important;
   }
-  
+
   /* Grid unter Hauptausbildung */
-  #qualifikationen .container > div:first-child > div > div:nth-child(2) {
+  #qualifikationen .container>div:first-child>div>div:nth-child(2) {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
     margin-top: 2rem !important;
   }
-  
-  #qualifikationen .container > div:first-child > div > div:nth-child(2) > div {
+
+  #qualifikationen .container>div:first-child>div>div:nth-child(2)>div {
     text-align: center !important;
     padding: 1rem !important;
     background: #f8f9fa !important;
     border-radius: 6px !important;
   }
-  
+
   /* Qualitäts-Grid */
   .qualitaet-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
-  
-  .qualitaet-grid > div {
+
+  .qualitaet-grid>div {
     text-align: center !important;
     padding: 1.5rem !important;
     background: #f8f9fa !important;
     border-radius: 8px !important;
   }
-  
+
   .qualitaet-grid-block {
-    padding: 2.5rem 1.5rem !important;
-    margin-bottom: 3rem !important;
+    padding: 1.5rem 0.5rem !important;
+    margin-bottom: 0rem !important;
   }
-  
+
   /* Fortbildungen Grid */
   .fortbildungen-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
-  
+
   .fortbildung-card {
     padding: 2.5rem 1.5rem !important;
   }
-  
+
   .icon-box {
     margin: 0 auto 1.5rem !important;
   }
@@ -773,13 +791,13 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
   .faq-container {
     padding: 0 !important;
   }
-  
+
   .faq-item {
     margin-bottom: 1rem !important;
     border-radius: 8px !important;
     overflow: hidden !important;
   }
-  
+
   .faq-question {
     padding: 1.5rem 1.2rem !important;
     font-size: 1.05rem !important;
@@ -788,30 +806,30 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     display: flex !important;
     align-items: center !important;
   }
-  
+
   .faq-question span:first-child {
     flex: 1 !important;
     padding-right: 1rem !important;
     text-align: left !important;
   }
-  
+
   .faq-question:hover {
     padding-left: 1.5rem !important;
     background: #f1f5f9 !important;
   }
-  
+
   .faq-content {
     padding: 0 1.2rem 2rem !important;
     font-size: 1rem !important;
     line-height: 1.7 !important;
   }
-  
+
   .faq-content p {
     margin-bottom: 1rem !important;
     font-size: 1rem !important;
     line-height: 1.7 !important;
   }
-  
+
   .faq-icon {
     font-size: 1.4rem !important;
     min-width: 24px !important;
@@ -821,12 +839,13 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
 
 /* KONTAKT SECTION - Alle Layout-Probleme behoben */
 @media (max-width: 768px) {
+
   /* Hauptkontakt Block - komplett überarbeitet */
-  #kontakt .container > div:nth-child(2) {
+  #kontakt .container>div:nth-child(2) {
     margin-bottom: 3rem !important;
   }
-  
-  #kontakt .container > div:nth-child(2) > div:first-child {
+
+  #kontakt .container>div:nth-child(2)>div:first-child {
     display: flex !important;
     flex-direction: column !important;
     gap: 2.5rem !important;
@@ -836,135 +855,136 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     border-radius: 12px !important;
     border: 1px solid #e2e8f0 !important;
   }
-  
-  #kontakt .container > div:nth-child(2) > div:first-child h3 {
+
+  #kontakt .container>div:nth-child(2)>div:first-child h3 {
     font-size: 1.4rem !important;
     margin-bottom: 2rem !important;
   }
-  
-  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child {
+
+  #kontakt .container>div:nth-child(2)>div:first-child>div:first-child {
     display: flex !important;
     flex-direction: column !important;
     gap: 2rem !important;
     align-items: center !important;
   }
-  
-  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child > div {
+
+  #kontakt .container>div:nth-child(2)>div:first-child>div:first-child>div {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 1rem !important;
     min-width: 200px !important;
   }
-  
+
   /* Online Terminbuchung Button */
-  #kontakt .container > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) a {
+  #kontakt .container>div:nth-child(2)>div:first-child>div:first-child>div:nth-child(2) a {
     padding: 14px 20px !important;
     font-size: 1rem !important;
     width: 100% !important;
     max-width: 250px !important;
     text-align: center !important;
   }
-  
+
   /* Praxisstandorte - Grid Fix */
-  #kontakt .container > div:nth-child(3) {
+  #kontakt .container>div:nth-child(3) {
     display: flex !important;
     flex-direction: column !important;
     gap: 2rem !important;
   }
-  
-  #kontakt .container > div:nth-child(3) > div {
+
+  #kontakt .container>div:nth-child(3)>div {
     padding: 2.5rem 2rem !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
     box-sizing: border-box !important;
   }
-  
-  #kontakt .container > div:nth-child(3) h3 {
+
+  #kontakt .container>div:nth-child(3) h3 {
     text-align: center !important;
     margin-bottom: 2rem !important;
   }
-  
+
   /* Kontaktformular und Anfahrt Grid */
-  #kontakt .container > div:nth-child(4) {
+  #kontakt .container>div:nth-child(4) {
     display: flex !important;
     flex-direction: column !important;
     gap: 2.5rem !important;
   }
-  
-  #kontakt .container > div:nth-child(4) > div {
+
+  #kontakt .container>div:nth-child(4)>div {
     width: 100% !important;
     max-width: 100% !important;
   }
-  
+
   .contact-form {
     padding: 2.5rem 2rem !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
-  
+
   .form-group {
     margin-bottom: 1.5rem !important;
   }
-  
+
   .form-group input,
   .form-group textarea {
-    font-size: 16px !important; /* Verhindert Zoom auf iOS */
+    font-size: 16px !important;
+    /* Verhindert Zoom auf iOS */
     padding: 12px 16px !important;
     width: 100% !important;
     border: 1px solid #e2e8f0 !important;
     border-radius: 6px !important;
     box-sizing: border-box !important;
   }
-  
+
   .form-group textarea {
     min-height: 120px !important;
     resize: vertical !important;
   }
-  
+
   .form-submit {
     width: 100% !important;
     padding: 16px 24px !important;
     font-size: 1rem !important;
     min-height: 48px !important;
   }
-  
+
   /* Anfahrt-Info Box */
-  #kontakt .container > div:nth-child(4) > div:nth-child(2) {
+  #kontakt .container>div:nth-child(4)>div:nth-child(2) {
     padding: 2rem 1.5rem !important;
   }
-  
-  #kontakt .container > div:nth-child(4) > div:nth-child(2) > div {
+
+  #kontakt .container>div:nth-child(4)>div:nth-child(2)>div {
     margin-bottom: 2rem !important;
   }
-  
-  #kontakt .container > div:nth-child(4) > div:nth-child(2) > div h4 {
+
+  #kontakt .container>div:nth-child(4)>div:nth-child(2)>div h4 {
     font-size: 1.2rem !important;
     margin-bottom: 1.5rem !important;
     text-align: center !important;
   }
-  
+
   /* Google Maps Placeholder */
-  #kontakt .container > div:nth-child(5) > div {
+  #kontakt .container>div:nth-child(5)>div {
     height: 300px !important;
     margin: 2rem 0 !important;
   }
-  
+
   /* Persönliche Beratung CTA */
-  #kontakt .container > div:last-child {
+  #kontakt .container>div:last-child {
     padding: 3rem 2rem !important;
     text-align: center !important;
   }
-  
-  #kontakt .container > div:last-child > div:last-child {
+
+  #kontakt .container>div:last-child>div:last-child {
     display: flex !important;
     flex-direction: column !important;
     gap: 1.5rem !important;
     align-items: center !important;
   }
-  
-  #kontakt .container > div:last-child > div:last-child > a {
+
+  #kontakt .container>div:last-child>div:last-child>a {
     width: 100% !important;
     max-width: 280px !important;
     justify-content: center !important;
@@ -977,6 +997,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
 
 /* BLOG SECTION MOBILE FIX */
 @media (max-width: 768px) {
+
   section[id="blog"],
   section[id="blog"] .container {
     width: 100% !important;
@@ -1013,21 +1034,21 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
 
 /* FOOTER SECTION - Komplett überarbeitet für Mobile */
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   footer {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
   }
-  
+
   .footer-main {
     padding: 4rem 0 3rem !important;
   }
-  
+
   .footer-container {
     padding: 0 2rem !important;
   }
-  
+
   .footer-content {
     display: flex !important;
     flex-direction: column !important;
@@ -1035,31 +1056,31 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     text-align: center !important;
     align-items: center !important;
   }
-  
+
   /* Logo Section zuerst */
   .footer-logo-section {
     order: -1 !important;
     justify-content: center !important;
     margin-bottom: 1rem !important;
   }
-  
+
   .footer-logo-img {
     width: 120px !important;
     height: 120px !important;
   }
-  
+
   /* Alle Footer Columns als vertikale Liste */
   .footer-column {
     text-align: center !important;
     width: 100% !important;
   }
-  
+
   .footer-column h4 {
     font-size: 1.2rem !important;
     margin-bottom: 1.5rem !important;
     text-align: center !important;
   }
-  
+
   .footer-nav-links {
     display: flex !important;
     flex-direction: column !important;
@@ -1069,12 +1090,12 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     padding: 0 !important;
     margin: 0 !important;
   }
-  
+
   .footer-nav-links li {
     margin: 0 !important;
     width: auto !important;
   }
-  
+
   .footer-nav-links a {
     font-size: 1rem !important;
     padding: 0.5rem 1rem !important;
@@ -1085,7 +1106,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     align-items: center !important;
     justify-content: center !important;
   }
-  
+
   /* Kontakt Section im Footer */
   .footer-contact {
     display: flex !important;
@@ -1094,7 +1115,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     align-items: center !important;
     width: 100% !important;
   }
-  
+
   .contact-item {
     display: flex !important;
     flex-direction: column !important;
@@ -1107,12 +1128,12 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     width: 100% !important;
     max-width: 280px !important;
   }
-  
+
   .contact-icon {
     font-size: 1.5rem !important;
     margin-bottom: 0.5rem !important;
   }
-  
+
   .contact-info {
     display: flex !important;
     flex-direction: column !important;
@@ -1120,26 +1141,26 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     text-align: center !important;
     gap: 0.3rem !important;
   }
-  
+
   .contact-info span {
     font-size: 1rem !important;
     line-height: 1.4 !important;
     text-align: center !important;
     color: #a0aec0 !important;
   }
-  
+
   .contact-info small {
     font-size: 0.85rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.05em !important;
     color: #718096 !important;
   }
-  
+
   /* Footer Bottom */
   .footer-bottom {
     padding: 2rem 0 !important;
   }
-  
+
   .footer-bottom-content {
     display: flex !important;
     justify-content: center !important;
@@ -1147,7 +1168,7 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     text-align: center !important;
     padding: 0 2rem !important;
   }
-  
+
   .footer-copyright {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
@@ -1155,428 +1176,460 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
   }
 
   /* Footer Fix für mobile Ansicht */
-@media (max-width: 768px) {
-  footer {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    left: 0 !important;  /* Wichtig: Left auf 0 setzen */
-    right: 0 !important; /* Wichtig: Right auf 0 setzen */
-    position: relative !important; /* Von fixed/absolute zu relative ändern */
+  @media (max-width: 768px) {
+    footer {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      left: 0 !important;
+      /* Wichtig: Left auf 0 setzen */
+      right: 0 !important;
+      /* Wichtig: Right auf 0 setzen */
+      position: relative !important;
+      /* Von fixed/absolute zu relative ändern */
+    }
+
+    .footer-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 1rem !important;
+      margin: 0 auto !important;
+    }
+
+    .footer-content {
+      width: 100% !important;
+      margin: 0 auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
   }
 
-  .footer-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 1rem !important;
-    margin: 0 auto !important;
+
+  /* BUTTONS & INTERACTIVE ELEMENTS - Touch-Optimized */
+  @media (max-width: 768px) {
+
+    .cta-button,
+    .cta-button-secondary,
+    .form-submit {
+      min-height: 48px !important;
+      /* Touch-friendly */
+      font-size: 1rem !important;
+      padding: 14px 24px !important;
+      border-radius: 6px !important;
+      transition: all 0.3s ease !important;
+      cursor: pointer !important;
+    }
+
+    .cta-button {
+      background: #1a202c !important;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .cta-button-secondary {
+      background: #fff !important;
+      color: #1a202c !important;
+      border: 2px solid #1a202c !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    /* Floating Booking Button */
+    .floating-booking {
+      bottom: 1.5rem !important;
+      right: 1.5rem !important;
+      z-index: 999 !important;
+    }
+
+    .floating-booking-btn {
+      padding: 14px 18px !important;
+      font-size: 0.95rem !important;
+      gap: 0.5rem !important;
+      border-radius: 50px !important;
+      box-shadow: 0 4px 20px rgba(26, 32, 44, 0.3) !important;
+    }
+
+    /* Button Hover States für Touch */
+    .cta-button:hover,
+    .cta-button:focus {
+      background: #2d3748 !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .cta-button-secondary:hover,
+    .cta-button-secondary:focus {
+      background: #f8f9fa !important;
+      border-color: #2d3748 !important;
+      transform: translateY(-1px) !important;
+    }
   }
 
-  .footer-content {
-    width: 100% !important;
-    margin: 0 auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-}
+  /* IMAGES & MEDIA - Overflow Prevention */
+  @media (max-width: 768px) {
 
+    img,
+    video {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
 
-/* BUTTONS & INTERACTIVE ELEMENTS - Touch-Optimized */
-@media (max-width: 768px) {
-  .cta-button,
-  .cta-button-secondary,
-  .form-submit {
-    min-height: 48px !important; /* Touch-friendly */
-    font-size: 1rem !important;
-    padding: 14px 24px !important;
-    border-radius: 6px !important;
-    transition: all 0.3s ease !important;
-    cursor: pointer !important;
-  }
-  
-  .cta-button {
-    background: #1a202c !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  .cta-button-secondary {
-    background: #fff !important;
-    color: #1a202c !important;
-    border: 2px solid #1a202c !important;
-    text-decoration: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  /* Floating Booking Button */
-  .floating-booking {
-    bottom: 1.5rem !important;
-    right: 1.5rem !important;
-    z-index: 999 !important;
-  }
-  
-  .floating-booking-btn {
-    padding: 14px 18px !important;
-    font-size: 0.95rem !important;
-    gap: 0.5rem !important;
-    border-radius: 50px !important;
-    box-shadow: 0 4px 20px rgba(26, 32, 44, 0.3) !important;
-  }
-  
-  /* Button Hover States für Touch */
-  .cta-button:hover,
-  .cta-button:focus {
-    background: #2d3748 !important;
-    transform: translateY(-1px) !important;
-  }
-  
-  .cta-button-secondary:hover,
-  .cta-button-secondary:focus {
-    background: #f8f9fa !important;
-    border-color: #2d3748 !important;
-    transform: translateY(-1px) !important;
-  }
-}
+    /* Prevent image overflow in cards */
+    .hero img,
+    .treatment-card img,
+    .application-card img,
+    .benefit-card img {
+      border-radius: 8px !important;
+      object-fit: cover !important;
+      width: 100% !important;
+    }
 
-/* IMAGES & MEDIA - Overflow Prevention */
-@media (max-width: 768px) {
-  img, video { 
-    max-width: 100% !important; 
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-  
-  /* Prevent image overflow in cards */
-  .hero img,
-  .treatment-card img,
-  .application-card img,
-  .benefit-card img {
-    border-radius: 8px !important;
-    object-fit: cover !important;
-    width: 100% !important;
-  }
-  
-  /* Specific image fixes */
-  .footer-logo-img {
-    filter: brightness(0) invert(1) !important;
-  }
-  
-  /* Profile images */
-  section img[src*="joshua-alsen-profil.jpg"],
-  section img[src*="joshua-alsen-dozent.jpeg"] {
-    max-width: 300px !important;
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 12px !important;
-    margin: 0 auto !important;
-  }
-}
+    /* Specific image fixes */
+    .footer-logo-img {
+      filter: brightness(0) invert(1) !important;
+    }
 
-/* GRIDS & LAYOUTS - Comprehensive Fallback */
-@media (max-width: 768px) {
-  .benefits-grid,
-  .applications-grid,
-  .treatments-grid,
-  .qualitaet-grid,
-  .fortbildungen-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2rem !important;
-    width: 100% !important;
+    /* Profile images */
+    section img[src*="joshua-alsen-profil.jpg"],
+    section img[src*="joshua-alsen-dozent.jpeg"] {
+      max-width: 300px !important;
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 12px !important;
+      margin: 0 auto !important;
+    }
   }
-  
-  .benefit-card,
-  .application-card,
-  .treatment-card,
-  .fortbildung-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 2rem 1.5rem !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    background: #ffffff !important;
-    border: 1px solid #e2e8f0 !important;
-    border-radius: 8px !important;
-  }
-  
-  /* Prevent any grid from breaking */
-  .grid,
-  [class*="grid"],
-  [style*="grid"],
-  [style*="display: grid"] {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 1.5rem !important;
-  }
-}
 
-/* SCROLL & NAVIGATION FIXES - Nur Minimal, KEINE Menu-Eingriffe */
-@media (max-width: 768px) {
-  html {
-    scroll-behavior: smooth !important;
-    scroll-padding-top: 100px !important;
-  }
-  
-  section {
-    scroll-margin-top: 100px !important;
-    position: relative !important;
-    z-index: 1 !important;
-  }
-  
-  /* WICHTIG: Keinerlei Navigation/Menu Styles hier - shared-header.js übernimmt */
-}
+  /* GRIDS & LAYOUTS - Comprehensive Fallback */
+  @media (max-width: 768px) {
 
-/* ACCESSIBILITY & TOUCH TARGETS */
-@media (max-width: 768px) {
-  button,
-  .button,
-  a[href],
-  .faq-question,
-  .treatment-card,
-  .application-card {
-    min-height: 48px !important;
-    min-width: 48px !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
-  }
-  
-  /* Ensure text doesn't get too small */
-  small,
-  .small-text {
-    font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
-    line-height: 1.4 !important;
-  }
-  
-  /* Focus states for accessibility */
-  button:focus,
-  a:focus,
-  input:focus,
-  textarea:focus {
-    outline: 2px solid #1a202c !important;
-    outline-offset: 2px !important;
-  }
-}
+    .benefits-grid,
+    .applications-grid,
+    .treatments-grid,
+    .qualitaet-grid,
+    .fortbildungen-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 2rem !important;
+      width: 100% !important;
+    }
 
-/* PERFORMANCE OPTIMIZATIONS & OVERFLOW PREVENTION */
-@media (max-width: 768px) {
-  /* Reduce animations on mobile for better performance */
-  * {
-    transition-duration: 0.2s !important;
-    transform: none !important;
-  }
-  
-  /* Critical overflow prevention */
-  body {
-    position: relative !important;
-    overflow-x: hidden !important;
-    width: 100% !important;
-    min-height: 100vh !important;
-  }
-  
-  /* Prevent horizontal scrolling issues */
-  .container,
-  section,
-  div,
-  main {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* Text overflow prevention */
-  h1, h2, h3, h4, h5, h6, p, li, span, a {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto !important;
-    max-width: 100% !important;
-  }
-  
-  /* Flex container fixes */
-  .hero-buttons,
-  .footer-content,
-  .contact-item,
-  .treatment-header {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    max-width: 100% !important;
-  }
-  
-  /* Remove problematic negative margins */
-  * {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  
-  /* Specific margin exceptions where needed */
-  .container {
-    margin: 0 auto !important;
-  }
-  
-  .section-title {
-    margin: 0 auto 2rem !important;
-  }
-}
+    .benefit-card,
+    .application-card,
+    .treatment-card,
+    .fortbildung-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 2rem 1.5rem !important;
+      margin: 0 !important;
+      box-sizing: border-box !important;
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 8px !important;
+    }
 
-/* VERY SMALL SCREENS - Additional fixes */
-@media (max-width: 480px) {
-  .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    /* Prevent any grid from breaking */
+    .grid,
+    [class*="grid"],
+    [style*="grid"],
+    [style*="display: grid"] {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+    }
   }
-  
-  section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-  
-  .hero h1 {
-    font-size: clamp(1.8rem, 9vw, 2.4rem) !important;
-    line-height: 1.1 !important;
-  }
-  
-  .section-title {
-    font-size: clamp(1.4rem, 7vw, 1.9rem) !important;
-  }
-  
-  .contact-form,
-  .treatment-card,
-  .application-card,
-  .benefit-card {
-    padding: 1.5rem 1.2rem !important;
-  }
-  
-  .floating-booking-btn {
-    font-size: 0.85rem !important;
-    padding: 12px 16px !important;
-  }
-  
-  .faq-question {
-    padding: 1.2rem 1rem !important;
-    font-size: 1rem !important;
-  }
-  
-  .footer-logo-img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-}
 
-/* TEXT OVERLAP PREVENTION */
-@media (max-width: 768px) {
-  /* Ensure proper spacing between elements */
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem !important;
-    margin-top: 0 !important;
-    clear: both !important;
-    position: relative !important;
-    z-index: 10 !important;
+  /* SCROLL & NAVIGATION FIXES - Nur Minimal, KEINE Menu-Eingriffe */
+  @media (max-width: 768px) {
+    html {
+      scroll-behavior: smooth !important;
+      scroll-padding-top: 100px !important;
+    }
+
+    section {
+      scroll-margin-top: 100px !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    /* WICHTIG: Keinerlei Navigation/Menu Styles hier - shared-header.js übernimmt */
   }
-  
-  p, li {
-    margin-bottom: 1rem !important;
-    margin-top: 0 !important;
-    clear: both !important;
+
+  /* ACCESSIBILITY & TOUCH TARGETS */
+  @media (max-width: 768px) {
+
+    button,
+    .button,
+    a[href],
+    .faq-question,
+    .treatment-card,
+    .application-card {
+      min-height: 48px !important;
+      min-width: 48px !important;
+      cursor: pointer !important;
+      transition: all 0.3s ease !important;
+    }
+
+    /* Ensure text doesn't get too small */
+    small,
+    .small-text {
+      font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+      line-height: 1.4 !important;
+    }
+
+    /* Focus states for accessibility */
+    button:focus,
+    a:focus,
+    input:focus,
+    textarea:focus {
+      outline: 2px solid #1a202c !important;
+      outline-offset: 2px !important;
+    }
   }
-  
-  /* Section separation */
-  section + section {
-    margin-top: 0 !important;
-    clear: both !important;
+
+  /* PERFORMANCE OPTIMIZATIONS & OVERFLOW PREVENTION */
+  @media (max-width: 768px) {
+
+    /* Reduce animations on mobile for better performance */
+    * {
+      transition-duration: 0.2s !important;
+      transform: none !important;
+    }
+
+    /* Critical overflow prevention */
+    body {
+      position: relative !important;
+      overflow-x: hidden !important;
+      width: 100% !important;
+      min-height: 100vh !important;
+    }
+
+    /* Prevent horizontal scrolling issues */
+    .container,
+    section,
+    div,
+    main {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Text overflow prevention */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    span,
+    a {
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      hyphens: auto !important;
+      max-width: 100% !important;
+    }
+
+    /* Flex container fixes */
+    .hero-buttons,
+    .footer-content,
+    .contact-item,
+    .treatment-header {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      max-width: 100% !important;
+    }
+
+    /* Remove problematic negative margins */
+    * {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    /* Specific margin exceptions where needed */
+    .container {
+      margin: 0 auto !important;
+    }
+
+    .section-title {
+      margin: 0 auto 2rem !important;
+    }
   }
-  
-  /* Card spacing */
-  .benefit-card,
-  .treatment-card,
-  .application-card {
-    margin-bottom: 1.5rem !important;
-    clear: both !important;
-    position: relative !important;
+
+  /* VERY SMALL SCREENS - Additional fixes */
+  @media (max-width: 480px) {
+    .container {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 9vw, 2.4rem) !important;
+      line-height: 1.1 !important;
+    }
+
+    .section-title {
+      font-size: clamp(1.4rem, 7vw, 1.9rem) !important;
+    }
+
+    .contact-form,
+    .treatment-card,
+    .application-card,
+    .benefit-card {
+      padding: 1.5rem 1.2rem !important;
+    }
+
+    .floating-booking-btn {
+      font-size: 0.85rem !important;
+      padding: 12px 16px !important;
+    }
+
+    .faq-question {
+      padding: 1.2rem 1rem !important;
+      font-size: 1rem !important;
+    }
+
+    .footer-logo-img {
+      width: 100px !important;
+      height: 100px !important;
+    }
   }
-  
-  /* Prevent floating elements from overlapping */
-  .floating-booking {
-    z-index: 999 !important;
-    position: fixed !important;
+
+  /* TEXT OVERLAP PREVENTION */
+  @media (max-width: 768px) {
+
+    /* Ensure proper spacing between elements */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1rem !important;
+      margin-top: 0 !important;
+      clear: both !important;
+      position: relative !important;
+      z-index: 10 !important;
+    }
+
+    p,
+    li {
+      margin-bottom: 1rem !important;
+      margin-top: 0 !important;
+      clear: both !important;
+    }
+
+    /* Section separation */
+    section+section {
+      margin-top: 0 !important;
+      clear: both !important;
+    }
+
+    /* Card spacing */
+    .benefit-card,
+    .treatment-card,
+    .application-card {
+      margin-bottom: 1.5rem !important;
+      clear: both !important;
+      position: relative !important;
+    }
+
+    /* Prevent floating elements from overlapping */
+    .floating-booking {
+      z-index: 999 !important;
+      position: fixed !important;
+    }
+
+    /* Footer separation */
+    footer {
+      clear: both !important;
+      margin-top: 3rem !important;
+    }
   }
-  
-  /* Footer separation */
-  footer {
-    clear: both !important;
-    margin-top: 3rem !important;
-  }
-}
 
   /* ÜBER MICH TEXTBLÖCKE VERBINDEN - NUR MOBILE */
-@media (max-width: 768px) {
-  /* Profile Text Container - alle Texte in einen zusammenhängenden Block */
-  #ueber-mich .container > div > div:first-child {
-    display: block !important;
-  }
-  
-  /* Weitere Texte Container - entferne negative margin */
-  #ueber-mich .container > div > div:first-child + div {
-    margin-top: 0 !important;
-  }
-  
-  /* Alle Paragraphen als zusammenhängender Textfluss */
-  #ueber-mich .container > div > div:first-child p,
-  #ueber-mich .container > div > div:first-child + div p {
-    margin-bottom: 1.5rem !important;
-  }
-  
-  /* Letzter Paragraph ohne Bottom-Margin */
-  #ueber-mich .container > div > div:first-child + div p:last-child {
-    margin-bottom: 0 !important;
-  }
-}
+  @media (max-width: 768px) {
 
-/* KRITISCHE OVERRIDE RULES - HÖCHSTE PRIORITÄT */
-@media (max-width: 768px) {
-    
+    /* Profile Text Container - alle Texte in einen zusammenhängenden Block */
+    #ueber-mich .container>div>div:first-child {
+      display: block !important;
+    }
+
+    /* Weitere Texte Container - entferne negative margin */
+    #ueber-mich .container>div>div:first-child+div {
+      margin-top: 0 !important;
+    }
+
+    /* Alle Paragraphen als zusammenhängender Textfluss */
+    #ueber-mich .container>div>div:first-child p,
+    #ueber-mich .container>div>div:first-child+div p {
+      margin-bottom: 1.5rem !important;
+    }
+
+    /* Letzter Paragraph ohne Bottom-Margin */
+    #ueber-mich .container>div>div:first-child+div p:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  /* KRITISCHE OVERRIDE RULES - HÖCHSTE PRIORITÄT */
+  @media (max-width: 768px) {
+
     /* 1. HYPHENS GLOBAL DEAKTIVIEREN - VERSTÄRKT */
     html * {
-        hyphens: none !important;
-        -webkit-hyphens: none !important;
-        -moz-hyphens: none !important;
-        -ms-hyphens: none !important;
-        word-break: normal !important;
-        overflow-wrap: normal !important;
-        word-wrap: normal !important;
+      hyphens: none !important;
+      -webkit-hyphens: none !important;
+      -moz-hyphens: none !important;
+      -ms-hyphens: none !important;
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      word-wrap: normal !important;
     }
-    
+
     /* 2. ÜBERSCHRIFTEN - SPEZIFISCHE SELEKTOREN */
-    body h1, body h2, body h3, body h4, body h5, body h6,
-    body .section-title, body .hero h1, body .hero-subtitle {
-        hyphens: none !important;
-        -webkit-hyphens: none !important;
-        word-break: keep-all !important;
-        white-space: normal !important;
-        text-align: center !important;
-        word-wrap: normal !important;
-        overflow-wrap: normal !important;
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5,
+    body h6,
+    body .section-title,
+    body .hero h1,
+    body .hero-subtitle {
+      hyphens: none !important;
+      -webkit-hyphens: none !important;
+      word-break: keep-all !important;
+      white-space: normal !important;
+      text-align: center !important;
+      word-wrap: normal !important;
+      overflow-wrap: normal !important;
     }
-    
+
     /* 3. CONTAINER - MAXIMALE BREITE ERZWINGEN */
     body .container,
     body section .container,
     body main .container,
     body div.container {
-        padding-left: clamp(8px, 2.5vw, 16px) !important;
-        padding-right: clamp(8px, 2.5vw, 16px) !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        box-sizing: border-box !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      box-sizing: border-box !important;
     }
-    
+
     /* 4. CARDS UND CONTENT - VOLLE BREITE */
     body .treatment-card,
     body .application-card,
@@ -1586,262 +1639,256 @@ section[style*="padding: 80px 0; background: #ffffff;"] .container > div > div:f
     body .contact-form,
     body .faq-content,
     body .integration-notice,
-    body .qualitaet-grid > div,
+    body .qualitaet-grid>div,
     body .qualitaet-grid-block {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 2rem clamp(1.5rem, 4vw, 2.5rem) !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        box-sizing: border-box !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      box-sizing: border-box !important;
     }
-    
+
     /* 5. HERO SECTION - SPEZIFISCH */
     body .hero {
-        padding-left: clamp(1.5rem, 4vw, 2rem) !important;
-        padding-right: clamp(1.5rem, 4vw, 2rem) !important;
-        text-align: center !important;
+      text-align: center !important;
     }
-    
+
     body .hero h1 {
-        font-size: clamp(2rem, 7vw, 2.8rem) !important;
-        line-height: 1.15 !important;
-        hyphens: none !important;
-        word-break: normal !important;
-        text-align: center !important;
+      font-size: clamp(2rem, 7vw, 2.8rem) !important;
+      line-height: 1.15 !important;
+      hyphens: none !important;
+      word-break: normal !important;
+      text-align: center !important;
     }
-    
+
     body .hero-subtitle {
-        font-size: clamp(1.1rem, 4vw, 1.3rem) !important;
-        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
-        text-align: center !important;
+      font-size: clamp(1.1rem, 4vw, 1.3rem) !important;
+      text-align: center !important;
     }
-    
+
     body .hero-description {
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
-        text-align: center !important;
-        max-width: 100% !important;
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      text-align: center !important;
+      max-width: 100% !important;
     }
-    
+
     /* 6. SECTION TITLES - KEINE HYPHENS */
     body section h2,
     body section .section-title {
-        font-size: clamp(1.6rem, 5vw, 2rem) !important;
-        line-height: 1.25 !important;
-        text-align: center !important;
-        padding: 0 clamp(1rem, 3vw, 1.5rem) !important;
-        hyphens: none !important;
-        word-break: normal !important;
-        margin-bottom: 2rem !important;
+      font-size: clamp(1.6rem, 5vw, 2rem) !important;
+      line-height: 1.25 !important;
+      text-align: center !important;
+      hyphens: none !important;
+      word-break: normal !important;
+      margin-bottom: 2rem !important;
     }
-    
+
     /* 7. QUALIFIKATIONEN SECTION - DIREKTE SELEKTOREN */
-    body #qualifikationen .container > div:first-child > div,
-    body #qualifikationen .container > div:nth-child(2) > div {
-        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
+    body #qualifikationen .container>div:first-child>div,
+    body #qualifikationen .container>div:nth-child(2)>div {
+      padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
-    
+
     body #qualifikationen h3 {
-        font-size: clamp(1.25rem, 4.5vw, 1.5rem) !important;
-        line-height: 1.3 !important;
-        text-align: center !important;
-        hyphens: none !important;
-        word-break: normal !important;
+      font-size: clamp(1.25rem, 4.5vw, 1.5rem) !important;
+      line-height: 1.3 !important;
+      text-align: center !important;
+      hyphens: none !important;
+      word-break: normal !important;
     }
-    
+
     /* 8. ÜBER MICH SECTION - VFO BOX */
-    body #ueber-mich .container > div:last-child > div:last-child {
-        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
+    body #ueber-mich .container>div:last-child>div:last-child {
+      padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
-    
-    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
+
+    body #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
     }
-    
-    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) h3 {
-        font-size: clamp(1.3rem, 4.5vw, 1.5rem) !important;
-        text-align: center !important;
-        hyphens: none !important;
-        word-break: normal !important;
+
+    body #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) h3 {
+      font-size: clamp(1.3rem, 4.5vw, 1.5rem) !important;
+      text-align: center !important;
+      hyphens: none !important;
+      word-break: normal !important;
     }
-    
-    body #ueber-mich .container > div:last-child > div:last-child > div:nth-child(2) p {
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        line-height: 1.65 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: justify !important;
-        hyphens: none !important;
+
+    body #ueber-mich .container>div:last-child>div:last-child>div:nth-child(2) p {
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      line-height: 1.65 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: justify !important;
+      hyphens: none !important;
     }
-    
+
     /* 9. KONTAKT SECTION */
     body .contact-form {
-        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
+      padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
-    
-    body #kontakt .container > div:nth-child(4) > div:nth-child(2) {
-        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
-        width: 100% !important;
-        max-width: 100% !important;
+
+    body #kontakt .container>div:nth-child(4)>div:nth-child(2) {
+      padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+      width: 100% !important;
+      max-width: 100% !important;
     }
-    
+
     /* 10. BEHANDLUNGEN & ANWENDUNGEN */
     body .treatment-card h3,
     body .application-card h3 {
-        font-size: clamp(1.2rem, 4.5vw, 1.4rem) !important;
-        line-height: 1.3 !important;
-        text-align: center !important;
-        hyphens: none !important;
-        word-break: normal !important;
+      font-size: clamp(1.2rem, 4.5vw, 1.4rem) !important;
+      line-height: 1.3 !important;
+      text-align: center !important;
+      hyphens: none !important;
+      word-break: normal !important;
     }
-    
+
     body .treatment-card p,
     body .application-card p {
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        line-height: 1.7 !important;
-        text-align: left !important;
-        width: 100% !important;
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      line-height: 1.7 !important;
+      text-align: left !important;
+      width: 100% !important;
     }
-    
+
     /* 11. FAQ SECTION */
     body .faq-question {
-        padding: 1.8rem clamp(1.5rem, 4vw, 2rem) !important;
-        font-size: clamp(1.05rem, 4vw, 1.2rem) !important;
-        hyphens: none !important;
-        word-break: normal !important;
+      padding: 1.8rem clamp(1.5rem, 4vw, 2rem) !important;
+      font-size: clamp(1.05rem, 4vw, 1.2rem) !important;
+      hyphens: none !important;
+      word-break: normal !important;
     }
-    
+
     body .faq-question span:first-child {
-        width: 100% !important;
-        max-width: calc(100% - 3rem) !important;
-        padding-right: 1rem !important;
+      width: 100% !important;
+      max-width: calc(100% - 3rem) !important;
+      padding-right: 1rem !important;
     }
-    
+
     body .faq-content {
-        padding: 0 clamp(1.5rem, 4vw, 2rem) 2rem !important;
-        width: 100% !important;
+      padding: 0 clamp(1.5rem, 4vw, 2rem) 2rem !important;
+      width: 100% !important;
     }
-    
+
     body .faq-content p {
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        line-height: 1.7 !important;
-        width: 100% !important;
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      line-height: 1.7 !important;
+      width: 100% !important;
     }
-    
+
     /* 12. REVIEWS SECTION */
     body .reviews-wrapper {
-        padding: 0 clamp(1.5rem, 4vw, 2rem) !important;
-        width: 100% !important;
+      padding: 0 clamp(1.5rem, 4vw, 2rem) !important;
+      width: 100% !important;
     }
-    
+
     body .review-card {
-        padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
-        width: 100% !important;
-        max-width: 100% !important;
+      padding: 2.5rem clamp(2rem, 5vw, 2.5rem) !important;
+      width: 100% !important;
+      max-width: 100% !important;
     }
-    
+
     body .review-text {
-        font-size: clamp(1.05rem, 4vw, 1.15rem) !important;
-        line-height: 1.7 !important;
-        text-align: center !important;
+      font-size: clamp(1.05rem, 4vw, 1.15rem) !important;
+      line-height: 1.7 !important;
+      text-align: center !important;
     }
-    
+
     /* 13. PARAGRAPHEN GLOBAL */
     body p {
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        line-height: 1.6 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        hyphens: none !important;
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      line-height: 1.6 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      hyphens: none !important;
     }
-    
+
     /* 14. BUTTONS */
     body .cta-button,
     body .cta-button-secondary,
     body .form-submit {
-        width: 100% !important;
-        max-width: clamp(280px, 80vw, 320px) !important;
-        padding: 16px 24px !important;
-        font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
-        margin: 0 auto 1rem !important;
-        display: block !important;
-        text-align: center !important;
+      width: 100% !important;
+      max-width: clamp(280px, 80vw, 320px) !important;
+      padding: 16px 24px !important;
+      font-size: clamp(1rem, 3.8vw, 1.1rem) !important;
+      margin: 0 auto 1rem !important;
+      display: block !important;
+      text-align: center !important;
     }
-    
+
     /* 15. DEBUGGING - FORCE VISIBILITY */
     body * {
-        visibility: visible !important;
+      visibility: visible !important;
     }
-    
+
     body .hidden,
     body [style*="display: none"] {
-        display: none !important;
+      display: none !important;
     }
-    
+
     /* 16. GRID FALLBACKS */
     body .benefits-grid,
     body .applications-grid,
     body .treatments-grid,
     body .qualitaet-grid,
     body .fortbildungen-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 2rem !important;
-        width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 2rem !important;
+      width: 100% !important;
     }
-    
+
     /* 17. TEXT ALIGNMENT FIXES */
-    body h1, body h2, body h3, body h4 {
-        text-align: center !important;
+    body h1,
+    body h2,
+    body h3,
+    body h4 {
+      text-align: center !important;
     }
-    
-    body p, body li {
-        text-align: left !important;
+
+    body p,
+    body li {
+      text-align: left !important;
     }
-    
+
     /* 18. FINAL OVERRIDES - NUCLEAR OPTION */
     html body .container *,
     html body section *,
     html body main * {
-        max-width: 100% !important;
-        box-sizing: border-box !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
-}
+  }
 
-/* SMALL SCREENS - ZUSÄTZLICHE FIXES */
-@media (max-width: 480px) {
-    body .container,
-    body section .container {
-        padding-left: clamp(1.5rem, 4vw, 2rem) !important;
-        padding-right: clamp(1.5rem, 4vw, 2rem) !important;
-    }
-    
+  /* SMALL SCREENS - ZUSÄTZLICHE FIXES */
+  @media (max-width: 480px) {
+
     body .treatment-card,
     body .application-card,
     body .contact-form,
     body .review-card {
-        padding: 2rem clamp(1.5rem, 4vw, 2rem) !important;
+      padding: 2rem clamp(1.5rem, 4vw, 2rem) !important;
     }
-    
-    body h2, body .section-title {
-        font-size: clamp(1.5rem, 6vw, 1.9rem) !important;
-        padding: 0 clamp(0.5rem, 2vw, 1rem) !important;
+
+    body h2,
+    body .section-title {
+      font-size: clamp(1.5rem, 6vw, 1.9rem) !important;
+      padding: 0 clamp(0.5rem, 2vw, 1rem) !important;
     }
-    
+
     body p {
-        font-size: clamp(0.95rem, 4vw, 1.05rem) !important;
+      font-size: clamp(0.95rem, 4vw, 1.05rem) !important;
     }
-} 
+  }
 }
