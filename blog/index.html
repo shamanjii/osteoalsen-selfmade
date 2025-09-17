@@ -962,7 +962,7 @@
             }
             
             .posts-grid {
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 gap: 2rem;
             }
         }
@@ -993,13 +993,24 @@
                 padding: 2rem 1.5rem;
             }
 
+            .main-content {
+                margin: 3rem auto;
+            }
+
             .posts-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+            .post-card {
+                margin: 0 auto;
+                max-width: 100%;
             }
 
             .featured-post {
                 grid-template-columns: 1fr;
+                grid-column: 1;
             }
 
             .featured-post .post-content {

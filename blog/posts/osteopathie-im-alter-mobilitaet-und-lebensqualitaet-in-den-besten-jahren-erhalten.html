@@ -350,6 +350,37 @@
       gap: 8px;
     }
 
+    /* TOC Toggle for mobile */
+    .toc-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--text-light);
+      transition: var(--transition);
+      margin-left: auto;
+    }
+
+    .toc-toggle:hover {
+      color: var(--primary-color);
+    }
+
+    .toc-content {
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .toc-content.collapsed {
+      max-height: 0;
+      opacity: 0;
+    }
+
+    .toc-content:not(.collapsed) {
+      max-height: 1000px;
+      opacity: 1;
+    }
+
     /* TOC */
     .toc-list {
       list-style: none;
@@ -660,9 +691,15 @@
 
     @media (max-width: 1024px) {
       .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
         padding: 32px 20px;
+        max-width: 100% !important;
+      }
+      
+      .article {
+        width: 100%;
+        order: 1;
       }
       
       .sidebar {
@@ -671,6 +708,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 24px;
+        width: 100%;
       }
       
       .article-title {
@@ -715,6 +753,22 @@
       
       .sidebar {
         grid-template-columns: 1fr;
+      }
+      
+      /* Show TOC toggle on mobile */
+      .toc-toggle {
+        display: block;
+      }
+      
+      /* Start collapsed on mobile */
+      .toc-content {
+        max-height: 0;
+        opacity: 0;
+      }
+      
+      .toc-content:not(.collapsed) {
+        max-height: 500px;
+        opacity: 1;
       }
     }
 
@@ -1170,10 +1224,16 @@
     <aside class="sidebar">
       <!-- Table of Contents -->
       <div class="sidebar-section" id="tocSection">
-        <h3>📋 Inhaltsverzeichnis</h3>
-        <ul class="toc-list" id="tocList">
-          <!-- Wird automatisch generiert -->
-        </ul>
+        <h3>📋 Inhaltsverzeichnis
+          <button class="toc-toggle" id="tocToggle" aria-label="Inhaltsverzeichnis ein-/ausklappen">
+            <span id="tocToggleIcon">▼</span>
+          </button>
+        </h3>
+        <div class="toc-content" id="tocContent">
+          <ul class="toc-list" id="tocList">
+            <!-- Wird automatisch generiert -->
+          </ul>
+        </div>
       </div>
 
       <!-- Newsletter Section -->
@@ -1298,6 +1358,7 @@
       setupSmoothScroll();
       setupBackToTop();
       setupNewsletterForm();
+      setupTOCToggle();
     }
 
     // Table of Contents

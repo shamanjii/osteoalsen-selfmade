@@ -350,6 +350,37 @@
       gap: 8px;
     }
 
+    /* TOC Toggle for mobile */
+    .toc-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--text-light);
+      transition: var(--transition);
+      margin-left: auto;
+    }
+
+    .toc-toggle:hover {
+      color: var(--primary-color);
+    }
+
+    .toc-content {
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .toc-content.collapsed {
+      max-height: 0;
+      opacity: 0;
+    }
+
+    .toc-content:not(.collapsed) {
+      max-height: 1000px;
+      opacity: 1;
+    }
+
     /* TOC */
     .toc-list {
       list-style: none;
@@ -660,9 +691,15 @@
 
     @media (max-width: 1024px) {
       .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
         padding: 32px 20px;
+        max-width: 100% !important;
+      }
+      
+      .article {
+        width: 100%;
+        order: 1;
       }
       
       .sidebar {
@@ -671,6 +708,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 24px;
+        width: 100%;
       }
       
       .article-title {
@@ -715,6 +753,22 @@
       
       .sidebar {
         grid-template-columns: 1fr;
+      }
+      
+      /* Show TOC toggle on mobile */
+      .toc-toggle {
+        display: block;
+      }
+      
+      /* Start collapsed on mobile */
+      .toc-content {
+        max-height: 0;
+        opacity: 0;
+      }
+      
+      .toc-content:not(.collapsed) {
+        max-height: 500px;
+        opacity: 1;
       }
     }
 
@@ -976,10 +1030,16 @@
     <aside class="sidebar">
       <!-- Table of Contents -->
       <div class="sidebar-section" id="tocSection">
-        <h3>📋 Inhaltsverzeichnis</h3>
-        <ul class="toc-list" id="tocList">
-          <!-- Wird automatisch generiert -->
-        </ul>
+        <h3>📋 Inhaltsverzeichnis
+          <button class="toc-toggle" id="tocToggle" aria-label="Inhaltsverzeichnis ein-/ausklappen">
+            <span id="tocToggleIcon">▼</span>
+          </button>
+        </h3>
+        <div class="toc-content" id="tocContent">
+          <ul class="toc-list" id="tocList">
+            <!-- Wird automatisch generiert -->
+          </ul>
+        </div>
       </div>
 
       <!-- Newsletter Section -->
@@ -1104,6 +1164,7 @@
       setupSmoothScroll();
       setupBackToTop();
       setupNewsletterForm();
+      setupTOCToggle();
     }
 
     // Table of Contents
@@ -1252,6 +1313,53 @@
         alert(`Vielen Dank! Wir haben Ihre E-Mail "${email}" für den Newsletter registriert.`);
         this.reset();
       });
+    }
+
+    // TOC Toggle for Mobile
+    function setupTOCToggle() {
+      const tocToggle = document.getElementById('tocToggle');
+      const tocContent = document.getElementById('tocContent');
+      const tocIcon = document.getElementById('tocToggleIcon');
+      
+      if (!tocToggle || !tocContent || !tocIcon) return;
+      
+      // Set initial state based on screen size
+      function setInitialState() {
+        if (window.innerWidth <= 768) {
+          tocContent.classList.add('collapsed');
+          tocIcon.textContent = '▶';
+        } else {
+          tocContent.classList.remove('collapsed');
+          tocIcon.textContent = '▼';
+        }
+      }
+      
+      // Toggle functionality
+      tocToggle.addEventListener('click', function() {
+        const isCollapsed = tocContent.classList.contains('collapsed');
+        
+        if (isCollapsed) {
+          tocContent.classList.remove('collapsed');
+          tocIcon.textContent = '▼';
+        } else {
+          tocContent.classList.add('collapsed');
+          tocIcon.textContent = '▶';
+        }
+      });
+      
+      // Handle resize
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+          tocContent.classList.remove('collapsed');
+          tocIcon.textContent = '▼';
+        } else if (!tocContent.classList.contains('collapsed')) {
+          tocContent.classList.add('collapsed');
+          tocIcon.textContent = '▶';
+        }
+      });
+      
+      // Set initial state
+      setInitialState();
     }
   </script>
 </body>
