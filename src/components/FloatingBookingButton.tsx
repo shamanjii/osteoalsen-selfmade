@@ -1,17 +1,11 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import throttle from 'lodash.throttle';
 import { trackAppointmentClick } from './Analytics';
 
 export default function FloatingBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
-  const contactSectionRef = useRef<HTMLElement | null>(null);
-
-  // Cache DOM element reference
-  useEffect(() => {
-    contactSectionRef.current = document.getElementById('kontakt');
-  }, []);
 
   // Throttled scroll handler for better performance
   const toggleVisibility = useCallback(() => {
@@ -36,21 +30,13 @@ export default function FloatingBookingButton() {
     };
   }, [toggleVisibility]);
 
-  // Memoize click handler and use cached DOM reference
+  // Memoize click handler to navigate to booking page
   const handleClick = useCallback(() => {
     // Track the conversion event
     trackAppointmentClick('floating_button');
 
-    const contactSection = contactSectionRef.current || document.getElementById('kontakt');
-    if (contactSection) {
-      const headerHeight = 120;
-      const targetPosition = contactSection.offsetTop - headerHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    }
+    // Navigate to the booking page
+    window.location.href = '/terminbuchung';
   }, []);
 
   return (

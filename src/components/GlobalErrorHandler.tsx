@@ -27,15 +27,30 @@ export default function GlobalErrorHandler() {
       });
     };
 
-    // Handle resource loading errors
+    // Handle resource loading errors (only for critical resources)
     const handleResourceError = (event: Event) => {
       const target = event.target as HTMLElement;
       if (target && target.tagName) {
-        monitoring.logError(new Error(`Resource failed to load: ${target.tagName}`), {
-          source: 'resource_error',
-          element: target.tagName,
-          src: (target as any).src || (target as any).href,
-        });
+        const src = (target as any).src || (target as any).href;
+
+        // Skip logging for expected missing images or non-critical resources
+        const isImageError = target.tagName === 'IMG';
+        const isOptionalResource = src && (
+          src.includes('/assets/') ||
+          src.includes('/images/') ||
+          src.includes('.jpg') ||
+          src.includes('.png') ||
+          src.includes('.webp')
+        );
+
+        // Only log critical resource errors (scripts, stylesheets, etc.)
+        if (!isImageError || !isOptionalResource) {
+          monitoring.logError(new Error(`Critical resource failed to load: ${target.tagName}`), {
+            source: 'resource_error',
+            element: target.tagName,
+            src: src,
+          });
+        }
       }
     };
 
@@ -52,13 +67,18 @@ export default function GlobalErrorHandler() {
           for (const entry of list.getEntries()) {
             if (entry.entryType === 'navigation') {
               const navEntry = entry as PerformanceNavigationTiming;
-              monitoring.logPerformance({
-                name: 'page_load',
-                duration: navEntry.loadEventEnd - navEntry.navigationStart,
-                timestamp: new Date().toISOString(),
-                url: window.location.href,
-                type: 'navigation',
-              });
+              const duration = navEntry.loadEventEnd - navEntry.navigationStart;
+
+              // Only log if we have valid timing data
+              if (!isNaN(duration) && duration > 0) {
+                monitoring.logPerformance({
+                  name: 'page_load',
+                  duration: duration,
+                  timestamp: new Date().toISOString(),
+                  url: window.location.href,
+                  type: 'navigation',
+                });
+              }
             }
 
             if (entry.entryType === 'paint') {

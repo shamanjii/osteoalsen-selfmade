@@ -21,7 +21,7 @@ export default function HeroSection() {
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a
-                            href="#kontakt"
+                            href="/terminbuchung"
                             className="hero-btn-primary group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-slate-900 rounded-md overflow-hidden transition-all duration-300 hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl"
                         >
                             <span className="relative z-10">Termin vereinbaren</span>
