@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import SafeHtml from '@/components/SafeHtml';
 
 const faqs = [
     {
@@ -87,9 +88,10 @@ export default function FAQ() {
                                 openItems.includes(faq.id) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                             }`}>
                                 <div className="faq-content px-6 pb-6">
-                                    <div
+                                    <SafeHtml
+                                        html={faq.answer}
                                         className="text-slate-700 leading-relaxed space-y-4"
-                                        dangerouslySetInnerHTML={{ __html: faq.answer }}
+                                        type="faq"
                                     />
                                 </div>
                             </div>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllSlugs, getPostBySlug } from "@/lib/posts";
+import SafeHtml from "@/components/SafeHtml";
 
 export async function generateStaticParams() {
     return getAllSlugs().map((slug) => ({ slug }));
@@ -54,11 +56,20 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                 </header>
                 {post.image && (
                     <div className="relative h-64 w-full mb-6 overflow-hidden rounded-lg bg-slate-100">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={post.image} alt={post.alt || post.title} className="h-full w-full object-cover" />
+                        <Image
+                            src={post.image}
+                            alt={post.alt || post.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 768px"
+                        />
                     </div>
                 )}
-                <div className="rich-text" dangerouslySetInnerHTML={{ __html: post.content }} />
+                <SafeHtml
+                    html={post.content}
+                    className="rich-text prose prose-slate max-w-none"
+                    type="blog"
+                />
                 <footer className="mt-10">
                     <Link href="/blog" className="text-slate-900 hover:underline">
                         ← Zurück zur Übersicht
