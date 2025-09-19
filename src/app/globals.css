@@ -14,10 +14,22 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system;
+  padding-top: 4rem; /* 64px for mobile */
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 5rem; /* 80px for desktop */
+  }
 }
 
 .font-epilogue {
@@ -156,4 +168,315 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Floating Booking Button Animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Mobile responsiveness for floating button */
+@media (max-width: 768px) {
+  .floating-booking-mobile {
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+  }
+
+  .floating-booking-mobile button {
+    padding: 1rem 1.25rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  .floating-booking-mobile button span:last-child {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-booking-mobile {
+    bottom: 1rem !important;
+    right: 1rem !important;
+  }
+
+  .floating-booking-mobile button {
+    padding: 0.875rem 1rem !important;
+    font-size: 0.8rem !important;
+    gap: 0.5rem !important;
+  }
+}
+
+/* Hero Section Button Styles */
+.hero-btn-primary,
+.hero-btn-secondary {
+  position: relative;
+  min-width: 200px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.hero-btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s;
+  z-index: 1;
+}
+
+.hero-btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Mobile Hero Button Adjustments */
+@media (max-width: 640px) {
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+/* Treatment Cards Styles */
+.treatment-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.treatment-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+
+.treatment-number {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  box-shadow: 0 4px 14px 0 rgba(26, 32, 44, 0.25);
+  transition: all 0.3s ease;
+}
+
+.treatment-card:hover .treatment-number {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px 0 rgba(26, 32, 44, 0.35);
+}
+
+/* Mobile Treatment Cards */
+@media (max-width: 768px) {
+  .treatment-header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .treatment-number {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.125rem;
+  }
+
+  .treatment-card {
+    padding: 1.5rem;
+  }
+}
+
+/* FAQ Accordion Styles */
+.faq-item {
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 600;
+}
+
+.faq-answer {
+  border-top: 1px solid #f1f5f9;
+}
+
+.faq-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.faq-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced readability for FAQ content */
+.faq-content {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Mobile FAQ adjustments */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 1rem 1.25rem;
+  }
+
+  .faq-question span:first-child {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .faq-content {
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  .faq-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* Review Slider Styles */
+.reviews-nav-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.reviews-nav-btn:hover {
+  transform: translateY(-1px);
+}
+
+.reviews-nav-btn:active {
+  transform: translateY(0);
+}
+
+.reviews-dot {
+  cursor: pointer;
+}
+
+.reviews-dot:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Review Slider adjustments */
+@media (max-width: 768px) {
+  .reviews-nav-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  .reviews-prev {
+    left: -0.5rem;
+  }
+
+  .reviews-next {
+    right: -0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-nav-btn {
+    display: none; /* Hide navigation buttons on very small screens */
+  }
+}
+
+/* Google Rating Styles */
+.google-rating {
+  align-items: center;
+  justify-content: center;
+}
+
+.google-logo {
+  flex-shrink: 0;
+}
+
+.average-rating {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 600;
+}
+
+.rating-stars {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.rating-value {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Mobile Google Rating adjustments */
+@media (max-width: 768px) {
+  .google-rating {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .average-rating {
+    font-size: 1.75rem;
+  }
+
+  .rating-stars {
+    font-size: 1.125rem;
+  }
+
+  .rating-value {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-rating {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .google-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+/* Qualifications Section Styles */
+.fortbildung-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: #94a3b8;
+}
+
+.qualitaet-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* Mobile adjustments for Qualifications */
+@media (max-width: 640px) {
+  .fortbildung-card {
+    padding: 1.5rem;
+  }
+
+  .qualitaet-section {
+    padding: 2rem 1.5rem;
+  }
 }

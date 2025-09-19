@@ -1,0 +1,25 @@
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Git Gateway für CMS
+[context.production]
+  command = "npm run build"
+
+# Identity für Authentifizierung
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+
+# Media Upload Configuration
+[[redirects]]
+  from = "/api/media/*"
+  to = "/.netlify/functions/media/:splat"
+  status = 200

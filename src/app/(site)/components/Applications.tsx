@@ -40,7 +40,7 @@ const items = [
 
 export default function Applications() {
     return (
-        <section id="anwendungen" className="bg-slate-50 py-16 sm:py-24">
+        <section id="anwendungsbereiche" className="bg-slate-50 py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="text-center max-w-3xl mx-auto">
                     <p className="uppercase tracking-wider text-slate-500 font-medium">Vielseitige Behandlungsmöglichkeiten</p>

@@ -38,19 +38,34 @@ export default function Treatments() {
     return (
         <section id="behandlungen" className="py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
-                <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight">Osteopathische Behandlungsarten in Hamburg</h2>
-                <p className="mt-4 max-w-2xl text-slate-700">
-                    Eine osteopathische Behandlung basiert auf den drei fundamentalen Säulen der Osteopathie. Diese ganzheitliche
-                    Herangehensweise ermöglicht es, den Körper als Einheit zu betrachten und zu behandeln.
-                </p>
-                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {treatments.map((t) => (
-                        <div key={t.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 className="text-xl font-medium text-slate-900">{t.title}</h3>
-                            <p className="mt-3 text-slate-700 text-sm leading-6">{t.desc}</p>
-                            <ul className="mt-4 space-y-2 text-sm text-slate-700 list-disc pl-5">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Osteopathische Behandlungsarten in Hamburg</h2>
+                    <p className="mt-4 max-w-2xl mx-auto text-slate-700 text-lg leading-relaxed">
+                        Eine osteopathische Behandlung basiert auf den drei fundamentalen Säulen der Osteopathie. Diese ganzheitliche
+                        Herangehensweise ermöglicht es, den Körper als Einheit zu betrachten und zu behandeln.
+                    </p>
+                </div>
+                <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {treatments.map((t, index) => (
+                        <div key={t.title} className="treatment-card group relative bg-white rounded-xl border border-slate-200 p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            {/* Treatment Header with Number */}
+                            <div className="treatment-header flex items-center mb-6">
+                                <div className="treatment-number flex-shrink-0 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center font-epilogue font-semibold text-lg mr-4 group-hover:bg-slate-800 transition-colors duration-300">
+                                    <span>{index + 1}</span>
+                                </div>
+                                <h3 className="text-xl font-semibold text-slate-900 font-epilogue">{t.title}</h3>
+                            </div>
+
+                            {/* Description */}
+                            <p className="text-slate-700 leading-relaxed mb-6">{t.desc}</p>
+
+                            {/* Benefits List */}
+                            <ul className="space-y-3 text-slate-700">
                                 {t.benefits.map((b) => (
-                                    <li key={b}>{b}</li>
+                                    <li key={b} className="flex items-start">
+                                        <span className="flex-shrink-0 w-2 h-2 bg-slate-400 rounded-full mt-2 mr-3"></span>
+                                        <span className="text-sm leading-relaxed">{b}</span>
+                                    </li>
                                 ))}
                             </ul>
                         </div>

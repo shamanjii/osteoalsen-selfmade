@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Alternative für lokale Entwicklung:
+# backend:
+#   name: proxy
+#   proxy_url: http://localhost:8081/api/v1
+
+# Media Ordner für Bilder
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
+
+# Lokalisierung
+locale: "de"
+
+# Collections (Content-Typen)
+collections:
+  - name: "blog"
+    label: "Blog Artikel"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Titel",
+          name: "title",
+          widget: "string",
+          hint: "Der Haupttitel des Artikels"
+        }
+      - {
+          label: "Kurzbeschreibung",
+          name: "excerpt",
+          widget: "text",
+          hint: "Eine kurze Zusammenfassung des Artikels (1-2 Sätze)"
+        }
+      - {
+          label: "Veröffentlichungsdatum",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          date_format: "DD.MM.YYYY",
+          time_format: false
+        }
+      - {
+          label: "Schlüsselwörter",
+          name: "keywords",
+          widget: "list",
+          allow_add: true,
+          hint: "Relevante Suchbegriffe für SEO (z.B. Rückenschmerzen, Osteopathie)"
+        }
+      - {
+          label: "Artikelbild",
+          name: "image",
+          widget: "image",
+          required: false,
+          hint: "Optionales Hauptbild für den Artikel"
+        }
+      - {
+          label: "Bild Alt-Text",
+          name: "alt",
+          widget: "string",
+          required: false,
+          hint: "Beschreibung des Bildes für Screenreader"
+        }
+      - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options: ["draft", "published"],
+          default: "draft"
+        }
+      - {
+          label: "Kategorie",
+          name: "category",
+          widget: "select",
+          options: [
+            "osteopathie",
+            "rueckenschmerzen",
+            "kopfschmerzen",
+            "sportverletzungen",
+            "gesundheitstipps"
+          ],
+          default: "osteopathie",
+          hint: "Hauptkategorie für die Filterung im Blog"
+        }
+      - {
+          label: "Artikel-Inhalt",
+          name: "body",
+          widget: "markdown",
+          hint: "Der Hauptinhalt des Artikels in Markdown-Format"
+        }
+
+# Editor-Konfiguration
+editor:
+  preview: true
+
+# Lokale Entwicklung
+local_backend: true

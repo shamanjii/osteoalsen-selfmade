@@ -4,20 +4,26 @@ export default function AboutMe() {
     return (
         <section id="ueber-mich" className="bg-slate-50 py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
-                <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight">Über mich</h2>
-                <div className="mt-8 grid lg:grid-cols-[320px,1fr] gap-10 items-start">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Über mich</h2>
+                    <h3 className="mt-4 text-xl text-slate-700 font-medium">Joshua Alsen - Osteopath in Hamburg</h3>
+                </div>
+                <div className="grid lg:grid-cols-[320px,1fr] gap-10 items-start">
                     <div className="relative h-80 rounded-lg overflow-hidden">
                         <Image src="/assets/joshua-alsen-dozent.jpeg" alt="Joshua Alsen" fill className="object-cover" />
                     </div>
-                    <div className="space-y-4 text-slate-700">
+                    <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
                         <p>
-                            Geboren und aufgewachsen in Hamburg. Zur Osteopathie führte mich die Krebserkrankung meines Stiefvaters.
-                            Anstelle eines Medizinstudiums studierte ich in Vollzeit Osteopathie an der Osteopathie Schule Deutschland.
+                            Geboren und aufgewachsen bin ich in Hamburg. Zur Osteopathie führte mich damals die Krebserkrankung meines Stiefvaters. Ich befand mich im Abitur und verbrachte mit ihm viel Zeit in Krankenhäusern. Während in mir der Wunsch wuchs, mich mit dem Thema Gesundheit zu beschäftigen, sank in mir die Befriedigung bei dem Gedanken, mich beruflich permanent in der Umgebung von Krankenhäusern zu bewegen.
                         </p>
                         <p>
-                            Nach dem Abschluss 2020 blieb ich an der Universität als Dolmetscher für postgraduierte Kurse und Kongresse
-                            und arbeitete mit internationalen Koryphäen der Osteopathie zusammen. 2024 bestand ich die
-                            Heilpraktikerprüfung und gründete meine eigene Praxis in Hamburg.
+                            Nachdem ich mein Abitur 2015 beendet habe entschied ich mich gegen ein Medizinstudium und studierte stattdessen Osteopathie in Vollzeit an der Osteopathie Schule Deutschland. Eine Alternative zur allopathischen Medizin, die auf philosophischen Prinzipien beruht und davon ausgeht, dass der Körper zur Selbstheilung fähig ist, entfachte Begeisterung in mir.
+                        </p>
+                        <p>
+                            Nach einer fundierten Ausbildung akademischer Osteopathie in Hamburg, blieb ich nach dem Abschluss meines Studiums im Oktober 2020 weiterhin an meiner Universität und arbeitete als Dolmetscher im Rahmen postgraduierter Kurse und Osteopathiekongressen eng mit zahlreichen internationalen Koryphäen der Osteopathie zusammen.
+                        </p>
+                        <p>
+                            Nach dem Bestehen meiner Heilpraktikerprüfung im Mai 2024 entschied ich mich, meinen Fokus auf den klinischen Alltag zu richten und mich mit einer eigenen Praxis selbstständig zu machen. Seitdem praktiziere ich mit großer Freude und Hingabe in meiner eigenen Praxis für Osteopathie in Hamburg.
                         </p>
                     </div>
                 </div>
@@ -28,10 +34,8 @@ export default function AboutMe() {
                     </div>
                     <div className="text-slate-700">
                         <h3 className="text-lg font-medium text-slate-900">Zertifiziertes Mitglied im Verband Freier Osteopathen e.V.</h3>
-                        <p className="mt-2">
-                            Als Praxismitglied im VFO profitieren Patientinnen und Patienten von Qualitätsstandards eines anerkannten
-                            Berufsverbands. Die Mitgliedschaft gewährleistet regelmäßige Fortbildungen, ethische Richtlinien und
-                            bildet die Grundlage für Kostenerstattung durch viele Krankenkassen.
+                        <p className="mt-2 leading-relaxed">
+                            Als osteopathisches Praxismitglied im Verband Freier Osteopathen e.V. (VFO) profitieren Sie von den zahlreichen Vorteilen eines anerkannten Berufsverbands. Die Mitgliedschaft gewährleistet nicht nur eine regelmäßige Qualitätssicherung durch fortlaufende Fortbildungen und strenge Ethikrichtlinien, sondern ermöglicht auch die Abrechnung mit den Kassen.
                         </p>
                     </div>
                 </div>

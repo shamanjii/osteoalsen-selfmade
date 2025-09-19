@@ -9,9 +9,14 @@ const benefits = [
 
 export default function AboutOsteopathie() {
     return (
-        <section className="bg-white py-16 sm:py-24">
+        <section id="was-ist-osteopathie" className="bg-white py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-start">
+                    {/* Mobile: Foto vor dem Text */}
+                    <div className="relative h-[400px] overflow-hidden rounded-xl md:hidden">
+                        <Image src="/assets/joshua-alsen-profil.jpg" alt="Joshua Alsen Profilfoto" fill className="object-cover" priority />
+                    </div>
+
                     <div>
                         <p className="uppercase tracking-wider text-slate-500 font-medium">Mein Name ist Joshua Alsen</p>
                         <h2 className="mt-2 text-3xl sm:text-4xl font-light text-slate-900 tracking-tight">Was ist Osteopathie?</h2>
@@ -30,7 +35,9 @@ export default function AboutOsteopathie() {
                             ))}
                         </div>
                     </div>
-                    <div className="relative h-[480px] md:h-[640px] overflow-hidden rounded-xl">
+
+                    {/* Desktop: Foto nach dem Text */}
+                    <div className="relative h-[480px] md:h-[640px] overflow-hidden rounded-xl hidden md:block">
                         <Image src="/assets/joshua-alsen-profil.jpg" alt="Joshua Alsen Profilfoto" fill className="object-cover" priority />
                     </div>
                 </div>
