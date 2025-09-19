@@ -111,7 +111,7 @@ export default function Reviews() {
                             <div key={i} className="w-full shrink-0 px-2 sm:px-8" style={{ width: `${100 / reviews.length}%` }}>
                                 <div className="rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 h-full shadow-sm hover:shadow-md transition-shadow duration-300">
                                     <div className="text-amber-400 text-2xl mb-4">{"★".repeat(r.rating)}</div>
-                                    <p className="text-slate-800 italic text-lg leading-relaxed mb-6">"{r.text}"</p>
+                                    <p className="text-slate-800 italic text-lg leading-relaxed mb-6">&ldquo;{r.text}&rdquo;</p>
                                     <div className="text-slate-600 font-medium">{r.author}</div>
                                     <div className="text-slate-500 text-sm">{r.time}</div>
                                 </div>

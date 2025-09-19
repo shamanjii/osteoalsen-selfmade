@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useState, useEffect, useCallback } from "react";
 
 interface Post {
     slug: string;
@@ -32,11 +33,7 @@ export default function BlogClient({ posts }: BlogClientProps) {
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('date-desc');
 
-    useEffect(() => {
-        filterAndSortPosts();
-    }, [posts, selectedCategory, searchTerm, sortBy]);
-
-    const filterAndSortPosts = () => {
+    const filterAndSortPosts = useCallback(() => {
         let filtered = [...posts];
 
         // Filter by category
@@ -71,7 +68,11 @@ export default function BlogClient({ posts }: BlogClientProps) {
         });
 
         setFilteredPosts(filtered);
-    };
+    }, [posts, selectedCategory, searchTerm, sortBy]);
+
+    useEffect(() => {
+        filterAndSortPosts();
+    }, [filterAndSortPosts]);
 
     const calculateReadingTime = (excerpt?: string): number => {
         if (!excerpt) return 5;
@@ -177,10 +178,12 @@ export default function BlogClient({ posts }: BlogClientProps) {
                                         isFeatured ? 'h-64' : 'h-48'
                                     }`}>
                                         {post.image ? (
-                                            <img
+                                            <Image
                                                 src={post.image}
                                                 alt={post.alt || post.title}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                                fill
+                                                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />
                                         ) : (
                                             <span className="text-4xl text-slate-400">📄</span>
@@ -246,11 +249,15 @@ export default function BlogClient({ posts }: BlogClientProps) {
                 {/* Author Section */}
                 <section className="bg-white rounded-2xl shadow-lg border border-slate-200 p-8 mt-16">
                     <div className="flex flex-col md:flex-row items-center gap-8">
-                        <img
-                            src="/assets/joshua-alsen-profil.jpg"
-                            alt="Joshua Alsen"
-                            className="w-32 h-32 rounded-full object-cover border-4 border-slate-900"
-                        />
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-900">
+                            <Image
+                                src="/assets/joshua-alsen-profil.jpg"
+                                alt="Joshua Alsen"
+                                fill
+                                className="object-cover"
+                                sizes="128px"
+                            />
+                        </div>
                         <div className="flex-1 text-center md:text-left">
                             <h3 className="font-epilogue text-3xl font-bold text-slate-900 mb-2">Joshua Alsen</h3>
                             <p className="text-xl text-slate-600 font-medium mb-4">Heilpraktiker & Osteopath</p>
