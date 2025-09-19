@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import SafeHtml from '@/components/SafeHtml';
 
 const faqs = [
@@ -43,7 +43,7 @@ const faqs = [
     }
 ];
 
-export default function FAQ() {
+const FAQ = memo(function FAQ() {
     const [openItems, setOpenItems] = useState<number[]>([]);
 
     const toggleFAQ = (id: number) => {
@@ -101,4 +101,6 @@ export default function FAQ() {
             </div>
         </section>
     );
-}
+});
+
+export default FAQ;

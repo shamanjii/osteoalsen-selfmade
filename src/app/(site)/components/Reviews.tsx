@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useMemo, memo } from "react";
 
 type Review = {
     text: string;
@@ -50,44 +50,46 @@ const REAL_GOOGLE_REVIEWS: Review[] = [
     }
 ];
 
-export default function Reviews() {
+const Reviews = memo(function Reviews() {
     const [idx, setIdx] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
-    const reviews = REAL_GOOGLE_REVIEWS;
-    const averageRating = 4.9;
-    const totalReviews = 47;
-    // These are real reviews from Google
 
-    // Auto-rotation for reviews
+    // Memoize static data to prevent unnecessary re-renders
+    const reviews = useMemo(() => REAL_GOOGLE_REVIEWS, []);
+    const averageRating = useMemo(() => 4.9, []);
+    const totalReviews = useMemo(() => 47, []);
+
+    // Memoize interval callback to prevent recreation on every render
+    const rotateReview = useCallback(() => {
+        setIdx((i) => (i + 1) % reviews.length);
+    }, [reviews.length]);
+
+    // Single useEffect for auto-rotation (fixed duplicate issue)
     useEffect(() => {
-        if (isPaused) return;
-        const id = setInterval(() => setIdx((i) => (i + 1) % reviews.length), 5000);
-        return () => clearInterval(id);
-    }, [reviews.length, isPaused]);
+        if (isPaused || reviews.length <= 1) return;
 
-    useEffect(() => {
-        if (isPaused) return;
-        const id = setInterval(() => setIdx((i) => (i + 1) % reviews.length), 5000);
-        return () => clearInterval(id);
-    }, [reviews.length, isPaused]);
+        const intervalId = setInterval(rotateReview, 5000);
+        return () => clearInterval(intervalId);
+    }, [isPaused, rotateReview, reviews.length]);
 
-    const goToSlide = (index: number) => {
+    // Memoize navigation functions to prevent unnecessary re-renders
+    const goToSlide = useCallback((index: number) => {
         setIdx(index);
         setIsPaused(true);
         setTimeout(() => setIsPaused(false), 3000); // Resume auto-play after 3s
-    };
+    }, []);
 
-    const goToPrevious = () => {
+    const goToPrevious = useCallback(() => {
         setIdx((i) => (i - 1 + reviews.length) % reviews.length);
         setIsPaused(true);
         setTimeout(() => setIsPaused(false), 3000);
-    };
+    }, [reviews.length]);
 
-    const goToNext = () => {
+    const goToNext = useCallback(() => {
         setIdx((i) => (i + 1) % reviews.length);
         setIsPaused(true);
         setTimeout(() => setIsPaused(false), 3000);
-    };
+    }, [reviews.length]);
 
     return (
         <section id="bewertungen" className="bg-white py-16 sm:py-24">
@@ -211,4 +213,6 @@ export default function Reviews() {
             </div>
         </section>
     );
-}
+});
+
+export default Reviews;

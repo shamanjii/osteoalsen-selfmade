@@ -1,26 +1,43 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import throttle from 'lodash.throttle';
 
 export default function FloatingBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const contactSectionRef = useRef<HTMLElement | null>(null);
 
+  // Cache DOM element reference
   useEffect(() => {
-    const toggleVisibility = () => {
+    contactSectionRef.current = document.getElementById('kontakt');
+  }, []);
+
+  // Throttled scroll handler for better performance
+  const toggleVisibility = useCallback(() => {
+    const throttledToggle = throttle(() => {
       // Show button after scrolling 300px
       if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    };
+    }, 16); // 60fps throttling
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return throttledToggle;
   }, []);
 
-  const handleClick = () => {
-    const contactSection = document.getElementById('kontakt');
+  useEffect(() => {
+    const scrollHandler = toggleVisibility();
+    window.addEventListener('scroll', scrollHandler, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+      scrollHandler.cancel(); // Cancel pending throttled calls
+    };
+  }, [toggleVisibility]);
+
+  // Memoize click handler and use cached DOM reference
+  const handleClick = useCallback(() => {
+    const contactSection = contactSectionRef.current || document.getElementById('kontakt');
     if (contactSection) {
       const headerHeight = 120;
       const targetPosition = contactSection.offsetTop - headerHeight;
@@ -30,7 +47,7 @@ export default function FloatingBookingButton() {
         behavior: 'smooth'
       });
     }
-  };
+  }, []);
 
   return (
     <div

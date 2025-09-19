@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback, useMemo, memo } from "react";
 
 interface Post {
     slug: string;
@@ -27,13 +27,13 @@ const categoryMap = {
     'gesundheitstipps': { name: 'Gesundheitstipps', icon: '💡' }
 };
 
-export default function BlogClient({ posts }: BlogClientProps) {
-    const [filteredPosts, setFilteredPosts] = useState<Post[]>(posts);
+const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const [selectedCategory, setSelectedCategory] = useState('alle');
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('date-desc');
 
-    const filterAndSortPosts = useCallback(() => {
+    // Memoize expensive filtering and sorting operations
+    const filteredPosts = useMemo(() => {
         let filtered = [...posts];
 
         // Filter by category
@@ -67,18 +67,18 @@ export default function BlogClient({ posts }: BlogClientProps) {
             }
         });
 
-        setFilteredPosts(filtered);
+        return filtered;
     }, [posts, selectedCategory, searchTerm, sortBy]);
 
-    useEffect(() => {
-        filterAndSortPosts();
-    }, [filterAndSortPosts]);
-
-    const calculateReadingTime = (excerpt?: string): number => {
+    // Memoize reading time calculation
+    const calculateReadingTime = useCallback((excerpt?: string): number => {
         if (!excerpt) return 5;
         const words = excerpt.split(' ').length;
         return Math.max(Math.ceil(words / 50), 3);
-    };
+    }, []);
+
+    // Memoize category entries to prevent recreation
+    const categoryEntries = useMemo(() => Object.entries(categoryMap), []);
 
     return (
         <>
@@ -111,7 +111,7 @@ export default function BlogClient({ posts }: BlogClientProps) {
 
                         {/* Category Filters */}
                         <div className="flex flex-wrap gap-3 justify-center">
-                            {Object.entries(categoryMap).map(([key, { name, icon }]) => (
+                            {categoryEntries.map(([key, { name, icon }]) => (
                                 <button
                                     key={key}
                                     onClick={() => setSelectedCategory(key)}
@@ -184,6 +184,7 @@ export default function BlogClient({ posts }: BlogClientProps) {
                                                 fill
                                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                priority={index === 0} // Prioritize first image
                                             />
                                         ) : (
                                             <span className="text-4xl text-slate-400">📄</span>
@@ -256,6 +257,7 @@ export default function BlogClient({ posts }: BlogClientProps) {
                                 fill
                                 className="object-cover"
                                 sizes="128px"
+                                loading="lazy"
                             />
                         </div>
                         <div className="flex-1 text-center md:text-left">
@@ -314,4 +316,6 @@ export default function BlogClient({ posts }: BlogClientProps) {
             </main>
         </>
     );
-}
+});
+
+export default BlogClient;

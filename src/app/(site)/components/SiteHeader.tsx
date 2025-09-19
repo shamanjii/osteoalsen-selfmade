@@ -1,16 +1,17 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import throttle from "lodash.throttle";
 
 export default function SiteHeader() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
-    // Auto-hide header on scroll
-    useEffect(() => {
-        const handleScroll = () => {
+    // Throttled scroll handler for better performance
+    const handleScroll = useCallback(() => {
+        const throttledHandler = throttle(() => {
             const currentScrollY = window.scrollY;
 
             // Show header at top of page
@@ -25,30 +26,46 @@ export default function SiteHeader() {
             }
 
             setLastScrollY(currentScrollY);
-        };
+        }, 16); // 60fps throttling
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
+        return throttledHandler;
     }, [lastScrollY]);
+
+    // Auto-hide header on scroll with throttling
+    useEffect(() => {
+        const scrollHandler = handleScroll();
+        window.addEventListener('scroll', scrollHandler, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+            scrollHandler.cancel(); // Cancel pending throttled calls
+        };
+    }, [handleScroll]);
+
+    // Memoize event handlers to prevent recreation
+    const handleClose = useCallback(() => setMobileOpen(false), []);
+    const handleResize = useCallback(() => {
+        const throttledResize = throttle(() => {
+            if (window.innerWidth >= 768) setMobileOpen(false);
+        }, 100); // Throttle resize events
+
+        return throttledResize;
+    }, []);
 
     // Close mobile menu on route changes and resize
     useEffect(() => {
-        const handleClose = () => setMobileOpen(false);
-        const handleResize = () => {
-            if (window.innerWidth >= 768) setMobileOpen(false);
-        };
-
         window.addEventListener("hashchange", handleClose);
-        window.addEventListener("resize", handleResize);
+        const resizeHandler = handleResize();
+        window.addEventListener("resize", resizeHandler, { passive: true });
 
         return () => {
             window.removeEventListener("hashchange", handleClose);
-            window.removeEventListener("resize", handleResize);
+            window.removeEventListener("resize", resizeHandler);
+            resizeHandler.cancel(); // Cancel pending throttled calls
         };
-    }, []);
+    }, [handleClose, handleResize]);
 
-    // Handle smooth scroll to sections
-    const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    // Memoize smooth scroll handler
+    const handleSmoothScroll = useCallback((e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
         e.preventDefault();
         setMobileOpen(false);
 
@@ -71,7 +88,7 @@ export default function SiteHeader() {
                 behavior: 'smooth'
             });
         }
-    };
+    }, []);
 
     return (
         <header className={`fixed top-0 w-full z-50 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-transform duration-300 ease-in-out ${
