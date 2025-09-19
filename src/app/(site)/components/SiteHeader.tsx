@@ -96,41 +96,17 @@ export default function SiteHeader() {
         }`}>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 {/* Desktop Navigation */}
-                <div className="flex items-center justify-between h-16 md:h-20">
-                    {/* Left Navigation Links */}
-                    <nav className="hidden md:flex items-center space-x-8">
-                        <Link
-                            href="/#home"
-                            onClick={(e) => handleSmoothScroll(e, '#home')}
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/#was-ist-osteopathie"
-                            onClick={(e) => handleSmoothScroll(e, '#was-ist-osteopathie')}
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            Osteopathie
-                        </Link>
-                        <Link
-                            href="/#behandlungen"
-                            onClick={(e) => handleSmoothScroll(e, '#behandlungen')}
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            Behandlungen
-                        </Link>
-                    </nav>
-
-                    {/* Centered Logo */}
-                    <div className="flex-1 flex justify-center md:flex-none">
+                <div className="flex items-center h-16 md:h-24">
+                    {/* Mobile: Centered logo with hamburger */}
+                    <div className="flex items-center justify-between w-full md:hidden">
+                        <div></div> {/* Spacer */}
                         <Link href="/" className="flex items-center">
                             <Image
                                 src="/assets/osteopathie-alsen-logo.webp"
                                 alt="Osteopathie Alsen Logo"
                                 width={180}
                                 height={50}
-                                className="h-8 md:h-10 w-auto"
+                                className="h-8 w-auto"
                                 onError={(e) => {
                                     const target = e.target as HTMLImageElement;
                                     target.style.display = 'none';
@@ -138,58 +114,106 @@ export default function SiteHeader() {
                                     if (fallback) fallback.style.display = 'block';
                                 }}
                             />
-                            <span className="hidden text-white font-epilogue text-base md:text-lg font-bold tracking-[0.15em] uppercase">
+                            <span className="hidden text-white font-epilogue text-lg font-bold tracking-[0.1em] uppercase">
                                 OSTEOPATHIE ALSEN
                             </span>
                         </Link>
+                        <button
+                            type="button"
+                            className="p-2 rounded-md text-white hover:bg-white/10 transition-colors duration-200"
+                            aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+                            onClick={() => setMobileOpen(!mobileOpen)}
+                        >
+                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                {mobileOpen ? (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                ) : (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                )}
+                            </svg>
+                        </button>
                     </div>
 
-                    {/* Right Navigation Links */}
-                    <nav className="hidden md:flex items-center space-x-8">
-                        <Link
-                            href="/#ueber-mich"
-                            onClick={(e) => handleSmoothScroll(e, '#ueber-mich')}
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            Über mich
-                        </Link>
-                        <Link
-                            href="/#faq"
-                            onClick={(e) => handleSmoothScroll(e, '#faq')}
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            FAQ
-                        </Link>
-                        <Link
-                            href="/blog"
-                            className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                        >
-                            Blog
-                        </Link>
-                        <Link
-                            href="/terminbuchung"
-                            className="bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 flex items-center gap-2"
-                        >
-                            <span>📅</span>
-                            <span>Termin</span>
-                        </Link>
-                    </nav>
+                    {/* Desktop: Full navigation layout */}
+                    <div className="hidden md:grid md:grid-cols-3 md:items-center md:w-full md:gap-8">
+                        {/* Left Navigation Links */}
+                        <nav className="flex items-center space-x-6">
+                            <Link
+                                href="/#home"
+                                onClick={(e) => handleSmoothScroll(e, '#home')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Home
+                            </Link>
+                            <Link
+                                href="/#was-ist-osteopathie"
+                                onClick={(e) => handleSmoothScroll(e, '#was-ist-osteopathie')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Osteopathie
+                            </Link>
+                            <Link
+                                href="/#behandlungen"
+                                onClick={(e) => handleSmoothScroll(e, '#behandlungen')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Behandlungen
+                            </Link>
+                        </nav>
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        type="button"
-                        className="md:hidden p-2 rounded-md text-white hover:bg-white/10 transition-colors duration-200"
-                        aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
-                        onClick={() => setMobileOpen(!mobileOpen)}
-                    >
-                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            {mobileOpen ? (
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                            ) : (
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            )}
-                        </svg>
-                    </button>
+                        {/* Centered Logo */}
+                        <div className="flex justify-center">
+                            <Link href="/" className="flex items-center">
+                                <Image
+                                    src="/assets/osteopathie-alsen-logo.webp"
+                                    alt="Osteopathie Alsen Logo"
+                                    width={180}
+                                    height={50}
+                                    className="h-10 w-auto"
+                                    onError={(e) => {
+                                        const target = e.target as HTMLImageElement;
+                                        target.style.display = 'none';
+                                        const fallback = target.nextElementSibling as HTMLElement;
+                                        if (fallback) fallback.style.display = 'block';
+                                    }}
+                                />
+                                <span className="hidden text-white font-epilogue text-lg font-bold tracking-[0.1em] uppercase">
+                                    OSTEOPATHIE ALSEN
+                                </span>
+                            </Link>
+                        </div>
+
+                        {/* Right Navigation Links */}
+                        <nav className="flex items-center justify-end space-x-6">
+                            <Link
+                                href="/#ueber-mich"
+                                onClick={(e) => handleSmoothScroll(e, '#ueber-mich')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Über mich
+                            </Link>
+                            <Link
+                                href="/#faq"
+                                onClick={(e) => handleSmoothScroll(e, '#faq')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                FAQ
+                            </Link>
+                            <Link
+                                href="/blog"
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Blog
+                            </Link>
+                            <Link
+                                href="/terminbuchung"
+                                className="bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 flex items-center gap-2"
+                            >
+                                <span>📅</span>
+                                <span>Termin</span>
+                            </Link>
+                        </nav>
+                    </div>
                 </div>
 
                 {/* Mobile Menu */}

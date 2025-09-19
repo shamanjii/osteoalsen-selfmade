@@ -8,10 +8,17 @@ export default function AboutMe() {
                     <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Über mich</h2>
                     <h3 className="mt-4 text-xl text-slate-700 font-medium">Joshua Alsen - Osteopath in Hamburg</h3>
                 </div>
-                <div className="grid lg:grid-cols-[320px,1fr] gap-10 items-start">
-                    <div className="relative h-80 rounded-lg overflow-hidden">
+                <div className="relative">
+                    {/* Mobile: Image above text */}
+                    <div className="relative h-80 rounded-lg overflow-hidden mb-6 lg:hidden">
                         <Image src="/assets/joshua-alsen-dozent.jpeg" alt="Joshua Alsen" fill className="object-cover" />
                     </div>
+
+                    {/* Desktop: Floating image with text wrap */}
+                    <div className="hidden lg:block lg:float-left lg:mr-8 lg:mb-6 lg:w-80 lg:h-[28rem] relative rounded-lg overflow-hidden">
+                        <Image src="/assets/joshua-alsen-dozent.jpeg" alt="Joshua Alsen" fill className="object-cover" />
+                    </div>
+
                     <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
                         <p>
                             Geboren und aufgewachsen bin ich in Hamburg. Zur Osteopathie führte mich damals die Krebserkrankung meines Stiefvaters. Ich befand mich im Abitur und verbrachte mit ihm viel Zeit in Krankenhäusern. Während in mir der Wunsch wuchs, mich mit dem Thema Gesundheit zu beschäftigen, sank in mir die Befriedigung bei dem Gedanken, mich beruflich permanent in der Umgebung von Krankenhäusern zu bewegen.
@@ -26,6 +33,9 @@ export default function AboutMe() {
                             Nach dem Bestehen meiner Heilpraktikerprüfung im Mai 2024 entschied ich mich, meinen Fokus auf den klinischen Alltag zu richten und mich mit einer eigenen Praxis selbstständig zu machen. Seitdem praktiziere ich mit großer Freude und Hingabe in meiner eigenen Praxis für Osteopathie in Hamburg.
                         </p>
                     </div>
+
+                    {/* Clear float */}
+                    <div className="clear-both"></div>
                 </div>
 
                 <div className="mt-12 rounded-xl border border-slate-200 bg-white p-6 flex flex-col md:flex-row gap-6 items-start">

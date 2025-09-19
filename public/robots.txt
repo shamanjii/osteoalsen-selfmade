@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Wichtige Seiten für Suchmaschinen
+Allow: /blog
+Allow: /terminbuchung
+Allow: /assets/
+
+# Sitemap Location
+Sitemap: https://www.osteoalsen.de/sitemap.xml
+
+# Crawl-delay für respektvolles Crawling
+Crawl-delay: 1
+
+# Spezielle Bot-Anweisungen
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Social Media Bots
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

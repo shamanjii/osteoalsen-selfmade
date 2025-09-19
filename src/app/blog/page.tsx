@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";
+import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 
 export default async function BlogIndexPage() {
     const posts = await getAllPosts();
@@ -58,7 +59,9 @@ export default async function BlogIndexPage() {
             </section>
 
             {/* Client Component for Interactive Features */}
-            <BlogClient posts={processedPosts} />
+            <BlogErrorBoundary>
+                <BlogClient posts={processedPosts} />
+            </BlogErrorBoundary>
         </div>
     );
 }

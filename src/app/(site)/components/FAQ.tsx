@@ -2,12 +2,13 @@
 
 import { useState, memo } from 'react';
 import SafeHtml from '@/components/SafeHtml';
+import FAQStructuredData from '@/components/FAQStructuredData';
 
 const faqs = [
     {
         id: 1,
-        question: "Wird die Osteopathie-Behandlung bei Ihnen von der Krankenkasse bezahlt?",
-        answer: `<p>Ich bin Mitglied in einem Osteopathieverband und erfülle alle Anforderungen der Krankenkassen für eine Kostenerstattung.</p>
+        question: "Wird die Osteopathie-Behandlung in Hamburg von der Krankenkasse bezahlt?",
+        answer: `<p>Als VFO-zertifizierter Osteopath erfülle ich alle Anforderungen der Krankenkassen für eine Kostenerstattung in Hamburg-Rotherbaum und Eimsbüttel.</p>
 
         <p>Private Krankenversicherungen übernehmen in der Regel die gesamten Kosten für osteopathische Behandlungen. Die genauen Bedingungen variieren je nach Tarif und Versicherungsunternehmen.</p>`
     },
@@ -54,8 +55,15 @@ const FAQ = memo(function FAQ() {
         );
     };
 
+    // Prepare FAQ data for structured data
+    const faqData = faqs.map(faq => ({
+        question: faq.question,
+        answer: faq.answer.replace(/<[^>]*>/g, ''), // Strip HTML tags for schema
+    }));
+
     return (
         <section id="faq" className="py-16 sm:py-24 bg-slate-50">
+            <FAQStructuredData faqs={faqData} />
             <div className="mx-auto max-w-4xl px-4 sm:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">

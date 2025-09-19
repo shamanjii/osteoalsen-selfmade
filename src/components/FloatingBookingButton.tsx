@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import throttle from 'lodash.throttle';
+import { trackAppointmentClick } from './Analytics';
 
 export default function FloatingBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +38,9 @@ export default function FloatingBookingButton() {
 
   // Memoize click handler and use cached DOM reference
   const handleClick = useCallback(() => {
+    // Track the conversion event
+    trackAppointmentClick('floating_button');
+
     const contactSection = contactSectionRef.current || document.getElementById('kontakt');
     if (contactSection) {
       const headerHeight = 120;

@@ -4,17 +4,20 @@ export default function HeroSection() {
             <div className="mx-auto max-w-4xl px-8 sm:px-12 py-12 sm:py-20 text-center">
                 <div className="mx-auto max-w-3xl">
                     <h1 className="font-epilogue text-slate-900 text-4xl sm:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
-                        Osteopathie Hamburg
+                        Osteopathie Hamburg:<br />
+                        Rotherbaum &amp; Eimsbüttel
                         <br />
                         <span className="font-normal">Joshua Alsen</span>
                     </h1>
-                    <p className="mt-6 text-slate-600 text-xl sm:text-2xl font-light">
-                        Heilpraktiker &amp; Osteopath<br className="sm:hidden" /> in Hamburg Mitte
-                    </p>
+                    <h2 className="mt-6 text-slate-600 text-xl sm:text-2xl font-light">
+                        VFO-zertifizierter<br />
+                        Heilpraktiker &amp; Osteopath<br />
+                        in Hamburg
+                    </h2>
                     <p className="mt-10 text-slate-700 text-lg sm:text-xl leading-8 max-w-2xl mx-auto">
-                        In meiner Heilpraxis für Osteopathie in Hamburg biete ich osteopathische Behandlungen für gesetzlich
-                        Versicherte, Privatpatienten und Selbstzahler an. Lassen Sie uns gemeinsam Ihre natürliche Balance
-                        wiederherstellen.
+                        In meiner Osteopathie-Praxis in Hamburg-Rotherbaum und Eimsbüttel biete ich ganzheitliche osteopathische
+                        Behandlungen an. Als VFO-zertifizierter Osteopath unterstütze ich gesetzlich Versicherte, Privatpatienten
+                        und Selbstzahler dabei, ihre natürliche Balance wiederzufinden.
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a

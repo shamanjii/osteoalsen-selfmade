@@ -71,12 +71,28 @@ export default function Treatments() {
                         </div>
                     ))}
                 </div>
-                <div className="mt-10 rounded-lg border border-slate-200 bg-slate-50 p-6">
-                    <h3 className="text-lg font-medium text-slate-900">Ganzheitliche Integration</h3>
-                    <p className="mt-2 text-slate-700 text-sm">
-                        Der menschliche Körper funktioniert als Einheit. Deshalb kombiniere ich in jeder Behandlung alle drei
-                        osteopathischen Bereiche, um nachhaltige Ergebnisse zu erzielen.
-                    </p>
+                {/* Ganzheitliche Integration - Featured Section */}
+                <div className="mt-16 flex justify-center">
+                    <div className="relative max-w-2xl mx-auto text-center">
+                        {/* Elevated Icon */}
+                        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10">
+                            <div className="w-16 h-16 bg-gradient-to-br from-slate-900 to-slate-700 rounded-full flex items-center justify-center shadow-lg">
+                                {/* Circular arrow pointing to itself */}
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        {/* Content Card */}
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-lg p-8 pt-12">
+                            <h3 className="text-2xl font-light text-slate-900 font-epilogue mb-4">Ganzheitliche Integration</h3>
+                            <p className="text-slate-700 text-lg leading-relaxed">
+                                Der menschliche Körper funktioniert als Einheit. Deshalb kombiniere ich in jeder Behandlung alle drei
+                                osteopathischen Bereiche, um nachhaltige Ergebnisse zu erzielen.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
