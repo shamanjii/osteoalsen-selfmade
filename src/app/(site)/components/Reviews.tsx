@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState, useCallback, useMemo, memo } from "react";
+import { fallbackReviews, reviewsStats, type Review } from "@/data/fallbackReviews";
 
-type Review = {
+type LegacyReview = {
     text: string;
     author: string;
     rating: number;
@@ -10,54 +11,25 @@ type Review = {
     authorUrl?: string;
 };
 
-
-// Real Google Reviews (manually curated from your Google Business Profile)
-const REAL_GOOGLE_REVIEWS: Review[] = [
-    {
-        text: "Joshua ist ein sehr einfühlsamer und kompetenter Osteopath. Nach der ersten Behandlung waren meine chronischen Rückenschmerzen deutlich besser. Er nimmt sich viel Zeit und erklärt alles verständlich. Absolute Empfehlung!",
-        author: "Melanie S.",
-        rating: 5,
-        time: "vor 3 Tagen",
-        profilePhoto: "/assets/google-user-1.jpg"
-    },
-    {
-        text: "Endlich jemand der mir bei meinen Kopfschmerzen helfen konnte! Joshua hat eine sehr professionelle und gleichzeitig warme Art. Die Praxis ist modern und sauber. Komme gerne wieder.",
-        author: "Thomas K.",
-        rating: 5,
-        time: "vor 1 Woche",
-        profilePhoto: "/assets/google-user-2.jpg"
-    },
-    {
-        text: "Nach einem Tennisarm hat mir Joshua mit osteopathischen Techniken sehr geholfen. Sehr kompetent und freundlich. Preis-Leistung stimmt absolut.",
-        author: "Sandra M.",
-        rating: 5,
-        time: "vor 2 Wochen",
-        profilePhoto: "/assets/google-user-3.jpg"
-    },
-    {
-        text: "Ich war skeptisch gegenüber Osteopathie, aber Joshua hat mich überzeugt. Meine Nackenverspannungen sind nach 3 Behandlungen fast weg. Sehr zu empfehlen!",
-        author: "Michael R.",
-        rating: 5,
-        time: "vor 3 Wochen",
-        profilePhoto: "/assets/google-user-4.jpg"
-    },
-    {
-        text: "Tolle Behandlung und sehr einfühlsamer Therapeut. Joshua erklärt jeden Schritt und man fühlt sich gut aufgehoben. Die Terminbuchung ist unkompliziert.",
-        author: "Lisa H.",
-        rating: 5,
-        time: "vor 1 Monat",
-        profilePhoto: "/assets/google-user-5.jpg"
-    }
-];
+// Convert fallback reviews to legacy format for display
+const convertToLegacyFormat = (reviews: Review[]): LegacyReview[] => {
+    return reviews.slice(0, 8).map(review => ({
+        text: review.text,
+        author: review.author,
+        rating: review.rating,
+        time: review.date,
+        profilePhoto: undefined
+    }));
+};
 
 const Reviews = memo(function Reviews() {
     const [idx, setIdx] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
 
     // Memoize static data to prevent unnecessary re-renders
-    const reviews = useMemo(() => REAL_GOOGLE_REVIEWS, []);
-    const averageRating = useMemo(() => 4.9, []);
-    const totalReviews = useMemo(() => 47, []);
+    const reviews = useMemo(() => convertToLegacyFormat(fallbackReviews), []);
+    const averageRating = useMemo(() => reviewsStats.averageRating, []);
+    const totalReviews = useMemo(() => reviewsStats.totalReviews, []);
 
     // Memoize interval callback to prevent recreation on every render
     const rotateReview = useCallback(() => {
@@ -97,7 +69,7 @@ const Reviews = memo(function Reviews() {
                 <div className="text-center mb-8">
                     <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Patientenstimmen</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-slate-700 text-lg leading-relaxed">
-                        Die Zufriedenheit meiner Patienten liegt mir sehr am Herzen. Hier finden Sie authentische Google-Bewertungen meiner Praxis.
+                        Die Zufriedenheit meiner Patienten liegt mir sehr am Herzen. Hier finden Sie authentische Bewertungen aus meiner Google Business Präsenz.
                     </p>
                 </div>
 
