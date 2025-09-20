@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
       {
-        url: "/assets/joshua-alsen-osteopath-hamburg-og.jpg",
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
         width: 1200,
         height: 630,
         alt: "Joshua Alsen - Osteopath und Heilpraktiker in Hamburg Rotherbaum & Eimsbüttel",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Osteopath Hamburg | Joshua Alsen | Rotherbaum & Eimsbüttel",
     description: "Osteopathie Hamburg: Heilpraktiker Joshua Alsen. Termine verfügbar. 150€, Kassenerstattung möglich.",
-    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.jpg"],
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",
   },

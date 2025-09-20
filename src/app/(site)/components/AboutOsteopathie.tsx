@@ -14,7 +14,7 @@ export default function AboutOsteopathie() {
                 <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
                     {/* Mobile: Foto vor dem Text */}
                     <div className="relative h-[400px] overflow-hidden rounded-xl lg:hidden">
-                        <Image src="/assets/joshua-alsen-profil.jpg" alt="Joshua Alsen Profilfoto" fill className="object-cover" priority />
+                        <Image src="/assets/joshua-alsen-profil.webp" alt="Joshua Alsen Profilfoto" fill className="object-cover" priority />
                     </div>
 
                     <div className="lg:col-span-3">
@@ -49,7 +49,7 @@ export default function AboutOsteopathie() {
 
                     {/* Desktop: Foto nach dem Text */}
                     <div className="relative lg:col-span-2 h-[500px] lg:h-[700px] overflow-hidden rounded-xl hidden lg:block">
-                        <Image src="/assets/joshua-alsen-profil.jpg" alt="Joshua Alsen - Osteopath und Heilpraktiker in Hamburg" fill className="object-cover" priority />
+                        <Image src="/assets/joshua-alsen-profil.webp" alt="Joshua Alsen - Osteopath und Heilpraktiker in Hamburg" fill className="object-cover" priority />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
                             <div className="text-white">
                                 <h3 className="text-xl font-semibold font-epilogue">Joshua Alsen</h3>

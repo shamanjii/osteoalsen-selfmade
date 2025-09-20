@@ -104,8 +104,8 @@ export default function SiteHeader() {
                             <Image
                                 src="/assets/osteopathie-alsen-logo.webp"
                                 alt="Osteopathie Alsen Logo"
-                                width={180}
-                                height={50}
+                                width={256}
+                                height={32}
                                 className="h-8 w-auto"
                                 onError={(e) => {
                                     const target = e.target as HTMLImageElement;
@@ -167,8 +167,8 @@ export default function SiteHeader() {
                                 <Image
                                     src="/assets/osteopathie-alsen-logo.webp"
                                     alt="Osteopathie Alsen Logo"
-                                    width={180}
-                                    height={50}
+                                    width={320}
+                                    height={40}
                                     className="h-10 w-auto"
                                     onError={(e) => {
                                         const target = e.target as HTMLImageElement;
