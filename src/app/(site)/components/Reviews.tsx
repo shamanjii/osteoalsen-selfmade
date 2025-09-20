@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState, useCallback, useMemo, memo } from "react";
+import { useState, useCallback, useMemo, memo } from "react";
 import { fallbackReviews, reviewsStats, type Review } from "@/data/fallbackReviews";
+import ReviewsStructuredData from "@/components/ReviewsStructuredData";
 
 type LegacyReview = {
     text: string;
@@ -23,49 +24,27 @@ const convertToLegacyFormat = (reviews: Review[]): LegacyReview[] => {
 };
 
 const Reviews = memo(function Reviews() {
-    const [idx, setIdx] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
+    const [showAll, setShowAll] = useState(false);
 
     // Memoize static data to prevent unnecessary re-renders
-    const reviews = useMemo(() => convertToLegacyFormat(fallbackReviews), []);
+    const allReviews = useMemo(() => convertToLegacyFormat(fallbackReviews), []);
     const averageRating = useMemo(() => reviewsStats.averageRating, []);
     const totalReviews = useMemo(() => reviewsStats.totalReviews, []);
 
-    // Memoize interval callback to prevent recreation on every render
-    const rotateReview = useCallback(() => {
-        setIdx((i) => (i + 1) % reviews.length);
-    }, [reviews.length]);
+    // Show first 6 reviews initially, then all when expanded
+    const displayedReviews = useMemo(() => {
+        return showAll ? allReviews : allReviews.slice(0, 6);
+    }, [allReviews, showAll]);
 
-    // Single useEffect for auto-rotation (fixed duplicate issue)
-    useEffect(() => {
-        if (isPaused || reviews.length <= 1) return;
-
-        const intervalId = setInterval(rotateReview, 5000);
-        return () => clearInterval(intervalId);
-    }, [isPaused, rotateReview, reviews.length]);
-
-    // Memoize navigation functions to prevent unnecessary re-renders
-    const goToSlide = useCallback((index: number) => {
-        setIdx(index);
-        setIsPaused(true);
-        setTimeout(() => setIsPaused(false), 3000); // Resume auto-play after 3s
+    const toggleShowAll = useCallback(() => {
+        setShowAll(prev => !prev);
     }, []);
 
-    const goToPrevious = useCallback(() => {
-        setIdx((i) => (i - 1 + reviews.length) % reviews.length);
-        setIsPaused(true);
-        setTimeout(() => setIsPaused(false), 3000);
-    }, [reviews.length]);
-
-    const goToNext = useCallback(() => {
-        setIdx((i) => (i + 1) % reviews.length);
-        setIsPaused(true);
-        setTimeout(() => setIsPaused(false), 3000);
-    }, [reviews.length]);
-
     return (
-        <section id="bewertungen" className="bg-white py-16 sm:py-24">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <>
+            <ReviewsStructuredData />
+            <section id="bewertungen" className="bg-white py-16 sm:py-24">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Patientenstimmen</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-slate-700 text-lg leading-relaxed">
@@ -89,67 +68,57 @@ const Reviews = memo(function Reviews() {
                     </div>
                 </div>
 
-                <div className="relative overflow-hidden">
-                    {/* Navigation Buttons */}
-                    {reviews.length > 1 && (
-                        <>
-                            <button
-                                onClick={goToPrevious}
-                                className="reviews-nav-btn reviews-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white border border-slate-300 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 shadow-sm hover:shadow-md transition-all duration-200 backdrop-blur-sm"
-                                aria-label="Vorherige Bewertung"
-                            >
-                                ←
-                            </button>
-                            <button
-                                onClick={goToNext}
-                                className="reviews-nav-btn reviews-next absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white border border-slate-300 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 shadow-sm hover:shadow-md transition-all duration-200 backdrop-blur-sm"
-                                aria-label="Nächste Bewertung"
-                            >
-                                →
-                            </button>
-                        </>
-                    )}
+                {/* Reviews Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    {displayedReviews.map((review, i) => (
+                        <div key={i} className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                            {/* Rating Stars */}
+                            <div className="text-amber-400 text-xl mb-4" aria-label={`${review.rating} von 5 Sternen`}>
+                                {"★".repeat(review.rating)}
+                            </div>
 
-                    {/* Reviews Slider */}
-                    <div
-                        className="flex transition-transform duration-500 ease-in-out"
-                        style={{ transform: `translateX(-${idx * 100}%)`, width: `${reviews.length * 100}%` }}
-                    >
-                        {reviews.map((r, i) => (
-                            <div key={i} className="w-full shrink-0 px-2 sm:px-8" style={{ width: `${100 / reviews.length}%` }}>
-                                <div className="rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 h-full shadow-sm hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-amber-400 text-2xl mb-4">{"★".repeat(r.rating)}</div>
-                                    <p className="text-slate-800 italic text-lg leading-relaxed mb-6">&ldquo;{r.text}&rdquo;</p>
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-semibold text-sm">
-                                            {r.author.charAt(0)}
-                                        </div>
-                                        <div>
-                                            <div className="text-slate-600 font-medium">{r.author}</div>
-                                            <div className="text-slate-500 text-sm">{r.time}</div>
-                                        </div>
-                                    </div>
+                            {/* Review Text */}
+                            {review.text && (
+                                <blockquote className="text-slate-800 italic text-base leading-relaxed mb-4 line-clamp-4">
+                                    &ldquo;{review.text}&rdquo;
+                                </blockquote>
+                            )}
+
+                            {/* Author Info */}
+                            <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-semibold text-sm">
+                                    {review.author.charAt(0)}
+                                </div>
+                                <div>
+                                    <div className="text-slate-900 font-medium text-sm">{review.author}</div>
+                                    <div className="text-slate-500 text-xs">{review.time}</div>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-
-                    {/* Dots Navigation */}
-                    <div className="mt-8 flex items-center justify-center gap-3">
-                        {reviews.map((_, i) => (
-                            <button
-                                key={i}
-                                onClick={() => goToSlide(i)}
-                                className={`reviews-dot w-3 h-3 rounded-full transition-all duration-300 ${
-                                    i === idx
-                                        ? "bg-slate-900 scale-125"
-                                        : "bg-slate-300 hover:bg-slate-400"
-                                }`}
-                                aria-label={`Bewertung ${i + 1}`}
-                            />
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
+
+                {/* Show More/Less Button */}
+                {allReviews.length > 6 && (
+                    <div className="text-center mb-8">
+                        <button
+                            onClick={toggleShowAll}
+                            className="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                        >
+                            {showAll ? (
+                                <>
+                                    <span>Weniger anzeigen</span>
+                                    <span>↑</span>
+                                </>
+                            ) : (
+                                <>
+                                    <span>Alle {allReviews.length} Bewertungen anzeigen</span>
+                                    <span>↓</span>
+                                </>
+                            )}
+                        </button>
+                    </div>
+                )}
 
                 {/* Google Bewertungen Hinweis */}
                 <div className="mt-16">
@@ -163,7 +132,7 @@ const Reviews = memo(function Reviews() {
                         </p>
                         <div className="flex gap-4 justify-center flex-wrap">
                             <a
-                                href="https://g.page/r/CW3UmxenXb1YEBI/review"
+                                href="https://g.co/kgs/sHjcBZV"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center bg-slate-900 text-white px-6 py-3 rounded-md font-epilogue font-medium hover:bg-slate-800 transition-colors duration-200 tracking-tight"
@@ -182,8 +151,9 @@ const Reviews = memo(function Reviews() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
+        </>
     );
 });
 
