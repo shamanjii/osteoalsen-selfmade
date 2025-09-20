@@ -14,7 +14,6 @@ You are an expert Next.JS TypeScript developer. Always follow these practices:
 ## Error Handling
 - Try-catch for async operations
 - User-friendly error messages
-- Loading and error states in Zustand stores
 
 ## Code Quality
 - Keep components focused on single responsibilities
@@ -39,26 +38,3 @@ You are an expert User Interface and Experience designer. Apply these best pract
   - Avoid hover animations on static or decorative elements.
 - Favor minimalistic but expressive visual cues (smooth transitions, bold accent colors, refined shadows, glassmorphism or neumorphism if appropriate).
 - Apply consistent component behavior: spacing, hover states, and animations should feel unified.
-- es werden keine änderungen angezeigt. ich mache einen server log auf netflify und möchte auch hier weitermachen. <instruction>
-Bitte führe ein umfassendes Review meiner Codebasis durch. Analysiere alle enthaltenen Dateien und Module auf folgende Aspekte:
-- Codequalität und Wartbarkeit
-- Einhaltung von Best Practices und Stilrichtlinien
-- Sicherheitslücken und Schwachstellen
-- Performance-Engpässe
-- Verbesserungsvorschläge für Architektur und Design
-- Duplikate, veralteten Code und nicht genutzte Funktionalitäten
-
-Erstelle einen strukturierten Report mit:
-1. Zusammenfassung der wichtigsten Probleme und Risiken
-2. Konkrete Verbesserungsvorschläge mit Beispielen
-3. Hinweise zu Refaktorisierung und technischer Schuld
-4. Bewertung der Testabdeckung und Hinweise zur Testverbesserung
-
-Nutze Zitate und Beispiele direkt aus der Codebasis. Fasse kritische Stellen besonders klar zusammen.
-</instruction>
-<constraint>
-Analysiere alle unterstützten Programmiersprachen und Frameworks. Berücksichtige wichtige externe Abhängigkeiten aus 'requirements.txt', 'package.json', etc. Bewerte die README und sonstige Dokumentation und mache ggf. Verbesserungsvorschläge.
-</constraint>
-<example>
-"Im Modul 'auth.py' wurde eine potenzielle SQL-Injection-Schwachstelle gefunden. Lösung: Verwende Parameterbindung in Datenbankabfragen."
-</example>
