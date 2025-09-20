@@ -57,7 +57,7 @@ describe('SafeHtml', () => {
   it('falls back to text stripping on server side', () => {
     // Simulate server-side rendering
     const originalWindow = global.window;
-    delete (global as any).window;
+    delete (global as Record<string, unknown>).window;
 
     const html = '<script>alert("xss")</script><p>Safe content</p>';
 

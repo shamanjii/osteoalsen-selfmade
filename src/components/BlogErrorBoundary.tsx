@@ -41,7 +41,7 @@ export default function BlogErrorBoundary({ children }: BlogErrorBoundaryProps) 
   return (
     <ErrorBoundary
       fallback={<BlogErrorFallback />}
-      onError={(error, errorInfo) => {
+      onError={(error) => {
         console.error('Blog Error:', error);
         // Could send to analytics service
         // analytics.track('Blog Error', { error: error.message });

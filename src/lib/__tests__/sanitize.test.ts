@@ -38,7 +38,7 @@ describe('sanitize utilities', () => {
     });
 
     it('strips HTML tags when window is undefined (SSR)', () => {
-      delete (global as any).window;
+      delete (global as Record<string, unknown>).window;
 
       const html = '<p>Test content</p><script>alert("xss")</script>';
       const result = sanitizeHtml(html);

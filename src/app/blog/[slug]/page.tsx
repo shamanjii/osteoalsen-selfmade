@@ -43,9 +43,9 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <main className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
             <BlogPostStructuredData
                 headline={post.title}
-                description={post.excerpt}
+                description={post.excerpt || ''}
                 author="Joshua Alsen"
-                datePublished={post.date}
+                datePublished={post.date || ''}
                 url={`https://www.osteoalsen.de/blog/${params.slug}`}
                 imageUrl={post.image}
             />

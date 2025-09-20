@@ -29,7 +29,7 @@ class MonitoringService {
     this.isEnabled = process.env.NODE_ENV === 'production' && !!this.endpoint;
   }
 
-  async logError(error: Error, additionalInfo?: Record<string, any>) {
+  async logError(error: Error, additionalInfo?: Record<string, unknown>) {
     if (!this.isEnabled) {
       console.error('Error logged (dev mode):', error, additionalInfo);
       return;

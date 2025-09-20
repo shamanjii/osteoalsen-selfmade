@@ -31,7 +31,7 @@ export default function GlobalErrorHandler() {
     const handleResourceError = (event: Event) => {
       const target = event.target as HTMLElement;
       if (target && target.tagName) {
-        const src = (target as any).src || (target as any).href;
+        const src = (target as HTMLImageElement).src || (target as HTMLLinkElement).href;
 
         // Skip logging for expected missing images or non-critical resources
         const isImageError = target.tagName === 'IMG';
@@ -67,7 +67,7 @@ export default function GlobalErrorHandler() {
           for (const entry of list.getEntries()) {
             if (entry.entryType === 'navigation') {
               const navEntry = entry as PerformanceNavigationTiming;
-              const duration = navEntry.loadEventEnd - navEntry.navigationStart;
+              const duration = navEntry.loadEventEnd - navEntry.fetchStart;
 
               // Only log if we have valid timing data
               if (!isNaN(duration) && duration > 0) {
@@ -98,10 +98,10 @@ export default function GlobalErrorHandler() {
         // Monitor layout shifts
         const clsObserver = new PerformanceObserver((list) => {
           for (const entry of list.getEntries()) {
-            if (!entry.hadRecentInput) {
+            if (!(entry as PerformanceEntry & { hadRecentInput?: boolean }).hadRecentInput) {
               monitoring.logPerformance({
                 name: 'cumulative_layout_shift',
-                duration: (entry as any).value,
+                duration: (entry as PerformanceEntry & { value: number }).value,
                 timestamp: new Date().toISOString(),
                 url: window.location.href,
                 type: 'custom',

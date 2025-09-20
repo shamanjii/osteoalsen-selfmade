@@ -1,6 +1,7 @@
 'use client';
 
 import React, { Component, ErrorInfo, ReactNode } from 'react';
+import Link from 'next/link';
 import { isDevelopment } from '@/lib/config';
 import { monitoring } from '@/lib/monitoring';
 
@@ -89,12 +90,12 @@ class ErrorBoundary extends Component<Props, State> {
               >
                 Seite neu laden
               </button>
-              <a
+              <Link
                 href="/#kontakt"
                 className="px-4 py-2 border border-slate-300 text-slate-700 rounded hover:bg-slate-50 transition-colors"
               >
                 Kontakt
-              </a>
+              </Link>
             </div>
           </div>
         </div>

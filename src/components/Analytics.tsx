@@ -2,17 +2,17 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
 declare global {
   interface Window {
-    gtag: (command: string, targetId: string, config?: Record<string, any>) => void;
+    gtag: (command: string, targetId: string, config?: Record<string, unknown>) => void;
   }
 }
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
-export default function Analytics() {
+function AnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -35,12 +35,19 @@ export default function Analytics() {
     }
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export default function Analytics() {
   if (!GA_MEASUREMENT_ID) {
     return null;
   }
 
   return (
     <>
+      <Suspense fallback={null}>
+        <AnalyticsInner />
+      </Suspense>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -79,7 +86,7 @@ export default function Analytics() {
 }
 
 // Utility functions for tracking events
-export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
+export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
   if (typeof window !== 'undefined' && window.gtag && GA_MEASUREMENT_ID) {
     window.gtag('event', eventName, {
       ...parameters,

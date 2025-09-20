@@ -10,16 +10,16 @@ export interface AsyncState<T> {
 }
 
 export interface AsyncActions<T> {
-  execute: (...args: any[]) => Promise<T>;
+  execute: (...args: unknown[]) => Promise<T | undefined>;
   reset: () => void;
   setData: (data: T) => void;
   setError: (error: Error) => void;
 }
 
 export function useAsyncState<T>(
-  asyncFunction: (...args: any[]) => Promise<T>,
+  asyncFunction: (...args: unknown[]) => Promise<T>,
   immediate = false,
-  dependencies: any[] = []
+  dependencies: unknown[] = []
 ): [AsyncState<T>, AsyncActions<T>] {
   const [state, setState] = useState<AsyncState<T>>({
     data: null,
@@ -42,8 +42,8 @@ export function useAsyncState<T>(
     };
   }, []);
 
-  const execute = useCallback(async (...args: any[]) => {
-    if (!isMountedRef.current) return;
+  const execute = useCallback(async (...args: unknown[]): Promise<T | undefined> => {
+    if (!isMountedRef.current) return undefined;
 
     setState(prev => ({ ...prev, loading: true, error: null }));
 
@@ -112,6 +112,7 @@ export function useAsyncState<T>(
     if (immediate) {
       execute();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [immediate, execute, ...dependencies]);
 
   return [
@@ -126,14 +127,14 @@ export function useAsyncState<T>(
 }
 
 export function useRetryableAsync<T>(
-  asyncFunction: (...args: any[]) => Promise<T>,
+  asyncFunction: (...args: unknown[]) => Promise<T>,
   maxRetries = 3,
   retryDelay = 1000
 ) {
   const [retryCount, setRetryCount] = useState(0);
   const [state, actions] = useAsyncState(asyncFunction);
 
-  const executeWithRetry = useCallback(async (...args: any[]) => {
+  const executeWithRetry = useCallback(async (...args: unknown[]) => {
     let attempt = 0;
 
     while (attempt <= maxRetries) {
