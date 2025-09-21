@@ -36,7 +36,7 @@ const treatments = [
 
 export default function Treatments() {
     return (
-        <section id="behandlungen" className="py-16 sm:py-24">
+        <section id="behandlungen" className="bg-white py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">Osteopathische Behandlungsarten in Hamburg</h2>
