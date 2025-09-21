@@ -6,6 +6,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
 import GlobalErrorHandler from "@/components/GlobalErrorHandler";
 import Analytics from "@/components/Analytics";
+import SessionProvider from "@/components/SessionProvider";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
@@ -125,10 +126,12 @@ export default function RootLayout({
       <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
         <Analytics />
         <GlobalErrorHandler />
-        <ErrorBoundary>
-          {children}
-          <FloatingBookingButton />
-        </ErrorBoundary>
+        <SessionProvider>
+          <ErrorBoundary>
+            {children}
+            <FloatingBookingButton />
+          </ErrorBoundary>
+        </SessionProvider>
       </body>
     </html>
   );

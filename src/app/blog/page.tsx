@@ -2,12 +2,83 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
+import { prisma } from "@/lib/prisma";
+
+async function getCMSPosts() {
+    try {
+        const posts = await prisma.post.findMany({
+            where: {
+                published: true,
+                status: 'PUBLISHED'
+            },
+            include: {
+                author: {
+                    select: {
+                        name: true,
+                        email: true
+                    }
+                },
+                category: {
+                    select: {
+                        name: true,
+                        slug: true
+                    }
+                },
+                tags: {
+                    include: {
+                        tag: {
+                            select: {
+                                name: true,
+                                slug: true
+                            }
+                        }
+                    }
+                }
+            },
+            orderBy: {
+                publishedAt: 'desc'
+            }
+        });
+
+        return posts.map(post => ({
+            slug: post.slug,
+            title: post.title,
+            excerpt: post.excerpt || '',
+            date: post.publishedAt?.toISOString() || post.createdAt.toISOString(),
+            keywords: post.keywords ? post.keywords.split(',').map(k => k.trim()) : [],
+            image: post.coverImage || '',
+            alt: post.title,
+            category: post.category?.slug || 'osteopathie',
+            source: 'cms' as const,
+            content: post.content,
+            author: post.author.name || post.author.email,
+            tags: post.tags.map(pt => pt.tag.name)
+        }));
+    } catch (error) {
+        console.error('Error fetching CMS posts:', error);
+        return [];
+    }
+}
 
 export default async function BlogIndexPage() {
-    const posts = await getAllPosts();
+    const [markdownPosts, cmsPosts] = await Promise.all([
+        getAllPosts(),
+        getCMSPosts()
+    ]);
 
-    // Process posts for client component
-    const processedPosts = posts.map(post => {
+    // Combine and process posts for client component
+    const markdownProcessedPosts = markdownPosts.map(post => ({
+        ...post,
+        source: 'markdown' as const
+    }));
+
+    // Combine CMS and markdown posts
+    const allPosts = [...cmsPosts, ...markdownProcessedPosts];
+
+    // Sort all posts by date (newest first)
+    allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    const processedPosts = allPosts.map(post => {
         // Extract category from keywords
         const extractCategory = (keywords?: string[]): string => {
             if (!keywords || keywords.length === 0) return 'osteopathie';
