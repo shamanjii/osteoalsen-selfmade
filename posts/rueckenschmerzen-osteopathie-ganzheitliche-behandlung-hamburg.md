@@ -2,7 +2,21 @@
 slug: rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg
 title: "Rückenschmerzen verstehen – und osteopathisch behandeln (Hamburg)"
 excerpt: "Rückenschmerzen entstehen selten „nur an einer Stelle". Osteopathie verbindet strukturelle, viszerale und kraniosakrale Behandlungsansätze für ganzheitliche Schmerzlinderung."
-keywords: ["Rückenschmerzen Hamburg", "Osteopath Hamburg", "Osteopathie Rückenschmerzen", "myofasziale Techniken", "viszerale Osteopathie", "kraniosakrale Therapie", "Lendenwirbelsäule", "Faszien", "Muscle Energy Technique", "parietale Osteopathie", "Rückenschmerzen Behandlung", "Hamburg Osteopathie", "ganzheitliche Rückentherapie", "thorakolumbale Faszie"]
+keywords:
+  - "Rückenschmerzen Hamburg"
+  - "Osteopath Hamburg"
+  - "Osteopathie Rückenschmerzen"
+  - "myofasziale Techniken"
+  - "viszerale Osteopathie"
+  - "kraniosakrale Therapie"
+  - "Lendenwirbelsäule"
+  - "Faszien"
+  - "Muscle Energy Technique"
+  - "parietale Osteopathie"
+  - "Rückenschmerzen Behandlung"
+  - "Hamburg Osteopathie"
+  - "ganzheitliche Rückentherapie"
+  - "thorakolumbale Faszie"
 image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=80"
 alt: "Osteopathische Behandlung bei Rückenschmerzen - anatomische Zusammenhänge verstehen"
 date: "2025-01-21T14:00:00Z"
