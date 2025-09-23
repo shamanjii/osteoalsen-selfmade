@@ -14,10 +14,24 @@ export type PostFrontmatter = {
     alt?: string;
     date?: string; // ISO string
     status?: "draft" | "published";
+    // Medical article metadata for enhanced SEO
+    specialty?: string;
+    sourceCount?: number;
+    citations?: {
+        title: string;
+        author?: string;
+        url?: string;
+        identifier?: string;
+    }[];
 };
 
 export type Post = PostFrontmatter & {
     content: string; // rendered HTML
+    extractedCitations?: {
+        id: string;
+        title: string;
+        url?: string;
+    }[];
 };
 
 const postsDir = path.join(process.cwd(), "posts");
@@ -77,6 +91,35 @@ function readMarkdownFile(filePath: string) {
     }
 }
 
+/**
+ * Extracts citations from markdown content
+ */
+function extractCitations(content: string): { id: string; title: string; url?: string; }[] {
+    const citations: { id: string; title: string; url?: string; }[] = [];
+
+    // Match citation patterns like:
+    // <a id="1"></a>
+    // 1. [Title](url) or 1. Title
+    const citationPattern = /<a id="(\d+)"><\/a>\s*\n(\d+)\.\s*(?:\[([^\]]+)\]\(([^)]+)\)|(.+))$/gm;
+
+    let match;
+    while ((match = citationPattern.exec(content)) !== null) {
+        const id = match[1];
+        const title = match[3] || match[5]; // Title from link text or plain text
+        const url = match[4]; // URL from markdown link
+
+        if (title) {
+            citations.push({
+                id,
+                title: title.trim(),
+                url: url?.trim()
+            });
+        }
+    }
+
+    return citations;
+}
+
 export async function getAllPosts(): Promise<Post[]> {
     const files = fs
         .readdirSync(postsDir)
@@ -91,7 +134,12 @@ export async function getAllPosts(): Promise<Post[]> {
         if (fm.status && fm.status !== "published") continue;
 
         const processed = await remark().use(gfm).use(html).process(content);
-        posts.push({ ...(fm as PostFrontmatter), content: String(processed) });
+        const extractedCitations = extractCitations(content);
+        posts.push({
+            ...(fm as PostFrontmatter),
+            content: String(processed),
+            extractedCitations
+        });
     }
 
     // Sort by date desc if available
@@ -136,7 +184,12 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
         }
 
         const processed = await remark().use(gfm).use(html).process(content);
-        return { ...(fm as PostFrontmatter), content: String(processed) };
+        const extractedCitations = extractCitations(content);
+        return {
+            ...(fm as PostFrontmatter),
+            content: String(processed),
+            extractedCitations
+        };
     } catch (error) {
         console.error(`Error processing post with slug: ${slug}`, error);
         return null;

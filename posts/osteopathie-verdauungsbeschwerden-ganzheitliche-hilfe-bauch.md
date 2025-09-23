@@ -7,6 +7,8 @@ image: "https://images.ctfassets.net/9nu7qkjcp5l0/2TCPzI7R9a4Mh7pehkRIqU/8d37b98
 alt: "Beitragsbild zu: Osteopathie bei Verdauungsbeschwerden – ganzheitliche Hilfe für den Bauch. Keywords: Verdauungsbeschwerden, Reizdarm, Bauchschmerzen"
 date: "2025-01-21T10:30:00Z"
 status: published
+specialty: "Gastroenterologie und viszerale Osteopathie"
+sourceCount: 12
 ---
 
 # Osteopathie bei Verdauungsbeschwerden – ganzheitliche Hilfe für den Bauch
@@ -43,7 +45,7 @@ Der Verdauungstrakt steht in enger Verbindung mit dem Bewegungsapparat – insbe
 
 Blockierungen oder Verspannungen in diesen Segmenten können die Nervenimpulse beeinflussen. Daher untersucht der Osteopath etwa die Brustwirbelsäule auf Bewegungseinschränkungen. Durch sanfte Mobilisation oder Manipulation lässt sich dort der Sympathikus beruhigen, was über reflexhafte Verschaltungen die Überaktivität im Darm dämpfen kann [(19,20)](#19). Ebenso kann am unteren Rücken und Kreuzbein die Parasympathikus-Versorgung (für den Dickdarm) verbessert werden.
 
-Auch Muskeln und Faszien spielen eine Rolle: Verspannte Bauch- und Hüftmuskeln – etwa ein verkürzter Musculus Psoas (Hüftbeuger), an dem Teile des Darms anliegen – können auf den Darm Druck ausüben [(21)](#21). Ein Osteopath wird solche Spannungen lösen, um dem Darm wieder mehr Raum zu geben. Fehlhaltungen (z.B. ein Rundrücken) können den Bauchraum einengen und die Verdauung drosseln; eine Korrektur der Körperhaltung kann daher die Verdauungsorgane entlasten und die Nervenversorgung verbessern [(19)](#19).
+Auch Muskeln und Faszien spielen eine Rolle: Verspannte Bauch- und Hüftmuskeln – etwa ein verkürzter Musculus Psoas (Hüftbeuger), an dem Teile des Darms anliegen – können auf den Darm Druck ausüben [(21)](#21). Ein Osteopath wird solche Spannungen lösen, um dem Darm wieder mehr Raum zu geben. Fehlhaltungen (z.B. ein Rundrücken) können den Bauchraum einengen und die Verdauung drosseln; eine Korrektur der Körperhaltung kann daher die Verdauungsorgane entlasten und die Nervenversorgung verbessern [(12)](#12).
 
 ### Craniosakrale Osteopathie (Behandlung von Schädel und Kreuzbein)
 
@@ -79,17 +81,17 @@ Neben der osteopathischen Behandlung selbst können betroffene Patienten einiges
 
 ### In Bewegung bleiben
 
-Viel Bewegung tut dem Darm gut [(40)](#40). Regelmäßige moderate körperliche Aktivität – z.B. tägliche Spaziergänge, Radfahren oder Yoga – kurbelt die Darmperistaltik an und kann Verstopfung entgegenwirken. Auch Stress wird durch Bewegung abgebaut, was sich positiv auf nervöse Darmbeschwerden auswirkt.
+Viel Bewegung tut dem Darm gut [(10)](#10). Regelmäßige moderate körperliche Aktivität – z.B. tägliche Spaziergänge, Radfahren oder Yoga – kurbelt die Darmperistaltik an und kann Verstopfung entgegenwirken. Auch Stress wird durch Bewegung abgebaut, was sich positiv auf nervöse Darmbeschwerden auswirkt.
 
 ### Bauchgerecht atmen und entspannen
 
-Die Verdauung funktioniert am besten im Entspannungsmodus. Lernen Sie daher Techniken, die Ihr Nervensystem herunterfahren. Bewährt haben sich Atemübungen (etwa 5–10 Minuten tiefe Bauchatmung am Tag), progressive Muskelentspannung oder Meditation. Schon bewusstes, langsames Atmen senkt die Stressreaktion und aktiviert den Vagusnerv – das fördert die Darmtätigkeit [(19)](#19).
+Die Verdauung funktioniert am besten im Entspannungsmodus. Lernen Sie daher Techniken, die Ihr Nervensystem herunterfahren. Bewährt haben sich Atemübungen (etwa 5–10 Minuten tiefe Bauchatmung am Tag), progressive Muskelentspannung oder Meditation. Schon bewusstes, langsames Atmen senkt die Stressreaktion und aktiviert den Vagusnerv – das fördert die Darmtätigkeit [(12)](#12).
 
 **Tipp:** Legen Sie im Liegen beide Hände auf den Bauch und atmen Sie ruhig ein und aus. Beim Ausatmen können Sie sanft den Ton "Oooo" summen. Spüren Sie dabei, wie sich die Bauchdecke entspannt und warm anfühlt. Diese Übung kann helfen, einen verkrampften Darm zu beruhigen.
 
 ### Ernährung anpassen
 
-„Der Darm liebt Ballaststoffe" – achten Sie auf eine ausgewogene, faserreiche Ernährung mit reichlich Gemüse, Obst und Vollkornprodukten, damit die Verdauung in Schwung bleibt. Essen Sie bewusst und langsam: gründliches Kauen und stressfreies Essen vermeiden, dass der Magen-Darm-Trakt überfordert wird. Führen Sie am besten ein Ernährungstagebuch, um unverträgliche Lebensmittel zu identifizieren. Viele RDS-Patienten reagieren z.B. empfindlich auf bestimmte Zuckerarten (Stichwort FODMAP), Milchprodukte, Hülsenfrüchte oder stark blähende Kohlarten [(41)](#41).
+„Der Darm liebt Ballaststoffe" – achten Sie auf eine ausgewogene, faserreiche Ernährung mit reichlich Gemüse, Obst und Vollkornprodukten, damit die Verdauung in Schwung bleibt. Essen Sie bewusst und langsam: gründliches Kauen und stressfreies Essen vermeiden, dass der Magen-Darm-Trakt überfordert wird. Führen Sie am besten ein Ernährungstagebuch, um unverträgliche Lebensmittel zu identifizieren. Viele RDS-Patienten reagieren z.B. empfindlich auf bestimmte Zuckerarten (Stichwort FODMAP), Milchprodukte, Hülsenfrüchte oder stark blähende Kohlarten [(12)](#12).
 
 ### Für Wärme und Wohlbefinden sorgen
 
@@ -122,82 +124,31 @@ Für Betroffene von Verdauungsbeschwerden heißt das: Sie müssen sich mit ihren
 2. Müller A. et al. (2014): Effectiveness of osteopathic manipulative therapy for managing symptoms of irritable bowel syndrome: a systematic review. J Am Osteopath Assoc 114(6): 470-479
 
 <a id="3"></a>
-3. Elsing C. (2015): Osteopathie als alternative Therapie bei Reizmagen – eine Pilotstudie. Osteopathische Medizin 16(2): 6-12
+3. Buffone F. et al. (2023): Effectiveness of Osteopathic Manipulative Treatment in Adults with Irritable Bowel Syndrome: A Systematic Review and Meta-Analysis. Healthcare (Basel) 11(17): 2442
 
 <a id="4"></a>
-4. [Regulation des Vagusnervs | Osteopathie Boelts](https://www.osteopathie-boelts.de/general-8-2)
+4. Elsing C. (2015): Osteopathie als alternative Therapie bei Reizmagen – eine Pilotstudie. Osteopathische Medizin 16(2): 6-12
 
 <a id="5"></a>
-5. [Osteopathie bei Bauchschmerzen und Verstopfung • Osteohealth](https://osteopathie-liem.de/osteopathie-bauchschmerzen-und-verstopfung/)
+5. Eguaras N. et al. (2019): Effects of Osteopathic Visceral Treatment in Patients with Gastroesophageal Reflux: A Randomized Controlled Trial. J Clin Med 8(10): 1738
+
+<a id="6"></a>
+6. [Osteopathie bei gastroösophagealem Reflux mit Hiatushernie: Ein Fallbericht gemäß der CARE-Leitlinie - PubMed](https://pubmed.ncbi.nlm.nih.gov/29080893/)
 
 <a id="7"></a>
-7. Buffone F. et al. (2023): Effectiveness of Osteopathic Manipulative Treatment in Adults with Irritable Bowel Syndrome: A Systematic Review and Meta-Analysis. Healthcare (Basel) 11(17): 2442
+7. Florance et al. (2012): Pilotstudie zur osteopathischen Behandlung bei Reizdarm
 
 <a id="8"></a>
-8. [Osteopathie und Reizdarm • Gesundheitsblog Liem • 2025](https://osteopathie-liem.de/osteopathie-und-reizdarm/)
+8. Attali et al. (2013): Crossover-Studie zu Vibrationstechniken bei Reizdarm
 
 <a id="9"></a>
-9. [Wir fragen Torsten Liem: Wie hilft Osteopathie bei Reizdarm?](https://www.digestio.de/de/specials/infografiken/interviews/torsten-liem-osteopathie-reizdarm-verdauung)
+9. [Regulation des Vagusnervs | Osteopathie Boelts](https://www.osteopathie-boelts.de/general-8-2)
 
-<a id="13"></a>
-13. Eguaras N. et al. (2019): Effects of Osteopathic Visceral Treatment in Patients with Gastroesophageal Reflux: A Randomized Controlled Trial. J Clin Med 8(10): 1738
+<a id="10"></a>
+10. [Osteopathie bei Bauchschmerzen und Verstopfung • Osteohealth](https://osteopathie-liem.de/osteopathie-bauchschmerzen-und-verstopfung/)
 
-<a id="14"></a>
-14. Buffone F. et al. (2023): Effectiveness of Osteopathic Manipulative Treatment in Adults with Irritable Bowel Syndrome: A Systematic Review and Meta-Analysis. Healthcare (Basel) 11(17): 2442
+<a id="11"></a>
+11. [Osteopathie und Reizdarm • Gesundheitsblog Liem • 2025](https://osteopathie-liem.de/osteopathie-und-reizdarm/)
 
-<a id="15"></a>
-15. Eguaras N. et al. (2019): Effects of Osteopathic Visceral Treatment in Patients with Gastroesophageal Reflux: A Randomized Controlled Trial. J Clin Med 8(10): 1738
-
-<a id="16"></a>
-16. [Effects of Osteopathic Visceral Treatment in Patients with Gastroesophageal Reflux: A Randomized Controlled Trial - PubMed](https://pubmed.ncbi.nlm.nih.gov/31635110/)
-
-<a id="17"></a>
-17. [Osteopathie bei gastroösophagealem Reflux mit Hiatushernie: Ein Fallbericht gemäß der CARE-Leitlinie - PubMed](https://pubmed.ncbi.nlm.nih.gov/29080893/)
-
-<a id="18"></a>
-18. Eguaras N. et al. (2019): Effects of Osteopathic Visceral Treatment in Patients with Gastroesophageal Reflux: A Randomized Controlled Trial. J Clin Med 8(10): 1738
-
-<a id="19"></a>
-19. [Wir fragen Torsten Liem: Wie hilft Osteopathie bei Reizdarm?](https://www.digestio.de/de/specials/infografiken/interviews/torsten-liem-osteopathie-reizdarm-verdauung)
-
-<a id="20"></a>
-20. [Osteopathie und Reizdarm • Gesundheitsblog Liem • 2025](https://osteopathie-liem.de/osteopathie-und-reizdarm/)
-
-<a id="21"></a>
-21. [Osteopathie bei Bauchschmerzen und Verstopfung • Osteohealth](https://osteopathie-liem.de/osteopathie-bauchschmerzen-und-verstopfung/)
-
-<a id="23"></a>
-23. [Regulation des Vagusnervs | Osteopathie Boelts](https://www.osteopathie-boelts.de/general-8-2)
-
-<a id="24"></a>
-24. [Regulation des Vagusnervs | Osteopathie Boelts](https://www.osteopathie-boelts.de/general-8-2)
-
-<a id="25"></a>
-25. [Regulation des Vagusnervs | Osteopathie Boelts](https://www.osteopathie-boelts.de/general-8-2)
-
-<a id="28"></a>
-28. Buffone F. et al. (2023): Effectiveness of Osteopathic Manipulative Treatment in Adults with Irritable Bowel Syndrome: A Systematic Review and Meta-Analysis. Healthcare (Basel) 11(17): 2442
-
-<a id="29"></a>
-29. Buffone F. et al. (2023): Effectiveness of Osteopathic Manipulative Treatment in Adults with Irritable Bowel Syndrome: A Systematic Review and Meta-Analysis. Healthcare (Basel) 11(17): 2442
-
-<a id="30"></a>
-30. Müller A. et al. (2014): Effectiveness of osteopathic manipulative therapy for managing symptoms of irritable bowel syndrome: a systematic review. J Am Osteopath Assoc 114(6): 470-479
-
-<a id="31"></a>
-31. Florance et al. (2012): Pilotstudie zur osteopathischen Behandlung bei Reizdarm
-
-<a id="32"></a>
-32. Attali et al. (2013): Crossover-Studie zu Vibrationstechniken bei Reizdarm
-
-<a id="34"></a>
-34. Elsing C. (2015): Osteopathie als alternative Therapie bei Reizmagen – eine Pilotstudie. Osteopathische Medizin 16(2): 6-12
-
-<a id="35"></a>
-35. [Osteopathie als alternative Therapie bei Reizmagen – eine Pilotstudie](https://www.researchgate.net/publication/277726767_Osteopathie_als_alternative_Therapie_bei_Reizmagen_-_eine_Pilotstudie)
-
-<a id="40"></a>
-40. [Osteopathie bei Bauchschmerzen und Verstopfung • Osteohealth](https://osteopathie-liem.de/osteopathie-bauchschmerzen-und-verstopfung/)
-
-<a id="41"></a>
-41. [Wir fragen Torsten Liem: Wie hilft Osteopathie bei Reizdarm?](https://www.digestio.de/de/specials/infografiken/interviews/torsten-liem-osteopathie-reizdarm-verdauung)
+<a id="12"></a>
+12. [Wir fragen Torsten Liem: Wie hilft Osteopathie bei Reizdarm?](https://www.digestio.de/de/specials/infografiken/interviews/torsten-liem-osteopathie-reizdarm-verdauung)

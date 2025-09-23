@@ -30,6 +30,26 @@ interface BlogPostStructuredDataProps {
   dateModified?: string;
   url: string;
   imageUrl?: string;
+  keywords?: string[];
+}
+
+interface MedicalScholarlyArticleProps {
+  headline: string;
+  description: string;
+  author: string;
+  datePublished: string;
+  dateModified?: string;
+  url: string;
+  imageUrl?: string;
+  keywords?: string[];
+  citations?: {
+    title: string;
+    author?: string;
+    url?: string;
+    identifier?: string;
+  }[];
+  specialty: string;
+  sourceCount: number;
 }
 
 export function LocalBusinessStructuredData({
@@ -112,6 +132,7 @@ export function BlogPostStructuredData({
   dateModified,
   url,
   imageUrl,
+  keywords,
 }: BlogPostStructuredDataProps) {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -143,6 +164,109 @@ export function BlogPostStructuredData({
       '@type': 'WebPage',
       '@id': url,
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
+
+export function MedicalScholarlyArticle({
+  headline,
+  description,
+  author,
+  datePublished,
+  dateModified,
+  url,
+  imageUrl,
+  keywords,
+  citations = [],
+  specialty,
+  sourceCount,
+}: MedicalScholarlyArticleProps) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': ['MedicalScholarlyArticle', 'Article'],
+    headline,
+    description,
+    author: {
+      '@type': 'Person',
+      name: author,
+      jobTitle: 'Osteopath und Heilpraktiker',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'VFO - Verband Freier Osteopathen e.V.',
+      },
+      hasCredential: {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Osteopath',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'VFO - Verband Freier Osteopathen e.V.',
+        },
+      },
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Osteopathie Hamburg – Joshua Alsen',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.osteoalsen.de/assets/osteopathie-alsen-logo.webp',
+      },
+    },
+    datePublished,
+    dateModified: dateModified || datePublished,
+    url,
+    ...(imageUrl && {
+      image: {
+        '@type': 'ImageObject',
+        url: imageUrl,
+      },
+    }),
+    ...(keywords && {
+      keywords: keywords.join(', '),
+    }),
+    specialty: {
+      '@type': 'MedicalSpecialty',
+      name: specialty,
+    },
+    about: {
+      '@type': 'MedicalCondition',
+      name: specialty,
+      code: {
+        '@type': 'MedicalCode',
+        code: 'T-D4000',
+        codingSystem: 'RadLex',
+      },
+    },
+    ...(citations.length > 0 && {
+      citation: citations.map(cite => ({
+        '@type': 'ScholarlyArticle',
+        name: cite.title,
+        ...(cite.author && { author: cite.author }),
+        ...(cite.url && { url: cite.url }),
+        ...(cite.identifier && { identifier: cite.identifier }),
+      })),
+    }),
+    // Add evidence level indicator
+    evidenceLevel: {
+      '@type': 'Text',
+      value: `Based on ${sourceCount}+ peer-reviewed studies`,
+    },
+    isBasedOn: citations.slice(0, 10).map(cite => ({
+      '@type': 'ScholarlyArticle',
+      name: cite.title,
+      ...(cite.url && { url: cite.url }),
+    })),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+    isAccessibleForFree: true,
+    genre: ['Medical Research', 'Osteopathic Medicine', 'Evidence-Based Medicine'],
   };
 
   return (
