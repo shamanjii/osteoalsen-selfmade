@@ -1,15 +1,14 @@
 [build]
-  publish = "out"
   command = "npm run build"
+  publish = ".next"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
-# Git Gateway für CMS
-[context.production]
-  command = "npm run build"
+# Environment variables for production
+[context.production.environment]
+  NEXTAUTH_URL = "https://osteoalsen.de"
+  NEXTAUTH_SECRET = "your-production-secret-key-change-this"
 
 # Identity für Authentifizierung
 [[headers]]
