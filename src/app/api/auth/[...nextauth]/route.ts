@@ -1,5 +1,7 @@
 import NextAuth, { type NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
+import { prisma } from '@/lib/prisma'
+import bcrypt from 'bcryptjs'
 
 export const dynamic = 'force-dynamic'
 
@@ -16,17 +18,40 @@ export const authOptions: NextAuthOptions = {
           return null
         }
 
-        // Simple static user check for testing
-        if (credentials.email === 'admin@osteoalsen.de' && credentials.password === 'admin123') {
-          return {
-            id: '1',
-            email: 'admin@osteoalsen.de',
-            name: 'Admin',
-            role: 'ADMIN'
-          }
-        }
+        try {
+          // Find user in database
+          const user = await prisma.user.findUnique({
+            where: {
+              email: credentials.email
+            }
+          })
 
-        return null
+          if (!user) {
+            return null
+          }
+
+          // Verify password
+          const passwordValid = await bcrypt.compare(credentials.password, user.password)
+
+          if (!passwordValid) {
+            return null
+          }
+
+          // Check if user has admin or editor role
+          if (user.role !== 'ADMIN' && user.role !== 'EDITOR') {
+            return null
+          }
+
+          return {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            role: user.role
+          }
+        } catch (error) {
+          console.error('Auth error:', error)
+          return null
+        }
       }
     })
   ],
