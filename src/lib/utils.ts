@@ -67,7 +67,7 @@ export function calculateReadingTime(content: string): number {
   return Math.ceil(words / wordsPerMinute)
 }
 
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: unknown[]) => unknown>(
   func: T,
   delay: number
 ): (...args: Parameters<T>) => void {

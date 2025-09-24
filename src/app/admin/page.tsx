@@ -39,8 +39,8 @@ export default function AdminDashboard() {
         const tagsData = await tagsRes.json()
 
         if (postsData.success && categoriesData.success && tagsData.success) {
-          const publishedPosts = postsData.data.posts.filter((p: any) => p.published).length
-          const draftPosts = postsData.data.posts.filter((p: any) => !p.published).length
+          const publishedPosts = postsData.data.posts.filter((p: { published: boolean }) => p.published).length
+          const draftPosts = postsData.data.posts.filter((p: { published: boolean }) => !p.published).length
 
           setStats({
             totalPosts: postsData.data.pagination.total,

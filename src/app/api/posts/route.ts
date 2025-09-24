@@ -17,7 +17,16 @@ export async function GET(request: NextRequest) {
 
     const skip = (page - 1) * limit
 
-    const where: any = {}
+    const where: {
+      status?: string
+      published?: boolean
+      categoryId?: string
+      OR?: Array<{
+        title?: { contains: string; mode: 'insensitive' }
+        content?: { contains: string; mode: 'insensitive' }
+        excerpt?: { contains: string; mode: 'insensitive' }
+      }>
+    } = {}
 
     if (status && status !== 'all') {
       where.status = status
@@ -86,7 +95,7 @@ export async function GET(request: NextRequest) {
       tags: post.tags.map(pt => pt.tag)
     }))
 
-    const response: ApiResponse<{ posts: PostWithRelations[], pagination: any }> = {
+    const response: ApiResponse<{ posts: PostWithRelations[], pagination: { page: number; limit: number; total: number; pages: number } }> = {
       success: true,
       data: {
         posts: transformedPosts,

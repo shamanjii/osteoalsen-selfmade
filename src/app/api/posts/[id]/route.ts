@@ -146,7 +146,7 @@ export async function PUT(
     }
 
     // Update the post
-    const updateData: any = {
+    const updateData = {
       ...validatedData,
       slug,
       excerpt,
