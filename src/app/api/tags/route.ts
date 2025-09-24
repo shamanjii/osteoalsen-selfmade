@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 
     const response: ApiResponse<TagWithCount[]> = {
       success: true,
-      data: tags
+      data: tags as TagWithCount[]
     }
 
     return NextResponse.json(response)

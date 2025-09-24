@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 
     const response: ApiResponse<CategoryWithCount[]> = {
       success: true,
-      data: categories
+      data: categories as CategoryWithCount[]
     }
 
     return NextResponse.json(response)
