@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Static export for Netlify
-  output: 'export',
-  trailingSlash: true,
+  // Full SSR mode for CMS on Vercel
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
@@ -32,6 +30,10 @@ const nextConfig: NextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
           },
         ],
       },

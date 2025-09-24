@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system;
+}
+
+/* Admin-specific styles */
+.admin-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.admin-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.admin-btn-primary {
+  background: #1f2937;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-btn-primary:hover {
+  background: #374151;
+}
+
+.admin-btn-secondary {
+  background: white;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-btn-secondary:hover {
+  background: #f9fafb;
+}

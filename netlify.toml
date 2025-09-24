@@ -1,33 +1,43 @@
 [build]
+  publish = "out"
   command = "npm run build"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[build.environment]
+  NODE_VERSION = "20"
 
-# Environment variables for production
-[context.production.environment]
-  NEXTAUTH_URL = "https://osteoalsen.de"
-  NEXTAUTH_SECRET = "production-secret-256-bit-key-change-this-in-netlify-ui"
-  DATABASE_URL = "file:./prod.db"
+# Redirect admin and API routes to CMS subdomain
+[[redirects]]
+  from = "/admin/*"
+  to = "https://cms.osteoalsen.de/:splat"
+  status = 301
+  force = true
 
-# Force all admin routes to use Edge Functions
-[[edge_functions]]
-  function = "admin-router"
-  path = "/admin/*"
+[[redirects]]
+  from = "/api/*"
+  to = "https://cms.osteoalsen.de/api/:splat"
+  status = 301
+  force = true
 
-[[edge_functions]]
-  function = "api-router"
-  path = "/api/*"
-
-# Identity für Authentifizierung
+# Security headers for static site
 [[headers]]
-  for = "/admin/*"
+  for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "origin-when-cross-origin"
 
-# Media Upload Configuration
-[[redirects]]
-  from = "/api/media/*"
-  to = "/.netlify/functions/media/:splat"
-  status = 200
+# Static file optimization
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
