@@ -5,7 +5,7 @@ excerpt: "Kopfschmerzen und Migräne osteopathisch behandeln: Wie manuelle Thera
 keywords: ["Kopfschmerzen", "Migräne", "Osteopath Hamburg", "Spannungskopfschmerz", "Osteopathie Hamburg", "kraniosakrale Therapie", "Nackenverspannungen", "Trigeminusnerv", "myofasziale Techniken", "Osteopathie Eimsbüttel", "Osteopathie Termin Hamburg", "ganzheitliche Schmerztherapie", "natürliche Schmerzlinderung"]
 image: "https://www.apotheke-leipzig.de/wp-content/uploads/sites/13/2019/06/AdobeStock_263257190-scaled.jpeg"
 alt: "Beitragsbild zu: Osteopathie bei Kopfschmerzen und Migräne. Keywords: Kopfschmerzen, Migräne, Spannungskopfschmerz"
-date: "2025-01-21T11:15:00Z"
+date: "2024-09-01T11:15:00Z"
 status: published
 specialty: "Neurologie und Schmerztherapie"
 sourceCount: 9
