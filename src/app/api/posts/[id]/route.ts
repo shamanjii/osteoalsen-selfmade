@@ -7,11 +7,12 @@ import { authOptions } from '../../auth/[...nextauth]/route'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const post = await prisma.post.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         author: {
           select: {
@@ -72,7 +73,7 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const session = await getServerSession(authOptions)
@@ -85,11 +86,12 @@ export async function PUT(
     }
 
     const body = await request.json()
-    const validatedData = UpdatePostSchema.parse({ ...body, id: params.id })
+    const { id } = await params
+    const validatedData = UpdatePostSchema.parse({ ...body, id })
 
     // Check if post exists
     const existingPost = await prisma.post.findUnique({
-      where: { id: params.id }
+      where: { id }
     })
 
     if (!existingPost) {
@@ -119,7 +121,7 @@ export async function PUT(
       const slugExists = await prisma.post.findFirst({
         where: {
           slug,
-          NOT: { id: params.id }
+          NOT: { id }
         }
       })
 
@@ -157,7 +159,7 @@ export async function PUT(
     delete updateData.tagIds
 
     const post = await prisma.post.update({
-      where: { id: params.id },
+      where: { id },
       data: updateData,
       include: {
         author: {
@@ -193,14 +195,14 @@ export async function PUT(
     if (validatedData.tagIds !== undefined) {
       // Remove existing tags
       await prisma.postTag.deleteMany({
-        where: { postId: params.id }
+        where: { postId: id }
       })
 
       // Add new tags
       if (validatedData.tagIds.length > 0) {
         await prisma.postTag.createMany({
           data: validatedData.tagIds.map(tagId => ({
-            postId: params.id,
+            postId: id,
             tagId
           }))
         })
@@ -237,7 +239,7 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const session = await getServerSession(authOptions)
@@ -249,9 +251,10 @@ export async function DELETE(
       )
     }
 
+    const { id } = await params
     // Check if post exists
     const existingPost = await prisma.post.findUnique({
-      where: { id: params.id }
+      where: { id }
     })
 
     if (!existingPost) {
@@ -274,7 +277,7 @@ export async function DELETE(
 
     // Delete the post (cascade will handle related records)
     await prisma.post.delete({
-      where: { id: params.id }
+      where: { id }
     })
 
     const response: ApiResponse = {

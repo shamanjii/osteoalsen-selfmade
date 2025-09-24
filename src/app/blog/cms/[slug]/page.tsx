@@ -7,9 +7,9 @@ import remarkHtml from 'remark-html'
 import remarkGfm from 'remark-gfm'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 async function getPostBySlug(slug: string) {
@@ -67,7 +67,8 @@ async function getPostBySlug(slug: string) {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const post = await getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     return {
@@ -97,7 +98,8 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default async function CMSPostPage({ params }: PageProps) {
-  const post = await getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     notFound()
