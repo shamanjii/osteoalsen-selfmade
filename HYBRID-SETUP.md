@@ -37,7 +37,7 @@ Elegante Lösung für beste Performance und einfache Verwaltung.
 ✅ Performance-Optimierungen
 
 ### 2. CMS-Subdomain (Vercel)
-📁 **Separates Projekt**: `/cms/`
+📁 **Separates Repository**: `osteoalsen-cms`
 🔐 **Features**: Admin-Login, Blog-Management, Database
 🛡️ **Sicherheit**: noindex, nofollow, Access Control
 
@@ -56,13 +56,22 @@ cms.osteoalsen.de → cname.vercel-dns.com
 
 ### 4. Deployment-Reihenfolge
 
-#### A) CMS zu Vercel deployen:
+#### A) CMS Repository erstellen & zu Vercel deployen:
+
+**Schritt 1: Repository zu GitHub pushen**
 ```bash
-cd cms/
-# Vercel CLI installieren: npm i -g vercel
-vercel --prod
-# Domain: cms.osteoalsen.de
+# CMS ist bereit in /tmp/osteoalsen-cms/
+cd /tmp/osteoalsen-cms
+# Erstellen Sie ein neues GitHub Repository: "osteoalsen-cms"
+git remote add origin https://github.com/IHR-USERNAME/osteoalsen-cms.git
+git push -u origin main
 ```
+
+**Schritt 2: Vercel Import**
+1. **Vercel Dashboard** → **New Project**
+2. **Import Git Repository** → `osteoalsen-cms`
+3. **Root Directory**: `.` (Root)
+4. **Framework Preset**: Next.js
 
 #### B) Environment Variables in Vercel:
 ```env
