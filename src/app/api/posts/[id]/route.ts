@@ -148,15 +148,12 @@ export async function PUT(
     }
 
     // Update the post
-    const updateData = {
+    const { id: _, tagIds, ...updateData } = {
       ...validatedData,
       slug,
       excerpt,
       publishedAt
     }
-
-    delete updateData.id
-    delete updateData.tagIds
 
     const post = await prisma.post.update({
       where: { id },
@@ -192,16 +189,16 @@ export async function PUT(
     })
 
     // Handle tags update
-    if (validatedData.tagIds !== undefined) {
+    if (tagIds !== undefined) {
       // Remove existing tags
       await prisma.postTag.deleteMany({
         where: { postId: id }
       })
 
       // Add new tags
-      if (validatedData.tagIds.length > 0) {
+      if (tagIds.length > 0) {
         await prisma.postTag.createMany({
-          data: validatedData.tagIds.map(tagId => ({
+          data: tagIds.map(tagId => ({
             postId: id,
             tagId
           }))

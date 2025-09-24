@@ -132,7 +132,7 @@ export function BlogPostStructuredData({
   dateModified,
   url,
   imageUrl,
-  keywords: _keywords,
+  keywords,
 }: BlogPostStructuredDataProps) {
   const structuredData = {
     '@context': 'https://schema.org',

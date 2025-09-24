@@ -29,7 +29,7 @@ export async function GET(request: NextRequest) {
     } = {}
 
     if (status && status !== 'all') {
-      where.status = status
+      where.status = status as 'DRAFT' | 'PUBLISHED' | 'ARCHIVED'
     }
 
     if (published === 'true') {

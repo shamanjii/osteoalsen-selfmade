@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { formatDate, getStatusColor } from '@/lib/utils'
 import { type PostWithRelations } from '@/lib/types'
@@ -13,11 +13,7 @@ export default function PostsPage() {
   const [page, setPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
 
-  useEffect(() => {
-    fetchPosts()
-  }, [page, statusFilter, searchTerm])
-
-  const fetchPosts = async () => {
+  const fetchPosts = useCallback(async () => {
     setLoading(true)
     try {
       const params = new URLSearchParams({
@@ -39,7 +35,11 @@ export default function PostsPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [page, statusFilter, searchTerm])
+
+  useEffect(() => {
+    fetchPosts()
+  }, [fetchPosts])
 
   const handleDelete = async (id: string) => {
     if (!confirm('Möchten Sie diesen Post wirklich löschen?')) return
