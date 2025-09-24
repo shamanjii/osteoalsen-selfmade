@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
     const skip = (page - 1) * limit
 
     const where: {
-      status?: string
+      status?: 'DRAFT' | 'PUBLISHED' | 'ARCHIVED'
       published?: boolean
       categoryId?: string
       OR?: Array<{
@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
 
     if (published === 'true') {
       where.published = true
-      where.status = 'PUBLISHED'
+      where.status = 'PUBLISHED' as const
     }
 
     if (categoryId) {
