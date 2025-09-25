@@ -2,60 +2,29 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
-import { prisma } from "@/lib/prisma";
 
 async function getCMSPosts() {
     try {
-        const posts = await prisma.post.findMany({
-            where: {
-                published: true,
-                status: 'PUBLISHED'
-            },
-            include: {
-                author: {
-                    select: {
-                        name: true,
-                        email: true
-                    }
-                },
-                category: {
-                    select: {
-                        name: true,
-                        slug: true
-                    }
-                },
-                tags: {
-                    include: {
-                        tag: {
-                            select: {
-                                name: true,
-                                slug: true
-                            }
-                        }
-                    }
-                }
-            },
-            orderBy: {
-                publishedAt: 'desc'
-            }
+        // Fetch from CMS API instead of direct database access
+        const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
+            next: { revalidate: 300 } // Cache for 5 minutes
         });
 
-        return posts.map(post => ({
-            slug: post.slug,
-            title: post.title,
-            excerpt: post.excerpt || '',
-            date: post.publishedAt?.toISOString() || post.createdAt.toISOString(),
-            keywords: post.keywords ? post.keywords.split(',').map(k => k.trim()) : [],
-            image: post.coverImage || '',
-            alt: post.title,
-            category: post.category?.slug || 'osteopathie',
-            source: 'cms' as const,
-            content: post.content,
-            author: post.author.name || post.author.email,
-            tags: post.tags.map(pt => pt.tag.name)
-        }));
+        if (!response.ok) {
+            console.warn('CMS API not available, falling back to empty array');
+            return [];
+        }
+
+        const data = await response.json();
+
+        if (data.success && data.posts) {
+            console.log(`Loaded ${data.posts.length} posts from CMS API`);
+            return data.posts;
+        }
+
+        return [];
     } catch (error) {
-        console.error('Error fetching CMS posts:', error);
+        console.error('Error fetching CMS posts from API:', error);
         return [];
     }
 }
