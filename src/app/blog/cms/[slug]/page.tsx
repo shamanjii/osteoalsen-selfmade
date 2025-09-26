@@ -84,36 +84,14 @@ async function getPostBySlug(slug: string) {
   }
 }
 
+// Enable dynamic params for runtime generation
+export const dynamicParams = true
+
 export async function generateStaticParams() {
-  try {
-    // Fetch CMS posts to generate static params
-    const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
-      next: { revalidate: 300 }
-    })
-
-    if (!response.ok) {
-      console.warn('Unable to fetch CMS posts for static generation')
-      return []
-    }
-
-    const data = await response.json()
-
-    if (data.success && data.posts) {
-      // Temporarily exclude problematic posts that cause build failures
-      const problematicSlugs = ['hallo-in-hamburg']
-
-      return data.posts
-        .filter((post: { slug: string }) => !problematicSlugs.includes(post.slug))
-        .map((post: { slug: string }) => ({
-          slug: post.slug
-        }))
-    }
-
-    return []
-  } catch (error) {
-    console.error('Error generating static params for CMS posts:', error)
-    return []
-  }
+  // Return empty array to disable static generation for all CMS posts
+  // CMS posts will be served dynamically at runtime to avoid prerender errors
+  // This allows the build to complete successfully while maintaining full functionality
+  return []
 }
 
 export async function generateMetadata({ params }: PageProps) {
