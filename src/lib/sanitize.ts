@@ -1,4 +1,8 @@
-import DOMPurify from 'dompurify';
+// Only import DOMPurify on client-side to avoid canvas dependency issues
+let DOMPurify: any = null;
+if (typeof window !== 'undefined') {
+  DOMPurify = require('dompurify');
+}
 
 // Safe HTML sanitization configuration
 const SANITIZE_CONFIG = {
@@ -24,8 +28,9 @@ const SANITIZE_CONFIG = {
  * @returns Sanitized HTML string safe for rendering
  */
 export function sanitizeHtml(html: string): string {
+  // For static builds, always strip HTML on server-side to avoid canvas dependency
   if (typeof window === 'undefined') {
-    // Server-side: Return plain text or use server-side DOMPurify
+    // Server-side: Return plain text - no DOMPurify to avoid canvas issues
     return html.replace(/<[^>]*>/g, ''); // Strip all HTML tags on server
   }
 
@@ -44,6 +49,11 @@ export function sanitizeHtml(html: string): string {
  * @returns Sanitized content safe for blog rendering
  */
 export function sanitizeBlogContent(content: string): string {
+  // For static builds, always strip HTML on server-side to avoid canvas dependency
+  if (typeof window === 'undefined') {
+    return content.replace(/<[^>]*>/g, '');
+  }
+
   const blogConfig = {
     ...SANITIZE_CONFIG,
     ALLOWED_TAGS: [
@@ -51,10 +61,6 @@ export function sanitizeBlogContent(content: string): string {
       'table', 'thead', 'tbody', 'tr', 'td', 'th', 'caption'
     ]
   };
-
-  if (typeof window === 'undefined') {
-    return content.replace(/<[^>]*>/g, '');
-  }
 
   try {
     return DOMPurify.sanitize(content, blogConfig);
@@ -70,14 +76,15 @@ export function sanitizeBlogContent(content: string): string {
  * @returns Sanitized content safe for FAQ rendering
  */
 export function sanitizeFaqContent(content: string): string {
+  // For static builds, always strip HTML on server-side to avoid canvas dependency
+  if (typeof window === 'undefined') {
+    return content.replace(/<[^>]*>/g, '');
+  }
+
   const faqConfig = {
     ...SANITIZE_CONFIG,
     ALLOWED_TAGS: ['p', 'br', 'strong', 'b', 'em', 'i', 'a', 'ul', 'ol', 'li']
   };
-
-  if (typeof window === 'undefined') {
-    return content.replace(/<[^>]*>/g, '');
-  }
 
   try {
     return DOMPurify.sanitize(content, faqConfig);

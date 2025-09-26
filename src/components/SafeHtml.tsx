@@ -25,21 +25,26 @@ export default function SafeHtml({ html, className = '', type = 'default' }: Saf
     if (isClient) {
       let sanitized: string;
 
-      switch (type) {
-        case 'blog':
-          sanitized = sanitizeBlogContent(html);
-          break;
-        case 'faq':
-          sanitized = sanitizeFaqContent(html);
-          break;
-        default:
-          sanitized = sanitizeHtml(html);
-          break;
+      try {
+        switch (type) {
+          case 'blog':
+            sanitized = sanitizeBlogContent(html);
+            break;
+          case 'faq':
+            sanitized = sanitizeFaqContent(html);
+            break;
+          default:
+            sanitized = sanitizeHtml(html);
+            break;
+        }
+        setSanitizedHtml(sanitized);
+      } catch (error) {
+        console.error('HTML sanitization failed:', error);
+        // Fallback: strip all HTML tags if sanitization fails
+        setSanitizedHtml(html.replace(/<[^>]*>/g, ''));
       }
-
-      setSanitizedHtml(sanitized);
     } else {
-      // Server-side fallback: strip all HTML tags
+      // Server-side fallback: strip all HTML tags to avoid canvas issues
       setSanitizedHtml(html.replace(/<[^>]*>/g, ''));
     }
   }, [html, type, isClient]);
