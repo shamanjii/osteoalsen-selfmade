@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
   // Skip error page generation for static export
   skipTrailingSlashRedirect: true,
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Disabled due to critters dependency issues
     forceSwcTransforms: true,
   },
   // Disable problematic features for static export
