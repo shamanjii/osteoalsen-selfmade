@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { prisma } from '@/lib/prisma'
 import { formatDate, calculateReadingTime } from '@/lib/utils'
 import { remark } from 'remark'
 import remarkHtml from 'remark-html'
@@ -14,40 +13,23 @@ interface PageProps {
 
 async function getPostBySlug(slug: string) {
   try {
-    const post = await prisma.post.findUnique({
-      where: {
-        slug,
-        published: true,
-        status: 'PUBLISHED'
-      },
-      include: {
-        author: {
-          select: {
-            name: true,
-            email: true
-          }
-        },
-        category: {
-          select: {
-            name: true,
-            slug: true
-          }
-        },
-        tags: {
-          include: {
-            tag: {
-              select: {
-                name: true,
-                slug: true,
-                color: true
-              }
-            }
-          }
-        }
-      }
+    // Fetch from CMS API instead of direct database access
+    const response = await fetch(`https://cms.osteoalsen.de/api/public/posts/${slug}`, {
+      next: { revalidate: 300 } // Cache for 5 minutes
     })
 
-    if (!post) return null
+    if (!response.ok) {
+      console.warn(`CMS post not found: ${slug}`)
+      return null
+    }
+
+    const data = await response.json()
+
+    if (!data.success || !data.post) {
+      return null
+    }
+
+    const post = data.post
 
     // Process markdown content
     const processedContent = await remark()
@@ -57,12 +39,38 @@ async function getPostBySlug(slug: string) {
 
     return {
       ...post,
-      processedContent: processedContent.toString(),
-      tags: post.tags.map(pt => pt.tag)
+      processedContent: processedContent.toString()
     }
   } catch (error) {
-    console.error('Error fetching post:', error)
+    console.error('Error fetching CMS post:', error)
     return null
+  }
+}
+
+export async function generateStaticParams() {
+  try {
+    // Fetch CMS posts to generate static params
+    const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
+      next: { revalidate: 300 }
+    })
+
+    if (!response.ok) {
+      console.warn('Unable to fetch CMS posts for static generation')
+      return []
+    }
+
+    const data = await response.json()
+
+    if (data.success && data.posts) {
+      return data.posts.map((post: { slug: string }) => ({
+        slug: post.slug
+      }))
+    }
+
+    return []
+  } catch (error) {
+    console.error('Error generating static params for CMS posts:', error)
+    return []
   }
 }
 
@@ -186,7 +194,7 @@ export default async function CMSPostPage({ params }: PageProps) {
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-8">
-              {post.tags.map((tag) => (
+              {post.tags.map((tag: { id: string; name: string; color?: string }) => (
                 <span
                   key={tag.id}
                   className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
