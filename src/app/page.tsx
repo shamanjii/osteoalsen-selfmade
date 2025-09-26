@@ -1,3 +1,6 @@
+// Force dynamic rendering to avoid prerender errors
+export const dynamic = 'force-dynamic';
+
 import SiteHeader from "./(site)/components/SiteHeader";
 import HeroSection from "./(site)/components/HeroSection";
 import AboutOsteopathie from "./(site)/components/AboutOsteopathie";

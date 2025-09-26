@@ -1,3 +1,6 @@
+// Force dynamic rendering to avoid prerender errors
+export const dynamic = 'force-dynamic';
+
 import { Metadata } from 'next';
 import TerminbuchungClient from './components/TerminbuchungClient';
 

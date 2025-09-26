@@ -1,8 +1,5 @@
-// Only import DOMPurify on client-side to avoid canvas dependency issues
+// DOMPurify removed to prevent build issues - using basic sanitization
 let DOMPurify: any = null;
-if (typeof window !== 'undefined') {
-  DOMPurify = require('dompurify');
-}
 
 // Safe HTML sanitization configuration
 const SANITIZE_CONFIG = {
@@ -35,7 +32,11 @@ export function sanitizeHtml(html: string): string {
   }
 
   try {
-    return DOMPurify.sanitize(html, SANITIZE_CONFIG);
+    if (DOMPurify) {
+      return DOMPurify.sanitize(html, SANITIZE_CONFIG);
+    } else {
+      return html.replace(/<[^>]*>/g, '');
+    }
   } catch (error) {
     console.error('HTML sanitization failed:', error);
     // Fallback: Strip all HTML tags if sanitization fails
@@ -63,7 +64,11 @@ export function sanitizeBlogContent(content: string): string {
   };
 
   try {
-    return DOMPurify.sanitize(content, blogConfig);
+    if (DOMPurify) {
+      return DOMPurify.sanitize(content, blogConfig);
+    } else {
+      return content.replace(/<[^>]*>/g, '');
+    }
   } catch (error) {
     console.error('Blog content sanitization failed:', error);
     return content.replace(/<[^>]*>/g, '');
@@ -87,7 +92,11 @@ export function sanitizeFaqContent(content: string): string {
   };
 
   try {
-    return DOMPurify.sanitize(content, faqConfig);
+    if (DOMPurify) {
+      return DOMPurify.sanitize(content, faqConfig);
+    } else {
+      return content.replace(/<[^>]*>/g, '');
+    }
   } catch (error) {
     console.error('FAQ content sanitization failed:', error);
     return content.replace(/<[^>]*>/g, '');

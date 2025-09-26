@@ -1,9 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  // Static export for Netlify
-  output: 'export',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Server build for Vercel
+  // output: 'export', // Disabled for server deployment
   trailingSlash: true,
+  // distDir: 'out', // Not needed for server build
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
   experimental: {
     // optimizeCss: true, // Disabled due to critters dependency issues
     forceSwcTransforms: true,
+    optimizePackageImports: ['lucide-react'],
+    // Disable static optimization to fix prerender errors
+    isrMemoryCacheSize: 0,
   },
   // Disable problematic features for static export
   typescript: {
@@ -25,28 +28,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Security headers
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
-          },
-        ],
-      },
-    ];
-  },
+  // Headers removed - not compatible with static export
 };
 
-export default nextConfig;
+module.exports = nextConfig;

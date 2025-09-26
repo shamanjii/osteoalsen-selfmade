@@ -1,3 +1,6 @@
+// Force dynamic rendering to avoid prerender errors
+export const dynamic = 'force-dynamic';
+
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";

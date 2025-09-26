@@ -67,6 +67,9 @@ export default function TerminbuchungClient() {
   const [iframeLoaded, setIframeLoaded] = useState(false);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+
     // Load etermin resize script
     const script = document.createElement('script');
     script.src = 'https://www.eTermin.net/js/resizecustomersitescroll.min.js';
@@ -76,9 +79,11 @@ export default function TerminbuchungClient() {
 
     return () => {
       // Cleanup
-      const existingScript = document.querySelector('script[src="https://www.eTermin.net/js/resizecustomersitescroll.min.js"]');
-      if (existingScript) {
-        existingScript.remove();
+      if (typeof window !== 'undefined') {
+        const existingScript = document.querySelector('script[src="https://www.eTermin.net/js/resizecustomersitescroll.min.js"]');
+        if (existingScript) {
+          existingScript.remove();
+        }
       }
     };
   }, []);
@@ -364,7 +369,9 @@ export default function TerminbuchungClient() {
               href="#etifr"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('etifr')?.scrollIntoView({ behavior: 'smooth' });
+                if (typeof window !== 'undefined') {
+                  document.getElementById('etifr')?.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
             >

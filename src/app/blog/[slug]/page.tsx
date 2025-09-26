@@ -1,3 +1,6 @@
+// Force dynamic rendering to avoid prerender errors
+export const dynamic = 'force-dynamic';
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";

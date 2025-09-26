@@ -2,8 +2,6 @@
 
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import Link from 'next/link';
-import { isDevelopment } from '@/lib/config';
-import { monitoring } from '@/lib/monitoring';
 
 interface Props {
   children: ReactNode;
@@ -24,7 +22,6 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   static getDerivedStateFromError(error: Error): State {
-    // Update state so the next render will show the fallback UI
     return {
       hasError: true,
       error
@@ -32,22 +29,13 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // Log error details
     console.error('ErrorBoundary caught an error:', error, errorInfo);
 
-    // Update state with error info
     this.setState({
       error,
       errorInfo
     });
 
-    // Log to monitoring service
-    monitoring.logError(error, {
-      componentStack: errorInfo.componentStack,
-      errorBoundary: true,
-    });
-
-    // Call custom error handler if provided
     if (this.props.onError) {
       this.props.onError(error, errorInfo);
     }
@@ -55,12 +43,10 @@ class ErrorBoundary extends Component<Props, State> {
 
   render() {
     if (this.state.hasError) {
-      // Custom fallback UI
       if (this.props.fallback) {
         return this.props.fallback;
       }
 
-      // Default fallback UI
       return (
         <div className="min-h-[200px] flex items-center justify-center bg-slate-50 rounded-lg border border-slate-200">
           <div className="text-center p-6 max-w-md">
@@ -72,17 +58,6 @@ class ErrorBoundary extends Component<Props, State> {
               Es tut uns leid, aber es ist ein unerwarteter Fehler aufgetreten.
               Bitte versuchen Sie es erneut oder kontaktieren Sie uns.
             </p>
-            {isDevelopment() && this.state.error && (
-              <details className="text-left text-xs bg-red-50 p-2 rounded border">
-                <summary className="cursor-pointer font-medium text-red-800 mb-2">
-                  Fehlerdetails (Development)
-                </summary>
-                <pre className="text-red-700 whitespace-pre-wrap">
-                  {this.state.error.toString()}
-                  {this.state.errorInfo?.componentStack}
-                </pre>
-              </details>
-            )}
             <div className="flex gap-3 justify-center mt-4">
               <button
                 onClick={() => window.location.reload()}
