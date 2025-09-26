@@ -26,20 +26,57 @@ async function getPostBySlug(slug: string) {
     const data = await response.json()
 
     if (!data.success || !data.post) {
+      console.warn(`CMS post data invalid for slug: ${slug}`)
       return null
     }
 
     const post = data.post
 
-    // Process markdown content
-    const processedContent = await remark()
-      .use(remarkGfm)
-      .use(remarkHtml)
-      .process(post.content)
+    // Validate required fields to prevent build errors
+    if (!post.title || !post.content) {
+      console.warn(`CMS post missing required fields: ${slug}`)
+      return null
+    }
 
-    return {
-      ...post,
-      processedContent: processedContent.toString()
+    // Safely process markdown content with error handling
+    try {
+      const processedContent = await remark()
+        .use(remarkGfm)
+        .use(remarkHtml)
+        .process(post.content || '')
+
+      return {
+        ...post,
+        // Ensure all required fields exist with safe defaults
+        title: post.title || 'Untitled',
+        excerpt: post.excerpt || '',
+        content: post.content || '',
+        author: post.author || { name: 'Author', email: 'author@example.com' },
+        category: post.category || null,
+        tags: post.tags || [],
+        publishedAt: post.publishedAt || post.createdAt,
+        createdAt: post.createdAt || new Date().toISOString(),
+        updatedAt: post.updatedAt || new Date().toISOString(),
+        coverImage: post.coverImage || null,
+        processedContent: processedContent.toString()
+      }
+    } catch (markdownError) {
+      console.error('Error processing markdown for post:', slug, markdownError)
+      // Return post with unprocessed content as fallback
+      return {
+        ...post,
+        title: post.title || 'Untitled',
+        excerpt: post.excerpt || '',
+        content: post.content || '',
+        author: post.author || { name: 'Author', email: 'author@example.com' },
+        category: post.category || null,
+        tags: post.tags || [],
+        publishedAt: post.publishedAt || post.createdAt,
+        createdAt: post.createdAt || new Date().toISOString(),
+        updatedAt: post.updatedAt || new Date().toISOString(),
+        coverImage: post.coverImage || null,
+        processedContent: post.content || ''
+      }
     }
   } catch (error) {
     console.error('Error fetching CMS post:', error)
@@ -93,7 +130,7 @@ export async function generateMetadata({ params }: PageProps) {
       description: post.excerpt || '',
       type: 'article',
       publishedTime: post.publishedAt?.toISOString(),
-      authors: [post.author.name || post.author.email],
+      authors: [post.author?.name || post.author?.email || 'Author'],
       images: post.coverImage ? [post.coverImage] : [],
     },
     twitter: {
@@ -176,7 +213,7 @@ export default async function CMSPostPage({ params }: PageProps) {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-              {post.author.name || post.author.email}
+              {post.author?.name || post.author?.email || 'Author'}
             </div>
           </div>
 
