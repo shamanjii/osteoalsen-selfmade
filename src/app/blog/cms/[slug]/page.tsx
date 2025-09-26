@@ -99,9 +99,14 @@ export async function generateStaticParams() {
     const data = await response.json()
 
     if (data.success && data.posts) {
-      return data.posts.map((post: { slug: string }) => ({
-        slug: post.slug
-      }))
+      // Temporarily exclude problematic posts that cause build failures
+      const problematicSlugs = ['hallo-in-hamburg']
+
+      return data.posts
+        .filter((post: { slug: string }) => !problematicSlugs.includes(post.slug))
+        .map((post: { slug: string }) => ({
+          slug: post.slug
+        }))
     }
 
     return []
