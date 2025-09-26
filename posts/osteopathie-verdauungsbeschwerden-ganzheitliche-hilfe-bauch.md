@@ -2,7 +2,21 @@
 slug: osteopathie-verdauungsbeschwerden-ganzheitliche-hilfe-bauch
 title: "Osteopathie bei Verdauungsbeschwerden – ganzheitliche Hilfe für den Bauch"
 excerpt: "Verdauungsprobleme osteopathisch behandeln: Wie sanfte manuelle Techniken bei Reizdarm, Blähungen und Bauchschmerzen helfen. Osteopath Hamburg für Ihr Wohlbefinden."
-keywords: ["Verdauungsbeschwerden", "Reizdarm", "Osteopath Hamburg", "Bauchschmerzen", "Osteopathie Hamburg", "viszerale Osteopathie", "funktionelle Dyspepsie", "Blähungen", "Verstopfung", "kraniosakrale Therapie", "Osteopathie Eimsbüttel", "Osteopathie Termin Hamburg", "ganzheitliche Medizin", "Vagusnerv"]
+keywords:
+  - "Verdauungsbeschwerden"
+  - "Reizdarm"
+  - "Osteopath Hamburg"
+  - "Bauchschmerzen"
+  - "Osteopathie Hamburg"
+  - "viszerale Osteopathie"
+  - "funktionelle Dyspepsie"
+  - "Blähungen"
+  - "Verstopfung"
+  - "kraniosakrale Therapie"
+  - "Osteopathie Eimsbüttel"
+  - "Osteopathie Termin Hamburg"
+  - "ganzheitliche Medizin"
+  - "Vagusnerv"
 image: "https://images.ctfassets.net/9nu7qkjcp5l0/2TCPzI7R9a4Mh7pehkRIqU/8d37b98a0bb7a2f84e85ed01de48f5bc/Bauchschmerzen.jpg?fm=jpg&fl=progressive&q=100&h=300&w=772&fit=fill&f=center"
 alt: "Beitragsbild zu: Osteopathie bei Verdauungsbeschwerden – ganzheitliche Hilfe für den Bauch. Keywords: Verdauungsbeschwerden, Reizdarm, Bauchschmerzen"
 date: "2024-09-14T10:30:00Z"
