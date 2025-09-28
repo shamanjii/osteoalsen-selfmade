@@ -51,8 +51,8 @@ export default async function BlogIndexPage() {
         excerpt: post.excerpt,
         date: post.publishedAt || post.createdAt,
         keywords: Array.isArray(post.keywords) ? post.keywords : [],
-        image: post.coverImage, // Map coverImage to image
-        alt: post.title,
+        image: post.image || post.coverImage, // Use image from API, fallback to coverImage
+        alt: post.alt || post.title,
         source: 'cms' as const
     }));
 

@@ -183,6 +183,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                 alt={post.alt || post.title}
                                                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                 onError={(e) => {
+                                                    console.log('Image loading failed for:', post.title, 'URL:', post.image);
                                                     const target = e.target as HTMLImageElement;
                                                     target.style.display = 'none';
                                                     const parent = target.parentElement;
@@ -190,6 +191,9 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                         parent.innerHTML = '<span class="text-4xl text-slate-400">📄</span>';
                                                         parent.className = parent.className.replace('relative', 'flex items-center justify-center');
                                                     }
+                                                }}
+                                                onLoad={() => {
+                                                    console.log('Image loaded successfully for:', post.title, 'URL:', post.image);
                                                 }}
                                                 loading={index === 0 ? 'eager' : 'lazy'}
                                             />
