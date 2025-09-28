@@ -44,8 +44,20 @@ export default async function BlogIndexPage() {
         source: 'markdown' as const
     }));
 
+    // Process CMS posts to match expected format
+    const cmsProcessedPosts = cmsPosts.map(post => ({
+        slug: post.slug,
+        title: post.title,
+        excerpt: post.excerpt,
+        date: post.publishedAt || post.createdAt,
+        keywords: Array.isArray(post.keywords) ? post.keywords : [],
+        image: post.coverImage, // Map coverImage to image
+        alt: post.title,
+        source: 'cms' as const
+    }));
+
     // Combine CMS and markdown posts
-    const allPosts = [...cmsPosts, ...markdownProcessedPosts];
+    const allPosts = [...cmsProcessedPosts, ...markdownProcessedPosts];
 
     // Sort all posts by date (newest first)
     allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -70,8 +82,8 @@ export default async function BlogIndexPage() {
             excerpt: post.excerpt,
             date: post.date,
             keywords: post.keywords,
-            image: post.image,
-            alt: post.alt,
+            image: post.image, // Already mapped correctly above
+            alt: post.alt || post.title,
             category: extractCategory(post.keywords)
         };
     });

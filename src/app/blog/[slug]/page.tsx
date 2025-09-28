@@ -245,7 +245,7 @@ export default async function BlogPost({ params }: PageProps) {
             </BlogErrorBoundary>
 
             {/* Related Articles */}
-            <RelatedArticles currentSlug={post.slug} allPosts={allPosts} />
+            <RelatedArticles currentSlug={post.slug} articles={allPosts} />
         </main>
     );
 }
