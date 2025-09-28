@@ -18,7 +18,7 @@ export default function ContactSection() {
                     <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-12 mb-8">
                         {/* Telefon */}
                         <div className="flex items-center gap-4">
-                            <div className="w-15 h-15 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                            <div className="w-16 h-16 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                 <span className="text-white text-xl">📞</span>
                             </div>
                             <div className="text-left">
@@ -31,7 +31,7 @@ export default function ContactSection() {
 
                         {/* Online Terminbuchung */}
                         <div className="flex items-center gap-4">
-                            <div className="w-15 h-15 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                            <div className="w-16 h-16 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                 <span className="text-white text-xl">📅</span>
                             </div>
                             <div className="text-left">
@@ -44,7 +44,7 @@ export default function ContactSection() {
 
                         {/* E-Mail */}
                         <div className="flex items-center gap-4">
-                            <div className="w-15 h-15 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                            <div className="w-16 h-16 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                 <span className="text-white text-xl">✉️</span>
                             </div>
                             <div className="text-left">
@@ -220,7 +220,7 @@ export default function ContactSection() {
 
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                         <span className="text-white text-base">📞</span>
                                     </div>
                                     <div>
@@ -230,7 +230,7 @@ export default function ContactSection() {
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                         <span className="text-white text-base">🩺</span>
                                     </div>
                                     <div>
@@ -240,7 +240,7 @@ export default function ContactSection() {
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
                                         <span className="text-white text-base">💰</span>
                                     </div>
                                     <div>

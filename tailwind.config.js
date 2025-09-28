@@ -20,6 +20,12 @@ module.exports = {
           900: '#1e3a8a',
         },
       },
+      spacing: {
+        '15': '3.75rem',
+      },
+      transform: ['hover', 'focus'],
+      scale: ['hover', 'focus'],
+      translate: ['hover', 'focus'],
     },
   },
   plugins: [

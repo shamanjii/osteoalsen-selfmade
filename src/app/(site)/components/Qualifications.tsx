@@ -185,9 +185,9 @@ export default function Qualifications() {
                         {fortbildungen.map((fortbildung, index) => (
                             <div
                                 key={index}
-                                className="fortbildung-card bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
+                                className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-2 hover:border-slate-400 transition-all duration-300 cursor-pointer group transform hover:scale-105"
                             >
-                                <div className="w-15 h-15 bg-gradient-to-br from-slate-600 to-slate-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-slate-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     {fortbildung.icon}
                                 </div>
                                 <h4 className="text-slate-900 text-xl font-medium mb-4 font-epilogue tracking-tight">
@@ -209,7 +209,7 @@ export default function Qualifications() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {qualityStandards.map((standard, index) => (
                             <div key={index} className="text-center">
-                                <div className="w-15 h-15 bg-slate-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-white text-xl">{standard.icon}</span>
                                 </div>
                                 <h4 className="text-slate-900 text-lg font-medium mb-2">
