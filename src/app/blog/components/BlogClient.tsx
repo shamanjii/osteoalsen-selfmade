@@ -178,13 +178,10 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         isFeatured ? 'h-64' : 'h-48'
                                     }`}>
                                         {post.image ? (
-                                            <Image
+                                            <img
                                                 src={post.image}
                                                 alt={post.alt || post.title}
-                                                fill
-                                                className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                                priority={index === 0} // Prioritize first image
+                                                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                 onError={(e) => {
                                                     const target = e.target as HTMLImageElement;
                                                     target.style.display = 'none';
@@ -194,6 +191,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                         parent.className = parent.className.replace('relative', 'flex items-center justify-center');
                                                     }
                                                 }}
+                                                loading={index === 0 ? 'eager' : 'lazy'}
                                             />
                                         ) : (
                                             <span className="text-4xl text-slate-400">📄</span>

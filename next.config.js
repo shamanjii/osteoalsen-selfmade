@@ -34,25 +34,14 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com',
+        hostname: '**',
       },
       {
-        protocol: 'https',
-        hostname: 'unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.hamburg.de',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cms.osteoalsen.de',
-      },
-      {
-        protocol: 'https',
-        hostname: '**.vercel.app',
+        protocol: 'http',
+        hostname: '**',
       }
     ],
+    unoptimized: false,
     dangerouslyAllowSVG: true,
   },
   compress: true,
