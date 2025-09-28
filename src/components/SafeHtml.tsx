@@ -58,9 +58,23 @@ export default function SafeHtml({ html, className = '', type = 'default' }: Saf
     );
   }
 
+  // Add proper prose styling based on type
+  const getProseClasses = () => {
+    const baseClasses = 'prose prose-lg max-w-none';
+
+    switch (type) {
+      case 'blog':
+        return `${baseClasses} prose-slate prose-headings:font-epilogue prose-headings:text-slate-900 prose-p:text-slate-700 prose-p:leading-relaxed prose-strong:text-slate-900 prose-a:text-blue-600 hover:prose-a:text-blue-700 prose-img:rounded-lg prose-img:shadow-md`;
+      case 'faq':
+        return `${baseClasses} prose-sm prose-slate prose-p:text-slate-600`;
+      default:
+        return `${baseClasses} prose-slate`;
+    }
+  };
+
   return (
     <div
-      className={className}
+      className={`${getProseClasses()} ${className}`}
       dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
     />
   );

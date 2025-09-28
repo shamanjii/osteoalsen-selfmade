@@ -33,7 +33,17 @@ function serverSideSanitize(html: string): string {
     .replace(/javascript:/gi, '') // Remove javascript: urls
     .replace(/<iframe[^>]*>.*?<\/iframe>/gi, '') // Remove iframes
     .replace(/<object[^>]*>.*?<\/object>/gi, '') // Remove objects
-    .replace(/<embed[^>]*>/gi, ''); // Remove embeds
+    .replace(/<embed[^>]*>/gi, '') // Remove embeds
+    // Ensure images have proper attributes for better loading
+    .replace(/<img([^>]*?)>/gi, (match, attrs) => {
+      if (!attrs.includes('loading=')) {
+        attrs += ' loading="lazy"';
+      }
+      if (!attrs.includes('decoding=')) {
+        attrs += ' decoding="async"';
+      }
+      return `<img${attrs}>`;
+    });
 }
 
 export function sanitizeHtml(html: string): string {
