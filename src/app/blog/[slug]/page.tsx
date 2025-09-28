@@ -12,227 +12,224 @@ import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
 
-export async function generateStaticParams() {
-    return getAllSlugs().map((slug) => ({ slug }));
+interface PageProps {
+    params: Promise<{
+        slug: string;
+    }>;
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+// Function to get CMS post by slug
+async function getCMSPostBySlug(slug: string) {
+    try {
+        const response = await fetch(`https://cms.osteoalsen.de/api/public/posts/${slug}`, {
+            next: { revalidate: 300 }
+        });
+
+        if (!response.ok) {
+            return null;
+        }
+
+        const data = await response.json();
+        return data.success ? data.post : null;
+    } catch (error) {
+        console.error('Error fetching CMS post:', error);
+        return null;
+    }
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
-    const post = await getPostBySlug(slug);
-    if (!post) return {};
 
-    // Enhanced medical and scientific keywords
-    const baseKeywords = post.keywords || [];
-    const scientificKeywords = [
-        "evidenzbasierte Medizin",
-        "peer-reviewed Studien",
-        "wissenschaftlich fundiert",
-        "VFO-zertifiziert",
-        "manuelle Therapie",
-        "ganzheitliche Behandlung"
-    ];
+    // Try markdown first
+    const markdownPost = await getPostBySlug(slug);
+    if (markdownPost) {
+        return {
+            title: `${markdownPost.title} | Osteoalsen Blog`,
+            description: markdownPost.excerpt,
+            keywords: markdownPost.keywords,
+            openGraph: {
+                title: markdownPost.title,
+                description: markdownPost.excerpt || '',
+                type: 'article',
+                images: markdownPost.image ? [markdownPost.image] : [],
+            },
+        };
+    }
 
-    // Add specialty-specific keywords
-    const specialtyKeywords: Record<string, string[]> = {
-        "Neurologie und Schmerztherapie": [
-            "Trigeminusnerv",
-            "kraniosakrale Therapie",
-            "neuropathische Schmerzen",
-            "Nervensystem",
-            "Schmerzlinderung",
-            "myofasziale Therapie"
-        ],
-        "Gastroenterologie und viszerale Osteopathie": [
-            "viszerale Osteopathie",
-            "Vagusnerv Stimulation",
-            "Darm-Hirn-Achse",
-            "Reizdarmsyndrom",
-            "funktionelle Dyspepsie",
-            "Motilität"
-        ]
-    };
-
-    const allKeywords = [
-        ...baseKeywords,
-        ...scientificKeywords,
-        ...(post.specialty ? specialtyKeywords[post.specialty] || [] : [])
-    ].filter(Boolean);
-
-    // Enhanced title with scientific authority indicator
-    const enhancedTitle = post.specialty && post.sourceCount
-        ? `${post.title} | ${post.sourceCount}+ Studien | VFO-Osteopath Hamburg`
-        : post.title;
-
-    // Enhanced description with scientific credibility
-    const enhancedDescription = post.specialty && post.sourceCount
-        ? `${post.excerpt} ✓ Basiert auf ${post.sourceCount}+ wissenschaftlichen Studien ✓ VFO-zertifiziert ✓ Evidenzbasierte Behandlung in Hamburg.`
-        : post.excerpt;
+    // Try CMS post
+    const cmsPost = await getCMSPostBySlug(slug);
+    if (cmsPost) {
+        return {
+            title: `${cmsPost.title} | Osteoalsen Blog`,
+            description: cmsPost.excerpt || '',
+            openGraph: {
+                title: cmsPost.title,
+                description: cmsPost.excerpt || '',
+                type: 'article',
+                images: cmsPost.coverImage ? [cmsPost.coverImage] : [],
+            },
+        };
+    }
 
     return {
-        title: enhancedTitle,
-        description: enhancedDescription,
-        keywords: allKeywords,
-        authors: [{ name: "Joshua Alsen, VFO-Osteopath" }],
-        creator: "Joshua Alsen",
-        publisher: "Osteopathie Hamburg - Joshua Alsen",
-        alternates: {
-            canonical: `/blog/${slug}`
-        },
-        openGraph: {
-            title: enhancedTitle,
-            description: enhancedDescription,
-            images: post.image ? [{
-                url: post.image,
-                alt: post.alt || post.title,
-                width: 1200,
-                height: 630
-            }] : undefined,
-            type: "article",
-            publishedTime: post.date,
-            authors: ["Joshua Alsen"],
-            tags: allKeywords,
-        },
-        twitter: {
-            card: "summary_large_image",
-            title: enhancedTitle,
-            description: enhancedDescription,
-            images: post.image ? [post.image] : undefined,
-            creator: "@osteoalsen"
-        },
-        robots: {
-            index: true,
-            follow: true,
-            "max-snippet": -1,
-            "max-image-preview": "large"
-        },
-        // Medical article specific metadata
-        ...(post.specialty && post.sourceCount && {
-            other: {
-                "article:medical-specialty": post.specialty,
-                "article:evidence-level": `${post.sourceCount}+ peer-reviewed studies`,
-                "article:certification": "VFO-zertifiziert",
-                "dc.subject": post.specialty,
-                "dc.type": "Medical Article",
-                "citation_journal_title": "Osteopathie Hamburg Blog",
-                "citation_author": "Joshua Alsen",
-                "citation_publication_date": post.date?.split('T')[0] || ''
-            }
-        })
+        title: 'Post nicht gefunden | Osteoalsen Blog'
     };
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateStaticParams() {
+    const posts = await getAllPosts();
+    return posts.map((post) => ({
+        slug: post.slug,
+    }));
+}
+
+export default async function BlogPost({ params }: PageProps) {
     const { slug } = await params;
-    const [post, allPosts] = await Promise.all([
-        getPostBySlug(slug),
-        getAllPosts()
-    ]);
+
+    // Try to get markdown post first
+    let post = await getPostBySlug(slug);
+    let isCMSPost = false;
+
+    // If not found, try CMS post
+    if (!post) {
+        const cmsPost = await getCMSPostBySlug(slug);
+        if (cmsPost) {
+            post = {
+                title: cmsPost.title,
+                excerpt: cmsPost.excerpt || '',
+                content: cmsPost.content || '',
+                date: cmsPost.publishedAt || cmsPost.createdAt,
+                keywords: cmsPost.keywords || [],
+                image: cmsPost.coverImage || '',
+                alt: cmsPost.title,
+                slug: cmsPost.slug
+            };
+            isCMSPost = true;
+        }
+    }
 
     if (!post) {
         return (
-            <main className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
-                <h1 className="text-2xl font-epilogue font-semibold text-slate-900">Beitrag nicht gefunden</h1>
-                <p className="mt-4">
-                    Zurück zum <Link href="/blog" className="text-slate-900 hover:underline">Blog</Link>.
-                </p>
+            <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
+                <div className="text-center">
+                    <h1 className="text-2xl font-bold text-slate-900 mb-4">Artikel nicht gefunden</h1>
+                    <p className="text-slate-600 mb-6">
+                        Der gesuchte Artikel konnte nicht gefunden werden.
+                    </p>
+                    <Link
+                        href="/blog"
+                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
+                    >
+                        ← Zurück zum Blog
+                    </Link>
+                </div>
             </main>
         );
     }
 
+    const allPosts = await getAllPosts();
+
     return (
-        <main className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
-            {post.specialty && post.sourceCount ? (
+        <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
+            {/* Breadcrumb */}
+            <nav className="mb-8">
+                <div className="flex items-center gap-2 text-sm text-slate-600">
+                    <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>
+                    <span>→</span>
+                    <Link href="/blog" className="hover:text-slate-900 transition-colors">Blog</Link>
+                    <span>→</span>
+                    <span className="text-slate-900 font-medium truncate">{post.title}</span>
+                </div>
+            </nav>
+
+            {/* Structured Data for Blog Post */}
+            <BlogPostStructuredData
+                title={post.title}
+                description={post.excerpt}
+                author="Joshua Alsen"
+                datePublished={post.date}
+                imageUrl={post.image}
+                keywords={post.keywords}
+            />
+
+            {/* Medical Article Structured Data */}
+            {post.keywords?.some(keyword =>
+                keyword.toLowerCase().includes('osteopathie') ||
+                keyword.toLowerCase().includes('medizin') ||
+                keyword.toLowerCase().includes('behandlung')
+            ) && (
                 <MedicalScholarlyArticle
-                    headline={post.title}
-                    description={post.excerpt || ''}
+                    title={post.title}
+                    description={post.excerpt}
                     author="Joshua Alsen"
-                    datePublished={post.date || ''}
-                    url={`https://www.osteoalsen.de/blog/${slug}`}
-                    imageUrl={post.image}
-                    keywords={post.keywords}
-                    citations={post.citations || []}
-                    specialty={post.specialty}
-                    sourceCount={post.sourceCount}
-                />
-            ) : (
-                <BlogPostStructuredData
-                    headline={post.title}
-                    description={post.excerpt || ''}
-                    author="Joshua Alsen"
-                    datePublished={post.date || ''}
-                    url={`https://www.osteoalsen.de/blog/${slug}`}
+                    datePublished={post.date}
                     imageUrl={post.image}
                     keywords={post.keywords}
                 />
             )}
+
             <BlogErrorBoundary>
                 <article className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
                     <header className="mb-6">
                         <h1 className="text-3xl font-epilogue font-bold mb-2 text-slate-900">{post.title}</h1>
                         <div className="text-slate-500 text-sm">
-                            {post.date && (
-                                <time dateTime={post.date}>
-                                    {new Date(post.date).toLocaleDateString("de-DE", {
-                                        year: "numeric",
-                                        month: "long",
-                                        day: "2-digit",
-                                    })}
-                                </time>
-                            )}
+                            Veröffentlicht am {new Date(post.date).toLocaleDateString('de-DE', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                            })}
                         </div>
                     </header>
 
-                    {/* Scientific Credibility Box for medical articles */}
-                    {post.specialty && post.sourceCount && (
-                        <ScientificCredibilityBox
-                            sourceCount={post.sourceCount}
-                            specialty={post.specialty}
-                            certification="VFO-zertifiziert"
-                            fullBibliographyAnchor="#literatur"
-                        />
-                    )}
-
                     {post.image && (
-                        <div className="relative h-64 w-full mb-6 overflow-hidden rounded-lg bg-slate-100">
+                        <div className="mb-6">
                             <Image
                                 src={post.image}
                                 alt={post.alt || post.title}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 768px"
+                                width={800}
+                                height={400}
+                                className="w-full h-64 object-cover rounded-lg"
                             />
                         </div>
                     )}
-                    <SafeHtml
-                        html={post.content}
-                        className="rich-text prose prose-slate max-w-none"
-                        type="blog"
-                    />
 
-                    {/* Enhanced Literature Section */}
-                    {post.extractedCitations && post.extractedCitations.length > 0 && (
-                        <LiteratureSection citations={post.extractedCitations} />
+                    <div className="prose prose-lg max-w-none">
+                        {isCMSPost ? (
+                            <SafeHtml html={post.content} type="blog" />
+                        ) : (
+                            <SafeHtml html={post.content} type="blog" />
+                        )}
+                    </div>
+
+                    {/* Scientific Credibility Box for medical topics */}
+                    {post.keywords?.some(keyword =>
+                        keyword.toLowerCase().includes('osteopathie') ||
+                        keyword.toLowerCase().includes('medizin')
+                    ) && (
+                        <ScientificCredibilityBox />
                     )}
 
-                    {/* Related Articles Section */}
-                    <RelatedArticles
-                        currentSlug={slug}
-                        articles={allPosts.map(p => ({
-                            slug: p.slug,
-                            title: p.title,
-                            excerpt: p.excerpt || '',
-                            specialty: p.specialty,
-                            readTime: Math.ceil((p.content.length || 0) / 1000) // Rough estimate: 1000 chars per minute
-                        }))}
-                    />
+                    {/* Literature Section for evidence-based articles */}
+                    {post.keywords?.some(keyword =>
+                        keyword.toLowerCase().includes('evidenz') ||
+                        keyword.toLowerCase().includes('studie')
+                    ) && (
+                        <LiteratureSection />
+                    )}
 
-                    <footer className="mt-10">
-                        <Link href="/blog" className="text-slate-900 hover:underline">
+                    <footer className="mt-8 pt-6 border-t border-slate-200 flex justify-between items-center">
+                        <Link
+                            href="/blog"
+                            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
+                        >
                             ← Zurück zur Übersicht
                         </Link>
                     </footer>
                 </article>
             </BlogErrorBoundary>
+
+            {/* Related Articles */}
+            <RelatedArticles currentSlug={post.slug} allPosts={allPosts} />
         </main>
     );
 }

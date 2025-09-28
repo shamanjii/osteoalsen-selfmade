@@ -4,6 +4,29 @@ const nextConfig = {
   // output: 'export', // Disabled for server deployment
   trailingSlash: true,
   // distDir: 'out', // Not needed for server build
+
+  // Add security headers
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.eTermin.net; object-src 'none'; base-uri 'self';"
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY'
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          }
+        ]
+      }
+    ];
+  },
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
