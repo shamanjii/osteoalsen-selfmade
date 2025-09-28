@@ -185,6 +185,15 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                                 priority={index === 0} // Prioritize first image
+                                                onError={(e) => {
+                                                    const target = e.target as HTMLImageElement;
+                                                    target.style.display = 'none';
+                                                    const parent = target.parentElement;
+                                                    if (parent) {
+                                                        parent.innerHTML = '<span class="text-4xl text-slate-400">📄</span>';
+                                                        parent.className = parent.className.replace('relative', 'flex items-center justify-center');
+                                                    }
+                                                }}
                                             />
                                         ) : (
                                             <span className="text-4xl text-slate-400">📄</span>

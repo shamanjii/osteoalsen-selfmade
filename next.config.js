@@ -31,6 +31,29 @@ const nextConfig = {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.hamburg.de',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cms.osteoalsen.de',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.vercel.app',
+      }
+    ],
+    dangerouslyAllowSVG: true,
   },
   compress: true,
   poweredByHeader: false,
