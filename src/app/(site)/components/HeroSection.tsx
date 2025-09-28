@@ -1,6 +1,6 @@
 export default function HeroSection() {
     return (
-        <section id="home" className="bg-white">
+        <section id="home" className="bg-white pt-16 md:pt-24">
             <div className="mx-auto max-w-4xl px-8 sm:px-12 py-12 sm:py-20 text-center">
                 <div className="mx-auto max-w-3xl">
                     <h1 className="font-epilogue text-slate-900 text-4xl sm:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
