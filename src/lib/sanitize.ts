@@ -24,23 +24,35 @@ const SANITIZE_CONFIG = {
  * @param html - Raw HTML string to sanitize
  * @returns Sanitized HTML string safe for rendering
  */
+// Server-side safe HTML processing
+function serverSideSanitize(html: string): string {
+  return html
+    .replace(/<script[^>]*>.*?<\/script>/gi, '') // Remove scripts
+    .replace(/<style[^>]*>.*?<\/style>/gi, '') // Remove style tags
+    .replace(/on\w+="[^"]*"/gi, '') // Remove event handlers
+    .replace(/javascript:/gi, '') // Remove javascript: urls
+    .replace(/<iframe[^>]*>.*?<\/iframe>/gi, '') // Remove iframes
+    .replace(/<object[^>]*>.*?<\/object>/gi, '') // Remove objects
+    .replace(/<embed[^>]*>/gi, ''); // Remove embeds
+}
+
 export function sanitizeHtml(html: string): string {
-  // For static builds, always strip HTML on server-side to avoid canvas dependency
+  // For server-side, preserve safe HTML structure but remove dangerous elements
   if (typeof window === 'undefined') {
-    // Server-side: Return plain text - no DOMPurify to avoid canvas issues
-    return html.replace(/<[^>]*>/g, ''); // Strip all HTML tags on server
+    return serverSideSanitize(html);
   }
 
   try {
     if (DOMPurify) {
       return DOMPurify.sanitize(html, SANITIZE_CONFIG);
     } else {
-      return html.replace(/<[^>]*>/g, '');
+      // Fallback: Use server-side sanitization
+      return serverSideSanitize(html);
     }
   } catch (error) {
     console.error('HTML sanitization failed:', error);
-    // Fallback: Strip all HTML tags if sanitization fails
-    return html.replace(/<[^>]*>/g, '');
+    // Fallback: Use server-side sanitization
+    return serverSideSanitize(html);
   }
 }
 
@@ -50,9 +62,9 @@ export function sanitizeHtml(html: string): string {
  * @returns Sanitized content safe for blog rendering
  */
 export function sanitizeBlogContent(content: string): string {
-  // For static builds, always strip HTML on server-side to avoid canvas dependency
+  // For server-side, use safer sanitization that preserves structure
   if (typeof window === 'undefined') {
-    return content.replace(/<[^>]*>/g, '');
+    return serverSideSanitize(content);
   }
 
   const blogConfig = {
@@ -67,11 +79,11 @@ export function sanitizeBlogContent(content: string): string {
     if (DOMPurify) {
       return DOMPurify.sanitize(content, blogConfig);
     } else {
-      return content.replace(/<[^>]*>/g, '');
+      return serverSideSanitize(content);
     }
   } catch (error) {
     console.error('Blog content sanitization failed:', error);
-    return content.replace(/<[^>]*>/g, '');
+    return serverSideSanitize(content);
   }
 }
 

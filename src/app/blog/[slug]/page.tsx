@@ -11,6 +11,9 @@ import { BlogPostStructuredData, MedicalScholarlyArticle } from "@/components/St
 import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
+import { remark } from "remark";
+import remarkHtml from "remark-html";
+import remarkGfm from "remark-gfm";
 
 interface PageProps {
     params: Promise<{
@@ -94,15 +97,28 @@ export default async function BlogPost({ params }: PageProps) {
     if (!post) {
         const cmsPost = await getCMSPostBySlug(slug);
         if (cmsPost) {
+            // Process markdown content to HTML for CMS posts
+            let processedContent = '';
+            try {
+                const processed = await remark()
+                    .use(remarkGfm)
+                    .use(remarkHtml)
+                    .process(cmsPost.content || '');
+                processedContent = String(processed);
+            } catch (error) {
+                console.error('Error processing CMS markdown:', error);
+                processedContent = cmsPost.content || '';
+            }
+
             post = {
-                title: cmsPost.title,
+                title: cmsPost.title || 'Untitled',
                 excerpt: cmsPost.excerpt || '',
-                content: cmsPost.content || '',
-                date: cmsPost.publishedAt || cmsPost.createdAt,
-                keywords: cmsPost.keywords || [],
+                content: processedContent, // ✅ Now processed HTML
+                date: cmsPost.publishedAt || cmsPost.createdAt || new Date().toISOString(),
+                keywords: Array.isArray(cmsPost.keywords) ? cmsPost.keywords : [],
                 image: cmsPost.coverImage || '',
-                alt: cmsPost.title,
-                slug: cmsPost.slug
+                alt: cmsPost.title || 'Article image',
+                slug: cmsPost.slug || slug
             };
             isCMSPost = true;
         }
