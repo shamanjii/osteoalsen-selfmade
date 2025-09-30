@@ -25,7 +25,7 @@ interface PageProps {
 async function getCMSPostBySlug(slug: string) {
     try {
         const response = await fetch(`https://cms.osteoalsen.de/api/public/posts/${slug}`, {
-            next: { revalidate: 300 }
+            next: { revalidate: 0 }
         });
 
         if (!response.ok) {
@@ -33,7 +33,7 @@ async function getCMSPostBySlug(slug: string) {
         }
 
         const data = await response.json();
-        return data.success ? data.post : null;
+        return data.success ? data.data : null;
     } catch (error) {
         console.error('Error fetching CMS post:', error);
         return null;
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
                 title: cmsPost.title,
                 description: cmsPost.excerpt || '',
                 type: 'article',
-                images: cmsPost.coverImage ? [cmsPost.coverImage] : [],
+                images: cmsPost.image ? [cmsPost.image] : [],
             },
         };
     }
@@ -115,8 +115,8 @@ export default async function BlogPost({ params }: PageProps) {
                 excerpt: cmsPost.excerpt || '',
                 content: processedContent, // ✅ Now processed HTML
                 date: cmsPost.publishedAt || cmsPost.createdAt || new Date().toISOString(),
-                keywords: Array.isArray(cmsPost.keywords) ? cmsPost.keywords : [],
-                image: cmsPost.coverImage || '',
+                keywords: Array.isArray(cmsPost.keywords) ? cmsPost.keywords : (typeof cmsPost.keywords === 'string' ? cmsPost.keywords.split(',').map(k => k.trim()) : []),
+                image: cmsPost.image || '',
                 alt: cmsPost.title || 'Article image',
                 slug: cmsPost.slug || slug
             };

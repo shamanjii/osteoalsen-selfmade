@@ -10,7 +10,7 @@ async function getCMSPosts() {
     try {
         // Fetch from CMS API instead of direct database access
         const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
-            next: { revalidate: 300 } // Cache for 5 minutes
+            next: { revalidate: 0 } // No caching for debugging
         });
 
         if (!response.ok) {
@@ -20,9 +20,9 @@ async function getCMSPosts() {
 
         const data = await response.json();
 
-        if (data.success && data.posts) {
-            console.log(`Loaded ${data.posts.length} posts from CMS API`);
-            return data.posts;
+        if (data.success && data.data) {
+            console.log(`Loaded ${data.data.length} posts from CMS API:`, data.data.map(p => ({ title: p.title, slug: p.slug, status: p.status })));
+            return data.data;
         }
 
         return [];
@@ -50,9 +50,10 @@ export default async function BlogIndexPage() {
         title: post.title,
         excerpt: post.excerpt,
         date: post.publishedAt || post.createdAt,
-        keywords: Array.isArray(post.keywords) ? post.keywords : [],
+        keywords: Array.isArray(post.keywords) ? post.keywords : (typeof post.keywords === 'string' ? post.keywords.split(',').map(k => k.trim()) : []),
         image: post.image || post.coverImage, // Use image from API, fallback to coverImage
-        alt: post.alt || post.title,
+        alt: post.altText || post.alt || post.title,
+        category: post.category?.slug || 'osteopathie', // Use category from CMS if available
         source: 'cms' as const
     }));
 
@@ -84,7 +85,7 @@ export default async function BlogIndexPage() {
             keywords: post.keywords,
             image: post.image, // Already mapped correctly above
             alt: post.alt || post.title,
-            category: extractCategory(post.keywords)
+            category: post.category || extractCategory(post.keywords) // Use existing category if available, otherwise extract from keywords
         };
     });
 
