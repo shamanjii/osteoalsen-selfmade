@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const fortbildungen = [
     {
@@ -223,11 +224,18 @@ export default function Qualifications() {
                     </div>
                 </div>
 
-                {/* Kontakt-Hinweis */}
+                {/* Links to more info */}
                 <div className="text-center mt-12 p-8 bg-white rounded-lg border border-slate-200">
-                    <p className="text-lg text-slate-700 m-0">
-                        Sie haben weitere Fragen? Kontaktieren Sie mich gerne telefonisch oder schreiben Sie mir eine Mail.
+                    <p className="text-lg text-slate-700 mb-4">
+                        Sie haben weitere Fragen zu Kosten und Kassenerstattung?
                     </p>
+                    <Link
+                        href="/kosten-ablauf"
+                        className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
+                    >
+                        Mehr zu Kosten & Ablauf erfahren
+                        <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
                 </div>
             </div>
         </section>

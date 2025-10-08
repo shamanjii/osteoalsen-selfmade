@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, memo } from 'react';
+import Link from 'next/link';
 import SafeHtml from '@/components/SafeHtml';
 import FAQStructuredData from '@/components/FAQStructuredData';
 
@@ -105,6 +106,17 @@ const FAQ = memo(function FAQ() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Link to full FAQ page */}
+                <div className="text-center mt-12">
+                    <Link
+                        href="/faq"
+                        className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
+                    >
+                        Alle Fragen & Antworten ansehen
+                        <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
                 </div>
             </div>
         </section>

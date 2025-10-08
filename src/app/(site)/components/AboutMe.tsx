@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutMe() {
     return (
@@ -48,6 +49,17 @@ export default function AboutMe() {
                             Als osteopathisches Praxismitglied im Verband Freier Osteopathen e.V. (VFO) profitieren Sie von den zahlreichen Vorteilen eines anerkannten Berufsverbands. Die Mitgliedschaft gewährleistet nicht nur eine regelmäßige Qualitätssicherung durch fortlaufende Fortbildungen und strenge Ethikrichtlinien, sondern ermöglicht auch die Abrechnung mit den Kassen.
                         </p>
                     </div>
+                </div>
+
+                {/* CTA Link to full about page */}
+                <div className="mt-8 text-center">
+                    <Link
+                        href="/ueber-mich"
+                        className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
+                    >
+                        Mehr über mich erfahren
+                        <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
                 </div>
             </div>
         </section>
