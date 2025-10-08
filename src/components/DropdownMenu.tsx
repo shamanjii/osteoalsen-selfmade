@@ -59,7 +59,11 @@ export default function DropdownMenu({
   };
 
   return (
-    <div ref={dropdownRef} className="relative">
+    <div
+      ref={dropdownRef}
+      className="relative"
+      onMouseLeave={() => setIsOpen(false)}
+    >
       {/* Dropdown Trigger */}
       <button
         type="button"
@@ -91,7 +95,6 @@ export default function DropdownMenu({
       {isOpen && (
         <div
           className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
-          onMouseLeave={() => setIsOpen(false)}
         >
           {items.map((item) => (
             <Link
