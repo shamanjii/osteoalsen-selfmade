@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentCard from "./components/TreatmentCard";
 import TreatmentCTA from "./components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
   title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
@@ -16,6 +17,30 @@ export const metadata: Metadata = {
     "Verdauungsbeschwerden Hamburg",
   ],
   alternates: { canonical: "/behandlungen" },
+  openGraph: {
+    title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
+    description:
+      "Ganzheitliche osteopathische Behandlungen: Rückenschmerzen, Kopfschmerzen, Verdauung, Sportverletzungen, Stress und mehr. VFO-zertifiziert.",
+    url: "/behandlungen",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Osteopathische Behandlungen Hamburg - Joshua Alsen",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Osteopathische Behandlungen Hamburg",
+    description:
+      "Ganzheitliche osteopathische Behandlungen in Hamburg-Rotherbaum & Eimsbüttel. VFO-zertifiziert.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 const treatments = [
@@ -72,6 +97,35 @@ const treatments = [
 export default function BehandlungenPage() {
   return (
     <>
+      <FAQSchema
+        faqs={[
+          {
+            question: "Wie läuft eine osteopathische Behandlung ab?",
+            answer:
+              "Die Erstbehandlung beginnt mit einem ausführlichen Gespräch über Ihre Beschwerden und Krankengeschichte. Danach folgt eine körperliche Untersuchung und die eigentliche osteopathische Behandlung. Die gesamte Sitzung dauert 45-60 Minuten.",
+          },
+          {
+            question: "Wie viele Behandlungen sind nötig?",
+            answer:
+              "Das ist individuell unterschiedlich. Bei akuten Beschwerden reichen oft 2-3 Sitzungen. Chronische Beschwerden können 4-6 oder mehr Behandlungen erfordern. Nach der ersten Sitzung kann ich eine bessere Einschätzung geben.",
+          },
+          {
+            question: "Was kostet eine osteopathische Behandlung?",
+            answer:
+              "Eine osteopathische Behandlung kostet 150€ (45-60 Minuten). Viele private Krankenkassen und einige gesetzliche Kassen erstatten einen Teil der Kosten.",
+          },
+          {
+            question: "Welche Krankenkassen übernehmen die Kosten?",
+            answer:
+              "Viele private Krankenkassen übernehmen die vollen Kosten. Auch einige gesetzliche Krankenkassen beteiligen sich an osteopathischen Behandlungen (oft 3-6 Sitzungen pro Jahr mit Zuschuss von 40-60€). Informieren Sie sich vorab bei Ihrer Kasse.",
+          },
+          {
+            question: "Ist Osteopathie für jedes Alter geeignet?",
+            answer:
+              "Ja, Osteopathie kann in jedem Alter angewendet werden - von Säuglingen über Erwachsene bis zu Senioren. Die Techniken werden individuell an das Alter und die Konstitution angepasst.",
+          },
+        ]}
+      />
       <Breadcrumbs items={[{ label: "Behandlungen" }]} />
 
       {/* Hero Section */}

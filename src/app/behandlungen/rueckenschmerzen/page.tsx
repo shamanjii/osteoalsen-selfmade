@@ -18,6 +18,30 @@ export const metadata: Metadata = {
     "Chronische Rückenschmerzen Osteopath",
   ],
   alternates: { canonical: "/behandlungen/rueckenschmerzen" },
+  openGraph: {
+    title: "Rückenschmerzen Behandlung Hamburg | Osteopathie",
+    description:
+      "Osteopathische Behandlung bei Rückenschmerzen in Hamburg. Ganzheitlicher Ansatz bei Bandscheibenproblemen, ISG-Blockaden, Hexenschuss.",
+    url: "/behandlungen/rueckenschmerzen",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Rückenschmerzen Behandlung - Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rückenschmerzen Behandlung Hamburg | Osteopathie",
+    description:
+      "Osteopathische Behandlung bei Rückenschmerzen in Hamburg. Bandscheibenprobleme, ISG-Blockaden, Hexenschuss.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function RueckenschmerzenPage() {

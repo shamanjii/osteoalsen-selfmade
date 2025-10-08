@@ -15,6 +15,30 @@ export const metadata: Metadata = {
     "Überlastung Osteopathie",
   ],
   alternates: { canonical: "/behandlungen/sportverletzungen" },
+  openGraph: {
+    title: "Sportverletzungen Behandlung Hamburg | Osteopathie für Sportler",
+    description:
+      "Osteopathische Behandlung bei Sportverletzungen. Zerrungen, Überlastung, Prävention. Schnelle Regeneration.",
+    url: "/behandlungen/sportverletzungen",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Sportverletzungen Behandlung - Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sportverletzungen Behandlung Hamburg",
+    description:
+      "Osteopathische Behandlung bei Sportverletzungen in Hamburg. Zerrungen, Überlastung, Prävention.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function SportverletzungenPage() {

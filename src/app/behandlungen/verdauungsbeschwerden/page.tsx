@@ -16,6 +16,30 @@ export const metadata: Metadata = {
     "Viszerale Osteopathie Hamburg",
   ],
   alternates: { canonical: "/behandlungen/verdauungsbeschwerden" },
+  openGraph: {
+    title: "Verdauungsbeschwerden Behandlung Hamburg | Viszerale Osteopathie",
+    description:
+      "Osteopathische Behandlung bei Reizdarm, Blähungen, Verstopfung. Viszerale Osteopathie für den Bauchraum.",
+    url: "/behandlungen/verdauungsbeschwerden",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Verdauungsbeschwerden Behandlung - Viszerale Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verdauungsbeschwerden Behandlung Hamburg",
+    description:
+      "Osteopathische Behandlung bei Reizdarm, Blähungen, Verstopfung in Hamburg.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function VerdauungPage() {

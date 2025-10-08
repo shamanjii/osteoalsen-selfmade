@@ -17,6 +17,30 @@ export const metadata: Metadata = {
     "Kieferschmerzen Osteopath",
   ],
   alternates: { canonical: "/behandlungen/kopfschmerzen-migraene" },
+  openGraph: {
+    title: "Kopfschmerzen & Migräne Behandlung Hamburg | Osteopathie",
+    description:
+      "Osteopathische Behandlung bei Kopfschmerzen, Migräne und Kieferbeschwerden. Sanfte manuelle Techniken für nachhaltige Linderung.",
+    url: "/behandlungen/kopfschmerzen-migraene",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Kopfschmerzen & Migräne Behandlung - Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kopfschmerzen & Migräne Behandlung Hamburg",
+    description:
+      "Osteopathische Behandlung bei Kopfschmerzen, Migräne und Kieferbeschwerden in Hamburg.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function KopfschmerzenPage() {

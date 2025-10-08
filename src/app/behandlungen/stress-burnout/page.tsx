@@ -15,6 +15,30 @@ export const metadata: Metadata = {
     "Nervensystem Osteopathie",
   ],
   alternates: { canonical: "/behandlungen/stress-burnout" },
+  openGraph: {
+    title: "Stress & Burnout Behandlung Hamburg | Osteopathie",
+    description:
+      "Osteopathische Behandlung bei Stress, Erschöpfung und Burnout. Regulation des Nervensystems durch sanfte Techniken.",
+    url: "/behandlungen/stress-burnout",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Stress & Burnout Behandlung - Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stress & Burnout Behandlung Hamburg",
+    description:
+      "Osteopathische Behandlung bei Stress, Erschöpfung und Burnout in Hamburg.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function StressBurnoutPage() {

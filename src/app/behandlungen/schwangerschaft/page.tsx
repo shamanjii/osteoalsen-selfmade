@@ -15,6 +15,30 @@ export const metadata: Metadata = {
     "Rückbildung Osteopathie",
   ],
   alternates: { canonical: "/behandlungen/schwangerschaft" },
+  openGraph: {
+    title: "Schwangerschaft & Postpartal | Osteopathie Hamburg",
+    description:
+      "Osteopathische Begleitung während und nach der Schwangerschaft. Beckenbodenprobleme, Rückenschmerzen, Geburtsvorbereitung.",
+    url: "/behandlungen/schwangerschaft",
+    siteName: "Osteopathie Hamburg - Joshua Alsen",
+    images: [
+      {
+        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Schwangerschaft & Postpartal - Osteopathie Hamburg",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Schwangerschaft & Postpartal | Osteopathie Hamburg",
+    description:
+      "Osteopathische Begleitung während und nach der Schwangerschaft in Hamburg.",
+    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+  },
 };
 
 export default function SchwangerschaftPage() {
