@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -21,6 +22,18 @@ export const metadata: Metadata = {
 export default function KopfschmerzenPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Kopfschmerzen und Migräne"
+        description="Spannungskopfschmerzen, Migräne und kieferbezogene Kopfschmerzen (CMD - Craniomandibuläre Dysfunktion)"
+        symptoms={[
+          "Spannungskopfschmerzen",
+          "Migräne",
+          "Kieferschmerzen und CMD",
+          "Nackenbezogene Kopfschmerzen",
+          "Clusterkopfschmerzen",
+        ]}
+        url="https://www.osteoalsen.de/behandlungen/kopfschmerzen-migraene"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },

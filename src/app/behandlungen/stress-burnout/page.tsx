@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 
 export const metadata: Metadata = {
   title: "Stress & Burnout Behandlung Hamburg | Osteopathie",
@@ -19,6 +20,19 @@ export const metadata: Metadata = {
 export default function StressBurnoutPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Stress und Burnout"
+        description="Stressbedingte Beschwerden, Erschöpfungszustände und Regulation des vegetativen Nervensystems"
+        symptoms={[
+          "Chronischer Stress",
+          "Erschöpfung und Burnout",
+          "Schlafstörungen",
+          "Verspannungen",
+          "Innere Unruhe",
+        ]}
+        treatmentName="Craniosacrale Osteopathie"
+        url="https://www.osteoalsen.de/behandlungen/stress-burnout"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },

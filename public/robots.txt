@@ -3,8 +3,18 @@ Allow: /
 
 # Wichtige Seiten für Suchmaschinen
 Allow: /blog
+Allow: /blog/*
+Allow: /behandlungen
+Allow: /behandlungen/*
 Allow: /terminbuchung
 Allow: /assets/
+
+# Disallow - nicht indexieren
+Disallow: /impressum
+Disallow: /datenschutz
+Disallow: /admin
+Disallow: /_next/
+Disallow: /api/
 
 # Sitemap Location
 Sitemap: https://www.osteoalsen.de/sitemap.xml
@@ -15,9 +25,17 @@ Crawl-delay: 1
 # Spezielle Bot-Anweisungen
 User-agent: Googlebot
 Allow: /
+Allow: /behandlungen/*
+Allow: /blog/*
+Disallow: /impressum
+Disallow: /datenschutz
 
 User-agent: Bingbot
 Allow: /
+Allow: /behandlungen/*
+Allow: /blog/*
+Disallow: /impressum
+Disallow: /datenschutz
 
 # Social Media Bots
 User-agent: facebookexternalhit

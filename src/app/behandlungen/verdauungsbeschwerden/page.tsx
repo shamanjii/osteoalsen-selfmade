@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -20,6 +21,19 @@ export const metadata: Metadata = {
 export default function VerdauungPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Verdauungsbeschwerden"
+        description="Reizdarm, Blähungen, Verstopfung und funktionelle Verdauungsstörungen durch viszerale Osteopathie"
+        symptoms={[
+          "Reizdarmsyndrom",
+          "Chronische Verstopfung",
+          "Blähungen",
+          "Sodbrennen und Reflux",
+          "Nahrungsmittelunverträglichkeiten",
+        ]}
+        treatmentName="Viszerale Osteopathie"
+        url="https://www.osteoalsen.de/behandlungen/verdauungsbeschwerden"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },

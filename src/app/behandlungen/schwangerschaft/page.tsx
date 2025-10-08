@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 
 export const metadata: Metadata = {
   title: "Schwangerschaft & Postpartal | Osteopathie Hamburg",
@@ -19,6 +20,19 @@ export const metadata: Metadata = {
 export default function SchwangerschaftPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Schwangerschaft und Postpartale Beschwerden"
+        description="Osteopathische Begleitung während der Schwangerschaft und nach der Geburt bei Beckenbodenproblemen, Rückenschmerzen und Rückbildung"
+        symptoms={[
+          "Rückenschmerzen in der Schwangerschaft",
+          "ISG-Blockaden und Beckenschmerzen",
+          "Beckenbodenschwäche postpartal",
+          "Symphysenschmerzen",
+          "Narben nach Kaiserschnitt",
+        ]}
+        treatmentName="Osteopathie in der Schwangerschaft"
+        url="https://www.osteoalsen.de/behandlungen/schwangerschaft"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },

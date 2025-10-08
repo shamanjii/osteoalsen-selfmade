@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 
 export const metadata: Metadata = {
   title: "Sportverletzungen Behandlung Hamburg | Osteopathie für Sportler",
@@ -19,6 +20,19 @@ export const metadata: Metadata = {
 export default function SportverletzungenPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Sportverletzungen"
+        description="Muskelzerrungen, Überlastungssyndrome und Rehabilitation bei Sportverletzungen für Freizeit- und Leistungssportler"
+        symptoms={[
+          "Muskelzerrungen",
+          "Überlastungssyndrome",
+          "Sehnenreizungen",
+          "Gelenkblockaden",
+          "Verzögerte Regeneration",
+        ]}
+        treatmentName="Sportosteopathie"
+        url="https://www.osteoalsen.de/behandlungen/sportverletzungen"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },
