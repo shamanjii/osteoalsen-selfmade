@@ -59,10 +59,10 @@ export default function DatenschutzPage() {
               <p>
                 E-Mail:{" "}
                 <a
-                  href="mailto:praxis@osteoalsen.de"
+                  href="mailto:joshua@alsen.info"
                   className="text-slate-900 hover:underline font-medium"
                 >
-                  praxis@osteoalsen.de
+                  joshua@alsen.info
                 </a>
               </p>
             </div>
@@ -401,10 +401,10 @@ export default function DatenschutzPage() {
               personenbezogenen Daten, bei Auskünften, Berichtigung, Sperrung
               oder Löschung von Daten wenden Sie sich bitte an:{" "}
               <a
-                href="mailto:praxis@osteoalsen.de"
+                href="mailto:joshua@alsen.info"
                 className="font-semibold hover:underline"
               >
-                praxis@osteoalsen.de
+                joshua@alsen.info
               </a>
             </p>
           </div>

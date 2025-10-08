@@ -59,10 +59,10 @@ export default function ImpressumPage() {
               <p>
                 E-Mail:{" "}
                 <a
-                  href="mailto:praxis@osteoalsen.de"
+                  href="mailto:joshua@alsen.info"
                   className="text-slate-900 hover:underline font-medium"
                 >
-                  praxis@osteoalsen.de
+                  joshua@alsen.info
                 </a>
               </p>
             </div>
@@ -271,10 +271,10 @@ export default function ImpressumPage() {
               Bei rechtlichen Fragen zu diesem Impressum oder unseren
               Dienstleistungen kontaktieren Sie uns bitte unter:{" "}
               <a
-                href="mailto:praxis@osteoalsen.de"
+                href="mailto:joshua@alsen.info"
                 className="font-semibold hover:underline"
               >
-                praxis@osteoalsen.de
+                joshua@alsen.info
               </a>
             </p>
           </div>
