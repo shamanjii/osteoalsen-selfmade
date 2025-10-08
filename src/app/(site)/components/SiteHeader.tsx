@@ -150,8 +150,6 @@ export default function SiteHeader() {
                                 items={[
                                     { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie", icon: "ℹ️" },
                                     { label: "Behandlungsablauf", href: "/kosten-ablauf#ablauf", icon: "📋" },
-                                    { label: "Kosten & Erstattung", href: "/kosten-ablauf", icon: "💶" },
-                                    { label: "FAQ – Häufige Fragen", href: "/faq", icon: "❓" },
                                 ]}
                             />
                             <DropdownMenu
@@ -196,6 +194,18 @@ export default function SiteHeader() {
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Über mich
+                            </Link>
+                            <Link
+                                href="/kosten-ablauf"
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Kosten
+                            </Link>
+                            <Link
+                                href="/faq"
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                FAQ
                             </Link>
                             <Link
                                 href="/blog"
@@ -246,22 +256,6 @@ export default function SiteHeader() {
                                     >
                                         <span>📋</span>
                                         <span>Behandlungsablauf</span>
-                                    </Link>
-                                    <Link
-                                        href="/kosten-ablauf"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>💶</span>
-                                        <span>Kosten & Erstattung</span>
-                                    </Link>
-                                    <Link
-                                        href="/faq"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>❓</span>
-                                        <span>FAQ – Häufige Fragen</span>
                                     </Link>
                                 </div>
                             </div>
@@ -331,6 +325,20 @@ export default function SiteHeader() {
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Über mich
+                            </Link>
+                            <Link
+                                href="/kosten-ablauf"
+                                onClick={() => setMobileOpen(false)}
+                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
+                            >
+                                Kosten & Ablauf
+                            </Link>
+                            <Link
+                                href="/faq"
+                                onClick={() => setMobileOpen(false)}
+                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
+                            >
+                                FAQ
                             </Link>
                             <Link
                                 href="/blog"
