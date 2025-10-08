@@ -1,0 +1,196 @@
+import { Metadata } from "next";
+import TreatmentCard from "./components/TreatmentCard";
+import TreatmentCTA from "./components/TreatmentCTA";
+import Breadcrumbs from "@/components/Breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
+  description:
+    "Ganzheitliche osteopathische Behandlungen in Hamburg-Rotherbaum & Eimsbüttel. Rückenschmerzen, Kopfschmerzen, Verdauung, Sportverletzungen, Stress und mehr. VFO-zertifiziert.",
+  keywords: [
+    "Osteopathie Hamburg",
+    "Osteopath Rotherbaum",
+    "Rückenschmerzen Behandlung Hamburg",
+    "Kopfschmerzen Osteopathie",
+    "Sportverletzung Osteopath",
+    "Verdauungsbeschwerden Hamburg",
+  ],
+  alternates: { canonical: "/behandlungen" },
+};
+
+const treatments = [
+  {
+    title: "Rückenschmerzen",
+    description:
+      "Ganzheitliche osteopathische Behandlung bei akuten und chronischen Rückenschmerzen. Von Verspannungen bis Bandscheibenproblematik.",
+    icon: "🦴",
+    href: "/behandlungen/rueckenschmerzen",
+    keywords: ["Bandscheibe", "ISG", "Hexenschuss", "Verspannungen"],
+  },
+  {
+    title: "Kopfschmerzen & Migräne",
+    description:
+      "Sanfte Behandlung von Spannungskopfschmerzen, Migräne und Kieferbeschwerden durch manuelle Techniken und ganzheitlichen Ansatz.",
+    icon: "🧠",
+    href: "/behandlungen/kopfschmerzen-migraene",
+    keywords: ["Migräne", "Spannungskopfschmerz", "CMD", "Kiefergelenk"],
+  },
+  {
+    title: "Verdauungsbeschwerden",
+    description:
+      "Osteopathische Hilfe bei Reizdarm, Blähungen, Verstopfung und anderen Verdauungsproblemen. Viszerale Osteopathie für den Bauchraum.",
+    icon: "🫁",
+    href: "/behandlungen/verdauungsbeschwerden",
+    keywords: ["Reizdarm", "Blähungen", "Verstopfung", "Reflux"],
+  },
+  {
+    title: "Sportverletzungen",
+    description:
+      "Schnelle Regeneration und Prävention bei Sportverletzungen. Von Zerrungen über Überlastung bis zur Wettkampfvorbereitung.",
+    icon: "⚽",
+    href: "/behandlungen/sportverletzungen",
+    keywords: ["Zerrung", "Überlastung", "Prävention", "Regeneration"],
+  },
+  {
+    title: "Stress & Burnout",
+    description:
+      "Behandlung stressbedingter Beschwerden und Erschöpfungszustände. Regulation des vegetativen Nervensystems durch sanfte Techniken.",
+    icon: "🧘",
+    href: "/behandlungen/stress-burnout",
+    keywords: ["Erschöpfung", "Burnout", "Nervensystem", "Entspannung"],
+  },
+  {
+    title: "Schwangerschaft & Postpartal",
+    description:
+      "Begleitung während und nach der Schwangerschaft. Beckenbodenprobleme, Rückenschmerzen, Geburtsvorbereitung und Nachsorge.",
+    icon: "🤰",
+    href: "/behandlungen/schwangerschaft",
+    keywords: ["Beckenboden", "Geburtsvorbereitung", "Rückbildung"],
+  },
+];
+
+export default function BehandlungenPage() {
+  return (
+    <>
+      <Breadcrumbs items={[{ label: "Behandlungen" }]} />
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 font-epilogue">
+              Behandlungsschwerpunkte
+            </h1>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Ganzheitliche osteopathische Behandlungen für verschiedene
+              Beschwerdebilder. Mit über 10 Jahren Erfahrung und
+              VFO-Zertifizierung.
+            </p>
+          </div>
+
+          {/* Treatments Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {treatments.map((treatment) => (
+              <TreatmentCard key={treatment.href} {...treatment} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* USP Section */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12 font-epilogue">
+            Warum osteopathische Behandlung bei mir?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🎓</div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
+                VFO-zertifiziert
+              </h3>
+              <p className="text-slate-600">
+                Über 1.350 Ausbildungsstunden und kontinuierliche
+                Weiterbildung nach höchsten Qualitätsstandards.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">⏱️</div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
+                Zeit für Sie
+              </h3>
+              <p className="text-slate-600">
+                45-60 Minuten intensive Behandlung. Keine Fließbandabfertigung,
+                sondern individuelle Betreuung.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🏥</div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
+                Kassenerstattung
+              </h3>
+              <p className="text-slate-600">
+                Viele private und gesetzliche Krankenkassen erstatten einen
+                Teil der Behandlungskosten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12 font-epilogue">
+            Häufige Fragen zu Behandlungen
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
+                Wie läuft eine Behandlung ab?
+              </h3>
+              <p className="text-slate-600">
+                Die Erstbehandlung beginnt mit einem ausführlichen Gespräch
+                über Ihre Beschwerden und Krankengeschichte. Danach folgt eine
+                körperliche Untersuchung und die eigentliche osteopathische
+                Behandlung. Die gesamte Sitzung dauert 45-60 Minuten.
+              </p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
+                Wie viele Behandlungen sind nötig?
+              </h3>
+              <p className="text-slate-600">
+                Das ist individuell unterschiedlich. Bei akuten Beschwerden
+                reichen oft 2-3 Sitzungen. Chronische Beschwerden können 4-6
+                oder mehr Behandlungen erfordern. Nach der ersten Sitzung kann
+                ich eine bessere Einschätzung geben.
+              </p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
+                Was kostet eine Behandlung?
+              </h3>
+              <p className="text-slate-600">
+                Eine osteopathische Behandlung kostet 150€ (45-60 Minuten).
+                Viele private Krankenkassen und einige gesetzliche Kassen
+                erstatten einen Teil der Kosten. Details finden Sie auf der
+                Seite Kosten & Ablauf.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl">
+          <TreatmentCTA
+            title="Bereit für Ihre Behandlung?"
+            description="Vereinbaren Sie jetzt einen Termin in meiner Praxis in Hamburg-Rotherbaum oder Eimsbüttel."
+          />
+        </div>
+      </section>
+    </>
+  );
+}
