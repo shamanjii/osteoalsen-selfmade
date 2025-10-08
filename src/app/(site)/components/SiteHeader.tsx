@@ -190,15 +190,19 @@ export default function SiteHeader() {
                         {/* Right Navigation Links */}
                         <nav className="flex items-center justify-end space-x-6">
                             <Link
-                                href="/#ueber-mich"
-                                onClick={(e) => handleSmoothScroll(e, '#ueber-mich')}
+                                href="/ueber-mich"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href="/#faq"
-                                onClick={(e) => handleSmoothScroll(e, '#faq')}
+                                href="/kosten-ablauf"
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Kosten
+                            </Link>
+                            <Link
+                                href="/faq"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 FAQ
@@ -306,15 +310,22 @@ export default function SiteHeader() {
                                 Anwendungsbereiche
                             </Link>
                             <Link
-                                href="/#ueber-mich"
-                                onClick={(e) => handleSmoothScroll(e, '#ueber-mich')}
+                                href="/ueber-mich"
+                                onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href="/#faq"
-                                onClick={(e) => handleSmoothScroll(e, '#faq')}
+                                href="/kosten-ablauf"
+                                onClick={() => setMobileOpen(false)}
+                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
+                            >
+                                Kosten & Ablauf
+                            </Link>
+                            <Link
+                                href="/faq"
+                                onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 FAQ
