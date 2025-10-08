@@ -104,12 +104,12 @@ export default function RootLayout({
           name="Joshua Alsen - Osteopathie Hamburg"
           description="VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum & Eimsbüttel. Ganzheitliche osteopathische Behandlung für Erwachsene und Kinder. Kassenerstattung möglich."
           url="https://www.osteoalsen.de"
-          telephone="+49 40 12345678"
-          email="info@osteoalsen.de"
+          telephone="+4917643990001"
+          email="joshua@alsen.info"
           address={{
-            streetAddress: "Eppendorfer Weg 123",
+            streetAddress: "Rappstraße 7",
             addressLocality: "Hamburg",
-            postalCode: "20259",
+            postalCode: "20146",
             addressCountry: "DE"
           }}
           geo={{
