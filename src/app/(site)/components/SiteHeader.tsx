@@ -9,6 +9,7 @@ export default function SiteHeader() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
     // Throttled scroll handler for better performance
     const handleScroll = useCallback(() => {
@@ -151,6 +152,8 @@ export default function SiteHeader() {
                                     { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie", icon: "ℹ️" },
                                     { label: "Behandlungsablauf", href: "/kosten-ablauf#ablauf", icon: "📋" },
                                 ]}
+                                isOpen={openDropdown === "osteopathie"}
+                                onOpenChange={(open) => setOpenDropdown(open ? "osteopathie" : null)}
                             />
                             <DropdownMenu
                                 label="Behandlungen"
@@ -162,6 +165,9 @@ export default function SiteHeader() {
                                     { label: "Stress & Burnout", href: "/behandlungen/stress-burnout", icon: "🧘" },
                                     { label: "Schwangerschaft", href: "/behandlungen/schwangerschaft", icon: "🤰" },
                                 ]}
+                                showAllLink={true}
+                                isOpen={openDropdown === "behandlungen"}
+                                onOpenChange={(open) => setOpenDropdown(open ? "behandlungen" : null)}
                             />
                         </nav>
 

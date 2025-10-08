@@ -11,16 +11,30 @@ interface DropdownItem {
 interface DropdownMenuProps {
   label: string;
   items: DropdownItem[];
+  showAllLink?: boolean;
+  allLinkHref?: string;
+  allLinkLabel?: string;
   onItemClick?: () => void;
+  isOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
 export default function DropdownMenu({
   label,
   items,
+  showAllLink = false,
+  allLinkHref = "/behandlungen",
+  allLinkLabel = "Alle Behandlungen →",
   onItemClick,
+  isOpen: externalIsOpen,
+  onOpenChange,
 }: DropdownMenuProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalIsOpen, setInternalIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Use external state if provided, otherwise use internal state
+  const isOpen = externalIsOpen !== undefined ? externalIsOpen : internalIsOpen;
+  const setIsOpen = onOpenChange || setInternalIsOpen;
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -37,7 +51,7 @@ export default function DropdownMenu({
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [setIsOpen]);
 
   const handleItemClick = () => {
     setIsOpen(false);
@@ -90,15 +104,17 @@ export default function DropdownMenu({
               <span className="text-sm font-medium">{item.label}</span>
             </Link>
           ))}
-          <div className="border-t border-slate-200 mt-2 pt-2">
-            <Link
-              href="/behandlungen"
-              onClick={handleItemClick}
-              className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors"
-            >
-              <span className="text-sm">Alle Behandlungen →</span>
-            </Link>
-          </div>
+          {showAllLink && (
+            <div className="border-t border-slate-200 mt-2 pt-2">
+              <Link
+                href={allLinkHref}
+                onClick={handleItemClick}
+                className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors"
+              >
+                <span className="text-sm">{allLinkLabel}</span>
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </div>
