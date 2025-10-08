@@ -47,13 +47,13 @@ export default function UeberMichPage() {
       <Breadcrumbs items={[{ label: "Über mich" }]} />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 font-epilogue">
+      <section className="bg-white pt-8 pb-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
+          <div className="mx-auto max-w-3xl">
+            <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
               Über mich
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
               Joshua Alsen - Osteopath und Heilpraktiker in Hamburg-Rotherbaum
               & Eimsbüttel
             </p>
@@ -62,7 +62,7 @@ export default function UeberMichPage() {
       </section>
 
       {/* Biography Section */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="relative">
             {/* Mobile: Image above text */}
@@ -76,7 +76,7 @@ export default function UeberMichPage() {
             </div>
 
             {/* Desktop: Floating image with text wrap */}
-            <div className="hidden lg:block lg:float-left lg:mr-8 lg:mb-6 lg:w-96 lg:h-[32rem] relative rounded-lg overflow-hidden shadow-lg">
+            <div className="hidden lg:block lg:float-left lg:mr-8 lg:mb-6 lg:w-96 lg:h-[32rem] relative rounded-lg overflow-hidden">
               <Image
                 src="/assets/joshua-alsen-dozent.webp"
                 alt="Joshua Alsen - Osteopath Hamburg"
@@ -86,7 +86,7 @@ export default function UeberMichPage() {
             </div>
 
             <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
-              <h2 className="text-3xl font-bold text-slate-900 font-epilogue">
+              <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue">
                 Mein Weg zur Osteopathie
               </h2>
 
@@ -126,7 +126,7 @@ export default function UeberMichPage() {
                 in meiner eigenen Praxis für Osteopathie in Hamburg.
               </p>
 
-              <h2 className="text-3xl font-bold text-slate-900 font-epilogue mt-12">
+              <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mt-12">
                 Meine Philosophie
               </h2>
 
@@ -154,9 +154,9 @@ export default function UeberMichPage() {
       </section>
 
       {/* Qualifications Section */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
             Ausbildung & Qualifikationen
           </h2>
 
@@ -245,9 +245,9 @@ export default function UeberMichPage() {
       </section>
 
       {/* VFO Section */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="rounded-xl border border-slate-200 bg-white p-8 flex flex-col md:flex-row gap-8 items-start">
+          <div className="rounded-xl border border-slate-200 bg-white p-8 flex flex-col md:flex-row gap-8 items-start shadow-sm">
             <div className="relative w-48 h-48 shrink-0 self-center md:self-start">
               <Image
                 src="/assets/vfo-logo.webp"
@@ -277,9 +277,9 @@ export default function UeberMichPage() {
       </section>
 
       {/* Why Me Section */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
             Warum Sie sich für meine Praxis entscheiden sollten
           </h2>
 
@@ -321,26 +321,27 @@ export default function UeberMichPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6">
+      <section className="bg-slate-50 py-16 sm:py-24 px-4 sm:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-700 rounded-2xl p-8 sm:p-12 text-center text-white">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-epilogue">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-center text-white shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-light mb-4 font-epilogue tracking-tight">
               Lernen Sie mich persönlich kennen
             </h2>
-            <p className="text-xl mb-8 text-slate-200">
+            <p className="text-xl mb-8 text-slate-200 font-light">
               Vereinbaren Sie jetzt einen Termin in meiner Praxis in
               Hamburg-Rotherbaum oder Eimsbüttel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/terminbuchung"
-                className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
+                className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
               >
-                📅 Online Termin buchen
+                <span className="relative z-10">📅 Online Termin buchen</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </Link>
               <a
                 href="tel:+4917643990001"
-                className="inline-block px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-white text-white rounded-md transition-all duration-300 hover:bg-white hover:text-slate-900 hover:transform hover:-translate-y-1"
               >
                 📞 0176 4399 0001
               </a>

@@ -8,6 +8,7 @@ import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
 import SafeHtml from "@/components/SafeHtml";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import { BlogPostStructuredData, MedicalScholarlyArticle } from "@/components/StructuredData";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -146,17 +147,13 @@ export default async function BlogPost({ params }: PageProps) {
     const allPosts = await getAllPosts();
 
     return (
-        <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
-            {/* Breadcrumb */}
-            <nav className="mb-8">
-                <div className="flex items-center gap-2 text-sm text-slate-600">
-                    <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>
-                    <span>→</span>
-                    <Link href="/blog" className="hover:text-slate-900 transition-colors">Blog</Link>
-                    <span>→</span>
-                    <span className="text-slate-900 font-medium truncate">{post.title}</span>
-                </div>
-            </nav>
+        <>
+            <Breadcrumbs items={[
+                { label: "Blog", href: "/blog" },
+                { label: post.title }
+            ]} />
+
+            <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
 
             {/* Structured Data for Blog Post */}
             <BlogPostStructuredData
@@ -246,6 +243,7 @@ export default async function BlogPost({ params }: PageProps) {
 
             {/* Related Articles */}
             <RelatedArticles currentSlug={post.slug} articles={allPosts} />
-        </main>
+        </div>
+        </>
     );
 }

@@ -189,13 +189,13 @@ export default function FAQPage() {
       <Breadcrumbs items={[{ label: "FAQ" }]} />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 font-epilogue">
+      <section className="bg-white pt-8 pb-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
+          <div className="mx-auto max-w-3xl">
+            <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
               Häufig gestellte Fragen
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
               Antworten auf die wichtigsten Fragen rund um Osteopathie,
               Behandlungsablauf, Kosten und Terminbuchung
             </p>
@@ -221,12 +221,12 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Categories */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="space-y-16">
             {faqData.map((category, categoryIdx) => (
               <div key={categoryIdx} id={`category-${categoryIdx}`}>
-                <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
+                <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-8 font-epilogue">
                   {category.category}
                 </h2>
                 <div className="space-y-4">
@@ -254,25 +254,25 @@ export default function FAQPage() {
       </section>
 
       {/* Still have questions */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
             Ihre Frage war nicht dabei?
           </h2>
-          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+          <p className="text-xl text-slate-600 font-light mb-8 leading-relaxed">
             Kein Problem! Kontaktieren Sie mich gerne direkt - ich beantworte
             Ihre Fragen gerne persönlich.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+4917643990001"
-              className="inline-block px-8 py-4 bg-slate-900 text-white rounded-lg font-semibold hover:bg-slate-800 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-slate-900 text-white rounded-md transition-all duration-300 hover:bg-slate-800 hover:transform hover:-translate-y-1"
             >
               📞 0176 4399 0001
             </a>
             <a
               href="mailto:joshua@alsen.info"
-              className="inline-block px-8 py-4 border-2 border-slate-900 text-slate-900 rounded-lg font-semibold hover:bg-slate-900 hover:text-white transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-slate-900 text-slate-900 rounded-md transition-all duration-300 hover:bg-slate-900 hover:text-white hover:transform hover:-translate-y-1"
             >
               ✉️ E-Mail schreiben
             </a>
@@ -281,30 +281,31 @@ export default function FAQPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6">
+      <section className="bg-slate-50 py-16 sm:py-24 px-4 sm:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-700 rounded-2xl p-8 sm:p-12 text-center text-white">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-epilogue">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-center text-white shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-light mb-4 font-epilogue tracking-tight">
               Bereit für Ihre erste Behandlung?
             </h2>
-            <p className="text-xl mb-8 text-slate-200">
+            <p className="text-xl mb-8 text-slate-200 font-light">
               Vereinbaren Sie jetzt einen Termin in meiner Praxis in
               Hamburg-Rotherbaum.
             </p>
             <Link
               href="/terminbuchung"
-              className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
+              className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
             >
-              📅 Jetzt Termin buchen
+              <span className="relative z-10">📅 Jetzt Termin buchen</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </Link>
           </div>
         </div>
       </section>
 
       {/* Helpful Links */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-8 font-epilogue">
             Das könnte Sie auch interessieren
           </h2>
           <div className="grid md:grid-cols-3 gap-6">

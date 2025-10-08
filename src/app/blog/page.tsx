@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 async function getCMSPosts() {
     try {
@@ -91,16 +92,7 @@ export default async function BlogIndexPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-            {/* Breadcrumb */}
-            <nav className="bg-white border-b border-slate-200 py-3">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6">
-                    <div className="flex items-center gap-2 text-sm text-slate-600">
-                        <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>
-                        <span>→</span>
-                        <span className="text-slate-900 font-medium">Blog</span>
-                    </div>
-                </div>
-            </nav>
+            <Breadcrumbs items={[{ label: "Blog" }]} />
 
             {/* Hero Section */}
             <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-20">

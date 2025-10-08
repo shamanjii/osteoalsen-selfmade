@@ -76,13 +76,13 @@ export default function KostenAblaufPage() {
       <Breadcrumbs items={[{ label: "Kosten & Ablauf" }]} />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 font-epilogue">
+      <section className="bg-white pt-8 pb-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
+          <div className="mx-auto max-w-3xl">
+            <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
               Kosten & Ablauf
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
               Transparente Preise und Informationen zum Behandlungsablauf in
               meiner Praxis
             </p>
@@ -91,14 +91,14 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-700 rounded-2xl p-8 sm:p-12 text-white text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-epilogue">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-white text-center mb-12 shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-light mb-4 font-epilogue tracking-tight">
               Preisübersicht
             </h2>
-            <div className="text-6xl font-bold mb-2">150€</div>
-            <p className="text-2xl text-slate-200 mb-6">
+            <div className="text-6xl font-light mb-2">150€</div>
+            <p className="text-2xl text-slate-200 font-light mb-6">
               pro Behandlung (45-60 Minuten)
             </p>
             <div className="bg-white/10 rounded-lg p-6 text-left max-w-2xl mx-auto">
@@ -112,15 +112,15 @@ export default function KostenAblaufPage() {
             </div>
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
+          <div className="max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
               Was ist in der Behandlung enthalten?
             </h2>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
               Eine osteopathische Behandlung bei mir dauert zwischen 45 und 60
               Minuten und beinhaltet:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-slate-700 mb-8">
+            <ul className="list-disc list-inside space-y-2 text-slate-700 text-lg mb-8">
               <li>
                 Ausführliche Anamnese und Besprechung Ihrer Beschwerden
               </li>
@@ -142,9 +142,9 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* Insurance Section */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-8 font-epilogue">
             Kostenerstattung durch Krankenkassen
           </h2>
 
@@ -242,9 +242,9 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* Treatment Process Section */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-8 font-epilogue">
             Wie läuft eine Behandlung ab?
           </h2>
 
@@ -324,12 +324,12 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* Payment & Cancellation */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Zahlungsmethoden */}
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6 font-epilogue">
+              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
                 Zahlungsmethoden
               </h2>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -362,7 +362,7 @@ export default function KostenAblaufPage() {
 
             {/* Stornierungsbedingungen */}
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6 font-epilogue">
+              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
                 Stornierungsbedingungen
               </h2>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -410,9 +410,9 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12 font-epilogue">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
             Häufige Fragen zu Kosten & Ablauf
           </h2>
 
@@ -497,26 +497,27 @@ export default function KostenAblaufPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-slate-50 py-16 px-4 sm:px-6">
+      <section className="bg-white py-16 sm:py-24 px-4 sm:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-700 rounded-2xl p-8 sm:p-12 text-center text-white">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-epilogue">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-center text-white shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-light mb-4 font-epilogue tracking-tight">
               Noch Fragen?
             </h2>
-            <p className="text-xl mb-8 text-slate-200">
+            <p className="text-xl mb-8 text-slate-200 font-light">
               Kontaktieren Sie mich gerne telefonisch oder buchen Sie direkt
               einen Termin online.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/terminbuchung"
-                className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
+                className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
               >
-                📅 Online Termin buchen
+                <span className="relative z-10">📅 Online Termin buchen</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </Link>
               <a
                 href="tel:+4917643990001"
-                className="inline-block px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-white text-white rounded-md transition-all duration-300 hover:bg-white hover:text-slate-900 hover:transform hover:-translate-y-1"
               >
                 📞 0176 4399 0001
               </a>
