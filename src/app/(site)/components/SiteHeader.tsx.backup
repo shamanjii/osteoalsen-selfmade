@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import throttle from "lodash.throttle";
-import DropdownMenu from "@/components/DropdownMenu";
 
 export default function SiteHeader() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -140,7 +139,8 @@ export default function SiteHeader() {
                         {/* Left Navigation Links */}
                         <nav className="flex items-center space-x-6">
                             <Link
-                                href="/"
+                                href="/#home"
+                                onClick={(e) => handleSmoothScroll(e, '#home')}
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Home
@@ -152,17 +152,13 @@ export default function SiteHeader() {
                             >
                                 Osteopathie
                             </Link>
-                            <DropdownMenu
-                                label="Behandlungen"
-                                items={[
-                                    { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen", icon: "🦴" },
-                                    { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene", icon: "🧠" },
-                                    { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden", icon: "🫁" },
-                                    { label: "Sportverletzungen", href: "/behandlungen/sportverletzungen", icon: "⚽" },
-                                    { label: "Stress & Burnout", href: "/behandlungen/stress-burnout", icon: "🧘" },
-                                    { label: "Schwangerschaft", href: "/behandlungen/schwangerschaft", icon: "🤰" },
-                                ]}
-                            />
+                            <Link
+                                href="/#behandlungen"
+                                onClick={(e) => handleSmoothScroll(e, '#behandlungen')}
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Behandlungen
+                            </Link>
                         </nav>
 
                         {/* Centered Logo */}
@@ -238,66 +234,13 @@ export default function SiteHeader() {
                             >
                                 Was ist Osteopathie?
                             </Link>
-                            {/* Behandlungen - Accordion Style */}
-                            <div className="space-y-1">
-                                <Link
-                                    href="/behandlungen"
-                                    onClick={() => setMobileOpen(false)}
-                                    className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
-                                >
-                                    Behandlungen
-                                </Link>
-                                <div className="pl-4 space-y-1">
-                                    <Link
-                                        href="/behandlungen/rueckenschmerzen"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🦴</span>
-                                        <span>Rückenschmerzen</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/kopfschmerzen-migraene"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🧠</span>
-                                        <span>Kopfschmerzen & Migräne</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/verdauungsbeschwerden"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🫁</span>
-                                        <span>Verdauungsbeschwerden</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/sportverletzungen"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>⚽</span>
-                                        <span>Sportverletzungen</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/stress-burnout"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🧘</span>
-                                        <span>Stress & Burnout</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/schwangerschaft"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🤰</span>
-                                        <span>Schwangerschaft</span>
-                                    </Link>
-                                </div>
-                            </div>
+                            <Link
+                                href="/#behandlungen"
+                                onClick={(e) => handleSmoothScroll(e, '#behandlungen')}
+                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
+                            >
+                                Behandlungen
+                            </Link>
                             <Link
                                 href="/#anwendungsbereiche"
                                 onClick={(e) => handleSmoothScroll(e, '#anwendungsbereiche')}

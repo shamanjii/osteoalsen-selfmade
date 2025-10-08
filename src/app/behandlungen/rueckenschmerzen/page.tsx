@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TreatmentHero from "../components/TreatmentHero";
 import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -22,6 +23,18 @@ export const metadata: Metadata = {
 export default function RueckenschmerzenPage() {
   return (
     <>
+      <MedicalConditionSchema
+        name="Rückenschmerzen"
+        description="Akute und chronische Rückenschmerzen, Bandscheibenvorfälle, ISG-Blockaden und Verspannungen im unteren Rücken"
+        symptoms={[
+          "Schmerzen im unteren Rücken",
+          "ISG-Blockaden",
+          "Bandscheibenprobleme",
+          "Hexenschuss",
+          "Chronische Verspannungen",
+        ]}
+        url="https://www.osteoalsen.de/behandlungen/rueckenschmerzen"
+      />
       <Breadcrumbs
         items={[
           { label: "Behandlungen", href: "/behandlungen" },
