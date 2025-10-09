@@ -62,7 +62,6 @@ export default function DropdownMenu({
     <div
       ref={dropdownRef}
       className="relative"
-      onMouseLeave={() => setIsOpen(false)}
     >
       {/* Dropdown Trigger */}
       <button
