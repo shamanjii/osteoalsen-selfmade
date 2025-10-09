@@ -1,4 +1,7 @@
+'use client';
+
 import Link from "next/link";
+import { PhoneLink, EmailLink } from '@/components/TrackableLink';
 
 export default function SiteFooter() {
     return (
@@ -135,20 +138,20 @@ export default function SiteFooter() {
                                 </Link>
                             </li>
                             <li>
-                                <a
-                                    href="tel:+4917643990001"
+                                <PhoneLink
+                                    source="footer"
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     0176 4399 0001
-                                </a>
+                                </PhoneLink>
                             </li>
                             <li>
-                                <a
-                                    href="mailto:joshua@alsen.info"
+                                <EmailLink
+                                    source="footer"
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     joshua@alsen.info
-                                </a>
+                                </EmailLink>
                             </li>
                         </ul>
                     </div>

@@ -1,4 +1,13 @@
+'use client';
+
+import { PhoneLink, EmailLink } from '@/components/TrackableLink';
+import { trackAppointmentClick } from '@/components/Analytics';
+
 export default function ContactSection() {
+    const handleAppointmentClick = () => {
+        trackAppointmentClick('contact_section');
+    };
+
     return (
         <section id="kontakt" className="bg-slate-50 py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -23,9 +32,12 @@ export default function ContactSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="text-slate-900 text-lg font-medium mb-1 font-epilogue">Telefon</h4>
-                                <a href="tel:+4917643990001" className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors">
+                                <PhoneLink
+                                    source="contact_section_main"
+                                    className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors"
+                                >
                                     0176 4399 0001
-                                </a>
+                                </PhoneLink>
                             </div>
                         </div>
 
@@ -36,7 +48,11 @@ export default function ContactSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="text-slate-900 text-lg font-medium mb-1 font-epilogue">Online Buchung</h4>
-                                <a href="/terminbuchung" className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors">
+                                <a
+                                    href="/terminbuchung"
+                                    onClick={handleAppointmentClick}
+                                    className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors"
+                                >
                                     Termin buchen
                                 </a>
                             </div>
@@ -49,9 +65,12 @@ export default function ContactSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="text-slate-900 text-lg font-medium mb-1 font-epilogue">E-Mail</h4>
-                                <a href="mailto:joshua@alsen.info" className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors">
+                                <EmailLink
+                                    source="contact_section_main"
+                                    className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors"
+                                >
                                     joshua@alsen.info
-                                </a>
+                                </EmailLink>
                             </div>
                         </div>
                     </div>
@@ -288,20 +307,20 @@ export default function ContactSection() {
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-6">
-                        <a
-                            href="tel:+4917643990001"
+                        <PhoneLink
+                            source="contact_section_cta"
                             className="inline-flex items-center bg-slate-900 text-white px-6 py-4 rounded-lg font-medium font-epilogue hover:bg-slate-800 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                         >
                             <span className="mr-2">📞</span>
                             Jetzt anrufen
-                        </a>
-                        <a
-                            href="mailto:joshua@alsen.info"
+                        </PhoneLink>
+                        <EmailLink
+                            source="contact_section_cta"
                             className="inline-flex items-center bg-transparent text-slate-900 px-6 py-4 border border-slate-900 rounded-lg font-medium font-epilogue hover:bg-slate-900 hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                         >
                             <span className="mr-2">✉️</span>
                             E-Mail schreiben
-                        </a>
+                        </EmailLink>
                     </div>
                 </div>
             </div>
