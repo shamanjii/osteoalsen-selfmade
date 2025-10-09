@@ -6,10 +6,11 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Über mich - Joshua Alsen | Osteopath Hamburg",
   description:
-    "Joshua Alsen - VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 1.350 Stunden Ausbildung, internationale Erfahrung und Leidenschaft für Osteopathie.",
+    "Joshua Alsen - BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung, internationale Erfahrung und Leidenschaft für Osteopathie.",
   keywords: [
     "Joshua Alsen",
     "Osteopath Hamburg",
+    "BAO zertifiziert",
     "VFO zertifiziert",
     "Heilpraktiker Hamburg",
     "Osteopathie Ausbildung",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Über mich - Joshua Alsen | Osteopath Hamburg",
     description:
-      "VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 1.350 Stunden Ausbildung und Leidenschaft für Osteopathie.",
+      "BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung und Leidenschaft für Osteopathie.",
     url: "/ueber-mich",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Über mich - Joshua Alsen | Osteopath Hamburg",
     description:
-      "VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum.",
+      "BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung.",
     images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
   },
 };
@@ -174,8 +175,9 @@ export default function UeberMichPage() {
                   </p>
                   <p className="text-slate-600">
                     Vollzeitstudium (2015-2020)<br />
-                    Über 1.350 Ausbildungsstunden<br />
-                    Bachelor of Science (B.Sc.) Osteopathie
+                    Über 5.000 Ausbildungsstunden nach BAO-Standard<br />
+                    Bachelor of Science (B.Sc.) Osteopathie<br />
+                    <span className="text-sm text-slate-500">(mind. 1.350 Std. für Krankenkassenzulassung erforderlich)</span>
                   </p>
                 </div>
               </div>
@@ -196,6 +198,26 @@ export default function UeberMichPage() {
                     Bestanden Mai 2024<br />
                     Gesundheitsamt Hamburg<br />
                     Berechtigung zur eigenständigen Patientenbehandlung
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* BAO Zertifizierung */}
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl">🏆</div>
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
+                    BAO-Zertifizierung
+                  </h3>
+                  <p className="text-slate-600 mb-2">
+                    <strong>Bundesarbeitsgemeinschaft Osteopathie e.V.</strong>
+                  </p>
+                  <p className="text-slate-600">
+                    Über 5.000 Ausbildungsstunden<br />
+                    Höchster deutscher Ausbildungsstandard<br />
+                    Qualitätssicherung & Fortbildungspflicht
                   </p>
                 </div>
               </div>
@@ -244,33 +266,65 @@ export default function UeberMichPage() {
         </div>
       </section>
 
-      {/* VFO Section */}
+      {/* BAO & VFO Section */}
       <section className="bg-slate-50 py-16 sm:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="rounded-xl border border-slate-200 bg-white p-8 flex flex-col md:flex-row gap-8 items-start shadow-sm">
-            <div className="relative w-48 h-48 shrink-0 self-center md:self-start">
-              <Image
-                src="/assets/vfo-logo.webp"
-                alt="VFO Logo - Verband Freier Osteopathen"
-                fill
-                className="object-contain"
-              />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
+            Zertifizierungen & Mitgliedschaften
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* BAO Section */}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+              <div className="text-slate-700">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-4xl">🏆</div>
+                  <h3 className="text-2xl font-semibold text-slate-900 font-epilogue">
+                    BAO-Zertifiziert
+                  </h3>
+                </div>
+                <p className="text-lg font-semibold text-slate-900 mb-4">
+                  Bundesarbeitsgemeinschaft Osteopathie e.V.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  Die BAO ist der Dachverband der bedeutendsten deutschen Osteopathie-Verbände
+                  und definiert die höchsten Ausbildungsstandards in Deutschland.
+                </p>
+                <p className="leading-relaxed">
+                  Meine Ausbildung mit über 5.000 Stunden entspricht dem BAO-Standard und
+                  garantiert Ihnen höchste fachliche Kompetenz und Behandlungsqualität.
+                </p>
+              </div>
             </div>
-            <div className="text-slate-700">
-              <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue">
-                Zertifiziertes Mitglied im Verband Freier Osteopathen e.V.
-              </h3>
-              <p className="leading-relaxed mb-4">
-                Als osteopathisches Praxismitglied im Verband Freier Osteopathen
-                e.V. (VFO) profitieren Sie von den zahlreichen Vorteilen eines
-                anerkannten Berufsverbands.
-              </p>
-              <p className="leading-relaxed">
-                Die Mitgliedschaft gewährleistet nicht nur eine regelmäßige
-                Qualitätssicherung durch fortlaufende Fortbildungen und strenge
-                Ethikrichtlinien, sondern ermöglicht auch die Abrechnung mit den
-                Krankenkassen.
-              </p>
+
+            {/* VFO Section */}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+              <div className="text-slate-700">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="relative w-16 h-16 shrink-0">
+                    <Image
+                      src="/assets/vfo-logo.webp"
+                      alt="VFO Logo - Verband Freier Osteopathen"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-slate-900 font-epilogue">
+                    VFO-Mitglied
+                  </h3>
+                </div>
+                <p className="text-lg font-semibold text-slate-900 mb-4">
+                  Verband Freier Osteopathen e.V.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  Als osteopathisches Praxismitglied im VFO profitieren Sie von
+                  den zahlreichen Vorteilen eines anerkannten Berufsverbands.
+                </p>
+                <p className="leading-relaxed">
+                  Die Mitgliedschaft gewährleistet regelmäßige Qualitätssicherung durch
+                  fortlaufende Fortbildungen und ermöglicht die Abrechnung mit den Krankenkassen.
+                </p>
+              </div>
             </div>
           </div>
         </div>

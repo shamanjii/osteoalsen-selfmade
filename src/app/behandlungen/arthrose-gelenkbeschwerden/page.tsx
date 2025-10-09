@@ -158,11 +158,11 @@ export default function ArthrosePage() {
                 Die Auswirkungen von chronischen Gelenkschmerzen gehen weit über das betroffene Gelenk hinaus. Sie beeinträchtigen
                 die Lebensqualität erheblich: Hobbys müssen aufgegeben werden, die Unabhängigkeit schwindet, soziale Kontakte leiden,
                 Schlafstörungen durch nächtliche Schmerzen sind häufig, und die psychische Belastung durch chronische Schmerzen
-                kann zu Depression und Angststörungen führen. Viele Betroffene fühlen sich in ihrem eigenen Körper gefangen.
+                kann zu Depression und Angststörungen führen. Viele Betroffene in Hamburg und Umgebung fühlen sich in ihrem eigenen Körper gefangen.
               </p>
 
               <p>
-                Als Osteopath sehe ich täglich, wie Arthrose und Gelenkbeschwerden das Leben meiner Patienten einschränken – aber
+                Als Osteopath in Hamburg sehe ich täglich, wie Arthrose und Gelenkbeschwerden das Leben meiner Patienten einschränken – aber
                 auch, wie deutlich ihre Lebensqualität durch eine ganzheitliche osteopathische Behandlung verbessert werden kann.
                 Mein Ansatz geht über die reine Symptombehandlung hinaus: Ich schaue auf den ganzen Menschen, die Ursachen der
                 Fehlbelastungen und die kompensatorischen Muster, die sich über Jahre entwickelt haben.
@@ -678,7 +678,7 @@ export default function ArthrosePage() {
 
               <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                 <p>
-                  <strong>Patientin:</strong> Helga, 68 Jahre, pensionierte Lehrerin<br />
+                  <strong>Patientin:</strong> Helga, 68 Jahre, pensionierte Lehrerin aus Hamburg-Eimsbüttel<br />
                   <strong>Diagnose:</strong> Fortgeschrittene Kniearthrose beidseits (Gonarthrose Grad 3), rechts stärker betroffen<br />
                   <strong>Beschwerden:</strong> Seit 4 Jahren zunehmende Knieschmerzen, besonders beim Treppensteigen und nach längerem
                   Gehen. Gehstrecke auf ca. 500 Meter reduziert, danach starke Schmerzen und Schwellung. Morgendliche Steifigkeit
@@ -1042,8 +1042,8 @@ export default function ArthrosePage() {
         {/* CTA Section */}
         <FadeInSection delay={500}>
           <TreatmentCTA
-            title="Bereit für mehr Beweglichkeit und Lebensqualität?"
-            description="Arthrose muss Ihren Alltag nicht dominieren. Vereinbaren Sie jetzt einen Termin und lassen Sie uns gemeinsam einen individuellen Behandlungsplan entwickeln. In einem ausführlichen Erstgespräch analysiere ich Ihre Situation und zeige Ihnen, wie Osteopathie Ihnen helfen kann."
+            title="Arthrose-Behandlung in Hamburg – Bereit für mehr Beweglichkeit?"
+            description="Arthrose muss Ihren Alltag nicht dominieren. Vereinbaren Sie jetzt einen Termin in meiner Praxis in Hamburg und lassen Sie uns gemeinsam einen individuellen Behandlungsplan entwickeln. In einem ausführlichen Erstgespräch analysiere ich Ihre Situation und zeige Ihnen, wie Osteopathie Ihnen helfen kann."
           />
         </FadeInSection>
       </div>

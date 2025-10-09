@@ -132,7 +132,7 @@ export default function NackenschmerzenPage() {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Nackenschmerzen gehören zu den häufigsten Beschwerden unserer modernen Gesellschaft. Etwa <strong>80% aller Menschen</strong> erleben mindestens einmal in ihrem Leben signifikante Nackenschmerzen, und für viele werden sie zu einem chronischen Begleiter. Die Ursachen liegen oft in unserem Alltag: stundenlange Bildschirmarbeit, Smartphone-Nutzung mit geneigtem Kopf, Stress, der sich in verspannten Schultern manifestiert, und Schlafpositionen, die der sensiblen Halswirbelsäule nicht gerecht werden.
+                Nackenschmerzen gehören zu den häufigsten Beschwerden unserer modernen Gesellschaft. Etwa <strong>80% aller Menschen</strong> erleben mindestens einmal in ihrem Leben signifikante Nackenschmerzen, und für viele werden sie zu einem chronischen Begleiter. Auch in Hamburg leiden viele Menschen unter den Folgen von stundenlanger Bildschirmarbeit, Smartphone-Nutzung mit geneigtem Kopf, Stress, der sich in verspannten Schultern manifestiert, und Schlafpositionen, die der sensiblen Halswirbelsäule nicht gerecht werden.
               </p>
 
               <p>
@@ -140,11 +140,11 @@ export default function NackenschmerzenPage() {
               </p>
 
               <p>
-                Die Auswirkungen von Nackenschmerzen gehen weit über lokale Beschwerden hinaus. Sie beeinträchtigen die Lebensqualität erheblich: Konzentrationsfähigkeit leidet, Schlaf wird unruhig, Arbeitsfähigkeit nimmt ab, und häufig gesellen sich Kopfschmerzen, Schwindel oder Taubheitsgefühle in den Armen hinzu. Viele Betroffene fühlen sich in ihrem Alltag massiv eingeschränkt und suchen verzweifelt nach Lösungen.
+                Die Auswirkungen von Nackenschmerzen gehen weit über lokale Beschwerden hinaus. Sie beeinträchtigen die Lebensqualität erheblich: Konzentrationsfähigkeit leidet, Schlaf wird unruhig, Arbeitsfähigkeit nimmt ab, und häufig gesellen sich Kopfschmerzen, Schwindel oder Taubheitsgefühle in den Armen hinzu. Viele Betroffene in Hamburg und Umgebung fühlen sich in ihrem Alltag massiv eingeschränkt und suchen nach wirksamen Lösungen.
               </p>
 
               <p>
-                Osteopathie bietet einen ganzheitlichen Ansatz zur Behandlung von Nackenschmerzen. Statt nur die Symptome zu behandeln, werden die zugrundeliegenden Ursachen identifiziert – sei es eine Blockade der Halswirbelsäule, Verspannungen der tiefen Nackenmuskulatur, Bewegungseinschränkungen der Brustwirbelsäule oder des Schultergürtels, oder auch viszerale Verbindungen über das Zwerchfell. Die Behandlung ist sanft, evidenzbasiert und zielt darauf ab, die natürliche Beweglichkeit wiederherzustellen und die Selbstheilungskräfte zu aktivieren.
+                Osteopathie in Hamburg bietet einen ganzheitlichen Ansatz zur Behandlung von Nackenschmerzen. Statt nur die Symptome zu behandeln, werden die zugrundeliegenden Ursachen identifiziert – sei es eine Blockade der Halswirbelsäule, Verspannungen der tiefen Nackenmuskulatur, Bewegungseinschränkungen der Brustwirbelsäule oder des Schultergürtels, oder auch viszerale Verbindungen über das Zwerchfell. Die Behandlung ist sanft, evidenzbasiert und zielt darauf ab, die natürliche Beweglichkeit wiederherzustellen und die Selbstheilungskräfte zu aktivieren.
               </p>
             </div>
 
@@ -464,7 +464,7 @@ export default function NackenschmerzenPage() {
               <div className="prose prose-lg max-w-none text-gray-800">
                 <p className="font-semibold text-indigo-900 mb-4">Ausgangssituation:</p>
                 <p className="mb-6">
-                  Thomas kam mit seit zwei Jahren bestehenden chronischen Nackenschmerzen in die Praxis. Die Beschwerden hatten sich schleichend entwickelt und waren in den letzten Monaten deutlich schlimmer geworden. Mittlerweile strahlten die Schmerzen regelmäßig in den rechten Arm bis in die Hand aus, begleitet von Kribbeln im Daumen und Zeigefinger. Als Software-Entwickler verbringt Thomas täglich etwa 10 Stunden vor dem Computer. Bisherige Therapieversuche mit Physiotherapie und Schmerzmitteln hatten nur kurzfristige Linderung gebracht.
+                  Thomas, ein 38-jähriger Software-Entwickler aus Hamburg-Eimsbüttel, kam mit seit zwei Jahren bestehenden chronischen Nackenschmerzen in die Praxis. Die Beschwerden hatten sich schleichend entwickelt und waren in den letzten Monaten deutlich schlimmer geworden. Mittlerweile strahlten die Schmerzen regelmäßig in den rechten Arm bis in die Hand aus, begleitet von Kribbeln im Daumen und Zeigefinger. Als Software-Entwickler verbringt Thomas täglich etwa 10 Stunden vor dem Computer. Bisherige Therapieversuche mit Physiotherapie und Schmerzmitteln hatten nur kurzfristige Linderung gebracht.
                 </p>
 
                 <p className="font-semibold text-indigo-900 mb-4">Befund:</p>
@@ -737,39 +737,34 @@ export default function NackenschmerzenPage() {
                 <p className="text-gray-600 text-sm">Zervikogene Kopfschmerzen haben ihren Ursprung oft in der HWS</p>
               </Link>
 
-              <Link href="/behandlungen/schwindel" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">Schwindel & Gleichgewichtsstörungen</h3>
-                <p className="text-gray-600 text-sm">HWS-bedingte Schwindelformen und deren Behandlung</p>
-              </Link>
-
               <Link href="/behandlungen/rueckenschmerzen" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Rückenschmerzen</h3>
                 <p className="text-gray-600 text-sm">Zusammenhänge zwischen BWS, LWS und Nacken</p>
               </Link>
 
-              <Link href="/behandlungen/cmd" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">CMD & Kiefergelenksbeschwerden</h3>
-                <p className="text-gray-600 text-sm">Kieferprobleme beeinflussen oft die Halswirbelsäule</p>
+              <Link href="/behandlungen/arthrose-gelenkbeschwerden" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+                <h3 className="font-semibold text-lg text-blue-700 mb-2">Arthrose & Gelenkbeschwerden</h3>
+                <p className="text-gray-600 text-sm">Wirbelsäulenarthrose kann auch HWS-Schmerzen verursachen</p>
               </Link>
 
-              <Link href="/behandlungen/schulterschmerzen" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">Schulterschmerzen</h3>
-                <p className="text-gray-600 text-sm">Schulter und Nacken sind funktionell eng verbunden</p>
-              </Link>
-
-              <Link href="/behandlungen/stress-erschoepfung" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">Stress & Erschöpfung</h3>
-                <p className="text-gray-600 text-sm">Psychosomatische Zusammenhänge bei Nackenverspannungen</p>
-              </Link>
-
-              <Link href="/behandlungen/sportverletzungen" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">Sportverletzungen</h3>
+              <Link href="/behandlungen/sportosteopathie" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+                <h3 className="font-semibold text-lg text-blue-700 mb-2">Sportosteopathie</h3>
                 <p className="text-gray-600 text-sm">HWS-Verletzungen bei Sport und deren Rehabilitation</p>
               </Link>
 
-              <Link href="/fuer-wen/bueroarbeit" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
-                <h3 className="font-semibold text-lg text-blue-700 mb-2">Osteopathie für Büroarbeit</h3>
-                <p className="text-gray-600 text-sm">Spezifische Ansätze für Menschen mit Bildschirmarbeit</p>
+              <Link href="/behandlungen/stress-burnout" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+                <h3 className="font-semibold text-lg text-blue-700 mb-2">Stress & Burnout</h3>
+                <p className="text-gray-600 text-sm">Psychosomatische Zusammenhänge bei Nackenverspannungen</p>
+              </Link>
+
+              <Link href="/behandlungen/verdauungsbeschwerden" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+                <h3 className="font-semibold text-lg text-blue-700 mb-2">Verdauungsbeschwerden</h3>
+                <p className="text-gray-600 text-sm">Viszerale Verbindungen über Zwerchfell können Nackenschmerzen beeinflussen</p>
+              </Link>
+
+              <Link href="/was-ist-osteopathie" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+                <h3 className="font-semibold text-lg text-blue-700 mb-2">Was ist Osteopathie?</h3>
+                <p className="text-gray-600 text-sm">Grundlagen und Philosophie der osteopathischen Behandlung</p>
               </Link>
 
               <Link href="/behandlungen" className="block p-5 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-300 hover:border-blue-500 hover:shadow-lg transition-all">
@@ -783,8 +778,8 @@ export default function NackenschmerzenPage() {
         {/* CTA */}
         <FadeInSection delay={500}>
           <TreatmentCTA
-            title="Nackenschmerzen behandeln lassen?"
-            description="Vereinbaren Sie einen Termin für eine osteopathische Untersuchung und Behandlung Ihrer Nackenbeschwerden."
+            title="Nackenschmerzen in Hamburg behandeln lassen?"
+            description="Vereinbaren Sie einen Termin für eine osteopathische Untersuchung und Behandlung Ihrer Nackenbeschwerden in meiner Praxis in Hamburg."
           />
         </FadeInSection>
 
