@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 interface DropdownItem {
   label: string;
@@ -31,10 +32,16 @@ export default function DropdownMenu({
 }: DropdownMenuProps) {
   const [internalIsOpen, setInternalIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   // Use external state if provided, otherwise use internal state
   const isOpen = externalIsOpen !== undefined ? externalIsOpen : internalIsOpen;
   const setIsOpen = onOpenChange || setInternalIsOpen;
+
+  // Close dropdown when route changes (navigation successful)
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname, setIsOpen]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -47,20 +54,14 @@ export default function DropdownMenu({
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [setIsOpen]);
-
-  const handleItemClick = (e: React.MouseEvent) => {
-    // Don't prevent default - let the navigation happen first
-    // Then close the dropdown after a small delay
-    setTimeout(() => {
-      setIsOpen(false);
-      onItemClick?.();
-    }, 0);
-  };
+    // Only add listener when dropdown is open
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+  }, [isOpen, setIsOpen]);
 
   return (
     <div
@@ -104,7 +105,6 @@ export default function DropdownMenu({
             <Link
               key={item.href}
               href={item.href}
-              onClick={handleItemClick}
               className="flex items-center gap-3 px-4 py-2.5 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
             >
               {item.icon && <span className="text-xl">{item.icon}</span>}
@@ -115,7 +115,6 @@ export default function DropdownMenu({
             <div className="border-t border-slate-200 mt-2 pt-2">
               <Link
                 href={allLinkHref}
-                onClick={handleItemClick}
                 className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors"
               >
                 <span className="text-sm">{allLinkLabel}</span>
