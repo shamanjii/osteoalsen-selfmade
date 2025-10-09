@@ -113,7 +113,7 @@ export default function ArthrosePage() {
         ]}
       />
 
-      <FAQSchema items={faqItems} />
+      <FAQSchema faqs={faqItems} />
 
       <StickyBookingButton />
 
