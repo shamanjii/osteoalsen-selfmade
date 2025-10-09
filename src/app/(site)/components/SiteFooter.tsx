@@ -158,8 +158,8 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <div className="text-slate-900 font-medium">Eimsbüttel</div>
-                                <div className="text-slate-600">Eppendorfer Weg 171</div>
-                                <div className="text-slate-600">20253 Hamburg</div>
+                                <div className="text-slate-600">Stresemannallee 118</div>
+                                <div className="text-slate-600">22529 Hamburg</div>
                             </li>
                         </ul>
                     </div>
