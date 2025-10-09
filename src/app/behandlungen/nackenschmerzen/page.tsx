@@ -112,7 +112,7 @@ export default function NackenschmerzenPage() {
   return (
     <>
       <MedicalConditionSchema data={medicalConditionData} />
-      <FAQSchema faqs={faqData} />
+      <FAQSchema faqs={faqData.questions} />
       <StickyBookingButton />
 
       <Breadcrumbs items={breadcrumbItems} />
