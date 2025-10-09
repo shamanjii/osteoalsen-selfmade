@@ -53,9 +53,13 @@ export default function DropdownMenu({
     };
   }, [setIsOpen]);
 
-  const handleItemClick = () => {
-    setIsOpen(false);
-    onItemClick?.();
+  const handleItemClick = (e: React.MouseEvent) => {
+    // Don't prevent default - let the navigation happen first
+    // Then close the dropdown after a small delay
+    setTimeout(() => {
+      setIsOpen(false);
+      onItemClick?.();
+    }, 0);
   };
 
   return (
