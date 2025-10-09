@@ -95,10 +95,18 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/schwangerschaft"
+                                    href="/behandlungen/nackenschmerzen"
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
-                                    Schwangerschaft & Postpartal
+                                    Nackenschmerzen & HWS
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="/behandlungen/arthrose-gelenkbeschwerden"
+                                    className="text-slate-600 hover:text-slate-900 transition-colors"
+                                >
+                                    Arthrose & Gelenkbeschwerden
                                 </Link>
                             </li>
                         </ul>

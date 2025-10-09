@@ -10,11 +10,13 @@ Allow: /terminbuchung
 Allow: /assets/
 
 # Disallow - nicht indexieren
-Disallow: /impressum
-Disallow: /datenschutz
 Disallow: /admin
 Disallow: /_next/
 Disallow: /api/
+
+# Rechtliche Seiten erlauben (aber noindex via Meta-Tag)
+Allow: /impressum
+Allow: /datenschutz
 
 # Sitemap Location
 Sitemap: https://www.osteoalsen.de/sitemap.xml

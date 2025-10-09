@@ -145,8 +145,8 @@ export default function BehandlungenPage() {
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               Ganzheitliche osteopathische Behandlungen für verschiedene
-              Beschwerdebilder. Mit über 10 Jahren Erfahrung und
-              VFO-Zertifizierung.
+              Beschwerdebilder. BAO-zertifiziert mit über 5.000 Ausbildungsstunden
+              und langjähriger Erfahrung.
             </p>
           </div>
 
@@ -169,10 +169,10 @@ export default function BehandlungenPage() {
             <div className="text-center">
               <div className="text-4xl mb-4">🎓</div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                VFO-zertifiziert
+                BAO-zertifiziert
               </h3>
               <p className="text-slate-600">
-                Über 1.350 Ausbildungsstunden und kontinuierliche
+                Über 5.000 Ausbildungsstunden nach BAO-Standard und kontinuierliche
                 Weiterbildung nach höchsten Qualitätsstandards.
               </p>
             </div>

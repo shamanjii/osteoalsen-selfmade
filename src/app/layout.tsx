@@ -79,10 +79,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
+    google: 'nnIEz1Mhrb_3VZVExNAuTPU70zcLawqsWqvUyhjK3MM',
     other: {
-      bing: 'your-bing-verification-code',
+      'msvalidate.01': 'B3E2129EE88056382284A0C41510D535',
     },
   },
 };
