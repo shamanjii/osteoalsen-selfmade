@@ -33,46 +33,80 @@ export default function DropdownMenu({
   const [internalIsOpen, setInternalIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const isControlled = externalIsOpen !== undefined && onOpenChange !== undefined;
 
-  // Use external state if provided, otherwise use internal state
-  const isOpen = externalIsOpen !== undefined ? externalIsOpen : internalIsOpen;
-  const setIsOpen = onOpenChange || setInternalIsOpen;
+  // Determine current open state
+  const isOpen = isControlled ? externalIsOpen : internalIsOpen;
+
+  // Unified function to change state (works for both controlled and uncontrolled)
+  const handleSetIsOpen = (open: boolean) => {
+    if (isControlled && onOpenChange) {
+      onOpenChange(open);
+    } else {
+      setInternalIsOpen(open);
+    }
+  };
 
   // Close dropdown when route changes (navigation successful)
   useEffect(() => {
-    setIsOpen(false);
-  }, [pathname, setIsOpen]);
+    if (isOpen) {
+      handleSetIsOpen(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
+    if (!isOpen) return;
+
     function handleClickOutside(event: MouseEvent) {
       if (
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false);
+        handleSetIsOpen(false);
+        onItemClick?.();
       }
     }
 
-    // Only add listener when dropdown is open
-    if (isOpen) {
+    // Small delay to avoid closing immediately on open
+    const timeoutId = setTimeout(() => {
       document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
+    }, 0);
+
+    return () => {
+      clearTimeout(timeoutId);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, onItemClick]);
+
+  const toggleDropdown = () => {
+    handleSetIsOpen(!isOpen);
+  };
+
+  const handleMouseEnter = () => {
+    if (!isOpen) {
+      handleSetIsOpen(true);
     }
-  }, [isOpen, setIsOpen]);
+  };
+
+  const handleMouseLeave = () => {
+    // Only close on mouse leave if using hover behavior
+    // Commenting out for now to allow clicking
+    // handleSetIsOpen(false);
+  };
 
   return (
     <div
       ref={dropdownRef}
       className="relative"
+      onMouseLeave={handleMouseLeave}
     >
       {/* Dropdown Trigger */}
       <button
         type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        onMouseEnter={() => setIsOpen(true)}
+        onClick={toggleDropdown}
+        onMouseEnter={handleMouseEnter}
         className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200 flex items-center gap-1"
         aria-expanded={isOpen}
         aria-haspopup="true"
@@ -99,28 +133,29 @@ export default function DropdownMenu({
       {isOpen && (
         <div
           className="absolute top-full left-0 pt-2 w-64 z-50"
+          onMouseEnter={() => handleSetIsOpen(true)}
         >
           <div className="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
-          {items.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="flex items-center gap-3 px-4 py-2.5 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
-            >
-              {item.icon && <span className="text-xl">{item.icon}</span>}
-              <span className="text-sm font-medium">{item.label}</span>
-            </Link>
-          ))}
-          {showAllLink && (
-            <div className="border-t border-slate-200 mt-2 pt-2">
+            {items.map((item) => (
               <Link
-                href={allLinkHref}
-                className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors"
+                key={item.href}
+                href={item.href}
+                className="flex items-center gap-3 px-4 py-2.5 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors block"
               >
-                <span className="text-sm">{allLinkLabel}</span>
+                {item.icon && <span className="text-xl">{item.icon}</span>}
+                <span className="text-sm font-medium">{item.label}</span>
               </Link>
-            </div>
-          )}
+            ))}
+            {showAllLink && (
+              <div className="border-t border-slate-200 mt-2 pt-2">
+                <Link
+                  href={allLinkHref}
+                  className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors block"
+                >
+                  <span className="text-sm">{allLinkLabel}</span>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       )}
