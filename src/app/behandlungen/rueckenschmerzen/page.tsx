@@ -90,6 +90,16 @@ export default function RueckenschmerzenPage() {
             answer:
               "Während Physiotherapie oft symptomorientiert arbeitet und häufig Geräte oder Übungen einsetzt, arbeitet die Osteopathie ausschließlich manuell und ganzheitlich. Osteopathen suchen nach den Ursachen der Rückenschmerzen im gesamten Körper und behandeln nicht nur die schmerzende Stelle. Eine osteopathische Behandlung dauert 45-60 Minuten.",
           },
+          {
+            question: "Kann ich mit akuten Rückenschmerzen direkt zum Osteopathen?",
+            answer:
+              "Ja, bei akuten Rückenschmerzen wie einem Hexenschuss oder einer ISG-Blockade können Sie direkt zu mir kommen. Eine ärztliche Überweisung ist nicht notwendig. Bei sehr starken Schmerzen nach einem Unfall, bei neurologischen Ausfällen (Lähmungen, Taubheit) oder wenn Sie unsicher sind, empfehle ich jedoch zunächst eine ärztliche Abklärung.",
+          },
+          {
+            question: "Hilft Osteopathie auch bei chronischen Rückenschmerzen ohne erkennbare Ursache?",
+            answer:
+              "Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann Osteopathie sehr wirksam sein. Oft finde ich bei der ganzheitlichen Untersuchung Ursachen, die nicht offensichtlich sind: Bewegungseinschränkungen im Becken, Narbengewebe nach alten Operationen, viszerale Dysfunktionen oder fasziale Spannungsketten. Die Erfolgsrate ist besonders hoch, wenn wir die Behandlung mit aktiven Maßnahmen wie Bewegung und Stressmanagement kombinieren.",
+          },
         ]}
       />
       <Breadcrumbs
@@ -153,7 +163,10 @@ export default function RueckenschmerzenPage() {
                 </li>
                 <li>
                   <strong>Nackenschmerzen:</strong> Verspannungen im Bereich der
-                  Halswirbelsäule (HWS) mit Ausstrahlung in Schultern und Arme
+                  Halswirbelsäule (HWS) mit Ausstrahlung in Schultern und Arme, oft verbunden mit{" "}
+                  <Link href="/behandlungen/kopfschmerzen-migraene" className="text-blue-600 hover:text-blue-800 font-medium">
+                    Kopfschmerzen
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -181,6 +194,11 @@ export default function RueckenschmerzenPage() {
                 <li>Bandscheibenvorfall oder -vorwölbung mit Nervenkompression</li>
                 <li>Wirbelgelenkarthrose (Facettensyndrom)</li>
                 <li>Skoliose oder andere Fehlstellungen der Wirbelsäule</li>
+                <li>Muskelverspannungen nach{" "}
+                  <Link href="/behandlungen/sportverletzungen" className="text-blue-600 hover:text-blue-800 font-medium">
+                    Sportverletzungen
+                  </Link>{" "}oder Übertraining
+                </li>
               </ul>
 
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
@@ -198,7 +216,13 @@ export default function RueckenschmerzenPage() {
                 Psychosomatische Faktoren
               </h3>
               <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
-                <li>Chronischer Stress mit dauerhafter Muskelanspannung</li>
+                <li>
+                  Chronischer{" "}
+                  <Link href="/behandlungen/stress-burnout" className="text-blue-600 hover:text-blue-800 font-medium">
+                    Stress und Burnout
+                  </Link>{" "}
+                  mit dauerhafter Muskelanspannung
+                </li>
                 <li>Emotionale Belastungen, die sich im Rücken manifestieren</li>
                 <li>Angst und Depression, die Schmerzen verstärken können</li>
                 <li>Schlafmangel und Erschöpfung</li>
@@ -215,7 +239,11 @@ export default function RueckenschmerzenPage() {
             </h2>
             <div className="space-y-4 text-slate-700">
               <p className="leading-relaxed">
-                In der Osteopathie betrachten wir Rückenschmerzen nicht isoliert,
+                In der{" "}
+                <Link href="/was-ist-osteopathie" className="text-blue-600 hover:text-blue-800 font-medium">
+                  Osteopathie
+                </Link>{" "}
+                betrachten wir Rückenschmerzen nicht isoliert,
                 sondern als Symptom eines größeren Zusammenhangs. Oft liegt die
                 Ursache nicht dort, wo der Schmerz empfunden wird.
               </p>
@@ -227,7 +255,11 @@ export default function RueckenschmerzenPage() {
                   Bewegungseinschränkungen in Becken, Hüfte oder Füßen
                 </li>
                 <li>
-                  Viszerale Probleme (z.B. Darmverklebungen nach Operationen)
+                  Viszerale Probleme wie{" "}
+                  <Link href="/behandlungen/verdauungsbeschwerden" className="text-blue-600 hover:text-blue-800 font-medium">
+                    Verdauungsbeschwerden
+                  </Link>{" "}
+                  oder Darmverklebungen nach Operationen
                 </li>
                 <li>
                   Fasziale Spannungen entlang der gesamten Körperrückseite
@@ -262,7 +294,10 @@ export default function RueckenschmerzenPage() {
                   <p className="text-slate-700">
                     Wir besprechen Ihre Beschwerden, den zeitlichen Verlauf,
                     Ihre Krankengeschichte und Ihren Alltag. Wann treten die
-                    Schmerzen auf? Was verschlimmert oder verbessert sie?
+                    Schmerzen auf? Was verschlimmert oder verbessert sie? Mehr zum{" "}
+                    <Link href="/kosten-ablauf#ablauf" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Behandlungsablauf
+                    </Link>.
                   </p>
                 </div>
               </div>
@@ -343,6 +378,20 @@ export default function RueckenschmerzenPage() {
                 Diagnostik. Bei schweren neurologischen Ausfällen, Unfällen oder
                 unklaren Beschwerden sollte vorher ein Arzt konsultiert werden.
               </p>
+
+              {/* Patient Example */}
+              <div className="mt-6 p-6 bg-white border-l-4 border-slate-900 rounded-r-lg">
+                <p className="text-sm text-slate-600 italic mb-2">Praxisbeispiel aus meiner Praxis in Hamburg:</p>
+                <p className="text-slate-700 leading-relaxed">
+                  Ein 42-jähriger Patient kam mit chronischen Rückenschmerzen seit über 6 Monaten zu mir.
+                  Vorherige Behandlungen (Physiotherapie, Schmerzmittel) hatten nur kurzfristig geholfen.
+                  Bei der Untersuchung fand ich eine ISG-Blockade rechts, ausgelöst durch eine alte
+                  Sprunggelenksverletzung, die zu einem veränderten Gangbild geführt hatte. Nach 5
+                  osteopathischen Behandlungen, bei denen ich sowohl das ISG als auch das Sprunggelenk und
+                  die Faszien behandelte, war er weitgehend schmerzfrei. Ergänzend machte er die
+                  empfohlenen Stabilisationsübungen zu Hause.
+                </p>
+              </div>
             </div>
           </section>
           </FadeInSection>
@@ -691,6 +740,45 @@ export default function RueckenschmerzenPage() {
                   manuell und ganzheitlich. Osteopathen suchen nach den Ursachen der
                   Rückenschmerzen im gesamten Körper und behandeln nicht nur die
                   schmerzende Stelle. Eine osteopathische Behandlung dauert 45-60 Minuten.
+                </p>
+              </details>
+
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">🏥</span>
+                    Kann ich mit akuten Rückenschmerzen direkt zum Osteopathen?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
+                    ▼
+                  </span>
+                </summary>
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                  Ja, bei akuten Rückenschmerzen wie einem Hexenschuss oder einer ISG-Blockade
+                  können Sie direkt zu mir kommen. Eine ärztliche Überweisung ist nicht notwendig.
+                  Bei sehr starken Schmerzen nach einem Unfall, bei neurologischen Ausfällen
+                  (Lähmungen, Taubheit) oder wenn Sie unsicher sind, empfehle ich jedoch zunächst
+                  eine ärztliche Abklärung.
+                </p>
+              </details>
+
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">🔬</span>
+                    Hilft Osteopathie bei chronischen Rückenschmerzen ohne erkennbare Ursache?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
+                    ▼
+                  </span>
+                </summary>
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                  Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann Osteopathie sehr
+                  wirksam sein. Oft finde ich bei der ganzheitlichen Untersuchung Ursachen, die nicht
+                  offensichtlich sind: Bewegungseinschränkungen im Becken, Narbengewebe nach alten
+                  Operationen, viszerale Dysfunktionen oder fasziale Spannungsketten. Die Erfolgsrate
+                  ist besonders hoch, wenn wir die Behandlung mit aktiven Maßnahmen wie Bewegung und
+                  Stressmanagement kombinieren.
                 </p>
               </details>
             </div>
