@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import TreatmentHero from '@/components/TreatmentHero';
-import TreatmentCTA from '@/components/TreatmentCTA';
+import TreatmentHero from '../components/TreatmentHero';
+import TreatmentCTA from '../components/TreatmentCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import MedicalConditionSchema from '@/components/schemas/MedicalConditionSchema';
-import FAQSchema from '@/components/schemas/FAQSchema';
+import MedicalConditionSchema from '@/components/MedicalConditionSchema';
+import FAQSchema from '@/components/FAQSchema';
 import FadeInSection from '@/components/FadeInSection';
 import StickyBookingButton from '@/components/StickyBookingButton';
 import Link from 'next/link';
