@@ -161,7 +161,7 @@ export default function SiteHeader() {
                                     { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen", icon: "🦴" },
                                     { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene", icon: "🧠" },
                                     { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden", icon: "🫁" },
-                                    { label: "Sportverletzungen", href: "/behandlungen/sportverletzungen", icon: "⚽" },
+                                    { label: "Sportosteopathie", href: "/behandlungen/sportosteopathie", icon: "⚽" },
                                     { label: "Stress & Burnout", href: "/behandlungen/stress-burnout", icon: "🧘" },
                                     { label: "Schwangerschaft", href: "/behandlungen/schwangerschaft", icon: "🤰" },
                                 ]}
@@ -300,12 +300,12 @@ export default function SiteHeader() {
                                         <span>Verdauungsbeschwerden</span>
                                     </Link>
                                     <Link
-                                        href="/behandlungen/sportverletzungen"
+                                        href="/behandlungen/sportosteopathie"
                                         onClick={() => setMobileOpen(false)}
                                         className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         <span>⚽</span>
-                                        <span>Sportverletzungen</span>
+                                        <span>Sportosteopathie</span>
                                     </Link>
                                     <Link
                                         href="/behandlungen/stress-burnout"

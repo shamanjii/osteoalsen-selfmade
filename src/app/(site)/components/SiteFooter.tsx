@@ -79,10 +79,10 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/sportverletzungen"
+                                    href="/behandlungen/sportosteopathie"
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
-                                    Sportverletzungen
+                                    Sportosteopathie
                                 </Link>
                             </li>
                             <li>
