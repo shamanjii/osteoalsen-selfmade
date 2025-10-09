@@ -94,8 +94,9 @@ export default function DropdownMenu({
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-slate-200 py-2 z-50"
+          className="absolute top-full left-0 pt-2 w-64 z-50"
         >
+          <div className="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
           {items.map((item) => (
             <Link
               key={item.href}
@@ -118,6 +119,7 @@ export default function DropdownMenu({
               </Link>
             </div>
           )}
+          </div>
         </div>
       )}
     </div>
