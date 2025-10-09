@@ -53,12 +53,28 @@ const treatments = [
     keywords: ["Bandscheibe", "ISG", "Hexenschuss", "Verspannungen"],
   },
   {
+    title: "Nackenschmerzen & HWS",
+    description:
+      "Behandlung von Nackenschmerzen, HWS-Syndrom und Schulter-Nacken-Verspannungen. Sanfte Mobilisation und ganzheitlicher Ansatz.",
+    icon: "🔄",
+    href: "/behandlungen/nackenschmerzen",
+    keywords: ["HWS-Syndrom", "Nackenverspannung", "Schulter-Nacken", "Zervikalsyndrom"],
+  },
+  {
     title: "Kopfschmerzen & Migräne",
     description:
       "Sanfte Behandlung von Spannungskopfschmerzen, Migräne und Kieferbeschwerden durch manuelle Techniken und ganzheitlichen Ansatz.",
     icon: "🧠",
     href: "/behandlungen/kopfschmerzen-migraene",
     keywords: ["Migräne", "Spannungskopfschmerz", "CMD", "Kiefergelenk"],
+  },
+  {
+    title: "Arthrose & Gelenkbeschwerden",
+    description:
+      "Osteopathische Behandlung bei Arthrose, Knie-, Hüft- und Gelenkschmerzen. Schmerzlinderung und Verbesserung der Beweglichkeit.",
+    icon: "🦵",
+    href: "/behandlungen/arthrose-gelenkbeschwerden",
+    keywords: ["Arthrose", "Knieschmerzen", "Hüftarthrose", "Gelenkschmerzen"],
   },
   {
     title: "Verdauungsbeschwerden",
@@ -83,14 +99,6 @@ const treatments = [
     icon: "🧘",
     href: "/behandlungen/stress-burnout",
     keywords: ["Erschöpfung", "Burnout", "Nervensystem", "Entspannung"],
-  },
-  {
-    title: "Schwangerschaft & Postpartal",
-    description:
-      "Begleitung während und nach der Schwangerschaft. Beckenbodenprobleme, Rückenschmerzen, Geburtsvorbereitung und Nachsorge.",
-    icon: "🤰",
-    href: "/behandlungen/schwangerschaft",
-    keywords: ["Beckenboden", "Geburtsvorbereitung", "Rückbildung"],
   },
 ];
 

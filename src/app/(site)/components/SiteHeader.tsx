@@ -159,11 +159,12 @@ export default function SiteHeader() {
                                 label="Behandlungen"
                                 items={[
                                     { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen", icon: "🦴" },
+                                    { label: "Nackenschmerzen & HWS", href: "/behandlungen/nackenschmerzen", icon: "🔄" },
                                     { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene", icon: "🧠" },
+                                    { label: "Arthrose & Gelenkschmerzen", href: "/behandlungen/arthrose-gelenkbeschwerden", icon: "🦵" },
                                     { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden", icon: "🫁" },
                                     { label: "Sportosteopathie", href: "/behandlungen/sportosteopathie", icon: "⚽" },
                                     { label: "Stress & Burnout", href: "/behandlungen/stress-burnout", icon: "🧘" },
-                                    { label: "Schwangerschaft", href: "/behandlungen/schwangerschaft", icon: "🤰" },
                                 ]}
                                 showAllLink={true}
                                 isOpen={openDropdown === "behandlungen"}
@@ -284,12 +285,28 @@ export default function SiteHeader() {
                                         <span>Rückenschmerzen</span>
                                     </Link>
                                     <Link
+                                        href="/behandlungen/nackenschmerzen"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                    >
+                                        <span>🔄</span>
+                                        <span>Nackenschmerzen & HWS</span>
+                                    </Link>
+                                    <Link
                                         href="/behandlungen/kopfschmerzen-migraene"
                                         onClick={() => setMobileOpen(false)}
                                         className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         <span>🧠</span>
                                         <span>Kopfschmerzen & Migräne</span>
+                                    </Link>
+                                    <Link
+                                        href="/behandlungen/arthrose-gelenkbeschwerden"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                    >
+                                        <span>🦵</span>
+                                        <span>Arthrose & Gelenkschmerzen</span>
                                     </Link>
                                     <Link
                                         href="/behandlungen/verdauungsbeschwerden"
@@ -314,14 +331,6 @@ export default function SiteHeader() {
                                     >
                                         <span>🧘</span>
                                         <span>Stress & Burnout</span>
-                                    </Link>
-                                    <Link
-                                        href="/behandlungen/schwangerschaft"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>🤰</span>
-                                        <span>Schwangerschaft</span>
                                     </Link>
                                 </div>
                             </div>
