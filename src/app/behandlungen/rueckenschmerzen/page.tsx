@@ -4,6 +4,8 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
+import StickyBookingButton from "@/components/StickyBookingButton";
+import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -48,6 +50,7 @@ export const metadata: Metadata = {
 export default function RueckenschmerzenPage() {
   return (
     <>
+      <StickyBookingButton />
       <MedicalConditionSchema
         name="Rückenschmerzen"
         description="Akute und chronische Rückenschmerzen, Bandscheibenvorfälle, ISG-Blockaden und Verspannungen im unteren Rücken"
@@ -106,6 +109,7 @@ export default function RueckenschmerzenPage() {
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           {/* Problem Description */}
+          <FadeInSection>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Rückenschmerzen – ein Volksleiden
@@ -154,8 +158,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Ursachen */}
+          <FadeInSection delay={100}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Häufige Ursachen von Rückenschmerzen
@@ -199,8 +205,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Osteopathic Approach */}
+          <FadeInSection delay={150}>
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Der osteopathische Ansatz
@@ -234,61 +242,85 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Treatment Process */}
+          <FadeInSection delay={200}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Ablauf der Behandlung
             </h2>
             <div className="space-y-6">
-              <div className="border-l-4 border-slate-900 pl-6">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                  1. Ausführliche Anamnese
-                </h3>
-                <p className="text-slate-700">
-                  Wir besprechen Ihre Beschwerden, den zeitlichen Verlauf,
-                  Ihre Krankengeschichte und Ihren Alltag. Wann treten die
-                  Schmerzen auf? Was verschlimmert oder verbessert sie?
-                </p>
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue flex items-center gap-2">
+                    <span>📋</span> Ausführliche Anamnese
+                  </h3>
+                  <p className="text-slate-700">
+                    Wir besprechen Ihre Beschwerden, den zeitlichen Verlauf,
+                    Ihre Krankengeschichte und Ihren Alltag. Wann treten die
+                    Schmerzen auf? Was verschlimmert oder verbessert sie?
+                  </p>
+                </div>
               </div>
 
-              <div className="border-l-4 border-slate-900 pl-6">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                  2. Körperliche Untersuchung
-                </h3>
-                <p className="text-slate-700">
-                  Ich untersuche Ihre gesamte Körperstatik, Beweglichkeit und
-                  Gewebespannung – nicht nur den schmerzenden Bereich. Oft
-                  finde ich relevante Einschränkungen in anderen Körperregionen.
-                </p>
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue flex items-center gap-2">
+                    <span>🔍</span> Körperliche Untersuchung
+                  </h3>
+                  <p className="text-slate-700">
+                    Ich untersuche Ihre gesamte Körperstatik, Beweglichkeit und
+                    Gewebespannung – nicht nur den schmerzenden Bereich. Oft
+                    finde ich relevante Einschränkungen in anderen Körperregionen.
+                  </p>
+                </div>
               </div>
 
-              <div className="border-l-4 border-slate-900 pl-6">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                  3. Osteopathische Behandlung
-                </h3>
-                <p className="text-slate-700">
-                  Mit sanften manuellen Techniken löse ich Blockaden, mobilisiere
-                  eingeschränkte Gelenke und entspanne verspannte Muskulatur.
-                  Dabei arbeite ich an Wirbelsäule, Becken, inneren Organen und
-                  Faszien.
-                </p>
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue flex items-center gap-2">
+                    <span>✋</span> Osteopathische Behandlung
+                  </h3>
+                  <p className="text-slate-700">
+                    Mit sanften manuellen Techniken löse ich Blockaden, mobilisiere
+                    eingeschränkte Gelenke und entspanne verspannte Muskulatur.
+                    Dabei arbeite ich an Wirbelsäule, Becken, inneren Organen und
+                    Faszien.
+                  </p>
+                </div>
               </div>
 
-              <div className="border-l-4 border-slate-900 pl-6">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                  4. Individuelle Empfehlungen
-                </h3>
-                <p className="text-slate-700">
-                  Sie erhalten praktische Tipps für den Alltag, Übungen zur
-                  Stabilisierung und Hinweise zur Prävention zukünftiger
-                  Beschwerden.
-                </p>
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  4
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue flex items-center gap-2">
+                    <span>💡</span> Individuelle Empfehlungen
+                  </h3>
+                  <p className="text-slate-700">
+                    Sie erhalten praktische Tipps für den Alltag, Übungen zur
+                    Stabilisierung und Hinweise zur Prävention zukünftiger
+                    Beschwerden.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Success Outlook */}
+          <FadeInSection delay={250}>
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Behandlungserfolg & Dauer
@@ -313,8 +345,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Osteopathische Techniken */}
+          <FadeInSection delay={100}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Osteopathische Techniken bei Rückenschmerzen
@@ -367,8 +401,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Scientific Basis */}
+          <FadeInSection delay={150}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Wissenschaftliche Grundlage
@@ -394,8 +430,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Akut vs Chronisch */}
+          <FadeInSection delay={200}>
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Akute vs. chronische Rückenschmerzen
@@ -437,8 +475,10 @@ export default function RueckenschmerzenPage() {
               </div>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Spezifische Beschwerdebilder */}
+          <FadeInSection delay={250}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Spezifische Rückenbeschwerden in der Osteopathie
@@ -504,8 +544,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Prävention */}
+          <FadeInSection delay={100}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Rückenschmerzen vorbeugen
@@ -548,21 +590,26 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
+          </FadeInSection>
 
           {/* FAQ */}
+          <FadeInSection delay={150}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
               Häufige Fragen zu Osteopathie bei Rückenschmerzen
             </h2>
             <div className="space-y-4">
-              <details className="bg-white border border-slate-200 rounded-lg p-6 group">
-                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                  Kann Osteopathie bei Bandscheibenvorfall helfen?
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">❓</span>
+                    Kann Osteopathie bei Bandscheibenvorfall helfen?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
                     ▼
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-700">
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Ja, Osteopathie kann bei Bandscheibenvorfällen unterstützend
                   wirken. Wir können die umliegende Muskulatur entspannen,
                   Druck vom Nerv nehmen und die Durchblutung fördern. Bei
@@ -571,14 +618,17 @@ export default function RueckenschmerzenPage() {
                 </p>
               </details>
 
-              <details className="bg-white border border-slate-200 rounded-lg p-6 group">
-                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                  Ist die Behandlung schmerzhaft?
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">💉</span>
+                    Ist die Behandlung schmerzhaft?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
                     ▼
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-700">
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Die Behandlung sollte nicht schmerzhaft sein. Manche
                   Techniken können zunächst etwas unangenehm sein, wenn
                   verspannte Bereiche gelöst werden, aber ich arbeite immer im
@@ -588,14 +638,17 @@ export default function RueckenschmerzenPage() {
                 </p>
               </details>
 
-              <details className="bg-white border border-slate-200 rounded-lg p-6 group">
-                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                  Übernimmt die Krankenkasse die Kosten?
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">💰</span>
+                    Übernimmt die Krankenkasse die Kosten?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
                     ▼
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-700">
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Viele private Krankenkassen übernehmen die vollen Kosten.
                   Auch einige gesetzliche Krankenkassen beteiligen sich an
                   osteopathischen Behandlungen (oft 3-6 Sitzungen pro Jahr mit
@@ -604,14 +657,17 @@ export default function RueckenschmerzenPage() {
                 </p>
               </details>
 
-              <details className="bg-white border border-slate-200 rounded-lg p-6 group">
-                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                  Wie viele Behandlungen brauche ich bei Rückenschmerzen?
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">⏱️</span>
+                    Wie viele Behandlungen brauche ich bei Rückenschmerzen?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
                     ▼
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-700">
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Bei akuten Rückenschmerzen (Hexenschuss, plötzliche Blockade)
                   zeigt sich oft schon nach 1-3 Behandlungen eine deutliche
                   Besserung. Bei chronischen Rückenschmerzen (länger als 3 Monate)
@@ -619,14 +675,17 @@ export default function RueckenschmerzenPage() {
                 </p>
               </details>
 
-              <details className="bg-white border border-slate-200 rounded-lg p-6 group">
-                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                  Was ist der Unterschied zwischen Osteopathie und Physiotherapie bei Rückenschmerzen?
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+              <details className="bg-white border-2 border-slate-200 rounded-xl p-6 group hover:border-slate-400 hover:shadow-lg transition-all duration-300">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-2xl">🤔</span>
+                    Was ist der Unterschied zwischen Osteopathie und Physiotherapie?
+                  </span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">
                     ▼
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-700">
+                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Während Physiotherapie oft symptomorientiert arbeitet und häufig
                   Geräte oder Übungen einsetzt, arbeitet die Osteopathie ausschließlich
                   manuell und ganzheitlich. Osteopathen suchen nach den Ursachen der
@@ -636,8 +695,10 @@ export default function RueckenschmerzenPage() {
               </details>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Wann zum Arzt */}
+          <FadeInSection delay={200}>
           <section className="mb-16 bg-red-50 border border-red-200 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Wann sollten Sie zum Arzt gehen?
@@ -661,8 +722,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Related Treatments */}
+          <FadeInSection delay={250}>
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Verwandte Behandlungen
@@ -703,8 +766,10 @@ export default function RueckenschmerzenPage() {
               </Link>
             </div>
           </section>
+          </FadeInSection>
 
           {/* Info Box */}
+          <FadeInSection delay={100}>
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-epilogue">
               Weitere Informationen
@@ -730,10 +795,12 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
+          </FadeInSection>
         </div>
       </article>
 
       {/* CTA Section */}
+      <FadeInSection delay={150}>
       <section className="py-16 px-4 sm:px-6 bg-slate-50">
         <div className="mx-auto max-w-5xl">
           <TreatmentCTA
@@ -742,6 +809,7 @@ export default function RueckenschmerzenPage() {
           />
         </div>
       </section>
+      </FadeInSection>
     </>
   );
 }
