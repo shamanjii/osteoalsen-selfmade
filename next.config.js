@@ -13,7 +13,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.eTermin.net; object-src 'none'; base-uri 'self';"
+            value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.eTermin.net https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com;"
           },
           {
             key: 'X-Frame-Options',
