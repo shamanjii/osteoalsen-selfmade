@@ -6,37 +6,34 @@ import { useEffect, Suspense } from 'react';
 
 declare global {
   interface Window {
-    dataLayer: unknown[];
-    gtag: (command: string, targetId: string, config?: Record<string, unknown>) => void;
+    dataLayer: Record<string, unknown>[];
   }
 }
 
 const GTM_ID = 'GTM-NRHDBZ59';
-const GA_MEASUREMENT_ID = 'G-8E63RJG34K';
 
 function AnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!window.gtag) return;
+    if (typeof window === 'undefined' || !window.dataLayer) return;
 
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
 
-    window.gtag('config', GA_MEASUREMENT_ID, {
+    // Push page view event to dataLayer for GTM
+    window.dataLayer.push({
+      event: 'page_view',
       page_location: url,
       page_title: document.title,
-      send_page_view: true,
     });
 
     // Track page view for monitoring
-    if (typeof window !== 'undefined') {
-      import('@/lib/monitoring').then(({ monitoring }) => {
-        monitoring.logPageView(url, document.referrer);
-      }).catch(() => {
-        // Monitoring not critical, fail silently
-      });
-    }
+    import('@/lib/monitoring').then(({ monitoring }) => {
+      monitoring.logPageView(url, document.referrer);
+    }).catch(() => {
+      // Monitoring not critical, fail silently
+    });
   }, [pathname, searchParams]);
 
   return null;
@@ -49,7 +46,7 @@ export default function Analytics() {
         <AnalyticsInner />
       </Suspense>
 
-      {/* Google Tag Manager */}
+      {/* Google Tag Manager - Single source of truth */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -60,33 +57,6 @@ export default function Analytics() {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','${GTM_ID}');
-          `,
-        }}
-      />
-
-      {/* Google Analytics 4 (Fallback via gtag.js) */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_location: window.location.href,
-              page_title: document.title,
-              send_page_view: true,
-              // Privacy settings (GDPR compliant)
-              anonymize_ip: true,
-              allow_google_signals: false,
-              allow_ad_personalization_signals: false
-            });
           `,
         }}
       />
@@ -104,23 +74,22 @@ export default function Analytics() {
   );
 }
 
-// Utility functions for tracking events
+// Utility functions for tracking events via GTM dataLayer
 export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', eventName, {
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({
+      event: eventName,
       ...parameters,
-      send_to: GA_MEASUREMENT_ID,
     });
   }
 };
 
 export const trackConversion = (conversionName: string, value?: number) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'conversion', {
-      send_to: GA_MEASUREMENT_ID,
-      event_category: 'conversion',
-      event_label: conversionName,
-      value: value || 1,
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({
+      event: 'conversion',
+      conversion_name: conversionName,
+      conversion_value: value || 1,
     });
   }
 };
