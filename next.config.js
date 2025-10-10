@@ -27,6 +27,22 @@ const nextConfig = {
       }
     ];
   },
+  // Redirect www to non-www for canonical URLs
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.osteoalsen.de',
+          },
+        ],
+        destination: 'https://osteoalsen.de/:path*',
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
