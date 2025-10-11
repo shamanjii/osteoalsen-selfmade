@@ -19,12 +19,15 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .font-epilogue {
@@ -474,4 +477,38 @@ body {
   .qualitaet-section {
     padding: 2rem 1.5rem;
   }
+}
+
+/* Prevent horizontal overflow globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive container constraints */
+.container,
+main,
+article,
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Word breaking for long text */
+h1, h2, h3, h4, h5, h6, p, li, span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Prevent wide elements from causing overflow */
+img, video, iframe, table {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific treatment page fixes */
+.treatment-hero h1,
+.treatment-hero h2 {
+  word-break: break-word;
+  max-width: 100%;
 }

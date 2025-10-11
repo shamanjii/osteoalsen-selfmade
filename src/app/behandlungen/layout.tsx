@@ -7,9 +7,9 @@ export default function BehandlungenLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <SiteHeader />
-      <main className="pt-20">{children}</main>
+      <main className="pt-20 overflow-x-hidden max-w-full">{children}</main>
       <SiteFooter />
     </div>
   );
