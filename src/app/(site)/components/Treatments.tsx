@@ -17,9 +17,9 @@ const treatments = [
         href: "/behandlungen/verdauungsbeschwerden",
     },
     {
-        title: "Sportverletzungen",
+        title: "Sportosteopathie",
         desc: "Schnelle Regeneration und Prävention bei Sportverletzungen. Von Zerrungen bis zur Wettkampfvorbereitung.",
-        href: "/behandlungen/sportverletzungen",
+        href: "/behandlungen/sportosteopathie",
     },
     {
         title: "Stress & Burnout",

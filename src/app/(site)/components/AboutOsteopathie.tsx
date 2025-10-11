@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const benefits = [
     { title: "Schmerzlinderung", icon: "pain" },
@@ -43,6 +44,16 @@ export default function AboutOsteopathie() {
                                     <span className="text-slate-900 text-lg font-medium">{b.title}</span>
                                 </div>
                             ))}
+                        </div>
+
+                        <div className="mt-10">
+                            <Link
+                                href="/was-ist-osteopathie"
+                                className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
+                            >
+                                <span className="border-b-2 border-slate-900 group-hover:border-slate-700 transition-colors">Alles über Osteopathie erfahren</span>
+                                <span className="ml-2 group-hover:ml-3 transition-all">→</span>
+                            </Link>
                         </div>
 
                     </div>

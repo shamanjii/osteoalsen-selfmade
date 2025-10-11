@@ -166,15 +166,12 @@ export default function SiteHeader() {
                             >
                                 Home
                             </Link>
-                            <DropdownMenu
-                                label="Osteopathie"
-                                items={[
-                                    { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie", icon: "ℹ️" },
-                                    { label: "Behandlungsablauf", href: "/kosten-ablauf#ablauf", icon: "📋" },
-                                ]}
-                                isOpen={openDropdown === "osteopathie"}
-                                onOpenChange={(open) => setOpenDropdown(open ? "osteopathie" : null)}
-                            />
+                            <Link
+                                href="/was-ist-osteopathie"
+                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
+                            >
+                                Osteopathie
+                            </Link>
                             <DropdownMenu
                                 label="Behandlungen"
                                 items={[
@@ -262,30 +259,14 @@ export default function SiteHeader() {
                             >
                                 Home
                             </Link>
-                            {/* Osteopathie - Accordion Style */}
-                            <div className="space-y-1">
-                                <div className="block w-full text-left px-4 py-3 text-white/90 rounded-lg text-base font-semibold">
-                                    Osteopathie
-                                </div>
-                                <div className="pl-4 space-y-1">
-                                    <Link
-                                        href="/was-ist-osteopathie"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>ℹ️</span>
-                                        <span>Was ist Osteopathie?</span>
-                                    </Link>
-                                    <Link
-                                        href="/kosten-ablauf#ablauf"
-                                        onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
-                                    >
-                                        <span>📋</span>
-                                        <span>Behandlungsablauf</span>
-                                    </Link>
-                                </div>
-                            </div>
+                            {/* Osteopathie */}
+                            <Link
+                                href="/was-ist-osteopathie"
+                                onClick={() => setMobileOpen(false)}
+                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
+                            >
+                                Osteopathie
+                            </Link>
                             {/* Behandlungen - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
