@@ -27,9 +27,9 @@ const treatments = [
         href: "/behandlungen/stress-burnout",
     },
     {
-        title: "Schwangerschaft",
-        desc: "Begleitung während und nach der Schwangerschaft. Beckenbodenprobleme, Rückenschmerzen und Geburtsvorbereitung.",
-        href: "/behandlungen/schwangerschaft",
+        title: "Nackenschmerzen & HWS",
+        desc: "Behandlung von Nackenschmerzen, HWS-Syndrom und Schulter-Nacken-Verspannungen. Sanfte Mobilisation und ganzheitlicher Ansatz.",
+        href: "/behandlungen/nackenschmerzen",
     },
 ];
 
