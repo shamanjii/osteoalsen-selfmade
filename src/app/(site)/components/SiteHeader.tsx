@@ -16,6 +16,13 @@ export default function SiteHeader() {
         const throttledHandler = throttle(() => {
             const currentScrollY = window.scrollY;
 
+            // Always keep header visible when mobile menu is open
+            if (mobileOpen) {
+                setIsVisible(true);
+                setLastScrollY(currentScrollY);
+                return;
+            }
+
             // Show header at top of page
             if (currentScrollY < 10) {
                 setIsVisible(true);
@@ -31,7 +38,7 @@ export default function SiteHeader() {
         }, 16); // 60fps throttling
 
         return throttledHandler;
-    }, [lastScrollY]);
+    }, [lastScrollY, mobileOpen]);
 
     // Auto-hide header on scroll with throttling
     useEffect(() => {
@@ -65,6 +72,19 @@ export default function SiteHeader() {
             resizeHandler.cancel(); // Cancel pending throttled calls
         };
     }, [handleClose, handleResize]);
+
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (mobileOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [mobileOpen]);
 
     // Memoize smooth scroll handler
     const handleSmoothScroll = useCallback((e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -233,7 +253,7 @@ export default function SiteHeader() {
 
                 {/* Mobile Menu */}
                 {mobileOpen && (
-                    <div className="md:hidden border-t border-white/20 bg-slate-900">
+                    <div className="md:hidden border-t border-white/20 bg-slate-900 max-h-[calc(100vh-4rem)] overflow-y-auto">
                         <div className="px-4 py-4 space-y-2">
                             <Link
                                 href="/"
