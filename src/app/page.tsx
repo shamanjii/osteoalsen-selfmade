@@ -5,7 +5,6 @@ import SiteHeader from "./(site)/components/SiteHeader";
 import HeroSection from "./(site)/components/HeroSection";
 import AboutOsteopathie from "./(site)/components/AboutOsteopathie";
 import Treatments from "./(site)/components/Treatments";
-import Applications from "./(site)/components/Applications";
 import Reviews from "./(site)/components/Reviews";
 import AboutMe from "./(site)/components/AboutMe";
 import Qualifications from "./(site)/components/Qualifications";
@@ -21,7 +20,6 @@ export default function Home() {
         <HeroSection />
         <AboutOsteopathie />
         <Treatments />
-        <Applications />
         <Reviews />
         <AboutMe />
         <Qualifications />

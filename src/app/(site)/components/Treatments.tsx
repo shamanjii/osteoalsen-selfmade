@@ -4,37 +4,31 @@ const treatments = [
     {
         title: "Rückenschmerzen",
         desc: "Ganzheitliche Behandlung bei akuten und chronischen Rückenschmerzen. Von Verspannungen bis Bandscheibenproblematik.",
-        icon: "🦴",
         href: "/behandlungen/rueckenschmerzen",
     },
     {
         title: "Kopfschmerzen & Migräne",
         desc: "Sanfte Behandlung von Spannungskopfschmerzen, Migräne und Kieferbeschwerden durch manuelle Techniken.",
-        icon: "🧠",
         href: "/behandlungen/kopfschmerzen-migraene",
     },
     {
         title: "Verdauungsbeschwerden",
         desc: "Osteopathische Hilfe bei Reizdarm, Blähungen und Verdauungsproblemen. Viszerale Osteopathie für den Bauchraum.",
-        icon: "🫁",
         href: "/behandlungen/verdauungsbeschwerden",
     },
     {
         title: "Sportverletzungen",
         desc: "Schnelle Regeneration und Prävention bei Sportverletzungen. Von Zerrungen bis zur Wettkampfvorbereitung.",
-        icon: "⚽",
         href: "/behandlungen/sportverletzungen",
     },
     {
         title: "Stress & Burnout",
         desc: "Behandlung stressbedingter Beschwerden und Erschöpfung. Regulation des vegetativen Nervensystems.",
-        icon: "🧘",
         href: "/behandlungen/stress-burnout",
     },
     {
         title: "Schwangerschaft",
         desc: "Begleitung während und nach der Schwangerschaft. Beckenbodenprobleme, Rückenschmerzen und Geburtsvorbereitung.",
-        icon: "🤰",
         href: "/behandlungen/schwangerschaft",
     },
 ];
@@ -54,9 +48,6 @@ export default function Treatments() {
                     {treatments.map((t) => (
                         <Link key={t.title} href={t.href} className="group">
                             <div className="treatment-card relative bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                {/* Icon */}
-                                <div className="text-4xl mb-4">{t.icon}</div>
-
                                 {/* Title */}
                                 <h3 className="text-xl font-semibold text-slate-900 font-epilogue mb-3 group-hover:text-slate-700 transition-colors">{t.title}</h3>
 

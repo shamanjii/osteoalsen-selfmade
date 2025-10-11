@@ -158,13 +158,13 @@ export default function SiteHeader() {
                             <DropdownMenu
                                 label="Behandlungen"
                                 items={[
-                                    { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen", icon: "🦴" },
-                                    { label: "Nackenschmerzen & HWS", href: "/behandlungen/nackenschmerzen", icon: "🔄" },
-                                    { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene", icon: "🧠" },
-                                    { label: "Arthrose & Gelenkschmerzen", href: "/behandlungen/arthrose-gelenkbeschwerden", icon: "🦵" },
-                                    { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden", icon: "🫁" },
-                                    { label: "Sportosteopathie", href: "/behandlungen/sportosteopathie", icon: "⚽" },
-                                    { label: "Stress & Burnout", href: "/behandlungen/stress-burnout", icon: "🧘" },
+                                    { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen" },
+                                    { label: "Nackenschmerzen & HWS", href: "/behandlungen/nackenschmerzen" },
+                                    { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene" },
+                                    { label: "Arthrose & Gelenkschmerzen", href: "/behandlungen/arthrose-gelenkbeschwerden" },
+                                    { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden" },
+                                    { label: "Sportosteopathie", href: "/behandlungen/sportosteopathie" },
+                                    { label: "Stress & Burnout", href: "/behandlungen/stress-burnout" },
                                 ]}
                                 showAllLink={true}
                                 isOpen={openDropdown === "behandlungen"}
@@ -279,58 +279,51 @@ export default function SiteHeader() {
                                     <Link
                                         href="/behandlungen/rueckenschmerzen"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🦴</span>
-                                        <span>Rückenschmerzen</span>
+                                        Rückenschmerzen
                                     </Link>
                                     <Link
                                         href="/behandlungen/nackenschmerzen"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🔄</span>
-                                        <span>Nackenschmerzen & HWS</span>
+                                        Nackenschmerzen & HWS
                                     </Link>
                                     <Link
                                         href="/behandlungen/kopfschmerzen-migraene"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🧠</span>
-                                        <span>Kopfschmerzen & Migräne</span>
+                                        Kopfschmerzen & Migräne
                                     </Link>
                                     <Link
                                         href="/behandlungen/arthrose-gelenkbeschwerden"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🦵</span>
-                                        <span>Arthrose & Gelenkschmerzen</span>
+                                        Arthrose & Gelenkschmerzen
                                     </Link>
                                     <Link
                                         href="/behandlungen/verdauungsbeschwerden"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🫁</span>
-                                        <span>Verdauungsbeschwerden</span>
+                                        Verdauungsbeschwerden
                                     </Link>
                                     <Link
                                         href="/behandlungen/sportosteopathie"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>⚽</span>
-                                        <span>Sportosteopathie</span>
+                                        Sportosteopathie
                                     </Link>
                                     <Link
                                         href="/behandlungen/stress-burnout"
                                         onClick={() => setMobileOpen(false)}
-                                        className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
-                                        <span>🧘</span>
-                                        <span>Stress & Burnout</span>
+                                        Stress & Burnout
                                     </Link>
                                 </div>
                             </div>
