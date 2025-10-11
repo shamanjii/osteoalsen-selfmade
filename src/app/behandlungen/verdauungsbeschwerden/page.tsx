@@ -5,7 +5,6 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
 import FadeInSection from "@/components/FadeInSection";
-import StickyBookingButton from "@/components/StickyBookingButton";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -112,7 +111,6 @@ export default function VerdauungPage() {
         ]}
       />
 
-      <StickyBookingButton />
 
       <TreatmentHero
         subtitle="Viszerale Osteopathie"

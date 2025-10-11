@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import StickyBookingButton from "@/components/StickyBookingButton";
 import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
@@ -112,7 +111,6 @@ export default function KopfschmerzenPage() {
         ]}
       />
 
-      <StickyBookingButton />
 
       <TreatmentHero
         subtitle="Osteopathische Behandlung"

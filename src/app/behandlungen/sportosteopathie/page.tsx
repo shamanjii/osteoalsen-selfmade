@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import StickyBookingButton from "@/components/StickyBookingButton";
 import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
@@ -50,7 +49,6 @@ export const metadata: Metadata = {
 export default function SportosteopathiePage() {
   return (
     <>
-      <StickyBookingButton />
       <MedicalConditionSchema
         name="Sportverletzungen und sportbedingte Beschwerden"
         description="Muskelzerrungen, Überlastungssyndrome, Sehnenreizungen und Rehabilitation bei Sportverletzungen für Freizeit- und Leistungssportler"
