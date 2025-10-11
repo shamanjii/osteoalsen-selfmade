@@ -203,46 +203,6 @@ export default function UeberMichPage() {
               </div>
             </div>
 
-            {/* BAO Zertifizierung */}
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="text-4xl">🏆</div>
-                <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                    BAO-Zertifizierung
-                  </h3>
-                  <p className="text-slate-600 mb-2">
-                    <strong>Bundesarbeitsgemeinschaft Osteopathie e.V.</strong>
-                  </p>
-                  <p className="text-slate-600">
-                    Über 5.000 Ausbildungsstunden<br />
-                    Höchster deutscher Ausbildungsstandard<br />
-                    Qualitätssicherung & Fortbildungspflicht
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* VFO Mitgliedschaft */}
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="text-4xl">🏛️</div>
-                <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                    VFO-Mitgliedschaft
-                  </h3>
-                  <p className="text-slate-600 mb-2">
-                    <strong>Verband Freier Osteopathen e.V.</strong>
-                  </p>
-                  <p className="text-slate-600">
-                    Zertifiziertes Mitglied<br />
-                    Regelmäßige Fortbildungen<br />
-                    Qualitätssicherung nach Verbandsrichtlinien
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Internationale Erfahrung */}
             <div className="bg-white border border-slate-200 rounded-lg p-6">
               <div className="flex items-start gap-4">
