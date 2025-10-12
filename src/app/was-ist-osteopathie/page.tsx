@@ -155,8 +155,8 @@ export default function WasIstOsteopathiePage() {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/assets/joshua-alsen-behandlung.webp"
-                  alt="Osteopathische Behandlung - Joshua Alsen"
+                  src="/assets/joshua-alsen-dozent.webp"
+                  alt="Joshua Alsen erklärt Osteopathie"
                   fill
                   className="object-cover"
                 />
