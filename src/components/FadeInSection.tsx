@@ -16,15 +16,14 @@ export default function FadeInSection({ children, delay = 0, className = "" }: F
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setTimeout(() => {
-              setIsVisible(true);
-            }, delay);
+            // No delay for instant visibility
+            setIsVisible(true);
           }
         });
       },
       {
-        threshold: 0.1, // Trigger when 10% of element is visible
-        rootMargin: "0px 0px -50px 0px", // Start animation slightly before element enters viewport
+        threshold: 0.01, // Trigger very early - as soon as element enters viewport
+        rootMargin: "200px 0px 200px 0px", // Start loading well before element is visible (200px ahead)
       }
     );
 
@@ -42,10 +41,10 @@ export default function FadeInSection({ children, delay = 0, className = "" }: F
   return (
     <div
       ref={sectionRef}
-      className={`transition-all duration-700 ease-out ${
+      className={`transition-all duration-300 ease-out ${
         isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-8"
+          : "opacity-95 translate-y-2"
       } ${className}`}
     >
       {children}
