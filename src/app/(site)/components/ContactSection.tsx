@@ -86,7 +86,7 @@ export default function ContactSection() {
                 {/* Praxisstandorte */}
                 <div className="mb-16">
                     <h3 className="text-slate-900 text-3xl font-light text-center mb-12 font-epilogue tracking-tight">
-                        Praxisstandorte
+                        Praxisstandorte & Anfahrt
                     </h3>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -173,8 +173,6 @@ export default function ContactSection() {
 
                 {/* Google Maps */}
                 <div className="mb-16">
-                    <h3 className="text-slate-900 text-2xl font-light mb-8 text-center font-epilogue">Lage & Anfahrt</h3>
-
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Praxis Rotherbaum Map */}
                         <div>
