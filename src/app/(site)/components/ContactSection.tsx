@@ -171,53 +171,6 @@ export default function ContactSection() {
                     </div>
                 </div>
 
-                {/* Service-Übersicht */}
-                <div className="bg-slate-50 p-10 rounded-lg border border-slate-200 mb-16 max-w-3xl mx-auto">
-                    <h4 className="text-slate-900 text-xl font-medium mb-6 font-epilogue text-center">Leistungen im Überblick</h4>
-
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                <span className="text-white text-base">📞</span>
-                            </div>
-                            <div>
-                                <p className="text-slate-900 font-medium text-sm font-epilogue">Kostenlose Erstberatung</p>
-                                <p className="text-slate-600 text-xs">15 Minuten telefonisch</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                <span className="text-white text-base">🩺</span>
-                            </div>
-                            <div>
-                                <p className="text-slate-900 font-medium text-sm font-epilogue">Osteopathische Behandlung</p>
-                                <p className="text-slate-600 text-xs">45-60 Minuten, 150€</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                <span className="text-white text-base">💰</span>
-                            </div>
-                            <div>
-                                <p className="text-slate-900 font-medium text-sm font-epilogue">Krankenkassen-Erstattung</p>
-                                <p className="text-slate-600 text-xs">Bei den meisten Kassen möglich</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                <span className="text-white text-base">♿</span>
-                            </div>
-                            <div>
-                                <p className="text-slate-900 font-medium text-sm font-epilogue">Barrierefreiheit</p>
-                                <p className="text-slate-600 text-xs">Bei Fragen gerne vorab kontaktieren</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 {/* Google Maps */}
                 <div className="mb-16">
                     <h3 className="text-slate-900 text-2xl font-light mb-8 text-center font-epilogue">Lage & Anfahrt</h3>
