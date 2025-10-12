@@ -218,17 +218,48 @@ export default function ContactSection() {
                     </div>
                 </div>
 
-                {/* Google Maps Placeholder */}
+                {/* Google Maps */}
                 <div className="mb-16">
                     <h3 className="text-slate-900 text-2xl font-light mb-8 text-center font-epilogue">Lage & Anfahrt</h3>
 
-                    <div className="bg-slate-50 border-2 border-dashed border-slate-300 rounded-lg h-96 flex items-center justify-center">
-                        <div className="text-center text-slate-600">
-                            <div className="text-5xl mb-4">🗺️</div>
-                            <h4 className="text-slate-900 text-xl font-medium mb-2 font-epilogue">Google Maps Integration</h4>
-                            <p className="text-base">
-                                Hier wird die interaktive Karte eingebunden<br />
-                                <strong>Rappstraße 7, 20146 Hamburg</strong>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {/* Praxis Rotherbaum Map */}
+                        <div>
+                            <h4 className="text-slate-900 text-lg font-medium mb-4 font-epilogue text-center">Praxis Rotherbaum</h4>
+                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Rappstraße+7,+20146+Hamburg&output=embed"
+                                    width="100%"
+                                    height="300"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Praxis Rotherbaum - Rappstraße 7, 20146 Hamburg"
+                                ></iframe>
+                            </div>
+                            <p className="text-slate-600 text-sm mt-3 text-center">
+                                Rappstraße 7, 20146 Hamburg
+                            </p>
+                        </div>
+
+                        {/* Praxis Eimsbüttel Map */}
+                        <div>
+                            <h4 className="text-slate-900 text-lg font-medium mb-4 font-epilogue text-center">Praxis Eimsbüttel</h4>
+                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Stresemannallee+118,+22529+Hamburg&output=embed"
+                                    width="100%"
+                                    height="300"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Praxis Eimsbüttel - Stresemannallee 118, 22529 Hamburg"
+                                ></iframe>
+                            </div>
+                            <p className="text-slate-600 text-sm mt-3 text-center">
+                                Stresemannallee 118, 22529 Hamburg
                             </p>
                         </div>
                     </div>
