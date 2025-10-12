@@ -662,10 +662,10 @@ export default function WasIstOsteopathiePage() {
 
               <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4 font-epilogue">Berufsverbände und Qualitätssicherung</h3>
               <p>
-                Die größten Berufsverbände in Deutschland sind der <strong>Verband der Osteopathen Deutschland (VOD)</strong>, der <strong>Bundesverband Osteopathie (BVO)</strong> und der <strong>Verband Freier Osteopathen (VFO)</strong>. Osteopathen, die Mitglied in diesen Verbänden sind, müssen hohe Ausbildungsstandards nachweisen und sich regelmäßig fortbilden.
+                Für Patienten sind Berufsverbände wichtig, da sie die Abrechnung mit den Krankenkassen gewährleisten. Die größten Verbände in Deutschland sind der <strong>Verband der Osteopathen Deutschland (VOD)</strong>, der <strong>Bundesverband Osteopathie (BVO)</strong> und der <strong>Verband Freier Osteopathen (VFO)</strong>. Ich bin Mitglied im <strong>VFO</strong>.
               </p>
               <p>
-                Das höchste Qualitätssiegel für Osteopathieausbildungen in Deutschland ist die <strong>BAO-Anerkennung</strong> (Bundesarbeitsgemeinschaft Osteopathie). Eine BAO-anerkannte Ausbildung umfasst eine vollständige 5-jährige Ausbildung und garantiert höchste Qualitätsstandards – weit über die von Krankenkassen geforderten Mindeststandards von 1.350 Unterrichtsstunden hinaus.
+                Ich habe Osteopathie an der <strong>Osteopathie Schule Deutschland (OSD)</strong> studiert – und zwar in <strong>Vollzeit über 4 Jahre</strong>. Dadurch komme ich auf weitaus mehr Ausbildungsstunden als die von Krankenkassen geforderten Mindeststunden von 1.350 Unterrichtsstunden. Die OSD ist BAO-anerkannt (Bundesarbeitsgemeinschaft Osteopathie), was höchste Qualitätsstandards garantiert.
               </p>
 
               <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4 font-epilogue">Heilpraktiker oder Arzt: Wer darf osteopathisch behandeln?</h3>
@@ -696,7 +696,7 @@ export default function WasIstOsteopathiePage() {
               </div>
 
               <p className="mt-6">
-                Ich selbst habe eine <strong>BAO-anerkannte Ausbildung</strong> absolviert und bin Mitglied im <strong>VFO (Verband Freier Osteopathen)</strong> sowie Heilpraktiker. Mehr über meine Ausbildung und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
+                Mehr über meine Ausbildung, Qualifikationen und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
               </p>
             </div>
           </div>
