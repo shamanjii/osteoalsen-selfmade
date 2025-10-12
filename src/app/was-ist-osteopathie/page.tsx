@@ -662,10 +662,10 @@ export default function WasIstOsteopathiePage() {
 
               <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4 font-epilogue">Berufsverbände und Qualitätssicherung</h3>
               <p>
-                Die größten Berufsverbände in Deutschland sind der <strong>Verband der Osteopathen Deutschland (VOD)</strong> und der <strong>Bundesverband Osteopathie (BVO)</strong>. Osteopathen, die Mitglied in diesen Verbänden sind, müssen hohe Ausbildungsstandards nachweisen und sich regelmäßig fortbilden.
+                Die größten Berufsverbände in Deutschland sind der <strong>Verband der Osteopathen Deutschland (VOD)</strong>, der <strong>Bundesverband Osteopathie (BVO)</strong> und der <strong>Verband Freier Osteopathen (VFO)</strong>. Osteopathen, die Mitglied in diesen Verbänden sind, müssen hohe Ausbildungsstandards nachweisen und sich regelmäßig fortbilden.
               </p>
               <p>
-                Zusätzlich gibt es das <strong>VFO-Gütesiegel</strong> (Verband Freier Osteopathen), das nur an Osteopathen mit einer vollständigen 5-jährigen Ausbildung vergeben wird. Dieses Siegel garantiert höchste Qualitätsstandards.
+                Das höchste Qualitätssiegel für Osteopathieausbildungen in Deutschland ist die <strong>BAO-Anerkennung</strong> (Bundesarbeitsgemeinschaft Osteopathie). Eine BAO-anerkannte Ausbildung umfasst eine vollständige 5-jährige Ausbildung und garantiert höchste Qualitätsstandards – weit über die von Krankenkassen geforderten Mindeststandards von 1.350 Unterrichtsstunden hinaus.
               </p>
 
               <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4 font-epilogue">Heilpraktiker oder Arzt: Wer darf osteopathisch behandeln?</h3>
@@ -696,7 +696,7 @@ export default function WasIstOsteopathiePage() {
               </div>
 
               <p className="mt-6">
-                Ich selbst bin VFO-zertifizierter Osteopath und Heilpraktiker. Mehr über meine Ausbildung und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
+                Ich selbst habe eine <strong>BAO-anerkannte Ausbildung</strong> absolviert und bin Mitglied im <strong>VFO (Verband Freier Osteopathen)</strong> sowie Heilpraktiker. Mehr über meine Ausbildung und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
               </p>
             </div>
           </div>
