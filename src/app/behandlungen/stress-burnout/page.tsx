@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -128,7 +127,7 @@ export default function StressBurnoutPage() {
 
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <FadeInSection delay={0}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Wenn Stress den Körper übernimmt
@@ -153,9 +152,9 @@ export default function StressBurnoutPage() {
                 </ul>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={100}>
+          
             <section className="mb-16 bg-slate-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Die Physiologie von Stress: Was passiert im Körper?
@@ -228,9 +227,9 @@ export default function StressBurnoutPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={150}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Von Stress zu Burnout: Die drei Phasen
@@ -270,9 +269,9 @@ export default function StressBurnoutPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={200}>
+          
             <section className="mb-16 bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Osteopathie in der Stressmedizin: Ganzheitlicher Ansatz
@@ -321,9 +320,9 @@ export default function StressBurnoutPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={250}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Der Behandlungsablauf bei Stress & Burnout
@@ -396,9 +395,9 @@ export default function StressBurnoutPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={300}>
+          
             <section className="mb-16 bg-blue-50 border-2 border-blue-200 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Behandlungsplan & Erwartungen
@@ -451,9 +450,9 @@ export default function StressBurnoutPage() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={350}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Praxisbeispiel: Von chronischem Stress zu mehr Balance
@@ -473,9 +472,9 @@ export default function StressBurnoutPage() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={400}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Selbsthilfe: Ihr Nervensystem im Alltag unterstützen
@@ -539,9 +538,9 @@ export default function StressBurnoutPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={450}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Häufig gestellte Fragen (FAQ)
@@ -652,9 +651,9 @@ export default function StressBurnoutPage() {
                 </details>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={500}>
+          
             <section className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-4 font-epilogue">
                 Weitere Informationen
@@ -710,7 +709,7 @@ export default function StressBurnoutPage() {
                 </Link>
               </div>
             </section>
-          </FadeInSection>
+          
         </div>
       </article>
 

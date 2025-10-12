@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -120,7 +119,7 @@ export default function KopfschmerzenPage() {
 
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <FadeInSection delay={0}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Wenn der Kopf schmerzt
@@ -144,9 +143,9 @@ export default function KopfschmerzenPage() {
                 </ul>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={100}>
+          
             <section className="mb-16 bg-slate-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Kopfschmerz-Typen im Detail
@@ -228,9 +227,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={150}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Ursachen & Trigger-Faktoren
@@ -311,9 +310,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={200}>
+          
             <section className="mb-16 bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Osteopathische Techniken im Detail
@@ -429,9 +428,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={250}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Wissenschaftliche Evidenz
@@ -470,9 +469,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={300}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Ablauf der Behandlung
@@ -535,9 +534,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={350}>
+          
             <section className="mb-16 bg-blue-50 border-2 border-blue-200 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Behandlungserfolg & Dauer
@@ -579,9 +578,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={400}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Praxisbeispiel: Von chronischer Migräne zu mehr Lebensqualität
@@ -601,9 +600,9 @@ export default function KopfschmerzenPage() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={450}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Selbsthilfe & Prävention: Was Sie selbst tun können
@@ -773,9 +772,9 @@ export default function KopfschmerzenPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={500}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
                 Häufig gestellte Fragen (FAQ)
@@ -886,9 +885,9 @@ export default function KopfschmerzenPage() {
                 </details>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={550}>
+          
             <section className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-4 font-epilogue">
                 Weitere Informationen
@@ -941,7 +940,7 @@ export default function KopfschmerzenPage() {
                 </Link>
               </div>
             </section>
-          </FadeInSection>
+          
         </div>
       </article>
 

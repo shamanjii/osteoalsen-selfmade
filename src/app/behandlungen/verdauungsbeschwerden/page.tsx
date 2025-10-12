@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -120,7 +119,7 @@ export default function VerdauungPage() {
 
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <FadeInSection delay={0}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Wenn der Bauch Probleme macht
@@ -144,9 +143,9 @@ export default function VerdauungPage() {
                 </ul>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={100}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Das Verdauungssystem verstehen
@@ -176,9 +175,9 @@ export default function VerdauungPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={200}>
+          
             <section className="mb-16 bg-slate-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Die Darm-Hirn-Achse: Warum Stress auf den Magen schlägt
@@ -223,9 +222,9 @@ export default function VerdauungPage() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={300}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Häufige Verdauungsstörungen im Detail
@@ -304,9 +303,9 @@ export default function VerdauungPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={400}>
+          
             <section className="mb-16 bg-slate-50 rounded-xl p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Viszerale Osteopathie im Detail
@@ -424,9 +423,9 @@ export default function VerdauungPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={500}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Wissenschaftliche Evidenz: Was sagt die Forschung?
@@ -448,9 +447,9 @@ export default function VerdauungPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={100}>
+          
             <section className="mb-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-200">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Praxisbeispiel: Von Reizdarm zur Lebensqualität
@@ -473,9 +472,9 @@ export default function VerdauungPage() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={200}>
+          
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
                 Ernährung & Selbsthilfe: Was Sie selbst tun können
@@ -647,9 +646,9 @@ export default function VerdauungPage() {
                 </div>
               </div>
             </section>
-          </FadeInSection>
+          
 
-          <FadeInSection delay={300}>
+          
             <section className="mb-16 bg-slate-100 border-2 border-slate-300 rounded-xl p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-6 font-epilogue">
                 Weitere Informationen & verwandte Themen
@@ -748,7 +747,7 @@ export default function VerdauungPage() {
                 </Link>
               </div>
             </section>
-          </FadeInSection>
+          
         </div>
       </article>
 

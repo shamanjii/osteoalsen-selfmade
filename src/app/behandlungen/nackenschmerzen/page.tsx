@@ -4,7 +4,6 @@ import TreatmentCTA from '../components/TreatmentCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MedicalConditionSchema from '@/components/MedicalConditionSchema';
 import FAQSchema from '@/components/FAQSchema';
-import FadeInSection from '@/components/FadeInSection';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -124,7 +123,7 @@ export default function NackenschmerzenPage() {
       <article className="max-w-4xl mx-auto px-4 py-16 space-y-16">
 
         {/* Wenn der Nacken zur Last wird */}
-        <FadeInSection delay={0}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Wenn der Nacken zur Last wird</h2>
 
@@ -192,10 +191,10 @@ export default function NackenschmerzenPage() {
               </ul>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Anatomie der Halswirbelsäule */}
-        <FadeInSection delay={100}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Anatomie der Halswirbelsäule verstehen</h2>
 
@@ -229,10 +228,10 @@ export default function NackenschmerzenPage() {
               </p>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Häufige Ursachen */}
-        <FadeInSection delay={200}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Häufige Ursachen von Nackenschmerzen</h2>
 
@@ -302,10 +301,10 @@ export default function NackenschmerzenPage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Osteopathische Behandlung */}
-        <FadeInSection delay={300}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Osteopathische Behandlung der HWS</h2>
 
@@ -418,10 +417,10 @@ export default function NackenschmerzenPage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Wissenschaftliche Evidenz */}
-        <FadeInSection delay={400}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Wissenschaftliche Evidenz</h2>
 
@@ -451,10 +450,10 @@ export default function NackenschmerzenPage() {
               </p>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Praxisbeispiel */}
-        <FadeInSection delay={450}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Praxisbeispiel: Thomas, 38 Jahre, Software-Entwickler</h2>
 
@@ -482,10 +481,10 @@ export default function NackenschmerzenPage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Selbsthilfe & Prävention */}
-        <FadeInSection delay={500}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Selbsthilfe & Prävention bei Nackenschmerzen</h2>
 
@@ -718,10 +717,10 @@ export default function NackenschmerzenPage() {
               </ul>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Weitere Informationen */}
-        <FadeInSection delay={500}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Weitere Informationen</h2>
 
@@ -771,15 +770,15 @@ export default function NackenschmerzenPage() {
               </Link>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* CTA */}
-        <FadeInSection delay={500}>
+        
           <TreatmentCTA
             title="Nackenschmerzen in Hamburg behandeln lassen?"
             description="Vereinbaren Sie einen Termin für eine osteopathische Untersuchung und Behandlung Ihrer Nackenbeschwerden in meiner Praxis in Hamburg."
           />
-        </FadeInSection>
+        
 
       </article>
     </>

@@ -4,7 +4,6 @@ import TreatmentCTA from '../components/TreatmentCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MedicalConditionSchema from '@/components/MedicalConditionSchema';
 import FAQSchema from '@/components/FAQSchema';
-import FadeInSection from '@/components/FadeInSection';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -131,7 +130,7 @@ export default function ArthrosePage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         {/* Wenn Gelenke schmerzen */}
-        <FadeInSection delay={0}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Wenn Gelenke schmerzen – mehr als nur eine Alterserscheinung
@@ -215,10 +214,10 @@ export default function ArthrosePage() {
               </ul>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Was ist Arthrose? */}
-        <FadeInSection delay={100}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Was ist Arthrose? – Verstehen, was im Gelenk passiert
@@ -308,10 +307,10 @@ export default function ArthrosePage() {
               </p>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Häufig betroffene Gelenke im Detail */}
-        <FadeInSection delay={200}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Häufig betroffene Gelenke im Detail
@@ -440,10 +439,10 @@ export default function ArthrosePage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Osteopathischer Ansatz bei Arthrose */}
-        <FadeInSection delay={300}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Der osteopathische Ansatz bei Arthrose – ganzheitlich statt symptomatisch
@@ -591,10 +590,10 @@ export default function ArthrosePage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Wissenschaftliche Evidenz */}
-        <FadeInSection delay={400}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Wissenschaftliche Evidenz – Was sagt die Forschung?
@@ -664,10 +663,10 @@ export default function ArthrosePage() {
               </p>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Praxisbeispiel */}
-        <FadeInSection delay={450}>
+        
           <section>
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-xl border border-amber-200">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">
@@ -714,10 +713,10 @@ export default function ArthrosePage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Selbsthilfe & Prävention */}
-        <FadeInSection delay={500}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Selbsthilfe & Prävention – Was Sie selbst tun können
@@ -902,10 +901,10 @@ export default function ArthrosePage() {
               </div>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* Weitere Informationen */}
-        <FadeInSection delay={500}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Weitere Informationen & verwandte Themen
@@ -1007,10 +1006,10 @@ export default function ArthrosePage() {
               </Link>
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* FAQ Section */}
-        <FadeInSection delay={500}>
+        
           <section>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Häufig gestellte Fragen (FAQ)
@@ -1035,15 +1034,15 @@ export default function ArthrosePage() {
               ))}
             </div>
           </section>
-        </FadeInSection>
+        
 
         {/* CTA Section */}
-        <FadeInSection delay={500}>
+        
           <TreatmentCTA
             title="Arthrose-Behandlung in Hamburg – Bereit für mehr Beweglichkeit?"
             description="Arthrose muss Ihren Alltag nicht dominieren. Vereinbaren Sie jetzt einen Termin in meiner Praxis in Hamburg und lassen Sie uns gemeinsam einen individuellen Behandlungsplan entwickeln. In einem ausführlichen Erstgespräch analysiere ich Ihre Situation und zeige Ihnen, wie Osteopathie Ihnen helfen kann."
           />
-        </FadeInSection>
+        
       </div>
     </>
   );

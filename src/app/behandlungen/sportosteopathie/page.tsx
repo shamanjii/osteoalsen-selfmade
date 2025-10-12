@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -120,7 +119,7 @@ export default function SportosteopathiePage() {
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           {/* Introduction */}
-          <FadeInSection>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Sportosteopathie – Mehr als nur Verletzungsbehandlung
@@ -149,10 +148,10 @@ export default function SportosteopathiePage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Die 3 Säulen */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Die 3 Säulen der Sportosteopathie
@@ -208,10 +207,10 @@ export default function SportosteopathiePage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Häufige Sportverletzungen */}
-          <FadeInSection delay={150}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Häufige Sportverletzungen und Überlastungssyndrome
@@ -297,10 +296,10 @@ export default function SportosteopathiePage() {
               </ul>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Sportartspezifische Behandlung */}
-          <FadeInSection delay={200}>
+          
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Sportartspezifische Osteopathie
@@ -389,10 +388,10 @@ export default function SportosteopathiePage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Behandlungsablauf für Sportler */}
-          <FadeInSection delay={250}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               So läuft Ihre sportosteopathische Behandlung ab
@@ -466,10 +465,10 @@ export default function SportosteopathiePage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Prävention & Leistungsoptimierung */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Prävention: Verletzungen verhindern, bevor sie entstehen
@@ -518,10 +517,10 @@ export default function SportosteopathiePage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Regeneration */}
-          <FadeInSection delay={150}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Regeneration & Return to Sport
@@ -582,10 +581,10 @@ export default function SportosteopathiePage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* FAQ */}
-          <FadeInSection delay={200}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
               Häufige Fragen zur Sportosteopathie
@@ -715,10 +714,10 @@ export default function SportosteopathiePage() {
               </details>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Weitere Infos */}
-          <FadeInSection delay={250}>
+          
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-epilogue">
               Weitere hilfreiche Informationen
@@ -745,13 +744,13 @@ export default function SportosteopathiePage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
         </div>
       </article>
 
       {/* CTA Section */}
-      <FadeInSection delay={150}>
+      
       <section className="py-16 px-4 sm:px-6 bg-slate-50">
         <div className="mx-auto max-w-5xl">
           <TreatmentCTA
@@ -760,7 +759,7 @@ export default function SportosteopathiePage() {
           />
         </div>
       </section>
-      </FadeInSection>
+      
     </>
   );
 }

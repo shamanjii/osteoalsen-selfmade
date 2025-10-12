@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import StickyBookingButton from "@/components/StickyBookingButton";
 
 export const metadata: Metadata = {
@@ -107,7 +106,7 @@ export default function WasIstOsteopathiePage() {
       <StickyBookingButton />
 
       {/* Hero Section */}
-      <FadeInSection delay={0}>
+      
         <section className="bg-white pt-8 pb-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
             <div className="mx-auto max-w-3xl">
@@ -121,10 +120,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Definition Section */}
-      <FadeInSection delay={50}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -165,10 +164,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* History Section */}
-      <FadeInSection delay={100}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -199,10 +198,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Three Pillars Section */}
-      <FadeInSection delay={150}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
@@ -269,10 +268,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: Faszien-System Section */}
-      <FadeInSection delay={200}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -309,10 +308,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Principles Section */}
-      <FadeInSection delay={250}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -369,10 +368,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Differences Section */}
-      <FadeInSection delay={300}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -434,10 +433,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* For Whom Section - EXPANDED */}
-      <FadeInSection delay={350}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-12 font-epilogue">
@@ -559,10 +558,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: Behandlungsablauf Section */}
-      <FadeInSection delay={400}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -636,10 +635,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: Ausbildung & Qualifikation Section */}
-      <FadeInSection delay={450}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -702,10 +701,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Scientific Evidence Section */}
-      <FadeInSection delay={500}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -735,10 +734,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: Grenzen & Risiken Section */}
-      <FadeInSection delay={550}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -801,10 +800,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: Kosten & Erstattung Section */}
-      <FadeInSection delay={600}>
+      
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
@@ -899,10 +898,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* NEW: FAQ Section */}
-      <FadeInSection delay={650}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8 text-center">
@@ -1042,10 +1041,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* CTA Section */}
-      <FadeInSection delay={700}>
+      
         <section className="bg-white py-16 sm:py-24 px-4 sm:px-6">
           <div className="mx-auto max-w-4xl">
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-center text-white shadow-xl">
@@ -1074,10 +1073,10 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
 
       {/* Related Links Section */}
-      <FadeInSection delay={750}>
+      
         <section className="bg-slate-50 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight text-center mb-8 font-epilogue">
@@ -1125,7 +1124,7 @@ export default function WasIstOsteopathiePage() {
             </div>
           </div>
         </section>
-      </FadeInSection>
+      
     </>
   );
 }

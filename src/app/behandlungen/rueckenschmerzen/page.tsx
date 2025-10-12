@@ -4,7 +4,6 @@ import TreatmentCTA from "../components/TreatmentCTA";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalConditionSchema from "@/components/MedicalConditionSchema";
 import FAQSchema from "@/components/FAQSchema";
-import FadeInSection from "@/components/FadeInSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -117,7 +116,7 @@ export default function RueckenschmerzenPage() {
       <article className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           {/* Problem Description */}
-          <FadeInSection>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Rückenschmerzen – ein Volksleiden
@@ -169,10 +168,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Ursachen */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Häufige Ursachen von Rückenschmerzen
@@ -227,10 +226,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Osteopathic Approach */}
-          <FadeInSection delay={150}>
+          
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Der osteopathische Ansatz
@@ -272,10 +271,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Treatment Process */}
-          <FadeInSection delay={200}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Ablauf der Behandlung
@@ -350,10 +349,10 @@ export default function RueckenschmerzenPage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Success Outlook */}
-          <FadeInSection delay={250}>
+          
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Behandlungserfolg & Dauer
@@ -392,10 +391,10 @@ export default function RueckenschmerzenPage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Osteopathische Techniken */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Osteopathische Techniken bei Rückenschmerzen
@@ -448,10 +447,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Scientific Basis */}
-          <FadeInSection delay={150}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Wissenschaftliche Grundlage
@@ -477,10 +476,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Akut vs Chronisch */}
-          <FadeInSection delay={200}>
+          
           <section className="mb-16 bg-slate-50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Akute vs. chronische Rückenschmerzen
@@ -522,10 +521,10 @@ export default function RueckenschmerzenPage() {
               </div>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Spezifische Beschwerdebilder */}
-          <FadeInSection delay={250}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Spezifische Rückenbeschwerden in der Osteopathie
@@ -591,10 +590,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Prävention */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Rückenschmerzen vorbeugen
@@ -637,10 +636,10 @@ export default function RueckenschmerzenPage() {
               </ul>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* FAQ */}
-          <FadeInSection delay={150}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 font-epilogue">
               Häufige Fragen zu Osteopathie bei Rückenschmerzen
@@ -781,10 +780,10 @@ export default function RueckenschmerzenPage() {
               </details>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Wann zum Arzt */}
-          <FadeInSection delay={200}>
+          
           <section className="mb-16 bg-red-50 border border-red-200 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Wann sollten Sie zum Arzt gehen?
@@ -808,10 +807,10 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Related Treatments */}
-          <FadeInSection delay={250}>
+          
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
               Verwandte Behandlungen
@@ -852,10 +851,10 @@ export default function RueckenschmerzenPage() {
               </Link>
             </div>
           </section>
-          </FadeInSection>
+          
 
           {/* Info Box */}
-          <FadeInSection delay={100}>
+          
           <section className="mb-16 bg-blue-50 border border-blue-200 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-epilogue">
               Weitere Informationen
@@ -881,12 +880,12 @@ export default function RueckenschmerzenPage() {
               </p>
             </div>
           </section>
-          </FadeInSection>
+          
         </div>
       </article>
 
       {/* CTA Section */}
-      <FadeInSection delay={150}>
+      
       <section className="py-16 px-4 sm:px-6 bg-slate-50">
         <div className="mx-auto max-w-5xl">
           <TreatmentCTA
@@ -895,7 +894,7 @@ export default function RueckenschmerzenPage() {
           />
         </div>
       </section>
-      </FadeInSection>
+      
     </>
   );
 }
