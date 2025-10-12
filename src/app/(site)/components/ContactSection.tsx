@@ -171,114 +171,49 @@ export default function ContactSection() {
                     </div>
                 </div>
 
-                {/* Kontaktformular & Service-Info */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                    {/* Kontaktformular */}
-                    <div className="contact-form">
-                        <h3 className="text-slate-900 text-2xl font-medium mb-8 text-center font-epilogue">Nachricht senden</h3>
+                {/* Service-Übersicht */}
+                <div className="bg-slate-50 p-10 rounded-lg border border-slate-200 mb-16 max-w-3xl mx-auto">
+                    <h4 className="text-slate-900 text-xl font-medium mb-6 font-epilogue text-center">Leistungen im Überblick</h4>
 
-                        <form className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">Name <span className="text-red-500">*</span></label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required
-                                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
-                                />
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                <span className="text-white text-base">📞</span>
                             </div>
-
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">E-Mail <span className="text-red-500">*</span></label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">Telefon</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">Nachricht <span className="text-red-500">*</span></label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows={5}
-                                    placeholder="Beschreiben Sie bitte Ihre Beschwerden oder Ihr Anliegen..."
-                                    required
-                                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors resize-none"
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="w-full bg-slate-900 text-white py-3 px-6 rounded-lg font-epilogue font-medium hover:bg-slate-800 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                            >
-                                Nachricht senden
-                            </button>
-                        </form>
-                    </div>
-
-                    {/* Service-Übersicht & Anfahrt */}
-                    <div className="space-y-8">
-                        {/* Service-Übersicht */}
-                        <div className="bg-slate-50 p-10 rounded-lg border border-slate-200">
-                            <h4 className="text-slate-900 text-xl font-medium mb-6 font-epilogue">Leistungen im Überblick</h4>
-
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                        <span className="text-white text-base">📞</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-slate-900 font-medium text-sm font-epilogue">Kostenlose Erstberatung</p>
-                                        <p className="text-slate-600 text-xs">15 Minuten telefonisch</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                        <span className="text-white text-base">🩺</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-slate-900 font-medium text-sm font-epilogue">Osteopathische Behandlung</p>
-                                        <p className="text-slate-600 text-xs">45-60 Minuten, 150€</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
-                                        <span className="text-white text-base">💰</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-slate-900 font-medium text-sm font-epilogue">Krankenkassen-Erstattung</p>
-                                        <p className="text-slate-600 text-xs">Bei den meisten Kassen möglich</p>
-                                    </div>
-                                </div>
+                                <p className="text-slate-900 font-medium text-sm font-epilogue">Kostenlose Erstberatung</p>
+                                <p className="text-slate-600 text-xs">15 Minuten telefonisch</p>
                             </div>
                         </div>
 
-                        {/* Barrierefreiheit */}
-                        <div className="bg-white p-8 rounded-lg border border-slate-200">
-                            <h5 className="text-slate-900 text-base font-medium mb-3 flex items-center font-epilogue">
-                                <span className="mr-2">♿</span>
-                                Barrierefreiheit
-                            </h5>
-                            <p className="text-slate-600 leading-relaxed text-sm">
-                                Bei Fragen zur Barrierefreiheit kontaktieren Sie mich gerne vorab.
-                            </p>
+                        <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                <span className="text-white text-base">🩺</span>
+                            </div>
+                            <div>
+                                <p className="text-slate-900 font-medium text-sm font-epilogue">Osteopathische Behandlung</p>
+                                <p className="text-slate-600 text-xs">45-60 Minuten, 150€</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                <span className="text-white text-base">💰</span>
+                            </div>
+                            <div>
+                                <p className="text-slate-900 font-medium text-sm font-epilogue">Krankenkassen-Erstattung</p>
+                                <p className="text-slate-600 text-xs">Bei den meisten Kassen möglich</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-slate-800 hover:scale-105 transition-all duration-300">
+                                <span className="text-white text-base">♿</span>
+                            </div>
+                            <div>
+                                <p className="text-slate-900 font-medium text-sm font-epilogue">Barrierefreiheit</p>
+                                <p className="text-slate-600 text-xs">Bei Fragen gerne vorab kontaktieren</p>
+                            </div>
                         </div>
                     </div>
                 </div>
