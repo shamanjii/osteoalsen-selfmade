@@ -74,6 +74,18 @@ export function generateSitemap(): SitemapUrl[] {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/osteopathie-rotherbaum`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/osteopathie-eimsbuettel`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/was-ist-osteopathie`,
       lastModified: now,
       changeFrequency: 'monthly',

@@ -163,14 +163,18 @@ export default function SiteFooter() {
                         </h3>
                         <ul className="space-y-3 text-sm">
                             <li>
-                                <div className="text-slate-900 font-medium">Rotherbaum</div>
-                                <div className="text-slate-600">Rappstraße 7</div>
-                                <div className="text-slate-600">20146 Hamburg</div>
+                                <Link href="/osteopathie-rotherbaum" className="hover:text-slate-900 transition-colors">
+                                    <div className="text-slate-900 font-medium">Rotherbaum</div>
+                                    <div className="text-slate-600">Rappstraße 7</div>
+                                    <div className="text-slate-600">20146 Hamburg</div>
+                                </Link>
                             </li>
                             <li>
-                                <div className="text-slate-900 font-medium">Eimsbüttel</div>
-                                <div className="text-slate-600">Stresemannallee 118</div>
-                                <div className="text-slate-600">22529 Hamburg</div>
+                                <Link href="/osteopathie-eimsbuettel" className="hover:text-slate-900 transition-colors">
+                                    <div className="text-slate-900 font-medium">Eimsbüttel</div>
+                                    <div className="text-slate-600">Stresemannallee 118</div>
+                                    <div className="text-slate-600">22529 Hamburg</div>
+                                </Link>
                             </li>
                         </ul>
                     </div>

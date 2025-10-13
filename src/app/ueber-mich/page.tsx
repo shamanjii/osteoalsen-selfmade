@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Über mich - Joshua Alsen | Osteopath Hamburg",
   description:
-    "Joshua Alsen - BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung, internationale Erfahrung und Leidenschaft für Osteopathie.",
+    "Joshua Alsen ✓ VFO-zertifizierter Osteopath & Heilpraktiker ✓ BAO-Ausbildung (5.000+ Std.) ✓ Internationale Erfahrung ✓ 2 Standorte in Hamburg ⭐ Jetzt kennenlernen!",
   keywords: [
     "Joshua Alsen",
     "Osteopath Hamburg",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Über mich - Joshua Alsen | Osteopath Hamburg",
     description:
-      "BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung und Leidenschaft für Osteopathie.",
+      "Joshua Alsen ✓ VFO-zertifizierter Osteopath & Heilpraktiker ✓ BAO-Ausbildung (5.000+ Std.) ✓ Internationale Erfahrung ✓ 2 Standorte in Hamburg ⭐ Jetzt kennenlernen!",
     url: "/ueber-mich",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Über mich - Joshua Alsen | Osteopath Hamburg",
     description:
-      "BAO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum. Über 5.000 Stunden Ausbildung.",
+      "Joshua Alsen ✓ VFO-zertifiziert ✓ BAO-Ausbildung ✓ Internationale Erfahrung ✓ 2 Standorte Hamburg ⭐",
     images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
   },
 };
@@ -52,10 +52,11 @@ export default function UeberMichPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
-              Über mich
+              Joshua Alsen<br />
+              <span className="font-normal">Heilpraktiker Hamburg Rotherbaum</span>
             </h1>
             <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
-              Joshua Alsen - Osteopath und Heilpraktiker in Hamburg-Rotherbaum
+              VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum
               & Eimsbüttel
             </p>
           </div>
@@ -123,8 +124,8 @@ export default function UeberMichPage() {
                 Nach dem Bestehen meiner Heilpraktikerprüfung im Mai 2024
                 entschied ich mich, meinen Fokus auf den klinischen Alltag zu
                 richten und mich mit einer eigenen Praxis selbstständig zu
-                machen. Seitdem praktiziere ich mit großer Freude und Hingabe
-                in meiner eigenen Praxis für Osteopathie in Hamburg.
+                machen. Seitdem praktiziere ich als Heilpraktiker in Hamburg Rotherbaum
+                mit großer Freude und Hingabe in meiner eigenen Praxis für Osteopathie.
               </p>
 
               <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mt-12">
@@ -240,7 +241,7 @@ export default function UeberMichPage() {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="text-4xl">🏆</div>
                   <h3 className="text-2xl font-semibold text-slate-900 font-epilogue">
-                    BAO-Zertifiziert
+                    Nach BAO-Standard ausgebildet
                   </h3>
                 </div>
                 <p className="text-lg font-semibold text-slate-900 mb-4">

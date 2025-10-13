@@ -130,7 +130,10 @@ export default function RueckenschmerzenPage() {
                 vielfältig und oft nicht auf den ersten Blick erkennbar.
               </p>
               <p className="text-slate-700 leading-relaxed mb-4">
-                In meiner osteopathischen Praxis in Hamburg behandle ich täglich
+                In meiner{" "}
+                <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
+                  osteopathischen Praxis in Hamburg
+                </Link>{" "}behandle ich täglich
                 Menschen mit verschiedensten Formen von Rückenschmerzen:
               </p>
               <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
@@ -368,7 +371,10 @@ export default function RueckenschmerzenPage() {
                 <strong>Bei chronischen Rückenschmerzen</strong> (länger als 3
                 Monate) benötigen wir mehr Geduld. Hier empfehle ich meist 4-6
                 Behandlungen im Abstand von 2-3 Wochen. Der Körper braucht Zeit,
-                um alte Muster zu verändern.
+                um alte Muster zu verändern. Mehr zu meinem{" "}
+                <Link href="/ueber-mich" className="text-blue-600 hover:text-blue-800 font-medium">
+                  Behandlungsansatz und meiner Qualifikation als VFO-zertifizierter Osteopath
+                </Link>.
               </p>
               <p className="leading-relaxed">
                 <strong>Wichtig:</strong> Osteopathie ersetzt keine ärztliche

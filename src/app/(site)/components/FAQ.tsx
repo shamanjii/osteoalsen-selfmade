@@ -8,37 +8,43 @@ import FAQStructuredData from '@/components/FAQStructuredData';
 const faqs = [
     {
         id: 1,
+        question: "Warum Osteopathie Hamburg bei Joshua Alsen?",
+        answer: `<p>Als VFO-zertifizierter Osteopath mit BAO-Ausbildung (über 5.000 Stunden) biete ich professionelle Osteopathie in Hamburg an zwei Standorten: Rotherbaum und Eimsbüttel. Ich nehme mir 45-60 Minuten Zeit für jeden Patienten und verfolge einen ganzheitlichen Ansatz.</p>
+        <p>Termine sind oft binnen 48 Stunden verfügbar. Viele gesetzliche und private Krankenkassen erstatten einen Teil der Behandlungskosten.</p>`
+    },
+    {
+        id: 2,
         question: "Wird die Osteopathie-Behandlung in Hamburg von der Krankenkasse bezahlt?",
         answer: `<p>Als VFO-zertifizierter Osteopath erfülle ich alle Anforderungen der Krankenkassen für eine Kostenerstattung in Hamburg-Rotherbaum und Eimsbüttel.</p>
 
         <p>Private Krankenversicherungen übernehmen in der Regel die gesamten Kosten für osteopathische Behandlungen. Die genauen Bedingungen variieren je nach Tarif und Versicherungsunternehmen.</p>`
     },
     {
-        id: 2,
+        id: 3,
         question: "Wie viel kostet die osteopathische Behandlung?",
         answer: `<p>Ich berechne nach der Gebührenverordnung für Heilpraktiker. Eine reguläre osteopathische Behandlung dauert bei mir zwischen 45 und 60 Minuten und kostet 150 Euro.</p>`
     },
     {
-        id: 3,
+        id: 4,
         question: "Wieviele Sitzungen benötige ich?",
         answer: `<p>Die Wirkung und Anzahl der benötigten Sitzungen variieren je nach individuellem Fall:</p>
         <p>Wenn Sie sich wegen akuter Schmerzen behandeln lassen, spüren Sie häufig bereits nach einer Sitzung eine merkliche Besserung. Meistens sind 1-3 Sitzungen im Abstand von 1-2 Wochen ausreichend.</p>
         <p>Bei chronischen Schmerzen sind meist mehrere Termine notwendig, bevor erste Erfolge sichtbar werden. Die Abstände zwischen den Sitzungen können länger sein.</p>`
     },
     {
-        id: 4,
+        id: 5,
         question: "Kann ich auch ohne Rezept zum Osteopathen?",
         answer: `<p>Ja, Osteopathie ist eine Heilpraktikerleistung und kann ohne ärztliches Rezept in Anspruch genommen werden. Dies gilt sowohl für Privat- und Beihilfepatienten als auch für gesetzlich Versicherte.</p>`
     },
     {
-        id: 5,
+        id: 6,
         question: "Wann sollte man nicht zur Osteopathie gehen?",
         answer: `<p>Die Osteopathie ist dank ihres ganzheitlichen Behandlungskonzepts ein wunderbar vielseitiges Instrument, das bei einer Vielzahl an Beschwerden zum Einsatz kommen kann.</p>
         <p>Schwere Verletzungen wie offene Wunden, Knochenbrüche oder Bänderrisse sollten Sie aber zuerst schulmedizinisch behandeln lassen.</p>
         <p>Auch schwere psychische Leiden wie starke Depressionen, Psychosen oder Persönlichkeitsstörungen lassen sich in der Regel nicht mit einer osteopathischen Behandlung alleine auflösen. Jedoch kann die osteopathische Arbeit über die Regulation des Nervensystems hier begleitend förderlich sein.</p>`
     },
     {
-        id: 6,
+        id: 7,
         question: "Soll ich etwas zur Behandlung mitbringen?",
         answer: `<p>Falls Sie Arztbriefe sowie Röntgen- oder MRT-Bilder zu Ihren aktuellen Beschwerden haben, bringen Sie diese bitte zum ersten Termin mit.</p>
         <p>Eventuell möchten Sie sich bequeme Kleidung für die Behandlung mitbringen. Die körperliche Untersuchung findet zu Teilen in Unterwäsche oder in Sportkleidung statt.</p>`

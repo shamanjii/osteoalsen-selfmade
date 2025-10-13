@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
     return (
         <section id="home" className="bg-white pt-16 md:pt-24">
@@ -5,7 +7,7 @@ export default function HeroSection() {
                 <div className="mx-auto max-w-3xl">
                     <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
                         Osteopathie Hamburg:<br />
-                        Rotherbaum &amp; Eimsbüttel
+                        <Link href="/osteopathie-rotherbaum" className="hover:text-blue-600 transition-colors">Rotherbaum</Link> &amp; <Link href="/osteopathie-eimsbuettel" className="hover:text-blue-600 transition-colors">Eimsbüttel</Link>
                         <br />
                         <span className="font-normal">Joshua Alsen</span>
                     </h1>
@@ -15,9 +17,15 @@ export default function HeroSection() {
                         in Hamburg
                     </h2>
                     <p className="mt-10 text-slate-700 text-base sm:text-lg md:text-xl leading-7 max-w-2xl mx-auto">
-                        In meiner Osteopathie-Praxis in Hamburg-Rotherbaum und Eimsbüttel biete ich ganzheitliche osteopathische
-                        Behandlungen an. Als VFO-zertifizierter Osteopath unterstütze ich gesetzlich Versicherte, Privatpatienten
-                        und Selbstzahler dabei, ihre natürliche Balance wiederzufinden.
+                        Osteopathie Hamburg – In meiner Praxis in{" "}
+                        <Link href="/osteopathie-rotherbaum" className="text-blue-600 hover:text-blue-800 font-medium">
+                            Rotherbaum
+                        </Link>{" "}und{" "}
+                        <Link href="/osteopathie-eimsbuettel" className="text-blue-600 hover:text-blue-800 font-medium">
+                            Eimsbüttel
+                        </Link>{" "}biete ich ganzheitliche osteopathische
+                        Behandlungen an. Als VFO-zertifizierter Osteopath und Heilpraktiker unterstütze ich gesetzlich Versicherte,
+                        Privatpatienten und Selbstzahler dabei, ihre natürliche Balance wiederzufinden. Termine oft binnen 48 Stunden verfügbar.
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a
