@@ -2,16 +2,15 @@
 export const dynamic = 'force-dynamic';
 
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 async function getCMSPosts() {
     try {
-        // Fetch from CMS API instead of direct database access
+        // Fetch from CMS API
         const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
-            next: { revalidate: 0 } // No caching for debugging
+            next: { revalidate: 60 } // Cache for 1 minute
         });
 
         if (!response.ok) {
@@ -22,28 +21,20 @@ async function getCMSPosts() {
         const data = await response.json();
 
         if (data.success && data.data) {
-            console.log(`Loaded ${data.data.length} posts from CMS API:`, data.data.map(p => ({ title: p.title, slug: p.slug, status: p.status })));
+            console.log(`Loaded ${data.data.length} posts from CMS:`, data.data.map(p => ({ title: p.title, slug: p.slug })));
             return data.data;
         }
 
         return [];
     } catch (error) {
-        console.error('Error fetching CMS posts from API:', error);
+        console.error('Error fetching CMS posts:', error);
         return [];
     }
 }
 
 export default async function BlogIndexPage() {
-    const [markdownPosts, cmsPosts] = await Promise.all([
-        getAllPosts(),
-        getCMSPosts()
-    ]);
-
-    // Combine and process posts for client component
-    const markdownProcessedPosts = markdownPosts.map(post => ({
-        ...post,
-        source: 'markdown' as const
-    }));
+    // Fetch only from CMS (single source of truth)
+    const cmsPosts = await getCMSPosts();
 
     // Process CMS posts to match expected format
     const cmsProcessedPosts = cmsPosts.map(post => ({
@@ -52,16 +43,14 @@ export default async function BlogIndexPage() {
         excerpt: post.excerpt,
         date: post.publishedAt || post.createdAt,
         keywords: Array.isArray(post.keywords) ? post.keywords : (typeof post.keywords === 'string' ? post.keywords.split(',').map(k => k.trim()) : []),
-        image: post.image || post.coverImage, // Use image from API, fallback to coverImage
+        image: post.image || post.coverImage,
         alt: post.altText || post.alt || post.title,
-        category: post.category?.slug || 'osteopathie', // Use category from CMS if available
+        category: post.category?.slug || 'osteopathie',
         source: 'cms' as const
     }));
 
-    // Combine CMS and markdown posts
-    const allPosts = [...cmsProcessedPosts, ...markdownProcessedPosts];
-
-    // Sort all posts by date (newest first)
+    // Sort by date (newest first)
+    const allPosts = [...cmsProcessedPosts];
     allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     const processedPosts = allPosts.map(post => {
