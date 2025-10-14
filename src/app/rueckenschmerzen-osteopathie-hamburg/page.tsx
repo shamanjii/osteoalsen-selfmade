@@ -6,26 +6,26 @@ import FloatingBookingButton from "@/components/FloatingBookingButton";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Rückenschmerzen Osteopathie Hamburg | Nachhaltige Behandlung - Joshua Alsen",
-  description: "Osteopathie bei Rückenschmerzen in Hamburg ✓ Ganzheitliche Behandlung ✓ Ursachen statt Symptome ✓ 60 Min. intensive Therapie ✓ Rotherbaum & Eimsbüttel. Jetzt Termin buchen!",
+  title: "Rückenschmerzen behandeln Hamburg | Schnelle Hilfe beim Osteopathen - Joshua Alsen",
+  description: "Akute Rückenschmerzen? Schnelle Hilfe in Hamburg ✓ Oft schon nach 1-3 Sitzungen Besserung ✓ Termine kurzfristig verfügbar ✓ Rotherbaum & Eimsbüttel ✓ Jetzt buchen!",
   keywords: [
-    "Rückenschmerzen Osteopathie Hamburg",
     "Rückenschmerzen behandeln Hamburg",
-    "Chronische Rückenschmerzen Hamburg",
-    "Rückenschmerzen Therapie Hamburg",
-    "Osteopath Rücken Hamburg",
-    "Kreuzschmerzen Osteopathie",
-    "LWS Beschwerden Hamburg",
-    "Hexenschuss Behandlung Hamburg",
-    "Bandscheibenvorfall Osteopathie",
-    "Ischias Osteopathie Hamburg",
+    "Akute Rückenschmerzen Hamburg",
+    "Kreuzschmerzen Hamburg",
+    "Rücken Osteopath Hamburg",
+    "Schnelle Hilfe Rückenschmerzen Hamburg",
+    "Hexenschuss Hamburg Rotherbaum",
+    "LWS Schmerzen Hamburg",
+    "Rückenschmerzen Soforthilfe Hamburg",
+    "Osteopath Kreuzschmerzen Hamburg",
+    "Unterer Rücken Schmerzen Hamburg",
   ],
   alternates: {
     canonical: "/rueckenschmerzen-osteopathie-hamburg",
   },
   openGraph: {
-    title: "Rückenschmerzen Osteopathie Hamburg | Nachhaltige Behandlung",
-    description: "Ganzheitliche osteopathische Behandlung bei Rückenschmerzen in Hamburg. 60 Min. intensive Therapie für nachhaltige Linderung.",
+    title: "Rückenschmerzen behandeln Hamburg | Schnelle Hilfe beim Osteopathen",
+    description: "Akute Rückenschmerzen? Schnelle Terminvergabe in Hamburg. Oft schon nach 1-3 Sitzungen deutliche Besserung. Rotherbaum & Eimsbüttel.",
     url: "https://www.osteoalsen.de/rueckenschmerzen-osteopathie-hamburg",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     locale: "de_DE",
@@ -46,34 +46,34 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Kann Osteopathie bei chronischen Rückenschmerzen helfen?",
+    question: "Wie schnell bekomme ich einen Termin bei akuten Rückenschmerzen in Hamburg?",
     answer:
-      "Ja, Osteopathie kann bei chronischen Rückenschmerzen sehr wirksam sein. Studien zeigen, dass osteopathische Behandlungen Schmerzen signifikant reduzieren und die Funktionsfähigkeit verbessern können. Der ganzheitliche Ansatz adressiert nicht nur die Schmerzsymptome, sondern auch die zugrunde liegenden Ursachen wie Haltungsprobleme, muskuläre Dysbalancen oder viszerale Einschränkungen.",
+      "Bei akuten Rückenschmerzen versuche ich, Ihnen kurzfristig einen Termin anzubieten – oft innerhalb von 1-3 Tagen. Beide Standorte (Rotherbaum und Eimsbüttel) sind gut erreichbar mit U-Bahn und Bus. Sie können online buchen oder mich direkt anrufen unter 0176 4399 0001.",
   },
   {
-    question: "Wie viele Sitzungen brauche ich bei Rückenschmerzen?",
+    question: "Wie lange dauert eine Behandlung und was kostet sie?",
     answer:
-      "Die Anzahl der Sitzungen variiert je nach Ursache und Dauer der Beschwerden. Bei akuten Rückenschmerzen (z.B. Hexenschuss) reichen oft 1-3 Sitzungen. Bei chronischen Beschwerden empfehle ich meist 4-6 Behandlungen im Abstand von 2-3 Wochen. Bereits nach der ersten Sitzung berichten viele Patienten von deutlicher Verbesserung.",
+      "Eine osteopathische Behandlung bei mir dauert 60 Minuten und kostet 150€. Bei akuten Rückenschmerzen wie Hexenschuss oder ISG-Blockaden zeigt sich oft schon nach 1-3 Sitzungen eine deutliche Besserung. Die Rechnung können Sie bei Ihrer Krankenkasse zur Erstattung einreichen – viele Kassen bezuschussen mit 30-60€ pro Sitzung.",
   },
   {
-    question: "Was ist der Unterschied zwischen Osteopathie und Physiotherapie bei Rückenschmerzen?",
+    question: "Wo in Hamburg finde ich Ihre Praxen?",
     answer:
-      "Osteopathie betrachtet den Körper ganzheitlich und sucht nach der Ursache der Rückenschmerzen im gesamten Körpersystem – manchmal liegt die Ursache z.B. im Becken, Darm oder sogar in der Kieferregion. Physiotherapie fokussiert sich meist auf lokale Übungen und Kräftigung. In der Osteopathie nehme ich mir 60 Minuten Zeit für manuelle Techniken, während Physiotherapie oft 20-30 Minuten dauert und mit Rezept verschrieben wird.",
+      "Ich habe zwei zentrale Standorte: In Rotherbaum (Rappstraße 7, U3 Hoheluftbrücke, 3 Min. Fußweg) und in Eimsbüttel (Eppendorfer Weg 234, U3 Hoheluftbrücke 5 Min. oder U2 Lutterothstraße 7 Min.). Beide Standorte sind barrierefrei erreichbar und gut an den ÖPNV angebunden.",
   },
   {
-    question: "Hilft Osteopathie auch bei Bandscheibenvorfall?",
+    question: "Kann ich mit akuten Rückenschmerzen direkt zu Ihnen kommen?",
     answer:
-      "Osteopathie kann bei Bandscheibenvorfällen unterstützend wirken, besonders wenn keine OP-Indikation besteht. Durch sanfte Mobilisation, Entlastung der betroffenen Segmente und Verbesserung der umgebenden Strukturen kann der Heilungsprozess gefördert werden. Bei akuten neurologischen Ausfällen (z.B. Lähmungen, Taubheitsgefühle) ist jedoch zunächst eine ärztliche Abklärung wichtig. Ich arbeite hier gerne interdisziplinär mit Orthopäden zusammen.",
+      "Ja, bei akuten Rückenschmerzen wie Hexenschuss, ISG-Blockade oder plötzlichen Verspannungen können Sie direkt zu mir kommen – eine ärztliche Überweisung ist nicht erforderlich. Bei sehr starken Schmerzen nach einem Unfall oder bei neurologischen Ausfällen (Taubheit, Lähmungen) sollten Sie jedoch zunächst zum Arzt gehen.",
   },
   {
-    question: "Werden die Kosten von der Krankenkasse übernommen?",
+    question: "Was unterscheidet Ihre Behandlung von einer Massage oder Physiotherapie?",
     answer:
-      "Viele private Krankenversicherungen und Zusatzversicherungen erstatten osteopathische Behandlungen zu 80-100%. Auch einige gesetzliche Krankenkassen bezuschussen Osteopathie mit 30-60€ pro Sitzung. Eine Behandlung kostet 150€ (60 Min.). Gerne berate ich Sie individuell zu Erstattungsmöglichkeiten und stelle alle erforderlichen Unterlagen für die Abrechnung bereit.",
+      "Osteopathie ist keine Massage, sondern eine ganzheitliche Behandlung, die nach den Ursachen Ihrer Rückenschmerzen sucht – oft im Becken, Darm oder anderen Bereichen fern vom schmerzenden Rücken. Ich nehme mir 60 Minuten Zeit ausschließlich für manuelle Techniken. Physiotherapie dauert meist 20-30 Minuten und arbeitet eher lokal mit Übungen und Geräten.",
   },
   {
-    question: "Was kann ich selbst gegen Rückenschmerzen tun?",
+    question: "Gibt es Parkmöglichkeiten an Ihren Standorten?",
     answer:
-      "Zwischen den Behandlungen empfehle ich: regelmäßige Bewegung (Spazieren, Schwimmen, Yoga), dynamisches Sitzen statt starre Haltung, Wärme bei Verspannungen, Dehnübungen für Hüfte und Wirbelsäule, Stressmanagement (da Stress Verspannungen verstärkt). Nach der Erstbehandlung gebe ich Ihnen individuell angepasste Übungen mit, die Sie zu Hause durchführen können.",
+      "In Rotherbaum und Eimsbüttel gibt es Straßenparkplätze (teilweise Parkscheinautomat). Ich empfehle aber die Anreise mit U-Bahn oder Bus, da beide Standorte direkt an der U3 Hoheluftbrücke liegen und sehr gut erreichbar sind. Fahrradstellplätze sind ebenfalls vorhanden.",
   },
 ];
 
@@ -88,13 +88,13 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="font-serif text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-                Rückenschmerzen nachhaltig
-                <span className="block text-teal-600">behandeln mit Osteopathie</span>
+                Schnelle Hilfe bei
+                <span className="block text-teal-600">Rückenschmerzen in Hamburg</span>
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
-                Ganzheitliche osteopathische Behandlung bei akuten und chronischen
-                Rückenschmerzen in Hamburg. Ursachen erkennen, Schmerzen lindern,
-                Beweglichkeit wiederherstellen.
+                Akute Rückenschmerzen? Termine kurzfristig verfügbar in Rotherbaum & Eimsbüttel.
+                Oft schon nach 1-3 Sitzungen deutliche Besserung bei Hexenschuss,
+                ISG-Blockaden und Kreuzschmerzen.
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
@@ -120,7 +120,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                   href="/behandlungen/rueckenschmerzen"
                   className="inline-flex items-center justify-center rounded-lg border-2 border-gray-300 bg-white px-8 py-4 text-base font-semibold text-gray-700 transition-all hover:border-teal-600 hover:text-teal-600"
                 >
-                  Mehr zur Behandlung
+                  Detaillierte Behandlungsinfos
                 </Link>
               </div>
             </div>
@@ -132,11 +132,10 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
-                Warum Osteopathie bei Rückenschmerzen?
+                Warum zu mir bei Rückenschmerzen?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-                Rückenschmerzen sind komplex – die Ursache liegt oft nicht dort, wo es
-                weh tut
+                Zentral in Hamburg gelegen, kurzfristige Termine und effektive Behandlung
               </p>
             </div>
 
@@ -153,17 +152,17 @@ export default function RueckenschmerzenOsteopathiePage() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
                     />
                   </svg>
                 </div>
                 <h3 className="mb-3 font-serif text-xl font-semibold text-gray-900">
-                  Ursachen statt Symptome
+                  Kurzfristige Termine
                 </h3>
                 <p className="text-gray-600">
-                  Ich untersuche Ihren gesamten Körper, um die wahre Ursache Ihrer
-                  Rückenschmerzen zu finden – sei es im Becken, Darm, Zwerchfell oder
-                  der Körperhaltung.
+                  Bei akuten Rückenschmerzen versuche ich, Ihnen innerhalb von 1-3
+                  Tagen einen Termin in Rotherbaum oder Eimsbüttel anzubieten. Online
+                  buchbar oder telefonisch.
                 </p>
               </div>
 
@@ -179,17 +178,22 @@ export default function RueckenschmerzenOsteopathiePage() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
                 </div>
                 <h3 className="mb-3 font-serif text-xl font-semibold text-gray-900">
-                  60 Minuten intensive Therapie
+                  Zentral in Hamburg
                 </h3>
                 <p className="text-gray-600">
-                  Keine Zeitnot: Ich nehme mir eine volle Stunde für Sie – für
-                  ausführliche Anamnese, Untersuchung und individuell angepasste
-                  Behandlung.
+                  Zwei Standorte direkt an der U3 Hoheluftbrücke: Rotherbaum (3 Min.)
+                  und Eimsbüttel (5 Min. Fußweg). Perfekt erreichbar aus ganz Hamburg.
                 </p>
               </div>
 
@@ -210,12 +214,12 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </svg>
                 </div>
                 <h3 className="mb-3 font-serif text-xl font-semibold text-gray-900">
-                  Nachhaltige Linderung
+                  Schnelle Besserung
                 </h3>
                 <p className="text-gray-600">
-                  Durch die ganzheitliche Behandlung und gezielte Übungen für zu Hause
-                  erreichen wir nicht nur kurzfristige Schmerzlinderung, sondern
-                  langfristige Besserung.
+                  Bei akuten Rückenschmerzen wie Hexenschuss oder ISG-Blockaden oft
+                  schon nach 1-3 Sitzungen deutliche Verbesserung. Keine monatelangen
+                  Therapien.
                 </p>
               </div>
 
@@ -298,78 +302,137 @@ export default function RueckenschmerzenOsteopathiePage() {
           </div>
         </section>
 
+        {/* Infobox mit Link zur Hauptseite */}
+        <section className="bg-blue-50 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border-2 border-blue-200 bg-white p-8 text-center shadow-sm">
+              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
+                <svg
+                  className="h-8 w-8 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mb-3 font-serif text-2xl font-bold text-gray-900">
+                Mehr über osteopathische Rückenschmerz-Behandlung erfahren?
+              </h3>
+              <p className="mb-6 text-gray-600">
+                Auf unserer ausführlichen Behandlungsseite finden Sie detaillierte
+                Informationen zu Ursachen, Techniken, wissenschaftlichen Hintergründen
+                und Behandlungsablauf.
+              </p>
+              <Link
+                href="/behandlungen/rueckenschmerzen"
+                className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-base font-semibold text-white transition-all hover:bg-blue-700"
+              >
+                Zur ausführlichen Behandlungsseite
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Häufige Ursachen */}
         <section className="bg-gray-50 py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
-                Häufige Ursachen von Rückenschmerzen
+                Bei welchen Rückenbeschwerden kann ich helfen?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-                In meiner Praxis behandle ich verschiedenste Formen von Rückenbeschwerden
+                Schnelle Hilfe in Hamburg bei diesen akuten Beschwerden
               </p>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Muskuläre Verspannungen
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="rounded-xl border-l-4 border-teal-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  ⚡ Hexenschuss (Lumbago)
                 </h3>
                 <p className="text-gray-600">
-                  Oft durch Fehlhaltungen, einseitige Belastungen oder Stress ausgelöst.
-                  Betrifft häufig die Lendenwirbelsäule und den unteren Rücken.
+                  Plötzlicher stechender Schmerz im unteren Rücken. Oft schon nach 1-2
+                  Sitzungen deutliche Besserung möglich.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Blockierungen der Wirbelsäule
+              <div className="rounded-xl border-l-4 border-teal-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  🦴 ISG-Blockade
                 </h3>
                 <p className="text-gray-600">
-                  Funktionsstörungen einzelner Wirbelgelenke führen zu Bewegungseinschränkungen
-                  und Schmerzen, besonders im LWS- und BWS-Bereich.
+                  Blockade des Iliosakralgelenks mit einseitigen Schmerzen im Gesäß,
+                  oft mit Ausstrahlung ins Bein.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Beckenschiefstand & ISG-Probleme
+              <div className="rounded-xl border-l-4 border-teal-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  💪 Akute Verspannungen
                 </h3>
                 <p className="text-gray-600">
-                  Fehlstellungen des Beckens oder Blockaden im Iliosakralgelenk (ISG)
-                  strahlen oft in den unteren Rücken und die Beine aus.
+                  Nach falscher Bewegung, schwerem Heben oder durch Stress ausgelöste
+                  muskuläre Verhärtungen.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Bandscheibenprobleme
+              <div className="rounded-xl border-l-4 border-orange-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  📀 Bandscheibenprobleme
                 </h3>
                 <p className="text-gray-600">
-                  Bandscheibenvorfälle oder -vorwölbungen können auf Nerven drücken und
-                  zu ausstrahlenden Schmerzen (Ischias) führen.
+                  Vorwölbungen oder Vorfälle – osteopathische Unterstützung zur
+                  Schmerzlinderung und Heilungsförderung.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Viszerale Dysfunktionen
+              <div className="rounded-xl border-l-4 border-orange-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  🔄 Chronische Kreuzschmerzen
                 </h3>
                 <p className="text-gray-600">
-                  Bewegungseinschränkungen innerer Organe (z.B. Darm, Nieren) können
-                  über Faszien und Nerven Rückenschmerzen verursachen.
+                  Langanhaltende LWS-Beschwerden durch Fehlhaltung, Überlastung oder
+                  alte Verletzungen.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Stress & psychosomatische Faktoren
+              <div className="rounded-xl border-l-4 border-orange-500 bg-white p-6 shadow-sm">
+                <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-gray-900">
+                  💼 Büro-Rückenschmerzen
                 </h3>
                 <p className="text-gray-600">
-                  Chronischer Stress führt zu muskulären Verspannungen und kann
-                  bestehende Rückenschmerzen verstärken.
+                  Beschwerden durch langes Sitzen, schlechte Ergonomie und
+                  Bewegungsmangel im Arbeitsalltag.
                 </p>
               </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-gray-600">
+                <span className="font-semibold text-teal-600">Grün markiert:</span>{" "}
+                Akute Beschwerden – oft schnelle Besserung möglich |{" "}
+                <span className="font-semibold text-orange-600">Orange markiert:</span>{" "}
+                Chronische Beschwerden – benötigen mehr Zeit
+              </p>
             </div>
           </div>
         </section>
