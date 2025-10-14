@@ -7,10 +7,17 @@ import TableOfContents from '@/components/TableOfContents';
 
 interface ArticleWithSidebarProps {
   content: string;
-  children?: React.ReactNode; // For ScientificCredibilityBox, LiteratureSection, etc.
+  children?: React.ReactNode;
+  articleOnly?: boolean; // Only render article content
+  sidebarOnly?: boolean; // Only render ToC sidebar
 }
 
-export default function ArticleWithSidebar({ content, children }: ArticleWithSidebarProps) {
+export default function ArticleWithSidebar({
+  content,
+  children,
+  articleOnly = false,
+  sidebarOnly = false
+}: ArticleWithSidebarProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [isContentReady, setIsContentReady] = useState(false);
 
@@ -23,32 +30,74 @@ export default function ArticleWithSidebar({ content, children }: ArticleWithSid
     return () => clearTimeout(timer);
   }, [content]);
 
+  // Sidebar only mode - just render ToC
+  if (sidebarOnly) {
+    useEffect(() => {
+      // Find the content element by ID
+      const findContent = () => {
+        const elem = document.getElementById('article-content');
+        if (elem && contentRef.current !== elem) {
+          (contentRef as any).current = elem;
+          setIsContentReady(true);
+        }
+      };
+
+      findContent();
+      const interval = setInterval(findContent, 100);
+      setTimeout(() => clearInterval(interval), 2000);
+
+      return () => clearInterval(interval);
+    }, []);
+
+    return isContentReady && contentRef.current ? (
+      <>
+        {/* Desktop Sidebar */}
+        <aside className="hidden lg:block w-72 flex-shrink-0">
+          <TableOfContents contentRef={contentRef} isDesktopSidebar />
+        </aside>
+
+        {/* Mobile Floating Button */}
+        <div className="lg:hidden">
+          <TableOfContents contentRef={contentRef} />
+        </div>
+      </>
+    ) : null;
+  }
+
+  // Article only mode - just render content
+  if (articleOnly) {
+    return (
+      <>
+        {/* Reading Progress Bar */}
+        <ReadingProgressBar contentRef={contentRef} />
+
+        <div id="article-content" ref={contentRef} className="prose prose-lg max-w-none">
+          <SafeHtml html={content} type="blog" />
+        </div>
+
+        {/* Additional content (boxes, sections, etc.) */}
+        {children}
+      </>
+    );
+  }
+
+  // Full mode - render everything (fallback)
   return (
     <>
-      {/* Reading Progress Bar */}
       <ReadingProgressBar contentRef={contentRef} />
-
-      {/* Layout: Article + ToC Sidebar */}
       <div className="flex gap-8 items-start">
-        {/* Main Article Content - Left side */}
         <div className="flex-1 min-w-0">
           <div ref={contentRef} className="prose prose-lg max-w-none">
             <SafeHtml html={content} type="blog" />
           </div>
-
-          {/* Additional content (boxes, sections, etc.) */}
           {children}
         </div>
-
-        {/* Table of Contents Sidebar - Right side, desktop only, sticky */}
         {isContentReady && (
           <aside className="hidden lg:block w-72 flex-shrink-0">
             <TableOfContents contentRef={contentRef} isDesktopSidebar />
           </aside>
         )}
       </div>
-
-      {/* Table of Contents - Mobile floating button */}
       {isContentReady && (
         <div className="lg:hidden">
           <TableOfContents contentRef={contentRef} />

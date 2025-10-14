@@ -82,8 +82,6 @@ export default async function BlogPost({ params }: PageProps) {
                 { label: post.title }
             ]} />
 
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
-
             {/* Structured Data for Blog Post */}
             <BlogPostStructuredData
                 title={post.title}
@@ -110,8 +108,12 @@ export default async function BlogPost({ params }: PageProps) {
                 />
             )}
 
-            <BlogErrorBoundary>
-                <article className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+            {/* Main Layout: Article + Sidebar */}
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+                <div className="flex gap-8 items-start">
+                    {/* Article Container - Left side */}
+                    <BlogErrorBoundary>
+                        <article className="flex-1 bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
                     <header className="mb-6">
                         <h1 className="text-3xl font-epilogue font-bold mb-2 text-slate-900">{post.title}</h1>
                         <div className="text-slate-500 text-sm">
@@ -135,7 +137,7 @@ export default async function BlogPost({ params }: PageProps) {
                         </div>
                     )}
 
-                    <ArticleWithSidebar content={post.content}>
+                    <ArticleWithSidebar content={post.content} articleOnly>
                         {/* Scientific Credibility Box for medical topics */}
                         {post.keywords?.some(keyword =>
                             keyword.toLowerCase().includes('osteopathie') ||
@@ -160,12 +162,17 @@ export default async function BlogPost({ params }: PageProps) {
                         >
                             ← Zurück zur Übersicht
                         </Link>
-                    </footer>
-                </article>
-            </BlogErrorBoundary>
+                        </footer>
+                    </article>
+                </BlogErrorBoundary>
+
+                {/* ToC Sidebar - Right side, separate from article */}
+                <ArticleWithSidebar content={post.content} sidebarOnly />
+                </div>
+            </div>
 
             {/* Social Share Buttons */}
-            <div className="mt-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 mt-8">
                 <SocialShare
                     title={post.title}
                     url={`/blog/${post.slug}`}
@@ -174,8 +181,9 @@ export default async function BlogPost({ params }: PageProps) {
             </div>
 
             {/* Related Articles */}
-            <RelatedArticles currentSlug={post.slug} articles={allPosts} />
-        </div>
+            <div className="mx-auto max-w-7xl px-4 sm:px-6">
+                <RelatedArticles currentSlug={post.slug} articles={allPosts} />
+            </div>
         </>
     );
 }
