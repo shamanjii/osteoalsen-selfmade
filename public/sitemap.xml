@@ -1,164 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.osteoalsen.de</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/terminbuchung</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/rueckenschmerzen</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/arthrose-gelenkbeschwerden</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/kopfschmerzen-migraene</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/nackenschmerzen</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/sportosteopathie</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/verdauungsbeschwerden</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/behandlungen/stress-burnout</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.osteoalsen.de/behandlungen/sportverletzungen</loc>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/osteopathie-rotherbaum</loc>
-    <lastmod>2025-01-13T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/osteopathie-eimsbuettel</loc>
-    <lastmod>2025-01-13T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/was-ist-osteopathie</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/kosten-ablauf</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/faq</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/ueber-mich</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.osteoalsen.de/blog</loc>
-    <lastmod>2025-01-10T00:00:00.000Z</lastmod>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.osteoalsen.de/blog/rueckenschmerzen-ursachen-behandlung</loc>
-    <lastmod>2024-09-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.osteoalsen.de/datenschutz</loc>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.osteoalsen.de/blog/chronische-schmerzen-mit-osteopathie-behandeln-ganzheitliche-ansaetze-fuer-dauerhafte-linderung</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.osteoalsen.de/impressum</loc>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.osteoalsen.de/blog/cmd-und-kiefergelenksbeschwerden-osteopathische-behandlung-von-kieferproblemen</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/muskuloskeletale-beschwerden-erfolgreich-behandeln-osteopathische-therapie-bei-ruecken-nacken-und-gelenkschmerzen</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/osteopathie-bei-kopfschmerzen-und-migraene-ganzheitliche-behandlung-in-hamburg</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/osteopathie-bei-verdauungsbeschwerden-wenn-der-bauch-aus-dem-gleichgewicht-geraet</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/osteopathie-im-alter-mobilitaet-und-lebensqualitaet-in-den-besten-jahren-erhalten</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/postoperative-rehabilitation-mit-osteopathie-optimale-heilung-nach-operationen</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/schwindel-und-gleichgewichtsstoerungen-osteopathische-hilfe-fuer-mehr-stabilitaet</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.osteoalsen.de/blog/sportverletzungen-und-rehabilitation-osteopathie-fuer-aktive-menschen</loc>
-    <lastmod>2024-09-18T00:00:00.000Z</lastmod>
+    <loc>https://www.osteoalsen.de/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg</loc>
+    <lastmod>2025-10-14T07:46:43.859Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

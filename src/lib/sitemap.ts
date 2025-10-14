@@ -74,6 +74,12 @@ export function generateSitemap(): SitemapUrl[] {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/behandlungen/sportverletzungen`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/osteopathie-rotherbaum`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -114,6 +120,18 @@ export function generateSitemap(): SitemapUrl[] {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/datenschutz`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/impressum`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ];
 
