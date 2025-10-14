@@ -1,60 +1,17 @@
-// Force dynamic rendering to avoid prerender errors
-export const dynamic = 'force-dynamic';
+// Use ISR (Incremental Static Regeneration) for performance
+export const revalidate = 3600; // Revalidate every hour
 
-import Link from "next/link";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
-
-async function getCMSPosts() {
-    try {
-        // Fetch from CMS API
-        const response = await fetch('https://cms.osteoalsen.de/api/public/posts', {
-            next: { revalidate: 60 } // Cache for 1 minute
-        });
-
-        if (!response.ok) {
-            console.warn('CMS API not available, falling back to empty array');
-            return [];
-        }
-
-        const data = await response.json();
-
-        if (data.success && data.data) {
-            console.log(`Loaded ${data.data.length} posts from CMS:`, data.data.map(p => ({ title: p.title, slug: p.slug })));
-            return data.data;
-        }
-
-        return [];
-    } catch (error) {
-        console.error('Error fetching CMS posts:', error);
-        return [];
-    }
-}
+import { getAllPosts } from "@/lib/posts-cms";
 
 export default async function BlogIndexPage() {
-    // Fetch only from CMS (single source of truth)
-    const cmsPosts = await getCMSPosts();
+    // Fetch from CMS database (single source of truth)
+    const posts = await getAllPosts();
 
-    // Process CMS posts to match expected format
-    const cmsProcessedPosts = cmsPosts.map(post => ({
-        slug: post.slug,
-        title: post.title,
-        excerpt: post.excerpt,
-        date: post.publishedAt || post.createdAt,
-        keywords: Array.isArray(post.keywords) ? post.keywords : (typeof post.keywords === 'string' ? post.keywords.split(',').map(k => k.trim()) : []),
-        image: post.image || post.coverImage,
-        alt: post.altText || post.alt || post.title,
-        category: post.category?.slug || 'osteopathie',
-        source: 'cms' as const
-    }));
-
-    // Sort by date (newest first)
-    const allPosts = [...cmsProcessedPosts];
-    allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-    const processedPosts = allPosts.map(post => {
-        // Extract category from keywords
+    const processedPosts = posts.map(post => {
+        // Extract category from keywords if not set
         const extractCategory = (keywords?: string[]): string => {
             if (!keywords || keywords.length === 0) return 'osteopathie';
             const keywordStr = keywords.join(' ').toLowerCase();
@@ -73,9 +30,9 @@ export default async function BlogIndexPage() {
             excerpt: post.excerpt,
             date: post.date,
             keywords: post.keywords,
-            image: post.image, // Already mapped correctly above
+            image: post.image,
             alt: post.alt || post.title,
-            category: post.category || extractCategory(post.keywords) // Use existing category if available, otherwise extract from keywords
+            category: extractCategory(post.keywords)
         };
     });
 

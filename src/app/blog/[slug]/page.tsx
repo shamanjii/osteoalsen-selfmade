@@ -1,10 +1,10 @@
-// Force dynamic rendering to avoid prerender errors
-export const dynamic = 'force-dynamic';
+// Use ISR for performance
+export const revalidate = 3600; // Revalidate every hour
 
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
+import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts-cms";
 import SafeHtml from "@/components/SafeHtml";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import { BlogPostStructuredData, MedicalScholarlyArticle } from "@/components/StructuredData";
@@ -12,9 +12,6 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
-import { remark } from "remark";
-import remarkHtml from "remark-html";
-import remarkGfm from "remark-gfm";
 
 interface PageProps {
     params: Promise<{
@@ -22,108 +19,39 @@ interface PageProps {
     }>;
 }
 
-// Function to get CMS post by slug
-async function getCMSPostBySlug(slug: string) {
-    try {
-        const response = await fetch(`https://cms.osteoalsen.de/api/public/posts/${slug}`, {
-            next: { revalidate: 0 }
-        });
-
-        if (!response.ok) {
-            return null;
-        }
-
-        const data = await response.json();
-        return data.success ? data.data : null;
-    } catch (error) {
-        console.error('Error fetching CMS post:', error);
-        return null;
-    }
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
+    const post = await getPostBySlug(slug);
 
-    // Try markdown first
-    const markdownPost = await getPostBySlug(slug);
-    if (markdownPost) {
+    if (!post) {
         return {
-            title: `${markdownPost.title} | Osteoalsen Blog`,
-            description: markdownPost.excerpt,
-            keywords: markdownPost.keywords,
-            openGraph: {
-                title: markdownPost.title,
-                description: markdownPost.excerpt || '',
-                type: 'article',
-                images: markdownPost.image ? [markdownPost.image] : [],
-            },
-        };
-    }
-
-    // Try CMS post
-    const cmsPost = await getCMSPostBySlug(slug);
-    if (cmsPost) {
-        return {
-            title: `${cmsPost.title} | Osteoalsen Blog`,
-            description: cmsPost.excerpt || '',
-            openGraph: {
-                title: cmsPost.title,
-                description: cmsPost.excerpt || '',
-                type: 'article',
-                images: cmsPost.image ? [cmsPost.image] : [],
-            },
+            title: 'Post nicht gefunden | Osteoalsen Blog'
         };
     }
 
     return {
-        title: 'Post nicht gefunden | Osteoalsen Blog'
+        title: `${post.title} | Osteoalsen Blog`,
+        description: post.excerpt,
+        keywords: post.keywords,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt || '',
+            type: 'article',
+            images: post.image ? [post.image] : [],
+        },
     };
 }
 
 export async function generateStaticParams() {
-    const posts = await getAllPosts();
-    return posts.map((post) => ({
-        slug: post.slug,
+    const slugs = await getAllSlugs();
+    return slugs.map((slug) => ({
+        slug,
     }));
 }
 
 export default async function BlogPost({ params }: PageProps) {
     const { slug } = await params;
-
-    // Try to get markdown post first
-    let post = await getPostBySlug(slug);
-    let isCMSPost = false;
-
-    // If not found, try CMS post
-    if (!post) {
-        const cmsPost = await getCMSPostBySlug(slug);
-        if (cmsPost) {
-            // Process markdown content to HTML for CMS posts
-            let processedContent = '';
-            try {
-                const processed = await remark()
-                    .use(remarkGfm)
-                    .use(remarkHtml)
-                    .process(cmsPost.content || '');
-                processedContent = String(processed);
-            } catch (error) {
-                console.error('Error processing CMS markdown:', error);
-                processedContent = cmsPost.content || '';
-            }
-
-            post = {
-                title: cmsPost.title || 'Untitled',
-                excerpt: cmsPost.excerpt || '',
-                content: processedContent, // ✅ Now processed HTML
-                date: cmsPost.publishedAt || cmsPost.createdAt || new Date().toISOString(),
-                keywords: Array.isArray(cmsPost.keywords) ? cmsPost.keywords : (typeof cmsPost.keywords === 'string' ? cmsPost.keywords.split(',').map(k => k.trim()) : []),
-                image: cmsPost.image || '',
-                alt: cmsPost.title || 'Article image',
-                slug: cmsPost.slug || slug
-            };
-            isCMSPost = true;
-        }
-    }
+    const post = await getPostBySlug(slug);
 
     if (!post) {
         return (
@@ -186,7 +114,7 @@ export default async function BlogPost({ params }: PageProps) {
                     <header className="mb-6">
                         <h1 className="text-3xl font-epilogue font-bold mb-2 text-slate-900">{post.title}</h1>
                         <div className="text-slate-500 text-sm">
-                            Veröffentlicht am {new Date(post.date).toLocaleDateString('de-DE', {
+                            Veröffentlicht am {new Date(post.date || '').toLocaleDateString('de-DE', {
                                 year: 'numeric',
                                 month: 'long',
                                 day: 'numeric'
@@ -207,11 +135,7 @@ export default async function BlogPost({ params }: PageProps) {
                     )}
 
                     <div className="prose prose-lg max-w-none">
-                        {isCMSPost ? (
-                            <SafeHtml html={post.content} type="blog" />
-                        ) : (
-                            <SafeHtml html={post.content} type="blog" />
-                        )}
+                        <SafeHtml html={post.content} type="blog" />
                     </div>
 
                     {/* Scientific Credibility Box for medical topics */}

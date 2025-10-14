@@ -301,29 +301,6 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                     </div>
                 </section>
 
-                {/* Newsletter Section */}
-                <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white rounded-2xl p-8 md:p-12 mt-16 text-center relative overflow-hidden">
-                    <div className="relative z-10">
-                        <h3 className="font-epilogue text-3xl font-bold mb-4">Bleiben Sie informiert</h3>
-                        <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-                            Erhalten Sie die neuesten evidenzbasierten Artikel und Gesundheitstipps direkt in Ihr Postfach.
-                        </p>
-                        <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                            <input
-                                type="email"
-                                placeholder="Ihre E-Mail-Adresse"
-                                className="flex-1 px-4 py-3 rounded-lg border-2 border-white/20 bg-white/10 text-white placeholder-white/70 backdrop-blur-sm focus:outline-none focus:border-white/50"
-                                required
-                            />
-                            <button
-                                type="submit"
-                                className="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center gap-2"
-                            >
-                                ✉️ Abonnieren
-                            </button>
-                        </form>
-                    </div>
-                </section>
             </main>
         </>
     );
