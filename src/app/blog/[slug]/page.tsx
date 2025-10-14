@@ -5,13 +5,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts-cms";
-import SafeHtml from "@/components/SafeHtml";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import { BlogPostStructuredData, MedicalScholarlyArticle } from "@/components/StructuredData";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
+import SocialShare from "@/components/SocialShare";
+import BlogArticleContent from "./BlogArticleContent";
 
 interface PageProps {
     params: Promise<{
@@ -134,9 +135,7 @@ export default async function BlogPost({ params }: PageProps) {
                         </div>
                     )}
 
-                    <div className="prose prose-lg max-w-none">
-                        <SafeHtml html={post.content} type="blog" />
-                    </div>
+                    <BlogArticleContent content={post.content} />
 
                     {/* Scientific Credibility Box for medical topics */}
                     {post.keywords?.some(keyword =>
@@ -164,6 +163,15 @@ export default async function BlogPost({ params }: PageProps) {
                     </footer>
                 </article>
             </BlogErrorBoundary>
+
+            {/* Social Share Buttons */}
+            <div className="mt-8">
+                <SocialShare
+                    title={post.title}
+                    url={`/blog/${post.slug}`}
+                    excerpt={post.excerpt}
+                />
+            </div>
 
             {/* Related Articles */}
             <RelatedArticles currentSlug={post.slug} articles={allPosts} />
