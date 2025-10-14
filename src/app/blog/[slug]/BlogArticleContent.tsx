@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import SafeHtml from '@/components/SafeHtml';
 import TableOfContents from '@/components/TableOfContents';
 import ReadingProgressBar from '@/components/ReadingProgressBar';
@@ -11,6 +11,16 @@ interface BlogArticleContentProps {
 
 export default function BlogArticleContent({ content }: BlogArticleContentProps) {
   const contentRef = useRef<HTMLDivElement>(null);
+  const [isContentReady, setIsContentReady] = useState(false);
+
+  // Wait for SafeHtml to render the content
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsContentReady(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [content]);
 
   return (
     <>
@@ -25,15 +35,20 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
           </div>
         </div>
 
-        {/* Table of Contents - Hidden on mobile, shown on large screens */}
-        <div className="hidden lg:block flex-shrink-0">
-          <TableOfContents contentRef={contentRef} />
-        </div>
+        {/* Table of Contents - Only render when content is ready */}
+        {isContentReady && (
+          <>
+            {/* Desktop ToC */}
+            <div className="hidden lg:block flex-shrink-0">
+              <TableOfContents contentRef={contentRef} />
+            </div>
 
-        {/* Mobile Table of Contents */}
-        <div className="lg:hidden">
-          <TableOfContents contentRef={contentRef} />
-        </div>
+            {/* Mobile ToC */}
+            <div className="lg:hidden">
+              <TableOfContents contentRef={contentRef} />
+            </div>
+          </>
+        )}
       </div>
     </>
   );

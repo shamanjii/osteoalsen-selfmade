@@ -18,27 +18,55 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // Use MutationObserver to wait for content to be fully rendered
+    const extractHeadings = () => {
+      if (!contentRef.current) return;
+
+      // Look for headings in the entire subtree, including in dangerouslySetInnerHTML content
+      const headings = contentRef.current.querySelectorAll('h2, h3');
+      const items: TocItem[] = [];
+
+      headings.forEach((heading, index) => {
+        // Create ID if not exists
+        if (!heading.id) {
+          const id = `heading-${index}-${heading.textContent?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+          heading.id = id;
+        }
+
+        items.push({
+          id: heading.id,
+          text: heading.textContent || '',
+          level: parseInt(heading.tagName.charAt(1))
+        });
+      });
+
+      if (items.length > 0) {
+        setTocItems(items);
+      }
+    };
+
+    // Initial extraction
+    extractHeadings();
+
+    // Watch for DOM changes (SafeHtml renders asynchronously)
     if (!contentRef.current) return;
 
-    // Extract H2 and H3 headings from content
-    const headings = contentRef.current.querySelectorAll('h2, h3');
-    const items: TocItem[] = [];
-
-    headings.forEach((heading, index) => {
-      // Create ID if not exists
-      if (!heading.id) {
-        const id = `heading-${index}-${heading.textContent?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-        heading.id = id;
-      }
-
-      items.push({
-        id: heading.id,
-        text: heading.textContent || '',
-        level: parseInt(heading.tagName.charAt(1))
-      });
+    const observer = new MutationObserver(() => {
+      extractHeadings();
     });
 
-    setTocItems(items);
+    observer.observe(contentRef.current, {
+      childList: true,
+      subtree: true,
+    });
+
+    // Retry after a short delay to catch late renders
+    const timer = setTimeout(extractHeadings, 200);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timer);
+    };
   }, [contentRef]);
 
   useEffect(() => {

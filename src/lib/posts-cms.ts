@@ -2,6 +2,9 @@ import { prisma } from './db';
 import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import rehypeStringify from 'rehype-stringify';
+import remarkRehype from 'remark-rehype';
 
 export type PostFrontmatter = {
   slug: string;
@@ -73,10 +76,12 @@ export async function getAllPosts(): Promise<Post[]> {
 
     const transformedPosts: Post[] = await Promise.all(
       posts.map(async (post) => {
-        // Convert HTML content to ensure compatibility
+        // Convert Markdown to HTML with automatic heading IDs
         const processedContent = await remark()
           .use(gfm)
-          .use(html)
+          .use(remarkRehype) // Convert markdown to HTML tree
+          .use(rehypeSlug) // Add IDs to headings
+          .use(rehypeStringify) // Convert HTML tree to string
           .process(post.content);
 
         return {
@@ -144,10 +149,12 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       return null;
     }
 
-    // Convert HTML content to ensure compatibility
+    // Convert Markdown to HTML with automatic heading IDs
     const processedContent = await remark()
       .use(gfm)
-      .use(html)
+      .use(remarkRehype) // Convert markdown to HTML tree
+      .use(rehypeSlug) // Add IDs to headings
+      .use(rehypeStringify) // Convert HTML tree to string
       .process(post.content);
 
     return {
