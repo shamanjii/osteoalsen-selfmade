@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useCallback, useMemo, memo } from "react";
+import { useState, useCallback, useMemo, memo, useEffect } from "react";
 
 interface Post {
     slug: string;
@@ -27,10 +27,13 @@ const categoryMap = {
     'gesundheitstipps': { name: 'Gesundheitstipps', icon: '💡' }
 };
 
+const POSTS_PER_PAGE = 12;
+
 const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const [selectedCategory, setSelectedCategory] = useState('alle');
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('date-desc');
+    const [currentPage, setCurrentPage] = useState(1);
 
     // Memoize expensive filtering and sorting operations
     const filteredPosts = useMemo(() => {
@@ -69,6 +72,18 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
 
         return filtered;
     }, [posts, selectedCategory, searchTerm, sortBy]);
+
+    // Pagination logic
+    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+    const paginatedPosts = useMemo(() => {
+        const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+        return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+    }, [filteredPosts, currentPage]);
+
+    // Reset to page 1 when filters change
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [selectedCategory, searchTerm, sortBy]);
 
     // Memoize reading time calculation
     const calculateReadingTime = useCallback((excerpt?: string): number => {
@@ -153,7 +168,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                 </div>
 
                 {/* Posts Grid */}
-                {filteredPosts.length === 0 ? (
+                {paginatedPosts.length === 0 ? (
                     <div className="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-slate-300">
                         <div className="text-6xl mb-4 opacity-50">📝</div>
                         <h3 className="text-xl font-semibold text-slate-900 mb-2">Keine Artikel gefunden</h3>
@@ -163,7 +178,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                        {filteredPosts.map((post, index) => {
+                        {paginatedPosts.map((post, index) => {
                             const isFeatured = index === 0 && selectedCategory === 'alle' && !searchTerm;
 
                             return (
@@ -174,7 +189,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                     }`}
                                 >
                                     {/* Image */}
-                                    <div className={`relative bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center ${
+                                    <div className={`relative bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400 flex items-center justify-center overflow-hidden ${
                                         isFeatured ? 'h-64' : 'h-48'
                                     }`}>
                                         {post.image ? (
@@ -188,8 +203,14 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     target.style.display = 'none';
                                                     const parent = target.parentElement;
                                                     if (parent) {
-                                                        parent.innerHTML = '<span class="text-4xl text-slate-400">📄</span>';
-                                                        parent.className = parent.className.replace('relative', 'flex items-center justify-center');
+                                                        parent.innerHTML = `
+                                                            <div class="flex flex-col items-center justify-center gap-3 p-6">
+                                                                <svg class="w-16 h-16 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                                                </svg>
+                                                                <span class="text-slate-500 text-sm font-medium text-center">${post.title.substring(0, 40)}...</span>
+                                                            </div>
+                                                        `;
                                                     }
                                                 }}
                                                 onLoad={() => {
@@ -198,7 +219,12 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                 loading={index === 0 ? 'eager' : 'lazy'}
                                             />
                                         ) : (
-                                            <span className="text-4xl text-slate-400">📄</span>
+                                            <div className="flex flex-col items-center justify-center gap-3 p-6">
+                                                <svg className="w-16 h-16 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                                </svg>
+                                                <span className="text-slate-500 text-sm font-medium text-center">{post.title.substring(0, 40)}...</span>
+                                            </div>
                                         )}
                                     </div>
 
@@ -255,6 +281,43 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                 </article>
                             );
                         })}
+                    </div>
+                )}
+
+                {/* Pagination */}
+                {totalPages > 1 && (
+                    <div className="flex justify-center items-center gap-2 mt-12">
+                        <button
+                            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                            disabled={currentPage === 1}
+                            className="px-4 py-2 rounded-lg border-2 border-slate-300 text-slate-700 font-medium hover:bg-slate-900 hover:text-white hover:border-slate-900 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-700 disabled:hover:border-slate-300 transition-all"
+                        >
+                            ← Zurück
+                        </button>
+
+                        <div className="flex gap-2">
+                            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                                <button
+                                    key={page}
+                                    onClick={() => setCurrentPage(page)}
+                                    className={`w-10 h-10 rounded-lg border-2 font-medium transition-all ${
+                                        currentPage === page
+                                            ? 'bg-slate-900 text-white border-slate-900'
+                                            : 'border-slate-300 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900'
+                                    }`}
+                                >
+                                    {page}
+                                </button>
+                            ))}
+                        </div>
+
+                        <button
+                            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                            disabled={currentPage === totalPages}
+                            className="px-4 py-2 rounded-lg border-2 border-slate-300 text-slate-700 font-medium hover:bg-slate-900 hover:text-white hover:border-slate-900 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-700 disabled:hover:border-slate-300 transition-all"
+                        >
+                            Weiter →
+                        </button>
                     </div>
                 )}
 

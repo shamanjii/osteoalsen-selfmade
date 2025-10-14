@@ -21,10 +21,36 @@ export default function RelatedArticles({
   articles,
   title = "Verwandte Artikel"
 }: RelatedArticlesProps) {
-  // Filter out current article and limit to 3
+  // Find current article
+  const currentArticle = articles.find(a => a.slug === currentSlug);
+
+  // Intelligent related article selection
   const relatedArticles = articles
     .filter(article => article.slug !== currentSlug)
-    .slice(0, 3);
+    .map(article => {
+      let score = 0;
+
+      // Same specialty = +3 points
+      if (currentArticle?.specialty && article.specialty === currentArticle.specialty) {
+        score += 3;
+      }
+
+      // Check title/excerpt similarity (simple keyword matching)
+      const currentText = `${currentArticle?.title} ${currentArticle?.excerpt}`.toLowerCase();
+      const articleText = `${article.title} ${article.excerpt}`.toLowerCase();
+
+      const keywords = ['rücken', 'kopf', 'nacken', 'schmerz', 'osteopathie', 'behandlung', 'therapie', 'sport'];
+      keywords.forEach(keyword => {
+        if (currentText.includes(keyword) && articleText.includes(keyword)) {
+          score += 1;
+        }
+      });
+
+      return { article, score };
+    })
+    .sort((a, b) => b.score - a.score) // Sort by relevance
+    .slice(0, 3) // Take top 3
+    .map(item => item.article);
 
   if (!relatedArticles.length) return null;
 

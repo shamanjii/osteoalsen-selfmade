@@ -1,18 +1,34 @@
 // Use ISR (Incremental Static Regeneration) for performance
 export const revalidate = 3600; // Revalidate every hour
 
+import type { Metadata } from "next";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getAllPosts } from "@/lib/posts-cms";
+
+export const metadata: Metadata = {
+    title: "Osteopathie Blog | Evidenzbasierte Fachartikel | Osteoalsen Hamburg",
+    description: "Entdecken Sie evidenzbasierte Fachartikel zu Osteopathie, ganzheitlicher Gesundheit und bewährten Behandlungsmethoden von Osteopath Joshua Alsen aus Hamburg.",
+    keywords: ["Osteopathie Blog", "Osteopathie Artikel", "Gesundheitstipps", "Rückenschmerzen", "Kopfschmerzen", "Sportverletzungen", "Osteopath Hamburg"],
+    openGraph: {
+        title: "Osteopathie Blog | Fachartikel & Gesundheitstipps",
+        description: "Evidenzbasierte Fachartikel zu Osteopathie und ganzheitlicher Gesundheit von Osteopath Joshua Alsen",
+        type: "website",
+        url: "/blog",
+    },
+};
 
 export default async function BlogIndexPage() {
     // Fetch from CMS database (single source of truth)
     const posts = await getAllPosts();
 
     const processedPosts = posts.map(post => {
-        // Extract category from keywords if not set
-        const extractCategory = (keywords?: string[]): string => {
+        // Extract category from keywords as fallback if CMS category not set
+        const extractCategory = (keywords?: string[], cmsCategory?: string): string => {
+            // Prefer CMS category if available
+            if (cmsCategory) return cmsCategory;
+
             if (!keywords || keywords.length === 0) return 'osteopathie';
             const keywordStr = keywords.join(' ').toLowerCase();
 
@@ -32,7 +48,7 @@ export default async function BlogIndexPage() {
             keywords: post.keywords,
             image: post.image,
             alt: post.alt || post.title,
-            category: extractCategory(post.keywords)
+            category: extractCategory(post.keywords, post.category)
         };
     });
 

@@ -12,6 +12,7 @@ export type PostFrontmatter = {
   alt?: string;
   date?: string;
   status?: 'draft' | 'published';
+  category?: string;
   specialty?: string;
   sourceCount?: number;
   citations?: {
@@ -89,6 +90,7 @@ export async function getAllPosts(): Promise<Post[]> {
           alt: post.title,
           date: post.publishedAt?.toISOString() || post.createdAt.toISOString(),
           status: 'published' as const,
+          category: post.category?.slug || undefined,
           content: String(processedContent),
         };
       })
@@ -159,6 +161,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       alt: post.title,
       date: post.publishedAt?.toISOString() || post.createdAt.toISOString(),
       status: 'published' as const,
+      category: post.category?.slug || undefined,
       content: String(processedContent),
     };
   } catch (error) {
