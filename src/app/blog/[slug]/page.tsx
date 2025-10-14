@@ -166,8 +166,12 @@ export default async function BlogPost({ params }: PageProps) {
                     </article>
                 </BlogErrorBoundary>
 
-                {/* ToC Sidebar - Right side, separate from article */}
-                <ArticleWithSidebar content={post.content} sidebarOnly />
+                {/* ToC Sidebar - Right side, separate from article, sticky */}
+                <div className="hidden lg:block w-72 flex-shrink-0">
+                    <div className="sticky top-24">
+                        <ArticleWithSidebar content={post.content} sidebarOnly />
+                    </div>
+                </div>
                 </div>
             </div>
 

@@ -51,10 +51,10 @@ export default function ArticleWithSidebar({
 
     return isContentReady && contentRef.current ? (
       <>
-        {/* Desktop Sidebar */}
-        <aside className="hidden lg:block w-72 flex-shrink-0">
+        {/* Desktop Sidebar - wrapper is in page.tsx */}
+        <div className="hidden lg:block">
           <TableOfContents contentRef={contentRef} isDesktopSidebar />
-        </aside>
+        </div>
 
         {/* Mobile Floating Button */}
         <div className="lg:hidden">
