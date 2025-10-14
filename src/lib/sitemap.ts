@@ -98,6 +98,24 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/osteopathie-kosten-hamburg`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/heilpraktiker-osteopathie-hamburg`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rueckenschmerzen-osteopathie-hamburg`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.92,
+    },
+    {
       url: `${baseUrl}/was-ist-osteopathie`,
       lastModified: now,
       changeFrequency: 'monthly',
