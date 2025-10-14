@@ -111,10 +111,10 @@ export default function TableOfContents({ contentRef, isDesktopSidebar = false }
 
   if (tocItems.length === 0) return null;
 
-  // Desktop Sidebar variant - sticky positioning
+  // Desktop Sidebar variant - sticky positioning handled by parent
   if (isDesktopSidebar) {
     return (
-      <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto bg-white rounded-xl border border-slate-200 p-6">
+      <div className="bg-white rounded-xl border border-slate-200 p-6">
         <h2 className="text-lg font-epilogue font-semibold text-slate-900 mb-4">
           Inhaltsverzeichnis
         </h2>

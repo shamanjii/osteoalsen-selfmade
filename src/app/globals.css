@@ -487,10 +487,30 @@ body {
 /* Responsive container constraints */
 .container,
 main,
-article,
 section {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+/* Article needs visible overflow for sticky sidebar */
+article {
+  max-width: 100%;
+  overflow: visible;
+}
+
+/* Sticky ToC Sidebar - Force sticky positioning */
+.toc-sidebar-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 6rem !important;
+  align-self: flex-start !important;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .toc-sidebar-sticky {
+    display: block;
+  }
 }
 
 /* Word breaking for long text */

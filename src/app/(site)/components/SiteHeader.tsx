@@ -166,12 +166,16 @@ export default function SiteHeader() {
                             >
                                 Home
                             </Link>
-                            <Link
-                                href="/was-ist-osteopathie"
-                                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
-                            >
-                                Osteopathie
-                            </Link>
+                            <DropdownMenu
+                                label="Osteopathie"
+                                items={[
+                                    { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie" },
+                                    { label: "Patienteninfos", href: "/patienteninfos" },
+                                    { label: "Wissenschaft & Forschung", href: "/wissen" },
+                                ]}
+                                isOpen={openDropdown === "osteopathie"}
+                                onOpenChange={(open) => setOpenDropdown(open ? "osteopathie" : null)}
+                            />
                             <DropdownMenu
                                 label="Behandlungen"
                                 items={[
@@ -259,14 +263,39 @@ export default function SiteHeader() {
                             >
                                 Home
                             </Link>
-                            {/* Osteopathie */}
-                            <Link
-                                href="/was-ist-osteopathie"
-                                onClick={() => setMobileOpen(false)}
-                                className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
-                            >
-                                Osteopathie
-                            </Link>
+                            {/* Osteopathie - Accordion Style */}
+                            <div className="space-y-1">
+                                <Link
+                                    href="/was-ist-osteopathie"
+                                    onClick={() => setMobileOpen(false)}
+                                    className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
+                                >
+                                    Osteopathie
+                                </Link>
+                                <div className="pl-4 space-y-1">
+                                    <Link
+                                        href="/was-ist-osteopathie"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                    >
+                                        Was ist Osteopathie?
+                                    </Link>
+                                    <Link
+                                        href="/patienteninfos"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                    >
+                                        Patienteninfos
+                                    </Link>
+                                    <Link
+                                        href="/wissen"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
+                                    >
+                                        Wissenschaft & Forschung
+                                    </Link>
+                                </div>
+                            </div>
                             {/* Behandlungen - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
