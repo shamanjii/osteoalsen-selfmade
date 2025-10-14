@@ -115,7 +115,7 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
       {/* Mobile Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="xl:hidden fixed bottom-6 right-6 z-40 bg-slate-900 text-white p-4 rounded-full shadow-lg hover:bg-slate-700 transition-colors"
+        className="lg:hidden fixed bottom-6 right-6 z-40 bg-slate-900 text-white p-4 rounded-full shadow-lg hover:bg-slate-700 transition-colors"
         aria-label="Inhaltsverzeichnis öffnen"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,7 +126,7 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
       {/* Mobile Overlay */}
       {isOpen && (
         <div
-          className="xl:hidden fixed inset-0 bg-black/50 z-40"
+          className="lg:hidden fixed inset-0 bg-black/50 z-40"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -134,13 +134,13 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
       {/* Table of Contents */}
       <aside
         className={`
-          fixed xl:relative top-24 xl:top-0 right-0 z-50 xl:z-auto
-          w-80 xl:w-full h-fit max-h-[calc(100vh-8rem)]
-          bg-white rounded-xl shadow-lg xl:shadow-none border border-slate-200
+          fixed lg:relative top-24 lg:top-0 right-0 z-50 lg:z-auto
+          w-80 lg:w-full h-fit max-h-[calc(100vh-8rem)]
+          bg-white rounded-xl shadow-lg lg:shadow-none border border-slate-200
           p-6 overflow-y-auto
           transform transition-transform duration-300
-          ${isOpen ? 'translate-x-0' : 'translate-x-full xl:translate-x-0'}
-          xl:mr-0 mr-4
+          ${isOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
+          lg:mr-0 mr-4
         `}
       >
         {/* Header */}
@@ -150,7 +150,7 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
           </h2>
           <button
             onClick={() => setIsOpen(false)}
-            className="xl:hidden text-slate-400 hover:text-slate-600"
+            className="lg:hidden text-slate-400 hover:text-slate-600"
             aria-label="Schließen"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

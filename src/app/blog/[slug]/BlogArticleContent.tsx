@@ -38,7 +38,7 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
 
         {/* Table of Contents Sidebar - Desktop only, sticky */}
         {isContentReady && (
-          <aside className="hidden xl:block w-72 flex-shrink-0 pr-6">
+          <aside className="hidden lg:block w-72 flex-shrink-0 pr-6">
             <div className="sticky top-24">
               <TableOfContents contentRef={contentRef} />
             </div>
@@ -48,7 +48,7 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
 
       {/* Table of Contents - Mobile floating button */}
       {isContentReady && (
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <TableOfContents contentRef={contentRef} />
         </div>
       )}

@@ -82,7 +82,7 @@ export default async function BlogPost({ params }: PageProps) {
                 { label: post.title }
             ]} />
 
-            <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
 
             {/* Structured Data for Blog Post */}
             <BlogPostStructuredData
