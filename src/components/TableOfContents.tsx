@@ -10,9 +10,10 @@ interface TocItem {
 
 interface TableOfContentsProps {
   contentRef: React.RefObject<HTMLElement>;
+  isDesktopSidebar?: boolean;
 }
 
-export default function TableOfContents({ contentRef }: TableOfContentsProps) {
+export default function TableOfContents({ contentRef, isDesktopSidebar = false }: TableOfContentsProps) {
   const [tocItems, setTocItems] = useState<TocItem[]>([]);
   const [activeId, setActiveId] = useState<string>('');
   const [isOpen, setIsOpen] = useState(false);
@@ -110,6 +111,70 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
 
   if (tocItems.length === 0) return null;
 
+  // Desktop Sidebar variant - sticky positioning
+  if (isDesktopSidebar) {
+    return (
+      <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto bg-white rounded-xl border border-slate-200 p-6">
+        <h2 className="text-lg font-epilogue font-semibold text-slate-900 mb-4">
+          Inhaltsverzeichnis
+        </h2>
+
+        <nav>
+          <ul className="space-y-2">
+            {tocItems.map((item) => (
+              <li
+                key={item.id}
+                style={{ paddingLeft: `${(item.level - 2) * 0.75}rem` }}
+              >
+                <button
+                  onClick={() => {
+                    const element = document.getElementById(item.id);
+                    if (element) {
+                      const offset = 80;
+                      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                      window.scrollTo({
+                        top: elementPosition - offset,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className={`
+                    w-full text-left text-sm py-1.5 px-3 rounded-lg transition-all duration-200
+                    ${activeId === item.id
+                      ? 'bg-slate-900 text-white font-medium'
+                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                    }
+                  `}
+                >
+                  {item.text}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Progress Indicator */}
+        <div className="mt-6 pt-4 border-t border-slate-200">
+          <div className="flex items-center justify-between text-xs text-slate-500 mb-2">
+            <span>Fortschritt</span>
+            <span>
+              {tocItems.findIndex(item => item.id === activeId) + 1} / {tocItems.length}
+            </span>
+          </div>
+          <div className="w-full bg-slate-200 rounded-full h-1.5">
+            <div
+              className="bg-slate-900 h-1.5 rounded-full transition-all duration-300"
+              style={{
+                width: `${((tocItems.findIndex(item => item.id === activeId) + 1) / tocItems.length) * 100}%`
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Mobile/Tablet variant - fixed overlay
   return (
     <>
       {/* Mobile Toggle Button */}
@@ -134,13 +199,13 @@ export default function TableOfContents({ contentRef }: TableOfContentsProps) {
       {/* Table of Contents */}
       <aside
         className={`
-          fixed lg:relative top-24 lg:top-0 right-0 z-50 lg:z-auto
-          w-80 lg:w-full h-fit max-h-[calc(100vh-8rem)]
-          bg-white rounded-xl shadow-lg lg:shadow-none border border-slate-200
+          fixed top-24 right-0 z-50
+          w-80 h-fit max-h-[calc(100vh-8rem)]
+          bg-white rounded-xl shadow-lg border border-slate-200
           p-6 overflow-y-auto
           transform transition-transform duration-300
-          ${isOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
-          lg:mr-0 mr-4
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+          mr-4
         `}
       >
         {/* Header */}

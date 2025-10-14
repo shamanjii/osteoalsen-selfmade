@@ -39,9 +39,7 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
         {/* Table of Contents Sidebar - Desktop only, sticky */}
         {isContentReady && (
           <aside className="hidden lg:block w-72 flex-shrink-0 pr-6">
-            <div className="sticky top-24">
-              <TableOfContents contentRef={contentRef} />
-            </div>
+            <TableOfContents contentRef={contentRef} isDesktopSidebar />
           </aside>
         )}
       </div>
