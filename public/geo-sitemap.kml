@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Osteopathie Hamburg - Joshua Alsen Standorte</name>
+    <description>Osteopathie-Praxis Standorte in Hamburg: Rotherbaum und Eimsbüttel</description>
+
+    <!-- Praxisstandort Rotherbaum -->
+    <Placemark>
+      <name>Osteopathie Hamburg - Joshua Alsen (Rotherbaum)</name>
+      <description><![CDATA[
+        <h3>Osteopathie Hamburg Rotherbaum</h3>
+        <p><strong>Joshua Alsen - VFO-zertifizierter Osteopath</strong></p>
+        <p>Rappstraße 7, 20146 Hamburg-Rotherbaum</p>
+        <p>📞 Telefon: <a href="tel:+4917643990001">0176 4399 0001</a></p>
+        <p>✉️ E-Mail: <a href="mailto:joshua@alsen.info">joshua@alsen.info</a></p>
+        <p>🌐 Website: <a href="https://www.osteoalsen.de">www.osteoalsen.de</a></p>
+        <br>
+        <p><strong>Anfahrt:</strong></p>
+        <p>U-Bahn: U1 bis Hallerstraße (3 Min. Fußweg)</p>
+        <p>Bus: Linie 4, 5 bis Hallerstraße oder Grindelhof</p>
+        <br>
+        <p><strong>Behandlungsschwerpunkte:</strong></p>
+        <ul>
+          <li>Rückenschmerzen & Bandscheibenprobleme</li>
+          <li>Kopfschmerzen & Migräne</li>
+          <li>Nackenschmerzen & HWS-Syndrom</li>
+          <li>Verdauungsbeschwerden</li>
+          <li>Sportverletzungen</li>
+          <li>Stress & Burnout</li>
+        </ul>
+      ]]></description>
+      <Point>
+        <coordinates>9.987242,53.568370,0</coordinates>
+      </Point>
+      <address>Rappstraße 7, 20146 Hamburg, Germany</address>
+      <phoneNumber>+4917643990001</phoneNumber>
+    </Placemark>
+
+    <!-- Hinweis auf Eimsbüttel (kann je nach tatsächlicher Adresse angepasst werden) -->
+    <Placemark>
+      <name>Osteopathie Hamburg - Joshua Alsen (Eimsbüttel Standort)</name>
+      <description><![CDATA[
+        <h3>Osteopathie Hamburg Eimsbüttel</h3>
+        <p><strong>Joshua Alsen - VFO-zertifizierter Osteopath</strong></p>
+        <p>Weitere Informationen und Terminbuchung unter:</p>
+        <p>📞 Telefon: <a href="tel:+4917643990001">0176 4399 0001</a></p>
+        <p>🌐 Website: <a href="https://www.osteoalsen.de/osteopathie-eimsbuettel">www.osteoalsen.de/osteopathie-eimsbuettel</a></p>
+        <br>
+        <p><strong>Behandlungsangebot:</strong> Alle osteopathischen Behandlungen wie am Standort Rotherbaum</p>
+      ]]></description>
+      <Point>
+        <!-- Koordinaten für Eimsbüttel - bitte bei Bedarf anpassen -->
+        <coordinates>9.970000,53.570000,0</coordinates>
+      </Point>
+      <phoneNumber>+4917643990001</phoneNumber>
+    </Placemark>
+
+  </Document>
+</kml>

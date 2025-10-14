@@ -92,6 +92,12 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/osteopath-hamburg`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/was-ist-osteopathie`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -110,6 +116,12 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/wissen`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/ueber-mich`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -120,6 +132,12 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/patienteninfos`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/datenschutz`,
