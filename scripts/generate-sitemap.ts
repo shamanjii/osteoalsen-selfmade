@@ -7,8 +7,8 @@ import { generateSitemapXml } from '../src/lib/sitemap';
 /**
  * Generiert die sitemap.xml Datei
  */
-function main() {
-  const sitemapXml = generateSitemapXml();
+async function main() {
+  const sitemapXml = await generateSitemapXml();
   const outputPath = join(process.cwd(), 'public', 'sitemap.xml');
 
   writeFileSync(outputPath, sitemapXml, 'utf-8');

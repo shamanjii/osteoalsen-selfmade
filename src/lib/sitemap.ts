@@ -7,7 +7,7 @@ export interface SitemapUrl {
   priority: number;
 }
 
-export function generateSitemap(): SitemapUrl[] {
+export async function generateSitemap(): Promise<SitemapUrl[]> {
   const baseUrl = 'https://www.osteoalsen.de';
   const now = new Date().toISOString();
 
@@ -136,7 +136,7 @@ export function generateSitemap(): SitemapUrl[] {
   ];
 
   // Blog-Artikel dynamisch hinzufügen
-  const blogSlugs = getAllSlugs();
+  const blogSlugs = await getAllSlugs();
   const blogPages: SitemapUrl[] = blogSlugs.map(slug => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: now,
@@ -147,8 +147,8 @@ export function generateSitemap(): SitemapUrl[] {
   return [...staticPages, ...blogPages];
 }
 
-export function generateSitemapXml(): string {
-  const urls = generateSitemap();
+export async function generateSitemapXml(): Promise<string> {
+  const urls = await generateSitemap();
 
   const urlElements = urls.map(({ url, lastModified, changeFrequency, priority }) => `
   <url>

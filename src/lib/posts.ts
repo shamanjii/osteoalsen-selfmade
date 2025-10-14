@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
+import * as cmsPosts from './posts-cms';
 
 export type PostFrontmatter = {
     slug: string;
@@ -35,6 +36,7 @@ export type Post = PostFrontmatter & {
 };
 
 const postsDir = path.join(process.cwd(), "posts");
+const USE_CMS = process.env.USE_CMS !== 'false'; // Use CMS by default
 
 /**
  * Validates that a file path is safe and within the posts directory
@@ -121,6 +123,12 @@ function extractCitations(content: string): { id: string; title: string; url?: s
 }
 
 export async function getAllPosts(): Promise<Post[]> {
+    // Use CMS database if enabled
+    if (USE_CMS) {
+        return cmsPosts.getAllPosts();
+    }
+
+    // Fallback to markdown files
     const files = fs
         .readdirSync(postsDir)
         .filter((f) => f.endsWith(".md"))
@@ -153,6 +161,12 @@ export async function getAllPosts(): Promise<Post[]> {
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
+    // Use CMS database if enabled
+    if (USE_CMS) {
+        return cmsPosts.getPostBySlug(slug);
+    }
+
+    // Fallback to markdown files
     // Validate slug to prevent path traversal
     if (!validateSlug(slug)) {
         console.warn(`Invalid slug attempted: ${slug}`);
@@ -196,7 +210,13 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
     }
 }
 
-export function getAllSlugs(): string[] {
+export async function getAllSlugs(): Promise<string[]> {
+    // Use CMS database if enabled
+    if (USE_CMS) {
+        return cmsPosts.getAllSlugs();
+    }
+
+    // Fallback to markdown files
     try {
         // Ensure posts directory exists
         if (!fs.existsSync(postsDir)) {
