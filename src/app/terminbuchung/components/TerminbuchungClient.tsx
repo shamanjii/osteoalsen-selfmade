@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { ConversionFunnel, trackPhoneClick, trackEmailClick } from "@/lib/analytics-events";
 
 const locations = [
   {
@@ -69,6 +70,9 @@ export default function TerminbuchungClient() {
   useEffect(() => {
     // Only run on client side
     if (typeof window === 'undefined') return;
+
+    // Track that user opened booking interface
+    ConversionFunnel.openedBookingInterface();
 
     // Load etermin resize script
     const script = document.createElement('script');
@@ -301,6 +305,7 @@ export default function TerminbuchungClient() {
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
                   href="tel:+4917643990001"
+                  onClick={() => trackPhoneClick('booking_page_contact')}
                   className="flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
                 >
                   <span className="text-lg">📞</span>
@@ -308,6 +313,7 @@ export default function TerminbuchungClient() {
                 </a>
                 <a
                   href="mailto:joshua@alsen.info"
+                  onClick={() => trackEmailClick('booking_page_contact')}
                   className="flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
                 >
                   <span className="text-lg">✉️</span>

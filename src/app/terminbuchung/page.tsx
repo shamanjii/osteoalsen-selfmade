@@ -6,12 +6,12 @@ import TerminbuchungClient from './components/TerminbuchungClient';
 
 export const metadata: Metadata = {
   title: 'Termin buchen - Osteopathie Hamburg | Joshua Alsen',
-  description: 'Terminbuchung Osteopathie Hamburg - Joshua Alsen. ✓ Online buchen ✓ Kurzfristige Termine ✓ Rotherbaum & Eimsbüttel ✓ Krankenkassen-Erstattung. Jetzt Termin vereinbaren!',
+  description: 'Termin buchen ✓ VFO-zertifizierter Osteopath ✓ Termine oft binnen 48h ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ 60 Min. Behandlung ✓ Kassenzuschuss möglich ⭐ Jetzt online buchen!',
   keywords: 'Osteopathie Termin Hamburg, Osteopath Terminbuchung, Joshua Alsen Termin, Osteopathie Hamburg buchen, Heilpraktiker Termin, Rotherbaum, Eimsbüttel',
   authors: [{ name: 'Joshua Alsen' }],
   openGraph: {
     title: 'Termin buchen - Osteopathie Hamburg | Joshua Alsen',
-    description: 'Terminbuchung Osteopathie Hamburg - Joshua Alsen. ✓ Online buchen ✓ Kurzfristige Termine ✓ Rotherbaum & Eimsbüttel ✓ Krankenkassen-Erstattung.',
+    description: 'Termin buchen ✓ VFO-zertifizierter Osteopath ✓ Termine oft binnen 48h ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ 60 Min. Behandlung ✓ Kassenzuschuss möglich ⭐ Jetzt online buchen!',
     type: 'website',
     locale: 'de_DE',
   },

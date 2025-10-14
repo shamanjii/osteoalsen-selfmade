@@ -7,7 +7,7 @@ import FAQSchema from "@/components/FAQSchema";
 export const metadata: Metadata = {
   title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
   description:
-    "Ganzheitliche osteopathische Behandlungen in Hamburg-Rotherbaum & Eimsbüttel. Rückenschmerzen, Kopfschmerzen, Verdauung, Sportverletzungen, Stress und mehr. VFO-zertifiziert.",
+    "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rückenschmerzen, Kopfschmerzen, Verdauung, Sport & mehr ✓ 60 Min. Behandlung ✓ 2 Standorte ✓ Kassenzuschuss ⭐ Jetzt Termin buchen!",
   keywords: [
     "Osteopathie Hamburg",
     "Osteopath Rotherbaum",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
     description:
-      "Ganzheitliche osteopathische Behandlungen: Rückenschmerzen, Kopfschmerzen, Verdauung, Sportverletzungen, Stress und mehr. VFO-zertifiziert.",
+      "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rückenschmerzen, Kopfschmerzen, Verdauung, Sport & mehr ✓ 60 Min. Behandlung ✓ 2 Standorte ✓ Kassenzuschuss ⭐ Jetzt Termin buchen!",
     url: "/behandlungen",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Osteopathische Behandlungen Hamburg",
     description:
-      "Ganzheitliche osteopathische Behandlungen in Hamburg-Rotherbaum & Eimsbüttel. VFO-zertifiziert.",
+      "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rücken, Kopf, Verdauung & mehr ✓ 60 Min. ✓ 2 Standorte ✓ Kassenzuschuss möglich ⭐",
     images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
   },
 };
@@ -145,8 +145,8 @@ export default function BehandlungenPage() {
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               Ganzheitliche osteopathische Behandlungen für verschiedene
-              Beschwerdebilder. BAO-zertifiziert mit über 5.000 Ausbildungsstunden
-              und langjähriger Erfahrung.
+              Beschwerdebilder. VFO-zertifizierter Osteopath mit fundierter
+              Ausbildung und leidenschaftlicher Betreuung.
             </p>
           </div>
 
@@ -169,11 +169,11 @@ export default function BehandlungenPage() {
             <div className="text-center">
               <div className="text-4xl mb-4">🎓</div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
-                BAO-zertifiziert
+                VFO-zertifiziert
               </h3>
               <p className="text-slate-600">
-                Über 5.000 Ausbildungsstunden nach BAO-Standard und kontinuierliche
-                Weiterbildung nach höchsten Qualitätsstandards.
+                Fundierte BAO-Ausbildung und VFO-Mitgliedschaft mit
+                kontinuierlicher Weiterbildung nach höchsten Qualitätsstandards.
               </p>
             </div>
             <div className="text-center">

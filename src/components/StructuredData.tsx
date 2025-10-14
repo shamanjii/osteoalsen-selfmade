@@ -1,6 +1,4 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
+// Server Component - no 'use client' needed
 
 interface LocalBusinessStructuredDataProps {
   name: string;
@@ -65,17 +63,28 @@ export function LocalBusinessStructuredData({
 }: LocalBusinessStructuredDataProps) {
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    '@id': url,
+    '@type': ['MedicalBusiness', 'HealthAndBeautyBusiness', 'LocalBusiness'],
+    '@id': `${url}/#business`,
     name,
     description,
     url,
     telephone,
     email,
+    image: [
+      `${url}/assets/joshua-alsen-osteopath-hamburg.webp`,
+      `${url}/assets/osteopathie-praxis-hamburg.webp`,
+    ],
+    logo: {
+      '@type': 'ImageObject',
+      url: `${url}/assets/osteopathie-alsen-logo.webp`,
+      width: 600,
+      height: 60,
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: address.streetAddress,
       addressLocality: address.addressLocality,
+      addressRegion: 'Hamburg',
       postalCode: address.postalCode,
       addressCountry: address.addressCountry,
     },
@@ -84,6 +93,32 @@ export function LocalBusinessStructuredData({
       latitude: geo.latitude,
       longitude: geo.longitude,
     },
+    // Area served - critical for local SEO
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Hamburg',
+        '@id': 'https://www.wikidata.org/wiki/Q1055',
+      },
+      {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: geo.latitude,
+          longitude: geo.longitude,
+        },
+        geoRadius: '10000', // 10km radius
+      },
+    ],
+    // Service areas (neighborhoods)
+    serviceArea: [
+      { '@type': 'Place', name: 'Rotherbaum' },
+      { '@type': 'Place', name: 'Eimsbüttel' },
+      { '@type': 'Place', name: 'Hamburg-Mitte' },
+      { '@type': 'Place', name: 'Harvestehude' },
+      { '@type': 'Place', name: 'Hoheluft' },
+      { '@type': 'Place', name: 'Eppendorf' },
+    ],
     openingHoursSpecification: openingHours.map(hours => ({
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: hours.split(' ')[0],
@@ -91,6 +126,9 @@ export function LocalBusinessStructuredData({
       closes: hours.split(' ')[2],
     })),
     priceRange,
+    paymentAccepted: ['Cash', 'Invoice', 'Bank Transfer'],
+    currenciesAccepted: 'EUR',
+    // Aggregate rating
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',
@@ -98,6 +136,7 @@ export function LocalBusinessStructuredData({
       bestRating: '5',
       worstRating: '1',
     },
+    // Medical services offered
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Osteopathische Behandlungen',
@@ -105,15 +144,110 @@ export function LocalBusinessStructuredData({
         {
           '@type': 'Offer',
           itemOffered: {
-            '@type': 'Service',
+            '@type': 'MedicalProcedure',
             name: 'Osteopathische Behandlung',
-            description: 'Ganzheitliche osteopathische Behandlung 45-60 Minuten',
+            description: 'Ganzheitliche osteopathische Behandlung für Erwachsene',
+            procedureType: 'Therapeutic',
+          },
+          price: '150',
+          priceCurrency: 'EUR',
+          availability: 'https://schema.org/InStock',
+          priceValidUntil: '2026-12-31',
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'MedicalProcedure',
+            name: 'Behandlung von Rückenschmerzen',
+            description: 'Spezialisierte osteopathische Behandlung bei Rückenbeschwerden',
+            procedureType: 'Therapeutic',
+          },
+          price: '150',
+          priceCurrency: 'EUR',
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'MedicalProcedure',
+            name: 'Behandlung von Kopfschmerzen & Migräne',
+            description: 'Osteopathische Behandlung bei Kopfschmerzen und Migräne',
+            procedureType: 'Therapeutic',
+          },
+          price: '150',
+          priceCurrency: 'EUR',
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'MedicalProcedure',
+            name: 'Sportosteopathie',
+            description: 'Osteopathische Betreuung für Sportler',
+            procedureType: 'Therapeutic',
           },
           price: '150',
           priceCurrency: 'EUR',
         },
       ],
     },
+    // Medical specialties
+    medicalSpecialty: [
+      'Osteopathic Manipulative Medicine',
+      'Physical Medicine',
+      'Sports Medicine',
+    ],
+    // Practitioner information
+    employee: {
+      '@type': 'Person',
+      name: 'Joshua Alsen',
+      jobTitle: 'Osteopath und Heilpraktiker',
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'Osteopath',
+          recognizedBy: {
+            '@type': 'Organization',
+            name: 'VFO - Verband Freier Osteopathen e.V.',
+          },
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'Heilpraktiker',
+          recognizedBy: {
+            '@type': 'Organization',
+            name: 'Gesundheitsamt Hamburg',
+          },
+        },
+      ],
+      memberOf: {
+        '@type': 'Organization',
+        name: 'VFO - Verband Freier Osteopathen e.V.',
+        url: 'https://www.vfo.de',
+      },
+    },
+    // Same as - social profiles & directories
+    sameAs: [
+      'https://www.osteopathie.de/praktikersuche',
+      'https://www.vfo.de',
+      // Add social media profiles if available
+      // 'https://www.facebook.com/osteoalsen',
+      // 'https://www.instagram.com/osteoalsen',
+    ],
+    // Accessibility features
+    amenityFeature: [
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Barrier-free access',
+        value: true,
+      },
+    ],
+    // Additional properties for local SEO
+    knowsAbout: [
+      'Osteopathy',
+      'Manual Therapy',
+      'Sports Medicine',
+      'Pain Management',
+      'Holistic Medicine',
+    ],
   };
 
   return (
@@ -277,9 +411,11 @@ export function MedicalScholarlyArticle({
   );
 }
 
-export function WebsiteStructuredData() {
-  const pathname = usePathname();
+interface WebsiteStructuredDataProps {
+  pathname?: string;
+}
 
+export function WebsiteStructuredData({ pathname }: WebsiteStructuredDataProps = {}) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',

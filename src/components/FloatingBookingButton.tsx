@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import throttle from 'lodash.throttle';
 import { trackAppointmentClick } from './Analytics';
+import { trackCTAClick } from '@/lib/analytics-events';
 
 export default function FloatingBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,8 +33,15 @@ export default function FloatingBookingButton() {
 
   // Memoize click handler to navigate to booking page
   const handleClick = useCallback(() => {
-    // Track the conversion event
+    // Track the conversion event (legacy GTM)
     trackAppointmentClick('floating_button');
+
+    // Track in conversion funnel (PostHog + GTM)
+    trackCTAClick({
+      cta_type: 'book_appointment',
+      cta_location: 'floating_button',
+      cta_text: 'Termin vereinbaren',
+    });
 
     // Navigate to the booking page
     window.location.href = '/terminbuchung';

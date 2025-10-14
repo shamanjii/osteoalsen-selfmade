@@ -3,6 +3,7 @@
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
+import PostHogProvider from './PostHogProvider';
 
 declare global {
   interface Window {
@@ -44,6 +45,7 @@ export default function Analytics() {
     <>
       <Suspense fallback={null}>
         <AnalyticsInner />
+        <PostHogProvider />
       </Suspense>
 
       {/* Google Tag Manager - Single source of truth */}
@@ -74,22 +76,45 @@ export default function Analytics() {
   );
 }
 
-// Utility functions for tracking events via GTM dataLayer
+// Utility functions for tracking events via GTM dataLayer AND PostHog
 export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
-  if (typeof window !== 'undefined' && window.dataLayer) {
-    window.dataLayer.push({
-      event: eventName,
-      ...parameters,
+  if (typeof window !== 'undefined') {
+    // Track in GTM
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: eventName,
+        ...parameters,
+      });
+    }
+
+    // Track in PostHog
+    import('@/lib/posthog').then(({ trackEvent: phTrackEvent }) => {
+      phTrackEvent(eventName, parameters);
+    }).catch(() => {
+      // PostHog not critical, fail silently
     });
   }
 };
 
 export const trackConversion = (conversionName: string, value?: number) => {
-  if (typeof window !== 'undefined' && window.dataLayer) {
-    window.dataLayer.push({
-      event: 'conversion',
-      conversion_name: conversionName,
-      conversion_value: value || 1,
+  if (typeof window !== 'undefined') {
+    // Track in GTM
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'conversion',
+        conversion_name: conversionName,
+        conversion_value: value || 1,
+      });
+    }
+
+    // Track in PostHog
+    import('@/lib/posthog').then(({ trackEvent: phTrackEvent }) => {
+      phTrackEvent('conversion', {
+        conversion_name: conversionName,
+        conversion_value: value || 1,
+      });
+    }).catch(() => {
+      // PostHog not critical, fail silently
     });
   }
 };

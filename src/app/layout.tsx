@@ -23,7 +23,7 @@ const instrumentSans = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Osteopath Hamburg Rotherbaum & Eimsbüttel | Joshua Alsen | Heilpraktiker",
   description:
-    "Osteopathie Hamburg: Heilpraktiker Joshua Alsen behandelt in Rotherbaum & Eimsbüttel. Termine verfügbar. 45-60 Min., 150€. Kostenerstattung durch Krankenkassen möglich. VFO-zertifiziert.",
+    "Osteopath Hamburg ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ Termine oft binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt Termin buchen!",
   keywords: [
     "Osteopath Hamburg",
     "Osteopathie Rotherbaum",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Osteopath Hamburg Rotherbaum & Eimsbüttel | Joshua Alsen",
     description:
-      "Osteopathie Hamburg: Heilpraktiker Joshua Alsen behandelt in Rotherbaum & Eimsbüttel. Termine verfügbar. 45-60 Min., 150€. Kostenerstattung durch Krankenkassen möglich.",
+      "Osteopath Hamburg ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ Termine oft binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt Termin buchen!",
     url: "/",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Osteopath Hamburg | Joshua Alsen | Rotherbaum & Eimsbüttel",
-    description: "Osteopathie Hamburg: Heilpraktiker Joshua Alsen. Termine verfügbar. 150€, Kassenerstattung möglich.",
+    description: "Osteopath Hamburg ✓ VFO-zertifiziert ✓ 2 Standorte ✓ Termine binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt buchen!",
     images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",
