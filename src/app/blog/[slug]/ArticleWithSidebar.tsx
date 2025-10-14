@@ -2,14 +2,15 @@
 
 import { useRef, useEffect, useState } from 'react';
 import SafeHtml from '@/components/SafeHtml';
-import TableOfContents from '@/components/TableOfContents';
 import ReadingProgressBar from '@/components/ReadingProgressBar';
+import TableOfContents from '@/components/TableOfContents';
 
-interface BlogArticleContentProps {
+interface ArticleWithSidebarProps {
   content: string;
+  children?: React.ReactNode; // For ScientificCredibilityBox, LiteratureSection, etc.
 }
 
-export default function BlogArticleContent({ content }: BlogArticleContentProps) {
+export default function ArticleWithSidebar({ content, children }: ArticleWithSidebarProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [isContentReady, setIsContentReady] = useState(false);
 
@@ -27,18 +28,21 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
       {/* Reading Progress Bar */}
       <ReadingProgressBar contentRef={contentRef} />
 
-      {/* Layout: Article (left/center) + ToC Sidebar (right, desktop only) */}
-      <div className="flex gap-8 items-start -mx-6 md:-mx-8">
-        {/* Main Content - takes most space */}
-        <div className="flex-1 min-w-0 px-6 md:px-8">
+      {/* Layout: Article + ToC Sidebar */}
+      <div className="flex gap-8 items-start">
+        {/* Main Article Content - Left side */}
+        <div className="flex-1 min-w-0">
           <div ref={contentRef} className="prose prose-lg max-w-none">
             <SafeHtml html={content} type="blog" />
           </div>
+
+          {/* Additional content (boxes, sections, etc.) */}
+          {children}
         </div>
 
-        {/* Table of Contents Sidebar - Desktop only, sticky */}
+        {/* Table of Contents Sidebar - Right side, desktop only, sticky */}
         {isContentReady && (
-          <aside className="hidden lg:block w-72 flex-shrink-0 pr-6">
+          <aside className="hidden lg:block w-72 flex-shrink-0">
             <TableOfContents contentRef={contentRef} isDesktopSidebar />
           </aside>
         )}

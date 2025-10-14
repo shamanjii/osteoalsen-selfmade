@@ -12,7 +12,7 @@ import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
 import SocialShare from "@/components/SocialShare";
-import BlogArticleContent from "./BlogArticleContent";
+import ArticleWithSidebar from "./ArticleWithSidebar";
 
 interface PageProps {
     params: Promise<{
@@ -135,23 +135,23 @@ export default async function BlogPost({ params }: PageProps) {
                         </div>
                     )}
 
-                    <BlogArticleContent content={post.content} />
+                    <ArticleWithSidebar content={post.content}>
+                        {/* Scientific Credibility Box for medical topics */}
+                        {post.keywords?.some(keyword =>
+                            keyword.toLowerCase().includes('osteopathie') ||
+                            keyword.toLowerCase().includes('medizin')
+                        ) && (
+                            <ScientificCredibilityBox />
+                        )}
 
-                    {/* Scientific Credibility Box for medical topics */}
-                    {post.keywords?.some(keyword =>
-                        keyword.toLowerCase().includes('osteopathie') ||
-                        keyword.toLowerCase().includes('medizin')
-                    ) && (
-                        <ScientificCredibilityBox />
-                    )}
-
-                    {/* Literature Section for evidence-based articles */}
-                    {post.keywords?.some(keyword =>
-                        keyword.toLowerCase().includes('evidenz') ||
-                        keyword.toLowerCase().includes('studie')
-                    ) && (
-                        <LiteratureSection />
-                    )}
+                        {/* Literature Section for evidence-based articles */}
+                        {post.keywords?.some(keyword =>
+                            keyword.toLowerCase().includes('evidenz') ||
+                            keyword.toLowerCase().includes('studie')
+                        ) && (
+                            <LiteratureSection />
+                        )}
+                    </ArticleWithSidebar>
 
                     <footer className="mt-8 pt-6 border-t border-slate-200 flex justify-between items-center">
                         <Link
