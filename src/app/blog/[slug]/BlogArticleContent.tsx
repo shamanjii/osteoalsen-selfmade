@@ -27,29 +27,31 @@ export default function BlogArticleContent({ content }: BlogArticleContentProps)
       {/* Reading Progress Bar */}
       <ReadingProgressBar contentRef={contentRef} />
 
-      <div className="relative flex gap-8">
-        {/* Main Content */}
-        <div className="flex-1 min-w-0">
+      {/* Layout: Article (left/center) + ToC Sidebar (right, desktop only) */}
+      <div className="flex gap-8 items-start -mx-6 md:-mx-8">
+        {/* Main Content - takes most space */}
+        <div className="flex-1 min-w-0 px-6 md:px-8">
           <div ref={contentRef} className="prose prose-lg max-w-none">
             <SafeHtml html={content} type="blog" />
           </div>
         </div>
 
-        {/* Table of Contents - Only render when content is ready */}
+        {/* Table of Contents Sidebar - Desktop only, sticky */}
         {isContentReady && (
-          <>
-            {/* Desktop ToC */}
-            <div className="hidden lg:block flex-shrink-0">
+          <aside className="hidden xl:block w-72 flex-shrink-0 pr-6">
+            <div className="sticky top-24">
               <TableOfContents contentRef={contentRef} />
             </div>
-
-            {/* Mobile ToC */}
-            <div className="lg:hidden">
-              <TableOfContents contentRef={contentRef} />
-            </div>
-          </>
+          </aside>
         )}
       </div>
+
+      {/* Table of Contents - Mobile floating button */}
+      {isContentReady && (
+        <div className="xl:hidden">
+          <TableOfContents contentRef={contentRef} />
+        </div>
+      )}
     </>
   );
 }
