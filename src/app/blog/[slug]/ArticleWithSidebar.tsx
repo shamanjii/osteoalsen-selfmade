@@ -71,7 +71,7 @@ export default function ArticleWithSidebar({
         {/* Reading Progress Bar */}
         <ReadingProgressBar contentRef={contentRef} />
 
-        <div id="article-content" ref={contentRef} className="prose prose-lg max-w-none">
+        <div id="article-content" ref={contentRef} className="max-w-none">
           <SafeHtml html={content} type="blog" />
         </div>
 
@@ -87,7 +87,7 @@ export default function ArticleWithSidebar({
       <ReadingProgressBar contentRef={contentRef} />
       <div className="flex gap-8 items-start">
         <div className="flex-1 min-w-0">
-          <div ref={contentRef} className="prose prose-lg max-w-none">
+          <div ref={contentRef} className="max-w-none">
             <SafeHtml html={content} type="blog" />
           </div>
           {children}

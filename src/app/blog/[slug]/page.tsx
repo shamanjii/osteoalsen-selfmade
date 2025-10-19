@@ -113,26 +113,31 @@ export default async function BlogPost({ params }: PageProps) {
                 <div className="flex gap-8 items-start">
                     {/* Article Container - Left side */}
                     <BlogErrorBoundary>
-                        <article className="flex-1 bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
-                    <header className="mb-6">
-                        <h1 className="text-3xl font-epilogue font-bold mb-2 text-slate-900">{post.title}</h1>
-                        <div className="text-slate-500 text-sm">
-                            Veröffentlicht am {new Date(post.date || '').toLocaleDateString('de-DE', {
-                                year: 'numeric',
-                                month: 'long',
-                                day: 'numeric'
-                            })}
+                        <article className="flex-1 bg-white rounded-xl shadow-sm border border-slate-200 p-8 md:p-12">
+                    <header className="mb-8 pb-6 border-b border-slate-200">
+                        <h1 className="text-4xl md:text-5xl font-epilogue font-bold mb-4 text-slate-900 leading-tight">{post.title}</h1>
+                        <div className="flex items-center gap-4 text-slate-600 text-sm">
+                            <time dateTime={post.date}>
+                                Veröffentlicht am {new Date(post.date || '').toLocaleDateString('de-DE', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                })}
+                            </time>
+                            <span className="text-slate-400">•</span>
+                            <span>Von Joshua Alsen</span>
                         </div>
                     </header>
 
                     {post.image && (
-                        <div className="mb-6">
+                        <div className="mb-10 -mx-4 md:-mx-8">
                             <Image
                                 src={post.image}
                                 alt={post.alt || post.title}
-                                width={800}
-                                height={400}
-                                className="w-full h-64 object-cover rounded-lg"
+                                width={1200}
+                                height={600}
+                                className="w-full h-80 md:h-96 object-cover rounded-lg"
+                                priority
                             />
                         </div>
                     )}
@@ -155,13 +160,21 @@ export default async function BlogPost({ params }: PageProps) {
                         )}
                     </ArticleWithSidebar>
 
-                    <footer className="mt-8 pt-6 border-t border-slate-200 flex justify-between items-center">
-                        <Link
-                            href="/blog"
-                            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
-                        >
-                            ← Zurück zur Übersicht
-                        </Link>
+                    <footer className="mt-12 pt-8 border-t border-slate-200">
+                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <Link
+                                href="/blog"
+                                className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors"
+                            >
+                                ← Zurück zur Übersicht
+                            </Link>
+                            <Link
+                                href="/terminbuchung"
+                                className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md"
+                            >
+                                📅 Termin buchen
+                            </Link>
+                        </div>
                         </footer>
                     </article>
                 </BlogErrorBoundary>
