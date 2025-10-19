@@ -36,7 +36,7 @@ export type Post = PostFrontmatter & {
 };
 
 const postsDir = path.join(process.cwd(), "posts");
-const USE_CMS = process.env.USE_CMS !== 'false'; // Use CMS by default
+const USE_CMS = process.env.USE_CMS === 'true'; // Use Markdown by default, CMS only if explicitly enabled
 
 /**
  * Validates that a file path is safe and within the posts directory
