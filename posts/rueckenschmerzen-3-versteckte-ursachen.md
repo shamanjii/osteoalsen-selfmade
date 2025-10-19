@@ -249,7 +249,7 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Gesetzliche Krankenkasse:** Einige Kassen (z.B. TK, Barmer, AOK) bieten **freiwillige Zuschüsse** für Osteopathie – oft 3-6 Sitzungen pro Jahr mit Rezept eines Arztes.
 
-**Selbstzahler:** Eine Sitzung kostet in Hamburg zwischen 80-120€ (je nach Praxis und Dauer).
+**Selbstzahler:** Eine Sitzung kostet in Hamburg zwischen 100-180€ (je nach Praxis und Dauer). In meiner Praxis: 150€ pro Behandlung.
 
 [→ Mehr zu Kosten & Abrechnung erfahren](/kosten-ablauf)
 
@@ -395,8 +395,8 @@ Egal ob Sie in [Rotherbaum](/osteopathie-rotherbaum), [Eimsbüttel](/osteopathie
 - Chronische Verläufe: 6-8 Wochen
 
 **Kosten:**
-- 80-120€ pro Sitzung
-- Teilweise Erstattung durch Krankenkasse
+- 150€ pro Sitzung (Ersttermin und Folgebehandlungen)
+- Teilweise Erstattung durch Krankenkasse möglich (40-60€ bei gesetzlichen Kassen)
 
 **Nächster Schritt:**
 [→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung)

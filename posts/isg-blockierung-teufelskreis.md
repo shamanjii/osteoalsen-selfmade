@@ -608,10 +608,10 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsä
 
 ### Kosten
 
-- **Ersttermin:** 120 €
-- **Folgebehandlungen:** 90 €
-- **Privatpatienten:** Volle Erstattung (meist)
-- **Gesetzlich:** Zusatzversicherung oder Privatleistung
+- **Ersttermin:** 150 €
+- **Folgebehandlungen:** 150 €
+- **Privatpatienten:** Meist volle Erstattung
+- **Gesetzlich:** Zusatzversicherung oft Erstattung, sonst Privatleistung
 
 ---
 

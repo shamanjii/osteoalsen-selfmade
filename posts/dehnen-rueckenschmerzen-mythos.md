@@ -539,10 +539,10 @@ Heute mache ich 0 Minuten Dehnung. Nur Stabilisation. Und es war noch nie besser
 
 ### Kosten
 
-- **Ersttermin:** 120 €
-- **Folgebehandlungen:** 90 €
-- **Privatpatienten:** Volle Erstattung (meist)
-- **Gesetzlich:** Zusatzversicherung oder Privatleistung
+- **Ersttermin:** 150 €
+- **Folgebehandlungen:** 150 €
+- **Privatpatienten:** Meist volle Erstattung
+- **Gesetzlich:** Zusatzversicherung oft Erstattung, sonst Privatleistung
 
 ---
 

@@ -425,9 +425,9 @@ Viele Sportler kehren zu früh zurück – oder glauben, vollständig geheilt zu
 **Privatpatienten:** Vollständige Erstattung (GOÄ)
 **Gesetzlich Versicherte:** Privatzahler, manche Zusatzversicherungen erstatten
 
-- **Ersttermin:** 120 €
-- **Folgebehandlungen:** 90 €
-- **Return-to-Sport-Analyse:** 120 € (inkl. Videoanalyse)
+- **Ersttermin:** 150 €
+- **Folgebehandlungen:** 150 €
+- **Return-to-Sport-Analyse:** 150 € (inkl. Videoanalyse)
 
 ---
 

@@ -544,8 +544,8 @@ Gehen Sie diese Checkliste heute noch durch:
 
 ### Kosten
 
-- **Ersttermin:** 120 €
-- **Folgebehandlungen:** 90 €
+- **Ersttermin:** 150 €
+- **Folgebehandlungen:** 150 €
 - **Privatpatienten:** Meist volle Erstattung
 - **Gesetzlich:** Zusatzversicherung oft Erstattung, sonst Privatleistung
 
