@@ -12,6 +12,7 @@
 
 import { google } from 'googleapis';
 import type { searchconsole_v1 } from 'googleapis';
+import fs from 'fs';
 
 const SITE_URL = 'sc-domain:osteoalsen.de';
 
@@ -49,19 +50,26 @@ export interface KeywordRankingData {
  * 6. Run authentication script (see scripts/auth-google.ts)
  */
 async function getSearchConsoleClient() {
-  // For server-side authentication, use service account or OAuth tokens
-  // This is a placeholder - you'll need to implement proper authentication
+  const keyPath = process.env.GOOGLE_SERVICE_ACCOUNT_KEY_PATH;
 
-  const auth = new google.auth.GoogleAuth({
-    keyFile: process.env.GOOGLE_SERVICE_ACCOUNT_KEY_PATH,
+  if (!keyPath) {
+    throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY_PATH environment variable is not set');
+  }
+
+  // Read and parse the service account key file
+  const keyFileContent = fs.readFileSync(keyPath, 'utf-8');
+  const credentials = JSON.parse(keyFileContent);
+
+  // Use JWT directly (recommended approach, no deprecation warnings)
+  const auth = new google.auth.JWT({
+    email: credentials.client_email,
+    key: credentials.private_key,
     scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
   });
 
-  const authClient = await auth.getClient();
-
   return google.searchconsole({
     version: 'v1',
-    auth: authClient,
+    auth,
   });
 }
 
