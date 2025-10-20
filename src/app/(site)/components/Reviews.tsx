@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback, useMemo, memo } from "react";
+import { useState, useCallback, useMemo, memo, useEffect } from "react";
 import { fallbackReviews, reviewsStats, type Review } from "@/data/fallbackReviews";
 import ReviewsStructuredData from "@/components/ReviewsStructuredData";
 
@@ -25,11 +25,58 @@ const convertToLegacyFormat = (reviews: Review[]): LegacyReview[] => {
 
 const Reviews = memo(function Reviews() {
     const [showAll, setShowAll] = useState(false);
+    const [isLiveData, setIsLiveData] = useState(false);
+    const [liveReviews, setLiveReviews] = useState<LegacyReview[]>([]);
+    const [liveStats, setLiveStats] = useState<{ averageRating: number; totalReviews: number } | null>(null);
 
-    // Memoize static data to prevent unnecessary re-renders
-    const allReviews = useMemo(() => convertToLegacyFormat(fallbackReviews), []);
-    const averageRating = useMemo(() => reviewsStats.averageRating, []);
-    const totalReviews = useMemo(() => reviewsStats.totalReviews, []);
+    // Fetch live Google reviews on mount
+    useEffect(() => {
+        async function fetchGoogleReviews() {
+            try {
+                const response = await fetch('/api/google-reviews');
+                const data = await response.json();
+
+                if (data.success && data.reviews) {
+                    // Convert Google reviews to legacy format
+                    const convertedReviews = data.reviews.map((review: any) => ({
+                        text: review.text,
+                        author: review.author,
+                        rating: review.rating,
+                        time: review.date,
+                        profilePhoto: review.profilePhoto,
+                        authorUrl: review.authorUrl
+                    }));
+
+                    setLiveReviews(convertedReviews);
+                    setLiveStats({
+                        averageRating: data.averageRating,
+                        totalReviews: data.totalReviews
+                    });
+                    setIsLiveData(true);
+
+                    console.log('✅ Live Google Reviews geladen:', convertedReviews.length);
+                }
+            } catch (error) {
+                console.warn('⚠️ Fallback zu statischen Reviews:', error);
+                // Fallback to static reviews (already set below)
+            }
+        }
+
+        fetchGoogleReviews();
+    }, []);
+
+    // Use live data if available, otherwise fallback to static data
+    const allReviews = useMemo(() => {
+        return isLiveData ? liveReviews : convertToLegacyFormat(fallbackReviews);
+    }, [isLiveData, liveReviews]);
+
+    const averageRating = useMemo(() => {
+        return liveStats?.averageRating ?? reviewsStats.averageRating;
+    }, [liveStats]);
+
+    const totalReviews = useMemo(() => {
+        return liveStats?.totalReviews ?? reviewsStats.totalReviews;
+    }, [liveStats]);
 
     // Show first 6 reviews initially, then all when expanded
     const displayedReviews = useMemo(() => {
@@ -64,7 +111,9 @@ const Reviews = memo(function Reviews() {
                         <span className="average-rating text-2xl font-semibold text-slate-900">{averageRating.toFixed(1)}</span>
                         <div className="rating-stars text-amber-400 text-xl">★★★★★</div>
                         <span className="rating-value text-slate-600">({totalReviews}+ Bewertungen)</span>
-                        <span className="live-indicator text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full ml-2">Verifiziert</span>
+                        <span className={`live-indicator text-xs px-2 py-1 rounded-full ml-2 ${isLiveData ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'}`}>
+                            {isLiveData ? '🔄 Live von Google' : 'Verifiziert'}
+                        </span>
                     </div>
                 </div>
 
