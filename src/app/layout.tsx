@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
       {
-        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Joshua Alsen - Osteopath und Heilpraktiker in Hamburg Rotherbaum & Eimsbüttel",
+        alt: "Osteopathie Alsen - Heilpraxis Hamburg",
       }
     ],
     locale: "de_DE",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Osteopath Hamburg | Joshua Alsen | Rotherbaum & Eimsbüttel",
     description: "Osteopath Hamburg ✓ VFO-zertifiziert ✓ 2 Standorte ✓ Termine binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt buchen!",
-    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+    images: ["/og-image.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",
   },
