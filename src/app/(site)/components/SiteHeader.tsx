@@ -10,11 +10,15 @@ export default function SiteHeader() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+    const [isAtTop, setIsAtTop] = useState(true);
 
     // Throttled scroll handler for better performance
     const handleScroll = useCallback(() => {
         const throttledHandler = throttle(() => {
             const currentScrollY = window.scrollY;
+
+            // Track if we're at the very top (for ContactBar visibility)
+            setIsAtTop(currentScrollY < 10);
 
             // Always keep header visible when mobile menu is open
             if (mobileOpen) {
@@ -113,7 +117,7 @@ export default function SiteHeader() {
     }, []);
 
     return (
-        <header className={`fixed top-0 w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-transform duration-300 ease-in-out ${
+        <header className={`fixed ${isAtTop ? 'top-12' : 'top-0'} w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-all duration-300 ease-in-out ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
