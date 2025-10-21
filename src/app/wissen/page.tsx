@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
       {
-        url: "/assets/joshua-alsen-osteopath-hamburg-og.webp",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Wissenschaft & Forschung - Osteopathie Hamburg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Wissenschaft & Forschung | Osteopathie Hamburg",
     description:
       "Was sagt die Wissenschaft zur Osteopathie? Aktuelle Studien und Forschungsergebnisse.",
-    images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
+    images: ["/og-image.webp"],
   },
 };
 
@@ -102,16 +102,16 @@ export default function WissenschaftPage() {
                 <div className="space-y-4 text-slate-700">
                   <div className="bg-white border border-slate-200 rounded-lg p-4">
                     <h4 className="font-semibold text-slate-900 mb-2">
-                      Cochrane Review 2021
+                      Cochrane Review: Spinale Manualtherapie (2011)
                     </h4>
                     <p className="mb-2">
-                      Eine systematische Übersichtsarbeit der renommierten Cochrane Collaboration untersuchte
-                      die Wirksamkeit manueller Therapien bei chronischen Rückenschmerzen.
+                      Eine systematische Übersichtsarbeit der renommierten Cochrane Collaboration mit 26 randomisierten Studien und 6.070 Teilnehmern untersuchte die Wirksamkeit spinaler Manualtherapie bei chronischen Rückenschmerzen.
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Manuelle Therapien (inkl. Osteopathie) zeigten
-                      signifikante Verbesserungen bei Schmerz und Funktionsfähigkeit im Vergleich zu
-                      Placebo oder keiner Behandlung.
+                      <strong>Ergebnis:</strong> Spinale Manualtherapie (inkl. Osteopathie) erwies sich als ebenso wirksam wie andere gängige Therapien (Bewegungstherapie, medizinische Standardversorgung, Physiotherapie).
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/21593658/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Rubinstein et al., Spine 2011 (PMID: 21593658)</a>
                     </p>
                   </div>
 
@@ -120,11 +120,28 @@ export default function WissenschaftPage() {
                       OSTPAC-Studie (2013)
                     </h4>
                     <p className="mb-2">
-                      Randomisierte kontrollierte Studie mit 455 Patienten mit chronischen Rückenschmerzen.
+                      Randomisierte, doppelblinde, Placebo-kontrollierte Studie mit 455 Patienten mit chronischen Rückenschmerzen.
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Osteopathische Behandlung führte zu signifikanter
-                      Schmerzreduktion und verbesserter Lebensqualität über 12 Monate.
+                      <strong>Ergebnis:</strong> Osteopathische Behandlung führte zu signifikanter Schmerzreduktion (Response Ratio 1.38) und verbesserter Lebensqualität. Nur 1 Patient entwickelte mögliche Nebenwirkungen.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/23508598/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Licciardone et al., Ann Fam Med 2013 (PMID: 23508598)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Systematische Übersicht & Meta-Analyse (2020)
+                    </h4>
+                    <p className="mb-2">
+                      Umfassende Meta-Analyse zur Effektivität osteopathischer Interventionen bei chronischen unspezifischen Rückenschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Osteopathie zeigte sich wirksamer als Kontrollinterventionen bei Schmerzreduktion (Effect Size: -0.59) und Verbesserung der Funktionsfähigkeit (Effect Size: -0.42).
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/33197571/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Voogt et al., Eur J Pain 2020 (PMID: 33197571)</a>
                     </p>
                   </div>
                 </div>
@@ -139,28 +156,46 @@ export default function WissenschaftPage() {
                 <div className="space-y-4 text-slate-700">
                   <div className="bg-white border border-slate-200 rounded-lg p-4">
                     <h4 className="font-semibold text-slate-900 mb-2">
-                      Systematic Review 2019
+                      Systematic Review: Manuelle Therapie bei Spannungskopfschmerzen (2020)
                     </h4>
                     <p className="mb-2">
-                      Übersichtsarbeit zu manuellen Therapien bei Migräne und Spannungskopfschmerzen.
+                      Systematische Übersichtsarbeit und Meta-Analyse zu manuellen Therapien bei Spannungskopfschmerzen.
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Manuelle Therapien zeigten positive Effekte auf
-                      Häufigkeit, Intensität und Dauer von Kopfschmerzen, besonders bei
-                      zervikogenem Kopfschmerz und Spannungskopfschmerz.
+                      <strong>Ergebnis:</strong> Manuelle Therapien zeigten positive Effekte auf Schmerzintensität, Häufigkeit und Behinderung bei Spannungskopfschmerzen. Auch die Lebensqualität und zervikale Beweglichkeit verbesserten sich signifikant.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/32924640/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Rolle et al., Am J Phys Med Rehabil 2020 (PMID: 32924640)</a>
                     </p>
                   </div>
 
                   <div className="bg-white border border-slate-200 rounded-lg p-4">
                     <h4 className="font-semibold text-slate-900 mb-2">
-                      Craniosacrale Therapie bei Migräne (2016)
+                      Manuelle Therapie & Lebensqualität bei Kopfschmerzen (2019)
                     </h4>
                     <p className="mb-2">
-                      Klinische Studie zur Wirksamkeit kraniosacraler Techniken bei Migräne.
+                      Systematische Übersicht und Meta-Analyse zu manuellen Therapien bei Kopfschmerzen (Spannungskopfschmerz, Migräne, zervikogener Kopfschmerz).
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Signifikante Reduktion von Migräneattacken und
-                      verbesserter Lebensqualität nach 8 Wochen Behandlung.
+                      <strong>Ergebnis:</strong> Meta-Analyse von 10 RCTs zeigte statistisch signifikante Verbesserungen der Lebensqualität (HIT-6 und HDI Skalen) sowohl direkt nach Behandlung als auch bei Follow-up.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/31401702/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Rist et al., Pain Med 2019 (PMID: 31401702)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Craniosacrale Therapie bei Migräne: RCT (2022)
+                    </h4>
+                    <p className="mb-2">
+                      Randomisierte kontrollierte Studie mit 50 Migräne-Patienten: Craniosacrale Therapie vs. Placebo-Kontrolle über 8 Wochen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Signifikante Verbesserungen bei Schmerzintensität, Migräneschwere, Häufigkeit, Behinderung und Medikamenteneinnahme in der Behandlungsgruppe.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/35160211/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Rego et al., J Clin Med 2022 (PMID: 35160211)</a>
                     </p>
                   </div>
                 </div>
@@ -175,14 +210,31 @@ export default function WissenschaftPage() {
                 <div className="space-y-4 text-slate-700">
                   <div className="bg-white border border-slate-200 rounded-lg p-4">
                     <h4 className="font-semibold text-slate-900 mb-2">
-                      Säuglingskolik-Studie (2012)
+                      Cochrane Review: Manuelle Therapien bei Säuglingskoliken (2012)
                     </h4>
                     <p className="mb-2">
-                      Randomisierte Kontrollstudie zur osteopathischen Behandlung von Säuglingskoliken.
+                      Systematische Übersichtsarbeit der Cochrane Collaboration zu manuellen Therapien (Chiropraktik, Osteopathie, Craniosacraltherapie) bei Säuglingen unter 6 Monaten mit Koliken.
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Osteopathische Behandlung führte zu signifikanter
-                      Reduktion der Schreizeiten bei Säuglingen mit Dreimonatskoliken.
+                      <strong>Ergebnis:</strong> Mehrere kleine Studien zeigten positive Effekte auf Schreizeit. Die Evidenz ist vielversprechend, weitere hochwertige Studien sind jedoch notwendig.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/23235617/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Dobson et al., Cochrane Database Syst Rev 2012 (PMID: 23235617)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Osteopathie bei pädiatrischen Beschwerden: Systematic Review (2022)
+                    </h4>
+                    <p className="mb-2">
+                      Aktualisierte systematische Übersichtsarbeit und Meta-Analyse zur osteopathischen Behandlung bei Kindern (2012-2021).
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> 13 Studien erfüllten die Einschlusskriterien. Bei Frühgeborenen zeigte OMT wenig bis keinen Effekt auf Krankenhausaufenthaltsdauer. Positive Effekte wurden bei anderen pädiatrischen Beschwerden berichtet.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/35892555/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Lanaro et al., J Clin Med 2022 (PMID: 35892555)</a>
                     </p>
                   </div>
                 </div>
@@ -197,15 +249,31 @@ export default function WissenschaftPage() {
                 <div className="space-y-4 text-slate-700">
                   <div className="bg-white border border-slate-200 rounded-lg p-4">
                     <h4 className="font-semibold text-slate-900 mb-2">
-                      IBS-Studie (Reizdarm) 2015
+                      Viszerale Osteopathie bei Reizdarmsyndrom: RCT (2013)
                     </h4>
                     <p className="mb-2">
-                      Klinische Studie zur viszeralen Osteopathie bei Reizdarmsyndrom.
+                      Randomisierte, Placebo-kontrollierte Crossover-Studie mit 31 therapieresistenten IBS-Patienten.
                     </p>
                     <p className="text-sm text-slate-600">
-                      <strong>Ergebnis:</strong> Patienten mit IBS zeigten nach viszeraler
-                      osteopathischer Behandlung signifikante Verbesserungen bei Schmerz,
-                      Blähungen und Lebensqualität.
+                      <strong>Ergebnis:</strong> Viszerale Osteopathie führte zu signifikanter Verbesserung bei Durchfall, abdomineller Distension und Bauchschmerzen. Langzeit-Effekte über 6 Monate nachweisbar.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/23981319/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Müller et al., J Crohns Colitis 2013 (PMID: 23981319)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Systematic Review & Meta-Analyse: OMT bei IBS (2023)
+                    </h4>
+                    <p className="mb-2">
+                      Systematische Übersichtsarbeit und Meta-Analyse zur Effektivität osteopathischer manueller Behandlung bei Erwachsenen mit Reizdarmsyndrom.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Evidenz deutet darauf hin, dass OMT bei der Behandlung von IBS-Patienten vorteilhaft sein kann. Positive Effekte auf Schmerz, Lebensqualität und Symptomreduktion wurden dokumentiert.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/37621836/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Chiacchiarini et al., Healthcare 2023 (PMID: 37621836)</a>
                     </p>
                   </div>
                 </div>
