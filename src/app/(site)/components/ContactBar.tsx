@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import throttle from "lodash.throttle";
 
 /**
@@ -7,19 +8,23 @@ import throttle from "lodash.throttle";
  *
  * Zeigt die wichtigsten Kontaktinformationen (Telefon + E-Mail) prominent an,
  * damit Besucher sofort sehen, wie sie Kontakt aufnehmen können.
- * Versteckt sich zusammen mit dem Header beim Scrollen.
+ * Nur auf Homepage sichtbar, versteckt sich beim Scrollen.
  */
 export default function ContactBar() {
+  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // ContactBar: Only visible at very top (< 10px)
+  // Only show ContactBar on homepage and booking page
+  const showContactBar = pathname === '/' || pathname === '/terminbuchung';
+
+  // ContactBar: Only visible at very top (< 10px) AND only on specific pages
   const handleScroll = useCallback(() => {
     const throttledHandler = throttle(() => {
       const currentScrollY = window.scrollY;
 
-      // Only show when at very top of page
-      if (currentScrollY < 10) {
+      // Only show when at very top of page AND on homepage/booking page
+      if (currentScrollY < 10 && showContactBar) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -29,7 +34,7 @@ export default function ContactBar() {
     }, 16); // 60fps throttling
 
     return throttledHandler;
-  }, [lastScrollY]);
+  }, [lastScrollY, showContactBar]);
 
   useEffect(() => {
     const scrollHandler = handleScroll();

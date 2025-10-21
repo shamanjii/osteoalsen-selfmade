@@ -2,15 +2,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import throttle from "lodash.throttle";
 import DropdownMenu from "@/components/DropdownMenu";
 
 export default function SiteHeader() {
+    const pathname = usePathname();
     const [mobileOpen, setMobileOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [isAtTop, setIsAtTop] = useState(true);
+
+    // ContactBar is shown on homepage and booking page
+    const hasContactBar = pathname === '/' || pathname === '/terminbuchung';
 
     // Throttled scroll handler for better performance
     const handleScroll = useCallback(() => {
@@ -117,7 +122,7 @@ export default function SiteHeader() {
     }, []);
 
     return (
-        <header className={`fixed ${isAtTop ? 'top-12' : 'top-0'} w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-all duration-300 ease-in-out ${
+        <header className={`fixed ${hasContactBar && isAtTop ? 'top-12' : 'top-0'} w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-all duration-300 ease-in-out ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
