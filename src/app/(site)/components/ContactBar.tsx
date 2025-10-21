@@ -45,7 +45,7 @@ export default function ContactBar() {
   }, [handleScroll]);
 
   return (
-    <div className={`fixed top-16 md:top-24 w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 border-b border-slate-700 transition-transform duration-300 ease-in-out ${
+    <div className={`fixed top-0 w-full z-50 bg-gradient-to-r from-slate-800 to-slate-900 border-b border-slate-700 transition-transform duration-300 ease-in-out ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

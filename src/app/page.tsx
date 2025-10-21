@@ -16,8 +16,8 @@ import ContactSection from "./(site)/components/ContactSection";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <SiteHeader />
       <ContactBar />
+      <SiteHeader />
       <main className="relative">
         <HeroSection />
         <AboutOsteopathie />
