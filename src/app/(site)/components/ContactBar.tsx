@@ -1,14 +1,53 @@
 "use client";
+import { useState, useEffect, useCallback } from "react";
+import throttle from "lodash.throttle";
 
 /**
  * ContactBar - Schmale Kontaktleiste zwischen Header und Hero
  *
  * Zeigt die wichtigsten Kontaktinformationen (Telefon + E-Mail) prominent an,
  * damit Besucher sofort sehen, wie sie Kontakt aufnehmen können.
+ * Versteckt sich zusammen mit dem Header beim Scrollen.
  */
 export default function ContactBar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Throttled scroll handler (same logic as SiteHeader)
+  const handleScroll = useCallback(() => {
+    const throttledHandler = throttle(() => {
+      const currentScrollY = window.scrollY;
+
+      // Show at top of page
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Hide when scrolling down, show when scrolling up
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    }, 16); // 60fps throttling
+
+    return throttledHandler;
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    const scrollHandler = handleScroll();
+    window.addEventListener('scroll', scrollHandler, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+      scrollHandler.cancel();
+    };
+  }, [handleScroll]);
+
   return (
-    <div className="fixed top-16 md:top-24 w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 border-b border-slate-700">
+    <div className={`fixed top-16 md:top-24 w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 border-b border-slate-700 transition-transform duration-300 ease-in-out ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 py-3">
           {/* Telefon */}
