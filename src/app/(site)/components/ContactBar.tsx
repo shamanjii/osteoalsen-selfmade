@@ -13,20 +13,16 @@ export default function ContactBar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Throttled scroll handler (same logic as SiteHeader)
+  // ContactBar: Only visible at very top (< 10px)
   const handleScroll = useCallback(() => {
     const throttledHandler = throttle(() => {
       const currentScrollY = window.scrollY;
 
-      // Show at top of page
+      // Only show when at very top of page
       if (currentScrollY < 10) {
         setIsVisible(true);
-      }
-      // Hide when scrolling down, show when scrolling up
-      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      } else {
         setIsVisible(false);
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true);
       }
 
       setLastScrollY(currentScrollY);
@@ -45,7 +41,7 @@ export default function ContactBar() {
   }, [handleScroll]);
 
   return (
-    <div className={`fixed top-0 w-full z-50 bg-gradient-to-r from-slate-800 to-slate-900 border-b border-slate-700 transition-transform duration-300 ease-in-out ${
+    <div className={`fixed top-0 w-full z-50 bg-gradient-to-r from-slate-800 to-slate-900 transition-transform duration-300 ease-in-out ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
