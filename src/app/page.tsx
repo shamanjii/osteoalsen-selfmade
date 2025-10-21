@@ -2,6 +2,7 @@
 export const dynamic = 'force-dynamic';
 
 import SiteHeader from "./(site)/components/SiteHeader";
+import ContactBar from "./(site)/components/ContactBar";
 import HeroSection from "./(site)/components/HeroSection";
 import AboutOsteopathie from "./(site)/components/AboutOsteopathie";
 import Treatments from "./(site)/components/Treatments";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
+      <ContactBar />
       <main className="relative">
         <HeroSection />
         <AboutOsteopathie />
