@@ -25,7 +25,7 @@ export default function HeroSection() {
                             Eimsbüttel
                         </Link>{" "}biete ich ganzheitliche osteopathische
                         Behandlungen an. Als VFO-zertifizierter Osteopath und Heilpraktiker unterstütze ich gesetzlich Versicherte,
-                        Privatpatienten und Selbstzahler dabei, ihre natürliche Balance wiederzufinden. Termine oft binnen 48 Stunden verfügbar.
+                        Privatpatienten und Selbstzahler dabei, ihre natürliche Balance wiederzufinden.
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a
