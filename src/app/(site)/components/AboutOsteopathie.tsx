@@ -21,7 +21,7 @@ export default function AboutOsteopathie() {
                     <div className="lg:col-span-3">
                         <p className="uppercase tracking-wider text-slate-500 font-medium text-sm">Mein Name ist Joshua Alsen</p>
                         <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-light text-slate-900 tracking-tight font-epilogue">Was ist Osteopathie?</h2>
-                        <div className="mt-8 space-y-6 text-slate-700 leading-loose text-lg">
+                        <div className="mt-8 space-y-6 text-slate-700 leading-relaxed text-lg">
                             <p>
                                 Osteopathie ist eine eigenständige Form der Medizin, die auf der grundlegenden Überzeugung basiert,
                                 dass alle Teile des Organismus in einer wechselseitigen Beziehung zueinander stehen.
