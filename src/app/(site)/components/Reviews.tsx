@@ -47,7 +47,21 @@ const Reviews = memo(function Reviews() {
                         authorUrl: review.authorUrl
                     }));
 
-                    setLiveReviews(convertedReviews);
+                    // Merge live reviews with static fallbacks, removing duplicates
+                    const staticReviews = convertToLegacyFormat(fallbackReviews);
+                    const mergedReviews = [...convertedReviews];
+
+                    // Add static reviews that don't exist in live reviews
+                    staticReviews.forEach(staticReview => {
+                        const isDuplicate = convertedReviews.some(
+                            liveReview => liveReview.author === staticReview.author
+                        );
+                        if (!isDuplicate) {
+                            mergedReviews.push(staticReview);
+                        }
+                    });
+
+                    setLiveReviews(mergedReviews);
                     setLiveStats({
                         averageRating: data.averageRating,
                         totalReviews: data.totalReviews
@@ -55,6 +69,7 @@ const Reviews = memo(function Reviews() {
                     setIsLiveData(true);
 
                     console.log('✅ Live Google Reviews geladen:', convertedReviews.length);
+                    console.log('📊 Total Reviews (Live + Static):', mergedReviews.length);
                 }
             } catch (error) {
                 console.warn('⚠️ Fallback zu statischen Reviews:', error);
