@@ -14,7 +14,7 @@ type LegacyReview = {
 
 // Convert fallback reviews to legacy format for display
 const convertToLegacyFormat = (reviews: Review[]): LegacyReview[] => {
-    return reviews.slice(0, 8).map(review => ({
+    return reviews.map(review => ({
         text: review.text,
         author: review.author,
         rating: review.rating,
