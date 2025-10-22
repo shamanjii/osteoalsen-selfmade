@@ -122,7 +122,7 @@ export default function SiteHeader() {
     }, []);
 
     return (
-        <header className={`fixed ${hasContactBar && isAtTop ? 'top-12' : 'top-0'} w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-all duration-300 ease-in-out ${
+        <header className={`fixed ${hasContactBar && isAtTop ? 'top-8 sm:top-12' : 'top-0'} w-full z-40 bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg transition-all duration-300 ease-in-out ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
