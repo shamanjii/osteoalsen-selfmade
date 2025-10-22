@@ -93,9 +93,9 @@ const Reviews = memo(function Reviews() {
         return liveStats?.totalReviews ?? reviewsStats.totalReviews;
     }, [liveStats]);
 
-    // Show first 12 reviews initially, then all when expanded
+    // Show first 6 reviews initially, then all when expanded
     const displayedReviews = useMemo(() => {
-        return showAll ? allReviews : allReviews.slice(0, 12);
+        return showAll ? allReviews : allReviews.slice(0, 6);
     }, [allReviews, showAll]);
 
     const toggleShowAll = useCallback(() => {
@@ -163,7 +163,7 @@ const Reviews = memo(function Reviews() {
                 </div>
 
                 {/* Show More/Less Button */}
-                {allReviews.length > 12 && (
+                {allReviews.length > 6 && (
                     <div className="text-center mb-8">
                         <button
                             onClick={toggleShowAll}
