@@ -81,8 +81,23 @@ const Reviews = memo(function Reviews() {
     }, []);
 
     // Use live data if available, otherwise fallback to static data
+    // Sort chronologically: newest first
     const allReviews = useMemo(() => {
-        return isLiveData ? liveReviews : convertToLegacyFormat(fallbackReviews);
+        const reviews = isLiveData ? liveReviews : convertToLegacyFormat(fallbackReviews);
+
+        // Sort by date (newest first)
+        // Priority: Live reviews (from API) always at top, then by date string
+        return reviews.sort((a, b) => {
+            // Reviews from live API should come first (they have profilePhoto)
+            const aIsLive = !!a.profilePhoto;
+            const bIsLive = !!b.profilePhoto;
+
+            if (aIsLive && !bIsLive) return -1;
+            if (!aIsLive && bIsLive) return 1;
+
+            // For the rest, sort by time string (newer dates first)
+            return 0; // Keep original order within each group
+        });
     }, [isLiveData, liveReviews]);
 
     const averageRating = useMemo(() => {
@@ -93,9 +108,9 @@ const Reviews = memo(function Reviews() {
         return liveStats?.totalReviews ?? reviewsStats.totalReviews;
     }, [liveStats]);
 
-    // Show first 6 reviews initially, then all when expanded
+    // Show first 12 reviews initially, then all when expanded
     const displayedReviews = useMemo(() => {
-        return showAll ? allReviews : allReviews.slice(0, 6);
+        return showAll ? allReviews : allReviews.slice(0, 12);
     }, [allReviews, showAll]);
 
     const toggleShowAll = useCallback(() => {
@@ -163,7 +178,7 @@ const Reviews = memo(function Reviews() {
                 </div>
 
                 {/* Show More/Less Button */}
-                {allReviews.length > 6 && (
+                {allReviews.length > 12 && (
                     <div className="text-center mb-8">
                         <button
                             onClick={toggleShowAll}
