@@ -48,17 +48,16 @@ const Reviews = memo(function Reviews() {
                     }));
 
                     // Merge live reviews with static fallbacks, removing duplicates
+                    // Start with static reviews (already chronologically sorted)
                     const staticReviews = convertToLegacyFormat(fallbackReviews);
-                    const mergedReviews = [...convertedReviews];
 
-                    // Add static reviews that don't exist in live reviews
-                    staticReviews.forEach(staticReview => {
-                        const isDuplicate = convertedReviews.some(
+                    // Replace static reviews with live versions if they exist (to get profilePhoto)
+                    const mergedReviews = staticReviews.map(staticReview => {
+                        const liveVersion = convertedReviews.find(
                             liveReview => liveReview.author === staticReview.author
                         );
-                        if (!isDuplicate) {
-                            mergedReviews.push(staticReview);
-                        }
+                        // Use live version if available (has profilePhoto), otherwise use static
+                        return liveVersion || staticReview;
                     });
 
                     setLiveReviews(mergedReviews);
@@ -81,23 +80,9 @@ const Reviews = memo(function Reviews() {
     }, []);
 
     // Use live data if available, otherwise fallback to static data
-    // Sort chronologically: newest first
+    // Keep original order from fallbackReviews (already sorted newest first)
     const allReviews = useMemo(() => {
-        const reviews = isLiveData ? liveReviews : convertToLegacyFormat(fallbackReviews);
-
-        // Sort by date (newest first)
-        // Priority: Live reviews (from API) always at top, then by date string
-        return reviews.sort((a, b) => {
-            // Reviews from live API should come first (they have profilePhoto)
-            const aIsLive = !!a.profilePhoto;
-            const bIsLive = !!b.profilePhoto;
-
-            if (aIsLive && !bIsLive) return -1;
-            if (!aIsLive && bIsLive) return 1;
-
-            // For the rest, sort by time string (newer dates first)
-            return 0; // Keep original order within each group
-        });
+        return isLiveData ? liveReviews : convertToLegacyFormat(fallbackReviews);
     }, [isLiveData, liveReviews]);
 
     const averageRating = useMemo(() => {
