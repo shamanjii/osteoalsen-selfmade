@@ -113,7 +113,7 @@ export default function WasIstOsteopathiePage() {
               <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
                 Was ist Osteopathie?
               </h1>
-              <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
+              <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-normal">
                 Eine ganzheitliche Heilmethode, die den Körper als Einheit
                 betrachtet und die Selbstheilungskräfte aktiviert
               </p>
@@ -131,7 +131,7 @@ export default function WasIstOsteopathiePage() {
                 <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-6">
                   Definition und Grundprinzipien
                 </h2>
-                <div className="space-y-4 text-slate-700 text-lg leading-relaxed">
+                <div className="space-y-4 text-slate-700 text-lg leading-normal">
                   <p>
                     Osteopathie ist eine <strong>ganzheitliche manuelle
                     Heilmethode</strong>, die den Menschen als funktionelle Einheit
@@ -173,7 +173,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Geschichte der Osteopathie
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 Die Osteopathie wurde Ende des 19. Jahrhunderts vom
                 amerikanischen Arzt <strong>Dr. Andrew Taylor Still</strong> (1828-1917)
@@ -215,7 +215,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue">
                   Parietale Osteopathie
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-slate-700 leading-normal mb-4">
                   Behandlung des <strong>Bewegungsapparates</strong>:
                 </p>
                 <ul className="space-y-2 text-slate-600">
@@ -234,7 +234,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue">
                   Viszerale Osteopathie
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-slate-700 leading-normal mb-4">
                   Behandlung der <strong>inneren Organe</strong>:
                 </p>
                 <ul className="space-y-2 text-slate-600">
@@ -253,7 +253,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue">
                   Craniosacrale Osteopathie
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-slate-700 leading-normal mb-4">
                   Behandlung von <strong>Schädel und Nervensystem</strong>:
                 </p>
                 <ul className="space-y-2 text-slate-600">
@@ -277,7 +277,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Das Faszien-System: Verbindung im ganzen Körper
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 <strong>Faszien</strong> sind kollagenhaltige Bindegewebsstrukturen, die alle Körperstrukturen – Muskeln, Organe, Knochen, Nerven und Blutgefäße – umhüllen und miteinander verbinden. Sie bilden ein dreidimensionales Netzwerk, das den gesamten Körper durchzieht und als eine Art "inneres Spannungssystem" fungiert.
               </p>
@@ -323,7 +323,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
                   1. Der Körper ist eine Einheit
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-slate-700 leading-normal">
                   Körper, Geist und Seele bilden eine untrennbare Einheit. Alle
                   Strukturen und Funktionen beeinflussen sich gegenseitig. Eine
                   Störung an einer Stelle kann Auswirkungen auf den gesamten
@@ -335,7 +335,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
                   2. Struktur und Funktion stehen in Wechselbeziehung
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-slate-700 leading-normal">
                   Die Struktur (Anatomie) bestimmt die Funktion, und die Funktion
                   beeinflusst die Struktur. Wenn die Struktur nicht optimal ist,
                   kann die Funktion beeinträchtigt sein – und umgekehrt.
@@ -346,7 +346,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
                   3. Der Körper besitzt Selbstheilungskräfte
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-slate-700 leading-normal">
                   Der Körper verfügt über die Fähigkeit zur Selbstregulation und
                   Selbstheilung. Die Aufgabe des Osteopathen ist es, diese
                   Kräfte zu unterstützen und Blockaden zu lösen, die die
@@ -358,7 +358,7 @@ export default function WasIstOsteopathiePage() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">
                   4. Die Regel der Arterie ist absolut
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-slate-700 leading-normal">
                   Eine gute Durchblutung und Versorgung aller Gewebe ist
                   essentiell für Gesundheit. Wenn der Blutfluss gestört ist,
                   können Beschwerden entstehen. Die Osteopathie zielt darauf ab,
@@ -496,7 +496,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>🩻</span> <Link href="/behandlungen/rueckenschmerzen" className="hover:text-blue-600 transition-colors">Rückenschmerzen & Bandscheibenprobleme</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Chronische und akute Schmerzen im unteren Rücken (LWS), Bandscheibenvorfälle, ISG-Blockaden, Hexenschuss. Die Osteopathie behandelt nicht nur die schmerzende Region, sondern sucht nach den Ursachen im gesamten Körper – oft liegen diese in Faszienspannungen, Fehlhaltungen oder Organfunktionsstörungen.
                   </p>
                 </div>
@@ -505,7 +505,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>🤕</span> <Link href="/behandlungen/kopfschmerzen-migraene" className="hover:text-purple-600 transition-colors">Kopfschmerzen & Migräne</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Spannungskopfschmerzen, Migräne, Clusterkopfschmerzen, Schwindel. Durch craniosacrale Techniken und Behandlung der Halswirbelsäule kann die Durchblutung verbessert und der Druck im Schädel reguliert werden. Viele Patienten erleben eine deutliche Reduktion der Kopfschmerzfrequenz und -intensität.
                   </p>
                 </div>
@@ -514,7 +514,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>🫃</span> <Link href="/behandlungen/verdauungsbeschwerden" className="hover:text-green-600 transition-colors">Verdauungsbeschwerden</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Reizdarm, Blähungen, Verstopfung, Sodbrennen, Reflux. Die viszerale Osteopathie behandelt die inneren Organe und ihre Aufhängung. Durch Mobilisation des Verdauungstrakts und Entspannung des Zwerchfells können Verdauungsbeschwerden oft deutlich gebessert werden.
                   </p>
                 </div>
@@ -523,7 +523,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>😰</span> <Link href="/behandlungen/stress-burnout" className="hover:text-red-600 transition-colors">Stress & Burnout</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Chronischer Stress, Erschöpfung, Schlafstörungen, innere Unruhe, Angstzustände. Die Osteopathie reguliert das vegetative Nervensystem durch craniosacrale Techniken und Vagusnerv-Stimulation. Dies fördert Entspannung, verbessert den Schlaf und hilft dem Körper, wieder in den Regenerationsmodus zu finden.
                   </p>
                 </div>
@@ -532,7 +532,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>⚽</span> <Link href="/behandlungen/sportosteopathie" className="hover:text-orange-600 transition-colors">Sportosteopathie</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Sportverletzungen, Überlastungssyndrome, Leistungsoptimierung, Rehabilitation. Ob Läufer, Fußballer oder Kraftsportler – osteopathische Behandlung hilft bei der Regeneration, verbessert die Beweglichkeit und beugt Verletzungen vor. Viele Profisportler setzen auf regelmäßige osteopathische Betreuung.
                   </p>
                 </div>
@@ -541,7 +541,7 @@ export default function WasIstOsteopathiePage() {
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
                     <span>🤰</span> <Link href="/behandlungen/schwangerschaft" className="hover:text-pink-600 transition-colors">Schwangerschaft & Postpartal</Link>
                   </h4>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Rückenschmerzen in der Schwangerschaft, Beckenbeschwerden, Geburtsvorbereitung, Rückbildung nach der Geburt. Die sanfte osteopathische Behandlung unterstützt den Körper während der Schwangerschaft, bereitet das Becken auf die Geburt vor und hilft bei der Regeneration danach.
                   </p>
                 </div>
@@ -575,7 +575,7 @@ export default function WasIstOsteopathiePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">Anamnese & Erstgespräch (15-20 Min.)</h3>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Die Erstbehandlung beginnt mit einem ausführlichen Gespräch. Ich erfrage Ihre aktuellen Beschwerden, Krankengeschichte, Unfälle, Operationen, Medikamente und Lebensgewohnheiten. Wichtig ist auch, was Sie bereits unternommen haben und welche Erwartungen Sie an die Behandlung haben. Diese Informationen helfen mir, ein umfassendes Bild Ihrer Gesundheit zu erhalten.
                   </p>
                 </div>
@@ -587,7 +587,7 @@ export default function WasIstOsteopathiePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">Körperliche Untersuchung (10-15 Min.)</h3>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     Anschließend untersuche ich Ihren gesamten Körper – nicht nur die schmerzende Region. Mit geschulten Händen erspüre ich Blockaden, Spannungsmuster, Bewegungseinschränkungen und Gewebeveränderungen. Diese ganzheitliche Untersuchung ist charakteristisch für die Osteopathie und hilft mir, die Ursachen Ihrer Beschwerden zu finden.
                   </p>
                 </div>
@@ -599,10 +599,10 @@ export default function WasIstOsteopathiePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">Osteopathische Behandlung (30-35 Min.)</h3>
-                  <p className="text-slate-700 leading-relaxed mb-3">
+                  <p className="text-slate-700 leading-normal mb-3">
                     Die Behandlung erfolgt mit sanften manuellen Techniken. Je nach Befund kombiniere ich parietale, viszerale und craniosacrale Methoden. Die Techniken sind meist schmerzfrei und werden individuell an Sie angepasst. Während der Behandlung aktiviere ich die Selbstheilungskräfte Ihres Körpers und löse Blockaden.
                   </p>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     <strong>Dauer einer Behandlung:</strong> Erstbehandlung ca. 60 Minuten, Folgebehandlungen 45-50 Minuten.
                   </p>
                 </div>
@@ -614,10 +614,10 @@ export default function WasIstOsteopathiePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue">Nachbesprechung & Empfehlungen (5-10 Min.)</h3>
-                  <p className="text-slate-700 leading-relaxed mb-3">
+                  <p className="text-slate-700 leading-normal mb-3">
                     Am Ende jeder Sitzung besprechen wir die Befunde und Behandlung. Ich erkläre Ihnen, was ich gefunden habe und warum ich bestimmte Bereiche behandelt habe. Sie erhalten Empfehlungen für zuhause: Übungen, Verhaltenstipps oder Hinweise zur Selbsthilfe.
                   </p>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-slate-700 leading-normal">
                     <strong>Behandlungsfrequenz:</strong> Bei akuten Beschwerden empfehle ich oft 3-5 Behandlungen im Abstand von 1-2 Wochen. Bei chronischen Problemen sind 6-10 Sitzungen über mehrere Monate sinnvoll. Die Abstände zwischen den Behandlungen werden größer, je mehr sich Ihr Körper stabilisiert.
                   </p>
                 </div>
@@ -626,10 +626,10 @@ export default function WasIstOsteopathiePage() {
 
             <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-slate-900 mb-3">Was passiert zwischen den Behandlungen?</h3>
-              <p className="text-slate-700 leading-relaxed mb-3">
+              <p className="text-slate-700 leading-normal mb-3">
                 Die osteopathische Behandlung setzt Prozesse in Gang, die mehrere Tage nachwirken. In den ersten 24-48 Stunden kann es zu leichten Reaktionen kommen: Muskelkater, Müdigkeit oder vorübergehende Verstärkung der Symptome. Dies ist normal und zeigt, dass Ihr Körper auf die Behandlung reagiert.
               </p>
-              <p className="text-slate-700 leading-relaxed">
+              <p className="text-slate-700 leading-normal">
                 Die eigentliche Verbesserung tritt oft erst 3-5 Tage nach der Behandlung ein. Deshalb sind die Abstände zwischen den Sitzungen wichtig – Ihr Körper braucht Zeit zur Selbstregulation. Weitere Informationen finden Sie auf der Seite <Link href="/kosten-ablauf" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>.
               </p>
             </div>
@@ -644,7 +644,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Ausbildung & Qualifikation: Was macht einen guten Osteopathen aus?
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 In Deutschland ist die Osteopathie-Ausbildung noch nicht staatlich einheitlich geregelt. Umso wichtiger ist es, auf eine fundierte Qualifikation zu achten. Ein qualifizierter Osteopath hat eine <strong>4-5-jährige berufsbegleitende Ausbildung</strong> mit mindestens 1.350 Unterrichtsstunden absolviert.
               </p>
@@ -710,7 +710,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Wissenschaftliche Anerkennung
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 Die Osteopathie wird zunehmend wissenschaftlich erforscht und
                 anerkannt. Zahlreiche Studien belegen die Wirksamkeit
@@ -743,7 +743,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Grenzen & Risiken: Wann ist Osteopathie nicht geeignet?
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 Osteopathie ist eine sichere und sanfte Behandlungsmethode – aber sie hat auch ihre Grenzen. Bei bestimmten Erkrankungen ist eine osteopathische Behandlung nicht geeignet oder muss mit großer Vorsicht erfolgen.
               </p>
@@ -809,7 +809,7 @@ export default function WasIstOsteopathiePage() {
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-8">
               Kosten & Erstattung: Was kostet Osteopathie?
             </h2>
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-slate-700 text-lg leading-normal">
               <p>
                 Die Kosten für osteopathische Behandlungen sind nicht einheitlich geregelt und variieren je nach Praxisstandort, Behandlungsdauer und Qualifikation des Therapeuten.
               </p>
@@ -917,7 +917,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Eine osteopathische Behandlung kostet in der Regel zwischen 80 und 150 Euro pro Sitzung. Die Kosten variieren je nach Behandlungsdauer (meist 45-60 Minuten) und Praxisstandort. Viele private Krankenversicherungen übernehmen die Kosten vollständig. Auch zahlreiche gesetzliche Krankenkassen wie TK, Barmer, DAK und AOK bezuschussen osteopathische Behandlungen mit 30-60 Euro pro Sitzung. Informieren Sie sich bei Ihrer Krankenkasse über die genauen Erstattungsmodalitäten.
                 </p>
               </details>
@@ -930,7 +930,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Die Erstbehandlung dauert etwa 60 Minuten und beginnt mit einer ausführlichen Anamnese: Ich erfrage Ihre aktuellen Beschwerden, Krankengeschichte, Lebensgewohnheiten und Erwartungen. Anschließend folgt eine körperliche Untersuchung, bei der ich Ihren gesamten Körper auf Blockaden, Spannungsmuster und Bewegungseinschränkungen untersuche. Danach beginnt die osteopathische Behandlung mit sanften manuellen Techniken. Am Ende besprechen wir die Befunde und erstellen einen individuellen Behandlungsplan.
                 </p>
               </details>
@@ -943,7 +943,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Die Anzahl der Behandlungen hängt von Art und Dauer Ihrer Beschwerden ab. Bei akuten Problemen reichen oft 3-5 Sitzungen im Abstand von 1-2 Wochen. Bei chronischen Beschwerden sind meist 6-10 Behandlungen über mehrere Monate sinnvoll. Viele Patienten spüren bereits nach der ersten Sitzung eine Verbesserung. Die osteopathische Behandlung setzt Selbstheilungsprozesse in Gang, die Zeit brauchen. Ich bespreche mit Ihnen nach jeder Sitzung, wie viele weitere Behandlungen empfehlenswert sind.
                 </p>
               </details>
@@ -956,7 +956,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Private Krankenversicherungen übernehmen in der Regel die Kosten vollständig, wenn eine ärztliche Verordnung vorliegt. Viele gesetzliche Krankenkassen bezuschussen osteopathische Behandlungen mit 30-60 Euro pro Sitzung (meist 3-6 Sitzungen pro Jahr). Zu den erstattenden Kassen gehören unter anderem: TK (Techniker Krankenkasse), Barmer, DAK, AOK, IKK, KKH und BKK. Die genauen Konditionen variieren je nach Kasse. Bitte informieren Sie sich vorab bei Ihrer Krankenkasse über die Erstattungsmöglichkeiten und erforderlichen Unterlagen.
                 </p>
               </details>
@@ -969,7 +969,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Osteopathie verfolgt einen ganzheitlichen Ansatz und sucht nach den Ursachen von Beschwerden im gesamten Körper, nicht nur am Ort des Symptoms. Die Behandlung erfolgt ausschließlich mit den Händen und dauert 45-60 Minuten. Physiotherapie ist oft symptomorientierter und fokussiert auf die betroffene Region. Sie arbeitet mit Übungen, Geräten und manuellen Techniken, Behandlungen dauern meist 15-30 Minuten. Beide Methoden können sich gut ergänzen.
                 </p>
               </details>
@@ -982,7 +982,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Osteopathische Behandlungen sind in der Regel sanft und schmerzfrei. Ich arbeite mit gezieltem Druck und sanften Mobilisationstechniken. Bei manchen Techniken kann ein kurzer Dehnschmerz auftreten, der jedoch nicht unangenehm ist. Nach der Behandlung kann es zu einem leichten Muskelkater kommen – ein Zeichen, dass der Körper auf die Behandlung reagiert. Bei akuten Entzündungen oder starken Schmerzen passe ich die Behandlung entsprechend an. Die meisten Patienten empfinden die Behandlung als sehr entspannend.
                 </p>
               </details>
@@ -995,7 +995,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Achten Sie auf eine fundierte Ausbildung: Ein guter Osteopath hat eine 4-5-jährige berufsbegleitende Ausbildung absolviert (mindestens 1350 Unterrichtsstunden) und ist bei einem Berufsverband registriert (z.B. VFO, VOD, BVO). Diese Verbände garantieren hohe Ausbildungsstandards. Prüfen Sie, ob der Osteopath eine Heilpraktiker-Zulassung oder ärztliche Approbation hat – nur dann darf er eigenständig behandeln. Empfehlungen von Freunden oder Ärzten sowie Online-Bewertungen können bei der Suche helfen.
                 </p>
               </details>
@@ -1008,7 +1008,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Osteopathie ist bei fachgerechter Anwendung sehr sicher. In den ersten 24-48 Stunden nach der Behandlung kann es zu milden Reaktionen kommen: leichter Muskelkater, Müdigkeit, verstärkter Harndrang oder Durst, vorübergehende Verstärkung der Symptome. Diese Reaktionen sind normal und zeigen, dass der Körper auf die Behandlung reagiert. Sie klingen meist nach 1-2 Tagen ab. Ernsthafte Nebenwirkungen sind extrem selten. Bei bestimmten Kontraindikationen (akute Infektionen, Knochenbrüche, Tumore, schwere Osteoporose) sollte nicht osteopathisch behandelt werden.
                 </p>
               </details>
@@ -1021,7 +1021,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Ja, Osteopathie wird zunehmend wissenschaftlich erforscht und anerkannt. Die WHO (Weltgesundheitsorganisation) erkennt Osteopathie als eigenständige Heilmethode an. Zahlreiche Studien belegen die Wirksamkeit bei Rückenschmerzen, Nackenbeschwerden, Kopfschmerzen und muskuloskelettalen Beschwerden. Auch die Kostenübernahme durch viele Krankenkassen ist ein deutliches Zeichen der Anerkennung. Die Forschung zu osteopathischen Wirkmechanismen entwickelt sich stetig weiter. In einigen Ländern (USA, Großbritannien) ist Osteopathie bereits vollständig im Gesundheitssystem integriert.
                 </p>
               </details>
@@ -1034,7 +1034,7 @@ export default function WasIstOsteopathiePage() {
                   </span>
                   <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                 </summary>
-                <p className="mt-4 text-slate-700 leading-relaxed pl-11">
+                <p className="mt-4 text-slate-700 leading-normal pl-11">
                   Faszien sind kollagenhaltige Bindegewebsstrukturen, die alle Körperstrukturen – Muskeln, Organe, Knochen, Nerven – umhüllen und miteinander verbinden. Sie bilden ein dreidimensionales Netzwerk im gesamten Körper. Faszien übertragen Kräfte, ermöglichen Bewegung und dienen der Kommunikation zwischen Körperstrukturen. Bei Stress, Fehlhaltung oder Verletzungen können Faszien verkleben oder verhärten, was zu Bewegungseinschränkungen und Schmerzen führt. In der Osteopathie spielen Faszien eine zentrale Rolle, da Spannungen im Fasziensystem oft die Ursache für Beschwerden fernab der schmerzenden Stelle sind.
                 </p>
               </details>
