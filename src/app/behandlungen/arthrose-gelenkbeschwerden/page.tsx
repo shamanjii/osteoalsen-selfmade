@@ -7,9 +7,13 @@ import FAQSchema from '@/components/FAQSchema';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Arthrose & Gelenkbeschwerden Hamburg | Osteopathie bei Gelenkschmerzen',
-  description: 'Osteopathische Behandlung bei Arthrose, Hüftschmerzen, Knieschmerzen und Gelenkbeschwerden in Hamburg. Ganzheitlicher Ansatz für mehr Beweglichkeit.',
+  title: 'Hilft Osteopathie bei Arthrose? Schmerzlinderung ohne OP | Hamburg',
+  description: 'Ja, Osteopathie hilft bei Arthrose! ✓ Natürliche Schmerzlinderung ✓ Mehr Beweglichkeit ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!',
   keywords: [
+    'hilft osteopathie bei arthrose',
+    'kann osteopath bei arthrose helfen',
+    'kann osteopathie bei arthrose helfen',
+    'osteopathie bei arthrose',
     'Arthrose Osteopathie Hamburg',
     'Knieschmerzen Osteopath',
     'Hüftarthrose Behandlung',
@@ -23,8 +27,8 @@ export const metadata: Metadata = {
     canonical: '/behandlungen/arthrose-gelenkbeschwerden'
   },
   openGraph: {
-    title: 'Arthrose & Gelenkbeschwerden Hamburg | Osteopathie bei Gelenkschmerzen',
-    description: 'Osteopathische Behandlung bei Arthrose, Hüftschmerzen, Knieschmerzen und Gelenkbeschwerden in Hamburg. Ganzheitlicher Ansatz für mehr Beweglichkeit.',
+    title: 'Hilft Osteopathie bei Arthrose? Schmerzlinderung ohne OP | Hamburg',
+    description: 'Ja, Osteopathie hilft bei Arthrose! ✓ Natürliche Schmerzlinderung ✓ Mehr Beweglichkeit ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐',
     url: '/behandlungen/arthrose-gelenkbeschwerden',
     type: 'website'
   }

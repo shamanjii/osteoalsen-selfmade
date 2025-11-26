@@ -6,21 +6,22 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Osteopathie Hamburg Rotherbaum | Joshua Alsen | VFO-zertifiziert",
+  title: "Osteopath Rotherbaum Hamburg | VFO-zertifiziert | Joshua Alsen",
   description:
-    "Osteopathie Hamburg Rotherbaum ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ Rappstraße 7 ✓ Termine binnen 48h ✓ U-Bahn Hallerstraße ✓ Kassenzuschuss möglich ⭐ Jetzt Termin buchen!",
+    "Ihr Osteopath in Rotherbaum ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Zentrale Lage Rappstraße 7 ✓ Termine binnen 48h ✓ Vollständige Kassenerstattung möglich ⭐ Jetzt buchen!",
   keywords: [
     "Osteopathie Rotherbaum",
     "Osteopath Rotherbaum",
     "Heilpraktiker Rotherbaum",
     "Osteopathie Hamburg Rotherbaum",
     "Osteopath Hamburg Mitte",
+    "heilpraktiker hamburg rotherbaum"
   ],
   alternates: { canonical: "/osteopathie-rotherbaum" },
   openGraph: {
-    title: "Osteopathie Hamburg Rotherbaum | Joshua Alsen",
+    title: "Osteopath Rotherbaum Hamburg | VFO-zertifiziert | Joshua Alsen",
     description:
-      "Osteopathie Hamburg Rotherbaum ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ Rappstraße 7 ✓ Termine binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt buchen!",
+      "Ihr Osteopath in Rotherbaum ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Zentrale Lage Rappstraße 7 ✓ Termine binnen 48h ✓ Vollständige Kassenerstattung möglich",
     url: "/osteopathie-rotherbaum",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osteopathie Hamburg Rotherbaum | Joshua Alsen",
+    title: "Osteopath Rotherbaum Hamburg | Joshua Alsen",
     description:
-      "Osteopathie Rotherbaum ✓ VFO-zertifiziert ✓ Rappstraße 7 ✓ Termine binnen 48h ✓ Kassenzuschuss ⭐",
+      "Osteopath Rotherbaum ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Vollständige Kassenerstattung möglich ⭐ Jetzt Termin buchen!",
     images: ["/assets/joshua-alsen-osteopath-hamburg-twitter.webp"],
   },
 };

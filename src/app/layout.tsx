@@ -21,17 +21,19 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Osteopath Hamburg Rotherbaum & Eimsbüttel | Joshua Alsen | Heilpraktiker",
+  title: "Osteopathie Hamburg: Ganzheitliche Schmerzbehandlung | Joshua Alsen",
   description:
-    "Osteopath Hamburg ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ Termine oft binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt Termin buchen!",
+    "Osteopath Hamburg ✓ Ganzheitliche Schmerzbehandlung bei Rücken-, Nacken- & Gelenkschmerzen ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Termin buchen!",
   keywords: [
+    "Osteopathie Hamburg",
     "Osteopath Hamburg",
+    "hamburg osteopathie",
+    "hamburg osteopath",
+    "Osteopath Hamburg Mitte",
     "Osteopathie Rotherbaum",
     "Osteopathie Eimsbüttel",
     "Heilpraktiker Hamburg",
-    "Osteopath Hamburg Mitte",
     "VFO Osteopath",
-    "Krankengymnastik Hamburg",
     "Rückenschmerzen Hamburg",
     "Kopfschmerzen Behandlung Hamburg"
   ],
@@ -44,9 +46,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Osteopath Hamburg Rotherbaum & Eimsbüttel | Joshua Alsen",
+    title: "Osteopathie Hamburg: Ganzheitliche Schmerzbehandlung | Joshua Alsen",
     description:
-      "Osteopath Hamburg ✓ Joshua Alsen ✓ VFO-zertifiziert ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ Termine oft binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt Termin buchen!",
+      "Osteopath Hamburg ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Jetzt Termin buchen!",
     url: "/",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -61,8 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osteopath Hamburg | Joshua Alsen | Rotherbaum & Eimsbüttel",
-    description: "Osteopath Hamburg ✓ VFO-zertifiziert ✓ 2 Standorte ✓ Termine binnen 48h ✓ Kassenzuschuss möglich ⭐ Jetzt buchen!",
+    title: "Osteopathie Hamburg | Ganzheitliche Schmerzbehandlung | Joshua Alsen",
+    description: "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Termin buchen!",
     images: ["/og-image.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",

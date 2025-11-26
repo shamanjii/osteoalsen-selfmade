@@ -7,21 +7,22 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kopfschmerzen & Migräne Behandlung Hamburg | Osteopathie",
+  title: "Kopfschmerzen & Migräne ohne Medikamente behandeln Hamburg | Osteopathie",
   description:
-    "Osteopathische Behandlung bei Kopfschmerzen, Migräne und Kieferbeschwerden in Hamburg. Sanfte manuelle Techniken für nachhaltige Linderung. VFO-zertifiziert.",
+    "Kopfschmerzen & Migräne natürlich lindern ✓ Ohne Medikamente ✓ Ursachenbehandlung statt Symptombekämpfung ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
   keywords: [
     "Migräne Osteopathie Hamburg",
     "Kopfschmerzen Osteopath",
+    "chronische kopfschmerzen osteopathie",
     "Spannungskopfschmerz Behandlung",
     "CMD Osteopathie Hamburg",
     "Kieferschmerzen Osteopath",
   ],
   alternates: { canonical: "/behandlungen/kopfschmerzen-migraene" },
   openGraph: {
-    title: "Kopfschmerzen & Migräne Behandlung Hamburg | Osteopathie",
+    title: "Kopfschmerzen & Migräne ohne Medikamente behandeln | Osteopathie Hamburg",
     description:
-      "Osteopathische Behandlung bei Kopfschmerzen, Migräne und Kieferbeschwerden. Sanfte manuelle Techniken für nachhaltige Linderung.",
+      "Kopfschmerzen & Migräne natürlich lindern ✓ Ohne Medikamente ✓ Ursachenbehandlung ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h",
     url: "/behandlungen/kopfschmerzen-migraene",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
