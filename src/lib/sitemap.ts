@@ -74,12 +74,6 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/sportverletzungen`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
       url: `${baseUrl}/osteopathie-rotherbaum`,
       lastModified: now,
       changeFrequency: 'monthly',
