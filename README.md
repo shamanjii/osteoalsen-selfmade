@@ -315,3 +315,4 @@ Private project - All rights reserved
 ---
 
 Built with ❤️ in Hamburg | Powered by Next.js & Vercel
+# Cache invalidation trigger Sa 29 Nov 2025 20:35:42 CET
