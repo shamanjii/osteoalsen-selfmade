@@ -15,7 +15,6 @@ image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200"
 alt: "Burnout ganzheitlich behandeln: Das glymphatische System verstehen & aktivieren"
 date: "2025-12-06T22:00:00.000Z"
 status: "published"
-author: "Joshua Alsen"
 ---
 
 # Burnout ganzheitlich behandeln: Das glymphatische System verstehen & aktivieren
