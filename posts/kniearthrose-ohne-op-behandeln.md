@@ -10,7 +10,7 @@ keywords:
   - "Arthrose Knie Osteopathie"
   - "Gonarthrose Behandlung"
   - "Knie Knorpelschaden Osteopathie"
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
+image: "https://physiotutors.com/wp-content/uploads/2023/10/Knee-Osteoarthritis.jpg"
 alt: "Kniearthrose ohne OP behandeln: Osteopathische Behandlung für schmerzfreie Beweglichkeit"
 date: "2025-12-07T10:00:00.000Z"
 status: "published"

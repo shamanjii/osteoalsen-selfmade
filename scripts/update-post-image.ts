@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 
 async function updatePostImage() {
   const slug = 'kniearthrose-ohne-op-behandeln';
-  const newImage = 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200';
+  const newImage = 'https://physiotutors.com/wp-content/uploads/2023/10/Knee-Osteoarthritis.jpg';
 
   try {
     const updated = await prisma.post.update({
