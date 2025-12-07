@@ -100,6 +100,8 @@ status: "published"
 
 ### Das Problem: Es ist nicht nur das Knie!
 
+Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden). Während Arthrose grundsätzlich jedes Gelenk betreffen kann, tritt sie im Knie besonders häufig auf – nicht zufällig, sondern aus biomechanischen Gründen.
+
 **Kniearthrose entsteht durch:**
 1. **Fehlbelastung** (90% der Fälle!)
 2. **Biomechanische Kompensation** (Hüfte, Becken, Sprunggelenk)
@@ -199,6 +201,8 @@ status: "published"
 
 **Statistik:** 85% der Kniearthrose-Patienten haben Hüft-Dysfunktionen![^7]
 
+Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die biomechanische Kette von der Lendenwirbelsäule über das Becken bis zum Knie ist entscheidend für die Gelenkgesundheit. Mehr zur ganzheitlichen Behandlung dieser Zusammenhänge: [Rückenschmerzen und ihre Auswirkungen auf die gesamte Körperstatik](/behandlungen/rueckenschmerzen).
+
 **Typische Muster:**
 - **Hüft-Innenrotation eingeschränkt** → Knie kompensiert → Valgus-Stress (X-Bein-Stellung)
 - **Becken-Schiefstand** → ungleiche Beinbelastung → einseitige Knie-Arthrose
@@ -274,7 +278,7 @@ status: "published"
 
 ## Übungen für zuhause: Kniearthrose selbst behandeln
 
-**Wichtig:** Diese Übungen ersetzen KEINE osteopathische Behandlung, unterstützen aber den Heilungsprozess!
+**Wichtig:** Diese Übungen ersetzen KEINE osteopathische Behandlung, unterstützen aber den Heilungsprozess! Besonders bei sportlich aktiven Patienten oder nach Sportverletzungen empfehlen wir die professionelle Kombination mit [Sportosteopathie](/behandlungen/sportosteopathie) für optimale Regeneration und Verletzungsprävention.
 
 ### Übung 1: VMO-Aktivierung (Quadrizeps-Aufbau)
 
@@ -442,6 +446,8 @@ status: "published"
 ### 3. Ernährung (anti-inflammatorisch)
 
 **Ziel:** Entzündung im Gelenk reduzieren
+
+Chronischer Stress kann Entzündungsprozesse im Körper verstärken und somit auch Arthrose-Symptome verschlimmern. Die Verbindung zwischen chronischem Stress, Entzündung und Gelenkschmerzen wird oft unterschätzt. Mehr zu diesem ganzheitlichen Zusammenhang: [Burnout und chronische Entzündung](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system).
 
 **✓ Entzündungshemmend:**
 - Omega-3-Fettsäuren (Lachs, Makrele, Leinöl)
