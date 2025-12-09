@@ -79,6 +79,46 @@ export function debounce<T extends (...args: unknown[]) => unknown>(
   }
 }
 
+/**
+ * Extract FAQs from markdown content
+ * Looks for patterns like "### Question?" followed by answer text
+ */
+export function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const faqs: Array<{ question: string; answer: string }> = []
+
+  // Look for FAQ section heading
+  const faqSectionMatch = content.match(/##\s+(?:Häufige Fragen|FAQ|Frequently Asked Questions)/i)
+  if (!faqSectionMatch) return faqs
+
+  // Get content after FAQ section
+  const faqContent = content.slice(faqSectionMatch.index!)
+
+  // Extract Q&A pairs
+  // Pattern: ### followed by question ending with ?
+  const questionRegex = /###\s+(.+?\?)\s*\n([\s\S]*?)(?=\n###|$)/g
+  let match
+
+  while ((match = questionRegex.exec(faqContent)) !== null && faqs.length < 10) {
+    const question = match[1].trim()
+    let answer = match[2].trim()
+
+    // Clean up answer - remove markdown formatting
+    answer = answer
+      .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
+      .replace(/\*(.*?)\*/g, '$1') // Remove italic
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Remove links (keep text)
+      .replace(/^-\s+/gm, '') // Remove list markers
+      .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+      .slice(0, 500) // Limit answer length for schema
+
+    if (question && answer) {
+      faqs.push({ question, answer })
+    }
+  }
+
+  return faqs
+}
+
 export function validateImageUrl(url: string): boolean {
   try {
     new URL(url)

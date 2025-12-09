@@ -6,13 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts-cms";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
-import { BlogPostStructuredData, MedicalScholarlyArticle } from "@/components/StructuredData";
+import { BlogPostStructuredData, MedicalScholarlyArticle, FAQPageStructuredData } from "@/components/StructuredData";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
 import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
 import SocialShare from "@/components/SocialShare";
 import ArticleWithSidebar from "./ArticleWithSidebar";
+import { extractFAQs } from "@/lib/utils";
 
 interface PageProps {
     params: Promise<{
@@ -75,6 +76,9 @@ export default async function BlogPost({ params }: PageProps) {
 
     const allPosts = await getAllPosts();
 
+    // Extract FAQs from content for structured data
+    const faqs = extractFAQs(post.content);
+
     return (
         <>
             <Breadcrumbs items={[
@@ -108,6 +112,9 @@ export default async function BlogPost({ params }: PageProps) {
                 />
             )}
 
+            {/* FAQ Structured Data */}
+            {faqs.length > 0 && <FAQPageStructuredData faqs={faqs} />}
+
             {/* Main Layout: Article + Sidebar */}
             <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
                 <div className="flex gap-8 items-start">
@@ -116,7 +123,7 @@ export default async function BlogPost({ params }: PageProps) {
                         <article className="flex-1 bg-white rounded-xl shadow-sm border border-slate-200 p-8 md:p-12">
                     <header className="mb-8 pb-6 border-b border-slate-200">
                         <h1 className="text-4xl md:text-5xl font-epilogue font-bold mb-4 text-slate-900 leading-tight">{post.title}</h1>
-                        <div className="flex items-center gap-4 text-slate-600 text-sm">
+                        <div className="flex items-center gap-4 text-slate-600 text-sm mb-4">
                             <time dateTime={post.date}>
                                 Veröffentlicht am {new Date(post.date || '').toLocaleDateString('de-DE', {
                                     year: 'numeric',
@@ -127,6 +134,25 @@ export default async function BlogPost({ params }: PageProps) {
                             <span className="text-slate-400">•</span>
                             <span>Von Joshua Alsen</span>
                         </div>
+
+                        {/* Tags */}
+                        {post.keywords && post.keywords.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                                {post.keywords.slice(0, 6).map((keyword, index) => {
+                                    const slug = keyword.toLowerCase().replace(/\s+/g, '-');
+                                    return (
+                                        <Link
+                                            key={index}
+                                            href={`/blog/tag/${slug}`}
+                                            className="inline-flex items-center gap-1 px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium hover:bg-slate-200 hover:text-slate-900 transition-colors"
+                                        >
+                                            <span>#</span>
+                                            <span>{keyword}</span>
+                                        </Link>
+                                    );
+                                })}
+                            </div>
+                        )}
                     </header>
 
                     {post.image && (
