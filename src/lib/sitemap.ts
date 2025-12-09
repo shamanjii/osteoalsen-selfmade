@@ -165,6 +165,23 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
     },
   ];
 
+  // Blog-Kategorie-Seiten
+  const categories = [
+    'osteopathie',
+    'rueckenschmerzen',
+    'kopfschmerzen',
+    'sportverletzungen',
+    'verdauung',
+    'gesundheitstipps'
+  ];
+
+  const categoryPages: SitemapUrl[] = categories.map(category => ({
+    url: `${baseUrl}/blog/category/${category}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.75,
+  }));
+
   // Blog-Artikel dynamisch hinzufügen
   const blogSlugs = await getAllSlugs();
   const blogPages: SitemapUrl[] = blogSlugs.map(slug => ({
@@ -174,7 +191,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [...staticPages, ...categoryPages, ...blogPages];
 }
 
 export async function generateSitemapXml(): Promise<string> {

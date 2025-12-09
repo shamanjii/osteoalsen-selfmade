@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useCallback, useMemo, memo, useEffect } from "react";
+import { useState, useMemo, memo, useEffect } from "react";
 
 interface Post {
     slug: string;
@@ -12,6 +12,7 @@ interface Post {
     image?: string;
     alt?: string;
     category?: string;
+    readingTime?: number;
 }
 
 interface BlogClientProps {
@@ -24,6 +25,7 @@ const categoryMap = {
     'rueckenschmerzen': { name: 'Rückenschmerzen', icon: '🦴' },
     'kopfschmerzen': { name: 'Kopfschmerzen', icon: '🧠' },
     'sportverletzungen': { name: 'Sportverletzungen', icon: '⚽' },
+    'verdauung': { name: 'Verdauung', icon: '🍃' },
     'gesundheitstipps': { name: 'Gesundheitstipps', icon: '💡' }
 };
 
@@ -84,13 +86,6 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedCategory, searchTerm, sortBy]);
-
-    // Memoize reading time calculation
-    const calculateReadingTime = useCallback((excerpt?: string): number => {
-        if (!excerpt) return 5;
-        const words = excerpt.split(' ').length;
-        return Math.max(Math.ceil(words / 50), 3);
-    }, []);
 
     // Memoize category entries to prevent recreation
     const categoryEntries = useMemo(() => Object.entries(categoryMap), []);
@@ -241,7 +236,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     }) : 'Datum unbekannt'}
                                                 </span>
                                                 <span className="flex items-center gap-1">
-                                                    ⏱️ {calculateReadingTime(post.excerpt)} Min.
+                                                    ⏱️ {post.readingTime || 5} Min.
                                                 </span>
                                             </div>
                                             {post.category && (

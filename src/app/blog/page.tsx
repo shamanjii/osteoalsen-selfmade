@@ -6,6 +6,7 @@ import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getAllPosts } from "@/lib/posts-cms";
+import { calculateReadingTime } from "@/lib/utils";
 
 export const metadata: Metadata = {
     title: "Osteopathie Blog | Evidenzbasierte Fachartikel | Osteoalsen Hamburg",
@@ -35,7 +36,8 @@ export default async function BlogIndexPage() {
             if (keywordStr.includes('rückenschmerzen') || keywordStr.includes('muskel')) return 'rueckenschmerzen';
             if (keywordStr.includes('kopfschmerzen') || keywordStr.includes('migräne')) return 'kopfschmerzen';
             if (keywordStr.includes('sport') || keywordStr.includes('verletzung')) return 'sportverletzungen';
-            if (keywordStr.includes('verdauung') || keywordStr.includes('gesundheit')) return 'gesundheitstipps';
+            if (keywordStr.includes('verdauung') || keywordStr.includes('darm')) return 'verdauung';
+            if (keywordStr.includes('gesundheit') || keywordStr.includes('tipps')) return 'gesundheitstipps';
 
             return 'osteopathie';
         };
@@ -48,7 +50,8 @@ export default async function BlogIndexPage() {
             keywords: post.keywords,
             image: post.image,
             alt: post.alt || post.title,
-            category: extractCategory(post.keywords, post.category)
+            category: extractCategory(post.keywords, post.category),
+            readingTime: calculateReadingTime(post.content)
         };
     });
 
