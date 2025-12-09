@@ -33,7 +33,7 @@ Es beginnt mit „nur ein bisschen müde". Ein paar Wochen mit schlechtem Schlaf
 
 **Dann:**
 - **Phase 1 (Wochen 1-4):** Kaffee hilft noch. Sie funktionieren. Nur abends sind Sie erschöpfter als sonst.
-- **Phase 2 (Monate 2-6):** Schlaf bringt keine Erholung mehr. Morgens wie gerädert. Nachmittags wie benebelt.
+- **Phase 2 (Monate 2-6):** Schlaf bringt keine Erholung mehr. Morgens wie gerädert. Nachmittags wie benebelt. Häufige Kopfschmerzen oder Spannungskopfschmerzen – oft ein Zeichen vegetativer Dysregulation. Mehr dazu: [Kopfschmerzen ganzheitlich behandeln](/behandlungen/kopfschmerzen-migraene).
 - **Phase 3 (Monate 6-12):** Konzentration = fast unmöglich. Jede Kleinigkeit überfordert. Emotionale Leere.
 - **Phase 4 (Burnout):** Sie können nicht mehr. Selbst nach Urlaub keine Besserung. Ihr Arzt sagt: „Vollständiger Zusammenbruch."
 
@@ -50,6 +50,8 @@ Es beginnt mit „nur ein bisschen müde". Ein paar Wochen mit schlechtem Schlaf
 ---
 
 ## Was ist das glymphatische System? (Und warum Sie noch nie davon gehört haben)
+
+Burnout ist mehr als nur psychische Erschöpfung – es ist ein körperliches Problem, das das gesamte Nervensystem betrifft. Bei OsteoAlsen behandeln wir [Burnout und chronischen Stress](/behandlungen/stress-burnout) ganzheitlich, mit besonderem Fokus auf das Nervensystem, die Selbstregulation des Körpers und das kürzlich entdeckte glymphatische System.
 
 ### Die Entdeckung, die alles veränderte
 
@@ -134,6 +136,8 @@ Bei Burnout: Vagusnerv-Aktivität ↓ → schlechterer Tiefschlaf → weniger gl
 Chronischer Stress verursacht **Neuro-Inflammation** (Gehirnentzündung):[^6]
 - Entzündungsmediatoren blockieren Aquaporin-4 (Wasser-Kanäle in Astrozyten)
 - Folge: CSF fließt schlechter durch Gehirngewebe
+
+Chronischer Stress führt zu systemischer Entzündung im Körper. Diese Entzündungsprozesse können nicht nur psychische Symptome verursachen, sondern auch körperliche Beschwerden wie Gelenkschmerzen verschlimmern. Mehr zu diesem Zusammenhang: [Wie chronischer Stress Arthrose begünstigt](/blog/kniearthrose-ohne-op-behandeln).
 
 ### Das Teufelskreis-Modell
 
@@ -330,6 +334,8 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 - CSF fließt nicht nur im Kopf, sondern **entlang des gesamten Rückenmarks**
 - Blockaden behindern CSF-Flow
 
+Chronische Nackenverspannungen und HWS-Blockaden sind oft ein Zeichen tieferliegender Probleme in der gesamten Wirbelsäulenstatik. Mehr zur ganzheitlichen Behandlung: [Rückenschmerzen und HWS-Blockaden](/behandlungen/rueckenschmerzen).
+
 **Osteopathische Intervention:**
 
 **Technik: Atlanto-occipitale (C0-C1) Mobilisation**
@@ -350,6 +356,8 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 - 90% des Serotonins wird im Darm produziert
 - Vagusnerv verbindet Darm & Hirn (bidirektional!)
 - Chronischer Stress → Darm-Dysbiose → Entzündung → Neuro-Inflammation
+
+Die Verbindung zwischen Verdauungssystem und psychischer Gesundheit ist fundamental. Chronischer Stress kann zu Verdauungsproblemen führen, die wiederum die mentale Gesundheit beeinträchtigen. Mehr zur osteopathischen Behandlung: [Verdauungsbeschwerden ganzheitlich behandeln](/behandlungen/verdauungsbeschwerden).
 
 **Osteopathische Intervention:**
 

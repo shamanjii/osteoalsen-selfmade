@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 const prisma = new PrismaClient();
 
 async function updatePostContent() {
-  const slug = 'kniearthrose-ohne-op-behandeln';
+  const slug = 'burnout-ganzheitlich-behandeln-glymphatisches-system';
   const filePath = `./posts/${slug}.md`;
 
   try {
