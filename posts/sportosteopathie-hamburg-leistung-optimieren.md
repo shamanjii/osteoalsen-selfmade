@@ -188,7 +188,7 @@ Mehr Training → Bessere Leistung
 **B. Durchblutung optimieren (Nährstoffzufuhr)**
 - **Faszien-Release** → bessere Mikrozirkulation
 - **Viszerale Osteopathie**: Darm-Mobilisierung → verbesserte Nährstoffaufnahme
-- **Autonomes Nervensystem balancieren**: Mehr Parasympathikus (Ruhe-Modus) → tiefere Erholung
+- **Autonomes Nervensystem balancieren**: Mehr Parasympathikus (Ruhe-Modus) → tiefere Erholung (mehr dazu: [Stress und Burnout](/behandlungen/stress-burnout))
 
 **C. Schlafqualität verbessern**
 - **Cranio-sacrale Therapie**: Spannungen im Nervensystem lösen
@@ -283,15 +283,17 @@ Die meisten Sportler trainieren erst **nach** einer Verletzung präventiv.
 > **Behandlung**: BWS-Mobilisierung + Core-Stabilisationsübungen + Bike-Fitting-Empfehlungen
 > **Ergebnis**: Laufsplit bei Ironman um 18 Min. verbessert, keine Rückenschmerzen
 
+Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen)
+
 ---
 
 ### Für Kraftsportler & CrossFitter
 
 **Typische Probleme:**
-- **Schulterimpingement** (Overhead-Bewegungen schmerzhaft)
+- **Schulterimpingement** (Overhead-Bewegungen schmerzhaft) – mehr zur Gelenkbehandlung: [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
 - **Ellenbogenschmerzen** (Golfer-/Tennisellenbogen)
 - **Handgelenkschmerzen** (Front Squats, Handstand)
-- **LWS-Schmerzen** (Deadlift, Squat)
+- **LWS-Schmerzen** (Deadlift, Squat) – mehr dazu: [Rückenschmerzen](/behandlungen/rueckenschmerzen)
 
 **Osteopathischer Fokus:**
 - **Schulterblatt-Stabilität**: Rotatorenmanschette + Serratus anterior
@@ -317,10 +319,10 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 ### Für Mannschaftssportler (Fußball, Handball, Basketball)
 
 **Typische Probleme:**
-- **Leisten-Schmerzen** (Adduktorenzerrung)
+- **Leisten-Schmerzen** (Adduktorenzerrung) – mehr zu Hüftproblemen: [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
 - **Knöchelverletzungen** (Bänderrisse, Instabilität)
 - **Knieschmerzen** (Meniskus, Kreuzband)
-- **Rückenschmerzen** (LWS durch Rotation + Sprint)
+- **Rückenschmerzen** (LWS durch Rotation + Sprint) – mehr zu ISG-Blockaden: [ISG-Blockierung](/blog/isg-blockierung-teufelskreis)
 
 **Osteopathischer Fokus:**
 - **Explosivität**: Hüftstreckung + Sprunggelenksmobilität optimieren
@@ -345,7 +347,7 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 - **Manuelle Untersuchung**: Gelenkmobilität, Faszienqualität, Muskellängen
 
 **Woche 2: Erste Korrekturen**
-- **Osteopathische Behandlung**: Hauptdysfunktionen beheben (z.B. ISG-Blockade)
+- **Osteopathische Behandlung**: Hauptdysfunktionen beheben (z.B. [ISG-Blockade](/blog/isg-blockierung-teufelskreis))
 - **Individuelle Übungen**: 3-4 Schlüsselübungen für Ihre Schwachstellen
 - **Trainingsplan-Review**: Welche Anpassungen sind sinnvoll?
 
