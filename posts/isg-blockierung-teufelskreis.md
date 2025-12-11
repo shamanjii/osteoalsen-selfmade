@@ -16,7 +16,7 @@ author: "Admin"
 ---
 # ISG-Blockierung? Warum sie immer wiederkommt (und wie Sie den Teufelskreis durchbrechen)
 
-**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Antwort: 80% aller ISG-Blockierungen kommen zurück, weil nur das Symptom (Blockierung) behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In Hamburg behandeln wir täglich Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
+**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Antwort: 80% aller ISG-Blockierungen kommen zurück, weil nur das Symptom (Blockierung) behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich täglich Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
 
 ---
 

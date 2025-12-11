@@ -17,7 +17,7 @@ author: "Admin"
 ---
 # Sportverletzung? So kommen Sie 3x schneller zurück ins Training (ohne Rückfall)
 
-**Sie kennen das: Endlich läuft das Training gut. Dann – ein falscher Schritt, eine Zerrung, ein Umknicken. 4-6 Wochen Pause, sagen alle. Aber was, wenn es einen Weg gibt, schneller UND nachhaltiger zurückzukommen? In Hamburg behandeln wir pro Jahr über 200 Sportler – von Hobbyläufern bis Bundesliga. Der Unterschied zwischen 6 Wochen und 2 Wochen Ausfall? Die richtige Behandlung zur richtigen Zeit.**
+**Sie kennen das: Endlich läuft das Training gut. Dann – ein falscher Schritt, eine Zerrung, ein Umknicken. 4-6 Wochen Pause, sagen alle. Aber was, wenn es einen Weg gibt, schneller UND nachhaltiger zurückzukommen? In meiner Praxis in Hamburg behandle ich pro Jahr über 200 Sportler – von Hobbyläufern bis Bundesliga. Der Unterschied zwischen 6 Wochen und 2 Wochen Ausfall? Die richtige Behandlung zur richtigen Zeit.**
 
 ---
 
