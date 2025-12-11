@@ -337,7 +337,7 @@ Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die bi
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (Kniearthrose-Behandlung)
+## Was Sie in meiner Praxis erwartet (Kniearthrose-Behandlung)
 
 ### Ersttermin (75 Minuten)
 

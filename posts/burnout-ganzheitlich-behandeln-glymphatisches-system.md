@@ -51,7 +51,7 @@ Es beginnt mit „nur ein bisschen müde". Ein paar Wochen mit schlechtem Schlaf
 
 ## Was ist das glymphatische System? (Und warum Sie noch nie davon gehört haben)
 
-Burnout ist mehr als nur psychische Erschöpfung – es ist ein körperliches Problem, das das gesamte Nervensystem betrifft. Bei OsteoAlsen behandeln wir [Burnout und chronischen Stress](/behandlungen/stress-burnout) ganzheitlich, mit besonderem Fokus auf das Nervensystem, die Selbstregulation des Körpers und das kürzlich entdeckte glymphatische System.
+Burnout ist mehr als nur psychische Erschöpfung – es ist ein körperliches Problem, das das gesamte Nervensystem betrifft. In meiner Praxis behandle ich [Burnout und chronischen Stress](/behandlungen/stress-burnout) ganzheitlich, mit besonderem Fokus auf das Nervensystem, die Selbstregulation des Körpers und das kürzlich entdeckte glymphatische System.
 
 ### Die Entdeckung, die alles veränderte
 
@@ -501,7 +501,7 @@ Beantworten Sie ehrlich:
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (Burnout-Behandlung)
+## Was Sie in meiner Praxis erwartet (Burnout-Behandlung)
 
 ### Ersttermin (75 Minuten)
 

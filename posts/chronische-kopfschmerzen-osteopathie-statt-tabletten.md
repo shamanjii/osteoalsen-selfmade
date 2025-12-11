@@ -60,7 +60,7 @@ Kopfschmerzen → Tabletten → vorübergehende Linderung
 
 ## Warum Schmerzmittel keine Lösung sind
 
-Bei OsteoAlsen behandeln wir [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene) ganzheitlich – mit Fokus auf die tatsächlichen Ursachen statt nur Symptomunterdrückung. Denn chronische Kopfschmerzen entstehen meist nicht im Kopf selbst.
+In meiner Praxis behandle ich [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene) ganzheitlich – mit Fokus auf die tatsächlichen Ursachen statt nur Symptomunterdrückung. Denn chronische Kopfschmerzen entstehen meist nicht im Kopf selbst.
 
 ### Das Problem mit Schmerztabletten
 
@@ -568,7 +568,7 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen:
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet
+## Was Sie in meiner Praxis erwartet
 
 ### Ersttermin (60 Minuten)
 

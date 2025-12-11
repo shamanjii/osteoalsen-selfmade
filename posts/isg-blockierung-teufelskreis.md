@@ -294,13 +294,13 @@ Es gab sich nicht.
 
 Nach 2 Jahren war ich so frustriert. **Ich wusste immer schon vorher, wann es wieder passieren würde**: Beim Bücken, beim Schuhe anziehen, manchmal beim Umdrehen im Bett.
 
-### Der Wendepunkt: OsteoAlsen
+### Der Wendepunkt: Osteopathie
 
-Eine Freundin (selbst chronische ISG-Patientin, jetzt schmerzfrei) drängte mich: ‚Geh zu OsteoAlsen. Die finden die Ursache.'
+Eine Freundin (selbst chronische ISG-Patientin, jetzt schmerzfrei) drängte mich: ‚Geh zu einem erfahrenen Osteopathen. Die finden die Ursache.'
 
 **Ersttermin – 60 Minuten Untersuchung:**
 
-Alex untersuchte nicht nur mein ISG. Er schaute sich ALLES an:
+Die Untersuchung umfasste nicht nur mein ISG, sondern ALLES:
 - Beckenbeweglichkeit (links ≠ rechts!)
 - Hüften (rechts deutlich steifer als links)
 - Bauchmuskeln (nach Kaiserschnitt geschwächt)
@@ -567,7 +567,7 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsä
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (ISG-Blockierung)
+## Was Sie in meiner Praxis erwartet (ISG-Blockierung)
 
 ### Ersttermin (60 Min)
 
@@ -754,11 +754,11 @@ Ihre ISG-Blockierung kommt immer wieder? **Es liegt nicht daran, dass Sie "anfä
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**
-OsteoAlsen – Praxis für Osteopathie
-Musterstraße 12
-20095 Hamburg-Eimsbüttel
+Osteopathie Alsen – Praxis für Osteopathie
+Rappstraße 7
+20146 Hamburg-Rotherbaum
 
-**Spezialisierung:** Chronische ISG-Probleme sind einer unserer Schwerpunkte. Wir behandeln die Ursache, nicht nur das Symptom.
+**Spezialisierung:** Chronische ISG-Probleme sind einer meiner Schwerpunkte. Ich behandle die Ursache, nicht nur das Symptom.
 
 ---
 

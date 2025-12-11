@@ -37,7 +37,7 @@ Die konventionelle Medizin konzentriert sich meist auf das schmerzende Gelenk se
 - **Behandlung**: Schmerzmittel, Cortison-Injektionen, im Extremfall OP
 - **Problem**: Die Ursache – warum verschleißt gerade dieses Gelenk? – bleibt ungeklärt
 
-Bei OsteoAlsen behandeln wir [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen Ansatz: **Wir suchen nicht nur nach dem "Was" (welches Gelenk schmerzt), sondern nach dem "Warum" (was hat zu dieser Überlastung geführt).**
+In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen Ansatz: **Ich suche nicht nur nach dem "Was" (welches Gelenk schmerzt), sondern nach dem "Warum" (was hat zu dieser Überlastung geführt).**
 
 ---
 
@@ -646,8 +646,8 @@ Die **besten Ergebnisse** erzielt ein **multimodaler Ansatz**:
 
 **Single-Interventionen** (nur Medikamente, nur Massage, nur Übungen) sind deutlich **weniger effektiv** als Kombinationen[^19].
 
-**Bei OsteoAlsen**:
-Wir kombinieren osteopathische Behandlung mit **Bewegungsberatung**, **Ernährungstipps** und bei Bedarf **Stress-Management** – für nachhaltige Ergebnisse.
+**In meiner Praxis**:
+Ich kombiniere osteopathische Behandlung mit **Bewegungsberatung**, **Ernährungstipps** und bei Bedarf **Stress-Management** – für nachhaltige Ergebnisse.
 
 ---
 
@@ -691,10 +691,10 @@ Wir kombinieren osteopathische Behandlung mit **Bewegungsberatung**, **Ernährun
 
 ## Jetzt Termin buchen – für nachhaltige Gelenkgesundheit
 
-Bei OsteoAlsen behandeln wir [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen, evidenzbasierten Ansatz.
+In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen, evidenzbasierten Ansatz.
 
 **Was Sie erwarten können:**
-- ✅ **Ausführliche Erstanamnese** (60 Min.): Wir finden die wahre Ursache
+- ✅ **Ausführliche Erstanamnese** (60 Min.): Ich finde die wahre Ursache
 - ✅ **Individuelle Behandlung**: Keine Standard-Protokolle, sondern auf Sie abgestimmt
 - ✅ **Nachhaltige Ergebnisse**: Nicht nur Symptomlinderung, sondern Ursachenbehandlung
 - ✅ **Eigenübungs-Programm**: Sie bleiben aktiv zwischen Terminen

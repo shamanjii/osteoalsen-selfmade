@@ -44,8 +44,8 @@ Sie sind nicht allein. Studien zeigen:
 
 **Das Problem**: Die **Ursache** – biomechanische Dysfunktion, muskuläre Dysbalance, fasziale Restriktion – wurde nicht behoben.
 
-Bei OsteoAlsen bieten wir [Sportosteopathie](/behandlungen/sportosteopathie) mit einem ganzheitlichen Ansatz:
-**Wir optimieren nicht nur die verletzte Struktur, sondern das gesamte Bewegungssystem.**
+In meiner Praxis biete ich [Sportosteopathie](/behandlungen/sportosteopathie) mit einem ganzheitlichen Ansatz:
+**Ich optimiere nicht nur die verletzte Struktur, sondern das gesamte Bewegungssystem.**
 
 ---
 
@@ -665,7 +665,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 
 ## Jetzt starten: Werden Sie zum optimierten Athleten
 
-Bei OsteoAlsen bieten wir [Sportosteopathie Hamburg](/behandlungen/sportosteopathie) speziell für ambitionierte Sportler:
+In meiner Praxis biete ich [Sportosteopathie Hamburg](/behandlungen/sportosteopathie) speziell für ambitionierte Sportler:
 
 **Was Sie erwarten können:**
 - ✅ **Ausführliche Bewegungsanalyse** (60 Min. Ersttermin)

@@ -508,7 +508,7 @@ Gehen Sie diese Checkliste heute noch durch:
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (Schreibtisch-Beschwerden)
+## Was Sie in meiner Praxis erwartet (Schreibtisch-Beschwerden)
 
 ### Ersttermin (60 Min)
 
@@ -681,11 +681,11 @@ Sie verbringen 2.000 Stunden pro Jahr am Schreibtisch. **Jede Stunde kann Heilun
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**
-OsteoAlsen – Praxis für Osteopathie
-Musterstraße 12
-20095 Hamburg-Eimsbüttel
+Osteopathie Alsen – Praxis für Osteopathie
+Rappstraße 7
+20146 Hamburg-Rotherbaum
 
-**Spezialisierung:** Wir behandeln täglich Patienten mit schreibtisch-bedingten Beschwerden. Von akuten Verspannungen bis chronischen Strukturproblemen – wir kennen die Muster und wissen, was hilft.
+**Spezialisierung:** Ich behandle täglich Patienten mit schreibtisch-bedingten Beschwerden. Von akuten Verspannungen bis chronischen Strukturproblemen – ich kenne die Muster und weiß, was hilft.
 
 ---
 

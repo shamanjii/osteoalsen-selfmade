@@ -433,14 +433,14 @@ Ich machte alles richtig:
 
 ### Der Wendepunkt
 
-Eine Kollegin empfahl OsteoAlsen. Alex untersuchte mich 45 Minuten lang – nicht nur den Rücken, den ganzen Körper.
+Eine Kollegin empfahl mir einen erfahrenen Osteopathen. Die Untersuchung dauerte 45 Minuten – nicht nur der Rücken, sondern der ganze Körper wurde betrachtet.
 
-**Seine Diagnose schockierte mich:**
+**Die Diagnose schockierte mich:**
 ‚Ihre Hamstrings sind nicht verkürzt – sie sind überdehnt. Ihr Problem ist Instabilität, keine Verkürzung. Jedes Mal, wenn Sie dehnen, verschlimmern Sie es.'
 
-Er zeigte mir am Computer: Mein Becken war hypermobil. Die Bänder am Iliosakralgelenk überdehnt. Meine Rumpfmuskulatur konnte die Instabilität nicht kompensieren.
+Die Untersuchung zeigte: Mein Becken war hypermobil. Die Bänder am Iliosakralgelenk überdehnt. Meine Rumpfmuskulatur konnte die Instabilität nicht kompensieren.
 
-**Sein Plan:**
+**Der Behandlungsplan:**
 - Dehnung stoppen (komplett!)
 - 3 Stabilisations-Übungen (Dead Bug, Bird Dog, Seitstütz) – täglich 10 Min
 - 4 osteopathische Behandlungen (ISG-Stabilisation, Core-Aktivierung)
@@ -511,7 +511,7 @@ Heute mache ich 0 Minuten Dehnung. Nur Stabilisation. Und es war noch nie besser
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (Rückenschmerzen)
+## Was Sie in meiner Praxis erwartet (Rückenschmerzen)
 
 ### Ersttermin (60 Min)
 
@@ -682,9 +682,9 @@ Sie dehnen seit Wochen/Monaten, aber die Schmerzen bleiben? **Vielleicht behande
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**
-OsteoAlsen – Praxis für Osteopathie
-Musterstraße 12
-20095 Hamburg-Eimsbüttel
+Osteopathie Alsen – Praxis für Osteopathie
+Rappstraße 7
+20146 Hamburg-Rotherbaum
 
 ---
 

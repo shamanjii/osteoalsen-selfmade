@@ -127,15 +127,15 @@ Mein Hausarzt: ‚6 Wochen Pause, dann langsam wieder einsteigen.' Ich machte al
 
 ### 3 Monate später (mit Osteopathie)
 
-Eine Läufer-Freundin empfahl mir OsteoAlsen. Alex machte beim Ersttermin etwas, das noch nie jemand gemacht hatte: **Er untersuchte nicht nur meine Wade.**
+Eine Läufer-Freundin empfahl mir einen erfahrenen Osteopathen. Beim Ersttermin machte er etwas, das noch nie jemand gemacht hatte: **Er untersuchte nicht nur meine Wade.**
 
-**Was er fand:**
+**Was die Untersuchung zeigte:**
 - Meine Wade war fast geheilt – aber hatte massive Verklebungen im Fasziengewebe
 - Mein rechtes Knie kompensierte (war minimal blockiert)
 - Meine rechte Hüfte hatte 15% weniger Beweglichkeit als links
 - Mein Becken war leicht rotiert (wahrscheinlich schon vor der Verletzung)
 
-‚Das ist ein Muster', sagte er. ‚Ihre Wade war nicht das Problem – sie war das schwächste Glied in einer Kette.'
+‚Das ist ein Muster', erklärte mir der Osteopath. ‚Ihre Wade war nicht das Problem – sie war das schwächste Glied in einer Kette.'
 
 ### Die Behandlung (5 Sitzungen über 8 Wochen)
 
@@ -373,7 +373,7 @@ Viele Sportler kehren zu früh zurück – oder glauben, vollständig geheilt zu
 
 ---
 
-## Was Sie bei OsteoAlsen erwartet (Sportverletzungen)
+## Was Sie in meiner Praxis erwartet (Sportverletzungen)
 
 ### Ersttermin (60 Minuten)
 
@@ -582,12 +582,12 @@ Sportverletzung – und Sie wollen **schnell, aber nachhaltig** zurück ins Trai
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**
-OsteoAlsen – Praxis für Osteopathie
-Musterstraße 12
-20095 Hamburg-Eimsbüttel
+Osteopathie Alsen – Praxis für Osteopathie
+Rappstraße 7
+20146 Hamburg-Rotherbaum
 
 **Spezialisierung Sportosteopathie:**
-Wir behandeln pro Jahr über 200 Sportler – von Hobbyläufern bis Bundesliga-Profis. Return-to-Sport ist unsere Expertise.
+Ich behandle pro Jahr über 200 Sportler – von Hobbyläufern bis Bundesliga-Profis. Return-to-Sport ist meine Expertise.
 
 ---
 
