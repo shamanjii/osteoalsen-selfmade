@@ -43,7 +43,7 @@ status: "published"
 - Schmerzmittel (Ibuprofen, Diclofenac) helfen noch
 
 **Phase 3 – Ruheschmerz (Arthrose Grad 3-4):**
-- Nachts wachen Sie von Knieschmerzen auf
+- Nachts wachen Sie von [Knieschmerzen](/behandlungen/arthrose-gelenkbeschwerden) auf
 - Selbst im Sitzen: dumpfer Dauerschmerz
 - Bewegungseinschränkung: Knie lässt sich nicht mehr komplett beugen/strecken
 - **Arzt sagt: „Nur noch OP hilft"**
@@ -109,7 +109,7 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 4. **Fasziale Verklebungen** (eingeschränkte Gleitfähigkeit)
 
 **Beispiel:**
-- Ihre rechte Hüfte ist steif (alte Sportverletzung, Bürojob)
+- Ihre rechte Hüfte ist steif (alte [Sportverletzung](/blog/sportverletzung-schneller-zurueck-training), [Bürojob](/blog/schreibtisch-fehler-rueckenschmerzen))
 - Ihr Becken rotiert nach rechts
 - Ihr rechtes Knie muss die Hüftbewegung kompensieren
 - → Einseitige Belastung im Knie → Knorpelabrieb → Arthrose
@@ -199,14 +199,14 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 
 ### 4. Hüft-Becken-Komplex: Die Ursache behandeln
 
-**Statistik:** 85% der Kniearthrose-Patienten haben Hüft-Dysfunktionen![^7]
+**Statistik:** 85% der Kniearthrose-Patienten haben [Hüft-Dysfunktionen](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)![^7]
 
 Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die biomechanische Kette von der Lendenwirbelsäule über das Becken bis zum Knie ist entscheidend für die Gelenkgesundheit. Mehr zur ganzheitlichen Behandlung dieser Zusammenhänge: [Rückenschmerzen und ihre Auswirkungen auf die gesamte Körperstatik](/behandlungen/rueckenschmerzen).
 
 **Typische Muster:**
 - **Hüft-Innenrotation eingeschränkt** → Knie kompensiert → Valgus-Stress (X-Bein-Stellung)
 - **Becken-Schiefstand** → ungleiche Beinbelastung → einseitige Knie-Arthrose
-- **Iliosakralgelenk (ISG) blockiert** → reduzierte Stoßdämpfung → mehr Kniebelastung
+- **[Iliosakralgelenk (ISG) blockiert](/blog/isg-blockierung-teufelskreis)** → reduzierte Stoßdämpfung → mehr Kniebelastung
 
 **Osteopathische Techniken:**
 
@@ -228,7 +228,7 @@ Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die bi
 
 **Problem:**
 - **Tractus iliotibialis (IT-Band):** Läuft außen am Oberschenkel
-- Bei Arthrose: oft massiv verklebt
+- Bei Arthrose: oft massiv verklebt (mehr dazu: [Dehnung vs. Mobilisation](/blog/dehnen-rueckenschmerzen-mythos))
 - **Folge:** Zieht Knie nach außen → Varus-Stress → Innenmeniskus-Überlastung
 
 **Faszien-Techniken:**
@@ -255,7 +255,7 @@ Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die bi
 
 **Befund (Osteopathie):**
 - Hüft-Innenrotation rechts: 10° (normal: 35°)
-- Becken-Rotation rechts: ISG blockiert
+- Becken-Rotation rechts: [ISG blockiert](/blog/isg-blockierung-teufelskreis)
 - Quadrizeps-Schwäche rechts (Kraft-Defizit 40% vs. links)
 - IT-Band massiv verklebt
 - **→ Die Arthrose ist das ERGEBNIS, nicht die Ursache!**
@@ -437,7 +437,7 @@ Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die bi
 - **Krafttraining** (Quadrizeps! Aber korrekte Ausführung!)
 
 **✗ SCHLECHT bei Kniearthrose:**
-- **Joggen** (Stoßbelastung 3-4x Körpergewicht)
+- **Joggen** (Stoßbelastung 3-4x Körpergewicht → Risiko für [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training))
 - **Fußball, Tennis** (Stop-and-Go → Knorpelabrieb)
 - **Kniebeugen mit Gewicht** (nur unter Anleitung!)
 

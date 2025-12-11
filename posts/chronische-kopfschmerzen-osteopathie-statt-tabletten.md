@@ -67,10 +67,10 @@ In meiner Praxis behandle ich [Kopfschmerzen und Migräne](/behandlungen/kopfsch
 **1. Sie behandeln nur das Symptom**
 
 Schmerzmittel blockieren Schmerzsignale im Gehirn. **Aber:**
-- Die muskuläre Verspannung im Nacken? Bleibt.
+- Die muskuläre Verspannung im [Nacken](/behandlungen/nackenschmerzen)? Bleibt.
 - Die HWS-Blockade? Bleibt.
 - Die Kiefergelenks-Dysfunktion? Bleibt.
-- Die Stressreaktion im Nervensystem? Bleibt.
+- Die [Stressreaktion](/behandlungen/stress-burnout) im Nervensystem? Bleibt.
 
 → Sobald die Tablette wirkt ab: Schmerz kommt zurück.
 
@@ -123,7 +123,7 @@ Die obere HWS (C0-C2, Atlas-Axis) ist extrem beweglich – und **direkt mit dem 
 → **Chronische Kopfschmerzen**
 
 **Typische Symptome:**
-- Nackensteifigkeit morgens
+- [Nackensteifigkeit](/behandlungen/nackenschmerzen) morgens
 - Schmerzen bei Kopfdrehung
 - Einseitige Kopfschmerzen (beginnt im Nacken, strahlt nach vorne)
 - Schwindel, Benommenheit
@@ -145,7 +145,7 @@ Das Kiefergelenk (Temporomandibuläres Gelenk, TMJ) ist **direkt mit Schädel un
 - TMJ → M. masseter (Kaumuskel)
 - TMJ → Os temporale (Schläfenbein)
 
-**Wenn das Kiefergelenk dysfunktional ist (z.B. durch Zähneknirschen):**
+**Wenn das Kiefergelenk dysfunktional ist (z.B. durch [Zähneknirschen](/behandlungen/stress-burnout)):**
 → M. temporalis dauerverkrampft
 → Triggerpoints strahlen aus
 → Schläfenkopfschmerzen, Stirnkopfschmerzen
@@ -182,8 +182,8 @@ Lokale Muskel-Verhärtungen, die **Schmerzen an entfernten Stellen** auslösen (
 - Ausstrahlungszone: Kompletter Kopf (Spannungshelm)
 
 **Ursachen für Triggerpunkte:**
-- Chronischer Stress (Dauerverspannung)
-- Schlechte Haltung (Schreibtisch, Smartphone-Nacken)
+- Chronischer [Stress](/behandlungen/stress-burnout) (Dauerverspannung)
+- Schlechte [Haltung](/blog/schreibtisch-fehler-rueckenschmerzen) (Schreibtisch, Smartphone-Nacken)
 - Überlastung
 - Dehydration
 
@@ -208,10 +208,10 @@ Der Vagusnerv reguliert:
 → **Chronische Kopfschmerzen**
 
 **Typische Symptome:**
-- Kopfschmerzen verstärken sich bei Stress
+- Kopfschmerzen verstärken sich bei [Stress](/behandlungen/stress-burnout)
 - Schlafprobleme
 - Innere Unruhe, Nervosität
-- Magen-Darm-Probleme (Vagusnerv innerviert Verdauung!)
+- [Magen-Darm-Probleme](/behandlungen/verdauungsbeschwerden) (Vagusnerv innerviert Verdauung!)
 
 Chronischer Stress kann das gesamte Nervensystem dysregulieren. Mehr dazu: [Burnout und chronische Erschöpfung ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system).
 

@@ -76,7 +76,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 ### Typ 1: Verkürzungs-Schmerz (30% der Fälle)
 
 **Ursache:** Tatsächlich verkürzte Strukturen
-- Hüftbeuger (Iliopsoas) – durch langes Sitzen
+- Hüftbeuger (Iliopsoas) – durch [langes Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen)
 - Hamstrings (hintere Oberschenkelmuskulatur) – bei Bewegungsmangel
 - Brustmuskulatur (Pectoralis) – bei Rundrücken
 
@@ -87,7 +87,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 **Hier hilft Dehnen!** – Aber nur bei diesem Typ.
 
-**Beispiel:** Chronisches Sitzen → verkürzte Hüftbeuger → ziehen LWS nach vorne → Rückenschmerzen
+**Beispiel:** [Chronisches Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen) → verkürzte Hüftbeuger → ziehen LWS nach vorne → [Rückenschmerzen](/behandlungen/rueckenschmerzen)
 → Lösung: Hüftbeuger dehnen ✓
 
 ---
@@ -111,7 +111,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 **Beispiel:** Überbewegliche Wirbelsäule → Bänder/Muskeln halten nicht mehr → permanente Mikrotrauma → Entzündung → Schmerz
 → Lösung: Stabilisation, Kräftigung ✓ / Dehnen ✗
 
-**Kritisch:** Viele Yoga-Praktizierende, Tänzer, ehemalige Turner fallen in diese Kategorie – jahrelanges Dehnen hat die Strukturen überdehnt.
+**Kritisch:** Viele Yoga-Praktizierende, Tänzer, ehemalige Turner fallen in diese Kategorie – jahrelanges Dehnen hat die Strukturen überdehnt. Auch bei [Sportlern](/behandlungen/sportosteopathie) kann Überbeweglichkeit zum Problem werden.
 
 ---
 
@@ -130,7 +130,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 **Hier bringt Dehnen wenig** – Triggerpunkt muss mechanisch gelöst werden.
 
-**Beispiel:** Chronischer Stress → Schultern hochziehen → Triggerpunkt im Quadratus Lumborum (unterer Rücken) → ausstrahlender Schmerz
+**Beispiel:** [Chronischer Stress](/behandlungen/stress-burnout) → Schultern hochziehen → Triggerpunkt im Quadratus Lumborum (unterer Rücken) → ausstrahlender Schmerz
 → Lösung: Manuelle Triggerpunkt-Behandlung, Druck-Massage ✓ / Dehnen ✗
 
 ---
@@ -237,7 +237,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 - Nach Dehnung: 10x Bein gegen Widerstand beugen (aktiviert Muskel)
 
 **3. Piriformis-Stretch (Gesäßmuskel)**
-- Ziel: Löst ISG-Spannung, kann Ischiasnerv-Kompression reduzieren
+- Ziel: Löst [ISG-Spannung](/blog/isg-blockierung-teufelskreis), kann Ischiasnerv-Kompression reduzieren
 - Ausführung: Rückenlage, Knöchel auf Gegenknie, Oberschenkel zu sich ziehen
 - Halten: 60 Sekunden pro Seite, 2x täglich
 
@@ -285,7 +285,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
   4. 10 Sekunden halten, zurück
 - 8x pro Seite, 3 Sätze, täglich
 
-**Ergänzend:** Osteopathische Behandlung zur Gelenkstabilisation (besonders ISG, LWS)
+**Ergänzend:** Osteopathische Behandlung zur [Gelenkstabilisation](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (besonders [ISG](/blog/isg-blockierung-teufelskreis), [LWS](/behandlungen/rueckenschmerzen))
 
 ---
 
@@ -438,12 +438,12 @@ Eine Kollegin empfahl mir einen erfahrenen Osteopathen. Die Untersuchung dauerte
 **Die Diagnose schockierte mich:**
 ‚Ihre Hamstrings sind nicht verkürzt – sie sind überdehnt. Ihr Problem ist Instabilität, keine Verkürzung. Jedes Mal, wenn Sie dehnen, verschlimmern Sie es.'
 
-Die Untersuchung zeigte: Mein Becken war hypermobil. Die Bänder am Iliosakralgelenk überdehnt. Meine Rumpfmuskulatur konnte die Instabilität nicht kompensieren.
+Die Untersuchung zeigte: Mein Becken war hypermobil. Die Bänder am [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis) überdehnt. Meine Rumpfmuskulatur konnte die Instabilität nicht kompensieren.
 
 **Der Behandlungsplan:**
 - Dehnung stoppen (komplett!)
 - 3 Stabilisations-Übungen (Dead Bug, Bird Dog, Seitstütz) – täglich 10 Min
-- 4 osteopathische Behandlungen (ISG-Stabilisation, Core-Aktivierung)
+- 4 osteopathische Behandlungen ([ISG-Stabilisation](/blog/isg-blockierung-teufelskreis), Core-Aktivierung)
 
 ### Das Ergebnis
 
@@ -472,18 +472,18 @@ Heute mache ich 0 Minuten Dehnung. Nur Stabilisation. Und es war noch nie besser
 - Ganzheitliche Untersuchung (nicht nur schmerzende Stelle)
 
 **Instabilitäts-Schmerz (Typ 2):**
-- Gelenkstabilisation (ISG, LWS)
+- [Gelenkstabilisation](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (ISG, LWS)
 - Faszienbehandlung (Wiederherstellung Spannung)
 - Aktivierung tiefer Stabilisatoren
 
 **Triggerpunkt-Schmerz (Typ 3):**
 - Manuelle Triggerpunkt-Behandlung
 - Strain-Counterstrain-Techniken
-- Lösen myofaszialer Verklebungen
+- Lösen myofaszialer Verklebungen ([Nackenschmerzen](/behandlungen/nackenschmerzen), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene))
 
 **Kombinierte Probleme:**
 - Oft liegen mehrere Typen gleichzeitig vor
-- Osteopathie behandelt alle Aspekte
+- Osteopathie behandelt alle Aspekte ([Burnout](/behandlungen/stress-burnout), [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training))
 - Individueller Behandlungsplan
 
 ### ❌ Osteopathie ersetzt NICHT:
@@ -625,7 +625,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 **Problem mit klassischem Yoga:**
 - Fokus auf Beweglichkeit (Forward Folds, Deep Stretches)
-- Wenig Stabilität (außer bei power/strength Yoga)
+- Wenig Stabilität (außer bei power/strength Yoga oder [Sportosteopathie](/behandlungen/sportosteopathie))
 
 **Wenn Sie Typ 2 (Instabilität) haben:**
 - Wählen Sie Yoga-Stile mit Fokus auf Kraft: Power Yoga, Ashtanga, Vinyasa
@@ -639,7 +639,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 **Antwort:** **Ja – besonders bei Typ 2 (Instabilität)!**
 
-**Studien zeigen:** Krafttraining (besonders Core/Rücken) reduziert chronische Rückenschmerzen um 30-60%[^8].
+**Studien zeigen:** Krafttraining (besonders Core/Rücken) reduziert [chronische Rückenschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) um 30-60%[^8].
 
 **Wichtig:**
 - **Technik vor Gewicht** (falsche Ausführung schadet!)
@@ -647,7 +647,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 - Beginnen Sie mit Bodyweight/leichten Gewichten
 - Steigern Sie langsam (10% pro Woche max.)
 
-**Kombination ideal:** Osteopathie (Struktur optimieren) + Krafttraining (Stabilität aufbauen)
+**Kombination ideal:** Osteopathie (Struktur optimieren) + [Krafttraining](/blog/sportosteopathie-hamburg-leistung-optimieren) (Stabilität aufbauen)
 
 ---
 

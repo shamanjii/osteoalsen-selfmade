@@ -29,7 +29,7 @@ Aber es ist nicht normal. Und es wird nicht besser.
 
 **Nach 6 Monaten:** Der Nacken ist öfter verspannt als nicht. Sie greifen regelmäßig zu Schmerzmitteln.
 
-**Nach 2 Jahren:** Kopfschmerzen kommen hinzu. Der untere Rücken meldet sich. Sie können nicht mehr lange sitzen ohne Schmerzen.
+**Nach 2 Jahren:** [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene) kommen hinzu. Der untere [Rücken](/behandlungen/rueckenschmerzen) meldet sich. Sie können nicht mehr lange sitzen ohne Schmerzen.
 
 **Nach 5 Jahren:** Chronische Beschwerden. Bewegungseinschränkungen. Der Orthopäde spricht von "verschleißbedingten Veränderungen". Sie sind gerade Mitte 40.
 
@@ -74,7 +74,7 @@ Aber: **Pro 15° Neigung nach vorne verdoppelt sich die Belastung**[^2].
 ### Die Folgen (schleichend über Jahre)
 
 **Kurzfristig (Wochen-Monate):**
-- Nackenverspannungen
+- [Nackenverspannungen](/behandlungen/nackenschmerzen)
 - Spannungskopfschmerzen (vom Nacken ausgehend)
 - Schmerzen zwischen Schulterblättern
 
@@ -85,9 +85,9 @@ Aber: **Pro 15° Neigung nach vorne verdoppelt sich die Belastung**[^2].
 - Blockierungen HWS (C5-C7)
 
 **Langfristig (5+ Jahre):**
-- Degenerative Veränderungen HWS (Arthrose)
+- Degenerative Veränderungen HWS ([Arthrose](/behandlungen/arthrose-gelenkbeschwerden))
 - Bandscheibenvorfälle C5-C6, C6-C7
-- Chronische zervikogene Kopfschmerzen
+- [Chronische zervikogene Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten)
 - Nervenwurzelkompression → Armschmerzen/Taubheit
 
 ### Die Lösung
@@ -135,9 +135,9 @@ Wenn bereits Beschwerden vorhanden:
 4. **Phase 4 (Jahre):** Strukturelle Veränderungen (Hyperkyphose BWS)
 
 **Die Kettenreaktion:**
-- Rundrücken (BWS) → Kopf muss weiter nach vorne → Nackenschmerzen
+- Rundrücken (BWS) → Kopf muss weiter nach vorne → [Nackenschmerzen](/behandlungen/nackenschmerzen)
 - Schultern nach vorne → Engpass im Schulterdach → Schulterimpingement
-- BWS blockiert → LWS kompensiert → Überlastung unterer Rücken
+- BWS blockiert → LWS kompensiert → Überlastung [unterer Rücken](/behandlungen/rueckenschmerzen)
 
 ### Die Folgen
 
@@ -154,7 +154,7 @@ Wenn bereits Beschwerden vorhanden:
 **Funktionell:**
 - Flache Atmung (Brustatmung statt Zwerchfellatmung)
 - Reduzierte Lungenkapazität (~30% weniger bei starker Hyperkyphose)[^3]
-- Verdauungsprobleme (Druck auf Magen/Darm)
+- [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden) (Druck auf Magen/Darm)
 
 ### Die Lösung
 
@@ -207,8 +207,8 @@ Wenn bereits Beschwerden vorhanden:
 **Wenn der Iliopsoas chronisch verkürzt ist:**
 1. Zieht die Lendenwirbel nach vorne
 2. Erhöht Druck auf LWS-Bandscheiben
-3. Komprimiert Iliosakralgelenk (ISG)
-4. Verursacht "unspezifische" Rückenschmerzen
+3. Komprimiert [Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis)
+4. Verursacht "unspezifische" [Rückenschmerzen](/behandlungen/rueckenschmerzen)
 
 **Studien zeigen:** 75% der Menschen mit chronischen LWS-Schmerzen haben verkürzte Hüftbeuger[^4]
 
@@ -220,10 +220,10 @@ Wenn bereits Beschwerden vorhanden:
 - "Anlaufschmerz" (erste Schritte nach Sitzen tun weh)
 
 **Langfristig:**
-- Chronische LWS-Schmerzen
-- ISG-Blockierungen (Iliosakralgelenk)
+- Chronische [LWS-Schmerzen](/behandlungen/rueckenschmerzen)
+- [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis) (Iliosakralgelenk)
 - Bandscheibenprobleme L4-L5, L5-S1
-- Hüftarthrose (durch Fehlbelastung)
+- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden) (durch Fehlbelastung)
 
 ### Die Lösung
 
@@ -236,7 +236,7 @@ Wenn bereits Beschwerden vorhanden:
 → Schreibtisch höher stellen (höhenverstellbar ideal!)
 → Oder: Fußstütze verwenden (erhöht effektive Sitzhöhe)
 
-**Übung: Iliopsoas-Stretch**
+**Übung: [Iliopsoas-Stretch](/blog/dehnen-rueckenschmerzen-mythos)**
 1. Halber Kniestand (rechtes Knie am Boden, linker Fuß vorne)
 2. Becken nach vorne schieben (Hüfte strecken)
 3. Optional: Linken Arm nach oben/hinten strecken
@@ -271,7 +271,7 @@ Jeder Arm wiegt ~4 kg. Wenn Ihre Arme nicht abgestützt sind, **halten Ihre Schu
 
 ### Warum das ein Problem ist
 
-**"Schultern hochziehen" ist DAS Stress-Muster schlechthin:**
+**"Schultern hochziehen" ist DAS [Stress](/behandlungen/stress-burnout)-Muster schlechthin:**
 - Passiert unbewusst (bei Konzentration, Stress, Anspannung)
 - Wird chronisch, wenn keine Ablage vorhanden
 - Führt zu "Upper Cross Syndrome" (oberes Kreuz-Syndrom)[^5]
@@ -279,12 +279,12 @@ Jeder Arm wiegt ~4 kg. Wenn Ihre Arme nicht abgestützt sind, **halten Ihre Schu
 **Upper Cross Syndrome:**
 - **Verkürzt/Verhärtet:** Oberer Trapezius, Levator Scapulae, Pectoralis
 - **Abgeschwächt:** Unterer Trapezius, Rhomboideus, tiefe Nackenmuskeln
-- **Folge:** Chronische Nacken-Schulter-Schmerzen, Kopfschmerzen, Bewegungseinschränkungen
+- **Folge:** Chronische [Nacken-Schulter-Schmerzen](/behandlungen/nackenschmerzen), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene), Bewegungseinschränkungen
 
 ### Die Folgen
 
 **Muskulär:**
-- Triggerpunkte in oberem Trapezius (→ Kopfschmerzen)
+- Triggerpunkte in oberem Trapezius (→ [Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten))
 - Verhärtung Levator Scapulae (→ Drehschmerz beim Schulterblick)
 - Schulterblatt-Dysbalance (→ Schulterschmerzen)
 

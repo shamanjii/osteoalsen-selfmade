@@ -95,7 +95,7 @@ author: "Admin"
 - Beinlängendifferenz (funktionell oder anatomisch)
 - Schwache Rumpfmuskulatur (ISG kompensiert fehlende Stabilität)
 - Beckenverdrehung (Torsion)
-- Hüft-Dysfunktion (ISG übernimmt Bewegung der steifen Hüfte)
+- [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (ISG übernimmt Bewegung der steifen Hüfte)
 - Narben (Kaiserschnitt, Bauch-OP → Faszienzug auf Becken)
 
 **Wenn diese Ursachen nicht behandelt werden**, blockiert das ISG nach 1-7 Tagen wieder – garantiert.
@@ -123,7 +123,7 @@ author: "Admin"
 
 **Lösung:**
 - Triggerpunkt-Behandlung überspannter Muskeln
-- Dehnung verkürzter Strukturen (Iliopsoas, Piriformis)
+- [Dehnung](/blog/dehnen-rueckenschmerzen-mythos) verkürzter Strukturen (Iliopsoas, Piriformis)
 - Kräftigung geschwächter Muskeln (Gluteus Medius)
 
 ---
@@ -223,7 +223,7 @@ author: "Admin"
 - **Instabile Hüfte** → ISG muss stabilisieren → Überspannung
 
 **Besonders bei:**
-- Hüftarthrose (Coxarthrose)
+- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden) (Coxarthrose)
 - Hüft-Impingement (FAI)
 - Labrum-Läsion
 - Nach Hüft-OP
@@ -239,9 +239,9 @@ author: "Admin"
    - Schmerz im ISG (nicht Hüfte!) beim Test → ISG kompensiert
 
 **Lösung:**
-- Hüftmobilisation (Osteopathie, Physiotherapie)
+- [Hüftmobilisation](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (Osteopathie, Physiotherapie)
 - Hüftkapseldehnung
-- Bei Arthrose: Angepasstes Training, ggf. Gewichtsreduktion
+- Bei [Arthrose](/blog/kniearthrose-ohne-op-behandeln): Angepasstes Training, ggf. Gewichtsreduktion
 - Nach Hüft-Behandlung: ISG stabilisiert sich oft von selbst
 
 ---
@@ -368,9 +368,9 @@ Nach 2 Jahren Schmerzen, unzähligen Behandlungen, Tausenden Euros – **die Lö
 **Osteopathischer Ansatz:**
 1. **Diagnose:** Welche der 6 Ursachen liegt vor? (Oft mehrere gleichzeitig!)
 2. **Behandlung der Ursache:**
-   - Muskuläre Dysbalance → Triggerpunkt-Behandlung, Dehnung, Kräftigung
+   - Muskuläre Dysbalance → Triggerpunkt-Behandlung, [Dehnung](/blog/dehnen-rueckenschmerzen-mythos), Kräftigung
    - Beckentorsion → Muskel-Energie-Techniken, Mobilisation
-   - Hüft-Dysfunktion → Hüftbehandlung (primär!)
+   - [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) → Hüftbehandlung (primär!)
    - Narben → Narbenmobilisation, Faszienarbeit
    - Core-Schwäche → Neuromuskuläre Aktivierung, Übungsanleitung
 3. **ISG-Behandlung** (sekundär) – oft löst sich Blockierung nach Ursachen-Behandlung von selbst
@@ -496,19 +496,20 @@ Nach 2 Jahren Schmerzen, unzähligen Behandlungen, Tausenden Euros – **die Lö
 - ❌ Nicht: Mit rundem Rücken aus Vorbeuge heben
 - ✓ Besser: In die Hocke gehen, Core anspannen, mit Beinen hochdrücken
 
-**Langes Sitzen:**
+**[Langes Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen):**
 - Alle 30 Min: Aufstehen, 5x Glute Bridge
 - ISG-freundliches Sitzen: Beide Füße flach auf Boden, nicht überschlagen!
 
 **Sport:**
 - Asymmetrische Sportarten meiden (in Akutphase): Golf, Tennis, Badminton
 - ISG-freundlich: Schwimmen (Rückenschwimmen!), Radfahren, Nordic Walking
+- Mehr zur [Sportosteopathie](/behandlungen/sportosteopathie)
 
 ---
 
 ## Selbsttest: ISG oder LWS? (Oft verwechselt!)
 
-Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsäule.
+Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbelsäule](/behandlungen/rueckenschmerzen).
 
 ### ISG-Blockierung:
 
@@ -549,12 +550,12 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsä
 - Beckentorsion (schwer selbst zu korrigieren)
 - Narben-bedingte Probleme
 - Nach Schwangerschaft/Geburt
-- Kombiniert mit Hüft-/LWS-Problemen
+- Kombiniert mit [Hüft](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)-/[LWS](/behandlungen/rueckenschmerzen)-Problemen
 
 **Prävention:**
 - Vor Schwangerschaft (Becken optimieren)
 - Nach Unfällen/Stürzen (frühzeitig korrigieren)
-- Bei einseitiger Sportbelastung (Golf, Tennis)
+- Bei einseitiger [Sportbelastung](/blog/sportverletzung-schneller-zurueck-training) (Golf, Tennis)
 
 ### ⚠️ Red Flags – Sofort zum Arzt:
 
@@ -685,7 +686,7 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsä
 
 **Mit Behandlung:**
 - Ab 6-8 Wochen postpartum: Osteopathie beginnen
-- Core-/Beckenboden-Training (professionell angeleitet!)
+- Core-/[Beckenboden-Training](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) (professionell angeleitet!)
 - Nach 3-6 Monaten: Meist stabil
 
 ### 6. Ist ISG-Blockierung gefährlich?
@@ -698,8 +699,8 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die Lendenwirbelsä
 - Nicht lebensbedrohlich
 
 **Aber chronisch problematisch:**
-- Chronische Schmerzen (Lebensqualität!)
-- Kompensationsmuster → Folgeprobleme (LWS, Hüfte, Knie)
+- [Chronische Schmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) (Lebensqualität!)
+- Kompensationsmuster → Folgeprobleme ([LWS](/behandlungen/rueckenschmerzen), [Hüfte](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung), [Knie](/blog/kniearthrose-ohne-op-behandeln))
 - Einschränkung im Alltag/Sport
 - Psychische Belastung (Frustration, Angst vor Bewegung)
 

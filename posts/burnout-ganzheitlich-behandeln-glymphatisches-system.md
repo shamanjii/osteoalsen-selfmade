@@ -177,7 +177,7 @@ Noch schlechterer Schlaf
 
 **Monat 6:** Schlaf wurde schlechter. Wachte 3-4x pro Nacht auf. Morgens wie gerädert. Aber Kaffee half noch.
 
-**Monat 12:** Konzentration ließ nach. Brauchte 3 Stunden für E-Mails, die früher 30 Minuten dauerten. Emotionale Abstumpfung – meine Partnerin bemerkte es als erste.
+**Monat 12:** Konzentration ließ nach. Brauchte 3 Stunden für E-Mails, die früher 30 Minuten dauerten. Emotionale Abstumpfung – meine Partnerin bemerkte es als erste. Häufige [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene) durch Verspannungen.
 
 **Monat 18:** Kompletter Zusammenbruch. Konnte nicht mehr arbeiten. Selbst Netflix schauen war zu anstrengend. Mein Hausarzt: ‚Schweres Burnout-Syndrom. 6 Wochen Krankschreibung.'
 
@@ -219,13 +219,13 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 
 **Sitzung 3-4: Vagusnerv-Stimulation**
 - Manuelle Stimulation hinter dem Ohr (Foramen jugulare)
-- Behandlung der HWS (Halswirbelsäule) – war massiv verspannt
+- Behandlung der [HWS (Halswirbelsäule)](/behandlungen/nackenschmerzen) – war massiv verspannt
 - Lösen des Zwerchfells (verbessert vagale Aktivität)
 
 **Sitzung 5-6: Cervical-thoracale Behandlung**
 - Mobilisation C0-C2 (Atlanto-occipitale Region – kritisch für CSF-Flow)
-- Behandlung des Kiefergelenks (war komplett blockiert durch Zähneknirschen)
-- Faszienbehandlung Nacken/Schultern
+- Behandlung des Kiefergelenks (war komplett blockiert durch [Zähneknirschen](/behandlungen/stress-burnout))
+- Faszienbehandlung [Nacken/Schultern](/behandlungen/nackenschmerzen)
 
 **Sitzung 7-8: Integration & Prävention**
 - Atemübungen für Vagusnerv-Ton
@@ -255,7 +255,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 - Begann wieder zu joggen (!!)
 
 **6 Monate später (jetzt):**
-- Lief meinen ersten Halbmarathon seit dem Burnout
+- Lief meinen ersten Halbmarathon seit dem Burnout (mit Unterstützung durch [Sportosteopathie](/behandlungen/sportosteopathie))
 - Arbeite 45h/Woche – aber mit klaren Grenzen
 - Kein Brain Fog mehr
 - Medikamente schrittweise abgesetzt (mit ärztlicher Begleitung)
@@ -263,7 +263,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 ### Was mich am meisten überraschte
 
 **Es war nicht nur ‚im Kopf'.** Mein Körper hatte reale, physische Dysfunktionen:
-- Blockaden in der Halswirbelsäule störten den CSF-Flow
+- [Blockaden in der Halswirbelsäule](/behandlungen/nackenschmerzen) störten den CSF-Flow
 - Mein Kiefergelenk war so verspannt, dass es die Schädelnähte blockierte
 - Mein Vagusnerv war ‚runterreguliert' (Herzratenvariabilität bei 15ms – normal: 50-100ms)
 
@@ -330,7 +330,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 ### 3. HWS-Mobilisation: Liquor-Fluss entlang Wirbelsäule
 
 **Das Problem bei Burnout:**
-- Halswirbelsäule (HWS) oft blockiert (durch Schreibtischarbeit, Stress-Verspannung)
+- Halswirbelsäule (HWS) oft blockiert (durch [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen), Stress-Verspannung)
 - CSF fließt nicht nur im Kopf, sondern **entlang des gesamten Rückenmarks**
 - Blockaden behindern CSF-Flow
 
@@ -343,7 +343,7 @@ Chronische Nackenverspannungen und HWS-Blockaden sind oft ein Zeichen tieferlieg
 - **Wie:** Sanfte Artikulation
 - **Effekt:** CSF-Pulsation am Rückenmark ↑ → bessere Drainage ins venöse System
 
-**Technik: Thoracic Inlet Release (Obere Brustwirbelsäule)**
+**Technik: Thoracic Inlet Release (Obere [Brustwirbelsäule](/behandlungen/rueckenschmerzen))**
 - **Warum:** Spannungen hier behindern venösen Rückfluss aus Kopf
 - **Folge:** CSF staut sich → glymphatische Drainage ↓
 - **Lösung:** Lösen der ersten Rippe + T1-T4
@@ -435,7 +435,7 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 
 - 30 Min Spaziergang/Joggen (Zone 2: 60-70% max. Herzfrequenz)
 - **Warum:** Erhöht glymphatische Clearance um 20%[^13]
-- **WICHTIG:** Kein intensives Training (verschlimmert bei Burnout!)
+- **WICHTIG:** Kein intensives Training (verschlimmert bei Burnout!) – mehr zur optimalen Trainingsbegleitung: [Sportosteopathie](/behandlungen/sportosteopathie)
 
 **2. Intermittent Fasting (12-14h)**
 
@@ -467,8 +467,8 @@ Beantworten Sie ehrlich:
 | Atmen Sie nachts durch den Mund (oder schnarchen)? | ☐ | ☐ |
 | Schlafen Sie auf dem Rücken oder Bauch (nicht Seite)? | ☐ | ☐ |
 | Spüren Sie Ihren Herzschlag im Kopf, wenn Sie liegen? | ☐ | ☐ |
-| Haben Sie Nackenverspannungen / HWS-Probleme? | ☐ | ☐ |
-| Fühlen Sie sich unter Dauer-Stress (Sympathikus dominant)? | ☐ | ☐ |
+| Haben Sie [Nackenverspannungen](/behandlungen/nackenschmerzen) / HWS-Probleme? | ☐ | ☐ |
+| Fühlen Sie sich unter Dauer-[Stress](/behandlungen/stress-burnout) (Sympathikus dominant)? | ☐ | ☐ |
 
 **Auswertung:**
 - **0-2 Ja:** Glymphatisches System wahrscheinlich OK
@@ -490,8 +490,8 @@ Beantworten Sie ehrlich:
 
 - Brain Fog trotz Medikation
 - Schlafstörungen (Durchschlafprobleme, unerholt)
-- Chronische Nacken/HWS-Verspannungen
-- Vegetative Dysregulation (Herzrasen, Schwindel, Magen-Darm)
+- Chronische [Nacken/HWS-Verspannungen](/behandlungen/nackenschmerzen)
+- Vegetative Dysregulation (Herzrasen, Schwindel, [Magen-Darm-Probleme](/behandlungen/verdauungsbeschwerden))
 
 ### Kontraindikationen:
 
@@ -616,7 +616,7 @@ Beantworten Sie ehrlich:
 
 **✓ Empfohlen:**
 - Spazieren (täglich 30 Min)
-- Leichtes Joggen (Zone 2: Kann dabei noch sprechen)
+- Leichtes Joggen (Zone 2: Kann dabei noch sprechen) – bei Bedarf mit [sportosteopathischer Begleitung](/behandlungen/sportosteopathie)
 - Yoga, Tai Chi, Qigong
 - Schwimmen (moderat)
 
@@ -624,7 +624,7 @@ Beantworten Sie ehrlich:
 - HIIT (High Intensity Interval Training)
 - Marathon-Training
 - Crossfit, intensive Gewichtheben
-- Wettkampfsport
+- Wettkampfsport (Verletzungsrisiko: [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training))
 
 **Warum:** Intensives Training erhöht Cortisol → verschlimmert Burnout. Moderates Training hingegen verbessert glymphatische Clearance.
 
@@ -653,7 +653,7 @@ Beantworten Sie ehrlich:
 - Stress-Management (Psychotherapie, Coaching)
 - Früherkennung: Bei ersten Symptomen reagieren (nicht abwarten!)
 
-**Wichtig:** Burnout ist **rezidivierend** – wie chronische Rückenschmerzen. Prävention ist der Schlüssel.
+**Wichtig:** Burnout ist **rezidivierend** – wie [chronische Rückenschmerzen](/behandlungen/rueckenschmerzen). Prävention ist der Schlüssel.
 
 ---
 

@@ -65,7 +65,7 @@ Studien zeigen, dass **biomechanische Dysfunktionen in entfernten Körperregione
 - Mobilisierung von Blockaden in Fuß, Becken, Wirbelsäule
 - Muskuläre Dysbalancen ausgleichen
 
-> **Patient:innen-Beispiel**: Thomas, 52, kam mit hartnäckigen Knieschmerzen. Röntgen zeigte "beginnende Arthrose". In der osteopathischen Untersuchung fand ich eine alte ISG-Blockade rechts, die zu einer Beckenschiefstellung führte. Nach 4 Behandlungen (ISG-Mobilisierung + Faszienarbeit) waren die Knieschmerzen zu 80% reduziert – ohne das Knie selbst zu behandeln.
+> **Patient:innen-Beispiel**: Thomas, 52, kam mit hartnäckigen Knieschmerzen. Röntgen zeigte "beginnende Arthrose". In der osteopathischen Untersuchung fand ich eine alte [ISG-Blockade](/blog/isg-blockierung-teufelskreis) rechts, die zu einer Beckenschiefstellung führte. Nach 4 Behandlungen (ISG-Mobilisierung + [Faszienarbeit](/blog/sportverletzung-schneller-zurueck-training)) waren die Knieschmerzen zu 80% reduziert – ohne das Knie selbst zu behandeln.
 
 Mehr zur ganzheitlichen Behandlung von Kniearthrose: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln).
 
