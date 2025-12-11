@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BreadcrumbSchema from "./BreadcrumbSchema";
 
 interface BreadcrumbItem {
   label: string;
@@ -11,11 +12,13 @@ interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav
-      aria-label="Breadcrumb"
-      className="pt-20 md:pt-28 pb-4 px-4 sm:px-6 max-w-7xl mx-auto overflow-x-auto"
-    >
-      <ol className="flex items-center space-x-2 text-sm text-slate-600 flex-wrap">
+    <>
+      <BreadcrumbSchema items={items} />
+      <nav
+        aria-label="Breadcrumb"
+        className="pt-20 md:pt-28 pb-4 px-4 sm:px-6 max-w-7xl mx-auto overflow-x-auto"
+      >
+        <ol className="flex items-center space-x-2 text-sm text-slate-600 flex-wrap">
         <li className="whitespace-nowrap">
           <Link
             href="/"
@@ -41,5 +44,6 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         ))}
       </ol>
     </nav>
+    </>
   );
 }

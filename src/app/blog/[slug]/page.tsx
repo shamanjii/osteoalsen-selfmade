@@ -35,11 +35,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title: `${post.title} | Osteoalsen Blog`,
         description: post.excerpt,
         keywords: post.keywords,
+        alternates: {
+            canonical: `https://www.osteoalsen.de/blog/${slug}`,
+        },
         openGraph: {
             title: post.title,
             description: post.excerpt || '',
             type: 'article',
             images: post.image ? [post.image] : [],
+            url: `https://www.osteoalsen.de/blog/${slug}`,
         },
     };
 }
