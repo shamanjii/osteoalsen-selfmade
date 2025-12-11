@@ -1,5 +1,6 @@
 // Use ISR for performance
 export const revalidate = 3600; // Revalidate every hour
+// Force rebuild: 2025-12-11
 
 import type { Metadata } from "next";
 import Link from "next/link";
