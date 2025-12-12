@@ -11,7 +11,8 @@ keywords:
 date: "2025-12-12T12:00:00.000Z"
 status: "published"
 author: "Admin"
-image: null
+image: "https://images.unsplash.com/photo-1578496479914-7ef3b0193be3?w=1200"
+alt: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
 ---
 
 **"Der Unfall war vor 4 Jahren. Warum habe ich JETZT plötzlich wieder starke Nackenschmerzen?"**

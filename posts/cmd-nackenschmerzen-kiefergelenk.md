@@ -11,7 +11,8 @@ keywords:
 date: "2025-12-12T14:00:00.000Z"
 status: "published"
 author: "Admin"
-image: null
+image: "https://images.unsplash.com/photo-1622253694242-abeb37a33e97?w=1200"
+alt: "Nackenschmerzen durch Kieferprobleme: Der CMD-HWS-Zusammenhang (endlich erklärt)"
 ---
 
 **"Ich habe morgens immer Nackenschmerzen UND mein Kiefer knackt beim Essen. Kann das zusammenhängen?"**
