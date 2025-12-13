@@ -543,6 +543,24 @@ In meiner Praxis in Hamburg behandle ich täglich [Nackenschmerzen](/behandlunge
 
 ---
 
+## Verwandte Artikel
+
+[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm gegen Forward Head Posture (3 Monate)
+
+[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) – Warum Atlas-Blockierung vegetative Symptome auslöst
+
+[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – 6-Phasen-Protokoll (ohne Schmerzmittel)
+
+[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
+
+[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) – Ganzheitliche Behandlung in Hamburg
+
+[Kopfschmerzen durch Trigeminus-Irritation](/blog/kopfschmerzen-trigeminus-ursache) – Wenn HWS-Blockierung Kopfschmerzen verursacht
+
+[Schreibtisch-Fehler, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen) – Ergonomie-Optimierung für schmerzfreies Arbeiten
+
+---
+
 ## Quellen & Wissenschaftliche Studien
 
 [^1]: Bogduk N. *Clinical Anatomy of the Lumbar Spine and Sacrum.* 5th ed. Elsevier; 2012. (HWS-Biomechanik)

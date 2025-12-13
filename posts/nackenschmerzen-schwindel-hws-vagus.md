@@ -581,6 +581,24 @@ In meiner Praxis in Hamburg behandle ich täglich Schwindel-Patienten. Erste Sit
 
 ---
 
+## Verwandte Artikel
+
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) – 5 häufigste Ursachen + Atlas-Behandlung + Selbsttests
+
+[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – 6-Phasen-Protokoll (ohne Schmerzmittel)
+
+[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
+
+[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm gegen Forward Head Posture (3 Monate)
+
+[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) – Ganzheitliche Behandlung in Hamburg
+
+[Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) – Vagusnerv-Stimulation & glymphatisches System
+
+[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen) – Ursachen statt Symptome bekämpfen
+
+---
+
 ## Quellen & Wissenschaftliche Studien
 
 [^1]: Brandt T, Dieterich M. *Vertigo and dizziness: common complaints.* Springer; 2013.
