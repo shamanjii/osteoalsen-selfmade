@@ -5,7 +5,7 @@ export const revalidate = 60; // Revalidate every 60 seconds for faster content 
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts-cms";
+import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import { BlogPostStructuredData, MedicalScholarlyArticle, FAQPageStructuredData } from "@/components/StructuredData";
 import Breadcrumbs from "@/components/Breadcrumbs";

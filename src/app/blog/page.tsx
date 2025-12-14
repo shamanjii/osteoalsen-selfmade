@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import BlogClient from "./components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { getAllPosts } from "@/lib/posts-cms";
+import { getAllPosts } from "@/lib/posts";
 import { calculateReadingTime } from "@/lib/utils";
 
 export const metadata: Metadata = {

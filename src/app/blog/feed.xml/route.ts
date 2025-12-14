@@ -1,4 +1,4 @@
-import { getAllPosts } from '@/lib/posts-cms';
+import { getAllPosts } from '@/lib/posts';
 
 export async function GET() {
   const posts = await getAllPosts();
