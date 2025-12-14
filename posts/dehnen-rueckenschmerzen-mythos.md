@@ -11,7 +11,7 @@ keywords:
 image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200"
 alt: "Warum Dehnen Ihre Rückenschmerzen schlimmer macht (und was stattdessen hilft)"
 date: "2025-10-20T06:30:00.000Z"
-status: "draft"
+status: "published"
 author: "Admin"
 ---
 # Warum Dehnen Ihre Rückenschmerzen schlimmer macht (und was stattdessen hilft)
