@@ -8,7 +8,7 @@ keywords:
   - "zervikogene Kopfschmerzen"
   - "Osteopathie Kopfschmerzen Hamburg"
   - "Spannungskopfschmerz Behandlung"
-image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200"
+image: "https://images.unsplash.com/photo-1619719742709-2487f53c5cd2?w=1200"
 alt: "Kopfschmerzen? Warum der Trigeminus-Nerv oft die wahre Ursache ist"
 date: "2025-10-13T21:53:58.719Z"
 status: "published"

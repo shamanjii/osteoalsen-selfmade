@@ -109,13 +109,13 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 4. **Fasziale Verklebungen** (eingeschränkte Gleitfähigkeit)
 
 **Beispiel:**
-- Ihre rechte Hüfte ist steif (alte [Sportverletzung](/blog/sportverletzung-schneller-zurueck-training), [Bürojob](/blog/schreibtisch-fehler-rueckenschmerzen))
+- Ihre rechte [Hüfte ist steif](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln) (alte [Sportverletzung](/blog/sportverletzung-schneller-zurueck-training), [Bürojob](/blog/schreibtisch-fehler-rueckenschmerzen))
 - Ihr Becken rotiert nach rechts
 - Ihr rechtes Knie muss die Hüftbewegung kompensieren
 - → Einseitige Belastung im Knie → Knorpelabrieb → Arthrose
 
 **Die Röntgenbilder zeigen:** Arthrose im Knie
-**Die URSACHE ist:** Steife Hüfte + Beckenfehlstellung
+**Die URSACHE ist:** [Steife Hüfte](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln) + Beckenfehlstellung
 
 **→ Standardtherapie behandelt nur das Knie (Symptom)**
 **→ Osteopathie behandelt die Ursache (Hüfte, Becken, Biomechanik)**
@@ -134,7 +134,7 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 - Beckenbewegung symmetrisch?
 
 **B) Gelenkachsen-Check:**
-- **Hüfte:** Innenrotation/Außenrotation (oft eingeschränkt!)
+- **[Hüfte](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln):** Innenrotation/Außenrotation (oft eingeschränkt!)
 - **Knie:** Varus-/Valgus-Stress (O-Beine/X-Beine)
 - **Sprunggelenk:** Dorsalextension (Fähigkeit, Fußspitze anzuziehen)
 
@@ -199,7 +199,7 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 
 ### 4. Hüft-Becken-Komplex: Die Ursache behandeln
 
-**Statistik:** 85% der Kniearthrose-Patienten haben [Hüft-Dysfunktionen](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)![^7]
+**Statistik:** 85% der Kniearthrose-Patienten haben [Hüft-Dysfunktionen](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln)![^7]
 
 Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die biomechanische Kette von der Lendenwirbelsäule über das Becken bis zum Knie ist entscheidend für die Gelenkgesundheit. Mehr zur ganzheitlichen Behandlung dieser Zusammenhänge: [Rückenschmerzen und ihre Auswirkungen auf die gesamte Körperstatik](/behandlungen/rueckenschmerzen).
 

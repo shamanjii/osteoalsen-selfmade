@@ -46,7 +46,7 @@ Bei Rückenschmerzen ist es ähnlich:
 Faszien sind das Bindegewebe, das Muskeln und Organe umhüllt. Bei chronischem Stress, Bewegungsmangel oder einseitiger Belastung verkleben diese Faszienschichten. Das schränkt die Beweglichkeit ein und erzeugt Dauerspannung – auch im Rücken [(2)](#quellen).
 
 **Ursache 2: Blockierte Gelenke fern vom Schmerz**
-Ein blockiertes Iliosakralgelenk (ISG) am Becken oder eine steife Hüfte zwingen die Lendenwirbelsäule zu Kompensationsbewegungen. Das überlastet einzelne Wirbelsegmente – und irgendwann schmerzt es [(3)](#quellen).
+Ein [blockiertes Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis) am Becken oder eine steife Hüfte zwingen die Lendenwirbelsäule zu Kompensationsbewegungen. Das überlastet einzelne Wirbelsegmente – und irgendwann schmerzt es [(3)](#quellen).
 
 **Ursache 3: Stress im Nervensystem**
 Chronischer Stress hält Ihr Nervensystem in permanenter Alarmbereitschaft. Die Muskulatur bleibt angespannt, auch wenn keine Gefahr droht. Besonders betroffen: der untere Rücken [(4)](#quellen).
@@ -102,7 +102,7 @@ Anna (38) arbeitet im Marketing und sitzt täglich 9 Stunden am Schreibtisch. Se
 
 ### Die osteopathische Untersuchung zeigte:
 
-1. **Blockiertes Iliosakralgelenk (ISG)** durch einseitiges Sitzen
+1. **[Blockiertes Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis)** durch einseitiges Sitzen
 2. **Verkürzte Hüftbeuger** (Psoas-Muskel)
 3. **Verklebte Faszien am Zwerchfell** durch flache Stressatmung
 

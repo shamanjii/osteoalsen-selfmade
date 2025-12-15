@@ -162,7 +162,7 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 
 **Rücken-Untersuchung:**
 - **Lendenwirbelsäule L2-L4:** Blockaden? Triggerpunkte?
-- **Becken/Iliosakralgelenk:** Beweglichkeit eingeschränkt?
+- **Becken/[Iliosakralgelenk](/blog/isg-blockierung-teufelskreis):** Beweglichkeit eingeschränkt?
 - **Test:** Bauch-Druck → löst Rückenschmerz aus? → **Viszerosomatischer Reflex bestätigt**
 
 **3. Behandlung (25 Min):**
@@ -176,7 +176,7 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 **Parietale Techniken (Struktur):**
 - **Iliopsoas-Release:** Entspannt den Hüftbeuger (oft durch Darm-Druck verspannt)
 - **Lendenwirbelsäulen-Mobilisation:** Beseitigt segmentale Blockaden (L2-L4)
-- **Becken-Korrektur:** Optimiert Iliosakralgelenk-Beweglichkeit
+- **Becken-Korrektur:** Optimiert [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis)-Beweglichkeit
 
 **Kraniosakrale Techniken:**
 - **Parasympathikus-Aktivierung:** Beruhigt das Nervensystem → verbessert Verdauung [(12)](#quellen)
