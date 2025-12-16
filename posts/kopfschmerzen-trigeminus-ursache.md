@@ -339,7 +339,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 - Akute Infektionen, Fieber
 - Hirnhautentzündung (Meningitis)
 - Hirntumor
-- Frische Traumata (Schleudertrauma, Unfall)
+- Frische Traumata ([Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln), Unfall)
 - Starke neurologische Symptome (Lähmungen, Seh-/Hörstörungen)
 
 **Wichtig:** Ein sorgfältiges **Red-Flag-Screening** vor jeder Behandlung ist Pflicht [(18)](#quellen).

@@ -209,7 +209,7 @@ Schwindel, der durch Dysfunktionen der Halswirbelsäule ausgelöst wird – spez
 - Propriozeptive Störung (falsche Signale ans Gehirn)
 - Sekundär: Angst-Konditionierung (Schwindel → Angst → mehr Verspannung → mehr Schwindel)
 
-**Die eigentliche Ursache:** Das Schleudertrauma vor 2 Jahren hatte den Atlas verschoben. Niemand hatte die HWS untersucht.
+**Die eigentliche Ursache:** Das [Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) vor 2 Jahren hatte den Atlas verschoben. Niemand hatte die HWS untersucht.
 
 ### Die Behandlung
 

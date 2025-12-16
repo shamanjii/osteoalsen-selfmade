@@ -180,7 +180,7 @@ Stehen Sie an eine Wand. Berühren Hinterkopf, Schultern UND Gesäß die Wand gl
 - Nächtliches [Zähneknirschen (Bruxismus)](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) → Kiefergelenk → HWS-Blockierung
 - Flache Atmung → weniger Sauerstoff → verkrampfte Muskulatur
 
-### 5. Alte Verletzungen (Schleudertrauma-Spätfolgen)
+### 5. Alte Verletzungen ([Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln))
 
 **Häufig übersehen:**
 - Autounfall vor **Jahren** → HWS-Instabilität bleibt
