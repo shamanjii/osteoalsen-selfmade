@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useMemo, memo, useEffect } from "react";
+import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
 
 interface Post {
     slug: string;
@@ -19,14 +20,16 @@ interface BlogClientProps {
     posts: Post[];
 }
 
-const categoryMap = {
+// Cluster mapping with emojis - using cluster system but keeping original design
+const categoryMap: Record<string, { name: string; icon: string }> = {
     'alle': { name: 'Alle Artikel', icon: '📚' },
-    'osteopathie': { name: 'Osteopathie', icon: '🩺' },
-    'rueckenschmerzen': { name: 'Rückenschmerzen', icon: '🦴' },
-    'kopfschmerzen': { name: 'Kopfschmerzen', icon: '🧠' },
-    'sportverletzungen': { name: 'Sportverletzungen', icon: '⚽' },
-    'verdauung': { name: 'Verdauung', icon: '🍃' },
-    'gesundheitstipps': { name: 'Gesundheitstipps', icon: '💡' }
+    'rucken-wirbelsaule': { name: 'Rücken & Wirbelsäule', icon: '🦴' },
+    'nacken-hws': { name: 'Nacken & HWS', icon: '🔄' },
+    'kopf-nerven': { name: 'Kopf & Nerven', icon: '🧠' },
+    'knie-hufte': { name: 'Knie & Hüfte', icon: '🦵' },
+    'sport-leistung': { name: 'Sport & Leistung', icon: '⚡' },
+    'verdauung-innere-organe': { name: 'Verdauung', icon: '🫁' },
+    'osteopathie-allgemein': { name: 'Osteopathie', icon: '🌿' }
 };
 
 const POSTS_PER_PAGE = 12;
@@ -37,13 +40,35 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const [sortBy, setSortBy] = useState('date-desc');
     const [currentPage, setCurrentPage] = useState(1);
 
+    // Add cluster info to posts using automatic detection
+    const postsWithClusters = useMemo(() => {
+        return posts.map(post => ({
+            ...post,
+            cluster: detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords }),
+            clusterEmoji: getClusterEmoji(detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords }))
+        }));
+    }, [posts]);
+
+    // Calculate cluster stats for badge counts
+    const clusterStats = useMemo(() => {
+        const stats: Record<string, number> = {};
+        postsWithClusters.forEach(post => {
+            const key = post.cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+            stats[key] = (stats[key] || 0) + 1;
+        });
+        return stats;
+    }, [postsWithClusters]);
+
     // Memoize expensive filtering and sorting operations
     const filteredPosts = useMemo(() => {
-        let filtered = [...posts];
+        let filtered = [...postsWithClusters];
 
-        // Filter by category
+        // Filter by cluster (instead of old category)
         if (selectedCategory !== 'alle') {
-            filtered = filtered.filter(post => post.category === selectedCategory);
+            filtered = filtered.filter(post => {
+                const clusterKey = post.cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+                return clusterKey === selectedCategory;
+            });
         }
 
         // Filter by search term
@@ -73,7 +98,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
         });
 
         return filtered;
-    }, [posts, selectedCategory, searchTerm, sortBy]);
+    }, [postsWithClusters, selectedCategory, searchTerm, sortBy]);
 
     // Pagination logic
     const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
@@ -86,9 +111,6 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedCategory, searchTerm, sortBy]);
-
-    // Memoize category entries to prevent recreation
-    const categoryEntries = useMemo(() => Object.entries(categoryMap), []);
 
     return (
         <>
@@ -119,22 +141,45 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                             </span>
                         </div>
 
-                        {/* Category Filters */}
+                        {/* Cluster Filters - Original Design */}
                         <div className="flex flex-wrap gap-3 justify-center">
-                            {categoryEntries.map(([key, { name, icon }]) => (
-                                <button
-                                    key={key}
-                                    onClick={() => setSelectedCategory(key)}
-                                    className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
-                                        selectedCategory === key
-                                            ? 'bg-slate-900 text-white border-slate-900'
-                                            : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
-                                    }`}
-                                >
-                                    <span>{icon}</span>
-                                    <span className="text-sm font-medium">{name}</span>
-                                </button>
-                            ))}
+                            {/* Alle Filter */}
+                            <button
+                                onClick={() => setSelectedCategory('alle')}
+                                className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
+                                    selectedCategory === 'alle'
+                                        ? 'bg-slate-900 text-white border-slate-900'
+                                        : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
+                                }`}
+                            >
+                                <span>{categoryMap['alle'].icon}</span>
+                                <span className="text-sm font-medium">{categoryMap['alle'].name}</span>
+                                <span className="text-xs">({posts.length})</span>
+                            </button>
+
+                            {/* Cluster Filters - only show if articles exist */}
+                            {Object.entries(categoryMap)
+                                .filter(([key]) => key !== 'alle')
+                                .map(([key, { name, icon }]) => {
+                                    const count = clusterStats[key] || 0;
+                                    if (count === 0) return null;
+
+                                    return (
+                                        <button
+                                            key={key}
+                                            onClick={() => setSelectedCategory(key)}
+                                            className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
+                                                selectedCategory === key
+                                                    ? 'bg-slate-900 text-white border-slate-900'
+                                                    : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
+                                            }`}
+                                        >
+                                            <span>{icon}</span>
+                                            <span className="text-sm font-medium">{name}</span>
+                                            <span className="text-xs">({count})</span>
+                                        </button>
+                                    );
+                                })}
                         </div>
                     </div>
                 </div>
@@ -146,8 +191,8 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                 <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
                     <div className="text-slate-600">
                         <strong className="text-slate-900">{filteredPosts.length}</strong> Artikel gefunden
-                        {selectedCategory !== 'alle' && (
-                            <span> in {categoryMap[selectedCategory as keyof typeof categoryMap]?.name}</span>
+                        {selectedCategory !== 'alle' && categoryMap[selectedCategory] && (
+                            <span> in {categoryMap[selectedCategory].name}</span>
                         )}
                     </div>
                     <select
@@ -239,11 +284,9 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     ⏱️ {post.readingTime || 5} Min.
                                                 </span>
                                             </div>
-                                            {post.category && (
-                                                <span className="bg-slate-900 text-white px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide">
-                                                    {categoryMap[post.category as keyof typeof categoryMap]?.name || 'Artikel'}
-                                                </span>
-                                            )}
+                                            <span className="bg-slate-900 text-white px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide flex items-center gap-1">
+                                                {post.clusterEmoji} {post.cluster}
+                                            </span>
                                         </div>
 
                                         {/* Title */}
