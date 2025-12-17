@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
 
 interface RelatedArticle {
   slug: string;
@@ -12,45 +13,6 @@ interface RelatedArticle {
   alt?: string;
   date?: string;
 }
-
-interface RelatedArticlesProps {
-  currentSlug: string;
-  articles: RelatedArticle[];
-  title?: string;
-}
-
-// Automatic cluster detection based on keywords/title
-const detectCluster = (article: RelatedArticle): string => {
-  const text = `${article.title} ${article.excerpt} ${article.keywords?.join(' ')}`.toLowerCase();
-
-  // Priority order matters!
-  if (text.includes('rücken') || text.includes('wirbel') || text.includes('bandscheibe') ||
-      text.includes('ischias') || text.includes('iliosakral') || text.includes('isg')) {
-    return 'Rücken & Wirbelsäule';
-  }
-  if (text.includes('nacken') || text.includes('hws') || text.includes('cervical') ||
-      text.includes('schleudertrauma') || text.includes('genick')) {
-    return 'Nacken & HWS';
-  }
-  if (text.includes('kopf') || text.includes('migräne') || text.includes('schwindel') ||
-      text.includes('trigeminus') || text.includes('tinnitus')) {
-    return 'Kopf & Nerven';
-  }
-  if (text.includes('knie') || text.includes('hüft') || text.includes('arthrose') ||
-      text.includes('gonarthrose') || text.includes('coxarthrose')) {
-    return 'Knie & Hüfte';
-  }
-  if (text.includes('sport') || text.includes('verletzung') || text.includes('leistung') ||
-      text.includes('athlet') || text.includes('training')) {
-    return 'Sport & Leistung';
-  }
-  if (text.includes('verdauung') || text.includes('darm') || text.includes('bauch') ||
-      text.includes('magen')) {
-    return 'Verdauung & Innere Organe';
-  }
-
-  return 'Osteopathie Allgemein';
-};
 
 // Calculate reading time based on word count
 const calculateReadTime = (excerpt: string): number => {
@@ -161,7 +123,7 @@ export default function RelatedArticles({
                     {/* Cluster Badge Overlay */}
                     <div className="absolute top-3 left-3">
                       <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/95 backdrop-blur-sm text-slate-800 shadow-sm">
-                        🎯 {item.cluster}
+                        {getClusterEmoji(item.cluster as ClusterName)} {item.cluster}
                       </span>
                     </div>
                   </div>
