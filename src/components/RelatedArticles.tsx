@@ -170,20 +170,14 @@ export default function RelatedArticles({
                 {/* Content */}
                 <div className="p-6 flex-1 flex flex-col">
                   {/* Metadata */}
-                  <div className="flex items-center gap-3 mb-3 text-xs text-slate-500">
-                    {item.readTime && (
-                      <span className="flex items-center gap-1">
-                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        {item.readTime} Min.
-                      </span>
-                    )}
-                    <span className="text-slate-300">•</span>
-                    <span className="flex items-center gap-1 text-teal-600 font-medium">
-                      Relevanz: {item.score}
-                    </span>
-                  </div>
+                  {item.readTime && (
+                    <div className="flex items-center gap-1 mb-3 text-xs text-slate-500">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      {item.readTime} Min. Lesezeit
+                    </div>
+                  )}
 
                   {/* Title */}
                   <h3 className="text-lg font-epilogue font-bold text-slate-900 mb-3 line-clamp-2 group-hover:text-teal-700 transition-colors leading-tight">
