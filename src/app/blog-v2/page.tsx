@@ -59,15 +59,56 @@ export default async function BlogIndexPage() {
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
             <Breadcrumbs items={[{ label: "Blog" }]} />
 
-            {/* Hero Section */}
-            <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-20">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-                    <h1 className="font-epilogue text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
-                        Osteopathie Blog
-                    </h1>
-                    <p className="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                        Entdecken Sie evidenzbasierte Fachartikel zu Osteopathie, ganzheitlicher Gesundheit und bewährten Behandlungsmethoden
-                    </p>
+            {/* Hero Section with Dramatic Gradient & Dot Pattern */}
+            <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white overflow-hidden">
+                {/* Dot Pattern Background */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute inset-0" style={{
+                        backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                        backgroundSize: '40px 40px'
+                    }}></div>
+                </div>
+
+                <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-24 md:py-32">
+                    <div className="text-center max-w-4xl mx-auto">
+                        {/* Main Badge */}
+                        <div className="inline-flex items-center px-6 py-3 rounded-full text-sm font-bold bg-white/10 backdrop-blur-sm border border-white/20 text-white mb-8">
+                            <span className="text-lg mr-2">📚</span>
+                            Evidenzbasierte Fachartikel
+                        </div>
+
+                        {/* Title */}
+                        <h1 className="font-epilogue text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+                            Osteopathie<br />
+                            <span className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">
+                                Wissensdatenbank
+                            </span>
+                        </h1>
+
+                        {/* Description */}
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed mb-12">
+                            Entdecken Sie professionelle Artikel zu Osteopathie, ganzheitlicher Gesundheit und bewährten Behandlungsmethoden – wissenschaftlich fundiert und praxisnah erklärt
+                        </p>
+
+                        {/* Features */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                                <div className="text-4xl mb-3">🎯</div>
+                                <div className="font-bold text-lg mb-2">7 Themenbereiche</div>
+                                <div className="text-slate-300 text-sm">Von Rücken bis Verdauung</div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                                <div className="text-4xl mb-3">✍️</div>
+                                <div className="font-bold text-lg mb-2">Expertenw issen</div>
+                                <div className="text-slate-300 text-sm">Von zertifiziertem Osteopath</div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                                <div className="text-4xl mb-3">🔬</div>
+                                <div className="font-bold text-lg mb-2">Evidenzbasiert</div>
+                                <div className="text-slate-300 text-sm">Wissenschaftlich fundiert</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
