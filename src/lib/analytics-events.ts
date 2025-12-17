@@ -320,6 +320,57 @@ export const trackWebVitals = (metrics: {
 };
 
 // ============================================================================
+// BOOKING IFRAME TRACKING (etermin)
+// ============================================================================
+
+/**
+ * Track booking iframe interactions
+ * Note: We can't track INSIDE the iframe due to same-origin policy,
+ * but we can track user behavior around it
+ */
+export const BookingTracking = {
+  // Iframe loaded successfully
+  iframeLoaded: (loadTimeMs: number) => {
+    baseTrackEvent('booking_iframe_loaded', {
+      load_time_ms: loadTimeMs,
+      event_category: 'booking',
+    });
+  },
+
+  // User engaged with booking page (scrolled to iframe)
+  scrolledToIframe: () => {
+    baseTrackEvent('booking_scrolled_to_iframe', {
+      event_category: 'booking',
+    });
+  },
+
+  // User spent significant time on page (likely booking)
+  significantTimeSpent: (timeSpentSeconds: number) => {
+    baseTrackEvent('booking_significant_time', {
+      time_spent_seconds: timeSpentSeconds,
+      event_category: 'booking',
+    });
+  },
+
+  // User left booking page (exit intent)
+  exitedBookingPage: (timeOnPageSeconds: number, didScroll: boolean) => {
+    baseTrackEvent('booking_page_exit', {
+      time_on_page_seconds: timeOnPageSeconds,
+      did_scroll: didScroll,
+      event_category: 'booking',
+    });
+  },
+
+  // Phone/Email clicked instead of iframe booking
+  alternativeContactUsed: (contactType: 'phone' | 'email') => {
+    baseTrackEvent('booking_alternative_contact', {
+      contact_type: contactType,
+      event_category: 'booking',
+    });
+  },
+};
+
+// ============================================================================
 // ERROR & MONITORING
 // ============================================================================
 

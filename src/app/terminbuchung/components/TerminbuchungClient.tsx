@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { ConversionFunnel, trackPhoneClick, trackEmailClick } from "@/lib/analytics-events";
+import { useState, useEffect, useRef } from "react";
+import { ConversionFunnel, trackPhoneClick, trackEmailClick, BookingTracking } from "@/lib/analytics-events";
 import ContactBar from "@/app/(site)/components/ContactBar";
 import SiteHeader from "@/app/(site)/components/SiteHeader";
 
@@ -68,7 +68,13 @@ const faqs = [
 export default function TerminbuchungClient() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [iframeLoadTime, setIframeLoadTime] = useState<number | null>(null);
+  const [hasScrolledToIframe, setHasScrolledToIframe] = useState(false);
 
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const pageLoadTime = useRef<number>(Date.now());
+
+  // Track page open and load etermin script
   useEffect(() => {
     // Only run on client side
     if (typeof window === 'undefined') return;
@@ -93,6 +99,61 @@ export default function TerminbuchungClient() {
       }
     };
   }, []);
+
+  // Track scroll to iframe (user engagement)
+  useEffect(() => {
+    if (typeof window === 'undefined' || !iframeRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasScrolledToIframe) {
+            setHasScrolledToIframe(true);
+            BookingTracking.scrolledToIframe();
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of iframe is visible
+    );
+
+    observer.observe(iframeRef.current);
+
+    return () => observer.disconnect();
+  }, [hasScrolledToIframe]);
+
+  // Track significant time spent on page (>60s = likely booking)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const timer = setTimeout(() => {
+      const timeSpentSeconds = Math.floor((Date.now() - pageLoadTime.current) / 1000);
+      BookingTracking.significantTimeSpent(timeSpentSeconds);
+    }, 60000); // 60 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Track exit behavior (beforeunload)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const handleBeforeUnload = () => {
+      const timeOnPageSeconds = Math.floor((Date.now() - pageLoadTime.current) / 1000);
+      BookingTracking.exitedBookingPage(timeOnPageSeconds, hasScrolledToIframe);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [hasScrolledToIframe]);
+
+  // Handle iframe load with performance tracking
+  const handleIframeLoad = () => {
+    const loadTime = Date.now() - pageLoadTime.current;
+    setIframeLoadTime(loadTime);
+    setIframeLoaded(true);
+    BookingTracking.iframeLoaded(loadTime);
+  };
 
   const toggleFAQ = (id: number) => {
     setOpenFAQ(openFAQ === id ? null : id);
@@ -196,12 +257,13 @@ export default function TerminbuchungClient() {
               )}
               <iframe
                 id="etifr"
+                ref={iframeRef}
                 src="https://www.eTermin.net/osteoalsen"
                 width="100%"
                 height="800"
                 style={{ minHeight: '600px', border: 'none' }}
                 scrolling="no"
-                onLoad={() => setIframeLoaded(true)}
+                onLoad={handleIframeLoad}
                 className="w-full"
               />
             </div>
@@ -309,7 +371,10 @@ export default function TerminbuchungClient() {
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
                   href="tel:+4917643990001"
-                  onClick={() => trackPhoneClick('booking_page_contact')}
+                  onClick={() => {
+                    trackPhoneClick('booking_page_contact');
+                    BookingTracking.alternativeContactUsed('phone');
+                  }}
                   className="flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
                 >
                   <span className="text-lg">📞</span>
@@ -317,7 +382,10 @@ export default function TerminbuchungClient() {
                 </a>
                 <a
                   href="mailto:joshua@alsen.info"
-                  onClick={() => trackEmailClick('booking_page_contact')}
+                  onClick={() => {
+                    trackEmailClick('booking_page_contact');
+                    BookingTracking.alternativeContactUsed('email');
+                  }}
                   className="flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
                 >
                   <span className="text-lg">✉️</span>

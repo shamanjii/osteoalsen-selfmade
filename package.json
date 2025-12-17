@@ -10,6 +10,7 @@
     "export": "next export",
     "monitor:rankings": "ts-node scripts/monitor-rankings.ts",
     "seo:health": "curl http://localhost:3000/api/seo-health",
+    "analytics:posthog": "npx tsx scripts/posthog-analytics.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
