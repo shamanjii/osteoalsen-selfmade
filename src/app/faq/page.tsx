@@ -211,7 +211,7 @@ export default function FAQPage() {
               <a
                 key={idx}
                 href={`#category-${idx}`}
-                className="px-4 py-2 bg-white border border-slate-300 rounded-lg hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors text-sm font-medium"
+                className="px-4 py-2 bg-white border border-slate-300 rounded-lg text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors text-sm font-medium"
               >
                 {category.category}
               </a>
