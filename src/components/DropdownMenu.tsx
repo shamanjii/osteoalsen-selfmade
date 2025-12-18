@@ -136,6 +136,16 @@ export default function DropdownMenu({
           onMouseEnter={() => handleSetIsOpen(true)}
         >
           <div className="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
+            {showAllLink && (
+              <div className="border-b border-slate-200 pb-2 mb-2">
+                <Link
+                  href={allLinkHref}
+                  className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors block"
+                >
+                  <span className="text-sm">{allLinkLabel}</span>
+                </Link>
+              </div>
+            )}
             {items.map((item) => (
               <Link
                 key={item.href}
@@ -146,16 +156,6 @@ export default function DropdownMenu({
                 <span className="text-sm font-medium">{item.label}</span>
               </Link>
             ))}
-            {showAllLink && (
-              <div className="border-t border-slate-200 mt-2 pt-2">
-                <Link
-                  href={allLinkHref}
-                  className="flex items-center gap-2 px-4 py-2.5 text-slate-900 font-semibold hover:bg-slate-50 transition-colors block"
-                >
-                  <span className="text-sm">{allLinkLabel}</span>
-                </Link>
-              </div>
-            )}
           </div>
         </div>
       )}
