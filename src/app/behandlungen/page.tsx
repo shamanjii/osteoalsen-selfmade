@@ -48,7 +48,6 @@ const treatments = [
     title: "Rückenschmerzen",
     description:
       "Ganzheitliche osteopathische Behandlung bei akuten und chronischen Rückenschmerzen. Von Verspannungen bis Bandscheibenproblematik.",
-    icon: "🦴",
     href: "/behandlungen/rueckenschmerzen",
     keywords: ["Bandscheibe", "ISG", "Hexenschuss", "Verspannungen"],
   },
@@ -56,7 +55,6 @@ const treatments = [
     title: "Nackenschmerzen & HWS",
     description:
       "Behandlung von Nackenschmerzen, HWS-Syndrom und Schulter-Nacken-Verspannungen. Sanfte Mobilisation und ganzheitlicher Ansatz.",
-    icon: "🔄",
     href: "/behandlungen/nackenschmerzen",
     keywords: ["HWS-Syndrom", "Nackenverspannung", "Schulter-Nacken", "Zervikalsyndrom"],
   },
@@ -64,7 +62,6 @@ const treatments = [
     title: "Kopfschmerzen & Migräne",
     description:
       "Sanfte Behandlung von Spannungskopfschmerzen, Migräne und Kieferbeschwerden durch manuelle Techniken und ganzheitlichen Ansatz.",
-    icon: "🧠",
     href: "/behandlungen/kopfschmerzen-migraene",
     keywords: ["Migräne", "Spannungskopfschmerz", "CMD", "Kiefergelenk"],
   },
@@ -72,7 +69,6 @@ const treatments = [
     title: "Arthrose & Gelenkbeschwerden",
     description:
       "Osteopathische Behandlung bei Arthrose, Knie-, Hüft- und Gelenkschmerzen. Schmerzlinderung und Verbesserung der Beweglichkeit.",
-    icon: "🦵",
     href: "/behandlungen/arthrose-gelenkbeschwerden",
     keywords: ["Arthrose", "Knieschmerzen", "Hüftarthrose", "Gelenkschmerzen"],
   },
@@ -80,7 +76,6 @@ const treatments = [
     title: "Verdauungsbeschwerden",
     description:
       "Osteopathische Hilfe bei Reizdarm, Blähungen, Verstopfung und anderen Verdauungsproblemen. Viszerale Osteopathie für den Bauchraum.",
-    icon: "🫁",
     href: "/behandlungen/verdauungsbeschwerden",
     keywords: ["Reizdarm", "Blähungen", "Verstopfung", "Reflux"],
   },
@@ -88,7 +83,6 @@ const treatments = [
     title: "Sportverletzungen",
     description:
       "Schnelle Regeneration und Prävention bei Sportverletzungen. Von Zerrungen über Überlastung bis zur Wettkampfvorbereitung.",
-    icon: "⚽",
     href: "/behandlungen/sportverletzungen",
     keywords: ["Zerrung", "Überlastung", "Prävention", "Regeneration"],
   },
@@ -96,7 +90,6 @@ const treatments = [
     title: "Stress & Burnout",
     description:
       "Behandlung stressbedingter Beschwerden und Erschöpfungszustände. Regulation des vegetativen Nervensystems durch sanfte Techniken.",
-    icon: "🧘",
     href: "/behandlungen/stress-burnout",
     keywords: ["Erschöpfung", "Burnout", "Nervensystem", "Entspannung"],
   },
