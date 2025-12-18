@@ -10,7 +10,7 @@ export default function PatienteninfosLayout({
   return (
     <>
       <SiteHeader />
-      <main className="pt-16 md:pt-24">{children}</main>
+      <main className="pt-20">{children}</main>
       <FloatingBookingButton />
       <SiteFooter />
     </>

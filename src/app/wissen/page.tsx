@@ -47,7 +47,7 @@ export default function WissenschaftPage() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
-      <main>
+      <main className="pt-20">
         <Breadcrumbs items={[{ label: "Wissenschaft & Forschung" }]} />
 
         {/* Hero Section */}
