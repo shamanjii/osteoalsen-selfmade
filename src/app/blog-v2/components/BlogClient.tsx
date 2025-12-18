@@ -160,17 +160,17 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                         <div className="flex flex-wrap gap-3 justify-center">
                             <button
                                 onClick={() => setSelectedCluster('alle')}
-                                className={\`group px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2.5 text-sm font-bold \${
+                                className={`group px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2.5 text-sm font-bold ${
                                     selectedCluster === 'alle'
                                         ? 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white shadow-lg scale-105'
                                         : 'bg-white/80 backdrop-blur-sm text-slate-700 border-2 border-slate-200 hover:border-teal-500 hover:shadow-md shadow-sm'
-                                }\`}
+                                }`}
                             >
                                 <span className="text-lg">📚</span>
                                 <span>Alle Artikel</span>
-                                <span className={\`ml-1 px-2 py-0.5 rounded-full text-xs \${
+                                <span className={`ml-1 px-2 py-0.5 rounded-full text-xs ${
                                     selectedCluster === 'alle' ? 'bg-white/20' : 'bg-slate-100 group-hover:bg-teal-100'
-                                }\`}>{posts.length}</span>
+                                }`}>{posts.length}</span>
                             </button>
 
                             {Object.entries(clusterMap)
@@ -182,17 +182,17 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         <button
                                             key={key}
                                             onClick={() => setSelectedCluster(key)}
-                                            className={\`group px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2.5 text-sm font-bold \${
+                                            className={`group px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2.5 text-sm font-bold ${
                                                 selectedCluster === key
                                                     ? 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white shadow-lg scale-105'
                                                     : 'bg-white/80 backdrop-blur-sm text-slate-700 border-2 border-slate-200 hover:border-teal-500 hover:shadow-md shadow-sm'
-                                            }\`}
+                                            }`}
                                         >
                                             <span className="text-lg">{emoji}</span>
                                             <span className="whitespace-nowrap">{clusterMap[key].name}</span>
-                                            <span className={\`ml-1 px-2 py-0.5 rounded-full text-xs \${
+                                            <span className={`ml-1 px-2 py-0.5 rounded-full text-xs ${
                                                 selectedCluster === key ? 'bg-white/20' : 'bg-slate-100 group-hover:bg-teal-100'
-                                            }\`}>{count}</span>
+                                            }`}>{count}</span>
                                         </button>
                                     );
                                 })}
@@ -232,9 +232,9 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                         {paginatedPosts.map((post, index) => {
                             const isFeatured = index === 0 && selectedCluster === 'alle' && !searchTerm;
                             return (
-                                <Link key={post.slug} href={\`/blog-v2/\${post.slug}\`} className={\`group \${isFeatured ? 'md:col-span-2 xl:col-span-2' : ''}\`}>
+                                <Link key={post.slug} href={`/blog-v2/${post.slug}`} className={`group ${isFeatured ? 'md:col-span-2 xl:col-span-2' : ''}`}>
                                     <article className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-2xl hover:border-teal-500 hover:-translate-y-2 transition-all duration-300 h-full flex flex-col">
-                                        <div className={\`relative bg-gradient-to-br from-slate-200 to-slate-300 overflow-hidden \${isFeatured ? 'h-80' : 'h-56'}\`}>
+                                        <div className={`relative bg-gradient-to-br from-slate-200 to-slate-300 overflow-hidden ${isFeatured ? 'h-80' : 'h-56'}`}>
                                             {post.image ? (
                                                 <img src={post.image} alt={post.alt || post.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading={index === 0 ? 'eager' : 'lazy'} />
                                             ) : (
@@ -251,7 +251,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                 </div>
                                             )}
                                         </div>
-                                        <div className={\`p-6 flex-1 flex flex-col \${isFeatured ? 'md:p-8' : ''}\`}>
+                                        <div className={`p-6 flex-1 flex flex-col ${isFeatured ? 'md:p-8' : ''}`}>
                                             <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
                                                 <span className="flex items-center gap-1.5">
                                                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
@@ -263,9 +263,9 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     {post.readingTime || 5} Min.
                                                 </span>
                                             </div>
-                                            <h3 className={\`font-epilogue font-bold mb-4 text-slate-900 group-hover:text-teal-700 transition-colors line-clamp-2 \${isFeatured ? 'text-3xl' : 'text-xl'}\`}>{post.title}</h3>
+                                            <h3 className={`font-epilogue font-bold mb-4 text-slate-900 group-hover:text-teal-700 transition-colors line-clamp-2 ${isFeatured ? 'text-3xl' : 'text-xl'}`}>{post.title}</h3>
                                             {post.excerpt && (
-                                                <p className={\`text-slate-600 mb-6 leading-relaxed flex-1 \${isFeatured ? 'text-lg line-clamp-3' : 'line-clamp-3'}\`}>{post.excerpt}</p>
+                                                <p className={`text-slate-600 mb-6 leading-relaxed flex-1 ${isFeatured ? 'text-lg line-clamp-3' : 'line-clamp-3'}`}>{post.excerpt}</p>
                                             )}
                                             <div className="inline-flex items-center gap-2 text-teal-600 font-bold group-hover:text-teal-700 transition-colors">
                                                 <span>Artikel lesen</span>
@@ -284,7 +284,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                         <button onClick={() => setCurrentPage(p => Math.max(1, p - 1))} disabled={currentPage === 1} className="px-6 py-3 rounded-xl border-2 border-slate-300 text-slate-700 font-bold hover:bg-teal-600 hover:text-white hover:border-teal-600 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-700 disabled:hover:border-slate-300 transition-all shadow-sm">← Zurück</button>
                         <div className="flex gap-2">
                             {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                                <button key={page} onClick={() => setCurrentPage(page)} className={\`w-12 h-12 rounded-xl border-2 font-bold transition-all shadow-sm \${currentPage === page ? 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white border-teal-600 shadow-lg scale-110' : 'border-slate-300 text-slate-700 hover:bg-teal-600 hover:text-white hover:border-teal-600'}\`}>{page}</button>
+                                <button key={page} onClick={() => setCurrentPage(page)} className={`w-12 h-12 rounded-xl border-2 font-bold transition-all shadow-sm ${currentPage === page ? 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white border-teal-600 shadow-lg scale-110' : 'border-slate-300 text-slate-700 hover:bg-teal-600 hover:text-white hover:border-teal-600'}`}>{page}</button>
                             ))}
                         </div>
                         <button onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))} disabled={currentPage === totalPages} className="px-6 py-3 rounded-xl border-2 border-slate-300 text-slate-700 font-bold hover:bg-teal-600 hover:text-white hover:border-teal-600 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-700 disabled:hover:border-slate-300 transition-all shadow-sm">Weiter →</button>

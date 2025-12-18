@@ -68,17 +68,11 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
   experimental: {
     // optimizeCss: true, // Disabled due to critters dependency issues
-    forceSwcTransforms: true,
     optimizePackageImports: ['lucide-react'],
-    // Disable static optimization to fix prerender errors
-    isrMemoryCacheSize: 0,
   },
   // Disable problematic features for static export
   typescript: {
     ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   // Headers removed - not compatible with static export
 };
