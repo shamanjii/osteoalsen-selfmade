@@ -96,7 +96,6 @@ export default function WissenschaftPage() {
               {/* Rückenschmerzen */}
               <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
-                  <span className="text-3xl">🦴</span>
                   Rückenschmerzen
                 </h3>
                 <div className="space-y-4 text-slate-700">
@@ -150,7 +149,6 @@ export default function WissenschaftPage() {
               {/* Kopfschmerzen & Migräne */}
               <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
-                  <span className="text-3xl">🧠</span>
                   Kopfschmerzen & Migräne
                 </h3>
                 <div className="space-y-4 text-slate-700">
@@ -204,7 +202,6 @@ export default function WissenschaftPage() {
               {/* Säuglinge & Kinder */}
               <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
-                  <span className="text-3xl">👶</span>
                   Säuglinge & Kinder
                 </h3>
                 <div className="space-y-4 text-slate-700">
@@ -243,7 +240,6 @@ export default function WissenschaftPage() {
               {/* Viszerale Osteopathie */}
               <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
-                  <span className="text-3xl">🫁</span>
                   Viszerale Osteopathie
                 </h3>
                 <div className="space-y-4 text-slate-700">
@@ -295,7 +291,7 @@ export default function WissenschaftPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue">
-                  🧬 Neurophysiologische Effekte
+                  Neurophysiologische Effekte
                 </h3>
                 <p className="text-slate-700 text-sm">
                   Manuelle Techniken beeinflussen das autonome Nervensystem,
@@ -306,7 +302,7 @@ export default function WissenschaftPage() {
 
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue">
-                  🩺 Biomechanische Verbesserungen
+                  Biomechanische Verbesserungen
                 </h3>
                 <p className="text-slate-700 text-sm">
                   Verbesserung der Gelenkbeweglichkeit, Reduktion muskulärer Verspannungen
@@ -317,7 +313,7 @@ export default function WissenschaftPage() {
 
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue">
-                  🫀 Durchblutungsförderung
+                  Durchblutungsförderung
                 </h3>
                 <p className="text-slate-700 text-sm">
                   Osteopathische Techniken verbessern die Durchblutung und den lymphatischen
@@ -328,7 +324,7 @@ export default function WissenschaftPage() {
 
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue">
-                  🧘 Fasziale Entspannung
+                  Fasziale Entspannung
                 </h3>
                 <p className="text-slate-700 text-sm">
                   Behandlung des faszialen Bindegewebes löst Verklebungen und Spannungen,
@@ -536,7 +532,6 @@ export default function WissenschaftPage() {
                 href="/was-ist-osteopathie"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
-                <div className="text-3xl mb-3">📚</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
                   Was ist Osteopathie?
                 </h3>
@@ -549,7 +544,6 @@ export default function WissenschaftPage() {
                 href="/behandlungen"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
-                <div className="text-3xl mb-3">🦴</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
                   Behandlungen
                 </h3>
@@ -562,7 +556,6 @@ export default function WissenschaftPage() {
                 href="/faq"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
-                <div className="text-3xl mb-3">❓</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
                   Häufige Fragen
                 </h3>
