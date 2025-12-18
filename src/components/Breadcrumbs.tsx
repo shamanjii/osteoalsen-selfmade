@@ -16,7 +16,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       <BreadcrumbSchema items={items} />
       <nav
         aria-label="Breadcrumb"
-        className="pt-4 md:pt-6 pb-4 px-4 sm:px-6 max-w-7xl mx-auto overflow-x-auto"
+        className="pt-4 md:pt-6 pb-2 md:pb-3 px-4 sm:px-6 max-w-7xl mx-auto overflow-x-auto"
       >
         <ol className="flex items-center space-x-2 text-sm text-slate-600 flex-wrap">
         <li className="whitespace-nowrap">
