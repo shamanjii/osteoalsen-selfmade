@@ -279,7 +279,7 @@ export function BlogPostStructuredData({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Osteopathie Hamburg – Joshua Alsen',
+      name: 'Osteopathie Alsen',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.osteoalsen.de/assets/logo.png',
@@ -345,7 +345,7 @@ export function MedicalScholarlyArticle({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Osteopathie Hamburg – Joshua Alsen',
+      name: 'Osteopathie Alsen',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.osteoalsen.de/assets/osteopathie-alsen-logo.webp',
@@ -452,7 +452,7 @@ export function WebsiteStructuredData({ pathname }: WebsiteStructuredDataProps =
     '@type': 'WebSite',
     '@id': 'https://www.osteoalsen.de/#website',
     url: 'https://www.osteoalsen.de',
-    name: 'Osteopathie Hamburg – Joshua Alsen',
+    name: 'Osteopathie Alsen',
     description: 'Osteopathie in Hamburg-Rotherbaum & Eimsbüttel. Behandlung 45–60 Min., 150 €. Kostenerstattung möglich.',
     potentialAction: {
       '@type': 'SearchAction',
