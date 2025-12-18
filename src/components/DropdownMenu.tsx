@@ -80,6 +80,23 @@ export default function DropdownMenu({
     };
   }, [isOpen, onItemClick]);
 
+  // Close dropdown when scrolling starts
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function handleScroll() {
+      handleSetIsOpen(false);
+      onItemClick?.();
+    }
+
+    // Add scroll listener with passive flag for better performance
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isOpen, onItemClick]);
+
   const toggleDropdown = () => {
     handleSetIsOpen(!isOpen);
   };
