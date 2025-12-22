@@ -95,7 +95,7 @@ export default async function BlogPost({ params }: PageProps) {
             <BlogPostStructuredData
                 title={post.title}
                 description={post.excerpt}
-                author="Osteopathie Alsen"
+                author="Joshua Alsen"
                 datePublished={post.date}
                 imageUrl={post.image}
                 keywords={post.keywords}
@@ -110,7 +110,7 @@ export default async function BlogPost({ params }: PageProps) {
                 <MedicalScholarlyArticle
                     title={post.title}
                     description={post.excerpt}
-                    author="Osteopathie Alsen"
+                    author="Joshua Alsen"
                     datePublished={post.date}
                     imageUrl={post.image}
                     keywords={post.keywords}
