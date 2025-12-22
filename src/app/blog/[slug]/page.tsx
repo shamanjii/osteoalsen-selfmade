@@ -1,5 +1,5 @@
-// Use ISR for performance with faster cache invalidation
-export const revalidate = 60; // Revalidate every 60 seconds for faster content updates
+// Use ISR for performance with cache optimization
+export const revalidate = 3600; // Revalidate every hour (reduced from 60s to save CPU)
 // Force rebuild: 2025-12-11 17:45
 
 import type { Metadata } from "next";
