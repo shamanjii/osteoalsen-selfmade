@@ -20,16 +20,16 @@ interface BlogClientProps {
     posts: Post[];
 }
 
-// Cluster mapping with emojis - using cluster system but keeping original design
-const categoryMap: Record<string, { name: string; icon: string }> = {
-    'alle': { name: 'Alle Artikel', icon: '📚' },
-    'rucken-wirbelsaule': { name: 'Rücken & Wirbelsäule', icon: '🦴' },
-    'nacken-hws': { name: 'Nacken & HWS', icon: '🔄' },
-    'kopf-nerven': { name: 'Kopf & Nerven', icon: '🧠' },
-    'knie-hufte': { name: 'Knie & Hüfte', icon: '🦵' },
-    'sport-leistung': { name: 'Sport & Leistung', icon: '⚡' },
-    'verdauung-innere-organe': { name: 'Verdauung', icon: '🫁' },
-    'osteopathie-allgemein': { name: 'Osteopathie', icon: '🌿' }
+// Cluster mapping - NO EMOJIS per user request
+const categoryMap: Record<string, { name: string }> = {
+    'alle': { name: 'Alle Artikel' },
+    'rücken-&-wirbelsäule': { name: 'Rücken & Wirbelsäule' },
+    'nacken-&-hws': { name: 'Nacken & HWS' },
+    'kopf-&-nerven': { name: 'Kopf & Nerven' },
+    'knie-&-hüfte': { name: 'Knie & Hüfte' },
+    'sport-&-leistung': { name: 'Sport & Leistung' },
+    'verdauung-&-innere-organe': { name: 'Verdauung & Innere Organe' },
+    'osteopathie-allgemein': { name: 'Osteopathie Allgemein' }
 };
 
 const POSTS_PER_PAGE = 12;
@@ -143,7 +143,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
 
                         {/* Cluster Filters - Original Design */}
                         <div className="flex flex-wrap gap-3 justify-center">
-                            {/* Alle Filter */}
+                            {/* Alle Filter - NO EMOJI */}
                             <button
                                 onClick={() => setSelectedCategory('alle')}
                                 className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
@@ -152,15 +152,14 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
                                 }`}
                             >
-                                <span>{categoryMap['alle'].icon}</span>
                                 <span className="text-sm font-medium">{categoryMap['alle'].name}</span>
                                 <span className="text-xs">({posts.length})</span>
                             </button>
 
-                            {/* Cluster Filters - only show if articles exist */}
+                            {/* Cluster Filters - only show if articles exist, NO EMOJIS */}
                             {Object.entries(categoryMap)
                                 .filter(([key]) => key !== 'alle')
-                                .map(([key, { name, icon }]) => {
+                                .map(([key, { name }]) => {
                                     const count = clusterStats[key] || 0;
                                     if (count === 0) return null;
 
@@ -174,7 +173,6 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
                                             }`}
                                         >
-                                            <span>{icon}</span>
                                             <span className="text-sm font-medium">{name}</span>
                                             <span className="text-xs">({count})</span>
                                         </button>
