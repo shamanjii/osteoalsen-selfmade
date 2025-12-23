@@ -28,12 +28,33 @@ export type PostFrontmatter = {
 
 export type Post = PostFrontmatter & {
   content: string;
+  readingTime?: number; // in minutes
   extractedCitations?: {
     id: string;
     title: string;
     url?: string;
   }[];
 };
+
+/**
+ * Calculate reading time in minutes based on word count
+ * Average reading speed: 200 words per minute
+ */
+function calculateReadingTime(content: string): number {
+  // Remove markdown syntax for accurate word count
+  const plainText = content
+    .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
+    .replace(/\[([^\]]+)\]\(.*?\)/g, '$1') // Keep link text only
+    .replace(/```[\s\S]*?```/g, '') // Remove code blocks
+    .replace(/`[^`]+`/g, '') // Remove inline code
+    .replace(/[#*_~-]/g, '') // Remove markdown formatting
+    .trim();
+
+  const wordCount = plainText.split(/\s+/).filter(word => word.length > 0).length;
+  const readingTime = Math.max(3, Math.round(wordCount / 200)); // Minimum 3 minutes
+
+  return readingTime;
+}
 
 /**
  * Fetches all published posts from CMS database
@@ -84,6 +105,8 @@ export async function getAllPosts(): Promise<Post[]> {
           .use(rehypeStringify) // Convert HTML tree to string
           .process(post.content);
 
+        const readingTime = calculateReadingTime(post.content);
+
         return {
           slug: post.slug,
           title: post.title,
@@ -97,6 +120,7 @@ export async function getAllPosts(): Promise<Post[]> {
           status: 'published' as const,
           category: post.category?.slug || undefined,
           content: String(processedContent),
+          readingTime,
         };
       })
     );
@@ -157,6 +181,8 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       .use(rehypeStringify) // Convert HTML tree to string
       .process(post.content);
 
+    const readingTime = calculateReadingTime(post.content);
+
     return {
       slug: post.slug,
       title: post.title,
@@ -170,6 +196,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       status: 'published' as const,
       category: post.category?.slug || undefined,
       content: String(processedContent),
+      readingTime,
     };
   } catch (error) {
     console.error(`Error fetching post with slug ${slug}:`, error);

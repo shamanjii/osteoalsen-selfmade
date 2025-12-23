@@ -28,6 +28,7 @@ export type PostFrontmatter = {
 
 export type Post = PostFrontmatter & {
     content: string; // rendered HTML
+    readingTime?: number; // in minutes
     extractedCitations?: {
         id: string;
         title: string;
@@ -94,6 +95,27 @@ function readMarkdownFile(filePath: string) {
 }
 
 /**
+ * Calculate reading time in minutes based on word count
+ * Average reading speed: 200 words per minute
+ */
+function calculateReadingTime(content: string): number {
+    // Remove markdown syntax and HTML tags for accurate word count
+    const plainText = content
+        .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
+        .replace(/\[([^\]]+)\]\(.*?\)/g, '$1') // Keep link text only
+        .replace(/<[^>]*>/g, '') // Remove HTML tags
+        .replace(/```[\s\S]*?```/g, '') // Remove code blocks
+        .replace(/`[^`]+`/g, '') // Remove inline code
+        .replace(/[#*_~-]/g, '') // Remove markdown formatting
+        .trim();
+
+    const wordCount = plainText.split(/\s+/).filter(word => word.length > 0).length;
+    const readingTime = Math.max(3, Math.round(wordCount / 200)); // Minimum 3 minutes
+
+    return readingTime;
+}
+
+/**
  * Extracts citations from markdown content
  */
 function extractCitations(content: string): { id: string; title: string; url?: string; }[] {
@@ -143,9 +165,11 @@ export async function getAllPosts(): Promise<Post[]> {
 
         const processed = await remark().use(gfm).use(html).process(content);
         const extractedCitations = extractCitations(content);
+        const readingTime = calculateReadingTime(content);
         posts.push({
             ...(fm as PostFrontmatter),
             content: String(processed),
+            readingTime,
             extractedCitations
         });
     }
@@ -199,9 +223,11 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
 
         const processed = await remark().use(gfm).use(html).process(content);
         const extractedCitations = extractCitations(content);
+        const readingTime = calculateReadingTime(content);
         return {
             ...(fm as PostFrontmatter),
             content: String(processed),
+            readingTime,
             extractedCitations
         };
     } catch (error) {

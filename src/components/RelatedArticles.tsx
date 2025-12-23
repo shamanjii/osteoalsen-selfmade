@@ -12,15 +12,14 @@ interface RelatedArticle {
   image?: string;
   alt?: string;
   date?: string;
+  readingTime?: number;
 }
 
-// Calculate reading time based on word count
-const calculateReadTime = (excerpt: string): number => {
-  // Assume average post is 10x the excerpt length
-  const estimatedWords = excerpt.split(' ').length * 10;
-  // Average reading speed: 200 words/min
-  return Math.max(3, Math.round(estimatedWords / 200));
-};
+interface RelatedArticlesProps {
+  currentSlug: string;
+  articles: RelatedArticle[];
+  title?: string;
+}
 
 // Extract common keywords between two articles
 const getCommonKeywords = (keywords1?: string[], keywords2?: string[]): number => {
@@ -81,7 +80,7 @@ export default function RelatedArticles({
         article,
         score,
         cluster: articleCluster,
-        readTime: calculateReadTime(article.excerpt)
+        readTime: article.readingTime || 3 // Use actual reading time, fallback to 3
       };
     })
     .sort((a, b) => b.score - a.score) // Sort by relevance
