@@ -8,7 +8,7 @@ keywords:
   - "chronische ISG Probleme"
   - "ISG Blockierung kommt wieder"
   - "Osteopathie ISG Hamburg"
-image: "https://praxis-kupper.de/wp-content/uploads/2023/12/isg-problem-becken.jpg"
+image: "https://images.unsplash.com/photo-1540206395-68808572332f?w=1200"
 alt: "ISG-Blockierung? Warum sie immer wiederkommt (und wie Sie den Teufelskreis durchbrechen)"
 date: "2025-10-23T06:30:00.000Z"
 status: "published"

@@ -9,7 +9,7 @@ keywords:
   - "Atlas Blockierung"
   - "Osteopathie Nackenschmerzen Hamburg"
   - "HWS Syndrom"
-image: "https://www.american-chiro-care.de/hs-fs/hubfs/hws-syndrom-american-chiro-care-bonn-behandlung.jpg?width=850&height=409&name=hws-syndrom-american-chiro-care-bonn-behandlung.jpg"
+image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200"
 alt: "HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)"
 date: "2025-12-12T08:00:00.000Z"
 status: "published"

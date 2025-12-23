@@ -13,7 +13,7 @@ keywords:
   - "Hüftgelenk Osteopathie Hamburg"
   - "chronische Hüftschmerzen"
   - "Hüft-TEP vermeiden"
-image: "https://www.rheuma-liga.de/fileadmin/_processed_/3/9/csm_anatomy-9769766_1280_fbacff9ace.jpg"
+image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200"
 alt: "Hüftschmerzen und Hüftarthrose ohne OP behandeln – Osteopathie Hamburg"
 date: "2025-12-15T10:00:00.000Z"
 status: "published"

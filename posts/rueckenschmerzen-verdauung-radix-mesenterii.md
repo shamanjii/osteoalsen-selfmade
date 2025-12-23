@@ -8,7 +8,7 @@ keywords:
   - "viszerale Osteopathie Hamburg"
   - "Reizdarm Rückenschmerzen"
   - "Darm Lendenwirbelsäule Verbindung"
-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUv9ZppBDFzhas7o923aRLmCG6PEBt1y7wA&s"
+image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200"
 alt: "Rückenschmerzen und Verdauung: Wie die Radix Mesenterii Darm und Lendenwirbelsäule verbindet"
 date: "2025-10-13T22:02:17.274Z"
 status: "published"

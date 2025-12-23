@@ -11,7 +11,7 @@ keywords:
 date: "2025-12-12T12:00:00.000Z"
 status: "published"
 author: "Admin"
-image: "https://www.cmd-leipzig-halle.de/wp-content/uploads/2023/01/CMD-Netzwerk-Leipzig-Halle-Erkrankung--400x267.webp"
+image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200"
 alt: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
 ---
 
