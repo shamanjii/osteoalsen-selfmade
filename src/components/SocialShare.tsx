@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, memo, useCallback } from 'react';
 
 interface SocialShareProps {
   title: string;
@@ -8,22 +8,27 @@ interface SocialShareProps {
   excerpt?: string;
 }
 
-export default function SocialShare({ title, url, excerpt }: SocialShareProps) {
+// PERFORMANCE: Memoize component to prevent unnecessary re-renders
+const SocialShare = memo(function SocialShare({ title, url, excerpt }: SocialShareProps) {
   const [copied, setCopied] = useState(false);
 
-  const shareUrl = `https://www.osteoalsen.de${url}`;
-  const encodedUrl = encodeURIComponent(shareUrl);
-  const encodedTitle = encodeURIComponent(title);
-  const encodedExcerpt = encodeURIComponent(excerpt || title);
+  // PERFORMANCE: Memoize computed values
+  const shareUrl = useMemo(() => `https://www.osteoalsen.de${url}`, [url]);
 
-  const shareLinks = {
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
-    whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-  };
+  const shareLinks = useMemo(() => {
+    const encodedUrl = encodeURIComponent(shareUrl);
+    const encodedTitle = encodeURIComponent(title);
 
-  const handleCopyLink = async () => {
+    return {
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+      twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+      whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    };
+  }, [shareUrl, title]);
+
+  // PERFORMANCE: Memoize callback
+  const handleCopyLink = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(shareUrl);
       setCopied(true);
@@ -31,7 +36,7 @@ export default function SocialShare({ title, url, excerpt }: SocialShareProps) {
     } catch (err) {
       console.error('Failed to copy:', err);
     }
-  };
+  }, [shareUrl]);
 
   return (
     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-lg sm:rounded-xl">
@@ -113,4 +118,6 @@ export default function SocialShare({ title, url, excerpt }: SocialShareProps) {
       </div>
     </div>
   );
-}
+});
+
+export default SocialShare;

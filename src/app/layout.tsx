@@ -9,15 +9,21 @@ import Analytics from "@/components/Analytics";
 const epilogue = Epilogue({
   variable: "--font-epilogue",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"], // Reduced from 6 to 3 weights (performance)
   display: "swap",
+  preload: true, // Preload critical font
+  fallback: ['system-ui', 'arial'], // Better fallback
+  adjustFontFallback: true, // Reduce CLS
 });
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"], // Reduced from 4 to 3 weights
   display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {

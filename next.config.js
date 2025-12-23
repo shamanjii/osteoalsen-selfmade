@@ -45,8 +45,8 @@ const nextConfig = {
   //   ];
   // },
   images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 768, 1024, 1280, 1600],
+    formats: ['image/avif', 'image/webp'], // PERFORMANCE: AVIF first (better compression)
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920], // PERFORMANCE: Optimized for real device sizes
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
@@ -60,16 +60,23 @@ const nextConfig = {
     ],
     unoptimized: false,
     dangerouslyAllowSVG: true,
+    minimumCacheTTL: 31536000, // PERFORMANCE: Cache images for 1 year
+    contentDispositionType: 'inline', // PERFORMANCE: Faster image rendering
   },
   compress: true,
   poweredByHeader: false,
-  generateEtags: false,
+  generateEtags: true, // PERFORMANCE: Enable ETags for better browser caching
   // Skip error page generation for static export
   skipTrailingSlashRedirect: true,
   experimental: {
     // optimizeCss: true, // Disabled due to critters dependency issues
-    optimizePackageImports: ['lucide-react'],
+    optimizePackageImports: ['lucide-react', 'react', 'react-dom'], // PERFORMANCE: Tree-shake React
+    webpackBuildWorker: true, // PERFORMANCE: Faster builds with workers
+    serverMinification: true, // PERFORMANCE: Minify server code
   },
+  // PERFORMANCE: Optimize production builds
+  productionBrowserSourceMaps: false, // Disable source maps in production
+  reactStrictMode: true,
   // Disable problematic features for static export
   typescript: {
     ignoreBuildErrors: true,

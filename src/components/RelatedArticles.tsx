@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
@@ -45,7 +46,8 @@ const getTitleOverlap = (title1: string, title2: string): number => {
   return words1.filter(word => set2.has(word)).length;
 };
 
-export default function RelatedArticles({
+// PERFORMANCE: Memoize component to prevent unnecessary re-renders
+const RelatedArticles = memo(function RelatedArticles({
   currentSlug,
   articles,
   title = "Verwandte Artikel"
@@ -188,4 +190,6 @@ export default function RelatedArticles({
       </div>
     </section>
   );
-}
+});
+
+export default RelatedArticles;

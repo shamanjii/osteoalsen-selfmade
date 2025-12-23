@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { sanitizeBlogContent, sanitizeFaqContent, sanitizeHtml } from '@/lib/sanitize';
 
 interface SafeHtmlProps {
@@ -12,68 +12,51 @@ interface SafeHtmlProps {
 /**
  * Safe HTML component that sanitizes content before rendering
  * Prevents XSS attacks by using DOMPurify
+ * PERFORMANCE: Uses useMemo to prevent re-sanitization on every render
  */
 export default function SafeHtml({ html, className = '', type = 'default' }: SafeHtmlProps) {
-  const [sanitizedHtml, setSanitizedHtml] = useState<string>('');
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  useEffect(() => {
-    if (isClient) {
-      let sanitized: string;
+  // PERFORMANCE: Memoize sanitization to avoid re-computation
+  const sanitizedHtml = useMemo(() => {
+    if (!isClient) {
+      // Server-side: Return raw HTML (will be sanitized on client)
+      return html;
+    }
 
-      try {
-        switch (type) {
-          case 'blog':
-            sanitized = sanitizeBlogContent(html);
-            break;
-          case 'faq':
-            sanitized = sanitizeFaqContent(html);
-            break;
-          default:
-            sanitized = sanitizeHtml(html);
-            break;
-        }
-        setSanitizedHtml(sanitized);
-      } catch (error) {
-        console.error('HTML sanitization failed:', error);
-        // Fallback: strip all HTML tags if sanitization fails
-        setSanitizedHtml(html.replace(/<[^>]*>/g, ''));
+    try {
+      switch (type) {
+        case 'blog':
+          return sanitizeBlogContent(html);
+        case 'faq':
+          return sanitizeFaqContent(html);
+        default:
+          return sanitizeHtml(html);
       }
-    } else {
-      // Server-side fallback: strip all HTML tags to avoid canvas issues
-      setSanitizedHtml(html.replace(/<[^>]*>/g, ''));
+    } catch (error) {
+      console.error('HTML sanitization failed:', error);
+      // Fallback: strip all HTML tags if sanitization fails
+      return html.replace(/<[^>]*>/g, '');
     }
   }, [html, type, isClient]);
 
-  // Show loading state while hydrating
-  if (!isClient) {
-    return (
-      <div className={className}>
-        {html.replace(/<[^>]*>/g, '')}
-      </div>
-    );
-  }
-
-  // Add proper styling based on type - using custom .rich-text class
-  const getContentClasses = () => {
-    switch (type) {
-      case 'blog':
-        return 'rich-text max-w-none';
-      case 'faq':
-        return 'rich-text max-w-none text-sm';
-      default:
-        return 'rich-text max-w-none';
-    }
-  };
+  // PERFORMANCE: Memoize className computation
+  const contentClasses = useMemo(() => {
+    const baseClasses = type === 'faq'
+      ? 'rich-text max-w-none text-sm'
+      : 'rich-text max-w-none';
+    return `${baseClasses} ${className}`;
+  }, [type, className]);
 
   return (
     <div
-      className={`${getContentClasses()} ${className}`}
+      className={contentClasses}
       dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
+      suppressHydrationWarning // Suppress hydration warning for SSR/CSR mismatch
     />
   );
 }
