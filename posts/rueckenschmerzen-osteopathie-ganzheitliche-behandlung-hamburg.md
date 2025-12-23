@@ -86,8 +86,8 @@ In meiner Praxis sehe ich drei Haupttypen von Rückenschmerzen – jeder mit unt
 Die Blockierung liegt tiefer – im Gelenk selbst. Muskeln entspannen kurzzeitig, aber das Gelenk bleibt hypomobil.
 
 **Osteopathischer Ansatz:**
-- **Muskel-Entspannungstechnik:** Sie spannen Ihren Muskel sanft gegen meine Hand – das aktiviert einen Nerven-Reflex, der den Muskel danach automatisch entspannt und das Gelenk mobilisiert
-- **Präziser Impuls:** Kurzer, gezielter Impuls direkt am blockierten Gelenk (das typische "Knacken")
+- **Muskel-Entspannungstechnik (MET - Muscle Energy Technique):** Sie spannen Ihren Muskel sanft gegen meine Hand – das aktiviert einen Nerven-Reflex, der den Muskel danach automatisch entspannt und das Gelenk mobilisiert
+- **Präziser Impuls (HVLA):** Kurzer, gezielter Impuls direkt am blockierten Gelenk (das typische "Knacken")
 - **Hüft-/Becken-Integration:** Behandlung der eigentlichen Ursache (oft Hüftsteife, alte Knöchelverletzung)
 
 **Mehr dazu:** [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
@@ -116,9 +116,9 @@ Studien zeigen: Bei chronischen Rückenschmerzen ist die **Gleitfähigkeit der t
 Aggressive Dehnung kann verklebte Faszien **reizen** statt lösen. [Mehr dazu: Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos)
 
 **Osteopathischer Ansatz:**
-- **Faszien-Lösung:** Sanfter, anhaltender Druck auf verspanntes Gewebe – nach 60-90 Sekunden spüren Sie, wie die Faszie "schmilzt" und nachgibt
-- **Triggerpunkt-Entspannung:** Ich bringe schmerzhafte Muskelpunkte in eine Position, in der sie sich von selbst entspannen können
-- **Brustwirbelsäulen-Mobilisation:** Steife in der oberen Wirbelsäule lösen – das reduziert automatisch die Spannung im unteren Rücken
+- **Faszien-Lösung (MFR - Myofasziales Release):** Sanfter, anhaltender Druck auf verspanntes Gewebe – nach 60-90 Sekunden spüren Sie, wie die Faszie "schmilzt" und nachgibt
+- **Triggerpunkt-Entspannung (Strain-Counterstrain):** Ich bringe schmerzhafte Muskelpunkte in eine Position, in der sie sich von selbst entspannen können
+- **Brustwirbelsäulen-Mobilisation (BWS/Thorakale Mobilisation):** Steife in der oberen Wirbelsäule lösen – das reduziert automatisch die Spannung im unteren Rücken
 
 ---
 
@@ -144,9 +144,9 @@ Ihre inneren Organe sind über **Ligamente** (Bänder) und **Faszien** mit der W
 **50-80% der Reizdarm-Patienten** haben auch Rückenschmerzen – deutlich mehr als in der Allgemeinbevölkerung.
 
 **Osteopathischer Ansatz:**
-- **Darm-Mobilisation:** Sanfte manuelle Behandlung von Dünndarm und Dickdarm – oft spüren Sie sofort eine Erleichterung im unteren Rücken
-- **Zwerchfell-Entspannung:** Löst die Verklebung zwischen Zwerchfell und Ihrem "Stressmuskel" (Psoas) – befreit die Lendenwirbelsäule
-- **Nerven-Beruhigung:** Stimulation des Hauptnervs Ihres Entspannungssystems – reduziert Stress und Schmerz gleichzeitig
+- **Darm-Mobilisation (Viszerale Osteopathie):** Sanfte manuelle Behandlung von Dünndarm und Dickdarm – oft spüren Sie sofort eine Erleichterung im unteren Rücken
+- **Zwerchfell-Entspannung (Diaphragma-Release):** Löst die Verklebung zwischen Zwerchfell und Ihrem "Stressmuskel" (Psoas) – befreit die Lendenwirbelsäule
+- **Nerven-Beruhigung (Vagusnerv-Stimulation):** Stimulation des Hauptnervs Ihres Entspannungssystems – reduziert Stress und Schmerz gleichzeitig
 
 **Mehr dazu:**
 - [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
@@ -163,9 +163,9 @@ Anders als Massage (nur Muskel) oder Physiotherapie (oft symptomorientiert) arbe
 **Behandelt:** Muskeln, Gelenke, Faszien, Bänder
 
 **Techniken:**
-- **Muskel-Entspannungstechnik:** Sie spannen sanft gegen meinen Widerstand – Ihr Muskel entspannt sich danach reflexartig von selbst
-- **Mobilisationsimpuls:** Präziser, kurzer Impuls direkt am blockierten Gelenk (das typische "Knacken")
-- **Faszien-Lösung:** Sanfter, anhaltender Druck bis das Gewebe nachgibt und sich entspannt
+- **Muskel-Entspannungstechnik (MET):** Sie spannen sanft gegen meinen Widerstand – Ihr Muskel entspannt sich danach reflexartig von selbst
+- **Mobilisationsimpuls (HVLA):** Präziser, kurzer Impuls direkt am blockierten Gelenk (das typische "Knacken")
+- **Faszien-Lösung (MFR):** Sanfter, anhaltender Druck bis das Gewebe nachgibt und sich entspannt
 
 **Ziel:** Beweglichkeit wiederherstellen, Blockaden lösen, Faszien-Gleitfähigkeit verbessern
 
@@ -180,9 +180,9 @@ Anders als Massage (nur Muskel) oder Physiotherapie (oft symptomorientiert) arbe
 - **Colon-Mobilisation:** Sanfte Mobilisation des Dickdarms
 - **Radix-Mesenterii-Release:** Entlastet Dünndarm-Aufhängung an L2-L3
 
-**Ziel:** Nervenverbindungen zwischen Organen und Rücken beruhigen, mechanischen Zug auf die Lendenwirbelsäule reduzieren
+**Ziel:** Nervenverbindungen zwischen Organen und Rücken beruhigen (viszerosomatische Reflexe), mechanischen Zug auf die Lendenwirbelsäule (LWS) reduzieren
 
-**Studienlage:** Wissenschaftliche Untersuchungen zeigen Wirksamkeit bei Rückenschmerzen in Kombination mit Verdauungsbeschwerden
+**Studienlage:** Wissenschaftliche Untersuchungen (u.a. RCT-Protokolle) zeigen Wirksamkeit bei Rückenschmerzen in Kombination mit Verdauungsbeschwerden
 
 ---
 
@@ -191,13 +191,13 @@ Anders als Massage (nur Muskel) oder Physiotherapie (oft symptomorientiert) arbe
 **Behandelt:** Schädel, Kreuzbein, Membranen, autonomes Nervensystem
 
 **Techniken:**
-- **Hinterkopf-Entspannung:** Löst Spannung am Übergang zwischen Kopf und Hals
-- **Nervensystem-Beruhigung:** Spezielle Technik am Hinterkopf, die Ihr gesamtes Nervensystem herunterfährt
-- **Schädel-Harmonisierung:** Ausgleich von Spannungen in den Schädelmembranen
+- **Hinterkopf-Entspannung (Subokzipitale Dekompression):** Löst Spannung am Übergang zwischen Kopf und Hals
+- **Nervensystem-Beruhigung (CV4-Technik):** Spezielle Technik am Hinterkopf, die Ihr gesamtes Nervensystem herunterfährt
+- **Schädel-Harmonisierung (Suturen-Technik):** Ausgleich von Spannungen in den Schädelmembranen
 
-**Ziel:** Stress-Muster auflösen, körpereigene Schmerzhemmung aktivieren, Entspannungssystem stärken
+**Ziel:** Stress-Muster auflösen, körpereigene Schmerzhemmung aktivieren, Entspannungssystem stärken (ANS-Modulation)
 
-**Studienlage:** Aktuelle Übersichtsarbeiten zeigen messbare Effekte auf chronische Schmerzen. Studien belegen: Ihr Nervensystem wird nachweisbar ruhiger (messbar an Herzratenvariabilität).
+**Studienlage:** Aktuelle Übersichtsarbeiten (Metaanalysen 2024) zeigen messbare Effekte auf chronische Schmerzen. Studien belegen: Ihr Nervensystem wird nachweisbar ruhiger (messbar an Herzratenvariabilität/HRV).
 
 ---
 
@@ -208,9 +208,9 @@ Osteopathie ist kein "Passiv-Abo". **Ihre aktive Mitarbeit** entscheidet über l
 ### 1. Zwerchfell-Atmung trainieren (täglich 5 Min)
 
 **Warum das hilft:**
-- Reduziert Spannung im "Stressmuskel" (Psoas – verbindet Zwerchfell mit Lendenwirbelsäule)
-- Verbessert die Gleitfähigkeit der Rückenfaszie
-- Aktiviert Ihr Entspannungssystem → direkter Schmerz-Reduktions-Effekt
+- Reduziert Spannung im "Stressmuskel" (Psoas – verbindet Zwerchfell mit Lendenwirbelsäule/LWS)
+- Verbessert die Gleitfähigkeit der Rückenfaszie (TLF - thorakolumbale Faszie)
+- Aktiviert Ihr Entspannungssystem (Parasympathikus) → direkter Schmerz-Reduktions-Effekt
 
 **Übung:**
 1. Rückenlage, Beine angewinkelt
@@ -225,7 +225,7 @@ Osteopathie ist kein "Passiv-Abo". **Ihre aktive Mitarbeit** entscheidet über l
 
 ### 2. Hüftmobilität verbessern (nicht LWS-Dehnung!)
 
-**Problem:** Steife Hüfte → Lendenwirbelsäule kompensiert → Überlastung
+**Problem:** Steife Hüfte → Lendenwirbelsäule (LWS) kompensiert → Überlastung
 
 **Übung: 90/90 Hip Stretch**
 1. Sitzen, ein Bein 90° vor dem Körper, eins 90° zur Seite
@@ -234,7 +234,7 @@ Osteopathie ist kein "Passiv-Abo". **Ihre aktive Mitarbeit** entscheidet über l
 4. Täglich 2x pro Seite
 
 **Warum nicht die Lendenwirbelsäule dehnen?**
-Bei [überbeweglich Lendenwirbelsäule verschlimmert Dehnung das Problem](/blog/dehnen-rueckenschmerzen-mythos).
+Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung das Problem](/blog/dehnen-rueckenschmerzen-mythos).
 
 ---
 
@@ -258,9 +258,9 @@ Bei [überbeweglich Lendenwirbelsäule verschlimmert Dehnung das Problem](/blog/
 ### 4. Schreibtisch-Ergonomie optimieren
 
 **5 kritische Fehler:**
-- Monitor zu tief → Nacken überstreckt → Spannung in der Rückenfaszie
-- Stuhl zu hoch → Füße hängen → Iliosakralgelenk wird instabil
-- Keine Lendenstütze → Lendenwirbelsäule kollabiert
+- Monitor zu tief → Nacken überstreckt → Spannung in der Rückenfaszie (TLF)
+- Stuhl zu hoch → Füße hängen → Iliosakralgelenk (ISG) wird instabil
+- Keine Lendenstütze → Lendenwirbelsäule (LWS) kollabiert
 
 **Mehr dazu:** [5 Fehler am Schreibtisch, die Ihren Rücken zerstören](/blog/schreibtisch-fehler-rueckenschmerzen)
 
@@ -268,12 +268,12 @@ Bei [überbeweglich Lendenwirbelsäule verschlimmert Dehnung das Problem](/blog/
 
 ### 5. Stress-Management (unterschätzt!)
 
-**Wissenschaftlich belegt:** Chronischer Stress → dauerhaft aktives Stresssystem → "Stressmuskel" (Psoas) verspannt → Lendenwirbelsäule wird zusammengedrückt
+**Wissenschaftlich belegt:** Chronischer Stress → dauerhaft aktives Stresssystem (Sympathikus) → "Stressmuskel" (Psoas) verspannt → Lendenwirbelsäule (LWS) wird zusammengedrückt
 
 **Praktische Maßnahmen:**
-- Entspannungsnerv aktivieren: Gesicht mit kaltem Wasser spülen (klingt simpel, funktioniert!)
-- Herzratenvariabilität-Training mit Apps (misst, wie entspannt Sie wirklich sind)
-- Progressive Muskelentspannung nach Jacobson
+- Entspannungsnerv aktivieren (Vagusnerv-Stimulation): Gesicht mit kaltem Wasser spülen (klingt simpel, funktioniert!)
+- Herzratenvariabilität-Training (HRV) mit Apps (misst, wie entspannt Sie wirklich sind)
+- Progressive Muskelentspannung (PMR) nach Jacobson
 
 **Mehr zum Nervensystem:** [Burnout ganzheitlich behandeln: Glymphatisches System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
 
@@ -292,9 +292,9 @@ Bei [überbeweglich Lendenwirbelsäule verschlimmert Dehnung das Problem](/blog/
 
 ### Tut die Behandlung weh?
 
-**Nein.** Manche Techniken sind intensiv (z.B. Faszien-Lösung in verspanntes Gewebe), aber nie über Ihrer Schmerzgrenze.
+**Nein.** Manche Techniken sind intensiv (z.B. Faszien-Lösung/MFR in verspanntes Gewebe), aber nie über Ihrer Schmerzgrenze.
 
-**Mobilisationsimpulse** (das "Knacken") sind **kurz** und präzise. Nachreaktionen (leichter Muskelkater) verschwinden nach 24-48h.
+**Mobilisationsimpulse (HVLA)** (das "Knacken") sind **kurz** und präzise. Nachreaktionen (leichter Muskelkater) verschwinden nach 24-48h.
 
 ---
 
@@ -334,7 +334,7 @@ Oft finde ich Ursachen, die bildgebend nicht sichtbar sind:
 - Fasziale Verklebungen
 - Viszerale Dysfunktionen ([Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden))
 - Alte Narben/Operationen
-- [Stress-Muster](/behandlungen/stress-burnout) im Nervensystem
+- [Stress-Muster](/behandlungen/stress-burnout) im Nervensystem (ANS-Dysregulation)
 
 **Mehr dazu:** [Rückenschmerzen: 3 häufige Ursachen, die übersehen werden](/blog/rueckenschmerzen-3-versteckte-ursachen)
 
@@ -372,7 +372,7 @@ Rückenschmerzen sind **selten ein lokales Problem**. Sie sind das Ergebnis eine
 **Die 3 Säulen erfolgreicher Behandlung:**
 1. **Manuelle Therapie** (Blockaden lösen, Faszien mobilisieren, Organe entlasten)
 2. **Aktive Übungen** (Zwerchfell-Atmung, Hüftmobilität, ISG-Stabilisation)
-3. **Stress-Management** (Nervensystem regulieren, Entspannungsnerv aktivieren)
+3. **Stress-Management** (Nervensystem/ANS regulieren, Entspannungsnerv/Vagus aktivieren)
 
 **Nächster Schritt:**
 - Wenn Sie in Hamburg sind: [Termin vereinbaren](/behandlungen/rueckenschmerzen)
