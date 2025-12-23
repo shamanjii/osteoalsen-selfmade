@@ -1,7 +1,7 @@
 ---
 title: "Reizdarm & Rückenschmerzen: Der unterschätzte Darm-Rücken-Zusammenhang"
 slug: "reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang"
-date: "2024-12-23"
+date: "2025-12-23"
 excerpt: "Warum Ihr Reizdarm die wahre Ursache Ihrer Rückenschmerzen sein kann – und wie gestörte Feedbackschleifen zwischen Zwerchfell, Vagusnerv und Dünndarm chronische Beschwerden verursachen. Evidenzbasierte Erklärung aus osteopathischer Sicht."
 keywords: ["Reizdarm Rückenschmerzen", "Rückenschmerzen Verdauung", "Darm Rücken Zusammenhang", "Reizdarm Symptome Rückenschmerzen", "Durchfall Rückenschmerzen", "Bauchschmerzen Rückenschmerzen", "Osteopathie Reizdarm", "Verdauung Rückenschmerzen"]
 image: "https://mt-togo.com/wp-content/uploads/2016/06/seitliche-Bauchschmerzen-Frau-bigstock-by-staras-ID-63507508.jpg"
