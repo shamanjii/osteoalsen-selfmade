@@ -1,7 +1,7 @@
 ---
 title: "Gelenkbeschwerden verstehen und ganzheitlich behandeln – Osteopathie Hamburg"
 excerpt: "Gelenkschmerzen müssen nicht chronisch werden. Erfahren Sie, wie osteopathische Behandlung die wahren Ursachen von Gelenkbeschwerden findet – von Knie über Hüfte bis Schulter."
-date: "2024-12-10"
+date: "2025-12-10"
 slug: "gelenkbeschwerden-osteopathie-ganzheitliche-behandlung"
 status: "published"
 category: "osteopathie"

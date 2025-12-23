@@ -19,7 +19,7 @@ keywords:
   - "thorakolumbale Faszie"
 image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=80"
 alt: "Osteopathische Behandlung bei Rückenschmerzen - anatomische Zusammenhänge verstehen"
-date: "2024-09-25T14:00:00Z"
+date: "2025-09-25T14:00:00Z"
 status: published
 specialty: "Orthopädie und Schmerztherapie"
 sourceCount: 31

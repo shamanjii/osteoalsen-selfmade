@@ -1,7 +1,7 @@
 ---
 title: "Sportosteopathie Hamburg: Performance steigern, Verletzungen vorbeugen"
 excerpt: "Sportosteopathie ist mehr als Verletzungsbehandlung: Bewegungsqualität verbessern, Regeneration beschleunigen, Leistung optimieren. Für Läufer, Triathleten, Kraftsportler."
-date: "2024-12-10"
+date: "2025-12-10"
 slug: "sportosteopathie-hamburg-leistung-optimieren"
 status: "published"
 category: "sportverletzungen"
