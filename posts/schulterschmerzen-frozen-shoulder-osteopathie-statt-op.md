@@ -13,7 +13,7 @@ keywords:
   - "Osteopathie Schulter Hamburg"
   - "chronische Schulterschmerzen"
   - "Schultergelenk Blockade"
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
+image: "https://i0.wp.com/orthopaediepraxis-drseverinwelter.com/wp-content/uploads/2020/05/shutterstock_443528260.jpg?resize=740%2C528&ssl=1"
 alt: "Schulterschmerzen und Frozen Shoulder osteopathisch behandeln – ohne OP schmerzfrei werden"
 date: "2025-12-14T10:00:00.000Z"
 status: "published"

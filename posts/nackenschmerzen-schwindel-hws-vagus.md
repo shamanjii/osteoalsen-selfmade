@@ -9,7 +9,7 @@ keywords:
   - "Vagusnerv Nackenschmerzen"
   - "Atlas Schwindel"
   - "Osteopathie Schwindel Hamburg"
-image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200"
+image: "https://orthinform.de/processed/8/dictionaries_disease_87_b3fca86b_original_900x600.jpg"
 alt: "Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung verstehen & behandeln"
 date: "2025-12-12T10:00:00.000Z"
 status: "published"

@@ -11,7 +11,7 @@ keywords:
 date: "2025-12-13T10:00:00.000Z"
 status: "published"
 author: "Admin"
-image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=1200"
+image: "https://image.stern.de/7431858/t/_h/v7/w1440/r1.7778/-/chronische-spannungskopfschmerzen.jpg"
 alt: "Spannungskopfschmerzen: Ist es der Muskel oder die HWS? (Selbsttest + Behandlung)"
 ---
 
