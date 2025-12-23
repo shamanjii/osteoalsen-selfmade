@@ -270,12 +270,24 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 ### 1. Zwerchfell-Atmung trainieren (täglich!)
 
-**Übung:** Bauchatmung im Liegen
+**Übung 1:** Bauchatmung im Liegen
 - 5 Min morgens & abends
 - Hand auf Bauch, langsam in den Bauch atmen
 - Ziel: Bauch hebt sich, Brustkorb bleibt ruhig
 
-**Warum es hilft:** Normalisiert Atmung, entspannt Zwerchfell, aktiviert Vagusnerv
+**Übung 2:** Flankenatmung (für Fortgeschrittene)
+- Hände seitlich an die Rippen legen
+- In die Flanken atmen (nicht nur vorne!)
+- Aktiviert die **Pars lumbalis des Zwerchfells** (lumbaler Anteil)
+- Verbessert das **Gleiten der Crus diaphragmatica** (Zwerchfellschenkel) auf dem Iliopsoas-Muskel
+
+**Zusätzlicher Effekt der Zwerchfell-Atmung:**
+- **Sog-Pumpen-Effekt** auf die **V. cava inferior** (untere Hohlvene)
+- Verbessert venösen Blutrückfluss zum Herzen
+- Reduziert Stauungen im Bauchraum
+- Optimiert Durchblutung von Darm & Beckenorganen
+
+**Warum es hilft:** Normalisiert Atmung, entspannt Zwerchfell, aktiviert Vagusnerv, verbessert Durchblutung
 
 ### 2. Low-FODMAP-Diät (temporär)
 
