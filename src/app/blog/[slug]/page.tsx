@@ -121,14 +121,14 @@ export default async function BlogPost({ params }: PageProps) {
             {faqs.length > 0 && <FAQPageStructuredData faqs={faqs} />}
 
             {/* Main Layout: Article + Sidebar */}
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
-                <div className="flex gap-8 items-start">
+            <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-12">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
                     {/* Article Container - Left side */}
                     <BlogErrorBoundary>
-                        <article className="flex-1 bg-white rounded-xl shadow-sm border border-slate-200 p-8 md:p-12">
-                    <header className="mb-8 pb-6 border-b border-slate-200">
-                        <h1 className="text-4xl md:text-5xl font-epilogue font-bold mb-4 text-slate-900 leading-tight">{post.title}</h1>
-                        <div className="flex items-center gap-4 text-slate-600 text-sm mb-4">
+                        <article className="flex-1 w-full bg-white rounded-lg sm:rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 md:p-8 lg:p-12">
+                    <header className="mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-slate-200">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-epilogue font-bold mb-3 sm:mb-4 text-slate-900 leading-tight">{post.title}</h1>
+                        <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-slate-600 text-xs sm:text-sm mb-3 sm:mb-4">
                             <time dateTime={post.date}>
                                 Veröffentlicht am {new Date(post.date || '').toLocaleDateString('de-DE', {
                                     year: 'numeric',
@@ -140,7 +140,7 @@ export default async function BlogPost({ params }: PageProps) {
                             <span>Von Joshua Alsen</span>
                         </div>
 
-                        {/* Tags */}
+                        {/* Tags - Touch-optimized with min 44x44px target */}
                         {post.keywords && post.keywords.length > 0 && (
                             <div className="flex flex-wrap gap-2">
                                 {post.keywords.slice(0, 6).map((keyword, index) => {
@@ -149,9 +149,9 @@ export default async function BlogPost({ params }: PageProps) {
                                         <Link
                                             key={index}
                                             href={`/blog/tag/${slug}`}
-                                            className="inline-flex items-center gap-1 px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium hover:bg-slate-200 hover:text-slate-900 transition-colors"
+                                            className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 sm:py-2.5 min-h-[44px] bg-slate-100 text-slate-700 rounded-full text-xs sm:text-sm font-medium hover:bg-slate-200 hover:text-slate-900 transition-colors touch-manipulation active:scale-95"
                                         >
-                                            <span>#</span>
+                                            <span className="text-slate-500">#</span>
                                             <span>{keyword}</span>
                                         </Link>
                                     );
@@ -161,14 +161,15 @@ export default async function BlogPost({ params }: PageProps) {
                     </header>
 
                     {post.image && (
-                        <div className="mb-10 -mx-4 md:-mx-8">
+                        <div className="mb-6 sm:mb-8 md:mb-10 -mx-4 sm:-mx-6 md:-mx-8">
                             <Image
                                 src={post.image}
                                 alt={post.alt || post.title}
                                 width={1200}
                                 height={600}
-                                className="w-full h-80 md:h-96 object-cover rounded-lg"
+                                className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-none sm:rounded-lg"
                                 priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 85vw, 1200px"
                             />
                         </div>
                     )}
@@ -191,17 +192,17 @@ export default async function BlogPost({ params }: PageProps) {
                         )}
                     </ArticleWithSidebar>
 
-                    <footer className="mt-12 pt-8 border-t border-slate-200">
-                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200">
+                        <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 sm:gap-4">
                             <Link
                                 href="/blog"
-                                className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors"
+                                className="inline-flex items-center justify-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors min-h-[48px] px-4 py-3 touch-manipulation active:scale-95"
                             >
                                 ← Zurück zur Übersicht
                             </Link>
                             <Link
                                 href="/terminbuchung"
-                                className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md"
+                                className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3.5 min-h-[48px] rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md touch-manipulation active:scale-95"
                             >
                                 📅 Termin buchen
                             </Link>
@@ -218,7 +219,7 @@ export default async function BlogPost({ params }: PageProps) {
             </div>
 
             {/* Social Share Buttons */}
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 mt-8">
+            <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-6 mt-6 sm:mt-8">
                 <SocialShare
                     title={post.title}
                     url={`/blog/${post.slug}`}
@@ -227,7 +228,7 @@ export default async function BlogPost({ params }: PageProps) {
             </div>
 
             {/* Related Articles */}
-            <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-6">
                 <RelatedArticles currentSlug={post.slug} articles={allPosts} />
             </div>
         </>
