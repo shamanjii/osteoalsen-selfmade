@@ -30,7 +30,12 @@ export type ClusterName = keyof typeof CLUSTER_EMOJIS;
 export const detectCluster = (article: Article): ClusterName => {
   const text = `${article.title} ${article.excerpt} ${article.keywords?.join(' ')}`.toLowerCase();
 
-  // Priority order matters!
+  // Priority order matters! More specific clusters checked first
+  // Sport & Leistung BEFORE Knie & Hüfte (sportverletzung articles contain "knie" but should be Sport)
+  if (text.includes('sport') || text.includes('verletzung') || text.includes('leistung') ||
+      text.includes('athlet') || text.includes('training')) {
+    return 'Sport & Leistung';
+  }
   if (text.includes('rücken') || text.includes('wirbel') || text.includes('bandscheibe') ||
       text.includes('ischias') || text.includes('iliosakral') || text.includes('isg')) {
     return 'Rücken & Wirbelsäule';
@@ -46,10 +51,6 @@ export const detectCluster = (article: Article): ClusterName => {
   if (text.includes('knie') || text.includes('hüft') || text.includes('arthrose') ||
       text.includes('gonarthrose') || text.includes('coxarthrose')) {
     return 'Knie & Hüfte';
-  }
-  if (text.includes('sport') || text.includes('verletzung') || text.includes('leistung') ||
-      text.includes('athlet') || text.includes('training')) {
-    return 'Sport & Leistung';
   }
   if (text.includes('verdauung') || text.includes('darm') || text.includes('bauch') ||
       text.includes('magen')) {
