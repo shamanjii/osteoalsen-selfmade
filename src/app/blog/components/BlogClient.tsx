@@ -21,14 +21,15 @@ interface BlogClientProps {
 }
 
 // Cluster mapping - NO EMOJIS per user request
+// Keys must match the transformation: cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-')
 const categoryMap: Record<string, { name: string }> = {
     'alle': { name: 'Alle Artikel' },
-    'rücken-&-wirbelsäule': { name: 'Rücken & Wirbelsäule' },
-    'nacken-&-hws': { name: 'Nacken & HWS' },
-    'kopf-&-nerven': { name: 'Kopf & Nerven' },
-    'knie-&-hüfte': { name: 'Knie & Hüfte' },
-    'sport-&-leistung': { name: 'Sport & Leistung' },
-    'verdauung-&-innere-organe': { name: 'Verdauung & Innere Organe' },
+    'rücken-wirbelsäule': { name: 'Rücken & Wirbelsäule' },
+    'nacken-hws': { name: 'Nacken & HWS' },
+    'kopf-nerven': { name: 'Kopf & Nerven' },
+    'knie-hüfte': { name: 'Knie & Hüfte' },
+    'sport-leistung': { name: 'Sport & Leistung' },
+    'verdauung-innere-organe': { name: 'Verdauung & Innere Organe' },
     'osteopathie-allgemein': { name: 'Osteopathie Allgemein' }
 };
 
