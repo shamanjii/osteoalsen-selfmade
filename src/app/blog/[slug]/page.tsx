@@ -93,10 +93,11 @@ export default async function BlogPost({ params }: PageProps) {
 
             {/* Structured Data for Blog Post */}
             <BlogPostStructuredData
-                title={post.title}
-                description={post.excerpt}
+                headline={post.title}
+                description={post.excerpt || ''}
                 author="Joshua Alsen"
-                datePublished={post.date}
+                datePublished={post.date || new Date().toISOString()}
+                url={`https://www.osteoalsen.de/blog/${slug}`}
                 imageUrl={post.image}
                 keywords={post.keywords}
             />
@@ -108,12 +109,15 @@ export default async function BlogPost({ params }: PageProps) {
                 keyword.toLowerCase().includes('behandlung')
             ) && (
                 <MedicalScholarlyArticle
-                    title={post.title}
-                    description={post.excerpt}
+                    headline={post.title}
+                    description={post.excerpt || ''}
                     author="Joshua Alsen"
-                    datePublished={post.date}
+                    datePublished={post.date || new Date().toISOString()}
+                    url={`https://www.osteoalsen.de/blog/${slug}`}
                     imageUrl={post.image}
                     keywords={post.keywords}
+                    specialty="Osteopathic Medicine"
+                    sourceCount={5}
                 />
             )}
 

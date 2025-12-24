@@ -27,9 +27,9 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Osteopathie Hamburg: Ganzheitliche Schmerzbehandlung | Joshua Alsen",
+  title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen, B.Sc.",
   description:
-    "Osteopath Hamburg ✓ Ganzheitliche Schmerzbehandlung bei Rücken-, Nacken- & Gelenkschmerzen ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Termin buchen!",
+    "Erfahrener Osteopath in Hamburg-Rotherbaum ⭐ VFO-zertifiziert, B.Sc. Osteopathie ✓ Evidenzbasierte Behandlung bei Rücken-, Nacken- & Gelenkschmerzen ✓ 45-60 Min Behandlung, 150€ ✓ Vollständige Kassenerstattung ➜ Online-Termin!",
   keywords: [
     "Osteopathie Hamburg",
     "Osteopath Hamburg",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Osteopathie Hamburg: Ganzheitliche Schmerzbehandlung | Joshua Alsen",
+    title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen, B.Sc.",
     description:
-      "Osteopath Hamburg ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Jetzt Termin buchen!",
+      "Erfahrener Osteopath in Hamburg-Rotherbaum ⭐ VFO-zertifiziert, B.Sc. Osteopathie ✓ Evidenzbasierte Behandlung ✓ 45-60 Min, 150€ ✓ Vollständige Kassenerstattung ➜ Termin!",
     url: "/",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osteopathie Hamburg | Ganzheitliche Schmerzbehandlung | Joshua Alsen",
-    description: "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rotherbaum & Eimsbüttel ✓ Vollständige Kassenerstattung möglich ⭐ Termin buchen!",
+    title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen",
+    description: "Erfahrener Osteopath ⭐ VFO-zertifiziert, B.Sc. ✓ Evidenzbasierte Behandlung ✓ 150€ (45-60 Min) ✓ Kassenerstattung ➜ Online-Termin!",
     images: ["/og-image.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",
