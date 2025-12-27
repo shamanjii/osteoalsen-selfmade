@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Krankenkasse Osteopathie Hamburg",
     "Osteopathie Erstattung",
   ],
-  alternates: { canonical: "/osteopathie-kosten-hamburg" },
+  alternates: { canonical: "/osteopathie-kosten-hamburg/" },
   openGraph: {
     title: "Osteopathie Kosten Hamburg | Was kostet ein Osteopath?",
     description:

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Osteopath Kosten",
     "Osteopathie Ablauf",
   ],
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: "/faq/" },
   openGraph: {
     title: "Häufige Fragen (FAQ) | Osteopathie Hamburg",
     description:

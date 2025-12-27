@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Hexenschuss Behandlung Hamburg",
     "Chronische Rückenschmerzen Osteopath",
   ],
-  alternates: { canonical: "/behandlungen/rueckenschmerzen" },
+  alternates: { canonical: "/behandlungen/rueckenschmerzen/" },
   openGraph: {
     title: "Rückenschmerzen Behandlung Hamburg | Osteopathie",
     description:

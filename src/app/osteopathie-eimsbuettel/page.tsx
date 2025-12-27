@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Osteopathie Hamburg Eimsbüttel",
     "Osteopath Hamburg Altona",
   ],
-  alternates: { canonical: "/osteopathie-eimsbuettel" },
+  alternates: { canonical: "/osteopathie-eimsbuettel/" },
   openGraph: {
     title: "Osteopathie Hamburg Eimsbüttel | Joshua Alsen",
     description:

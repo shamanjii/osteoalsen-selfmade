@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Osteopath Hamburg Eimsbüttel",
     "Osteopathische Behandlung Hamburg",
   ],
-  alternates: { canonical: "/osteopath-hamburg" },
+  alternates: { canonical: "/osteopath-hamburg/" },
   openGraph: {
     title: "Osteopath Hamburg | VFO-zertifiziert | Joshua Alsen",
     description:

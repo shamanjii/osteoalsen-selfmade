@@ -66,8 +66,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true, // PERFORMANCE: Enable ETags for better browser caching
-  // Skip error page generation for static export
-  skipTrailingSlashRedirect: true,
   experimental: {
     // optimizeCss: true, // Disabled due to critters dependency issues
     optimizePackageImports: ['lucide-react', 'react', 'react-dom'], // PERFORMANCE: Tree-shake React

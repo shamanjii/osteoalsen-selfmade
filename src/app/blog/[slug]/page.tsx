@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         description: post.excerpt,
         keywords: post.keywords,
         alternates: {
-            canonical: `https://www.osteoalsen.de/blog/${slug}`,
+            canonical: `https://www.osteoalsen.de/blog/${slug}/`,
         },
         openGraph: {
             title: post.title,

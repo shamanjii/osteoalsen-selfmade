@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Sportosteopath Rotherbaum",
     "Läuferknie Behandlung Hamburg",
   ],
-  alternates: { canonical: "/behandlungen/sportosteopathie" },
+  alternates: { canonical: "/behandlungen/sportosteopathie/" },
   openGraph: {
     title: "Sportosteopathie Hamburg | Osteopathie für Sportler",
     description:

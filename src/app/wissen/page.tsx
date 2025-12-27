@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Osteopathie Wirksamkeit",
     "Osteopathie Evidenz",
   ],
-  alternates: { canonical: "/wissen" },
+  alternates: { canonical: "/wissen/" },
   openGraph: {
     title: "Wissenschaft & Forschung | Osteopathie Hamburg",
     description:

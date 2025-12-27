@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Manuelle Therapie",
     "Osteopathie Hamburg",
   ],
-  alternates: { canonical: "/was-ist-osteopathie" },
+  alternates: { canonical: "/was-ist-osteopathie/" },
   openGraph: {
     title: "Was ist Osteopathie? | Osteopathie Hamburg",
     description:

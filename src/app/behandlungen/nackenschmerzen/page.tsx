@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'HWS-Blockaden sanft lösen ✓ Nackenschmerzen & Verspannungen behandeln ✓ Kopfschmerzen lindern ✓ VFO-Osteopath Hamburg Rotherbaum ✓ Termine binnen 48h ⭐ Jetzt buchen!',
   keywords: ['hws blockade lösen osteopathie', 'Nackenschmerzen Osteopathie Hamburg', 'HWS-Syndrom Behandlung', 'Nackenverspannung Osteopath', 'Schulter-Nacken-Schmerzen Hamburg', 'hws osteopathie', 'halswirbel osteopathie'],
   alternates: {
-    canonical: '/behandlungen/nackenschmerzen',
+    canonical: '/behandlungen/nackenschmerzen/',
   },
   openGraph: {
     title: 'Nackenschmerzen & HWS-Blockade lösen Hamburg | Osteopathie',

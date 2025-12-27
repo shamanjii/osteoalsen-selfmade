@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Blähungen Behandlung",
     "Viszerale Osteopathie Hamburg",
   ],
-  alternates: { canonical: "/behandlungen/verdauungsbeschwerden" },
+  alternates: { canonical: "/behandlungen/verdauungsbeschwerden/" },
   openGraph: {
     title: "Verdauungsbeschwerden Behandlung Hamburg | Viszerale Osteopathie",
     description:

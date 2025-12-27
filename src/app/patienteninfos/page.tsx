@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Osteopathie Ablauf",
     "Was mitbringen Osteopath",
   ],
-  alternates: { canonical: "/patienteninfos" },
+  alternates: { canonical: "/patienteninfos/" },
   openGraph: {
     title: "Patienteninformationen | Osteopathie Hamburg",
     description:

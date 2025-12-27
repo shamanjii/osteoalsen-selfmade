@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Heilpraktiker manuelle Therapie Hamburg",
     "Osteopathie ohne Überweisung Hamburg",
   ],
-  alternates: { canonical: "/heilpraktiker-osteopathie-hamburg" },
+  alternates: { canonical: "/heilpraktiker-osteopathie-hamburg/" },
   openGraph: {
     title: "Heilpraktiker Osteopathie Hamburg | Joshua Alsen",
     description:

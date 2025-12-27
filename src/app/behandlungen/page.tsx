@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Sportverletzung Osteopath",
     "Verdauungsbeschwerden Hamburg",
   ],
-  alternates: { canonical: "/behandlungen" },
+  alternates: { canonical: "/behandlungen/" },
   openGraph: {
     title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
     description:

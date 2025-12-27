@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Osteopathie Preise",
     "Krankenkasse Osteopathie",
   ],
-  alternates: { canonical: "/kosten-ablauf" },
+  alternates: { canonical: "/kosten-ablauf/" },
   openGraph: {
     title: "Kosten & Ablauf | Osteopathie Hamburg",
     description:

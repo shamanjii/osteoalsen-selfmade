@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Autonomes Nervensystem Behandlung",
     "Vagusnerv Stimulation Hamburg",
   ],
-  alternates: { canonical: "/behandlungen/stress-burnout" },
+  alternates: { canonical: "/behandlungen/stress-burnout/" },
   openGraph: {
     title: "Stress & Burnout Behandlung Hamburg | Osteopathie",
     description:

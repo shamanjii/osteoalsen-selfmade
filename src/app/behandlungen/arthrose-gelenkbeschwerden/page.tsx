@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     'Osteopath Arthrose Hamburg'
   ],
   alternates: {
-    canonical: '/behandlungen/arthrose-gelenkbeschwerden'
+    canonical: '/behandlungen/arthrose-gelenkbeschwerden/'
   },
   openGraph: {
     title: 'Hilft Osteopathie bei Arthrose? Schmerzlinderung ohne OP | Hamburg',

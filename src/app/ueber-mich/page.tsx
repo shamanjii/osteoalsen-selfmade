@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Heilpraktiker Hamburg",
     "Osteopathie Ausbildung",
   ],
-  alternates: { canonical: "/ueber-mich" },
+  alternates: { canonical: "/ueber-mich/" },
   openGraph: {
     title: "Über mich - Joshua Alsen | Osteopath Hamburg",
     description:

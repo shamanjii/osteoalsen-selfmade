@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Osteopath Hamburg Mitte",
     "heilpraktiker hamburg rotherbaum"
   ],
-  alternates: { canonical: "/osteopathie-rotherbaum" },
+  alternates: { canonical: "/osteopathie-rotherbaum/" },
   openGraph: {
     title: "Osteopath Rotherbaum Hamburg | VFO-zertifiziert | Joshua Alsen",
     description:

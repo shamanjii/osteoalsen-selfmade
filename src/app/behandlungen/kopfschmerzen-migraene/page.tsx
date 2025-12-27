@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "CMD Osteopathie Hamburg",
     "Kieferschmerzen Osteopath",
   ],
-  alternates: { canonical: "/behandlungen/kopfschmerzen-migraene" },
+  alternates: { canonical: "/behandlungen/kopfschmerzen-migraene/" },
   openGraph: {
     title: "Kopfschmerzen & Migräne ohne Medikamente behandeln | Osteopathie Hamburg",
     description:
