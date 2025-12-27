@@ -44,8 +44,64 @@ export const metadata: Metadata = {
 };
 
 export default function WissenschaftPage() {
+  // Schema Markup: MedicalWebPage + FAQPage
+  const medicalWebPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Wissenschaft & Forschung zur Osteopathie Hamburg",
+    "description": "Wissenschaftliche Studien und Forschungsergebnisse zur Wirksamkeit der Osteopathie. 30+ peer-reviewed Studien zu Rückenschmerzen, Kopfschmerzen, Migräne und mehr.",
+    "url": "https://www.osteoalsen.de/wissen",
+    "inLanguage": "de-DE",
+    "audience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    },
+    "about": {
+      "@type": "MedicalSpecialty",
+      "name": "Osteopathie"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Joshua Alsen",
+      "jobTitle": "Osteopath",
+      "qualifications": "VFO-zertifiziert, B.Sc. Osteopathie"
+    },
+    "publisher": {
+      "@type": "MedicalOrganization",
+      "name": "Osteopathie Alsen Hamburg",
+      "url": "https://www.osteoalsen.de"
+    },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist Osteopathie wissenschaftlich belegt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, zahlreiche wissenschaftliche Studien belegen die Wirksamkeit der Osteopathie. Cochrane Reviews, randomisierte kontrollierte Studien (RCTs) und Meta-Analysen zeigen positive Effekte bei Rückenschmerzen, Kopfschmerzen, Migräne und anderen Beschwerden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Studien gibt es zur Osteopathie bei Rückenschmerzen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der Cochrane Review 2011 mit 6.070 Teilnehmern zeigt, dass Osteopathie ebenso wirksam ist wie andere Therapien. Die OSTPAC-Studie 2013 belegt signifikante Schmerzreduktion. Eine Meta-Analyse 2020 zeigt Wirksamkeit mit Effect Size -0.59 bei Schmerzreduktion."
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }}
+      />
+
       <SiteHeader />
       <main className="pt-20">
         <Breadcrumbs items={[{ label: "Wissenschaft & Forschung" }]} />
@@ -88,11 +144,85 @@ export default function WissenschaftPage() {
           </div>
         </section>
 
+        {/* Infografik: Studienlage Überblick */}
+        <section className="bg-gradient-to-br from-slate-900 to-slate-800 py-16">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight mb-8 text-center font-epilogue">
+              Studienlage im Überblick
+            </h2>
+            <p className="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+              Die Forschung zur Osteopathie hat in den letzten Jahren deutlich zugenommen.
+              Hier sehen Sie die wichtigsten Ergebnisse auf einen Blick.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Rückenschmerzen */}
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
+                <div className="text-5xl mb-4">📊</div>
+                <div className="text-4xl font-bold text-white mb-2">6.070</div>
+                <div className="text-sm text-slate-300 mb-4">Teilnehmer in Cochrane Review</div>
+                <div className="text-xs text-slate-400 uppercase tracking-wide">Rückenschmerzen</div>
+                <div className="mt-4 pt-4 border-t border-white/20">
+                  <p className="text-sm text-slate-200">
+                    <strong className="text-blue-300">Ebenso wirksam</strong> wie andere Therapien
+                  </p>
+                </div>
+              </div>
+
+              {/* OSTPAC-Studie */}
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
+                <div className="text-5xl mb-4">✅</div>
+                <div className="text-4xl font-bold text-white mb-2">1.38</div>
+                <div className="text-sm text-slate-300 mb-4">Response Ratio (OSTPAC)</div>
+                <div className="text-xs text-slate-400 uppercase tracking-wide">Schmerzreduktion</div>
+                <div className="mt-4 pt-4 border-t border-white/20">
+                  <p className="text-sm text-slate-200">
+                    <strong className="text-green-300">Signifikant</strong> bessere Lebensqualität
+                  </p>
+                </div>
+              </div>
+
+              {/* Meta-Analyse */}
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
+                <div className="text-5xl mb-4">🔬</div>
+                <div className="text-4xl font-bold text-white mb-2">-0.59</div>
+                <div className="text-sm text-slate-300 mb-4">Effect Size (Meta-Analyse 2020)</div>
+                <div className="text-xs text-slate-400 uppercase tracking-wide">Schmerz</div>
+                <div className="mt-4 pt-4 border-t border-white/20">
+                  <p className="text-sm text-slate-200">
+                    <strong className="text-purple-300">Wirksamer</strong> als Kontrollgruppen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Zusatz-Stats */}
+            <div className="grid md:grid-cols-4 gap-4 mt-8">
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-white">30+</div>
+                <div className="text-xs text-slate-400 mt-1">Studien auf dieser Seite</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-white">2011-2023</div>
+                <div className="text-xs text-slate-400 mt-1">Zeitraum</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-white">10.000+</div>
+                <div className="text-xs text-slate-400 mt-1">Studien-Teilnehmer</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-white">Cochrane</div>
+                <div className="text-xs text-slate-400 mt-1">Reviews inkludiert</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Studienlage */}
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-12 font-epilogue">
-              Aktuelle Studienlage
+              Detaillierte Studienlage
             </h2>
 
             <div className="space-y-8">
