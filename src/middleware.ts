@@ -18,9 +18,6 @@ export function middleware(request: NextRequest) {
 
     // Patient info - content now in FAQ
     '/patienteninfos': '/faq',
-
-    // Science/Research - belongs in blog
-    '/wissen': '/blog',
   };
 
   if (redirects[path]) {
@@ -37,6 +34,5 @@ export const config = {
     '/osteopath-hamburg',
     '/heilpraktiker-osteopathie-hamburg',
     '/patienteninfos',
-    '/wissen',
   ],
 };
