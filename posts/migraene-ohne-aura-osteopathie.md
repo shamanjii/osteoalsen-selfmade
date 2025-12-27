@@ -494,3 +494,11 @@ Botox (OnabotulinumtoxinA) wirkt bei **chronischer Migräne** (≥15 Tage/Monat)
 4. Hack GD, Koritzer RT, Robinson WL, et al. "Anatomic relation between the rectus capitis posterior minor muscle and the dura mater." *Spine*. 1995;20(23):2484-2486.
 
 5. Diener HC, Holle D, Solbach K, Gaul C. "Medication-overuse headache: risk factors, pathophysiology and management." *Nat Rev Neurol*. 2016;12(10):575-583.
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---

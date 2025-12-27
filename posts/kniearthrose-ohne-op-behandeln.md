@@ -527,6 +527,14 @@ Biomechanische Analyse mit Gang-Videoanalyse. Fokus auf OP-Vermeidung durch ursa
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Sihvonen, R., et al. (2013). "Arthroscopic partial meniscectomy versus sham surgery for a degenerative meniscal tear." *New England Journal of Medicine*, 369(26), 2515-2524. DOI: 10.1056/NEJMoa1305189
 
 [^2]: Brantingham, J.W., et al. (2019). "Manipulative therapy for lower extremity conditions: update of a literature review." *Journal of Manipulative and Physiological Therapeutics*, 42(9), 722-730. DOI: 10.1016/j.jmpt.2019.05.001

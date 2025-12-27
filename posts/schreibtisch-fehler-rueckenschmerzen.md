@@ -706,6 +706,14 @@ Interessieren Sie sich für verwandte Themen? Diese Artikel könnten Ihnen helfe
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Robert Koch Institut (2020). "Gesundheit in Deutschland aktuell – Rückenschmerzen bei Büroarbeitern." *RKI-Bericht*, 12(3), 45-58.
 
 [^2]: Hansraj, K.K. (2014). "Assessment of stresses in the cervical spine caused by posture and position of the head." *Surgical Technology International*, 25, 277-279. PMID: 25393825

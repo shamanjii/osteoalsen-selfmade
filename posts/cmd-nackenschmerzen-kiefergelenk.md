@@ -608,3 +608,11 @@ Intraoral-Behandlung (M. pterygoideus): NEIN, nur vom Therapeuten.
 4. Kraus SL. "Cervical spine influences on the craniomandibular region." *Craniomandibular Disorders and Orofacial Pain*. Gaithersburg, MD: Aspen Publishers; 1988:325-412.
 
 5. von Piekartz H, Hall T. "Orofacial manual therapy improves cervical movement impairment associated with headache and features of temporomandibular dysfunction: A randomized controlled trial." *Manual Therapy*. 2013;18(4):345-350.
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---

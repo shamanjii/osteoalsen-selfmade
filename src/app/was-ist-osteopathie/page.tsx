@@ -6,9 +6,9 @@ import FAQSchema from "@/components/FAQSchema";
 import StickyBookingButton from "@/components/StickyBookingButton";
 
 export const metadata: Metadata = {
-  title: "Was ist Osteopathie? | Ganzheitliche Heilmethode erklärt",
+  title: "Was ist Osteopathie? | Osteopathie Hamburg - Joshua Alsen",
   description:
-    "Osteopathie ist eine ganzheitliche Heilmethode, die den Körper als Einheit betrachtet. Erfahren Sie mehr über Prinzipien, Behandlungsmethoden und für wen Osteopathie geeignet ist.",
+    "Osteopathie Hamburg: Ganzheitliche Heilmethode erklärt. VFO-zertifizierter Osteopath Joshua Alsen in Rotherbaum & Eimsbüttel. Behandlung von Rückenschmerzen, Kopfschmerzen & mehr.",
   keywords: [
     "Was ist Osteopathie",
     "Osteopathie erklärt",
@@ -111,11 +111,11 @@ export default function WasIstOsteopathiePage() {
           <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
             <div className="mx-auto max-w-3xl">
               <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
-                Was ist Osteopathie?
+                Was ist Osteopathie? Ihre Praxis in Hamburg
               </h1>
               <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-normal">
-                Eine ganzheitliche Heilmethode, die den Körper als Einheit
-                betrachtet und die Selbstheilungskräfte aktiviert
+                Ganzheitliche Heilmethode in Hamburg Rotherbaum & Eimsbüttel –
+                Der Körper als Einheit, Aktivierung der Selbstheilungskräfte
               </p>
             </div>
           </div>
@@ -129,11 +129,11 @@ export default function WasIstOsteopathiePage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight font-epilogue mb-6">
-                  Definition und Grundprinzipien
+                  Definition und Grundprinzipien der Osteopathie Hamburg
                 </h2>
                 <div className="space-y-4 text-slate-700 text-lg leading-normal">
                   <p>
-                    Osteopathie ist eine <strong>ganzheitliche manuelle
+                    Osteopathie in Hamburg ist eine <strong>ganzheitliche manuelle
                     Heilmethode</strong>, die den Menschen als funktionelle Einheit
                     von Körper, Geist und Seele betrachtet. Der Begriff stammt aus
                     dem Griechischen: "Osteon" (Knochen) und "Pathos" (Leiden).
@@ -224,7 +224,7 @@ export default function WasIstOsteopathiePage() {
                   <li>• Sehnen und Bänder</li>
                 </ul>
                 <p className="text-slate-600 mt-4 text-sm">
-                  Anwendung bei: <Link href="/behandlungen/rueckenschmerzen" className="hover:text-slate-900 underline">Rückenschmerzen</Link>, Gelenkbeschwerden, <Link href="/behandlungen/sportosteopathie" className="hover:text-slate-900 underline">Sportverletzungen</Link>
+                  Anwendung bei: <Link href="/behandlungen/rueckenschmerzen" className="hover:text-slate-900 underline">Rückenschmerzen Hamburg</Link>, Gelenkbeschwerden, <Link href="/behandlungen/sportosteopathie" className="hover:text-slate-900 underline">Sportverletzungen</Link>
                 </p>
               </div>
 

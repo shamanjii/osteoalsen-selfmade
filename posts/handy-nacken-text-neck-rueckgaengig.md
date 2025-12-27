@@ -655,6 +655,14 @@ In meiner Praxis in Hamburg behandle ich täglich junge Erwachsene mit Text Neck
 
 ## Quellen & Wissenschaftliche Studien
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Statista. *Durchschnittliche tägliche Nutzungsdauer von Smartphones in Deutschland.* 2025.
 
 [^2]: Hansraj KK. *Assessment of Stresses in the Cervical Spine Caused by Posture and Position of the Head.* Surg Technol Int. 2014;25:277-279.

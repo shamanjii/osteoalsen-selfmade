@@ -710,6 +710,14 @@ Mehr zur Rückkehr nach Sportverletzungen: [Sportverletzung – Schneller zurüc
 
 ## Wissenschaftliche Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Van Gent, R. et al. (2007). "Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review." *British Journal of Sports Medicine*, 41(8), 469-480.
 
 [^2]: Nielsen, R.O. et al. (2014). "Training errors and running related injuries: a systematic review." *International Journal of Sports Physical Therapy*, 7(1), 58-75.

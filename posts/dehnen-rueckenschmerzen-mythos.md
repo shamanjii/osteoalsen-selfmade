@@ -705,6 +705,14 @@ Interessieren Sie sich für verwandte Themen? Diese Artikel könnten Ihnen helfe
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Herbert, R.D., et al. (2011). "Stretching to prevent or reduce muscle soreness after exercise." *Cochrane Database of Systematic Reviews*, 7, CD004577. DOI: 10.1002/14651858.CD004577.pub3
 
 [^2]: Thacker, S.B., et al. (2004). "The impact of stretching on sports injury risk: A systematic review." *Medicine & Science in Sports & Exercise*, 36(3), 371-378. DOI: 10.1249/01.MSS.0000117134.83018.F7

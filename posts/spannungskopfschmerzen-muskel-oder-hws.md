@@ -464,3 +464,11 @@ Privat: Meist 80-100% Erstattung
 4. Ashina S, et al. "Prevalence of neck pain in migraine and tension-type headache: a population study." *Cephalalgia*. 2015;35(3):211-219.
 
 5. Sjaastad O, Bakketeig LS. "Tension-type headache: comparison with migraine without aura and cervicogenic headache." *Funct Neurol*. 2008;23(2):71-76.
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---

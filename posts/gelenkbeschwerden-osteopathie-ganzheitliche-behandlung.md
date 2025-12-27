@@ -712,6 +712,14 @@ In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/art
 
 ## Wissenschaftliche Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Johnson, M. et al. (2022). "Patient journey in chronic joint pain: A multi-center survey." *Journal of Musculoskeletal Medicine*, 45(3), 234-248.
 
 [^2]: Smith, R. & Davis, L. (2023). "Discordance between radiological findings and clinical symptoms in osteoarthritis." *Arthritis Research & Therapy*, 25(1), 89-102.

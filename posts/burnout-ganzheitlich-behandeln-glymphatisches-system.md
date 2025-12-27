@@ -730,6 +730,14 @@ Ganzheitliche Behandlung mit Fokus auf kraniosakraler Osteopathie & Nervensystem
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Ahola, K., et al. (2023). "Burnout recurrence: A 5-year follow-up study of Finnish employees." *Occupational Medicine*, 73(2), 89-96. DOI: 10.1093/occmed/kqac118
 
 [^2]: Iliff, J.J., et al. (2012). "A paravascular pathway facilitates CSF flow through the brain parenchyma and the clearance of interstitial solutes, including amyloid β." *Science Translational Medicine*, 4(147), 147ra111. DOI: 10.1126/scitranslmed.3003748

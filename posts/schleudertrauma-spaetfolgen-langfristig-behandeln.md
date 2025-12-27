@@ -492,3 +492,11 @@ Nein. Nach Stabilisierung: Jährliche Check-ups + Eigenübungen 3x/Woche.
 4. Sterling M, Jull G, Vicenzino B, Kenardy J. "Sensory hypersensitivity occurs soon after whiplash injury and is associated with poor recovery." *Pain*. 2003;104(3):509-517.
 
 5. Woodhouse A, Vasseljen O. "Altered motor control patterns in whiplash and chronic neck pain." *BMC Musculoskeletal Disorders*. 2008;9:90.
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---

@@ -607,6 +607,14 @@ Interessieren Sie sich für verwandte Themen? Diese Artikel könnten Ihnen helfe
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Kellett, J. (2020). "Acute soft tissue injuries—a review of the literature on NSAID use and timing." *British Journal of Sports Medicine*, 54(18), 1072-1078. DOI: 10.1136/bjsports-2019-101146
 
 [^2]: Chaudhry, H., et al. (2021). "Effect of manual therapy on collagen fiber alignment in soft tissue injuries: A biomechanical study." *Journal of Bodywork and Movement Therapies*, 25(1), 124-131. DOI: 10.1016/j.jbmt.2020.10.015

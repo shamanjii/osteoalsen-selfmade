@@ -601,6 +601,14 @@ In meiner Praxis in Hamburg behandle ich täglich Schwindel-Patienten. Erste Sit
 
 ## Quellen & Wissenschaftliche Studien
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Brandt T, Dieterich M. *Vertigo and dizziness: common complaints.* Springer; 2013.
 
 [^2]: Wrisley DM, et al. *Cervicogenic dizziness: a review of diagnosis and treatment.* J Orthop Sports Phys Ther. 2000;30(12):755-766.

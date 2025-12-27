@@ -595,6 +595,14 @@ Ganzheitliche Schulter-Behandlung mit Fokus auf BWS-/Rippen-Mobilisierung. Ursac
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Luime, J.J., et al. (2004). "Prevalence and incidence of shoulder pain in the general population." *Scandinavian Journal of Rheumatology*, 33(2), 73-81. DOI: 10.1080/03009740310004667
 
 [^2]: Beard, D.J., et al. (2018). "Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial." *The Lancet*, 391(10118), 329-338. DOI: 10.1016/S0140-6736(17)32457-1

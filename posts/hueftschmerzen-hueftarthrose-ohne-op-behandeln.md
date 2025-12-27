@@ -669,6 +669,14 @@ Ganzheitliche Hüft-Behandlung mit Fokus auf Becken-/ISG-/LWS-Mobilisierung. Urs
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Murphy, L.B., et al. (2008). "Lifetime risk of symptomatic hip osteoarthritis." *Arthritis & Rheumatism*, 59(9), 1207-1213. DOI: 10.1002/art.24021
 
 [^2]: Skou, S.T., et al. (2018). "Total knee replacement and non-surgical treatment of knee osteoarthritis: 2-year outcome from two parallel randomized controlled trials." *Osteoarthritis and Cartilage*, 26(9), 1170-1180. DOI: 10.1016/j.joca.2018.04.014

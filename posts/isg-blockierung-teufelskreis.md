@@ -787,6 +787,14 @@ Rappstraße 7
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Vleeming, A., et al. (2012). "The sacroiliac joint: An overview of its anatomy, function and potential clinical implications." *Journal of Anatomy*, 221(6), 537-567. DOI: 10.1111/j.1469-7580.2012.01564.x
 
 [^2]: Laslett, M., et al. (2005). "Diagnosis of sacroiliac joint pain: Validity of individual provocation tests and composites of tests." *Manual Therapy*, 10(3), 207-218. DOI: 10.1016/j.math.2005.01.003

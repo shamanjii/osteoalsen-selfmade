@@ -769,6 +769,14 @@ Ganzheitliche Behandlung mit Fokus auf HWS, Kiefergelenk, kraniosakraler Osteopa
 
 ### Quellen
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Deutsche Migräne- und Kopfschmerzgesellschaft (DMKG). (2023). "Epidemiologie chronischer Kopfschmerzen in Deutschland." *Kopfschmerz-News*, 44(3), 112-118.
 
 [^2]: Diener, H.C., et al. (2022). "Medication-overuse headache: Risk factors, pathophysiology and management." *Nature Reviews Neurology*, 18(11), 672-683. DOI: 10.1038/s41582-022-00701-9

@@ -563,6 +563,14 @@ In meiner Praxis in Hamburg behandle ich täglich [Nackenschmerzen](/behandlunge
 
 ## Quellen & Wissenschaftliche Studien
 
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
+
 [^1]: Bogduk N. *Clinical Anatomy of the Lumbar Spine and Sacrum.* 5th ed. Elsevier; 2012. (HWS-Biomechanik)
 
 [^2]: Vernon H, Humphreys BK. *Manual therapy for neck pain: an overview of randomized clinical trials and systematic reviews.* Eura Medicophys. 2007;43(1):91-118. (Evidenz manuelle Therapie)

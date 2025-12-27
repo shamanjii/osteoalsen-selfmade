@@ -396,3 +396,11 @@ Rückenschmerzen sind **selten ein lokales Problem**. Sie sind das Ergebnis eine
 - [Was ist Osteopathie?](/was-ist-osteopathie)
 - [Behandlungen: Rückenschmerzen](/behandlungen/rueckenschmerzen)
 - [Über mich: Joshua Alsen](/ueber-mich)
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---

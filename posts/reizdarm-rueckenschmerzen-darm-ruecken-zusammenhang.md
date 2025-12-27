@@ -468,3 +468,11 @@ Vertiefen Sie Ihr Wissen mit diesen Artikeln:
 [Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung) – gemeinsam finden wir die Ursachen und entwickeln einen individuellen Behandlungsplan.
 
 **Ihre Beschwerden sind real. Lassen Sie uns ganzheitlich daran arbeiten.**
+
+---
+
+## Mehr über Osteopathie erfahren
+
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+
+---
