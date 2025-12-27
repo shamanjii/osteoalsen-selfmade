@@ -261,10 +261,10 @@ export default function SiteHeader() {
                     </div>
                 </div>
 
-                {/* Mobile Menu */}
+                {/* Mobile Menu - Scrollable with proper height calculation */}
                 {mobileOpen && (
-                    <div className="md:hidden border-t border-white/20 bg-slate-900 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                        <div className="px-4 py-4 space-y-2">
+                    <div className={`md:hidden border-t border-white/20 bg-slate-900 ${hasContactBar && isAtTop ? 'max-h-[calc(100vh-7rem)]' : 'max-h-[calc(100vh-4rem)]'} overflow-y-auto overscroll-contain`}>
+                        <div className="px-4 pt-4 pb-20 space-y-2">
                             <Link
                                 href="/"
                                 onClick={() => setMobileOpen(false)}
