@@ -563,7 +563,18 @@ article {
 }
 
 /* Word breaking for long text */
-h1, h2, h3, h4, h5, h6, p, li, span {
+/* Headings: No hyphens, clean line breaks */
+h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  text-wrap: balance; /* Better line distribution */
+}
+
+/* Body text: Allow hyphens for better justification */
+p, li, span {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
