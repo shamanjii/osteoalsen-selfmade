@@ -54,12 +54,15 @@ export default function WissenschaftPage() {
         <section className="bg-white pt-8 pb-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 text-center">
             <div className="mx-auto max-w-3xl">
-              <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-6">
-                Wissenschaft & Forschung
+              <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
+                Wissenschaft & Forschung zur Osteopathie Hamburg
               </h1>
-              <p className="text-slate-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
+              <h2 className="text-slate-700 text-xl sm:text-2xl md:text-3xl font-semibold mb-6 font-epilogue">
+                Evidence-Based Practice: 30+ Studien belegen Wirksamkeit
+              </h2>
+              <p className="text-slate-600 text-lg sm:text-xl font-light leading-relaxed">
                 Was sagt die Forschung zur Wirksamkeit der Osteopathie?
-                Evidenzbasierte Fakten und aktuelle Studienlage.
+                Aktuelle Studienlage, wissenschaftliche Belege und kritische Bewertung.
               </p>
             </div>
           </div>
@@ -73,13 +76,13 @@ export default function WissenschaftPage() {
                 Osteopathie und Evidence-Based Practice
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
-                Als wissenschaftlich denkender Osteopath ist es mir wichtig, evidenzbasiert zu arbeiten.
+                Als wissenschaftlich denkender <strong>Osteopath in Hamburg</strong> ist es mir wichtig, evidenzbasiert zu arbeiten.
                 Das bedeutet: Ich kombiniere die <strong>besten verfügbaren wissenschaftlichen Erkenntnisse</strong> mit
                 meiner <strong>klinischen Erfahrung</strong> und Ihren <strong>individuellen Bedürfnissen</strong>.
               </p>
               <p className="text-slate-700 leading-relaxed">
-                In den letzten Jahren hat die wissenschaftliche Forschung zur Osteopathie deutlich zugenommen.
-                Hier finden Sie einen Überblick über aktuelle Studien und Forschungsergebnisse.
+                In den letzten Jahren hat die wissenschaftliche Forschung zur <strong>Osteopathie Hamburg</strong> deutlich zugenommen.
+                Hier finden Sie einen Überblick über aktuelle Studien und Forschungsergebnisse zur Wirksamkeit osteopathischer Behandlungen.
               </p>
             </div>
           </div>
@@ -143,6 +146,29 @@ export default function WissenschaftPage() {
                       Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/33197571/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Voogt et al., Eur J Pain 2020 (PMID: 33197571)</a>
                     </p>
                   </div>
+
+                  <div className="mt-4 bg-blue-50 border-l-4 border-blue-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/rueckenschmerzen-3-versteckte-ursachen" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                          Die 3 versteckten Ursachen von Rückenschmerzen
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/isg-blockierung-teufelskreis" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                          ISG-Blockierung: Warum sie immer wiederkommt
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                          Rückenschmerzen ganzheitlich behandeln
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -195,6 +221,34 @@ export default function WissenschaftPage() {
                     <p className="text-xs text-slate-500 mt-2">
                       Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/35160211/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Rego et al., J Clin Med 2022 (PMID: 35160211)</a>
                     </p>
+                  </div>
+
+                  <div className="mt-4 bg-purple-50 border-l-4 border-purple-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                          Chronische Kopfschmerzen: Osteopathie statt Tabletten
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/migraene-ohne-aura-osteopathie" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                          Migräne ohne Aura behandeln
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                          Spannungskopfschmerzen: Muskel oder HWS?
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/kopfschmerzen-trigeminus-ursache" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                          Trigeminus als versteckte Ursache
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -271,6 +325,24 @@ export default function WissenschaftPage() {
                     <p className="text-xs text-slate-500 mt-2">
                       Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/37621836/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Chiacchiarini et al., Healthcare 2023 (PMID: 37621836)</a>
                     </p>
+                  </div>
+
+                  <div className="mt-4 bg-green-50 border-l-4 border-green-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang" className="text-green-700 hover:text-green-900 hover:underline font-medium">
+                          Reizdarm & Rückenschmerzen: Der Zusammenhang
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/rueckenschmerzen-verdauung-radix-mesenterii" className="text-green-700 hover:text-green-900 hover:underline font-medium">
+                          Rückenschmerzen durch Verdauungsprobleme
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -499,8 +571,8 @@ export default function WissenschaftPage() {
                 Haben Sie Fragen?
               </h2>
               <p className="text-xl mb-8 text-slate-200 font-light">
-                Gerne beantworte ich Ihre Fragen zur Osteopathie und ihrer
-                wissenschaftlichen Grundlage persönlich.
+                Gerne beantworte ich Ihre Fragen zur <strong>Osteopathie Hamburg</strong> und ihrer
+                wissenschaftlichen Grundlage persönlich in meiner Praxis in Rotherbaum oder Eimsbüttel.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
