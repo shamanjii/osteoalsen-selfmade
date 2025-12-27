@@ -144,16 +144,16 @@ export default async function BlogPost({ params }: PageProps) {
                             <span>Von Joshua Alsen</span>
                         </div>
 
-                        {/* Tags - Touch-optimized with min 44x44px target */}
+                        {/* Tags - Compact on mobile, touch-optimized on larger screens */}
                         {post.keywords && post.keywords.length > 0 && (
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                 {post.keywords.slice(0, 6).map((keyword, index) => {
                                     const slug = keyword.toLowerCase().replace(/\s+/g, '-');
                                     return (
                                         <Link
                                             key={index}
                                             href={`/blog/tag/${slug}`}
-                                            className="inline-flex items-center gap-1 px-3 sm:px-4 py-2 sm:py-2.5 min-h-[44px] bg-slate-100 text-slate-700 rounded-full text-xs sm:text-sm font-medium hover:bg-slate-200 hover:text-slate-900 transition-colors touch-manipulation active:scale-95"
+                                            className="inline-flex items-center gap-1 px-2 sm:px-3 py-1 sm:py-2 bg-slate-100 text-slate-700 rounded-full text-xs font-medium hover:bg-slate-200 hover:text-slate-900 transition-colors touch-manipulation active:scale-95"
                                         >
                                             <span className="text-slate-500">#</span>
                                             <span>{keyword}</span>
