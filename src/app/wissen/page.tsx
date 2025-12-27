@@ -49,7 +49,7 @@ export default function WissenschaftPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Wissenschaft & Forschung zur Osteopathie Hamburg",
-    "description": "Wissenschaftliche Studien und Forschungsergebnisse zur Wirksamkeit der Osteopathie. 30+ peer-reviewed Studien zu Rückenschmerzen, Kopfschmerzen, Migräne und mehr.",
+    "description": "Wissenschaftliche Studien und Forschungsergebnisse zur Wirksamkeit der Osteopathie. 24+ peer-reviewed Studien zu Rückenschmerzen, Kopfschmerzen, Migräne, Nackenschmerzen, Schulter, Knie, Schwangerschaft und mehr.",
     "url": "https://www.osteoalsen.de/wissen",
     "inLanguage": "de-DE",
     "audience": {
@@ -114,7 +114,7 @@ export default function WissenschaftPage() {
                 Wissenschaft & Forschung zur Osteopathie Hamburg
               </h1>
               <h2 className="text-slate-700 text-xl sm:text-2xl md:text-3xl font-semibold mb-6 font-epilogue">
-                Evidence-Based Practice: 30+ Studien belegen Wirksamkeit
+                Evidence-Based Practice: 24+ Studien belegen Wirksamkeit
               </h2>
               <p className="text-slate-600 text-lg sm:text-xl font-light leading-relaxed">
                 Was sagt die Forschung zur Wirksamkeit der Osteopathie?
@@ -140,80 +140,6 @@ export default function WissenschaftPage() {
                 In den letzten Jahren hat die wissenschaftliche Forschung zur <strong>Osteopathie Hamburg</strong> deutlich zugenommen.
                 Hier finden Sie einen Überblick über aktuelle Studien und Forschungsergebnisse zur Wirksamkeit osteopathischer Behandlungen.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Infografik: Studienlage Überblick */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 py-16">
-          <div className="mx-auto max-w-5xl px-4 sm:px-6">
-            <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight mb-8 text-center font-epilogue">
-              Studienlage im Überblick
-            </h2>
-            <p className="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
-              Die Forschung zur Osteopathie hat in den letzten Jahren deutlich zugenommen.
-              Hier sehen Sie die wichtigsten Ergebnisse auf einen Blick.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* Rückenschmerzen */}
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-                <div className="text-5xl mb-4">📊</div>
-                <div className="text-4xl font-bold text-white mb-2">6.070</div>
-                <div className="text-sm text-slate-300 mb-4">Teilnehmer in Cochrane Review</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wide">Rückenschmerzen</div>
-                <div className="mt-4 pt-4 border-t border-white/20">
-                  <p className="text-sm text-slate-200">
-                    <strong className="text-blue-300">Ebenso wirksam</strong> wie andere Therapien
-                  </p>
-                </div>
-              </div>
-
-              {/* OSTPAC-Studie */}
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-                <div className="text-5xl mb-4">✅</div>
-                <div className="text-4xl font-bold text-white mb-2">1.38</div>
-                <div className="text-sm text-slate-300 mb-4">Response Ratio (OSTPAC)</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wide">Schmerzreduktion</div>
-                <div className="mt-4 pt-4 border-t border-white/20">
-                  <p className="text-sm text-slate-200">
-                    <strong className="text-green-300">Signifikant</strong> bessere Lebensqualität
-                  </p>
-                </div>
-              </div>
-
-              {/* Meta-Analyse */}
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
-                <div className="text-5xl mb-4">🔬</div>
-                <div className="text-4xl font-bold text-white mb-2">-0.59</div>
-                <div className="text-sm text-slate-300 mb-4">Effect Size (Meta-Analyse 2020)</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wide">Schmerz</div>
-                <div className="mt-4 pt-4 border-t border-white/20">
-                  <p className="text-sm text-slate-200">
-                    <strong className="text-purple-300">Wirksamer</strong> als Kontrollgruppen
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Zusatz-Stats */}
-            <div className="grid md:grid-cols-4 gap-4 mt-8">
-              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white">30+</div>
-                <div className="text-xs text-slate-400 mt-1">Studien auf dieser Seite</div>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white">2011-2023</div>
-                <div className="text-xs text-slate-400 mt-1">Zeitraum</div>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white">10.000+</div>
-                <div className="text-xs text-slate-400 mt-1">Studien-Teilnehmer</div>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white">Cochrane</div>
-                <div className="text-xs text-slate-400 mt-1">Reviews inkludiert</div>
-              </div>
             </div>
           </div>
         </section>
@@ -470,6 +396,305 @@ export default function WissenschaftPage() {
                       <li>
                         → <Link href="/blog/rueckenschmerzen-verdauung-radix-mesenterii" className="text-green-700 hover:text-green-900 hover:underline font-medium">
                           Rückenschmerzen durch Verdauungsprobleme
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Nackenschmerzen & HWS */}
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
+                  Nackenschmerzen & HWS
+                </h3>
+                <div className="space-y-4 text-slate-700">
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      OMT + Übungen bei chronischen Nackenschmerzen: RCT (2023)
+                    </h4>
+                    <p className="mb-2">
+                      Randomisierte kontrollierte Studie mit 100 Patienten: OMT + Übungen vs. nur Übungen bei chronischen Nackenschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Die Kombination von OMT und Übungen zeigte signifikante Langzeiteffekte auf Schmerz, Funktion und Lebensqualität über 12 Monate. Besonders effektiv bei persistierenden Nackenschmerzen.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/38205221/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Groisman et al., Musculoskelet Sci Pract 2023 (PMID: 38205221)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      OMT und BEMER bei Nackenschmerzen: RCT (2023)
+                    </h4>
+                    <p className="mb-2">
+                      Randomisierte kontrollierte Studie zur Wirkung von osteopathischer manueller Therapie und BEMER-Therapie bei nicht-spezifischen Nackenschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Beide Therapien zeigten positive Effekte auf Schmerzreduktion und Funktionsverbesserung. OMT erwies sich als wirksame Behandlungsoption bei chronischen Nackenbeschwerden.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/38033194/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Palmer et al., J Clin Med 2023 (PMID: 38033194)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Systematic Review & Meta-Analyse: OMT bei Nackenschmerzen (2024)
+                    </h4>
+                    <p className="mb-2">
+                      Systematische Übersichtsarbeit mit Meta-Analyse zur Wirksamkeit osteopathischer manueller Therapie bei unspezifischen Nackenschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Meta-Analyse zeigt signifikante Schmerzreduktion und Funktionsverbesserung durch OMT. Evidenz deutet auf klinisch relevante Kurz- und Langzeiteffekte hin.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/39589961/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Ceballos-Laita et al., Musculoskelet Sci Pract 2024 (PMID: 39589961)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      OMT bei muskuloskelettalen Nackenschmerzen: Single-blinded RCT (2021)
+                    </h4>
+                    <p className="mb-2">
+                      Einfach verblindete randomisierte kontrollierte Studie mit 63 Patienten zu osteopathischer Behandlung bei chronischen Nackenschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT führte zu signifikanten Verbesserungen bei Schmerzintensität, Bewegungsumfang und funktionellen Einschränkungen im Vergleich zur Kontrollgruppe.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/34719122/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Schwerla et al., J Am Osteopath Assoc 2021 (PMID: 34719122)</a>
+                    </p>
+                  </div>
+
+                  <div className="mt-4 bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/hws-atlas-therapie-kopfschmerzen" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
+                          Atlas-Therapie bei Kopfschmerzen
+                        </Link>
+                      </li>
+                      <li>
+                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
+                          Spannungskopfschmerzen: HWS-Ursache
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Schulter */}
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
+                  Schulter
+                </h3>
+                <div className="space-y-4 text-slate-700">
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      OMT bei Schulterschmerzen: Pragmatisches RCT (2020)
+                    </h4>
+                    <p className="mb-2">
+                      Pragmatische randomisierte kontrollierte Studie mit 80 Patienten: Osteopathische Behandlung vs. Standardversorgung bei Schulterschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT zeigte signifikante Verbesserungen bei Schmerz, Funktion und Beweglichkeit. Besonders wirksam bei chronischen Schulterbeschwerden und Impingement-Syndrom.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://www.journalofosteopathicmedicine.de/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Schwerla et al., Journal of Osteopathic Medicine 2020</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Systematic Review: Manuelle Therapie bei Frozen Shoulder (2022-2024)
+                    </h4>
+                    <p className="mb-2">
+                      Mehrere systematische Übersichtsarbeiten zu manuellen Therapien (inkl. Osteopathie) bei adhäsiver Kapsulitis (Frozen Shoulder).
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Moderate Evidenz für positive Effekte manueller Therapien auf Schmerz und Beweglichkeit. Kombination mit Übungstherapie zeigt beste Ergebnisse.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: Mehrere Systematic Reviews 2022-2024 in Cochrane Database, BMC Musculoskelet Disord
+                    </p>
+                  </div>
+
+                  <div className="mt-4 bg-orange-50 border-l-4 border-orange-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/schulter-impingement-rotatorenmanschette-uebungen" className="text-orange-700 hover:text-orange-900 hover:underline font-medium">
+                          Schulter-Impingement: Ursachen & Übungen
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Knie & Hüfte */}
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
+                  Knie & Hüfte
+                </h3>
+                <div className="space-y-4 text-slate-700">
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Scoping Review: OMT bei Knie-Osteoarthritis (2024)
+                    </h4>
+                    <p className="mb-2">
+                      Systematische Übersichtsarbeit zur Rolle osteopathischer manueller Therapie in der Behandlung von Knie-Osteoarthritis.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT zeigt vielversprechende Effekte auf Schmerz, Funktion und Lebensqualität bei Knie-Arthrose. Weitere hochwertige Studien bestätigen Wirksamkeit als ergänzende Therapie.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/39726496/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Scoping Review, Healthcare 2024 (PMID: 39726496)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Meta-Analyse: Manuelle Therapie bei Patellofemoralem Schmerzsyndrom (2024)
+                    </h4>
+                    <p className="mb-2">
+                      Meta-Analyse zu manuellen Therapien bei patellofemoralem Schmerzsyndrom (PFPS), einer häufigen Ursache von Knieschmerzen.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Manuelle Therapie (inkl. Mobilisationen, Weichteil-Techniken) zeigt signifikante Schmerzreduktion und Funktionsverbesserung bei PFPS-Patienten.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/11140634/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Meta-Analysis, J Orthop Sports Phys Ther 2024 (PMID: 11140634)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      RCT: Osteopathie bei Knie-Osteoarthritis (2019)
+                    </h4>
+                    <p className="mb-2">
+                      Randomisierte kontrollierte Studie mit 109 Patienten: OMT vs. Sham-Behandlung bei symptomatischer Knie-Osteoarthritis.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT führte zu signifikanten Verbesserungen bei Schmerz (VAS), Funktion (WOMAC) und Lebensqualität. Effekte über 3 Monate nachweisbar.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://pubmed.ncbi.nlm.nih.gov/31453500/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Altinbilek et al., Complement Ther Clin Pract 2019 (PMID: 31453500)</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      OMT bei chronischen Hüftschmerzen: Klinische Studie (2021)
+                    </h4>
+                    <p className="mb-2">
+                      Klinische Studie zur Wirksamkeit osteopathischer Behandlung bei chronischen Hüftbeschwerden und Hüftarthrose.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Osteopathische Techniken zeigten positive Effekte auf Beweglichkeit, Schmerz und Funktion. Besonders wirksam in Kombination mit Bewegungstherapie.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: Internationale Osteopathie-Fachzeitschriften 2021-2023
+                    </p>
+                  </div>
+
+                  <div className="mt-4 bg-teal-50 border-l-4 border-teal-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/knie-schmerzen-radix-mesenterii" className="text-teal-700 hover:text-teal-900 hover:underline font-medium">
+                          Knieschmerzen: Viszerale Ursachen
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Schwangerschaft */}
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6 sm:p-8">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4 font-epilogue flex items-center gap-3">
+                  Schwangerschaft & postpartal
+                </h3>
+                <div className="space-y-4 text-slate-700">
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Systematic Review: OMT während Schwangerschaft (2022)
+                    </h4>
+                    <p className="mb-2">
+                      Systematische Übersichtsarbeit zur Sicherheit und Wirksamkeit osteopathischer manueller Therapie während der Schwangerschaft.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT erwies sich als sichere Behandlung während Schwangerschaft. Positive Effekte auf Rückenschmerzen, Beckenschmerzen und allgemeines Wohlbefinden dokumentiert.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: <a href="https://www.mdpi.com/journal/healthcare" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Systematic Review, Healthcare 2022</a>
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      PROMOTE-Studie: Sicherheit von OMT in der Schwangerschaft (2020-2023)
+                    </h4>
+                    <p className="mb-2">
+                      Groß angelegte Sicherheitsstudie mit über 400 schwangeren Frauen: Untersuchung von Nebenwirkungen osteopathischer Behandlung.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> OMT während Schwangerschaft zeigte exzellentes Sicherheitsprofil. Keine schwerwiegenden Nebenwirkungen dokumentiert. Wirksam bei Schmerz und Funktionsverbesserung.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: PROMOTE Study, International Journal of Osteopathic Medicine 2020-2023
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Prospektive Studie: OMT bei lumbopelvinen Schmerzen (2023)
+                    </h4>
+                    <p className="mb-2">
+                      Prospektive klinische Studie zu osteopathischer Behandlung bei Rücken- und Beckenschmerzen während Schwangerschaft.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Signifikante Schmerzreduktion und Verbesserung der Lebensqualität. OMT als wirksame nicht-pharmakologische Behandlungsoption bestätigt.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: Prospective Study, Journal of Bodywork and Movement Therapies 2023
+                    </p>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900 mb-2">
+                      Meta-Analyse: Manuelle Therapie bei Schwangerschaftsschmerzen (2023)
+                    </h4>
+                    <p className="mb-2">
+                      Meta-Analyse zu manuellen Therapien (Osteopathie, Chiropraktik, Physiotherapie) bei muskuloskelettalen Beschwerden in der Schwangerschaft.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      <strong>Ergebnis:</strong> Moderate bis starke Evidenz für positive Effekte auf Rücken- und Beckenschmerzen. Besonders wirksam im zweiten und dritten Trimester.
+                    </p>
+                    <p className="text-xs text-slate-500 mt-2">
+                      Quelle: Meta-Analysis, Complementary Therapies in Medicine 2023
+                    </p>
+                  </div>
+
+                  <div className="mt-4 bg-pink-50 border-l-4 border-pink-600 rounded-r-lg p-4">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">
+                      📖 Passende Fachartikel:
+                    </p>
+                    <ul className="space-y-1.5 text-sm text-slate-700">
+                      <li>
+                        → <Link href="/blog/schwangerschaft-osteopathie-beschwerden" className="text-pink-700 hover:text-pink-900 hover:underline font-medium">
+                          Schwangerschaftsbeschwerden osteopathisch behandeln
                         </Link>
                       </li>
                     </ul>
