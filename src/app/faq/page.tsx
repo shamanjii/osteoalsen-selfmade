@@ -43,27 +43,57 @@ export const metadata: Metadata = {
 
 const faqData = [
   {
-    category: "Allgemeine Fragen zur Osteopathie",
+    category: "Kosten & Erstattung",
     questions: [
       {
-        question: "Was ist Osteopathie?",
+        question: "Was kostet eine osteopathische Behandlung?",
         answer:
-          "Osteopathie ist eine ganzheitliche manuelle Medizin, die den Körper als Einheit betrachtet. Sie basiert auf dem Prinzip, dass der Körper zur Selbstheilung fähig ist, wenn alle Strukturen frei beweglich und gut durchblutet sind. Osteopathen behandeln mit ihren Händen Funktionsstörungen im Körper, die zu Beschwerden führen können.\n\nDie Osteopathie wurde Ende des 19. Jahrhunderts vom amerikanischen Arzt Andrew Taylor Still entwickelt. Sie umfasst drei große Bereiche: Die parietale Osteopathie behandelt den Bewegungsapparat (Knochen, Muskeln, Gelenke), die viszerale Osteopathie konzentriert sich auf die inneren Organe und ihre Aufhängungen, und die kraniosakrale Osteopathie arbeitet am Schädel, der Wirbelsäule und dem Nervensystem.\n\nAls VFO-zertifizierter Osteopath habe ich eine 5-jährige berufsbegleitende Ausbildung absolviert und arbeite ausschließlich manuell - das heißt, ich nutze nur meine Hände zur Diagnostik und Behandlung. Dabei suche ich nicht nur nach dem Ort des Schmerzes, sondern nach den Ursachen im gesamten Körper. Oft liegt die eigentliche Ursache von Beschwerden in einer ganz anderen Körperregion als dort, wo der Schmerz empfunden wird.",
+          "Eine osteopathische Behandlung kostet 150€ und dauert 45-60 Minuten. Der Preis gilt sowohl für Erst- als auch Folgebehandlungen. Sie erhalten direkt nach der Behandlung eine detaillierte Rechnung, die Sie bei Ihrer Krankenkasse zur Erstattung einreichen können.",
       },
       {
-        question: "Für wen ist Osteopathie geeignet?",
+        question: "Übernimmt meine Krankenkasse die Kosten?",
         answer:
-          "Osteopathie ist grundsätzlich für jeden geeignet - von Säuglingen über Erwachsene bis zu Senioren. Die Techniken werden individuell an Alter, Konstitution und Beschwerdebild angepasst. Besonders hilfreich ist Osteopathie bei Rückenschmerzen, Kopfschmerzen, Verdauungsbeschwerden, Sportverletzungen und vielen weiteren Beschwerden.",
+          "Die Kostenerstattung hängt von Ihrer Krankenkasse ab:\n\n**Private Krankenkassen:** Die meisten privaten Krankenversicherungen übernehmen die vollen Kosten für osteopathische Behandlungen, wenn Sie bei einem qualifizierten Osteopathen (z.B. VFO-zertifiziert) behandelt werden. Prüfen Sie vorab Ihren Versicherungsvertrag oder fragen Sie bei Ihrer Versicherung nach.\n\n**Gesetzliche Krankenkassen:** Viele gesetzliche Krankenkassen beteiligen sich mittlerweile an den Kosten für Osteopathie mit einem Zuschuss von 40-60€ pro Sitzung (meist 3-6 Sitzungen pro Jahr). Beispiele für Kassen mit Erstattung: Techniker Krankenkasse (TK), DAK-Gesundheit, Barmer, verschiedene AOKs (regional unterschiedlich), IKK-Kassen und viele BKK-Kassen.\n\nBei gesetzlichen Kassen ist oft eine ärztliche Verordnung, Empfehlung oder Privatrezept erforderlich. Diese können Sie sich von Ihrem Hausarzt oder Facharzt ausstellen lassen. Wichtig: Die Erstattungsmodalitäten können sich ändern - informieren Sie sich daher bitte vorab bei Ihrer Kasse über die aktuellen Konditionen.\n\nSie erhalten von mir nach jeder Behandlung eine detaillierte Rechnung nach dem Gebührenverzeichnis für Heilpraktiker (GebüH), die Sie bei Ihrer Kasse einreichen können. <a href='/kosten-ablauf' className='text-teal-600 hover:text-teal-700 underline'>Mehr Informationen zu Kosten & Ablauf</a>.",
       },
       {
-        question: "Was ist der Unterschied zwischen Osteopathie und Physiotherapie?",
+        question: "Wie reiche ich die Rechnung bei meiner Krankenkasse ein?",
         answer:
-          "Während Physiotherapie oft symptomorientiert arbeitet und häufig Geräte oder Übungen einsetzt, arbeitet die Osteopathie ausschließlich manuell und ganzheitlich. Osteopathen suchen nach den Ursachen der Beschwerden im gesamten Körper und behandeln nicht nur die schmerzende Stelle. Eine osteopathische Behandlung dauert 45-60 Minuten und umfasst eine umfassende Untersuchung und Behandlung.",
+          "Nach der Behandlung erhalten Sie eine detaillierte Rechnung nach dem Gebührenverzeichnis für Heilpraktiker (GebüH). Diese können Sie direkt bei Ihrer Krankenkasse einreichen - entweder per Post, E-Mail oder über das Online-Portal Ihrer Kasse (z.B. TK-App, AOK-App).\n\n**Schritt-für-Schritt:**\n1. Rechnung von mir erhalten (per E-Mail oder ausgedruckt)\n2. Bei gesetzlichen Kassen: Ärztliche Empfehlung/Verordnung beilegen (falls erforderlich)\n3. Formular Ihrer Kasse ausfüllen (falls vorhanden) oder Rechnung direkt einreichen\n4. Erstattung erfolgt meist innerhalb von 2-4 Wochen auf Ihr Konto\n\nDie meisten Kassen erstatten 40-60€ pro Sitzung, maximal 3-6 Sitzungen pro Jahr. Prüfen Sie vorab die Konditionen Ihrer Kasse.",
       },
       {
-        question: "Ist Osteopathie wissenschaftlich anerkannt?",
+        question: "Brauche ich eine Überweisung vom Arzt?",
         answer:
-          "Ja, es gibt zunehmend wissenschaftliche Studien zur Wirksamkeit der Osteopathie, besonders bei Rückenschmerzen, Kopfschmerzen und muskuloskelettalen Beschwerden. Viele Krankenkassen erkennen die Osteopathie an und erstatten die Behandlungskosten teilweise oder vollständig. Osteopathie wird auch von der WHO (Weltgesundheitsorganisation) als eigenständige Behandlungsmethode anerkannt.",
+          "Nein, eine Überweisung ist nicht zwingend erforderlich. Sie können direkt einen Termin bei mir buchen. Für die Kostenerstattung bei gesetzlichen Krankenkassen ist jedoch oft eine ärztliche Verordnung oder Empfehlung notwendig. Diese können Sie sich von Ihrem Hausarzt oder Facharzt ausstellen lassen.",
+      },
+      {
+        question: "Welche Zahlungsmethoden werden akzeptiert?",
+        answer:
+          "Sie können bar oder per EC-Karte (Girocard/Maestro/V-Pay) bezahlen. Die Zahlung erfolgt direkt nach der Behandlung. Kreditkartenzahlung ist derzeit nicht möglich.",
+      },
+    ],
+  },
+  {
+    category: "Terminbuchung & Organisation",
+    questions: [
+      {
+        question: "Wie kann ich einen Termin buchen?",
+        answer:
+          "Sie können ganz einfach <a href='/terminbuchung' className='text-teal-600 hover:text-teal-700 underline'>online über das Buchungsformular</a> auf meiner Website einen Termin vereinbaren. Alternativ können Sie mich auch telefonisch unter <a href='tel:+4917643990001' className='text-teal-600 hover:text-teal-700 underline'>0176 4399 0001</a> erreichen. Online-Buchungen sind rund um die Uhr möglich und Sie erhalten sofort eine Bestätigung.",
+      },
+      {
+        question: "Wie lange muss ich auf einen Termin warten?",
+        answer:
+          "Die Wartezeit variiert je nach Auslastung. In der Regel können Sie innerhalb von 1-2 Wochen einen Termin bekommen. Bei akuten Beschwerden versuche ich, Ihnen zeitnah einen Termin anzubieten. Bei dringenden Fällen rufen Sie mich bitte direkt an unter 0176 4399 0001.",
+      },
+      {
+        question: "Kann ich einen Termin absagen oder verschieben?",
+        answer:
+          "Ja, Sie können Termine bis 24 Stunden vor dem Termin kostenfrei absagen oder verschieben. Bei kurzfristigeren Absagen (weniger als 24h) oder Nichterscheinen wird die volle Behandlungsgebühr berechnet, da ich den Termin nicht mehr anderweitig vergeben kann. Bitte haben Sie Verständnis für diese Regelung.",
+      },
+      {
+        question: "Wo finden die Behandlungen statt?",
+        answer:
+          "Ich behandle in meiner Praxis in Hamburg-Rotherbaum, Rappstraße 7, 20146 Hamburg. Die Praxis ist gut mit öffentlichen Verkehrsmitteln (U-Bahn Hallerstraße, diverse Buslinien) und dem Auto erreichbar. Parkmöglichkeiten finden Sie in der Umgebung.",
       },
     ],
   },
@@ -73,7 +103,7 @@ const faqData = [
       {
         question: "Wie läuft die erste Behandlung ab?",
         answer:
-          "Die Erstbehandlung dauert 60 Minuten und beginnt mit einem ausführlichen Anamnesegespräch (15-20 Min.). Dabei besprechen wir Ihre aktuellen Beschwerden, Krankengeschichte und Lebensumstände. Ich möchte genau verstehen, wann die Beschwerden auftreten, was sie verschlimmert oder verbessert, und ob es Vorerkrankungen, Operationen oder Unfälle gab.\n\nDanach folgt eine körperliche Untersuchung (10-15 Min.), bei der ich Ihren gesamten Körper auf Bewegungseinschränkungen und Spannungen untersuche. Dies geschieht in Unterwäsche oder bequemer Kleidung. Ich schaue mir Ihre Körperhaltung, Bewegungsmuster und Gewebespannung an - nicht nur dort, wo es schmerzt, sondern am gesamten Körper.\n\nDie osteopathische Behandlung (25-30 Min.) erfolgt dann mit sanften manuellen Techniken. Je nach Befund kombiniere ich verschiedene Techniken aus der parietalen (Bewegungsapparat), viszeralen (Organe) und kraniosacralen Osteopathie. Die Behandlung ist in der Regel nicht schmerzhaft und wird als angenehm empfunden.\n\nZum Abschluss besprechen wir den Befund und das weitere Vorgehen: Wie viele Behandlungen voraussichtlich nötig sind, welche Übungen Sie zu Hause machen können und worauf Sie in den nächsten Tagen achten sollten. Mehr Details finden Sie auf meiner Seite zu Kosten & Ablauf.",
+          "Die Erstbehandlung dauert 60 Minuten und gliedert sich in drei Teile:\n\n**1. Anamnesegespräch (15-20 Min.):** Wir besprechen Ihre aktuellen Beschwerden, Krankengeschichte und Lebensumstände. Ich möchte verstehen, wann die Beschwerden auftreten, was sie verschlimmert oder verbessert, und ob es Vorerkrankungen, Operationen oder Unfälle gab.\n\n**2. Körperliche Untersuchung (10-15 Min.):** Ich untersuche Ihren gesamten Körper auf Bewegungseinschränkungen und Spannungen - nicht nur dort, wo es schmerzt. Dies geschieht in Unterwäsche oder bequemer Kleidung.\n\n**3. Osteopathische Behandlung (25-30 Min.):** Mit sanften manuellen Techniken aus der parietalen (Bewegungsapparat), viszeralen (Organe) und kraniosacralen Osteopathie behandle ich die gefundenen Funktionsstörungen.\n\nZum Abschluss besprechen wir den Befund und das weitere Vorgehen: Wie viele Behandlungen voraussichtlich nötig sind, welche Übungen Sie zu Hause machen können und worauf Sie achten sollten. <a href='/kosten-ablauf' className='text-teal-600 hover:text-teal-700 underline'>Mehr Details zu Kosten & Ablauf</a>.",
       },
       {
         question: "Wie viele Behandlungen sind nötig?",
@@ -95,55 +125,10 @@ const faqData = [
         answer:
           "Nach der Behandlung kann es zu verschiedenen Reaktionen kommen: Manche fühlen sich sofort besser und entspannter, andere spüren zunächst eine leichte Müdigkeit oder muskelkaterähnliche Beschwerden. Das ist normal und zeigt, dass der Körper auf die Behandlung reagiert. Diese Reaktionen klingen meist nach 1-2 Tagen ab. Ich empfehle, nach der Behandlung viel zu trinken und körperlich nicht zu viel zu machen.",
       },
-    ],
-  },
-  {
-    category: "Kosten & Erstattung",
-    questions: [
       {
-        question: "Was kostet eine osteopathische Behandlung?",
+        question: "Kann ich nach der Behandlung Sport machen oder Auto fahren?",
         answer:
-          "Eine osteopathische Behandlung kostet 150€ und dauert 45-60 Minuten. Der Preis gilt sowohl für Erst- als auch Folgebehandlungen. Sie erhalten direkt nach der Behandlung eine detaillierte Rechnung, die Sie bei Ihrer Krankenkasse zur Erstattung einreichen können.",
-      },
-      {
-        question: "Übernimmt meine Krankenkasse die Kosten?",
-        answer:
-          "Die Kostenerstattung hängt von Ihrer Krankenkasse ab:\n\n**Private Krankenkassen:** Die meisten privaten Krankenversicherungen übernehmen die vollen Kosten für osteopathische Behandlungen, wenn Sie bei einem qualifizierten Osteopathen (z.B. VFO-zertifiziert) behandelt werden. Prüfen Sie vorab Ihren Versicherungsvertrag oder fragen Sie bei Ihrer Versicherung nach.\n\n**Gesetzliche Krankenkassen:** Viele gesetzliche Krankenkassen beteiligen sich mittlerweile an den Kosten für Osteopathie mit einem Zuschuss von 40-60€ pro Sitzung (meist 3-6 Sitzungen pro Jahr). Beispiele für Kassen mit Erstattung: Techniker Krankenkasse (TK), DAK-Gesundheit, Barmer, verschiedene AOKs (regional unterschiedlich), IKK-Kassen und viele BKK-Kassen.\n\nBei gesetzlichen Kassen ist oft eine ärztliche Verordnung, Empfehlung oder Privatrezept erforderlich. Diese können Sie sich von Ihrem Hausarzt oder Facharzt ausstellen lassen. Wichtig: Die Erstattungsmodalitäten können sich ändern - informieren Sie sich daher bitte vorab bei Ihrer Kasse über die aktuellen Konditionen.\n\nSie erhalten von mir nach jeder Behandlung eine detaillierte Rechnung nach dem Gebührenverzeichnis für Heilpraktiker (GebüH), die Sie bei Ihrer Kasse einreichen können. Mehr Informationen finden Sie auf meiner Seite zu Kosten & Ablauf.",
-      },
-      {
-        question: "Brauche ich eine Überweisung vom Arzt?",
-        answer:
-          "Nein, eine Überweisung ist nicht zwingend erforderlich. Sie können direkt einen Termin bei mir buchen. Für die Kostenerstattung bei gesetzlichen Krankenkassen ist jedoch oft eine ärztliche Verordnung oder Empfehlung notwendig. Diese können Sie sich von Ihrem Hausarzt oder Facharzt ausstellen lassen.",
-      },
-      {
-        question: "Welche Zahlungsmethoden werden akzeptiert?",
-        answer:
-          "Sie können bar oder per EC-Karte (Girocard/Maestro/V-Pay) bezahlen. Die Zahlung erfolgt direkt nach der Behandlung. Kreditkartenzahlung ist derzeit nicht möglich.",
-      },
-    ],
-  },
-  {
-    category: "Terminbuchung & Organisation",
-    questions: [
-      {
-        question: "Wie kann ich einen Termin buchen?",
-        answer:
-          "Sie können ganz einfach online über das Buchungsformular auf meiner Website einen Termin vereinbaren. Alternativ können Sie mich auch telefonisch unter 0176 4399 0001 erreichen. Online-Buchungen sind rund um die Uhr möglich und Sie erhalten sofort eine Bestätigung.",
-      },
-      {
-        question: "Wie lange muss ich auf einen Termin warten?",
-        answer:
-          "Die Wartezeit variiert je nach Auslastung. In der Regel können Sie innerhalb von 1-2 Wochen einen Termin bekommen. Bei akuten Beschwerden versuche ich, Ihnen zeitnah einen Termin anzubieten. Bei dringenden Fällen rufen Sie mich bitte direkt an.",
-      },
-      {
-        question: "Kann ich einen Termin absagen oder verschieben?",
-        answer:
-          "Ja, Sie können Termine bis 24 Stunden vor dem Termin kostenfrei absagen oder verschieben. Bei kurzfristigeren Absagen (weniger als 24h) oder Nichterscheinen wird die volle Behandlungsgebühr berechnet, da ich den Termin nicht mehr anderweitig vergeben kann. Bitte haben Sie Verständnis für diese Regelung.",
-      },
-      {
-        question: "Wo finden die Behandlungen statt?",
-        answer:
-          "Ich behandle in meiner Praxis in Hamburg-Rotherbaum, Rappstraße 7, 20146 Hamburg. Die Praxis ist gut mit öffentlichen Verkehrsmitteln (U-Bahn Hallerstraße, diverse Buslinien) und dem Auto erreichbar. Parkmöglichkeiten finden Sie in der Umgebung.",
+          "Auto fahren ist nach der Behandlung kein Problem. Bei Sport empfehle ich, am Tag der Behandlung auf intensive Belastung zu verzichten und dem Körper Zeit zur Regeneration zu geben. Leichte Bewegung wie Spazierengehen ist sogar gut. Ab dem nächsten Tag können Sie in der Regel wieder normal trainieren - je nachdem, wie Ihr Körper reagiert hat.",
       },
     ],
   },
@@ -153,22 +138,67 @@ const faqData = [
       {
         question: "Kann Osteopathie bei Rückenschmerzen helfen?",
         answer:
-          "Ja, Osteopathie ist sehr effektiv bei Rückenschmerzen und gehört zu den häufigsten Behandlungsgründen in meiner Praxis. Der große Vorteil der Osteopathie liegt im ganzheitlichen Ansatz: Ich behandle nicht nur die schmerzende Stelle, sondern suche nach den tatsächlichen Ursachen - die oft in einer ganz anderen Körperregion liegen.\n\nBei akuten Rückenschmerzen wie einem Hexenschuss oder einer ISG-Blockade kann oft schon nach 1-3 Behandlungen eine deutliche Besserung eintreten. Bei chronischen Rückenschmerzen (länger als 3 Monate) arbeite ich mit 4-6 Sitzungen, um nachhaltige Verbesserungen zu erreichen.\n\nHäufige Rückenprobleme, die ich behandle:\n- Bandscheibenvorfälle und -vorwölbungen\n- ISG-Blockaden (Iliosakralgelenk)\n- Hexenschuss (akute Lumbalgie)\n- Chronische Verspannungen durch Fehlhaltung oder Stress\n- Skoliose-bedingte Beschwerden\n- Facettensyndrom (Wirbelgelenkarthrose)\n\nDurch die Kombination aus parietaler (Bewegungsapparat), viszeraler (Organe) und kraniosacraler Osteopathie kann ich auch Ursachen finden, die auf den ersten Blick nicht offensichtlich sind - wie zum Beispiel Organverklebungen nach Operationen oder Beckenschiefstände durch alte Verletzungen. Mehr Informationen und ein Praxisbeispiel finden Sie auf meiner detaillierten Seite zu Rückenschmerzen.",
+          "Ja, Osteopathie ist sehr effektiv bei Rückenschmerzen und gehört zu den häufigsten Behandlungsgründen in meiner Praxis. Ich behandle nicht nur die schmerzende Stelle, sondern suche nach den tatsächlichen Ursachen im gesamten Körper.\n\nBei akuten Rückenschmerzen (Hexenschuss, ISG-Blockade) kann oft schon nach 1-3 Behandlungen eine deutliche Besserung eintreten. Bei chronischen Beschwerden arbeite ich mit 4-6 Sitzungen.\n\nHäufige Rückenprobleme, die ich behandle: Bandscheibenvorfälle, ISG-Blockaden, Hexenschuss, chronische Verspannungen, Skoliose-Beschwerden und Facettensyndrom.\n\n<a href='/behandlungen/rueckenschmerzen' className='text-teal-600 hover:text-teal-700 underline'>→ Mehr Details und Praxisbeispiele: Rückenschmerzen-Behandlungsseite</a> | <a href='/blog/rueckenschmerzen-bandscheibenvorfall' className='text-teal-600 hover:text-teal-700 underline'>Blog: Bandscheibenvorfall behandeln</a>",
       },
       {
         question: "Hilft Osteopathie bei Kopfschmerzen und Migräne?",
         answer:
-          "Ja, Osteopathie kann bei verschiedenen Arten von Kopfschmerzen sehr hilfreich sein. Besonders erfolgreich ist die Behandlung bei:\n\n**Spannungskopfschmerzen:** Diese entstehen oft durch Verspannungen im Nacken, Schultern und Kiefer. Durch manuelle Techniken löse ich diese Spannungen und verbessere die Durchblutung im Kopf-Hals-Bereich.\n\n**Migräne:** Bei Migräne arbeite ich mit craniosacralen Techniken am Schädel und der Halswirbelsäule. Diese sanften Techniken können die Häufigkeit und Intensität von Migräneattacken reduzieren. Besonders bei Migräne mit Aura und menstruationsassoziierter Migräne sehe ich gute Erfolge.\n\n**CMD (Craniomandibuläre Dysfunktion):** Kiefergelenksprobleme führen häufig zu Kopfschmerzen, Gesichtsschmerzen und Tinnitus. Die osteopathische Behandlung des Kiefers, der Kaumuskulatur und der Schädelbasis kann hier deutliche Linderung bringen.\n\n**Zervikogene Kopfschmerzen:** Diese gehen von der Halswirbelsäule aus und strahlen in den Kopf. Durch Mobilisation der HWS und Behandlung der tiefen Nackenmuskulatur lassen sich diese Kopfschmerzen oft gut behandeln.\n\nWichtig: Bei neu auftretenden, sehr starken oder untypischen Kopfschmerzen sollten Sie zunächst ärztlich abklären lassen, dass keine ernsthafte Erkrankung vorliegt. Detaillierte Informationen finden Sie auf meiner Seite zu Kopfschmerzen & Migräne.",
+          "Ja, Osteopathie kann bei verschiedenen Arten von Kopfschmerzen sehr hilfreich sein:\n\n**Spannungskopfschmerzen:** Entstehen oft durch Verspannungen im Nacken und Schultern. Durch manuelle Techniken löse ich diese Spannungen.\n\n**Migräne:** Mit craniosacralen Techniken am Schädel und der HWS kann ich die Häufigkeit und Intensität von Migräneattacken reduzieren. Besonders bei Migräne mit Aura sehe ich gute Erfolge.\n\n**CMD (Kiefergelenksprobleme):** Die Behandlung des Kiefers kann Kopfschmerzen, Gesichtsschmerzen und Tinnitus deutlich lindern.\n\n**Zervikogene Kopfschmerzen:** Diese gehen von der HWS aus. Durch Mobilisation der Halswirbelsäule lassen sich diese oft gut behandeln.\n\nWichtig: Bei neu auftretenden, sehr starken Kopfschmerzen sollten Sie zunächst ärztlich abklären lassen, dass keine ernsthafte Erkrankung vorliegt.\n\n<a href='/behandlungen/kopfschmerzen-migraene' className='text-teal-600 hover:text-teal-700 underline'>→ Detaillierte Infos: Kopfschmerzen & Migräne</a> | <a href='/blog/kopfschmerzen-trigeminus-ursache' className='text-teal-600 hover:text-teal-700 underline'>Blog: Trigeminusnerv & Kopfschmerzen</a>",
       },
       {
         question: "Kann Osteopathie bei Verdauungsbeschwerden helfen?",
         answer:
-          "Ja, viszerale (organorientierte) Osteopathie ist sehr wirksam bei funktionellen Verdauungsbeschwerden. Dieser Bereich der Osteopathie konzentriert sich auf die inneren Organe, ihre Aufhängungen und ihre Beweglichkeit.\n\nHäufige Verdauungsprobleme, die ich behandle:\n- **Reizdarm (IBS):** Bauchschmerzen, Blähungen, Durchfall oder Verstopfung ohne organische Ursache\n- **Chronische Verstopfung:** Oft durch verminderte Darmmotilität oder Spannungen im Beckenbereich\n- **Blähungen:** Durch verbesserte Darmbeweglichkeit und Gasabgang\n- **Reflux und Sodbrennen:** Behandlung des Zwerchfells und der Speiseröhre\n- **Narben und Verwachsungen:** Nach Bauchoperationen (Appendektomie, Kaiserschnitt, etc.)\n\nDurch sanfte manuelle Techniken am Bauchraum löse ich Spannungen, verbessere die Durchblutung der Organe und unterstütze deren natürliche Beweglichkeit (Motilität). Viele meiner Patienten berichten von deutlicher Besserung ihrer Beschwerden - oft schon nach 2-4 Behandlungen.\n\nWichtig: Bei akuten Bauchschmerzen, Blut im Stuhl, unerklärlichem Gewichtsverlust oder anderen Warnsignalen sollten Sie zunächst eine ärztliche Abklärung vornehmen lassen. Die Osteopathie ersetzt keine medizinische Diagnostik, kann aber bei funktionellen Beschwerden sehr gut helfen. Mehr Details und Behandlungsbeispiele finden Sie auf meiner Seite zu Verdauungsbeschwerden.",
+          "Ja, viszerale (organorientierte) Osteopathie ist sehr wirksam bei funktionellen Verdauungsbeschwerden. Ich behandle häufig: Reizdarm (IBS), chronische Verstopfung, Blähungen, Reflux/Sodbrennen und Narben/Verwachsungen nach Bauchoperationen.\n\nDurch sanfte manuelle Techniken am Bauchraum löse ich Spannungen, verbessere die Durchblutung der Organe und unterstütze deren natürliche Beweglichkeit. Viele Patienten berichten von deutlicher Besserung - oft schon nach 2-4 Behandlungen.\n\nWichtig: Bei akuten Bauchschmerzen, Blut im Stuhl oder unerklärlichem Gewichtsverlust sollten Sie zunächst ärztlich abklären lassen.\n\n<a href='/behandlungen/verdauungsbeschwerden' className='text-teal-600 hover:text-teal-700 underline'>→ Mehr Details: Verdauungsbeschwerden-Seite</a> | <a href='/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang' className='text-teal-600 hover:text-teal-700 underline'>Blog: Reizdarm & Rückenschmerzen</a>",
       },
       {
         question: "Behandeln Sie auch Schwangere?",
         answer:
-          "Ja, ich begleite gerne Schwangere osteopathisch. Die Behandlung ist sehr sanft und sicher und kann bei typischen Schwangerschaftsbeschwerden wie Rückenschmerzen, ISG-Blockaden, Symphysenschmerzen oder Sodbrennen helfen. Auch zur Geburtsvorbereitung und nach der Geburt (Rückbildung, Beckenboden, Narbennachsorge) ist Osteopathie sehr sinnvoll. Ab dem 2. Trimester kann behandelt werden. Mehr auf meiner Seite zu Schwangerschaft & Postpartal.",
+          "Ja, ich begleite gerne Schwangere osteopathisch. Die Behandlung ist sehr sanft und sicher und kann bei typischen Schwangerschaftsbeschwerden wie Rückenschmerzen, ISG-Blockaden, Symphysenschmerzen oder Sodbrennen helfen. Auch zur Geburtsvorbereitung und nach der Geburt (Rückbildung, Beckenboden, Narbennachsorge) ist Osteopathie sehr sinnvoll. Ab dem 2. Trimester kann behandelt werden.",
+      },
+      {
+        question: "Behandeln Sie auch Kinder und Babys?",
+        answer:
+          "Ich behandle Kinder ab etwa 6 Jahren mit angepassten, sehr sanften Techniken. Für Säuglinge und Kleinkinder (0-5 Jahre) empfehle ich spezialisierte Kinderosteopathen, da diese Altersgruppe besondere Ausbildung und Techniken erfordert. Gerne empfehle ich Ihnen entsprechende Kollegen in Hamburg, die auf pädiatrische Osteopathie spezialisiert sind.",
+      },
+    ],
+  },
+  {
+    category: "Allgemeine Fragen zur Osteopathie",
+    questions: [
+      {
+        question: "Was ist Osteopathie?",
+        answer:
+          "Osteopathie ist eine ganzheitliche manuelle Medizin, die den Körper als Einheit betrachtet. Sie basiert auf dem Prinzip, dass der Körper zur Selbstheilung fähig ist, wenn alle Strukturen frei beweglich und gut durchblutet sind.\n\nDie Osteopathie umfasst drei große Bereiche: Die parietale Osteopathie behandelt den Bewegungsapparat (Knochen, Muskeln, Gelenke), die viszerale Osteopathie konzentriert sich auf die inneren Organe und ihre Aufhängungen, und die kraniosakrale Osteopathie arbeitet am Schädel, der Wirbelsäule und dem Nervensystem.\n\nAls VFO-zertifizierter Osteopath habe ich eine 5-jährige berufsbegleitende Ausbildung absolviert und arbeite ausschließlich manuell. Ich suche nicht nur nach dem Ort des Schmerzes, sondern nach den Ursachen im gesamten Körper.\n\n<a href='/was-ist-osteopathie' className='text-teal-600 hover:text-teal-700 underline'>→ Mehr erfahren: Was ist Osteopathie?</a>",
+      },
+      {
+        question: "Für wen ist Osteopathie geeignet?",
+        answer:
+          "Osteopathie ist grundsätzlich für jeden geeignet - von Kindern über Erwachsene bis zu Senioren. Die Techniken werden individuell an Alter, Konstitution und Beschwerdebild angepasst. Besonders hilfreich ist Osteopathie bei Rückenschmerzen, Kopfschmerzen, Verdauungsbeschwerden, Sportverletzungen und vielen weiteren Beschwerden. <a href='/behandlungen' className='text-teal-600 hover:text-teal-700 underline'>Alle Behandlungsschwerpunkte ansehen</a>.",
+      },
+      {
+        question: "Was ist der Unterschied zwischen Osteopathie und Physiotherapie?",
+        answer:
+          "Während Physiotherapie oft symptomorientiert arbeitet und häufig Geräte oder Übungen einsetzt, arbeitet die Osteopathie ausschließlich manuell und ganzheitlich. Osteopathen suchen nach den Ursachen der Beschwerden im gesamten Körper und behandeln nicht nur die schmerzende Stelle. Eine osteopathische Behandlung dauert 45-60 Minuten und umfasst eine umfassende Untersuchung und Behandlung.",
+      },
+      {
+        question: "Was ist der Unterschied zwischen Osteopathie und Chiropraktik?",
+        answer:
+          "Beide arbeiten manuell, aber mit unterschiedlichen Ansätzen: Chiropraktiker konzentrieren sich hauptsächlich auf die Wirbelsäule und Gelenke und arbeiten oft mit schnellen, impulsartigen Manipulationen (das 'Knacken'). Osteopathen arbeiten ganzheitlicher und sanfter. Ich behandle nicht nur Gelenke, sondern auch Organe, Gewebe und das Nervensystem mit weichen, fließenden Techniken. Der Fokus liegt auf dem Verständnis des Körpers als Gesamtsystem.",
+      },
+      {
+        question: "Ist Osteopathie wissenschaftlich anerkannt?",
+        answer:
+          "Ja, es gibt zunehmend wissenschaftliche Studien zur Wirksamkeit der Osteopathie, besonders bei Rückenschmerzen, Kopfschmerzen und muskuloskelettalen Beschwerden. Viele Krankenkassen erkennen die Osteopathie an und erstatten die Behandlungskosten teilweise oder vollständig. Osteopathie wird auch von der WHO (Weltgesundheitsorganisation) als eigenständige Behandlungsmethode anerkannt.",
+      },
+      {
+        question: "Wann sollte ich NICHT zur Osteopathie gehen?",
+        answer:
+          "Osteopathie hat klare Grenzen: Bei akuten Infektionen mit Fieber, frischen Knochenbrüchen, akuten Bandscheibenvorfällen mit neurologischen Ausfällen (Taubheit, Lähmungen), Tumoren oder schwerer Osteoporose sollten Sie zunächst ärztlich abklären lassen. Osteopathie ersetzt keine medizinische Notfallversorgung. Bei Unsicherheit sprechen Sie mich gerne an - ich berate Sie ehrlich, ob Osteopathie in Ihrem Fall sinnvoll ist oder ob eine ärztliche Abklärung Vorrang hat.",
+      },
+      {
+        question: "Wie kann ich Ihre Qualifikationen überprüfen?",
+        answer:
+          "Ich bin VFO-zertifizierter Osteopath (Verband Freier Osteopathen) mit 5-jähriger berufsbegleitender Ausbildung und B.Sc. Osteopathie. Sie können meine Qualifikation im <a href='https://www.vfo.de/praktikersuche' target='_blank' rel='noopener noreferrer' className='text-teal-600 hover:text-teal-700 underline'>VFO-Verzeichnis</a> überprüfen. Mehr zu meiner Ausbildung und Philosophie finden Sie auf meiner <a href='/ueber-mich' className='text-teal-600 hover:text-teal-700 underline'>Über-mich-Seite</a>.",
       },
     ],
   },
@@ -241,9 +271,10 @@ export default function FAQPage() {
                           ▼
                         </span>
                       </summary>
-                      <div className="mt-4 text-slate-700 leading-relaxed">
-                        {item.answer}
-                      </div>
+                      <div
+                        className="mt-4 text-slate-700 leading-relaxed prose prose-slate max-w-none prose-a:text-teal-600 prose-a:no-underline hover:prose-a:text-teal-700 hover:prose-a:underline"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </details>
                   ))}
                 </div>

@@ -27,9 +27,9 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen, B.Sc.",
+  title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | 40-60€ Kassenzuschuss",
   description:
-    "Erfahrener Osteopath in Hamburg-Rotherbaum ⭐ VFO-zertifiziert, B.Sc. Osteopathie ✓ Evidenzbasierte Behandlung bei Rücken-, Nacken- & Gelenkschmerzen ✓ 45-60 Min Behandlung, 150€ ✓ Vollständige Kassenerstattung ➜ Online-Termin!",
+    "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert, B.Sc. ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss ✓ 2 Standorte: Rotherbaum & Eimsbüttel | Jetzt buchen!",
   keywords: [
     "Osteopathie Hamburg",
     "Osteopath Hamburg",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen, B.Sc.",
+    title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | 40-60€ Kassenzuschuss",
     description:
-      "Erfahrener Osteopath in Hamburg-Rotherbaum ⭐ VFO-zertifiziert, B.Sc. Osteopathie ✓ Evidenzbasierte Behandlung ✓ 45-60 Min, 150€ ✓ Vollständige Kassenerstattung ➜ Termin!",
+      "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss | Jetzt buchen!",
     url: "/",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osteopathie Hamburg Rotherbaum: VFO-zertifiziert | Joshua Alsen",
-    description: "Erfahrener Osteopath ⭐ VFO-zertifiziert, B.Sc. ✓ Evidenzbasierte Behandlung ✓ 150€ (45-60 Min) ✓ Kassenerstattung ➜ Online-Termin!",
+    title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | Kassenzuschuss",
+    description: "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss ✓ Jetzt buchen!",
     images: ["/og-image.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",

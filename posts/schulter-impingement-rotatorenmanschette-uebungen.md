@@ -282,6 +282,7 @@ Wenn nach Rippen-Mobilisierung die Atmung tiefer wird und der Brustkorb sich wei
 **B) Zwerchfell behandeln:**
 - Zwerchfell-Verspannung (durch flache Atmung, [Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system))
 - Viszerale Techniken zur Zwerchfell-Entspannung
+- [Zusammenhang zwischen Verdauung und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) zeigt, wie viszerale Spannungen die Körperhaltung beeinflussen
 - Folge: Brustkorb weitet sich → BWS kann in Extension gehen → Schulterblatt-Basis verbessert
 
 **C) Thoracic Outlet (obere Thoraxapertur):**
@@ -438,6 +439,20 @@ ipps (Ergonomie, Schlafen)
 
 ---
 
+## Jetzt Termin vereinbaren
+
+**Leiden Sie unter Schulterschmerzen und möchten die Ursache behandeln lassen?**
+
+Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ganzheitlich – ohne OP, mit bewährten osteopathischen Techniken.
+
+**📞 Termin buchen:**
+- **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung)
+- **Telefon:** [0176 43990001](tel:+4017643990001)
+
+**Standorte:** Rotherbaum (Rappstraße 7) & Eimsbüttel (Stresemannallee 118)
+
+---
+
 ## Wann ist eine OP doch sinnvoll?
 
 **Osteopathie ist sehr wirksam, aber nicht in jedem Fall ausreichend!**
@@ -518,10 +533,12 @@ ipps (Ergonomie, Schlafen)
 **Viele Impingement-Patienten haben AUCH:**
 - [Chronische Nackenschmerzen](/blog/hws-blockierung-nacken-verspannung)
 - [Spannungskopfschmerzen](/blog/spannungskopfschmerzen-muskel-oder-hws)
+- [Chronische Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten)
 - [Kieferbeschwerden (CMD)](/blog/cmd-nackenschmerzen-kiefergelenk)
 
 **Warum?**
 - Alles hängt zusammen: HWS → Schulter → BWS
+- [Versteckte Ursachen von Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen) betreffen oft auch die Schulter
 - Osteopathie behandelt das GESAMTE System
 
 ---
@@ -537,7 +554,7 @@ Nach einem [Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behan
 
 ---
 
-## Häufig gestellte Fragen (FAQ)
+## Häufige Fragen
 
 ### Wie viele Behandlungen brauche ich?
 
