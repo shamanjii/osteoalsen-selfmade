@@ -14,10 +14,32 @@ export function middleware(request: NextRequest) {
     '/osteopath-hamburg': '/',
 
     // Heilpraktiker variation - redirect to general info
-    '/heilpraktiker-osteopathie-hamburg': '/was-ist-osteopathie',
+    '/heilpraktiker-osteopathie-hamburg': '/was-ist-osteopathie/',
 
     // Patient info - content now in FAQ
-    '/patienteninfos': '/faq',
+    '/patienteninfos': '/faq/',
+
+    // 404 Pages - Broken links fixed, now redirect to relevant pages
+    '/kontakt': '/terminbuchung/',
+    '/kontakt/': '/terminbuchung/',
+    '/termin': '/terminbuchung/',
+    '/termin/': '/terminbuchung/',
+    '/leistungen': '/behandlungen/',
+    '/leistungen/': '/behandlungen/',
+
+    // Non-existent treatment pages
+    '/behandlungen/schwangerschaft': '/behandlungen/',
+    '/behandlungen/schwangerschaft/': '/behandlungen/',
+    '/behandlungen/chronische-schmerzen': '/behandlungen/stress-burnout/',
+    '/behandlungen/chronische-schmerzen/': '/behandlungen/stress-burnout/',
+    '/behandlungen/aeltere-patienten': '/behandlungen/',
+    '/behandlungen/aeltere-patienten/': '/behandlungen/',
+    '/behandlungen/rehabilitation': '/behandlungen/',
+    '/behandlungen/rehabilitation/': '/behandlungen/',
+    '/behandlungen/ernaehrungsberatung': '/behandlungen/',
+    '/behandlungen/ernaehrungsberatung/': '/behandlungen/',
+    '/behandlungen/kopfschmerzen': '/behandlungen/kopfschmerzen-migraene/',
+    '/behandlungen/kopfschmerzen/': '/behandlungen/kopfschmerzen-migraene/',
   };
 
   if (redirects[path]) {
@@ -34,5 +56,23 @@ export const config = {
     '/osteopath-hamburg',
     '/heilpraktiker-osteopathie-hamburg',
     '/patienteninfos',
+    '/kontakt',
+    '/kontakt/',
+    '/termin',
+    '/termin/',
+    '/leistungen',
+    '/leistungen/',
+    '/behandlungen/schwangerschaft',
+    '/behandlungen/schwangerschaft/',
+    '/behandlungen/chronische-schmerzen',
+    '/behandlungen/chronische-schmerzen/',
+    '/behandlungen/aeltere-patienten',
+    '/behandlungen/aeltere-patienten/',
+    '/behandlungen/rehabilitation',
+    '/behandlungen/rehabilitation/',
+    '/behandlungen/ernaehrungsberatung',
+    '/behandlungen/ernaehrungsberatung/',
+    '/behandlungen/kopfschmerzen',
+    '/behandlungen/kopfschmerzen/',
   ],
 };
