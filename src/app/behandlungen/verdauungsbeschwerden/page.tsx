@@ -691,14 +691,14 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/behandlungen/chronische-schmerzen"
+                  href="/behandlungen/stress-burnout/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
-                    <span>🔄</span> Chronische Schmerzen
+                    <span>🔄</span> Stress & Burnout
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Ganzheitlicher Ansatz bei langanhaltenden Beschwerden, inklusive chronischer Verdauungsstörungen.
+                    Stress wirkt sich direkt auf die Verdauung aus - wir behandeln beide Aspekte ganzheitlich.
                   </p>
                 </Link>
                 <Link

@@ -580,7 +580,7 @@ A: Viele gesetzliche Krankenkassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kos
 **→ [Jetzt Termin vereinbaren](/terminbuchung)**
 
 **Oder haben Sie noch Fragen?**
-→ [Kontakt aufnehmen](/kontakt)
+→ [Kontakt aufnehmen](/terminbuchung/)
 → Telefon: +49 176 43990001
 
 **Standort:**

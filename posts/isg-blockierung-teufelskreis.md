@@ -751,10 +751,10 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 
 Ihre ISG-Blockierung kommt immer wieder? **Es liegt nicht daran, dass Sie "anfällig" sind – es liegt daran, dass die Ursache noch nicht gefunden wurde.**
 
-**→ [Jetzt Termin buchen – Wir finden die Ursache](/termin)**
+**→ [Jetzt Termin buchen – Wir finden die Ursache](/terminbuchung/)**
 
 **Oder haben Sie Fragen?**
-→ [Schreiben Sie uns](https://www.osteoalsen.de/kontakt)
+→ [Schreiben Sie uns](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**

@@ -950,32 +950,12 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/behandlungen/chronische-schmerzen"
+                href="/behandlungen/sportosteopathie/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
-                <h3 className="font-semibold text-lg text-blue-600 mb-2">Chronische Schmerzen</h3>
+                <h3 className="font-semibold text-lg text-blue-600 mb-2">Sportosteopathie</h3>
                 <p className="text-gray-600 text-sm">
-                  Langfristige Schmerzbehandlung bei chronischer Arthrose
-                </p>
-              </Link>
-
-              <Link
-                href="/behandlungen/aeltere-patienten"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
-              >
-                <h3 className="font-semibold text-lg text-blue-600 mb-2">Behandlung älterer Patienten</h3>
-                <p className="text-gray-600 text-sm">
-                  Spezialisierte Betreuung für Senioren mit Arthrose
-                </p>
-              </Link>
-
-              <Link
-                href="/behandlungen/rehabilitation"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
-              >
-                <h3 className="font-semibold text-lg text-blue-600 mb-2">Rehabilitation nach Operationen</h3>
-                <p className="text-gray-600 text-sm">
-                  Osteopathie nach Gelenkersatz-OP (TEP)
+                  Gelenke optimal belasten und Verletzungen vorbeugen
                 </p>
               </Link>
 

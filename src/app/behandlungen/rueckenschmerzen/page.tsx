@@ -549,10 +549,8 @@ export default function RueckenschmerzenPage() {
                 Das ISG verbindet das Kreuzbein mit dem Becken und kann durch einseitige
                 Belastung, falsche Bewegungen oder nach der Schwangerschaft blockieren.
                 Typisch sind einseitige Schmerzen im Gesäß mit möglicher Ausstrahlung ins Bein.
-                Mehr Informationen zur Behandlung während und nach der{" "}
-                <Link href="/behandlungen/schwangerschaft" className="text-blue-600 hover:text-blue-800 font-medium">
-                  Schwangerschaft finden Sie hier
-                </Link>.
+                Osteopathische Behandlung kann hier besonders während und nach der Schwangerschaft
+                eine sanfte und effektive Lösung bieten.
               </p>
 
               <h3 className="text-xl font-semibold text-slate-900 mb-3">

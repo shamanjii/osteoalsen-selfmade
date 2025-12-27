@@ -654,7 +654,7 @@ A: Absolut! Nach Hüft-TEP: Osteopathie optimiert Gangbild, behandelt Kompensati
 **→ [Jetzt Termin vereinbaren](/terminbuchung)**
 
 **Oder haben Sie noch Fragen?**
-→ [Kontakt aufnehmen](/kontakt)
+→ [Kontakt aufnehmen](/terminbuchung/)
 → Telefon: +49 176 43990001
 
 **Standort:**

@@ -672,14 +672,14 @@ Selbst nach Jahrzehnten schlechter Haltung kann man:
 Sie verbringen 2.000 Stunden pro Jahr am Schreibtisch. **Jede Stunde kann Heilung sein – oder weiterer Schaden.**
 
 **Wenn Sie bereits Beschwerden haben:**
-→ [Jetzt Termin buchen – Schäden reparieren, bevor sie chronisch werden](/termin)
+→ [Jetzt Termin buchen – Schäden reparieren, bevor sie chronisch werden](/terminbuchung/)
 
 **Wenn Sie präventiv handeln wollen:**
 → Checken Sie heute die 5 Fehler durch (Checkliste oben)
 → Starten Sie mit der 30-3-3-Regel (alle 30 Min Bewegung)
 
 **Fragen zur Ergonomie oder Beschwerden?**
-→ [Schreiben Sie uns](https://www.osteoalsen.de/kontakt)
+→ [Schreiben Sie uns](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**

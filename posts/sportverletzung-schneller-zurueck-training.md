@@ -577,10 +577,10 @@ Viele Sportler leben mit "verheilten" Verletzungen, die nie optimal behandelt wu
 
 Sportverletzung – und Sie wollen **schnell, aber nachhaltig** zurück ins Training?
 
-**→ [Jetzt Termin vereinbaren](https://www.osteoalsen.de/termin)**
+**→ [Jetzt Termin vereinbaren](https://www.osteoalsen.de/terminbuchung/)**
 
 **Oder haben Sie noch Fragen?**
-→ [Schreiben Sie uns](https://www.osteoalsen.de/kontakt)
+→ [Schreiben Sie uns](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**

@@ -411,7 +411,7 @@ Die Ursachen von Knieschmerzen liegen oft im Becken oder unteren Rücken. Die bi
 
 **Kombination sinnvoll mit:**
 - ✓ Physiotherapie (Kraft-Training)
-- ✓ [Ernährungsberatung & Stoffwechseloptimierung](/behandlungen/ernaehrungsberatung) (Gewichtsreduktion bei Übergewicht)
+- ✓ Ernährungsberatung & Stoffwechseloptimierung (Gewichtsreduktion bei Übergewicht)
 - ✓ PRP-/Hyaluronsäure-Infiltrationen (bei Bedarf)
 
 ---
@@ -476,7 +476,7 @@ A: Ja! Eine OP ist **irreversibel**. Osteopathie 8-12 Wochen testen kostet Sie n
 A: Individuelle. Typisch: Nach 3-4 Sitzungen (3-4 Wochen) erste deutliche Besserung. Maximale Wirkung nach 8-12 Wochen.
 
 **Q: „Zahlt die Krankenkasse Osteopathie bei Arthrose?"**
-A: Viele gesetzliche Kassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten). Private Kassen meist 100%. → [Kassenerstattung-Info](/leistungen#kosten)
+A: Viele gesetzliche Kassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten). Private Kassen meist 100%. → [Kosten & Ablauf](/kosten-ablauf/)
 
 **Q: „Kann ich Osteopathie mit Physiotherapie kombinieren?"**
 A: Ja, sogar empfohlen! Osteopathie = Ursachen-Behandlung. Physiotherapie = Muskelaufbau. Optimale Kombination!
@@ -490,7 +490,7 @@ Kniearthrose – und Sie wollen die **OP vermeiden** oder zumindest hinauszöger
 **→ [Jetzt Termin vereinbaren](https://www.osteoalsen.de/terminbuchung)**
 
 **Oder haben Sie noch Fragen?**
-→ [Kontakt aufnehmen](https://www.osteoalsen.de/kontakt)
+→ [Kontakt aufnehmen](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: +49 176 43990001
 
 **Standort:**

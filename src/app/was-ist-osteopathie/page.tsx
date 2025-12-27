@@ -460,7 +460,7 @@ export default function WasIstOsteopathiePage() {
                   Schwangere
                 </h3>
                 <p className="text-slate-600">
-                  Begleitung während <Link href="/behandlungen/schwangerschaft" className="text-slate-800 hover:text-slate-900 underline font-semibold">Schwangerschaft</Link> und Geburtsvorbereitung
+                  Begleitung während Schwangerschaft und Geburtsvorbereitung
                 </p>
               </div>
 
@@ -539,7 +539,7 @@ export default function WasIstOsteopathiePage() {
 
                 <div className="bg-white border-l-4 border-pink-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>🤰</span> <Link href="/behandlungen/schwangerschaft" className="hover:text-pink-600 transition-colors">Schwangerschaft & Postpartal</Link>
+                    <span>🤰</span> Schwangerschaft & Postpartal
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Rückenschmerzen in der Schwangerschaft, Beckenbeschwerden, Geburtsvorbereitung, Rückbildung nach der Geburt. Die sanfte osteopathische Behandlung unterstützt den Körper während der Schwangerschaft, bereitet das Becken auf die Geburt vor und hilft bei der Regeneration danach.

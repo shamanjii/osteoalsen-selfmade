@@ -341,7 +341,7 @@ Sie sind unsicher, ob Osteopathie das Richtige für Sie ist? Kontaktieren Sie un
 - Sie beschreiben Ihre Symptome
 - Wir schätzen ein, ob Osteopathie helfen kann
 
-Nutzen Sie das [Kontaktformular](/kontakt) oder buchen Sie direkt einen Termin.
+Nutzen Sie das [Kontaktformular](/terminbuchung/) oder buchen Sie direkt einen Termin.
 
 ---
 
@@ -385,7 +385,7 @@ Möchten Sie sich erst weiter informieren? Diese Artikel könnten Sie interessie
 
 ## Noch Fragen?
 
-Nutzen Sie unser [Kontaktformular](/kontakt) oder buchen Sie direkt online einen Termin.
+Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt online einen Termin.
 
 ---
 

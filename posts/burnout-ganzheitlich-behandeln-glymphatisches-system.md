@@ -692,7 +692,7 @@ Burnout – und Sie wollen **nachhaltig gesund werden**, nicht nur „funktionie
 **→ [Jetzt Termin vereinbaren](https://www.osteoalsen.de/terminbuchung)**
 
 **Oder haben Sie noch Fragen?**
-→ [Kontakt aufnehmen](https://www.osteoalsen.de/kontakt)
+→ [Kontakt aufnehmen](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: +49 176 43990001
 
 **Standort:**

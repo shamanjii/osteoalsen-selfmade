@@ -398,7 +398,7 @@ Unsicher, ob Osteopathie das Richtige ist? Kontaktieren Sie uns für eine Vorabk
 - Wir schätzen ein, ob Osteopathie helfen kann
 - Klärung Ihrer Fragen
 
-Nutzen Sie das [Kontaktformular](/kontakt) oder buchen Sie direkt einen Termin.
+Nutzen Sie das [Kontaktformular](/terminbuchung/) oder buchen Sie direkt einen Termin.
 
 ---
 
@@ -443,7 +443,7 @@ Weitere Artikel, die Sie interessieren könnten:
 
 ## Noch Fragen?
 
-Nutzen Sie unser [Kontaktformular](/kontakt) oder buchen Sie direkt online einen Termin.
+Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt online einen Termin.
 
 ---
 

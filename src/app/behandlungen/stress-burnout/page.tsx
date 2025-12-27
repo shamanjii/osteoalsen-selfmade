@@ -690,12 +690,6 @@ export default function StressBurnoutPage() {
                   → Rückenschmerzen
                 </Link>
                 <Link
-                  href="/behandlungen/schwangerschaft"
-                  className="text-slate-700 hover:text-slate-900 underline text-sm"
-                >
-                  → Schwangerschaft & Postpartal
-                </Link>
-                <Link
                   href="/faq"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >

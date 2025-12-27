@@ -677,10 +677,10 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 Sie dehnen seit Wochen/Monaten, aber die Schmerzen bleiben? **Vielleicht behandeln Sie das falsche Problem.**
 
-**→ [Jetzt Termin buchen – Wir finden heraus, welcher Typ Sie sind](/termin)**
+**→ [Jetzt Termin buchen – Wir finden heraus, welcher Typ Sie sind](/terminbuchung/)**
 
 **Oder haben Sie Fragen?**
-→ [Schreiben Sie uns](https://www.osteoalsen.de/kontakt)
+→ [Schreiben Sie uns](https://www.osteoalsen.de/terminbuchung/)
 → Telefon: 040 / 1234567 (Mo-Fr 9-18 Uhr)
 
 **Standort:**
