@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
  * API Route: Lädt Google Reviews live von Google Places API
  *
  * Features:
- * - Cached 1 Stunde (ISR)
+ * - Cached 24 Stunden (ISR) - optimiert für Vercel Limits
  * - Fallback zu statischen Reviews bei Fehler
  * - Mappt Google Review Format → Website Format
  */
@@ -36,7 +36,7 @@ export async function GET() {
     const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,rating,user_ratings_total,reviews&key=${API_KEY}&language=de`;
 
     const response = await fetch(url, {
-      next: { revalidate: 3600 } // Cache 1 Stunde
+      next: { revalidate: 86400 } // Cache 24 Stunden (reduziert ISR Writes um 96%)
     });
 
     const data = await response.json();
