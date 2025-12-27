@@ -73,36 +73,21 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       changeFrequency: 'monthly',
       priority: 0.85,
     },
-    {
-      url: `${baseUrl}/osteopathie-rotherbaum`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
+    // Removed: /osteopathie-rotherbaum (redirects to /)
     {
       url: `${baseUrl}/osteopathie-eimsbuettel`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/osteopath-hamburg`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.95,
-    },
+    // Removed: /osteopath-hamburg (redirects to /)
     {
       url: `${baseUrl}/osteopathie-kosten-hamburg`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/heilpraktiker-osteopathie-hamburg`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
+    // Removed: /heilpraktiker-osteopathie-hamburg (redirects to /was-ist-osteopathie)
     {
       url: `${baseUrl}/rueckenschmerzen-osteopathie-hamburg`,
       lastModified: now,
@@ -145,12 +130,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/patienteninfos`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
+    // Removed: /patienteninfos (redirects to /faq)
     {
       url: `${baseUrl}/datenschutz`,
       lastModified: now,
