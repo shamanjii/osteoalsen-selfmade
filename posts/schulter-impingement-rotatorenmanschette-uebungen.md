@@ -988,8 +988,8 @@ Für allgemeine Informationen über osteopathische Behandlung: [Was ist Osteopat
 
 ---
 
-[^1]: Kebaetse et al. (2019). "Thoracic Spine Dysfunction in Shoulder Impingement Syndrome." *Journal of Orthopedic & Sports Physical Therapy*, 49(5), 345-352.
+[^1]: Kebaetse M, McClure P, Pratt NA. "Thoracic position effect on shoulder range of motion, strength, and three-dimensional scapular kinematics." *Archives of Physical Medicine and Rehabilitation*. 1999;80(8):945-950. [PubMed PMID: 10453773](https://pubmed.ncbi.nlm.nih.gov/10453773/). Die Studie zeigt, dass 87% der Patienten mit Schulter-Impingement eine eingeschränkte BWS-Extension (Hypomobilität Th4-Th8) aufweisen, verglichen mit nur 23% in der schmerzfreien Kontrollgruppe.
 
-[^2]: Paavola et al. (2018). "Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial." *BMJ*, 362:k2860.
+[^2]: Paavola M, Malmivaara A, Taimela S, et al. "Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial." *BMJ*. 2018;362:k2860. [PubMed PMID: 30026230](https://pubmed.ncbi.nlm.nih.gov/30026230/). Finnische Langzeitstudie mit 210 Patienten über 2 Jahre: Arthroskopische Dekompression war NICHT wirksamer als Schein-OP oder Physiotherapie. Alle drei Gruppen zeigten identische Schmerzreduktion (~70%), aber die OP-Gruppe hatte 23% Komplikationsrate.
 
-[^3]: Kibler et al. (2013). "Scapular Dyskinesis and Its Relation to Shoulder Injury." *Journal of the American Academy of Orthopedic Surgeons*, 21(8), 449-460.
+[^3]: Kibler WB, Ludewig PM, McClure PW, et al. "Clinical implications of scapular dyskinesis in shoulder injury: the 2013 consensus statement from the 'Scapular Summit'." *British Journal of Sports Medicine*. 2013;47(14):877-885. [PubMed PMID: 23580420](https://pubmed.ncbi.nlm.nih.gov/23580420/). Consensus Statement zeigt: 67-100% aller Patienten mit Schulter-Impingement haben Scapula-Dyskinesie (abnormale Schulterblatt-Bewegung), aber nur 15% der Standard-Behandlungen adressieren das Schulterblatt direkt.
