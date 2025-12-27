@@ -142,18 +142,18 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                             </span>
                         </div>
 
-                        {/* Cluster Filters - Original Design */}
-                        <div className="flex flex-wrap gap-3 justify-center">
+                        {/* Cluster Filters - Compact on mobile */}
+                        <div className="flex flex-wrap gap-2 justify-center">
                             {/* Alle Filter - NO EMOJI */}
                             <button
                                 onClick={() => setSelectedCategory('alle')}
-                                className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
+                                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-1.5 ${
                                     selectedCategory === 'alle'
                                         ? 'bg-slate-900 text-white border-slate-900'
                                         : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
                                 }`}
                             >
-                                <span className="text-sm font-medium">{categoryMap['alle'].name}</span>
+                                <span className="text-xs sm:text-sm font-medium">{categoryMap['alle'].name}</span>
                                 <span className="text-xs">({posts.length})</span>
                             </button>
 
@@ -168,13 +168,13 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         <button
                                             key={key}
                                             onClick={() => setSelectedCategory(key)}
-                                            className={`px-4 py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-2 ${
+                                            className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border-2 transition-all duration-200 flex items-center gap-1.5 ${
                                                 selectedCategory === key
                                                     ? 'bg-slate-900 text-white border-slate-900'
                                                     : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900'
                                             }`}
                                         >
-                                            <span className="text-sm font-medium">{name}</span>
+                                            <span className="text-xs sm:text-sm font-medium">{name}</span>
                                             <span className="text-xs">({count})</span>
                                         </button>
                                     );
