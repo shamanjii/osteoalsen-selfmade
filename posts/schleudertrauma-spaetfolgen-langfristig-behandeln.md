@@ -1,7 +1,7 @@
 ---
 slug: "schleudertrauma-spaetfolgen-langfristig-behandeln"
-title: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
-excerpt: "Nackenschmerzen 3 Jahre nach Auffahrunfall? 40% entwickeln chronische Spätfolgen. HWS-Instabilität → Kompensationsmuster → Symptomrückkehr. Langfristiges Behandlungsprotokoll."
+title: "Schleudertrauma-Spätfolgen behandeln | Hamburg"
+excerpt: "40% entwickeln Spätfolgen ✓ HWS-Behandlung ✓ Kompensationsmuster lösen ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:
   - "Schleudertrauma Spätfolgen Hamburg"
   - "HWS Distorsion Behandlung"

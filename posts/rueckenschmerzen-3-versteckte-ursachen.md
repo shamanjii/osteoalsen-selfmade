@@ -1,7 +1,7 @@
 ---
 slug: "rueckenschmerzen-3-versteckte-ursachen"
-title: "Rückenschmerzen? Diese 3 häufigen Ursachen werden leicht übersehen"
-excerpt: "Wenn Schmerzmittel nicht helfen und MRT unauffällig ist: Entdecken Sie die 3 versteckten Ursachen, die fast jeder Arzt übersieht. Plus: 3 Sofort-Übungen für zu Hause."
+title: "3 versteckte Ursachen von Rückenschmerzen | Hamburg"
+excerpt: "MRT unauffällig? ✓ 3 versteckte Ursachen finden ✓ 3 Sofort-Übungen ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Rückenschmerzen versteckte Ursachen"
   - "Osteopathie Rückenschmerzen"

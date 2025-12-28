@@ -1,7 +1,7 @@
 ---
 slug: rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg
-title: "Rückenschmerzen verstehen - und osteopathisch behandeln (Hamburg)"
-excerpt: "Rückenschmerzen entstehen selten nur an einer Stelle. Osteopathie verbindet strukturelle, viszerale und kraniosakrale Behandlungsansätze für ganzheitliche Schmerzlinderung."
+title: "Rückenschmerzen osteopathisch behandeln | Hamburg"
+excerpt: "Ganzheitliche Behandlung ✓ Strukturell, viszeral, kraniosakral ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Rückenschmerzen Hamburg"
   - "Osteopath Hamburg"

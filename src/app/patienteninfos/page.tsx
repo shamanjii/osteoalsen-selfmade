@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Patienteninformationen | Osteopathie Hamburg - Joshua Alsen",
+  title: "Patienteninfos | Osteopathie Hamburg - Joshua Alsen",
   description:
-    "Wichtige Informationen für Ihre osteopathische Behandlung in Hamburg: Was Sie mitbringen sollten, wie Sie sich vorbereiten und was nach der Behandlung zu beachten ist.",
+    "Infos für Ihre Behandlung ✓ Was mitbringen ✓ Vorbereitung ✓ Nachsorge ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt informieren!",
   keywords: [
     "Patienteninfos Osteopathie",
     "Erstbehandlung Osteopathie",

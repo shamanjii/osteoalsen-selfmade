@@ -1,7 +1,7 @@
 ---
 slug: "rueckenschmerzen-verdauung-radix-mesenterii"
-title: "Rückenschmerzen und Verdauung: Wie die Radix Mesenterii Darm und Lendenwirbelsäule verbindet"
-excerpt: "Rückenschmerzen UND Verdauungsprobleme gleichzeitig? Die Radix Mesenterii verbindet Darm und Lendenwirbelsäule anatomisch. Viszerale Osteopathie hilft beiden. Mit 3 Übungen."
+title: "Rückenschmerzen & Verdauung: Radix Mesenterii | HH"
+excerpt: "Darm-Wirbelsäulen-Verbindung ✓ Viszerale Osteopathie ✓ 3 Übungen ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Rückenschmerzen Verdauung"
   - "Radix Mesenterii"

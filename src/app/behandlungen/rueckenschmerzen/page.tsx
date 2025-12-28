@@ -7,9 +7,9 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Rückenschmerzen Behandlung Hamburg | Osteopathie Joshua Alsen",
+  title: "Rückenschmerzen Behandlung | Osteopathie Hamburg",
   description:
-    "Osteopathische Behandlung bei Rückenschmerzen in Hamburg. Ganzheitlicher Ansatz bei Bandscheibenproblemen, ISG-Blockaden, Hexenschuss und chronischen Rückenschmerzen. VFO-zertifiziert.",
+    "Rückenschmerzen behandeln ✓ Bandscheibe, ISG, Hexenschuss ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
     "Rückenschmerzen Osteopathie Hamburg",
     "Osteopath Rückenschmerzen Rotherbaum",

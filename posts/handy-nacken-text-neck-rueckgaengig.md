@@ -1,6 +1,6 @@
 ---
 slug: "handy-nacken-text-neck-rueckgaengig"
-title: "Handy-Nacken (Text Neck): Wie Sie die Smartphone-Schäden rückgängig machen"
+title: "Handy-Nacken (Text Neck) rückgängig machen | Hamburg"
 excerpt: "4+ Stunden täglich am Smartphone? Text Neck belastet HWS mit 27 kg. 5-Stufen-Programm zur Umkehr + Prävention. Für 18-45-Jährige."
 keywords:
   - "Text Neck Hamburg"

@@ -6,8 +6,8 @@ import FloatingBookingButton from "@/components/FloatingBookingButton";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Rückenschmerzen behandeln Hamburg | Schnelle Hilfe beim Osteopathen - Joshua Alsen",
-  description: "Akute Rückenschmerzen? Schnelle Hilfe in Hamburg ✓ Oft schon nach 1-3 Sitzungen Besserung ✓ Termine kurzfristig verfügbar ✓ Rotherbaum & Eimsbüttel ✓ Jetzt buchen!",
+  title: "Rückenschmerzen Hamburg | Osteopath - Joshua Alsen",
+  description: "Akute Rückenschmerzen? Schnelle Hilfe ✓ Oft nach 1-3 Sitzungen Besserung ✓ Termine kurzfristig ✓ Rotherbaum & Eimsbüttel ✓ Jetzt!",
   keywords: [
     "Rückenschmerzen behandeln Hamburg",
     "Akute Rückenschmerzen Hamburg",

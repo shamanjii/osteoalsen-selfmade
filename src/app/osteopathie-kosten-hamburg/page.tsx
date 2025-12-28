@@ -7,9 +7,9 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Osteopathie Kosten Hamburg | Was kostet ein Osteopath? | Joshua Alsen",
+  title: "Osteopathie Kosten Hamburg | Was kostet ein Osteopath?",
   description:
-    "Osteopathie Kosten Hamburg ✓ 150€ pro Behandlung (60 Min.) ✓ Kassenzuschuss 40-60€ ✓ Private Erstattung ✓ Keine versteckten Kosten ✓ Transparente Preise ⭐ Jetzt informieren!",
+    "Osteopathie Hamburg: 150€/60 Min. ✓ Kassenzuschuss 40-60€ ✓ Private Erstattung ✓ Transparente Preise ⭐ Jetzt informieren!",
   keywords: [
     "Osteopathie Kosten Hamburg",
     "Was kostet Osteopathie Hamburg",

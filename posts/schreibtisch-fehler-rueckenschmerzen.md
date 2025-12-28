@@ -1,7 +1,7 @@
 ---
 slug: "schreibtisch-fehler-rueckenschmerzen"
-title: "5 Fehler am Schreibtisch, die Ihren Rücken jeden Tag ein bisschen mehr zerstören"
-excerpt: "8 Stunden täglich am Schreibtisch? Diese 5 Fehler schädigen Ihren Rücken schleichend. Bildschirm zu tief, Stuhl zu hoch & mehr. Mit Checkliste und Sofort-Lösungen."
+title: "5 Schreibtisch-Fehler die Rückenschmerzen verursachen"
+excerpt: "Ergonomie-Fehler vermeiden ✓ Bildschirm, Stuhl, Haltung ✓ Checkliste & Lösungen ✓ Osteopathie Hamburg ⭐ Jetzt informieren!"
 keywords:
   - "Schreibtisch Rückenschmerzen"
   - "Ergonomie Büro Hamburg"

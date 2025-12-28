@@ -6,7 +6,7 @@ import FAQSchema from "@/components/FAQSchema";
 export const metadata: Metadata = {
   title: "Kosten & Ablauf | Osteopathie Hamburg - Joshua Alsen",
   description:
-    "Transparente Preise für osteopathische Behandlungen in Hamburg: 150€ für 45-60 Min. Viele Krankenkassen erstatten die Kosten. Ablauf der Erstbehandlung und Folgetermine.",
+    "Osteopathie Hamburg: 150€/60 Min. ✓ Kassenerstattung ✓ Behandlungsablauf ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
     "Osteopathie Kosten Hamburg",
     "Kassenerstattung Osteopathie",

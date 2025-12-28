@@ -1,6 +1,6 @@
 ---
 slug: "dehnen-rueckenschmerzen-mythos"
-title: "Warum Dehnen Ihre Rückenschmerzen schlimmer macht (und was stattdessen hilft)"
+title: "Warum Dehnen Rückenschmerzen verschlimmert (+ Lösung)"
 excerpt: "Sie dehnen täglich, aber Rückenschmerzen bleiben? Bei 70% schadet Dehnen! Instabilität statt Verkürzung. Mit 3-Typen-Test & richtigen Strategien."
 keywords:
   - "Dehnen Rückenschmerzen"

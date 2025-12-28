@@ -1,7 +1,7 @@
 ---
 slug: "migraene-ohne-aura-osteopathie"
-title: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-Ansatz)"
-excerpt: "15 Migräne-Tage/Monat trotz Triptanen? 60% haben HWS-Beteiligung. Trigeminovaskuläre Dysfunktion + Atlas-Blockierung = Teufelskreis. 4-Phasen-Behandlung erklärt."
+title: "Migräne ohne Aura: Osteopathie statt Triptane | HH"
+excerpt: "60% haben HWS-Beteiligung ✓ 4-Phasen-Behandlung ✓ Ohne Medikamente ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Migräne ohne Aura Hamburg"
   - "Migräne Osteopathie"

@@ -1,6 +1,6 @@
 ---
 slug: "spannungskopfschmerzen-muskel-oder-hws"
-title: "Spannungskopfschmerzen: Ist es der Muskel oder die HWS? (Selbsttest + Behandlung)"
+title: "Spannungskopfschmerzen: Muskel oder HWS? | Hamburg"
 excerpt: "20 Tage/Monat Kopfschmerzen? 85% denken 'Verspannung' - aber 60% haben C2-Blockierung. M. trapezius vs. Atlas-Dysfunktion. Differenzialdiagnose erklärt."
 keywords:
   - "Spannungskopfschmerzen Hamburg"

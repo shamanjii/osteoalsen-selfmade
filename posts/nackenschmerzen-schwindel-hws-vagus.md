@@ -1,6 +1,6 @@
 ---
 slug: "nackenschmerzen-schwindel-hws-vagus"
-title: "Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung verstehen & behandeln"
+title: "Nackenschmerzen & Schwindel: HWS-Vagus-Verbindung"
 excerpt: "Schwindel beim Kopfdrehen? 70% haben HWS-Ursache, nicht Ohr. Atlas-Blockierung → Vagusnerv → vegetative Symptome. Behandlungsprotokoll erklärt."
 keywords:
   - "Schwindel Nackenschmerzen Hamburg"

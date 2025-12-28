@@ -1,7 +1,7 @@
 ---
 slug: "schulterschmerzen-frozen-shoulder-osteopathie-statt-op"
-title: "Schulterschmerzen & Frozen Shoulder: Wie Osteopathie OP vermeiden hilft"
-excerpt: "Frozen Shoulder, Impingement oder Kalkschulter? Erfahren Sie, wie Osteopathie Schulterschmerzen an der Wurzel packt – und warum 70% der Schulter-OPs vermeidbar sind."
+title: "Frozen Shoulder & Schulterschmerzen | Osteopathie HH"
+excerpt: "Schulter-OP vermeiden ✓ 70% sind vermeidbar ✓ Frozen Shoulder behandeln ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:
   - "Schulterschmerzen Osteopathie"
   - "Frozen Shoulder Hamburg"

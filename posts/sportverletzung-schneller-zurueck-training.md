@@ -1,7 +1,7 @@
 ---
 slug: "sportverletzung-schneller-zurueck-training"
-title: "Sportverletzung? So kommen Sie 3x schneller zurück ins Training (ohne Rückfall)"
-excerpt: "4-6 Wochen Pause nach Sportverletzung? Mit Osteopathie 3x schneller zurück. Behandlung der kinetischen Kette verhindert Rückfälle. Mit Return-to-Sport-Protokoll."
+title: "Sportverletzung: 3x schneller zurück ins Training"
+excerpt: "Mit Osteopathie 3x schneller ✓ Rückfälle vermeiden ✓ Return-to-Sport-Protokoll ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Sportverletzung Hamburg"
   - "Sportosteopathie"

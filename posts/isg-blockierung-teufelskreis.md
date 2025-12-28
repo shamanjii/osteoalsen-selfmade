@@ -1,7 +1,7 @@
 ---
 slug: "isg-blockierung-teufelskreis"
-title: "ISG-Blockierung? Warum sie immer wiederkommt (und wie Sie den Teufelskreis durchbrechen)"
-excerpt: "ISG-Blockierung kommt immer wieder? 80% behandeln nur Symptom, nicht Ursache. 6 häufigste Auslöser + 4-Säulen-Behandlung + Selbsttests. Schluss mit Teufelskreis."
+title: "ISG-Blockierung: Teufelskreis durchbrechen | Hamburg"
+excerpt: "ISG-Blockierung dauerhaft lösen ✓ Ursachen finden ✓ 4-Säulen-Behandlung ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:
   - "ISG Blockierung Hamburg"
   - "Iliosakralgelenk Blockierung"

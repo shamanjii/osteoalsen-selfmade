@@ -1,6 +1,6 @@
 ---
 slug: "hws-blockierung-nacken-verspannung"
-title: "HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)"
+title: "HWS-Blockierung: Warum Nackenverspannung wiederkommt"
 excerpt: "Nackenverspannung kommt trotz Massage immer wieder? 85% behandeln nur Muskel, nicht HWS-Blockierung. 5 häufigste Ursachen + Atlas-Behandlung + Selbsttests."
 keywords:
   - "HWS Blockierung Hamburg"

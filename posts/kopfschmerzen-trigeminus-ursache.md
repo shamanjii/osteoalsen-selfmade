@@ -1,7 +1,7 @@
 ---
 slug: "kopfschmerzen-trigeminus-ursache"
-title: "Kopfschmerzen? Warum der Trigeminus-Nerv oft die wahre Ursache ist"
-excerpt: "Wenn Schmerzmittel nur noch kurz helfen: Entdecken Sie, warum der Trigeminus-Nerv oft die wahre Ursache für chronische Kopfschmerzen ist. Mit 3 Sofort-Übungen."
+title: "Kopfschmerzen: Trigeminus-Nerv als Ursache | Hamburg"
+excerpt: "Trigeminus-Nerv behandeln ✓ 3 Sofort-Übungen ✓ Osteopathie Hamburg ✓ Ohne Medikamente ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Kopfschmerzen Trigeminus"
   - "Trigeminus-Nerv Kopfschmerzen"

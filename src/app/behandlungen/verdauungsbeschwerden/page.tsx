@@ -7,9 +7,9 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Verdauungsbeschwerden Behandlung Hamburg | Viszerale Osteopathie",
+  title: "Verdauungsbeschwerden | Viszerale Osteopathie HH",
   description:
-    "Osteopathische Behandlung bei Reizdarm, Blähungen, Verstopfung und Verdauungsproblemen in Hamburg. Viszerale Osteopathie für den Bauchraum.",
+    "Reizdarm, Blähungen, Verstopfung behandeln ✓ Viszerale Osteopathie Hamburg ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
     "Reizdarm Osteopathie Hamburg",
     "Verdauungsbeschwerden Osteopath",

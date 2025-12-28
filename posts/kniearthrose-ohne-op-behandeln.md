@@ -1,7 +1,7 @@
 ---
 slug: "kniearthrose-ohne-op-behandeln"
-title: "Kniearthrose ohne OP behandeln: Wie Osteopathie Schmerzen lindert & Beweglichkeit erhält"
-excerpt: "Ihr Orthopäde empfiehlt eine Knie-OP? Erfahren Sie, warum bei 70% aller Arthrose-Patienten konservative Behandlung genauso wirksam ist – und wie Osteopathie Ihnen hilft, das Skalpell zu vermeiden."
+title: "Kniearthrose ohne OP behandeln | Osteopathie Hamburg"
+excerpt: "Knie-OP vermeiden ✓ 70% profitieren von konservativer Behandlung ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Kniearthrose ohne OP"
   - "Osteopathie bei Arthrose im Knie"

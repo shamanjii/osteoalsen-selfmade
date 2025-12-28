@@ -1,7 +1,7 @@
 ---
 slug: "cmd-nackenschmerzen-kiefergelenk"
-title: "Nackenschmerzen durch Kieferprobleme: Der CMD-HWS-Zusammenhang (endlich erklärt)"
-excerpt: "Morgendliche Nackenschmerzen + Kieferknacken? 70% der CMD-Patienten haben HWS-Probleme. Trigeminusnerv → Atlas-Dysfunktion → chronischer Schmerz. Behandlungsprotokoll."
+title: "CMD & Nackenschmerzen: Kiefer-HWS-Zusammenhang"
+excerpt: "70% der CMD-Patienten haben HWS-Probleme ✓ Trigeminusnerv-Behandlung ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "CMD Nackenschmerzen Hamburg"
   - "Kiefergelenk HWS"
