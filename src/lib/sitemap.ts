@@ -7,6 +7,15 @@ export interface SitemapUrl {
   priority: number;
 }
 
+// Helper function to ensure URLs have trailing slashes (matches Next.js trailingSlash: true config)
+function ensureTrailingSlash(url: string): string {
+  if (url === 'https://www.osteoalsen.de') {
+    // Homepage doesn't need trailing slash
+    return url;
+  }
+  return url.endsWith('/') ? url : `${url}/`;
+}
+
 export async function generateSitemap(): Promise<SitemapUrl[]> {
   const baseUrl = 'https://www.osteoalsen.de';
   const now = new Date().toISOString();
@@ -20,125 +29,125 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/terminbuchung`,
+      url: ensureTrailingSlash(`${baseUrl}/terminbuchung`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/behandlungen`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/behandlungen/rueckenschmerzen`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/rueckenschmerzen`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/arthrose-gelenkbeschwerden`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/arthrose-gelenkbeschwerden`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/kopfschmerzen-migraene`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/kopfschmerzen-migraene`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/nackenschmerzen`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/nackenschmerzen`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/sportosteopathie`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/sportosteopathie`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/verdauungsbeschwerden`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/verdauungsbeschwerden`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/behandlungen/stress-burnout`,
+      url: ensureTrailingSlash(`${baseUrl}/behandlungen/stress-burnout`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     // Removed: /osteopathie-rotherbaum (redirects to /)
     {
-      url: `${baseUrl}/osteopathie-eimsbuettel`,
+      url: ensureTrailingSlash(`${baseUrl}/osteopathie-eimsbuettel`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     // Removed: /osteopath-hamburg (redirects to /)
     {
-      url: `${baseUrl}/osteopathie-kosten-hamburg`,
+      url: ensureTrailingSlash(`${baseUrl}/osteopathie-kosten-hamburg`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     // Removed: /heilpraktiker-osteopathie-hamburg (redirects to /was-ist-osteopathie)
     {
-      url: `${baseUrl}/rueckenschmerzen-osteopathie-hamburg`,
+      url: ensureTrailingSlash(`${baseUrl}/rueckenschmerzen-osteopathie-hamburg`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.92,
     },
     {
-      url: `${baseUrl}/was-ist-osteopathie`,
+      url: ensureTrailingSlash(`${baseUrl}/was-ist-osteopathie`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/kosten-ablauf`,
+      url: ensureTrailingSlash(`${baseUrl}/kosten-ablauf`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/faq`,
+      url: ensureTrailingSlash(`${baseUrl}/faq`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/wissen`,
+      url: ensureTrailingSlash(`${baseUrl}/wissen`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/ueber-mich`,
+      url: ensureTrailingSlash(`${baseUrl}/ueber-mich`),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog`,
+      url: ensureTrailingSlash(`${baseUrl}/blog`),
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     // Removed: /patienteninfos (redirects to /faq)
     {
-      url: `${baseUrl}/datenschutz`,
+      url: ensureTrailingSlash(`${baseUrl}/datenschutz`),
       lastModified: now,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/impressum`,
+      url: ensureTrailingSlash(`${baseUrl}/impressum`),
       lastModified: now,
       changeFrequency: 'yearly',
       priority: 0.3,
@@ -156,7 +165,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
   ];
 
   const categoryPages: SitemapUrl[] = categories.map(category => ({
-    url: `${baseUrl}/blog/category/${category}`,
+    url: ensureTrailingSlash(`${baseUrl}/blog/category/${category}`),
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.75,
@@ -165,7 +174,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
   // Blog-Artikel dynamisch hinzufügen
   const blogSlugs = await getAllSlugs();
   const blogPages: SitemapUrl[] = blogSlugs.map(slug => ({
-    url: `${baseUrl}/blog/${slug}`,
+    url: ensureTrailingSlash(`${baseUrl}/blog/${slug}`),
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
