@@ -6,9 +6,9 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Osteopath Rotherbaum Hamburg | VFO-zertifiziert | Joshua Alsen",
+  title: "Osteopath Rotherbaum | VFO-zertifiziert | J. Alsen",
   description:
-    "Ihr Osteopath in Rotherbaum ✓ Ganzheitliche Schmerzbehandlung ✓ VFO-zertifiziert ✓ Zentrale Lage Rappstraße 7 ✓ Termine binnen 48h ✓ Vollständige Kassenerstattung möglich ⭐ Jetzt buchen!",
+    "Osteopath Rotherbaum ✓ VFO-zertifiziert ✓ Rappstraße 7 ✓ Termine binnen 48h ✓ Kassenerstattung möglich ⭐ Jetzt Termin buchen!",
   keywords: [
     "Osteopathie Rotherbaum",
     "Osteopath Rotherbaum",

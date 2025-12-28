@@ -5,9 +5,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Osteopathische Behandlungen Hamburg | Joshua Alsen",
+  title: "Osteopathie Behandlungen Hamburg | Joshua Alsen",
   description:
-    "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rückenschmerzen, Kopfschmerzen, Verdauung, Sport & mehr ✓ 60 Min. Behandlung ✓ 2 Standorte ✓ Kassenzuschuss ⭐ Jetzt Termin buchen!",
+    "Osteopath Hamburg ✓ VFO-zertifiziert ✓ Rücken, Kopf, Verdauung, Sport ✓ 60 Min. ✓ Kassenzuschuss ⭐ Jetzt Termin buchen!",
   keywords: [
     "Osteopathie Hamburg",
     "Osteopath Rotherbaum",

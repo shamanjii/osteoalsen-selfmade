@@ -7,9 +7,9 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kopfschmerzen & Migräne ohne Medikamente behandeln Hamburg | Osteopathie",
+  title: "Kopfschmerzen & Migräne | Osteopathie Hamburg",
   description:
-    "Kopfschmerzen & Migräne natürlich lindern ✓ Ohne Medikamente ✓ Ursachenbehandlung statt Symptombekämpfung ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
+    "Kopfschmerzen & Migräne ohne Medikamente behandeln ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
   keywords: [
     "Migräne Osteopathie Hamburg",
     "Kopfschmerzen Osteopath",

@@ -7,8 +7,8 @@ import FAQSchema from '@/components/FAQSchema';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Hilft Osteopathie bei Arthrose? Schmerzlinderung ohne OP | Hamburg',
-  description: 'Ja, Osteopathie hilft bei Arthrose! ✓ Natürliche Schmerzlinderung ✓ Mehr Beweglichkeit ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!',
+  title: 'Arthrose & Gelenkbeschwerden | Osteopathie Hamburg',
+  description: 'Osteopathie bei Arthrose ✓ Schmerzlinderung ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!',
   keywords: [
     'hilft osteopathie bei arthrose',
     'kann osteopath bei arthrose helfen',

@@ -4,9 +4,9 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Über mich - Joshua Alsen | Osteopath Hamburg",
+  title: "Über mich | Osteopath Hamburg - Joshua Alsen",
   description:
-    "Joshua Alsen ✓ VFO-zertifizierter Osteopath & Heilpraktiker ✓ BAO-Ausbildung (5.000+ Std.) ✓ Internationale Erfahrung ✓ 2 Standorte in Hamburg ⭐ Jetzt kennenlernen!",
+    "Joshua Alsen ✓ VFO-Osteopath & Heilpraktiker ✓ 5.000+ Std. Ausbildung ✓ 2 Standorte Hamburg ⭐ Jetzt kennenlernen!",
   keywords: [
     "Joshua Alsen",
     "Osteopath Hamburg",

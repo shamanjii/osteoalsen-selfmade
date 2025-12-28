@@ -7,9 +7,9 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sportosteopathie Hamburg | Osteopathie für Sportler - Joshua Alsen",
+  title: "Sportosteopathie Hamburg | Osteopathie für Sportler",
   description:
-    "Sportosteopathie in Hamburg: Verletzungsprävention, schnellere Regeneration & Leistungsoptimierung für Sportler. VFO-zertifizierter Osteopath. Jetzt Termin buchen!",
+    "Sportosteopathie Hamburg ✓ Prävention & Regeneration ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
   keywords: [
     "Sportosteopathie Hamburg",
     "Osteopath Sportler Hamburg",

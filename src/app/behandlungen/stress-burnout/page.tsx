@@ -7,9 +7,9 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Stress & Burnout Behandlung Hamburg | Osteopathie für Nervensystem",
+  title: "Stress & Burnout Behandlung | Osteopathie Hamburg",
   description:
-    "Osteopathische Behandlung bei Stress, Erschöpfung und Burnout in Hamburg. Regulation des vegetativen Nervensystems durch sanfte craniosacrale Techniken. VFO-zertifiziert.",
+    "Stress & Burnout mit Osteopathie behandeln ✓ Nervensystem regulieren ✓ VFO-zertifiziert ✓ Hamburg ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
     "Osteopathie Stress Hamburg",
     "Burnout Osteopathie Hamburg",

@@ -6,9 +6,9 @@ import FAQSchema from "@/components/FAQSchema";
 import StickyBookingButton from "@/components/StickyBookingButton";
 
 export const metadata: Metadata = {
-  title: "Was ist Osteopathie? | Osteopathie Hamburg - Joshua Alsen",
+  title: "Was ist Osteopathie? | Hamburg - Joshua Alsen",
   description:
-    "Osteopathie Hamburg: Ganzheitliche Heilmethode erklärt. VFO-zertifizierter Osteopath Joshua Alsen in Rotherbaum & Eimsbüttel. Behandlung von Rückenschmerzen, Kopfschmerzen & mehr.",
+    "Osteopathie erklärt ✓ VFO-Osteopath Hamburg ✓ Rotherbaum & Eimsbüttel ✓ Rückenschmerzen, Kopfschmerzen & mehr ✓ Jetzt buchen!",
   keywords: [
     "Was ist Osteopathie",
     "Osteopathie erklärt",

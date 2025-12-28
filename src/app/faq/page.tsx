@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Häufige Fragen (FAQ) | Osteopathie Hamburg - Joshua Alsen",
+  title: "FAQ | Osteopathie Hamburg - Joshua Alsen",
   description:
-    "Antworten auf häufige Fragen zur Osteopathie in Hamburg: Behandlungsablauf, Kosten, Kassenerstattung, Terminbuchung und mehr. VFO-zertifizierter Osteopath Joshua Alsen.",
+    "FAQ zur Osteopathie in Hamburg ✓ Ablauf, Kosten, Kassenerstattung ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
     "Osteopathie FAQ",
     "Osteopathie Fragen Hamburg",
