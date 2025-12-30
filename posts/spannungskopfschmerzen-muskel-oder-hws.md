@@ -1,7 +1,8 @@
 ---
 slug: "spannungskopfschmerzen-muskel-oder-hws"
 title: "Spannungskopfschmerzen: Muskel oder HWS? | Hamburg"
-excerpt: "20 Tage/Monat Kopfschmerzen? 85% denken 'Verspannung' - aber 60% haben C2-Blockierung. M. trapezius vs. Atlas-Dysfunktion. Differenzialdiagnose erklärt."
+excerpt: "Spannungskopfschmerzen sind NICHT 'nur Stress' oder 'verspannte Muskeln'. 4 neurobiomechanische Ursachen (Atlas, Trigeminusnerv, Zwerchfell) – und wie Osteopathie hilft."
+metaDescription: "4 neurobiomechanische Ursachen finden ✓ Atlas, Trigeminusnerv, Zwerchfell ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Spannungskopfschmerzen Hamburg"
   - "chronischer Spannungskopfschmerz"

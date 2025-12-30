@@ -10,6 +10,7 @@ export type PostFrontmatter = {
     slug: string;
     title: string;
     excerpt?: string;
+    metaDescription?: string; // SEO-optimized description for search engines (separate from excerpt)
     keywords?: string[];
     image?: string;
     alt?: string;

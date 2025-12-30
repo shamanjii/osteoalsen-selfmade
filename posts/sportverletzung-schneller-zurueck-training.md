@@ -1,7 +1,8 @@
 ---
 slug: "sportverletzung-schneller-zurueck-training"
 title: "Sportverletzung: 3x schneller zurück ins Training"
-excerpt: "Mit Osteopathie 3x schneller ✓ Rückfälle vermeiden ✓ Return-to-Sport-Protokoll ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+excerpt: "Sportverletzung = 6-12 Wochen Pause? Nicht mit osteopathischer Behandlung. 5 evidenzbasierte Strategien, die Regeneration um 40% beschleunigen – ohne Risiko."
+metaDescription: "Regeneration um 40% beschleunigen ✓ 5 evidenzbasierte Strategien ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:
   - "Sportverletzung Hamburg"
   - "Sportosteopathie"

@@ -1,6 +1,7 @@
 ---
 title: "Sportosteopathie Hamburg: Leistung optimieren"
-excerpt: "Performance steigern ✓ Verletzungen vorbeugen ✓ Regeneration beschleunigen ✓ Für Läufer, Triathleten ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
+excerpt: "Maximale Leistung braucht mehr als Training. Wie Sportosteopathie Biomechanik optimiert, Regeneration beschleunigt und Verletzungen verhindert – für Athleten jeden Levels."
+metaDescription: "Biomechanik optimieren ✓ Regeneration beschleunigen ✓ Verletzungen vorbeugen ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 date: "2025-12-10"
 slug: "sportosteopathie-hamburg-leistung-optimieren"
 status: "published"

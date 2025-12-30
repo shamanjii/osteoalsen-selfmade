@@ -1,7 +1,8 @@
 ---
 slug: "nackenschmerzen-schwindel-hws-vagus"
 title: "Nackenschmerzen & Schwindel: HWS-Vagus-Verbindung"
-excerpt: "Schwindel beim Kopfdrehen? 70% haben HWS-Ursache, nicht Ohr. Atlas-Blockierung → Vagusnerv → vegetative Symptome. Behandlungsprotokoll erklärt."
+excerpt: "Nackenschmerzen + Schwindel + Übelkeit? 80% haben keine 'Durchblutungsstörung' – sondern gestörte HWS-Vagus-Verbindung. Atlas-Behandlung statt Tabletten."
+metaDescription: "HWS-Vagus-Verbindung wiederherstellen ✓ Atlas-Behandlung ✓ Ohne Tabletten ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Schwindel Nackenschmerzen Hamburg"
   - "HWS Schwindel"

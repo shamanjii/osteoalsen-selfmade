@@ -2,7 +2,8 @@
 title: "Reizdarm & Rückenschmerzen: Darm-Rücken-Zusammenhang"
 slug: "reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang"
 date: "2025-12-23"
-excerpt: "Reizdarm verursacht Rückenschmerzen ✓ Viszerale Osteopathie ✓ Darm-Wirbelsäulen-Verbindung ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
+excerpt: "Warum Ihr Reizdarm die wahre Ursache Ihrer Rückenschmerzen sein kann – und wie gestörte Feedbackschleifen zwischen Zwerchfell, Vagusnerv und Dünndarm chronische Beschwerden verursachen. Evidenzbasierte Erklärung aus osteopathischer Sicht."
+metaDescription: "Reizdarm verursacht Rückenschmerzen ✓ Viszerale Osteopathie ✓ Darm-Wirbelsäulen-Verbindung ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords: ["Reizdarm Rückenschmerzen", "Rückenschmerzen Verdauung", "Darm Rücken Zusammenhang", "Reizdarm Symptome Rückenschmerzen", "Durchfall Rückenschmerzen", "Bauchschmerzen Rückenschmerzen", "Osteopathie Reizdarm", "Verdauung Rückenschmerzen"]
 image: "https://mt-togo.com/wp-content/uploads/2016/06/seitliche-Bauchschmerzen-Frau-bigstock-by-staras-ID-63507508.jpg"
 alt: "Frau mit seitlichen Bauchschmerzen und Rückenschmerzen"

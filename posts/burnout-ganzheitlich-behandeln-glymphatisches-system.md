@@ -1,7 +1,8 @@
 ---
 slug: "burnout-ganzheitlich-behandeln-glymphatisches-system"
 title: "Burnout ganzheitlich behandeln | Osteopathie Hamburg"
-excerpt: "Glymphatisches System aktivieren ✓ Vagusnerv-Stimulation ✓ Chronische Erschöpfung behandeln ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
+excerpt: "Burnout ist keine reine 'Kopfsache' - Ihr Gehirn braucht buchstäblich Entgiftung. Wie Osteopathie das glymphatische System aktiviert und chronische Erschöpfung an der Wurzel packt."
+metaDescription: "Glymphatisches System aktivieren ✓ Vagusnerv-Stimulation ✓ Chronische Erschöpfung behandeln ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:
   - "Burnout Hamburg"
   - "Burnout Behandlung Hamburg"

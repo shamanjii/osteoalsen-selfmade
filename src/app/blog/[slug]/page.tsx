@@ -34,14 +34,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     return {
         title: `${post.title} | Osteoalsen Blog`,
-        description: post.excerpt,
+        description: post.metaDescription || post.excerpt,
         keywords: post.keywords,
         alternates: {
             canonical: `https://www.osteoalsen.de/blog/${slug}/`,
         },
         openGraph: {
             title: post.title,
-            description: post.excerpt || '',
+            description: post.metaDescription || post.excerpt || '',
             type: 'article',
             images: post.image ? [post.image] : [],
             url: `https://www.osteoalsen.de/blog/${slug}`,
@@ -94,7 +94,7 @@ export default async function BlogPost({ params }: PageProps) {
             {/* Structured Data for Blog Post */}
             <BlogPostStructuredData
                 headline={post.title}
-                description={post.excerpt || ''}
+                description={post.metaDescription || post.excerpt || ''}
                 author="Joshua Alsen"
                 datePublished={post.date || new Date().toISOString()}
                 url={`https://www.osteoalsen.de/blog/${slug}`}
@@ -110,7 +110,7 @@ export default async function BlogPost({ params }: PageProps) {
             ) && (
                 <MedicalScholarlyArticle
                     headline={post.title}
-                    description={post.excerpt || ''}
+                    description={post.metaDescription || post.excerpt || ''}
                     author="Joshua Alsen"
                     datePublished={post.date || new Date().toISOString()}
                     url={`https://www.osteoalsen.de/blog/${slug}`}

@@ -1,7 +1,8 @@
 ---
 slug: "kopfschmerzen-trigeminus-ursache"
 title: "Kopfschmerzen: Trigeminus-Nerv als Ursache | Hamburg"
-excerpt: "Trigeminus-Nerv behandeln ✓ 3 Sofort-Übungen ✓ Osteopathie Hamburg ✓ Ohne Medikamente ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+excerpt: "Ihre Kopfschmerzen sind nicht einfach 'Stress' oder 'Migräne'. 3 Trigeminus-Irritationspunkte lösen 90% der therapieresistenten Kopfschmerzen aus. Evidenzbasierte Behandlung statt Tabletten."
+metaDescription: "3 Trigeminus-Irritationspunkte finden ✓ 90% therapieresistent ✓ Evidenzbasiert ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Kopfschmerzen Trigeminus"
   - "Trigeminus-Nerv Kopfschmerzen"

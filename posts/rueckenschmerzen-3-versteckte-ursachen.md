@@ -1,7 +1,8 @@
 ---
 slug: "rueckenschmerzen-3-versteckte-ursachen"
 title: "3 versteckte Ursachen von Rückenschmerzen | Hamburg"
-excerpt: "MRT unauffällig? ✓ 3 versteckte Ursachen finden ✓ 3 Sofort-Übungen ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+excerpt: "Rückenschmerzen trotz Physiotherapie? 3 versteckte Ursachen, die Ärzte selten testen: Zwerchfell-Dysfunktion, Narben-Verklebungen, ISG-Blockierung. Evidenzbasierte Behandlungsstrategien."
+metaDescription: "3 versteckte Ursachen finden ✓ Zwerchfell, Narben, ISG ✓ Evidenzbasiert ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
   - "Rückenschmerzen versteckte Ursachen"
   - "Osteopathie Rückenschmerzen"
