@@ -1,6 +1,6 @@
 ---
 slug: "spannungskopfschmerzen-muskel-oder-hws"
-title: "Spannungskopfschmerzen: Muskel oder HWS? | Hamburg"
+title: "Spannungskopfschmerzen: Ist es der Muskel oder die HWS? (Selbsttest + Behandlung)"
 excerpt: "Spannungskopfschmerzen sind NICHT 'nur Stress' oder 'verspannte Muskeln'. 4 neurobiomechanische Ursachen (Atlas, Trigeminusnerv, Zwerchfell) – und wie Osteopathie hilft."
 metaDescription: "4 neurobiomechanische Ursachen finden ✓ Atlas, Trigeminusnerv, Zwerchfell ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:

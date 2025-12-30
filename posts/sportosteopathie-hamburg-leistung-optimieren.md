@@ -1,5 +1,5 @@
 ---
-title: "Sportosteopathie Hamburg: Leistung optimieren"
+title: "Sportosteopathie Hamburg: Performance steigern, Verletzungen vorbeugen"
 excerpt: "Maximale Leistung braucht mehr als Training. Wie Sportosteopathie Biomechanik optimiert, Regeneration beschleunigt und Verletzungen verhindert – für Athleten jeden Levels."
 metaDescription: "Biomechanik optimieren ✓ Regeneration beschleunigen ✓ Verletzungen vorbeugen ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 date: "2025-12-10"

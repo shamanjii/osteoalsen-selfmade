@@ -1,6 +1,6 @@
 ---
 slug: "schulterschmerzen-frozen-shoulder-osteopathie-statt-op"
-title: "Frozen Shoulder & Schulterschmerzen | Osteopathie HH"
+title: "Schulterschmerzen & Frozen Shoulder: Wie Osteopathie OP vermeiden hilft"
 excerpt: "Frozen Shoulder (Schultersteife) gilt als 'chronisch' – doch die Ursache liegt in 85% der Fälle nicht in der Schulter. Zwerchfell + Rippen + Leber. Osteopathie statt OP."
 metaDescription: "85% Ursache außerhalb der Schulter ✓ Zwerchfell + Rippen + Leber ✓ OP vermeiden ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:

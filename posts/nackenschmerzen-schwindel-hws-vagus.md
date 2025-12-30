@@ -1,6 +1,6 @@
 ---
 slug: "nackenschmerzen-schwindel-hws-vagus"
-title: "Nackenschmerzen & Schwindel: HWS-Vagus-Verbindung"
+title: "Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung verstehen & behandeln"
 excerpt: "Nackenschmerzen + Schwindel + Übelkeit? 80% haben keine 'Durchblutungsstörung' – sondern gestörte HWS-Vagus-Verbindung. Atlas-Behandlung statt Tabletten."
 metaDescription: "HWS-Vagus-Verbindung wiederherstellen ✓ Atlas-Behandlung ✓ Ohne Tabletten ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:

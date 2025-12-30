@@ -1,6 +1,6 @@
 ---
 slug: "schleudertrauma-spaetfolgen-langfristig-behandeln"
-title: "Schleudertrauma-Spätfolgen behandeln | Hamburg"
+title: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
 excerpt: "Ihr Schleudertrauma ist Jahre her, aber Nackenschmerzen + Kopfschmerzen bleiben? Spätfolgen entstehen durch Atlas-Dysfunktion + membranöse Verklebungen. Langfristige osteopathische Behandlung."
 metaDescription: "Spätfolgen behandeln ✓ Atlas-Dysfunktion + membranöse Verklebungen ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:

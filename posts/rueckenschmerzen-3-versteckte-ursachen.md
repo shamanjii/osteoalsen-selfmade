@@ -1,6 +1,6 @@
 ---
 slug: "rueckenschmerzen-3-versteckte-ursachen"
-title: "3 versteckte Ursachen von Rückenschmerzen | Hamburg"
+title: "Rückenschmerzen? Diese 3 häufigen Ursachen werden leicht übersehen"
 excerpt: "Rückenschmerzen trotz Physiotherapie? 3 versteckte Ursachen, die Ärzte selten testen: Zwerchfell-Dysfunktion, Narben-Verklebungen, ISG-Blockierung. Evidenzbasierte Behandlungsstrategien."
 metaDescription: "3 versteckte Ursachen finden ✓ Zwerchfell, Narben, ISG ✓ Evidenzbasiert ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:

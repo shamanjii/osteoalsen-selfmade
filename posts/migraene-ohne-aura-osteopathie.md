@@ -1,6 +1,6 @@
 ---
 slug: "migraene-ohne-aura-osteopathie"
-title: "Migräne ohne Aura: Osteopathie statt Triptane | HH"
+title: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-Ansatz)"
 excerpt: "Migräne ohne Aura gilt als 'unheilbar' – doch 7 kaum bekannte Auslöser (Zwerchfell, Atlas, Vagusnerv) lassen sich osteopathisch behandeln. 70% erleben nach 4-6 Sitzungen signifikante Besserung."
 metaDescription: "7 kaum bekannte Auslöser behandeln ✓ 70% Besserung nach 4-6 Sitzungen ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:

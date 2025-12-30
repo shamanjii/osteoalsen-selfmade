@@ -1,5 +1,5 @@
 ---
-title: "Reizdarm & Rückenschmerzen: Darm-Rücken-Zusammenhang"
+title: "Reizdarm & Rückenschmerzen: Der unterschätzte Darm-Rücken-Zusammenhang"
 slug: "reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang"
 date: "2025-12-23"
 excerpt: "Warum Ihr Reizdarm die wahre Ursache Ihrer Rückenschmerzen sein kann – und wie gestörte Feedbackschleifen zwischen Zwerchfell, Vagusnerv und Dünndarm chronische Beschwerden verursachen. Evidenzbasierte Erklärung aus osteopathischer Sicht."

@@ -1,6 +1,6 @@
 ---
 slug: "sportverletzung-schneller-zurueck-training"
-title: "Sportverletzung: 3x schneller zurück ins Training"
+title: "Sportverletzung? So kommen Sie 3x schneller zurück ins Training (ohne Rückfall)"
 excerpt: "Sportverletzung = 6-12 Wochen Pause? Nicht mit osteopathischer Behandlung. 5 evidenzbasierte Strategien, die Regeneration um 40% beschleunigen – ohne Risiko."
 metaDescription: "Regeneration um 40% beschleunigen ✓ 5 evidenzbasierte Strategien ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
 keywords:

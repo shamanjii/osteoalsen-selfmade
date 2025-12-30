@@ -1,6 +1,6 @@
 ---
 slug: "hueftschmerzen-hueftarthrose-ohne-op-behandeln"
-title: "Hüftschmerzen & Arthrose ohne OP | Osteopathie Hamburg"
+title: "Hüftschmerzen & Hüftarthrose ohne OP: Wie Osteopathie die Hüft-TEP vermeidet"
 excerpt: "Hüftarthrose Grad 3 und Ihr Orthopäde empfiehlt eine Hüft-OP? Erfahren Sie, warum 65% der Hüft-OPs vermeidbar sind – und wie Osteopathie Ihnen schmerzfreie Beweglichkeit zurückgibt."
 metaDescription: "Hüft-OP vermeiden ✓ 65% sind vermeidbar ✓ Osteopathie Hamburg ✓ Schmerzfreie Beweglichkeit ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:

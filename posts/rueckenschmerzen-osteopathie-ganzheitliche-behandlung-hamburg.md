@@ -1,6 +1,6 @@
 ---
 slug: rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg
-title: "Rückenschmerzen osteopathisch behandeln | Hamburg"
+title: "Rückenschmerzen verstehen - und osteopathisch behandeln (Hamburg)"
 excerpt: "Chronische Rückenschmerzen sind selten ein reines 'Rückenproblem'. Erfahren Sie, wie Osteopathie die wahren Ursachen findet – von Zwerchfell-Dysfunktion bis viszeralen Verklebungen."
 metaDescription: "Wahre Ursachen finden ✓ Ganzheitliche Behandlung ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
 keywords:
