@@ -21,7 +21,7 @@ author: "Admin"
 
 In Deutschland haben 15-20% der Bevölkerung **Reizdarm-Symptome** [(1)](#quellen). Fast die Hälfte davon leidet auch an chronischen Rückenschmerzen [(2)](#quellen). Doch nur wenige Ärzte sehen den Zusammenhang.
 
-> 💡 **Weitere Perspektiven gewünscht?** Dieser Artikel fokussiert auf die anatomische Verbindung (Radix Mesenterii). Für umfassende Guides siehe: [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) | [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
+> 💡 **Weitere Perspektiven gewünscht?** Dieser Artikel fokussiert auf die anatomische Verbindung (Radix Mesenterii). Für umfassende Guides siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie) | [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) | [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
 
 ---
 

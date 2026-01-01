@@ -19,6 +19,8 @@ Wenn Sie unter Reizdarmsyndrom (IBS) leiden und gleichzeitig chronische Rückens
 
 In diesem Artikel erkläre ich Ihnen als Osteopath die **neurophysiologischen Mechanismen** hinter diesem Zusammenhang – und zeige Ihnen, warum klassische Behandlungen oft versagen.
 
+> 💡 **Neu hier?** Dieser Artikel vertieft einen speziellen Aspekt der viszeralen Osteopathie. Für einen umfassenden Überblick siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie)
+
 ## Das Problem: Zwei Symptome, eine falsche Behandlung
 
 **Typisches Szenario:**
