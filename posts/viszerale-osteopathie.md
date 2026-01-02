@@ -13,8 +13,8 @@ keywords:
   - "Viszerale Techniken"
   - "Organbeweglichkeit"
   - "Osteopathie Hamburg"
-image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200"
-alt: "Viszerale Osteopathie - Sanfte manuelle Behandlung der Bauchorgane"
+image: "https://source.unsplash.com/bye_nDbQqEw/1200x800"
+alt: "Anatomie des Verdauungssystems - Viszerale Osteopathie behandelt die inneren Organe"
 date: "2026-01-01T10:00:00.000Z"
 status: "published"
 ---
@@ -62,17 +62,19 @@ Die Osteopathie basiert auf **drei gleichwertigen Säulen**, die in jeder Behand
 - **Kraniale Osteopathie:** Behandlung von Schädel, Hirnhäuten, Nervensystem und dem cranio-sacralen System
 - **Viszerale Osteopathie:** Behandlung der inneren Organe – Verdauungstrakt, Atmungsorgane, Urogenitalsystem
 
-**Wichtig zu verstehen:** Viszerale Osteopathie ist **keine isolierte Behandlungsmethode**, sondern eine von drei gleichwertigen Säulen. In jeder ganzheitlichen osteopathischen Behandlung werden alle drei Bereiche berücksichtigt – nur die **Gewichtung** variiert je nach Beschwerdebild.
+**Wichtig zu verstehen:** Viszerale Osteopathie ist **keine isolierte Behandlungsmethode**, sondern eine von drei gleichwertigen Säulen. In jeder ganzheitlichen osteopathischen Behandlung werden alle drei Bereiche berücksichtigt – die **Schwerpunkte** verschieben sich fließend je nach Befund.
 
-**Beispiele für unterschiedliche Gewichtungen:**
+**Wie die drei Säulen in der Praxis zusammenwirken:**
 
-- **Bei Reizdarm:** 60% viszeral (Darm, Mesenterium), 30% parietal (Lendenwirbelsäule, Becken), 10% kranial (Vagusnerv, autonomes Nervensystem)
-- **Bei Rückenschmerzen mit Verdauungsproblemen:** 40% parietal (LWS, ISG), 40% viszeral (Darm, Nieren), 20% kranial (Stressverarbeitung)
-- **Bei reinen muskuloskelettalen Beschwerden:** 70% parietal, 20% kranial, 10% viszeral
+Die Bereiche gehen während einer Behandlung fließend ineinander über – es gibt keine strikte prozentuale Aufteilung. Stattdessen reagiere ich dynamisch auf das, was der Körper zeigt:
 
-Oft behandle ich beispielsweise bei Rückenschmerzen sowohl die Lendenwirbelsäule (parietal) als auch den Darm (viszeral), da beide Systeme über **viszero-somatische Reflexe** eng miteinander verbunden sind – mehr dazu in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang).
+- **Bei Reizdarm:** Der Schwerpunkt liegt auf viszeralen Techniken (Darm, Mesenterium), aber ich behandle gleichzeitig die Lendenwirbelsäule (parietal) und den Vagusnerv (kranial), da alle drei Systeme miteinander interagieren.
 
-Der ganzheitliche Ansatz bedeutet: Ich schaue nicht nur auf das Symptom, sondern auf die Wechselwirkungen aller drei Systeme.
+- **Bei Rückenschmerzen mit Verdauungsproblemen:** Die Behandlung wechselt zwischen parietalen Techniken (LWS, ISG) und viszeralen Techniken (Darm, Nieren), da beide Systeme über **viszero-somatische Reflexe** verbunden sind – mehr dazu in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang).
+
+- **Bei primär muskuloskelettalen Beschwerden:** Auch hier prüfe ich viszerale Komponenten, da beispielsweise eine eingeschränkte Nierenmobilität Rückenschmerzen verursachen kann.
+
+Der ganzheitliche Ansatz bedeutet: Ich schaue nicht nur auf das Symptom, sondern folge den Zusammenhängen im Körper – wohin sie auch führen. Die drei Säulen sind Werkzeuge, die sich je nach Bedarf ergänzen, nicht starre Kategorien.
 
 **Die wissenschaftliche Grundlage:**
 
@@ -271,14 +273,16 @@ Rhythmische, sanfte Kompression zur Verbesserung der Durchblutung und des Lympha
 **5. Viszerale Stretches:**
 Dehnung der Organbänder und des Mesenteriums, um Verwachsungen zu lösen und Beweglichkeit zu erhöhen.
 
-**Typischer Ablauf einer viszeralen Behandlung:**
+**Typischer Ablauf einer osteopathischen Sitzung mit viszeralem Schwerpunkt:**
 
-Eine viszerale Sitzung dauert in der Regel 50-60 Minuten und gliedert sich wie folgt:
+Eine osteopathische Behandlung dauert in der Regel 50-60 Minuten. Wenn viszerale Techniken im Fokus stehen, gliedert sich die Sitzung typischerweise wie folgt:
 
 - **Anamnese (10 Minuten):** Wir besprechen Ihre Beschwerden, Vorerkrankungen, Operationen, Essgewohnheiten, Stress-Level.
-- **Untersuchung (10 Minuten):** Listening, Mobilitätstests, Palpation der relevanten Organe.
-- **Behandlung (25-30 Minuten):** Kombination der oben genannten Techniken, je nach Befund.
+- **Ganzheitliche Untersuchung (10 Minuten):** Listening, Mobilitätstests der Organe, Palpation – aber auch Beurteilung von Wirbelsäule, Becken und cranio-sacralem System.
+- **Behandlung (25-30 Minuten):** Je nach Befund Kombination viszeraler, parietaler und kranialer Techniken – die Schwerpunkte verschieben sich fließend während der Sitzung.
 - **Nachbesprechung (5 Minuten):** Besprechung des Befundes, Selbsthilfe-Tipps, weiteres Vorgehen.
+
+**Wichtig:** Es bleibt eine **ganzheitliche osteopathische Behandlung** – der Begriff "viszerale Behandlung" beschreibt lediglich den thematischen Schwerpunkt, nicht eine isolierte Therapieform.
 
 **Was spüren Sie während der Behandlung?**
 
