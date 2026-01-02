@@ -7,6 +7,7 @@ keywords:
   - "Viszerale Osteopathie"
   - "Was ist viszerale Osteopathie"
   - "Osteopathie innere Organe"
+  - "Verdauungsbeschwerden Osteopathie"
   - "Bauchorgane Osteopathie"
   - "Jean-Pierre Barral"
   - "Viszerale Techniken"
