@@ -14,8 +14,8 @@ keywords:
   - "Rotatorenmanschette stärken"
   - "Subakromialer Raum"
   - "Schulter Biomechanik"
-image: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=1200"
-alt: "Schulter-Impingement Behandlung – Osteopathische Untersuchung der Rotatorenmanschette und Schulterblatt-Biomechanik"
+image: "https://images.unsplash.com/photo-1603309288253-08db72e5117d?q=80&w=1200&auto=format&fit=crop"
+alt: "Schulter-Impingement Röntgenbild: Rotatorenmanschette und subakromialer Raum bei Schulterschmerzen - Diagnose und Übungen"
 date: "2025-12-27T10:00:00.000Z"
 status: "published"
 ---
