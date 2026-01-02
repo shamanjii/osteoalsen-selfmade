@@ -13,8 +13,8 @@ keywords:
   - "Viszerale Techniken"
   - "Organbeweglichkeit"
   - "Osteopathie Hamburg"
-image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80"
-alt: "Anatomie des Verdauungssystems - Viszerale Osteopathie behandelt die inneren Organe"
+image: "https://images.unsplash.com/photo-bye_nDbQqEw?w=1200&q=80"
+alt: "Detailliertes anatomisches Diagramm des menschlichen Verdauungssystems - Viszerale Osteopathie"
 date: "2026-01-01T10:00:00.000Z"
 status: "published"
 ---
