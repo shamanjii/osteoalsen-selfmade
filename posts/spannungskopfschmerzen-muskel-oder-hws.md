@@ -12,8 +12,8 @@ keywords:
 date: "2025-12-13T10:00:00.000Z"
 status: "published"
 author: "Admin"
-image: "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?w=1200"
-alt: "Spannungskopfschmerzen: Ist es der Muskel oder die HWS? (Selbsttest + Behandlung)"
+image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop"
+alt: "Spannungskopfschmerzen Osteopathie Hamburg: HWS-Blockierung Atlas C2 behandeln - Selbsttest und neurobiomechanische Ursachen"
 ---
 
 **"Ich habe seit 3 Jahren fast täglich Kopfschmerzen. Es fühlt sich an wie ein Band um den Kopf. Mein Arzt sagt: 'Verspannung'. Aber warum geht es dann nicht weg?"**
