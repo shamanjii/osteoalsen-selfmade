@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
@@ -50,7 +49,6 @@ export default function OsteopathHamburgPage() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
-      <LocalBusinessSchema location="rotherbaum" />
       <main>
         <FAQSchema
           faqs={[
