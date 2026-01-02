@@ -82,7 +82,7 @@ Viszerale Osteopathie basiert auf fundierten anatomischen und physiologischen Ke
 
 1. **Organe sind durch Bindegewebe verbunden:** Faszien, Bänder und das Peritoneum (Bauchfell) bilden ein zusammenhängendes Netzwerk, das alle Organe miteinander verbindet.
 
-2. **Organmobilität ist messbar:** Moderne Ultraschall- und MRT-Studien haben die Organbeweglichkeit dokumentiert und gezeigt, dass eingeschränkte Mobilität tatsächlich mit Beschwerden korreliert.
+2. **Organmobilität ist messbar:** Moderne bildgebende Verfahren wie Ultraschall und MRT können Organbeweglichkeit dokumentieren. Klinische Beobachtungen zeigen Zusammenhänge zwischen eingeschränkter Mobilität und Beschwerden.
 
 3. **Bewegung ist essentiell für Funktion:** Wie Gelenke brauchen auch Organe Bewegung für optimale Durchblutung, Lymphdrainage und Nervenfunktion. Stagnation führt zu Dysfunktion.
 
@@ -116,7 +116,7 @@ Was Barral von anderen Therapeuten seiner Zeit unterschied, war sein systematisc
 **Wichtige Meilensteine:**
 
 - **1980er Jahre:** Erste Publikationen und Lehrbücher zur viszeralen Osteopathie, die heute noch als Standardwerke gelten
-- **1985:** Gründung des Barral Institute in den USA und Frankreich, das bis heute Fortbildungen in viszeraler Osteopathie weltweit anbietet
+- **1985:** Gründung des [Barral Institute](https://www.barralinstitute.com) in den USA und Frankreich, das bis heute Fortbildungen in viszeraler Osteopathie weltweit anbietet
 - **1990er-2000er:** Zunehmende wissenschaftliche Anerkennung durch klinische Studien
 - **Heute:** Viszerale Osteopathie ist etablierter Bestandteil der osteopathischen Ausbildung weltweit
 
@@ -132,7 +132,7 @@ Diese Philosophie spiegelt sich in der Sanftheit der viszeralen Techniken wider.
 
 Viszerale Osteopathie ist heute ein fest etablierter Bestandteil der osteopathischen Ausbildung. In Deutschland ist sie Teil der 5-jährigen Vollzeitausbildung zum Osteopathen. Darüber hinaus gibt es spezialisierte Fortbildungen, die 2-3 Jahre zusätzliche Ausbildung umfassen.
 
-Der Verband der Osteopathen Deutschland (VOD) und der Verband Freier Osteopathen (VFO) empfehlen viszerale Techniken als wichtigen Baustein einer ganzheitlichen osteopathischen Behandlung – besonders bei funktionellen Beschwerden des Verdauungstrakts, bei chronischen Schmerzen mit viszeraler Komponente und bei stressbedingten Erkrankungen.
+Der [Verband der Osteopathen Deutschland (VOD)](https://www.osteopathie.de) und der [Verband Freier Osteopathen (VFO)](https://www.vfo.de) empfehlen viszerale Techniken als wichtigen Baustein einer ganzheitlichen osteopathischen Behandlung – besonders bei funktionellen Beschwerden des Verdauungstrakts, bei chronischen Schmerzen mit viszeraler Komponente und bei stressbedingten Erkrankungen.
 
 Im nächsten Abschnitt schauen wir uns genauer an, wie Organbeweglichkeit anatomisch funktioniert und warum sie so wichtig für Ihre Gesundheit ist.
 
@@ -337,6 +337,8 @@ Viszerale Osteopathie wird bei einer Vielzahl von Beschwerden eingesetzt – ins
 - Blähungen, Völlegefühl
 - Sodbrennen und Reflux (oft in Kombination mit Zwerchfell-Behandlung)
 
+Mehr zur osteopathischen Behandlung von Verdauungsbeschwerden finden Sie auf meiner [Behandlungsseite Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden).
+
 Viele Patienten mit Reizdarm berichten, dass nicht nur die Verdauung besser funktioniert, sondern auch begleitende Rückenschmerzen nachlassen – ein Zusammenhang, den ich in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) detailliert erkläre.
 
 **2. Chronische Schmerzen mit viszeraler Komponente:**
@@ -396,7 +398,9 @@ Mehrere Studien zeigen vielversprechende Ergebnisse, insbesondere bei funktionel
 
 - Eine randomisierte kontrollierte Studie von Attali et al. (2013) zeigte, dass Patienten mit **refraktärem Reizdarm-Syndrom** nach viszeraler Osteopathie signifikante Verbesserungen der Symptome (Bauchschmerzen, Blähungen, Durchfall) berichteten – diese Verbesserungen waren sowohl kurzfristig als auch langfristig (6 Monate Follow-up) nachweisbar [1].
 
-- Bei **chronischen Unterbauchschmerzen** ohne organische Ursache konnte viszerale Osteopathie in Fallstudien die Schmerzintensität und die Lebensqualität verbessern.
+- Bereits 2007 hatte eine Pilotstudie von Hundscheid et al. gezeigt, dass **osteopathische Behandlungen bei IBS-Patienten** zu signifikanten Verbesserungen der Symptomscores und Lebensqualität führten [2].
+
+- Bei **chronischen Unterbauchschmerzen** ohne organische Ursache konnte viszerale Osteopathie in mehreren Fallstudien die Schmerzintensität und die Lebensqualität verbessern.
 
 - **Post-operative Verwachsungen** sprechen nach klinischen Beobachtungen gut auf viszerale Techniken an, auch wenn größere kontrollierte Studien noch fehlen.
 
@@ -455,3 +459,5 @@ Wenn Sie unter chronischen Verdauungsbeschwerden, unerklärlichen Rückenschmerz
 ## Quellen
 
 [1] Attali, T. V., Bouchoucha, M., & Benamouzig, R. (2013). Treatment of refractory irritable bowel syndrome with visceral osteopathy: Short-term and long-term results of a randomized trial. *Journal of Digestive Diseases*, 14(12), 654-661. https://doi.org/10.1111/1751-2980.12098
+
+[2] Hundscheid, H. W., Pepels, M. J., Engels, L. G., & Loffeld, R. J. (2007). Treatment of irritable bowel syndrome with osteopathy: Results of a randomized controlled pilot study. *Journal of Gastroenterology and Hepatology*, 22(9), 1394-1398. https://doi.org/10.1111/j.1440-1746.2006.04741.x
