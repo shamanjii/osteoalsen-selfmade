@@ -14,8 +14,8 @@ keywords:
   - "Osteopathie Schulter Hamburg"
   - "chronische Schulterschmerzen"
   - "Schultergelenk Blockade"
-image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=1200"
-alt: "Schulterschmerzen und Frozen Shoulder osteopathisch behandeln – ohne OP schmerzfrei werden"
+image: "https://images.unsplash.com/photo-1622020310962-225cfa9171de?q=80&w=1200&auto=format&fit=crop"
+alt: "Frozen Shoulder Osteopathie Hamburg: Schulterschmerzen ohne OP behandeln - wahre Ursache Zwerchfell, Rippen und Leber"
 date: "2025-12-14T10:00:00.000Z"
 status: "published"
 ---
