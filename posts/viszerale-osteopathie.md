@@ -13,7 +13,7 @@ keywords:
   - "Viszerale Techniken"
   - "Organbeweglichkeit"
   - "Osteopathie Hamburg"
-image: "https://source.unsplash.com/bye_nDbQqEw/1200x800"
+image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80"
 alt: "Anatomie des Verdauungssystems - Viszerale Osteopathie behandelt die inneren Organe"
 date: "2026-01-01T10:00:00.000Z"
 status: "published"
@@ -394,7 +394,7 @@ Die Antwort ist differenziert: Ja, es gibt zunehmend Evidenz – allerdings ist 
 
 Mehrere Studien zeigen vielversprechende Ergebnisse, insbesondere bei funktionellen Verdauungsbeschwerden:
 
-- Eine 2011 veröffentlichte Studie zeigte, dass Patienten mit **Reizdarm-Syndrom** nach viszeraler Osteopathie signifikante Verbesserungen der Symptome (Schmerzen, Blähungen, Lebensqualität) berichteten – und diese Verbesserungen auch nach 6 Monaten noch anhielten.
+- Eine randomisierte kontrollierte Studie von Attali et al. (2013) zeigte, dass Patienten mit **refraktärem Reizdarm-Syndrom** nach viszeraler Osteopathie signifikante Verbesserungen der Symptome (Bauchschmerzen, Blähungen, Durchfall) berichteten – diese Verbesserungen waren sowohl kurzfristig als auch langfristig (6 Monate Follow-up) nachweisbar [1].
 
 - Bei **chronischen Unterbauchschmerzen** ohne organische Ursache konnte viszerale Osteopathie in Fallstudien die Schmerzintensität und die Lebensqualität verbessern.
 
@@ -449,3 +449,9 @@ Wenn Sie unter chronischen Verdauungsbeschwerden, unerklärlichen Rückenschmerz
 - [Reizdarm und Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
 - [Radix Mesenterii: Warum der Darmaufhängepunkt Rückenschmerzen verursachen kann](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
 - [Burnout ganzheitlich behandeln: Das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
+
+---
+
+## Quellen
+
+[1] Attali, T. V., Bouchoucha, M., & Benamouzig, R. (2013). Treatment of refractory irritable bowel syndrome with visceral osteopathy: Short-term and long-term results of a randomized trial. *Journal of Digestive Diseases*, 14(12), 654-661. https://doi.org/10.1111/1751-2980.12098
