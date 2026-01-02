@@ -36,6 +36,12 @@ export const detectCluster = (article: Article): ClusterName => {
       text.includes('athlet') || text.includes('training')) {
     return 'Sport & Leistung';
   }
+  // Verdauung BEFORE Rücken (viszerale articles often mention Rückenschmerzen as symptom)
+  if (text.includes('viszeral') || text.includes('verdauung') || text.includes('darm') ||
+      text.includes('bauch') || text.includes('magen') || text.includes('reizdarm') ||
+      text.includes('reflux') || text.includes('sodbrennen')) {
+    return 'Verdauung & Innere Organe';
+  }
   if (text.includes('rücken') || text.includes('wirbel') || text.includes('bandscheibe') ||
       text.includes('ischias') || text.includes('iliosakral') || text.includes('isg')) {
     return 'Rücken & Wirbelsäule';
@@ -51,10 +57,6 @@ export const detectCluster = (article: Article): ClusterName => {
   if (text.includes('knie') || text.includes('hüft') || text.includes('arthrose') ||
       text.includes('gonarthrose') || text.includes('coxarthrose')) {
     return 'Knie & Hüfte';
-  }
-  if (text.includes('verdauung') || text.includes('darm') || text.includes('bauch') ||
-      text.includes('magen')) {
-    return 'Verdauung & Innere Organe';
   }
 
   return 'Osteopathie Allgemein';
