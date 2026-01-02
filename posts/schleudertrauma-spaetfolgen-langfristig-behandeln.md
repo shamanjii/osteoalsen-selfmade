@@ -12,8 +12,8 @@ keywords:
 date: "2025-12-12T12:00:00.000Z"
 status: "published"
 author: "Admin"
-image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200"
-alt: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
+image: "https://images.unsplash.com/photo-1714929818826-583ce7c11422?q=80&w=1200&auto=format&fit=crop"
+alt: "Schleudertrauma Spätfolgen Osteopathie Hamburg: Atlas-Dysfunktion und membranöse Verklebungen langfristig behandeln"
 ---
 
 **"Der Unfall war vor 4 Jahren. Warum habe ich JETZT plötzlich wieder starke Nackenschmerzen?"**

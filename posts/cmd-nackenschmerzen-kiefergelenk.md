@@ -12,8 +12,8 @@ keywords:
 date: "2025-12-12T14:00:00.000Z"
 status: "published"
 author: "Admin"
-image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1200"
-alt: "Nackenschmerzen durch Kieferprobleme: Der CMD-HWS-Zusammenhang (endlich erklärt)"
+image: "https://images.unsplash.com/photo-1612736777093-461fb48101d7?q=80&w=1200&auto=format&fit=crop"
+alt: "CMD Nackenschmerzen Osteopathie Hamburg: Kiefergelenk-HWS-Zusammenhang behandeln - Trigeminusnerv und Atlas-Dysfunktion"
 ---
 
 **"Ich habe morgens immer Nackenschmerzen UND mein Kiefer knackt beim Essen. Kann das zusammenhängen?"**
