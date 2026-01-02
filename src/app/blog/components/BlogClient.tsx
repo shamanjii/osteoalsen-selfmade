@@ -283,8 +283,8 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                                     ⏱️ {post.readingTime || 5} Min.
                                                 </span>
                                             </div>
-                                            <span className="bg-slate-900 text-white px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide flex items-center gap-1">
-                                                {post.clusterEmoji} {post.cluster}
+                                            <span className="bg-slate-900 text-white px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide">
+                                                {post.cluster}
                                             </span>
                                         </div>
 
