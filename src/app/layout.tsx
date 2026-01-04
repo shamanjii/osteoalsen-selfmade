@@ -27,9 +27,9 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | 40-60€ Kassenzuschuss",
+  title: "Osteopathie Hamburg - Joshua Alsen | VFO-zertifiziert, B.Sc. ✓ Ganzheitliche Behandlung",
   description:
-    "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert, B.Sc. ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss ✓ 2 Standorte: Rotherbaum & Eimsbüttel | Jetzt buchen!",
+    "Osteopath Hamburg ⭐ Joshua Alsen, VFO-zertifiziert & B.Sc. Osteopathie ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ganzheitlich behandeln ✓ Termine binnen 48h ✓ 2 Standorte: Rotherbaum & Eimsbüttel ✓ Kassenzuschuss möglich | Jetzt Termin buchen!",
   keywords: [
     "Osteopathie Hamburg",
     "Osteopath Hamburg",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | 40-60€ Kassenzuschuss",
+    title: "Osteopathie Hamburg - Joshua Alsen | VFO-zertifiziert, B.Sc. ✓ Ganzheitliche Behandlung",
     description:
-      "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss | Jetzt buchen!",
+      "Osteopath Hamburg ⭐ Joshua Alsen, VFO-zertifiziert & B.Sc. Osteopathie ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ganzheitlich behandeln ✓ Termine binnen 48h ✓ Kassenzuschuss möglich | Jetzt buchen!",
     url: "/",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osteopathie Hamburg Rotherbaum ✓ VFO-Osteopath | Kassenzuschuss",
-    description: "Osteopath Hamburg ⭐ Joshua Alsen ✓ VFO-zertifiziert ✓ Termin binnen 48h ✓ 40-60€ Kassenzuschuss ✓ Jetzt buchen!",
+    title: "Osteopathie Hamburg - Joshua Alsen | VFO-zertifiziert, B.Sc.",
+    description: "Osteopath Hamburg ⭐ Joshua Alsen, VFO-zertifiziert & B.Sc. Osteopathie ✓ Rückenschmerzen, Kopfschmerzen, Verdauung ganzheitlich behandeln ✓ Jetzt buchen!",
     images: ["/og-image.webp"],
     creator: "@osteoalsen",
     site: "@osteoalsen",
