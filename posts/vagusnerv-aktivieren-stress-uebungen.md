@@ -267,7 +267,7 @@ Zusätzlich setzt Kälteexposition eine Kaskade positiver Effekte in Gang:
 1. Beginnen Sie Ihre Dusche warm wie gewohnt.
 2. Drehen Sie am Ende auf kalt (starten Sie bei 20-25°C, steigern Sie über Wochen).
 3. Bleiben Sie 30-90 Sekunden unter dem kalten Wasser.
-4. Atmen Sie bewusst tief und ruhig – der Kälteschock provoziert zunächst schnelle Atmung, Sie trainieren die bewusste Kontrolle.
+4. **Wichtig - Atemkontrolle:** Der Kälteschock löst automatisch eine Schnappatmung aus – die Einatmung passiert reflexhaft. Konzentrieren Sie sich daher auf die **bewusste, lange Ausatmung**. Atmen Sie langsam und vollständig aus (4-6 Sekunden), die Einatmung regelt sich von selbst. So behalten Sie die Atmung im Griff und vermeiden Panik.
 5. Konzentrieren Sie sich auf Gesicht, Nacken und oberen Rücken (vagusreiche Zonen).
 
 **Ideal für:** Morgendliche Routine, Aufbau von Stressresilienz, langfristige Vagustonus-Verbesserung.
@@ -277,7 +277,7 @@ Zusätzlich setzt Kälteexposition eine Kaskade positiver Effekte in Gang:
 1. Suchen Sie einen kalten See, Fluss oder das Meer auf (Wassertemperatur unter 15°C).
 2. Tauchen Sie langsam ein – zuerst Beine, dann Oberkörper, zuletzt Gesicht.
 3. Bleiben Sie 1-3 Minuten im Wasser (anfangs kürzer, mit Erfahrung länger).
-4. Atmen Sie gleichmäßig und tief – das ist der Schlüssel zur Vagus-Aktivierung.
+4. **Atemtechnik ist entscheidend:** Die Schnappatmung beim Eintauchen sorgt automatisch für die Einatmung. Ihr Job: Fokussieren Sie sich auf die **langsame, kontrollierte Ausatmung** (4-8 Sekunden). Lassen Sie die Luft bewusst und vollständig ausströmen. Die Einatmung kommt reflexhaft von selbst. Diese bewusste Ausatmungskontrolle ist der Schlüssel zur Vagus-Aktivierung und verhindert Panik.
 5. Nach dem Rausgehen: Spüren Sie die intensive Wärmereaktion des Körpers und die mentale Klarheit.
 
 **Ideal für:** Wochenend-Rituale, Naturverbindung, intensive Vagus-Stimulation. Besonders belebend durch Kombination von Kälte + Naturerlebnis + oft sozialer Komponente (Eisbaden in Gruppen).
