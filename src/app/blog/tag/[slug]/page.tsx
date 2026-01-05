@@ -99,7 +99,7 @@ export default async function TagPage({ params }: PageProps) {
                             📄 {processedPosts.length} {processedPosts.length === 1 ? 'Artikel' : 'Artikel'}
                         </span>
                         <Link
-                            href="/blog"
+                            href="/blog/"
                             className="bg-slate-700/50 px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors"
                         >
                             ← Alle Artikel
@@ -122,7 +122,7 @@ export default async function TagPage({ params }: PageProps) {
                             Zu diesem Tag gibt es derzeit keine Artikel.
                         </p>
                         <Link
-                            href="/blog"
+                            href="/blog/"
                             className="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors"
                         >
                             ← Zurück zum Blog

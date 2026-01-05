@@ -920,7 +920,7 @@ export default function ArthrosePage() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <Link
-                href="/behandlungen/rueckenschmerzen"
+                href="/behandlungen/rueckenschmerzen/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Rückenschmerzen & Wirbelsäule</h3>
@@ -930,7 +930,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/behandlungen/sportverletzungen"
+                href="/behandlungen/sportverletzungen/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Sportverletzungen</h3>
@@ -940,7 +940,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/behandlungen/kopfschmerzen-migraene"
+                href="/behandlungen/kopfschmerzen-migraene/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Kopfschmerzen & Migräne</h3>
@@ -960,7 +960,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/behandlungen"
+                href="/behandlungen/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Alle Behandlungen</h3>
@@ -970,7 +970,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/ueber-mich"
+                href="/ueber-mich/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Über mich</h3>
@@ -980,7 +980,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/blog"
+                href="/blog/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Blog & Ratgeber</h3>

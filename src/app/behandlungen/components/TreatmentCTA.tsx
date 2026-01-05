@@ -16,7 +16,7 @@ export default function TreatmentCTA({
         <p className="text-slate-300 text-lg mb-8">{description}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/terminbuchung"
+            href="/terminbuchung/"
             className="inline-flex items-center justify-center bg-white text-slate-900 px-8 py-4 rounded-lg font-epilogue font-semibold hover:bg-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
           >
             <span className="mr-2">📅</span>

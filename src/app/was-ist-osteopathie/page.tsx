@@ -224,7 +224,7 @@ export default function WasIstOsteopathiePage() {
                   <li>• Sehnen und Bänder</li>
                 </ul>
                 <p className="text-slate-600 mt-4 text-sm">
-                  Anwendung bei: <Link href="/behandlungen/rueckenschmerzen" className="hover:text-slate-900 underline">Rückenschmerzen Hamburg</Link>, Gelenkbeschwerden, <Link href="/behandlungen/sportosteopathie" className="hover:text-slate-900 underline">Sportverletzungen</Link>
+                  Anwendung bei: <Link href="/behandlungen/rueckenschmerzen/" className="hover:text-slate-900 underline">Rückenschmerzen Hamburg</Link>, Gelenkbeschwerden, <Link href="/behandlungen/sportosteopathie/" className="hover:text-slate-900 underline">Sportverletzungen</Link>
                 </p>
               </div>
 
@@ -243,7 +243,7 @@ export default function WasIstOsteopathiePage() {
                   <li>• Urogenitalsystem</li>
                 </ul>
                 <p className="text-slate-600 mt-4 text-sm">
-                  Anwendung bei: <Link href="/behandlungen/verdauungsbeschwerden" className="hover:text-slate-900 underline">Verdauungsbeschwerden</Link>, Reflux, Atemwegserkrankungen
+                  Anwendung bei: <Link href="/behandlungen/verdauungsbeschwerden/" className="hover:text-slate-900 underline">Verdauungsbeschwerden</Link>, Reflux, Atemwegserkrankungen
                 </p>
               </div>
 
@@ -262,7 +262,7 @@ export default function WasIstOsteopathiePage() {
                   <li>• Gehirn- und Rückenmarksflüssigkeit</li>
                 </ul>
                 <p className="text-slate-600 mt-4 text-sm">
-                  Anwendung bei: <Link href="/behandlungen/kopfschmerzen-migraene" className="hover:text-slate-900 underline">Kopfschmerzen, Migräne</Link>, Kieferbeschwerden, <Link href="/behandlungen/stress-burnout" className="hover:text-slate-900 underline">Stress</Link>
+                  Anwendung bei: <Link href="/behandlungen/kopfschmerzen-migraene/" className="hover:text-slate-900 underline">Kopfschmerzen, Migräne</Link>, Kieferbeschwerden, <Link href="/behandlungen/stress-burnout/" className="hover:text-slate-900 underline">Stress</Link>
                 </p>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function WasIstOsteopathiePage() {
               </p>
 
               <p>
-                Ein Beispiel: <Link href="/behandlungen/rueckenschmerzen" className="text-slate-800 hover:text-slate-900 underline font-semibold">Rückenschmerzen</Link> im unteren Bereich können durch Faszienspannungen im Zwerchfell oder sogar im Nacken verursacht werden. Durch die ganzheitliche Betrachtung des Fasziensystems kann der Osteopath solche Zusammenhänge erkennen und behandeln.
+                Ein Beispiel: <Link href="/behandlungen/rueckenschmerzen/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Rückenschmerzen</Link> im unteren Bereich können durch Faszienspannungen im Zwerchfell oder sogar im Nacken verursacht werden. Durch die ganzheitliche Betrachtung des Fasziensystems kann der Osteopath solche Zusammenhänge erkennen und behandeln.
               </p>
             </div>
           </div>
@@ -470,7 +470,7 @@ export default function WasIstOsteopathiePage() {
                   Erwachsene
                 </h3>
                 <p className="text-slate-600">
-                  Bei akuten und chronischen Beschwerden, <Link href="/behandlungen/stress-burnout" className="text-slate-800 hover:text-slate-900 underline font-semibold">Stress</Link>, Prävention
+                  Bei akuten und chronischen Beschwerden, <Link href="/behandlungen/stress-burnout/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Stress</Link>, Prävention
                 </p>
               </div>
 
@@ -494,7 +494,7 @@ export default function WasIstOsteopathiePage() {
               <div className="space-y-6">
                 <div className="bg-white border-l-4 border-blue-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>🩻</span> <Link href="/behandlungen/rueckenschmerzen" className="hover:text-blue-600 transition-colors">Rückenschmerzen & Bandscheibenprobleme</Link>
+                    <span>🩻</span> <Link href="/behandlungen/rueckenschmerzen/" className="hover:text-blue-600 transition-colors">Rückenschmerzen & Bandscheibenprobleme</Link>
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Chronische und akute Schmerzen im unteren Rücken (LWS), Bandscheibenvorfälle, ISG-Blockaden, Hexenschuss. Die Osteopathie behandelt nicht nur die schmerzende Region, sondern sucht nach den Ursachen im gesamten Körper – oft liegen diese in Faszienspannungen, Fehlhaltungen oder Organfunktionsstörungen.
@@ -503,7 +503,7 @@ export default function WasIstOsteopathiePage() {
 
                 <div className="bg-white border-l-4 border-purple-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>🤕</span> <Link href="/behandlungen/kopfschmerzen-migraene" className="hover:text-purple-600 transition-colors">Kopfschmerzen & Migräne</Link>
+                    <span>🤕</span> <Link href="/behandlungen/kopfschmerzen-migraene/" className="hover:text-purple-600 transition-colors">Kopfschmerzen & Migräne</Link>
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Spannungskopfschmerzen, Migräne, Clusterkopfschmerzen, Schwindel. Durch craniosacrale Techniken und Behandlung der Halswirbelsäule kann die Durchblutung verbessert und der Druck im Schädel reguliert werden. Viele Patienten erleben eine deutliche Reduktion der Kopfschmerzfrequenz und -intensität.
@@ -512,7 +512,7 @@ export default function WasIstOsteopathiePage() {
 
                 <div className="bg-white border-l-4 border-green-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>🫃</span> <Link href="/behandlungen/verdauungsbeschwerden" className="hover:text-green-600 transition-colors">Verdauungsbeschwerden</Link>
+                    <span>🫃</span> <Link href="/behandlungen/verdauungsbeschwerden/" className="hover:text-green-600 transition-colors">Verdauungsbeschwerden</Link>
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Reizdarm, Blähungen, Verstopfung, Sodbrennen, Reflux. Die viszerale Osteopathie behandelt die inneren Organe und ihre Aufhängung. Durch Mobilisation des Verdauungstrakts und Entspannung des Zwerchfells können Verdauungsbeschwerden oft deutlich gebessert werden.
@@ -521,7 +521,7 @@ export default function WasIstOsteopathiePage() {
 
                 <div className="bg-white border-l-4 border-red-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>😰</span> <Link href="/behandlungen/stress-burnout" className="hover:text-red-600 transition-colors">Stress & Burnout</Link>
+                    <span>😰</span> <Link href="/behandlungen/stress-burnout/" className="hover:text-red-600 transition-colors">Stress & Burnout</Link>
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Chronischer Stress, Erschöpfung, Schlafstörungen, innere Unruhe, Angstzustände. Die Osteopathie reguliert das vegetative Nervensystem durch craniosacrale Techniken und Vagusnerv-Stimulation. Dies fördert Entspannung, verbessert den Schlaf und hilft dem Körper, wieder in den Regenerationsmodus zu finden.
@@ -530,7 +530,7 @@ export default function WasIstOsteopathiePage() {
 
                 <div className="bg-white border-l-4 border-orange-600 p-6 rounded-r-lg">
                   <h4 className="text-xl font-semibold text-slate-900 mb-3 font-epilogue flex items-center gap-2">
-                    <span>⚽</span> <Link href="/behandlungen/sportosteopathie" className="hover:text-orange-600 transition-colors">Sportosteopathie</Link>
+                    <span>⚽</span> <Link href="/behandlungen/sportosteopathie/" className="hover:text-orange-600 transition-colors">Sportosteopathie</Link>
                   </h4>
                   <p className="text-slate-700 leading-normal">
                     Sportverletzungen, Überlastungssyndrome, Leistungsoptimierung, Rehabilitation. Ob Läufer, Fußballer oder Kraftsportler – osteopathische Behandlung hilft bei der Regeneration, verbessert die Beweglichkeit und beugt Verletzungen vor. Viele Profisportler setzen auf regelmäßige osteopathische Betreuung.
@@ -549,7 +549,7 @@ export default function WasIstOsteopathiePage() {
 
               <div className="mt-8 text-center">
                 <Link
-                  href="/behandlungen"
+                  href="/behandlungen/"
                   className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-slate-900 rounded-md hover:bg-slate-800 transition-colors"
                 >
                   Alle Behandlungen ansehen →
@@ -630,7 +630,7 @@ export default function WasIstOsteopathiePage() {
                 Die osteopathische Behandlung setzt Prozesse in Gang, die mehrere Tage nachwirken. In den ersten 24-48 Stunden kann es zu leichten Reaktionen kommen: Muskelkater, Müdigkeit oder vorübergehende Verstärkung der Symptome. Dies ist normal und zeigt, dass Ihr Körper auf die Behandlung reagiert.
               </p>
               <p className="text-slate-700 leading-normal">
-                Die eigentliche Verbesserung tritt oft erst 3-5 Tage nach der Behandlung ein. Deshalb sind die Abstände zwischen den Sitzungen wichtig – Ihr Körper braucht Zeit zur Selbstregulation. Weitere Informationen finden Sie auf der Seite <Link href="/kosten-ablauf" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>.
+                Die eigentliche Verbesserung tritt oft erst 3-5 Tage nach der Behandlung ein. Deshalb sind die Abstände zwischen den Sitzungen wichtig – Ihr Körper braucht Zeit zur Selbstregulation. Weitere Informationen finden Sie auf der Seite <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>.
               </p>
             </div>
           </div>
@@ -696,7 +696,7 @@ export default function WasIstOsteopathiePage() {
               </div>
 
               <p className="mt-6">
-                Mehr über meine Ausbildung, Qualifikationen und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
+                Mehr über meine Ausbildung, Qualifikationen und Philosophie erfahren Sie auf meiner <Link href="/ueber-mich/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Über-mich-Seite</Link>.
               </p>
             </div>
           </div>
@@ -892,7 +892,7 @@ export default function WasIstOsteopathiePage() {
 
               <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
                 <p className="font-medium">
-                  Detaillierte Informationen zu Kosten, Ablauf und Erstattung finden Sie auf meiner <Link href="/kosten-ablauf" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>-Seite.
+                  Detaillierte Informationen zu Kosten, Ablauf und Erstattung finden Sie auf meiner <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>-Seite.
                 </p>
               </div>
             </div>
@@ -1057,14 +1057,14 @@ export default function WasIstOsteopathiePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
                 >
                   <span className="relative z-10">Termin buchen</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 </Link>
                 <Link
-                  href="/behandlungen"
+                  href="/behandlungen/"
                   className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-white text-white rounded-md transition-all duration-300 hover:bg-white hover:text-slate-900 hover:transform hover:-translate-y-1"
                 >
                   Behandlungsschwerpunkte ansehen
@@ -1084,7 +1084,7 @@ export default function WasIstOsteopathiePage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                href="/kosten-ablauf"
+                href="/kosten-ablauf/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-3xl mb-3">💶</div>
@@ -1097,7 +1097,7 @@ export default function WasIstOsteopathiePage() {
               </Link>
 
               <Link
-                href="/faq"
+                href="/faq/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-3xl mb-3">❓</div>
@@ -1110,7 +1110,7 @@ export default function WasIstOsteopathiePage() {
               </Link>
 
               <Link
-                href="/ueber-mich"
+                href="/ueber-mich/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-3xl mb-3">👨‍⚕️</div>

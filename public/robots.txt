@@ -29,15 +29,11 @@ User-agent: Googlebot
 Allow: /
 Allow: /behandlungen/*
 Allow: /blog/*
-Disallow: /impressum
-Disallow: /datenschutz
 
 User-agent: Bingbot
 Allow: /
 Allow: /behandlungen/*
 Allow: /blog/*
-Disallow: /impressum
-Disallow: /datenschutz
 
 # Social Media Bots
 User-agent: facebookexternalhit

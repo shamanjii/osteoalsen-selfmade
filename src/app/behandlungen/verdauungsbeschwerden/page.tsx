@@ -658,7 +658,7 @@ export default function VerdauungPage() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/behandlungen/stress-burnout"
+                  href="/behandlungen/stress-burnout/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -669,7 +669,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/behandlungen/rueckenschmerzen"
+                  href="/behandlungen/rueckenschmerzen/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -680,7 +680,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/behandlungen/kopfschmerzen-migraene"
+                  href="/behandlungen/kopfschmerzen-migraene/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -702,7 +702,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/was-ist-osteopathie"
+                  href="/was-ist-osteopathie/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -713,7 +713,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/behandlungen/sportosteopathie"
+                  href="/behandlungen/sportosteopathie/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -724,7 +724,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/blog"
+                  href="/blog/"
                   className="border-2 border-slate-300 bg-white rounded-lg p-5 hover:shadow-lg hover:border-slate-400 transition-all"
                 >
                   <h3 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
@@ -735,7 +735,7 @@ export default function VerdauungPage() {
                   </p>
                 </Link>
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="border-2 border-slate-900 bg-slate-900 text-white rounded-lg p-5 hover:shadow-lg hover:bg-slate-800 transition-all"
                 >
                   <h3 className="font-semibold mb-2 flex items-center gap-2">

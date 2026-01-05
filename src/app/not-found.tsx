@@ -31,19 +31,19 @@ export default function NotFound() {
               🏠 Zur Startseite
             </Link>
             <Link
-              href="/behandlungen"
+              href="/behandlungen/"
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               🦴 Behandlungen
             </Link>
             <Link
-              href="/terminbuchung"
+              href="/terminbuchung/"
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               📅 Termin buchen
             </Link>
             <Link
-              href="/blog"
+              href="/blog/"
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               📰 Blog

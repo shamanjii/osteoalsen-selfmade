@@ -39,7 +39,7 @@ export default function Home() {
                 Mehr über Osteopathie und ihre Anwendungsbereiche erfahren Sie in meinem Osteopathie Blog mit aktuellen Artikeln, Gesundheitstipps und Fachbeiträgen.
               </p>
               <a
-                href="/blog"
+                href="/blog/"
                 className="inline-flex items-center bg-slate-900 text-white px-6 py-4 rounded-lg font-epilogue font-medium hover:bg-slate-800 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
               >
                 <span className="mr-2">📖</span>

@@ -69,7 +69,7 @@ export default async function BlogPost({ params }: PageProps) {
                         Der gesuchte Artikel konnte nicht gefunden werden.
                     </p>
                     <Link
-                        href="/blog"
+                        href="/blog/"
                         className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
                     >
                         ← Zurück zum Blog
@@ -199,13 +199,13 @@ export default async function BlogPost({ params }: PageProps) {
                     <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200">
                         <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 sm:gap-4">
                             <Link
-                                href="/blog"
+                                href="/blog/"
                                 className="inline-flex items-center justify-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors min-h-[48px] px-4 py-3 touch-manipulation active:scale-95"
                             >
                                 ← Zurück zur Übersicht
                             </Link>
                             <Link
-                                href="/terminbuchung"
+                                href="/terminbuchung/"
                                 className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3.5 min-h-[48px] rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md touch-manipulation active:scale-95"
                             >
                                 📅 Termin buchen

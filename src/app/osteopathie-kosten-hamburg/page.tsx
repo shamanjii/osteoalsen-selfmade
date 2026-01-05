@@ -100,7 +100,7 @@ export default function OsteopathieKostenHamburgPage() {
                   </p>
                 </div>
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-slate-900 bg-white rounded-md hover:shadow-xl hover:transform hover:-translate-y-1 transition-all duration-300"
                 >
                   📅 Jetzt Termin buchen
@@ -434,7 +434,7 @@ export default function OsteopathieKostenHamburgPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-slate-900 bg-white rounded-md hover:shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300"
                 >
                   📅 Jetzt Termin buchen
@@ -458,7 +458,7 @@ export default function OsteopathieKostenHamburgPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                href="/kosten-ablauf"
+                href="/kosten-ablauf/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <div className="text-3xl mb-3">💶</div>
@@ -471,7 +471,7 @@ export default function OsteopathieKostenHamburgPage() {
               </Link>
 
               <Link
-                href="/patienteninfos"
+                href="/patienteninfos/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <div className="text-3xl mb-3">📋</div>
@@ -484,7 +484,7 @@ export default function OsteopathieKostenHamburgPage() {
               </Link>
 
               <Link
-                href="/faq"
+                href="/faq/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <div className="text-3xl mb-3">❓</div>

@@ -90,7 +90,7 @@ export default function OsteopathHamburgPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-slate-900 rounded-md hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                 >
                   📅 Jetzt Termin buchen
@@ -203,7 +203,7 @@ export default function OsteopathHamburgPage() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link
-                href="/behandlungen/rueckenschmerzen"
+                href="/behandlungen/rueckenschmerzen/"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-slate-900 transition-all"
               >
                 <div className="text-4xl mb-3">🦴</div>
@@ -217,7 +217,7 @@ export default function OsteopathHamburgPage() {
               </Link>
 
               <Link
-                href="/behandlungen/kopfschmerzen-migraene"
+                href="/behandlungen/kopfschmerzen-migraene/"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-slate-900 transition-all"
               >
                 <div className="text-4xl mb-3">🧠</div>
@@ -231,7 +231,7 @@ export default function OsteopathHamburgPage() {
               </Link>
 
               <Link
-                href="/behandlungen/nackenschmerzen"
+                href="/behandlungen/nackenschmerzen/"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-slate-900 transition-all"
               >
                 <div className="text-4xl mb-3">🔄</div>
@@ -245,7 +245,7 @@ export default function OsteopathHamburgPage() {
               </Link>
 
               <Link
-                href="/behandlungen/verdauungsbeschwerden"
+                href="/behandlungen/verdauungsbeschwerden/"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-slate-900 transition-all"
               >
                 <div className="text-4xl mb-3">🫁</div>
@@ -259,7 +259,7 @@ export default function OsteopathHamburgPage() {
               </Link>
 
               <Link
-                href="/behandlungen/sportverletzungen"
+                href="/behandlungen/sportverletzungen/"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-slate-900 transition-all"
               >
                 <div className="text-4xl mb-3">⚽</div>
@@ -273,7 +273,7 @@ export default function OsteopathHamburgPage() {
               </Link>
 
               <Link
-                href="/behandlungen"
+                href="/behandlungen/"
                 className="bg-slate-900 text-white rounded-xl p-6 hover:bg-slate-800 transition-colors flex flex-col justify-center items-center text-center"
               >
                 <div className="text-4xl mb-3">➕</div>
@@ -367,7 +367,7 @@ export default function OsteopathHamburgPage() {
                   <p>🚗 Parkhaus Grindelhof</p>
                 </div>
                 <Link
-                  href="/osteopathie-rotherbaum"
+                  href="/osteopathie-rotherbaum/"
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                 >
                   Mehr zum Standort Rotherbaum →
@@ -387,7 +387,7 @@ export default function OsteopathHamburgPage() {
                   <p>📞 Terminvereinbarung: 0176 4399 0001</p>
                 </div>
                 <Link
-                  href="/osteopathie-eimsbuettel"
+                  href="/osteopathie-eimsbuettel/"
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                 >
                   Mehr zum Standort Eimsbüttel →
@@ -495,7 +495,7 @@ export default function OsteopathHamburgPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-slate-900 bg-white rounded-md hover:shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300"
                 >
                   📅 Online Termin buchen

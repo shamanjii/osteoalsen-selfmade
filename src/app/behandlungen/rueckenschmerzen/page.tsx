@@ -164,7 +164,7 @@ export default function RueckenschmerzenPage() {
                 <li>
                   <strong>Nackenschmerzen:</strong> Verspannungen im Bereich der
                   Halswirbelsäule (HWS) mit Ausstrahlung in Schultern und Arme, oft verbunden mit{" "}
-                  <Link href="/behandlungen/kopfschmerzen-migraene" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/kopfschmerzen-migraene/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Kopfschmerzen
                   </Link>
                 </li>
@@ -195,7 +195,7 @@ export default function RueckenschmerzenPage() {
                 <li>Wirbelgelenkarthrose (Facettensyndrom)</li>
                 <li>Skoliose oder andere Fehlstellungen der Wirbelsäule</li>
                 <li>Muskelverspannungen nach{" "}
-                  <Link href="/behandlungen/sportverletzungen" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/sportverletzungen/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Sportverletzungen
                   </Link>{" "}oder Übertraining
                 </li>
@@ -218,7 +218,7 @@ export default function RueckenschmerzenPage() {
               <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
                 <li>
                   Chronischer{" "}
-                  <Link href="/behandlungen/stress-burnout" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/stress-burnout/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Stress und Burnout
                   </Link>{" "}
                   mit dauerhafter Muskelanspannung
@@ -240,7 +240,7 @@ export default function RueckenschmerzenPage() {
             <div className="space-y-4 text-slate-700">
               <p className="leading-relaxed">
                 In der{" "}
-                <Link href="/was-ist-osteopathie" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/was-ist-osteopathie/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Osteopathie
                 </Link>{" "}
                 betrachten wir Rückenschmerzen nicht isoliert,
@@ -256,7 +256,7 @@ export default function RueckenschmerzenPage() {
                 </li>
                 <li>
                   Viszerale Probleme wie{" "}
-                  <Link href="/behandlungen/verdauungsbeschwerden" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/verdauungsbeschwerden/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Verdauungsbeschwerden
                   </Link>{" "}
                   oder Darmverklebungen nach Operationen
@@ -372,7 +372,7 @@ export default function RueckenschmerzenPage() {
                 Monate) benötigen wir mehr Geduld. Hier empfehle ich meist 4-6
                 Behandlungen im Abstand von 2-3 Wochen. Der Körper braucht Zeit,
                 um alte Muster zu verändern. Mehr zu meinem{" "}
-                <Link href="/ueber-mich" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/ueber-mich/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Behandlungsansatz und meiner Qualifikation als VFO-zertifizierter Osteopath
                 </Link>.
               </p>
@@ -429,7 +429,7 @@ export default function RueckenschmerzenPage() {
                 Bewegungseinschränkungen von Nieren, Darm oder anderen Organen können zu
                 Rückenschmerzen führen. Durch sanfte Mobilisationen werden diese Spannungen gelöst.
                 Mehr zur ganzheitlichen Herangehensweise finden Sie auf der Seite{" "}
-                <Link href="/was-ist-osteopathie" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/was-ist-osteopathie/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Was ist Osteopathie?
                 </Link>
               </p>
@@ -520,7 +520,7 @@ export default function RueckenschmerzenPage() {
                   Der Körper hat über Monate oder Jahre Kompensationsmuster entwickelt, die Zeit
                   brauchen, um sich zu verändern. Eine Kombination aus Osteopathie, gezieltem Training
                   und Stressmanagement ist oft am erfolgreichsten. Lesen Sie auch meinen Artikel zu{" "}
-                  <Link href="/behandlungen/stress-burnout" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/stress-burnout/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Stress & Burnout
                   </Link>, da psychische Belastungen oft eine Rolle spielen.
                 </p>
@@ -821,7 +821,7 @@ export default function RueckenschmerzenPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
               <Link
-                href="/behandlungen/kopfschmerzen-migraene"
+                href="/behandlungen/kopfschmerzen-migraene/"
                 className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-slate-900 mb-2">
@@ -832,7 +832,7 @@ export default function RueckenschmerzenPage() {
                 </p>
               </Link>
               <Link
-                href="/behandlungen/sportverletzungen"
+                href="/behandlungen/sportverletzungen/"
                 className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-slate-900 mb-2">
@@ -843,7 +843,7 @@ export default function RueckenschmerzenPage() {
                 </p>
               </Link>
               <Link
-                href="/behandlungen/stress-burnout"
+                href="/behandlungen/stress-burnout/"
                 className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-slate-900 mb-2">
@@ -866,19 +866,19 @@ export default function RueckenschmerzenPage() {
             <div className="space-y-3">
               <p className="text-slate-700">
                 Sie möchten mehr über Osteopathie erfahren?{" "}
-                <Link href="/was-ist-osteopathie" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/was-ist-osteopathie/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Lesen Sie hier, was Osteopathie ist →
                 </Link>
               </p>
               <p className="text-slate-700">
                 Fragen zu Kosten und Kassenerstattung?{" "}
-                <Link href="/kosten-ablauf" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Alle Infos zu Kosten & Ablauf →
                 </Link>
               </p>
               <p className="text-slate-700">
                 Haben Sie weitere Fragen?{" "}
-                <Link href="/faq" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/faq/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Zur FAQ-Seite →
                 </Link>
               </p>

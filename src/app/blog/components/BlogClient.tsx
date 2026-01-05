@@ -391,7 +391,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                     👨‍⚕️ Mehr über Joshua
                                 </Link>
                                 <Link
-                                    href="/terminbuchung"
+                                    href="/terminbuchung/"
                                     className="inline-flex items-center gap-2 border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-lg hover:bg-slate-900 hover:text-white transition-colors"
                                 >
                                     📅 Termin vereinbaren

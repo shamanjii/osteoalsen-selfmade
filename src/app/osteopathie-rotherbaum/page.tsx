@@ -90,7 +90,7 @@ export default function OsteopathieRotherbaumPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminbuchung"
+                href="/terminbuchung/"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-slate-900 rounded-md hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
               >
                 📅 Termin buchen
@@ -258,7 +258,7 @@ export default function OsteopathieRotherbaumPage() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
-              href="/behandlungen/rueckenschmerzen"
+              href="/behandlungen/rueckenschmerzen/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">🦴</div>
@@ -270,7 +270,7 @@ export default function OsteopathieRotherbaumPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen/kopfschmerzen-migraene"
+              href="/behandlungen/kopfschmerzen-migraene/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">🧠</div>
@@ -282,7 +282,7 @@ export default function OsteopathieRotherbaumPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen/nackenschmerzen"
+              href="/behandlungen/nackenschmerzen/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">🔄</div>
@@ -294,7 +294,7 @@ export default function OsteopathieRotherbaumPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen/sportverletzungen"
+              href="/behandlungen/sportverletzungen/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">⚽</div>
@@ -306,7 +306,7 @@ export default function OsteopathieRotherbaumPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen/verdauungsbeschwerden"
+              href="/behandlungen/verdauungsbeschwerden/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">🫁</div>
@@ -318,7 +318,7 @@ export default function OsteopathieRotherbaumPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen"
+              href="/behandlungen/"
               className="bg-slate-900 text-white rounded-xl p-6 hover:bg-slate-800 transition-colors flex items-center justify-center"
             >
               <div className="text-center">
@@ -376,7 +376,7 @@ export default function OsteopathieRotherbaumPage() {
               <p className="text-slate-600">
                 Eine Behandlung kostet 150€ (45-60 Minuten). Viele private und gesetzliche
                 Krankenkassen erstatten einen Teil der Kosten. Mehr Informationen zu{" "}
-                <Link href="/kosten-ablauf" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Kosten und Ablauf
                 </Link>.
               </p>
@@ -397,7 +397,7 @@ export default function OsteopathieRotherbaumPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminbuchung"
+                href="/terminbuchung/"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-slate-900 bg-white rounded-md hover:shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300"
               >
                 📅 Online Termin buchen
@@ -411,11 +411,11 @@ export default function OsteopathieRotherbaumPage() {
             </div>
             <p className="text-sm text-slate-300 mt-6">
               Weitere Informationen{" "}
-              <Link href="/ueber-mich" className="underline hover:text-white">
+              <Link href="/ueber-mich/" className="underline hover:text-white">
                 über mich
               </Link>{" "}
               und meine{" "}
-              <Link href="/behandlungen" className="underline hover:text-white">
+              <Link href="/behandlungen/" className="underline hover:text-white">
                 Behandlungsschwerpunkte
               </Link>
             </p>

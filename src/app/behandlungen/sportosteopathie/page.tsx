@@ -133,7 +133,7 @@ export default function SportosteopathiePage() {
               </p>
               <p className="text-slate-700 leading-relaxed mb-4">
                 Sportosteopathie verbindet das ganzheitliche Konzept der{" "}
-                <Link href="/was-ist-osteopathie" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/was-ist-osteopathie/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Osteopathie
                 </Link>{" "}
                 mit spezialisiertem Wissen über sportartspezifische Belastungen,
@@ -277,7 +277,7 @@ export default function SportosteopathiePage() {
                 <li>
                   <strong>Rückenschmerzen durch Sport:</strong> Hohlkreuz bei Kraftsportlern,
                   Rundrücken bei Radfahrern, mehr dazu auf meiner{" "}
-                  <Link href="/behandlungen/rueckenschmerzen" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/rueckenschmerzen/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Rückenschmerzen-Seite
                   </Link>
                 </li>
@@ -289,7 +289,7 @@ export default function SportosteopathiePage() {
                 </li>
                 <li>
                   <strong>Verdauungsprobleme bei Ausdauersportlern:</strong> Siehe auch{" "}
-                  <Link href="/behandlungen/verdauungsbeschwerden" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/verdauungsbeschwerden/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Verdauungsbeschwerden
                   </Link>
                 </li>
@@ -725,20 +725,20 @@ export default function SportosteopathiePage() {
             <div className="space-y-3">
               <p className="text-slate-700">
                 Sie möchten mehr über den Behandlungsablauf erfahren?{" "}
-                <Link href="/kosten-ablauf" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Alle Infos zu Kosten & Ablauf →
                 </Link>
               </p>
               <p className="text-slate-700">
                 Leiden Sie zusätzlich unter{" "}
-                <Link href="/behandlungen/stress-burnout" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/behandlungen/stress-burnout/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Stress oder Burnout
                 </Link>
                 ? Viele Sportler kämpfen mit mentalem Druck.
               </p>
               <p className="text-slate-700">
                 Interessiert an weiteren Behandlungsmöglichkeiten?{" "}
-                <Link href="/behandlungen" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/behandlungen/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Alle Behandlungen im Überblick →
                 </Link>
               </p>

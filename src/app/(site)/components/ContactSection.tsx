@@ -49,7 +49,7 @@ export default function ContactSection() {
                             <div className="text-left">
                                 <h4 className="text-slate-900 text-lg font-medium mb-1 font-epilogue">Online Buchung</h4>
                                 <a
-                                    href="/terminbuchung"
+                                    href="/terminbuchung/"
                                     onClick={handleAppointmentClick}
                                     className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors"
                                 >

@@ -160,7 +160,7 @@ export default function KopfschmerzenPage() {
                     <strong>Symptome:</strong> Dumpfer, drückender Schmerz beidseitig am gesamten Kopf, oft beschrieben als "zu enger Helm" oder "Schraubstock". Die Schmerzen sind meist leicht bis mittelstark, verschlimmern sich durch Bewegung nicht und gehen selten mit Übelkeit einher.
                   </p>
                   <p className="text-slate-700 leading-relaxed mb-3">
-                    <strong>Ursachen:</strong> Verspannungen in Nacken-, Schulter- und Kaumuskulatur, oft ausgelöst durch <Link href="/behandlungen/stress-burnout" className="text-slate-800 hover:text-slate-900 underline">Stress</Link>, schlechte Körperhaltung (z.B. am Schreibtisch), Schlafmangel oder emotionale Belastung. Triggerpunkte in der Muskulatur können Schmerzen in den Kopf übertragen.
+                    <strong>Ursachen:</strong> Verspannungen in Nacken-, Schulter- und Kaumuskulatur, oft ausgelöst durch <Link href="/behandlungen/stress-burnout/" className="text-slate-800 hover:text-slate-900 underline">Stress</Link>, schlechte Körperhaltung (z.B. am Schreibtisch), Schlafmangel oder emotionale Belastung. Triggerpunkte in der Muskulatur können Schmerzen in den Kopf übertragen.
                   </p>
                   <p className="text-slate-700 leading-relaxed">
                     <strong>Häufigkeit:</strong> Mit etwa 70% die häufigste Kopfschmerzart. Fast jeder Mensch erlebt sie gelegentlich, etwa 20-30% leiden unter chronischen Spannungskopfschmerzen.
@@ -214,7 +214,7 @@ export default function KopfschmerzenPage() {
                     <strong>Symptome:</strong> Schmerzen, die vom Nacken ausgehen und nach vorne in Stirn, Schläfen oder hinter die Augen ziehen. Meist einseitig, nicht pulsierend. Die Schmerzen werden durch Kopfbewegungen oder Druck auf die Nackenmuskulatur verstärkt.
                   </p>
                   <p className="text-slate-700 leading-relaxed">
-                    <strong>Ursachen:</strong> Blockaden oder Bewegungseinschränkungen in der Halswirbelsäule, besonders im oberen Bereich (C0-C3). Nerven aus diesem Bereich versorgen Teile des Kopfes – Reizungen können Kopfschmerzen auslösen. Oft verbunden mit <Link href="/behandlungen/rueckenschmerzen" className="text-slate-800 hover:text-slate-900 underline">Nackenverspannungen</Link>, Fehlhaltungen oder Schleudertrauma.
+                    <strong>Ursachen:</strong> Blockaden oder Bewegungseinschränkungen in der Halswirbelsäule, besonders im oberen Bereich (C0-C3). Nerven aus diesem Bereich versorgen Teile des Kopfes – Reizungen können Kopfschmerzen auslösen. Oft verbunden mit <Link href="/behandlungen/rueckenschmerzen/" className="text-slate-800 hover:text-slate-900 underline">Nackenverspannungen</Link>, Fehlhaltungen oder Schleudertrauma.
                   </p>
                 </div>
 
@@ -258,7 +258,7 @@ export default function KopfschmerzenPage() {
                       <div className="bg-slate-50 rounded-lg p-4">
                         <h4 className="font-semibold text-slate-900 mb-2">Stress & Psyche</h4>
                         <p className="text-slate-700 text-sm">
-                          Chronischer Stress ist der häufigste Trigger für Spannungskopfschmerzen. Stress führt zu erhöhtem Muskeltonus, flacher Atmung und vegetativer Dysregulation. Mehr dazu auf der Seite <Link href="/behandlungen/stress-burnout" className="text-slate-800 hover:text-slate-900 underline">Stress & Burnout</Link>.
+                          Chronischer Stress ist der häufigste Trigger für Spannungskopfschmerzen. Stress führt zu erhöhtem Muskeltonus, flacher Atmung und vegetativer Dysregulation. Mehr dazu auf der Seite <Link href="/behandlungen/stress-burnout/" className="text-slate-800 hover:text-slate-900 underline">Stress & Burnout</Link>.
                         </p>
                       </div>
 
@@ -320,7 +320,7 @@ export default function KopfschmerzenPage() {
               </h2>
               <div className="space-y-6 text-slate-700">
                 <p className="leading-relaxed text-lg">
-                  In der Osteopathie suchen wir nach den Ursachen Ihrer Kopfschmerzen. Die Behandlung kombiniert verschiedene manuelle Techniken aus allen drei osteopathischen Bereichen: craniosacral (Schädel), parietal (Bewegungsapparat) und viszeral (Organe/Nervensystem). Mehr über den <Link href="/was-ist-osteopathie" className="text-slate-800 hover:text-slate-900 underline">ganzheitlichen osteopathischen Ansatz</Link>.
+                  In der Osteopathie suchen wir nach den Ursachen Ihrer Kopfschmerzen. Die Behandlung kombiniert verschiedene manuelle Techniken aus allen drei osteopathischen Bereichen: craniosacral (Schädel), parietal (Bewegungsapparat) und viszeral (Organe/Nervensystem). Mehr über den <Link href="/was-ist-osteopathie/" className="text-slate-800 hover:text-slate-900 underline">ganzheitlichen osteopathischen Ansatz</Link>.
                 </p>
 
                 <div className="grid md:grid-cols-1 gap-6">
@@ -356,7 +356,7 @@ export default function KopfschmerzenPage() {
                         </p>
                         <ul className="space-y-2 text-sm">
                           <li><strong>HWS-Mobilisation:</strong> Sanfte Mobilisation der Halswirbel (besonders C0-C3), Lösung von Blockaden. Die obere HWS ist eng mit Kopfschmerzen verbunden – Nerven aus diesem Bereich versorgen Teile des Kopfes.</li>
-                          <li><strong>Faszienarbeit Nacken/Schulter:</strong> Lösung von Verklebungen und Spannungen in den Faszien (Bindegewebshüllen) von Nacken, Schultern und oberem Rücken. Diese Faszien sind oft durch Fehlhaltung, Stress oder <Link href="/behandlungen/rueckenschmerzen" className="text-slate-800 hover:text-slate-900 underline">Rückenprobleme</Link> verspannt.</li>
+                          <li><strong>Faszienarbeit Nacken/Schulter:</strong> Lösung von Verklebungen und Spannungen in den Faszien (Bindegewebshüllen) von Nacken, Schultern und oberem Rücken. Diese Faszien sind oft durch Fehlhaltung, Stress oder <Link href="/behandlungen/rueckenschmerzen/" className="text-slate-800 hover:text-slate-900 underline">Rückenprobleme</Link> verspannt.</li>
                           <li><strong>Myofasziale Release-Techniken:</strong> Behandlung der Nackenmuskulatur (Trapezius, Levator scapulae, Sternocleidomastoideus) und der suboccipitalen Muskeln (am Hinterkopf).</li>
                           <li><strong>Atlaskorrektur:</strong> Der erste Halswirbel (Atlas) trägt den Kopf. Fehlstellungen hier können massive Auswirkungen auf Kopfschmerzen haben.</li>
                         </ul>
@@ -378,7 +378,7 @@ export default function KopfschmerzenPage() {
                           <li><strong>Vagusnerv-Stimulation:</strong> Der Vagusnerv (Parasympathikus) spielt eine wichtige Rolle bei Migräne. Techniken an der Schädelbasis, am Hals und am Zwerchfell können den Vagustonus verbessern und so Migräne-Attacken vorbeugen.</li>
                           <li><strong>Zwerchfellarbeit:</strong> Das Zwerchfell ist oft bei chronischem Stress verspannt (Hochstand). Lösung dieser Spannung verbessert die Atmung und aktiviert den Parasympathikus – wichtig für Entspannung und Stressabbau.</li>
                           <li><strong>Solarplexus-Entspannung:</strong> Der Solarplexus (Sonnengeflecht) ist ein großes Nervengeflecht im Oberbauch, das bei Stress oft blockiert ist. Seine Entspannung wirkt beruhigend auf das gesamte Nervensystem.</li>
-                          <li><strong>Verdauungsorgane:</strong> Es gibt einen engen Zusammenhang zwischen <Link href="/behandlungen/verdauungsbeschwerden" className="text-slate-800 hover:text-slate-900 underline">Verdauung und Kopfschmerzen</Link> (Darm-Hirn-Achse). Behandlung von Leber, Magen und Darm kann bei manchen Patienten Kopfschmerzen lindern.</li>
+                          <li><strong>Verdauungsorgane:</strong> Es gibt einen engen Zusammenhang zwischen <Link href="/behandlungen/verdauungsbeschwerden/" className="text-slate-800 hover:text-slate-900 underline">Verdauung und Kopfschmerzen</Link> (Darm-Hirn-Achse). Behandlung von Leber, Magen und Darm kann bei manchen Patienten Kopfschmerzen lindern.</li>
                         </ul>
                       </div>
                     </div>
@@ -465,7 +465,7 @@ export default function KopfschmerzenPage() {
                     Die <strong>Deutsche Migräne- und Kopfschmerzgesellschaft (DMKG)</strong> empfiehlt in ihren Leitlinien manuelle Therapie als ergänzende Behandlungsoption bei Kopfschmerzen. Besonders bei Spannungskopfschmerzen und zervikogenen Kopfschmerzen wird manuelle Therapie als wirksam eingestuft.
                   </p>
                   <p className="text-slate-700 leading-relaxed">
-                    Wichtig: Osteopathie sollte Teil eines multimodalen Behandlungskonzepts sein. Bei primären Kopfschmerzen (Migräne, Spannungskopfschmerz) kann sie sehr effektiv sein, bei sekundären Kopfschmerzen (als Symptom einer anderen Erkrankung) muss zunächst die Grunderkrankung behandelt werden. Mehr Informationen finden Sie auch in unseren <Link href="/faq" className="text-slate-800 hover:text-slate-900 underline">häufig gestellten Fragen</Link>.
+                    Wichtig: Osteopathie sollte Teil eines multimodalen Behandlungskonzepts sein. Bei primären Kopfschmerzen (Migräne, Spannungskopfschmerz) kann sie sehr effektiv sein, bei sekundären Kopfschmerzen (als Symptom einer anderen Erkrankung) muss zunächst die Grunderkrankung behandelt werden. Mehr Informationen finden Sie auch in unseren <Link href="/faq/" className="text-slate-800 hover:text-slate-900 underline">häufig gestellten Fragen</Link>.
                   </p>
                 </div>
               </div>
@@ -487,7 +487,7 @@ export default function KopfschmerzenPage() {
                       Detaillierte Kopfschmerz-Anamnese
                     </h3>
                     <p className="text-slate-700">
-                      Wir klären: Wo genau sind die Schmerzen? Wie fühlen sie sich an (dumpf, pochend, stechend)? Wann treten sie auf? Gibt es Trigger (Stress, bestimmte Nahrungsmittel, Wetter)? Wie ist die Intensität auf einer Skala von 1-10? Gibt es Begleitsymptome (Übelkeit, Lichtempfindlichkeit, Aura)? Haben Sie bereits andere Behandlungen probiert? Ich erfasse auch Ihre allgemeine Gesundheit, Medikamente und Lebenssituation. Diese gründliche Anamnese hilft, die Art Ihrer Kopfschmerzen zu identifizieren und einen individuellen Behandlungsplan zu erstellen. Mehr zum <Link href="/kosten-ablauf" className="text-slate-800 hover:text-slate-900 underline">Behandlungsablauf und Kosten</Link>.
+                      Wir klären: Wo genau sind die Schmerzen? Wie fühlen sie sich an (dumpf, pochend, stechend)? Wann treten sie auf? Gibt es Trigger (Stress, bestimmte Nahrungsmittel, Wetter)? Wie ist die Intensität auf einer Skala von 1-10? Gibt es Begleitsymptome (Übelkeit, Lichtempfindlichkeit, Aura)? Haben Sie bereits andere Behandlungen probiert? Ich erfasse auch Ihre allgemeine Gesundheit, Medikamente und Lebenssituation. Diese gründliche Anamnese hilft, die Art Ihrer Kopfschmerzen zu identifizieren und einen individuellen Behandlungsplan zu erstellen. Mehr zum <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline">Behandlungsablauf und Kosten</Link>.
                     </p>
                   </div>
                 </div>
@@ -529,7 +529,7 @@ export default function KopfschmerzenPage() {
                       Selbsthilfe, Prävention & Nachsorge
                     </h3>
                     <p className="text-slate-700">
-                      Sie erhalten einen individuellen Selbsthilfe-Plan: Entspannungsübungen für Nacken und Kiefer, Tipps zur Trigger-Vermeidung, Empfehlungen zur Ergonomie und ggf. Hinweise zu Ernährung und Schlafhygiene. Ich empfehle auch das Führen eines Kopfschmerz-Tagebuchs. Bei Bedarf vermittle ich Kontakte zu Zahnärzten (bei CMD), Neurologen oder Psychotherapeuten (bei starkem Stress-Bezug). Mehr Tipps finden Sie auch auf unserer Seite zu <Link href="/behandlungen" className="text-slate-800 hover:text-slate-900 underline">allen Behandlungsgebieten</Link>.
+                      Sie erhalten einen individuellen Selbsthilfe-Plan: Entspannungsübungen für Nacken und Kiefer, Tipps zur Trigger-Vermeidung, Empfehlungen zur Ergonomie und ggf. Hinweise zu Ernährung und Schlafhygiene. Ich empfehle auch das Führen eines Kopfschmerz-Tagebuchs. Bei Bedarf vermittle ich Kontakte zu Zahnärzten (bei CMD), Neurologen oder Psychotherapeuten (bei starkem Stress-Bezug). Mehr Tipps finden Sie auch auf unserer Seite zu <Link href="/behandlungen/" className="text-slate-800 hover:text-slate-900 underline">allen Behandlungsgebieten</Link>.
                     </p>
                   </div>
                 </div>
@@ -654,7 +654,7 @@ export default function KopfschmerzenPage() {
                       <div>
                         <h4 className="font-semibold text-slate-900 mb-2 text-sm">Lebensstil-Trigger</h4>
                         <ul className="space-y-1 text-slate-700 text-sm list-disc ml-4">
-                          <li>Stressmanagement (<Link href="/behandlungen/stress-burnout" className="text-slate-800 hover:text-slate-900 underline">mehr dazu hier</Link>)</li>
+                          <li>Stressmanagement (<Link href="/behandlungen/stress-burnout/" className="text-slate-800 hover:text-slate-900 underline">mehr dazu hier</Link>)</li>
                           <li>Regelmäßiger Schlaf-Wach-Rhythmus (auch am Wochenende!)</li>
                           <li>Nicht zu lange schlafen (über 9h kann triggern)</li>
                           <li>Alkohol in Maßen oder meiden</li>
@@ -898,43 +898,43 @@ export default function KopfschmerzenPage() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/was-ist-osteopathie"
+                  href="/was-ist-osteopathie/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Was ist Osteopathie?
                 </Link>
                 <Link
-                  href="/kosten-ablauf"
+                  href="/kosten-ablauf/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Kosten & Behandlungsablauf
                 </Link>
                 <Link
-                  href="/behandlungen/stress-burnout"
+                  href="/behandlungen/stress-burnout/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Stress & Burnout Behandlung
                 </Link>
                 <Link
-                  href="/behandlungen/rueckenschmerzen"
+                  href="/behandlungen/rueckenschmerzen/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Rückenschmerzen & Verspannungen
                 </Link>
                 <Link
-                  href="/behandlungen/verdauungsbeschwerden"
+                  href="/behandlungen/verdauungsbeschwerden/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Verdauungsbeschwerden
                 </Link>
                 <Link
-                  href="/faq"
+                  href="/faq/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Häufig gestellte Fragen (FAQ)
                 </Link>
                 <Link
-                  href="/behandlungen"
+                  href="/behandlungen/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Alle Behandlungen im Überblick

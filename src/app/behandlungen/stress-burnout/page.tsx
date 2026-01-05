@@ -142,8 +142,8 @@ export default function StressBurnoutPage() {
                 <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
                   <li>Chronische Verspannungen in Nacken, Schultern und Rücken</li>
                   <li>Schlafstörungen und innere Unruhe</li>
-                  <li><Link href="/behandlungen/kopfschmerzen-migraene" className="text-slate-800 hover:text-slate-900 underline">Kopfschmerzen und Migräne</Link></li>
-                  <li><Link href="/behandlungen/verdauungsbeschwerden" className="text-slate-800 hover:text-slate-900 underline">Verdauungsbeschwerden</Link> (Reizdarm, Magenbeschwerden)</li>
+                  <li><Link href="/behandlungen/kopfschmerzen-migraene/" className="text-slate-800 hover:text-slate-900 underline">Kopfschmerzen und Migräne</Link></li>
+                  <li><Link href="/behandlungen/verdauungsbeschwerden/" className="text-slate-800 hover:text-slate-900 underline">Verdauungsbeschwerden</Link> (Reizdarm, Magenbeschwerden)</li>
                   <li>Herzklopfen, Engegefühl in der Brust und Atembeschwerden</li>
                   <li>Kieferverspannungen und CMD (Craniomandibuläre Dysfunktion)</li>
                   <li>Chronische Erschöpfung und Energielosigkeit</li>
@@ -249,7 +249,7 @@ export default function StressBurnoutPage() {
                     <span>2️⃣</span> Widerstandsphase (Chronischer Stress)
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Die Stressbelastung bleibt bestehen. Der Körper versucht, das erhöhte Niveau aufrechtzuerhalten. Cortisol bleibt dauerhaft erhöht. Erste Symptome: Schlafstörungen, Verspannungen, Gereiztheit, <Link href="/behandlungen/verdauungsbeschwerden" className="text-slate-800 hover:text-slate-900 underline">Verdauungsprobleme</Link>. Der Parasympathikus kommt kaum noch zum Zug.
+                    Die Stressbelastung bleibt bestehen. Der Körper versucht, das erhöhte Niveau aufrechtzuerhalten. Cortisol bleibt dauerhaft erhöht. Erste Symptome: Schlafstörungen, Verspannungen, Gereiztheit, <Link href="/behandlungen/verdauungsbeschwerden/" className="text-slate-800 hover:text-slate-900 underline">Verdauungsprobleme</Link>. Der Parasympathikus kommt kaum noch zum Zug.
                   </p>
                 </div>
 
@@ -313,7 +313,7 @@ export default function StressBurnoutPage() {
                       <li>• Lösung von Faszienspannungen</li>
                       <li>• Behandlung stressbedingter Verspannungen</li>
                       <li>• Mobilisation der Wirbelsäule</li>
-                      <li>• <Link href="/behandlungen/rueckenschmerzen" className="text-slate-800 hover:text-slate-900 underline">Rückenschmerzen</Link> lindern</li>
+                      <li>• <Link href="/behandlungen/rueckenschmerzen/" className="text-slate-800 hover:text-slate-900 underline">Rückenschmerzen</Link> lindern</li>
                       <li>• Verbesserung der Körperwahrnehmung</li>
                     </ul>
                   </div>
@@ -337,7 +337,7 @@ export default function StressBurnoutPage() {
                       <span>📋</span> Ausführliche Anamnese
                     </h3>
                     <p className="text-slate-700 leading-relaxed">
-                      Wir besprechen Ihre Stressbelastung, Symptome, Schlafqualität, Arbeitssituation und bisherige Bewältigungsstrategien. Ich erfasse auch körperliche Beschwerden wie Verspannungen, <Link href="/behandlungen/verdauungsbeschwerden" className="text-slate-800 hover:text-slate-900 underline">Verdauungsprobleme</Link> oder <Link href="/behandlungen/kopfschmerzen-migraene" className="text-slate-800 hover:text-slate-900 underline">Kopfschmerzen</Link>. Wichtig ist auch, ob Sie bereits psychotherapeutische Unterstützung haben.
+                      Wir besprechen Ihre Stressbelastung, Symptome, Schlafqualität, Arbeitssituation und bisherige Bewältigungsstrategien. Ich erfasse auch körperliche Beschwerden wie Verspannungen, <Link href="/behandlungen/verdauungsbeschwerden/" className="text-slate-800 hover:text-slate-900 underline">Verdauungsprobleme</Link> oder <Link href="/behandlungen/kopfschmerzen-migraene/" className="text-slate-800 hover:text-slate-900 underline">Kopfschmerzen</Link>. Wichtig ist auch, ob Sie bereits psychotherapeutische Unterstützung haben.
                     </p>
                   </div>
                 </div>
@@ -389,7 +389,7 @@ export default function StressBurnoutPage() {
                       <span>🏠</span> Selbsthilfe & Empfehlungen
                     </h3>
                     <p className="text-slate-700 leading-relaxed">
-                      Ich zeige Ihnen Übungen für zuhause: Atemtechniken zur Vagusaktivierung, Entspannungsübungen, Körperwahrnehmung. Auch Empfehlungen zu Schlafhygiene, Bewegung und ggf. die Vermittlung zu Psychotherapeuten oder Stressmanagement-Kursen gehören dazu. <Link href="/was-ist-osteopathie" className="text-slate-800 hover:text-slate-900 underline">Mehr über ganzheitliche Osteopathie</Link>.
+                      Ich zeige Ihnen Übungen für zuhause: Atemtechniken zur Vagusaktivierung, Entspannungsübungen, Körperwahrnehmung. Auch Empfehlungen zu Schlafhygiene, Bewegung und ggf. die Vermittlung zu Psychotherapeuten oder Stressmanagement-Kursen gehören dazu. <Link href="/was-ist-osteopathie/" className="text-slate-800 hover:text-slate-900 underline">Mehr über ganzheitliche Osteopathie</Link>.
                     </p>
                   </div>
                 </div>
@@ -660,43 +660,43 @@ export default function StressBurnoutPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/was-ist-osteopathie"
+                  href="/was-ist-osteopathie/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Was ist Osteopathie?
                 </Link>
                 <Link
-                  href="/kosten-ablauf"
+                  href="/kosten-ablauf/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Kosten & Behandlungsablauf
                 </Link>
                 <Link
-                  href="/behandlungen/kopfschmerzen-migraene"
+                  href="/behandlungen/kopfschmerzen-migraene/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Kopfschmerzen & Migräne
                 </Link>
                 <Link
-                  href="/behandlungen/verdauungsbeschwerden"
+                  href="/behandlungen/verdauungsbeschwerden/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Verdauungsbeschwerden
                 </Link>
                 <Link
-                  href="/behandlungen/rueckenschmerzen"
+                  href="/behandlungen/rueckenschmerzen/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Rückenschmerzen
                 </Link>
                 <Link
-                  href="/faq"
+                  href="/faq/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Häufig gestellte Fragen
                 </Link>
                 <Link
-                  href="/behandlungen"
+                  href="/behandlungen/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Alle Behandlungen

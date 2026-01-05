@@ -729,42 +729,42 @@ export default function NackenschmerzenPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/behandlungen/kopfschmerzen-migraene" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/kopfschmerzen-migraene/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Kopfschmerzen & Migräne</h3>
                 <p className="text-gray-600 text-sm">Zervikogene Kopfschmerzen haben ihren Ursprung oft in der HWS</p>
               </Link>
 
-              <Link href="/behandlungen/rueckenschmerzen" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/rueckenschmerzen/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Rückenschmerzen</h3>
                 <p className="text-gray-600 text-sm">Zusammenhänge zwischen BWS, LWS und Nacken</p>
               </Link>
 
-              <Link href="/behandlungen/arthrose-gelenkbeschwerden" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/arthrose-gelenkbeschwerden/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Arthrose & Gelenkbeschwerden</h3>
                 <p className="text-gray-600 text-sm">Wirbelsäulenarthrose kann auch HWS-Schmerzen verursachen</p>
               </Link>
 
-              <Link href="/behandlungen/sportosteopathie" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/sportosteopathie/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Sportosteopathie</h3>
                 <p className="text-gray-600 text-sm">HWS-Verletzungen bei Sport und deren Rehabilitation</p>
               </Link>
 
-              <Link href="/behandlungen/stress-burnout" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/stress-burnout/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Stress & Burnout</h3>
                 <p className="text-gray-600 text-sm">Psychosomatische Zusammenhänge bei Nackenverspannungen</p>
               </Link>
 
-              <Link href="/behandlungen/verdauungsbeschwerden" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/verdauungsbeschwerden/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Verdauungsbeschwerden</h3>
                 <p className="text-gray-600 text-sm">Viszerale Verbindungen über Zwerchfell können Nackenschmerzen beeinflussen</p>
               </Link>
 
-              <Link href="/was-ist-osteopathie" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
+              <Link href="/was-ist-osteopathie/" className="block p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-blue-700 mb-2">Was ist Osteopathie?</h3>
                 <p className="text-gray-600 text-sm">Grundlagen und Philosophie der osteopathischen Behandlung</p>
               </Link>
 
-              <Link href="/behandlungen" className="block p-5 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-300 hover:border-blue-500 hover:shadow-lg transition-all">
+              <Link href="/behandlungen/" className="block p-5 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-300 hover:border-blue-500 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-lg text-indigo-700 mb-2">Alle Behandlungen im Überblick</h3>
                 <p className="text-gray-600 text-sm">Entdecken Sie weitere Behandlungsmöglichkeiten</p>
               </Link>

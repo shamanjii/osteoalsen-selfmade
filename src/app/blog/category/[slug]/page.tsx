@@ -155,7 +155,7 @@ export default async function CategoryPage({ params }: PageProps) {
                             📄 {processedPosts.length} {processedPosts.length === 1 ? 'Artikel' : 'Artikel'}
                         </span>
                         <Link
-                            href="/blog"
+                            href="/blog/"
                             className="bg-slate-700/50 px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors"
                         >
                             ← Alle Kategorien

@@ -616,7 +616,7 @@ export default function PatienteninfosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminbuchung"
+                href="/terminbuchung/"
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
               >
                 <span className="relative z-10">📅 Jetzt Termin buchen</span>
@@ -641,7 +641,7 @@ export default function PatienteninfosPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link
-              href="/kosten-ablauf"
+              href="/kosten-ablauf/"
               className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
             >
               <div className="text-3xl mb-3">💶</div>
@@ -655,7 +655,7 @@ export default function PatienteninfosPage() {
             </Link>
 
             <Link
-              href="/faq"
+              href="/faq/"
               className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
             >
               <div className="text-3xl mb-3">❓</div>
@@ -669,7 +669,7 @@ export default function PatienteninfosPage() {
             </Link>
 
             <Link
-              href="/behandlungen"
+              href="/behandlungen/"
               className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
             >
               <div className="text-3xl mb-3">🦴</div>

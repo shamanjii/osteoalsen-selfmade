@@ -209,17 +209,17 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/rueckenschmerzen-3-versteckte-ursachen" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                        → <Link href="/blog/rueckenschmerzen-3-versteckte-ursachen/" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
                           Die 3 versteckten Ursachen von Rückenschmerzen
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/isg-blockierung-teufelskreis" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                        → <Link href="/blog/isg-blockierung-teufelskreis/" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
                           ISG-Blockierung: Warum sie immer wiederkommt
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
+                        → <Link href="/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/" className="text-blue-700 hover:text-blue-900 hover:underline font-medium">
                           Rückenschmerzen ganzheitlich behandeln
                         </Link>
                       </li>
@@ -285,22 +285,22 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                        → <Link href="/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
                           Chronische Kopfschmerzen: Osteopathie statt Tabletten
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/migraene-ohne-aura-osteopathie" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                        → <Link href="/blog/migraene-ohne-aura-osteopathie/" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
                           Migräne ohne Aura behandeln
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws/" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
                           Spannungskopfschmerzen: Muskel oder HWS?
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/kopfschmerzen-trigeminus-ursache" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
+                        → <Link href="/blog/kopfschmerzen-trigeminus-ursache/" className="text-purple-700 hover:text-purple-900 hover:underline font-medium">
                           Trigeminus als versteckte Ursache
                         </Link>
                       </li>
@@ -389,12 +389,12 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang" className="text-green-700 hover:text-green-900 hover:underline font-medium">
+                        → <Link href="/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/" className="text-green-700 hover:text-green-900 hover:underline font-medium">
                           Reizdarm & Rückenschmerzen: Der Zusammenhang
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/rueckenschmerzen-verdauung-radix-mesenterii" className="text-green-700 hover:text-green-900 hover:underline font-medium">
+                        → <Link href="/blog/rueckenschmerzen-verdauung-radix-mesenterii/" className="text-green-700 hover:text-green-900 hover:underline font-medium">
                           Rückenschmerzen durch Verdauungsprobleme
                         </Link>
                       </li>
@@ -475,12 +475,12 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/hws-atlas-therapie-kopfschmerzen" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
+                        → <Link href="/blog/hws-atlas-therapie-kopfschmerzen/" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
                           Atlas-Therapie bei Kopfschmerzen
                         </Link>
                       </li>
                       <li>
-                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
+                        → <Link href="/blog/spannungskopfschmerzen-muskel-oder-hws/" className="text-indigo-700 hover:text-indigo-900 hover:underline font-medium">
                           Spannungskopfschmerzen: HWS-Ursache
                         </Link>
                       </li>
@@ -531,7 +531,7 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/schulter-impingement-rotatorenmanschette-uebungen" className="text-orange-700 hover:text-orange-900 hover:underline font-medium">
+                        → <Link href="/blog/schulter-impingement-rotatorenmanschette-uebungen/" className="text-orange-700 hover:text-orange-900 hover:underline font-medium">
                           Schulter-Impingement: Ursachen & Übungen
                         </Link>
                       </li>
@@ -612,7 +612,7 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/knie-schmerzen-radix-mesenterii" className="text-teal-700 hover:text-teal-900 hover:underline font-medium">
+                        → <Link href="/blog/knie-schmerzen-radix-mesenterii/" className="text-teal-700 hover:text-teal-900 hover:underline font-medium">
                           Knieschmerzen: Viszerale Ursachen
                         </Link>
                       </li>
@@ -693,7 +693,7 @@ export default function WissenschaftPage() {
                     </p>
                     <ul className="space-y-1.5 text-sm text-slate-700">
                       <li>
-                        → <Link href="/blog/schwangerschaft-osteopathie-beschwerden" className="text-pink-700 hover:text-pink-900 hover:underline font-medium">
+                        → <Link href="/blog/schwangerschaft-osteopathie-beschwerden/" className="text-pink-700 hover:text-pink-900 hover:underline font-medium">
                           Schwangerschaftsbeschwerden osteopathisch behandeln
                         </Link>
                       </li>
@@ -931,7 +931,7 @@ export default function WissenschaftPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
                 >
                   <span className="relative z-10">📅 Jetzt Termin buchen</span>
@@ -956,7 +956,7 @@ export default function WissenschaftPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                href="/was-ist-osteopathie"
+                href="/was-ist-osteopathie/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
@@ -968,7 +968,7 @@ export default function WissenschaftPage() {
               </Link>
 
               <Link
-                href="/behandlungen"
+                href="/behandlungen/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
@@ -980,7 +980,7 @@ export default function WissenschaftPage() {
               </Link>
 
               <Link
-                href="/faq"
+                href="/faq/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">

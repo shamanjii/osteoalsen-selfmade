@@ -7,7 +7,7 @@ export default function HeroSection() {
                 <div className="mx-auto max-w-3xl">
                     <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
                         Osteopathie Hamburg:<br />
-                        <Link href="/osteopathie-rotherbaum" className="text-slate-900 hover:text-slate-600 transition-colors">Rotherbaum</Link> &amp; <Link href="/osteopathie-eimsbuettel" className="text-slate-900 hover:text-slate-600 transition-colors">Eimsbüttel</Link>
+                        <Link href="/osteopathie-rotherbaum/" className="text-slate-900 hover:text-slate-600 transition-colors">Rotherbaum</Link> &amp; <Link href="/osteopathie-eimsbuettel/" className="text-slate-900 hover:text-slate-600 transition-colors">Eimsbüttel</Link>
                         <br />
                         <span className="font-normal">Joshua Alsen</span>
                     </h1>
@@ -18,10 +18,10 @@ export default function HeroSection() {
                     </h2>
                     <p className="mt-10 text-slate-700 text-base sm:text-lg md:text-xl leading-7 max-w-2xl mx-auto">
                         Osteopathie Hamburg – In meiner Praxis in{" "}
-                        <Link href="/osteopathie-rotherbaum" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
+                        <Link href="/osteopathie-rotherbaum/" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
                             Rotherbaum
                         </Link>{" "}und{" "}
-                        <Link href="/osteopathie-eimsbuettel" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
+                        <Link href="/osteopathie-eimsbuettel/" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
                             Eimsbüttel
                         </Link>{" "}biete ich ganzheitliche osteopathische
                         Behandlungen an. Als VFO-zertifizierter Osteopath und Heilpraktiker unterstütze ich gesetzlich Versicherte,
@@ -29,7 +29,7 @@ export default function HeroSection() {
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a
-                            href="/terminbuchung"
+                            href="/terminbuchung/"
                             className="hero-btn-primary group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-slate-900 rounded-md overflow-hidden transition-all duration-300 hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl"
                         >
                             <span className="relative z-10">Termin vereinbaren</span>

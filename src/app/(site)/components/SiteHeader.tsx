@@ -227,31 +227,31 @@ export default function SiteHeader() {
                         {/* Right Navigation Links */}
                         <nav className="flex items-center justify-end space-x-6">
                             <Link
-                                href="/ueber-mich"
+                                href="/ueber-mich/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href="/kosten-ablauf"
+                                href="/kosten-ablauf/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Kosten
                             </Link>
                             <Link
-                                href="/faq"
+                                href="/faq/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 FAQ
                             </Link>
                             <Link
-                                href="/blog"
+                                href="/blog/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Blog
                             </Link>
                             <Link
-                                href="/terminbuchung"
+                                href="/terminbuchung/"
                                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 flex items-center gap-2"
                             >
                                 <span>📅</span>
@@ -275,7 +275,7 @@ export default function SiteHeader() {
                             {/* Osteopathie - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
-                                    href="/was-ist-osteopathie"
+                                    href="/was-ist-osteopathie/"
                                     onClick={() => setMobileOpen(false)}
                                     className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
                                 >
@@ -283,21 +283,21 @@ export default function SiteHeader() {
                                 </Link>
                                 <div className="pl-4 space-y-1">
                                     <Link
-                                        href="/was-ist-osteopathie"
+                                        href="/was-ist-osteopathie/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Was ist Osteopathie?
                                     </Link>
                                     <Link
-                                        href="/patienteninfos"
+                                        href="/patienteninfos/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Patienteninfos
                                     </Link>
                                     <Link
-                                        href="/wissen"
+                                        href="/wissen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
@@ -308,7 +308,7 @@ export default function SiteHeader() {
                             {/* Behandlungen - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
-                                    href="/behandlungen"
+                                    href="/behandlungen/"
                                     onClick={() => setMobileOpen(false)}
                                     className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
                                 >
@@ -316,49 +316,49 @@ export default function SiteHeader() {
                                 </Link>
                                 <div className="pl-4 space-y-1">
                                     <Link
-                                        href="/behandlungen/rueckenschmerzen"
+                                        href="/behandlungen/rueckenschmerzen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Rückenschmerzen
                                     </Link>
                                     <Link
-                                        href="/behandlungen/nackenschmerzen"
+                                        href="/behandlungen/nackenschmerzen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Nackenschmerzen & HWS
                                     </Link>
                                     <Link
-                                        href="/behandlungen/kopfschmerzen-migraene"
+                                        href="/behandlungen/kopfschmerzen-migraene/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Kopfschmerzen & Migräne
                                     </Link>
                                     <Link
-                                        href="/behandlungen/arthrose-gelenkbeschwerden"
+                                        href="/behandlungen/arthrose-gelenkbeschwerden/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Arthrose & Gelenkschmerzen
                                     </Link>
                                     <Link
-                                        href="/behandlungen/verdauungsbeschwerden"
+                                        href="/behandlungen/verdauungsbeschwerden/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Verdauungsbeschwerden
                                     </Link>
                                     <Link
-                                        href="/behandlungen/sportosteopathie"
+                                        href="/behandlungen/sportosteopathie/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Sportosteopathie
                                     </Link>
                                     <Link
-                                        href="/behandlungen/stress-burnout"
+                                        href="/behandlungen/stress-burnout/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
@@ -367,35 +367,35 @@ export default function SiteHeader() {
                                 </div>
                             </div>
                             <Link
-                                href="/ueber-mich"
+                                href="/ueber-mich/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href="/kosten-ablauf"
+                                href="/kosten-ablauf/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Kosten & Ablauf
                             </Link>
                             <Link
-                                href="/faq"
+                                href="/faq/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 FAQ
                             </Link>
                             <Link
-                                href="/blog"
+                                href="/blog/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Blog
                             </Link>
                             <Link
-                                href="/terminbuchung"
+                                href="/terminbuchung/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full mx-auto mt-4 px-4 py-3 bg-white/10 border border-white/20 text-white text-center font-semibold rounded-lg hover:bg-white/20 transition-colors duration-200 touch-manipulation"
                             >

@@ -81,7 +81,7 @@ export default function HeilpraktikerOsteopathieHamburgPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-slate-900 rounded-md hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                 >
                   📅 Termin buchen
@@ -412,7 +412,7 @@ export default function HeilpraktikerOsteopathieHamburgPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/terminbuchung"
+                  href="/terminbuchung/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-slate-900 bg-white rounded-md hover:shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300"
                 >
                   📅 Online Termin buchen

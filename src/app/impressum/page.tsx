@@ -290,11 +290,11 @@ export default function ImpressumPage() {
           </p>
           <p className="text-slate-400 text-sm">
             Heilpraxis für Osteopathie | Hamburg |{" "}
-            <Link href="/datenschutz" className="hover:text-white transition-colors">
+            <Link href="/datenschutz/" className="hover:text-white transition-colors">
               Datenschutz
             </Link>{" "}
             |{" "}
-            <Link href="/impressum" className="hover:text-white transition-colors">
+            <Link href="/impressum/" className="hover:text-white transition-colors">
               Impressum
             </Link>
           </p>
