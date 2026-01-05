@@ -159,13 +159,24 @@ Wissenschaftliche Studien zeigen: Regelmäßige tiefe Atmung erhöht die **Herzr
 
 1. **Startposition:** Setzen oder legen Sie sich bequem hin. Legen Sie eine Hand auf den Bauch (unterhalb des Bauchnabels), die andere auf die Brust.
 
-2. **Einatmen (4 Sekunden):** Atmen Sie langsam durch die Nase ein. Konzentrieren Sie sich darauf, dass sich Ihr Bauch nach außen wölbt – die Hand auf dem Bauch hebt sich deutlich. Die Brust bleibt dabei möglichst ruhig.
+2. **Einatmen (4 Sekunden):** Atmen Sie langsam durch die Nase ein. Konzentrieren Sie sich darauf, dass sich Ihr Bauch nach außen wölbt – die Hand auf dem Bauch hebt sich deutlich. **Wichtig:** Atmen Sie auch in die seitlichen Flanken (Rippenbögen), nicht nur nach vorne in den Bauch. Spüren Sie, wie sich der Brustkorb zu den Seiten ausdehnt. Die Brust bleibt dabei möglichst ruhig.
 
 3. **Halten (2 Sekunden):** Halten Sie den Atem kurz an, ohne zu pressen.
 
 4. **Ausatmen (6-8 Sekunden):** Atmen Sie langsam durch den Mund aus. Der Bauch zieht sich nach innen, die Luft entweicht vollständig.
 
-5. **Wiederholen:** Führen Sie 5-10 Atemzyklen durch. Konzentrieren Sie sich dabei auf die Bewegung des Zwerchfells.
+5. **Wiederholen:** Führen Sie 5-10 Atemzyklen durch. Konzentrieren Sie sich dabei auf die Bewegung des Zwerchfells in alle Richtungen – nach vorne (Bauch) und zu den Seiten (Flanken).
+
+**Wichtiger Hinweis zur Atemtechnik:**
+
+Ein häufiger Fehler ist, nur in den Bauch zu atmen. Dabei wird hauptsächlich der **Pars sternalis** (vorderer, sternaler Anteil) des Zwerchfells aktiviert. Für eine vollständige Zwerchfell-Mobilisation sollten Sie auch in die **seitlichen Flanken** atmen.
+
+Das Zwerchfell besteht aus drei Teilen:
+- **Pars sternalis** (vorne am Brustbein)
+- **Pars costalis** (seitlich an den Rippen) – oft vernachlässigt!
+- **Pars lumbalis** (hinten an den Lendenwirbeln)
+
+Durch Flankenatmung (Atmung in die Seiten des Brustkorbs) aktivieren Sie alle Anteile des Zwerchfells und maximieren die Vagus-Stimulation. Legen Sie testweise beide Hände seitlich an die unteren Rippen – Sie sollten spüren, wie sich die Rippen beim Einatmen zu den Seiten ausdehnen.
 
 **Wann anwenden:** Bei akutem Stress, vor wichtigen Terminen, vor dem Einschlafen oder als tägliche Routine (3x täglich je 5 Minuten).
 
