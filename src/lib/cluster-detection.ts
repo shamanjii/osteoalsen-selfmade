@@ -19,6 +19,7 @@ export const CLUSTER_EMOJIS = {
   'Knie & Hüfte': '🦵',
   'Sport & Leistung': '⚡',
   'Verdauung & Innere Organe': '🫁',
+  'Stress & Burnout': '🧘',
   'Osteopathie Allgemein': '🌿',
 } as const;
 
@@ -31,6 +32,13 @@ export const detectCluster = (article: Article): ClusterName => {
   const text = `${article.title} ${article.excerpt} ${article.keywords?.join(' ')}`.toLowerCase();
 
   // Priority order matters! More specific clusters checked first
+  // Stress & Burnout FIRST (very specific cluster)
+  if (text.includes('stress') || text.includes('burnout') || text.includes('vagus') ||
+      text.includes('entspannung') || text.includes('erschöpfung') || text.includes('nervensystem') ||
+      text.includes('sympathikus') || text.includes('parasympathikus') || text.includes('polyvagal') ||
+      text.includes('glymphatisch')) {
+    return 'Stress & Burnout';
+  }
   // Sport & Leistung BEFORE Knie & Hüfte (sportverletzung articles contain "knie" but should be Sport)
   if (text.includes('sport') || text.includes('verletzung') || text.includes('leistung') ||
       text.includes('athlet') || text.includes('training')) {

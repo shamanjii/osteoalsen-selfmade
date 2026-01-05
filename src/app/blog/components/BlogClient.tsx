@@ -30,6 +30,7 @@ const categoryMap: Record<string, { name: string }> = {
     'knie-hüfte': { name: 'Knie & Hüfte' },
     'sport-leistung': { name: 'Sport & Leistung' },
     'verdauung-innere-organe': { name: 'Verdauung & Innere Organe' },
+    'stress-burnout': { name: 'Stress & Burnout' },
     'osteopathie-allgemein': { name: 'Osteopathie Allgemein' }
 };
 
