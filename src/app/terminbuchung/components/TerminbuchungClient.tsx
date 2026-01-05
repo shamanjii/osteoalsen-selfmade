@@ -178,7 +178,7 @@ export default function TerminbuchungClient() {
       <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50"></div>
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 text-center">
-          <h1 className="font-epilogue text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
+          <h1 className="font-epilogue text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent leading-normal pb-3">
             Kurzfristige Terminvergabe
           </h1>
           <p className="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed mb-8">
