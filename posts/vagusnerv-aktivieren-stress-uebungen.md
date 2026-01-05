@@ -14,7 +14,7 @@ keywords:
   - "Social Engagement System"
   - "Osteopathie Stress Hamburg"
 image: "https://images.unsplash.com/photo-1596546069639-be5c00252d8f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-alt: "Vagusnerv aktivieren gegen Stress - Meditation und Achtsamkeit für innere Ruhe und Nervensystem-Balance"
+alt: "Vagusnerv aktivieren gegen Stress - Osteopathie Hamburg: Atemübungen und Meditation für Nervensystem-Balance"
 date: "2026-01-05T10:00:00.000Z"
 status: "published"
 category: "gesundheitstipps"
