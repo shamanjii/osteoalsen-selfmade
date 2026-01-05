@@ -394,13 +394,28 @@ In meiner Praxis kombiniere ich verschiedene osteopathische Techniken, um die Va
 
 ### Wann sollten Sie osteopathische Hilfe in Anspruch nehmen?
 
-✅ Die Übungen wirken nicht ausreichend, obwohl Sie sie regelmäßig praktizieren
-✅ Sie leiden unter chronischem Stress kombiniert mit körperlichen Symptomen (Verdauungsprobleme, Herzklopfen, Schlafstörungen)
-✅ Sie haben bekannte HWS- oder BWS-Blockaden
-✅ Sie spüren eine ständige Enge oder Verspannung im Zwerchfell-Bereich
-✅ Atemübungen fallen Ihnen schwer oder fühlen sich blockiert an
+Auch die besten Selbsthilfe-Übungen stoßen an Grenzen, wenn strukturelle Blockaden vorliegen. Prüfen Sie, ob einer dieser Punkte auf Sie zutrifft:
 
-In meiner Hamburger Praxis arbeite ich mit einem ganzheitlichen Ansatz: Ich behandle strukturelle Blockaden manuell und gebe Ihnen gleichzeitig die Selbsthilfe-Übungen an die Hand, die Sie täglich zu Hause praktizieren können. Die Kombination aus professioneller Behandlung und Eigenverantwortung erzielt die besten Langzeit-Ergebnisse.
+**Sie sollten osteopathische Behandlung in Erwägung ziehen, wenn:**
+
+✅ **Die Übungen wirken nicht ausreichend**
+Sie praktizieren die Vagus-Übungen regelmäßig seit 2-3 Wochen, spüren aber keine deutliche Verbesserung Ihrer Stresssymptome.
+
+✅ **Chronischer Stress zeigt körperliche Symptome**
+Sie leiden unter Verdauungsproblemen, Herzklopfen, Schlafstörungen oder anderen stressbedingten Beschwerden, die trotz Entspannungsübungen bestehen bleiben.
+
+✅ **Bekannte Blockaden in HWS oder BWS**
+Sie haben bereits diagnostizierte Blockaden in der Hals- oder Brustwirbelsäule, die den Vagusnerv mechanisch beeinträchtigen können.
+
+✅ **Ständige Enge im Zwerchfell-Bereich**
+Sie spüren eine konstante Verspannung oder ein Engegefühl unter dem Brustbein, im Oberbauch oder beim tiefen Einatmen.
+
+✅ **Atemübungen fühlen sich blockiert an**
+Tiefes Atmen fällt Ihnen schwer, Sie können das Zwerchfell nicht richtig bewegen oder haben das Gefühl, "nicht richtig durchatmen" zu können.
+
+**Mein ganzheitlicher Ansatz in Hamburg:**
+
+In meiner Hamburger Praxis kombiniere ich osteopathische Techniken mit individuellen Selbsthilfe-Strategien. Ich behandle strukturelle Blockaden manuell (HWS, Zwerchfell, Schädelbasis) und zeige Ihnen gleichzeitig die passenden Übungen für zu Hause. Diese Kombination aus professioneller Behandlung und Eigenverantwortung erzielt nachweislich die besten Langzeit-Ergebnisse.
 
 ## Wissenschaftliche Einordnung: Was ist belegt, was ist Modell?
 
