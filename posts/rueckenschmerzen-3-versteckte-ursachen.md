@@ -234,7 +234,7 @@ Entscheidend ist **messbarer Fortschritt**: mehr Beweglichkeit, weniger Schmerz-
 
 Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreiben ein "Wohlfühl-Weh" – wenn verklebte Strukturen gelöst werden, kann das kurzzeitig intensiv sein, aber nicht schmerzhaft.
 
-**Mobilisationsimpulse (HVLA - High-Velocity Low-Amplitude)** ("Einrenken") sind präzise und kurz. Das Knacken ist harmlos – ein Kavitationsgeräusch in der Gelenkflüssigkeit [(11)](#quellen).
+**Mobilisationsimpulse (HVLA - High-Velocity Low-Amplitude)** ("Einrenken") sind präzise und kurz. Das Knacken ist harmlos – ein Kavitationsgeräusch in der Gelenkflüssigkeit [(10)](#quellen).
 
 **Mögliche Nachreaktionen:** Leichte Muskelkatergefühle oder Müdigkeit in den ersten 24-48 Stunden. Das zeigt, dass der Körper auf die Behandlung reagiert.
 
@@ -283,9 +283,9 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Ja – mit Einschränkungen.** Studien zeigen:
 
-- **Osteopathische Manipulation (OMT - Osteopathic Manipulative Treatment)** reduziert Schmerz und verbessert Funktion bei Rückenschmerzen – mit **kleinen bis moderaten Effekten** [(12)](#quellen).
-- **Faszien-Lösung (MFR - Myofasziales Release)** zeigt **signifikante Verbesserungen** bei chronischen Rückenschmerzen [(13)](#quellen).
-- **Kraniosakrale Techniken** können Stress reduzieren und das autonome Nervensystem (ANS) modulieren [(14)](#quellen).
+- **Osteopathische Manipulation (OMT - Osteopathic Manipulative Treatment)** reduziert Schmerz und verbessert Funktion bei Rückenschmerzen – mit **kleinen bis moderaten Effekten** [(11)](#quellen).
+- **Faszien-Lösung (MFR - Myofasziales Release)** zeigt **signifikante Verbesserungen** bei chronischen Rückenschmerzen [(12)](#quellen).
+- **Kraniosakrale Techniken** können Stress reduzieren und das autonome Nervensystem (ANS) modulieren [(13)](#quellen).
 
 **Wichtig zu verstehen:** Die Effekte in Studien sind **Durchschnittswerte** großer Gruppen. In der Praxis hängt der Erfolg stark von der **individuellen Passung** ab: Ihr spezifischer Befund, die gewählte Technik, Ihre Mitarbeit bei Übungen.
 
@@ -298,7 +298,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 - Müdigkeit nach der Sitzung
 - Selten: Kopfschmerzen
 
-Studien zu osteopathischen Techniken berichten überwiegend **gutartige** Reaktionen [(15)](#quellen).
+Studien zu osteopathischen Techniken berichten überwiegend **gutartige** Reaktionen [(14)](#quellen).
 
 **Kontraindikationen** (wann Osteopathie NICHT geeignet ist):
 - Akute Infektionen, Fieber
@@ -402,27 +402,23 @@ Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt onlin
 
 [5] Barral JP, Mercier P. *Visceral Manipulation*. Eastland Press, revised edition.
 
-[6] Cerritelli F et al. Effectiveness of osteopathic manipulative treatment in chronic low back pain. *Complementary Therapies in Medicine* 2021.
+[6] Cerritelli F et al. Osteopathy modulates brain–heart interaction in chronic pain patients: an ASL study. *Scientific Reports* 2021; 11:4556.
 
-[7] Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz. AWMF/NVL 2017 (aktualisiert 2023).
+[7] Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz. AWMF/NVL 2. Auflage 2017.
 
 [8] Bordoni B, Zanier E. Clinical and symptomatological reflections: the fascial system. *Journal of Multidisciplinary Healthcare* 2014.
 
-[9] Chaitow L, Fritz S. *Soft Tissue Manipulation: A Practitioner's Guide*. 5th edition, Elsevier 2023.
+[9] Chaitow L. *Soft-Tissue Manipulation: A Practitioner's Guide to the Diagnosis and Treatment of Soft-Tissue Dysfunction and Reflex Activity*. Eastland Press 2006.
 
-[10] Kuszewski MT et al. Effect of seated posture on peak and mean muscle activity in four back muscles in healthy individuals. *Journal of Electromyography and Kinesiology* 2020.
+[10] Kawchuk GN et al. Real-time visualization of joint cavitation. *PLOS ONE* 2015.
 
-[11] Kawchuk GN et al. Real-time visualization of joint cavitation. *PLOS ONE* 2015.
+[11] Franke H et al. Osteopathic manipulative treatment for nonspecific low back pain: a systematic review and meta-analysis. *BMC Musculoskeletal Disorders* 2014; 15:286.
 
-[12] Franke H et al. Osteopathic manipulative treatment for chronic nonspecific low back pain: a systematic review and meta-analysis. *International Journal of Osteopathic Medicine* 2021.
+[12] Ajimsha MS et al. Effectiveness of myofascial release in the management of chronic low back pain in nursing professionals. *Journal of Bodywork and Movement Therapies* 2014; 18(2):273-81.
 
-[13] Ajimsha MS et al. Effectiveness of myofascial release in chronic low back pain: RCT. *Journal of Bodywork and Movement Therapies* 2021.
+[13] Haller H et al. Craniosacral therapy for chronic pain: a systematic review and meta-analysis of randomized controlled trials. *BMC Musculoskeletal Disorders* 2020; 21(1):1.
 
-[14] Haller H et al. Craniosacral therapy for chronic pain: a systematic review and meta-analysis. *BMC Complementary Medicine* 2020.
-
-[15] Carnes D et al. Adverse events of spinal manipulation: a systematic review. *Manual Therapy* 2010.
-
-[16] Bundesinstitut für Bau-, Stadt- und Raumforschung. Pendlerstatistik Hamburg 2022.
+[14] Carnes D et al. Adverse events and manual therapy: a systematic review. *Manual Therapy* 2010; 15(4):355-63.
 
 ---
 
