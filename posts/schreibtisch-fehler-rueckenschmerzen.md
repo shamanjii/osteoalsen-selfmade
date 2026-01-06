@@ -36,7 +36,7 @@ Aber es ist nicht normal. Und es wird nicht besser.
 
 **Nach 5 Jahren:** Chronische Beschwerden. Bewegungseinschränkungen. Der Orthopäde spricht von "verschleißbedingten Veränderungen". Sie sind gerade Mitte 40.
 
-**In Hamburg arbeiten 67% der Bevölkerung im Büro.** 83% davon haben mindestens einmal pro Woche Rückenschmerzen[^1]. Aber nur 12% wissen, dass ihre Schreibtisch-Einrichtung der Hauptauslöser ist.
+**In Hamburg arbeiten 67% der Bevölkerung im Büro.** Die Mehrheit davon leidet regelmäßig unter Rückenschmerzen. Aber nur wenige wissen, dass ihre Schreibtisch-Einrichtung ein Hauptauslöser ist.
 
 **Das Problem:** Die 5 häufigsten Fehler sind unsichtbar. Ihr Stuhl sieht ergonomisch aus. Ihr Schreibtisch hat die "richtige" Höhe. Trotzdem entsteht jeden Tag struktureller Schaden.
 
@@ -156,7 +156,7 @@ Wenn bereits Beschwerden vorhanden:
 
 **Funktionell:**
 - Flache Atmung (Brustatmung statt Zwerchfellatmung)
-- Reduzierte Lungenkapazität (~30% weniger bei starker Hyperkyphose)[^3]
+- Reduzierte Lungenkapazität (deutlich eingeschränkt bei starker Hyperkyphose)
 - [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden) (Druck auf Magen/Darm)
 
 ### Die Lösung
@@ -715,11 +715,7 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 ---
 
-[^1]: Robert Koch Institut (2020). "Gesundheit in Deutschland aktuell – Rückenschmerzen bei Büroarbeitern." *RKI-Bericht*, 12(3), 45-58.
-
 [^2]: Hansraj, K.K. (2014). "Assessment of stresses in the cervical spine caused by posture and position of the head." *Surgical Technology International*, 25, 277-279. PMID: 25393825
-
-[^3]: Katzman, W.B., et al. (2021). "Thoracic hyperkyphosis and pulmonary function: A systematic review." *Osteoporosis International*, 32(10), 2037-2046. DOI: 10.1007/s00198-021-05945-x
 
 [^4]: Morais Faria, C.D., et al. (2020). "Association between hip flexor flexibility and chronic low back pain: A systematic review." *Manual Therapy*, 45, 78-85. DOI: 10.1016/j.math.2019.11.008
 

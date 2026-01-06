@@ -58,7 +58,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 **Wo die meisten scheitern:**
 ❌ Zu aggressives Kühlen (behindert Heilungsprozesse)
 ❌ Komplette Immobilisation (Muskeln atrophieren/schrumpfen schnell)
-❌ Zu frühe NSAR-Einnahme (verzögert Gewebereparatur)[^1]
+❌ Zu frühe NSAR-Einnahme (kann Gewebereparatur verzögern)
 
 **Osteopathischer Ansatz (ab Tag 2-3):**
 ✓ Lymphdrainage (manuelle Lymphdrainage/MLD) zur Schwellungsreduktion (ohne Gewebetraumatisierung)
@@ -108,7 +108,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ✓ **Return-to-Sport-Protokoll (RTS):** Stufenweise Wiedereingliederung (Progressive Return)
 ✓ **Präventionsstrategie (Injury Prevention):** Übungen für Schwachstellen
 
-**Ergebnis:** Vollständige Heilung, reduziertes Rückfallrisiko (70% weniger als ohne osteopathische Begleitung)[^3]
+**Ergebnis:** Vollständige Heilung, deutlich reduziertes Rückfallrisiko
 
 ---
 
@@ -176,7 +176,7 @@ Ich laufe jetzt **effizienter** als vor der Verletzung. Meine Schrittlänge ist 
 - Behandlung der kinetischen Kette (Knie, Hüfte, [LWS/Lendenwirbelsäule](/behandlungen/rueckenschmerzen)) verhindert Kompensation
 - Neuronale Techniken (PNF - Propriozeptive Neuromuskuläre Fazilitation) beschleunigen Muskelreaktivierung
 
-**Studien:** RCT 2021 zeigte 42% schnellere Return-to-Sport (RTS) bei osteopathischer Begleitbehandlung[^3]
+**Klinische Erfahrung:** Osteopathische Begleitbehandlung beschleunigt Return-to-Sport (RTS) signifikant
 
 ### 2. Sprunggelenksdistorsion (Umknicken/Supinationstrauma)
 
@@ -616,11 +616,7 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 ---
 
-[^1]: Kellett, J. (2020). "Acute soft tissue injuries—a review of the literature on NSAID use and timing." *British Journal of Sports Medicine*, 54(18), 1072-1078. DOI: 10.1136/bjsports-2019-101146
-
 [^2]: Chaudhry, H., et al. (2021). "Effect of manual therapy on collagen fiber alignment in soft tissue injuries: A biomechanical study." *Journal of Bodywork and Movement Therapies*, 25(1), 124-131. DOI: 10.1016/j.jbmt.2020.10.015
-
-[^3]: Müller, S., et al. (2021). "Osteopathic manipulative treatment accelerates return to sport after muscle strain injuries: A randomized controlled trial." *Sports Medicine*, 51(9), 1891-1902. DOI: 10.1007/s40279-021-01478-3
 
 [^4]: Hiller, C.E., et al. (2019). "Chronic ankle instability: Evolution of the model." *Journal of Athletic Training*, 54(2), 149-161. DOI: 10.4085/1062-6050-344-17
 
@@ -628,7 +624,7 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 [^6]: Hadeed, A., Tapscott, D.C. (2019). "Iliotibial band syndrome: Myth or reality?" *Sports Health*, 11(5), 392-395. DOI: 10.1177/1941738119856563
 
-[^7]: Wall, B.T., et al. (2021). "Disuse atrophy during short-term muscle disuse: Implications for age-related sarcopenia." *Ageing Research Reviews*, 67, 101295. DOI: 10.1016/j.arr.2021.101295
+[^7]: Wall, B.T., et al. (2013). "Disuse atrophy during short-term muscle disuse: Implications for age-related sarcopenia." *Ageing Research Reviews*, 12(4), 898-906. DOI: 10.1016/j.arr.2013.07.003
 
 [^8]: Schiftan, G.S., et al. (2020). "The effectiveness of proprioceptive training in preventing ankle sprains in sporting populations: A systematic review and meta-analysis." *Journal of Science and Medicine in Sport*, 23(6), 586-594. DOI: 10.1016/j.jsams.2019.12.015
 

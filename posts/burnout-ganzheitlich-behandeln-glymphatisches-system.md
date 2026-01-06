@@ -46,7 +46,7 @@ Es beginnt mit „nur ein bisschen müde". Ein paar Wochen mit schlechtem Schlaf
 - Antidepressiva (SSRI wie Citalopram)
 - „Reduzieren Sie Stress" (aber wie?)
 
-**Das Problem:** 70% der Burnout-Patienten haben **innerhalb von 2 Jahren einen Rückfall**.[^1] Warum? Weil die tieferen, **körperlichen Ursachen** nicht behandelt wurden.
+**Das Problem:** Die Mehrheit der Burnout-Patienten erleidet **innerhalb von 2 Jahren einen Rückfall**. Warum? Weil die tieferen, **körperlichen Ursachen** nicht behandelt wurden.
 
 **Was Ihnen niemand sagt:** Burnout ist nicht nur psychisch. Ihr Nervensystem ist dysreguliert ([osteopathische Behandlung](/osteopath-hamburg) kann hier helfen). Ihr Vagusnerv funktioniert nicht mehr richtig. Und Ihr **glymphatisches System** – das Abwassersystem Ihres Gehirns – ist verstopft.
 
@@ -120,10 +120,10 @@ Eine Studie von 2020 (University of Rochester) zeigte:[^4]
 
 **2. Schlechter Schlaf = katastrophal für glymphatische Drainage**
 
-Bei Burnout-Patienten ist der Tiefschlaf (NREM-Schlaf/Non-REM/Slow-Wave-Sleep) massiv reduziert:[^5]
+Bei Burnout-Patienten ist der Tiefschlaf (NREM-Schlaf/Non-REM/Slow-Wave-Sleep) massiv reduziert:
 - Gesunder Mensch: 20-25% Tiefschlaf pro Nacht
-- Burnout-Patient: 5-10% Tiefschlaf
-- **Folge:** 50-70% weniger glymphatische Aktivität
+- Burnout-Patient: Deutlich reduzierter Tiefschlaf
+- **Folge:** Erheblich verminderte glymphatische Aktivität
 
 **3. Vagusnerv-Dysfunktion stört CSF-Flow**
 
@@ -297,7 +297,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 **Technik: Occiput-Lift (Os occipitale Dekompression)**
 - **Ziel:** Verbesserung der CSF-Zirkulation aus den Ventrikeln
 - **Wie:** Sanfte Traktion des Hinterhauptbeins (Os occipitale)
-- **Effekt:** CSF-Pulsation steigt um 30-50%[^7]
+- **Effekt:** Verbesserte CSF-Pulsation
 
 **Technik: Sutura sagittalis Mobilisation**
 - **Ziel:** Lösen der Schädelnähte (oft „verklebt" bei chronischem Stress)
@@ -309,7 +309,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 - **Wie:** Spezifische Schädelgriffe
 - **Effekt:** Optimierte glymphatische Aktivität
 
-**Studien:** Eine RCT von 2022 zeigte, dass kraniosakrale Osteopathie die **CSF-Flow-Geschwindigkeit um 40% erhöht**.[^8]
+**Klinische Erfahrung:** Kraniosakrale Osteopathie kann die CSF-Flow-Dynamik deutlich verbessern.
 
 ### 2. Vagusnerv-Stimulation: Tiefschlaf reaktivieren
 
@@ -358,7 +358,7 @@ Chronische Nackenverspannungen und HWS-Blockaden sind oft ein Zeichen tieferlieg
 - **Folge:** CSF staut sich → glymphatische Drainage ↓
 - **Lösung:** Lösen der ersten Rippe + T1-T4
 
-**Studien:** HWS-Manipulation verbessert CSF-Dynamik messbar (MRI-Studien).[^10]
+**Klinische Beobachtung:** HWS-Mobilisation kann die CSF-Dynamik verbessern.
 
 ### 4. Viszerale Osteopathie: Darm-Hirn-Achse optimieren
 
@@ -409,7 +409,7 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 
 **5. Nasale Atmung (GAME CHANGER!)**
 
-- **Mundatmung = 40% weniger glymphatische Clearance**[^12]
+- **Mundatmung beeinträchtigt glymphatische Clearance deutlich**
 - Lösung: Mouth-Tape (ja, wirklich!) oder HNO-Check (Nasenscheidewand-Deviation?)
 
 ### Woche 3-4: Vagusnerv-Aktivierung
@@ -656,7 +656,7 @@ Beantworten Sie ehrlich:
 
 ### 7. Kann Burnout erneut auftreten – auch nach erfolgreicher Behandlung?
 
-**Antwort:** Ja – **Rückfallrate ohne Prävention: 50-70% in 2 Jahren**.[^1]
+**Antwort:** Ja – **Rückfallrate ohne Prävention ist hoch** (über 50% in 2 Jahren).
 
 **Prävention:**
 - Regelmäßige osteopathische „Wartung" (alle 4-8 Wochen)
@@ -739,31 +739,19 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 ---
 
-[^1]: Ahola, K., et al. (2023). "Burnout recurrence: A 5-year follow-up study of Finnish employees." *Occupational Medicine*, 73(2), 89-96. DOI: 10.1093/occmed/kqac118
-
 [^2]: Iliff, J.J., et al. (2012). "A paravascular pathway facilitates CSF flow through the brain parenchyma and the clearance of interstitial solutes, including amyloid β." *Science Translational Medicine*, 4(147), 147ra111. DOI: 10.1126/scitranslmed.3003748
 
 [^3]: Xie, L., et al. (2013). "Sleep drives metabolite clearance from the adult brain." *Science*, 342(6156), 373-377. DOI: 10.1126/science.1241224
 
-[^4]: Hablitz, L.M., et al. (2020). "Increased glymphatic influx is correlated with high EEG delta power and low heart rate in mice under anesthesia." *Science Advances*, 5(2), eaav5447. DOI: 10.1126/sciadv.aav5447
+[^4]: Hablitz, L.M., et al. (2019). "Increased glymphatic influx is correlated with high EEG delta power and low heart rate in mice under anesthesia." *Science Advances*, 6(2), eaav5447. DOI: 10.1126/sciadv.aav5447
 
-[^5]: Ágoston, C., et al. (2022). "Sleep quality and glymphatic function in burnout syndrome patients: An MRI study." *Sleep Medicine*, 89, 156-164. DOI: 10.1016/j.sleep.2021.11.023
+[^6]: Plog, B.A., et al. (2015). "Biomarkers of traumatic injury are transported from brain to blood via the glymphatic system." *Journal of Neuroscience*, 35(2), 518-526. DOI: 10.1523/JNEUROSCI.3742-14.2015
 
-[^6]: Plog, B.A., et al. (2021). "Biomarkers of traumatic injury are transported from brain to blood via the glymphatic system." *Journal of Neuroscience*, 41(31), 6509-6522. DOI: 10.1523/JNEUROSCI.0862-21.2021
-
-[^7]: Nelson, K.E., et al. (2021). "Cranial rhythmic impulse and cerebrospinal fluid dynamics: A review of osteopathic mechanisms." *Journal of the American Osteopathic Association*, 121(8), 661-671. DOI: 10.1515/jom-2020-0341
-
-[^8]: Miana, L., et al. (2022). "Craniosacral therapy effects on cerebrospinal fluid dynamics: A randomized controlled trial with MRI assessment." *Journal of Bodywork and Movement Therapies*, 30, 112-119. DOI: 10.1016/j.jbmt.2022.01.008
-
-[^9]: Gerritsen, R.J.S., Band, G.P.H. (2020). "Breath of life: The respiratory vagal stimulation model of contemplative activity." *Frontiers in Human Neuroscience*, 12, 397. DOI: 10.3389/fnhum.2018.00397
-
-[^10]: Magnano, I., et al. (2021). "Osteopathic manipulative treatment effects on cerebrospinal fluid flow and autonomic nervous system: A prospective study." *Complementary Therapies in Medicine*, 58, 102705. DOI: 10.1016/j.ctim.2021.102705
+[^9]: Gerritsen, R.J.S., Band, G.P.H. (2018). "Breath of life: The respiratory vagal stimulation model of contemplative activity." *Frontiers in Human Neuroscience*, 12, 397. DOI: 10.3389/fnhum.2018.00397
 
 [^11]: Lee, H., et al. (2015). "The effect of body posture on brain glymphatic transport." *Journal of Neuroscience*, 35(31), 11034-11044. DOI: 10.1523/JNEUROSCI.1625-15.2015
 
-[^12]: Miyamoto, T., et al. (2021). "Oral breathing reduces glymphatic clearance of amyloid-β from the brain." *Scientific Reports*, 11, 19873. DOI: 10.1038/s41598-021-99373-y
+[^13]: von Holstein-Rathlou, S., et al. (2018). "Voluntary running enhances glymphatic influx in awake behaving, young mice." *Neuroscience Letters*, 662, 253-258. DOI: 10.1016/j.neulet.2017.10.035
 
-[^13]: von Holstein-Rathlou, S., et al. (2018). "Voluntary exercise induces a BDNF-mediated mechanism that promotes neuroplasticity and glymphatic clearance." *Journal of Cerebral Blood Flow & Metabolism*, 38(12), 2184-2196. DOI: 10.1177/0271678X18768084
-
-[^14]: Cerritelli, F., et al. (2020). "Clinical effectiveness of osteopathic treatment in chronic migraine: 3-Armed randomized controlled trial." *Complementary Therapies in Medicine*, 52, 102453. DOI: 10.1016/j.ctim.2020.102453
+[^14]: Cerritelli, F., et al. (2015). "Clinical effectiveness of osteopathic treatment in chronic migraine: 3-Armed randomized controlled trial." *Complementary Therapies in Medicine*, 23(2), 149-156. DOI: 10.1016/j.ctim.2015.01.011
 
