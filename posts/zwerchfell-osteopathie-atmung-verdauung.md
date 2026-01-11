@@ -13,8 +13,8 @@ keywords:
   - "Deep Front Line"
   - "HRV Atmung"
   - "Osteopathie Hamburg"
-image: "https://emilygreenleaf.com/wp-content/uploads/2018/09/Jacob-Diaphragm-in-situ.jpg"
-alt: "Anatomische Illustration des Zwerchfells in situ - zeigt das Diaphragma in seiner natürlichen Position zwischen Thorax und Abdomen"
+image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Diaphragma.png"
+alt: "Anatomische Illustration des Zwerchfells (Diaphragma) - zeigt Pars sternalis, costalis und lumbalis"
 date: "2026-01-11T10:00:00.000Z"
 status: "published"
 ---
@@ -76,15 +76,9 @@ Das Zwerchfell besteht aus drei funktionell unterschiedlichen Anteilen, die wäh
 - Wird bei tiefer Bauchatmung und Flankenatmung aktiviert
 - Direkte Verbindung zur Lendenwirbelsäule – daher bei Rückenschmerzen oft mitbeteiligt
 
-<div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Diaphragma.png" alt="Anatomische Illustration des Zwerchfells von Henry Vandyke Carter - zeigt Pars sternalis, costalis und lumbalis" style="width: 100%; height: auto;" />
-    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;"><em>Klassische anatomische Darstellung des Zwerchfells mit seinen drei muskulären Anteilen (Henry Vandyke Carter, Public domain)</em></p>
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    <img src="https://emilygreenleaf.com/wp-content/uploads/2018/11/diaphragm-in-situ-ribs-heart_Cuyer1899.png" alt="Zwerchfell in situ mit Rippen und Herz - anatomische Illustration von Cuyer 1899" style="width: 100%; height: auto;" />
-    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;"><em>Das Zwerchfell in seiner natürlichen Position im Brustkorb, mit Herz und Rippen (Cuyer, 1899)</em></p>
-  </div>
+<div style="margin: 2rem 0;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Grant_1962_447.png/800px-Grant_1962_447.png" alt="Anatomische Illustration des Zwerchfells von unten gesehen - zeigt Pars sternalis, costalis, lumbalis und Centrum tendineum" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;" />
+  <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;"><em>Das Zwerchfell von unten betrachtet - zeigt die zentrale Sehne (Centrum tendineum) und die drei muskulären Anteile (Grant's Atlas of Anatomy, 1962, Public domain)</em></p>
 </div>
 
 **Centrum tendineum – die zentrale Sehne:**
@@ -325,12 +319,10 @@ Der Mechanismus läuft über das **Centrum tendineum** (zentrale Sehne):
 4. **Parasympathikus-Aktivierung:** Vagusnerv aktiviert → Herzfrequenz sinkt, HRV steigt
 5. **Respiratorische Sinusarrhythmie:** Bei Einatmung steigt die Herzfrequenz leicht, bei Ausatmung sinkt sie – diese natürliche Variation ist Zeichen hoher HRV
 
-<div style="margin: 2rem 0;">
-  <video controls style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;">
-    <source src="https://emilygreenleaf.com/wp-content/uploads/2017/09/Real-time_MRI_-_Thorax.mp4" type="video/mp4">
-    Ihr Browser unterstützt keine HTML5-Videos.
-  </video>
-  <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;"><em>Echtzeit-MRI des Thorax: Sehen Sie die Zwerchfell-Bewegung während der Atmung und den Einfluss auf Herz und Lungen</em></p>
+<div style="background-color: #e0f2fe; border-left: 4px solid #0284c7; padding: 1rem; margin: 1.5rem 0;">
+  <p style="margin: 0; font-size: 0.95rem; color: #0c4a6e;">
+    <strong>💡 Faszinierend:</strong> Bei Echtzeit-MRI-Aufnahmen des Thorax kann man sehen, wie das Zwerchfell bei jedem Atemzug bis zu 6-10 cm auf und ab wandert. Dabei bewegt es nicht nur die Lungen, sondern massiert auch das Herz, verschiebt Leber und Magen und pumpt venöses Blut zurück zum Herzen. Diese rhythmische Bewegung ist einer der kraftvollsten mechanischen Prozesse im Körper.
+  </p>
 </div>
 
 **Studien zeigen:**
@@ -1364,16 +1356,11 @@ Ganzheitliche osteopathische Behandlung mit Fokus auf viszerale Osteopathie, Zwe
 
 ---
 
-## Bild- und Videonachweis
+## Bildnachweis
 
-**Titelbild:** Anatomische Illustration des Zwerchfells in situ - Jacob (via Emily Greenleaf)
+**Titelbild:** [Anatomische Illustration des Zwerchfells (Diaphragma)](https://commons.wikimedia.org/wiki/File:Diaphragma.png) - Henry Vandyke Carter, Public domain, via Wikimedia Commons
 
-**Anatomie-Sektion:**
-- [Diaphragma-Illustration](https://commons.wikimedia.org/wiki/File:Diaphragma.png) - Henry Vandyke Carter, Public domain, via Wikimedia Commons
-- Zwerchfell in situ mit Rippen und Herz - Cuyer, 1899 (via Emily Greenleaf)
-
-**HRV-Sektion:**
-- Echtzeit-MRI Video des Thorax (via Emily Greenleaf)
+**Anatomie-Sektion:** [Das Zwerchfell von unten betrachtet](https://commons.wikimedia.org/wiki/File:Grant_1962_447.png) - Grant's Atlas of Anatomy, 1962, Public domain, via Wikimedia Commons
 
 ---
 
