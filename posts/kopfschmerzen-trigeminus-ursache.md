@@ -2,7 +2,7 @@
 slug: "kopfschmerzen-trigeminus-ursache"
 title: "Kopfschmerzen? Warum der Trigeminus-Nerv oft die wahre Ursache ist"
 excerpt: "Ihre Kopfschmerzen sind nicht einfach 'Stress' oder 'Migräne'. 3 Trigeminus-Irritationspunkte lösen 90% der therapieresistenten Kopfschmerzen aus. Evidenzbasierte Behandlung statt Tabletten."
-metaDescription: "3 Trigeminus-Irritationspunkte finden ✓ 90% therapieresistent ✓ Evidenzbasiert ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+metaDescription: "Kopfschmerzen trotz Schmerzmitteln? 90% therapieresistenter Fälle haben ihre Ursache in 3 Trigeminus-Irritationspunkten. Warum Tabletten nur Symptome unterdrücken – und wie Osteopathie die Ursache behandelt. Hamburg."
 keywords:
   - "Kopfschmerzen Trigeminus"
   - "Trigeminus-Nerv Kopfschmerzen"

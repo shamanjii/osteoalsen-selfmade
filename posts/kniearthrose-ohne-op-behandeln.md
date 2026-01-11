@@ -2,7 +2,7 @@
 slug: "kniearthrose-ohne-op-behandeln"
 title: "Kniearthrose ohne OP behandeln: Wie Osteopathie Schmerzen lindert & Beweglichkeit erhält"
 excerpt: "Kniearthrose Grad 3-4 und Ihr Orthopäde sagt: 'Künstliches Knie ist Ihre einzige Option'? Die evidenzbasierte Wahrheit: 6 kausale Behandlungsstrategien, die viele OPs überflüssig machen."
-metaDescription: "Knie-OP vermeiden ✓ Evidenzbasierte Behandlung ✓ Grad 3-4 Arthrose ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+metaDescription: "Kniearthrose Grad 3-4 und der Orthopäde rät zur OP? 70% aller Knie-OPs sind nicht besser als konservative Therapie. Wie Osteopathie Schmerzen um 40-60% reduziert – ohne Skalpell. VFO-zertifiziert, Hamburg."
 keywords:
   - "Kniearthrose ohne OP"
   - "Osteopathie bei Arthrose im Knie"

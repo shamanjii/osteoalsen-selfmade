@@ -2,7 +2,7 @@
 slug: "schreibtisch-fehler-rueckenschmerzen"
 title: "5 Fehler am Schreibtisch, die Ihren Rücken jeden Tag ein bisschen mehr zerstören"
 excerpt: "Sie sitzen ergonomisch – trotzdem Rückenschmerzen? Die 7 häufigsten Schreibtisch-Fehler, die Ärzte übersehen. Von Atlas-Fehlstellung bis Zwerchfell-Dysfunktion. Evidenzbasierte Lösungen."
-metaDescription: "7 Schreibtisch-Fehler beheben ✓ Ergonomie + Osteopathie ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+metaDescription: "Ergonomischer Schreibtisch, trotzdem Rückenschmerzen? 5 unsichtbare Fehler, die 90% aller Büroarbeiter machen – von Atlas-Fehlstellung bis Zwerchfell-Dysfunktion. Was Sie heute noch ändern können. Osteopathie Hamburg."
 keywords:
   - "Schreibtisch Rückenschmerzen"
   - "Ergonomie Büro Hamburg"

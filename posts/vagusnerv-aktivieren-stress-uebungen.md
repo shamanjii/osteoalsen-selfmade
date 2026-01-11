@@ -2,7 +2,7 @@
 slug: "vagusnerv-aktivieren-stress-uebungen"
 title: "Vagusnerv aktivieren bei Stress: 5 wissenschaftlich fundierte Übungen"
 excerpt: "Der Vagusnerv ist Ihr körpereigener Beruhigungsschalter. Erfahren Sie, wie die Polyvagaltheorie erklärt, warum Lächeln, Summen und Atmen gegen Stress wirken – und welche 5 Übungen den ventralen Vagus gezielt aktivieren."
-metaDescription: "Vagusnerv aktivieren ✓ 5 wissenschaftliche Übungen ✓ Polyvagaltheorie erklärt ✓ Gegen Stress & Angst ✓ Osteopathie Hamburg ⭐"
+metaDescription: "Chronischer Stress und Angst? Ihr Vagusnerv ist der körpereigene Beruhigungsschalter. 5 wissenschaftlich fundierte Übungen basierend auf der Polyvagaltheorie – von Osteopathen in Hamburg erklärt."
 keywords:
   - "Vagusnerv aktivieren"
   - "Vagusnerv Übungen"

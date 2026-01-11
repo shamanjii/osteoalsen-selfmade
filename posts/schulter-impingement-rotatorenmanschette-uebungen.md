@@ -2,7 +2,7 @@
 slug: "schulter-impingement-rotatorenmanschette-uebungen"
 title: "Schulter-Impingement: Die wahre Ursache liegt nicht in der Schulter"
 excerpt: "87% der Impingement-Patienten haben BWS-Blockaden. Erfahren Sie, warum Ihre Schulterschmerzen vom Brustkorb kommen – und welche 4 Übungen wirklich helfen (inkl. Bonus: BWS-HWS Integration)."
-metaDescription: "87% haben BWS-Blockaden ✓ 4 effektive Übungen ✓ Osteopathie Hamburg ✓ OP oft vermeidbar ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+metaDescription: "Schulterschmerzen trotz Physiotherapie? 87% aller Impingement-Fälle haben ihre Ursache in BWS-Blockaden. Warum die OP oft überflüssig ist und welche 4 Übungen wirklich helfen. Spezialisierte Osteopathie Hamburg."
 keywords:
   - "Schulter Impingement Osteopathie"
   - "Rotatorenmanschette Schmerzen"

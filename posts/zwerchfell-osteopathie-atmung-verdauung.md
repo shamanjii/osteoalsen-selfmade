@@ -2,7 +2,7 @@
 slug: "zwerchfell-osteopathie-atmung-verdauung"
 title: "Das Zwerchfell aus osteopathischer Sicht: Schlüssel zu Atmung, Verdauung und emotionaler Balance"
 excerpt: "Das Zwerchfell ist weit mehr als ein Atemmuskel: Es reguliert Herz-Kreislauf, Verdauung, Lymphfluss und emotionale Balance. Erfahren Sie, wie osteopathische Behandlung und einfache Atemübungen Ihre Gesundheit transformieren können."
-metaDescription: "Zwerchfell Osteopathie ✓ Flankenatmung ✓ Verdauung & HRV ✓ Emotionale Balance ✓ Selbsthilfe-Übungen ✓ Hamburg ⭐"
+metaDescription: "Sie atmen 20.000 Mal pro Tag – aber nur flach in die Brust. Warum das Zwerchfell der Schlüssel zu Verdauung, Herzratenvariabilität und emotionaler Balance ist. Wissenschaftlich fundiert erklärt von Osteopathen Hamburg."
 keywords:
   - "Zwerchfell Osteopathie"
   - "Flankenatmung"

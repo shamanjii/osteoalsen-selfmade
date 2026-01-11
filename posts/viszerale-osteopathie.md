@@ -2,7 +2,7 @@
 slug: "viszerale-osteopathie"
 title: "Viszerale Osteopathie: Was ist das und wie funktioniert sie?"
 excerpt: "Viszerale Osteopathie behandelt die inneren Organe mit sanften manuellen Techniken. Erfahren Sie, wie diese spezialisierte Therapieform bei Verdauungsbeschwerden, Rückenschmerzen und anderen Beschwerden helfen kann."
-metaDescription: "Viszerale Osteopathie erklärt ✓ Behandlung innerer Organe ✓ Sanfte manuelle Techniken ✓ Bei Verdauung & Schmerzen ✓ Hamburg ⭐"
+metaDescription: "Was ist viszerale Osteopathie? Sanfte manuelle Behandlung innerer Organe bei Verdauungsbeschwerden, Rückenschmerzen und chronischen Beschwerden. Wissenschaftlich fundiert erklärt von Experten in Hamburg."
 keywords:
   - "Viszerale Osteopathie"
   - "Was ist viszerale Osteopathie"

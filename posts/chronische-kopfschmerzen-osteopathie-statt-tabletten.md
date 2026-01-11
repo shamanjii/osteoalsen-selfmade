@@ -2,7 +2,7 @@
 slug: "chronische-kopfschmerzen-osteopathie-statt-tabletten"
 title: "Chronische Kopfschmerzen loswerden: Osteopathie statt Schmerztabletten"
 excerpt: "Chronische Kopfschmerzen trotz Schmerzmitteln? Die wahren Ursachen liegen oft im Nacken, Kiefer oder Nervensystem. Wie Osteopathie nachhaltig hilft – ohne Tabletten."
-metaDescription: "Ursache in Nacken, Kiefer, Nerven finden ✓ Ohne Medikamente ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ⭐ Jetzt Termin buchen!"
+metaDescription: "Täglich Kopfschmerzen trotz Schmerzmitteln? 70% haben muskuloskelettale Ursachen in Nacken, Kiefer oder Nervensystem. Wie Osteopathie chronische Kopfschmerzen nachhaltig behandelt – ohne Medikamente. VFO-zertifiziert, Hamburg."
 keywords:
   - "chronische Kopfschmerzen"
   - "Kopfschmerzen Osteopathie"

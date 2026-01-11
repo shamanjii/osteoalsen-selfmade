@@ -2,7 +2,7 @@
 slug: "rueckenschmerzen-verdauung-radix-mesenterii"
 title: "Rückenschmerzen und Verdauung: Wie die Radix Mesenterii Darm und Lendenwirbelsäule verbindet"
 excerpt: "Rückenschmerzen + Blähungen? Die Radix Mesenterii (Dünndarmwurzel) ist einer der am meisten übersehenen Auslöser chronischer Rückenschmerzen. Warum MRT und Röntgen versagen – und viszerale Osteopathie hilft."
-metaDescription: "Radix Mesenterii behandeln ✓ Viszerale Osteopathie ✓ Rückenschmerzen + Blähungen ✓ Hamburg ✓ VFO-zertifiziert ⭐ Jetzt buchen!"
+metaDescription: "Rückenschmerzen und Verdauungsprobleme gleichzeitig? Die Radix Mesenterii verbindet Darm und Lendenwirbelsäule anatomisch. Spezialisierte viszerale Osteopathie in Hamburg – VFO-zertifiziert. Termin vereinbaren."
 keywords:
   - "Rückenschmerzen Verdauung"
   - "Radix Mesenterii"
