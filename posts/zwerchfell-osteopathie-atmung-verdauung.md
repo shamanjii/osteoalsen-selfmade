@@ -36,12 +36,12 @@ Noch deutlicher formulierte er die zentrale Bedeutung:
 Still sah das Zwerchfell als **den wichtigsten Muskel für Gesundheit** – eine Pumpe für das Lymphsystem, einen Motor für die Durchblutung, einen Regulator für die inneren Organe und eine Brücke zwischen Körper und Geist.
 
 **In diesem Artikel erfahren Sie:**
-- Warum das Zwerchfell die Schnittstelle zwischen Bewusstsein und Unterbewusstsein ist
-- Wie Flankenatmung (Aktivierung von Pars costalis und lumbalis) Herz, Leber und Lymphsystem entlastet
-- Welchen Einfluss tiefe Atmung auf Ihre Herzratenvariabilität (HRV) hat
-- Warum Zwerchfell-Dysfunktion zu Verdauungsproblemen führt
-- Wie das Zwerchfell als Teil der Deep Front Line mit tiefen emotionalen Themen verbunden ist
-- Welche einfachen Übungen Sie sofort umsetzen können – ohne komplizierte Atemtechniken
+- [Warum das Zwerchfell die Schnittstelle zwischen Bewusstsein und Unterbewusstsein ist](#das-zwerchfell-als-schnittstelle-zwischen-bewusstsein-und-unterbewusstsein)
+- [Wie Flankenatmung (Aktivierung von Pars costalis und lumbalis) Herz, Leber und Lymphsystem entlastet](#saule-1-atmung--flankenatmung-statt-brustatmung)
+- [Welchen Einfluss tiefe Atmung auf Ihre Herzratenvariabilität (HRV) hat](#einfluss-auf-die-herzratenvariabilitat-hrv)
+- [Warum Zwerchfell-Dysfunktion zu Verdauungsproblemen führt](#saule-3-verdauung-und-lymphsystem)
+- [Wie das Zwerchfell als Teil der Deep Front Line mit tiefen emotionalen Themen verbunden ist](#das-zwerchfell-und-die-deep-front-line)
+- [Welche einfachen Übungen Sie sofort umsetzen können – ohne komplizierte Atemtechniken](#selbsthilfe-ubungen-das-zwerchfell-zu-hause-mobilisieren)
 
 <div style="background-color: #FEF3C7; border-left: 4px solid #F59E0B; padding: 1rem; margin: 1.5rem 0;">
   <p style="margin: 0; font-size: 0.95rem; color: #92400E;">
