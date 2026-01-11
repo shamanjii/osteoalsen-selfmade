@@ -13,8 +13,8 @@ keywords:
   - "Deep Front Line"
   - "HRV Atmung"
   - "Osteopathie Hamburg"
-image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1200&auto=format&fit=crop"
-alt: "Zwerchfell Osteopathie - Anatomie des wichtigsten Atemmuskels für Atmung, Verdauung und emotionale Balance"
+image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Diaphragma.png"
+alt: "Anatomische Illustration des Zwerchfells (Diaphragma) mit seinen drei Anteilen: Pars sternalis, costalis und lumbalis - Henry Vandyke Carter, Public domain"
 date: "2026-01-11T10:00:00.000Z"
 status: "published"
 ---
@@ -1342,6 +1342,12 @@ Ganzheitliche osteopathische Behandlung mit Fokus auf viszerale Osteopathie, Zwe
 - [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden)
 - [Stress & Burnout](/behandlungen/stress-burnout)
 - [Rückenschmerzen](/behandlungen/rueckenschmerzen)
+
+---
+
+## Bildnachweis
+
+Titelbild: [Anatomische Illustration des Zwerchfells (Diaphragma)](https://commons.wikimedia.org/wiki/File:Diaphragma.png) - Henry Vandyke Carter, Public domain, via Wikimedia Commons
 
 ---
 
