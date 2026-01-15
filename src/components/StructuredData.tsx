@@ -240,14 +240,8 @@ export function LocalBusinessStructuredData({
         value: true,
       },
     ],
-    // Additional properties for local SEO
-    knowsAbout: [
-      'Osteopathy',
-      'Manual Therapy',
-      'Sports Medicine',
-      'Pain Management',
-      'Holistic Medicine',
-    ],
+    // Additional keywords for search optimization
+    keywords: 'Osteopathy, Manual Therapy, Sports Medicine, Pain Management, Holistic Medicine',
   };
 
   return (

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PersonSchema from "@/components/PersonSchema";
 
 export const metadata: Metadata = {
   title: "Über mich | Osteopath Hamburg - Joshua Alsen",
@@ -45,6 +46,24 @@ export const metadata: Metadata = {
 export default function UeberMichPage() {
   return (
     <>
+      <PersonSchema
+        name="Joshua Alsen"
+        jobTitle="Osteopath und Heilpraktiker"
+        url="https://www.osteoalsen.de/ueber-mich"
+        imageUrl="https://www.osteoalsen.de/assets/joshua-alsen-osteopath-hamburg.webp"
+        email="joshua@alsen.info"
+        telephone="+4917643990001"
+        address={{
+          streetAddress: "Rappstraße 7",
+          addressLocality: "Hamburg",
+          postalCode: "20146",
+          addressCountry: "DE",
+        }}
+        sameAs={[
+          "https://www.osteopathie.de/praktikersuche",
+          "https://www.vfo.de",
+        ]}
+      />
       <Breadcrumbs items={[{ label: "Über mich" }]} />
 
       {/* Hero Section */}

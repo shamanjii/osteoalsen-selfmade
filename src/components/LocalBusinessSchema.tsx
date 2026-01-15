@@ -118,7 +118,7 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
       "ratingValue": "5.0",
       "reviewCount": "42",
       "bestRating": "5",
-      "worstRating": "5"
+      "worstRating": "1"
     },
     "sameAs": [
       "https://www.facebook.com/osteoalsen",

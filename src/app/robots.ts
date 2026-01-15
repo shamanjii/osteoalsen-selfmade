@@ -7,11 +7,15 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: [
+          '/',
+          '/_next/static/', // Allow CSS, JS, fonts, images
+          '/_next/image/', // Allow Next.js Image Optimization
+        ],
         disallow: [
           '/api/',
           '/admin/',
-          '/_next/',
+          '/_next/data/', // Only block data files
           '/private/',
           '/*.json$',
           '/terminbuchung/success', // Don't index confirmation pages
