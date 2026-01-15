@@ -588,7 +588,7 @@ Intraoral-Behandlung (M. pterygoideus): NEIN, nur vom Therapeuten.
 
 [Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – 6-Phasen-Protokoll (ohne Schmerzmittel)
 
-[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm (3 Monate)
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
 
 [Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen) – Ursachen statt Symptome bekämpfen
 

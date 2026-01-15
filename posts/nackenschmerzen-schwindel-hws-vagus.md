@@ -409,7 +409,7 @@ Dieser ganzheitliche Ansatz erklärt, warum manche Patienten nach osteopathische
 **Ziel:** Arteria vertebralis entlasten
 
 **A) Haltungsoptimierung:**
-- [Smartphone auf Augenhöhe](/blog/handy-nacken-text-neck-rueckgaengig)
+- Smartphone auf Augenhöhe halten
 - Kein Überstrecken des Nackens (Yoga Backbends vorsichtig!)
 - Schlafen: Flaches Kissen
 
@@ -627,7 +627,7 @@ In meiner Praxis in Hamburg behandle ich täglich Schwindel-Patienten. Erste Sit
 
 [CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
 
-[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm gegen Forward Head Posture (3 Monate)
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
 
 ---
 

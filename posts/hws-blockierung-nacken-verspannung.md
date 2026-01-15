@@ -569,7 +569,7 @@ In meiner Praxis in Hamburg behandle ich täglich [Nackenschmerzen](/behandlunge
 
 [Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) – Wenn Kopfschmerzen vom Nacken ausgehen
 
-[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm gegen Forward Head Posture (3 Monate)
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
 
 [CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
 

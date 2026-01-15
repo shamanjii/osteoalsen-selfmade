@@ -507,7 +507,7 @@ Nein. Nach Stabilisierung: Jährliche Check-ups + Eigenübungen 3x/Woche.
 
 [Stress & Burnout behandeln](/behandlungen/stress-burnout) – Stressverarbeitung nach Trauma
 
-[Text Neck: Smartphone-Nacken rückgängig machen](/blog/handy-nacken-text-neck-rueckgaengig) – 5-Stufen-Programm (3 Monate)
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
 
 [CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
 
