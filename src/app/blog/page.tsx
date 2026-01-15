@@ -9,7 +9,7 @@ import { getAllPosts } from "@/lib/posts";
 import { calculateReadingTime } from "@/lib/utils";
 
 export const metadata: Metadata = {
-    title: "Osteopathie Blog | Evidenzbasierte Fachartikel | Osteoalsen Hamburg",
+    title: "Osteopathie Blog | Fachartikel Hamburg - Osteoalsen",
     description: "Entdecken Sie evidenzbasierte Fachartikel zu Osteopathie, ganzheitlicher Gesundheit und bewährten Behandlungsmethoden von Osteopath Joshua Alsen aus Hamburg.",
     keywords: ["Osteopathie Blog", "Osteopathie Artikel", "Gesundheitstipps", "Rückenschmerzen", "Kopfschmerzen", "Sportverletzungen", "Osteopath Hamburg"],
     openGraph: {

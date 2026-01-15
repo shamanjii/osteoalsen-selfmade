@@ -32,5 +32,10 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
+    // LLMs.txt for AI crawlers (ChatGPT, Gemini, Perplexity, etc.)
+    other: {
+      'llms-full-text': `${baseUrl}/llms.txt`,
+    }
   }
 }
