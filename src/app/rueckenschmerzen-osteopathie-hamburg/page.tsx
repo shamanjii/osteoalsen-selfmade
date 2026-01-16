@@ -698,25 +698,6 @@ export default function RueckenschmerzenOsteopathiePage() {
                     </div>
                   </div>
                 </div>
-                <Link
-                  href="/osteopathie-rotherbaum/"
-                  className="mt-6 inline-flex items-center text-teal-600 transition-colors hover:text-teal-700"
-                >
-                  Mehr zum Standort Rotherbaum
-                  <svg
-                    className="ml-1 h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
               </div>
 
               <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">

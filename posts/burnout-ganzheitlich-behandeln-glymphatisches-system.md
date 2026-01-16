@@ -48,7 +48,7 @@ Es beginnt mit „nur ein bisschen müde". Ein paar Wochen mit schlechtem Schlaf
 
 **Das Problem:** Die Mehrheit der Burnout-Patienten erleidet **innerhalb von 2 Jahren einen Rückfall**. Warum? Weil die tieferen, **körperlichen Ursachen** nicht behandelt wurden.
 
-**Was Ihnen niemand sagt:** Burnout ist nicht nur psychisch. Ihr Nervensystem ist dysreguliert ([osteopathische Behandlung](/osteopath-hamburg) kann hier helfen). Ihr Vagusnerv funktioniert nicht mehr richtig. Und Ihr **glymphatisches System** – das Abwassersystem Ihres Gehirns – ist verstopft.
+**Was Ihnen niemand sagt:** Burnout ist nicht nur psychisch. Ihr Nervensystem ist dysreguliert ([osteopathische Behandlung](/) kann hier helfen). Ihr Vagusnerv funktioniert nicht mehr richtig. Und Ihr **glymphatisches System** – das Abwassersystem Ihres Gehirns – ist verstopft.
 
 ---
 
@@ -262,7 +262,7 @@ Er untersuchte meinen Nacken, Schädel, Kiefer. **Dann sagte er etwas, das alles
 - Arbeite 45h/Woche – aber mit klaren Grenzen
 - Kein Brain Fog mehr
 - Medikamente schrittweise abgesetzt (mit ärztlicher Begleitung)
-- Regelmäßige [osteopathische Nachsorge](/osteopathie-rotherbaum) zur Prävention
+- Regelmäßige [osteopathische Nachsorge](/) zur Prävention
 
 ### Was mich am meisten überraschte
 
@@ -724,8 +724,8 @@ Ganzheitliche Behandlung mit Fokus auf kraniosakraler Osteopathie & Nervensystem
 - [Rückenschmerzen & Verdauung: Radix-Mesenterii-Connection](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
 
 **Osteopathische Behandlung in Hamburg:**
-- [Osteopath Hamburg – Ganzheitliche Behandlung](/osteopath-hamburg)
-- [Osteopathie Rotherbaum – Ihre Praxis in Hamburg](/osteopathie-rotherbaum)
+- [Osteopath Hamburg – Ganzheitliche Behandlung](/)
+- [Osteopathie Rotherbaum – Ihre Praxis in Hamburg](/)
 
 ---
 

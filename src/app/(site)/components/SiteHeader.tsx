@@ -179,7 +179,7 @@ export default function SiteHeader() {
                                 label="Osteopathie"
                                 items={[
                                     { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie" },
-                                    { label: "Patienteninfos", href: "/patienteninfos" },
+                                    { label: "Patienteninfos", href: "/faq" },
                                     { label: "Wissenschaft & Forschung", href: "/wissen" },
                                 ]}
                                 isOpen={openDropdown === "osteopathie"}
@@ -290,7 +290,7 @@ export default function SiteHeader() {
                                         Was ist Osteopathie?
                                     </Link>
                                     <Link
-                                        href="/patienteninfos/"
+                                        href="/faq/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >

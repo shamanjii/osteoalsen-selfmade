@@ -668,7 +668,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 
 ## Jetzt starten: Werden Sie zum optimierten Athleten
 
-In meiner Praxis in [Hamburg-Rotherbaum](/osteopath-hamburg) biete ich [Sportosteopathie](/behandlungen/sportosteopathie) speziell für ambitionierte Sportler:
+In meiner Praxis in [Hamburg-Rotherbaum](/) biete ich [Sportosteopathie](/behandlungen/sportosteopathie) speziell für ambitionierte Sportler:
 
 **Was Sie erwarten können:**
 - ✅ **Ausführliche Bewegungsanalyse** (60 Min. Ersttermin)

@@ -158,7 +158,7 @@ author: "Admin"
 
 **Lösung:**
 - **Funktionell:** [Beckenkorrektur](/behandlungen/rueckenschmerzen), ISG-/[Hüft-Behandlung](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) → Beinlänge gleicht sich an
-- **Anatomisch:** Einlage/Absatzerhöhung (erst ab >8-10 mm Differenz empfohlen), Beratung beim [Osteopathen Hamburg](/osteopath-hamburg)
+- **Anatomisch:** Einlage/Absatzerhöhung (erst ab >8-10 mm Differenz empfohlen), Beratung beim [Osteopathen Hamburg](/)
 
 ---
 
@@ -186,7 +186,7 @@ author: "Admin"
 
 **Lösung:**
 - Core-Training (siehe Übungen unten) unter [professioneller Anleitung](/behandlungen/rueckenschmerzen)
-- Besonders: Transversus-Aktivierung lernen ([osteopathische Therapie](/osteopathie-rotherbaum))
+- Besonders: Transversus-Aktivierung lernen ([osteopathische Therapie](/))
 - Beckenboden-Training (oft vernachlässigt!) – mehr bei [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden)
 
 ---
@@ -212,7 +212,7 @@ author: "Admin"
 → Beckentorsion wahrscheinlich
 
 **Lösung:**
-- Manuelle Beckenkorrektur ([Osteopathie Hamburg](/osteopath-hamburg), Chiropraktik)
+- Manuelle Beckenkorrektur ([Osteopathie Hamburg](/), Chiropraktik)
 - **Muskel-Energie-Techniken** (MET - Patient arbeitet aktiv mit)
 - Nach Korrektur: Stabilisation (sonst dreht es sich zurück!) mit [Sportosteopathie](/behandlungen/sportosteopathie)
 
@@ -781,7 +781,7 @@ Rappstraße 7
 - [Sportverletzung: Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training)
 
 **Osteopathische Behandlung in Hamburg:**
-- [Osteopath Hamburg – Ganzheitliche Behandlung](/osteopath-hamburg)
+- [Osteopath Hamburg – Ganzheitliche Behandlung](/)
 - [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie)
 
 ---

@@ -495,7 +495,7 @@ Kniearthrose – und Sie wollen die **OP vermeiden** oder zumindest hinauszöger
 → Telefon: +49 176 43990001
 
 **Standort:**
-[Osteopath Hamburg](/osteopath-hamburg) – Praxis für Osteopathie
+[Osteopath Hamburg](/) – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
@@ -521,7 +521,7 @@ Biomechanische Analyse mit Gang-Videoanalyse. Fokus auf OP-Vermeidung durch ursa
 - [Sportosteopathie Hamburg – Leistung optimieren](/behandlungen/sportosteopathie)
 
 **Ganzheitliche Behandlung:**
-- [Osteopath Hamburg – Ganzheitliche Behandlung](/osteopath-hamburg)
+- [Osteopath Hamburg – Ganzheitliche Behandlung](/)
 - [Burnout & chronische Entzündung](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
 
 ---

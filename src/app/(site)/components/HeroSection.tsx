@@ -7,7 +7,7 @@ export default function HeroSection() {
                 <div className="mx-auto max-w-3xl">
                     <h1 className="font-epilogue text-slate-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight font-light leading-tight mb-4">
                         Osteopathie Hamburg:<br />
-                        <Link href="/osteopathie-rotherbaum/" className="text-slate-900 hover:text-slate-600 transition-colors">Rotherbaum</Link> &amp; <Link href="/osteopathie-eimsbuettel/" className="text-slate-900 hover:text-slate-600 transition-colors">Eimsbüttel</Link>
+                        Rotherbaum &amp; <Link href="/osteopathie-eimsbuettel/" className="text-slate-900 hover:text-slate-600 transition-colors">Eimsbüttel</Link>
                         <br />
                         <span className="font-normal">Joshua Alsen</span>
                     </h1>
@@ -18,9 +18,7 @@ export default function HeroSection() {
                     </h2>
                     <p className="mt-10 text-slate-700 text-base sm:text-lg md:text-xl leading-7 max-w-2xl mx-auto">
                         Osteopathie Hamburg – In meiner Praxis in{" "}
-                        <Link href="/osteopathie-rotherbaum/" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
-                            Rotherbaum
-                        </Link>{" "}und{" "}
+                        Rotherbaum und{" "}
                         <Link href="/osteopathie-eimsbuettel/" className="text-slate-900 hover:text-slate-600 font-medium underline decoration-1 underline-offset-2">
                             Eimsbüttel
                         </Link>{" "}biete ich ganzheitliche osteopathische

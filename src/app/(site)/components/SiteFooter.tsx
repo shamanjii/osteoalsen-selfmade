@@ -163,11 +163,11 @@ export default function SiteFooter() {
                         </h3>
                         <ul className="space-y-3 text-sm">
                             <li>
-                                <Link href="/osteopathie-rotherbaum/" className="hover:text-slate-900 transition-colors">
+                                <div>
                                     <div className="text-slate-900 font-medium">Rotherbaum</div>
                                     <div className="text-slate-600">Rappstraße 7</div>
                                     <div className="text-slate-600">20146 Hamburg</div>
-                                </Link>
+                                </div>
                             </li>
                             <li>
                                 <Link href="/osteopathie-eimsbuettel/" className="hover:text-slate-900 transition-colors">
