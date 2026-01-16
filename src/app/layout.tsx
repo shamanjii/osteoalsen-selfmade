@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Epilogue, Instrument_Sans } from "next/font/google";
 import "./globals.css";
-import FloatingBookingButton from "@/components/FloatingBookingButton";
+import VoiceflowChat from "@/components/VoiceflowChat";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
 import Analytics from "@/components/Analytics";
@@ -137,7 +137,7 @@ export default function RootLayout({
         <Analytics />
         <ErrorBoundary>
           {children}
-          <FloatingBookingButton />
+          <VoiceflowChat />
         </ErrorBoundary>
       </body>
     </html>
