@@ -1,5 +1,6 @@
 const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-const basePath = isGitHubPages ? '/osteoalsen-selfmade' : '';
+// const basePath = isGitHubPages ? '/osteoalsen-selfmade' : '';
+const basePath = '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
