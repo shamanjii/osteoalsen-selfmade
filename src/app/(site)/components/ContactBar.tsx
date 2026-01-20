@@ -21,16 +21,21 @@ export default function ContactBar() {
   });
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Only show ContactBar on homepage and booking page
-  const showContactBar = pathname === '/' || pathname === '/terminbuchung';
+  // Only show ContactBar on homepage
+  const showContactBar = pathname === '/';
+
+  // Don't render at all if not on homepage
+  if (!showContactBar) {
+    return null;
+  }
 
   // ContactBar: Only visible at very top (< 10px) AND only on specific pages
   const handleScroll = useCallback(() => {
     const throttledHandler = throttle(() => {
       const currentScrollY = window.scrollY;
 
-      // Only show when at very top of page AND on homepage/booking page
-      if (currentScrollY < 10 && showContactBar) {
+      // Only show when at very top of page
+      if (currentScrollY < 10) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -40,7 +45,7 @@ export default function ContactBar() {
     }, 16); // 60fps throttling
 
     return throttledHandler;
-  }, [lastScrollY, showContactBar]);
+  }, [lastScrollY]);
 
   useEffect(() => {
     const scrollHandler = handleScroll();
