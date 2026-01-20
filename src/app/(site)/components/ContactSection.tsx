@@ -2,6 +2,7 @@
 
 import { PhoneLink, EmailLink } from '@/components/TrackableLink';
 import { trackAppointmentClick } from '@/components/Analytics';
+import { linkPath } from "@/lib/basePath";
 
 export default function ContactSection() {
     const handleAppointmentClick = () => {
