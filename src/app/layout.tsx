@@ -100,12 +100,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" style={{ backgroundColor: '#ffffff' }}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="theme-color" content="#0f172a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Prevent white flash by ensuring fonts load with fallback */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          html { background-color: #ffffff; }
+          body { opacity: 1 !important; }
+        ` }} />
         <WebsiteStructuredData />
         <LocalBusinessStructuredData
           name="Joshua Alsen - Osteopathie Hamburg"

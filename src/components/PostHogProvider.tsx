@@ -6,11 +6,11 @@
  * Initializes PostHog and tracks page views automatically.
  */
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { initPostHog, trackPageView } from '@/lib/posthog';
 
-export default function PostHogProvider() {
+function PostHogTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -31,4 +31,12 @@ export default function PostHogProvider() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export default function PostHogProvider() {
+  return (
+    <Suspense fallback={null}>
+      <PostHogTracker />
+    </Suspense>
+  );
 }
