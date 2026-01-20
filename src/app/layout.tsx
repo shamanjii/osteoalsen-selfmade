@@ -106,7 +106,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0f172a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Prevent white flash by ensuring fonts load with fallback */}
+        {/* Prevent white flash and layout shifts */}
         <style dangerouslySetInnerHTML={{ __html: `
           html {
             background-color: #ffffff;
@@ -114,6 +114,13 @@ export default function RootLayout({
           body {
             opacity: 1 !important;
             visibility: visible !important;
+            min-height: 100vh;
+          }
+          /* Prevent layout shift from ContactBar on homepage */
+          body::before {
+            content: "";
+            display: block;
+            height: 0;
           }
         ` }} />
         <WebsiteStructuredData />
@@ -144,11 +151,11 @@ export default function RootLayout({
         />
       </head>
       <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
-        <Analytics />
         <ErrorBoundary>
           {children}
           <VoiceflowChat />
         </ErrorBoundary>
+        <Analytics />
       </body>
     </html>
   );

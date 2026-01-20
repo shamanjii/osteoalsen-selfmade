@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect, Suspense } from 'react';
+import { useEffect, Suspense, useState } from 'react';
 import PostHogProvider from './PostHogProvider';
 
 declare global {
@@ -16,9 +16,15 @@ const GTM_ID = 'GTM-NRHDBZ59';
 function AnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Ensure we're mounted before accessing search params
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.dataLayer) return;
+    if (!isMounted || typeof window === 'undefined' || !window.dataLayer) return;
 
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
 
@@ -35,7 +41,7 @@ function AnalyticsInner() {
     }).catch(() => {
       // Monitoring not critical, fail silently
     });
-  }, [pathname, searchParams]);
+  }, [pathname, searchParams, isMounted]);
 
   return null;
 }
