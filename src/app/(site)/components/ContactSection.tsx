@@ -178,14 +178,13 @@ export default function ContactSection() {
                         {/* Praxis Rotherbaum Map */}
                         <div>
                             <h4 className="text-slate-900 text-lg font-medium mb-4 font-epilogue text-center">Praxis Rotherbaum</h4>
-                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200">
+                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200 h-[300px]">
                                 <iframe
                                     src="https://www.google.com/maps?q=Rappstraße+7,+20146+Hamburg&output=embed"
                                     width="100%"
                                     height="300"
                                     style={{ border: 0 }}
                                     allowFullScreen
-                                    loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                     title="Praxis Rotherbaum - Rappstraße 7, 20146 Hamburg"
                                 ></iframe>
@@ -198,14 +197,13 @@ export default function ContactSection() {
                         {/* Praxis Eimsbüttel Map */}
                         <div>
                             <h4 className="text-slate-900 text-lg font-medium mb-4 font-epilogue text-center">Praxis Eimsbüttel</h4>
-                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200">
+                            <div className="rounded-lg overflow-hidden shadow-md border border-slate-200 h-[300px]">
                                 <iframe
                                     src="https://www.google.com/maps?q=Stresemannallee+118,+22529+Hamburg&output=embed"
                                     width="100%"
                                     height="300"
                                     style={{ border: 0 }}
                                     allowFullScreen
-                                    loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                     title="Praxis Eimsbüttel - Stresemannallee 118, 22529 Hamburg"
                                 ></iframe>

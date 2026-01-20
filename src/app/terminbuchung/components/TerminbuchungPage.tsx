@@ -1,9 +1,11 @@
-"use client";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
-import { ConversionFunnel, trackPhoneClick, trackEmailClick, BookingTracking } from "@/lib/analytics-events";
 import ContactBar from "@/app/(site)/components/ContactBar";
 import SiteHeader from "@/app/(site)/components/SiteHeader";
+import SiteFooter from "@/app/(site)/components/SiteFooter";
+import BookingIframe from "./BookingIframe";
+import FAQSection from "./FAQSection";
+import ContactLinks from "./ContactLinks";
+import ScrollToIframeButton from "./ScrollToIframeButton";
 
 const locations = [
   {
@@ -37,132 +39,12 @@ const locations = [
   }
 ];
 
-const faqs = [
-  {
-    id: 1,
-    question: 'Wie schnell bekomme ich einen Termin?',
-    answer: 'In der Regel kann ich Ihnen innerhalb von 1-2 Wochen einen Termin anbieten. Bei akuten Beschwerden versuche ich, kurzfristige Termine zu ermöglichen.'
-  },
-  {
-    id: 2,
-    question: 'Kann ich meinen Termin verschieben oder absagen?',
-    answer: 'Termine können bis 24 Stunden vorher kostenfrei storniert oder verschoben werden. Bei kurzfristigeren Absagen behalte ich mir vor, die Behandlungskosten in Rechnung zu stellen.'
-  },
-  {
-    id: 3,
-    question: 'Brauche ich ein Rezept für die Behandlung?',
-    answer: 'Nein, ein Rezept ist nicht erforderlich. Für die Kostenerstattung durch die Krankenkasse ist jedoch eine formlose ärztliche Empfehlung hilfreich.'
-  },
-  {
-    id: 4,
-    question: 'Was kostet die Behandlung?',
-    answer: 'Eine osteopathische Behandlung (45-60 Minuten) kostet 150 Euro. Ich erfülle alle Anforderungen für die Übernahme durch die Krankenkasse. Die Kassenleistungen variieren je nach Krankenkasse und sind bei Ihrer Versicherung zu erfragen.'
-  },
-  {
-    id: 5,
-    question: 'In welcher Praxis findet mein Termin statt?',
-    answer: 'Sie erhalten die genaue Praxisadresse bei der Terminbestätigung. Je nach verfügbaren Zeiten finden Termine in Hamburg-Rotherbaum (Rappstraße 7) oder Hamburg-Eimsbüttel (Stresemannallee 118) statt.'
-  }
-];
-
-export default function TerminbuchungClient() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-  const [iframeLoaded, setIframeLoaded] = useState(false);
-  const [iframeLoadTime, setIframeLoadTime] = useState<number | null>(null);
-  const [hasScrolledToIframe, setHasScrolledToIframe] = useState(false);
-
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-  const pageLoadTime = useRef<number>(Date.now());
-
-  // Track page open and load etermin script
-  useEffect(() => {
-    // Only run on client side
-    if (typeof window === 'undefined') return;
-
-    // Track that user opened booking interface
-    ConversionFunnel.openedBookingInterface();
-
-    // Load etermin resize script
-    const script = document.createElement('script');
-    script.src = 'https://www.eTermin.net/js/resizecustomersitescroll.min.js';
-    script.type = 'text/javascript';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup
-      if (typeof window !== 'undefined') {
-        const existingScript = document.querySelector('script[src="https://www.eTermin.net/js/resizecustomersitescroll.min.js"]');
-        if (existingScript) {
-          existingScript.remove();
-        }
-      }
-    };
-  }, []);
-
-  // Track scroll to iframe (user engagement)
-  useEffect(() => {
-    if (typeof window === 'undefined' || !iframeRef.current) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasScrolledToIframe) {
-            setHasScrolledToIframe(true);
-            BookingTracking.scrolledToIframe();
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger when 50% of iframe is visible
-    );
-
-    observer.observe(iframeRef.current);
-
-    return () => observer.disconnect();
-  }, [hasScrolledToIframe]);
-
-  // Track significant time spent on page (>60s = likely booking)
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const timer = setTimeout(() => {
-      const timeSpentSeconds = Math.floor((Date.now() - pageLoadTime.current) / 1000);
-      BookingTracking.significantTimeSpent(timeSpentSeconds);
-    }, 60000); // 60 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  // Track exit behavior (beforeunload)
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const handleBeforeUnload = () => {
-      const timeOnPageSeconds = Math.floor((Date.now() - pageLoadTime.current) / 1000);
-      BookingTracking.exitedBookingPage(timeOnPageSeconds, hasScrolledToIframe);
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-  }, [hasScrolledToIframe]);
-
-  // Handle iframe load with performance tracking
-  const handleIframeLoad = () => {
-    const loadTime = Date.now() - pageLoadTime.current;
-    setIframeLoadTime(loadTime);
-    setIframeLoaded(true);
-    BookingTracking.iframeLoaded(loadTime);
-  };
-
-  const toggleFAQ = (id: number) => {
-    setOpenFAQ(openFAQ === id ? null : id);
-  };
-
+export default function TerminbuchungPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <ContactBar />
       <SiteHeader />
+
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-slate-200 pt-20 md:pt-28 pb-3">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -246,27 +128,7 @@ export default function TerminbuchungClient() {
             </p>
 
             {/* etermin iframe */}
-            <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 relative">
-              {!iframeLoaded && (
-                <div className="absolute inset-0 bg-slate-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-12 h-12 border-4 border-slate-300 border-t-slate-900 rounded-full animate-spin mx-auto mb-4"></div>
-                    <p className="text-slate-600">Terminkalender wird geladen...</p>
-                  </div>
-                </div>
-              )}
-              <iframe
-                id="etifr"
-                ref={iframeRef}
-                src="https://www.eTermin.net/osteoalsen"
-                width="100%"
-                height="800"
-                style={{ minHeight: '600px', border: 'none' }}
-                scrolling="no"
-                onLoad={handleIframeLoad}
-                className="w-full"
-              />
-            </div>
+            <BookingIframe />
           </div>
 
           {/* Wichtige Informationen */}
@@ -365,73 +227,12 @@ export default function TerminbuchungClient() {
           </div>
 
           {/* Kontakt */}
-          <div className="text-center">
-            <div className="bg-slate-50 rounded-2xl p-8 max-w-2xl mx-auto border border-slate-200">
-              <h3 className="font-epilogue text-xl font-semibold text-slate-900 mb-6">📞 Kontakt</h3>
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <a
-                  href="tel:+4917643990001"
-                  onClick={() => {
-                    trackPhoneClick('booking_page_contact');
-                    BookingTracking.alternativeContactUsed('phone');
-                  }}
-                  className="flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
-                >
-                  <span className="text-lg">📞</span>
-                  0176 4399 0001
-                </a>
-                <a
-                  href="mailto:joshua@alsen.info"
-                  onClick={() => {
-                    trackEmailClick('booking_page_contact');
-                    BookingTracking.alternativeContactUsed('email');
-                  }}
-                  className="flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
-                >
-                  <span className="text-lg">✉️</span>
-                  joshua@alsen.info
-                </a>
-              </div>
-            </div>
-          </div>
+          <ContactLinks />
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <h2 className="font-epilogue text-3xl md:text-4xl font-semibold text-center text-slate-900 mb-12">
-            Häufige Fragen zur Terminbuchung
-          </h2>
-
-          <div className="space-y-4">
-            {faqs.map((faq) => (
-              <div key={faq.id} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-                <button
-                  onClick={() => toggleFAQ(faq.id)}
-                  className="w-full p-6 text-left flex justify-between items-center hover:bg-slate-50 transition-colors"
-                >
-                  <span className="font-epilogue text-lg font-medium text-slate-900 pr-4">
-                    {faq.question}
-                  </span>
-                  <span className={`text-xl font-bold text-slate-600 transition-transform duration-300 ${
-                    openFAQ === faq.id ? 'rotate-45' : ''
-                  }`}>
-                    +
-                  </span>
-                </button>
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openFAQ === faq.id ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                }`}>
-                  <div className="p-6 pt-0 text-slate-600 leading-relaxed">
-                    {faq.answer}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FAQSection />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
@@ -443,18 +244,7 @@ export default function TerminbuchungClient() {
             Buchen Sie jetzt Ihren Osteopathie-Termin online und profitieren Sie von unserer schnellen und professionellen Behandlung.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#etifr"
-              onClick={(e) => {
-                e.preventDefault();
-                if (typeof window !== 'undefined') {
-                  document.getElementById('etifr')?.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
-            >
-              📅 Jetzt Termin buchen
-            </a>
+            <ScrollToIframeButton />
             <Link
               href="/#kontakt"
               className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
@@ -464,6 +254,8 @@ export default function TerminbuchungClient() {
           </div>
         </div>
       </section>
+
+      <SiteFooter />
     </div>
   );
 }

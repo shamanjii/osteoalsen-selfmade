@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import TerminbuchungClient from './components/TerminbuchungClient';
+import TerminbuchungPage from './components/TerminbuchungPage';
 
 export const metadata: Metadata = {
   title: 'Termin buchen - Osteopathie Hamburg | Joshua Alsen',
@@ -60,7 +60,7 @@ const structuredData = {
   }
 };
 
-export default function TerminbuchungPage() {
+export default function Page() {
   return (
     <>
       {/* Strukturierte Daten */}
@@ -69,7 +69,7 @@ export default function TerminbuchungPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <TerminbuchungClient />
+      <TerminbuchungPage />
     </>
   );
 }
