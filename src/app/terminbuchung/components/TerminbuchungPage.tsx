@@ -41,12 +41,12 @@ const locations = [
 
 export default function TerminbuchungPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 pt-8 sm:pt-12">
       <ContactBar />
       <SiteHeader />
 
       {/* Breadcrumb */}
-      <nav className="bg-white border-b border-slate-200 pt-20 md:pt-28 pb-3">
+      <nav className="bg-white border-b border-slate-200 pt-12 md:pt-16 pb-3">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex items-center gap-2 text-sm text-slate-600">
             <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>

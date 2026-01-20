@@ -12,14 +12,9 @@ import throttle from "lodash.throttle";
  */
 export default function ContactBar() {
   const pathname = usePathname();
-  // Initialize based on actual scroll position to prevent layout shift
-  const [isVisible, setIsVisible] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.scrollY < 10;
-    }
-    return true;
-  });
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // Start with visible=true to prevent white flash, will update on mount
+  const [isVisible, setIsVisible] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   // Only show ContactBar on homepage
   const showContactBar = pathname === '/';
@@ -29,32 +24,36 @@ export default function ContactBar() {
     return null;
   }
 
+  // Set initial visibility based on scroll position after mount
+  useEffect(() => {
+    setIsClient(true);
+    setIsVisible(window.scrollY < 10);
+  }, []);
+
   // ContactBar: Only visible at very top (< 10px) AND only on specific pages
   const handleScroll = useCallback(() => {
-    const throttledHandler = throttle(() => {
-      const currentScrollY = window.scrollY;
+    if (!isClient) return;
 
-      // Only show when at very top of page
-      if (currentScrollY < 10) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+    const currentScrollY = window.scrollY;
 
-      setLastScrollY(currentScrollY);
-    }, 16); // 60fps throttling
-
-    return throttledHandler;
-  }, [lastScrollY]);
+    // Only show when at very top of page
+    if (currentScrollY < 10) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  }, [isClient]);
 
   useEffect(() => {
-    const scrollHandler = handleScroll();
-    window.addEventListener('scroll', scrollHandler, { passive: true });
+    if (!isClient) return;
+
+    const throttledHandler = throttle(handleScroll, 16); // 60fps throttling
+    window.addEventListener('scroll', throttledHandler, { passive: true });
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
-      scrollHandler.cancel();
+      window.removeEventListener('scroll', throttledHandler);
+      throttledHandler.cancel();
     };
-  }, [handleScroll]);
+  }, [handleScroll, isClient]);
 
   return (
     <div className={`fixed top-0 w-full z-[60] bg-gradient-to-r from-slate-800 to-slate-900 transition-transform duration-300 ease-in-out ${
