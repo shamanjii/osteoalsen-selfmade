@@ -1,6 +1,6 @@
 # Osteopathie Hamburg - Joshua Alsen
 
-A modern, high-performance osteopathy practice website built with Next.js 15, featuring static site generation, comprehensive SEO optimization, and integrated analytics.
+A modern, high-performance osteopathy practice website built with Next.js, featuring static site generation, comprehensive SEO optimization, and integrated analytics.
 
 ## Tech Stack
 
