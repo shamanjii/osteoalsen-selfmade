@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useMemo, memo, useEffect } from "react";
 import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
-import { assetPath } from "@/lib/basePath";
 
 interface Post {
     slug: string;
@@ -365,7 +364,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-900">
                             <Image
-                                src={assetPath("/assets/joshua-alsen-profil.webp")}
+                                src="/assets/joshua-alsen-profil.webp"
                                 alt="Joshua Alsen"
                                 fill
                                 className="object-cover"

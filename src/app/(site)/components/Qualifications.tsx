@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { assetPath } from "@/lib/basePath";
 
 const fortbildungen = [
     {
@@ -84,7 +83,7 @@ export default function Qualifications() {
                         <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8">
                             <div className="w-20 h-20 mb-4 sm:mb-0 sm:mr-8 flex-shrink-0">
                                 <Image
-                                    src={assetPath("/assets/osd-logo.webp")}
+                                    src="/assets/osd-logo.webp"
                                     alt="OSD Logo - Osteopathie Schule Deutschland"
                                     width={80}
                                     height={80}

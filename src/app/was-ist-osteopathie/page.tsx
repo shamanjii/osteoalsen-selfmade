@@ -4,7 +4,6 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
 import StickyBookingButton from "@/components/StickyBookingButton";
-import { assetPath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Was ist Osteopathie? | Hamburg - Joshua Alsen",
@@ -156,7 +155,7 @@ export default function WasIstOsteopathiePage() {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={assetPath("/assets/joshua-alsen-dozent.webp")}
+                  src="/assets/joshua-alsen-dozent.webp"
                   alt="Joshua Alsen erklärt Osteopathie"
                   fill
                   className="object-cover"

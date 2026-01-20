@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PersonSchema from "@/components/PersonSchema";
-import { assetPath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Über mich | Osteopath Hamburg - Joshua Alsen",
@@ -90,7 +89,7 @@ export default function UeberMichPage() {
             {/* Mobile: Image above text */}
             <div className="relative h-96 rounded-lg overflow-hidden mb-8 lg:hidden">
               <Image
-                src={assetPath("/assets/joshua-alsen-dozent.webp")}
+                src="/assets/joshua-alsen-dozent.webp"
                 alt="Joshua Alsen - Osteopath Hamburg"
                 fill
                 className="object-cover"
@@ -100,7 +99,7 @@ export default function UeberMichPage() {
             {/* Desktop: Floating image with text wrap */}
             <div className="hidden lg:block lg:float-left lg:mr-8 lg:mb-6 lg:w-96 lg:h-[32rem] relative rounded-lg overflow-hidden">
               <Image
-                src={assetPath("/assets/joshua-alsen-dozent.webp")}
+                src="/assets/joshua-alsen-dozent.webp"
                 alt="Joshua Alsen - Osteopath Hamburg"
                 fill
                 className="object-cover"
@@ -284,7 +283,7 @@ export default function UeberMichPage() {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="relative w-16 h-16 shrink-0">
                     <Image
-                      src={assetPath("/assets/vfo-logo.webp")}
+                      src="/assets/vfo-logo.webp"
                       alt="VFO Logo - Verband Freier Osteopathen"
                       fill
                       className="object-contain"

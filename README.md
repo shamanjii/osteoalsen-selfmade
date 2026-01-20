@@ -76,10 +76,7 @@ src/
 
 ## Configuration
 
-The site supports dual deployment modes:
-
-- **GitHub Pages**: Set `GITHUB_PAGES=true` for basePath `/osteoalsen-selfmade`
-- **Vercel/Custom**: Default deployment without basePath
+The site is configured for static export and can be deployed to various hosting providers.
 
 ## Scripts
 

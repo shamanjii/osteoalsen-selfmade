@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { assetPath } from "@/lib/basePath";
 
 export default function AboutMe() {
     return (
@@ -13,12 +12,12 @@ export default function AboutMe() {
                 <div className="relative">
                     {/* Mobile: Image above text */}
                     <div className="relative h-80 rounded-lg overflow-hidden mb-6 lg:hidden">
-                        <Image src={assetPath("/assets/joshua-alsen-dozent.webp")} alt="Joshua Alsen" fill className="object-cover" />
+                        <Image src="/assets/joshua-alsen-dozent.webp" alt="Joshua Alsen" fill className="object-cover" />
                     </div>
 
                     {/* Desktop: Floating image with text wrap */}
                     <div className="hidden lg:block lg:float-left lg:mr-8 lg:mb-6 lg:w-80 lg:h-[28rem] relative rounded-lg overflow-hidden">
-                        <Image src={assetPath("/assets/joshua-alsen-dozent.webp")} alt="Joshua Alsen" fill className="object-cover" />
+                        <Image src="/assets/joshua-alsen-dozent.webp" alt="Joshua Alsen" fill className="object-cover" />
                     </div>
 
                     <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
@@ -42,7 +41,7 @@ export default function AboutMe() {
 
                 <div className="mt-12 rounded-xl border border-slate-200 bg-white p-6 flex flex-col md:flex-row gap-6 items-start">
                     <div className="relative w-40 h-40 shrink-0 self-center md:self-start">
-                        <Image src={assetPath("/assets/vfo-logo.webp")} alt="VFO Logo" fill className="object-contain rounded" />
+                        <Image src="/assets/vfo-logo.webp" alt="VFO Logo" fill className="object-contain rounded" />
                     </div>
                     <div className="text-slate-700">
                         <h3 className="text-lg font-medium text-slate-900">Zertifiziertes Mitglied im Verband Freier Osteopathen e.V.</h3>
