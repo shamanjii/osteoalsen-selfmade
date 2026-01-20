@@ -9,7 +9,7 @@ A modern, high-performance osteopathy practice website built with Next.js, featu
 - **Styling**: Tailwind CSS
 - **Content**: Markdown with gray-matter (MDX-like processing)
 - **Analytics**: PostHog
-- **Deployment**: GitHub Pages & Vercel
+- **Deployment**: GitHub Pages
 
 ## Key Features
 
@@ -88,11 +88,7 @@ The site is configured for static export and can be deployed to various hosting 
 
 ## Deployment
 
-The site is configured for static export and can be deployed to:
-
-- GitHub Pages (automatic via GitHub Actions)
-- Vercel
-- Any static hosting provider
+The site is configured for static export and deployed to GitHub Pages via GitHub Actions.
 
 ## License
 
