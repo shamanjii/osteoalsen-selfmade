@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { assetPath, linkPath } from "@/lib/basePath";
+import { assetPath } from "@/lib/basePath";
 
 export default function AboutMe() {
     return (
@@ -55,7 +55,7 @@ export default function AboutMe() {
                 {/* CTA Link to full about page */}
                 <div className="mt-8 text-center">
                     <Link
-                        href={linkPath("/ueber-mich/")}
+                        href="/ueber-mich/"
                         className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
                     >
                         Mehr über mich erfahren

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import BreadcrumbSchema from "./BreadcrumbSchema";
-import { linkPath } from "@/lib/basePath";
 
 interface BreadcrumbItem {
   label: string;
@@ -23,7 +22,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
           <ol className="flex items-center space-x-2 text-sm text-slate-600 flex-wrap">
           <li className="whitespace-nowrap">
             <Link
-              href={linkPath("/")}
+              href="/"
               className="hover:text-slate-900 transition-colors"
             >
               Startseite

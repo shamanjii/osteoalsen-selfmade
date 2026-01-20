@@ -4,7 +4,6 @@ import { useState, memo } from 'react';
 import Link from 'next/link';
 import SafeHtml from '@/components/SafeHtml';
 import FAQStructuredData from '@/components/FAQStructuredData';
-import { linkPath } from "@/lib/basePath";
 
 const faqs = [
     {
@@ -139,7 +138,7 @@ const FAQ = memo(function FAQ() {
                 {/* Link to full FAQ page */}
                 <div className="text-center mt-12">
                     <Link
-                        href={linkPath("/faq/")}
+                        href="/faq/"
                         className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
                     >
                         Alle Fragen & Antworten ansehen

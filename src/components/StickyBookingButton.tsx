@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { linkPath } from "@/lib/basePath";
 
 export default function StickyBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,7 +21,7 @@ export default function StickyBookingButton() {
 
   return (
     <Link
-      href={linkPath("/terminbuchung")}
+      href="/terminbuchung"
       className={`fixed bottom-8 right-8 z-40 bg-gradient-to-r from-slate-800 to-slate-900 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-slate-500/50 hover:scale-105 transition-all duration-300 flex items-center gap-2 font-semibold ${
         isVisible
           ? "translate-y-0 opacity-100"

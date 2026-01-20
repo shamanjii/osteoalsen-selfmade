@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import throttle from "lodash.throttle";
 import DropdownMenu from "@/components/DropdownMenu";
-import { assetPath, linkPath } from "@/lib/basePath";
+import { assetPath } from "@/lib/basePath";
 
 export default function SiteHeader() {
     const pathname = usePathname();
@@ -132,7 +132,7 @@ export default function SiteHeader() {
                     {/* Mobile: Centered logo with hamburger */}
                     <div className="flex items-center justify-between w-full md:hidden">
                         <div></div> {/* Spacer */}
-                        <Link href={linkPath("/")} className="flex items-center">
+                        <Link href="/" className="flex items-center">
                             <Image
                                 src={assetPath("/assets/osteopathie-alsen-logo.webp")}
                                 alt="Osteopathie Alsen Logo"
@@ -171,7 +171,7 @@ export default function SiteHeader() {
                         {/* Left Navigation Links */}
                         <nav className="flex items-center space-x-6">
                             <Link
-                                href={linkPath("/")}
+                                href="/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Home
@@ -179,9 +179,9 @@ export default function SiteHeader() {
                             <DropdownMenu
                                 label="Osteopathie"
                                 items={[
-                                    { label: "Was ist Osteopathie?", href: linkPath("/was-ist-osteopathie") },
-                                    { label: "Patienteninfos", href: linkPath("/faq") },
-                                    { label: "Wissenschaft & Forschung", href: linkPath("/wissen") },
+                                    { label: "Was ist Osteopathie?", href: "/was-ist-osteopathie" },
+                                    { label: "Patienteninfos", href: "/faq" },
+                                    { label: "Wissenschaft & Forschung", href: "/wissen" },
                                 ]}
                                 isOpen={openDropdown === "osteopathie"}
                                 onOpenChange={(open) => setOpenDropdown(open ? "osteopathie" : null)}
@@ -189,13 +189,13 @@ export default function SiteHeader() {
                             <DropdownMenu
                                 label="Behandlungen"
                                 items={[
-                                    { label: "Rückenschmerzen", href: linkPath("/behandlungen/rueckenschmerzen") },
-                                    { label: "Nackenschmerzen & HWS", href: linkPath("/behandlungen/nackenschmerzen") },
-                                    { label: "Kopfschmerzen & Migräne", href: linkPath("/behandlungen/kopfschmerzen-migraene") },
-                                    { label: "Arthrose & Gelenkschmerzen", href: linkPath("/behandlungen/arthrose-gelenkbeschwerden") },
-                                    { label: "Verdauungsbeschwerden", href: linkPath("/behandlungen/verdauungsbeschwerden") },
-                                    { label: "Sportosteopathie", href: linkPath("/behandlungen/sportosteopathie") },
-                                    { label: "Stress & Burnout", href: linkPath("/behandlungen/stress-burnout") },
+                                    { label: "Rückenschmerzen", href: "/behandlungen/rueckenschmerzen" },
+                                    { label: "Nackenschmerzen & HWS", href: "/behandlungen/nackenschmerzen" },
+                                    { label: "Kopfschmerzen & Migräne", href: "/behandlungen/kopfschmerzen-migraene" },
+                                    { label: "Arthrose & Gelenkschmerzen", href: "/behandlungen/arthrose-gelenkbeschwerden" },
+                                    { label: "Verdauungsbeschwerden", href: "/behandlungen/verdauungsbeschwerden" },
+                                    { label: "Sportosteopathie", href: "/behandlungen/sportosteopathie" },
+                                    { label: "Stress & Burnout", href: "/behandlungen/stress-burnout" },
                                 ]}
                                 showAllLink={true}
                                 isOpen={openDropdown === "behandlungen"}
@@ -205,7 +205,7 @@ export default function SiteHeader() {
 
                         {/* Centered Logo */}
                         <div className="flex justify-center">
-                            <Link href={linkPath("/")} className="flex items-center">
+                            <Link href="/" className="flex items-center">
                                 <Image
                                     src={assetPath("/assets/osteopathie-alsen-logo.webp")}
                                     alt="Osteopathie Alsen Logo"
@@ -228,31 +228,31 @@ export default function SiteHeader() {
                         {/* Right Navigation Links */}
                         <nav className="flex items-center justify-end space-x-6">
                             <Link
-                                href={linkPath("/ueber-mich/")}
+                                href="/ueber-mich/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href={linkPath("/kosten-ablauf/")}
+                                href="/kosten-ablauf/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Kosten
                             </Link>
                             <Link
-                                href={linkPath("/faq/")}
+                                href="/faq/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 FAQ
                             </Link>
                             <Link
-                                href={linkPath("/blog/")}
+                                href="/blog/"
                                 className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200"
                             >
                                 Blog
                             </Link>
                             <Link
-                                href={linkPath("/terminbuchung/")}
+                                href="/terminbuchung/"
                                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 flex items-center gap-2"
                             >
                                 <span>📅</span>
@@ -267,7 +267,7 @@ export default function SiteHeader() {
                     <div className={`md:hidden border-t border-white/20 bg-slate-900 ${hasContactBar && isAtTop ? 'max-h-[calc(100dvh-7rem)]' : 'max-h-[calc(100dvh-4rem)]'} overflow-y-auto overscroll-contain`}>
                         <div className="px-4 pt-4 pb-32 space-y-2">
                             <Link
-                                href={linkPath("/")}
+                                href="/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
@@ -276,7 +276,7 @@ export default function SiteHeader() {
                             {/* Osteopathie - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
-                                    href={linkPath("/was-ist-osteopathie/")}
+                                    href="/was-ist-osteopathie/"
                                     onClick={() => setMobileOpen(false)}
                                     className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
                                 >
@@ -284,21 +284,21 @@ export default function SiteHeader() {
                                 </Link>
                                 <div className="pl-4 space-y-1">
                                     <Link
-                                        href={linkPath("/was-ist-osteopathie/")}
+                                        href="/was-ist-osteopathie/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Was ist Osteopathie?
                                     </Link>
                                     <Link
-                                        href={linkPath("/faq/")}
+                                        href="/faq/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Patienteninfos
                                     </Link>
                                     <Link
-                                        href={linkPath("/wissen/")}
+                                        href="/wissen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
@@ -309,7 +309,7 @@ export default function SiteHeader() {
                             {/* Behandlungen - Accordion Style */}
                             <div className="space-y-1">
                                 <Link
-                                    href={linkPath("/behandlungen/")}
+                                    href="/behandlungen/"
                                     onClick={() => setMobileOpen(false)}
                                     className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-semibold transition-colors duration-200 touch-manipulation"
                                 >
@@ -317,49 +317,49 @@ export default function SiteHeader() {
                                 </Link>
                                 <div className="pl-4 space-y-1">
                                     <Link
-                                        href={linkPath("/behandlungen/rueckenschmerzen/")}
+                                        href="/behandlungen/rueckenschmerzen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Rückenschmerzen
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/nackenschmerzen/")}
+                                        href="/behandlungen/nackenschmerzen/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Nackenschmerzen & HWS
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/kopfschmerzen-migraene/")}
+                                        href="/behandlungen/kopfschmerzen-migraene/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Kopfschmerzen & Migräne
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/arthrose-gelenkbeschwerden/")}
+                                        href="/behandlungen/arthrose-gelenkbeschwerden/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Arthrose & Gelenkschmerzen
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/verdauungsbeschwerden/")}
+                                        href="/behandlungen/verdauungsbeschwerden/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Verdauungsbeschwerden
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/sportosteopathie/")}
+                                        href="/behandlungen/sportosteopathie/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
                                         Sportosteopathie
                                     </Link>
                                     <Link
-                                        href={linkPath("/behandlungen/stress-burnout/")}
+                                        href="/behandlungen/stress-burnout/"
                                         onClick={() => setMobileOpen(false)}
                                         className="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm transition-colors duration-200 touch-manipulation"
                                     >
@@ -368,35 +368,35 @@ export default function SiteHeader() {
                                 </div>
                             </div>
                             <Link
-                                href={linkPath("/ueber-mich/")}
+                                href="/ueber-mich/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Über mich
                             </Link>
                             <Link
-                                href={linkPath("/kosten-ablauf/")}
+                                href="/kosten-ablauf/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Kosten & Ablauf
                             </Link>
                             <Link
-                                href={linkPath("/faq/")}
+                                href="/faq/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 FAQ
                             </Link>
                             <Link
-                                href={linkPath("/blog/")}
+                                href="/blog/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg text-base font-medium transition-colors duration-200 touch-manipulation"
                             >
                                 Blog
                             </Link>
                             <Link
-                                href={linkPath("/terminbuchung/")}
+                                href="/terminbuchung/"
                                 onClick={() => setMobileOpen(false)}
                                 className="block w-full mx-auto mt-4 px-4 py-3 bg-white/10 border border-white/20 text-white text-center font-semibold rounded-lg hover:bg-white/20 transition-colors duration-200 touch-manipulation"
                             >

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { linkPath } from "@/lib/basePath";
 
 const treatments = [
     {
@@ -68,7 +67,7 @@ export default function Treatments() {
                 {/* View All Link */}
                 <div className="mt-12 text-center">
                     <Link
-                        href={linkPath("/behandlungen/")}
+                        href="/behandlungen/"
                         className="inline-flex items-center bg-slate-900 text-white px-8 py-4 rounded-lg font-epilogue font-semibold hover:bg-slate-800 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                     >
                         Alle Behandlungen ansehen

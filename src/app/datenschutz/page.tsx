@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { linkPath } from "@/lib/basePath";
 
 export const metadata = {
   title: "Datenschutzerklärung - Osteopathie Hamburg | Joshua Alsen",
@@ -15,7 +14,7 @@ export default function DatenschutzPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900 shadow-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
           <Link
-            href={linkPath("/")}
+            href="/"
             className="text-white hover:text-slate-200 transition-colors font-epilogue font-medium"
           >
             ← Zurück zur Startseite
@@ -421,11 +420,11 @@ export default function DatenschutzPage() {
           </p>
           <p className="text-slate-400 text-sm">
             Heilpraxis für Osteopathie | Hamburg |{" "}
-            <Link href={linkPath("/datenschutz/")} className="hover:text-white transition-colors">
+            <Link href="/datenschutz/" className="hover:text-white transition-colors">
               Datenschutz
             </Link>{" "}
             |{" "}
-            <Link href={linkPath("/impressum/")} className="hover:text-white transition-colors">
+            <Link href="/impressum/" className="hover:text-white transition-colors">
               Impressum
             </Link>
           </p>

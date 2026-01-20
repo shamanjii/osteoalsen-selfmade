@@ -4,7 +4,6 @@ import { memo } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
-import { linkPath } from "@/lib/basePath";
 
 interface RelatedArticle {
   slug: string;
@@ -178,7 +177,7 @@ const RelatedArticles = memo(function RelatedArticles({
               </p>
             </div>
             <Link
-              href={linkPath("/blog")}
+              href="/blog"
               className="inline-flex items-center justify-center px-6 py-3 min-h-[48px] bg-teal-600 text-white text-sm font-semibold rounded-lg hover:bg-teal-700 transition-colors shadow-sm hover:shadow-md whitespace-nowrap w-full md:w-auto touch-manipulation active:scale-95"
             >
               Blog-Übersicht

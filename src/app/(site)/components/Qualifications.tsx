@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { assetPath, linkPath } from "@/lib/basePath";
+import { assetPath } from "@/lib/basePath";
 
 const fortbildungen = [
     {
@@ -231,7 +231,7 @@ export default function Qualifications() {
                         Sie haben weitere Fragen zu Kosten und Kassenerstattung?
                     </p>
                     <Link
-                        href={linkPath("/kosten-ablauf/")}
+                        href="/kosten-ablauf/"
                         className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
                     >
                         Mehr zu Kosten & Ablauf erfahren

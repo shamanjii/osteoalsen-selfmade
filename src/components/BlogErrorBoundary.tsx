@@ -2,7 +2,6 @@
 
 import React from 'react';
 import ErrorBoundary from './ErrorBoundary';
-import { linkPath } from "@/lib/basePath";
 
 interface BlogErrorBoundaryProps {
   children: React.ReactNode;
@@ -27,7 +26,7 @@ const BlogErrorFallback = () => (
           Erneut versuchen
         </button>
         <a
-          href={linkPath("/")}
+          href="/"
           className="px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors font-medium"
         >
           Zur Startseite
