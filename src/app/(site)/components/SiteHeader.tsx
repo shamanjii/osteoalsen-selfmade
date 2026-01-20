@@ -12,13 +12,9 @@ export default function SiteHeader() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-    // Initialize based on actual scroll position to prevent layout shift
-    const [isAtTop, setIsAtTop] = useState(() => {
-        if (typeof window !== 'undefined') {
-            return window.scrollY < 10;
-        }
-        return true;
-    });
+    // Always initialize to true for SSR/hydration consistency
+    // The actual scroll position will be determined in useEffect
+    const [isAtTop, setIsAtTop] = useState(true);
 
     // ContactBar is shown on homepage and booking page
     const hasContactBar = pathname === '/' || pathname === '/terminbuchung';
@@ -54,6 +50,11 @@ export default function SiteHeader() {
 
         return throttledHandler;
     }, [lastScrollY, mobileOpen]);
+
+    // Set initial scroll position on mount (after hydration)
+    useEffect(() => {
+        setIsAtTop(window.scrollY < 10);
+    }, []);
 
     // Auto-hide header on scroll with throttling
     useEffect(() => {

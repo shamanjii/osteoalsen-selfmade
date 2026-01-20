@@ -154,8 +154,8 @@ export default function RootLayout({
         <ErrorBoundary>
           {children}
           <VoiceflowChat />
+          <Analytics />
         </ErrorBoundary>
-        <Analytics />
       </body>
     </html>
   );

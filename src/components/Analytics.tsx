@@ -24,23 +24,42 @@ function AnalyticsInner() {
   }, []);
 
   useEffect(() => {
-    if (!isMounted || typeof window === 'undefined' || !window.dataLayer) return;
+    if (!isMounted || typeof window === 'undefined') return;
 
-    const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
+    // Defer analytics to avoid blocking hydration
+    const trackPage = () => {
+      try {
+        const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
 
-    // Push page view event to dataLayer for GTM
-    window.dataLayer.push({
-      event: 'page_view',
-      page_location: url,
-      page_title: document.title,
-    });
+        // Push page view event to dataLayer for GTM (only if dataLayer exists)
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'page_view',
+            page_location: url,
+            page_title: document.title,
+          });
+        }
 
-    // Track page view for monitoring
-    import('@/lib/monitoring').then(({ monitoring }) => {
-      monitoring.logPageView(url, document.referrer);
-    }).catch(() => {
-      // Monitoring not critical, fail silently
-    });
+        // Track page view for monitoring
+        import('@/lib/monitoring').then(({ monitoring }) => {
+          monitoring.logPageView(url, document.referrer);
+        }).catch(() => {
+          // Monitoring not critical, fail silently
+        });
+      } catch (error) {
+        // Analytics not critical - fail silently
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Analytics tracking error:', error);
+        }
+      }
+    };
+
+    // Use requestIdleCallback if available, otherwise setTimeout
+    if (typeof requestIdleCallback !== 'undefined') {
+      requestIdleCallback(trackPage);
+    } else {
+      setTimeout(trackPage, 0);
+    }
   }, [pathname, searchParams, isMounted]);
 
   return null;
