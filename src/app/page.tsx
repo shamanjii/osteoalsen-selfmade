@@ -1,6 +1,3 @@
-// Force dynamic rendering to avoid prerender errors
-export const dynamic = 'force-dynamic';
-
 import SiteHeader from "./(site)/components/SiteHeader";
 import ContactBar from "./(site)/components/ContactBar";
 import HeroSection from "./(site)/components/HeroSection";

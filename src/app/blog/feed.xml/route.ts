@@ -1,5 +1,8 @@
 import { getAllPosts } from '@/lib/posts';
 
+// Required for static export
+export const dynamic = 'force-static';
+
 export async function GET() {
   const posts = await getAllPosts();
   const baseUrl = 'https://www.osteoalsen.de';

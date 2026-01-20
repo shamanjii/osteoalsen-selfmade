@@ -1,6 +1,4 @@
-// Use ISR for performance with cache optimization
-export const revalidate = 3600; // Revalidate every hour (reduced from 60s to save CPU)
-// Force rebuild: 2025-12-11 17:45
+// Static export - all pages generated at build time
 
 import type { Metadata } from "next";
 import Link from "next/link";

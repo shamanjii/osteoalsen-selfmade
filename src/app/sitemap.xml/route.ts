@@ -1,9 +1,11 @@
 import { NextResponse } from 'next/server';
 import { generateSitemapXml } from '@/lib/sitemap';
 
+// Required for static export
+export const dynamic = 'force-static';
+
 /**
- * Dynamic sitemap route that generates XML from database on each request
- * This ensures the sitemap always reflects the latest published posts
+ * Static sitemap route generated at build time
  */
 export async function GET() {
   try {

@@ -1,5 +1,4 @@
-// Use ISR (Incremental Static Regeneration) for performance
-export const revalidate = 3600; // Revalidate every hour
+// Static export - all pages generated at build time
 
 import type { Metadata } from "next";
 import BlogClient from "./components/BlogClient";

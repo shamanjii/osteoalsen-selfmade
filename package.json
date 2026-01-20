@@ -4,23 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
+    "build": "next build",
+    "start": "npx serve out",
     "lint": "eslint",
-    "export": "next export",
-    "monitor:rankings": "ts-node scripts/monitor-rankings.ts",
-    "seo:health": "curl http://localhost:3000/api/seo-health",
-    "analytics:posthog": "npx tsx scripts/posthog-analytics.ts",
-    "postinstall": "prisma generate"
+    "analytics:posthog": "npx tsx scripts/posthog-analytics.ts"
   },
   "dependencies": {
-    "@google-cloud/local-auth": "^3.0.1",
-    "@prisma/client": "^6.17.1",
     "@types/lodash.throttle": "^4.1.9",
     "clsx": "^2.1.1",
-    "critters": "^0.0.23",
-    "google-trends-api": "^4.9.2",
-    "googleapis": "^162.0.0",
     "gray-matter": "^4.0.3",
     "lodash.throttle": "^4.1.1",
     "next": "^16.0.10",
@@ -50,7 +41,6 @@
     "eslint": "^9",
     "eslint-config-next": "^16.0.10",
     "postcss": "^8.5.6",
-    "prisma": "^6.17.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }

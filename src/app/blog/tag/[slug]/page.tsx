@@ -1,6 +1,5 @@
-// Use ISR (Incremental Static Regeneration) for performance
-export const revalidate = 3600; // Revalidate every hour
-export const dynamicParams = true; // Allow dynamic tag generation
+// Static export configuration
+export const dynamicParams = false; // Only pre-generated tags at build time
 
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -9,6 +8,22 @@ import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getAllPosts } from "@/lib/posts";
 import { calculateReadingTime } from "@/lib/utils";
+
+// Generate all tag pages at build time
+export async function generateStaticParams() {
+    const posts = await getAllPosts();
+
+    // Extract all unique tags from posts
+    const allTags = new Set<string>();
+    posts.forEach(post => {
+        post.keywords?.forEach(keyword => {
+            const slug = keyword.toLowerCase().replace(/\s+/g, '-');
+            allTags.add(slug);
+        });
+    });
+
+    return Array.from(allTags).map(slug => ({ slug }));
+}
 
 interface PageProps {
     params: Promise<{ slug: string }>;

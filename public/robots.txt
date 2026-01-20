@@ -1,0 +1,23 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/data/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /terminbuchung/success
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://www.osteoalsen.de/sitemap.xml
+Host: https://www.osteoalsen.de
