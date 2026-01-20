@@ -12,7 +12,13 @@ import throttle from "lodash.throttle";
  */
 export default function ContactBar() {
   const pathname = usePathname();
-  const [isVisible, setIsVisible] = useState(true);
+  // Initialize based on actual scroll position to prevent layout shift
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.scrollY < 10;
+    }
+    return true;
+  });
   const [lastScrollY, setLastScrollY] = useState(0);
 
   // Only show ContactBar on homepage and booking page
