@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { linkPath } from "@/lib/basePath";
 
 export default function HeroSection() {
     return (
@@ -27,7 +28,7 @@ export default function HeroSection() {
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
                         <a
-                            href="/terminbuchung/"
+                            href={linkPath("/terminbuchung/")}
                             className="hero-btn-primary group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-slate-900 rounded-md overflow-hidden transition-all duration-300 hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl"
                         >
                             <span className="relative z-10">Termin vereinbaren</span>
