@@ -1,12 +1,16 @@
 const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const basePath = isGitHubPages ? '/osteoalsen-selfmade' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Static export for GitHub Pages
   output: 'export',
   trailingSlash: true,
-  basePath: isGitHubPages ? '/osteoalsen-selfmade' : '',
-  assetPrefix: isGitHubPages ? '/osteoalsen-selfmade' : '',
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 
   images: {
     formats: ['image/avif', 'image/webp'],

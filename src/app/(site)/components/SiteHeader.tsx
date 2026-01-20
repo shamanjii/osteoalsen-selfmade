@@ -5,6 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import throttle from "lodash.throttle";
 import DropdownMenu from "@/components/DropdownMenu";
+import { assetPath } from "@/lib/basePath";
 
 export default function SiteHeader() {
     const pathname = usePathname();
@@ -133,7 +134,7 @@ export default function SiteHeader() {
                         <div></div> {/* Spacer */}
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/assets/osteopathie-alsen-logo.webp"
+                                src={assetPath("/assets/osteopathie-alsen-logo.webp")}
                                 alt="Osteopathie Alsen Logo"
                                 width={256}
                                 height={32}
@@ -206,7 +207,7 @@ export default function SiteHeader() {
                         <div className="flex justify-center">
                             <Link href="/" className="flex items-center">
                                 <Image
-                                    src="/assets/osteopathie-alsen-logo.webp"
+                                    src={assetPath("/assets/osteopathie-alsen-logo.webp")}
                                     alt="Osteopathie Alsen Logo"
                                     width={320}
                                     height={40}
