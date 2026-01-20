@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { linkPath } from "@/lib/basePath";
 
 export default function HeroSection() {
     return (
@@ -27,13 +26,13 @@ export default function HeroSection() {
                         Privatpatienten und Selbstzahler dabei, ihre natürliche Balance wiederzufinden.
                     </p>
                     <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
-                        <a
-                            href={linkPath("/terminbuchung/")}
+                        <Link
+                            href="/terminbuchung/"
                             className="hero-btn-primary group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-slate-900 rounded-md overflow-hidden transition-all duration-300 hover:bg-slate-800 hover:transform hover:-translate-y-1 hover:shadow-xl"
                         >
                             <span className="relative z-10">Termin vereinbaren</span>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                        </a>
+                        </Link>
                         <a
                             href="#behandlungen"
                             className="hero-btn-secondary group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white border-2 border-slate-900 rounded-md transition-all duration-300 hover:bg-slate-900 hover:text-white hover:transform hover:-translate-y-1 hover:shadow-lg"
