@@ -40,14 +40,10 @@ function AnalyticsInner() {
   return null;
 }
 
-export default function Analytics() {
+// Separate component that doesn't depend on useSearchParams for initial render
+function GTMScripts() {
   return (
     <>
-      <Suspense fallback={null}>
-        <AnalyticsInner />
-        <PostHogProvider />
-      </Suspense>
-
       {/* Google Tag Manager - Single source of truth */}
       <Script
         id="google-tag-manager"
@@ -72,6 +68,21 @@ export default function Analytics() {
           style={{ display: 'none', visibility: 'hidden' }}
         />
       </noscript>
+    </>
+  );
+}
+
+export default function Analytics() {
+  return (
+    <>
+      {/* GTM scripts load independently without Suspense to avoid blocking render */}
+      <GTMScripts />
+
+      {/* Analytics tracking wrapped in Suspense to handle useSearchParams */}
+      <Suspense fallback={null}>
+        <AnalyticsInner />
+        <PostHogProvider />
+      </Suspense>
     </>
   );
 }

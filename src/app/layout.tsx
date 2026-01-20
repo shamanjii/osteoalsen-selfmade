@@ -108,8 +108,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Prevent white flash by ensuring fonts load with fallback */}
         <style dangerouslySetInnerHTML={{ __html: `
-          html { background-color: #ffffff; }
-          body { opacity: 1 !important; }
+          html {
+            background-color: #ffffff;
+          }
+          body {
+            opacity: 1 !important;
+            visibility: visible !important;
+          }
         ` }} />
         <WebsiteStructuredData />
         <LocalBusinessStructuredData
