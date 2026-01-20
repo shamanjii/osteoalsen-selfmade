@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
+import { linkPath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Kosten & Ablauf | Osteopathie Hamburg - Joshua Alsen",
@@ -509,7 +510,7 @@ export default function KostenAblaufPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminbuchung/"
+                href={linkPath("/terminbuchung/")}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-slate-900 bg-white rounded-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1"
               >
                 <span className="relative z-10">📅 Online Termin buchen</span>

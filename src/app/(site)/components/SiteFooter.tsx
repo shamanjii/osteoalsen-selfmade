@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { PhoneLink, EmailLink } from '@/components/TrackableLink';
+import { linkPath } from "@/lib/basePath";
 
 export default function SiteFooter() {
     return (
@@ -17,7 +18,7 @@ export default function SiteFooter() {
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <Link
-                                    href="/was-ist-osteopathie/"
+                                    href={linkPath("/was-ist-osteopathie/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Was ist Osteopathie?
@@ -25,7 +26,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/kosten-ablauf/"
+                                    href={linkPath("/kosten-ablauf/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Kosten & Ablauf
@@ -33,7 +34,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/faq/"
+                                    href={linkPath("/faq/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Häufige Fragen
@@ -41,7 +42,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/ueber-mich/"
+                                    href={linkPath("/ueber-mich/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Über mich
@@ -58,7 +59,7 @@ export default function SiteFooter() {
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <Link
-                                    href="/behandlungen/rueckenschmerzen/"
+                                    href={linkPath("/behandlungen/rueckenschmerzen/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Rückenschmerzen
@@ -66,7 +67,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/kopfschmerzen-migraene/"
+                                    href={linkPath("/behandlungen/kopfschmerzen-migraene/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Kopfschmerzen & Migräne
@@ -74,7 +75,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/verdauungsbeschwerden/"
+                                    href={linkPath("/behandlungen/verdauungsbeschwerden/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Verdauungsbeschwerden
@@ -82,7 +83,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/sportosteopathie/"
+                                    href={linkPath("/behandlungen/sportosteopathie/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Sportosteopathie
@@ -90,7 +91,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/stress-burnout/"
+                                    href={linkPath("/behandlungen/stress-burnout/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Stress & Burnout
@@ -98,7 +99,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/nackenschmerzen/"
+                                    href={linkPath("/behandlungen/nackenschmerzen/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Nackenschmerzen & HWS
@@ -106,7 +107,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/behandlungen/arthrose-gelenkbeschwerden/"
+                                    href={linkPath("/behandlungen/arthrose-gelenkbeschwerden/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Arthrose & Gelenkbeschwerden
@@ -123,7 +124,7 @@ export default function SiteFooter() {
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <Link
-                                    href="/terminbuchung/"
+                                    href={linkPath("/terminbuchung/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Termin buchen
@@ -131,7 +132,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/blog/"
+                                    href={linkPath("/blog/")}
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Blog
@@ -170,7 +171,7 @@ export default function SiteFooter() {
                                 </div>
                             </li>
                             <li>
-                                <Link href="/osteopathie-eimsbuettel/" className="hover:text-slate-900 transition-colors">
+                                <Link href={linkPath("/osteopathie-eimsbuettel/")} className="hover:text-slate-900 transition-colors">
                                     <div className="text-slate-900 font-medium">Eimsbüttel</div>
                                     <div className="text-slate-600">Stresemannallee 118</div>
                                     <div className="text-slate-600">22529 Hamburg</div>
@@ -190,14 +191,14 @@ export default function SiteFooter() {
                             <span className="text-slate-500">Hamburg-Rotherbaum & Eimsbüttel</span>
                             <span className="text-slate-300">|</span>
                             <Link
-                                href="/datenschutz/"
+                                href={linkPath("/datenschutz/")}
                                 className="hover:text-slate-900 transition-colors"
                             >
                                 Datenschutz
                             </Link>
                             <span className="text-slate-300">|</span>
                             <Link
-                                href="/impressum/"
+                                href={linkPath("/impressum/")}
                                 className="hover:text-slate-900 transition-colors"
                             >
                                 Impressum

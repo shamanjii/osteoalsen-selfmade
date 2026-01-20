@@ -4,6 +4,7 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 import FloatingBookingButton from "@/components/FloatingBookingButton";
 import FAQSchema from "@/components/FAQSchema";
+import { linkPath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Rückenschmerzen Hamburg | Osteopath - Joshua Alsen",
@@ -98,7 +99,7 @@ export default function RueckenschmerzenOsteopathiePage() {
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
-                  href="/terminbuchung/"
+                  href={linkPath("/terminbuchung/")}
                   className="group inline-flex items-center justify-center rounded-lg bg-teal-600 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-teal-700 hover:shadow-xl"
                 >
                   Jetzt Termin buchen
@@ -117,7 +118,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </svg>
                 </Link>
                 <Link
-                  href="/behandlungen/rueckenschmerzen/"
+                  href={linkPath("/behandlungen/rueckenschmerzen/")}
                   className="inline-flex items-center justify-center rounded-lg border-2 border-gray-300 bg-white px-8 py-4 text-base font-semibold text-gray-700 transition-all hover:border-teal-600 hover:text-teal-600"
                 >
                   Detaillierte Behandlungsinfos
@@ -330,7 +331,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                 und Behandlungsablauf.
               </p>
               <Link
-                href="/behandlungen/rueckenschmerzen/"
+                href={linkPath("/behandlungen/rueckenschmerzen/")}
                 className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-base font-semibold text-white transition-all hover:bg-blue-700"
               >
                 Zur ausführlichen Behandlungsseite
@@ -752,7 +753,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </div>
                 </div>
                 <Link
-                  href="/osteopathie-eimsbuettel/"
+                  href={linkPath("/osteopathie-eimsbuettel/")}
                   className="mt-6 inline-flex items-center text-teal-600 transition-colors hover:text-teal-700"
                 >
                   Mehr zum Standort Eimsbüttel
@@ -828,13 +829,13 @@ export default function RueckenschmerzenOsteopathiePage() {
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
-                  href="/terminbuchung/"
+                  href={linkPath("/terminbuchung/")}
                   className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-teal-600 shadow-lg transition-all hover:bg-gray-50 hover:shadow-xl"
                 >
                   Jetzt Termin buchen
                 </Link>
                 <Link
-                  href="/kosten-ablauf/"
+                  href={linkPath("/kosten-ablauf/")}
                   className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10"
                 >
                   Kosten & Ablauf

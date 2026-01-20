@@ -9,6 +9,8 @@ import Qualifications from "./(site)/components/Qualifications";
 import FAQ from "./(site)/components/FAQ";
 import SiteFooter from "./(site)/components/SiteFooter";
 import ContactSection from "./(site)/components/ContactSection";
+import Link from "next/link";
+import { linkPath } from "@/lib/basePath";
 
 export default function Home() {
   return (
@@ -35,13 +37,13 @@ export default function Home() {
               <p className="text-lg leading-relaxed text-slate-700 mb-8 max-w-2xl mx-auto">
                 Mehr über Osteopathie und ihre Anwendungsbereiche erfahren Sie in meinem Osteopathie Blog mit aktuellen Artikeln, Gesundheitstipps und Fachbeiträgen.
               </p>
-              <a
-                href="/blog/"
+              <Link
+                href={linkPath("/blog/")}
                 className="inline-flex items-center bg-slate-900 text-white px-6 py-4 rounded-lg font-epilogue font-medium hover:bg-slate-800 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
               >
                 <span className="mr-2">📖</span>
                 Zum Osteopathie Blog
-              </a>
+              </Link>
             </div>
           </div>
         </section>

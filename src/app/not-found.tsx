@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { linkPath } from "@/lib/basePath";
 
 export default function NotFound() {
   return (
@@ -25,25 +26,25 @@ export default function NotFound() {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             <Link
-              href="/"
+              href={linkPath("/")}
               className="px-6 py-4 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all hover:shadow-lg font-medium"
             >
               🏠 Zur Startseite
             </Link>
             <Link
-              href="/behandlungen/"
+              href={linkPath("/behandlungen/")}
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               🦴 Behandlungen
             </Link>
             <Link
-              href="/terminbuchung/"
+              href={linkPath("/terminbuchung/")}
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               📅 Termin buchen
             </Link>
             <Link
-              href="/blog/"
+              href={linkPath("/blog/")}
               className="px-6 py-4 border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all hover:border-slate-400 font-medium"
             >
               📰 Blog
