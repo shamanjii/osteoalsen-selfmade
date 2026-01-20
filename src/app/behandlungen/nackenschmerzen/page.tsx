@@ -102,7 +102,6 @@ const faqData = {
 
 export default function NackenschmerzenPage() {
   const breadcrumbItems = [
-    { label: 'Startseite', href: '/' },
     { label: 'Behandlungen', href: '/behandlungen' },
     { label: 'Nackenschmerzen & HWS-Syndrom' }
   ];

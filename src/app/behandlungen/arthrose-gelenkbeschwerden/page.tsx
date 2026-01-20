@@ -120,7 +120,6 @@ export default function ArthrosePage() {
 
       <Breadcrumbs
         items={[
-          { label: 'Startseite', href: '/' },
           { label: 'Behandlungen', href: '/behandlungen' },
           { label: 'Arthrose & Gelenkbeschwerden' }
         ]}
