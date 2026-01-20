@@ -4,9 +4,9 @@ A modern, high-performance osteopathy practice website built with Next.js 15, fe
 
 ## Tech Stack
 
-- **Framework**: Next.js 15 (Static Export)
+- **Framework**: Next.js 16 (Static Export)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS with @tailwindcss/typography
+- **Styling**: Tailwind CSS
 - **Content**: Markdown with gray-matter (MDX-like processing)
 - **Analytics**: PostHog
 - **Deployment**: GitHub Pages & Vercel
