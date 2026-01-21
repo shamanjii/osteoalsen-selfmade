@@ -1,37 +1,21 @@
-'use client';
-
-import { trackEvent } from './Analytics';
-
 interface TrackableLinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
-  eventName: 'phone_click' | 'email_click' | 'appointment_click';
+  eventName?: 'phone_click' | 'email_click' | 'appointment_click';
   source?: string;
 }
 
 /**
- * Trackable link component that sends events to Google Analytics
- * Use for phone numbers, email addresses, and appointment booking links
+ * Simple link component (tracking disabled for stability)
  */
 export default function TrackableLink({
   href,
   children,
   className = '',
-  eventName,
-  source = 'unknown',
 }: TrackableLinkProps) {
-  const handleClick = () => {
-    trackEvent(eventName, {
-      event_category: 'engagement',
-      event_label: source,
-      event_source: source,
-      link_url: href,
-    });
-  };
-
   return (
-    <a href={href} className={className} onClick={handleClick}>
+    <a href={href} className={className}>
       {children}
     </a>
   );

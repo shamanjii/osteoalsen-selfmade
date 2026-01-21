@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Epilogue, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import VoiceflowChat from "@/components/VoiceflowChat";
-import ErrorBoundary from "@/components/ErrorBoundary";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
-import Analytics from "@/components/Analytics";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
@@ -151,11 +149,8 @@ export default function RootLayout({
         />
       </head>
       <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
-        <ErrorBoundary>
-          {children}
-          <VoiceflowChat />
-          <Analytics />
-        </ErrorBoundary>
+        {children}
+        <VoiceflowChat />
       </body>
     </html>
   );

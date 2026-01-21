@@ -1,14 +1,7 @@
-'use client';
-
 import Link from "next/link";
 import { PhoneLink, EmailLink } from '@/components/TrackableLink';
-import { trackAppointmentClick } from '@/components/Analytics';
 
 export default function ContactSection() {
-    const handleAppointmentClick = () => {
-        trackAppointmentClick('contact_section');
-    };
-
     return (
         <section id="kontakt" className="bg-slate-50 py-16 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -51,7 +44,6 @@ export default function ContactSection() {
                                 <h4 className="text-slate-900 text-lg font-medium mb-1 font-epilogue">Online Buchung</h4>
                                 <Link
                                     href="/terminbuchung/"
-                                    onClick={handleAppointmentClick}
                                     className="text-slate-900 text-lg font-medium hover:text-slate-600 transition-colors"
                                 >
                                     Termin buchen
