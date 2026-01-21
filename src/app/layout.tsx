@@ -99,6 +99,7 @@ export const metadata: Metadata = {
   },
 };
 
+// Never add head section here, to prevent hydration errors
 export default function RootLayout({
   children,
 }: Readonly<{
