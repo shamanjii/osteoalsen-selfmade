@@ -119,13 +119,11 @@ export default function DropdownMenu({
     <div
       ref={dropdownRef}
       className="relative"
-      onMouseLeave={handleMouseLeave}
     >
       {/* Dropdown Trigger */}
       <button
         type="button"
         onClick={toggleDropdown}
-        onMouseEnter={handleMouseEnter}
         className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200 flex items-center gap-1"
         aria-expanded={isOpen}
         aria-haspopup="true"
