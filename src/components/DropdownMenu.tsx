@@ -31,6 +31,7 @@ export default function DropdownMenu({
   onOpenChange,
 }: DropdownMenuProps) {
   const [internalIsOpen, setInternalIsOpen] = useState(false);
+  const [hasEnteredMenu, setHasEnteredMenu] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isControlled = externalIsOpen !== undefined && onOpenChange !== undefined;
@@ -44,6 +45,10 @@ export default function DropdownMenu({
       onOpenChange(open);
     } else {
       setInternalIsOpen(open);
+    }
+    // Reset hasEnteredMenu when closing
+    if (!open) {
+      setHasEnteredMenu(false);
     }
   };
 
@@ -65,37 +70,28 @@ export default function DropdownMenu({
         !dropdownRef.current.contains(event.target as Node)
       ) {
         handleSetIsOpen(false);
-        onItemClick?.();
       }
     }
 
-    // Small delay to avoid closing immediately on open
-    const timeoutId = setTimeout(() => {
-      document.addEventListener("mousedown", handleClickOutside);
-    }, 0);
-
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      clearTimeout(timeoutId);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen, onItemClick]);
+  }, [isOpen]);
 
-  // Close dropdown when scrolling starts
+  // Close dropdown when scrolling
   useEffect(() => {
     if (!isOpen) return;
 
     function handleScroll() {
       handleSetIsOpen(false);
-      onItemClick?.();
     }
 
-    // Add scroll listener with passive flag for better performance
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isOpen, onItemClick]);
+  }, [isOpen]);
 
   const toggleDropdown = () => {
     handleSetIsOpen(!isOpen);
@@ -108,9 +104,15 @@ export default function DropdownMenu({
   };
 
   const handleMouseLeave = () => {
-    // Only close on mouse leave if using hover behavior
-    // Commenting out for now to allow clicking
-    // handleSetIsOpen(false);
+    // Only close if the mouse has entered the dropdown menu at least once
+    // This prevents closing when moving from trigger to dropdown panel
+    if (hasEnteredMenu) {
+      handleSetIsOpen(false);
+    }
+  };
+
+  const handleMenuEnter = () => {
+    setHasEnteredMenu(true);
   };
 
   return (
@@ -150,7 +152,7 @@ export default function DropdownMenu({
       {isOpen && (
         <div
           className="absolute top-full left-0 pt-2 w-64 z-50"
-          onMouseEnter={() => handleSetIsOpen(true)}
+          onMouseEnter={handleMenuEnter}
         >
           <div className="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
             {showAllLink && (
