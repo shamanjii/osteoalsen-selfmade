@@ -24,6 +24,13 @@ const instrumentSans = Instrument_Sans({
   adjustFontFallback: true,
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#0f172a',
+};
+
 export const metadata: Metadata = {
   title: "Osteopathie Hamburg - Joshua Alsen | VFO-zertifiziert, B.Sc. ✓ Ganzheitliche Behandlung",
   description:
@@ -98,29 +105,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" style={{ backgroundColor: '#ffffff' }}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="theme-color" content="#0f172a" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Prevent white flash and layout shifts */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          html {
-            background-color: #ffffff;
-          }
-          body {
-            opacity: 1 !important;
-            visibility: visible !important;
-            min-height: 100vh;
-          }
-          /* Prevent layout shift from ContactBar on homepage */
-          body::before {
-            content: "";
-            display: block;
-            height: 0;
-          }
-        ` }} />
+    <html lang="de">
+      <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
         <WebsiteStructuredData />
         <LocalBusinessStructuredData
           name="Joshua Alsen - Osteopathie Hamburg"
@@ -147,8 +133,6 @@ export default function RootLayout({
           ]}
           priceRange="€€"
         />
-      </head>
-      <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
         {children}
         <VoiceflowChat />
       </body>
