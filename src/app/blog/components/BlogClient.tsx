@@ -222,9 +222,10 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                             const isFeatured = index === 0 && selectedCategory === 'alle' && !searchTerm;
 
                             return (
-                                <article
+                                <Link
                                     key={post.slug}
-                                    className={`bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group ${
+                                    href={`/blog/${post.slug}`}
+                                    className={`bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group block ${
                                         isFeatured ? 'md:col-span-2 xl:col-span-2' : ''
                                     }`}
                                 >
@@ -293,9 +294,7 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         <h3 className={`font-epilogue font-semibold mb-4 text-slate-900 group-hover:text-slate-700 transition-colors ${
                                             isFeatured ? 'text-2xl md:text-3xl' : 'text-xl'
                                         }`}>
-                                            <Link href={`/blog/${post.slug}`}>
-                                                {post.title}
-                                            </Link>
+                                            {post.title}
                                         </h3>
 
                                         {/* Excerpt */}
@@ -308,15 +307,14 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                         )}
 
                                         {/* Read More */}
-                                        <Link
-                                            href={`/blog/${post.slug}`}
-                                            className="inline-flex items-center gap-2 text-slate-900 font-medium border-2 border-slate-300 px-4 py-2 rounded-lg hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-200"
+                                        <span
+                                            className="inline-flex items-center gap-2 text-slate-900 font-medium border-2 border-slate-300 px-4 py-2 rounded-lg group-hover:bg-slate-900 group-hover:text-white group-hover:border-slate-900 transition-all duration-200"
                                         >
                                             <span>Artikel lesen</span>
                                             <span className="group-hover:translate-x-1 transition-transform">→</span>
-                                        </Link>
+                                        </span>
                                     </div>
-                                </article>
+                                </Link>
                             );
                         })}
                     </div>
