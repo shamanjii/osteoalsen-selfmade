@@ -1,9 +1,18 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function VoiceflowChat() {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    // Only run after component is mounted
+    if (!isMounted || typeof window === 'undefined') return;
+
     // Check if script already exists
     if (document.getElementById('voiceflow-script')) return;
 
@@ -34,7 +43,7 @@ export default function VoiceflowChat() {
         existingScript.remove();
       }
     };
-  }, []);
+  }, [isMounted]);
 
   return null;
 }

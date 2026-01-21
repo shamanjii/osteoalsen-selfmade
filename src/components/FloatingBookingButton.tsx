@@ -5,15 +5,22 @@ import throttle from 'lodash.throttle';
 
 export default function FloatingBookingButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Throttled scroll handler for better performance
   const toggleVisibility = useCallback(() => {
     const throttledToggle = throttle(() => {
-      // Show button after scrolling 300px
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (typeof window !== 'undefined') {
+        // Show button after scrolling 300px
+        if (window.pageYOffset > 300) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
       }
     }, 16); // 60fps throttling
 
@@ -21,17 +28,21 @@ export default function FloatingBookingButton() {
   }, []);
 
   useEffect(() => {
+    if (!isMounted) return;
+
     const scrollHandler = toggleVisibility();
     window.addEventListener('scroll', scrollHandler, { passive: true });
     return () => {
       window.removeEventListener('scroll', scrollHandler);
       scrollHandler.cancel(); // Cancel pending throttled calls
     };
-  }, [toggleVisibility]);
+  }, [toggleVisibility, isMounted]);
 
   // Navigate to booking page
   const handleClick = useCallback(() => {
-    window.location.href = '/terminbuchung';
+    if (typeof window !== 'undefined') {
+      window.location.href = '/terminbuchung';
+    }
   }, []);
 
   return (

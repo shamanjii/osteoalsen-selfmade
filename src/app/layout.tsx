@@ -3,6 +3,7 @@ import { Epilogue, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import VoiceflowChat from "@/components/VoiceflowChat";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
+import { RootErrorBoundary } from "@/components/RootErrorBoundary";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
@@ -108,34 +109,36 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={`${epilogue.variable} ${instrumentSans.variable} antialiased`}>
-        <WebsiteStructuredData />
-        <LocalBusinessStructuredData
-          name="Joshua Alsen - Osteopathie Hamburg"
-          description="VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum & Eimsbüttel. Ganzheitliche osteopathische Behandlung für Erwachsene und Kinder. Kassenerstattung möglich."
-          url="https://www.osteoalsen.de"
-          telephone="+4917643990001"
-          email="joshua@alsen.info"
-          address={{
-            streetAddress: "Rappstraße 7",
-            addressLocality: "Hamburg",
-            postalCode: "20146",
-            addressCountry: "DE"
-          }}
-          geo={{
-            latitude: 53.5684,
-            longitude: 9.9737
-          }}
-          openingHours={[
-            "Monday 08:00 18:00",
-            "Tuesday 08:00 18:00",
-            "Wednesday 08:00 18:00",
-            "Thursday 08:00 18:00",
-            "Friday 08:00 16:00"
-          ]}
-          priceRange="€€"
-        />
-        {children}
-        <VoiceflowChat />
+        <RootErrorBoundary>
+          <WebsiteStructuredData />
+          <LocalBusinessStructuredData
+            name="Joshua Alsen - Osteopathie Hamburg"
+            description="VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum & Eimsbüttel. Ganzheitliche osteopathische Behandlung für Erwachsene und Kinder. Kassenerstattung möglich."
+            url="https://www.osteoalsen.de"
+            telephone="+4917643990001"
+            email="joshua@alsen.info"
+            address={{
+              streetAddress: "Rappstraße 7",
+              addressLocality: "Hamburg",
+              postalCode: "20146",
+              addressCountry: "DE"
+            }}
+            geo={{
+              latitude: 53.5684,
+              longitude: 9.9737
+            }}
+            openingHours={[
+              "Monday 08:00 18:00",
+              "Tuesday 08:00 18:00",
+              "Wednesday 08:00 18:00",
+              "Thursday 08:00 18:00",
+              "Friday 08:00 16:00"
+            ]}
+            priceRange="€€"
+          />
+          {children}
+          <VoiceflowChat />
+        </RootErrorBoundary>
       </body>
     </html>
   );

@@ -53,7 +53,9 @@ export default function SiteHeader() {
 
     // Set initial scroll position on mount (after hydration)
     useEffect(() => {
-        setIsAtTop(window.scrollY < 10);
+        if (typeof window !== 'undefined') {
+            setIsAtTop(window.scrollY < 10);
+        }
     }, []);
 
     // Auto-hide header on scroll with throttling

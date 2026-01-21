@@ -27,7 +27,13 @@ export default function ContactBar() {
   // Set initial visibility based on scroll position after mount
   useEffect(() => {
     setIsClient(true);
-    setIsVisible(window.scrollY < 10);
+    // Only update after client-side hydration is complete
+    const checkScroll = () => {
+      if (typeof window !== 'undefined') {
+        setIsVisible(window.scrollY < 10);
+      }
+    };
+    checkScroll();
   }, []);
 
   // ContactBar: Only visible at very top (< 10px) AND only on specific pages
