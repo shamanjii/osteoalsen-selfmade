@@ -35,7 +35,7 @@ export default function BlogCTA({
               }
             </p>
             <p className="text-slate-600 text-sm">
-              Lassen Sie uns gemeinsam die Ursache finden. Termine in 24-48h verfügbar.
+              Vereinbaren Sie einen Termin für eine persönliche Beratung. Termine in 24-48h verfügbar.
             </p>
           </div>
           <Link
@@ -56,13 +56,13 @@ export default function BlogCTA({
         <div className="text-center max-w-2xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 font-epilogue">
             {symptom
-              ? `${symptom}? Ich helfe Ihnen.`
-              : 'Bereit für Ihre Behandlung?'
+              ? `${symptom}? Lassen Sie uns sprechen.`
+              : 'Persönliche Beratung gewünscht?'
             }
           </h3>
           <p className="text-slate-300 mb-8 text-lg">
-            In meiner Praxis in Hamburg-Rotherbaum finde ich die Ursache Ihrer Beschwerden –
-            oft schon in der ersten Sitzung. Termine sind kurzfristig verfügbar.
+            In meiner Praxis in Hamburg-Rotherbaum nehme ich mir Zeit für eine ausführliche
+            Untersuchung und Beratung. Termine sind kurzfristig verfügbar.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
@@ -76,7 +76,7 @@ export default function BlogCTA({
               href="tel:+4917643990001"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-slate-900 transition-all duration-300"
             >
-              📞 0176 4399 0001
+              0176 4399 0001
             </a>
           </div>
 
@@ -136,8 +136,8 @@ export function SymptomCTA({ symptom, treatmentLink, treatmentName }: SymptomCTA
             Leiden Sie unter {symptom}?
           </h3>
           <p className="text-slate-600 mb-4">
-            Als Osteopath in Hamburg behandle ich die Ursachen – nicht nur die Symptome.
-            In einem persönlichen Termin finden wir gemeinsam heraus, wie ich Ihnen helfen kann.
+            Als Osteopath in Hamburg nehme ich mir Zeit für eine ganzheitliche Untersuchung.
+            In einem persönlichen Termin besprechen wir Ihre Situation.
           </p>
           {treatmentLink && treatmentName && (
             <Link
@@ -159,7 +159,7 @@ export function SymptomCTA({ symptom, treatmentLink, treatmentName }: SymptomCTA
             href="tel:+4917643990001"
             className="inline-flex items-center justify-center px-6 py-3 border-2 border-slate-300 text-slate-700 font-medium rounded-lg hover:border-slate-900 hover:text-slate-900 transition-all duration-300 text-center"
           >
-            📞 Anrufen
+            Anrufen
           </a>
         </div>
       </div>
