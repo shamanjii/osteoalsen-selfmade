@@ -12,7 +12,28 @@ import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
 import SocialShare from "@/components/SocialShare";
 import ArticleWithSidebar from "./ArticleWithSidebar";
+import BlogCTA from "@/components/BlogCTA";
 import { extractFAQs } from "@/lib/utils";
+
+// Symptom-Mapping für kontextuelle CTAs
+function getSymptomFromKeywords(keywords?: string[]): string | undefined {
+    if (!keywords || keywords.length === 0) return undefined;
+
+    const keywordLower = keywords.map(k => k.toLowerCase()).join(' ');
+
+    if (keywordLower.includes('rückenschmerz') || keywordLower.includes('rücken')) return 'Rückenschmerzen';
+    if (keywordLower.includes('nackenschmerz') || keywordLower.includes('nacken') || keywordLower.includes('hws')) return 'Nackenschmerzen';
+    if (keywordLower.includes('kopfschmerz') || keywordLower.includes('migräne')) return 'Kopfschmerzen';
+    if (keywordLower.includes('schwindel')) return 'Schwindel';
+    if (keywordLower.includes('knie') || keywordLower.includes('arthrose')) return 'Gelenkbeschwerden';
+    if (keywordLower.includes('schulter') || keywordLower.includes('impingement')) return 'Schulterschmerzen';
+    if (keywordLower.includes('verdauung') || keywordLower.includes('darm') || keywordLower.includes('reizdarm')) return 'Verdauungsbeschwerden';
+    if (keywordLower.includes('stress') || keywordLower.includes('burnout')) return 'Stress oder Erschöpfung';
+    if (keywordLower.includes('trigeminus')) return 'diesen Beschwerden';
+    if (keywordLower.includes('schleudertrauma')) return 'Schleudertrauma-Folgen';
+
+    return undefined;
+}
 
 interface PageProps {
     params: Promise<{
@@ -81,6 +102,9 @@ export default async function BlogPost({ params }: PageProps) {
 
     // Extract FAQs from content for structured data
     const faqs = extractFAQs(post.content);
+
+    // Get symptom for contextual CTAs
+    const symptom = getSymptomFromKeywords(post.keywords);
 
     return (
         <>
@@ -176,6 +200,9 @@ export default async function BlogPost({ params }: PageProps) {
                         </div>
                     )}
 
+                    {/* Inline CTA after image */}
+                    <BlogCTA variant="inline" symptom={symptom} />
+
                     <ArticleWithSidebar content={post.content} articleOnly>
                         {/* Scientific Credibility Box for medical topics */}
                         {post.keywords?.some(keyword =>
@@ -192,6 +219,9 @@ export default async function BlogPost({ params }: PageProps) {
                         ) && (
                             <LiteratureSection />
                         )}
+
+                        {/* Prominent CTA at the end of article */}
+                        <BlogCTA variant="prominent" symptom={symptom} />
                     </ArticleWithSidebar>
 
                     <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200">

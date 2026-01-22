@@ -40,6 +40,22 @@ export default function HeroSection() {
                             <span className="relative z-10">Mehr erfahren</span>
                         </a>
                     </div>
+
+                    {/* Trust Badges - Above the Fold */}
+                    <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-6">
+                        <div className="flex items-center gap-2 text-sm text-slate-600">
+                            <span className="text-emerald-600 font-bold">✓</span>
+                            <span>VFO-zertifiziert</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm text-slate-600">
+                            <span className="text-emerald-600 font-bold">✓</span>
+                            <span>Termine in 24-48h</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm text-slate-600">
+                            <span className="text-emerald-600 font-bold">✓</span>
+                            <span>Krankenkassen-Erstattung</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
