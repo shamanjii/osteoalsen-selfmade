@@ -128,7 +128,7 @@ export default function OsteopathHamburgPage() {
                     href="tel:+4917643990001"
                     className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold border-2 border-slate-900 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white transition-all duration-300"
                   >
-                    📞 0176 4399 0001
+                    0176 4399 0001
                   </a>
                 </div>
 
@@ -163,12 +163,9 @@ export default function OsteopathHamburgPage() {
                 </div>
                 {/* Location Badge */}
                 <div className="absolute -bottom-4 left-4 right-4 bg-white rounded-xl shadow-lg p-4 border border-slate-100">
-                  <div className="flex items-center gap-4">
-                    <div className="text-3xl">📍</div>
-                    <div>
-                      <p className="font-semibold text-slate-900">Praxis Hamburg-Rotherbaum</p>
-                      <p className="text-slate-600 text-sm">Rappstraße 7, 20146 Hamburg</p>
-                    </div>
+                  <div>
+                    <p className="font-semibold text-slate-900">Praxis Hamburg-Rotherbaum</p>
+                    <p className="text-slate-600 text-sm">Rappstraße 7, 20146 Hamburg</p>
                   </div>
                 </div>
               </div>
@@ -217,7 +214,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/rueckenschmerzen/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🦴</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Rückenschmerzen
                 </h3>
@@ -233,7 +229,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/nackenschmerzen/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🔄</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Nackenschmerzen
                 </h3>
@@ -249,7 +244,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/kopfschmerzen-migraene/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🧠</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Kopfschmerzen & Migräne
                 </h3>
@@ -265,7 +259,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/arthrose-gelenkbeschwerden/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🦵</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Gelenkbeschwerden
                 </h3>
@@ -281,7 +274,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/verdauungsbeschwerden/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🫁</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Verdauungsbeschwerden
                 </h3>
@@ -297,7 +289,6 @@ export default function OsteopathHamburgPage() {
                 href="/behandlungen/sportosteopathie/"
                 className="group bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">⚽</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2 font-epilogue group-hover:text-slate-700">
                   Sportosteopathie
                 </h3>
@@ -621,7 +612,7 @@ export default function OsteopathHamburgPage() {
                   href="tel:+4917643990001"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold border-2 border-white text-white rounded-lg hover:bg-white hover:text-slate-900 transition-all duration-300"
                 >
-                  📞 0176 4399 0001
+                  0176 4399 0001
                 </a>
               </div>
               <p className="text-sm text-slate-400 mt-6">
