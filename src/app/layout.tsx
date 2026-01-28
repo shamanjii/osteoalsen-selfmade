@@ -3,6 +3,7 @@ import { Epilogue, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
 import { RootErrorBoundary } from "@/components/RootErrorBoundary";
+import ChatbotWidget from "@/components/ChatbotWidget";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
@@ -136,6 +137,7 @@ export default function RootLayout({
             priceRange="€€"
           />
           {children}
+          <ChatbotWidget />
         </RootErrorBoundary>
       </body>
     </html>
