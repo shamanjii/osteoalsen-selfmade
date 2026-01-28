@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Epilogue, Instrument_Sans } from "next/font/google";
 import "./globals.css";
-import VoiceflowChat from "@/components/VoiceflowChat";
 import { LocalBusinessStructuredData, WebsiteStructuredData } from "@/components/StructuredData";
 import { RootErrorBoundary } from "@/components/RootErrorBoundary";
 
@@ -137,7 +136,6 @@ export default function RootLayout({
             priceRange="€€"
           />
           {children}
-          <VoiceflowChat />
         </RootErrorBoundary>
       </body>
     </html>

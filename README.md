@@ -18,7 +18,6 @@ A modern, high-performance osteopathy practice website built with Next.js, featu
 - Blog system with categories, tags, and RSS feed
 - Dynamic treatment pages with medical condition schemas
 - Integrated booking system (Terminbuchung)
-- Voiceflow chatbot integration
 - Reading progress bars and table of contents
 - Comprehensive error boundaries
 - Web vitals tracking
