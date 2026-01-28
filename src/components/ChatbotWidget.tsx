@@ -1,17 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default function ChatbotWidget() {
-  const [isMounted, setIsMounted] = useState(false);
-
   useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!isMounted || typeof window === 'undefined') return;
-
+    if (typeof window === 'undefined') return;
     if (document.getElementById('chatbot-widget-script')) return;
 
     const script = document.createElement('script');
@@ -25,14 +18,7 @@ export default function ChatbotWidget() {
     script.dataset.color = '#1a2233';
 
     document.head.appendChild(script);
-
-    return () => {
-      const existingScript = document.getElementById('chatbot-widget-script');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, [isMounted]);
+  }, []);
 
   return null;
 }
