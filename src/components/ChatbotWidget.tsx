@@ -9,10 +9,10 @@ export default function ChatbotWidget() {
 
     const script = document.createElement('script');
     script.id = 'chatbot-widget-script';
-    script.src = 'https://pagebot.digger.lol/api/embed/chatbot.js';
+    script.src = 'https://digital-rezeption.de/api/embed/chatbot.js';
     script.async = true;
     script.dataset.websiteId = 'd42c9093-1e01-443a-a6e4-30b797f20b22';
-    script.dataset.apiUrl = 'https://pagebot.digger.lol';
+    script.dataset.apiUrl = 'https://digital-rezeption.de';
     script.dataset.position = 'bottom-right';
     script.dataset.title = 'Digitale Empfangskraft';
     script.dataset.color = '#1a2233';
