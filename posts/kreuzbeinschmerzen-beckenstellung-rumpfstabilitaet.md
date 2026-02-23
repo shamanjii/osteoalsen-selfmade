@@ -11,7 +11,7 @@ keywords:
   - "unterer Rückenschmerz mittig"
   - "Osteopathie Kreuzbein Hamburg"
   - "Rumpfstabilität Rückenschmerzen"
-image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200"
+image: "https://images.unsplash.com/photo-1650897492414-8661563845a7?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 alt: "Schmerzen über dem Kreuzbein behandeln: Beckenstellung korrigieren mit Rumpfstabilität und Deep Squat in Hamburg"
 date: "2026-02-23T08:00:00.000Z"
 status: "published"
