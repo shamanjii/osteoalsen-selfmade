@@ -319,36 +319,22 @@ Rappstraße 7
 
 ### Quellen
 
+1. Arshad, R., et al. (2024). "Postural asymmetry in low back pain – a systematic review and meta-analysis of observational studies." *Disability and Rehabilitation*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/39166267/)
+2. Daneshmandi, H., et al. (2020). "Prolonged sitting and physical inactivity are associated with limited hip extension: A cross-sectional study." *Musculoskeletal Science and Practice*. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S2468781220305877)
+3. Physiopedia Contributors. "Low Back Pain Related to Hyperlordosis." *Physiopedia*. [Physiopedia](https://www.physio-pedia.com/Low_Back_Pain_Related_to_Hyperlordosis)
+4. Sheha, E.D., et al. (2021). "Understanding the Pathophysiology of L5-S1 Loss of Lordosis and Retrolisthesis: An EOS Study." *World Neurosurgery*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34785359/)
+5. Emanuel, K.S., et al. (2015). "Effect of Hydration on Healthy Intervertebral Disk Mechanical Stiffness." *Journal of Biomechanical Engineering*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26300418/)
+6. Hodges, P.W., Richardson, C.A. (1996). "Inefficient muscular stabilization of the lumbar spine associated with low back pain: A motor control evaluation of transversus abdominis." *Spine*, 21(22), 2640-2650. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8961451/)
+7. Hodges, P.W., Richardson, C.A. (1997). "Feedforward contraction of transversus abdominis is not influenced by the direction of arm movement." *Experimental Brain Research*, 114(2), 362-370. [PubMed](https://pubmed.ncbi.nlm.nih.gov/9166925/)
+8. Gong, W., et al. (2017). "Transversus Abdominis Activation and Timing Improves Following Core Stability Training: A Randomized Trial." *International Journal of Sports Physical Therapy*, 12(7), 1048-1056. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5717480/)
+9. Xiao, S., et al. (2020). "A Comparative Study on Loadings of the Lower Extremity during Deep Squat in Asian and Caucasian Individuals." *BioMed Research International*. [Wiley](https://onlinelibrary.wiley.com/doi/10.1155/2020/7531719)
+10. Kim, S.H., et al. (2020). "The relationship between the deep squat movement and the hip, knee and ankle range of motion and muscle strength." *Journal of Physical Therapy Science*, 32(9), 622-627. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7276781/)
+11. Amiri, P., et al. (2023). "Effects of peak ankle dorsiflexion angle on lower extremity biomechanics and pelvic motion during walking and jogging." *Frontiers in Neurology*. [Frontiers](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1269061/full)
+12. Jacobsen, J.S., et al. (2021). "Improved functional biomechanics during squat following an exercise program targeting excessive anterior pelvic tilt." *Gait and Posture*, 90, 25-31. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0966636221003179)
+13. Kovacs, F.M., et al. (2003). "Effect of firmness of mattress on chronic non-specific low-back pain: randomised, double-blind, controlled, multicentre trial." *The Lancet*, 362(9396), 1599-1604. [PubMed](https://pubmed.ncbi.nlm.nih.gov/14630439/)
+
 ---
 
 ## Mehr über Osteopathie erfahren
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
-
----
-
-[^1]: Arshad, R., et al. (2024). "Postural asymmetry in low back pain – a systematic review and meta-analysis of observational studies." *Disability and Rehabilitation*. PMID: 39166267. URL: https://pubmed.ncbi.nlm.nih.gov/39166267/
-
-[^2]: Daneshmandi, H., et al. (2020). "Prolonged sitting and physical inactivity are associated with limited hip extension: A cross-sectional study." *Musculoskeletal Science and Practice*. DOI: 10.1016/j.msksp.2020.102282
-
-[^3]: Physiopedia Contributors. "Low Back Pain Related to Hyperlordosis." *Physiopedia*. URL: https://www.physio-pedia.com/Low_Back_Pain_Related_to_Hyperlordosis
-
-[^4]: Sheha, E.D., et al. (2021). "Understanding the Pathophysiology of L5-S1 Loss of Lordosis and Retrolisthesis: An EOS Study." *World Neurosurgery*. PMID: 34785359. DOI: 10.1016/j.wneu.2021.11.044
-
-[^5]: Emanuel, K.S., et al. (2015). "Effect of Hydration on Healthy Intervertebral Disk Mechanical Stiffness." *Journal of Biomechanical Engineering*. PMID: 26300418. DOI: 10.1115/1.4031416
-
-[^6]: Hodges, P.W., Richardson, C.A. (1996). "Inefficient muscular stabilization of the lumbar spine associated with low back pain: A motor control evaluation of transversus abdominis." *Spine*, 21(22), 2640-2650. PMID: 8961451.
-
-[^7]: Hodges, P.W., Richardson, C.A. (1997). "Feedforward contraction of transversus abdominis is not influenced by the direction of arm movement." *Experimental Brain Research*, 114(2), 362-370. PMID: 9166925.
-
-[^8]: Gong, W., et al. (2017). "Transversus Abdominis Activation and Timing Improves Following Core Stability Training: A Randomized Trial." *International Journal of Sports Physical Therapy*, 12(7), 1048-1056. PMC5717480.
-
-[^9]: Xiao, S., et al. (2020). "A Comparative Study on Loadings of the Lower Extremity during Deep Squat in Asian and Caucasian Individuals." *BioMed Research International*. DOI: 10.1155/2020/7531719
-
-[^10]: Kim, S.H., et al. (2020). "The relationship between the deep squat movement and the hip, knee and ankle range of motion and muscle strength." *Journal of Physical Therapy Science*, 32(9), 622-627. PMC7276781.
-
-[^11]: Amiri, P., et al. (2023). "Effects of peak ankle dorsiflexion angle on lower extremity biomechanics and pelvic motion during walking and jogging." *Frontiers in Neurology*. DOI: 10.3389/fneur.2023.1269061
-
-[^12]: Jacobsen, J.S., et al. (2021). "Improved functional biomechanics during squat following an exercise program targeting excessive anterior pelvic tilt." *Gait and Posture*, 90, 25-31. DOI: 10.1016/j.gaitpost.2021.08.014
-
-[^13]: Kovacs, F.M., et al. (2003). "Effect of firmness of mattress on chronic non-specific low-back pain: randomised, double-blind, controlled, multicentre trial." *The Lancet*, 362(9396), 1599-1604. PMID: 14630439.
