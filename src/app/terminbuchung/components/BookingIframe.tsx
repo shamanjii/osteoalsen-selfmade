@@ -4,28 +4,36 @@ import { ConversionFunnel, BookingTracking } from "@/lib/analytics-events";
 
 export default function BookingIframe() {
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [iframeHeight, setIframeHeight] = useState<number>(900);
   const [hasScrolledToIframe, setHasScrolledToIframe] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const pageLoadTime = useRef<number>(Date.now());
 
-  // Track page open and load etermin script
+  // Track booking interface open
   useEffect(() => {
-    // Track that user opened booking interface
     ConversionFunnel.openedBookingInterface();
+  }, []);
 
-    // Load etermin resize script
-    const script = document.createElement('script');
-    script.src = 'https://www.eTermin.net/js/resizecustomersitescroll.min.js';
-    script.type = 'text/javascript';
-    script.async = true;
-    document.head.appendChild(script);
+  // Listen for postMessage from Lucar (resize + booking events)
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin !== 'https://lucar.app') return;
+      if (!event.data || typeof event.data !== 'object') return;
 
-    return () => {
-      const existingScript = document.querySelector('script[src="https://www.eTermin.net/js/resizecustomersitescroll.min.js"]');
-      if (existingScript) {
-        existingScript.remove();
+      switch (event.data.type) {
+        case 'lucar:resize':
+          if (typeof event.data.height === 'number' && event.data.height > 200) {
+            setIframeHeight(Math.ceil(event.data.height));
+          }
+          break;
+        case 'lucar:booking_completed':
+          BookingTracking.bookingCompleted(event.data);
+          break;
       }
     };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
   }, []);
 
   // Track scroll to iframe (user engagement)
@@ -77,7 +85,7 @@ export default function BookingIframe() {
   };
 
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 relative">
+    <div id="booking-iframe" className="rounded-xl overflow-hidden shadow-lg border border-slate-200 relative">
       {!iframeLoaded && (
         <div className="absolute inset-0 bg-slate-100 flex items-center justify-center">
           <div className="text-center">
@@ -87,16 +95,15 @@ export default function BookingIframe() {
         </div>
       )}
       <iframe
-        id="etifr"
         ref={iframeRef}
-        src="https://www.eTermin.net/osteoalsen"
+        src="https://lucar.app/booking/osteopathie-alsen?embed=true"
         width="100%"
-        height="800"
-        style={{ minHeight: '600px', border: 'none' }}
-        scrolling="no"
+        height={iframeHeight}
+        style={{ minHeight: '700px', border: 'none' }}
+        loading="lazy"
         onLoad={handleIframeLoad}
         className="w-full"
-        title="Online Terminbuchung"
+        title="Online-Terminbuchung"
       />
     </div>
   );

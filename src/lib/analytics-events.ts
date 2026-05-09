@@ -320,19 +320,29 @@ export const trackWebVitals = (metrics: {
 };
 
 // ============================================================================
-// BOOKING IFRAME TRACKING (etermin)
+// BOOKING IFRAME TRACKING (Lucar)
 // ============================================================================
 
 /**
- * Track booking iframe interactions
- * Note: We can't track INSIDE the iframe due to same-origin policy,
- * but we can track user behavior around it
+ * Track booking iframe interactions.
+ * Lucar (own software) sends postMessage events for completed bookings,
+ * giving us first-party conversion data without leaving the page.
  */
 export const BookingTracking = {
   // Iframe loaded successfully
   iframeLoaded: (loadTimeMs: number) => {
     baseTrackEvent('booking_iframe_loaded', {
       load_time_ms: loadTimeMs,
+      event_category: 'booking',
+    });
+  },
+
+  // Booking completed (postMessage from Lucar)
+  bookingCompleted: (data: { service?: string; durationMinutes?: number; appointmentId?: string }) => {
+    baseTrackEvent('booking_completed', {
+      service: data.service,
+      duration_minutes: data.durationMinutes,
+      appointment_id: data.appointmentId,
       event_category: 'booking',
     });
   },

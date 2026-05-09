@@ -127,7 +127,7 @@ export default function TerminbuchungPage() {
               Wählen Sie einen freien Termin in einer meiner Praxen in Hamburg aus. Sie erhalten eine sofortige Bestätigung per E-Mail.
             </p>
 
-            {/* etermin iframe */}
+            {/* Lucar booking iframe */}
             <BookingIframe />
           </div>
 

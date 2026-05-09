@@ -129,16 +129,17 @@ export default function DatenschutzPage() {
             </div>
           </section>
 
-          {/* 2. eTermin */}
+          {/* 2. Online-Terminbuchung */}
           <section className="bg-white border border-slate-200 rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold text-slate-900 mb-6 pb-3 border-b-2 border-slate-200 font-epilogue">
-              2. Nutzung des Buchungssystems eTermin.net
+              2. Online-Terminbuchung
             </h2>
 
             <p className="text-slate-700 leading-relaxed mb-4">
-              Wir nutzen das Buchungssystem von eTermin.net für die
-              Terminbuchung. Über das Kontaktformular auf dieser Seite können
-              Sie personenbezogene Daten angeben, wie:
+              Für die Online-Terminbuchung nutzen wir unsere eigene
+              Praxisverwaltungssoftware Lucar (lucar.app), die auf eigenen
+              Servern in Deutschland betrieben wird. Im Rahmen der Buchung
+              können Sie folgende personenbezogene Daten angeben:
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4 mb-4">
@@ -146,25 +147,24 @@ export default function DatenschutzPage() {
               <li>E-Mail-Adresse</li>
               <li>Telefonnummer</li>
               <li>Adresse</li>
+              <li>Behandlungsanlass (freiwillig)</li>
             </ul>
 
             <p className="text-slate-700 leading-relaxed mb-4">
-              Die Angabe dieser Daten erfolgt freiwillig und dient der
-              Bearbeitung Ihrer Anfrage bzw. Terminbuchung. Ihre Daten werden
-              nur zum Zweck der Bearbeitung der Terminbuchung verwendet und
-              nicht an Dritte weitergegeben.
+              Die Angabe dieser Daten erfolgt freiwillig und dient
+              ausschließlich der Bearbeitung Ihrer Terminbuchung sowie der
+              anschließenden Behandlung. Rechtsgrundlage ist Art. 6 Abs. 1
+              lit. b DSGVO (Vertragsanbahnung) sowie Art. 9 Abs. 2 lit. h DSGVO
+              (Gesundheitsversorgung). Ihre Daten werden nicht an Dritte
+              weitergegeben.
             </p>
 
-            <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2 font-epilogue">
-                ℹ️ Externe Datenschutzbestimmungen
-              </h3>
-              <p className="text-blue-900">
-                Weitere Informationen zum Datenschutz von eTermin.net finden
-                Sie in deren Datenschutzerklärung auf der Website von
-                eTermin.net.
-              </p>
-            </div>
+            <p className="text-slate-700 leading-relaxed">
+              Die Buchungs-Oberfläche wird auf dieser Seite per iframe von
+              <code className="mx-1 px-1 bg-slate-100 rounded">lucar.app</code>
+              eingebunden. Daten werden ausschließlich an unsere eigenen
+              Server übermittelt.
+            </p>
           </section>
 
           {/* 3. Cookies */}
