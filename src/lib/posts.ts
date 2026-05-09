@@ -24,6 +24,8 @@ export type PostFrontmatter = {
         url?: string;
         identifier?: string;
     }[];
+    // Local SEO: Render Hamburg practice box at end of article
+    localBox?: boolean;
 };
 
 export type Post = PostFrontmatter & {

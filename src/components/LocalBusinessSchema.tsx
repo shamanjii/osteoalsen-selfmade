@@ -116,7 +116,7 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "42",
+      "reviewCount": "45",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -149,8 +149,36 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
     ...rotherbaumData,
     "@id": "https://www.osteoalsen.de/osteopathie-eimsbuettel#organization",
     "name": "Osteopathie Hamburg Eimsbüttel - Joshua Alsen",
+    "alternateName": "Joshua Alsen - Osteopath Hamburg Eimsbüttel",
     "url": "https://www.osteoalsen.de/osteopathie-eimsbuettel",
-    "description": "VFO-zertifizierte Osteopathie-Praxis in Hamburg-Eimsbüttel. Ganzheitliche osteopathische Behandlungen."
+    "description": "VFO-zertifizierte Osteopathie-Praxis in Hamburg-Eimsbüttel. Ganzheitliche osteopathische Behandlungen bei Rückenschmerzen, Kopfschmerzen, Verdauungsbeschwerden und mehr.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Stresemannallee 118",
+      "addressLocality": "Hamburg",
+      "addressRegion": "Hamburg",
+      "postalCode": "22529",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.591000,
+      "longitude": 9.927000
+    },
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.591000,
+        "longitude": 9.927000
+      },
+      "geoRadius": "15000"
+    },
+    "sameAs": [
+      "https://www.facebook.com/osteoalsen",
+      "https://www.instagram.com/osteoalsen",
+      "https://www.google.com/maps/place/Stresemannallee+118,+22529+Hamburg"
+    ]
   };
 
   const schemaData = location === 'eimsbuettel' ? eimsbuettelData : rotherbaumData;

@@ -1,4 +1,5 @@
 ---
+localBox: true
 slug: "kniearthrose-ohne-op-behandeln"
 title: "Kniearthrose Grad 4 ohne OP: Wann konservative Therapie eine Alternative ist"
 excerpt: "Kniearthrose Grad 3-4 und Ihr Orthopäde empfiehlt eine OP? Studien zeigen: Konservative Behandlung kann bei vielen Patienten eine sinnvolle Alternative sein. Was Osteopathie leisten kann."

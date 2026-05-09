@@ -10,10 +10,42 @@ export interface Review {
 
 export const fallbackReviews: Review[] = [
   {
+    author: "Iri Olb",
+    rating: 5,
+    text: "Joschua Alsen nimmt sich sehr viel Zeit und behandelt ganzheitlich. Ich hatte bereits viele osteopathische Behandlungen, aber eine so umfangreiche und intensive Behandlung habe ich nur bei ihm erlebt. Man merkt, dass er über ein großes Hintergrundwissen verfügt und sehr daran interessiert ist, seinen Patienten bestmöglich zu helfen. Mein Zustand hat sich deutlich verbessert. Ich kann die Behandlung bei Joschua wärmstens empfehlen.",
+    date: "vor 2 Monaten",
+    reviewCount: 0,
+    photoCount: 0
+  },
+  {
+    author: "Beyza Beyazdag",
+    rating: 5,
+    text: "Ich bin wegen einer Empfehlung zu Joshua Alsen gegangen und war sehr begeistert. Erst war es etwas unangenehm über meine Magenprobleme zu reden, aber Joshua ist so professionell und sensibel mit dem Thema umgegangen, dass ich mich direkt gut aufgehoben gefühlt habe. Von meinen monatlichen Periodenschmerzen habe ich dann auch noch erzählt. Nach ein paar Behandlungen ging es meinem Magen viel besser und ich habe keine Periodenschmerzen oder Krämpfe mehr! An alle Frauen die das hier lesen und auch darunter leiden, ich sage euch probiert es aus. Es ist so ein befreiendes Gefühl und ich bin so glücklich es ausprobiert zu haben :)",
+    date: "vor 4 Monaten",
+    reviewCount: 0,
+    photoCount: 0
+  },
+  {
+    author: "Melvin Edmondson",
+    rating: 5,
+    text: "Eine höfliche, informative und positive Behandlung. Ich verspürte sofort ein positives körperliches Gefühl gleich nach die Behandlung.",
+    date: "vor 5 Monaten",
+    reviewCount: 0,
+    photoCount: 0
+  },
+  {
+    author: "Katharina Nupnau",
+    rating: 5,
+    text: "",
+    date: "vor 5 Monaten",
+    reviewCount: 0,
+    photoCount: 0
+  },
+  {
     author: "Alexandra Neuhaus",
     rating: 5,
     text: "Ich kam vor einigen Tagen mit akuten Schulterschmerzen zu Joshua. Die Behandlung war auf eine sanfte Art sehr intensiv. In den zwei darauffolgenden Tagen, hatte mein Körper viel zu tun, ausgelöst durch die Behandlung, Heute nun stelle ich fest, dass ich so gut wie schmerzfrei bin. Ein super Job, Joshua - 1000 Dank dafür!",
-    date: "vor 5 Tagen",
+    date: "vor 6 Monaten",
     reviewCount: 3,
     photoCount: 3
   },
@@ -21,7 +53,7 @@ export const fallbackReviews: Review[] = [
     author: "Anna-Lena Schönberger",
     rating: 5,
     text: "Ich bin begeistert und komme auf jeden Fall wieder! Danke Joshua.",
-    date: "vor 2 Wochen",
+    date: "vor 7 Monaten",
     reviewCount: 3,
     photoCount: 0
   },
@@ -29,7 +61,7 @@ export const fallbackReviews: Review[] = [
     author: "Catrin Hasse",
     rating: 5,
     text: "",
-    date: "vor 5 Wochen",
+    date: "vor 7 Monaten",
     reviewCount: 0,
     photoCount: 0
   },
@@ -346,9 +378,9 @@ export const fallbackReviews: Review[] = [
 ];
 
 export const reviewsStats = {
-  totalReviews: 41,
+  totalReviews: 45,
   averageRating: 5.0,
-  fiveStars: 41,
+  fiveStars: 45,
   fourStars: 0,
   threeStars: 0,
   twoStars: 0,

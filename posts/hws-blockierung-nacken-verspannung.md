@@ -1,4 +1,5 @@
 ---
+localBox: true
 slug: "hws-blockierung-nacken-verspannung"
 title: "HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)"
 excerpt: "Ihr Nacken ist trotz Massage nach zwei Tagen wieder steif? Die wahre Ursache liegt meist nicht im Muskel, sondern in einer HWS-Blockierung. Erfahren Sie, wie Sie die Blockierung dauerhaft lösen statt nur Symptome zu behandeln."

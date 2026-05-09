@@ -82,7 +82,12 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       changeFrequency: 'monthly',
       priority: 0.85,
     },
-    // Removed: /osteopathie-rotherbaum (redirects to /)
+    {
+      url: ensureTrailingSlash(`${baseUrl}/osteopathie-rotherbaum`),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     {
       url: ensureTrailingSlash(`${baseUrl}/osteopathie-eimsbuettel`),
       lastModified: now,

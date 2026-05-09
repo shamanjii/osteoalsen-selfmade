@@ -1,4 +1,5 @@
 ---
+localBox: true
 slug: "kopfschmerzen-trigeminus-ursache"
 title: "Trigeminusnerv gereizt durch Verspannungen? So entstehen Kopfschmerzen wirklich"
 excerpt: "Trigeminusnerv gereizt durch Verspannungen im Nacken oder Kiefer? Das ist die häufigste Ursache für therapieresistente Kopfschmerzen. Erfahren Sie, wie Osteopathie die 3 Hauptirritationspunkte behandelt."

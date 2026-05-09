@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSchema from "@/components/FAQSchema";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
@@ -48,6 +49,7 @@ export default function OsteopathieEimsbuettelPage() {
     <div className="min-h-screen">
       <SiteHeader />
       <main>
+        <LocalBusinessSchema location="eimsbuettel" />
         <FAQSchema
           faqs={[
             {
@@ -203,13 +205,13 @@ export default function OsteopathieEimsbuettelPage() {
             <div>
               <div className="bg-slate-100 rounded-xl overflow-hidden" style={{ height: '500px' }}>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.123456789!2d9.912345678!3d53.612345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f123456789a%3A0x123456789abcdef0!2sStresemannallee%20118%2C%2022529%20Hamburg!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde"
+                  src="https://maps.google.com/maps?q=Stresemannallee+118,+22529+Hamburg&t=m&z=15&output=embed&iwloc=near"
                   className="w-full h-full"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Karte Osteopathie Praxis Eimsbüttel"
+                  title="Karte Osteopathie Praxis Hamburg Eimsbüttel - Stresemannallee 118"
                 ></iframe>
               </div>
             </div>
@@ -292,7 +294,7 @@ export default function OsteopathieEimsbuettelPage() {
               </p>
             </Link>
             <Link
-              href="/behandlungen/sportverletzungen/"
+              href="/behandlungen/sportosteopathie/"
               className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-3">⚽</div>

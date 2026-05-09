@@ -13,6 +13,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import SocialShare from "@/components/SocialShare";
 import ArticleWithSidebar from "./ArticleWithSidebar";
 import BlogCTA from "@/components/BlogCTA";
+import HamburgPraxisBox from "@/components/HamburgPraxisBox";
 import { extractFAQs } from "@/lib/utils";
 
 // Symptom-Mapping für kontextuelle CTAs
@@ -219,6 +220,9 @@ export default async function BlogPost({ params }: PageProps) {
                         ) && (
                             <LiteratureSection />
                         )}
+
+                        {/* Hamburg Praxis Box for local SEO posts */}
+                        {post.localBox && <HamburgPraxisBox />}
 
                         {/* Prominent CTA at the end of article */}
                         <BlogCTA variant="prominent" symptom={symptom} />

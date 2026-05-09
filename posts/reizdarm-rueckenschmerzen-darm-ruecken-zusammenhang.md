@@ -1,4 +1,5 @@
 ---
+localBox: true
 title: "Reizdarm & Rückenschmerzen: Der unterschätzte Darm-Rücken-Zusammenhang"
 slug: "reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang"
 date: "2025-12-23"
