@@ -48,7 +48,7 @@ author: "Admin"
 ### Zervikaler Schwindel: Die medizinische Definition
 
 **Was ist das?**
-Schwindel, der durch Dysfunktionen der Halswirbelsäule ausgelöst wird – speziell:
+Schwindel, der durch Dysfunktionen der Halswirbelsäule ausgelöst wird -- eine spezifische Ausprägung des [HWS-Syndroms](/blog/hws-syndrom-symptome-behandlung). Betroffen sind speziell:
 - Atlas-Fehlstellung (C1)
 - HWS-Blockierungen (C1-C3)
 - Verspannungen der tiefen Nackenmuskulatur

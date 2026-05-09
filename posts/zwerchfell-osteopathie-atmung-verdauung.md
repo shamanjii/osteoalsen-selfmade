@@ -86,12 +86,12 @@ Das Zwerchfell besteht aus drei funktionell unterschiedlichen Anteilen, die wäh
 Alle drei muskulären Anteile münden in eine **zentrale Sehnenplatte** (Centrum tendineum), die wie ein dreiblättriges Kleeblatt geformt ist. Diese zentrale Sehne ist fest mit dem Herzbeutel (Perikard) verbunden – eine anatomische Besonderheit mit weitreichenden Konsequenzen:
 
 - Bei tiefer Atmung zieht das Zwerchfell am Perikard
-- Dies stimuliert den Vagusnerv, der im Perikard verläuft
+- Dies stimuliert den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen), der im Perikard verläuft
 - Resultat: Verbesserung der Herzratenvariabilität (HRV), Aktivierung des Parasympathikus
 
 **Innervation – bewusst und unbewusst:**
 
-Das Zwerchfell wird durch den **Nervus phrenicus** (Zwerchfellnerv) versorgt, der aus den Nervenwurzeln C3, C4 und C5 (Halswirbelsäule) entspringt.
+Das Zwerchfell wird durch den **Nervus phrenicus** (Zwerchfellnerv) versorgt, der aus den Nervenwurzeln C3, C4 und C5 (Halswirbelsäule) entspringt. Genau deshalb können [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung) die Zwerchfellfunktion beeinträchtigen -- eine Verbindung, die bei einem [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung) therapeutisch berücksichtigt werden muss.
 
 **Das Besondere:**
 Das Zwerchfell ist der **einzige Muskel im Körper, der sowohl willkürlich als auch unwillkürlich gesteuert wird**:

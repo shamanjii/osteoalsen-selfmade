@@ -8,12 +8,11 @@ config();
 const credPath = path.join(process.cwd(), 'credentials', 'google-search-console.json');
 const credentials = JSON.parse(fs.readFileSync(credPath, 'utf-8'));
 
-const auth = new google.auth.JWT(
-  credentials.client_email,
-  undefined,
-  credentials.private_key,
-  ['https://www.googleapis.com/auth/webmasters.readonly']
-);
+const auth = new google.auth.JWT({
+  email: credentials.client_email,
+  key: credentials.private_key,
+  scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
+});
 
 const searchconsole = google.searchconsole({ version: 'v1', auth });
 
@@ -47,7 +46,7 @@ async function getComprehensiveData() {
   console.log('-'.repeat(80));
   
   const data7 = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start7Str,
       endDate: endDateStr,
@@ -74,7 +73,7 @@ async function getComprehensiveData() {
   console.log('-'.repeat(80));
   
   const data30 = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start30Str,
       endDate: endDateStr,
@@ -101,7 +100,7 @@ async function getComprehensiveData() {
   console.log('-'.repeat(80));
   
   const data90 = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start90Str,
       endDate: endDateStr,
@@ -128,7 +127,7 @@ async function getComprehensiveData() {
   console.log('='.repeat(80));
   
   const queries30 = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start30Str,
       endDate: endDateStr,
@@ -150,7 +149,7 @@ async function getComprehensiveData() {
   console.log('='.repeat(80));
   
   const pages30 = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start30Str,
       endDate: endDateStr,
@@ -174,7 +173,7 @@ async function getComprehensiveData() {
   console.log('='.repeat(80));
   
   const devices = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start30Str,
       endDate: endDateStr,
@@ -196,7 +195,7 @@ async function getComprehensiveData() {
   console.log('='.repeat(80));
   
   const countries = await searchconsole.searchanalytics.query({
-    siteUrl: 'sc-domain:osteoalsen.de',
+    siteUrl: 'https://www.osteoalsen.de',
     requestBody: {
       startDate: start30Str,
       endDate: endDateStr,

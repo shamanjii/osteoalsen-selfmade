@@ -138,7 +138,7 @@ const faqData = [
       {
         question: "Kann Osteopathie bei Rückenschmerzen helfen?",
         answer:
-          "Ja, Osteopathie ist sehr effektiv bei Rückenschmerzen und gehört zu den häufigsten Behandlungsgründen in meiner Praxis. Ich behandle nicht nur die schmerzende Stelle, sondern suche nach den tatsächlichen Ursachen im gesamten Körper.\n\nBei akuten Rückenschmerzen (Hexenschuss, ISG-Blockade) kann oft schon nach 1-3 Behandlungen eine deutliche Besserung eintreten. Bei chronischen Beschwerden arbeite ich mit 4-6 Sitzungen.\n\nHäufige Rückenprobleme, die ich behandle: Bandscheibenvorfälle, ISG-Blockaden, Hexenschuss, chronische Verspannungen, Skoliose-Beschwerden und Facettensyndrom.\n\n<a href='/behandlungen/rueckenschmerzen' className='text-teal-600 hover:text-teal-700 underline'>→ Mehr Details und Praxisbeispiele: Rückenschmerzen-Behandlungsseite</a> | <a href='/blog/rueckenschmerzen-bandscheibenvorfall' className='text-teal-600 hover:text-teal-700 underline'>Blog: Bandscheibenvorfall behandeln</a>",
+          "Ja, Osteopathie ist sehr effektiv bei Rückenschmerzen und gehört zu den häufigsten Behandlungsgründen in meiner Praxis. Ich behandle nicht nur die schmerzende Stelle, sondern suche nach den tatsächlichen Ursachen im gesamten Körper.\n\nBei akuten Rückenschmerzen (Hexenschuss, ISG-Blockade) kann oft schon nach 1-3 Behandlungen eine deutliche Besserung eintreten. Bei chronischen Beschwerden arbeite ich mit 4-6 Sitzungen.\n\nHäufige Rückenprobleme, die ich behandle: Bandscheibenvorfälle, ISG-Blockaden, Hexenschuss, chronische Verspannungen, Skoliose-Beschwerden und Facettensyndrom.\n\n<a href='/behandlungen/rueckenschmerzen' className='text-teal-600 hover:text-teal-700 underline'>→ Mehr Details und Praxisbeispiele: Rückenschmerzen-Behandlungsseite</a> | <a href='/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg' className='text-teal-600 hover:text-teal-700 underline'>Blog: Rückenschmerzen ganzheitlich behandeln</a>",
       },
       {
         question: "Hilft Osteopathie bei Kopfschmerzen und Migräne?",
@@ -198,7 +198,7 @@ const faqData = [
       {
         question: "Wie kann ich Ihre Qualifikationen überprüfen?",
         answer:
-          "Ich bin VFO-zertifizierter Osteopath (Verband Freier Osteopathen) mit 5-jähriger berufsbegleitender Ausbildung und B.Sc. Osteopathie. Sie können meine Qualifikation im <a href='https://www.vfo.de/praktikersuche' target='_blank' rel='noopener noreferrer' className='text-teal-600 hover:text-teal-700 underline'>VFO-Verzeichnis</a> überprüfen. Mehr zu meiner Ausbildung und Philosophie finden Sie auf meiner <a href='/ueber-mich' className='text-teal-600 hover:text-teal-700 underline'>Über-mich-Seite</a>.",
+          "Ich bin VFO-zertifizierter Osteopath (Verband Freier Osteopathen) mit 5-jähriger berufsbegleitender Ausbildung und B.Sc. Osteopathie. Sie können meine Qualifikation im <a href='https://www.vfo.de' target='_blank' rel='noopener noreferrer' className='text-teal-600 hover:text-teal-700 underline'>VFO-Verzeichnis</a> überprüfen. Mehr zu meiner Ausbildung und Philosophie finden Sie auf meiner <a href='/ueber-mich' className='text-teal-600 hover:text-teal-700 underline'>Über-mich-Seite</a>.",
       },
     ],
   },

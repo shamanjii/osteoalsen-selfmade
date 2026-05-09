@@ -83,7 +83,7 @@ const treatments = [
     title: "Sportverletzungen",
     description:
       "Schnelle Regeneration und Prävention bei Sportverletzungen. Von Zerrungen über Überlastung bis zur Wettkampfvorbereitung.",
-    href: "/behandlungen/sportverletzungen",
+    href: "/behandlungen/sportosteopathie",
     keywords: ["Zerrung", "Überlastung", "Prävention", "Regeneration"],
   },
   {

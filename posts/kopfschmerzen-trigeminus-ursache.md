@@ -85,7 +85,7 @@ Wenn Ihr **Trigeminusnerv gereizt ist durch Verspannungen**, gibt es drei typisc
 
 ### 1. Trigeminusnerv gereizt durch Verspannungen im Nacken (HWS)
 
-Die obere Halswirbelsäule (C1-C3) ist über das trigeminozervikale System direkt mit dem Trigeminus verbunden. Bei chronischen Nackenverspannungen – etwa durch Büroarbeit, [Handy-Nacken](/blog/handy-nacken-text-neck-rueckgaengig) oder alte [Schleudertrauma-Verletzungen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – werden dauerhaft Signale an den Trigeminus gesendet.
+Die obere Halswirbelsäule (C1-C3) ist über das trigeminozervikale System direkt mit dem Trigeminus verbunden. Bei chronischen Nackenverspannungen – etwa durch Büroarbeit, [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung) oder alte [Schleudertrauma-Verletzungen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – werden dauerhaft Signale an den Trigeminus gesendet.
 
 **Typische Symptome:**
 - Kopfschmerz beginnt im Nacken und zieht zur Stirn
@@ -103,14 +103,14 @@ Stress führt zu unbewusstem Zähneknirschen (Bruxismus) und angespannter Kiefer
 
 ### 3. Trigeminusnerv gereizt durch HWS-Blockaden (Atlas/Axis)
 
-Blockierte obere Halswirbel (besonders C1 Atlas, C2 Axis) erzeugen mechanischen Stress, der über Nervenverbindungen Kopfschmerzen auslöst – selbst wenn der Nacken sich "normal" anfühlt.
+Blockierte obere Halswirbel (besonders C1 Atlas, C2 Axis) erzeugen mechanischen Stress, der über Nervenverbindungen Kopfschmerzen auslöst -- selbst wenn der Nacken sich "normal" anfühlt. In meinem Artikel über [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung) erkläre ich diese Mechanismen im Detail.
 
 **Typische Symptome:**
 - Einseitige Kopfschmerzen
 - Gefühl, den Kopf nicht richtig drehen zu können
-- Schwindel + Kopfschmerzen kombiniert
+- [Schwindel + Kopfschmerzen kombiniert](/blog/nackenschmerzen-schwindel-hws-vagus)
 
-**Die gute Nachricht:** Alle drei Ursachen sind osteopathisch behandelbar – ohne Medikamente, ohne OP.
+**Die gute Nachricht:** Alle drei Ursachen sind osteopathisch behandelbar -- ohne Medikamente, ohne OP.
 
 ---
 

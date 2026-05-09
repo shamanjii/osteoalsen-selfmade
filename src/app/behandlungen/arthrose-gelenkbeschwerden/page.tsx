@@ -929,7 +929,7 @@ export default function ArthrosePage() {
               </Link>
 
               <Link
-                href="/behandlungen/sportverletzungen/"
+                href="/behandlungen/sportosteopathie/"
                 className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-400 transition-all duration-300"
               >
                 <h3 className="font-semibold text-lg text-blue-600 mb-2">Sportverletzungen</h3>

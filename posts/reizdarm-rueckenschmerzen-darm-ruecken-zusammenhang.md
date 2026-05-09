@@ -69,7 +69,7 @@ Diese **Dysregulation der Darm-Hirn-Achse** ist mittlerweile wissenschaftlich gu
 
 ### Das Zwerchfell: Ihr wichtigster Atemmuskel ist auch Ihr Darm-Stabilisator
 
-Das Zwerchfell (Diaphragma) ist nicht nur für die Atmung zuständig. Es ist auch:
+Das [Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung) ist nicht nur für die Atmung zuständig. Es ist auch:
 - **Druckregulator** für Bauch- und Brustraum
 - **Stabilisator** für den gesamten Rumpf
 - **Teil des autonomen Nervensystems** (über den Phrenikus-Nerv)
@@ -254,12 +254,12 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 ### 4. Vagusnerv-Stimulation
 
-**Ziel:** Autonomes Nervensystem ausbalancieren
+**Ziel:** Autonomes Nervensystem ausbalancieren. Bei vielen Reizdarm-Patienten finde ich auch Beschwerden im Nackenbereich -- ein typisches Zeichen für ein [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung), das die Vagusnerv-Funktion zusätzlich beeinträchtigt.
 
 **Technik:**
 - Cranio-sacrale Techniken
 - Manuelle Vagusnerv-Stimulation
-- Atemübungen & Vaguston-Training
+- Atemübungen & [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) für zuhause
 
 **Effekt:**
 - ✓ Parasympathikus-Aktivierung (Entspannung)

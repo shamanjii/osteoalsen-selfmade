@@ -81,21 +81,27 @@ export function debounce<T extends (...args: unknown[]) => unknown>(
 
 /**
  * Extract FAQs from markdown content
- * Looks for patterns like "### Question?" followed by answer text
+ * Supports three formats:
+ * 1. ### Question? followed by answer text
+ * 2. **Q: "Question"** followed by A: Answer text
+ * 3. **Question?** followed by answer text (bold-only format)
  */
 export function extractFAQs(content: string): Array<{ question: string; answer: string }> {
   const faqs: Array<{ question: string; answer: string }> = []
 
   // Look for FAQ section heading
-  const faqSectionMatch = content.match(/##\s+(?:Häufige Fragen|FAQ|Frequently Asked Questions)/i)
+  const faqSectionMatch = content.match(/##\s+(?:Häufige Fragen|FAQ|Frequently Asked Questions|Häufig gestellte Fragen)/i)
   if (!faqSectionMatch) return faqs
 
-  // Get content after FAQ section
-  const faqContent = content.slice(faqSectionMatch.index!)
+  // Get content after FAQ section, stop at next ## heading (but not ###)
+  const afterFaq = content.slice(faqSectionMatch.index!)
+  const nextSectionMatch = afterFaq.slice(1).match(/\n## (?!#)/)
+  const faqContent = nextSectionMatch
+    ? afterFaq.slice(0, nextSectionMatch.index! + 1)
+    : afterFaq
 
-  // Extract Q&A pairs
-  // Pattern: ### followed by question ending with ?
-  const questionRegex = /###\s+(.+?\?)\s*\n([\s\S]*?)(?=\n###|$)/g
+  // Format 1: ### Question? followed by answer text
+  const questionRegex = /###\s+(?:\d+\.\s*)?(.+?\?)\s*\n([\s\S]*?)(?=\n###|$)/g
   let match
 
   while ((match = questionRegex.exec(faqContent)) !== null && faqs.length < 10) {
@@ -103,20 +109,61 @@ export function extractFAQs(content: string): Array<{ question: string; answer: 
     let answer = match[2].trim()
 
     // Clean up answer - remove markdown formatting
-    answer = answer
-      .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
-      .replace(/\*(.*?)\*/g, '$1') // Remove italic
-      .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Remove links (keep text)
-      .replace(/^-\s+/gm, '') // Remove list markers
-      .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-      .slice(0, 500) // Limit answer length for schema
+    answer = cleanFaqAnswer(answer)
 
     if (question && answer) {
       faqs.push({ question, answer })
     }
   }
 
+  // Format 2: **Q: "Question"** / A: Answer (used in some posts)
+  if (faqs.length === 0) {
+    const qaPairRegex = /\*\*Q:\s*[„"](.+?)[""]\*\*\s*\n\s*A:\s*([\s\S]*?)(?=\n\s*\*\*Q:|$)/g
+
+    while ((match = qaPairRegex.exec(faqContent)) !== null && faqs.length < 10) {
+      const question = match[1].trim()
+      let answer = match[2].trim()
+
+      answer = cleanFaqAnswer(answer)
+
+      if (question && answer) {
+        faqs.push({ question, answer })
+      }
+    }
+  }
+
+  // Format 3: **Question?** followed by answer on next line (bold-only format)
+  if (faqs.length === 0) {
+    const boldQuestionRegex = /\*\*(.+?\?)\*\*\s*\n\n([\s\S]*?)(?=\n\*\*[^*]+\?\*\*|$)/g
+
+    while ((match = boldQuestionRegex.exec(faqContent)) !== null && faqs.length < 10) {
+      const question = match[1].trim()
+      let answer = match[2].trim()
+
+      answer = cleanFaqAnswer(answer)
+
+      if (question && answer) {
+        faqs.push({ question, answer })
+      }
+    }
+  }
+
   return faqs
+}
+
+/** Clean markdown formatting from FAQ answer text */
+function cleanFaqAnswer(answer: string): string {
+  return answer
+    .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
+    .replace(/\*(.*?)\*/g, '$1') // Remove italic
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Remove links (keep text)
+    .replace(/^-\s+/gm, '') // Remove list markers
+    .replace(/\[\(\d+\)\]\(#quellen?\)/g, '') // Remove reference links like [(13)](#quellen)
+    .replace(/\(\d+\)/g, '') // Remove reference numbers like (13)
+    .replace(/---/g, '') // Remove horizontal rules
+    .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+    .trim()
+    .slice(0, 500) // Limit answer length for schema
 }
 
 export function validateImageUrl(url: string): boolean {

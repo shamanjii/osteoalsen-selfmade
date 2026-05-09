@@ -82,11 +82,11 @@ Viszerale Osteopathie basiert auf fundierten anatomischen und physiologischen Ke
 
 1. **Organe sind durch Bindegewebe verbunden:** Faszien, Bänder und das Peritoneum (Bauchfell) bilden ein zusammenhängendes Netzwerk, das alle Organe miteinander verbindet.
 
-2. **Organmobilität ist messbar:** Moderne Ultraschallstudien haben die Beweglichkeit innerer Organe präzise dokumentiert. So bewegt sich beispielsweise das Zwerchfell bei gesunden Erwachsenen während normaler Atmung etwa 1,8 cm, bei maximaler Atmung sogar 5,7-7 cm – messbar über die Leberbewegung als anatomisches Fenster [3]. Diese objektiven Messungen bestätigen, dass Organbeweglichkeit kein theoretisches Konzept ist, sondern eine physiologische Realität.
+2. **Organmobilität ist messbar:** Moderne Ultraschallstudien haben die Beweglichkeit innerer Organe präzise dokumentiert. So bewegt sich beispielsweise das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) bei gesunden Erwachsenen während normaler Atmung etwa 1,8 cm, bei maximaler Atmung sogar 5,7-7 cm -- messbar über die Leberbewegung als anatomisches Fenster [3]. Diese objektiven Messungen bestätigen, dass Organbeweglichkeit kein theoretisches Konzept ist, sondern eine physiologische Realität.
 
 3. **Bewegung ist essentiell für Funktion:** Wie Gelenke brauchen auch Organe Bewegung für optimale Durchblutung, Lymphdrainage und Nervenfunktion. Stagnation führt zu Dysfunktion.
 
-4. **Nervenverbindungen:** Jedes Organ ist über das autonome Nervensystem (Sympathikus und Parasympathikus) mit Wirbelsäule und Gehirn verbunden. Störungen können sich in beide Richtungen auswirken.
+4. **Nervenverbindungen:** Jedes Organ ist über das autonome Nervensystem (Sympathikus und Parasympathikus) mit Wirbelsäule und Gehirn verbunden. Besonders der [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen) spielt als größter parasympathischer Nerv eine Schlüsselrolle bei der Steuerung der Organfunktionen. Störungen können sich in beide Richtungen auswirken.
 
 Im nächsten Abschnitt schauen wir uns an, wie diese faszinierende Behandlungsmethode entwickelt wurde und wer die treibende Kraft dahinter war.
 

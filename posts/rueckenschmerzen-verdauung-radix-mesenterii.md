@@ -105,7 +105,7 @@ Wenn Druck auf den Bauch (z.B. rechter Unterbauch bei Colon) Rückenschmerzen au
 
 ### Verbindung 3: Zwerchfell-Spannung
 
-Das **Zwerchfell (Diaphragma)** - Hauptatemmuskel - ist über Faszien mit:
+Das **[Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung)** - Hauptatemmuskel - ist über Faszien mit:
 - Der Lendenwirbelsäule verbunden (Zwerchfellschenkel/Crus-Ansätze an L1-L3)
 - Dem Magen, Leber und Dickdarm (Colon) verbunden
 
@@ -181,7 +181,7 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 - **Becken-Korrektur:** Optimiert [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis)-Beweglichkeit (ISG)
 
 **Kraniosakrale Techniken:**
-- **Parasympathikus-Aktivierung (Nervus vagus-Stimulation):** Beruhigt das Nervensystem (ANS) → verbessert Verdauung [(12)](#quellen)
+- **Parasympathikus-Aktivierung (Nervus vagus-Stimulation):** Beruhigt das Nervensystem (ANS) → verbessert Verdauung [(12)](#quellen). Gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) können diesen Effekt auch zwischen den Behandlungen unterstützen.
 
 **Das Besondere:** Viszerale Osteopathie ist **sanft** – keine schmerzhaften Manipulationen, nur präzise Griffe.
 

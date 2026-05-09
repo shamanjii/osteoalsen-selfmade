@@ -181,6 +181,7 @@ Stehen Sie an eine Wand. Berühren Hinterkopf, Schultern UND Gesäß die Wand gl
 **Zusätzlich:**
 - Nächtliches [Zähneknirschen (Bruxismus)](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) → Kiefergelenk → HWS-Blockierung
 - Flache Atmung → weniger Sauerstoff → verkrampfte Muskulatur
+- Dysregulation des Parasympathikus -- gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) können helfen, den Stressmodus zu durchbrechen
 
 <!-- SEO OPTIMIZATION: Added 250 words on stress-breath-neck connection -->
 **Der unterschätzte Zusammenhang: Stress, Atmung und HWS-Blockierung**

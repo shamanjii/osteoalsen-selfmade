@@ -195,7 +195,7 @@ export default function RueckenschmerzenPage() {
                 <li>Wirbelgelenkarthrose (Facettensyndrom)</li>
                 <li>Skoliose oder andere Fehlstellungen der Wirbelsäule</li>
                 <li>Muskelverspannungen nach{" "}
-                  <Link href="/behandlungen/sportverletzungen/" className="text-blue-600 hover:text-blue-800 font-medium">
+                  <Link href="/behandlungen/sportosteopathie/" className="text-blue-600 hover:text-blue-800 font-medium">
                     Sportverletzungen
                   </Link>{" "}oder Übertraining
                 </li>
@@ -832,7 +832,7 @@ export default function RueckenschmerzenPage() {
                 </p>
               </Link>
               <Link
-                href="/behandlungen/sportverletzungen/"
+                href="/behandlungen/sportosteopathie/"
                 className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-slate-900 mb-2">

@@ -7,15 +7,15 @@ import FAQSchema from '@/components/FAQSchema';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nackenschmerzen & HWS-Blockade lösen | Osteopathie',
-  description: 'HWS-Blockaden sanft lösen ✓ Nackenschmerzen behandeln ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!',
+  title: 'Nackenschmerzen Osteopathie Hamburg | HWS-Blockade lösen',
+  description: 'Nackenschmerzen & HWS-Blockaden osteopathisch behandeln in Hamburg. Sanfte Techniken, schnelle Termine. Jetzt unverbindlich Termin vereinbaren!',
   keywords: ['hws blockade lösen osteopathie', 'Nackenschmerzen Osteopathie Hamburg', 'HWS-Syndrom Behandlung', 'Nackenverspannung Osteopath', 'Schulter-Nacken-Schmerzen Hamburg', 'hws osteopathie', 'halswirbel osteopathie'],
   alternates: {
     canonical: '/behandlungen/nackenschmerzen/',
   },
   openGraph: {
-    title: 'Nackenschmerzen & HWS-Blockade lösen Hamburg | Osteopathie',
-    description: 'HWS-Blockaden sanft lösen ✓ Nackenschmerzen & Verspannungen behandeln ✓ Kopfschmerzen lindern ✓ VFO-Osteopath Hamburg Rotherbaum ✓ Termine binnen 48h',
+    title: 'Nackenschmerzen Osteopathie Hamburg | HWS-Blockade lösen',
+    description: 'Nackenschmerzen & HWS-Blockaden osteopathisch behandeln in Hamburg. Sanfte Techniken, schnelle Termine. Jetzt unverbindlich Termin vereinbaren!',
     url: 'https://www.osteoalsen.de/behandlungen/nackenschmerzen',
     type: 'article',
   },

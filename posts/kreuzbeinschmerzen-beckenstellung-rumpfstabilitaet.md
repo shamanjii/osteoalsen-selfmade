@@ -144,7 +144,7 @@ Früher hockten Menschen täglich – zum Essen, Arbeiten, Ausruhen. In Kulturen
 **Anfänger-Variante:**
 1. Halten Sie sich an einem Türrahmen oder Tischbein fest
 2. Gehen Sie so tief wie möglich in die Hocke
-3. Fersen dürfen zunächst erhöht sein (gefaltetes Handtuch unterlegen)
+3. Fersen dürfen zunächst erhöht sein (gefaltetes Handtuch unterlegen), wenn möglich Fersen aufsetzen
 4. **Entspannt halten – nicht pressen.** Ein runder Rücken ist hier erlaubt und gewollt.
 
 **Steigerung:**
