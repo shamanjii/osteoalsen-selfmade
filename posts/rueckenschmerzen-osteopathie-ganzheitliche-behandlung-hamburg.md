@@ -30,7 +30,7 @@ sourceCount: 31
 
 **"Ich habe seit 3 Jahren Rückenschmerzen. MRT unauffällig. Mein Orthopäde sagt: 'Alles in Ordnung, machen Sie Rückentraining.' Aber der Schmerz bleibt. Warum hilft nichts?"**
 
-Diese Frage höre ich fast täglich in meiner Praxis in Hamburg. Und die Antwort überrascht die meisten: **Ihr Rücken ist nicht das Problem – er ist das Opfer.**
+Diese Frage höre ich regelmäßig in meiner Praxis in Hamburg. Und die Antwort überrascht die meisten: **Ihr Rücken ist nicht das Problem – er ist das Opfer.**
 
 In Deutschland leiden **über 60% der Erwachsenen** mindestens einmal pro Jahr unter Rückenschmerzen. In Hamburg lag die 1-Jahres-Prävalenz 2022 bei **27% der Bevölkerung** – ein Wert, der das städtische Profil (viel Sitzen, Pendelzeit, Stress) widerspiegelt.
 

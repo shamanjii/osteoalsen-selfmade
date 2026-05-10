@@ -589,9 +589,6 @@ Osteopathie Alsen – Praxis für Osteopathie Hamburg
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung Schulterschmerzen:**
-Ganzheitliche Schulter-Behandlung mit Fokus auf BWS-/Rippen-Mobilisierung. Ursachenorientierte Therapie bei Frozen Shoulder, Impingement und Rotatorenmanschetten-Problemen. Komplementär zu Orthopädie & Physiotherapie.
-
 ---
 
 ### Quellen

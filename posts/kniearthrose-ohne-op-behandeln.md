@@ -504,9 +504,6 @@ Kniearthrose – und Sie wollen die **OP vermeiden** oder zumindest hinauszöger
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung Kniearthrose:**
-Biomechanische Analyse mit Gang-Videoanalyse. Fokus auf OP-Vermeidung durch ursachenorientierte Behandlung (Hüfte, Becken, Muskulatur). Komplementär zu Orthopädie & Physiotherapie.
-
 ---
 
 ## Weitere Artikel zum Thema

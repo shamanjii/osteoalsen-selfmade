@@ -453,25 +453,6 @@ export default function StressBurnoutPage() {
           
 
           
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
-                Praxisbeispiel: Von chronischem Stress zu mehr Balance
-              </h2>
-              <div className="bg-slate-50 border-2 border-slate-300 rounded-xl p-8">
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Julia, 34, Projektmanagerin:</strong> "Ich kam mit massiven Schlafstörungen, Nackenverspannungen und Magenproblemen. Mein Arzt hatte bereits Reizdarm diagnostiziert. Ich war ständig gereizt, hatte Konzentrationsprobleme und fühlte mich völlig erschöpft."
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Befund:</strong> Deutlich erhöhter Sympathikotonus, Zwerchfellhochstand (flache Atmung), massive Verspannungen im Nacken und Solarplexusbereich, Blockaden im oberen Brustbereich. Klassisches Bild chronischer Stressbelastung in Phase 2.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Behandlung:</strong> 7 Sitzungen über 3 Monate. Schwerpunkt auf craniosacraler Osteopathie, Vagusnerv-Stimulation, Zwerchfellarbeit und viszeraler Behandlung des Verdauungstrakts. Dazu Atemübungen für zuhause und Empfehlung für Stressmanagement-Kurs.
-                </p>
-                <p className="text-slate-700 leading-relaxed font-medium">
-                  <strong>Ergebnis:</strong> Nach 3 Behandlungen deutlich besserer Schlaf. Nach 7 Sitzungen: Magenprobleme zu 90% verschwunden, Nackenverspannungen deutlich reduziert, mehr innere Ruhe im Alltag. Julia kommt jetzt alle 4-6 Wochen zur Erhaltung und hat zusätzlich eine Psychotherapie begonnen, um langfristige Verhaltensänderungen zu etablieren.
-                </p>
-              </div>
-            </section>
           
 
           

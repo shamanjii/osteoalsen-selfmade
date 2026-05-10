@@ -22,7 +22,7 @@ alt: "CMD Nackenschmerzen Osteopathie Hamburg: Kiefergelenk-HWS-Zusammenhang beh
 
 **Die lange Antwort:** Ihr Kiefergelenk (Temporomandibulargelenk, TMJ) und Ihre Halswirbelsäule (HWS) sind biomechanisch **und** neurologisch so eng verbunden, dass eine Störung im einen System **zwangsläufig** das andere beeinflusst.
 
-In meiner Praxis in Hamburg behandle ich täglich Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen), bei denen die eigentliche Ursache im Kiefer liegt. Die Herausforderung: **95% werden niemals auf CMD (Craniomandibuläre Dysfunktion) untersucht.**
+In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen), bei denen die eigentliche Ursache im Kiefer liegt. Die Herausforderung: **95% werden niemals auf CMD (Craniomandibuläre Dysfunktion) untersucht.**
 
 ## Was ist CMD? (und warum Ihr Orthopäde es nicht findet)
 

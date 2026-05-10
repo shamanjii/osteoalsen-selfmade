@@ -133,7 +133,7 @@ export default function RueckenschmerzenPage() {
                 In meiner{" "}
                 <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
                   osteopathischen Praxis in Hamburg
-                </Link>{" "}behandle ich täglich
+                </Link>{" "}behandle ich regelmäßig
                 Menschen mit verschiedensten Formen von Rückenschmerzen:
               </p>
               <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
@@ -382,19 +382,6 @@ export default function RueckenschmerzenPage() {
                 unklaren Beschwerden sollte vorher ein Arzt konsultiert werden.
               </p>
 
-              {/* Patient Example */}
-              <div className="mt-6 p-6 bg-white border-l-4 border-slate-900 rounded-r-lg">
-                <p className="text-sm text-slate-600 italic mb-2">Praxisbeispiel aus meiner Praxis in Hamburg:</p>
-                <p className="text-slate-700 leading-relaxed">
-                  Ein 42-jähriger Patient kam mit chronischen Rückenschmerzen seit über 6 Monaten zu mir.
-                  Vorherige Behandlungen (Physiotherapie, Schmerzmittel) hatten nur kurzfristig geholfen.
-                  Bei der Untersuchung fand ich eine ISG-Blockade rechts, ausgelöst durch eine alte
-                  Sprunggelenksverletzung, die zu einem veränderten Gangbild geführt hatte. Nach 5
-                  osteopathischen Behandlungen, bei denen ich sowohl das ISG als auch das Sprunggelenk und
-                  die Faszien behandelte, war er weitgehend schmerzfrei. Ergänzend machte er die
-                  empfohlenen Stabilisationsübungen zu Hause.
-                </p>
-              </div>
             </div>
           </section>
           

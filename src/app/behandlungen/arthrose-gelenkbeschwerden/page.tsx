@@ -162,7 +162,7 @@ export default function ArthrosePage() {
               </p>
 
               <p>
-                Als Osteopath in Hamburg sehe ich täglich, wie Arthrose und Gelenkbeschwerden das Leben meiner Patienten einschränken – aber
+                Als Osteopath in Hamburg sehe ich regelmäßig, wie Arthrose und Gelenkbeschwerden das Leben meiner Patienten einschränken – aber
                 auch, wie deutlich ihre Lebensqualität durch eine ganzheitliche osteopathische Behandlung verbessert werden kann.
                 Mein Ansatz geht über die reine Symptombehandlung hinaus: Ich schaue auf den ganzen Menschen, die Ursachen der
                 Fehlbelastungen und die kompensatorischen Muster, die sich über Jahre entwickelt haben.
@@ -668,54 +668,6 @@ export default function ArthrosePage() {
           </section>
         
 
-        {/* Praxisbeispiel */}
-        
-          <section>
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-xl border border-amber-200">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                📖 Aus meiner Praxis: Helgas Weg zurück zur Mobilität
-              </h2>
-
-              <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-                <p>
-                  <strong>Patientin:</strong> Helga, 68 Jahre, pensionierte Lehrerin aus Hamburg-Eimsbüttel<br />
-                  <strong>Diagnose:</strong> Fortgeschrittene Kniearthrose beidseits (Gonarthrose Grad 3), rechts stärker betroffen<br />
-                  <strong>Beschwerden:</strong> Seit 4 Jahren zunehmende Knieschmerzen, besonders beim Treppensteigen und nach längerem
-                  Gehen. Gehstrecke auf ca. 500 Meter reduziert, danach starke Schmerzen und Schwellung. Morgendliche Steifigkeit
-                  bis zu 45 Minuten. Orthopäde empfahl Kniegelenksersatz (TEP) für das rechte Knie.
-                </p>
-
-                <p>
-                  <strong>Befund:</strong> Bei der osteopathischen Untersuchung fiel mir auf: deutliche O-Bein-Fehlstellung rechts,
-                  Beckenschiefstand mit Beckenverwringung, verkürzte Hüftbeugemuskulatur beidseits, massive Verspannungen der
-                  Oberschenkelmuskulatur, eingeschränkte Kniebeugung rechts (nur 90°), Fußgewölbeabsenkung (Plattfuß) rechts.
-                  Das Knie war also nicht das einzige Problem – die gesamte Beinstatik war gestört.
-                </p>
-
-                <p>
-                  <strong>Behandlung:</strong> Helga kam über 4 Monate 8 Mal zu mir. Ich behandelte nicht nur die Knie, sondern
-                  korrigierte die Beckenstellung, mobilisierte die Hüften, löste die Verspannungen in der Oberschenkelmuskulatur,
-                  behandelte die Füße und Sprunggelenke und zeigte ihr gezielte Übungen zur Kräftigung der Kniemuskulatur. Zusätzlich
-                  empfahl ich orthopädische Einlagen zur Korrektur der Fußstellung.
-                </p>
-
-                <p>
-                  <strong>Ergebnis:</strong> Nach 8 Sitzungen berichtete Helga von etwa 50% weniger Schmerzen. Ihre Gehstrecke
-                  hatte sich auf über 2 Kilometer erweitert, die morgendliche Steifigkeit war auf 10-15 Minuten reduziert,
-                  Treppensteigen war wieder ohne Geländer möglich, und sie konnte wieder mit ihren Enkeln spazieren gehen. Die
-                  geplante Operation verschob sie zunächst – "solange es so gut geht, möchte ich es ohne versuchen", sagte sie.
-                  Helga kommt nun alle 6-8 Wochen zu Erhaltungsbehandlungen und macht konsequent ihre Übungen. Ihre Lebensqualität
-                  hat sich erheblich verbessert.
-                </p>
-
-                <p className="italic text-gray-600 border-l-4 border-amber-400 pl-4">
-                  "Ich hätte nie gedacht, dass ich in meinem Alter noch so viel Verbesserung erleben würde. Die Behandlungen
-                  haben mir nicht nur geholfen, wieder mobiler zu werden, sondern mir auch gezeigt, dass ich selbst viel für
-                  meine Gelenke tun kann. Ich fühle mich nicht mehr so ausgeliefert." – Helga M.
-                </p>
-              </div>
-            </div>
-          </section>
         
 
         {/* Selbsthilfe & Prävention */}

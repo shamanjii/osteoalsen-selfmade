@@ -450,28 +450,6 @@ export default function VerdauungPage() {
           
 
           
-            <section className="mb-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-200">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
-                Praxisbeispiel: Von Reizdarm zur Lebensqualität
-              </h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="text-slate-700 leading-relaxed mb-4 italic">
-                  Michael, 42 Jahre, Marketing Manager aus Hamburg, litt seit über 3 Jahren unter klassischen Reizdarmsymptomen: krampfartige Bauchschmerzen besonders nach Mahlzeiten, ständige Blähungen, wechselnde Stuhlkonsistenz (mal Durchfall, mal Verstopfung) und ein anhaltendes Völlegefühl. Die Beschwerden verstärkten sich in stressigen Arbeitsphasen deutlich.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  Sein Leidensweg war typisch: mehrere Hausarztbesuche, zwei Magen-Darm-Spiegelungen (beide unauffällig), Ultraschall, Bluttests, Atemtests für Intoleranzen. Die Diagnose: Reizdarmsyndrom vom gemischten Typ (IBS-M). Er probierte verschiedene Medikamente (krampflösende Mittel, Probiotika) und Low-FODMAP-Diät mit nur mäßigem Erfolg. Der Leidensdruck war hoch, er mied zunehmend soziale Aktivitäten aus Angst vor plötzlichen Beschwerden.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  In meiner Praxis führte ich zunächst eine gründliche Anamnese und Untersuchung durch. Dabei fielen mir ausgeprägte Spannungen im gesamten Bauchraum auf, ein verhärteter Solarplexus, eingeschränkte Zwerchfellatmung und eine druckschmerzhafte Dickdarm-Mobilität. Auch seine Körperhaltung zeigte deutliche Stressmuster: hochgezogene Schultern, flache Atmung, angespannter Nacken.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  Der Behandlungsplan umfasste 6 Sitzungen über 3 Monate (anfangs wöchentlich, später alle 2-3 Wochen). Ich kombinierte viszerale Techniken (Darm-Mobilisation, Zwerchfellarbeit, Solarplexus-Entspannung, Vagusnerv-Stimulation) mit parietalen Techniken für Wirbelsäule und Becken. Begleitend empfahl ich Atemübungen, Stressmanagement und Fortführung der angepassten Ernährung.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-6">
-                  Das Ergebnis: Bereits nach der 3. Sitzung berichtete Michael von spürbarer Besserung. Nach Abschluss der 6 Behandlungen schätzte er seine Symptomreduktion auf 60-70%. Die Bauchschmerzen traten seltener und weniger intensiv auf, die Blähungen nahmen deutlich ab, und sein Stuhlgang normalisierte sich weitgehend. Besonders wichtig für ihn: Er fühlte sich nicht mehr von seinen Darmbeschwerden dominiert und konnte wieder entspannter am sozialen Leben teilnehmen. Er vereinbart nun alle 6-8 Wochen einen Präventivtermin, um das erreichte Niveau zu halten.
-                </p>
-              </div>
-            </section>
           
 
           

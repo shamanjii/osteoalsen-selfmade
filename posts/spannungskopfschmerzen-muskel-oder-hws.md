@@ -20,7 +20,7 @@ alt: "Spannungskopfschmerzen Osteopathie Hamburg: HWS-Blockierung Atlas C2 behan
 
 **Die Antwort:** Weil 60% der "Spannungskopfschmerzen" KEINE muskuläre Ursache haben – sondern eine **HWS-Blockierung**, meist C2 (Axis).
 
-In meiner Praxis in Hamburg sehe ich täglich Patienten mit der Diagnose "Spannungskopfschmerz". Nach osteopathischer Untersuchung zeigt sich: Bei den meisten ist **nicht der Muskel das Problem**, sondern die Gelenke der oberen Halswirbelsäule.
+In meiner Praxis in Hamburg sehe ich regelmäßig Patienten mit der Diagnose "Spannungskopfschmerz". Nach osteopathischer Untersuchung zeigt sich: Bei den meisten ist **nicht der Muskel das Problem**, sondern die Gelenke der oberen Halswirbelsäule.
 
 ## Was sind Spannungskopfschmerzen? (IHS-Kriterien)
 

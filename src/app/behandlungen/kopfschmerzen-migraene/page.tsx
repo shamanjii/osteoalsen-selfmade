@@ -582,25 +582,6 @@ export default function KopfschmerzenPage() {
           
 
           
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 font-epilogue">
-                Praxisbeispiel: Von chronischer Migräne zu mehr Lebensqualität
-              </h2>
-              <div className="bg-slate-50 border-2 border-slate-300 rounded-xl p-8">
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Sarah, 38, Marketing-Managerin:</strong> "Ich litt seit Jahren unter Migräne – etwa 8-10 Tage im Monat war ich praktisch arbeitsunfähig. Die Attacken kamen oft am Wochenende (Wochenend-Migräne) oder wenn ich gestresst war. Ich habe alles probiert: Schmerzmittel, Prophylaxe-Medikamente, Akupunktur. Nichts half dauerhaft."
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Befund:</strong> Bei der Untersuchung fand ich massive Verspannungen im Nacken-Schulter-Bereich, Blockaden in der oberen Halswirbelsäule (C1/C2) und ein angespanntes Zwerchfell (flache Atmung durch chronischen Stress). Ihr Kiefergelenk war ebenfalls verspannt – sie knirschte nachts mit den Zähnen. Zusätzlich zeigte sich eine eingeschränkte Beweglichkeit der Schädelbasis. Typisches Bild einer Migräne mit starken muskuloskelettalen Triggern.
-                </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  <strong>Behandlung:</strong> 6 Sitzungen über 3 Monate. Schwerpunkt auf craniosacraler Osteopathie (Schädelbasis, Suturen), HWS-Mobilisation, Faszienarbeit im Nacken-Schulter-Bereich, Kiefergelenk-Behandlung und Vagusnerv-Stimulation. Zusätzlich erhielt Sarah eine Aufbissschiene vom Zahnarzt (gegen das nächtliche Zähneknirschen) und lernte Atemübungen zur Stressreduktion. Sie führte ein Migräne-Tagebuch, um Trigger zu identifizieren.
-                </p>
-                <p className="text-slate-700 leading-relaxed font-medium">
-                  <strong>Ergebnis:</strong> Nach 3 Behandlungen erste deutliche Besserung – Migräne-Tage reduzierten sich auf 5-6 pro Monat. Nach Abschluss der 6 Sitzungen: nur noch 2-3 Migräne-Tage pro Monat, und die Attacken waren kürzer und weniger intensiv. Sarah konnte ihre Schmerzmittel-Einnahme um 70% reduzieren. Sie kommt jetzt alle 6 Wochen zur Erhaltungsbehandlung und hat gelernt, ihre Trigger (vor allem Stress und Schlafmangel) besser zu managen. Ihre Lebensqualität hat sich deutlich verbessert – sie kann wieder planen und ist nicht mehr ständig in Angst vor der nächsten Attacke.
-                </p>
-              </div>
-            </section>
           
 
           

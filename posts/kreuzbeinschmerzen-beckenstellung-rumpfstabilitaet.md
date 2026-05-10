@@ -237,8 +237,6 @@ Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung:** Beckenfehlstellungen und ihre Folgen sind einer meiner Schwerpunkte. Ich behandle die Ursache – nicht nur den Schmerz.
-
 ---
 
 ## Weitere Artikel zum Thema

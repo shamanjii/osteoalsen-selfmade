@@ -19,7 +19,7 @@ author: "Admin"
 ---
 # HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)
 
-**Sie wachen morgens auf – der Nacken ist steif wie ein Brett. Sie können den Kopf kaum zur Seite drehen. Massage hilft für 2 Tage, dann ist alles wieder beim Alten. Sie fragen sich: Warum geht das nicht weg? Die Antwort: 85% aller chronischen Nackenverspannungen haben eine HWS-Blockierung als Ursache – meist im Atlas (C1) oder Axis (C2). In meiner Praxis in Hamburg behandle ich täglich Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen). Der Unterschied zwischen 2 Tagen und 2 Monaten Schmerzfreiheit? Die Blockierung lösen, nicht nur den Muskel lockern.**
+**Sie wachen morgens auf – der Nacken ist steif wie ein Brett. Sie können den Kopf kaum zur Seite drehen. Massage hilft für 2 Tage, dann ist alles wieder beim Alten. Sie fragen sich: Warum geht das nicht weg? Die Antwort: 85% aller chronischen Nackenverspannungen haben eine HWS-Blockierung als Ursache – meist im Atlas (C1) oder Axis (C2). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen). Der Unterschied zwischen 2 Tagen und 2 Monaten Schmerzfreiheit? Die Blockierung lösen, nicht nur den Muskel lockern.**
 
 ---
 
@@ -188,7 +188,7 @@ Stehen Sie an eine Wand. Berühren Hinterkopf, Schultern UND Gesäß die Wand gl
 
 Was die wenigsten wissen: Chronischer Stress verursacht nicht nur muskuläre Verspannungen im Nacken, sondern hat auch einen direkten Einfluss auf Ihre Atmung und das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung). Bei dauerhafter Anspannung atmen wir flacher und nutzen hauptsächlich die Atemhilfsmuskeln im Nacken statt des Zwerchfells. Das Resultat: Die oberen Trapezmuskeln arbeiten permanent als Atemhilfsmuskulatur, was zu chronischer Überlastung führt.
 
-In meiner Praxis sehe ich täglich den Teufelskreis: [Stress und Burnout](/behandlungen/stress-burnout) führen zu flacher Brustatmung, diese überlastet die Nackenmuskulatur, die entstehende HWS-Blockierung wiederum verschlechtert die Atmung durch eingeschränkte Beweglichkeit der oberen Rippen. Diese viszerale Komponente – also der Zusammenhang zwischen Organsystemen und Bewegungsapparat – wird in der [viszeralen Osteopathie](/blog/viszerale-osteopathie) gezielt behandelt.
+In meiner Praxis sehe ich regelmäßig den Teufelskreis: [Stress und Burnout](/behandlungen/stress-burnout) führen zu flacher Brustatmung, diese überlastet die Nackenmuskulatur, die entstehende HWS-Blockierung wiederum verschlechtert die Atmung durch eingeschränkte Beweglichkeit der oberen Rippen. Diese viszerale Komponente – also der Zusammenhang zwischen Organsystemen und Bewegungsapparat – wird in der [viszeralen Osteopathie](/blog/viszerale-osteopathie) gezielt behandelt.
 
 Besonders interessant: Viele Patienten mit chronischen Nackenverspannungen berichten auch über Verdauungsprobleme oder Rückenschmerzen. Hier zeigt sich der [Zusammenhang zwischen Darm und Rücken](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) besonders deutlich. Das Zwerchfell ist nicht nur unser Hauptatemmuskel, sondern hat auch direkte anatomische Verbindungen zur Lendenwirbelsäule und beeinflusst durch seinen Verlauf entlang der HWS die Nackenstabilität.
 
@@ -418,7 +418,7 @@ Eine "gelöste" Blockierung kann wiederkommen, wenn die Muskulatur sie nicht sta
 2. **Schreibtisch-Ergonomie** prüfen (Monitor-Höhe!)
 3. **Termin** zur osteopathischen Untersuchung buchen
 
-In meiner Praxis in Hamburg behandle ich täglich [Nackenschmerzen](/behandlungen/nackenschmerzen). Die erste Sitzung dauert 60 Minuten und beinhaltet:
+In meiner Praxis in Hamburg behandle ich regelmäßig [Nackenschmerzen](/behandlungen/nackenschmerzen). Die erste Sitzung dauert 60 Minuten und beinhaltet:
 - Ausführliche Anamnese (Vorgeschichte, Unfälle, Arbeitsplatz)
 - Strukturelle Untersuchung (HWS, Atlas, Schultern, [Kiefergelenk](/behandlungen/kopfschmerzen-migraene))
 - Bewegungstests (Rotation, Neigung, Flexion/Extension)

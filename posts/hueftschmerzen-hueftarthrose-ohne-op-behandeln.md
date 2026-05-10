@@ -663,9 +663,6 @@ Osteopathie Alsen – Praxis für Osteopathie Hamburg
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung Hüftschmerzen:**
-Ganzheitliche Hüft-Behandlung mit Fokus auf Becken-/ISG-/LWS-Mobilisierung. Ursachenorientierte Therapie bei Hüftarthrose, Impingement und Piriformis-Syndrom. Komplementär zu Orthopädie & Physiotherapie. Ziel: OP-Vermeidung durch biomechanische Optimierung.
-
 ---
 
 ### Quellen

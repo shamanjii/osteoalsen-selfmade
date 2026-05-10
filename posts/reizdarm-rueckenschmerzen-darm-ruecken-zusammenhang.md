@@ -14,7 +14,7 @@ alt: "Frau mit seitlichen Bauchschmerzen und Rückenschmerzen"
 
 **„Ich habe ständig Rückenschmerzen – aber mein Orthopäde findet nichts. Könnte das mit meinem Reizdarm zusammenhängen?"**
 
-Diese Frage höre ich in meiner Praxis fast täglich. Und die Antwort ist eindeutig: **Ja.** Der Zusammenhang zwischen Reizdarm und Rückenschmerzen ist nicht nur real, sondern wird massiv unterschätzt.
+Diese Frage höre ich in meiner Praxis regelmäßig. Und die Antwort ist eindeutig: **Ja.** Der Zusammenhang zwischen Reizdarm und Rückenschmerzen ist nicht nur real, sondern wird massiv unterschätzt.
 
 Wenn Sie unter Reizdarmsyndrom (IBS) leiden und gleichzeitig chronische Rückenschmerzen haben, sind Sie nicht allein: **Studien zeigen, dass 50-80% der Reizdarm-Patienten auch Rückenschmerzen haben** – deutlich mehr als in der Allgemeinbevölkerung.
 
@@ -441,7 +441,7 @@ Die Verbindung läuft über:
 
 **Dann könnte osteopathische Behandlung der Schlüssel sein.**
 
-Als Osteopath in Hamburg behandle ich täglich Patienten mit diesem Beschwerdebild – und sehe regelmäßig deutliche Verbesserungen, wenn wir **ganzheitlich** vorgehen.
+Als Osteopath in Hamburg behandle ich regelmäßig Patienten mit diesem Beschwerdebild – und sehe regelmäßig deutliche Verbesserungen, wenn wir **ganzheitlich** vorgehen.
 
 ---
 

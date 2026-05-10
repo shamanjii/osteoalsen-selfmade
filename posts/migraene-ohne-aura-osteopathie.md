@@ -20,7 +20,7 @@ alt: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-A
 
 **Die Antwort:** Ja – aber Sie müssen verstehen, **warum** Sie Migräne haben, nicht nur die Attacke stoppen.
 
-In meiner Praxis in Hamburg behandle ich täglich Patienten mit chronischer Migräne. **60% haben eine strukturelle Ursache** in der Halswirbelsäule (HWS), die kein Schmerzmittel behebt. Der Unterschied: Nicht die Attacke unterdrücken, sondern die **Trigger-Schwelle erhöhen**.
+In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischer Migräne. **60% haben eine strukturelle Ursache** in der Halswirbelsäule (HWS), die kein Schmerzmittel behebt. Der Unterschied: Nicht die Attacke unterdrücken, sondern die **Trigger-Schwelle erhöhen**.
 
 ## Was ist Migräne ohne Aura? (Und was macht sie anders als Kopfschmerz?)
 

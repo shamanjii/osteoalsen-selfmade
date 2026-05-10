@@ -586,9 +586,6 @@ Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung Burnout:**
-Ganzheitliche Behandlung mit Fokus auf kraniosakraler Osteopathie & Nervensystem-Regulation. Komplementär zu Psychotherapie & Psychiatrie.
-
 ---
 
 ## Weitere Artikel zum Thema

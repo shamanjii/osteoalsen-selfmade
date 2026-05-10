@@ -19,7 +19,7 @@ author: "Admin"
 
 > 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf ISG-Blockierungen (Iliosakralgelenk). Für einen kompletten Guide zu allen Rückenschmerz-Ursachen siehe: [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg)
 
-**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Antwort: 80% aller ISG-Blockierungen kommen zurück[^12], weil nur das Symptom (Blockierung) behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich täglich Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
+**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Antwort: 80% aller ISG-Blockierungen kommen zurück[^12], weil nur das Symptom (Blockierung) behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
 
 ---
 
@@ -676,8 +676,6 @@ Ihre ISG-Blockierung kommt immer wieder? **Es liegt nicht daran, dass Sie "anfä
 Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
-
-**Spezialisierung:** Chronische ISG-Probleme sind einer meiner Schwerpunkte. Ich behandle die Ursache, nicht nur das Symptom.
 
 ---
 

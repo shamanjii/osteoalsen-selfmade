@@ -22,7 +22,7 @@ author: "Admin"
 
 # HWS-Syndrom: Symptome erkennen, Ursachen verstehen, richtig behandeln
 
-**Der Nacken schmerzt. Der Kopf dröhnt. Die Schulter zieht. Die Finger kribbeln. Beim Arzt heißt es: "HWS-Syndrom." Aber was bedeutet das eigentlich? Das HWS-Syndrom ist keine einzelne Krankheit, sondern ein Sammelbegriff für verschiedene Beschwerden der Halswirbelsäule. In meiner Praxis in Hamburg sehe ich täglich Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen), bei denen "HWS-Syndrom" im Befund steht -- aber niemand hat ihnen erklärt, was genau das bedeutet und was sie dagegen tun können. Dieser Artikel gibt Ihnen Klarheit.**
+**Der Nacken schmerzt. Der Kopf dröhnt. Die Schulter zieht. Die Finger kribbeln. Beim Arzt heißt es: "HWS-Syndrom." Aber was bedeutet das eigentlich? Das HWS-Syndrom ist keine einzelne Krankheit, sondern ein Sammelbegriff für verschiedene Beschwerden der Halswirbelsäule. In meiner Praxis in Hamburg sehe ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen), bei denen "HWS-Syndrom" im Befund steht -- aber niemand hat ihnen erklärt, was genau das bedeutet und was sie dagegen tun können. Dieser Artikel gibt Ihnen Klarheit.**
 
 ---
 
@@ -521,7 +521,7 @@ In meiner Praxis behandle ich das HWS-Syndrom nicht nur dort, wo es wehtut, sond
 3. **Übungen starten:** Kinn-Tucks und Schulterblatt-Squeeze (siehe oben)
 4. **Termin vereinbaren:** Wenn keine Besserung nach 2 Wochen eintritt
 
-In meiner Praxis in Hamburg behandle ich täglich Patienten mit HWS-Syndrom. Die erste Sitzung (60 Minuten) umfasst:
+In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit HWS-Syndrom. Die erste Sitzung (60 Minuten) umfasst:
 - Ausführliche Anamnese
 - Ganzheitliche körperliche Untersuchung
 - Erste Behandlung

@@ -137,7 +137,7 @@ Das Phänomen heißt **Co-Regulation**: Die Ruhe und Entspannung anderer Mensche
 
 **Wichtig zu wissen:** Die Polyvagaltheorie ist ein Erklärungsmodell, das in der therapeutischen Praxis vielfach bestätigt wurde. Allerdings sind nicht alle Details und spezifischen Mechanismen eindeutig wissenschaftlich belegt oder werden in Fachkreisen teilweise kontrovers diskutiert.
 
-Die beschriebenen Übungen und ihre Wirksamkeit gegen Stress sind jedoch gut dokumentiert – sowohl durch Studien zur Herzratenvariabilität, zur Atemphysiologie und zu sozialen Bindungen als auch durch die Erfahrungen tausender Patienten. Die Polyvagaltheorie bietet ein schlüssiges Rahmenwerk, um zu verstehen, *warum* diese Techniken funktionieren.
+Die beschriebenen Übungen und ihre Wirksamkeit gegen Stress sind jedoch gut dokumentiert – sowohl durch Studien zur Herzratenvariabilität, zur Atemphysiologie als auch durch die Forschung zu sozialen Bindungen. Die Polyvagaltheorie bietet ein schlüssiges Rahmenwerk, um zu verstehen, *warum* diese Techniken funktionieren.
 
 ## Die 5 besten Vagusnerv-Übungen
 
@@ -443,9 +443,9 @@ Transparenz ist mir wichtig. Deshalb hier eine klare Unterscheidung zwischen wis
 
 ### Fazit: Theorie vs. Praxis
 
-Auch wenn nicht jedes Detail der Polyvagaltheorie eindeutig bewiesen ist: Die **praktische Wirksamkeit der beschriebenen Übungen** ist vielfach bestätigt – sowohl durch wissenschaftliche Studien zu Atmung, Herzratenvariabilität und sozialer Bindung als auch durch die Erfahrungen tausender Patienten in der klinischen Praxis.
+Auch wenn nicht jedes Detail der Polyvagaltheorie eindeutig bewiesen ist: Die **praktische Wirksamkeit der beschriebenen Übungen** ist gut belegt – durch wissenschaftliche Studien zu Atmung, Herzratenvariabilität und sozialer Bindung.
 
-Die Polyvagaltheorie bietet ein schlüssiges, praxistaugliches Rahmenwerk, um zu verstehen, warum diese Techniken funktionieren. Und letztlich zählt: **Sie wirken.**
+Die Polyvagaltheorie bietet ein schlüssiges, praxistaugliches Rahmenwerk, um zu verstehen, warum diese Techniken funktionieren.
 
 ---
 

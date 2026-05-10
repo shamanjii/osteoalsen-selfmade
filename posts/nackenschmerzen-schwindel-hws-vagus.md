@@ -18,7 +18,7 @@ author: "Admin"
 ---
 # Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung verstehen & behandeln
 
-**Sie drehen den Kopf schnell zur Seite – plötzlich dreht sich alles. Der Raum schwankt. Sie müssen sich festhalten. Ihr Arzt sagt: "Alles in Ordnung, Ohren sind gesund." Aber der Schwindel bleibt. Die Wahrheit? 70% aller Schwindelattacken haben KEINE Ursache im Gleichgewichtsorgan – sondern in der [Halswirbelsäule](/blog/hws-blockierung-nacken-verspannung). In meiner Praxis in Hamburg behandle ich täglich Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen) und Schwindel. Die Verbindung: Atlas-Blockierung → Vagusnerv-Irritation → vegetative Symptome. Hier ist, wie es funktioniert – und wie Sie es lösen.**
+**Sie drehen den Kopf schnell zur Seite – plötzlich dreht sich alles. Der Raum schwankt. Sie müssen sich festhalten. Ihr Arzt sagt: "Alles in Ordnung, Ohren sind gesund." Aber der Schwindel bleibt. Die Wahrheit? 70% aller Schwindelattacken haben KEINE Ursache im Gleichgewichtsorgan – sondern in der [Halswirbelsäule](/blog/hws-blockierung-nacken-verspannung). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen) und Schwindel. Die Verbindung: Atlas-Blockierung → Vagusnerv-Irritation → vegetative Symptome. Hier ist, wie es funktioniert – und wie Sie es lösen.**
 
 ---
 
@@ -479,7 +479,7 @@ Dieser ganzheitliche Ansatz erklärt, warum manche Patienten nach osteopathische
 2. **HNO-Check** (Gleichgewichtsorgan ausschließen)
 3. **[Termin buchen](/behandlungen/nackenschmerzen)** für Atlas-Untersuchung
 
-In meiner Praxis in Hamburg behandle ich täglich Schwindel-Patienten. Erste Sitzung (60 Min.):
+In meiner Praxis in Hamburg behandle ich regelmäßig Schwindel-Patienten. Erste Sitzung (60 Min.):
 - Anamnese (Unfall? Beginn? Auslöser?)
 - Atlas-Untersuchung (Blockierung? Arteria vertebralis?)
 - Erste Behandlung (Atlas-Mobilisation, Vagus-Stimulation)

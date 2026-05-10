@@ -660,9 +660,6 @@ Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung Kopfschmerzen:**
-Ganzheitliche Behandlung mit Fokus auf HWS, Kiefergelenk, kraniosakraler Osteopathie & Nervensystem-Regulation. Medikamentenfreier Ansatz.
-
 ---
 
 ### Quellen

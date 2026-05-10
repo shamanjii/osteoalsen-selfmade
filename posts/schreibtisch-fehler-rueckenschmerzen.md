@@ -688,8 +688,6 @@ Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung:** Ich behandle täglich Patienten mit schreibtisch-bedingten Beschwerden. Von akuten Verspannungen bis chronischen Strukturproblemen – ich kenne die Muster und weiß, was hilft.
-
 ---
 
 ## Weitere Artikel zu Rückenschmerzen & Ergonomie

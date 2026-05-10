@@ -217,7 +217,7 @@ export default function SportosteopathiePage() {
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-6">
-                In meiner Praxis behandle ich täglich Sportler mit verschiedensten
+                In meiner Praxis behandle ich regelmäßig Sportler mit verschiedensten
                 Verletzungsmustern. Hier die häufigsten Beschwerden:
               </p>
 

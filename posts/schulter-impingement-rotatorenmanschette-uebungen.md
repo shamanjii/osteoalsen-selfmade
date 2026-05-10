@@ -607,7 +607,7 @@ Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate 
 
 **Sie leiden unter Schulter-Impingement und möchten die Ursache behandeln lassen?**
 
-Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle ich täglich Patienten mit Schulterschmerzen – ganzheitlich, ursachenorientiert, ohne OP.
+Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle ich regelmäßig Patienten mit Schulterschmerzen – ganzheitlich, ursachenorientiert, ohne OP.
 
 **Buchen Sie jetzt Ihren Termin:**
 - 📞 **Telefon:** [0176 43990001](tel:+4917643990001)

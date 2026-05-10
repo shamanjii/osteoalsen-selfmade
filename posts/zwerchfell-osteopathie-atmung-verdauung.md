@@ -1332,9 +1332,6 @@ Osteopathie Alsen – Praxis für Osteopathie
 Rappstraße 7
 20146 Hamburg-Rotherbaum
 
-**Spezialisierung:**
-Ganzheitliche osteopathische Behandlung mit Fokus auf viszerale Osteopathie, Zwerchfell-Mobilisation, Stress-Regulation und Verdauungsbeschwerden.
-
 ---
 
 ### Weiterführende Artikel:
