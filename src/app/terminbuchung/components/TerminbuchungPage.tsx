@@ -88,13 +88,6 @@ export default function TerminbuchungPage() {
       {/* Online Terminbuchung */}
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="font-epilogue text-3xl font-semibold text-center text-slate-900 mb-4">
-            Online Terminbuchung Osteopathie Hamburg
-          </h2>
-          <p className="text-center text-slate-600 mb-8 text-lg max-w-3xl mx-auto">
-            Wählen Sie einen freien Termin in einer meiner Praxen in Hamburg aus. Sie erhalten eine sofortige Bestätigung per E-Mail.
-          </p>
-
           {/* Lucar booking iframe */}
           <div className="mb-12">
             <BookingIframe />
