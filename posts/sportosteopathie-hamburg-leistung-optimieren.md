@@ -607,7 +607,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 - ✅ Kann sportartspezifische Bewegungsanalyse durchführen
 
 **3. Ganzheitlicher Ansatz**
-- ✅ Behandelt nicht nur Symptom, sondern sucht Ursache
+- ✅ Betrachtet den gesamten Bewegungsapparat im Zusammenhang
 - ✅ Bezieht Training, Ernährung, Regeneration mit ein
 - ✅ Arbeitet interdisziplinär (mit Trainern, Physios, Ärzten)
 

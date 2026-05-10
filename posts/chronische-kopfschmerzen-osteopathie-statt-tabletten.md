@@ -61,7 +61,7 @@ Kopfschmerzen → Tabletten → vorübergehende Linderung
 
 ## Warum Schmerzmittel keine Lösung sind
 
-In meiner Praxis behandle ich [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene) ganzheitlich – mit Fokus auf die tatsächlichen Ursachen statt nur Symptomunterdrückung. Denn chronische Kopfschmerzen entstehen meist nicht im Kopf selbst.
+In meiner Praxis behandle ich [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene) ganzheitlich – mit Blick auf die funktionellen Zusammenhänge im Bewegungsapparat. Denn chronische Kopfschmerzen entstehen häufig nicht im Kopf selbst.
 
 ### Das Problem mit Schmerztabletten
 

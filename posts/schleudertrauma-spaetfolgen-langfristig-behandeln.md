@@ -2,7 +2,7 @@
 slug: "schleudertrauma-spaetfolgen-langfristig-behandeln"
 title: "Schleudertrauma-Spätfolgen: Warum Symptome nach Jahren zurückkommen (Behandlungsprotokoll)"
 excerpt: "Ihr Unfall ist Jahre her, aber die Nackenschmerzen kehren immer wieder zurück? Schleudertrauma-Spätfolgen entwickeln sich oft erst nach Jahren. Verstehen Sie warum und wie osteopathische Behandlung langfristige Linderung bringt."
-metaDescription: "Schleudertrauma war vor Jahren, aber Nackenschmerzen bleiben? Vier von zehn Patienten entwickeln chronische Spätfolgen. Erfahren Sie, warum Symptome nach Jahren zurückkehren und wie osteopathische Behandlung die Ursache statt nur Symptome behandelt."
+metaDescription: "Schleudertrauma war vor Jahren, aber Nackenschmerzen bleiben? Ein erheblicher Anteil der Patient:innen entwickelt chronische Spätfolgen. Erfahren Sie, warum Symptome nach Jahren zurückkehren und wie osteopathische Behandlung funktionelle Zusammenhänge adressiert."
 keywords:
   - "Schleudertrauma Spätfolgen Hamburg"
   - "HWS Distorsion Behandlung"

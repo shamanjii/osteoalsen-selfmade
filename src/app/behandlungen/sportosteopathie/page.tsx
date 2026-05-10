@@ -485,7 +485,7 @@ export default function SportosteopathiePage() {
               </h3>
               <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
                 <li>
-                  <strong>Früherkennung:</strong> Ich erkenne Probleme, bevor sie zu Verletzungen werden
+                  <strong>Früherkennung:</strong> Bewegungsmuster und Dysbalancen werden noch vor möglichen Verletzungen erkennbar
                 </li>
                 <li>
                   <strong>Muskuläre Balance:</strong> Ausgleich von Dysbalancen durch einseitige Belastung
@@ -568,17 +568,6 @@ export default function SportosteopathiePage() {
                 langsame Steigerung ist der Schlüssel für langfristigen Erfolg.
               </p>
 
-              <div className="mt-6 p-6 bg-white border-l-4 border-slate-900 rounded-r-lg">
-                <p className="text-sm text-slate-600 italic mb-2">Praxisbeispiel:</p>
-                <p className="text-slate-700 leading-relaxed">
-                  Ein Marathonläufer kam mit Läuferknie 6 Wochen vor seinem Zielwettkampf zu mir.
-                  Bisherige Behandlung (Physiotherapie, Dehnung) hatte nur kurzfristig geholfen.
-                  Bei der Untersuchung fand ich eine ISG-Blockade rechts und einen verkürzten Psoas,
-                  die zu einer Überlastung des IT-Bands führten. Nach 3 Behandlungen war er
-                  schmerzfrei, ich optimierte seinen Laufstil und er konnte seinen Marathon in
-                  persönlicher Bestzeit laufen.
-                </p>
-              </div>
             </div>
           </section>
           

@@ -25,7 +25,7 @@ Chronische Verdauungsbeschwerden, unerklärliche Rückenschmerzen, wiederkehrend
 
 Die meisten Menschen kennen Osteopathie nur im Zusammenhang mit Rückenschmerzen, Gelenkproblemen oder Nackenverspannungen. Was viele nicht wissen: Auch Ihre inneren Organe können „blockieren", ihre natürliche Beweglichkeit verlieren und dadurch vielfältige Beschwerden verursachen. Ein verhärteter Darm kann Rückenschmerzen auslösen. Eine verspannte Leber kann die Atmung einschränken. Ein verkrampfter Magen kann chronisches Sodbrennen verursachen.
 
-Genau hier kommt die viszerale Osteopathie ins Spiel. Sie behandelt nicht nur Symptome, sondern adressiert die Beweglichkeit und Funktion der Organe selbst. Die Berührungen sind so sanft, dass viele Patienten zunächst überrascht sind: „Kann das überhaupt etwas bewirken?" Die Antwort: Ja – oft mit beeindruckenden Ergebnissen.
+Genau hier setzt die viszerale Osteopathie an: Sie adressiert die Beweglichkeit und Funktion der inneren Organe und ihre Verbindungen zum Bewegungsapparat. Die Berührungen sind so sanft, dass viele Patient:innen zunächst überrascht sind: „Kann das überhaupt etwas bewirken?" Die Erfahrung zeigt: Auch sanfte manuelle Reize können messbare Effekte auf Faszien-, Atmungs- und Verdauungsfunktionen haben.
 
 **In diesem Artikel erfahren Sie:**
 - Was viszerale Osteopathie genau ist und wie sie sich von anderen Therapieformen unterscheidet

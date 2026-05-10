@@ -22,9 +22,9 @@ author: "Admin"
 
 ---
 
-## Was ist zervikaler Schwindel? (Und warum übersehen ihn 9 von 10 Ärzten)
+## Was ist zervikaler Schwindel? (Und warum bleibt er oft unentdeckt)
 
-### Die erschreckende Statistik
+### Häufigkeit und Hintergrund
 
 **Schwindel in Deutschland:**
 - **30% der Bevölkerung** erleben mindestens 1× pro Jahr Schwindel[^1]

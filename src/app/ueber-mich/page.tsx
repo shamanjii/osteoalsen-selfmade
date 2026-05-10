@@ -335,8 +335,8 @@ export default function UeberMichPage() {
                 Ganzheitlicher Ansatz
               </h3>
               <p className="text-slate-600">
-                Ich behandle nicht nur Symptome, sondern suche nach den wahren
-                Ursachen Ihrer Beschwerden.
+                Ich betrachte Beschwerden im Zusammenhang des gesamten
+                Bewegungsapparats – mit Blick auf funktionelle Zusammenhänge.
               </p>
             </div>
 

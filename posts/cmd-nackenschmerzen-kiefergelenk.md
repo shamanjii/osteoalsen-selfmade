@@ -542,7 +542,7 @@ Intraoral-Behandlung (M. pterygoideus): NEIN, nur vom Therapeuten.
 
 [HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
 
-[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen) – Ursachen statt Symptome bekämpfen
+[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen) – ganzheitlicher Ansatz
 
 [Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) – Ganzheitliche Behandlung in Hamburg
 

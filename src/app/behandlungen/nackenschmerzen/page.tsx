@@ -451,36 +451,6 @@ export default function NackenschmerzenPage() {
           </section>
         
 
-        {/* Praxisbeispiel */}
-        
-          <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Praxisbeispiel: Thomas, 38 Jahre, Software-Entwickler</h2>
-
-            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 border border-indigo-200">
-              <div className="prose prose-lg max-w-none text-gray-800">
-                <p className="font-semibold text-indigo-900 mb-4">Ausgangssituation:</p>
-                <p className="mb-6">
-                  Thomas, ein 38-jähriger Software-Entwickler aus Hamburg-Eimsbüttel, kam mit seit zwei Jahren bestehenden chronischen Nackenschmerzen in die Praxis. Die Beschwerden hatten sich schleichend entwickelt und waren in den letzten Monaten deutlich schlimmer geworden. Mittlerweile strahlten die Schmerzen regelmäßig in den rechten Arm bis in die Hand aus, begleitet von Kribbeln im Daumen und Zeigefinger. Als Software-Entwickler verbringt Thomas täglich etwa 10 Stunden vor dem Computer. Bisherige Therapieversuche mit Physiotherapie und Schmerzmitteln hatten nur kurzfristige Linderung gebracht.
-                </p>
-
-                <p className="font-semibold text-indigo-900 mb-4">Befund:</p>
-                <p className="mb-6">
-                  Die osteopathische Untersuchung ergab deutliche Bewegungseinschränkungen im Segment C5/C6 und C6/C7, massive Verspannungen der rechtsseitigen Schulter-Nacken-Muskulatur (besonders Trapezius und Levator scapulae), eine vorgestreckte Kopfhaltung mit rundem Rücken, Einschränkungen der oberen Brustwirbelsäule (T1-T4), sowie eine verminderte Beweglichkeit des rechten Schulterblatts. Die neurologischen Tests deuteten auf eine Irritation der Nervenwurzel C6 hin, allerdings ohne manifeste Lähmungserscheinungen. Auch zeigte sich eine erhöhte Spannung im Bereich des Zwerchfells und der ersten Rippe.
-                </p>
-
-                <p className="font-semibold text-indigo-900 mb-4">Behandlung:</p>
-                <p className="mb-6">
-                  Über einen Zeitraum von 6 Wochen erfolgten 5 osteopathische Behandlungen im Abstand von 1-2 Wochen. Jede Sitzung umfasste: Weichteiltechniken zur Entspannung der verspannten Nacken- und Schultermuskulatur, sanfte Mobilisation der blockierten HWS-Segmente und der Brustwirbelsäule, Nervenmobilisationstechniken (Neural Gliding) für die C6-Wurzel, Behandlung des Schulterblatts und des Schultergelenks, kraniosakrale Techniken für die Kopfgelenke, sowie viszerale Behandlung von Zwerchfell und erster Rippe. Zusätzlich erhielt Thomas ausführliche Beratung zur Arbeitsplatzergonomie und ein individuelles Übungsprogramm für zu Hause.
-                </p>
-
-                <p className="font-semibold text-indigo-900 mb-4">Ergebnis:</p>
-                <p>
-                  Nach der dritten Behandlung berichtete Thomas von einer deutlichen Besserung – die ausstrahlenden Schmerzen in den Arm traten nur noch selten auf, und die Beweglichkeit des Nackens hatte sich merklich verbessert. Nach der fünften Sitzung waren die Beschwerden um etwa 70% reduziert. Das Kribbeln in der Hand war vollständig verschwunden. Thomas hatte seinen Arbeitsplatz ergonomisch optimiert und führte täglich seine Übungen durch. Bei einer Nachkontrolle nach 3 Monaten waren die Verbesserungen stabil, und Thomas konnte beschwerdefrei arbeiten. Er kommt nun alle 2-3 Monate zur Erhaltungsbehandlung.
-                </p>
-              </div>
-            </div>
-          </section>
-        
 
         {/* Selbsthilfe & Prävention */}
         

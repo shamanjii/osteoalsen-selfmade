@@ -507,7 +507,7 @@ In meiner Praxis behandle ich das HWS-Syndrom nicht nur dort, wo es wehtut, sond
 **Die wichtigsten Erkenntnisse:**
 1. "HWS-Syndrom" ist keine Diagnose -- es beschreibt nur, woher die Beschwerden kommen
 2. Die eigentliche Ursache muss gefunden werden: Blockierung? Bandscheibe? Stress?
-3. Behandlung der Ursache statt nur der Symptome bringt langfristigen Erfolg
+3. Eine Behandlung, die die zugrunde liegenden funktionellen Zusammenhänge adressiert, kann zu nachhaltigeren Verläufen beitragen
 4. Selbsthilfe und Prävention sind genauso wichtig wie die Behandlung selbst
 
 ---

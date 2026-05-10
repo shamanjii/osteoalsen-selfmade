@@ -287,7 +287,7 @@ Osteopathie kann besonders helfen, wenn Sie:
 - ✅ **Keine Red Flags** haben (Lähmungen, Taubheit, Gewichtsverlust, Fieber)
 - ✅ **Begleitende Symptome** bemerken: z.B. [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene) oder [Schlafstörungen](/behandlungen/stress-burnout)
 - ✅ Bereit sind, **aktiv mitzuarbeiten** (Übungen zu Hause, Lebensstil-Anpassungen)
-- ✅ Eine **ursachenorientierte** Behandlung wollen – nicht nur Symptom-Unterdrückung
+- ✅ Eine **ursachenorientierte** Behandlung suchen, die funktionelle Zusammenhänge berücksichtigt
 
 **Wichtig:** Osteopathie ist **kein Wundermittel**. Sie funktioniert am besten als Teil eines **multimodalen Ansatzes** – zusammen mit Bewegung, Stressmanagement und gesunden Alltagsgewohnheiten.
 
@@ -334,9 +334,9 @@ Möchten Sie sich erst weiter informieren? Diese Artikel könnten Sie interessie
 - Blockierte Gelenke (ISG/Iliosakralgelenk, Hüfte)
 - Stress im Nervensystem (ANS-Dysregulation)
 
-**Osteopathie arbeitet anders:**
-- Findet Ursachen statt nur Symptome zu behandeln
-- Nutzt manuelle Techniken (Faszien, Gelenke, Organe, Nervensystem)
+**Der osteopathische Ansatz:**
+- Betrachtet Beschwerden im Zusammenhang des gesamten Bewegungsapparats
+- Manuelle Techniken (Faszien, Gelenke, Organe, Nervensystem)
 - Kombiniert Hands-on-Behandlung mit aktiven Übungen
 
 **Erwartbare Ergebnisse:**

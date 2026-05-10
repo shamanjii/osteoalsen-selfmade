@@ -462,7 +462,7 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 **Chronische Rezidive:**
 - Blockierung kommt immer wieder (>3x in 3 Monaten)
 - Manuelle Behandlung hilft nur kurz (Tage)
-- Sie wollen Ursache finden, nicht nur Symptom behandeln
+- Sie wünschen sich eine Untersuchung der funktionellen Zusammenhänge
 
 **Komplexe Fälle:**
 - Beckentorsion (schwer selbst zu korrigieren)

@@ -3,7 +3,7 @@ localBox: true
 slug: "kopfschmerzen-trigeminus-ursache"
 title: "Trigeminusnerv gereizt durch Verspannungen? So entstehen Kopfschmerzen wirklich"
 excerpt: "Trigeminusnerv gereizt durch Verspannungen im Nacken oder Kiefer? Das ist die häufigste Ursache für therapieresistente Kopfschmerzen. Erfahren Sie, wie Osteopathie die 3 Hauptirritationspunkte behandelt."
-metaDescription: "Trigeminusnerv gereizt durch Verspannungen? 90% der chronischen Kopfschmerzen entstehen durch Nacken- & Kieferverspannungen, die den Trigeminus reizen. Osteopathie löst die Ursache – nicht nur Symptome. Hamburg ✓"
+metaDescription: "Trigeminusnerv gereizt durch Verspannungen? Viele chronische Kopfschmerzen stehen mit Nacken- und Kieferverspannungen in Verbindung, die den Trigeminus reizen können. Osteopathische Sicht aus Hamburg."
 keywords:
   - "Trigeminusnerv gereizt durch Verspannungen"
   - "Trigeminusnerv gereizt durch Verspannungen im Nacken"
@@ -429,9 +429,9 @@ Weitere Artikel, die Sie interessieren könnten:
 - Verspannte Kaumuskulatur (TMJ/Kiefergelenk, Zähneknirschen/Bruxismus)
 - Subokzipitale Muskelverspannungen (Hinterkopf-Muskulatur: Handy-Nacken, Bildschirmarbeit)
 
-**Osteopathie arbeitet anders:**
-- Findet die Ursache statt nur Symptome zu unterdrücken
-- Nutzt manuelle Techniken (Mobilisation, Faszien-Lösung/MFR, Kraniosakral-Therapie)
+**Der osteopathische Ansatz:**
+- Untersuchung des Bewegungsapparats und seiner funktionellen Zusammenhänge
+- Manuelle Techniken: Mobilisation, Faszien-Lösung/MFR, Kraniosakral-Therapie
 - Kombiniert Hands-on-Behandlung mit aktiven Übungen
 
 **Erwartbare Ergebnisse:**

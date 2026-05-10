@@ -273,9 +273,9 @@ export default function OsteopathieKostenHamburgPage() {
                       Ganzheitlicher Ansatz
                     </h3>
                     <p className="text-slate-700">
-                      Osteopathie behandelt nicht nur Symptome, sondern sucht nach den
-                      <strong> Ursachen im gesamten Körper</strong>. Das erfordert umfangreiches
-                      anatomisches und physiologisches Wissen.
+                      Osteopathie betrachtet den Körper als zusammenhängendes System und
+                      sucht nach <strong>funktionellen Zusammenhängen</strong>. Das erfordert
+                      umfangreiches anatomisches und physiologisches Wissen.
                     </p>
                   </div>
                 </div>

@@ -27,9 +27,9 @@ alt: "Osteopathische Gelenkbehandlung – ganzheitliche Therapie für schmerzfre
 
 **Die Realität sieht oft anders aus:**
 
-- 67% der Patient:innen mit chronischen Gelenkschmerzen haben **mehrere Ärzte konsultiert**, bevor eine zufriedenstellende Behandlung gefunden wurde[^1]
-- Bei über 40% der „Arthrose-Diagnosen" liegt die **wahre Ursache nicht im Gelenk selbst**, sondern in umliegenden Strukturen (Faszien, Muskeln, Nerven)[^2]
-- Durchschnittlich vergehen **18 Monate** zwischen ersten Symptomen und wirksamer Therapie[^3]
+- Viele Patient:innen mit chronischen Gelenkschmerzen konsultieren mehrere Behandler:innen, bevor eine als zufriedenstellend empfundene Therapie gefunden wird[^1]
+- Bei einem relevanten Anteil der „Arthrose-Diagnosen" tragen umliegende Strukturen (Faszien, Muskeln, Nerven) wesentlich zum Beschwerdebild bei[^2]
+- Zwischen den ersten Symptomen und einer wirksam empfundenen Therapie können oft viele Monate vergehen[^3]
 
 ### Warum herkömmliche Behandlungen oft zu kurz greifen
 
@@ -65,8 +65,6 @@ Studien zeigen, dass **biomechanische Dysfunktionen in entfernten Körperregione
 - Fasziale Spannungsketten identifizieren
 - Mobilisierung von Blockaden in Fuß, Becken, Wirbelsäule
 - Muskuläre Dysbalancen ausgleichen
-
-> **Patient:innen-Beispiel**: Thomas, 52, kam mit hartnäckigen Knieschmerzen. Röntgen zeigte "beginnende Arthrose". In der osteopathischen Untersuchung fand ich eine alte [ISG-Blockade](/blog/isg-blockierung-teufelskreis) rechts, die zu einer Beckenschiefstellung führte. Nach 4 Behandlungen (ISG-Mobilisierung + [Faszienarbeit](/blog/sportverletzung-schneller-zurueck-training)) waren die Knieschmerzen zu 80% reduziert – ohne das Knie selbst zu behandeln.
 
 Mehr zur ganzheitlichen Behandlung von Kniearthrose: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln).
 
@@ -695,11 +693,10 @@ Ich kombiniere osteopathische Behandlung mit **Bewegungsberatung**, **Ernährung
 In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen, evidenzbasierten Ansatz.
 
 **Was Sie erwarten können:**
-- ✅ **Ausführliche Erstanamnese** (60 Min.): Ich finde die wahre Ursache
+- ✅ **Ausführliche Erstanamnese** (60 Min.): gemeinsam nach möglichen Ursachen-Zusammenhängen schauen
 - ✅ **Individuelle Behandlung**: Keine Standard-Protokolle, sondern auf Sie abgestimmt
-- ✅ **Nachhaltige Ergebnisse**: Nicht nur Symptomlinderung, sondern Ursachenbehandlung
 - ✅ **Eigenübungs-Programm**: Sie bleiben aktiv zwischen Terminen
-- ✅ **Evidenzbasiert**: Moderne Osteopathie auf wissenschaftlicher Basis
+- ✅ **Evidenzbasierter Ansatz**: Moderne Osteopathie auf wissenschaftlicher Basis
 
 **Kostenerstattung**: Viele private Krankenversicherungen und Zusatzversicherungen übernehmen osteopathische Behandlungen.
 

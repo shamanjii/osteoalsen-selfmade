@@ -1,8 +1,8 @@
 ---
 slug: "schulter-impingement-rotatorenmanschette-uebungen"
-title: "Schulter-Impingement: Die wahre Ursache liegt nicht in der Schulter"
-excerpt: "87% der Impingement-Patienten haben BWS-Blockaden. Erfahren Sie, warum Ihre Schulterschmerzen vom Brustkorb kommen – und welche 4 Übungen wirklich helfen (inkl. Bonus: BWS-HWS Integration)."
-metaDescription: "Schulterschmerzen trotz Physiotherapie? 87% aller Impingement-Fälle haben ihre Ursache in BWS-Blockaden. Warum die OP oft überflüssig ist und welche 4 Übungen wirklich helfen. Spezialisierte Osteopathie Hamburg."
+title: "Schulter-Impingement: Warum die Ursache oft nicht in der Schulter liegt"
+excerpt: "Bei vielen Impingement-Patient:innen lassen sich BWS-Blockaden nachweisen. Erfahren Sie, wie Schulterschmerzen mit dem Brustkorb zusammenhängen können – und welche 4 Übungen die Biomechanik unterstützen (inkl. BWS-HWS Integration)."
+metaDescription: "Schulterschmerzen trotz Physiotherapie? Bei vielen Impingement-Fällen lässt sich eine BWS-Komponente nachweisen. Warum die OP nicht immer der erste Schritt sein muss und welche 4 Übungen helfen können. Osteopathie Hamburg."
 keywords:
   - "Schulter Impingement Osteopathie"
   - "Rotatorenmanschette Schmerzen"
@@ -15,16 +15,16 @@ keywords:
   - "Subakromialer Raum"
   - "Schulter Biomechanik"
 image: "https://images.unsplash.com/photo-1603309288253-08db72e5117d?q=80&w=1200&auto=format&fit=crop"
-alt: "Schulter-Impingement Osteopathie Hamburg: Rotatorenmanschette Schmerzen behandeln - wahre Ursache BWS-Blockaden und Übungen"
+alt: "Schulter-Impingement Osteopathie Hamburg: Rotatorenmanschette Schmerzen behandeln - BWS-Blockaden und Übungen"
 date: "2025-12-27T10:00:00.000Z"
 status: "published"
 ---
 
-# Schulter-Impingement: Die wahre Ursache liegt nicht in der Schulter
+# Schulter-Impingement: Warum die Ursache oft nicht in der Schulter liegt
 
 **„Ihr Röntgen zeigt einen verengten subakromialen Raum. Die Sehne reibt am Schulterdach. Wir sollten das Akromion abfräsen." Der Orthopäde klopft auf das MRT-Bild. Sie nicken – verunsichert. Die Schmerzen sind real. Nachts können Sie nicht mehr auf der linken Seite liegen. Arm heben über Schulterhöhe? Stechender Schmerz. Der BH-Verschluss? Eine tägliche Qual. Die OP klingt logisch: Zu enger Raum → Raum erweitern → Problem gelöst. Oder?**
 
-**Hier ist die unbequeme Wahrheit: Bei 87% aller Impingement-Patienten liegt die Ursache NICHT in einem zu engen Raum – sondern in blockierten Brustwirbeln, verklebten Rippen und einem Schulterblatt, das seine Arbeit nicht macht.[^1] Die Schulter ist das Opfer, nicht der Täter.**
+**Studien zeigen: Bei einem Großteil der Impingement-Patient:innen lassen sich Bewegungseinschränkungen außerhalb der Schulter nachweisen – in der Brustwirbelsäule, an den Rippen oder am Schulterblatt.[^1] Aus osteopathischer Sicht lohnt es sich, die Schulter im Gesamtsystem zu betrachten, bevor invasive Schritte erwogen werden.**
 
 **In diesem Artikel erfahren Sie, warum Ihr Schulter-Impingement wahrscheinlich vom Brustkorb kommt, welche osteopathischen Behandlungsmethoden die Biomechanik wiederherstellen – und welche 4 Übungen Sie sofort zu Hause machen können (inkl. fortgeschrittener BWS-HWS Integrationsübung).**
 

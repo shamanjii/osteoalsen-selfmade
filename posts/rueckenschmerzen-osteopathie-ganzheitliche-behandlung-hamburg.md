@@ -40,17 +40,13 @@ In diesem Artikel erkläre ich Ihnen als Osteopath, warum Rückenschmerzen meist
 
 ---
 
-## Das Problem: Warum klassische Behandlungen oft versagen
+## Wenn die übliche Diagnostik nicht weiterhilft
 
 **Typisches Szenario:**
 
-Sie gehen zum Orthopäden. Röntgen oder MRT wird gemacht. **Befund:** "Altersgerechte Verschleißerscheinungen, nichts Dramatisches."
+Beim Orthopäden werden Röntgen oder MRT gemacht. **Befund:** "Altersgerechte Verschleißerscheinungen, nichts Dramatisches." Die Verordnung: Physiotherapie, Schmerzmittel, Rückentraining.
 
-**Verordnung:** Physiotherapie, Schmerzmittel, Rückentraining.
-
-**Ergebnis:** Kurzfristige Besserung, dann kommt der Schmerz zurück.
-
-**Warum?** Weil die eigentliche Ursache nicht gefunden wurde.
+Manche Patient:innen erleben damit eine deutliche Besserung. Bei anderen kehren die Beschwerden nach kurzer Zeit zurück. Eine ergänzende osteopathische Sicht setzt dann oft an einem anderen Punkt an: an funktionellen Zusammenhängen, die in der bildgebenden Diagnostik nicht erfasst werden.
 
 ### Die 3 häufigsten Fehldiagnosen bei Rückenschmerzen
 
@@ -136,7 +132,7 @@ Aggressive Dehnung kann verklebte Faszien **reizen** statt lösen. [Mehr dazu: W
 - **Zwerchfell-Dysfunktion** erzeugt TLF-Spannung
 - **Viszerosomatische Reflexe:** Darm → Nerven → Rückenmuskulatur
 
-**Das wird fast immer übersehen:**
+**Eine oft unbeachtete Verbindung:**
 Ihre inneren Organe sind über **Ligamente** (Bänder) und **Faszien** mit der Wirbelsäule verbunden.
 
 **Beispiel:** Die Radix Mesenterii (Aufhängung des Dünndarms) setzt direkt an L2-L3 (Lendenwirbelsäule) an. Bei Darmverklebungen, Reizdarm oder Stress wird hier mechanischer Zug erzeugt → LWS-Schmerz.
