@@ -187,10 +187,10 @@ CGRP-Freisetzung → Migräneattacke
 
 **Frequenz:** 2x/Woche in ersten 2 Wochen
 
-**Was Patienten erleben:**
+**Mögliche Verläufe:**
 - Erste Behandlung: Oft keine sofortige Änderung
-- Ab Behandlung 3-4: Attacken werden **seltener** (nicht schmerzfrei!)
-- Nach 2 Wochen: 30-40% weniger Attacken
+- Im weiteren Verlauf: Häufig werden Attacken seltener (nicht zwingend schmerzfrei)
+- Der individuelle Verlauf ist nicht vorhersagbar
 
 ### Phase 2: Trigger-Schwelle erhöhen (Woche 3-8)
 
@@ -341,17 +341,17 @@ Triptan stoppt Attacke
 - Jahr 5: Triptan wirkt nur noch 4h, dann Wiederkehr
 - Jahr 7: Triptan wirkt kaum noch, 15+ Tage/Monat
 
-**In meiner Praxis:** 40% der Migräne-Patienten haben MOH.
+**Aus der klinischen Praxis:** Medikamenten-Übergebrauchskopfschmerz (MOH) ist bei chronischen Migräne-Verläufen ein häufig anzutreffendes Begleitphänomen.
 
 ## Zusammenfassung: Das müssen Sie wissen
 
 **Schlüssel-Erkenntnisse:**
 
-1. **60% der Migräne ohne Aura haben HWS-Beteiligung** – kein Medikament behebt Struktur
-2. **Trigeminocervical Nucleus** – HWS-Signal = Migräne-Trigger
-3. **Triptane >10 Tage/Monat** – Medikamenten-Übergebrauchskopfschmerz
-4. **Atlas-Blockierung senkt Trigger-Schwelle** – Rotwein wird zum Problem
-5. **Behandlungsdauer: 3-6 Monate** – keine Schnelllösung
+1. **HWS-Beteiligung** wird in der Migräne-Forschung zunehmend diskutiert; strukturelle Faktoren werden durch Medikamente nicht adressiert
+2. **Trigeminocervical Nucleus** – HWS-Signale können als Migräne-Trigger wirken
+3. **Triptane >10 Tage/Monat** – Risiko für Medikamenten-Übergebrauchskopfschmerz
+4. **Atlas-Blockierung** kann die Trigger-Schwelle beeinflussen
+5. **Behandlungsdauer: in der Regel mehrere Monate** – keine Schnelllösung
 6. **Ziel: <4 Migräne-Tage/Monat** – nicht schmerzfrei, aber lebbar
 
 **Handlungsschritte:**
@@ -369,10 +369,10 @@ Nein, Migräne ist eine **genetische Prädisposition**. Aber: Attackenfrequenz k
 
 **Wie lange dauert die Behandlung?**
 
-Realistische Zeitlinie:
-- Erste Besserung: 2-4 Wochen
-- 50% Reduktion: 8-12 Wochen
-- Stabilisierung: 6-9 Monate
+Realistische Zeitlinie (individuell sehr unterschiedlich):
+- Erste mögliche Veränderungen: nach einigen Wochen
+- Spürbare Reduktion: über mehrere Monate
+- Stabilisierung: über einen längeren Zeitraum
 
 **Muss ich Triptane komplett absetzen?**
 

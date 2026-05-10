@@ -162,7 +162,7 @@ Bei isolierter Betrachtung der Schulter bleibt eine relevante biomechanische Ver
    - Supraspinatussehne wird eingeklemmt
    - **Klassisches Impingement entsteht**
 
-**Genau das beschreiben die Lehrbücher. Aber es gibt noch eine zweite, unterschätzte Ebene:**
+**Diese primäre Kettenreaktion ist gut beschrieben. Daneben gibt es eine zweite, weniger im Fokus stehende Ebene:**
 
 ---
 

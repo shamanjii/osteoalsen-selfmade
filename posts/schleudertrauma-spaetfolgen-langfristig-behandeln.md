@@ -167,10 +167,10 @@ Eine rein lokale Nackenmassage behandelt **5%** des Problems.
 
 **Frequenz:** 2x/Woche in den ersten 2 Wochen, dann 1x/Woche
 
-**Was Patienten erleben:**
-- Erste 2 Behandlungen: Oft **vorübergehende Verschlechterung**
-- Ab Behandlung 3-4: Deutliche Besserung
-- Nach 4 Wochen: 60-70% Schmerzreduktion
+**Mögliche Verläufe:**
+- Erste 2 Behandlungen: Oft vorübergehende Reaktionen (Soreness, Müdigkeit) möglich
+- Ab Behandlung 3-4: Häufig erste Besserung
+- Im weiteren Verlauf: Individuell unterschiedlich, nicht vorhersagbar
 
 ### Phase 2: Kompensationen auflösen (Woche 5-12)
 
@@ -191,9 +191,9 @@ Wenn Sie nur den Atlas korrigieren, wird das Becken ihn wieder "zurückziehen". 
 <!-- SEO OPTIMIZATION: Added 260 words on visceral compensation patterns after whiplash -->
 **Die versteckte Kettenreaktion: Wie Schleudertrauma Atmung und Verdauung beeinträchtigt**
 
-Was in der Standard-Physiotherapie nach Schleudertrauma fast immer übersehen wird: Die viszeralen Kompensationen. Nach einem Auffahrunfall verspannt sich nicht nur die Nackenmuskulatur, sondern auch das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) und die umgebenden Strukturen. Der Grund: Der Schreck und die plötzliche Beschleunigung aktivieren Ihren Sympathikus maximal – Sie halten reflektorisch die Luft an, das Zwerchfell verkrampft.
+Eine in der Standard-Physiotherapie nach Schleudertrauma häufig wenig beachtete Komponente sind viszerale Kompensationen. Nach einem Auffahrunfall verspannt sich nicht nur die Nackenmuskulatur, sondern auch das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) und die umgebenden Strukturen. Der Grund: Der Schreck und die plötzliche Beschleunigung aktivieren den Sympathikus maximal – reflektorisches Anhalten der Luft, Zwerchfell-Verkrampfung.
 
-In meiner Praxis finde ich bei über 70% der Schleudertrauma-Patienten:
+In der osteopathischen Untersuchung lassen sich bei vielen Schleudertrauma-Patient:innen mit anhaltenden Beschwerden folgende Befunde erheben:
 - Ein blockiertes Zwerchfell (eingeschränkte Atembewegung)
 - Verspannte untere Rippen (Rippengelenke fixiert)
 - Verdauungsprobleme (durch Vagusnerv-Irritation)
