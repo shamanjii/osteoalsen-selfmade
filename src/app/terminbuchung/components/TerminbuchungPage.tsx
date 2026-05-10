@@ -85,49 +85,18 @@ export default function TerminbuchungPage() {
         </div>
       </section>
 
-      {/* Standorte & Öffnungszeiten */}
-      <section className="py-16 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-epilogue text-3xl md:text-4xl font-semibold text-center text-slate-900 mb-12">
-            Standorte & Öffnungszeiten
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {locations.map((location) => (
-              <div key={location.id} className="bg-white rounded-2xl shadow-lg border border-slate-200 p-8">
-                <div className="text-center mb-6">
-                  <h3 className="font-epilogue text-xl font-semibold text-slate-900 mb-2">
-                    📍 {location.name}
-                  </h3>
-                  <p className="text-slate-600 font-medium">{location.address}</p>
-                </div>
-
-                <div className="space-y-3">
-                  {location.hours.map((schedule, index) => (
-                    <div key={index} className="flex justify-between items-center py-3 border-b border-slate-100 last:border-b-0">
-                      <span className="font-epilogue font-medium text-slate-900">{schedule.day}:</span>
-                      <span className="text-slate-600">{schedule.time}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Online Terminbuchung */}
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 mb-12">
-            <h2 className="font-epilogue text-3xl font-semibold text-center text-slate-900 mb-4">
-              Online Terminbuchung Osteopathie Hamburg
-            </h2>
-            <p className="text-center text-slate-600 mb-8 text-lg max-w-3xl mx-auto">
-              Wählen Sie einen freien Termin in einer meiner Praxen in Hamburg aus. Sie erhalten eine sofortige Bestätigung per E-Mail.
-            </p>
+          <h2 className="font-epilogue text-3xl font-semibold text-center text-slate-900 mb-4">
+            Online Terminbuchung Osteopathie Hamburg
+          </h2>
+          <p className="text-center text-slate-600 mb-8 text-lg max-w-3xl mx-auto">
+            Wählen Sie einen freien Termin in einer meiner Praxen in Hamburg aus. Sie erhalten eine sofortige Bestätigung per E-Mail.
+          </p>
 
-            {/* Lucar booking iframe */}
+          {/* Lucar booking iframe */}
+          <div className="mb-12">
             <BookingIframe />
           </div>
 

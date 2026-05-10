@@ -85,7 +85,7 @@ export default function BookingIframe() {
   };
 
   return (
-    <div id="booking-iframe" className="rounded-xl overflow-hidden shadow-lg border border-slate-200 relative">
+    <div id="booking-iframe" className="relative">
       {!iframeLoaded && (
         <div className="absolute inset-0 bg-slate-100 flex items-center justify-center">
           <div className="text-center">
