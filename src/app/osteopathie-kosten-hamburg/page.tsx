@@ -53,7 +53,7 @@ export default function OsteopathieKostenHamburgPage() {
             {
               question: "Was kostet eine osteopathische Behandlung in Hamburg?",
               answer:
-                "Eine osteopathische Behandlung kostet in Hamburg durchschnittlich 100-180€. Bei mir zahlen Sie 150€ für 45-60 Minuten intensive Behandlung inkl. Anamnese und Nachbesprechung.",
+                "Eine osteopathische Behandlung kostet in Hamburg durchschnittlich 100-180€. Bei mir zahlen Sie 150€ für 45-60 Minuten Behandlung inkl. Anamnese und Nachbesprechung.",
             },
             {
               question: "Übernimmt die Krankenkasse Osteopathie-Kosten in Hamburg?",

@@ -1,8 +1,8 @@
 ---
 slug: "schulter-impingement-rotatorenmanschette-uebungen"
 title: "Schulter-Impingement: Warum die Ursache oft nicht in der Schulter liegt"
-excerpt: "Bei vielen Impingement-Patient:innen lassen sich BWS-Blockaden nachweisen. Erfahren Sie, wie Schulterschmerzen mit dem Brustkorb zusammenhängen können – und welche 4 Übungen die Biomechanik unterstützen (inkl. BWS-HWS Integration)."
-metaDescription: "Schulterschmerzen trotz Physiotherapie? Bei vielen Impingement-Fällen lässt sich eine BWS-Komponente nachweisen. Warum die OP nicht immer der erste Schritt sein muss und welche 4 Übungen helfen können. Osteopathie Hamburg."
+excerpt: "Schulter-Impingement im Gesamtsystem betrachtet: Wie Brustwirbelsäule, Rippen und Schulterblatt biomechanisch beteiligt sein können – mit 4 Übungen zur Unterstützung der Beweglichkeit."
+metaDescription: "Schulter-Impingement: Welche Rolle die Brustwirbelsäule, Rippen und das Schulterblatt in der biomechanischen Betrachtung spielen können – sachliche Einordnung und 4 Übungen. Osteopathie Hamburg."
 keywords:
   - "Schulter Impingement Osteopathie"
   - "Rotatorenmanschette Schmerzen"
@@ -22,7 +22,7 @@ status: "published"
 
 # Schulter-Impingement: Warum die Ursache oft nicht in der Schulter liegt
 
-**„Ihr Röntgen zeigt einen verengten subakromialen Raum. Die Sehne reibt am Schulterdach. Wir sollten das Akromion abfräsen." Der Orthopäde klopft auf das MRT-Bild. Sie nicken – verunsichert. Die Schmerzen sind real. Nachts können Sie nicht mehr auf der linken Seite liegen. Arm heben über Schulterhöhe? Stechender Schmerz. Der BH-Verschluss? Eine tägliche Qual. Die OP klingt logisch: Zu enger Raum → Raum erweitern → Problem gelöst. Oder?**
+**Schulter-Impingement äußert sich häufig durch nächtliche Schmerzen beim Liegen auf der betroffenen Seite, stechende Schmerzen beim Armheben über Schulterhöhe und Einschränkungen bei alltäglichen Bewegungen. Die klassische Befundkette über MRT und Akromion-Verengung führt häufig zur OP-Empfehlung — doch die Studienlage spricht dafür, die Schulter im biomechanischen Gesamtzusammenhang zu betrachten.**
 
 **Studien zeigen: Bei einem Großteil der Impingement-Patient:innen lassen sich Bewegungseinschränkungen außerhalb der Schulter nachweisen – in der Brustwirbelsäule, an den Rippen oder am Schulterblatt.[^1] Aus osteopathischer Sicht lohnt es sich, die Schulter im Gesamtsystem zu betrachten, bevor invasive Schritte erwogen werden.**
 
@@ -50,7 +50,7 @@ Ihr Arzt zeigt Ihnen das MRT:
 
 ---
 
-### Die erschütternde Wahrheit aus der Forschung
+### Was die Forschung zeigt
 
 **Finnische Langzeitstudie (2018, 210 Patienten):**[^2]
 - **Gruppe A:** Arthroskopische Dekompression (Knochen abgefräst)
@@ -131,9 +131,9 @@ Faszien verbinden alle Strukturen miteinander. Spannungen in einem Bereich wirke
 
 ### Der unterschätzte Zusammenhang: BWS-Hyperkyphose → HWS-Hyperlordose → Plexus Brachialis
 
-**Das sehen andere Therapeuten nicht – aber Osteopathen schon:**
+**Eine biomechanische Sicht auf das Gesamtsystem:**
 
-Die meisten Behandler schauen isoliert auf die Schulter. Dabei übersehen sie eine kritische biomechanische Verkettung, die vom Brustkorb über die Halswirbelsäule bis in den Arm reicht.
+Bei isolierter Betrachtung der Schulter bleibt eine relevante biomechanische Verkettung oft unbeachtet, die vom Brustkorb über die Halswirbelsäule bis in den Arm reicht.
 
 **Hier ist, was wirklich passiert:**
 

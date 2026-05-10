@@ -1,8 +1,8 @@
 ---
 slug: "migraene-ohne-aura-osteopathie"
 title: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-Ansatz)"
-excerpt: "Migräne ohne Aura gilt als 'unheilbar' – doch 7 kaum bekannte Auslöser (Zwerchfell, Atlas, Vagusnerv) lassen sich osteopathisch behandeln. 70% erleben nach 4-6 Sitzungen signifikante Besserung."
-metaDescription: "15 Tage Migräne im Monat und Triptane helfen immer schlechter? 60% haben strukturelle Ursachen in HWS, Zwerchfell oder Vagusnerv. Wie Osteopathie die Trigger-Schwelle erhöht statt nur Attacken zu stoppen. Hamburg."
+excerpt: "Migräne ohne Aura: Welche funktionellen Faktoren (Zwerchfell, Atlas, Vagusnerv) in der Forschung diskutiert werden – und wie eine osteopathische Untersuchung die Trigger-Schwelle einordnen kann."
+metaDescription: "Migräne ohne Aura: Welche Rolle HWS, Zwerchfell und autonomes Nervensystem in der Diskussion um die Trigger-Schwelle spielen können – und wie Osteopathie ergänzend einzuordnen ist. Hamburg."
 keywords:
   - "Migräne ohne Aura Hamburg"
   - "Migräne Osteopathie"
@@ -16,11 +16,7 @@ image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200"
 alt: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-Ansatz)"
 ---
 
-**"Ich habe 15 Tage im Monat Migräne. Mein Neurologe sagt: 'Nehmen Sie Triptane.' Aber die helfen immer schlechter. Gibt es noch etwas anderes?"**
-
-**Die Antwort:** Ja – aber Sie müssen verstehen, **warum** Sie Migräne haben, nicht nur die Attacke stoppen.
-
-In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischer Migräne. **60% haben eine strukturelle Ursache** in der Halswirbelsäule (HWS), die kein Schmerzmittel behebt. Der Unterschied: Nicht die Attacke unterdrücken, sondern die **Trigger-Schwelle erhöhen**.
+Migräne ohne Aura ist eine primäre Kopfschmerzerkrankung mit eigener neurobiologischer Dynamik. Neben der etablierten medikamentösen Akut- und Prophylaxetherapie diskutiert die Forschung zunehmend funktionelle Einflussfaktoren auf die Trigger-Schwelle – etwa an der Halswirbelsäule, am Zwerchfell und im autonomen Nervensystem (Vagusnerv). Dieser Artikel beschreibt, an welchen dieser Strukturen eine osteopathische Untersuchung ansetzen kann und wie sie sich in das Gesamtkonzept einordnet.
 
 ## Was ist Migräne ohne Aura? (Und was macht sie anders als Kopfschmerz?)
 

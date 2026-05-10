@@ -432,7 +432,7 @@ export default function VerdauungPage() {
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  Die wissenschaftliche Datenlage zur viszeralen Osteopathie bei Verdauungsbeschwerden ist vielversprechend, wächst aber noch. Mehrere Studien zeigen positive Effekte besonders beim Reizdarmsyndrom: Eine systematische Übersichtsarbeit aus 2020 fand, dass manuelle viszerale Techniken Schmerzen, Blähungen und Lebensqualität bei IBS-Patienten signifikant verbessern können. Die Effekte waren vergleichbar mit medikamentöser Standardtherapie, jedoch ohne Nebenwirkungen.
+                  Die wissenschaftliche Datenlage zur viszeralen Osteopathie bei Verdauungsbeschwerden ist vielversprechend, wächst aber noch. Mehrere Studien zeigen positive Effekte besonders beim Reizdarmsyndrom: Eine systematische Übersichtsarbeit aus 2020 fand, dass manuelle viszerale Techniken Schmerzen, Blähungen und Lebensqualität bei IBS-Patient:innen verbessern können. Wie bei jeder manuellen Therapie können vorübergehende Reaktionen wie Müdigkeit oder lokales Muskelkater-Empfinden auftreten.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   Bei chronischer Verstopfung zeigen Studien, dass osteopathische Behandlung die Stuhlfrequenz erhöhen und die Notwendigkeit von Abführmitteln reduzieren kann. Auch bei funktioneller Dyspepsie (Oberbauchbeschwerden ohne organische Ursache) wurden positive Ergebnisse dokumentiert. Die Mechanismen sind wahrscheinlich multifaktoriell: verbesserte Organbeweglichkeit, optimierte Durchblutung, Regulation des autonomen Nervensystems und psychologische Effekte durch die therapeutische Zuwendung.
@@ -676,7 +676,7 @@ export default function VerdauungPage() {
                     <span>🔄</span> Stress & Burnout
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Stress wirkt sich direkt auf die Verdauung aus - wir behandeln beide Aspekte ganzheitlich.
+                    Stress wirkt sich direkt auf die Verdauung aus - ich betrachte beide Aspekte gemeinsam.
                   </p>
                 </Link>
                 <Link

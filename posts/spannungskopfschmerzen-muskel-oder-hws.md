@@ -1,8 +1,8 @@
 ---
 slug: "spannungskopfschmerzen-muskel-oder-hws"
 title: "Spannungskopfschmerzen: Ist es der Muskel oder die HWS? (Selbsttest + Behandlung)"
-excerpt: "Spannungskopfschmerzen sind NICHT 'nur Stress' oder 'verspannte Muskeln'. 4 neurobiomechanische Ursachen (Atlas, Trigeminusnerv, Zwerchfell) – und wie Osteopathie hilft."
-metaDescription: "Spannungskopfschmerzen seit Jahren? 60% haben keine muskuläre Ursache, sondern HWS-Blockierungen (meist C2). Die 4 neurobiomechanischen Ursachen erklärt – mit Selbsttest und Behandlungsansatz. Osteopathie Hamburg."
+excerpt: "Spannungskopfschmerzen sind komplexer als reine Muskelverspannung: Welche neurobiomechanischen Zusammenhänge (Atlas/Axis, Trigeminus, Zwerchfell) diskutiert werden – mit orientierendem Selbsttest."
+metaDescription: "Chronische Spannungskopfschmerzen: Welche Rolle die obere HWS, der trigemino-zervikale Übergang und Atemmuster spielen können – sachliche Einordnung der neurobiomechanischen Zusammenhänge. Osteopathie Hamburg."
 keywords:
   - "Spannungskopfschmerzen Hamburg"
   - "chronischer Spannungskopfschmerz"
@@ -16,11 +16,7 @@ image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200
 alt: "Spannungskopfschmerzen Osteopathie Hamburg: HWS-Blockierung Atlas C2 behandeln - Selbsttest und neurobiomechanische Ursachen"
 ---
 
-**"Ich habe seit 3 Jahren fast täglich Kopfschmerzen. Es fühlt sich an wie ein Band um den Kopf. Mein Arzt sagt: 'Verspannung'. Aber warum geht es dann nicht weg?"**
-
-**Die Antwort:** Weil 60% der "Spannungskopfschmerzen" KEINE muskuläre Ursache haben – sondern eine **HWS-Blockierung**, meist C2 (Axis).
-
-In meiner Praxis in Hamburg sehe ich regelmäßig Patienten mit der Diagnose "Spannungskopfschmerz". Nach osteopathischer Untersuchung zeigt sich: Bei den meisten ist **nicht der Muskel das Problem**, sondern die Gelenke der oberen Halswirbelsäule.
+Chronische Spannungskopfschmerzen werden klinisch häufig als rein muskuläres Phänomen eingeordnet. Die zugrunde liegenden Mechanismen sind jedoch komplexer: Funktionsstörungen der oberen Halswirbelsäule (insbesondere im Bereich Atlas/Axis), Reizungen im trigemino-zervikalen Übergang und Zwerchfell-/Atemmuster können bei der Entstehung und Aufrechterhaltung der Beschwerden eine Rolle spielen. Dieser Artikel ordnet die neurobiomechanischen Zusammenhänge ein.
 
 ## Was sind Spannungskopfschmerzen? (IHS-Kriterien)
 

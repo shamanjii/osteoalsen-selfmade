@@ -26,7 +26,7 @@ Herzrasen bei Stress, flache Atmung vor Präsentationen, angespannte Schultern i
 
 Chronischer Stress bedeutet: Ihr Sympathikus (das „Gaspedal" des Nervensystems) ist dauerhaft aktiviert. Der Körper befindet sich in ständiger Alarmbereitschaft – ideal für Notfallsituationen, katastrophal für die Gesundheit auf Dauer. Der Vagusnerv fungiert als natürlicher Gegenspieler, als „Bremse". Doch bei vielen Menschen ist diese Bremse zu schwach.
 
-In diesem Artikel erfahren Sie, wie die Polyvagaltheorie die erstaunliche Wirkung von Lächeln, Summen und tiefer Atmung erklärt – und welche 5 wissenschaftlich fundierten Übungen Sie täglich nutzen können, um Ihren ventralen Vagus zu aktivieren und Ihr Nervensystem wieder ins Gleichgewicht zu bringen.
+In diesem Artikel erfahren Sie, wie die Polyvagaltheorie die Wirkung von Lächeln, Summen und tiefer Atmung erklärt – und welche 5 wissenschaftlich fundierten Übungen Sie täglich nutzen können, um Ihren ventralen Vagus zu aktivieren und Ihr Nervensystem wieder ins Gleichgewicht zu bringen.
 
 ## Der Vagusnerv: Ihr körpereigenes Beruhigungssystem
 
@@ -415,7 +415,7 @@ Tiefes Atmen fällt Ihnen schwer, Sie können das Zwerchfell nicht richtig beweg
 
 **Mein ganzheitlicher Ansatz in Hamburg:**
 
-In meiner Hamburger Praxis kombiniere ich osteopathische Techniken mit individuellen Selbsthilfe-Strategien. Ich behandle strukturelle Blockaden manuell (HWS, Zwerchfell, Schädelbasis) und zeige Ihnen gleichzeitig die passenden Übungen für zu Hause. Diese Kombination aus professioneller Behandlung und Eigenverantwortung erzielt nachweislich die besten Langzeit-Ergebnisse.
+In meiner Hamburger Praxis kombiniere ich osteopathische Techniken mit individuellen Selbsthilfe-Strategien. Ich behandle strukturelle Blockaden manuell (HWS, Zwerchfell, Schädelbasis) und zeige Ihnen gleichzeitig die passenden Übungen für zu Hause. Diese Kombination aus Behandlung und aktiver Mitarbeit hat sich in meiner Praxis bewährt.
 
 ## Wissenschaftliche Einordnung: Was ist belegt, was ist Modell?
 

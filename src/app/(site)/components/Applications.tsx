@@ -2,40 +2,44 @@ const items = [
     {
         title: "Rückenschmerzen und Muskel-Skelett-Beschwerden",
         desc:
-            "Osteopathie ist besonders wirksam bei Rücken-, Nacken-, Ischias- und Gelenkschmerzen sowie nach Unfällen.",
+            "Osteopathie kann unterstützend wirken bei Rücken-, Nacken-, Ischias- und Gelenkschmerzen sowie nach Unfällen.",
     },
     {
         title: "Kopfschmerzen und Migräne",
         desc:
-            "Entspannung der Muskulatur und Verbesserung der Durchblutung können Spannungskopfschmerzen und Migräne lindern.",
+            "Entspannung der Muskulatur und Verbesserung der Durchblutung können bei Spannungskopfschmerzen und Migräne unterstützend wirken.",
     },
     {
         title: "Verdauungsprobleme",
         desc:
-            "Unterstützung bei Blähungen, Verstopfung, Reizdarm, Sodbrennen und Reflux durch gezielte osteopathische Techniken.",
+            "Begleitende Unterstützung bei Blähungen, Verstopfung, Reizdarm, Sodbrennen und Reflux durch osteopathische Techniken.",
     },
     {
         title: "Chronische Schmerzen",
         desc:
-            "Ganzheitliche Ansätze helfen, chronische Schmerzen zu lindern und die Lebensqualität zu steigern.",
+            "Ganzheitliche Ansätze können ergänzend wirken, um chronische Schmerzen zu lindern und die Lebensqualität zu unterstützen.",
     },
-    { title: "Schwindel und Gleichgewicht", desc: "Verbesserung von Gleichgewicht und Linderung von Schwindel." },
-    { title: "Atemwegserkrankungen", desc: "Unterstützung bei Asthma und chronischer Bronchitis." },
+    { title: "Schwindel und Gleichgewicht", desc: "Kann unterstützend wirken bei Gleichgewichtsproblemen und Schwindel." },
     {
         title: "Sportverletzungen",
-        desc: "Rehabilitation und Prävention von Zerrungen, Verstauchungen und Sehnenentzündungen.",
+        desc: "Begleitende Unterstützung bei Rehabilitation und Prävention von Zerrungen, Verstauchungen und Sehnenentzündungen.",
     },
     {
         title: "Kiefergelenksbeschwerden (CMD)",
-        desc: "Hilfe bei Kieferdysfunktionen, Zähneknirschen und damit verbundenen Beschwerden.",
+        desc: "Kann unterstützend wirken bei Kieferdysfunktionen, Zähneknirschen und damit verbundenen Beschwerden.",
     },
-    { title: "Kinderosteopathie", desc: "Begleitung der Entwicklung, Haltung und Wachstum." },
-    { title: "Altersbeschwerden", desc: "Linderung bei Arthrose, Osteoporose und Bewegungseinschränkungen." },
+    {
+        title: "Beschwerden im Alter",
+        desc: "Kann ergänzend wirken bei Arthrose und Bewegungseinschränkungen.",
+    },
     {
         title: "Postoperative Rehabilitation",
-        desc: "Förderung der Durchblutung und Mobilität nach Operationen.",
+        desc: "Begleitend zu Physiotherapie und medizinischer Reha können osteopathische Techniken Durchblutung und Mobilität unterstützen.",
     },
-    { title: "Long Covid und Fatigue", desc: "Anregung des Lymphflusses und Unterstützung bei Erschöpfung." },
+    {
+        title: "Long Covid und Fatigue",
+        desc: "Begleitende Unterstützung bei Erschöpfung — ergänzend zur medizinischen Hauptbehandlung.",
+    },
 ];
 
 export default function Applications() {

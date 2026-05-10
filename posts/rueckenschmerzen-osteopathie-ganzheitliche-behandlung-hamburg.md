@@ -28,15 +28,9 @@ sourceCount: 31
 
 # Rückenschmerzen verstehen – und osteopathisch behandeln (Hamburg)
 
-**"Ich habe seit 3 Jahren Rückenschmerzen. MRT unauffällig. Mein Orthopäde sagt: 'Alles in Ordnung, machen Sie Rückentraining.' Aber der Schmerz bleibt. Warum hilft nichts?"**
+Rückenschmerzen gehören zu den häufigsten Beschwerden in der erwachsenen Bevölkerung. In Deutschland erlebt ein Großteil der Erwachsenen mindestens einmal pro Jahr Episoden mit Rückenschmerz; in Hamburg lag die 1-Jahres-Prävalenz 2022 bei rund 27 % – ein Wert, der das städtische Profil (viel Sitzen, Pendelzeit, Stress) widerspiegelt.
 
-Diese Frage höre ich regelmäßig in meiner Praxis in Hamburg. Und die Antwort überrascht die meisten: **Ihr Rücken ist nicht das Problem – er ist das Opfer.**
-
-In Deutschland leiden **über 60% der Erwachsenen** mindestens einmal pro Jahr unter Rückenschmerzen. In Hamburg lag die 1-Jahres-Prävalenz 2022 bei **27% der Bevölkerung** – ein Wert, der das städtische Profil (viel Sitzen, Pendelzeit, Stress) widerspiegelt.
-
-Doch warum versagen klassische Behandlungen so oft? **Weil sie nur auf der Oberfläche ansetzen.**
-
-In diesem Artikel erkläre ich Ihnen als Osteopath, warum Rückenschmerzen meist ein **System-Problem** sind – und wie Osteopathie anders ansetzt als Massage, Physiotherapie oder Rückentraining.
+Bei einem Teil der Betroffenen bleiben die Beschwerden trotz unauffälliger Bildgebung bestehen. Dieser Artikel beschreibt aus osteopathischer Sicht, welche funktionellen Zusammenhänge an der Wirbelsäule, der thorakolumbalen Faszie und angrenzenden Strukturen zu Rückenschmerzen beitragen können – und wie eine osteopathische Untersuchung daran anknüpft.
 
 ---
 

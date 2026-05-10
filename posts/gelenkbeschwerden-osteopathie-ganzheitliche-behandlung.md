@@ -595,7 +595,7 @@ Meta-Analyse 2022 zeigt: **Manuelle Therapie bei Knie-Arthrose** reduziert Schme
 **2. Antioxidantien**
 - **Vitamin C, E, Selen**: Schützen Knorpel vor oxidativem Stress
 - **Polyphenole** (Beeren, grüner Tee): Anti-inflammatorisch
-- **Kurkuma**: Curcumin hemmt COX-2 (Entzündungsenzym) – ähnlich wie Ibuprofen, aber ohne Nebenwirkungen[^17]
+- **Kurkuma**: Curcumin hat in Studien anti-inflammatorische Eigenschaften gezeigt[^17]. Hinweis: Auch pflanzliche Wirkstoffe können Nebenwirkungen oder Wechselwirkungen haben (z. B. mit Blutverdünnern); vor dauerhafter Einnahme bitte ärztlich abklären.
 
 **3. Darmgesundheit**
 - **Leaky Gut** (durchlässiger Darm) → systemische Entzündung → Gelenkschmerzen
