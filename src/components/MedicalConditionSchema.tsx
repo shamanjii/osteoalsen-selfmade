@@ -27,7 +27,7 @@ export default function MedicalConditionSchema({
     possibleTreatment: {
       "@type": "MedicalTherapy",
       name: treatmentName,
-      description: `Osteopathische Behandlung bei ${name} in Hamburg durch VFO-zertifizierten Osteopathen Joshua Alsen.`,
+      description: `Osteopathische Behandlung im Kontext von ${name}-Beschwerden in Hamburg.`,
       relevantSpecialty: {
         "@type": "MedicalSpecialty",
         name: "Osteopathie",

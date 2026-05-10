@@ -50,7 +50,7 @@ export default function RueckenschmerzenPage() {
     <>
       <MedicalConditionSchema
         name="Rückenschmerzen"
-        description="Akute und chronische Rückenschmerzen, Bandscheibenvorfälle, ISG-Blockaden und Verspannungen im unteren Rücken"
+        description="Beschwerden im Zusammenhang von Rückenschmerzen, ISG-Blockaden und Verspannungen"
         symptoms={[
           "Schmerzen im unteren Rücken",
           "ISG-Blockaden",

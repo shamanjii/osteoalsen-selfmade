@@ -7,7 +7,7 @@ import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
   title: "Rückenschmerzen Hamburg | Osteopath - Joshua Alsen",
-  description: "Akute Rückenschmerzen? Schnelle Hilfe ✓ Oft nach 1-3 Sitzungen Besserung ✓ Termine kurzfristig ✓ Rotherbaum & Eimsbüttel ✓ Jetzt!",
+  description: "Osteopathie bei Rückenschmerzen in Hamburg ✓ Kurzfristige Termine ✓ 60 Min. Behandlungszeit ✓ Rotherbaum & Eimsbüttel ✓ Termin online buchen.",
   keywords: [
     "Rückenschmerzen behandeln Hamburg",
     "Akute Rückenschmerzen Hamburg",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: "/rueckenschmerzen-osteopathie-hamburg",
   },
   openGraph: {
-    title: "Rückenschmerzen behandeln Hamburg | Schnelle Hilfe beim Osteopathen",
-    description: "Akute Rückenschmerzen? Schnelle Terminvergabe in Hamburg. Oft schon nach 1-3 Sitzungen deutliche Besserung. Rotherbaum & Eimsbüttel.",
+    title: "Rückenschmerzen Hamburg | Osteopathische Behandlung beim Osteopathen",
+    description: "Osteopathische Behandlung bei Rückenschmerzen in Hamburg. Kurzfristige Termine in Rotherbaum & Eimsbüttel. 60 Minuten individuelle Behandlungszeit.",
     url: "https://www.osteoalsen.de/rueckenschmerzen-osteopathie-hamburg",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     locale: "de_DE",
@@ -53,12 +53,12 @@ const faqItems = [
   {
     question: "Wie lange dauert eine Behandlung und was kostet sie?",
     answer:
-      "Eine osteopathische Behandlung bei mir dauert 60 Minuten und kostet 150€. Bei akuten Rückenschmerzen wie Hexenschuss oder ISG-Blockaden zeigt sich oft schon nach 1-3 Sitzungen eine deutliche Besserung. Die Rechnung können Sie bei Ihrer Krankenkasse zur Erstattung einreichen – viele Kassen bezuschussen mit 30-60€ pro Sitzung.",
+      "Eine osteopathische Behandlung bei mir dauert 60 Minuten und kostet 150€. Wie viele Sitzungen sinnvoll sind, hängt vom individuellen Befund ab und besprechen wir nach der ersten Untersuchung – der Verlauf ist immer individuell. Die Rechnung können Sie bei Ihrer Krankenkasse zur Erstattung einreichen – viele Kassen bezuschussen mit 30-60€ pro Sitzung.",
   },
   {
     question: "Wo in Hamburg finde ich Ihre Praxen?",
     answer:
-      "Ich habe zwei zentrale Standorte: In Rotherbaum (Rappstraße 7, U3 Hoheluftbrücke, 3 Min. Fußweg) und in Eimsbüttel (Eppendorfer Weg 234, U3 Hoheluftbrücke 5 Min. oder U2 Lutterothstraße 7 Min.). Beide Standorte sind barrierefrei erreichbar und gut an den ÖPNV angebunden.",
+      "Ich habe zwei zentrale Standorte: In Rotherbaum (Rappstraße 7, U1 Hallerstraße ca. 5 Min. Fußweg) und in Eimsbüttel (Stresemannallee 118, S-Bahn Diebsteich bzw. Buslinien in der Nähe). Beide Standorte sind gut an den ÖPNV angebunden.",
   },
   {
     question: "Kann ich mit akuten Rückenschmerzen direkt zu Ihnen kommen?",
@@ -68,12 +68,12 @@ const faqItems = [
   {
     question: "Was unterscheidet Ihre Behandlung von einer Massage oder Physiotherapie?",
     answer:
-      "Osteopathie ist keine Massage, sondern eine ganzheitliche Behandlung, die nach den Ursachen Ihrer Rückenschmerzen sucht – oft im Becken, Darm oder anderen Bereichen fern vom schmerzenden Rücken. Ich nehme mir 60 Minuten Zeit ausschließlich für manuelle Techniken. Physiotherapie dauert meist 20-30 Minuten und arbeitet eher lokal mit Übungen und Geräten.",
+      "Osteopathie ist ein eigenständiger manualtherapeutischer Ansatz mit einer ganzheitlichen Sichtweise auf den Körper. In der Untersuchung schaue ich nicht nur auf die schmerzende Region, sondern auch auf mögliche funktionelle Zusammenhänge mit Becken, inneren Organen und Faszien. Eine Sitzung dauert bei mir 60 Minuten und besteht aus Anamnese, Untersuchung und manueller Behandlung. Physiotherapie und Massage haben jeweils eigene Schwerpunkte und können je nach Beschwerdebild sinnvoll ergänzend eingesetzt werden.",
   },
   {
     question: "Gibt es Parkmöglichkeiten an Ihren Standorten?",
     answer:
-      "In Rotherbaum und Eimsbüttel gibt es Straßenparkplätze (teilweise Parkscheinautomat). Ich empfehle aber die Anreise mit U-Bahn oder Bus, da beide Standorte direkt an der U3 Hoheluftbrücke liegen und sehr gut erreichbar sind. Fahrradstellplätze sind ebenfalls vorhanden.",
+      "In Rotherbaum und Eimsbüttel gibt es Straßenparkplätze (teilweise Parkscheinautomat). Ich empfehle die Anreise mit ÖPNV: Rotherbaum (Rappstraße 7) ist gut über die U1 Hallerstraße erreichbar, Eimsbüttel (Stresemannallee 118) über die S-Bahn Diebsteich und diverse Buslinien. Fahrradstellplätze sind in beiden Standorten vorhanden.",
   },
 ];
 
@@ -88,13 +88,14 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="font-serif text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-                Schnelle Hilfe bei
+                Osteopathie bei
                 <span className="block text-teal-600">Rückenschmerzen in Hamburg</span>
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
-                Akute Rückenschmerzen? Termine kurzfristig verfügbar in Rotherbaum & Eimsbüttel.
-                Oft schon nach 1-3 Sitzungen deutliche Besserung bei Hexenschuss,
-                ISG-Blockaden und Kreuzschmerzen.
+                Termine kurzfristig verfügbar in Rotherbaum & Eimsbüttel.
+                Osteopathische Behandlung bei Beschwerden wie Hexenschuss,
+                ISG-Blockaden und Kreuzschmerzen – mit 60 Minuten Zeit für eine
+                gründliche Anamnese und individuelle Behandlung.
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
@@ -135,7 +136,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                 Warum zu mir bei Rückenschmerzen?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-                Zentral in Hamburg gelegen, kurzfristige Termine und effektive Behandlung
+                Zentral in Hamburg gelegen, kurzfristige Termine und individuelle Behandlung
               </p>
             </div>
 
@@ -192,8 +193,9 @@ export default function RueckenschmerzenOsteopathiePage() {
                   Zentral in Hamburg
                 </h3>
                 <p className="text-gray-600">
-                  Zwei Standorte direkt an der U3 Hoheluftbrücke: Rotherbaum (3 Min.)
-                  und Eimsbüttel (5 Min. Fußweg). Perfekt erreichbar aus ganz Hamburg.
+                  Zwei Standorte in Hamburg: Rotherbaum (Rappstraße 7) und Eimsbüttel
+                  (Stresemannallee 118). Beide Praxen sind gut mit U-Bahn, S-Bahn
+                  und Bus erreichbar.
                 </p>
               </div>
 
@@ -214,12 +216,12 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </svg>
                 </div>
                 <h3 className="mb-3 font-serif text-xl font-semibold text-gray-900">
-                  Schnelle Besserung
+                  Individueller Behandlungsverlauf
                 </h3>
                 <p className="text-gray-600">
-                  Bei akuten Rückenschmerzen wie Hexenschuss oder ISG-Blockaden oft
-                  schon nach 1-3 Sitzungen deutliche Verbesserung. Keine monatelangen
-                  Therapien.
+                  Wie viele Sitzungen sinnvoll sind, hängt vom individuellen Befund ab.
+                  Bei akuten Beschwerden wie Hexenschuss oder ISG-Blockaden besprechen
+                  wir das Vorgehen nach der ersten Untersuchung gemeinsam.
                 </p>
               </div>
 
@@ -243,9 +245,9 @@ export default function RueckenschmerzenOsteopathiePage() {
                   Sanfte, manuelle Techniken
                 </h3>
                 <p className="text-gray-600">
-                  Keine schmerzhaften Manipulationen. Ich arbeite mit sanften,
-                  präzisen Techniken, die Ihrem Körper helfen, sein natürliches
-                  Gleichgewicht wiederzufinden.
+                  Ich arbeite mit sanften, präzisen manuellen Techniken. Welche
+                  Techniken im Einzelfall geeignet sind, richtet sich nach dem
+                  Befund und Ihrer individuellen Situation.
                 </p>
               </div>
 
@@ -269,8 +271,9 @@ export default function RueckenschmerzenOsteopathiePage() {
                   Wissenschaftlich fundiert
                 </h3>
                 <p className="text-gray-600">
-                  Studien belegen die Wirksamkeit der Osteopathie bei Rückenschmerzen.
-                  Ich kombiniere evidenzbasierte Ansätze mit individueller Erfahrung.
+                  Mein Vorgehen orientiert sich an aktuellen Studien zur manuellen
+                  Therapie und an etablierten osteopathischen Konzepten – kombiniert
+                  mit Erfahrung aus der täglichen Praxis.
                 </p>
               </div>
 
@@ -357,10 +360,10 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
-                Bei welchen Rückenbeschwerden kann ich helfen?
+                Häufige Beschwerdebilder im Rückenbereich
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-                Schnelle Hilfe in Hamburg bei diesen akuten Beschwerden
+                Themen, mit denen Patientinnen und Patienten in meine Praxis kommen
               </p>
             </div>
 
@@ -370,8 +373,8 @@ export default function RueckenschmerzenOsteopathiePage() {
                   ⚡ Hexenschuss (Lumbago)
                 </h3>
                 <p className="text-gray-600">
-                  Plötzlicher stechender Schmerz im unteren Rücken. Oft schon nach 1-2
-                  Sitzungen deutliche Besserung möglich.
+                  Plötzlicher stechender Schmerz im unteren Rücken, meist durch eine
+                  ungünstige Bewegung oder Belastung ausgelöst.
                 </p>
               </div>
 
@@ -400,8 +403,9 @@ export default function RueckenschmerzenOsteopathiePage() {
                   📀 Bandscheibenprobleme
                 </h3>
                 <p className="text-gray-600">
-                  Vorwölbungen oder Vorfälle – osteopathische Unterstützung zur
-                  Schmerzlinderung und Heilungsförderung.
+                  Bei Vorwölbungen oder Vorfällen kann eine osteopathische Begleitung
+                  ergänzend zur ärztlichen Behandlung infrage kommen – immer abgestimmt
+                  auf den individuellen Befund.
                 </p>
               </div>
 
@@ -429,9 +433,9 @@ export default function RueckenschmerzenOsteopathiePage() {
             <div className="mt-8 text-center">
               <p className="text-gray-600">
                 <span className="font-semibold text-teal-600">Grün markiert:</span>{" "}
-                Akute Beschwerden – oft schnelle Besserung möglich |{" "}
+                eher akute Beschwerden |{" "}
                 <span className="font-semibold text-orange-600">Orange markiert:</span>{" "}
-                Chronische Beschwerden – benötigen mehr Zeit
+                eher chronische Verläufe – der individuelle Verlauf ist immer unterschiedlich.
               </p>
             </div>
           </div>
@@ -533,11 +537,11 @@ export default function RueckenschmerzenOsteopathiePage() {
                     Wichtig zu wissen
                   </h3>
                   <p className="text-gray-700">
-                    Bereits nach der ersten Sitzung berichten viele Patienten von
-                    deutlicher Verbesserung. Bei chronischen Beschwerden empfehle ich
-                    meist 4-6 Behandlungen im Abstand von 2-3 Wochen für nachhaltige
-                    Ergebnisse. Ihr Körper braucht Zeit, sich an die neuen
-                    Bewegungsmuster zu gewöhnen.
+                    Der individuelle Verlauf ist unterschiedlich – wie viele Sitzungen
+                    sinnvoll sind, hängt von Befund, Vorgeschichte und Verlauf ab.
+                    Bei chronischen Beschwerden besprechen wir typischerweise einen
+                    Rahmen von mehreren Behandlungen im Abstand von 2-3 Wochen, damit
+                    der Körper Zeit hat, auf die Behandlung zu reagieren.
                   </p>
                 </div>
               </div>
@@ -550,10 +554,10 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                Ihre Rückenschmerzen in erfahrenen Händen
+                Ausbildung und Qualifikation
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
-                Fundierte Ausbildung, spezialisiert auf muskuloskelettale Beschwerden
+                Fundierte osteopathische Ausbildung und kontinuierliche Fortbildung
               </p>
             </div>
 
@@ -575,11 +579,11 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </svg>
                 </div>
                 <h3 className="mb-2 text-xl font-semibold">
-                  Heilpraktiker & Osteopath (BAO)
+                  Heilpraktiker & Osteopath (B.Sc.)
                 </h3>
                 <p className="text-gray-300">
-                  5-jährige Vollzeitausbildung an der Berliner Academy of Osteopathy
-                  mit Schwerpunkt muskuloskelettales System
+                  Osteopathie-Ausbildung an der OSD Hamburg (Osteopathie Schule
+                  Deutschland) mit über 5.000 Ausbildungsstunden, VFO-zertifiziert.
                 </p>
               </div>
 
@@ -600,11 +604,12 @@ export default function RueckenschmerzenOsteopathiePage() {
                   </svg>
                 </div>
                 <h3 className="mb-2 text-xl font-semibold">
-                  Spezialisierung Rückenschmerzen
+                  Ganzheitlicher Ansatz
                 </h3>
                 <p className="text-gray-300">
-                  Fortbildungen in parietaler Osteopathie, viszeraler Osteopathie und
-                  Faszientherapie speziell für Wirbelsäulenbeschwerden
+                  Behandlung nach den Prinzipien der parietalen, viszeralen und
+                  kraniosakralen Osteopathie – integriert in eine ganzheitliche
+                  Sichtweise auf den Körper.
                 </p>
               </div>
 
@@ -624,10 +629,10 @@ export default function RueckenschmerzenOsteopathiePage() {
                     />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-semibold">Langjährige Erfahrung</h3>
+                <h3 className="mb-2 text-xl font-semibold">Praxiserfahrung</h3>
                 <p className="text-gray-300">
-                  Hunderte erfolgreich behandelte Patienten mit akuten und chronischen
-                  Rückenbeschwerden in Hamburg
+                  Tägliche Arbeit mit Patientinnen und Patienten mit akuten und
+                  chronischen Rückenbeschwerden in den Praxen in Hamburg.
                 </p>
               </div>
             </div>
@@ -693,8 +698,8 @@ export default function RueckenschmerzenOsteopathiePage() {
                     </svg>
                     <div>
                       <p className="font-medium text-gray-900">Anfahrt:</p>
-                      <p>U3 Hoheluftbrücke (3 Min. Fußweg)</p>
-                      <p>Bus 4, 5 Grindelberg</p>
+                      <p>U1 Hallerstraße (ca. 5 Min. Fußweg)</p>
+                      <p>diverse Buslinien in unmittelbarer Nähe</p>
                     </div>
                   </div>
                 </div>
@@ -726,8 +731,8 @@ export default function RueckenschmerzenOsteopathiePage() {
                       />
                     </svg>
                     <div>
-                      <p className="font-medium text-gray-900">Eppendorfer Weg 234</p>
-                      <p>20251 Hamburg</p>
+                      <p className="font-medium text-gray-900">Stresemannallee 118</p>
+                      <p>22529 Hamburg</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -746,8 +751,8 @@ export default function RueckenschmerzenOsteopathiePage() {
                     </svg>
                     <div>
                       <p className="font-medium text-gray-900">Anfahrt:</p>
-                      <p>U3 Hoheluftbrücke (5 Min. Fußweg)</p>
-                      <p>U2 Lutterothstraße (7 Min. Fußweg)</p>
+                      <p>S-Bahn Diebsteich in der Nähe</p>
+                      <p>Buslinien entlang der Stresemannallee</p>
                     </div>
                   </div>
                 </div>
@@ -820,10 +825,10 @@ export default function RueckenschmerzenOsteopathiePage() {
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="rounded-2xl bg-gradient-to-br from-teal-600 to-blue-600 px-8 py-12 text-center text-white shadow-xl">
               <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                Beenden Sie Ihre Rückenschmerzen
+                Termin vereinbaren
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-teal-50">
-                Buchen Sie jetzt Ihren Termin für eine ganzheitliche osteopathische
+                Buchen Sie Ihren Termin für eine ganzheitliche osteopathische
                 Behandlung in Hamburg. Ich nehme mir 60 Minuten Zeit für Sie.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

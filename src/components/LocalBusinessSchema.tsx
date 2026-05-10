@@ -75,8 +75,8 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
           "@type": "Offer",
           "itemOffered": {
             "@type": "MedicalProcedure",
-            "name": "Osteopathische Behandlung bei Rückenschmerzen",
-            "description": "Ganzheitliche Behandlung von Rückenschmerzen, Bandscheibenproblemen und ISG-Blockaden"
+            "name": "Osteopathische Behandlung bei Rückenbeschwerden",
+            "description": "Osteopathische Behandlung bei Rücken- und Beckenbeschwerden"
           },
           "price": "150",
           "priceCurrency": "EUR"
@@ -85,8 +85,8 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
           "@type": "Offer",
           "itemOffered": {
             "@type": "MedicalProcedure",
-            "name": "Osteopathie bei Kopfschmerzen und Migräne",
-            "description": "Sanfte Behandlung von Spannungskopfschmerzen, Migräne und CMD"
+            "name": "Osteopathische Behandlung bei Kopfschmerz- und Kiefer-Beschwerden",
+            "description": "Osteopathische Behandlung im Kontext von Kopfschmerz- und Kiefer-Beschwerden"
           },
           "price": "150",
           "priceCurrency": "EUR"
@@ -96,7 +96,7 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
           "itemOffered": {
             "@type": "MedicalProcedure",
             "name": "Viszerale Osteopathie bei Verdauungsbeschwerden",
-            "description": "Osteopathische Behandlung von Reizdarm, Blähungen und Verdauungsproblemen"
+            "description": "Osteopathische Behandlung im Kontext funktioneller Verdauungsbeschwerden"
           },
           "price": "150",
           "priceCurrency": "EUR"
@@ -116,7 +116,7 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "45",
+      "reviewCount": "44",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -125,23 +125,19 @@ export default function LocalBusinessSchema({ location = 'rotherbaum' }: LocalBu
       "https://www.instagram.com/osteoalsen",
       "https://www.google.com/maps/place/Rappstraße+7,+20146+Hamburg"
     ],
-    "slogan": "Ganzheitliche Osteopathie in Hamburg - Für Ihre Gesundheit",
+    "slogan": "Ganzheitliche Osteopathie in Hamburg",
     "knowsAbout": [
       "Osteopathie",
-      "Manuelle Medizin",
       "Viszerale Osteopathie",
       "Kraniosakrale Osteopathie",
       "Parietale Osteopathie",
       "Sportosteopathie",
       "Rückenschmerzen",
       "Kopfschmerzen",
-      "Migräne",
       "Verdauungsbeschwerden"
     ],
     "medicalSpecialty": [
-      "Osteopathie",
-      "Manuelle Therapie",
-      "Ganzheitliche Medizin"
+      "Osteopathie"
     ]
   };
 

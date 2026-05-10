@@ -24,7 +24,7 @@ status: "published"
 
 **Schulter-Impingement äußert sich häufig durch nächtliche Schmerzen beim Liegen auf der betroffenen Seite, stechende Schmerzen beim Armheben über Schulterhöhe und Einschränkungen bei alltäglichen Bewegungen. Die klassische Befundkette über MRT und Akromion-Verengung führt häufig zur OP-Empfehlung — doch die Studienlage spricht dafür, die Schulter im biomechanischen Gesamtzusammenhang zu betrachten.**
 
-**Studien zeigen: Bei einem Großteil der Impingement-Patient:innen lassen sich Bewegungseinschränkungen außerhalb der Schulter nachweisen – in der Brustwirbelsäule, an den Rippen oder am Schulterblatt.[^1] Aus osteopathischer Sicht lohnt es sich, die Schulter im Gesamtsystem zu betrachten, bevor invasive Schritte erwogen werden.**
+**Die Forschung zeigt: Die Bewegung der Brustwirbelsäule und die Stellung des Schulterblatts beeinflussen die Schulterbeweglichkeit deutlich. Eine reduzierte BWS-Mobilität kann die Schulter-ROM und die skapulothorakale Kinematik einschränken.[^1] Aus osteopathischer Sicht lohnt es sich, die Schulter im Gesamtsystem zu betrachten, bevor invasive Schritte erwogen werden.**
 
 **In diesem Artikel erfahren Sie, warum Ihr Schulter-Impingement wahrscheinlich vom Brustkorb kommt, welche osteopathischen Behandlungsmethoden die Biomechanik wiederherstellen – und welche 4 Übungen Sie sofort zu Hause machen können (inkl. fortgeschrittener BWS-HWS Integrationsübung).**
 
@@ -52,15 +52,14 @@ Ihr Arzt zeigt Ihnen das MRT:
 
 ### Was die Forschung zeigt
 
-**Finnische Langzeitstudie (2018, 210 Patienten):**[^2]
-- **Gruppe A:** Arthroskopische Dekompression (Knochen abgefräst)
-- **Gruppe B:** Schein-OP (nur Hautschnitt, kein Eingriff)
-- **Gruppe C:** Physiotherapie (12 Wochen)
+**Finnische FIMPACT-Studie (Paavola et al., 2018):**[^2]
+- **Gruppe A:** Arthroskopische subakromiale Dekompression
+- **Gruppe B:** Diagnostische Arthroskopie (Schein-OP)
+- **Gruppe C:** Konservative Therapie (Übungstherapie)
 
 **Ergebnis nach 2 Jahren:**
-- Alle 3 Gruppen: **Identische Schmerzreduktion** (ca. 70% Besserung)
-- Die OP war NICHT wirksamer als Schein-OP oder Physiotherapie!
-- 23% der OP-Gruppe: Komplikationen (Frozen Shoulder, Infektion)
+- Zwischen den Gruppen zeigten sich **keine klinisch relevanten Unterschiede** bei Schmerz und Funktion.
+- Die arthroskopische Dekompression war der Schein-OP bzw. konservativen Therapie nicht überlegen.
 
 **Konklusion:** Der verengte Raum ist **nicht die Ursache**, sondern ein Symptom.
 
@@ -89,7 +88,7 @@ Ihr Arzt zeigt Ihnen das MRT:
 
 #### 1. BWS-Blockaden (Brustwirbelsäulen-Steifigkeit)
 
-Die Brustwirbelsäule (BWS, Th1-Th12) ist die knöcherne Basis für das Schulterblatt. **87% der Impingement-Patienten** haben BWS-Hypomobilität (Th4-Th8) – die Kontrollgruppe nur 23%.[^1]
+Die Brustwirbelsäule (BWS, Th1-Th12) ist die knöcherne Basis für das Schulterblatt. **Eine eingeschränkte BWS-Beweglichkeit verändert die Schulter-Biomechanik nachweislich:** ROM und skapuläre Kinematik werden reduziert.[^1]
 
 **Warum?** Blockierte BWS → Schulterblatt kann nicht frei gleiten → falsches Bewegungsmuster → Impingement.
 
@@ -591,7 +590,7 @@ Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate 
 
 **Die Kernbotschaft:**
 
-1. ✅ **87% der Impingement-Fälle** haben ihre Ursache in BWS-Blockaden, Rippen-Dysfunktionen und Schulterblatt-Problemen – NICHT in einem zu engen Raum!
+1. ✅ **Bei vielen Impingement-Fällen** spielen BWS-Mobilität, Rippen-Beweglichkeit und Schulterblatt-Funktion eine zentrale Rolle – nicht allein der subakromiale Raum.
 
 2. ✅ **Osteopathie behandelt die Ursache**, nicht das Symptom – deshalb ist die Erfolgsrate so hoch (70-80% deutliche Besserung ohne OP).
 
@@ -634,8 +633,8 @@ Für allgemeine Informationen über osteopathische Behandlung: [Was ist Osteopat
 
 ---
 
-[^1]: Kebaetse M, McClure P, Pratt NA. "Thoracic position effect on shoulder range of motion, strength, and three-dimensional scapular kinematics." *Archives of Physical Medicine and Rehabilitation*. 1999;80(8):945-950. [PubMed PMID: 10453773](https://pubmed.ncbi.nlm.nih.gov/10453773/). Die Studie zeigt, dass 87% der Patienten mit Schulter-Impingement eine eingeschränkte BWS-Extension (Hypomobilität Th4-Th8) aufweisen, verglichen mit nur 23% in der schmerzfreien Kontrollgruppe.
+[^1]: Kebaetse M, McClure P, Pratt NA. "Thoracic position effect on shoulder range of motion, strength, and three-dimensional scapular kinematics." *Archives of Physical Medicine and Rehabilitation*. 1999;80(8):945-950. [PubMed PMID: 10453773](https://pubmed.ncbi.nlm.nih.gov/10453773/). Die Studie zeigt an gesunden Proband:innen, dass eine veränderte thorakale Haltung die Schulter-ROM, die Schulterkraft sowie die dreidimensionale skapuläre Kinematik signifikant beeinflusst. Sie wird in der Praxis als Beleg dafür herangezogen, dass BWS-Position und -Beweglichkeit eine wichtige Rolle für die Schulterfunktion spielen.
 
-[^2]: Paavola M, Malmivaara A, Taimela S, et al. "Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial." *BMJ*. 2018;362:k2860. [PubMed PMID: 30026230](https://pubmed.ncbi.nlm.nih.gov/30026230/). Finnische Langzeitstudie mit 210 Patienten über 2 Jahre: Arthroskopische Dekompression war NICHT wirksamer als Schein-OP oder Physiotherapie. Alle drei Gruppen zeigten identische Schmerzreduktion (~70%), aber die OP-Gruppe hatte 23% Komplikationsrate.
+[^2]: Paavola M, Malmivaara A, Taimela S, et al. "Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial." *BMJ*. 2018;362:k2860. [PubMed PMID: 30026230](https://pubmed.ncbi.nlm.nih.gov/30026230/). FIMPACT-Studie: Bei Patient:innen mit Schulter-Impingement-Syndrom zeigte sich nach 2 Jahren kein klinisch relevanter Unterschied zwischen arthroskopischer subakromialer Dekompression, diagnostischer Arthroskopie (Schein-OP) und Übungstherapie hinsichtlich Schmerz und Funktion. Die Studie spricht gegen die Routineindikation einer subakromialen Dekompression.
 
 [^3]: Kibler WB, Ludewig PM, McClure PW, et al. "Clinical implications of scapular dyskinesis in shoulder injury: the 2013 consensus statement from the 'Scapular Summit'." *British Journal of Sports Medicine*. 2013;47(14):877-885. [PubMed PMID: 23580420](https://pubmed.ncbi.nlm.nih.gov/23580420/). Consensus Statement zeigt: 67-100% aller Patienten mit Schulter-Impingement haben Scapula-Dyskinesie (abnormale Schulterblatt-Bewegung), aber nur 15% der Standard-Behandlungen adressieren das Schulterblatt direkt.

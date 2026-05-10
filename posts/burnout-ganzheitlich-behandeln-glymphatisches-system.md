@@ -91,8 +91,7 @@ Im Rest Ihres Körpers spült das Lymphsystem diese Abfälle weg. **Aber das Geh
 **So läuft es ab:**
 
 **NACHTS (Tiefschlaf):**
-- Ihre Gehirnzellen **schrumpfen um 60%** (!).[^3]
-- Die Zwischenräume zwischen den Zellen **vergrößern sich**
+- Der interstitielle Raum zwischen den Gehirnzellen **vergrößert sich um rund 60%**.[^3]
 - CSF (Hirnwasser) **flutet durch diese Zwischenräume** wie eine Spülmaschine
 - Abfallprodukte werden **ausgespült** → in meningeale Lymphgefäße → ins venöse Blut → Leber → Ausscheidung
 
@@ -220,7 +219,7 @@ Noch schlechterer Schlaf
 - **Warum:** Bei Stress massiv verspannt → drückt auf Vagusnerv
 - **Effekt:** Nervenkompression ↓ → Vagusnerv-Funktion ↑
 
-**Studien:** Vagusnerv-Stimulation (mechanisch via Osteopathie) erhöht Tiefschlaf-Anteil um 25-35%.[^9]
+**Hintergrund:** Eine bessere vagale Tonisierung wird in der Literatur mit einem verbesserten Tiefschlaf in Verbindung gebracht; gezielte konkrete Prozentangaben für osteopathische Vagusnerv-Stimulation sind aktuell nicht durch eindeutige Studien belegt.
 
 ### 3. HWS-Mobilisation: Liquor-Fluss entlang Wirbelsäule
 
@@ -462,7 +461,7 @@ Beantworten Sie ehrlich:
 - Schlaf optimieren
 - Glymphatisches System reaktivieren
 
-**Ideal:** Beide parallel. Studien zeigen: **Kombination = 60% bessere Outcomes** als nur Psychotherapie.[^14]
+**Ideal:** Beide parallel. In der Praxis berichten viele Patient:innen, dass die Kombination aus psychotherapeutischer und körperlich orientierter Begleitung die Erholung unterstützt.
 
 ### 2. Wie schnell wirkt die Behandlung?
 
@@ -629,11 +628,7 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 [^6]: Plog, B.A., et al. (2015). "Biomarkers of traumatic injury are transported from brain to blood via the glymphatic system." *Journal of Neuroscience*, 35(2), 518-526. DOI: 10.1523/JNEUROSCI.3742-14.2015
 
-[^9]: Gerritsen, R.J.S., Band, G.P.H. (2018). "Breath of life: The respiratory vagal stimulation model of contemplative activity." *Frontiers in Human Neuroscience*, 12, 397. DOI: 10.3389/fnhum.2018.00397
-
 [^11]: Lee, H., et al. (2015). "The effect of body posture on brain glymphatic transport." *Journal of Neuroscience*, 35(31), 11034-11044. DOI: 10.1523/JNEUROSCI.1625-15.2015
 
 [^13]: von Holstein-Rathlou, S., et al. (2018). "Voluntary running enhances glymphatic influx in awake behaving, young mice." *Neuroscience Letters*, 662, 253-258. DOI: 10.1016/j.neulet.2017.10.035
-
-[^14]: Cerritelli, F., et al. (2015). "Clinical effectiveness of osteopathic treatment in chronic migraine: 3-Armed randomized controlled trial." *Complementary Therapies in Medicine*, 23(2), 149-156. DOI: 10.1016/j.ctim.2015.01.011
 

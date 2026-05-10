@@ -92,7 +92,7 @@ export default function VerdauungPage() {
       />
       <MedicalConditionSchema
         name="Verdauungsbeschwerden"
-        description="Reizdarm, Blähungen, Verstopfung und funktionelle Verdauungsstörungen durch viszerale Osteopathie"
+        description="Funktionelle Verdauungsbeschwerden im Kontext viszeraler osteopathischer Behandlung"
         symptoms={[
           "Reizdarmsyndrom",
           "Chronische Verstopfung",

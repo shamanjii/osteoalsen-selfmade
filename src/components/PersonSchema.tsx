@@ -87,11 +87,8 @@ export default function PersonSchema({
     },
     knowsAbout: [
       "Osteopathy",
-      "Manual Medicine",
       "Visceral Osteopathy",
       "Craniosacral Therapy",
-      "Sports Medicine",
-      "Pain Management",
     ],
     ...(sameAs.length > 0 && { sameAs }),
     worksFor: {

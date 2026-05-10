@@ -19,7 +19,7 @@ author: "Admin"
 
 > 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf ISG-Blockierungen (Iliosakralgelenk). Für einen kompletten Guide zu allen Rückenschmerz-Ursachen siehe: [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg)
 
-**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Antwort: 80% aller ISG-Blockierungen kommen zurück[^12], weil nur das Symptom (Blockierung) behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
+**Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Erfahrung in der Praxis zeigt: ISG-Blockierungen treten häufig wieder auf, wenn nur die Blockierung selbst behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
 
 ---
 
@@ -644,7 +644,7 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 
 ## Zusammenfassung: So durchbrechen Sie den Teufelskreis
 
-✓ **ISG-Blockierung kommt bei 80% zurück** – wenn nur Symptom behandelt wird
+✓ **ISG-Blockierungen treten häufig erneut auf**, wenn nur die Blockierung und nicht die Ursache behandelt wird
 
 ✓ **6 häufigste Ursachen:** Muskuläre Dysbalance, Beinlängendifferenz, schwacher Core, Beckentorsion, Hüft-Dysfunktion, Narben
 
@@ -710,30 +710,12 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 [^1]: Vleeming, A., et al. (2012). "The sacroiliac joint: An overview of its anatomy, function and potential clinical implications." *Journal of Anatomy*, 221(6), 537-567. DOI: 10.1111/j.1469-7580.2012.01564.x
 
-[^2]: Laslett, M., et al. (2005). "Diagnosis of sacroiliac joint pain: Validity of individual provocation tests and composites of tests." *Manual Therapy*, 10(3), 207-218. DOI: 10.1016/j.math.2005.01.003
-
-[^3]: Cohen, S.P., et al. (2013). "Sacroiliac joint pain: A comprehensive review of anatomy, diagnosis, and treatment." *Anesthesia & Analgesia*, 116(2), 451-464. DOI: 10.1213/ANE.0b013e31827f4025
-
 [^4]: Sembrano, J.N., Polly, D.W. (2009). "How often is low back pain not coming from the back?" *Spine*, 34(1), E27-E32. DOI: 10.1097/BRS.0b013e31818b8882
-
-[^5]: Marshall, P.W., Murphy, B.A. (2008). "Core stability exercises on and off a Swiss ball." *Archives of Physical Medicine and Rehabilitation*, 86(2), 242-249. DOI: 10.1016/j.apmr.2004.05.004
 
 [^6]: Hungerford, B., et al. (2003). "Evidence of altered lumbopelvic muscle recruitment in the presence of sacroiliac joint pain." *Spine*, 28(14), 1593-1600. DOI: 10.1097/01.BRS.0000076821.41875.0C
 
 [^7]: Damen, L., et al. (2002). "The prognostic value of asymmetric laxity of the sacroiliac joints in pregnancy-related pelvic pain." *Spine*, 27(24), 2820-2824. DOI: 10.1097/00007632-200212150-00020
 
 [^8]: Mens, J.M., et al. (2001). "Understanding peripartum pelvic pain: Implications of a patient survey." *Spine*, 26(11), 1167-1171. DOI: 10.1097/00007632-200106010-00002
-
-[^9]: Pool-Goudzwaard, A.L., et al. (2004). "The iliolumbar ligament: Its influence on stability of the sacroiliac joint." *Clinical Biomechanics*, 18(2), 99-105. DOI: 10.1016/S0268-0033(02)00179-7
-
-[^10]: Szadek, K.M., et al. (2009). "Diagnostic validity of criteria for sacroiliac joint pain: A systematic review." *Journal of Pain*, 10(4), 354-368. DOI: 10.1016/j.jpain.2008.09.014
-
-[^11]: Kennedy, D.J., et al. (2015). "Fluoroscopically guided diagnostic sacroiliac joint injections: A review of evidence-based medicine." *Spine*, 40(14), E859-E866. DOI: 10.1097/BRS.0000000000000887
-
-[^12]: Tullberg, T., et al. (1998). "Manipulation does not alter the position of the sacroiliac joint: A roentgen stereophotogrammetric analysis." *Spine*, 23(10), 1124-1128. DOI: 10.1097/00007632-199805150-00010
-
-[^13]: Chou, L.H., et al. (2004). "Inciting events initiating injection-proven sacroiliac joint syndrome." *Pain Medicine*, 5(1), 26-32. DOI: 10.1111/j.1526-4637.2004.04009.x
-
-[^14]: Arab, A.M., et al. (2007). "Inter-examiner reliability of lumbopelvic stability tests." *Manual Therapy*, 12(2), 140-145. DOI: 10.1016/j.math.2006.06.005
 
 [^15]: O'Sullivan, P.B., Beales, D.J. (2007). "Changes in pelvic floor and diaphragm kinematics and respiratory patterns in subjects with sacroiliac joint pain following a motor learning intervention." *Manual Therapy*, 12(3), 209-218. DOI: 10.1016/j.math.2006.06.020

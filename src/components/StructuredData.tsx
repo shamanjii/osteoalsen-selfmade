@@ -131,8 +131,8 @@ export function LocalBusinessStructuredData({
     // Aggregate rating
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '45',
+      ratingValue: '5.0',
+      reviewCount: '44',
       bestRating: '5',
       worstRating: '1',
     },
@@ -158,8 +158,8 @@ export function LocalBusinessStructuredData({
           '@type': 'Offer',
           itemOffered: {
             '@type': 'MedicalProcedure',
-            name: 'Behandlung von Rückenschmerzen',
-            description: 'Spezialisierte osteopathische Behandlung bei Rückenbeschwerden',
+            name: 'Osteopathische Behandlung bei Rückenbeschwerden',
+            description: 'Osteopathische Behandlung im Kontext von Rückenbeschwerden',
             procedureType: 'Therapeutic',
           },
           price: '150',
@@ -169,8 +169,8 @@ export function LocalBusinessStructuredData({
           '@type': 'Offer',
           itemOffered: {
             '@type': 'MedicalProcedure',
-            name: 'Behandlung von Kopfschmerzen & Migräne',
-            description: 'Osteopathische Behandlung bei Kopfschmerzen und Migräne',
+            name: 'Osteopathische Behandlung bei Kopfschmerz-Beschwerden',
+            description: 'Osteopathische Behandlung im Kontext von Kopfschmerz-Beschwerden',
             procedureType: 'Therapeutic',
           },
           price: '150',
@@ -192,8 +192,6 @@ export function LocalBusinessStructuredData({
     // Medical specialties
     medicalSpecialty: [
       'Osteopathic Manipulative Medicine',
-      'Physical Medicine',
-      'Sports Medicine',
     ],
     // Practitioner information
     employee: {
@@ -232,16 +230,8 @@ export function LocalBusinessStructuredData({
       // 'https://www.facebook.com/osteoalsen',
       // 'https://www.instagram.com/osteoalsen',
     ],
-    // Accessibility features
-    amenityFeature: [
-      {
-        '@type': 'LocationFeatureSpecification',
-        name: 'Barrier-free access',
-        value: true,
-      },
-    ],
     // Additional keywords for search optimization
-    keywords: 'Osteopathy, Manual Therapy, Sports Medicine, Pain Management, Holistic Medicine',
+    keywords: 'Osteopathy, Manual Therapy, Holistic Medicine',
   };
 
   return (
@@ -315,9 +305,12 @@ export function MedicalScholarlyArticle({
   specialty,
   sourceCount,
 }: MedicalScholarlyArticleProps) {
+  // sourceCount intentionally unused: we no longer surface "peer-reviewed" evidenceLevel claims
+  void sourceCount;
+
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': ['MedicalScholarlyArticle', 'Article'],
+    '@type': 'Article',
     headline,
     description,
     author: {
@@ -357,44 +350,24 @@ export function MedicalScholarlyArticle({
     ...(keywords && {
       keywords: keywords.join(', '),
     }),
-    specialty: {
-      '@type': 'MedicalSpecialty',
-      name: specialty,
-    },
     about: {
-      '@type': 'MedicalCondition',
+      '@type': 'Thing',
       name: specialty,
-      code: {
-        '@type': 'MedicalCode',
-        code: 'T-D4000',
-        codingSystem: 'RadLex',
-      },
     },
     ...(citations.length > 0 && {
       citation: citations.map(cite => ({
-        '@type': 'ScholarlyArticle',
+        '@type': 'CreativeWork',
         name: cite.title,
         ...(cite.author && { author: cite.author }),
         ...(cite.url && { url: cite.url }),
         ...(cite.identifier && { identifier: cite.identifier }),
       })),
     }),
-    // Add evidence level indicator
-    evidenceLevel: {
-      '@type': 'Text',
-      value: `Based on ${sourceCount}+ peer-reviewed studies`,
-    },
-    isBasedOn: citations.slice(0, 10).map(cite => ({
-      '@type': 'ScholarlyArticle',
-      name: cite.title,
-      ...(cite.url && { url: cite.url }),
-    })),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url,
     },
     isAccessibleForFree: true,
-    genre: ['Medical Research', 'Osteopathic Medicine', 'Evidence-Based Medicine'],
   };
 
   return (

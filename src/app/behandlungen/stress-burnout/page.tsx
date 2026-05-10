@@ -54,7 +54,7 @@ export default function StressBurnoutPage() {
     <>
       <MedicalConditionSchema
         name="Stress und Burnout"
-        description="Stressbedingte Beschwerden, Erschöpfungszustände und Regulation des vegetativen Nervensystems durch Osteopathie"
+        description="Stressassoziierte Beschwerden und Erschöpfungszustände im osteopathischen Behandlungskontext"
         symptoms={[
           "Chronischer Stress",
           "Erschöpfung und Burnout",

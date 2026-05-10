@@ -113,7 +113,7 @@ export default function RootLayout({
           <WebsiteStructuredData />
           <LocalBusinessStructuredData
             name="Joshua Alsen - Osteopathie Hamburg"
-            description="VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum & Eimsbüttel. Ganzheitliche osteopathische Behandlung für Erwachsene und Kinder. Kassenerstattung möglich."
+            description="VFO-zertifizierter Osteopath und Heilpraktiker in Hamburg-Rotherbaum & Eimsbüttel. Ganzheitliche osteopathische Behandlung für Erwachsene. Kassenzuschuss möglich."
             url="https://www.osteoalsen.de"
             telephone="+4917643990001"
             email="joshua@alsen.info"

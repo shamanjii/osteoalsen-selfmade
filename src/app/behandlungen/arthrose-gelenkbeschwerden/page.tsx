@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Arthrose & Gelenkbeschwerden | Osteopathie Hamburg',
-  description: 'Osteopathie bei Arthrose ✓ Schmerzlinderung ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!',
+  description: 'Osteopathische Behandlung bei Arthrose und Gelenkbeschwerden in Hamburg ✓ VFO-Osteopath ✓ Termine binnen 48h. Jetzt informieren und Termin buchen.',
   keywords: [
     'hilft osteopathie bei arthrose',
     'kann osteopath bei arthrose helfen',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     canonical: '/behandlungen/arthrose-gelenkbeschwerden/'
   },
   openGraph: {
-    title: 'Hilft Osteopathie bei Arthrose? Schmerzlinderung ohne OP | Hamburg',
-    description: 'Ja, Osteopathie hilft bei Arthrose! ✓ Natürliche Schmerzlinderung ✓ Mehr Beweglichkeit ohne OP ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h ⭐',
+    title: 'Arthrose & Gelenkbeschwerden – Osteopathie Hamburg',
+    description: 'Osteopathische Behandlung bei Arthrose und Gelenkbeschwerden in Hamburg. VFO-zertifizierter Osteopath, Termine binnen 48h.',
     url: '/behandlungen/arthrose-gelenkbeschwerden',
     type: 'website'
   }
@@ -82,7 +82,7 @@ export default function ArthrosePage() {
     <>
       <MedicalConditionSchema
         name="Arthrose und Gelenkbeschwerden"
-        description="Osteopathische Behandlung von Arthrose, Hüftschmerzen, Knieschmerzen und anderen Gelenkbeschwerden durch ganzheitliche manuelle Therapie zur Schmerzreduktion und Mobilitätsverbesserung."
+        description="Osteopathische Behandlung im Zusammenhang von Arthrose und Bewegungseinschränkungen durch ganzheitliche manuelle Behandlung."
         symptoms={[
           'Gelenkschmerzen bei Belastung',
           'Morgendliche Gelenksteifigkeit',
@@ -128,7 +128,7 @@ export default function ArthrosePage() {
       <TreatmentHero
         title="Arthrose & Gelenkbeschwerden"
         subtitle="Ganzheitliche osteopathische Behandlung für mehr Beweglichkeit und Lebensqualität"
-        description="Gelenkschmerzen müssen Sie nicht hinnehmen. Mit einem ganzheitlichen osteopathischen Ansatz behandle ich nicht nur das schmerzende Gelenk, sondern optimiere Ihre gesamte Körperstatik für nachhaltige Beschwerdefreiheit."
+        description="Mit einem ganzheitlichen osteopathischen Ansatz behandle ich nicht nur das betroffene Gelenk, sondern arbeite an Ihrer gesamten Körperstatik – zur Unterstützung der Mobilität und Körperstatik."
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">

@@ -378,9 +378,9 @@ export const fallbackReviews: Review[] = [
 ];
 
 export const reviewsStats = {
-  totalReviews: 45,
+  totalReviews: 44,
   averageRating: 5.0,
-  fiveStars: 45,
+  fiveStars: 44,
   fourStars: 0,
   threeStars: 0,
   twoStars: 0,

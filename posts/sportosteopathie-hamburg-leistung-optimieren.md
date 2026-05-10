@@ -31,10 +31,10 @@ alt: "Sportosteopathie Hamburg Bewegungsanalyse – Leistungsoptimierung für L�
 
 **Kommt Ihnen das bekannt vor?**
 
-Sie sind nicht allein. Studien zeigen:
-- **68% der ambitionierten Freizeitsportler** haben chronische Beschwerden, die ihre Leistung einschränken[^1]
-- **42% aller Laufverletzungen** sind **Überlastungsschäden** – vermeidbar durch optimierte Biomechanik[^2]
-- **Elite-Athleten** nutzen osteopathische Begleitung zu **73%** zur Leistungsoptimierung (nicht nur bei Verletzungen)[^3]
+Sie sind nicht allein. In der Sportmedizin gut dokumentiert:
+- Ein erheblicher Teil ambitionierter Freizeitsportler:innen berichtet über chronische muskuloskelettale Beschwerden, die die Leistung einschränken.[^1]
+- Ein großer Anteil der Laufverletzungen sind **Überlastungsschäden**, deren Risiko sich u. a. durch Trainingssteuerung und Biomechanik beeinflussen lässt.[^2]
+- Viele Sportler:innen nutzen ergänzend osteopathische oder manuelle Therapie – zur Leistungsoptimierung und nicht nur bei akuten Verletzungen.
 
 ### Warum klassische Sportmedizin oft zu kurz greift
 
@@ -83,7 +83,7 @@ Aber **kaum jemand kennt** seine Bewegungsqualität:
 
 **Wissenschaftlicher Hintergrund:**
 
-Eine Studie an 312 Läufern zeigte: **Läufer mit Beckenasymmetrie >5mm** hatten ein **3,4-fach erhöhtes Risiko** für Knieschmerzen[^4]. Die Lösung liegt nicht im Knie – sondern im Becken.
+In der biomechanischen Forschung wird ein Zusammenhang zwischen Beckenstellung, Lauf-Kinematik und Knieüberlastung diskutiert. Die Lösung liegt häufig nicht im Knie selbst, sondern in der gesamten Bewegungskette – inklusive Becken und Hüfte.
 
 **Real-World-Beispiel:**
 
@@ -196,7 +196,7 @@ Mehr Training → Bessere Leistung
 **C. Schlafqualität verbessern**
 - **Cranio-sacrale Therapie**: Spannungen im Nervensystem lösen
 - **HWS-Mobilisierung**: Bessere Atmung → tieferer Schlaf
-- **Erfahrung aus der Praxis**: Viele Patient:innen berichten nach osteopathischer Behandlung über erholsameren Schlaf — der individuelle Effekt ist unterschiedlich[^10]
+- **Erfahrung aus der Praxis**: Viele Patient:innen berichten nach osteopathischer Behandlung über erholsameren Schlaf — der individuelle Effekt ist unterschiedlich.
 
 **Optimales Regenerations-Protokoll:**
 
@@ -482,8 +482,7 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 
 **Deshalb**: Freizeitsportler profitieren oft **noch mehr** von osteopathischer Begleitung.
 
-**Studienlage**:
-Eine Untersuchung an 240 Freizeitläufern zeigte: **Regelmäßige osteopathische Behandlung** (1x/Monat) reduzierte Verletzungsrate um 62%[^11].
+**Erfahrung aus der Praxis**: Regelmäßige osteopathische Begleitung wird von vielen Freizeitsportler:innen als hilfreich erlebt, um Dysbalancen früh zu erkennen und Überlastungen vorzubeugen. Belastbare Studiendaten zur Verletzungs-Reduktion durch Osteopathie sind aktuell begrenzt.
 
 ---
 
@@ -721,22 +720,14 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 [^1]: Van Gent, R. et al. (2007). "Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review." *British Journal of Sports Medicine*, 41(8), 469-480.
 
-[^2]: Nielsen, R.O. et al. (2014). "Training errors and running related injuries: a systematic review." *International Journal of Sports Physical Therapy*, 7(1), 58-75.
-
-[^3]: Puentedura, E.J. & O'Grady, W.H. (2015). "Safety of thrust joint manipulation in the thoracic spine: a systematic review." *Journal of Manual & Manipulative Therapy*, 23(3), 154-161.
-
-[^4]: Roper, J.L. et al. (2016). "The effects of pelvic alignment on running kinematics and risk of knee injury." *Gait & Posture*, 48, 132-137.
+[^2]: Nielsen, R.O. et al. (2012). "Training errors and running related injuries: a systematic review." *International Journal of Sports Physical Therapy*, 7(1), 58-75.
 
 [^5]: Schleip, R. & Müller, D.G. (2013). "Training principles for fascial connective tissues: Scientific foundation and suggested practical applications." *Journal of Bodywork and Movement Therapies*, 17(1), 103-115.
 
-[^6]: Stecco, C. et al. (2018). "Fascial components of the myofascial pain syndrome." *Current Pain and Headache Reports*, 17(8), 352.
+[^6]: Stecco, C. et al. (2013). "Fascial components of the myofascial pain syndrome." *Current Pain and Headache Reports*, 17(8), 352.
 
 [^7]: Macklin, K. et al. (2012). "The effect of ankle dorsiflexion on Achilles tendon loading during running." *British Journal of Sports Medicine*, 46(12), 882-887.
 
-[^8]: Fryer, G. et al. (2019). "The effect of osteopathic manipulative treatment on range of motion: A systematic review and meta-analysis." *Manual Therapy*, 22, 101-110.
+[^8]: Fryer, G. et al. (2017). "The effect of osteopathic manipulative treatment on range of motion: A systematic review and meta-analysis." *Manual Therapy*.
 
 [^9]: Crane, J.D. et al. (2012). "Massage therapy attenuates inflammatory signaling after exercise-induced muscle damage." *Science Translational Medicine*, 4(119), 119ra13.
-
-[^10]: Müller, M. & Lander, K. (2020). "Osteopathic treatment and sleep quality: A prospective cohort study." *Journal of Sleep Research*, 29(4), e13012.
-
-[^11]: Walkowski, S. et al. (2018). "Osteopathic manipulative treatment in the prevention of running-related injuries: A randomized controlled trial." *Journal of the American Osteopathic Association*, 118(10), 635-645.

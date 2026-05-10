@@ -27,9 +27,9 @@ alt: "Osteopathische Gelenkbehandlung – ganzheitliche Therapie für schmerzfre
 
 **Die Realität sieht oft anders aus:**
 
-- Viele Patient:innen mit chronischen Gelenkschmerzen konsultieren mehrere Behandler:innen, bevor eine als zufriedenstellend empfundene Therapie gefunden wird[^1]
-- Bei einem relevanten Anteil der „Arthrose-Diagnosen" tragen umliegende Strukturen (Faszien, Muskeln, Nerven) wesentlich zum Beschwerdebild bei[^2]
-- Zwischen den ersten Symptomen und einer wirksam empfundenen Therapie können oft viele Monate vergehen[^3]
+- Viele Patient:innen mit chronischen Gelenkschmerzen konsultieren mehrere Behandler:innen, bevor eine als zufriedenstellend empfundene Therapie gefunden wird.
+- Bei einem relevanten Anteil der „Arthrose-Diagnosen" tragen umliegende Strukturen (Faszien, Muskeln, Nerven) wesentlich zum Beschwerdebild bei – die Diskrepanz zwischen radiologischem Befund und Schmerzempfinden ist gut beschrieben.[^10]
+- Zwischen den ersten Symptomen und einer wirksam empfundenen Therapie können viele Monate vergehen.
 
 ### Warum herkömmliche Behandlungen oft zu kurz greifen
 
@@ -58,7 +58,7 @@ Ein einziges „schwaches Glied" in der Bewegungskette kann zu Überlastung ande
   - Nach Jahren: „Arthrose" im inneren Kniekompartiment
 
 **Wissenschaftlicher Hintergrund:**
-Studien zeigen, dass **biomechanische Dysfunktionen in entfernten Körperregionen** zu 58% der chronischen Gelenkschmerzen beitragen[^4]. Die Lösung liegt oft nicht im schmerzenden Gelenk, sondern in der Korrektur der gesamten Bewegungskette.
+In der biomechanischen Forschung ist gut beschrieben, dass **Funktionsstörungen in entfernten Körperregionen** (z. B. Hüfte oder Fuß) zur Überlastung benachbarter Gelenke beitragen können.[^4] Die Lösung liegt oft nicht im schmerzenden Gelenk, sondern in der Korrektur der gesamten Bewegungskette.
 
 **Osteopathischer Ansatz:**
 - Ganganalyse: Wie läuft der gesamte Körper?
@@ -717,12 +717,6 @@ In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/art
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
-
-[^1]: Johnson, M. et al. (2022). "Patient journey in chronic joint pain: A multi-center survey." *Journal of Musculoskeletal Medicine*, 45(3), 234-248.
-
-[^2]: Smith, R. & Davis, L. (2023). "Discordance between radiological findings and clinical symptoms in osteoarthritis." *Arthritis Research & Therapy*, 25(1), 89-102.
-
-[^3]: Williams, P. et al. (2021). "Time to effective treatment in chronic musculoskeletal conditions." *BMC Health Services Research*, 21(4), 456-467.
 
 [^4]: Powers, C.M. (2010). "The influence of abnormal hip mechanics on knee injury: a biomechanical perspective." *Journal of Orthopaedic & Sports Physical Therapy*, 40(2), 42-51.
 

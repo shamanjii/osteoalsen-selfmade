@@ -65,7 +65,7 @@ status: "published"
 4. **Wenn keine Besserung:** Hüft-TEP (Totalendoprothese)
 
 **Was dabei oft übersehen wird:**
-- ✗ [Becken-Fehlstellungen](/blog/isg-blockierung-teufelskreis) (80% der Hüftarthrose-Patienten!)
+- ✗ [Becken-Fehlstellungen](/blog/isg-blockierung-teufelskreis) (in der osteopathischen Untersuchung häufig befundet)
 - ✗ [LWS-Blockaden](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) (Hüfte kompensiert steife Wirbelsäule)
 - ✗ Hüftbeuger-Verkürzung durch [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen)
 - ✗ **Biomechanische Kompensationsmuster** – die EIGENTLICHE Ursache!
@@ -93,7 +93,7 @@ Knorpelabbau im Hüftgelenk – der Gelenkspalt wird enger, Knochen reibt auf Kn
 - [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis) (chronische Becken-Fehlstellung)
 
 **Wichtig zur Einordnung:**
-Der Knorpelverschleiß auf dem Röntgenbild **korreliert nicht zwingend** mit dem Schmerzempfinden. Studien zeigen: Ein Teil der Menschen mit Arthrose Grad 3 berichtet keine Schmerzen, während andere mit Grad 1 deutliche Beschwerden haben.[^3]
+Der Knorpelverschleiß auf dem Röntgenbild **korreliert nicht zwingend** mit dem Schmerzempfinden. Für Kniearthrose ist dieses Phänomen gut belegt; ein ähnliches Muster wird auch bei Hüftarthrose beschrieben.[^3]
 
 **→ Das bedeutet:** Der Schmerz kann auch von Muskelverspannungen, Faszien-Verklebungen oder Gelenkkapsel-Reizungen mitverursacht werden — nicht nur vom Knorpel selbst.
 
@@ -117,7 +117,7 @@ Knochen-Anbauten am Hüftkopf (CAM-Impingement) oder der Hüftpfanne (Pincer-Imp
 - Ballett
 
 **Wichtig:**
-FAI wird oft übertherapiert! Viele Menschen haben FAI im MRT **ohne Beschwerden**. Die OP-Rate ist in den letzten Jahren explodiert – oft unnötig.[^4]
+Viele Menschen haben FAI-Veränderungen im MRT **ohne Beschwerden** – Befund und Symptom decken sich nicht immer. Die Indikationsstellung für eine FAI-Operation wird in der Forschung diskutiert.
 
 **Osteopathischer Ansatz:**
 - Optimierung der Hüftbeweglichkeit (Kapsel-Mobilisierung)
@@ -163,25 +163,11 @@ Der Piriformis-Muskel (Gesäßmuskel) verkrampft und drückt auf den Ischiasnerv
 
 ### Die Studienlage: OP vs. konservative Therapie
 
-**Studie 1: Dänemark, 2018 (Skou et al.)**[^2]
-- 100 Hüftarthrose-Patienten (Grad 2-3)
-- **Gruppe A:** Hüft-TEP (künstliches Gelenk)
-- **Gruppe B:** Konservatives Programm (Osteopathie/Physiotherapie + Training)
-- **Ergebnis nach 12 Monaten:**
-  - Gruppe A: -37 Punkte Schmerz (WOMAC-Score)
-  - Gruppe B: -31 Punkte Schmerz
-  - **Unterschied: NICHT signifikant!**
+**Was die Forschung zeigt:**
 
-**Studie 2: USA, 2016 (Svege et al.)**[^6]
-- 222 Hüftarthrose-Patienten
-- OP vs. Bewegungstherapie + manuelle Therapie
-- **Ergebnis:**
-  - 64% der konservativ Behandelten **vermieden OP** über 2 Jahre
-  - Lebensqualität gleich gut wie OP-Gruppe
-
-**Studie 3: Meta-Analyse 2020**[^7]
-- 18 Studien, 3.400 Patienten
-- **Fazit:** „Bei Hüftarthrose Grad 1-2 ist konservative Therapie **erste Wahl**. Bei Grad 3 individuell entscheiden."
+- Es existieren vergleichende Studien zwischen operativer und konservativer Therapie bei Hüftarthrose. Insgesamt deuten die Daten darauf hin, dass strukturierte konservative Programme (Bewegungstherapie, manuelle Therapie, Schulung) bei einem Teil der Patient:innen Schmerz und Funktion deutlich verbessern können.
+- Eine norwegische Langzeitstudie zur Bewegungstherapie bei Hüftarthrose (Svege et al.) berichtete, dass konservative Therapie eine Hüft-OP bei vielen Patient:innen über mehrere Jahre hinauszögern oder vermeiden kann.[^6]
+- Leitlinien empfehlen bei früher und mittlerer Hüftarthrose eine konservative Therapie als erste Stufe; eine OP-Indikation wird individuell und nach Ausschöpfung konservativer Maßnahmen gestellt.
 
 ### Wann ist eine Hüft-OP WIRKLICH nötig?
 
@@ -205,8 +191,8 @@ Der Piriformis-Muskel (Gesäßmuskel) verkrampft und drückt auf den Ischiasnerv
 
 Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung). Während lokale Behandlungen oft versagen, betrachtet die Osteopathie den gesamten Bewegungsapparat.
 
-**Hüftschmerzen entstehen durch:**
-1. **Becken-Fehlstellung** (85% der Fälle!)[^8]
+**Hüftschmerzen können beeinflusst sein durch:**
+1. **Becken-Fehlstellungen** (häufig in der osteopathischen Praxis befundet)
 2. **LWS-Steifigkeit** (kompensatorische Überlastung)
 3. **Muskuläre Dysbalance** (Hüftbeuger vs. Gluteus)
 4. **Fasziale Verklebungen** (Iliopsoas, IT-Band, TFL)
@@ -230,7 +216,7 @@ Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden
 ### 1. Becken-Analyse: Die Basis-Korrektur
 
 **Problem:**
-80% aller Hüftarthrose-Patienten haben eine [Becken-Fehlstellung](/blog/isg-blockierung-teufelskreis)![^8]
+Becken-Fehlstellungen und Funktionsstörungen des Iliosakralgelenks finden sich in der osteopathischen Praxis sehr häufig bei Patient:innen mit Hüftbeschwerden ([siehe ISG-Blockierung](/blog/isg-blockierung-teufelskreis)).
 
 **Osteopathische Untersuchung:**
 - **Beckenkamm-Höhe:** Steht eine Seite höher?
@@ -677,19 +663,11 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 [^1]: Murphy, L.B., et al. (2008). "Lifetime risk of symptomatic hip osteoarthritis." *Arthritis & Rheumatism*, 59(9), 1207-1213. DOI: 10.1002/art.24021
 
-[^2]: Skou, S.T., et al. (2018). "Total knee replacement and non-surgical treatment of knee osteoarthritis: 2-year outcome from two parallel randomized controlled trials." *Osteoarthritis and Cartilage*, 26(9), 1170-1180. DOI: 10.1016/j.joca.2018.04.014
-
-[^3]: Bedson, J., & Croft, P.R. (2008). "The discordance between clinical and radiographic knee osteoarthritis: a systematic search and summary of the literature." *BMC Musculoskeletal Disorders*, 9, 116. DOI: 10.1186/1471-2474-9-116
-
-[^4]: Ayeni, O.R., et al. (2014). "Surgical management of labral tears during femoroacetabular impingement surgery: a systematic review." *Knee Surgery, Sports Traumatology, Arthroscopy*, 22(4), 756-762. DOI: 10.1007/s00167-014-2886-8
+[^3]: Bedson, J., & Croft, P.R. (2008). "The discordance between clinical and radiographic knee osteoarthritis: a systematic search and summary of the literature." *BMC Musculoskeletal Disorders*, 9, 116. Hinweis: Originalstudie zur Kniearthrose; ein analoges Phänomen wird auch für die Hüftarthrose beschrieben. DOI: 10.1186/1471-2474-9-116
 
 [^5]: Wall, P.D., et al. (2013). "Outcomes of patients with borderline hip dysplasia following hip arthroscopy." *Arthroscopy*, 29(10), 1651-1657. DOI: 10.1016/j.arthro.2013.07.271
 
-[^6]: Svege, I., et al. (2016). "Exercise therapy may postpone total hip replacement surgery in patients with hip osteoarthritis." *Annals of the Rheumatic Diseases*, 74(1), 164-169. DOI: 10.1136/annrheumdis-2013-203628
-
-[^7]: Bennell, K.L., et al. (2020). "Effect of physical therapy on pain and function in patients with hip osteoarthritis: a randomized clinical trial." *JAMA*, 323(8), 742-753. DOI: 10.1001/jama.2020.0504
-
-[^8]: Cibulka, M.T., et al. (2017). "Hip pain and mobility deficits—hip osteoarthritis: revision 2017." *Journal of Orthopaedic & Sports Physical Therapy*, 47(6), A1-A37. DOI: 10.2519/jospt.2017.0301
+[^6]: Svege, I., et al. (2015). "Exercise therapy may postpone total hip replacement surgery in patients with hip osteoarthritis: a long-term follow-up of a randomised trial." *Annals of the Rheumatic Diseases*, 74(1), 164-169. DOI: 10.1136/annrheumdis-2013-203628
 
 [^9]: Hoeksma, H.L., et al. (2004). "Comparison of manual therapy and exercise therapy in osteoarthritis of the hip: a randomized clinical trial." *Arthritis & Rheumatism*, 51(5), 722-729. DOI: 10.1002/art.20685
 

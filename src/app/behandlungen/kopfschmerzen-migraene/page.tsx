@@ -50,7 +50,7 @@ export default function KopfschmerzenPage() {
     <>
       <MedicalConditionSchema
         name="Kopfschmerzen und Migräne"
-        description="Spannungskopfschmerzen, Migräne und kieferbezogene Kopfschmerzen (CMD - Craniomandibuläre Dysfunktion)"
+        description="Kopfschmerz-Beschwerden im Zusammenhang muskuloskelettaler Faktoren"
         symptoms={[
           "Spannungskopfschmerzen",
           "Migräne",

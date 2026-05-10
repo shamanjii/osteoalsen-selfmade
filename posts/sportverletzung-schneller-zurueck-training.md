@@ -83,7 +83,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 
 **Osteopathischer Ansatz:**
 ✓ **Myofasziale Behandlung (MFR - Myofascial Release):** Verhinderung von Narbenverklebungen (Adhäsionen)
-✓ **Cross-Friction-Massage (Quermassage):** Ausrichtung der Kollagenfasern entlang der Belastungslinien[^2]
+✓ **Cross-Friction-Massage (Quermassage):** Soll die Ausrichtung der Kollagenfasern entlang der Belastungslinien unterstützen
 ✓ **Artikulation (Gelenkmobilisation):** Wiederherstellung der Gelenkbeweglichkeit (ROM - Range of Motion)
 ✓ **Neuromuskuläre Reprogrammierung (NMT):** Korrektur von Schonhaltungen (Kompensationsmuster)
 ✓ **Stufenweise Belastung (Progressive Loading):** Kontrollierte Gewebeadaptation (Mechanotransduktion, wichtig auch zur [Arthrose-Prävention](/behandlungen/arthrose-gelenkbeschwerden))
@@ -151,7 +151,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 - Behandlung thorakaler Dysfunktionen ([Brustwirbelsäule/BWS](/behandlungen/rueckenschmerzen) beeinflusst Nervensystem Arm)
 - Korrektur von Bewegungsmustern (Biomechanik)
 
-**Besonderheit:** 80% der Tennisellenbogen-Patienten haben zervikale (Hals-/HWS-)Dysfunktionen[^5]
+**Besonderheit:** Bei vielen Patient:innen mit Tennisellenbogen finden sich zusätzlich funktionelle Störungen der Halswirbelsäule (HWS) – ein Zusammenhang, der in der manuellen Therapie regelmäßig beobachtet wird.
 
 ### 4. Läuferknie (IT-Band-Syndrom/ITBS)
 
@@ -562,11 +562,7 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 
 ---
 
-[^2]: Chaudhry, H., et al. (2021). "Effect of manual therapy on collagen fiber alignment in soft tissue injuries: A biomechanical study." *Journal of Bodywork and Movement Therapies*, 25(1), 124-131. DOI: 10.1016/j.jbmt.2020.10.015
-
 [^4]: Hiller, C.E., et al. (2019). "Chronic ankle instability: Evolution of the model." *Journal of Athletic Training*, 54(2), 149-161. DOI: 10.4085/1062-6050-344-17
-
-[^5]: Descatha, A., et al. (2020). "Lateral epicondylitis and cervical spine dysfunction: A systematic review." *Occupational and Environmental Medicine*, 77(6), 412-419. DOI: 10.1136/oemed-2019-106344
 
 [^6]: Hadeed, A., Tapscott, D.C. (2019). "Iliotibial band syndrome: Myth or reality?" *Sports Health*, 11(5), 392-395. DOI: 10.1177/1941738119856563
 
@@ -577,19 +573,3 @@ Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg*
 [^9]: Malliaras, P., et al. (2022). "Mechanisms of eccentric exercise in tendinopathy rehabilitation: A narrative review." *British Journal of Sports Medicine*, 56(2), 92-99. DOI: 10.1136/bjsports-2020-103671
 
 [^10]: Licciardone, J.C., et al. (2020). "Osteopathic manual treatment in patients undergoing surgery: A systematic review." *Journal of the American Osteopathic Association*, 120(11), 775-784. DOI: 10.7556/jaoa.2020.128
-
-[^11]: Bleakley, C.M., et al. (2021). "PRICE needs updating, should we call the POLICE and PEACE?" *British Journal of Sports Medicine*, 55(18), 1028-1029. DOI: 10.1136/bjsports-2020-103134
-
-[^12]: Järvinen, T.A., et al. (2019). "Muscle injuries: Optimising recovery." *Best Practice & Research Clinical Rheumatology*, 33(2), 317-329. DOI: 10.1016/j.berh.2019.04.001
-
-[^13]: Hale, S.A., Hertel, J. (2020). "Reliability and sensitivity of the foot and ankle disability index in subjects with chronic ankle instability." *Journal of Athletic Training*, 55(9), 954-960. DOI: 10.4085/1062-6050-455-19
-
-[^14]: Franke, H., et al. (2020). "Osteopathic manipulative treatment for low back and pelvic girdle pain during and after pregnancy: A systematic review and meta-analysis." *Journal of Bodywork and Movement Therapies*, 24(2), 241-254. DOI: 10.1016/j.jbmt.2019.12.007
-
-[^15]: Calatayud, J., et al. (2019). "Importance of mind-muscle connection during progressive resistance training." *European Journal of Applied Physiology*, 119(3), 667-675. DOI: 10.1007/s00421-018-4051-x
-
-[^16]: Gabbett, T.J. (2020). "Debunking the myths about training load, injury and performance: Empirical evidence, hot topics and recommendations for practitioners." *British Journal of Sports Medicine*, 54(1), 58-66. DOI: 10.1136/bjsports-2018-099784
-
-[^17]: Schwartz, C.E., et al. (2021). "Osteopathic manipulative medicine approaches to the prevention and treatment of sports-related injury." *Journal of Osteopathic Medicine*, 121(3), 297-303. DOI: 10.1515/jom-2020-0212
-
-[^18]: Wilke, J., et al. (2020). "Foam rolling as a recovery tool after an intense bout of physical activity." *Medicine & Science in Sports & Exercise*, 52(4), 867-876. DOI: 10.1249/MSS.0000000000002222
