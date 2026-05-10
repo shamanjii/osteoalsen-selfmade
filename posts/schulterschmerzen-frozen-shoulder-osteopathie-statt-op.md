@@ -503,7 +503,7 @@ Dehnung wirkt auf Muskel, Faszien-Release auf Bindegewebe – beides wichtig, ab
 - **Woche 1-4:** 1x/Woche (Fokus: BWS, Rippen, Faszien)
 - **Woche 5-8:** 1x/2 Wochen (Fokus: Muskel-Balance)
 - **Danach:** Bei Bedarf Auffrischung
-- **Erfolgsrate:** 78% deutliche Besserung nach 8 Wochen
+- **Erfahrungswerte:** Viele Patient:innen berichten über deutliche Besserung im Verlauf der ersten Wochen — der individuelle Verlauf ist unterschiedlich
 
 **Frozen Shoulder:**
 - **Monat 1-2:** 1x/Woche (Schmerzreduktion, erste Mobilisierung)

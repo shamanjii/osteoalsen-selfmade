@@ -418,52 +418,6 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-## Marias Geschichte: Von 12 Monaten Dehnen zu 6 Wochen Lösung
-
-**Maria, 46, Lehrerin aus Hamburg-Altona:**
-
-„Seit einem Jahr hatte ich chronische Rückenschmerzen. Immer unten links. Mein Hausarzt: ‚Muskelverspannung, dehnen Sie sich.' Meine Physiotherapeutin: ‚Hamstrings sind verkürzt, täglich dehnen.'
-
-### Das Jahr des Dehnens
-
-Ich machte alles richtig:
-- Morgens 10 Min Yoga (Cat-Cow, Child's Pose, Forward Fold)
-- Abends 10 Min Dehnroutine (Hamstrings, Hüftbeuger, Rückenstrecker)
-- Nach 2 Monaten: Minimal besser, aber Schmerz bleibt
-- Nach 6 Monaten: Manchmal fühlt es sich instabiler an
-- Nach 12 Monaten: Frustration total. Warum hilft nichts?!
-
-### Der Wendepunkt
-
-Eine Kollegin empfahl mir einen erfahrenen Osteopathen. Die Untersuchung dauerte 45 Minuten – nicht nur der Rücken, sondern der ganze Körper wurde betrachtet.
-
-**Die Diagnose schockierte mich:**
-‚Ihre Hamstrings sind nicht verkürzt – sie sind überdehnt. Ihr Problem ist Instabilität, keine Verkürzung. Jedes Mal, wenn Sie dehnen, verschlimmern Sie es.'
-
-Die Untersuchung zeigte: Mein Becken war hypermobil. Die Bänder am [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis) überdehnt. Meine Rumpfmuskulatur konnte die Instabilität nicht kompensieren.
-
-**Der Behandlungsplan:**
-- Dehnung stoppen (komplett!)
-- 3 Stabilisations-Übungen (Dead Bug, Bird Dog, Seitstütz) – täglich 10 Min
-- 4 osteopathische Behandlungen ([ISG-Stabilisation](/blog/isg-blockierung-teufelskreis), Core-Aktivierung)
-
-### Das Ergebnis
-
-**Nach 2 Wochen:** Schmerz reduziert um ~30% – allein durch Stopp des Dehnens!
-
-**Nach 6 Wochen (4 Behandlungen + tägliche Übungen):**
-- Schmerz um 80% reduziert
-- Rücken fühlt sich „solide" an (nicht mehr wackelig)
-- Ich kann wieder 6h unterrichten ohne Schmerzen
-
-### Was mich am meisten überraschte
-
-**Ich war zu beweglich, nicht zu steif.** Ein Jahr lang habe ich das Falsche getan – mit besten Absichten. Niemand hatte je meine Beweglichkeit getestet. Alle gingen davon aus: Rückenschmerz = zu steif = dehnen.
-
-Heute mache ich 0 Minuten Dehnung. Nur Stabilisation. Und es war noch nie besser."
-
----
-
 ## Wann Osteopathie bei Rückenschmerzen?
 
 ### ✅ Osteopathie hilft besonders bei:

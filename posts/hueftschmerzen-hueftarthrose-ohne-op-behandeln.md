@@ -1,8 +1,8 @@
 ---
 slug: "hueftschmerzen-hueftarthrose-ohne-op-behandeln"
 title: "Hüftschmerzen & Hüftarthrose ohne OP: Wie Osteopathie die Hüft-TEP vermeidet"
-excerpt: "Hüftarthrose Grad 3 und Ihr Orthopäde empfiehlt eine Hüft-OP? Erfahren Sie, warum 65% der Hüft-OPs vermeidbar sind – und wie Osteopathie Ihnen schmerzfreie Beweglichkeit zurückgibt."
-metaDescription: "Hüft-TEP mit 58? Bei 65% aller Hüftarthrose-Patienten ist die OP vermeidbar. Warum die Ursache oft außerhalb der Hüfte liegt – und wie spezialisierte Osteopathie schmerzfreie Beweglichkeit zurückgibt. Hamburg."
+excerpt: "Hüftarthrose Grad 3 und Ihr Orthopäde empfiehlt eine Hüft-OP? Erfahren Sie, in welchen Fällen konservative Behandlung eine Alternative sein kann – und wie Osteopathie die Beweglichkeit unterstützen kann."
+metaDescription: "Hüft-TEP mit 58? Konservative Behandlungsansätze bei Hüftarthrose – wann sie eine Alternative sein können, warum die Ursache oft außerhalb der Hüfte liegt und wie spezialisierte Osteopathie die Beweglichkeit unterstützt. Hamburg."
 keywords:
   - "Hüftschmerzen Osteopathie"
   - "Hüftarthrose ohne OP"
@@ -24,7 +24,7 @@ status: "published"
 
 **Sie wachen morgens auf – und der erste Schritt tut weh. Tief in der Leiste. Sie greifen zur Socke – unmöglich, den Fuß hochzuziehen. Treppensteigen wird zur Qual. Ihr Orthopäde zeigt Ihnen das Röntgenbild: „Coxarthrose Grad 3. Der Gelenkspalt ist fast weg. Wir sollten über eine Hüft-TEP nachdenken." Eine künstliche Hüfte? Mit 58? Aber was, wenn die wahre Ursache Ihrer Hüftschmerzen nicht der Knorpelverschleiß ist – sondern ein blockiertes Becken, eine steife Lendenwirbelsäule oder verkürzte Hüftbeuger?**
 
-**Hüftarthrose betrifft 10% der über 60-Jährigen.[^1] Die meisten landen früher oder später beim Orthopäden mit OP-Empfehlung. Doch Studien zeigen: Bei 65% aller Hüftarthrose-Patienten ist konservative Behandlung genauso wirksam wie eine Hüft-TEP – ohne OP-Risiko, ohne monatelange Reha.[^2] Osteopathie setzt genau hier an: ursachenorientiert, ganzheitlich, ohne Skalpell.**
+**Hüftarthrose betrifft 10 % der über 60-Jährigen.[^1] Die meisten landen früher oder später beim Orthopäden mit OP-Empfehlung. Studien zeigen jedoch, dass konservative Behandlungsansätze bei einem Teil der Patient:innen vergleichbare Ergebnisse erzielen können wie eine Operation – ohne OP-Risiko, ohne monatelange Reha. Osteopathie setzt hier ursachenorientiert und ganzheitlich an.**
 
 **In diesem Artikel erfahren Sie, wie osteopathische Behandlung bei Hüftschmerzen und Hüftarthrose wirkt – und warum die Lösung oft außerhalb der Hüfte liegt.**
 

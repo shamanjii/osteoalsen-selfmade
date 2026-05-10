@@ -91,7 +91,7 @@ Das [Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung) ist
 - Verminderte Zwerchfell-Bewegung → schlechtere Darmdurchblutung
 - Gestörte Atmung → Vagusnerv-Dysfunktion → Reizdarm verschlimmert sich
 
-> **In meiner Praxis sehe ich:** Sobald wir das Zwerchfell osteopathisch behandeln und die Atmung normalisieren, verbessern sich **sowohl** Reizdarm **als auch** Rückenschmerzen – oft innerhalb weniger Sitzungen.
+Bei vielen Patient:innen, deren Zwerchfellfunktion und Atmung osteopathisch adressiert werden, beobachte ich Verbesserungen sowohl der Reizdarm- als auch der Rückenbeschwerden. Der Verlauf ist individuell und nicht garantiert.
 
 ### Psycho-emotionaler Stress manifestiert sich im Atemmuster
 

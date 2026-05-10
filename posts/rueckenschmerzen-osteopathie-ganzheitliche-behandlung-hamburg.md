@@ -287,7 +287,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 **Akut** (Hexenschuss, plötzliche Blockade): Oft 1-3 Behandlungen reichen
 **Chronisch** (> 3 Monate): 4-6 Behandlungen über 6-8 Wochen
 
-**Wichtig:** Nach 3 Sitzungen sollte **messbare Verbesserung** da sein (mehr schmerzfreie Stunden, besserer Schlaf, mehr Beweglichkeit).
+**Hinweis:** Wenn nach mehreren Sitzungen keine erkennbare Veränderung eintritt, besprechen wir gemeinsam alternative Ansätze. Der individuelle Verlauf ist nicht vorhersagbar.
 
 ---
 

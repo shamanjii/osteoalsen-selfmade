@@ -74,9 +74,6 @@ Das erklärt, warum:
 - Schlechte Haltung (Handy-Nacken, Büro-Arbeit) Kopfweh auslöst
 - Stress (der Nacken und Kiefer anspannt) zu Kopfschmerzen führt
 
-> **"Seit ich weiß, dass meine Kopfschmerzen vom Nacken kommen, habe ich endlich eine Lösung gefunden. Osteopathie hat mir geholfen, wo jahrelang Schmerzmittel versagt haben."**
-> – Michael K., 39, Winterhude ⭐⭐⭐⭐⭐
-
 ---
 
 ## Trigeminusnerv gereizt durch Verspannungen: Die 3 Hauptauslöser
@@ -201,39 +198,6 @@ Je nach Befund kommen verschiedene Techniken zum Einsatz:
 - **Subokzipitale Dekompression** – löst Druck am Hinterkopf
 
 **Das Besondere:** All diese Techniken sind **schmerzfrei** und arbeiten mit sanftem Druck und präzisen Griffen.
-
----
-
-## Michaels Geschichte: Von 15 Kopfschmerz-Tagen zu 1-2 pro Monat
-
-Michael (39) arbeitet als Software-Entwickler in Winterhude. Sein Alltag: 9 Stunden vor dem Bildschirm, Deadlines, Stress. Seit 3 Jahren: **chronische Kopfschmerzen**, 3-4x pro Woche. Ibuprofen half nur noch kurz.
-
-### Die osteopathische Untersuchung zeigte:
-
-1. **Blockierter Atlas (C1)** – der erste Halswirbel konnte nicht frei rotieren
-2. **Verspannte Kaumuskulatur (M. temporalis/masseter)** – Michael knirschte nachts mit den Zähnen (Bruxismus, stressbedingt)
-3. **Überspannte subokzipitale Muskeln (Hinterkopf-Muskulatur)** – durch "Handy-Nacken" (Kopf nach vorne geneigt)
-4. **Empfindliche Trigeminus-Austrittspunkte** an Stirn und Schläfen
-
-### Die Behandlung (6 Sitzungen über 8 Wochen):
-
-**Sitzung 1-2:** Mobilisation des Atlas (C1), Lösen der Kaumuskulatur, kraniosakrale Entspannung
-**Sitzung 3-4:** Subokzipitale Dekompression (Hinterkopf), Faszien-Lösung (MFR) im Nacken
-**Sitzung 5-6:** Feinabstimmung, Haltungskorrektur-Übungen
-
-**Hausaufgaben:**
-- Kiefer-Entspannungsübung (3x täglich, 2 Min)
-- Nacken-Mobilisation (morgens, 5 Min)
-- Ergonomie-Anpassung am Arbeitsplatz (Monitor auf Augenhöhe)
-
-### Das Ergebnis nach 8 Wochen:
-
-- ✅ Von 15 Kopfschmerz-Tagen/Monat auf **1-2 Tage**
-- ✅ Keine Schmerzmittel mehr nötig
-- ✅ Besserer Schlaf (kein Zähneknirschen mehr)
-- ✅ Mehr Energie im Alltag
-
-**Was Michael besonders half:** Die Erkenntnis, dass seine Kopfschmerzen nicht "im Kopf", sondern im **Nacken und Kiefer** entstanden – und dass er selbst aktiv etwas tun konnte.
 
 ---
 

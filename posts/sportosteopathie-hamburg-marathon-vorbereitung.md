@@ -94,10 +94,6 @@ Suchen Sie spätestens dann professionelle Hilfe, wenn:
 - **Ein-Bein-Stand wackelt** auffällig
 - **Schmerzen morgens beim ersten Schritt** stark sind
 
-## Erfahrungsbericht: Hamburger Marathonläuferin, 41
-
-> „Sechs Wochen vor dem Hamburg-Marathon kam mir das ITBS in die Quere – stechender Schmerz nach 8 km. Drei osteopathische Sitzungen mit Joshua, kombiniert mit Glutealkräftigung, und ich konnte den Marathon mit 3:48 finishen. Ohne Behandlung hätte ich abgesagt."
-
 ## So planen Sie Ihre Sportosteopathie für den Hamburg-Marathon
 
 | Wochen vor Marathon | Empfohlene Behandlung |

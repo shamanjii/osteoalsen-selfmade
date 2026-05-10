@@ -167,54 +167,6 @@ Lig. nuchae (Nackenband, C7 → Occiput)
 
 **Klinischer Befund:** Patient kann Atlas manuell nicht dauerhaft korrigieren – **Kiefer zieht ihn immer wieder zurück**.
 
-## Fallbeispiel: Sarah, 34 Jahre, Grafikdesignerin
-
-**Anamnese:**
-
-- Seit 2 Jahren morgendliche Nackenschmerzen
-- Partner sagt: "Du knirschst nachts mit den Zähnen"
-- Zahnarzt hat Aufbissschiene verschrieben (trägt sie seit 8 Monaten)
-- Nackenschmerzen **unverändert**
-- Physiotherapie: 15 Sitzungen Nackenmassage – keine Besserung
-- MRT HWS: "Altersgerechter Befund, keine Pathologie"
-
-**Zusätzliche Symptome:**
-- Kieferknacken beim Gähnen (links)
-- Kopfschmerzen hinter dem linken Auge (2-3x/Woche)
-- Tinnitus links (leises Pfeifen)
-- Schultern chronisch hochgezogen
-
-**Befund in meiner Praxis:**
-
-1. **Kiefergelenk:**
-   - Mundöffnung: 31mm (normal: >40mm)
-   - Deutliches Knacken bei 18mm Öffnung (links)
-   - M. masseter links steinhart
-   - M. pterygoideus lateralis (tiefer Kaumuskel) extrem druckempfindlich
-
-2. **HWS:**
-   - Atlas 2mm rechts-rotiert
-   - C2/C3 hypomobil (steif)
-   - M. sternocleidomastoideus links verkürzt
-   - Forward Head Posture (Kopf 6cm vor Körperschwerpunkt)
-
-3. **Kompensation:**
-   - Rechtes Iliosakralgelenk verschoben
-   - Zwerchfell blockiert
-   - Schultergürtel hochgezogen
-
-**Diagnose:** CMD mit sekundärer HWS-Dysfunktion
-
-**Behandlungsplan:** 12 Wochen kombinierte CMD-HWS-Therapie
-
-**Ergebnis nach 12 Wochen:**
-- Nackenschmerzen: 85% Reduktion
-- Kieferknacken: verschwunden
-- Mundöffnung: 42mm
-- Kopfschmerzen: von 2-3x/Woche auf 1x/Monat
-- Tinnitus: 60% leiser
-- Schiene wird immer noch getragen (Zähneschutz), aber Symptome weg
-
 ## Das 4-Phasen-CMD-HWS-Behandlungsprotokoll
 
 ### Phase 1: Kiefer-Release (Woche 1-3)

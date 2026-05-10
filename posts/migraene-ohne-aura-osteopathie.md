@@ -118,56 +118,6 @@ Pulsierender Schmerz
 
 **Was oft übersehen wird:** In dieser Phase ist die **HWS besonders anfällig** für neue Trigger.
 
-## Fallbeispiel: Anna, 34 Jahre, Lehrerin
-
-**Anamnese:**
-- Seit Pubertät Migräne (jetzt 20 Jahre)
-- Frequenz: 12-15 Tage/Monat
-- Medikation: Ibuprofen 800mg (früher wirksam), jetzt Triptane (Sumatriptan 100mg)
-- Triptane helfen noch, aber: Braucht höhere Dosis, Wiederkehr nach 6h
-
-**Trigger:**
-- Stress (Schule)
-- Wetterumschwung (Föhn)
-- Periode (Tage 1-3)
-- Rotwein
-- "Zu spät essen"
-
-**Begleitsymptome:**
-- Übelkeit (90% der Attacken)
-- Licht-/Lärmempfindlichkeit (100%)
-- Nackensteifigkeit (48h vor Attacke)
-
-**Neurologischer Befund:**
-- MRT Kopf: unauffällig
-- Neurologische Untersuchung: unauffällig
-- Diagnose: "Chronische Migräne ohne Aura, therapierefraktär"
-- Empfehlung: Botox-Prophylaxe erwägen
-
-**Befund in meiner Praxis:**
-
-1. **HWS:**
-   - Atlas (C1) 3mm rechts-rotiert, fixiert
-   - C2/C3 hypomobil
-   - Subokzipitale Muskulatur (M. rectus capitis posterior minor) steinhart
-   - Forward Head Posture (Kopf 7cm vor Körperschwerpunkt)
-
-2. **Trigeminusnerv:**
-   - Triggerpunkt M. temporalis rechts (reproduziert Migräne-Schmerz!)
-   - N. occipitalis major (C2) druckempfindlich
-   - Trigeminocervical Nucleus (Verbindung C1-C3 ↔ Trigeminus) irritiert
-
-3. **Viszerale Beteiligung:**
-   - Leber rechts unter Rippenbogen "hart"
-   - Zwerchfell blockiert
-   - Vagusnerv-Tonus niedrig
-
-4. **Hormonsystem:**
-   - Periode regelmäßig, aber PMS stark
-   - Hinweis auf Östrogenschwankungen
-
-**Diagnose:** Chronische Migräne mit **zervikogenem Trigger** + Medikamenten-Übergebrauch (Triptane >10 Tage/Monat)
-
 ## Die strukturelle Ursache: Warum HWS-Blockierung Migräne triggert
 
 ### Der Trigeminocervical Nucleus
@@ -396,29 +346,6 @@ Triptan stoppt Attacke
 - Jahr 7: Triptan wirkt kaum noch, 15+ Tage/Monat
 
 **In meiner Praxis:** 40% der Migräne-Patienten haben MOH.
-
-## Anna's Ergebnis nach 6 Monaten
-
-**Baseline (Monat 0):**
-- Migräne-Tage: 15/Monat
-- Triptane: 12 Tage/Monat
-- Beeinträchtigung: 60% Arbeitsausfall
-
-**Nach 3 Monaten:**
-- Migräne-Tage: 8/Monat (-47%)
-- Triptane: 6 Tage/Monat (-50%)
-- Beeinträchtigung: 30% Arbeitsausfall
-
-**Nach 6 Monaten:**
-- Migräne-Tage: 4/Monat (-73%)
-- Triptane: 2-3 Tage/Monat (-75%)
-- Beeinträchtigung: 10% Arbeitsausfall
-- Atlas stabil, Nackensteifigkeit verschwunden
-
-**Was half am meisten (Anna's Aussage):**
-1. Atlas-Korrektur ("Ich spüre sofort, wenn er wieder verschoben ist")
-2. Triptan-Reduktion ("Die ersten 2 Wochen waren die Hölle, aber dann...")
-3. Regelmäßigkeit ("Nie mehr Mahlzeiten auslassen!")
 
 ## Zusammenfassung: Das müssen Sie wissen
 

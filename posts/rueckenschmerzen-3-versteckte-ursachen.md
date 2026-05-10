@@ -92,38 +92,6 @@ Sanfte Techniken am Kopf und Kreuzbein (kraniosakrale Therapie), die das autonom
 
 **Der Unterschied:** Statt isoliert eine Stelle zu behandeln, wird der Körper als vernetztes System verstanden.
 
-> **"Nach drei osteopathischen Sitzungen konnte ich endlich wieder schmerzfrei schlafen – und das ohne Medikamente."**
-> – Sarah M., 42, Eimsbüttel ⭐⭐⭐⭐⭐
-
----
-
-## Ein typischer Fall: Wie Anna ihren Rückenschmerz loswurde
-
-Anna (38) arbeitet im Marketing und sitzt täglich 9 Stunden am Schreibtisch. Seit zwei Jahren: chronische Schmerzen im unteren Rücken. Ibuprofen half nur noch kurzzeitig.
-
-### Die osteopathische Untersuchung zeigte:
-
-1. **[Blockiertes Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis)** durch einseitiges Sitzen
-2. **Verkürzte Hüftbeuger (Psoas-Muskel)** - der "Stressmuskel"
-3. **Verklebte Faszien am Zwerchfell (Diaphragma)** durch flache Stressatmung
-
-Das MRT hatte keinen dieser Befunde gezeigt – es ist ja nicht "kaputt", sondern nur **nicht richtig beweglich**.
-
-### Die Behandlung:
-
-**Sitzung 1:** Mobilisation des ISG, Lösen der Hüftbeuger-Verspannungen
-**Sitzung 2:** Faszien-Release am Zwerchfell, Atemübungen für zu Hause
-**Sitzung 3:** Feinabstimmung, Stabilisationsübungen
-
-### Das Ergebnis nach 6 Wochen:
-
-- ✅ Schmerzfrei im Alltag
-- ✅ Wieder joggen an der Alster möglich
-- ✅ Keine Schmerzmittel mehr nötig
-- ✅ Bessere Körperhaltung und Energie
-
-**Was Anna besonders half:** Die Kombination aus manueller Behandlung und aktiven Übungen für zu Hause.
-
 ---
 
 ## Was Sie bei der ersten osteopathischen Sitzung erwartet

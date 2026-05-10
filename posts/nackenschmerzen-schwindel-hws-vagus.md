@@ -137,124 +137,6 @@ Schwindel, der durch Dysfunktionen der Halswirbelsäule ausgelöst wird -- eine 
 
 ---
 
-## Fallbeispiel: Petra (54), Lehrerin
-
-### Ihre Geschichte
-
-**Symptombeginn:**
-- Vor 2 Jahren: Auto-Auffahrunfall (niedriger Geschwindigkeit, kein Schaden sichtbar)
-- Keine akuten Beschwerden, alles schien OK
-- **3 Monate später:** Erste Schwindelattacke
-
-**Entwicklung:**
-- Anfangs: 1-2× pro Woche Schwindel
-- Nach 6 Monaten: Fast täglich
-- Auslöser: Kopfdrehen, Aufstehen, Unterricht (Tafel)
-- Begleitsymptome: Nackenschmerzen, Übelkeit, innere Unruhe
-
-**Ärzte-Odyssee (18 Monate):**
-1. **Hausarzt:** "Kreislauf, mehr trinken"
-2. **HNO:** Gleichgewichtstest → unauffällig, "alles in Ordnung"
-3. **Neurologe:** MRT Kopf → kein Befund
-4. **Kardiologe:** Herz gesund
-5. **Psychiater:** "Angststörung" → Antidepressiva verschrieben
-
-**Medikamente (ohne Wirkung):**
-- Betahistin (gegen Schwindel)
-- Sertralin (Antidepressivum)
-- Diazepam (Beruhigungsmittel, bei Bedarf)
-
-**Zustand nach 18 Monaten:**
-- Arbeitsunfähig (krankgeschrieben)
-- Kann nicht mehr Auto fahren (Schwindel beim Schulterblick)
-- Soziale Isolation (Angst vor Schwindel in der Öffentlichkeit)
-- Depression (wegen Hilflosigkeit)
-
-**Verzweiflung:** "Niemand findet etwas. Bilde ich mir das alles ein?"
-
-### Was ich gefunden habe
-
-**Anamnese-Details (die vorher niemand fragte):**
-- **Autounfall vor 2 Jahren** → Schleudertrauma-Verdacht
-- Schwindel **immer** bei Kopfdrehung
-- Nackenschmerzen **seit** dem Unfall (aber "nicht so schlimm", ignoriert)
-- Verschlimmerung bei Stress (Unterricht)
-
-**Untersuchung:**
-
-**1. Inspektion:**
-- Kopf leicht nach links geneigt (Kompensation!)
-- Rechte Schulter 2 cm höher als links
-- Verspannte Nackenmuskulatur sichtbar
-
-**2. Palpation:**
-- **Atlas (C1) rechtsseitig blockiert** – massiv!
-- Suboccipitale Muskulatur steinhart
-- Triggerpunkte in Trapezius + Levator scapulae
-- Druckschmerz C1-Querfortsatz (Arteria vertebralis komprimiert!)
-
-**3. Bewegungstests:**
-- Rotation rechts: 60° (normal: 80°)
-- Bei Endstellung: Schwindel reproduziert!
-- Extension: Schwindel
-- Neutral: Kein Schwindel
-
-**4. Spezifische Tests:**
-- **Vertebral Artery Test:** Positiv (Schwindel bei Extension + Rotation)
-- **Hautfalten-Test Nacken:** Faszien verklebt
-- **Propriozeption:** Gestört (Kopf-zu-Finger-Test ungenau)
-
-**Befund:**
-- **Zervikaler Schwindel** durch Atlas-Blockierung (posttraumatisch)
-- Kompression Arteria vertebralis rechts
-- Propriozeptive Störung (falsche Signale ans Gehirn)
-- Sekundär: Angst-Konditionierung (Schwindel → Angst → mehr Verspannung → mehr Schwindel)
-
-**Die eigentliche Ursache:** Das [Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) vor 2 Jahren hatte den Atlas verschoben. Niemand hatte die HWS untersucht.
-
-### Die Behandlung
-
-**Sitzung 1 (Woche 1):**
-- **Atlas-Mobilisation** (sanft! – Arterie!)
-- Suboccipitale Muskel-Release
-- Craniosacrale Therapie (Spannungsabbau)
-- **Ergebnis:** Schwindel sofort -70%, Rotation verbessert auf 75°
-
-**Petra's Reaktion:** "Ich kann meinen Kopf drehen, ohne dass sich alles dreht! Das erste Mal seit 2 Jahren!"
-
-**Sitzung 2 (Woche 2):**
-- Re-Check Atlas (noch leicht eingeschränkt)
-- Faszienbehandlung Nacken/Schultern
-- [Vagusnerv-Stimulation](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) (gegen Übelkeit)
-- Propriozeptives Training (Balance auf Schaumstoff)
-
-**Sitzung 3 (Woche 4):**
-- Feintuning Atlas
-- Behandlung Brustwirbelsäule (war kompensatorisch blockiert)
-- Atemtherapie (Vagusnerv-Regulation)
-
-**Übungen zuhause (täglich):**
-- Kinn-Tucks: 3×15 (tiefe Nackenflexoren)
-- Gleichgewichtsübungen: Einbeinstand, Augen geschlossen
-- Kopfdrehung langsam (Propriozeption trainieren)
-
-**Nach 6 Wochen:**
-- Schwindel: 95% weg (nur noch ganz selten bei schnellen Bewegungen)
-- Nackenschmerzen: 90% weg
-- Kann wieder Auto fahren
-- Zurück im Unterricht (Teilzeit)
-- Medikamente: Alle abgesetzt (mit Arzt abgesprochen!)
-
-**Nach 3 Monaten:**
-- Vollzeit arbeiten
-- Kein Schwindel mehr
-- Nur leichte Nackenverspannung bei Stress (selbst managebar)
-- Erhaltungsbehandlung: 1× alle 8-10 Wochen
-
-**Petra's Fazit:** "18 Monate Ärzte-Odyssee, Antidepressiva, Existenzangst. Dabei war es 'nur' mein Atlas. Hätte ich das bloß früher gewusst."
-
----
-
 ## Die HWS-Vagus-Schwindel-Verbindung: Der Mechanismus
 
 ### Anatomie: Wo liegt das Problem?
@@ -320,10 +202,12 @@ Schwindel, der durch Dysfunktionen der Halswirbelsäule ausgelöst wird -- eine 
 - Spezifisch: Occipito-Atlas-Release
 - Richtung: Je nach Blockierungs-Muster (anterior, posterior, lateral)
 
-**Sofortige Wirkung (bei 70% der Patienten):**
-- Schwindel reduziert (oft sofort nach Behandlung)
-- Kopf lässt sich besser drehen
-- Gefühl "klarer Kopf"
+**Mögliche Reaktionen direkt nach der Behandlung:**
+- Schwindelempfinden kann nachlassen
+- Kopfdrehung wird oft als freier wahrgenommen
+- Gefühl eines "klareren Kopfes"
+
+Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
 **Warum nicht Chiropraktik?**
 - Arteria vertebralis verläuft DIREKT am Atlas

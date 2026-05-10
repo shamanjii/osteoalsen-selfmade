@@ -268,40 +268,6 @@ Wenn die Nerven gereizt sind, werden die Muskeln nicht mehr richtig innerviert:
 
 ---
 
-### Fallbeispiel: Warum Sarah's Schulter-OP unnötig war
-
-**Sarah, 42, Projektmanagerin:**
-
-**Vorgeschichte:**
-- 6 Monate Schulterschmerzen rechts
-- MRT: „Subakromiales Impingement, Supraspinatussehnen-Partial-Läsion"
-- Orthopäde: „Sie brauchen eine arthroskopische Dekompression."
-
-**Osteopathischer Befund:**
-- Massive BWS-Hyperkyphose (Th4-Th8 blockiert)
-- HWS-Hyperlordose mit C5-C6 Hypomobilität
-- **Spurling-Test positiv:** Schmerz schießt in Schulter + Daumen
-- **Neurologische Symptome:** Schwäche Daumen-Abduktion (C6-Innervation)
-
-**Behandlung (8 Sitzungen über 6 Wochen):**
-1. **Sitzung 1-3:** BWS-Mobilisierung Th4-Th8, Rippen 4-7 Artikulation
-2. **Sitzung 3-5:** HWS-Rebalancierung, Scaleni-Release, 1. Rippe Mobilisierung
-3. **Sitzung 5-8:** Plexus Brachialis Nervenmobilisation, Schulterblatt-Stabilisation
-
-**Ergebnis:**
-- Nach 3 Sitzungen: Arm wieder über Kopf heben ohne Schmerz
-- Nach 6 Wochen: Volle Kraft, keine neurologischen Symptome
-- **OP abgesagt**
-- 18 Monate später: Schmerzfrei, keine Rezidive
-
-**Was war der Schlüssel?**
-
-Nicht die Schulter behandeln – sondern die **HWS-Hyperlordose korrigieren** und den **Plexus Brachialis entlasten**.
-
----
-
-## Osteopathische Behandlung: Der ganzheitliche Ansatz
-
 ### Was macht der Osteopath anders als Orthopädie/Physiotherapie?
 
 **Orthopädie:**
@@ -329,7 +295,7 @@ Nicht die Schulter behandeln – sondern die **HWS-Hyperlordose korrigieren** un
 
 **Techniken:** HVLA (sanfte Impulse), Muscle Energy Technique, Articulation.
 
-**Soforteffekt:** 70% der Patienten können den Arm nach BWS-Mobilisierung sofort 10-20° höher heben!
+**Möglicher Soforteffekt:** Viele Patient:innen erleben nach einer BWS-Mobilisierung eine spürbar verbesserte Armhebung. Der individuelle Effekt ist nicht garantiert.
 
 ---
 

@@ -119,52 +119,6 @@ Reaktive Muskelverspannung (sekundär!)
 
 **In meiner Praxis:** Ich nutze das als **Differenzialdiagnose**-Tool. Wenn GON-Block hilft, weiß ich: C2 mobilisieren, nicht Muskel massieren.
 
-## Fallbeispiel: Thomas, 41 Jahre, IT-Berater
-
-**Anamnese:**
-- Seit 5 Jahren tägliche Kopfschmerzen
-- Qualität: "Band um Kopf", drückend
-- Intensität: 4-6/10
-- Dauer: Den ganzen Tag (morgens schlimmer)
-- Trigger: Schreibtischarbeit, Stress
-
-**Bisherige Behandlung:**
-- Physiotherapie: 40 Sitzungen über 2 Jahre
-  - Massage, Wärme, TENS
-  - Hilft 2-3 Tage, dann zurück
-- Medikation: Ibuprofen 400mg, 10-15 Tage/Monat
-- Diagnose: "Chronischer Spannungskopfschmerz durch Verspannung"
-
-**MRT HWS:** "Altersentsprechend, keine Pathologie"
-
-**Befund in meiner Praxis:**
-
-1. **HWS-Beweglichkeit:**
-   - Rotation links: 60° (normal: 80°)
-   - Rotation rechts: 75° (normal: 80°)
-   - **Einschränkung links!**
-
-2. **Palpation:**
-   - C2-Dornfortsatz: Extrem druckempfindlich
-   - Atlas (C1): 2mm links-rotiert, fixiert
-   - M. semispinalis capitis: Steinhart (beidseitig)
-
-3. **Provokationstest:**
-   - Druck auf C2 → reproduziert Kopfschmerz (exakt!)
-   - Traktion (Zug) HWS → Kopfschmerz besser
-
-4. **Arbeitsplatz:**
-   - Monitor 20cm zu niedrig
-   - Kopf permanent nach vorne-unten geneigt
-   - 10h/Tag
-
-**Diagnose:** **Zervikogener Kopfschmerz** (C2-Ursprung), sekundäre muskuläre Verspannung
-
-**Was übersehen wurde:**
-- Die Muskelverspannung war **Symptom**, nicht Ursache
-- C2-Blockierung wurde nie behandelt (nur Muskel)
-- 2 Jahre Physiotherapie behandelten das Falsche
-
 ## Das 3-Phasen-Differenzierungs-Protokoll
 
 ### Phase 1: Selbstdiagnose (Woche 1)
@@ -321,30 +275,6 @@ Reaktive Muskelverspannung (sekundär!)
 - Oberkiefer
 
 **Wichtig:** Bei Kiefergelenk-Problemen ([CMD](/blog/cmd-nackenschmerzen-kiefergelenk)) oft beteiligt!
-
-## Thomas' Ergebnis nach 4 Monaten
-
-**Baseline:**
-- Kopfschmerz-Tage: 28/Monat (täglich!)
-- Intensität: 4-6/10
-- Ibuprofen: 12 Tage/Monat
-
-**Nach 1 Monat:**
-- Kopfschmerz-Tage: 18/Monat (-36%)
-- Intensität: 3-4/10
-- Ibuprofen: 6 Tage/Monat
-
-**Nach 4 Monaten:**
-- Kopfschmerz-Tage: 5/Monat (-82%)
-- Intensität: 2-3/10
-- Ibuprofen: 2 Tage/Monat
-- C2-Mobilität: Normal
-- Arbeitsplatz: Ergonomisch optimiert
-
-**Was half am meisten:**
-1. **C2-Mobilisation** ("Nach der 3. Behandlung spürte ich einen Klick – seitdem 70% besser")
-2. **Monitor höher** (auf Augenhöhe)
-3. **Pausen** (Pomodoro: 45 Min Arbeit, 5 Min Pause)
 
 ## Eigenübungen: Das 10-Minuten-Programm
 

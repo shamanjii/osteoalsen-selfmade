@@ -245,109 +245,6 @@ Der Schädel besteht aus 22 Knochen, verbunden durch **Schädelnähte (Suturen)*
 
 ---
 
-## Martinas Geschichte: 12 Jahre Kopfschmerzen – 3 Monate Osteopathie
-
-**Martina, 38, Marketing-Managerin aus Hamburg-Eimsbüttel:**
-
-„Im Januar 2024 hatte ich seit **12 Jahren** fast täglich Kopfschmerzen. Mein Leben war bestimmt von Ibuprofen."
-
-### Der Abstieg (2012-2024)
-
-„Es begann während meines Studiums. Prüfungsstress. Verspannter Nacken. Gelegentliche Kopfschmerzen – wie jeder, dachte ich.
-
-**2012-2015:** Kopfschmerzen 1-2x pro Woche. Ibuprofen half.
-
-**2016-2019:** Häufiger. 3-4x pro Woche. Schmerzmittel waren in meiner Handtasche Pflicht.
-
-**2020-2024:** **Fast täglich**. Morgens wachte ich mit Kopfschmerzen auf. Nachmittags eine Tablette. Manchmal zwei.
-
-Meine Hausärztin: ‚Spannungskopfschmerz. Versuchen Sie Stress zu reduzieren.' Sie verschrieb mir Triptane.
-
-**Das Problem:** Stress reduzieren? In meinem Job unmöglich. Die Triptane halfen kurz – aber machten die Kopfschmerzen langfristig schlimmer (medikamenten-induzierter Kopfschmerz)."
-
-### Die erste Untersuchung (die alles veränderte)
-
-„Meine Freundin empfahl Joshua. Beim Ersttermin fragte er Dinge, die noch nie ein Arzt gefragt hatte:
-
-**‚Wachen Sie mit Nackenschmerzen auf?'** Ja! Jeden Morgen steif.
-
-**‚Knirschen Sie nachts mit den Zähnen?'** Mein Zahnarzt hatte das erwähnt, ja.
-
-**‚Arbeiten Sie am Computer?'** 8 Stunden täglich.
-
-**‚Beginnen die Kopfschmerzen im Nacken und ziehen nach vorne?'** Exakt! Woher wusste er das?
-
-Er untersuchte meinen Nacken, Kiefer, Schädel. **Dann sagte er:**
-
-‚Ihr Problem sind nicht die Kopfschmerzen selbst – es sind drei Dinge: Ihre HWS ist massiv blockiert (C0-C2), Ihr Kiefergelenk ist dysfunktional durch Zähneknirschen, und Ihr Nervensystem ist im Dauerstress. Die Kopfschmerzen sind nur das Symptom.'
-
-Das ergab SO viel Sinn."
-
-### Die Behandlung (12 Wochen)
-
-**Woche 1-4: HWS-Mobilisation**
-- Atlanto-occipitale (C0-C1) Behandlung – war komplett blockiert
-- Lösen der suboccipitalen Muskulatur
-- Triggerpunkt-Behandlung (M. trapezius, SCM)
-
-**Woche 5-8: Kiefergelenk-Behandlung**
-- TMJ-Mobilisation (Knorpel war verschoben)
-- Lösen des M. pterygoideus (innerer Kaumuskel)
-- Behandlung der Kaumuskulatur
-
-**Woche 9-12: Kraniosakrale Arbeit + Vagusnerv**
-- Kraniosakrale Behandlung (Suturen, CSF-Flow)
-- Vagusnerv-Stimulation (für Stressabbau)
-- Integration der bisherigen Behandlungen
-
-**Parallel (Selbsthilfe):**
-- Aufbiss-Schiene vom Zahnarzt (gegen Zähneknirschen)
-- Arbeitsplatz-Ergonomie optimiert (Monitor-Höhe!)
-- Tägliche Nacken-Übungen (5 Min)
-- Atemübungen für Vagusnerv-Aktivierung
-
-**Medikamenten-Reduktion:**
-- Woche 1-2: Noch täglich Ibuprofen
-- Woche 3-4: 4-5x/Woche
-- Woche 5-8: 2-3x/Woche
-- Woche 9-12: 1x/Woche oder weniger
-
-### Die Ergebnisse (die ich kaum glauben konnte)
-
-**Woche 4:**
-- Kopfschmerzen: 40% weniger
-- Nackensteifigkeit morgens: Fast weg
-- Schlafqualität: Deutlich besser
-
-**Woche 8:**
-- Kopfschmerzen: 70% weniger
-- Schmerzmittel nur noch 2x/Woche
-- Kiefer entspannter (weniger Knacken)
-
-**Woche 12:**
-- **80% weniger Kopfschmerzen!**
-- Schmerzmittel: 1x alle 2 Wochen (bei extremem Stress)
-- Lebensqualität: Wie ausgewechselt
-
-**6 Monate später (jetzt):**
-- Gelegentliche Kopfschmerzen (1-2x/Monat statt täglich!)
-- **Keine** regelmäßigen Schmerzmittel mehr
-- Präventiv: Osteopathie 1x/Monat zur Erhaltung
-- Selbsthilfe-Übungen täglich
-
-### Was mich am meisten überraschte
-
-**Es war nicht nur im Kopf.** Mein Körper hatte reale, physische Probleme:
-- Mein Atlas (C1) war so blockiert, dass er kaum beweglich war
-- Mein Kiefergelenk war durch jahrelanges Zähneknirschen verschoben
-- Meine Nackenmuskulatur fühlte sich an wie Beton
-
-**Die Behandlung war körperlich.** Nicht nur Gespräche oder Tabletten – sondern **manuelle Behandlung**, die die Ursachen löste.
-
-**Jetzt verstehe ich:** Chronische Kopfschmerzen sind keine ‚Krankheit', die man mit Tabletten managen muss. Sie sind ein Signal des Körpers – und mit der richtigen Behandlung können sie verschwinden."
-
----
-
 ## Wie Osteopathie chronische Kopfschmerzen behandelt
 
 ### 1. Atlanto-Occipitale & HWS-Mobilisation
@@ -635,14 +532,14 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen:
 - Besserer Schlaf
 
 **Nach 4-6 Behandlungen:**
-- Deutliche Verbesserung (50-70% weniger Kopfschmerzen)
-- Schmerzmittel-Bedarf halbiert
-- Triggerpunkte weitgehend gelöst
+- Viele Patient:innen berichten von deutlich seltener auftretenden Kopfschmerzen
+- Häufig reduzierter Schmerzmittel-Bedarf
+- Triggerpunkte werden zunehmend besser zugänglich
 
 **Nach 8-12 Behandlungen:**
-- 70-80% der Patienten: Massive Besserung
-- Schmerzmittel nur noch bei Ausnahmen
-- Erhaltungstherapie (1x/Monat)
+- Viele Patient:innen berichten über anhaltende Besserung
+- Erhaltungstherapie (z.B. 1x/Monat) kann sinnvoll sein
+- Der individuelle Verlauf bleibt unterschiedlich
 
 **WICHTIG:** Chronische Kopfschmerzen haben Monate/Jahre gebraucht um zu entstehen. Erwarten Sie keine Wunder in 1-2 Wochen.
 

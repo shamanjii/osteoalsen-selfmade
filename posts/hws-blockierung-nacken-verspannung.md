@@ -207,66 +207,6 @@ Besonders interessant: Viele Patienten mit chronischen Nackenverspannungen beric
 
 ---
 
-## Fallbeispiel: Martina (38), Projektmanagerin
-
-### Ihre Geschichte
-
-**Symptome:**
-- Nackenschmerzen seit 3 Jahren (rechte Seite)
-- Alle 2-3 Wochen "akuter Schiefhals"
-- Kopfschmerzen 2-3x/Woche
-- Schwindel beim schnellen Kopfdrehen
-
-**Bisherige Behandlung:**
-- 20+ Massagen (jeweils 2-3 Tage Besserung)
-- Physiotherapie: Wärme, Elektrotherapie, Dehnübungen
-- Schmerzmittel: Ibuprofen 400mg bei Bedarf
-- Diagnose vom Orthopäden: "Verspannung, mehr Sport machen"
-
-**Keine dauerhafte Besserung.**
-
-### Was ich gefunden habe
-
-**Untersuchung:**
-1. **Sichtbefund:** Kopf leicht rechts geneigt, rechte Schulter höher
-2. **Palpation:** Massiver Hartspann im Trapezius rechts
-3. **Bewegungstest:** Rotation rechts eingeschränkt (nur 60° statt 80°)
-4. **Atlas-Test:** C1 rechtsseitig blockiert (seit mind. 1 Jahr!)
-5. **Schreibtisch-Check:** Monitor 15 cm zu tief → Kopf ständig nach unten
-
-**Die eigentlichen Ursachen:**
-- Atlas-Blockierung (primär)
-- Schreibtisch-Fehlhaltung (sekundär → unterhält Blockierung)
-- Stressbedingte Dauerspannung ([Burnout-Anfangsstadium](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system))
-
-### Die Behandlung
-
-**Sitzung 1 (Woche 1):**
-- Atlas-Mobilisation (sanft, kein "Knacken")
-- Faszienbehandlung Nacken/Schulter
-- Entspannung tiefe Nackenmuskulatur
-- Ergebnis: Rotation sofort auf 75° verbessert, Schmerz -60%
-
-**Sitzung 2 (Woche 3):**
-- Re-Check Atlas (immer noch leicht eingeschränkt)
-- Behandlung Kiefergelenk (war mitbetroffen)
-- [Atemtherapie](/behandlungen/stress-burnout) (Zwerchfell entspannen)
-- Ergonomie-Beratung: Monitor höher, Stuhl angepasst
-
-**Sitzung 3 (Woche 6):**
-- Feintuning Atlas
-- Stabilisationsübungen für HWS
-- Propriozeptives Training (Balance auf einem Bein)
-
-**Nach 3 Monaten:**
-- Keine akuten Nackenschmerzen mehr
-- Kopfschmerzen von 2-3x/Woche auf 1x/Monat reduziert
-- Schwindel komplett weg
-- Kann Vollzeit arbeiten ohne Nackenbeschwerden
-- Erhaltungsbehandlung: 1x alle 8-10 Wochen
-
----
-
 ## Selbsttest: Habe ich eine HWS-Blockierung?
 
 ### Test 1: Kopfdrehung
@@ -463,10 +403,10 @@ Eine "gelöste" Blockierung kann wiederkommen, wenn die Muskulatur sie nicht sta
 6. → Ergonomie-Optimierung
 7. → **Dauerhafte Besserung**
 
-**Ergebnis in meiner Praxis:**
-- **72% der Patienten** nach 3 Behandlungen schmerzfrei
-- **91%** deutliche Besserung (>60% Schmerzreduktion)
-- Durchschnitt: 4-6 Sitzungen bis stabil
+**Erfahrung aus meiner Praxis:**
+- Viele Patient:innen berichten bereits nach den ersten Sitzungen über deutliche Besserung
+- Erfahrungsgemäßer Behandlungsumfang: 4-6 Sitzungen bis zur Stabilisierung
+- Der individuelle Verlauf ist nicht vorhersagbar
 
 ---
 

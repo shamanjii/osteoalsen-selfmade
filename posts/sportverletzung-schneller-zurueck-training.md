@@ -112,57 +112,6 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 
 ---
 
-## Lisas Geschichte: Vom Marathontraum zum Comeback
-
-**Lisa, 34, Projektmanagerin und Hobby-Marathonläuferin aus Hamburg-Winterhude:**
-
-„Im März 2023 trainierte ich für meinen ersten Hamburg-Marathon. 4 Monate Vorbereitung, alles lief perfekt. Dann, 6 Wochen vor dem Rennen – beim Intervalltraining – ein stechender Schmerz in der Wade. Muskelfaserriss, Grad 2.
-
-### Der erste Versuch (ohne Osteopathie)
-
-Mein Hausarzt: ‚6 Wochen Pause, dann langsam wieder einsteigen.' Ich machte alles richtig:
-- 2 Wochen komplette Pause
-- Physiotherapie: Ultraschall, Elektrotherapie
-- Woche 4: Leichte Dehnübungen
-- Woche 6: Erster Testlauf (3 km, langsam)
-
-**Nach 8 km: Wieder dieser Schmerz.** Nicht ganz so schlimm, aber eindeutig. Ich musste den Marathon absagen. Meine Physiotherapeutin meinte: ‚Das passiert manchmal, geben Sie dem Körper mehr Zeit.'
-
-### 3 Monate später (mit Osteopathie)
-
-Eine Läufer-Freundin empfahl mir einen erfahrenen Osteopathen. Beim Ersttermin machte er etwas, das noch nie jemand gemacht hatte: **Er untersuchte nicht nur meine Wade.**
-
-**Was die Untersuchung zeigte:**
-- Meine Wade war fast geheilt – aber hatte massive Verklebungen im Fasziengewebe
-- Mein rechtes Knie kompensierte (war minimal blockiert)
-- Meine rechte Hüfte hatte 15% weniger Beweglichkeit als links
-- Mein Becken war leicht rotiert (wahrscheinlich schon vor der Verletzung)
-
-‚Das ist ein Muster', erklärte mir der Osteopath. ‚Ihre Wade war nicht das Problem – sie war das schwächste Glied in einer Kette.'
-
-### Die Behandlung (5 Sitzungen über 8 Wochen)
-
-**Sitzung 1-2:** Lösen der Faszienverklebungen in der Wade, Mobilisation Knie + Hüfte
-**Sitzung 3-4:** [Beckenkorrektur](/blog/isg-blockierung-teufelskreis), Behandlung der [Lendenwirbelsäule](/behandlungen/rueckenschmerzen), Fuß-Mechanik
-**Sitzung 5:** Laufbandanalyse, Feinkorrektur
-
-**Parallel:** Spezifische Übungen für Hüftstabilität und Fußmuskulatur
-
-### Das Ergebnis
-
-- **Woche 2:** Schmerzfrei gehen, leichte Übungen
-- **Woche 4:** Erste 5 km Lauf – keine Probleme
-- **Woche 8:** 15 km Lauf – besser als vor der Verletzung
-- **Woche 12:** Halbmarathon-Test (21 km) – persönliche Bestzeit!
-
-**Oktober 2023:** Hamburg-Marathon. Zielzeit: 3:52h. **Keine Schmerzen, kein Rückfall.**
-
-### Was mich am meisten überraschte
-
-Ich laufe jetzt **effizienter** als vor der Verletzung. Meine Schrittlänge ist symmetrischer, meine Hüfte stabiler. Die Verletzung war – mit der richtigen Behandlung – eine Chance, strukturelle Schwächen zu beheben."
-
----
-
 ## Die 5 häufigsten Sportverletzungen (und wie Osteopathie hilft)
 
 ### 1. Muskelfaserriss / Zerrung (Wade, Oberschenkel)

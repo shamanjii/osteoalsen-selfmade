@@ -196,7 +196,7 @@ Mehr Training → Bessere Leistung
 **C. Schlafqualität verbessern**
 - **Cranio-sacrale Therapie**: Spannungen im Nervensystem lösen
 - **HWS-Mobilisierung**: Bessere Atmung → tieferer Schlaf
-- **Effekt**: 85% der Patient:innen berichten besseren Schlaf nach osteopathischer Behandlung[^10]
+- **Erfahrung aus der Praxis**: Viele Patient:innen berichten nach osteopathischer Behandlung über erholsameren Schlaf — der individuelle Effekt ist unterschiedlich[^10]
 
 **Optimales Regenerations-Protokoll:**
 

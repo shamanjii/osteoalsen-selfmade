@@ -511,7 +511,7 @@ Ein Gelenk schmerzt selten isoliert. Meist hat der Körper über Jahre **Kompens
 **Differenzierung wichtig**:
 - **Frühe Arthrose** (Knorpelerweichung): Teilweise reversibel durch Ernährung, Bewegung, Entzündungskontrolle
 - **Moderate Arthrose**: Progression stoppbar, Beschwerden meist gut behandelbar
-- **Schwere Arthrose**: Knorpel fast weg – aber auch hier können 60% der Patient:innen schmerzfrei sein mit richtiger Therapie[^14]
+- **Schwere Arthrose**: Knorpel fast weg – aber auch hier berichten viele Patient:innen mit konsequenter konservativer Therapie über deutliche Schmerzlinderung[^14]
 
 **Warum?** Weil Schmerz nicht (nur) vom Knorpel kommt – sondern von Entzündung, Faszien-Verklebungen, Muskel-Dysbalancen. Und die **sind** behandelbar.
 

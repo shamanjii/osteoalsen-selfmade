@@ -158,30 +158,6 @@ Atmung eingeschränkt (Zwerchfell, Rippen)
 
 Eine rein lokale Nackenmassage behandelt **5%** des Problems.
 
-## Fallbeispiel: Martina, 42 Jahre
-
-**Anamnese:**
-- Auffahrunfall November 2019 (50 km/h)
-- Halskrause 2 Wochen, dann Physiotherapie 12 Sitzungen
-- Symptome besserten sich über 6 Monate
-- August 2024: Plötzlich massive Nackenschmerzen + Schwindel
-
-**Versicherung:** "Der Unfall war vor 5 Jahren, das kann nicht mehr davon kommen."
-
-**Orthopäde:** MRT ohne Befund, Schmerzmittel verschrieben.
-
-**Befund in meiner Praxis:**
-- Atlas 3mm rechts-rotiert
-- C5/C6 hypomobil (steif)
-- Occiput (Hinterkopf) extrem verspannt
-- Diaphragma (Zwerchfell) blockiert
-- Rechtes Iliosakralgelenk verschoben
-- Kiefergelenk links überlastet
-
-**Was war passiert?**
-
-Martina hatte im Juli 2024 ihre Mutter gepflegt (hoher Stress). Das System, das 5 Jahre lang durch Muskelkompensation funktioniert hatte, **kollabierte**.
-
 ## Das 6-Phasen-Langzeitprotokoll (ohne Schmerzmittel)
 
 ### Phase 1: Struktur-Reset (Woche 1-4)
