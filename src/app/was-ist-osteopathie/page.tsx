@@ -6,7 +6,7 @@ import FAQSchema from "@/components/FAQSchema";
 import StickyBookingButton from "@/components/StickyBookingButton";
 
 export const metadata: Metadata = {
-  title: "Was ist Osteopathie? | Hamburg - Joshua Alsen",
+  title: "Was ist Osteopathie? | Osteopathie Hamburg - Joshua Alsen",
   description:
     "Osteopathie erklärt ✓ VFO-Osteopath Hamburg ✓ Rotherbaum & Eimsbüttel ✓ Rückenschmerzen, Kopfschmerzen & mehr ✓ Jetzt buchen!",
   keywords: [
@@ -665,7 +665,7 @@ export default function WasIstOsteopathiePage() {
                 Für Patienten sind Berufsverbände wichtig, da sie die Abrechnung mit den Krankenkassen gewährleisten. Die größten Verbände in Deutschland sind der <strong>Verband der Osteopathen Deutschland (VOD)</strong>, der <strong>Bundesverband Osteopathie (BVO)</strong> und der <strong>Verband Freier Osteopathen (VFO)</strong>. Ich bin Mitglied im <strong>VFO</strong>.
               </p>
               <p>
-                Ich habe Osteopathie an der <strong>Osteopathie Schule Deutschland (OSD)</strong> studiert – und zwar in <strong>Vollzeit über 4 Jahre</strong>. Dadurch komme ich auf weitaus mehr Ausbildungsstunden als die von Krankenkassen geforderten Mindeststunden von 1.350 Unterrichtsstunden. Die OSD ist BAO-anerkannt (Bundesarbeitsgemeinschaft Osteopathie), was höchste Qualitätsstandards garantiert.
+                Ich habe Osteopathie an der <strong>Osteopathie Schule Deutschland (OSD)</strong> studiert – und zwar in <strong>Vollzeit über 4 Jahre</strong>. Dadurch komme ich auf weitaus mehr Ausbildungsstunden als die von Krankenkassen geforderten Mindeststunden von 1.350 Unterrichtsstunden. Die OSD ist BAO-anerkannt (Bundesarbeitsgemeinschaft Osteopathie), die einen anerkannten Qualitätsstandard für die Ausbildung definiert.
               </p>
 
               <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4 font-epilogue">Heilpraktiker oder Arzt: Wer darf osteopathisch behandeln?</h3>

@@ -5,7 +5,7 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Wissen & Forschung | Osteopathie Hamburg - J. Alsen",
+  title: "Osteopathie Wissen & Forschung Hamburg | Joshua Alsen",
   description:
     "Was sagt die Wissenschaft zur Osteopathie? Aktuelle Studien, Forschungsergebnisse und evidenzbasierte Fakten zur Wirksamkeit osteopathischer Behandlungen.",
   keywords: [

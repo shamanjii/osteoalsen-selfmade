@@ -7,7 +7,7 @@ import SiteHeader from "@/app/(site)/components/SiteHeader";
 import SiteFooter from "@/app/(site)/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Osteopathie Eimsbüttel | VFO-zertifiziert",
+  title: "Osteopathie Hamburg Eimsbüttel | Joshua Alsen",
   description:
     "Osteopathie Eimsbüttel ✓ VFO-zertifiziert ✓ Stresemannallee 118 ✓ Termine binnen 48h ✓ Kassenzuschuss ⭐ Jetzt buchen!",
   keywords: [

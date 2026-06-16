@@ -7,7 +7,7 @@ import FAQSchema from "@/components/FAQSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Verdauungsbeschwerden | Viszerale Osteopathie HH",
+  title: "Verdauungsbeschwerden | Viszerale Osteopathie Hamburg",
   description:
     "Reizdarm, Blähungen, Verstopfung behandeln ✓ Viszerale Osteopathie Hamburg ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt buchen!",
   keywords: [
@@ -58,7 +58,7 @@ export default function VerdauungPage() {
           },
           {
             question: "Kann Osteopathie bei Reizdarm helfen?",
-            answer: "Ja, viszerale Osteopathie zeigt bei Reizdarmsyndrom (IBS) gute Erfolge. Studien belegen, dass osteopathische Behandlungen Bauchschmerzen, Blähungen und Stuhlunregelmäßigkeiten reduzieren können. Wichtig ist, dass organische Ursachen vorher ärztlich ausgeschlossen wurden. Die Behandlung fokussiert auf Mobilisation der Bauchorgane, Entspannung des Zwerchfells, Regulation des vegetativen Nervensystems und Behandlung von Spannungen im Bindegewebe. Am besten wirkt Osteopathie in Kombination mit Stressmanagement und Ernährungsanpassung."
+            answer: "Ja, viszerale Osteopathie kann bei Reizdarmsyndrom (IBS) eine sinnvolle Option sein. Studien deuten darauf hin, dass osteopathische Behandlungen Bauchschmerzen, Blähungen und Stuhlunregelmäßigkeiten positiv beeinflussen können. Wichtig ist, dass organische Ursachen vorher ärztlich ausgeschlossen wurden. Die Behandlung fokussiert auf Mobilisation der Bauchorgane, Entspannung des Zwerchfells, Regulation des vegetativen Nervensystems und Behandlung von Spannungen im Bindegewebe. Erfahrungsgemäß profitiert der Verlauf, wenn Osteopathie mit Stressmanagement und Ernährungsanpassung kombiniert wird. Der individuelle Verlauf ist unterschiedlich."
           },
           {
             question: "Wirkt Osteopathie auch bei chronischer Verstopfung?",
@@ -70,7 +70,7 @@ export default function VerdauungPage() {
           },
           {
             question: "Kann Osteopathie bei Sodbrennen helfen?",
-            answer: "Bei funktionellem Sodbrennen und Reflux (wenn die gastroenterologische Abklärung unauffällig war) kann Osteopathie sehr wirksam sein. Ich behandle Spannungen am Zwerchfell und der Speiseröhre, mobilisiere den Magen sanft, löse Verklebungen im oberen Bauchraum, und entspanne das vegetative Nervensystem. Besonders bei stressbedingtem Reflux zeigen sich oft schnelle Verbesserungen. Bei anatomischen Veränderungen wie großer Hiatushernie ersetzt Osteopathie keine medizinische Therapie, kann aber begleitend die Symptome lindern."
+            answer: "Bei funktionellem Sodbrennen und Reflux (wenn die gastroenterologische Abklärung unauffällig war) kann Osteopathie eine sinnvolle ergänzende Option sein. Ich behandle Spannungen am Zwerchfell und der Speiseröhre, mobilisiere den Magen sanft, adressiere Verklebungen im oberen Bauchraum und unterstütze die Regulation des vegetativen Nervensystems. Bei anatomischen Veränderungen wie großer Hiatushernie ersetzt Osteopathie keine medizinische Therapie, kann aber begleitend wirken. Der individuelle Verlauf ist unterschiedlich."
           },
           {
             question: "Übernimmt die Krankenkasse die Kosten?",
@@ -78,7 +78,7 @@ export default function VerdauungPage() {
           },
           {
             question: "Können Nahrungsmittelunverträglichkeiten behandelt werden?",
-            answer: "Osteopathie kann die Unverträglichkeiten selbst nicht heilen, aber die damit verbundenen Symptome deutlich lindern. Bei Laktose-, Fruktose- oder Histaminintoleranz behandle ich die Reaktionen des Verdauungstrakts: Bauchkrämpfe, Blähungen und Durchfall. Durch Mobilisation der Bauchorgane, Entspannung des Nervensystems und Verbesserung der Darmbeweglichkeit werden die Beschwerden oft reduziert. Wichtig bleibt aber die diagnostische Abklärung und bei Bedarf das Meiden der auslösenden Lebensmittel."
+            answer: "Osteopathie kann die Unverträglichkeiten selbst nicht heilen, aber die damit verbundenen Symptome ergänzend adressieren. Bei Laktose-, Fruktose- oder Histaminintoleranz arbeite ich an den Reaktionen des Verdauungstrakts: Bauchkrämpfe, Blähungen und Durchfall. Durch Mobilisation der Bauchorgane, Unterstützung der Regulation des Nervensystems und Arbeit an der Darmbeweglichkeit berichten viele Patient:innen von einer Verbesserung; der individuelle Verlauf ist unterschiedlich. Wichtig bleibt die diagnostische Abklärung und bei Bedarf das Meiden der auslösenden Lebensmittel."
           },
           {
             question: "Ist die Behandlung schmerzhaft?",
@@ -86,7 +86,7 @@ export default function VerdauungPage() {
           },
           {
             question: "Wie lange dauert eine Verbesserung?",
-            answer: "Das ist sehr individuell. Manche Patienten spüren bereits nach der ersten Sitzung eine Verbesserung (z.B. weniger Blähungen, bessere Verdauung). Bei chronischen Beschwerden wie Reizdarm zeigt sich die Wirkung meist nach 3-4 Behandlungen. Der Körper braucht Zeit, um neue Bewegungsmuster zu etablieren. Wichtig: Verdauungsbeschwerden haben oft mehrere Ursachen (Stress, Ernährung, Bewegungsmangel). Die besten Ergebnisse erziele ich, wenn Patienten parallel auch Lebensstil-Anpassungen vornehmen."
+            answer: "Das ist sehr individuell und nicht vorhersagbar. Bei chronischen Beschwerden wie Reizdarm braucht der Körper erfahrungsgemäß Zeit, um neue Bewegungsmuster zu etablieren — entsprechend wird die Behandlung als Serie über mehrere Sitzungen geplant. Wichtig: Verdauungsbeschwerden haben oft mehrere Ursachen (Stress, Ernährung, Bewegungsmangel). Begleitende Lebensstil-Anpassungen können den Verlauf unterstützen."
           }
         ]}
       />
@@ -478,7 +478,7 @@ export default function VerdauungPage() {
                     <span>🥗</span> Low-FODMAP-Diät (bei Reizdarm)
                   </h3>
                   <p className="text-slate-700 text-sm leading-relaxed mb-3">
-                    FODMAPs sind bestimmte kurzkettige Kohlenhydrate, die bei empfindlichen Personen im Darm stark vergären und Symptome auslösen. Die Low-FODMAP-Diät reduziert diese 6-8 Wochen lang, gefolgt von schrittweiser Wiedereinführung. Etwa 70% der Reizdarm-Patienten profitieren davon. Wichtig: Idealerweise unter Anleitung einer Ernährungsberatung durchführen, um Nährstoffmängel zu vermeiden.
+                    FODMAPs sind bestimmte kurzkettige Kohlenhydrate, die bei empfindlichen Personen im Darm stark vergären und Symptome auslösen können. Die Low-FODMAP-Diät reduziert diese 6-8 Wochen lang, gefolgt von schrittweiser Wiedereinführung. Studien deuten darauf hin, dass ein erheblicher Anteil der Reizdarm-Patient:innen davon profitiert. Wichtig: Idealerweise unter Anleitung einer Ernährungsberatung durchführen, um Nährstoffmängel zu vermeiden.
                   </p>
                 </div>
 
