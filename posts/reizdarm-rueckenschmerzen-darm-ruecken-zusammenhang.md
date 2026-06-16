@@ -297,7 +297,7 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 **Was:** Reduzierung fermentierbarer Kohlenhydrate (Blähungstreiber)
 
-**Evidenz:** **Sehr gut** – 70% der Reizdarm-Patienten profitieren
+**Evidenz:** Mehrere Studien zeigen gute Ergebnisse bei einem erheblichen Teil der Reizdarm-Patient:innen — der individuelle Effekt ist unterschiedlich
 
 **Wichtig:** Nicht dauerhaft! Nur 4-6 Wochen, dann Reintroduktion.
 
@@ -340,7 +340,7 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 ### Kann Osteopathie meinen Reizdarm heilen?
 
-**Ehrliche Antwort:** Osteopathie kann Reizdarm **nicht heilen** – aber sehr effektiv **Symptome lindern**.
+**Ehrliche Antwort:** Osteopathie kann Reizdarm **nicht heilen** – aber Symptome ergänzend adressieren. Viele Patient:innen berichten von einer Verbesserung; der individuelle Verlauf ist unterschiedlich.
 
 **Was Osteopathie kann:**
 - ✓ Mechanische Spannungen lösen (Zwerchfell, Darm, LWS)
@@ -357,12 +357,12 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 ### Wie viele Behandlungen brauche ich?
 
-**Typischer Verlauf:**
-- **1-3 Sitzungen:** Akute Schmerzlinderung
-- **4-6 Sitzungen:** Deutliche Besserung von Reizdarm + Rückenschmerzen
-- **Danach:** Alle 4-8 Wochen zur Erhaltung
+**Typischer Rahmen einer Behandlungsserie:**
+- **1-3 Sitzungen:** Erstbefund, akute Spannungsmuster lösen
+- **4-6 Sitzungen:** vertiefte Arbeit an Zwerchfell, Vagusregulation, Darm-Mobilität
+- **Danach:** Alle 4-8 Wochen zur Erhaltung (je nach Verlauf)
 
-**Wichtig:** Jeder Mensch ist anders. Manche brauchen mehr, manche weniger.
+**Wichtig:** Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar. Manche profitieren früher, andere brauchen länger oder eine begleitende multimodale Therapie.
 
 ### Warum haben meine Rückenschmerzen morgens am schlimmsten?
 
@@ -392,20 +392,11 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 
 ### Sollte ich Schmerzmittel nehmen?
 
-**Kompliziert:**
+**Die Entscheidung über Schmerzmittel gehört in ärztliche Hand.** Hier nur eine allgemeine Einordnung:
 
-**Ibuprofen/NSAIDs:**
-- ✗ **Nicht empfehlenswert** bei Reizdarm (schädigen Darmschleimhaut!)
-- ✗ Können Reizdarm verschlimmern
-
-**Paracetamol:**
-- ✓ OK bei akuten Schmerzen
-- ✗ Hilft oft nicht gut (zentrale Sensibilisierung!)
-
-**Besser:**
-- Atemtechniken (natürliche Schmerzlinderung)
-- Wärme auf Bauch/Rücken
-- Pfefferminzöl-Kapseln (evidenzbasiert für Reizdarm!)
+- **NSAR (z.B. Ibuprofen)** werden bei Reizdarm-Patient:innen häufig zurückhaltend eingesetzt, weil sie die Darmschleimhaut belasten können. Klären Sie das mit Ihrer Hausärzt:in oder Gastroenterolog:in.
+- **Pfefferminzöl-Kapseln** werden in einigen Leitlinien als ergänzende Option bei Reizdarm-Symptomen erwähnt. Hinweis: Bei Reflux oder Sodbrennen können sie Beschwerden verstärken; in der Schwangerschaft Rücksprache mit Ärzt:in.
+- **Nicht-medikamentöse Ansätze** (Atemtechniken, Wärmeanwendung, Ernährungsumstellung, Stressmanagement) können die ärztliche Behandlung sinnvoll ergänzen.
 
 ### Ist das psychosomatisch?
 

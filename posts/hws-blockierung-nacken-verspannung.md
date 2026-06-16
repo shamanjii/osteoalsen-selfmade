@@ -19,7 +19,7 @@ author: "Admin"
 ---
 # HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)
 
-**Sie wachen morgens auf – der Nacken ist steif wie ein Brett. Sie können den Kopf kaum zur Seite drehen. Massage hilft für 2 Tage, dann ist alles wieder beim Alten. Sie fragen sich: Warum geht das nicht weg? Die Antwort: 85% aller chronischen Nackenverspannungen haben eine HWS-Blockierung als Ursache – meist im Atlas (C1) oder Axis (C2). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen). Der Unterschied zwischen 2 Tagen und 2 Monaten Schmerzfreiheit? Die Blockierung lösen, nicht nur den Muskel lockern.**
+**Sie wachen morgens auf – der Nacken ist steif wie ein Brett. Sie können den Kopf kaum zur Seite drehen. Massage hilft für 2 Tage, dann ist alles wieder beim Alten. Sie fragen sich: Warum geht das nicht weg? Bei chronischen Nackenverspannungen spielt erfahrungsgemäß oft eine HWS-Blockierung eine Rolle – meist im Atlas (C1) oder Axis (C2). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen). Der Ansatz: nicht nur den Muskel lockern, sondern auch die zugrundeliegende Blockierung adressieren.**
 
 ---
 
@@ -140,7 +140,7 @@ s der HWS!)
 ### 2. Büro-Nacken (Schreibtisch-Syndrom)
 
 **Die Statistik:**
-- **90% der Büroangestellten** haben Nackenbeschwerden
+- **Die Mehrheit der Büroangestellten** berichtet im Lauf der Zeit über Nackenbeschwerden
 - Durchschnitt: **7 Stunden täglich** Bildschirmarbeit
 - Kopf nach vorne geneigt: **+15 kg Belastung** auf HWS
 
@@ -434,8 +434,8 @@ In meiner Praxis in Hamburg behandle ich regelmäßig [Nackenschmerzen](/behandl
 ### Wie lange dauert es, bis eine HWS-Blockierung gelöst ist?
 
 **Akute Blockierung (seit Tagen/Wochen):**
-- Oft schon nach 1-2 Behandlungen deutlich besser
-- Atlas reagiert meist sehr schnell auf Mobilisation
+- Behandlungsserie meist kürzer als bei chronischen Verläufen
+- Atlas reagiert erfahrungsgemäß gut auf Mobilisation; der individuelle Verlauf ist unterschiedlich
 
 **Chronische Blockierung (seit Monaten/Jahren):**
 - 4-6 Behandlungen bis stabil

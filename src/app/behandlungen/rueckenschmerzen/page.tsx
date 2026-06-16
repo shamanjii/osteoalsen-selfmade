@@ -80,7 +80,7 @@ export default function RueckenschmerzenPage() {
           {
             question: "Wie viele Behandlungen brauche ich bei Rückenschmerzen?",
             answer:
-              "Bei akuten Rückenschmerzen (Hexenschuss, plötzliche Blockade) zeigt sich oft schon nach 1-3 Behandlungen eine deutliche Besserung. Bei chronischen Rückenschmerzen (länger als 3 Monate) empfehle ich meist 4-6 Behandlungen im Abstand von 2-3 Wochen.",
+              "Bei akuten Rückenschmerzen (Hexenschuss, plötzliche Blockade) ist die Behandlungsserie meist kürzer als bei chronischen Beschwerden. Bei chronischen Rückenschmerzen (länger als 3 Monate) empfehle ich meist 4-6 Behandlungen im Abstand von 2-3 Wochen. Der individuelle Verlauf ist unterschiedlich.",
           },
           {
             question: "Was ist der Unterschied zwischen Osteopathie und Physiotherapie bei Rückenschmerzen?",
@@ -95,7 +95,7 @@ export default function RueckenschmerzenPage() {
           {
             question: "Hilft Osteopathie auch bei chronischen Rückenschmerzen ohne erkennbare Ursache?",
             answer:
-              "Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann Osteopathie sehr wirksam sein. Oft finde ich bei der ganzheitlichen Untersuchung Ursachen, die nicht offensichtlich sind: Bewegungseinschränkungen im Becken, Narbengewebe nach alten Operationen, viszerale Dysfunktionen oder fasziale Spannungsketten. Die Erfolgsrate ist besonders hoch, wenn wir die Behandlung mit aktiven Maßnahmen wie Bewegung und Stressmanagement kombinieren.",
+              "Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann ein osteopathischer Befund hilfreich sein. Oft finde ich bei der ganzheitlichen Untersuchung Zusammenhänge, die nicht offensichtlich sind: Bewegungseinschränkungen im Becken, Narbengewebe nach alten Operationen, viszerale Dysfunktionen oder fasziale Spannungsketten. Erfahrungsgemäß profitiert der Verlauf, wenn die Behandlung mit aktiven Maßnahmen wie Bewegung und Stressmanagement kombiniert wird. Der individuelle Verlauf ist unterschiedlich.",
           },
         ]}
       />
@@ -327,10 +327,10 @@ export default function RueckenschmerzenPage() {
                     <span>✋</span> Osteopathische Behandlung
                   </h3>
                   <p className="text-slate-700">
-                    Mit sanften manuellen Techniken löse ich Blockaden, mobilisiere
-                    eingeschränkte Gelenke und entspanne verspannte Muskulatur.
-                    Dabei arbeite ich an Wirbelsäule, Becken, inneren Organen und
-                    Faszien.
+                    Mit sanften manuellen Techniken adressiere ich Blockaden,
+                    mobilisiere eingeschränkte Gelenke und arbeite mit verspannter
+                    Muskulatur. Dabei beziehe ich Wirbelsäule, Becken, innere Organe
+                    und Faszien in die Behandlung ein.
                   </p>
                 </div>
               </div>
@@ -363,9 +363,11 @@ export default function RueckenschmerzenPage() {
             <div className="space-y-4 text-slate-700">
               <p className="leading-relaxed">
                 <strong>Bei akuten Rückenschmerzen</strong> (Hexenschuss,
-                plötzliche Blockade) zeigt sich oft schon nach 1-3 Behandlungen
-                eine deutliche Besserung. Die Selbstheilungskräfte des Körpers
-                werden aktiviert und die Beschwerden klingen ab.
+                plötzliche Blockade) ist die Behandlungsserie erfahrungsgemäß
+                kürzer als bei chronischen Beschwerden. Ziel ist, die
+                Selbstheilungskräfte des Körpers zu unterstützen, damit die
+                Beschwerden im Verlauf abklingen können. Der individuelle
+                Verlauf ist unterschiedlich.
               </p>
               <p className="leading-relaxed">
                 <strong>Bei chronischen Rückenschmerzen</strong> (länger als 3
@@ -556,8 +558,9 @@ export default function RueckenschmerzenPage() {
               <p className="text-slate-700 leading-relaxed mb-4">
                 Plötzlicher, stechender Schmerz im unteren Rücken, oft mit starker
                 Bewegungseinschränkung. Häufig ausgelöst durch eine falsche Bewegung beim
-                Bücken oder Heben. Die osteopathische Behandlung kann hier sehr schnell
-                Erleichterung bringen – oft schon nach 1-2 Sitzungen.
+                Bücken oder Heben. Die osteopathische Behandlung zielt darauf ab,
+                Blockaden zu lösen und die Selbstregulation zu unterstützen — der
+                individuelle Verlauf bleibt unterschiedlich.
               </p>
 
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
@@ -706,9 +709,10 @@ export default function RueckenschmerzenPage() {
                 </summary>
                 <p className="mt-4 text-slate-700 leading-relaxed pl-11">
                   Bei akuten Rückenschmerzen (Hexenschuss, plötzliche Blockade)
-                  zeigt sich oft schon nach 1-3 Behandlungen eine deutliche
-                  Besserung. Bei chronischen Rückenschmerzen (länger als 3 Monate)
-                  empfehle ich meist 4-6 Behandlungen im Abstand von 2-3 Wochen.
+                  ist die Behandlungsserie meist kürzer als bei chronischen
+                  Beschwerden. Bei chronischen Rückenschmerzen (länger als
+                  3 Monate) empfehle ich meist 4-6 Behandlungen im Abstand von
+                  2-3 Wochen. Der individuelle Verlauf ist unterschiedlich.
                 </p>
               </details>
 
@@ -761,12 +765,13 @@ export default function RueckenschmerzenPage() {
                   </span>
                 </summary>
                 <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                  Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann Osteopathie sehr
-                  wirksam sein. Oft finde ich bei der ganzheitlichen Untersuchung Ursachen, die nicht
-                  offensichtlich sind: Bewegungseinschränkungen im Becken, Narbengewebe nach alten
-                  Operationen, viszerale Dysfunktionen oder fasziale Spannungsketten. Die Erfolgsrate
-                  ist besonders hoch, wenn wir die Behandlung mit aktiven Maßnahmen wie Bewegung und
-                  Stressmanagement kombinieren.
+                  Ja, gerade bei unspezifischen chronischen Rückenschmerzen kann ein osteopathischer
+                  Befund hilfreich sein. Oft finde ich bei der ganzheitlichen Untersuchung
+                  Zusammenhänge, die nicht offensichtlich sind: Bewegungseinschränkungen im Becken,
+                  Narbengewebe nach alten Operationen, viszerale Dysfunktionen oder fasziale
+                  Spannungsketten. Erfahrungsgemäß profitiert der Verlauf, wenn die Behandlung mit
+                  aktiven Maßnahmen wie Bewegung und Stressmanagement kombiniert wird. Der
+                  individuelle Verlauf ist unterschiedlich.
                 </p>
               </details>
             </div>

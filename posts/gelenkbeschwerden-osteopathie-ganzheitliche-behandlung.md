@@ -235,7 +235,7 @@ Ein „Arthrose-Befund" bedeutet **nicht zwingend**, dass die Arthrose die Schme
 - **Anti-inflammatorische Ernährung**: Omega-3, Kurkuma, Ingwer
 - **Schonung** – aber nicht vollständige Ruhigstellung
 
-**Erwartung**: 30-50% Schmerzreduktion nach 1-2 Behandlungen
+*In dieser Phase steht die Beruhigung der akuten Reizung im Vordergrund. Der individuelle Verlauf ist unterschiedlich.*
 
 ---
 
@@ -256,7 +256,7 @@ Ein „Arthrose-Befund" bedeutet **nicht zwingend**, dass die Arthrose die Schme
 - **Schmerzskala** (VAS 0-10)
 - **Funktionelle Tests**: z.B. Treppe steigen, Arm über Kopf heben
 
-**Erwartung**: 50-70% Beschwerdebesserung nach 4-6 Behandlungen
+*Ziel dieser Phase ist eine messbare Verbesserung von Beweglichkeit und Funktion. Wie ausgeprägt diese ausfällt, ist individuell verschieden.*
 
 ---
 
@@ -297,7 +297,7 @@ Ein Gelenk schmerzt selten isoliert. Meist hat der Körper über Jahre **Kompens
 
 **Behandlungsfrequenz**: 1x monatlich für 4-6 Monate
 
-**Erwartung**: 80-90% Beschwerdefreiheit, nachhaltige Stabilität
+*Ziel dieser Phase ist eine nachhaltige Stabilität im Alltag. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.*
 
 ---
 
@@ -543,22 +543,21 @@ Mehr zur optimalen Sportbegleitung: [Sportosteopathie Hamburg](/blog/sportosteop
 
 ### Wie lange dauert Heilung bei chronischen Gelenkbeschwerden?
 
-**Realistische Timeline:**
+**Typische Phasen eines Behandlungsverlaufs:**
 
 **Nach 2-4 Wochen**:
-- 30-50% Schmerzreduktion
-- Verbesserte Beweglichkeit
-- Erste Entzündungszeichen reduziert
+- Erste Anzeichen einer Beruhigung der akuten Reizung möglich
+- Beweglichkeit beginnt sich zu verbessern
 
 **Nach 8-12 Wochen**:
-- 60-80% Besserung
-- Deutlich verbesserte Funktion
-- Muskuläre Stabilität aufgebaut
+- Funktion und muskuläre Stabilität bauen sich weiter auf
+- Selbstmanagement im Alltag wird stabiler
 
 **Nach 6-9 Monaten**:
-- 80-90% Besserung (oder komplett beschwerdefrei)
-- Nachhaltige Verhaltensänderungen etabliert
-- Rezidiv-Risiko niedrig
+- Ziel ist eine nachhaltige Verhaltensänderung und Stabilität
+- Niedrigeres Rezidiv-Risiko durch konsequente Eigenübungen
+
+*Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar — er hängt u.a. von Schweregrad, Vorgeschichte und Mitarbeit ab.*
 
 **Wichtig**: Bei **chronischen** Beschwerden (> 6 Monate) braucht Heilung Zeit. „Quick Fixes" funktionieren selten nachhaltig.
 
@@ -566,7 +565,7 @@ Mehr zur optimalen Sportbegleitung: [Sportosteopathie Hamburg](/blog/sportosteop
 
 ### Kann Osteopathie auch bei schwerer Arthrose helfen?
 
-**Ja** – auch wenn Knorpel stark geschädigt ist, kann Osteopathie **Beschwerden deutlich lindern** und OP hinauszögern oder vermeiden.
+**Auch bei stark geschädigtem Knorpel** kann Osteopathie ergänzend zur Symptomlinderung beitragen und je nach individuellem Verlauf eine Operation hinauszögern helfen. Eine OP-Entscheidung trifft immer das ärztliche Behandlungsteam — der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
 **Wie?**
 1. **Druck-Entlastung**: Optimierung der Gelenkstellung → weniger Kompression
@@ -662,7 +661,7 @@ Ich kombiniere osteopathische Behandlung mit **Bewegungsberatung**, **Ernährung
 
 4. **Ernährung zählt**: Omega-3, Antioxidantien, anti-inflammatorische Ernährung können Gelenkschmerz um 30% reduzieren.
 
-5. **Zeit geben**: Chronische Beschwerden brauchen 3-6 Monate für nachhaltige Heilung. „Quick Fixes" funktionieren selten.
+5. **Zeit geben**: Chronische Beschwerden brauchen erfahrungsgemäß mehrere Monate für eine nachhaltige Stabilisierung. „Quick Fixes" funktionieren selten.
 
 ### Ihr Aktionsplan
 

@@ -39,8 +39,8 @@ Der Vagusnerv ist ein wahres Multitalent und versorgt folgende Bereiche:
 **Im Kopf-Hals-Bereich:**
 - Kehlkopf und Stimmbänder (über den Nervus laryngeus)
 - Rachen und Schlundmuskulatur
-- Teile der mimischen Muskulatur (in Zusammenarbeit mit anderen Hirnnerven)
-- Äußerer Gehörgang
+- Äußerer Gehörgang (Ramus auricularis nervi vagi, sog. „Alderman's Nerve")
+- Funktionell in engem Austausch mit den Hirnnerven V (Trigeminus), VII (Facialis, Mimik), IX (Glossopharyngeus) und XI (Akzessorius) — diese bilden zusammen den sog. „ventralen Vagus-Komplex" der Polyvagaltheorie. *Anatomisch innerviert der Vagus selbst nicht die mimische Muskulatur — das ist Aufgabe des Nervus facialis.*
 
 **Im Brustkorb:**
 - Herz (Regulation der Herzfrequenz)
@@ -94,12 +94,12 @@ Die meisten Stressbewältigungs-Übungen zielen darauf ab, vom Sympathikus-Zusta
 
 ### Der ventrale Vagus: Die Nervenäste des Beruhigungssystems
 
-Das Besondere am ventralen Vagus: Er umfasst spezifische Nervenäste, die wir willentlich beeinflussen können. Dazu gehören unter anderem:
+Das Besondere am ventralen Vagus-Komplex (nach Porges): Er umfasst spezifische Vagusäste sowie funktionelle Verbindungen zu benachbarten Hirnnerven, die wir willentlich beeinflussen können:
 
-- **Nervus laryngeus** (Kehlkopfnerv) – steuert Stimme und Kehlkopf
-- **Rami cardiaci** (Herzäste) – regulieren Herzfrequenz
-- **Rami bronchiales** (Lungenäste) – steuern Atmung und Bronchien
-- **Verbindungen zur mimischen Muskulatur** – ermöglichen emotionalen Ausdruck
+- **Nervus laryngeus** (Kehlkopfnerv, Vagus-Ast) – steuert Stimme und Kehlkopf
+- **Rami cardiaci** (Herzäste des Vagus) – regulieren Herzfrequenz
+- **Rami bronchiales** (Lungenäste des Vagus) – steuern Atmung und Bronchien
+- **Funktionelle Kopplung mit dem Nervus facialis (VII)** – die mimische Muskulatur selbst wird vom Facialis innerviert (nicht vom Vagus), ist aber im polyvagalen Modell eng mit der ventralen Vagus-Aktivität verschaltet (Social Engagement System)
 
 Diese Nervenäste innervieren Bereiche, die wir über einfache Übungen aktivieren können – und genau das macht den ventralen Vagus so zugänglich für Selbsthilfe.
 

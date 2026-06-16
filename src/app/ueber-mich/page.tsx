@@ -271,8 +271,9 @@ export default function UeberMichPage() {
                   und definiert die höchsten Ausbildungsstandards in Deutschland.
                 </p>
                 <p className="leading-relaxed">
-                  Meine Ausbildung mit über 5.000 Stunden entspricht dem BAO-Standard und
-                  garantiert Ihnen höchste fachliche Kompetenz und Behandlungsqualität.
+                  Meine Ausbildung mit über 5.000 Stunden entspricht dem BAO-Standard und damit
+                  einem der höchsten anerkannten Ausbildungsstandards für Osteopath:innen in
+                  Deutschland.
                 </p>
               </div>
             </div>

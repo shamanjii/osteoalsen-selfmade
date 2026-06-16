@@ -75,7 +75,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ## Die Wahrheit: 3 Arten von Rückenschmerzen (und warum Dehnen nur bei 1 hilft)
 
-### Typ 1: Verkürzungs-Schmerz (30% der Fälle)
+### Typ 1: Verkürzungs-Schmerz
 
 **Ursache:** Tatsächlich verkürzte Strukturen (Kontrakturen)
 - Hüftbeuger (Iliopsoas/M. iliopsoas) – durch [langes Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen)
@@ -94,7 +94,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-### Typ 2: Instabilitäts-Schmerz (40% der Fälle) – DEHNEN VERSCHLIMMERT!
+### Typ 2: Instabilitäts-Schmerz – DEHNEN VERSCHLIMMERT!
 
 **Ursache:** Überdehnte, geschwächte Strukturen (Hypermobilität)
 - Bänder überdehnt (durch Jahre schlechter Haltung/Überbeweglichkeit/Hyperlaxität)
@@ -117,7 +117,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-### Typ 3: Triggerpunkt-Schmerz (30% der Fälle) – DEHNEN BRINGT NICHTS
+### Typ 3: Triggerpunkt-Schmerz – DEHNEN BRINGT NICHTS
 
 **Ursache:** Verhärtete Stellen im Muskel (Triggerpunkte)
 - Nicht verkürzt, sondern lokal kontrahiert
@@ -518,7 +518,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 **Antwort:** Viele Therapeuten lernen: Rückenschmerz = Verkürzung = Dehnung.
 
-**Problem:** Das stimmt nur für Typ 1 (30% der Fälle).
+**Problem:** Das stimmt nur für Typ 1 — eine Teilgruppe der Rückenschmerz-Patient:innen.
 
 **Lösung:**
 - Zeigen Sie diesem Artikel
@@ -611,9 +611,9 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 ✓ **Dehnung hilft** bei echten Verkürzungen (30% der Rückenschmerzen)
 
-✗ **Dehnung schadet** bei Instabilität (40% der Fälle) – macht Schmerzen schlimmer
+✗ **Dehnung schadet** bei Instabilität – macht Schmerzen schlimmer
 
-∅ **Dehnung bringt wenig** bei Triggerpunkten (30% der Fälle) – nur kurze Linderung
+∅ **Dehnung bringt wenig** bei Triggerpunkten – nur kurze Linderung
 
 **Die Lösung:**
 1. **Typ bestimmen** (Selbsttest oder osteopathische Untersuchung)

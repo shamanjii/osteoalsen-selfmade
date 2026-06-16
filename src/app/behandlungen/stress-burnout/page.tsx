@@ -72,7 +72,7 @@ export default function StressBurnoutPage() {
           {
             question: "Wie kann Osteopathie bei Stress und Burnout helfen?",
             answer:
-              "Osteopathie reguliert das vegetative Nervensystem, das bei Stress aus dem Gleichgewicht gerät. Durch sanfte craniosacrale Techniken, Faszienarbeit und viszerale Behandlung wird der Parasympathikus (Ruhenerv) aktiviert. Dies fördert Entspannung, verbessert den Schlaf und löst körperliche Stresssymptome wie Verspannungen und Verdauungsbeschwerden. Die Behandlung ist besonders wirksam bei chronischem Stress, Erschöpfung und stressbedingten Beschwerden.",
+              "Osteopathie kann das vegetative Nervensystem, das bei Stress aus dem Gleichgewicht geraten kann, regulierend unterstützen. Sanfte craniosacrale Techniken, Faszienarbeit und viszerale Behandlung zielen darauf ab, den Parasympathikus (Ruhenerv) zu aktivieren. Das soll Entspannung fördern und körperliche Stresssymptome wie Verspannungen und Verdauungsbeschwerden adressieren. Bei chronischem Stress, Erschöpfung und stressbedingten Beschwerden kann Osteopathie eine sinnvolle ergänzende Option sein — der individuelle Verlauf ist unterschiedlich.",
           },
           {
             question: "Was ist das vegetative Nervensystem und warum ist es bei Stress wichtig?",
@@ -264,7 +264,7 @@ export default function StressBurnoutPage() {
 
                 <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 mt-6">
                   <p className="text-slate-700 leading-relaxed font-medium">
-                    <strong>Die gute Nachricht:</strong> In den Phasen 1 und 2 kann Osteopathie sehr effektiv eingreifen und den Übergang zu Phase 3 verhindern. Auch in Phase 3 unterstützt sie die Regeneration – in Kombination mit Psychotherapie und ggf. medizinischer Behandlung.
+                    <strong>Die gute Nachricht:</strong> In den Phasen 1 und 2 kann Osteopathie unterstützend wirken und den Übergang zu Phase 3 mitabfangen helfen. Auch in Phase 3 kann sie die Regeneration begleiten – in Kombination mit Psychotherapie und ggf. medizinischer Behandlung. Osteopathie ersetzt keine psychotherapeutische oder psychiatrische Versorgung.
                   </p>
                 </div>
               </div>
@@ -416,33 +416,36 @@ export default function StressBurnoutPage() {
                 </div>
 
                 <div className="bg-white border-2 border-slate-200 rounded-lg p-6 mt-6">
-                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Was Sie erwarten können:</h3>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Viele Patient:innen berichten von:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Verbesserte Schlafqualität (oft bereits nach 1-2 Sitzungen)</span>
+                      <span>Verbesserter Schlafqualität</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Reduzierung von Verspannungen und Schmerzen</span>
+                      <span>Reduktion von Verspannungen und Schmerzen</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Mehr innere Ruhe und emotionale Stabilität</span>
+                      <span>Mehr innerer Ruhe und emotionaler Stabilität</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Bessere Verdauung und weniger Magenbeschwerden</span>
+                      <span>Besserer Verdauung und weniger Magenbeschwerden</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Erhöhte Stressresilienz im Alltag</span>
+                      <span>Erhöhter Stressresilienz im Alltag</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Verbesserte Körperwahrnehmung und Selbstregulation</span>
+                      <span>Verbesserter Körperwahrnehmung und Selbstregulation</span>
                     </li>
                   </ul>
+                  <p className="text-sm text-slate-600 mt-4 italic">
+                    Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
+                  </p>
                 </div>
 
                 <p className="leading-relaxed mt-6 font-medium">
@@ -536,7 +539,7 @@ export default function StressBurnoutPage() {
                     <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                   </summary>
                   <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                    Osteopathie reguliert das vegetative Nervensystem, das bei Stress aus dem Gleichgewicht gerät. Durch sanfte craniosacrale Techniken, Faszienarbeit und viszerale Behandlung wird der Parasympathikus (Ruhenerv) aktiviert. Dies fördert Entspannung, verbessert den Schlaf und löst körperliche Stresssymptome wie Verspannungen und Verdauungsbeschwerden. Die Behandlung ist besonders wirksam bei chronischem Stress, Erschöpfung und stressbedingten Beschwerden.
+                    Osteopathie kann das vegetative Nervensystem, das bei Stress aus dem Gleichgewicht geraten kann, regulierend unterstützen. Sanfte craniosacrale Techniken, Faszienarbeit und viszerale Behandlung zielen darauf ab, den Parasympathikus (Ruhenerv) zu aktivieren. Das soll Entspannung fördern und körperliche Stresssymptome wie Verspannungen und Verdauungsbeschwerden adressieren. Bei chronischem Stress, Erschöpfung und stressbedingten Beschwerden kann Osteopathie eine sinnvolle ergänzende Option sein — der individuelle Verlauf ist unterschiedlich.
                   </p>
                 </details>
 

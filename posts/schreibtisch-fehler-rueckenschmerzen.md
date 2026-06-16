@@ -41,7 +41,7 @@ Aber es ist nicht normal. Und es wird nicht besser.
 **Das Problem:** Die 5 häufigsten Fehler sind unsichtbar. Ihr Stuhl sieht ergonomisch aus. Ihr Schreibtisch hat die "richtige" Höhe. Trotzdem entsteht jeden Tag struktureller Schaden.
 
 **In diesem Artikel zeige ich Ihnen:**
-- Die 5 Fehler, die 90% aller Büroarbeiter machen
+- Die 5 Fehler, die in der Praxis sehr häufig zu sehen sind
 - Wie Sie in 10 Minuten herausfinden, welche Fehler SIE machen
 - Was Sie heute noch ändern können (kostenlos, sofort umsetzbar)
 - Wann Osteopathie hilft (und wann nicht)
@@ -122,7 +122,7 @@ Wenn bereits Beschwerden vorhanden:
 - ✅ **Richtig:** Ellenbogen bei ~90°, Schultern entspannt
 - ❌ **Falsch:** Sie müssen sich nach vorne lehnen oder Arme strecken
 
-**Was ich in 80% der Fälle sehe:**
+**Was sich häufig zeigt:**
 - Schreibtisch zu weit weg
 - Arme müssen sich strecken, um Tastatur zu erreichen
 - Schultern ziehen nach vorne
@@ -574,7 +574,7 @@ Gehen Sie diese Checkliste heute noch durch:
 ### 2. Ich habe einen ergonomischen Stuhl für 800 €. Warum habe ich trotzdem Schmerzen?
 
 **Antwort:** Weil der teuerste Stuhl nutzlos ist, wenn:
-- Er falsch eingestellt ist (90% der Fälle!)
+- Er falsch eingestellt ist (in der Praxis sehr häufig!)
 - Bildschirm/Schreibtisch nicht passen
 - Sie sich trotzdem 0 Minuten/Stunde bewegen
 - Bereits strukturelle Probleme bestehen (die sich nicht durch Sitzen lösen)
@@ -630,7 +630,7 @@ Gehen Sie diese Checkliste heute noch durch:
 
 Selbst nach Jahrzehnten schlechter Haltung kann man:
 - Beweglichkeit verbessern (in jedem Alter!)
-- Schmerzen reduzieren (80-90% der Fälle)
+- Schmerzen reduzieren (häufige Erfahrung in der Praxis, der individuelle Verlauf ist unterschiedlich)
 - Weitere Degeneration verlangsamen
 
 **Aber:** Je länger gewartet, desto mehr Aufwand. **Starten Sie heute, nicht morgen.**

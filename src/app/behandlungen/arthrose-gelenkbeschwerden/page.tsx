@@ -49,7 +49,7 @@ const faqItems = [
   },
   {
     question: 'Wie viele Behandlungen sind bei Arthrose notwendig?',
-    answer: 'Das ist sehr individuell und hängt vom Schweregrad der Arthrose, der Dauer der Beschwerden und begleitenden Faktoren ab. Typischerweise empfehle ich zunächst 4-6 Sitzungen im Abstand von 1-2 Wochen. Viele Patienten berichten bereits nach 2-3 Behandlungen von deutlicher Verbesserung. Bei chronischer Arthrose kann eine langfristige Begleitung mit Sitzungen alle 4-8 Wochen sinnvoll sein, um die Beschwerden dauerhaft unter Kontrolle zu halten.'
+    answer: 'Das ist sehr individuell und hängt vom Schweregrad der Arthrose, der Dauer der Beschwerden und begleitenden Faktoren ab. Typischerweise empfehle ich zunächst 4-6 Sitzungen im Abstand von 1-2 Wochen. Bei chronischer Arthrose kann eine langfristige Begleitung mit Sitzungen alle 4-8 Wochen sinnvoll sein, um die Beschwerden im Alltag zu unterstützen. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.'
   },
   {
     question: 'Was ist der Unterschied zwischen Osteopathie und Physiotherapie bei Arthrose?',
@@ -57,7 +57,7 @@ const faqItems = [
   },
   {
     question: 'Kann Arthrose durch Osteopathie geheilt werden?',
-    answer: 'Nein, Arthrose ist nicht heilbar – weder durch Osteopathie noch durch andere Methoden. Der Knorpelverschleiß lässt sich nicht rückgängig machen. Allerdings kann Osteopathie die Symptome deutlich lindern, die Progression verlangsamen und Ihre Lebensqualität erheblich verbessern. Viele Patienten können durch regelmäßige osteopathische Behandlung und Eigenübungen eine geplante Operation hinauszögern oder sogar vermeiden.'
+    answer: 'Nein, Arthrose ist nicht heilbar – weder durch Osteopathie noch durch andere Methoden. Der Knorpelverschleiß lässt sich nicht rückgängig machen. Osteopathie kann jedoch ergänzend zur Symptomlinderung und zur Unterstützung der Beweglichkeit beitragen. Viele Patient:innen berichten, dass sie durch konsequente Behandlung und Eigenübungen eine geplante Operation hinauszögern können. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.'
   },
   {
     question: 'Ab welchem Stadium der Arthrose ist Osteopathie sinnvoll?',
@@ -150,8 +150,8 @@ export default function ArthrosePage() {
               <p>
                 Arthrose ist die häufigste Gelenkerkrankung weltweit. In Deutschland leben etwa 5 Millionen Menschen mit behandlungsbedürftiger
                 Arthrose, ab dem 50. Lebensjahr ist jeder Zweite betroffen. Was viele nicht wissen: Gelenkbeschwerden sind nicht
-                einfach Schicksal, das man hinnehmen muss. Es gibt wirksame, sanfte Behandlungsmöglichkeiten – und Osteopathie
-                gehört zu den vielversprechendsten Ansätzen.
+                einfach Schicksal, das man hinnehmen muss. Es gibt sanfte konservative Behandlungsoptionen, in deren Rahmen
+                Osteopathie ein möglicher ergänzender Ansatz sein kann.
               </p>
 
               <p>

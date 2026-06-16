@@ -85,12 +85,9 @@ Aber **kaum jemand kennt** seine Bewegungsqualität:
 
 In der biomechanischen Forschung wird ein Zusammenhang zwischen Beckenstellung, Lauf-Kinematik und Knieüberlastung diskutiert. Die Lösung liegt häufig nicht im Knie selbst, sondern in der gesamten Bewegungskette – inklusive Becken und Hüfte.
 
-**Real-World-Beispiel:**
+**Typisches Muster in der Praxis:**
 
-> **Markus, 38, Marathonläufer** (PB 3:15h): „Nach 25km immer stechende Schmerzen im linken Knie. MRT unauffällig, Physio half nicht."
-> **Osteopathischer Befund**: Rechtes ISG blockiert → Becken rotiert nach rechts → linkes Bein muss länger arbeiten → Knie überlastet.
-> **Behandlung**: 3x ISG-Mobilisierung + Hüftstabilisationsübungen
-> **Ergebnis**: Schmerzfrei Marathon in 3:08h (neue PB!)
+Bei Läufer:innen mit einseitigen Knieschmerzen, die im MRT unauffällig sind und auf reine Knietherapie nicht ansprechen, lohnt sich der Blick auf die Beckenstatik: Eine ISG-Blockade kann eine Becken-Rotation verursachen, wodurch das gegenüberliegende Bein in der Standphase mehr Last übernehmen muss — das Knie wird überlastet, obwohl die Ursache woanders sitzt. Behandlungsansatz: ISG-Mobilisierung kombiniert mit Hüftstabilisations-Übungen. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
 Mehr zur Behandlung von Sportverletzungen: [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training).
 
@@ -167,7 +164,7 @@ Zu beweglich (hypermobil) → Instabil, verletzungsanfällig
 2. **Muscle Energy Techniques (MET)**: Sie spannen Muskel an, ich nutze Entspannungsphase für Mobilisierung
 3. **Artikulation**: Rhythmische, sanfte Gelenkbewegungen zur Verbesserung der Gelenkschmierung
 
-**Nach 4-6 Behandlungen**: Durchschnittlich **15-25% Verbesserung** der sportartspezifischen Beweglichkeit[^8].
+**Ziel einer Behandlungsserie**: Erfahrungsgemäß spürbare Verbesserung der sportartspezifischen Beweglichkeit; der individuelle Verlauf ist unterschiedlich.
 
 ---
 
@@ -354,7 +351,7 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 - **Individuelle Übungen**: 3-4 Schlüsselübungen für Ihre Schwachstellen
 - **Trainingsplan-Review**: Welche Anpassungen sind sinnvoll?
 
-**Erwartung**: 20-30% weniger Beschwerden nach 2 Wochen
+*Ziel dieser Phase ist, die akuten Hauptdysfunktionen zu adressieren und einen ersten Übungs-Rhythmus zu etablieren. Der individuelle Verlauf ist unterschiedlich.*
 
 ---
 
@@ -372,7 +369,7 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 - **2x/Woche**: Stabilisationstraining (Core, Hüfte, Schulter je nach Sport)
 - **Weiterhin**: Ihre normale Sportart (Volumen ggf. leicht reduzieren)
 
-**Erwartung**: 50-70% Beschwerdebesserung, erste Performance-Steigerungen spürbar
+*Ziel dieser Phase ist eine spürbare Verbesserung von Mobilität und Stabilität sowie erste Belastungstests. Der individuelle Verlauf ist unterschiedlich.*
 
 ---
 
@@ -390,12 +387,12 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 - **Intensitäts-Steigerung**: Höhere Belastungen werden besser toleriert
 - **Wettkämpfe**: Testen Sie Ihre neue Performance
 
-**Erwartung**: 80-90% beschwerdefrei, messbare Performance-Verbesserung
+*Ziel dieser Phase ist eine nachhaltige Beschwerdefreiheit und das Heranführen an höhere Belastungen. Der individuelle Verlauf ist unterschiedlich und hängt u.a. von Trainingszustand, Sportart und Mitarbeit ab.*
 
-**Typische Erfolge nach 12 Wochen:**
-- **Läufer**: 2-5% schnellere Zeiten bei gleicher Anstrengung
-- **Kraftsportler**: 10-20% mehr Gewicht bei technischen Übungen (Overhead Squat, Snatch)
-- **Mannschaftssportler**: Deutlich weniger muskuläre Probleme, höhere Trainings-Compliance
+**Worauf die Behandlung typischerweise abzielt:**
+- **Läufer**: Effizienteres Laufbild durch bessere Becken- und Hüftfunktion
+- **Kraftsportler**: Mehr Bewegungsspielraum bei technischen Übungen (Overhead Squat, Snatch)
+- **Mannschaftssportler**: Stabilere Belastbarkeit, weniger Trainingsausfälle
 
 ---
 

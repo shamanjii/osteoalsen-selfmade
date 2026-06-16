@@ -108,14 +108,15 @@ Im Rest Ihres Körpers spült das Lymphsystem diese Abfälle weg. **Aber das Geh
 
 ### Warum Burnout-Patienten ein Hirnwasser-Problem haben
 
-**Die Forschung zeigt:**
+**Die Forschungslage (überwiegend Tiermodelle, vorsichtige Übertragung auf den Menschen):**
 
-**1. Chronischer Stress blockiert das glymphatische System**
+**1. Chronischer Stress beeinträchtigt das glymphatische System**
 
-Eine Studie von 2020 (University of Rochester) zeigte:[^4]
-- Chronischer Stress **reduziert die glymphatische Clearance um 40-60%**
-- Beta-Amyloid (toxisches Protein) **akkumuliert im Gehirn**
-- Folge: Kognitive Dysfunktion („Brain Fog")
+Studien (überwiegend an Mäusen) deuten darauf hin, dass chronischer Stress die glymphatische Clearance deutlich reduzieren kann.[^4] Mögliche Folgen:
+- Erhöhte Akkumulation von Beta-Amyloid und anderen Stoffwechselprodukten
+- Beeinträchtigte kognitive Funktion („Brain Fog")
+
+*Die exakten Effektgrößen aus Tiermodellen lassen sich nicht 1:1 auf den Menschen übertragen.*
 
 **2. Schlechter Schlaf = katastrophal für glymphatische Drainage**
 
@@ -193,7 +194,7 @@ Noch schlechterer Schlaf
 - **Wie:** Spezifische Schädelgriffe
 - **Effekt:** Optimierte glymphatische Aktivität
 
-**Klinische Erfahrung:** Kraniosakrale Osteopathie kann die CSF-Flow-Dynamik deutlich verbessern.
+**Klinische Erfahrung:** Kraniosakrale Osteopathie zielt darauf ab, die CSF-Flow-Dynamik positiv zu beeinflussen. Der individuelle Effekt ist unterschiedlich.
 
 ### 2. Vagusnerv-Stimulation: Tiefschlaf reaktivieren
 
@@ -273,8 +274,8 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen, Ihr glymphatis
 
 **1. Schlafposition: Links-Seitenlage**
 
-Warum? **MRI-Studien zeigen:** Glymphatische Clearance ist in Seitenlage **25% effektiver** als in Rückenlage![^11]
-- **Links** > **Rechts** (reduziert Druck auf Leber → besserer venöser Rückfluss)
+Warum? Bildgebende Studien (überwiegend in Tiermodellen) deuten darauf hin, dass die glymphatische Clearance in Seitenlage effizienter sein könnte als in Rückenlage.[^11] Die direkte Übertragbarkeit auf den Menschen ist nicht abschließend geklärt.
+- **Links- vor Rechts-Seitenlage** wird traditionell empfohlen (Argument: weniger Druck auf die Leber, besserer venöser Rückfluss)
 
 **2. Schlaftiming: Vor 23 Uhr ins Bett**
 
@@ -291,10 +292,11 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 - Blackout-Vorhänge oder Schlafmaske
 - Ähnlich wichtig wie bei [Migräne-Prävention](/behandlungen/kopfschmerzen-migraene)
 
-**5. Nasale Atmung (GAME CHANGER!)**
+**5. Nasale Atmung**
 
-- **Mundatmung beeinträchtigt glymphatische Clearance deutlich**
-- Lösung: Mouth-Tape (ja, wirklich!) oder HNO-Check (Nasenscheidewand-Deviation?)
+- Nasale Atmung wird mit besserer Schlafqualität in Verbindung gebracht
+- HNO-Check sinnvoll (z.B. Nasenscheidewand-Deviation, Polypen?)
+- **Mouth-Taping:** wird in Selbsthilfe-Communities diskutiert, sollte **niemals ohne vorherige ärztliche Abklärung einer möglichen Schlafapnoe** angewendet werden — bei unerkannter obstruktiver Schlafapnoe potenziell gefährlich
 
 ### Woche 3-4: Vagusnerv-Aktivierung
 
@@ -309,9 +311,9 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 
 **2. Kälte-Exposition (morgens)**
 
-- 30 Sek kalte Dusche (Ende der Dusche)
-- Vagusnerv-Aktivität steigt um 30%
-- Reduziert Inflammation
+- 30 Sek kalte Dusche am Ende der Dusche
+- Kann den Vagusnerv aktivieren (über den Säugetier-Tauchreflex)
+- ⚠️ Bei bekannten Herzerkrankungen, Bluthochdruck oder Arrhythmien vorab ärztlich abklären
 
 **3. Summen / Singen**
 
@@ -328,20 +330,19 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 
 **1. Moderates Ausdauertraining (KEIN HIIT!)**
 
-- 30 Min Spaziergang/Joggen (Zone 2: 60-70% max. Herzfrequenz)
-- **Warum:** Erhöht glymphatische Clearance um 20%[^13]
-- **WICHTIG:** Kein intensives Training (verschlimmert bei Burnout!) – mehr zur optimalen Trainingsbegleitung: [Sportosteopathie](/behandlungen/sportosteopathie)
+- 30 Min Spaziergang/leichtes Joggen (Zone 2: ca. 60-70% maximale Herzfrequenz)
+- **Warum:** Moderate Bewegung wird mit verbesserter Hirndurchblutung und Schlafqualität in Verbindung gebracht[^13]
+- **WICHTIG:** Intensives Training kann bei Burnout kontraproduktiv sein und Cortisol erhöhen – moderate Belastung bevorzugen. Mehr zur Trainingsbegleitung: [Sportosteopathie](/behandlungen/sportosteopathie)
 
-**2. Intermittent Fasting (12-14h)**
+**2. Längere Essenspausen (z.B. 12 h zwischen Abendessen und Frühstück)**
 
-- Letztes Essen: 19 Uhr
-- Erstes Essen: 8-9 Uhr
-- **Warum:** Fastenperiode erhöht Autophagie & glymphatische Aktivität
+- Eine moderate nächtliche Essenspause wird mit Autophagie-Prozessen in Verbindung gebracht
+- ⚠️ Bei Burnout mit ausgeprägter Erschöpfung kann strenges Intervallfasten kontraproduktiv sein (Cortisol-Belastung). Bei Vorerkrankungen, niedrigem Blutdruck oder Untergewicht ärztlich abklären
 
 **3. Omega-3 (EPA/DHA)**
 
-- 2g täglich (Fischöl oder Algen-basiert)
-- **Warum:** Reduziert Neuro-Inflammation → bessere Aquaporin-4-Funktion
+- Omega-3-Fettsäuren werden mit anti-inflammatorischen Effekten in Verbindung gebracht
+- ⚠️ Konkrete Dosierungs-Empfehlungen sollten Sie mit Ihrer ärztlichen Behandlung abstimmen — besonders bei Einnahme von Blutverdünnern (Marcumar, ASS, NOAKs) ist eine Absprache zwingend
 
 **4. Hydration (aber richtig!)**
 
@@ -350,25 +351,18 @@ Warum? Kühle Körpertemperatur → tieferer Schlaf → mehr glymphatische Aktiv
 
 ---
 
-## Selbsttest: Ist Ihr glymphatisches System gestört?
+## Anhaltspunkte: Wann eine vegetative Dysregulation wahrscheinlich ist
 
-Beantworten Sie ehrlich:
+Die folgenden Symptome werden in der Literatur häufig mit gestörter Erholung und vegetativer Dysregulation in Verbindung gebracht. **Dies ist kein diagnostischer Selbsttest** — eine Einordnung Ihrer Symptome gehört in ärztliche Hand.
 
-| Frage | Ja | Nein |
-|-------|----|----|
-| Wachen Sie morgens mit „schwerem Kopf" / benebelt auf? | ☐ | ☐ |
-| Fühlen Sie sich nach 8h Schlaf NICHT erholt? | ☐ | ☐ |
-| Haben Sie Brain Fog (Konzentrationsprobleme, Vergesslichkeit)? | ☐ | ☐ |
-| Atmen Sie nachts durch den Mund (oder schnarchen)? | ☐ | ☐ |
-| Schlafen Sie auf dem Rücken oder Bauch (nicht Seite)? | ☐ | ☐ |
-| Spüren Sie Ihren Herzschlag im Kopf, wenn Sie liegen? | ☐ | ☐ |
-| Haben Sie [Nackenverspannungen](/behandlungen/nackenschmerzen) / HWS-Probleme? | ☐ | ☐ |
-| Fühlen Sie sich unter Dauer-[Stress](/behandlungen/stress-burnout) (Sympathikus dominant)? | ☐ | ☐ |
+- Morgens mit „schwerem Kopf" / benebelt aufwachen
+- Auch nach 8 Stunden Schlaf nicht erholt fühlen
+- Konzentrationsprobleme, Vergesslichkeit (sogenannter „Brain Fog")
+- Nachts Mundatmung oder Schnarchen (sollte ärztlich/HNO-ärztlich abgeklärt werden — mögliche Schlafapnoe!)
+- Dauer-Stressgefühl, Sympathikus-Dominanz
+- Chronische [Nackenverspannungen](/behandlungen/nackenschmerzen) / HWS-Probleme
 
-**Auswertung:**
-- **0-2 Ja:** Glymphatisches System wahrscheinlich OK
-- **3-5 Ja:** Moderate Dysfunktion – Optimierungspotenzial!
-- **6-8 Ja:** Schwere Dysfunktion – professionelle Hilfe empfohlen
+Wenn mehrere dieser Punkte auf Sie zutreffen, ist eine ärztliche Abklärung (Schlafmedizin, Hausarzt) sinnvoll — ergänzend können osteopathische Maßnahmen unterstützend wirken.
 
 ---
 
@@ -465,23 +459,20 @@ Beantworten Sie ehrlich:
 
 ### 2. Wie schnell wirkt die Behandlung?
 
-**Antwort:** Individuell – aber typischer Verlauf:
+**Antwort:** Sehr individuell und nicht vorhersagbar. Typische Phasen eines Behandlungsverlaufs:
 
-**Nach 2-4 Wochen:**
-- Schlafqualität verbessert sich (erste HRV-Verbesserungen)
-- Brain Fog: 20-30% Reduktion
-- Weniger Nacken-Verspannungen
+**In den ersten Wochen:**
+- Erste Veränderungen der Schlafqualität sind möglich (sofern messbar via HRV)
+- Möglicherweise weniger Nacken-Verspannungen
+- Brain Fog kann sich schrittweise verringern
 
-**Nach 6-8 Wochen:**
-- Deutlich bessere Erholung nach Schlaf
-- Konzentration: 50-70% besser
-- Emotionale Stabilität zurück
+**Im weiteren Verlauf (mehrere Monate):**
+- Ziel: bessere Erholung nach Schlaf, stabilere Konzentration, emotionale Stabilisierung
+- Medikamenten-Anpassungen ausschließlich in Absprache mit ärztlicher/psychiatrischer Behandlung
 
-**Nach 3 Monaten:**
-- Meiste Patienten: 70-80% Funktionsfähigkeit wiederhergestellt
-- Medikamenten-Reduktion oft möglich (ärztliche Begleitung!)
+*Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar. Konkrete Prozentangaben zur Genesungsrate lassen sich seriös nicht machen.*
 
-**WICHTIG:** Burnout hat Monate/Jahre gebraucht, um zu entstehen. Erwarten Sie keine Wunder-Heilung in 2 Wochen.
+**WICHTIG:** Burnout hat Monate/Jahre gebraucht, um zu entstehen. Erwarten Sie keine schnelle Heilung in wenigen Wochen.
 
 ### 3. Funktioniert das auch, wenn ich schon Antidepressiva nehme?
 
@@ -533,10 +524,10 @@ Beantworten Sie ehrlich:
 - **Kurkuma + schwarzer Pfeffer** → Anti-inflammatorisch
 - **Magnesium** (Nüsse, Spinat, dunkle Schokolade) → verbessert Tiefschlaf
 
-**✗ Vermeiden:**
-- **Alkohol** (reduziert glymphatische Clearance um 30%!)
-- **Zucker** (fördert Inflammation)
-- **Koffein nach 14 Uhr** (stört Tiefschlaf)
+**✗ Reduzieren:**
+- **Alkohol** (kann Schlafqualität und glymphatische Aktivität deutlich beeinträchtigen)
+- **Zucker / stark verarbeitete Lebensmittel** (fördert Entzündungsprozesse)
+- **Koffein am Nachmittag/Abend** (Halbwertszeit 5-7 h, kann den Tiefschlaf stören)
 
 ### 7. Kann Burnout erneut auftreten – auch nach erfolgreicher Behandlung?
 

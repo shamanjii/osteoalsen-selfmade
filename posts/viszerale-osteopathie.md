@@ -300,8 +300,8 @@ Schmerzen sollten während der Behandlung nicht auftreten. Wenn ein Bereich druc
 Viszerale Osteopathie entfaltet ihre Wirkung oft nicht sofort, sondern über mehrere Tage:
 
 - **Erste 24 Stunden:** Erhöhte Darmaktivität ist häufig – Ihr Körper „sortiert" sich neu. Auch leichte Müdigkeit am Abend ist normal (Ihr Körper arbeitet).
-- **Tag 2-5:** Die Hauptwirkung setzt ein. Beschwerden reduzieren sich, Beweglichkeit verbessert sich, Verdauung reguliert sich.
-- **Langfristig:** Viele Patienten bemerken nach 3-5 Sitzungen (im Abstand von 1-2 Wochen) deutliche Verbesserungen.
+- **Tag 2-5:** In dieser Phase setzt die Hauptwirkung ein. Viele Patient:innen berichten, dass sich Beweglichkeit und Verdauung in diesem Zeitfenster regulieren.
+- **Langfristig:** Viszerale Osteopathie ist als Serie über mehrere Sitzungen (Abstand 1-2 Wochen) angelegt. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
 **Warum dauert es 3-5 Tage bis zur vollen Wirkung?**
 
@@ -314,11 +314,11 @@ Mit jeder dieser 20.000 Wiederholungen:
 - Verbessert sich die Durchblutung und Lymphdrainage im Organ
 - Integriert das Nervensystem das neue Bewegungsmuster
 
-Das Ergebnis: Eine **systemische, nachhaltige Verbesserung**, die sich über mehrere Tage aufbaut – nicht durch eine einmalige mechanische Korrektur, sondern durch die kontinuierliche neuronale Integration des korrigierten Musters bei jedem Atemzug.
+Das Ziel: Eine **systemische Veränderung**, die sich über mehrere Tage aufbauen kann – nicht durch eine einmalige mechanische Korrektur, sondern durch die kontinuierliche neuronale Integration des korrigierten Musters bei jedem Atemzug. Der individuelle Verlauf ist unterschiedlich.
 
-**Genau deshalb ist Geduld so wichtig:** Ihr Körper braucht Zeit, um das neue physiologische Bewegungsmuster neuronal zu verfestigen. Mit jedem Tag, an dem Sie 20.000 Mal „richtig" atmen, wird das Muster stärker – und die alten dysfunktionalen Reflexe schwächer.
+**Genau deshalb ist Geduld so wichtig:** Ihr Körper braucht Zeit, um das neue physiologische Bewegungsmuster neuronal zu verfestigen. Mit jedem Tag, an dem Sie 20.000 Mal „richtig" atmen, kann das Muster stärker werden – und die alten dysfunktionalen Reflexe können sich abschwächen.
 
-Dieser Mechanismus erklärt auch, warum viszerale Osteopathie oft **nachhaltiger wirkt** als rein symptomatische Behandlungen: Sie durchbricht nicht nur die mechanische Einschränkung, sondern auch die neuronalen Feedbackschleifen, die das Problem aufrechterhalten.
+Dieser Mechanismus erklärt auch, warum viszerale Osteopathie an den zugrundeliegenden funktionellen Mustern ansetzen kann, nicht nur an der mechanischen Einschränkung — sie adressiert auch die neuronalen Feedbackschleifen, die das Problem aufrechterhalten können.
 
 Im nächsten Abschnitt schauen wir uns konkrete Anwendungsgebiete an – bei welchen Beschwerden kann viszerale Osteopathie helfen?
 

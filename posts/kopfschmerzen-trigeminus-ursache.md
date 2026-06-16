@@ -107,7 +107,7 @@ Blockierte obere Halswirbel (besonders C1 Atlas, C2 Axis) erzeugen mechanischen 
 - Gefühl, den Kopf nicht richtig drehen zu können
 - [Schwindel + Kopfschmerzen kombiniert](/blog/nackenschmerzen-schwindel-hws-vagus)
 
-**Die gute Nachricht:** Alle drei Ursachen sind osteopathisch behandelbar -- ohne Medikamente, ohne OP.
+**Die gute Nachricht:** Alle drei Ursachen können osteopathisch adressiert werden — als konservativer Ansatz, der eine ärztliche Versorgung sinnvoll ergänzen kann.
 
 ---
 
@@ -354,7 +354,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 | Aspekt | Schmerzmittel | Osteopathie |
 |--------|---------------|-------------|
 | **Wirkung** | Unterdrückt Schmerzsignal | Behandelt Ursache |
-| **Zeitrahmen** | Sofortwirkung (30-60 Min) | Verbesserung nach 1-3 Sitzungen |
+| **Zeitrahmen** | Sofortwirkung (30-60 Min) | Verlauf über mehrere Sitzungen (individuell verschieden) |
 | **Nachhaltigkeit** | Symptom kehrt zurück | Langfristige Besserung möglich |
 | **Nebenwirkungen** | Magenschäden, Abhängigkeit | Selten, meist mild |
 | **Kosten** | 5-15€/Packung (Dauerkonsum teuer) | 80-130€/Sitzung (4-8 Sitzungen) |

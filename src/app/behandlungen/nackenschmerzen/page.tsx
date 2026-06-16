@@ -83,7 +83,7 @@ const faqData = {
     },
     {
       question: 'Können auch Kopfschmerzen von der HWS kommen?',
-      answer: 'Ja, sogenannte zervikogene Kopfschmerzen haben ihren Ursprung in der Halswirbelsäule. Sie entstehen durch Blockaden, Muskelverspannungen oder Nervenreizungen im Nackenbereich und strahlen typischerweise vom Nacken über den Hinterkopf bis zur Stirn aus. Die Behandlung der zugrundeliegenden HWS-Problematik führt dann auch zur Reduktion der Kopfschmerzen. Etwa 15-20% aller chronischen Kopfschmerzen haben eine zervikale Komponente.'
+      answer: 'Ja, sogenannte zervikogene Kopfschmerzen haben ihren Ursprung in der Halswirbelsäule. Sie entstehen durch Blockaden, Muskelverspannungen oder Nervenreizungen im Nackenbereich und strahlen typischerweise vom Nacken über den Hinterkopf bis zur Stirn aus. Die Behandlung der zugrundeliegenden HWS-Problematik kann dann auch zur Linderung der Kopfschmerzen beitragen. Ein erheblicher Anteil chronischer Kopfschmerzen weist eine zervikale Komponente auf.'
     },
     {
       question: 'Wann sollte man bei Nackenschmerzen zum Arzt gehen?',
@@ -128,7 +128,7 @@ export default function NackenschmerzenPage() {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Nackenschmerzen gehören zu den häufigsten Beschwerden unserer modernen Gesellschaft. Etwa <strong>80% aller Menschen</strong> erleben mindestens einmal in ihrem Leben signifikante Nackenschmerzen, und für viele werden sie zu einem chronischen Begleiter. Auch in Hamburg leiden viele Menschen unter den Folgen von stundenlanger Bildschirmarbeit, Smartphone-Nutzung mit geneigtem Kopf, Stress, der sich in verspannten Schultern manifestiert, und Schlafpositionen, die der sensiblen Halswirbelsäule nicht gerecht werden.
+                Nackenschmerzen gehören zu den häufigsten Beschwerden unserer modernen Gesellschaft. <strong>Die Mehrheit der Menschen</strong> erlebt mindestens einmal im Leben relevante Nackenschmerzen, und für viele werden sie zu einem chronischen Begleiter. Auch in Hamburg leiden viele Menschen unter den Folgen von stundenlanger Bildschirmarbeit, Smartphone-Nutzung mit geneigtem Kopf, Stress, der sich in verspannten Schultern manifestiert, und Schlafpositionen, die der sensiblen Halswirbelsäule nicht gerecht werden.
               </p>
 
               <p>

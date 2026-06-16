@@ -490,7 +490,7 @@ Falls die volle Kreisbewegung zu schwierig ist:
 
 **Leiden Sie unter Schulterschmerzen und möchten die Ursache behandeln lassen?**
 
-Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ganzheitlich – ohne OP, mit bewährten osteopathischen Techniken.
+Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ganzheitlich – mit konservativen, ursachenorientierten osteopathischen Techniken.
 
 **📞 Termin buchen:**
 - **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung)
@@ -502,7 +502,7 @@ Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ga
 
 ## Wann ist eine OP doch sinnvoll?
 
-**Osteopathie ist sehr wirksam, aber nicht in jedem Fall ausreichend!**
+**Osteopathie kann unterstützend wirken, ist aber nicht in jedem Fall ausreichend!**
 
 ### Absolute OP-Indikationen:
 
@@ -558,11 +558,13 @@ Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate 
 
 ### Wie viele Behandlungen brauche ich?
 
-**Akutes Impingement (< 3 Monate):** 4-6 Behandlungen über 6-8 Wochen, deutliche Besserung oft nach 2-3 Sitzungen.
+**Akutes Impingement (< 3 Monate):** Üblicher Rahmen sind 4-6 Behandlungen über 6-8 Wochen.
 
 **Chronisches Impingement (> 6 Monate):** 8-12 Behandlungen über 3-4 Monate + konsequente Heimübungen.
 
 **Frozen Shoulder:** 10-15 Behandlungen über 6-12 Monate – Geduld ist hier entscheidend.
+
+*Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.*
 
 ---
 
@@ -592,13 +594,15 @@ Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate 
 
 1. ✅ **Bei vielen Impingement-Fällen** spielen BWS-Mobilität, Rippen-Beweglichkeit und Schulterblatt-Funktion eine zentrale Rolle – nicht allein der subakromiale Raum.
 
-2. ✅ **Osteopathie behandelt die Ursache**, nicht das Symptom – deshalb ist die Erfolgsrate so hoch (70-80% deutliche Besserung ohne OP).
+2. ✅ **Osteopathie behandelt die zugrundeliegenden funktionellen Zusammenhänge**, nicht nur das Symptom — viele Patient:innen berichten dadurch von einer spürbaren Besserung im Verlauf.
 
-3. ✅ **OP ist in 70% der Fälle überflüssig** – probieren Sie ERST konservativ (Osteopathie + Übungen) für 3-6 Monate!
+3. ✅ **Konservative Therapie zuerst** – bevor eine OP erwogen wird, ist ein konservativer Versuch (Osteopathie + gezielte Übungen) über 3-6 Monate sinnvoll und entspricht aktuellen Leitlinien-Empfehlungen.
 
-4. ✅ **Heimübungen sind der Schlüssel** – 5 Minuten täglich BWS-Mobilisation + Serratus-Training = nachhaltige Heilung!
+4. ✅ **Heimübungen sind ein Schlüsselfaktor** – wenige Minuten täglich BWS-Mobilisation und Serratus-Training können den Therapieverlauf nachhaltig unterstützen.
 
 5. ✅ **Prävention ist möglich** – mit Ergonomie, Ausgleichstraining und regelmäßiger Mobilität bleiben Ihre Schultern gesund!
+
+*Hinweis: Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.*
 
 ---
 
@@ -606,7 +610,7 @@ Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate 
 
 **Sie leiden unter Schulter-Impingement und möchten die Ursache behandeln lassen?**
 
-Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle ich regelmäßig Patienten mit Schulterschmerzen – ganzheitlich, ursachenorientiert, ohne OP.
+Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle ich regelmäßig Patient:innen mit Schulterschmerzen – ganzheitlich, ursachenorientiert, konservativ.
 
 **Buchen Sie jetzt Ihren Termin:**
 - 📞 **Telefon:** [0176 43990001](tel:+4917643990001)

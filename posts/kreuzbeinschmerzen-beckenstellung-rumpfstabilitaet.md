@@ -200,7 +200,7 @@ Die Matratze ist selten die primäre Ursache. Eine Lancet-Studie mit 313 Teilneh
 
 ### Wie lange dauert es, bis die Deep Squat funktioniert?
 
-Das hängt von Ihrer Ausgangs-Mobilität ab. Bei täglichem Üben sehen die meisten Patienten nach 4-6 Wochen deutliche Verbesserungen. Eingeschränkte Sprunggelenke brauchen oft etwas länger – hier hilft die tägliche Knie-zur-Wand-Mobilisierung.
+Das hängt stark von Ihrer Ausgangs-Mobilität ab und ist individuell sehr unterschiedlich. Bei täglichem Üben ist 4-6 Wochen ein realistischer erster Beobachtungszeitraum. Eingeschränkte Sprunggelenke brauchen oft länger – hier hilft die tägliche Knie-zur-Wand-Mobilisierung.
 
 ### Übernimmt die Krankenkasse die Kosten für Osteopathie?
 

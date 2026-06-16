@@ -38,7 +38,7 @@ Nackenschmerzen am Morgen und Kieferknacken beim Essen treten häufig gemeinsam 
 - Morgendliches Zähneknirschen (Bruxismus)
 
 **Sekundäre Symptome** (woanders):
-- **Nackenschmerzen** (in 70% der Fälle!)
+- **Nackenschmerzen** (sehr häufig begleitend zu CMD)
 - Kopfschmerzen (Schläfe, hinter dem Auge)
 - Ohrgeräusche (Tinnitus)
 - Schwindel
@@ -507,11 +507,12 @@ Kommt drauf an:
 
 **Wie lange dauert die Behandlung?**
 
-Realistische Zeitlinie:
-- Erste Besserung: 2-4 Wochen
-- 60% Besserung: 8-12 Wochen
-- 80-90% Besserung: 6-9 Monate
-- Vollständige Stabilisierung: 12-24 Monate
+Typische Phasen eines Behandlungsverlaufs:
+- Erste Anzeichen einer Beruhigung: oft innerhalb der ersten Wochen möglich
+- Stabilere Funktion und Symptomverbesserung: typischerweise im Verlauf mehrerer Monate
+- Nachhaltige Stabilisierung: längerer Zeitraum (12-24 Monate), insbesondere bei strukturellen CMD-Befunden
+
+*Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar — er hängt u.a. von Befund, Vorgeschichte und Mitarbeit (Aufbiss-Schiene, Eigenübungen, Stressmanagement) ab.*
 
 **Hilft eine Operation?**
 

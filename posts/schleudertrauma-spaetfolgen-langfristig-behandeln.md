@@ -74,7 +74,7 @@ Das Kompensationssystem ist **erschöpft**. Die Muskeln können die Instabilitä
 
 **Typische Spätfolgen:**
 
-1. **Nackenschmerzen** (85% der Fälle)
+1. **Nackenschmerzen** (sehr häufig als Hauptsymptom)
    - Morgens schlimmer
    - Bewegungseinschränkung
    - "Knackgeräusche" beim Drehen
@@ -419,7 +419,7 @@ Nach Schleudertrauma bleibt eine **Restwunden-Heilung** für 18-24 Monate. Klein
 2. **MRT ist normal** – funktionelle Störungen sind unsichtbar
 3. **Kompensation verschwindet nicht** – sie bricht irgendwann zusammen
 4. **Lokale Behandlung scheitert** – systemischer Ansatz notwendig
-5. **Langzeitbehandlung erforderlich** – 6-24 Monate für vollständige Heilung
+5. **Langzeitbehandlung sinnvoll** – Schleudertrauma-Spätfolgen sind erfahrungsgemäß ein langwieriger Verlauf über viele Monate; der individuelle Verlauf ist unterschiedlich
 6. **Schmerzmittel verzögern Heilung** – besser: strukturelle Korrektur
 
 **Handlungsschritte:**

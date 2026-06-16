@@ -111,7 +111,7 @@ Reaktive Muskelverspannung (sekundär!)
 
 **Diagnostischer Test:**
 - Injektion Lokalanästhetikum am N. occipitalis major
-- Wenn Kopfschmerz **sofort** verschwindet → C2-Beteiligung bewiesen
+- Wenn Kopfschmerz **sofort** abnimmt → C2-Beteiligung wahrscheinlich
 
 **In meiner Praxis:** Ich nutze das als **Differenzialdiagnose**-Tool. Wenn GON-Block hilft, weiß ich: C2 mobilisieren, nicht Muskel massieren.
 
@@ -175,8 +175,8 @@ Reaktive Muskelverspannung (sekundär!)
 - Beobachtung: Verändert sich der Kopfschmerz?
 
 **Interpretation:**
-- **Zervikogen:** Deutliche Besserung nach 2-3 Behandlungen
-- **Muskulär:** Wenig Änderung
+- **Zervikogen:** Erfahrungsgemäß Reaktion auf gezielte Mobilisation; der individuelle Verlauf ist unterschiedlich
+- **Muskulär:** Wenig Änderung durch diese Tests — anderer Behandlungsansatz nötig
 
 ### Phase 3: Strukturelle Behandlung (Monat 2-6)
 

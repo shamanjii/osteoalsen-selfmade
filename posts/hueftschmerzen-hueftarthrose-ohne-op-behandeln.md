@@ -352,41 +352,20 @@ Mehr zu Faszien-Verklebungen: [Gelenkbeschwerden ganzheitlich behandeln](/blog/g
 
 ---
 
-## Patienten-Erfolgsgeschichte: Petra (62), Hamburg
+## Typisches Befundmuster bei Coxarthrose
 
-**Ausgangssituation (Januar 2024):**
-- Diagnose: Coxarthrose rechts Grad 3
-- Schmerzen beim Treppensteigen (7/10), Leistenschmerz
-- Orthopäde: „In 6 Monaten brauchen Sie eine Hüft-TEP"
-- Gehstrecke: Max. 500m, dann Schmerzen
-- Ibuprofen 600mg täglich
-- „Ich habe solche Angst vor der OP. Gibt es wirklich keine Alternative?"
+Bei Patient:innen mit fortgeschrittener Hüftarthrose findet sich häufig nicht nur das Hüftgelenk selbst, sondern eine ganze Verkettung an Begleitfunden:
 
-**Befund (Osteopathie):**
-- ISG-Blockierung links seit Jahren
-- Beckenschiefstand: Rechtes Bein funktionell 1,2cm kürzer
-- LWS-Rotation eingeschränkt (Th12-L3)
-- Iliopsoas rechts: steinhart, verkürzt
-- Gluteus medius rechts: Kraft-Defizit 40% vs. links
-- Piriformis rechts: Triggerpunkt aktiv
-- **→ Die Arthrose ist das ERGEBNIS – nicht die Ursache!**
+- ISG-Blockierungen (oft kontralateral)
+- Beckenschiefstand mit funktioneller Beinlängendifferenz
+- Eingeschränkte LWS-Rotation (Th12-L3)
+- Verkürzter, verspannter Iliopsoas
+- Asymmetrische Glutealmuskulatur (Kraft-Defizit auf der betroffenen Seite)
+- Aktive Triggerpunkte im Piriformis
 
-**Behandlung:**
-- **Sitzung 1-4:** ISG-Mobilisierung links, Becken-Balancierung, LWS-Mobilisierung
-- **Sitzung 5-8:** Hüftkapsel-Mobilisierung, Iliopsoas-Release, IT-Band-Faszien-Release
-- **Sitzung 9-12:** Gluteus-Aktivierung, Piriformis-Release, Stabilisierungs-Training
-- **Zuhause:** Tägliche Hüftbeuger-Dehnung (3 Min), Gluteus-Übungen (5 Min)
+Der osteopathische Ansatz arbeitet daher nicht nur am Gelenk selbst, sondern an der gesamten Becken-Hüft-Lendenwirbelsäulen-Achse: ISG-Mobilisierung, Becken-Balancierung, LWS-Mobilisierung in den ersten Sitzungen; später Hüftkapsel-Mobilisierung, Iliopsoas-Release und Faszienarbeit; abschließend Gluteus-Aktivierung und Stabilisierung. Begleitend Heimübungen (Hüftbeuger-Dehnung, Gluteus-Training).
 
-**Ergebnis nach 4 Monaten (16 Sitzungen):**
-- Schmerzen beim Treppensteigen: 2/10 (↓71%!)
-- Leistenschmerz: Fast verschwunden
-- Gehstrecke: 2,5 km ohne Schmerzen (5x mehr!)
-- Ibuprofen: Abgesetzt!
-- Hüftbeweglichkeit: Flexion von 85° → 110° (+29%)
-- **Hüft-TEP:** Abgesagt! „Vielleicht in 10 Jahren, aber jetzt nicht."
-
-**Petras Kommentar:**
-> „Ich kann wieder tanzen! Letztes Wochenende war ich 3 Stunden auf einer Hochzeit – undenkbar vor 6 Monaten. Mein Orthopäde war verblüfft: 'Ihr Röntgen sieht gleich aus, aber Sie bewegen sich wie ein anderer Mensch!' Genau – weil jetzt mein Becken und Rücken wieder funktionieren, nicht nur die Hüfte!"
+*Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar. Eine OP-Entscheidung trifft immer das ärztliche Behandlungsteam.*
 
 ---
 
@@ -526,17 +505,16 @@ Mehr zu Faszien-Verklebungen: [Gelenkbeschwerden ganzheitlich behandeln](/blog/g
 - **Phase 1 (Woche 1-4):** 1x/Woche (Schmerzreduktion, Beweglichkeit ↑)
 - **Phase 2 (Woche 5-8):** 1x/2 Wochen (Stabilisierung, Muskelaufbau)
 - **Phase 3 (Monat 3-6):** 1x/Monat (Erhaltung, OP-Vermeidung)
-- **Erfolgsrate:** 68% vermeiden OP bei Grad 2, 52% bei Grad 3
 
 **Piriformis-Syndrom:**
 - **Phase 1 (Woche 1-2):** 1x/Woche (akute Schmerzreduktion)
 - **Phase 2 (Woche 3-4):** 1x/2 Wochen (Ursachen-Behandlung: ISG, LWS)
-- **Erfolgsrate:** 85% beschwerdefrei nach 4-6 Wochen
 
 **Hüft-Impingement (FAI):**
 - **Phase 1 (Woche 1-6):** 1x/Woche (Beweglichkeit, Biomechanik)
 - **Phase 2 (Woche 7-12):** 1x/2 Wochen (Muskel-Balance)
-- **Erfolgsrate:** 70% vermeiden OP
+
+*Hinweis: Der individuelle Verlauf ist unterschiedlich und hängt u.a. von Schweregrad, Vorgeschichte und Mitarbeit (Heimübungen, Lebensstil) ab. Ein Therapieerfolg kann nicht garantiert werden.*
 
 ---
 
@@ -621,7 +599,7 @@ A: Nein, Knorpel regeneriert sich nach aktuellem Stand nicht. Osteopathische Beh
 A: Eine OP-Empfehlung sollten Sie immer mit Ihrem behandelnden Arzt besprechen. Konservative Begleitung (Osteopathie, Physiotherapie, Bewegungstherapie) kann ergänzend sinnvoll sein und auch die postoperative Rehabilitation unterstützen. Eine Entscheidung gegen die OP ersetzt sie nicht – treffen Sie sie gemeinsam mit ärztlicher Beratung. [Mehr zu Kosten →](/osteopathie-kosten-hamburg)
 
 **Q: „Wie schnell wirkt Osteopathie bei Hüftschmerzen?"**
-A: **Piriformis-Syndrom:** Oft nach 1-3 Sitzungen deutlich besser. **Hüftarthrose:** Nach 4-6 Sitzungen erste Besserung, maximale Wirkung nach 12-16 Wochen.
+A: Das ist sehr individuell und nicht vorhersagbar. **Piriformis-Syndrom** spricht erfahrungsgemäß schneller auf gezielte Mobilisation an als degenerative Beschwerden. Bei **Hüftarthrose** ist die Behandlung längerfristig angelegt (mehrere Monate). Der individuelle Verlauf hängt u.a. von Schweregrad und Mitarbeit (Heimübungen, Lebensstil) ab.
 
 **Q: „Kann ich Osteopathie mit Physiotherapie kombinieren?"**
 A: Ja, sogar empfohlen! **Osteopathie** = Ursachen-Behandlung (Becken, LWS, Faszien). **Physiotherapie** = Muskelaufbau (Gluteus, Stabilität). Optimale Kombination!

@@ -73,7 +73,7 @@ export default function SportosteopathiePage() {
           {
             question: "Bei welchen Sportverletzungen kann Sportosteopathie helfen?",
             answer:
-              "Sportosteopathie ist wirksam bei akuten Verletzungen wie Muskelzerrungen, Bänderdehnungen und Prellungen sowie bei chronischen Überlastungssyndromen wie Läuferknie, Tennisarm, Achillessehnenentzündung oder Schienbeinkantensyndrom. Auch bei Gelenkblockaden, Rückenschmerzen durch Sport, Schulter- und Nackenverspannungen sowie verzögerter Regeneration nach Wettkämpfen kann ich helfen. Besonders effektiv ist die Behandlung bei funktionellen Beschwerden ohne strukturelle Schäden, aber auch begleitend zu medizinischer Versorgung bei schwereren Verletzungen.",
+              "Sportosteopathie kann bei akuten Verletzungen wie Muskelzerrungen, Bänderdehnungen und Prellungen sowie bei chronischen Überlastungssyndromen wie Läuferknie, Tennisarm, Achillessehnenentzündung oder Schienbeinkantensyndrom unterstützend wirken. Auch bei Gelenkblockaden, Rückenschmerzen durch Sport, Schulter- und Nackenverspannungen sowie verzögerter Regeneration nach Wettkämpfen ist sie ein häufiger Behandlungsansatz. Bei funktionellen Beschwerden ohne strukturelle Schäden bietet sich Osteopathie an; bei schwereren Verletzungen begleitend zur medizinischen Versorgung. Der individuelle Verlauf ist unterschiedlich.",
           },
           {
             question: "Wie schnell kann ich nach einer Sportverletzung wieder trainieren?",
@@ -443,7 +443,7 @@ export default function SportosteopathiePage() {
                     Mit manuellen Techniken behandle ich nicht nur die schmerzende Stelle, sondern
                     den gesamten Körper. Oft liegt die Ursache von Knieschmerzen im Becken oder
                     Fuß, Schulterschmerzen können von der Brustwirbelsäule kommen. Ich kombiniere
-                    parietale, viszerale und kraniosakrale Osteopathie für optimale Ergebnisse.
+                    parietale, viszerale und kraniosakrale Osteopathie zu einem ganzheitlichen Behandlungsansatz.
                   </p>
                 </div>
               </div>
@@ -608,10 +608,11 @@ export default function SportosteopathiePage() {
                   </span>
                 </summary>
                 <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                  Wirksam bei akuten Verletzungen wie Muskelzerrungen, Bänderdehnungen und Prellungen
-                  sowie bei chronischen Überlastungssyndromen wie Läuferknie, Tennisarm,
-                  Achillessehnenentzündung oder Schienbeinkantensyndrom. Besonders effektiv bei
-                  funktionellen Beschwerden ohne strukturelle Schäden.
+                  Sportosteopathie kommt häufig zum Einsatz bei akuten Verletzungen wie
+                  Muskelzerrungen, Bänderdehnungen und Prellungen sowie bei chronischen
+                  Überlastungssyndromen wie Läuferknie, Tennisarm, Achillessehnenentzündung oder
+                  Schienbeinkantensyndrom. Bei funktionellen Beschwerden ohne strukturelle Schäden
+                  ist sie eine sinnvolle Option; der individuelle Verlauf ist unterschiedlich.
                 </p>
               </details>
 
@@ -626,10 +627,10 @@ export default function SportosteopathiePage() {
                   </span>
                 </summary>
                 <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                  Bei leichten Zerrungen oder Blockaden oft nach 1-2 Behandlungen mit leichtem Training.
-                  Bei schwereren Verletzungen: 2-4 Wochen mit angepasstem Training. Wichtig: Zu frühes,
-                  intensives Training kann zu Rückfällen führen. Ich helfe Ihnen, den optimalen Zeitpunkt
-                  zu finden.
+                  Das hängt stark von Art und Schwere der Verletzung ab und ist individuell verschieden.
+                  Bei schwereren Verletzungen ist meist eine Pause von mehreren Wochen mit angepasstem
+                  Aufbautraining sinnvoll. Wichtig: Zu frühes, intensives Training kann zu Rückfällen führen.
+                  Ich helfe Ihnen, einen angemessenen Wiedereinstieg zu planen.
                 </p>
               </details>
 

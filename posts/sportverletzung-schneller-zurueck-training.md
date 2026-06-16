@@ -108,7 +108,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ✓ **Return-to-Sport-Protokoll (RTS):** Stufenweise Wiedereingliederung (Progressive Return)
 ✓ **Präventionsstrategie (Injury Prevention):** Übungen für Schwachstellen
 
-**Ergebnis:** Vollständige Heilung, deutlich reduziertes Rückfallrisiko
+**Ziel:** Möglichst vollständige Funktionswiederherstellung und Minimierung von Rückfall-Risiken durch Ursachen-Behandlung. Der individuelle Verlauf ist unterschiedlich.
 
 ---
 

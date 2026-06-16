@@ -445,7 +445,7 @@ Die Leber liegt direkt unter dem Zwerchfell und ist damit das Organ, das am stä
 - **Lymphabfluss aus der Leber ↑:** Abtransport von Stoffwechselabfällen
 
 **Klinische Beobachtung:**
-Patienten mit chronischer Leberbelastung (z.B. Fettleber, Alkohol-induzierte Leberschäden) haben oft stark eingeschränkte Zwerchfell-Beweglichkeit. Die Behandlung des Zwerchfells verbessert nachweislich Leberwerte und subjektives Wohlbefinden.
+Patient:innen mit chronischer Leberbelastung (z.B. Fettleber, Alkohol-induzierte Leberschäden) haben oft eingeschränkte Zwerchfell-Beweglichkeit. Die Behandlung des Zwerchfells zielt darauf ab, die mechanische Beziehung zwischen Zwerchfell und Leber zu unterstützen; viele Patient:innen berichten von einer Verbesserung des subjektiven Wohlbefindens. Der individuelle Verlauf ist unterschiedlich. Bei Lebererkrankungen ist die ärztliche Versorgung primär.
 
 Im nächsten Abschnitt schauen wir uns an, wie Emotionen, Stress und Atemmuster zusammenhängen – und warum chronische Zwerchfell-Verspannungen oft emotionale Ursachen haben.
 
@@ -1201,7 +1201,7 @@ Mehr dazu: [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-
 - Mobilisation des Magens nach unten
 - Zwerchfell-Entspannung
 
-**Erfolgsrate:** Bei funktionellem Reflux (ohne strukturelle Schäden) oft 60-80% Verbesserung nach 3-5 Sitzungen.
+**Erfahrungswerte:** Bei funktionellem Reflux (ohne strukturelle Schäden) berichten viele Patient:innen von einer Verbesserung im Verlauf der Behandlungsserie. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
 **Wichtig:** Strukturelle Schäden (z.B. schwere Ösophagitis) brauchen ärztliche Behandlung!
 
@@ -1217,13 +1217,13 @@ Mehr dazu: [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-
 - Oft sofortige Erleichterung ("endlich wieder durchatmen")
 - Entspannung, bessere Beweglichkeit
 
-**Nach 2-3 Behandlungen:**
-- Nachhaltige Verbesserung der Atmung
-- Reduzierte Beschwerden (Verdauung, Nackenverspannungen)
+**Im Verlauf der ersten Behandlungen:**
+- Ziel ist eine schrittweise Verbesserung der Atemmechanik
+- Begleitende Beschwerden (Verdauung, Nackenverspannungen) können sich mitverändern
 
-**Nach 4-6 Behandlungen:**
-- Stabilisierung des neuen Musters
-- Beschwerden oft deutlich reduziert oder verschwunden
+**Im weiteren Verlauf:**
+- Stabilisierung des neuen Bewegungsmusters
+- Viele Patient:innen berichten von einer spürbaren Veränderung — der individuelle Verlauf ist unterschiedlich
 
 **Wichtig:**
 - Chronische Dysfunktionen (über Jahre entstanden) brauchen Zeit

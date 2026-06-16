@@ -1,7 +1,7 @@
 ---
 slug: "chronische-kopfschmerzen-osteopathie-statt-tabletten"
 title: "Chronische Kopfschmerzen loswerden: Osteopathie statt Schmerztabletten"
-excerpt: "Chronische Kopfschmerzen trotz Schmerzmitteln? Die wahren Ursachen liegen oft im Nacken, Kiefer oder Nervensystem. Wie Osteopathie nachhaltig hilft – ohne Tabletten."
+excerpt: "Chronische Kopfschmerzen trotz Schmerzmitteln? Mögliche Ursachen liegen oft im Nacken, Kiefer oder Nervensystem. Wie Osteopathie konservativ und ursachenorientiert ansetzen kann — als ergänzende Option zur ärztlichen Versorgung."
 metaDescription: "Täglich Kopfschmerzen trotz Schmerzmitteln? Bei vielen chronischen Kopfschmerzen spielen muskuloskelettale Faktoren in Nacken, Kiefer und Nervensystem eine Rolle. Wie Osteopathie chronische Kopfschmerzen begleitend behandeln kann. Hamburg."
 keywords:
   - "chronische Kopfschmerzen"
@@ -295,7 +295,7 @@ Der Schädel besteht aus 22 Knochen, verbunden durch **Schädelnähte (Suturen)*
 **Technik: Ischämische Kompression**
 - Gezielter Druck auf Triggerpunkt (M. trapezius, SCM, suboccipitales)
 - Halten für 30-90 Sekunden
-- Triggerpunkt „löst sich" → Schmerz verschwindet
+- Ziel: Triggerpunkt deaktivieren → Schmerz kann sich reduzieren
 
 **Technik: Dry Needling (bei spezialisierten Osteopathen)**
 - Akupunkturnadel direkt in Triggerpunkt
@@ -319,10 +319,12 @@ Der Schädel besteht aus 22 Knochen, verbunden durch **Schädelnähte (Suturen)*
 - Ausgleich der CSF-Verteilung in den 4 Hirnkammern
 - Reduziert Druck-Kopfschmerzen
 
-**Effekt:**
-- „Schwerer Kopf" verschwindet
+**Möglicher Effekt:**
+- Gefühl des „schweren Kopfs" kann sich verringern
 - Bessere Klarheit (Brain Fog ↓)
-- In Studien zur osteopathischen Behandlung bei chronischer Migräne zeigte sich eine signifikante Besserung gegenüber Standardtherapie.[^9]
+- In Studien zur osteopathischen Behandlung bei chronischer Migräne wurde eine Besserung gegenüber Standardtherapie beobachtet.[^9]
+
+*Der individuelle Verlauf ist unterschiedlich.*
 
 ---
 
@@ -485,7 +487,7 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen:
 
 **3. Erste Behandlung (20 Min)**
 - Atlanto-occipitale Mobilisation
-- Triggerpunkt-Behandlung (sofortige Linderung oft möglich!)
+- Triggerpunkt-Behandlung
 - HWS-Mobilisation
 
 **4. Nachbesprechung & Behandlungsplan (5 Min)**
@@ -637,7 +639,7 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen:
 
 ✓ **Osteopathie behandelt Ursachen** – Mobilisation von HWS, TMJ, Triggerpunkten, Vagusnerv, Kranium
 
-✓ **70-80% Besserung realistisch** – nach 8-12 Wochen osteopathischer Behandlung + Selbsthilfe
+✓ **Spürbare Verbesserung im Verlauf möglich** – viele Patient:innen berichten nach mehreren Wochen Behandlung + Selbsthilfe von einer Besserung; der individuelle Verlauf ist unterschiedlich
 
 ✓ **Kombination ist optimal** – Osteopathie + Ergonomie + Selbsthilfe-Übungen + ggf. Aufbiss-Schiene
 
@@ -647,7 +649,7 @@ Neben osteopathischer Behandlung können Sie **sofort** beginnen:
 
 ## Ihr nächster Schritt
 
-Chronische Kopfschmerzen – und Sie möchten **endlich ohne Tabletten** leben?
+Chronische Kopfschmerzen – und Sie möchten konservative, ursachenorientierte Behandlungsoptionen ergänzend zu Ihrer ärztlichen Versorgung kennenlernen?
 
 **→ [Jetzt Termin vereinbaren](https://www.osteoalsen.de/terminbuchung)**
 
