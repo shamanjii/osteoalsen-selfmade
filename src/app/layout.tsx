@@ -128,11 +128,11 @@ export default function RootLayout({
               longitude: 9.9737
             }}
             openingHours={[
-              "Monday 08:00 18:00",
-              "Tuesday 08:00 18:00",
-              "Wednesday 08:00 18:00",
-              "Thursday 08:00 18:00",
-              "Friday 08:00 16:00"
+              "Monday 09:00 15:00",
+              "Tuesday 09:00 15:00",
+              "Wednesday 09:00 18:00",
+              "Thursday 09:00 18:00",
+              "Friday 09:00 14:00"
             ]}
             priceRange="€€"
           />

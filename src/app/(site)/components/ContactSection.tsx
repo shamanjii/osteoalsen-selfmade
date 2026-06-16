@@ -105,8 +105,8 @@ export default function ContactSection() {
                                     <h5 className="text-slate-900 text-base font-medium mb-2 font-epilogue">Sprechzeiten</h5>
                                     <div className="bg-slate-50 p-4 rounded-lg">
                                         <p className="text-slate-600 leading-relaxed text-sm">
-                                            <strong>Montag:</strong> 09:00 - 14:00 Uhr<br />
-                                            <strong>Mittwoch:</strong> 08:00 - 18:00 Uhr
+                                            <strong>Montag:</strong> 09:00 - 15:00 Uhr<br />
+                                            <strong>Mittwoch:</strong> 09:00 - 18:00 Uhr
                                         </p>
                                     </div>
                                 </div>
@@ -144,8 +144,8 @@ export default function ContactSection() {
                                     <h5 className="text-slate-900 text-base font-medium mb-2 font-epilogue">Sprechzeiten</h5>
                                     <div className="bg-slate-50 p-4 rounded-lg">
                                         <p className="text-slate-600 leading-relaxed text-sm">
-                                            <strong>Dienstag:</strong> 09:00 - 14:00 Uhr<br />
-                                            <strong>Donnerstag:</strong> 08:00 - 18:00 Uhr<br />
+                                            <strong>Dienstag:</strong> 09:00 - 15:00 Uhr<br />
+                                            <strong>Donnerstag:</strong> 09:00 - 18:00 Uhr<br />
                                             <strong>Freitag:</strong> 09:00 - 14:00 Uhr
                                         </p>
                                     </div>

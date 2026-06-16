@@ -47,11 +47,11 @@ const structuredData = {
     }
   ],
   "openingHours": [
-    "Mo 09:00-14:00",
-    "Tu 09:00-14:00",
+    "Mo 09:00-15:00",
+    "Tu 09:00-15:00",
     "We 09:00-18:00",
-    "Th 08:00-18:00",
-    "Fr 08:00-14:00"
+    "Th 09:00-18:00",
+    "Fr 09:00-14:00"
   ],
   "serviceType": "Osteopathie",
   "areaServed": {

@@ -13,7 +13,7 @@ const locations = [
     name: 'Standort Rotherbaum',
     address: 'Rappstraße 7, 20146 Hamburg',
     hours: [
-      { day: 'Montag', time: '09:00 - 14:00 Uhr' },
+      { day: 'Montag', time: '09:00 - 15:00 Uhr' },
       { day: 'Mittwoch', time: '09:00 - 18:00 Uhr' }
     ],
     transport: {
@@ -27,8 +27,8 @@ const locations = [
     name: 'Standort Eimsbüttel',
     address: 'Stresemannallee 118, 22529 Hamburg',
     hours: [
-      { day: 'Dienstag', time: '09:00 - 14:00 Uhr' },
-      { day: 'Donnerstag', time: '08:00 - 18:00 Uhr' },
+      { day: 'Dienstag', time: '09:00 - 15:00 Uhr' },
+      { day: 'Donnerstag', time: '09:00 - 18:00 Uhr' },
       { day: 'Freitag', time: '09:00 - 14:00 Uhr' }
     ],
     transport: {

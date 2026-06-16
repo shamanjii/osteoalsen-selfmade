@@ -93,6 +93,13 @@ const treatments = [
     href: "/behandlungen/stress-burnout",
     keywords: ["Erschöpfung", "Burnout", "Nervensystem", "Entspannung"],
   },
+  {
+    title: "Kraniosakrale Osteopathie",
+    description:
+      "Sehr sanfte osteopathische Technik, die mit dem craniosacralen System arbeitet. Bei Kopfschmerzen, Stress, Schwindel und Tinnitus.",
+    href: "/behandlungen/kraniosakrale-osteopathie",
+    keywords: ["Craniosacral", "Schädel", "Liquor", "Tinnitus"],
+  },
 ];
 
 export default function BehandlungenPage() {

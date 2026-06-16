@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Kopfschmerzen & Migräne | Osteopathie Hamburg",
   description:
-    "Kopfschmerzen & Migräne ohne Medikamente behandeln ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
+    "Kopfschmerzen & Migräne osteopathisch begleiten ✓ Ursachenorientierter Ansatz ✓ Osteopathie Hamburg ✓ VFO-zertifiziert ✓ Termine binnen 48h ⭐ Jetzt Termin buchen!",
   keywords: [
     "Migräne Osteopathie Hamburg",
     "Kopfschmerzen Osteopath",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/behandlungen/kopfschmerzen-migraene/" },
   openGraph: {
-    title: "Kopfschmerzen & Migräne ohne Medikamente behandeln | Osteopathie Hamburg",
+    title: "Kopfschmerzen & Migräne osteopathisch begleiten | Osteopathie Hamburg",
     description:
-      "Kopfschmerzen & Migräne natürlich lindern ✓ Ohne Medikamente ✓ Ursachenbehandlung ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h",
+      "Kopfschmerzen & Migräne osteopathisch begleiten ✓ Ursachenorientierter Ansatz ✓ VFO-Osteopath Hamburg ✓ Termine binnen 48h",
     url: "/behandlungen/kopfschmerzen-migraene",
     siteName: "Osteopathie Hamburg - Joshua Alsen",
     images: [
@@ -65,17 +65,17 @@ export default function KopfschmerzenPage() {
           {
             question: "Kann Osteopathie Migräne heilen?",
             answer:
-              "Migräne ist eine komplexe neurologische Erkrankung, die nicht geheilt, aber effektiv behandelt werden kann. Osteopathie kann die Häufigkeit, Intensität und Dauer von Migräne-Attacken signifikant reduzieren. Studien zeigen, dass viele Patienten nach einer Serie osteopathischer Behandlungen weniger Migräne-Tage haben und ihren Medikamentenverbrauch deutlich senken können. Die Behandlung adressiert muskuloskelettale Trigger, verbessert die Durchblutung und reguliert das vegetative Nervensystem.",
+              "Migräne ist eine komplexe neurologische Erkrankung, die nicht geheilt, aber begleitend behandelt werden kann. Osteopathie kann muskuloskelettale Trigger, die zur Migräne beitragen, adressieren und damit unterstützend wirken. Viele Patient:innen berichten von einer Verringerung von Häufigkeit oder Intensität ihrer Attacken; der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar. Die Behandlung wird idealerweise als ergänzende Therapie zur ärztlich-neurologischen Versorgung verstanden.",
           },
           {
             question: "Wie viele Behandlungen brauche ich bei Kopfschmerzen?",
             answer:
-              "Die Behandlungsdauer hängt von der Art der Kopfschmerzen ab: Bei Spannungskopfschmerzen zeigen sich oft nach 2-4 Behandlungen deutliche Verbesserungen. Bei Migräne empfehle ich 4-6 Sitzungen über 2-3 Monate, um nachhaltige Ergebnisse zu erzielen. Bei CMD/Kieferproblemen sind meist 4-6 Behandlungen sinnvoll. Viele Patienten berichten bereits nach der ersten Behandlung von Erleichterung, aber für langfristige Verbesserungen ist eine Serie wichtig.",
+              "Die Behandlungsdauer hängt von der Art der Kopfschmerzen ab: Bei Spannungskopfschmerzen sind oft 2-4 Behandlungen ein sinnvoller erster Rahmen. Bei Migräne empfehle ich 4-6 Sitzungen über 2-3 Monate, um eine Serie aufzubauen. Bei CMD/Kieferproblemen sind meist 4-6 Behandlungen sinnvoll, häufig in Abstimmung mit Zahnärzt:innen. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.",
           },
           {
             question: "Hilft Osteopathie bei Spannungskopfschmerzen?",
             answer:
-              "Ja, Osteopathie ist besonders wirksam bei Spannungskopfschmerzen. Diese entstehen oft durch Verspannungen in Nacken, Schultern und Kiefer, die durch osteopathische Techniken direkt behandelt werden können. Durch Lösung von Faszienspannungen, Mobilisation der Halswirbelsäule und Behandlung von Triggerpunkten lassen sich Spannungskopfschmerzen meist deutlich reduzieren. Auch die Arbeit an der Körperhaltung und Ergonomie am Arbeitsplatz spielt eine wichtige Rolle.",
+              "Ja, bei Spannungskopfschmerzen kann Osteopathie eine sinnvolle Option sein. Sie entstehen oft durch Verspannungen in Nacken, Schultern und Kiefer, die mit osteopathischen Techniken adressiert werden können — etwa durch Lösung von Faszienspannungen, Mobilisation der Halswirbelsäule und Behandlung von Triggerpunkten. Auch die Arbeit an Körperhaltung und Ergonomie am Arbeitsplatz spielt eine wichtige Rolle. Der individuelle Verlauf ist unterschiedlich.",
           },
           {
             question: "Was ist der Unterschied zwischen Migräne und Spannungskopfschmerz?",
@@ -90,7 +90,7 @@ export default function KopfschmerzenPage() {
           {
             question: "Kann Osteopathie bei CMD/Kieferschmerzen helfen?",
             answer:
-              "Ja, Osteopathie ist sehr effektiv bei CMD (Craniomandibuläre Dysfunktion). Kieferprobleme gehen oft mit Kopfschmerzen, Nackenschmerzen und Verspannungen einher. Durch spezielle Techniken am Kiefergelenk, der Kaumuskulatur und der Halswirbelsäule kann die Kieferfunktion verbessert werden. Ich arbeite dabei eng mit Zahnärzten und Kieferorthopäden zusammen. Die Behandlung umfasst auch Faszienarbeit im Gesichts- und Nackenbereich sowie Techniken zur Entspannung der Kaumuskulatur.",
+              "Bei CMD (Craniomandibuläre Dysfunktion) kann Osteopathie eine sinnvolle ergänzende Option sein. Kieferprobleme gehen oft mit Kopfschmerzen, Nackenschmerzen und Verspannungen einher. Durch spezielle Techniken am Kiefergelenk, der Kaumuskulatur und der Halswirbelsäule kann die Kieferfunktion adressiert werden. Ich arbeite dabei eng mit Zahnärzt:innen und Kieferorthopäd:innen zusammen. Die Behandlung umfasst auch Faszienarbeit im Gesichts- und Nackenbereich sowie Techniken zur Entspannung der Kaumuskulatur. Der individuelle Verlauf ist unterschiedlich.",
           },
           {
             question: "Welche Rolle spielt die Halswirbelsäule bei Kopfschmerzen?",
@@ -130,7 +130,7 @@ export default function KopfschmerzenPage() {
                   Kopfschmerzen und Migräne gehören zu den häufigsten gesundheitlichen Beschwerden weltweit. Sie können den Alltag massiv beeinträchtigen, die Lebensqualität mindern und zu erheblichem Leidensdruck führen. Viele Betroffene leiden unter wiederkehrenden Beschwerden und sind auf der Suche nach Alternativen zu Schmerzmitteln – insbesondere, wenn Medikamente nur kurzfristig helfen oder Nebenwirkungen verursachen.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  Die gute Nachricht: Osteopathie kann bei vielen Kopfschmerzarten effektiv helfen. Durch ganzheitliche manuelle Techniken werden die Ursachen – nicht nur die Symptome – behandelt. Mehr als 80% aller Kopfschmerzen haben eine muskuloskelettale Komponente, die osteopathisch gut behandelbar ist.
+                  Die gute Nachricht: Osteopathie kann bei vielen Kopfschmerzarten eine sinnvolle Option sein. Durch ganzheitliche manuelle Techniken werden mögliche muskuloskelettale Ursachen adressiert – nicht nur Symptome behandelt. Ein erheblicher Anteil von Kopfschmerzen weist eine muskuloskelettale Komponente auf, die osteopathisch gut behandelbar ist.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   Häufige Formen von Kopfschmerzen:
@@ -330,9 +330,9 @@ export default function KopfschmerzenPage() {
                         🧠
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-slate-900 mb-3">Craniosacrale Techniken</h3>
+                        <h3 className="text-lg font-semibold text-slate-900 mb-3"><Link href="/behandlungen/kraniosakrale-osteopathie/" className="hover:underline">Craniosacrale Techniken</Link></h3>
                         <p className="text-sm mb-3">
-                          Diese sehr sanften Techniken arbeiten mit dem craniosacralen System – Schädel, Wirbelsäule, Kreuzbein und den dazugehörigen Membranen und Flüssigkeiten. Ziel ist es, den craniosacralen Rhythmus zu harmonisieren und Spannungen im Bereich des zentralen Nervensystems zu lösen.
+                          Diese sehr sanften Techniken arbeiten mit dem craniosacralen System – Schädel, Wirbelsäule, Kreuzbein und den dazugehörigen Membranen und Flüssigkeiten. Ziel ist es, den craniosacralen Rhythmus zu harmonisieren und Spannungen im Bereich des zentralen Nervensystems zu lösen. Mehr zur <Link href="/behandlungen/kraniosakrale-osteopathie/" className="text-slate-800 hover:text-slate-900 underline">kraniosakralen Osteopathie als eigenständiger Behandlungsansatz</Link>.
                         </p>
                         <ul className="space-y-2 text-sm">
                           <li><strong>Schädelbasis-Techniken:</strong> Behandlung der Synchondrosis sphenobasilaris (Verbindung zwischen Keilbein und Hinterhauptsbein). Hier verlaufen wichtige Gefäße und Nerven, die bei Kopfschmerzen oft unter Spannung stehen.</li>
@@ -445,10 +445,10 @@ export default function KopfschmerzenPage() {
                   <h3 className="text-lg font-semibold text-slate-900 mb-3">Studien zur Wirksamkeit</h3>
                   <ul className="space-y-3 text-slate-700">
                     <li>
-                      <strong>Spannungskopfschmerzen:</strong> Studien zeigen, dass osteopathische Behandlungen die Häufigkeit, Intensität und Dauer von Spannungskopfschmerzen signifikant reduzieren können. Besonders die Kombination aus craniosacraler Osteopathie und Behandlung der Halswirbelsäule zeigt gute Ergebnisse.
+                      <strong>Spannungskopfschmerzen:</strong> Mehrere Studien deuten darauf hin, dass osteopathische Behandlungen Häufigkeit und Intensität von Spannungskopfschmerzen positiv beeinflussen können. Besonders die Kombination aus craniosacraler Osteopathie und Behandlung der Halswirbelsäule wird untersucht. Der individuelle Verlauf ist unterschiedlich.
                     </li>
                     <li>
-                      <strong>Migräne-Forschung:</strong> Mehrere Studien belegen, dass osteopathische Behandlungen bei Migräne-Patienten zu einer Reduktion der Attacken-Häufigkeit und -Intensität führen können. Patienten berichten zudem von einem verminderten Medikamentenverbrauch. Die Behandlung zeigt besonders bei Migräne mit muskuloskelettalen Triggern (z.B. Nackenverspannungen) gute Erfolge.
+                      <strong>Migräne-Forschung:</strong> Mehrere Studien deuten darauf hin, dass osteopathische Behandlungen bei Migräne-Patient:innen zu einer Reduktion von Attacken-Häufigkeit oder -Intensität beitragen können. Manche Patient:innen berichten zudem von einem verminderten Medikamentenverbrauch. Die Behandlung kommt insbesondere bei Migräne mit muskuloskelettalen Triggern (z.B. Nackenverspannungen) zum Einsatz. Der individuelle Verlauf ist unterschiedlich.
                     </li>
                     <li>
                       <strong>Zervikogene Kopfschmerzen:</strong> Für HWS-bedingte Kopfschmerzen zeigt die Forschung deutliche Evidenz: Manuelle Techniken an der Halswirbelsäule (Mobilisation, Manipulation) können zervikogene Kopfschmerzen effektiv behandeln.
@@ -465,7 +465,7 @@ export default function KopfschmerzenPage() {
                     Die <strong>Deutsche Migräne- und Kopfschmerzgesellschaft (DMKG)</strong> empfiehlt in ihren Leitlinien manuelle Therapie als ergänzende Behandlungsoption bei Kopfschmerzen. Besonders bei Spannungskopfschmerzen und zervikogenen Kopfschmerzen wird manuelle Therapie als wirksam eingestuft.
                   </p>
                   <p className="text-slate-700 leading-relaxed">
-                    Wichtig: Osteopathie sollte Teil eines multimodalen Behandlungskonzepts sein. Bei primären Kopfschmerzen (Migräne, Spannungskopfschmerz) kann sie sehr effektiv sein, bei sekundären Kopfschmerzen (als Symptom einer anderen Erkrankung) muss zunächst die Grunderkrankung behandelt werden. Mehr Informationen finden Sie auch in unseren <Link href="/faq/" className="text-slate-800 hover:text-slate-900 underline">häufig gestellten Fragen</Link>.
+                    Wichtig: Osteopathie sollte Teil eines multimodalen Behandlungskonzepts sein. Bei primären Kopfschmerzen (Migräne, Spannungskopfschmerz) kann sie unterstützend wirken; bei sekundären Kopfschmerzen (als Symptom einer anderen Erkrankung) muss zunächst die Grunderkrankung behandelt werden. Mehr Informationen finden Sie auch in unseren <Link href="/faq/" className="text-slate-800 hover:text-slate-900 underline">häufig gestellten Fragen</Link>.
                   </p>
                 </div>
               </div>
@@ -544,13 +544,13 @@ export default function KopfschmerzenPage() {
               </h2>
               <div className="space-y-4 text-slate-700">
                 <p className="leading-relaxed">
-                  <strong>Bei Spannungskopfschmerzen</strong> zeigen sich oft schon nach 2-4 Behandlungen deutliche Verbesserungen. Die Häufigkeit und Intensität der Kopfschmerzen nimmt ab, Verspannungen lösen sich, und viele Patienten können ihren Schmerzmittelgebrauch reduzieren. In manchen Fällen reichen bereits 2-3 Sitzungen für dauerhafte Besserung.
+                  <strong>Bei Spannungskopfschmerzen</strong> ist eine Serie von 2-4 Behandlungen ein sinnvoller erster Rahmen. Ziel ist es, Verspannungen zu lösen und Selbstregulation zu unterstützen. Viele Patient:innen berichten von einer Verringerung von Häufigkeit oder Intensität — der individuelle Verlauf ist unterschiedlich.
                 </p>
                 <p className="leading-relaxed">
-                  <strong>Bei Migräne</strong> benötigen wir mehr Geduld. Hier empfehle ich 4-6 Behandlungen über einen Zeitraum von 2-3 Monaten. Migräne ist komplex und reagiert nicht immer sofort auf Behandlung. Viele Patienten berichten von reduzierten Migräne-Attacken (sowohl Häufigkeit als auch Intensität), geringerer Medikamenteneinnahme und kürzerer Dauer der Attacken. Manche Patienten erleben schon nach der ersten Behandlung eine Erleichterung, bei anderen dauert es etwas länger.
+                  <strong>Bei Migräne</strong> benötigen wir mehr Geduld. Hier empfehle ich 4-6 Behandlungen über einen Zeitraum von 2-3 Monaten. Migräne ist komplex und reagiert nicht immer auf Behandlung. Manche Patient:innen berichten von einer Reduktion der Attacken (Häufigkeit oder Intensität) oder geringerer Medikamenteneinnahme; der individuelle Verlauf ist nicht vorhersagbar. Osteopathie ergänzt die ärztlich-neurologische Versorgung, ersetzt sie aber nicht.
                 </p>
                 <p className="leading-relaxed">
-                  <strong>Bei CMD/Kieferproblemen</strong> arbeite ich eng mit Zahnärzten und Kieferorthopäden zusammen. Die Behandlung umfasst meist 4-6 Sitzungen. Bei ausgeprägten Fehlstellungen kann zusätzlich eine Aufbissschiene sinnvoll sein. Die Kombination aus Osteopathie und zahnärztlicher Versorgung zeigt oft sehr gute Ergebnisse.
+                  <strong>Bei CMD/Kieferproblemen</strong> arbeite ich eng mit Zahnärzt:innen und Kieferorthopäd:innen zusammen. Die Behandlung umfasst meist 4-6 Sitzungen. Bei ausgeprägten Fehlstellungen kann zusätzlich eine Aufbissschiene sinnvoll sein. Erfahrungsgemäß profitieren viele Patient:innen von der Kombination aus Osteopathie und zahnärztlicher Versorgung.
                 </p>
                 <p className="leading-relaxed">
                   <strong>Bei zervikogenen Kopfschmerzen</strong> (HWS-bedingt) sind die Erfolgsaussichten sehr gut. In 3-5 Behandlungen lassen sich Blockaden lösen und die Beweglichkeit der Halswirbelsäule wiederherstellen. Wichtig ist hier auch die Arbeit an der Körperhaltung im Alltag.
@@ -771,7 +771,7 @@ export default function KopfschmerzenPage() {
                     <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                   </summary>
                   <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                    Migräne ist eine komplexe neurologische Erkrankung, die nicht geheilt, aber effektiv behandelt werden kann. Osteopathie kann die Häufigkeit, Intensität und Dauer von Migräne-Attacken signifikant reduzieren. Studien zeigen, dass viele Patienten nach einer Serie osteopathischer Behandlungen weniger Migräne-Tage haben und ihren Medikamentenverbrauch deutlich senken können. Die Behandlung adressiert muskuloskelettale Trigger, verbessert die Durchblutung und reguliert das vegetative Nervensystem.
+                    Migräne ist eine komplexe neurologische Erkrankung, die nicht geheilt, aber begleitend behandelt werden kann. Osteopathie kann muskuloskelettale Trigger, die zur Migräne beitragen, adressieren und damit unterstützend wirken. Viele Patient:innen berichten von einer Verringerung von Häufigkeit oder Intensität ihrer Attacken; der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar. Die Behandlung wird idealerweise als ergänzende Therapie zur ärztlich-neurologischen Versorgung verstanden.
                   </p>
                 </details>
 
@@ -784,7 +784,7 @@ export default function KopfschmerzenPage() {
                     <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                   </summary>
                   <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                    Die Behandlungsdauer hängt von der Art der Kopfschmerzen ab: Bei Spannungskopfschmerzen zeigen sich oft nach 2-4 Behandlungen deutliche Verbesserungen. Bei Migräne empfehle ich 4-6 Sitzungen über 2-3 Monate, um nachhaltige Ergebnisse zu erzielen. Bei CMD/Kieferproblemen sind meist 4-6 Behandlungen sinnvoll. Viele Patienten berichten bereits nach der ersten Behandlung von Erleichterung, aber für langfristige Verbesserungen ist eine Serie wichtig.
+                    Die Behandlungsdauer hängt von der Art der Kopfschmerzen ab: Bei Spannungskopfschmerzen sind oft 2-4 Behandlungen ein sinnvoller erster Rahmen. Bei Migräne empfehle ich 4-6 Sitzungen über 2-3 Monate, um eine Serie aufzubauen. Bei CMD/Kieferproblemen sind meist 4-6 Behandlungen sinnvoll, häufig in Abstimmung mit Zahnärzt:innen. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
                   </p>
                 </details>
 
@@ -797,7 +797,7 @@ export default function KopfschmerzenPage() {
                     <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                   </summary>
                   <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                    Ja, Osteopathie ist besonders wirksam bei Spannungskopfschmerzen. Diese entstehen oft durch Verspannungen in Nacken, Schultern und Kiefer, die durch osteopathische Techniken direkt behandelt werden können. Durch Lösung von Faszienspannungen, Mobilisation der Halswirbelsäule und Behandlung von Triggerpunkten lassen sich Spannungskopfschmerzen meist deutlich reduzieren. Auch die Arbeit an der Körperhaltung und Ergonomie am Arbeitsplatz spielt eine wichtige Rolle.
+                    Ja, bei Spannungskopfschmerzen kann Osteopathie eine sinnvolle Option sein. Sie entstehen oft durch Verspannungen in Nacken, Schultern und Kiefer, die mit osteopathischen Techniken adressiert werden können — etwa durch Lösung von Faszienspannungen, Mobilisation der Halswirbelsäule und Behandlung von Triggerpunkten. Auch die Arbeit an Körperhaltung und Ergonomie am Arbeitsplatz spielt eine wichtige Rolle. Der individuelle Verlauf ist unterschiedlich.
                   </p>
                 </details>
 
@@ -836,7 +836,7 @@ export default function KopfschmerzenPage() {
                     <span className="text-slate-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">▼</span>
                   </summary>
                   <p className="mt-4 text-slate-700 leading-relaxed pl-11">
-                    Ja, Osteopathie ist sehr effektiv bei CMD (Craniomandibuläre Dysfunktion). Kieferprobleme gehen oft mit Kopfschmerzen, Nackenschmerzen und Verspannungen einher. Durch spezielle Techniken am Kiefergelenk, der Kaumuskulatur und der Halswirbelsäule kann die Kieferfunktion verbessert werden. Ich arbeite dabei eng mit Zahnärzten und Kieferorthopäden zusammen. Die Behandlung umfasst auch Faszienarbeit im Gesichts- und Nackenbereich sowie Techniken zur Entspannung der Kaumuskulatur.
+                    Bei CMD (Craniomandibuläre Dysfunktion) kann Osteopathie eine sinnvolle ergänzende Option sein. Kieferprobleme gehen oft mit Kopfschmerzen, Nackenschmerzen und Verspannungen einher. Durch spezielle Techniken am Kiefergelenk, der Kaumuskulatur und der Halswirbelsäule kann die Kieferfunktion adressiert werden. Ich arbeite dabei eng mit Zahnärzt:innen und Kieferorthopäd:innen zusammen. Die Behandlung umfasst auch Faszienarbeit im Gesichts- und Nackenbereich sowie Techniken zur Entspannung der Kaumuskulatur. Der individuelle Verlauf ist unterschiedlich.
                   </p>
                 </details>
 
