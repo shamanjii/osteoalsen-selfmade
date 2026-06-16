@@ -506,4 +506,6 @@ Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt onlin
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
+Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
+
 ---

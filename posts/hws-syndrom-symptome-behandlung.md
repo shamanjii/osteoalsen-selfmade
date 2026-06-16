@@ -615,6 +615,8 @@ Das **HWS-Syndrom** ist der Oberbegriff für alle Beschwerden der Halswirbelsäu
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
+Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
+
 ---
 
 [^1]: Fejer R, Kyvik KO, Hartvigsen J. *The prevalence of neck pain in the world population: a systematic critical review of the literature.* Eur Spine J. 2006;15(6):834-848.

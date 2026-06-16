@@ -212,4 +212,8 @@ Wenn Sie seit Monaten oder Jahren unter beiden Beschwerden leiden und isolierte 
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
+**Direkt zu den Behandlungsseiten:**
+- [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Verstopfung, Reizdarm und Verdauungsproblemen
+- [Rückenschmerzen osteopathisch behandeln](/behandlungen/rueckenschmerzen/) — Ganzheitliche Behandlung wenn Dickdarm und Lendenwirbelsäule zusammenhängen
+
 ---

@@ -520,6 +520,8 @@ In meiner Praxis in Hamburg behandle ich regelmäßig Schwindel-Patienten. Erste
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
+Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
+
 ---
 
 [^1]: Brandt T, Dieterich M. *Vertigo and dizziness: common complaints.* Springer; 2013.

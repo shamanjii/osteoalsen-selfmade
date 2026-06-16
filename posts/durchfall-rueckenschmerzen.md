@@ -219,4 +219,8 @@ Die Osteopathie bietet einen Rahmen, in dem Darm, Nervensystem und Bewegungsappa
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
+**Direkt zu den Behandlungsseiten:**
+- [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Darm-Beschwerden und viszerosomatischen Beschwerden
+- [Rückenschmerzen osteopathisch behandeln](/behandlungen/rueckenschmerzen/) — Ganzheitliche Behandlung bei akuten und chronischen Rückenschmerzen
+
 ---

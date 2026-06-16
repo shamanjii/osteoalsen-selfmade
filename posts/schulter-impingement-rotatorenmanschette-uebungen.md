@@ -635,6 +635,10 @@ Wenn Sie mehr über ganzheitliche Behandlungsansätze erfahren möchten:
 
 Für allgemeine Informationen über osteopathische Behandlung: [Was ist Osteopathie?](/was-ist-osteopathie)
 
+**Direkt zu den Behandlungsseiten:**
+- [Sportosteopathie Hamburg](/behandlungen/sportosteopathie/) — Ganzheitliche Behandlung bei Schulter-, Sport- und Überlastungsbeschwerden
+- [Rückenschmerzen & BWS](/behandlungen/rueckenschmerzen/) — Wenn Schulter und Brustwirbelsäule zusammenhängen
+
 ---
 
 [^1]: Kebaetse M, McClure P, Pratt NA. "Thoracic position effect on shoulder range of motion, strength, and three-dimensional scapular kinematics." *Archives of Physical Medicine and Rehabilitation*. 1999;80(8):945-950. [PubMed PMID: 10453773](https://pubmed.ncbi.nlm.nih.gov/10453773/). Die Studie zeigt an gesunden Proband:innen, dass eine veränderte thorakale Haltung die Schulter-ROM, die Schulterkraft sowie die dreidimensionale skapuläre Kinematik signifikant beeinflusst. Sie wird in der Praxis als Beleg dafür herangezogen, dass BWS-Position und -Beweglichkeit eine wichtige Rolle für die Schulterfunktion spielen.
