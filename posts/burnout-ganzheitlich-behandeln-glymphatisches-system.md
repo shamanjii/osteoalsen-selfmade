@@ -151,7 +151,7 @@ Vagusnerv-Dysfunktion
        ↓
 Schlechter Tiefschlaf
        ↓
-Reduzierte glymphatische Clearance (↓ 40-60%)
+Reduzierte glymphatische Clearance (Effektgrößen aus Tiermodellen, nicht direkt auf den Menschen übertragbar)
        ↓
 Akkumulation toxischer Proteine
        ↓
@@ -545,9 +545,9 @@ Wenn mehrere dieser Punkte auf Sie zutreffen, ist eine ärztliche Abklärung (Sc
 
 ## Zusammenfassung
 
-✓ **Burnout ist nicht nur psychisch** – es ist eine neuroimmunologische Erkrankung mit körperlichen Ursachen
+✓ **Burnout ist nicht nur psychisch** – körperliche Mechanismen wie Nervensystem-Dysregulation und Schlafqualität spielen mit hinein
 
-✓ **Das glymphatische System** ist das Abwassersystem des Gehirns – bei Burnout ist es verstopft (↓40-60%)
+✓ **Das glymphatische System** ist das Abwassersystem des Gehirns – bei chronischem Stress deuten Tierstudien auf eine reduzierte Aktivität hin; die Übertragbarkeit auf den Menschen bei Burnout ist nicht abschließend erforscht
 
 ✓ **Chronischer Stress + schlechter Schlaf** → weniger Tiefschlaf → toxische Proteine akkumulieren → Brain Fog + Erschöpfung
 

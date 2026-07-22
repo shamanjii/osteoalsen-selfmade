@@ -22,8 +22,8 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 - [x] 🔧 `viszerale-osteopathie.md`
 - [x] 🔧 `zwerchfell-osteopathie-atmung-verdauung.md`
 - [x] 🔧 `chronische-kopfschmerzen-osteopathie-statt-tabletten.md`
-- [ ] ⬜ `schulter-impingement-rotatorenmanschette-uebungen.md` — nur Scanner-Treffer gecheckt (verifiziert korrekt zitiert), noch keine volle manuelle Lesung des ganzen Artikels
-- [ ] ⬜ `burnout-ganzheitlich-behandeln-glymphatisches-system.md` — nur zwei Scanner-Treffer gecheckt (beide ok, Mäusestudie korrekt gehedged), noch keine volle manuelle Lesung des ganzen Artikels
+- [x] 🔧 `schulter-impingement-rotatorenmanschette-uebungen.md` — volle Lesung abgeschlossen. FIMPACT-Studie fälschlich zur Stützung einer "70-80% keine OP nötig"-Zahl zitiert (Studie zeigt Äquivalenz OP/Schein-OP, keine solche Quote) — korrigiert. Unbelegte 40%-Schleudertrauma-Zahl entschärft. Sonst gut zitiert (3 echte, passende Quellen).
+- [x] 🔧 `burnout-ganzheitlich-behandeln-glymphatisches-system.md` — volle Lesung abgeschlossen. **Bester Artikel der ganzen Serie**: durchgehend vorbildliche Tiermodell-Hinweise, Medikamenten-Interaktionswarnungen, "kein diagnostischer Selbsttest"-Disclaimer. Nur zwei unbelegte 40-60%-Zahlen (Flowchart, Zusammenfassung) zur Konsistenz mit dem Rest des Artikels entschärft.
 
 ## Gruppe B — Darm-Rücken-Cluster, noch nie geprüft (Priorität hoch — `reizdarm...` hat bereits im Meta-Text eine ungeprüfte 50-80%-Zahl)
 
@@ -56,4 +56,10 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 
 **Out of Scope (nicht Teil dieses Durchgangs):** Behandlungsseiten (`src/app/behandlungen/*`) und Kernseiten (Homepage, `osteopath-hamburg`, `was-ist-osteopathie` etc.) — laut User nur die 33 Blog-Artikel sind relevant.
 
-**Gesamt:** 33 Blog-Artikel. Gruppe A ist der schnelle Verifikations-Durchgang (11 Artikel, davon 9 bereits fertig bereinigt), Gruppe B (4) und Gruppe C (17) sind der eigentliche neue Scope.
+**Gesamt: 33/33 Artikel durchgegangen. Review komplett.** (Stand: 2026-07-23)
+
+**Zusammenfassung der Serie:**
+- Alle 33 Artikel manuell gelesen und auf unbelegte Zahlen, Falschzitate, Selbsttest-Strukturen und Kompetenzüberschreitungen geprüft
+- Größte Einzelfunde: zwei fiktive Patiententestimonials mit Namen/Erfolgszahlen (sportosteopathie-leistung-optimieren), ein systematisch falsches Krankenkassen-Erstattungssystem (12 Artikel betroffen), eine Medikamenten-Dosierungsanweisung für Triptan-Reduktion (migraene), eine falsche Eigenaussage über GON-Block-Injektionen (spannungskopfschmerzen), mehrere fabrizierte/fehlzugeordnete Studienzitate (schleudertrauma, sportosteopathie, u.a.)
+- Weiterhin offen (🔴, braucht Tiefenüberarbeitung wie der Schwindel-Artikel): `nackenschmerzen-schwindel-hws-vagus.md` (bereits separat auditiert, Status Rot), `dehnen-rueckenschmerzen-mythos.md` und `spannungskopfschmerzen-muskel-oder-hws.md` (unvalidierte Selbsttest-Strukturen, die zu Behandlungswechsel anweisen), `rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg.md` (fehlende Quellenliste trotz `sourceCount: 31`)
+- Scanner-unabhängige Funde (Testimonials, Falschzitate, Kompetenzfragen) zeigen: der automatisierte Scanner allein reicht nicht, manuelle Lesung war für diese Funde nötig

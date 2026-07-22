@@ -526,7 +526,7 @@ Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ga
 
 **Probieren Sie ERST konservativ (Osteopathie + Physio + Übungen) für 3-6 Monate!**
 
-**Studien zeigen:** Bei 70-80% der Impingement-Patienten ist OP überflüssig.[^2]
+**Studienlage:** Die FIMPACT-Studie fand keinen klinisch relevanten Unterschied zwischen OP, Schein-OP und Übungstherapie – das spricht dafür, bei den meisten Impingement-Patient:innen zunächst konservativ zu behandeln.[^2]
 
 ---
 
@@ -550,7 +550,7 @@ Monitor auf Augenhöhe, Unterarme aufgelegt, Schultern entspannt. Alle 30 Min Be
 
 Viele Impingement-Patienten haben auch Nackenschmerzen, Kopfschmerzen oder Kieferbeschwerden. **Warum?** HWS, Schulter und BWS hängen biomechanisch zusammen – Osteopathie behandelt das gesamte System.
 
-Nach einem Schleudertrauma entwickeln 40% Schulterschmerzen – oft erst Monate später durch chronische Schutzspannung der Nacken-Schulter-Muskulatur.
+Nach einem Schleudertrauma entwickelt ein Teil der Betroffenen Schulterschmerzen – oft erst Monate später durch chronische Schutzspannung der Nacken-Schulter-Muskulatur.
 
 ---
 
