@@ -107,7 +107,7 @@ Sehnen der Rotatorenmanschette werden im Subakromialraum (unter dem Schulterdach
 
 **Klassische Behandlung vs. Realität:**
 - **Orthopädie:** „Der Raum unter dem Schulterdach ist zu eng → OP: Knochen abfräsen"
-- **Osteopathie:** „Warum bewegt sich das Schulterblatt nicht richtig? → Ursache beheben!"
+- **Osteopathie:** „Warum bewegt sich das Schulterblatt nicht richtig? → mögliche Ursachen mitbehandeln"
 
 **Die oft übersehene Wahrheit:**
 Das Impingement ist fast NIE ein anatomisches Problem (zu enger Raum), sondern ein **biomechanisches Problem:**
@@ -537,10 +537,10 @@ Die Kombination aus Osteopathie, Bewegungstherapie und Stress-Management ist bei
 ## Häufige Fragen (FAQ)
 
 **Q: „Ich habe Frozen Shoulder. Kann Osteopathie die 2-jährige Heilung verkürzen?"**
-A: Ja! Studien zeigen: Osteopathie + Heimübungen können die Heilung auf 5-8 Monate verkürzen.[^4] Ohne Behandlung dauert es oft 12-24 Monate.
+A: Das lässt sich nicht pauschal versprechen. Der natürliche Verlauf zieht sich häufig über 12-24 Monate.[^4] Manche Patient:innen berichten unter begleitender Osteopathie und Heimübungen von einem kürzeren Verlauf – belastbare Studien zu einer festen Zeitersparnis für Osteopathie speziell gibt es aber nicht.
 
 **Q: „Mein Orthopäde empfiehlt eine Schulter-Arthroskopie (Impingement). Soll ich die OP machen?"**
-A: **Erst konservativ versuchen!** Studien zeigen: OP ist nicht besser als Physiotherapie/Osteopathie.[^2] Eine OP ist irreversibel – probieren Sie 8-12 Wochen Osteopathie. Viele vermeiden so die OP.
+A: **Konservative Behandlung ist eine Option, die viele Ärzte vor einer OP empfehlen.** Eine große placebokontrollierte Studie fand keinen klinisch relevanten Vorteil der Dekompressions-OP gegenüber einer Schein-Operation.[^2] Eine OP ist zudem nicht rückgängig zu machen – ein Therapieversuch über 8-12 Wochen mit Osteopathie und/oder Physiotherapie kann sinnvoll sein, ersetzt aber nicht die Rücksprache mit dem behandelnden Arzt.
 
 **Q: „Wie schnell wirkt Osteopathie bei Schulterschmerzen?"**
 A: Das ist sehr individuell und nicht vorhersagbar. **Impingement** ist meist kürzerfristig angelegt, **Frozen Shoulder** erfahrungsgemäß ein langwieriger Verlauf über mehrere Monate. Der individuelle Verlauf hängt von Befund, Vorgeschichte und Mitarbeit ab.

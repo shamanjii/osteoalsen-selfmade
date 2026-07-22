@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.." || exit 2
 
 FOUND=0
 SEARCH_DIRS=(src/app posts)
-EXCLUDES='\.next|/out/|nicht garantier|kann nicht garantiert|lässt sich nicht garantieren|nicht heilbar|Keine Wunder|aber nicht.*geheilt|Cluster|spezialisierte medizinische|spezialisierte Kinder|Behandlungsschwerpunkte|Bevölkerung|wissen/page|/blog/'
+EXCLUDES='\.next|/out/|nicht garantier|garantiert[^.]{0,60}nicht|keine[^.]{0,20}garantierte|kann nicht garantiert|lässt sich nicht garantieren|nicht heilbar|Keine Wunder|aber nicht.*geheilt|Cluster|spezialisierte medizinische|spezialisierte Kinder|Behandlungsschwerpunkte|Bevölkerung|wissen/page|/blog/|keine[^.]{0,15}(Verbesserung|Besserung)[^.]{0,40}eintritt|nicht der richtige Ansatz|besprechen[^.]{0,10}alternative'
 
 declare -a PATTERNS=(
   "Erfundene Patient-Namen|(Sarah|Maria|Markus|Helga|Michael|Julia|Thomas|Peter|Anna|Lukas|Stefan|Ingrid|Sabine|Petra|Andrea|Claudia|Bettina|Christine|Jürgen|Wolfgang|Klaus|Hans|Tobias|Frau [A-Z]|Herr [A-Z]),?\\s*\\(?[0-9]{2}\\)?"
@@ -26,10 +26,13 @@ declare -a PATTERNS=(
   "Ich löse/verbessere|löse ich|verbessere ich|behandle.*erfolgreich"
   "Heilungs-Vokabular|vollständig(e)? Heilung|nachhaltig(e)? Heilung|dauerhaft schmerzfrei|geheilt nach"
   "Vergleichswerbung ohne-OP|ohne (OP|Operation|Medikamente|Tabletten)|statt (OP|Tabletten|Medikamenten?)"
-  "Selbst-Überhöhung Spezialist|Spezialist(in)?|spezialisiert|Schwerpunkt|Experte für|meine Expertise"
+  "Selbst-Überhöhung Spezialist|(ich bin|bin ich)[^.]{0,20}(der|die|einzige|führende|beste[r]?)[^.]{0,20}(Spezialist|Experte)|als (einzige[r]?|führende[r]?|beste[r]?) (Spezialist|Adresse|Praxis)|meine (einzigartige|herausragende|unübertroffene) (Expertise|Erfahrung)|führend(e|er) (Spezialist|Praxis|Adresse) (in|für)"
   "Frequenz-Übertreibung|behandle.*täglich|sehe.*täglich"
   "Was Sie erwarten können|Was Sie erwarten können"
   "Soft-Promise oft/meist|(oft|meist) (schon|schnell|innerhalb).*Besserung|verbessert sich oft"
+  "Kausalitäts-Übertreibung|Ursache (wird )?beheben|behebt die Ursache|normalisiert sich (der|die|das)|reguliert (sich )?(das|die|den) gesamte|korrigiert dauerhaft|löst die Ursache"
+  "Fixer Wirkungszeitraum|Tag [0-9]+-[0-9]+[^.]{0,40}(Wirkung|Besserung|Hauptwirkung)|nach [0-9]+(-[0-9]+)? (Tagen|Wochen|Monaten)[^.]{0,10}(die )?(volle|Haupt)(wirkung|besserung)"
+  "OP-Äquivalenz-Behauptung|genauso wirksam wie|ebenso wirksam wie|gleich wirksam wie|nicht weniger wirksam als"
 )
 
 for entry in "${PATTERNS[@]}"; do
