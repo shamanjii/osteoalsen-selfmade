@@ -24,7 +24,7 @@ Stand: 22. Juli 2026. Ziel: jeden Artikel/jede Seite mit Gesundheitsaussagen ein
 
 ## Gruppe B — Darm-Rücken-Cluster, noch nie geprüft (Priorität hoch — `reizdarm...` hat bereits im Meta-Text eine ungeprüfte 50-80%-Zahl)
 
-- [ ] ⬜ `reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang.md`
+- [x] 🔧 `reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang.md` — unbelegte 50-80%-Zahl (Titel+Meta+Intro) entschärft, Vergleichsaussage vs. Schmerzmittel entschärft, unbelegte persönliche Erfolgsaussage abgeschwächt. Notiz: Bild ist von fremder Domain hotlinked (Bildrechte klären, nicht HWG-Scope).
 - [ ] ⬜ `blaehungen-rueckenschmerzen.md`
 - [ ] ⬜ `durchfall-rueckenschmerzen.md`
 - [ ] ⬜ `verstopfung-rueckenschmerzen.md`
