@@ -580,7 +580,7 @@ Das **HWS-Syndrom** ist der Oberbegriff für alle Beschwerden der Halswirbelsäu
 - Folgebehandlung (45 Minuten): 120 Euro
 
 **Kostenübernahme:**
-- Viele gesetzliche Krankenkassen bezuschussen Osteopathie mit 40-80 Euro pro Sitzung
+- Viele gesetzliche Krankenkassen bezuschussen Osteopathie meist mit einem festen Betrag von 30-40 Euro pro Sitzung ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 - Private Krankenversicherungen erstatten meist 80-100%
 
 ---

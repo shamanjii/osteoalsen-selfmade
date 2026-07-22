@@ -212,7 +212,7 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Private Krankenversicherung:** Meist werden 80-100% der Kosten erstattet, wenn Sie einen **Heilpraktiker-Zusatz** haben.
 
-**Gesetzliche Krankenkasse:** Einige Kassen (z.B. TK, Barmer, AOK) bieten **freiwillige Zuschüsse** für Osteopathie – oft 3-6 Sitzungen pro Jahr mit Rezept eines Arztes.
+**Gesetzliche Krankenkasse:** Einige Kassen (z.B. TK, DAK, hkk) bieten **freiwillige Zuschüsse** für Osteopathie – meist 3-4 Sitzungen pro Jahr mit Rezept eines Arztes. Bei manchen Kassen (z.B. Barmer, AOK) ist der Zuschuss an ein Bonusprogramm gekoppelt, nicht automatisch. [Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/)
 
 **Selbstzahler:** Eine Sitzung kostet in Hamburg zwischen 100-180€ (je nach Praxis und Dauer). In meiner Praxis: 150€ pro Behandlung.
 

@@ -41,7 +41,7 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 - [x] 🔧 `kopfschmerzen-trigeminus-ursache.md` — unbelegte 90%-Zahl (Intro), unbelegte 50-70%-Zahl entschärft, zwei überzogene Studienaussagen abgeschwächt; 18 Quellen größtenteils gut passend
 - [x] 🔧 `kreuzbeinschmerzen-beckenstellung-rumpfstabilitaet.md` — bestbelegter Artikel bisher (Hodges/Richardson, Kovacs/Lancet, Arshad 2024 etc. korrekt); "16-fache Mehrbelastung" auf Physiopedia-Wiki-Quelle gestützt, Zahl entfernt und Quelle sollte langfristig durch Primärstudie ersetzt werden
 - [ ] ⬜ `migraene-ohne-aura-osteopathie.md`
-- [ ] ⬜ `osteopathie-hamburg-krankenkasse-erstattung-2026.md`
+- [x] 🔧 `osteopathie-hamburg-krankenkasse-erstattung-2026.md` — **kritisch, User-Meldung 2026-07-23:** komplette Erstattungstabelle war falsch (jede Kasse 3-4,5x überzeichnet, Barmer/hkk fälschlich als %-Erstattung statt Bonusprogramm/Festbetrag dargestellt). Auf offiziellen Kassenseiten (tk.de, barmer.de, dak.de, hkk.de, hek.de) nachrecherchiert und neu geschrieben, echte Quellen-Links ergänzt. **Folgefund:** dieselbe falsche "40-80€/3-6 Sitzungen"-Zahl steckte noch in 11 weiteren Artikeln (hws-blockierung, hueftschmerzen, kniearthrose, hws-syndrom, migraene, rueckenschmerzen-ganzheitlich, spannungskopfschmerzen, schulterschmerzen-frozen-shoulder, viszerale-osteopathie, kopfschmerzen-trigeminus, rueckenschmerzen-3-versteckte-ursachen) — alle korrigiert und auf den Kassenartikel verlinkt.
 - [ ] ⬜ `rueckenschmerzen-3-versteckte-ursachen.md`
 - [ ] ⬜ `rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg.md`
 - [ ] ⬜ `schleudertrauma-spaetfolgen-langfristig-behandeln.md`

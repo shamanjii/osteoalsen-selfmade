@@ -359,7 +359,7 @@ Migräne: meist einseitig, pulsierend, Übelkeit, Licht-/Lärmempfindlichkeit
 
 **Bezahlt Krankenkasse Osteopathie?**
 
-Gesetzlich: Nein (Kassenleistung), aber viele bezuschussen 40-80€/Sitzung
+Gesetzlich: Nein (keine Kassenleistung), aber viele bezuschussen freiwillig meist 30-40€/Sitzung ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 Privat: Meist 80-100% Erstattung
 
 ---

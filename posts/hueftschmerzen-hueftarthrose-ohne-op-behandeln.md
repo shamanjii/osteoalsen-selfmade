@@ -605,7 +605,7 @@ A: Das ist sehr individuell und nicht vorhersagbar. **Piriformis-Syndrom** spric
 A: Ja, sogar empfohlen! **Osteopathie** = Ursachen-Behandlung (Becken, LWS, Faszien). **Physiotherapie** = Muskelaufbau (Gluteus, Stabilität). Optimale Kombination!
 
 **Q: „Zahlt die Krankenkasse Osteopathie bei Hüftarthrose?"**
-A: Viele gesetzliche Kassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten). Private Kassen meist 100%.
+A: Viele gesetzliche Kassen bezuschussen 3-4 Sitzungen/Jahr, meist als fester Betrag von 30-40€ pro Sitzung (Details je Kasse unterschiedlich – [siehe Kassenübersicht](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/)). Private Kassen meist deutlich mehr, oft 80-100%.
 
 **Q: „Kann Osteopathie auch nach einer Hüft-OP helfen?"**
 A: Absolut! Nach Hüft-TEP: Osteopathie optimiert Gangbild, behandelt Kompensationen (Becken, LWS, Knie), beschleunigt Reha.

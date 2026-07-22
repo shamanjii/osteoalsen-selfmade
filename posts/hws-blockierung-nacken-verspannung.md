@@ -483,7 +483,7 @@ In meiner Praxis in Hamburg behandle ich regelmäßig [Nackenschmerzen](/behandl
 
 **Gesetzliche Krankenkasse:**
 - Osteopathie ist **keine Kassenleistung**
-- Viele Kassen bezuschussen freiwillig (40-80€ pro Sitzung, 3-6 Sitzungen/Jahr)
+- Viele Kassen bezuschussen freiwillig, meist als fester Betrag von 30-40€ pro Sitzung für 3-4 Sitzungen/Jahr (Details variieren stark je Kasse)
 - Vorab bei Ihrer Kasse nachfragen
 
 **Private Krankenkasse:**

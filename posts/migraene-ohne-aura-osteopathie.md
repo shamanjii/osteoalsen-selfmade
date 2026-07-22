@@ -384,7 +384,7 @@ Botox (OnabotulinumtoxinA) wirkt bei **chronischer Migräne** (≥15 Tage/Monat)
 
 **Bezahlt Krankenkasse Osteopathie bei Migräne?**
 
-**Gesetzlich:** Nein, aber viele bezuschussen freiwillig (40-80€/Sitzung, 3-6x/Jahr)
+**Gesetzlich:** Nein, aber viele bezuschussen freiwillig, meist als fester Betrag von 30-40€/Sitzung für 3-4x/Jahr ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 **Privat:** Meist 80-100% Erstattung
 
 ---

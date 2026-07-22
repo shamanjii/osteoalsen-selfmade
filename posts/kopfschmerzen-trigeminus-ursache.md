@@ -313,7 +313,7 @@ Spannungskopfschmerz entsteht meist durch muskuläre Verspannungen (Nacken, Kief
 **Folgetermine** (45-60 Min): 80-110€
 
 **Private Krankenversicherung:** Meist 80-100% Erstattung (mit Heilpraktiker-Zusatz)
-**Gesetzliche Krankenkasse:** Teilweise Zuschüsse (3-6 Sitzungen/Jahr mit ärztlichem Rezept)
+**Gesetzliche Krankenkasse:** Teilweise Zuschüsse, meist 3-4 Sitzungen/Jahr mit ärztlichem Rezept ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 
 [→ Mehr zu Kosten & Abrechnung](/kosten-ablauf/)
 

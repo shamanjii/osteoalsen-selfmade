@@ -438,7 +438,7 @@ Das ist individuell sehr unterschiedlich. Bei akuten funktionellen Beschwerden r
 
 **Zahlt die Krankenkasse viszerale Osteopathie?**
 
-Viele private Krankenkassen und Zusatzversicherungen übernehmen osteopathische Behandlungen teilweise oder ganz. Auch einige gesetzliche Krankenkassen bieten Zuschüsse (meist 30-60 € pro Sitzung, bis zu 3-6 Sitzungen pro Jahr). Informieren Sie sich vorab bei Ihrer Kasse über die Erstattungsmöglichkeiten.
+Viele private Krankenkassen und Zusatzversicherungen übernehmen osteopathische Behandlungen teilweise oder ganz. Auch einige gesetzliche Krankenkassen bieten Zuschüsse (meist ein fester Betrag von 30-40 € pro Sitzung, für 3-4 Sitzungen pro Jahr – [Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/)). Informieren Sie sich vorab bei Ihrer Kasse über die Erstattungsmöglichkeiten.
 
 **Kann ich viszerale Osteopathie mit anderen Therapien kombinieren?**
 

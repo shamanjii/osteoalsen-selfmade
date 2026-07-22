@@ -552,7 +552,7 @@ A: Nicht unbedingt! Bei Teilrissen <1cm und Patient:innen >60 Jahre ist konserva
 A: Ja, sogar empfohlen! **Osteopathie** = Ursachen-Behandlung (BWS, Rippen, Faszien). **Physiotherapie** = Muskel-Kräftigung, Stabilisierung. Perfekte Kombination!
 
 **Q: „Zahlt die Krankenkasse Osteopathie bei Schulterschmerzen?"**
-A: Viele gesetzliche Krankenkassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten, je nach Kasse). Private Krankenkassen meist 100%. [Mehr zu Kosten & Erstattung →](/osteopathie-kosten-hamburg/)
+A: Viele gesetzliche Krankenkassen bezuschussen 3-4 Sitzungen/Jahr, meist als fester Betrag von 30-40€ pro Sitzung (Details je Kasse unterschiedlich). Private Krankenkassen meist deutlich mehr. [Mehr zu Kosten & Erstattung →](/osteopathie-kosten-hamburg/)
 
 ---
 

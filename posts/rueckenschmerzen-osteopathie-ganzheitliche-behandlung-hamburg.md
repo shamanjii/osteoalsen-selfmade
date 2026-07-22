@@ -301,7 +301,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 ### Übernimmt die Krankenkasse die Kosten?
 
 **Private KK:** Meist volle Kostenübernahme
-**Gesetzliche KK:** Viele zahlen Zuschuss (40-60€ pro Sitzung, 3-6 Sitzungen/Jahr)
+**Gesetzliche KK:** Viele zahlen Zuschuss, meist als fester Betrag von 30-40€ pro Sitzung für 3-4 Sitzungen/Jahr ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 
 **Tipp:** Vorab bei Ihrer Kasse nachfragen
 
