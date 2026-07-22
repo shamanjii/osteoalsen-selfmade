@@ -38,8 +38,8 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 - [x] 🔧 `hws-blockierung-nacken-verspannung.md` — unbelegte 85%-Zahl (Meta) entfernt, 4x wiederkehrende unbelegte Atlas→Arterie→Schwindel-Kausalkette entschärft (gleiches Problem wie im Schwindel-Artikel bereits identifiziert)
 - [x] 🔧 `isg-blockierung-teufelskreis.md` — unbelegte 80%/40%-Zahlen entschärft, sonst gute Quellenlage (alle 6 Fußnoten passend)
 - [x] 🔧 `kniearthrose-ohne-op-behandeln.md` — unbelegte wochenweise "-30%/-50%"-Erfolgsziele entschärft, unbelegte 80%-Hamstring-Zahl entfernt; ansonsten sehr sauber zitiert (Sihvonen/Kirkley/Thorlund korrekt wiedergegeben)
-- [ ] ⬜ `kopfschmerzen-trigeminus-ursache.md`
-- [ ] ⬜ `kreuzbeinschmerzen-beckenstellung-rumpfstabilitaet.md`
+- [x] 🔧 `kopfschmerzen-trigeminus-ursache.md` — unbelegte 90%-Zahl (Intro), unbelegte 50-70%-Zahl entschärft, zwei überzogene Studienaussagen abgeschwächt; 18 Quellen größtenteils gut passend
+- [x] 🔧 `kreuzbeinschmerzen-beckenstellung-rumpfstabilitaet.md` — bestbelegter Artikel bisher (Hodges/Richardson, Kovacs/Lancet, Arshad 2024 etc. korrekt); "16-fache Mehrbelastung" auf Physiopedia-Wiki-Quelle gestützt, Zahl entfernt und Quelle sollte langfristig durch Primärstudie ersetzt werden
 - [ ] ⬜ `migraene-ohne-aura-osteopathie.md`
 - [ ] ⬜ `osteopathie-hamburg-krankenkasse-erstattung-2026.md`
 - [ ] ⬜ `rueckenschmerzen-3-versteckte-ursachen.md`

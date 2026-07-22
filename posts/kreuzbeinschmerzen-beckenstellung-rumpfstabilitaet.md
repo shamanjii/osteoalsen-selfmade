@@ -62,7 +62,7 @@ Fachsprachlich heißt das: **Anteriore Beckenkippung** (Anterior Pelvic Tilt). E
 
 Wenn das Becken nach vorne kippt, **muss** die Lendenwirbelsäule (LWS) stärker ins Hohlkreuz gehen. Das ist reine Mechanik. Die LWS-Krümmung verstärkt sich übermäßig – eine sogenannte **Hyperlordose**.
 
-Das Problem: In dieser Position tragen die Facettengelenke (kleine Wirbelgelenke an der Rückseite der Wirbelsäule) einen unverhältnismäßig großen Anteil der Last. Bei nur 2 Grad mehr Lordose steigt die Belastung der Facettengelenke von 1% auf 16% der gesamten Kompressionskraft[(3)](#quellen). **16-fache Mehrbelastung – durch eine minimale Veränderung.**
+Das Problem: In dieser Position tragen die Facettengelenke (kleine Wirbelgelenke an der Rückseite der Wirbelsäule) einen unverhältnismäßig großen Anteil der Last. Biomechanische Modelle beschreiben, dass bereits wenige Grad mehr Lordose die Belastung der Facettengelenke deutlich erhöhen können[(3)](#quellen). **Schon eine kleine Veränderung der Beckenstellung kann die Gelenkbelastung spürbar verschieben.**
 
 ### Der Brennpunkt: L5/S1 – genau da, wo es wehtut
 

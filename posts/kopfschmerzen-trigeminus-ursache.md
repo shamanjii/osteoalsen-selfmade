@@ -24,7 +24,7 @@ author: "Admin"
 ---
 # Trigeminusnerv gereizt durch Verspannungen? So entstehen Kopfschmerzen wirklich
 
-**Ihr Kopfschmerz entsteht nicht im Kopf – sondern im Nacken oder Kiefer. Bei 90% der therapieresistenten Kopfschmerzen ist der Trigeminusnerv gereizt durch Verspannungen in der Halswirbelsäule (HWS), Kiefermuskulatur oder Schulter-Nacken-Region. Osteopathie findet diese Verbindungen – und behandelt die Ursache, nicht nur das Symptom.**
+**Ihr Kopfschmerz entsteht nicht im Kopf – sondern im Nacken oder Kiefer. Bei vielen therapieresistenten Kopfschmerzen spielt eine Reizung des Trigeminusnervs durch Verspannungen in der Halswirbelsäule (HWS), Kiefermuskulatur oder Schulter-Nacken-Region eine Rolle. Osteopathie findet diese Verbindungen – und behandelt mögliche Ursachen, nicht nur das Symptom.**
 
 Fast jeder zweite Deutsche leidet regelmäßig unter Kopfschmerzen [(1)](#quellen). Doch nur wenige wissen, dass der **Trigeminus** – der größte Hirnnerv – oft der Schlüssel zur Lösung ist.
 
@@ -300,7 +300,7 @@ Spannungskopfschmerz entsteht meist durch muskuläre Verspannungen (Nacken, Kief
 **Ziel: Ja – aber Weg: schrittweise.**
 
 **Phase 1 (Wochen 1-3):** Kombination aus Osteopathie + Schmerzmittel bei Bedarf
-**Phase 2 (Wochen 4-8):** Schmerzmittel-Bedarf sinkt (oft 50-70% weniger)
+**Phase 2 (Wochen 4-8):** Manche Patient:innen berichten von sinkendem Schmerzmittel-Bedarf – eine feste Quote lässt sich dafür nicht angeben
 **Phase 3 (ab Woche 8):** Idealer Fall: Schmerzmittel nur noch selten oder gar nicht nötig
 
 **Wichtig:** Setzen Sie Schmerzmittel nicht abrupt ab – besprechen Sie das mit Ihrem Arzt, besonders wenn Sie prophylaktische Medikamente nehmen!
@@ -323,8 +323,8 @@ Spannungskopfschmerz entsteht meist durch muskuläre Verspannungen (Nacken, Kief
 
 **Ja.** Aktuelle Studien zeigen:
 
-- **Zervikogene Kopfschmerzen** (vom Nacken ausgehend): Osteopathie zeigt **signifikante Verbesserungen** in Schmerz-Intensität und -Häufigkeit [(15)](#quellen).
-- **Spannungskopfschmerz:** Manuelle Therapie (inkl. Osteopathie) reduziert Schmerzen **stärker als Placebo** [(16)](#quellen).
+- **Zervikogene Kopfschmerzen** (vom Nacken ausgehend): Studien berichten Verbesserungen in Schmerz-Intensität und -Häufigkeit [(15)](#quellen).
+- **Spannungskopfschmerz:** Manuelle Therapie (inkl. Osteopathie) wird in Übersichtsarbeiten als möglicher Baustein zur Schmerzreduktion diskutiert [(16)](#quellen).
 - **Migräne:** Osteopathische Manipulation kann Migräne-Häufigkeit reduzieren – Effekte sind **klein bis moderat**, aber vorhanden [(17)](#quellen).
 
 **Wichtig:** Wie bei Rückenschmerzen sind die Effekte in Studien **Durchschnittswerte**. In der Praxis entscheidet die **individuelle Passung** über den Erfolg.
