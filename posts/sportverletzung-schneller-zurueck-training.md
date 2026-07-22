@@ -66,7 +66,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ✓ Behandlung kompensatorischer Spannung (Gegenseite, höher liegende Strukturen - verhindert [chronische Schmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/)/)
 ✓ Schmerzlinderung durch neuronale Techniken (Inhibitionstechniken)
 
-**Ergebnis:** Schwellung reduziert sich 40-50% schneller, Beweglichkeit bleibt erhalten
+**Ergebnis:** Manche Patient:innen berichten von schnellerer Schwellungsreduktion; die Beweglichkeit soll erhalten bleiben. Der individuelle Verlauf ist unterschiedlich.
 
 ### Phase 2: Reparaturphase (Woche 2-6)
 **Biologisch:** Narbengewebe-Bildung (Fibroplasie), Kollagen-Synthese, Remodeling (Gewebeumbau)
@@ -117,7 +117,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ### 1. Muskelfaserriss / Zerrung (Wade, Oberschenkel)
 
 **Klassische Heilungsdauer:** 6-12 Wochen
-**Mit Osteopathie:** 3-6 Wochen
+**Mit begleitender Osteopathie:** individuell unterschiedlich, teils kürzer – keine garantierte Zeitersparnis
 
 **Osteopathischer Vorteil:**
 - Frühe Mobilisation verhindert übermäßige Narbenbildung (Fibrosierung)
@@ -130,20 +130,20 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ### 2. Sprunggelenksdistorsion (Umknicken/Supinationstrauma)
 
 **Klassische Heilungsdauer:** 4-8 Wochen
-**Mit Osteopathie:** 2-4 Wochen
+**Mit begleitender Osteopathie:** individuell unterschiedlich, teils kürzer – keine garantierte Zeitersparnis
 
 **Osteopathischer Vorteil:**
-- Manuelle Lymphdrainage (MLD) reduziert Schwellung (Ödem) in 2-3 Tagen (statt 1-2 Wochen)
+- Manuelle Lymphdrainage (MLD) zur Unterstützung der Schwellungsreduktion
 - Artikulation (Mobilisation) der 33 Fußgelenke (nicht nur Sprunggelenk/OSG!)
-- Propriozeptives Training (Gleichgewichtstraining) ab Woche 1 (statt Woche 4)
+- Propriozeptives Training (Gleichgewichtstraining), sobald es die Belastung erlaubt
 - Behandlung von Knie/Hüfte (oft mitbeteiligt durch Ausweichbewegung beim Umknicken, mehr zu [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)/)
 
-**Kritisch:** 70% der unbehandelten Sprunggelenksdistorsionen führen zu chronischer Instabilität (CAI - Chronic Ankle Instability) und langfristig zu [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln/) durch Fehlbelastung[^4]
+**Kritisch:** Ein erheblicher Teil unbehandelter Sprunggelenksdistorsionen führt zu chronischer Instabilität (CAI - Chronic Ankle Instability) und kann langfristig zu [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln/) durch Fehlbelastung beitragen[^4]
 
 ### 3. Tennisellenbogen / Golferellenbogen (Epicondylitis lateralis/medialis)
 
 **Klassische Heilungsdauer:** 6-12 Monate (!)
-**Mit Osteopathie:** 6-12 Wochen
+**Mit begleitender Osteopathie:** individuell unterschiedlich, teils kürzer – keine garantierte Zeitersparnis
 
 **Osteopathischer Vorteil:**
 - **Ursachenbehebung:** Oft liegt das Problem nicht im Ellenbogen, sondern in Schulter/[HWS/Halswirbelsäule](/behandlungen/nackenschmerzen/)
@@ -156,7 +156,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ### 4. Läuferknie (IT-Band-Syndrom/ITBS)
 
 **Klassische Heilungsdauer:** 8-16 Wochen
-**Mit Osteopathie:** 4-8 Wochen
+**Mit begleitender Osteopathie:** individuell unterschiedlich, teils kürzer – keine garantierte Zeitersparnis
 
 **Osteopathischer Vorteil:**
 - Behandlung der wahren Ursache: Meist Hüft-/[Becken-Dysfunktion](/blog/isg-blockierung-teufelskreis/)
@@ -169,7 +169,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 ### 5. Schulterverletzung (Impingement-Syndrom, Rotatorenmanschette)
 
 **Klassische Heilungsdauer:** 12-24 Wochen
-**Mit Osteopathie:** 6-12 Wochen
+**Mit begleitender Osteopathie:** individuell unterschiedlich, teils kürzer – keine garantierte Zeitersparnis
 
 **Osteopathischer Vorteil:**
 - Behandlung der Skapula (Schulterblatt/Scapula) – oft die wahre Ursache
@@ -216,8 +216,8 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 - Gibt es strukturelle Schwächen? (Beweglichkeit, Kraft, Koordination)
 - Gibt es Bewegungsmuster-Probleme? (Lauftechnik, Wurftechnik)
 
-**Ohne Ursachenanalyse:** Rückfallrisiko 60-70%
-**Mit Ursachenanalyse:** Rückfallrisiko 15-20%
+**Ohne Ursachenanalyse:** höheres Rückfallrisiko
+**Mit Ursachenanalyse:** in der Praxis niedrigeres Rückfallrisiko – belastbare vergleichende Zahlen dazu gibt es nicht
 
 ---
 
@@ -279,7 +279,7 @@ Und dann beginnt alles von vorne. 12 Wochen später sind Sie immer noch nicht be
 - Tennisellenbogen: Exzentrisches Handgelenks-Strecken mit Gewicht
 - Patellasehne: Exzentrische Kniebeugen (langsam runter, schnell hoch)
 
-**Studien:** Exzentrisches Training reduziert Sehnenverletzungs-Rückfälle um 70%[^9]
+**Studienlage:** Exzentrisches Training gilt als wirksamer Baustein zur Reduktion von Sehnenverletzungs-Rückfällen[^9]
 
 ---
 
@@ -435,17 +435,17 @@ Viele Sportler kehren zu früh zurück – oder glauben, vollständig geheilt zu
 
 **Antwort:** 3 häufige Gründe:
 
-**1. Narbengewebe statt funktionelles Gewebe (60%)**
-- Narbengewebe hat nur 70-80% der Zugfestigkeit
+**1. Narbengewebe statt funktionelles Gewebe**
+- Narbengewebe hat eine geringere Zugfestigkeit als das Originalgewebe
 - Oft chaotisch organisiert (statt entlang Belastungslinien)
 - Lösung: Myofasziale Behandlung + exzentrisches Training
 
-**2. Propriozeptionsverlust (25%)**
+**2. Propriozeptionsverlust**
 - Verletzung schädigt Mechanorezeptoren (Sensoren im Gewebe)
 - Schlechtere Koordination → erneute Verletzung
 - Lösung: Balance-Training (siehe Übung 2)
 
-**3. Unbehandelte Ursache (15%)**
+**3. Unbehandelte Ursache**
 - Die Verletzung war nur das Symptom
 - Eigentliche Ursache (z.B. Hüftinstabilität) bleibt
 - Lösung: Biomechanische Analyse & Korrektur
@@ -463,9 +463,7 @@ Viele Sportler kehren zu früh zurück – oder glauben, vollständig geheilt zu
 - Verhinderung von Kompensation (spart 2-4 Wochen Sekundärprobleme)
 - Optimale Gewebeorganisation (reduziert Rückfallrisiko)
 
-**Beispiel Wadenzerrung:**
-- Ohne Behandlung: 6 Wochen bis schmerzfrei + 2 Wochen Aufbautraining = **8 Wochen**
-- Mit Osteopathie: 3 Wochen bis schmerzfrei + 1 Woche Aufbautraining = **4 Wochen**
+**Beispiel Wadenzerrung:** Ohne Behandlung wird oft von rund 6 Wochen bis zur Schmerzfreiheit plus Aufbautraining berichtet. Eine begleitende osteopathische Behandlung kann diesen Verlauf aus Praxiserfahrung unterstützen – eine feste, garantierte Zeitersparnis lässt sich daraus aber nicht ableiten.
 
 ### 6. Was ist mit "schweren" Verletzungen (Kreuzband, Achillessehnenriss)?
 
@@ -483,7 +481,7 @@ Viele Sportler kehren zu früh zurück – oder glauben, vollständig geheilt zu
 - Gelenksmobilisation (nach ärztlicher Freigabe)
 - Behandlung Kompensationsmuster
 
-**Kombination mit Reha-Physio:** Reduziert Reha-Zeit um 20-30%
+**Kombination mit Reha-Physio:** kann die Reha aus Erfahrung unterstützen – belastbare Zahlen zur Zeitersparnis gibt es nicht
 
 ### 7. Funktioniert das auch bei "alten" Verletzungen (Monate/Jahre her)?
 
@@ -497,7 +495,7 @@ Viele Sportler leben mit "verheilten" Verletzungen, die nie optimal behandelt wu
 
 **Osteopathie kann:**
 - Alte Verklebungen lösen
-- Beweglichkeit wiederherstellen (oft 20-30% Verbesserung!)
+- Beweglichkeit wiederherstellen
 - Kompensationsmuster auflösen
 - Performance steigern
 
@@ -509,7 +507,7 @@ Viele Sportler leben mit "verheilten" Verletzungen, die nie optimal behandelt wu
 
 ✓ **Sportverletzungen heilen in 3 Phasen** – die meisten Behandlungen scheitern in Phase 2 & 3
 
-✓ **Osteopathie beschleunigt Return-to-Sport** um 40-50% durch ganzheitlichen Ansatz
+✓ **Osteopathie kann Return-to-Sport unterstützen** durch einen ganzheitlichen Ansatz – eine feste Zeitersparnis lässt sich nicht garantieren
 
 ✓ **Kritisch:** Behandlung der gesamten kinetischen Kette, nicht nur Verletzungsstelle
 

@@ -457,7 +457,7 @@ Der Vagusnerv lässt sich durch gezielte Atemtechniken, Summen, Kältereize und 
 
 ### Kann der Vagusnerv Schwindel verursachen?
 
-Ja, eine Reizung oder Funktionsstörung des Vagusnervs kann Schwindelgefühle auslösen. Der Vagusnerv beeinflusst unter anderem Blutdruck und Herzfrequenz – bei einer vasovagalen Reaktion kann es zu einem plötzlichen Blutdruckabfall mit Schwindel bis hin zur Ohnmacht kommen. Auch Blockaden in der oberen Halswirbelsäule, die den Vagusnerv irritieren, können Schwindel begünstigen.
+Ja, eine Reizung oder Funktionsstörung des Vagusnervs kann Schwindelgefühle auslösen. Der Vagusnerv beeinflusst unter anderem Blutdruck und Herzfrequenz – bei einer vasovagalen Reaktion kann es zu einem plötzlichen Blutdruckabfall mit Schwindel bis hin zur Ohnmacht kommen. Ein möglicher Zusammenhang mit Blockaden der oberen Halswirbelsäule wird diskutiert, gilt wissenschaftlich aber als nicht ausreichend belegt und sollte ärztlich abgeklärt werden.
 
 ### Was hat der Vagusnerv mit der Brustwirbelsäule zu tun?
 
