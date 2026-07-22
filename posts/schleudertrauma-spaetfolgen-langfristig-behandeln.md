@@ -79,22 +79,22 @@ Das Kompensationssystem ist **erschöpft**. Die Muskeln können die Instabilitä
    - Bewegungseinschränkung
    - "Knackgeräusche" beim Drehen
 
-2. **Kopfschmerzen** (70%)
+2. **Kopfschmerzen** (häufig)
    - Hinterkopf → Stirn
    - Einseitig oder beidseitig
    - Täglich oder mehrmals pro Woche
 
-3. **Schwindel** (45%)
+3. **Schwindel** (kommt vor)
    - Bei Kopfbewegungen
    - Unsicherer Gang
    - "Benommenheit"
 
-4. **Kognitive Symptome** (30%)
+4. **Kognitive Symptome** (kommt vor)
    - Konzentrationsprobleme
    - "Gehirnnebel"
    - Vergesslichkeit
 
-5. **Vegetative Symptome** (25%)
+5. **Vegetative Symptome** (kommt vor)
    - Schlafstörungen
    - Reizbarkeit
    - Müdigkeit
@@ -152,7 +152,7 @@ Schultern hochgezogen (Trapezverspannung)
 Atmung eingeschränkt (Zwerchfell, Rippen)
 ```
 
-Eine rein lokale Nackenmassage behandelt **5%** des Problems.
+Eine rein lokale Nackenmassage adressiert oft nur einen kleinen Teil des Gesamtbilds.
 
 ## Das 6-Phasen-Langzeitprotokoll (ohne Schmerzmittel)
 
@@ -343,11 +343,7 @@ Nach Schleudertrauma bleibt eine **Restwunden-Heilung** für 18-24 Monate. Klein
    - Muskelrelaxantien (z.B. Tetrazepam) lösen Schutz
    - Instabilität wird schlimmer
 
-**Studie (Cassidy et al., 2008):**
-- 2.000 Whiplash-Patienten über 6 Jahre verfolgt
-- Gruppe A: Schmerzmittel + Halskrause
-- Gruppe B: Frühe Mobilisation + manuelle Therapie
-- **Ergebnis:** Gruppe B hatte 40% weniger chronische Symptome
+**Forschungslage:** Studien zur Versorgung nach Schleudertrauma legen nahe, dass frühe Mobilisation und aktive Ansätze im Vergleich zu reiner Ruhigstellung mit einer günstigeren Prognose einhergehen können (siehe Jull et al. in den Quellen unten). Eine pauschale, feste Erfolgsquote lässt sich daraus nicht ableiten – der Verlauf ist individuell unterschiedlich.
 
 ## Wann Sie einen Spezialisten aufsuchen sollten
 
@@ -395,10 +391,9 @@ Nach Schleudertrauma bleibt eine **Restwunden-Heilung** für 18-24 Monate. Klein
    - Membran-Entspannung
    - Verhindert chronische Fehlstellung
 
-2. **Keine Schmerzmittel (wenn möglich)**
-   - Bei starken Schmerzen: Paracetamol (kein NSAID)
-   - Nur für 3-5 Tage
-   - Dann absetzen
+2. **Schmerzmittel nach ärztlicher Empfehlung**
+   - Welches Präparat, welche Dosierung und wie lange, entscheidet der behandelnde Arzt
+   - Bitte nicht eigenständig auf Basis dieses Artikels dosieren oder absetzen
 
 3. **Dokumentation für Versicherung**
    - Fotos vom Fahrzeug
@@ -415,7 +410,7 @@ Nach Schleudertrauma bleibt eine **Restwunden-Heilung** für 18-24 Monate. Klein
 
 **Schlüssel-Erkenntnisse:**
 
-1. **40% entwickeln Spätfolgen** – oft erst Jahre nach dem Unfall
+1. **Ein Teil der Betroffenen entwickelt Spätfolgen** – oft erst Jahre nach dem Unfall
 2. **MRT ist normal** – funktionelle Störungen sind unsichtbar
 3. **Kompensation verschwindet nicht** – sie bricht irgendwann zusammen
 4. **Lokale Behandlung scheitert** – systemischer Ansatz notwendig
@@ -441,11 +436,10 @@ MRT sieht Struktur, nicht Funktion. Eine 2mm Atlas-Rotation oder Fazetten-Dysfun
 
 **Wie lange dauert die Behandlung?**
 
-Realistische Zeitlinie:
-- Erste Besserung: 4-6 Wochen
-- 70% besser: 3-4 Monate
-- 90% besser: 6-12 Monate
-- Vollständige Stabilisierung: 18-24 Monate
+Realistische Zeitlinie (individuell sehr unterschiedlich, keine garantierten Werte):
+- Erste mögliche Besserung: nach einigen Wochen
+- Spürbare Besserung: über mehrere Monate
+- Stabilisierung: über einen längeren Zeitraum, oft 18-24 Monate
 
 **Muss ich für immer in Behandlung bleiben?**
 

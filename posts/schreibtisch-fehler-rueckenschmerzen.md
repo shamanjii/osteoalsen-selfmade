@@ -36,7 +36,7 @@ Aber es ist nicht normal. Und es wird nicht besser.
 
 **Nach 5 Jahren:** Chronische Beschwerden. Bewegungseinschränkungen. Der Orthopäde spricht von "verschleißbedingten Veränderungen". Sie sind gerade Mitte 40.
 
-**In Hamburg arbeiten 67% der Bevölkerung im Büro.** Die Mehrheit davon leidet regelmäßig unter Rückenschmerzen. Aber nur wenige wissen, dass ihre Schreibtisch-Einrichtung ein Hauptauslöser ist.
+**Ein großer Teil der Hamburger Erwerbstätigen arbeitet im Büro.** Viele davon leiden regelmäßig unter Rückenschmerzen. Aber nur wenige wissen, dass ihre Schreibtisch-Einrichtung ein Hauptauslöser ist.
 
 **Das Problem:** Die 5 häufigsten Fehler sind unsichtbar. Ihr Stuhl sieht ergonomisch aus. Ihr Schreibtisch hat die "richtige" Höhe. Trotzdem entsteht jeden Tag struktureller Schaden.
 
@@ -347,10 +347,10 @@ Stellen Sie sich stündlich einen Timer. **Fragen Sie sich:** Sind meine Schulte
 - Durchblutung in den Beinen reduziert sich um 50%[^6]
 - Bandscheiben verlieren Flüssigkeit (Kompression ohne Entlastung)
 - Faszien beginnen zu "verkleben" (mangelnde Bewegung)
-- Stoffwechsel verlangsamt sich um 40%
+- Der Stoffwechsel verlangsamt sich
 
 **Nach 60 Minuten:**
-- Enzymatische Aktivität zur Fettverbrennung sinkt um 90%
+- Die enzymatische Aktivität zur Fettverbrennung nimmt deutlich ab
 - Muskeln ermüden (isometrische Dauerbelastung)
 - Gelenke versteifen (mangelnde Gelenkflüssigkeits-Zirkulation)
 
@@ -601,7 +601,7 @@ Gehen Sie diese Checkliste heute noch durch:
 
 **Pro:**
 - Sitz-Steh-Wechsel ist ideal für Bandscheiben & Durchblutung
-- Studien: 30 Min Stehen/2h reduziert Rückenschmerzen um 32%[^8]
+- Studien zu Sitz-Steh-Wechseln am Arbeitsplatz berichten positive Effekte auf Rückenbeschwerden[^8]
 
 **Contra:**
 - Viele nutzen ihn nach 2 Wochen nicht mehr
