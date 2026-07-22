@@ -1,7 +1,7 @@
 ---
 slug: "dehnen-rueckenschmerzen-mythos"
 title: "Warum Dehnen Ihre Rückenschmerzen schlimmer macht (und was stattdessen hilft)"
-excerpt: "Sie dehnen täglich, aber Rückenschmerzen bleiben? Bei 70% schadet Dehnen! Instabilität statt Verkürzung. Mit 3-Typen-Test & richtigen Strategien."
+excerpt: "Sie dehnen täglich, aber Rückenschmerzen bleiben? Bei manchen Rückenschmerz-Typen schadet Dehnen! Instabilität statt Verkürzung. Mit 3-Typen-Test & richtigen Strategien."
 keywords:
   - "Dehnen Rückenschmerzen"
   - "Rückenschmerzen schlimmer durch Dehnen"
@@ -16,7 +16,7 @@ author: "Admin"
 ---
 # Warum Dehnen Ihre Rückenschmerzen schlimmer macht (und was stattdessen hilft)
 
-**„Dehnen Sie sich mehr!" – Das hören Sie von jedem. Ihrem Hausarzt, Physiotherapeuten, Fitness-Trainer. Seit Monaten dehnen Sie gewissenhaft. 10 Minuten morgens, 10 Minuten abends. Aber die Rückenschmerzen? Werden nicht besser. Manchmal sogar schlimmer. Was niemand Ihnen sagt: Bei 70% der Rückenschmerz-Patienten ist Dehnen kontraproduktiv – weil die wahre Ursache nicht verkürzte, sondern überdehnte Strukturen oder Triggerpunkte sind.**
+**„Dehnen Sie sich mehr!" – Das hören Sie von jedem. Ihrem Hausarzt, Physiotherapeuten, Fitness-Trainer. Seit Monaten dehnen Sie gewissenhaft. 10 Minuten morgens, 10 Minuten abends. Aber die Rückenschmerzen? Werden nicht besser. Manchmal sogar schlimmer. Was niemand Ihnen sagt: Bei einem relevanten Teil der Rückenschmerz-Patient:innen ist Dehnen kontraproduktiv – weil die wahre Ursache nicht verkürzte, sondern überdehnte Strukturen oder Triggerpunkte sein können.**
 
 > 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf den Dehnung-Mythos bei Rückenschmerzen. Für komplette Guides siehe: [Rückenschmerzen verstehen – Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/) | [3 versteckte Ursachen für Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen/)
 
@@ -595,7 +595,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 **Antwort:** **Ja – besonders bei Typ 2 (Instabilität)!**
 
-**Studien zeigen:** Krafttraining (besonders Core/Rücken) reduziert [chronische Rückenschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) um 30-60%[^8].
+**Studien zeigen:** Krafttraining (besonders Core/Rücken) kann [chronische Rückenschmerzen](/behandlungen/rueckenschmerzen/) bei einem erheblichen Teil der Patient:innen spürbar reduzieren[^8].
 
 **Wichtig:**
 - **Technik vor Gewicht** (falsche Ausführung schadet!)
@@ -609,7 +609,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 
 ## Zusammenfassung: Die Wahrheit über Dehnung
 
-✓ **Dehnung hilft** bei echten Verkürzungen (30% der Rückenschmerzen)
+✓ **Dehnung hilft** bei echten Verkürzungen (ein Teil der Rückenschmerz-Fälle)
 
 ✗ **Dehnung schadet** bei Instabilität – macht Schmerzen schlimmer
 

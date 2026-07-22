@@ -28,14 +28,14 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 ## Gruppe B — Darm-Rücken-Cluster, noch nie geprüft (Priorität hoch — `reizdarm...` hat bereits im Meta-Text eine ungeprüfte 50-80%-Zahl)
 
 - [x] 🔧 `reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang.md` — unbelegte 50-80%-Zahl (Titel+Meta+Intro) entschärft, Vergleichsaussage vs. Schmerzmittel entschärft, unbelegte persönliche Erfolgsaussage abgeschwächt. Notiz: Bild ist von fremder Domain hotlinked (Bildrechte klären, nicht HWG-Scope).
-- [ ] ⬜ `blaehungen-rueckenschmerzen.md`
-- [ ] ⬜ `durchfall-rueckenschmerzen.md`
-- [ ] ⬜ `verstopfung-rueckenschmerzen.md`
+- [x] ✅ `blaehungen-rueckenschmerzen.md` — grün, keine Änderung nötig (gut gehedged, klare Alarmsymptom-Hinweise, keine erfundenen Zahlen)
+- [x] ✅ `durchfall-rueckenschmerzen.md` — grün, keine Änderung nötig (gleiches Niveau, gute Red-Flag-Hinweise)
+- [x] ✅ `verstopfung-rueckenschmerzen.md` — grün, keine Änderung nötig (gut gehedged, Red-Flags vorhanden, Quellen passend)
 
 ## Gruppe C — Restliche Blog-Artikel, noch nie einzeln geprüft
 
-- [ ] ⬜ `dehnen-rueckenschmerzen-mythos.md`
-- [ ] ⬜ `hws-blockierung-nacken-verspannung.md`
+- [x] 🔴 `dehnen-rueckenschmerzen-mythos.md` — unbelegte 70%/30%-Zahlen entschärft, falscher interner Link gefixt. **Braucht noch Tiefenüberarbeitung wie der Schwindel-Artikel:** unvalidierter Selbsttest (3-Typen-Modell) weist Leser an, Behandlung zu wechseln ("Kein Dehnen mehr!") ohne validiertes Diagnoseinstrument.
+- [x] 🔧 `hws-blockierung-nacken-verspannung.md` — unbelegte 85%-Zahl (Meta) entfernt, 4x wiederkehrende unbelegte Atlas→Arterie→Schwindel-Kausalkette entschärft (gleiches Problem wie im Schwindel-Artikel bereits identifiziert)
 - [ ] ⬜ `isg-blockierung-teufelskreis.md`
 - [ ] ⬜ `kniearthrose-ohne-op-behandeln.md`
 - [ ] ⬜ `kopfschmerzen-trigeminus-ursache.md`

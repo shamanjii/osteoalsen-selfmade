@@ -3,7 +3,7 @@ localBox: true
 slug: "hws-blockierung-nacken-verspannung"
 title: "HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt (und was wirklich hilft)"
 excerpt: "Ihr Nacken ist trotz Massage nach zwei Tagen wieder steif? Eine häufig übersehene Ursache liegt nicht im Muskel selbst, sondern in einer HWS-Blockierung. Wie Sie diese Blockierung adressieren können."
-metaDescription: "Chronische Nackenverspannungen kehren immer wieder? Erfahren Sie, warum 85 Prozent aller Fälle eine unbehandelte HWS-Blockierung als Ursache haben und wie Sie diese dauerhaft lösen können statt nur den Muskel zu lockern."
+metaDescription: "Chronische Nackenverspannungen kehren immer wieder? Erfahren Sie, warum häufig eine unbehandelte HWS-Blockierung eine Rolle spielt und wie Sie diese adressieren können statt nur den Muskel zu lockern."
 keywords:
   - "HWS Blockierung Hamburg"
   - "Nackenverspannung Ursache"
@@ -59,7 +59,7 @@ author: "Admin"
 - Ein oder mehrere Wirbel sind in ihrer Bewegung eingeschränkt
 - Umliegende Muskeln verspannen sich reflektorisch (Schutzspannung)
 - Nervenirritation möglich (Schmerz, Kribbeln, [Kopfschmerzen](/blog/kopfschmerzen-trigeminus-ursache/)/)
-- Durchblutungsstörung bei Atlas-Blockierung (Schwindel, Übelkeit)
+- Ein Zusammenhang zwischen Atlas-Blockierung und Schwindelgefühl wird diskutiert, gilt aber wissenschaftlich als nicht ausreichend belegt und muss ärztlich abgeklärt werden
 
 ### Symptome einer HWS-Blockierung
 
@@ -73,7 +73,7 @@ s der HWS!)
 
 **Begleitsymptome:**
 - **Kopfschmerzen** (Spannungskopfschmerz, meist vom Nacken aufsteigend)
-- **Schwindel** (besonders bei Atlas-Blockierung – Durchblutungsstörung!)
+- **Schwindel** (ein möglicher Zusammenhang mit Atlas-Blockierung wird diskutiert, ist aber nicht gesichert – bitte ärztlich abklären lassen)
 - **Übelkeit** (bei starker Blockierung)
 - **Kribbeln/Taubheit** in Armen/Händen (Nervenirritation)
 - **Sehstörungen** (Augenflimmern, verschwommenes Sehen)
@@ -133,13 +133,13 @@ s der HWS!)
 
 **Spezifische Symptome:**
 - Einseitige Nackenverspannung
-- Schwindel beim Kopfdrehen (Arteria vertebralis!)
+- Schwindel beim Kopfdrehen kommt manchmal begleitend vor – die Ursache dafür ist wissenschaftlich nicht abschließend geklärt und sollte ärztlich abgeklärt werden
 - Gefühl, als wäre Kopf "schief"
 - Häufig kombiniert mit Kieferproblemen (CMD)
 
 ### 2. Büro-Nacken (Schreibtisch-Syndrom)
 
-**Die Statistik:**
+**Der Alltag:**
 - **Die Mehrheit der Büroangestellten** berichtet im Lauf der Zeit über Nackenbeschwerden
 - Durchschnitt: **7 Stunden täglich** Bildschirmarbeit
 - Kopf nach vorne geneigt: **+15 kg Belastung** auf HWS
@@ -265,8 +265,7 @@ Besonders interessant: Viele Patienten mit chronischen Nackenverspannungen beric
 
 **Ziel:**
 - Wiederherstellung der Atlas-Beweglichkeit
-- Entlastung der Arteria vertebralis (gegen Schwindel)
-- Normalisierung der Propriozeption
+- Verbesserung der Propriozeption und Bewegungsfunktion im Kopf-Nacken-Übergang
 
 ### 2. Fazien-Behandlung Nacken/Schulter
 
@@ -425,7 +424,7 @@ In meiner Praxis in Hamburg behandle ich regelmäßig [Nackenschmerzen](/behandl
 - Erste Behandlung (Atlas-Mobilisation, Faszien-Release)
 - Hausaufgaben (Übungen, Ergonomie-Tipps)
 
-**Das Ziel:** Nicht nur Schmerzen lindern, sondern die **Ursache** beheben – damit die Verspannung nicht nach 2 Tagen zurückkommt.
+**Das Ziel:** Nicht nur Schmerzen lindern, sondern die möglichen **Ursachen** mitbehandeln – damit die Verspannung nicht sofort wieder zurückkommt.
 
 ---
 
