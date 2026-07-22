@@ -22,8 +22,6 @@ image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fi
 alt: "Osteopathische Behandlung bei Rückenschmerzen - anatomische Zusammenhänge verstehen"
 date: "2025-09-25T14:00:00Z"
 status: published
-specialty: "Orthopädie und Schmerztherapie"
-sourceCount: 31
 ---
 
 # Rückenschmerzen verstehen – und osteopathisch behandeln (Hamburg)
@@ -259,7 +257,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 
 ### 5. Stress-Management (unterschätzt!)
 
-**Wissenschaftlich belegt:** Chronischer Stress → dauerhaft aktives Stresssystem (Sympathikus) → "Stressmuskel" (Psoas) verspannt → Lendenwirbelsäule (LWS) wird zusammengedrückt
+**Bekannter Zusammenhang:** Chronischer Stress → dauerhaft aktives Stresssystem (Sympathikus) → "Stressmuskel" (Psoas) verspannt sich häufig → das kann sich auf die Lendenwirbelsäule (LWS) auswirken. Die einzelnen Kettenglieder sind physiologisch plausibel, die genaue Kausalkette ist aber nicht für jeden Einzelfall wissenschaftlich belegt.
 
 **Praktische Maßnahmen:**
 - Entspannungsnerv aktivieren (Vagusnerv-Stimulation): Gesicht mit kaltem Wasser spülen (klingt simpel, funktioniert!)

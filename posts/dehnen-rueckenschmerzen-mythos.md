@@ -94,7 +94,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-### Typ 2: Instabilitäts-Schmerz – DEHNEN VERSCHLIMMERT!
+### Typ 2: Instabilitäts-Schmerz – Dehnen kann hier kontraproduktiv sein
 
 **Ursache:** Überdehnte, geschwächte Strukturen (Hypermobilität)
 - Bänder überdehnt (durch Jahre schlechter Haltung/Überbeweglichkeit/Hyperlaxität)
@@ -108,7 +108,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 - Besserung durch Anspannung/Stabilisation (Core-Aktivierung)
 - **Verschlechterung nach Dehnung!**
 
-**Hier schadet Dehnen!** – Macht Instabilität schlimmer.
+**Bei diesem Muster kann Dehnen die Instabilität eher verstärken als lindern** – eine fachliche Abklärung hilft, das sicher einzuordnen.
 
 **Beispiel:** Überbewegliche Wirbelsäule (Hypermobilität) → Bänder/Muskeln halten nicht mehr → permanente Mikrotrauma → Entzündung (chronische Inflammation) → Schmerz
 → Lösung: Stabilisation, Kräftigung (Core-Training) ✓ / Dehnen ✗
@@ -117,7 +117,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-### Typ 3: Triggerpunkt-Schmerz – DEHNEN BRINGT NICHTS
+### Typ 3: Triggerpunkt-Schmerz – Dehnen allein reicht oft nicht
 
 **Ursache:** Verhärtete Stellen im Muskel (Triggerpunkte)
 - Nicht verkürzt, sondern lokal kontrahiert
@@ -137,7 +137,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 ---
 
-## Warum Dehnen bei Typ 2 & 3 schadet
+## Warum Dehnen bei Typ 2 & 3 oft nicht das Richtige ist
 
 ### Bei Instabilität (Typ 2):
 
@@ -169,6 +169,8 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 ---
 
 ## Selbsttest: Welcher Typ sind Sie?
+
+**Wichtiger Hinweis:** Die folgenden vier Tests sind keine validierten diagnostischen Instrumente, sondern eine erste Orientierung. Rückenschmerzen können mehrere Ursachen gleichzeitig haben, und eine Selbsteinschätzung kann daneben liegen. Bevor Sie größere Änderungen an Ihrer Routine vornehmen – insbesondere das Dehnen komplett zu stoppen oder stattdessen intensiv weiterzudehnen – lassen Sie das Ergebnis idealerweise von einem Osteopathen, einer Physiotherapeutin oder einem Arzt bestätigen. Bei anhaltenden oder sich verschlimmernden Schmerzen gilt das erst recht.
 
 ### Test 1: Der Dehn-Reaktions-Test
 
@@ -252,7 +254,7 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 **Das Gegenteil von dem, was alle sagen:**
 
 #### Die Regeln:
-1. **Kein Dehnen mehr!** (verschlimmert Instabilität)
+1. **Dehnen deutlich reduzieren oder pausieren** (kann bei diesem Muster die Instabilität verstärken) – idealerweise nach Rücksprache mit einem Therapeuten
 2. **Fokus auf Rumpfstabilität** (Core-Training)
 3. **Kontrollierte Bewegungen** (keine extremen Bewegungsausschläge)
 4. **Aktivierung tiefer Stabilisatoren** (nicht nur oberflächliche Muskeln)
@@ -510,9 +512,9 @@ Ihr Physiotherapeut sagt: „Bleiben Sie dran, das braucht Zeit."
 
 Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich besser für 30-120 Min.
 
-**Aber:** Wenn nach Wochen/Monaten keine nachhaltige Besserung → falscher Ansatz.
+**Aber:** Wenn nach Wochen/Monaten keine nachhaltige Besserung eintritt, lohnt sich eine Neubewertung des Ansatzes.
 
-**Test:** Stoppen Sie Dehnung für 2 Wochen, fokussieren Sie auf Stabilisation. Wenn es besser wird → Sie hatten Typ 2 (Instabilität).
+**Orientierungs-Experiment (kein Beweis, eher ein Hinweis):** Reduzieren Sie Dehnung für 2 Wochen probeweise und fokussieren Sie stattdessen auf Stabilisation – idealerweise begleitet von einer fachlichen Einschätzung. Bessert sich dabei etwas, spricht das für Typ 2 (Instabilität). Verschlechtert sich etwas deutlich, brechen Sie ab und lassen Sie sich untersuchen.
 
 ### 2. Aber mein Arzt/Physio sagt, ich MUSS dehnen?
 
@@ -543,7 +545,7 @@ Dehnen setzt Endorphine frei (körpereigene Schmerzmittel) → Sie fühlen sich 
 - Knie überstrecken >10°? (1 Punkt pro Bein)
 - Hände flach auf Boden bei gestreckten Beinen? (1 Punkt)
 
-**≥5 Punkte:** Wahrscheinlich hypermobil → Dehnung oft kontraproduktiv!
+**≥5 Punkte:** Hinweis auf Hypermobilität – Dehnung sollte dann zurückhaltender eingesetzt werden, am besten nach Rücksprache mit einem Therapeuten.
 
 ### 4. Wie lange dauert es, bis Stabilisations-Training wirkt?
 

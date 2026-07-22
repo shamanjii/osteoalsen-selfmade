@@ -7,8 +7,6 @@ import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
 import { BlogPostStructuredData, MedicalScholarlyArticle, FAQPageStructuredData } from "@/components/StructuredData";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import ScientificCredibilityBox from "@/components/ScientificCredibilityBox";
-import LiteratureSection from "@/components/LiteratureSection";
 import RelatedArticles from "@/components/RelatedArticles";
 import SocialShare from "@/components/SocialShare";
 import ArticleWithSidebar from "./ArticleWithSidebar";
@@ -205,22 +203,6 @@ export default async function BlogPost({ params }: PageProps) {
                     <BlogCTA variant="inline" symptom={symptom} />
 
                     <ArticleWithSidebar content={post.content} articleOnly>
-                        {/* Scientific Credibility Box for medical topics */}
-                        {post.keywords?.some(keyword =>
-                            keyword.toLowerCase().includes('osteopathie') ||
-                            keyword.toLowerCase().includes('medizin')
-                        ) && (
-                            <ScientificCredibilityBox />
-                        )}
-
-                        {/* Literature Section for evidence-based articles */}
-                        {post.keywords?.some(keyword =>
-                            keyword.toLowerCase().includes('evidenz') ||
-                            keyword.toLowerCase().includes('studie')
-                        ) && (
-                            <LiteratureSection />
-                        )}
-
                         {/* Hamburg Praxis Box for local SEO posts */}
                         {post.localBox && <HamburgPraxisBox />}
 

@@ -117,7 +117,9 @@ Dieser Test wird von Ärzt:innen durchgeführt, nicht von mir als Osteopath. In 
 
 ## Das 3-Phasen-Differenzierungs-Protokoll
 
-### Phase 1: Selbstdiagnose (Woche 1)
+**Wichtiger Hinweis:** Die folgenden Selbsttests sind keine validierten diagnostischen Instrumente und ersetzen keine fachliche Untersuchung. Sie können eine erste Orientierung geben, aber Muskel- und HWS-bedingte Anteile treten häufig gemeinsam auf und lassen sich zu Hause nicht sicher trennen. Bei Kopfschmerzen, die länger als ein paar Wochen bestehen oder sich verändern, empfiehlt sich eine fachliche Abklärung statt einer reinen Selbsteinschätzung.
+
+### Phase 1: Erste Orientierung (Woche 1)
 
 **Selbsttest 1: Muskel-Palpations-Test**
 
@@ -164,9 +166,9 @@ Dieser Test wird von Ärzt:innen durchgeführt, nicht von mir als Osteopath. In 
 - Professionelle Massage (60 Min, Fokus Nacken)
 - Beobachtung: Wie lange hält die Besserung?
 
-**Interpretation:**
-- **Muskulär:** Besserung hält 5-7 Tage → weiter massieren
-- **Zervikogen:** Besserung hält <24h → Massage ist nicht die Lösung
+**Interpretation (Anhaltspunkt, kein Beweis):**
+- **Eher muskulär:** Besserung hält mehrere Tage
+- **Eher zervikogen:** Besserung hält <24h → mit einer fachlichen Untersuchung klären, ob eine Gelenk-Mobilisation zusätzlich sinnvoll ist
 
 **Test 2: Osteopathische Mobilisation**
 
