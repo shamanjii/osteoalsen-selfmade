@@ -228,26 +228,16 @@ CGRP-Freisetzung → Migräneattacke
 4. 10 Atemzüge
 ```
 
-### Phase 3: Medikamenten-Reduktion (Woche 6-12)
+### Phase 3: Medikamenten-Frage mit dem Arzt klären
 
-**Problem:** Triptane >10 Tage/Monat = Medikamenten-Übergebrauchskopfschmerz
+**Problem:** Triptane an mehr als 10 Tagen im Monat können einen Medikamenten-Übergebrauchskopfschmerz begünstigen.
 
-**Strategie:**
+**Wichtig:** Eine Reduktion oder Umstellung der Akutmedikation ist eine ärztliche Entscheidung und darf nicht eigenständig anhand eines Wochenplans vorgenommen werden – insbesondere ein Entzugskopfschmerz bei Medikamentenreduktion sollte ärztlich begleitet werden. Osteopathie kann diesen Prozess unterstützend begleiten, ersetzt aber nicht die ärztliche Steuerung der Medikation.
 
-**Woche 1-4:** Baseline beibehalten (noch keine Reduktion)
-**Woche 5-8:** Triptane nur bei **starken** Attacken (>7/10 Schmerz)
-**Woche 9-12:** Ziel: <8 Triptane-Tage/Monat
-
-**Entzugskopfschmerz:**
-- Erwartet bei Reduktion
-- Dauert 2-14 Tage
-- Wir BEGLEITEN osteopathisch durch diese Phase
-- NICHT abbrechen! (sonst war alles umsonst)
-
-**Alternative Akutmedikation:**
-- Aspirin 1000mg + Metoclopramid 10mg (statt Triptan)
-- Koffein (starker Kaffee)
-- Pfefferminzöl auf Schläfen
+**Was Sie tun können:**
+- Führen Sie Ihre Triptan-Einnahmetage in einem Tagebuch mit und besprechen Sie die Zahlen mit Ihrer Ärztin/Ihrem Arzt
+- Fragen Sie aktiv nach Prophylaxe-Optionen, wenn Sie regelmäßig mehr als 10 Tage/Monat Akutmedikation brauchen
+- Nicht-medikamentöse Unterstützung (z. B. Koffein in Maßen, kühlende Anwendungen) können ergänzend besprochen werden – auch das idealerweise mit dem behandelnden Arzt abgestimmt
 
 ### Phase 4: Langzeit-Prophylaxe (ab Monat 4)
 
@@ -283,15 +273,15 @@ CGRP-Freisetzung → Migräneattacke
 
 **Positiv wenn:** Ja, regelmäßig
 
-**Was es bedeutet:** 80% Wahrscheinlichkeit für HWS-Beteiligung (Studie: Calhoun et al., 2010)
+**Was es bedeutet:** ein möglicher Hinweis auf eine HWS-Beteiligung – kein validierter Test, sondern ein Anhaltspunkt für das Gespräch mit dem Osteopathen. Nackenschmerzen kommen bei Migräne-Patient:innen häufiger vor als in der Allgemeinbevölkerung (Calhoun et al., 2010, siehe Quellen unten), das allein beweist aber keinen ursächlichen Zusammenhang im Einzelfall.
 
 ### Test 2: Einseitigkeits-Test
 
 **Frage:** Ist Ihre Migräne **immer** auf der gleichen Seite?
 
-**Positiv wenn:** >80% der Attacken gleiche Seite
+**Positiv wenn:** die meisten Attacken auf der gleichen Seite auftreten
 
-**Was es bedeutet:** Hinweis auf strukturelle Ursache (Atlas-Rotation zur schmerzhaften Seite)
+**Was es bedeutet:** möglicher, aber nicht beweisender Hinweis auf eine strukturelle Mitbeteiligung – bedarf einer osteopathischen bzw. ärztlichen Abklärung
 
 ### Test 3: Druckpunkt-Test
 
