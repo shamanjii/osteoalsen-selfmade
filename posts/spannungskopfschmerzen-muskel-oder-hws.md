@@ -107,13 +107,13 @@ Reaktive Muskelverspannung (sekundär!)
 
 **Klinisch:** Patient spürt "Verspannung" – aber das ist die **Folge**, nicht die Ursache.
 
-### Der Greater Occipital Nerve Block (GON-Block)
+### Der Greater Occipital Nerve Block (GON-Block) – eine ärztliche Diagnosemethode
 
-**Diagnostischer Test:**
+**Diagnostischer Test (ärztlich, keine osteopathische Leistung):**
 - Injektion Lokalanästhetikum am N. occipitalis major
 - Wenn Kopfschmerz **sofort** abnimmt → C2-Beteiligung wahrscheinlich
 
-**In meiner Praxis:** Ich nutze das als **Differenzialdiagnose**-Tool. Wenn GON-Block hilft, weiß ich: C2 mobilisieren, nicht Muskel massieren.
+Dieser Test wird von Ärzt:innen durchgeführt, nicht von mir als Osteopath. In meiner osteopathischen Untersuchung nutze ich stattdessen Palpation und Bewegungstests (siehe Selbsttests unten), um Hinweise auf eine C2-Beteiligung zu finden – bei Bedarf überweise ich zur ärztlichen Abklärung.
 
 ## Das 3-Phasen-Differenzierungs-Protokoll
 
@@ -332,7 +332,7 @@ Reaktive Muskelverspannung (sekundär!)
 
 **Schlüssel-Erkenntnisse:**
 
-1. **60% der "Spannungskopfschmerzen" sind zervikogen** – C2-Blockierung, nicht Muskel
+1. **Ein Teil der "Spannungskopfschmerzen" ist zervikogen** – also durch eine C2-Blockierung mitbedingt, nicht rein muskulär
 2. **Massage lindert Symptom, nicht Ursache** – bei zervikogenem Ursprung
 3. **C2-Druckpunkt-Test** – einfacher Selbsttest für HWS-Beteiligung
 4. **Ergonomie essentiell** – Monitor auf Augenhöhe, Pausen alle 45 Min
