@@ -24,7 +24,7 @@ status: "published"
 
 **Sie wachen nachts auf – weil Sie auf der Schulter gelegen haben. Der Schmerz ist stechend. Den Arm heben? Geht nur bis Schulterhöhe, dann blockiert. Jacke anziehen wird zur Qual. Haare föhnen? Unmöglich. Ihr Orthopäde zeigt Ihnen das MRT: „Impingement-Syndrom, Sehnenriss wahrscheinlich. Wir sollten über eine Arthroskopie nachdenken." Aber was, wenn die wahre Ursache Ihrer Schulterschmerzen nicht im Gelenk liegt – sondern in einem blockierten Brustwirbel, verklebten Rippen oder verspanntem Nacken?**
 
-**Schulterschmerzen betreffen 20-30% der Erwachsenen mindestens einmal im Leben.[^1] Die meisten greifen zu Schmerzmitteln oder lassen sich operieren. Doch Studien zeigen: Bei 70% aller Schulterprobleme ist eine OP nicht wirksamer als konservative Behandlung.[^2] Osteopathie setzt genau hier an – ganzheitlich, ursachenorientiert, ohne Skalpell.**
+**Schulterschmerzen betreffen 20-30% der Erwachsenen mindestens einmal im Leben.[^1] Die meisten greifen zu Schmerzmitteln oder lassen sich operieren. Doch eine große placebokontrollierte Studie stellt infrage, ob die verbreitete Dekompressions-OP der konservativen Behandlung tatsächlich überlegen ist.[^2] Osteopathie setzt genau hier an – ganzheitlich, ursachenorientiert, ohne Skalpell.**
 
 **In diesem Artikel erfahren Sie, wie osteopathische Behandlung bei Frozen Shoulder, Impingement und Kalkschulter wirkt – und warum die Lösung oft außerhalb der Schulter liegt.**
 
@@ -122,7 +122,7 @@ Das Impingement ist fast NIE ein anatomisches Problem (zu enger Raum), sondern e
 4. **Faszien-Release:** Pectoralis minor (zieht Schulterblatt nach vorne-unten)
 
 **Studien-Ergebnis:**
-Manuelle Therapie (Osteopathie/Physiotherapie) ist **genauso wirksam** wie subakromiale Dekompression-OP – ohne OP-Risiken![^2]
+Die CSAW-Studie fand nach zwei Jahren keinen klinisch relevanten Unterschied zwischen subakromialer Dekompressions-OP und einer Schein-Operation.[^2] Das spricht dafür, konservative Optionen wie Osteopathie oder Physiotherapie vor einer OP auszuschöpfen – eine Gleichwertigkeit mit manueller Therapie wurde in dieser Studie nicht untersucht.
 
 ---
 

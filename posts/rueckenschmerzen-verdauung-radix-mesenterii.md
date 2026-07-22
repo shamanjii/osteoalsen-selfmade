@@ -245,15 +245,15 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 
 ### Können Verdauungsprobleme wirklich Rückenschmerzen verursachen?
 
-**Ja – und das ist wissenschaftlich belegt.**
+**Ja – ein Zusammenhang ist in Studien beschrieben.**
 
-Studien zeigen: **40-50% der Patienten mit Reizdarm (IBS - Irritable Bowel Syndrome)** leiden auch an chronischen Rückenschmerzen [(16)](#quellen). Die Mechanismen:
+Studien zeigen: **40-50% der Patienten mit Reizdarm (IBS - Irritable Bowel Syndrome)** leiden auch an chronischen Rückenschmerzen [(2)](#quellen). Die Mechanismen:
 
 1. **Anatomisch:** Radix Mesenterii (Mesenterialwurzel) zieht bei Darmentzündung an der Lendenwirbelsäule (LWS)
 2. **Neurologisch:** Viszerosomatische Reflexe (Organ-Muskel-Reflexe: Darm → Rückenmark/Medulla spinalis → Rückenmuskulatur)
 3. **Faszial:** Faszienspannung (myofasziale Ketten) überträgt sich vom Darm auf umgebende Strukturen
 
-**Klinischer Hinweis:** Wenn Ihre Rückenschmerzen **zeitlich mit Verdauungsbeschwerden korrelieren** (z.B. schlimmer nach Essen, besser nach Stuhlgang/Defäkation) → **hohe Wahrscheinlichkeit** für viszerale Ursache.
+**Klinischer Hinweis:** Wenn Ihre Rückenschmerzen **zeitlich mit Verdauungsbeschwerden korrelieren** (z.B. schlimmer nach Essen, besser nach Stuhlgang/Defäkation) → kann das ein Hinweis auf eine viszerale Mitbeteiligung sein, der ärztlich bzw. osteopathisch weiter abgeklärt werden sollte.
 
 ---
 

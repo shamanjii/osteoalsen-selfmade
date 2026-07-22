@@ -903,7 +903,7 @@ Im nächsten Abschnitt zeige ich Ihnen konkrete Selbsthilfe-Übungen, die Sie so
 
 ## Selbsthilfe-Übungen: Das Zwerchfell zu Hause mobilisieren
 
-**Diese Übungen sind einfach, sicher und hochwirksam.** Sie benötigen keine Ausrüstung und können sie überall durchführen.
+**Diese Übungen sind einfach und sicher durchzuführen und können die Zwerchfellfunktion unterstützen.** Sie benötigen keine Ausrüstung und können sie überall durchführen.
 
 ---
 

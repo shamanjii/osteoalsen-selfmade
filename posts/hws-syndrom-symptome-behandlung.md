@@ -183,7 +183,7 @@ Beschwerden der HWS strahlen in den Kopf aus. Diese Form wird häufig mit "norma
 
 **Häufigste Ursachen:** Atlas-Blockierung (C1), Irritation der Arteria vertebralis, Verspannung der suboccipitalen Muskulatur, [Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/)
 
-**Wichtig:** 70% aller Schwindelattacken haben ihre Ursache in der HWS, nicht im Ohr![^2]
+**Wichtig:** Schwindel kann gemeinsam mit HWS-Beschwerden auftreten. Ein ursächlicher Zusammenhang zwischen Halswirbelsäule und Schwindel („zervikogener Schwindel") gilt in der aktuellen Fachliteratur als nicht ausreichend belegt und wird kontrovers diskutiert – eine ärztliche Abklärung ist in jedem Fall nötig, um andere Ursachen auszuschließen.
 
 **Prognose:** In der Regel gut behandelbar. Der individuelle Verlauf ist unterschiedlich.
 
@@ -620,8 +620,6 @@ Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-ze
 ---
 
 [^1]: Fejer R, Kyvik KO, Hartvigsen J. *The prevalence of neck pain in the world population: a systematic critical review of the literature.* Eur Spine J. 2006;15(6):834-848.
-
-[^2]: Wrisley DM, et al. *Cervicogenic dizziness: a review of diagnosis and treatment.* J Orthop Sports Phys Ther. 2000;30(12):755-766.
 
 [^3]: Bogduk N. *Clinical Anatomy of the Lumbar Spine and Sacrum.* 5th ed. Elsevier; 2012.
 

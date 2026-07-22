@@ -87,7 +87,7 @@ Faszien – das kollagene Bindegewebe, das Muskeln, Knochen und Organe umhüllt 
 - **Sprunggelenk**: Nach Distorsionen (Umknicken) oft persistierende Faszien-Verklebungen
 
 **Wissenschaftliche Evidenz:**
-Faszienforschung der letzten 10 Jahre zeigt: **Faszienverklebungen reduzieren die Gelenkbeweglichkeit um bis zu 40%** und erhöhen den intraartikulären Druck[^5]. Manuelle Faszientherapie kann die Beweglichkeit innerhalb von 4-6 Wochen signifikant verbessern[^6].
+Faszienforschung der letzten Jahre zeigt: Verklebungen im Fasziengewebe können die Gelenkbeweglichkeit einschränken und den intraartikulären Druck erhöhen[^5]. Systematische Übersichtsarbeiten deuten darauf hin, dass manuelle Faszientherapie bei chronischen Beschwerden zur Beweglichkeit beitragen kann[^6].
 
 **Osteopathische Behandlung:**
 - **Faszien-Release-Techniken**: Sanfter, anhaltender Druck zur Lösung von Verklebungen

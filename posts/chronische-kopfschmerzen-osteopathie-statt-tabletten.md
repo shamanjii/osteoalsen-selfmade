@@ -300,7 +300,7 @@ Der Schädel besteht aus 22 Knochen, verbunden durch **Schädelnähte (Suturen)*
 **Technik: Dry Needling (bei spezialisierten Osteopathen)**
 - Akupunkturnadel direkt in Triggerpunkt
 - „Twitch Response" → Muskel entspannt
-- Sehr effektiv bei hartnäckigen Triggerpunkten
+- Kann bei hartnäckigen Triggerpunkten hilfreich sein
 
 **Studien:** Manuelle Triggerpunkt-Therapie wird in systematischen Reviews als wirksamer Baustein bei muskulär bedingten Kopfschmerzen diskutiert.[^8]
 

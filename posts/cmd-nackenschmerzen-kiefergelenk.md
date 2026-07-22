@@ -171,7 +171,7 @@ Lig. nuchae (Nackenband, C7 → Occiput)
    - Therapeut arbeitet MIT Handschuh IM Mund
    - Tiefer Kaumuskel wird gelöst
    - 2-3 Minuten pro Seite
-   - Intensiv, aber hochwirksam
+   - Intensiv, kann aber spürbar entlasten
 
 2. **M. masseter Release**
    - Außen am Kiefer
@@ -516,7 +516,7 @@ Typische Phasen eines Behandlungsverlaufs:
 
 **Hilft eine Operation?**
 
-Nur in <5% der Fälle notwendig (z.B. bei Gelenkzerstörung, Ankyhose). **Immer zuerst konservativ behandeln!** Kiefergelenk-OP hat hohe Komplikationsrate.
+Eine Operation ist nur bei einem kleinen Teil der CMD-Fälle notwendig, etwa bei struktureller Gelenkzerstörung oder Ankylose. In den meisten Fällen wird zunächst eine konservative Behandlung versucht; die endgültige Entscheidung trifft der behandelnde Facharzt bzw. Kieferchirurg.
 
 **Kann ich die Übungen auch ohne Therapeuten machen?**
 
