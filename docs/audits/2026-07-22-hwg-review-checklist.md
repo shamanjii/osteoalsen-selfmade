@@ -36,8 +36,8 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 
 - [x] 🔴 `dehnen-rueckenschmerzen-mythos.md` — unbelegte 70%/30%-Zahlen entschärft, falscher interner Link gefixt. **Braucht noch Tiefenüberarbeitung wie der Schwindel-Artikel:** unvalidierter Selbsttest (3-Typen-Modell) weist Leser an, Behandlung zu wechseln ("Kein Dehnen mehr!") ohne validiertes Diagnoseinstrument.
 - [x] 🔧 `hws-blockierung-nacken-verspannung.md` — unbelegte 85%-Zahl (Meta) entfernt, 4x wiederkehrende unbelegte Atlas→Arterie→Schwindel-Kausalkette entschärft (gleiches Problem wie im Schwindel-Artikel bereits identifiziert)
-- [ ] ⬜ `isg-blockierung-teufelskreis.md`
-- [ ] ⬜ `kniearthrose-ohne-op-behandeln.md`
+- [x] 🔧 `isg-blockierung-teufelskreis.md` — unbelegte 80%/40%-Zahlen entschärft, sonst gute Quellenlage (alle 6 Fußnoten passend)
+- [x] 🔧 `kniearthrose-ohne-op-behandeln.md` — unbelegte wochenweise "-30%/-50%"-Erfolgsziele entschärft, unbelegte 80%-Hamstring-Zahl entfernt; ansonsten sehr sauber zitiert (Sihvonen/Kirkley/Thorlund korrekt wiedergegeben)
 - [ ] ⬜ `kopfschmerzen-trigeminus-ursache.md`
 - [ ] ⬜ `kreuzbeinschmerzen-beckenstellung-rumpfstabilitaet.md`
 - [ ] ⬜ `migraene-ohne-aura-osteopathie.md`

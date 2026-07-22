@@ -147,7 +147,7 @@ Kniearthrose ist die häufigste Form von [Arthrose und Gelenkbeschwerden](/behan
 
 **C) Muskeltest:**
 - **Quadrizeps** (M. quadriceps femoris/vierköpfiger Oberschenkelstrecker): Kraft + Balance zwischen Vastus medialis/lateralis
-- **Hamstrings** (ischiocrurale Muskulatur/hintere Oberschenkelmuskulatur): Verkürzung (≥80% bei Arthrose-Patienten!)
+- **Hamstrings** (ischiocrurale Muskulatur/hintere Oberschenkelmuskulatur): Verkürzung bei Arthrose-Patient:innen sehr häufig
 - **Gluteus medius** (M. gluteus medius/mittlerer Gesäßmuskel): Schwäche → Knie kippt nach innen
 
 **D) Faszien-Palpation:**
@@ -363,12 +363,12 @@ Der osteopathische Ansatz arbeitet daher **nicht am Knorpel selbst** — der lä
 
 **Phase 1 (Woche 1-4): Schmerzreduktion**
 - 1x/Woche Osteopathie
-- **Ziel:** Schmerz -30%, Beweglichkeit +20%
+- **Ziel:** spürbare Schmerzlinderung und bessere Beweglichkeit anstreben
 - **Fokus:** Hüfte, Becken, Faszien
 
 **Phase 2 (Woche 5-8): Stabilisierung**
 - 1x/2 Wochen Osteopathie
-- **Ziel:** Schmerz -50%, Quadrizeps-Kraft +30%
+- **Ziel:** weitere Schmerzlinderung und Kraftaufbau im Quadrizeps anstreben
 - **Fokus:** Muskelaufbau, Propriozeption
 
 **Phase 3 (Monat 3-6): Erhaltung**
@@ -455,7 +455,7 @@ Chronischer Stress kann Entzündungsprozesse im Körper verstärken und somit au
 A: Nein. Knorpel regeneriert sich nach aktuellem Stand der Forschung nicht. **ABER:** Osteopathie kann die Gelenkbelastung adressieren und so die Progression positiv beeinflussen sowie zur Schmerzlinderung beitragen. Der individuelle Verlauf ist unterschiedlich.
 
 **Q: „Mein Orthopäde sagt, ich brauche eine OP. Soll ich trotzdem Osteopathie versuchen?"**
-A: Ja! Eine OP ist **irreversibel**. Osteopathie 8-12 Wochen testen kostet Sie nichts außer Zeit. Viele Patienten vermeiden so die OP – oder gehen besser vorbereitet rein.
+A: Das kann sinnvoll sein – die Entscheidung trifft aber Ihr behandelndes ärztliches Team. Eine OP ist **irreversibel**. Ein Therapieversuch mit Osteopathie über 8-12 Wochen kostet Sie nichts außer Zeit, und manche Patient:innen berichten, dass sie die OP dadurch hinauszögern oder besser vorbereitet angehen konnten.
 
 **Q: „Wie schnell wirkt Osteopathie bei Kniearthrose?"**
 A: Sehr individuell und nicht vorhersagbar. Die Behandlung ist erfahrungsgemäß über mehrere Wochen angelegt; der individuelle Verlauf ist unterschiedlich.
