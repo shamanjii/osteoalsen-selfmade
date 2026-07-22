@@ -101,7 +101,7 @@ Die Blockierung liegt tiefer – im Gelenk selbst. Muskeln entspannen kurzzeitig
 **Das Problem:**
 Ihre **Faszien** (Bindegewebe) sind reich innerviert – sie können Schmerz erzeugen, ohne dass Struktur (Bandscheibe, Knochen) beschädigt ist.
 
-Studien zeigen: Bei chronischen Rückenschmerzen ist die **Gleitfähigkeit der thorakolumbalen Faszie** um bis zu **20% reduziert**.
+Bei chronischen Rückenschmerzen wird in der Forschung eine reduzierte **Gleitfähigkeit der thorakolumbalen Faszie** beschrieben.
 
 **Warum Dehnen manchmal schadet:**
 Aggressive Dehnung kann verklebte Faszien **reizen** statt lösen. [Mehr dazu: Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos/)
@@ -132,10 +132,10 @@ Ihre inneren Organe sind über **Ligamente** (Bänder) und **Faszien** mit der W
 **Beispiel:** Die Radix Mesenterii (Aufhängung des Dünndarms) setzt direkt an L2-L3 (Lendenwirbelsäule) an. Bei Darmverklebungen, Reizdarm oder Stress wird hier mechanischer Zug erzeugt → LWS-Schmerz.
 
 **Warum das so häufig ist:**
-**50-80% der Reizdarm-Patienten** haben auch Rückenschmerzen – deutlich mehr als in der Allgemeinbevölkerung.
+Rückenschmerzen kommen bei Reizdarm-Patient:innen deutlich häufiger vor als in der Allgemeinbevölkerung – mehr dazu mit Quellenangabe im Artikel [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/).
 
 **Osteopathischer Ansatz:**
-- **Darm-Mobilisation (Viszerale Osteopathie):** Sanfte manuelle Behandlung von Dünndarm und Dickdarm – oft spüren Sie sofort eine Erleichterung im unteren Rücken
+- **Darm-Mobilisation (Viszerale Osteopathie):** Sanfte manuelle Behandlung von Dünndarm und Dickdarm – manche Patient:innen bemerken eine Veränderung im unteren Rücken, der individuelle Verlauf ist unterschiedlich
 - **Zwerchfell-Entspannung (Diaphragma-Release):** Löst die Verklebung zwischen Zwerchfell und Ihrem "Stressmuskel" (Psoas) – befreit die Lendenwirbelsäule
 - **Nerven-Beruhigung (Vagusnerv-Stimulation):** Stimulation des Hauptnervs Ihres Entspannungssystems – reduziert Stress und Schmerz gleichzeitig
 
@@ -173,7 +173,7 @@ Anders als Massage (nur Muskel) oder Physiotherapie (oft symptomorientiert) arbe
 
 **Ziel:** Nervenverbindungen zwischen Organen und Rücken beruhigen (viszerosomatische Reflexe), mechanischen Zug auf die Lendenwirbelsäule (LWS) reduzieren
 
-**Studienlage:** Wissenschaftliche Untersuchungen (u.a. RCT-Protokolle) zeigen Wirksamkeit bei Rückenschmerzen in Kombination mit Verdauungsbeschwerden
+**Studienlage:** Die Kombination aus Rückenschmerzen und Verdauungsbeschwerden wird zunehmend erforscht; belastbare Wirksamkeitsnachweise speziell für die viszerale Osteopathie stehen noch aus
 
 ---
 
@@ -183,12 +183,12 @@ Anders als Massage (nur Muskel) oder Physiotherapie (oft symptomorientiert) arbe
 
 **Techniken:**
 - **Hinterkopf-Entspannung (Subokzipitale Dekompression):** Löst Spannung am Übergang zwischen Kopf und Hals
-- **Nervensystem-Beruhigung (CV4-Technik):** Spezielle Technik am Hinterkopf, die Ihr gesamtes Nervensystem herunterfährt
+- **Nervensystem-Beruhigung (CV4-Technik):** Spezielle Technik am Hinterkopf, die zur Entspannung beitragen kann
 - **Schädel-Harmonisierung (Suturen-Technik):** Ausgleich von Spannungen in den Schädelmembranen
 
 **Ziel:** Stress-Muster auflösen, körpereigene Schmerzhemmung aktivieren, Entspannungssystem stärken (ANS-Modulation)
 
-**Studienlage:** Aktuelle Übersichtsarbeiten (Metaanalysen 2024) zeigen messbare Effekte auf chronische Schmerzen. Studien belegen: Ihr Nervensystem wird nachweisbar ruhiger (messbar an Herzratenvariabilität/HRV).
+**Studienlage:** Zur Wirkung kraniosakraler Techniken auf chronische Schmerzen gibt es erste Übersichtsarbeiten mit uneinheitlichen Ergebnissen; eine eindeutige wissenschaftliche Absicherung fehlt bislang.
 
 ---
 

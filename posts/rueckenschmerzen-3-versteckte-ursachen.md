@@ -345,7 +345,7 @@ Möchten Sie sich erst weiter informieren? Diese Artikel könnten Sie interessie
 
 **Kosten:**
 - 150€ pro Sitzung (Ersttermin und Folgebehandlungen)
-- Teilweise Erstattung durch Krankenkasse möglich (40-60€ bei gesetzlichen Kassen)
+- Teilweise Erstattung durch Krankenkasse möglich, meist als fester Betrag von 30-40€ pro Sitzung bei gesetzlichen Kassen ([Details je Kasse](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/))
 
 **Nächster Schritt:**
 [→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung/)
