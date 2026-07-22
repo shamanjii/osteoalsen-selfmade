@@ -104,7 +104,7 @@ Faszien sind nicht nur „Verpackungsmaterial" – sie sind **aktive Kraft-Über
 **A. Katapult-Effekt (Pre-Stress)**
 - **Gesunde Faszien**: Elastisch wie ein Gummiband → speichern Energie beim Landen → geben sie beim Absprung zurück
 - **Verklebte Faszien**: Energie verpufft → Sie brauchen mehr Muskelkraft für gleiche Leistung
-- **Studienlage**: Faszien-Elastizität kann **Laufökonomie um 8-12% verbessern**[^5]
+- **Studienlage**: Faszien-Elastizität wird als möglicher Faktor für eine verbesserte Laufökonomie diskutiert[^5]
 
 **Beispiel**: Kängurus springen mit minimalem Muskelaufwand dank extrem elastischer Achillessehnen-Faszie. Wir Menschen können das auch – wenn die Faszien gesund sind.
 
@@ -146,7 +146,7 @@ Zu beweglich (hypermobil) → Instabil, verletzungsanfällig
 **A. Sprunggelenk (Dorsiflexion)**
 - **Warum wichtig**: Limitierte Dorsiflexion → Ferse hebt beim Squat → Knie wandert nach vorne → Patellasehne überlastet
 - **Test**: Knie berührt Wand aus 12cm Entfernung? Falls nicht: Eingeschränkt.
-- **Folgen**: 75% der Läufer mit Achillessehnenproblemen haben eingeschränkte Sprunggelenk-Mobilität[^7]
+- **Folgen**: Eine eingeschränkte Sprunggelenk-Mobilität kommt bei Läufer:innen mit Achillessehnenproblemen häufig vor[^7]
 
 **B. Hüfte (Extension + Innenrotation)**
 - **Warum wichtig**: Hüftstreckung ist entscheidend für Antriebsphase beim Laufen
@@ -183,7 +183,7 @@ Mehr Training → Bessere Leistung
 **A. Lymphsystem aktivieren (Abtransport von Abfallstoffen)**
 - **Problem**: Nach hartem Training: Mikrotraumata, Entzündungsmediatoren, Stoffwechselabfälle
 - **Lösung**: Manuelle Lymphdrainage + viszerale Techniken → Abtransport beschleunigen
-- **Effekt**: Studien zeigen **20-30% schnellere Erholung** nach intensivem Training[^9]
+- **Effekt**: Für Massagetherapie ist ein positiver Effekt auf Entzündungsmarker nach Belastung gezeigt worden[^9]; ob und in welchem Umfang sich das auf osteopathische Lymphdrainage- und viszerale Techniken übertragen lässt, ist nicht speziell untersucht
 
 **B. Durchblutung optimieren (Nährstoffzufuhr)**
 - **Faszien-Release** → bessere Mikrozirkulation
@@ -249,10 +249,9 @@ Die meisten Sportler trainieren erst **nach** einer Verletzung präventiv.
 3. Korrektur **bevor** Schmerzen entstehen
 4. Anpassung des Trainingsprogramms
 
-**ROI (Return on Investment):**
+**Kosten-Nutzen-Überlegung:**
 - Kosten: 4-6 Behandlungen/Jahr = 600-900€
-- Ersparnis: 0-1 Verletzung statt 2-3 = Vermeidung von Trainingsausfall, Wettkampf-Absagen, Frustration
-- **Performance-Gewinn**: Unbezahlbar
+- Möglicher Nutzen: weniger Trainingsausfall durch frühzeitig erkannte Dysfunktionen – eine garantierte Verletzungsreduktion lässt sich daraus nicht ableiten
 
 ---
 
@@ -276,12 +275,9 @@ Die meisten Sportler trainieren erst **nach** einer Verletzung präventiv.
 - Verletzungsfreies Trainingsvolumen steigern
 - Wettkampf-Zeiten optimieren
 
-**Praxis-Beispiel:**
+**Typisches Muster in der Praxis (illustratives Beispiel, kein konkreter Behandlungsfall):**
 
-> **Lisa, 32, Triathletin** (Ironman-Finisherin): „Nach dem Radfahren immer Rückenschmerzen beim Laufen. Dachte, es sei Kondition."
-> **Osteopathischer Befund**: Steife BWS durch Aero-Position auf dem Rad → LWS kompensiert
-> **Behandlung**: BWS-Mobilisierung + Core-Stabilisationsübungen + Bike-Fitting-Empfehlungen
-> **Ergebnis**: Laufsplit bei Ironman um 18 Min. verbessert, keine Rückenschmerzen
+Bei Triathlet:innen mit Rückenschmerzen speziell beim Laufen nach dem Radfahren zeigt sich häufig eine steife Brustwirbelsäule durch die Aero-Position auf dem Rad, die die Lendenwirbelsäule zur Kompensation zwingt. Ein möglicher Ansatz: BWS-Mobilisierung, Core-Stabilisationsübungen und Bike-Fitting-Empfehlungen. Der individuelle Verlauf und Erfolg sind nicht vorhersagbar und nicht garantierbar.
 
 Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen/)
 
@@ -305,12 +301,9 @@ Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behande
 - Schmerzfreie Maximalkraft-Versuche
 - Bessere Regeneration zwischen schweren Sessions
 
-**Praxis-Beispiel:**
+**Typisches Muster in der Praxis (illustratives Beispiel, kein konkreter Behandlungsfall):**
 
-> **Tom, 28, CrossFitter** (Regional-Niveau): „Overhead Squat immer mit rundem Rücken – komme nicht tiefer."
-> **Osteopathischer Befund**: Eingeschränkte Schulter-Flexion (90° statt 180°) durch Rippen-Dysfunktion
-> **Behandlung**: Rippen-Mobilisierung + Lat-Release + Thorax-Atmung
-> **Ergebnis**: Overhead Squat um 15kg gesteigert, Technik deutlich besser
+Bei CrossFitter:innen mit rundem Rücken beim Overhead Squat zeigt sich häufig eine eingeschränkte Schulter-Flexion durch eine Rippen-Dysfunktion. Ein möglicher Ansatz: Rippen-Mobilisierung, Lat-Release und Thorax-Atmung. Der individuelle Verlauf und Erfolg sind nicht vorhersagbar und nicht garantierbar.
 
 Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln/).
 
@@ -530,10 +523,10 @@ Osteopathie macht Ihren Körper **effizienter**:
 4. **Weniger Verletzungen** → konsistenteres Training
    - Beispiel: 0 Ausfallwochen/Jahr statt 4-6 Wochen
 
-**Realistisch erwartbare Leistungssteigerung nach 3-6 Monaten:**
-- **Ausdauersport**: 2-5% schnellere Zeiten
-- **Kraftsport**: 10-20% mehr Gewicht bei technischen Übungen
-- **Mannschaftssport**: Schwer messbar, aber weniger muskuläre Probleme, höhere Trainings-Compliance
+**Mögliche Effekte, individuell sehr unterschiedlich und nicht garantierbar:**
+- **Ausdauersport**: manche Athlet:innen berichten von leicht verbesserten Zeiten
+- **Kraftsport**: manche berichten von mehr Bewegungsspielraum bei technischen Übungen
+- **Mannschaftssport**: Schwer messbar, aber weniger muskuläre Probleme, höhere Trainings-Compliance werden berichtet
 
 **Aber**: Osteopathie ist **kein Ersatz** für Training, Ernährung, Schlaf.
 Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
@@ -627,7 +620,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 
 2. **Schmerz ist ein Warnsignal, keine Schwäche**: Ignorieren führt zu chronischen Problemen. Früh behandeln = schnellere Rückkehr.
 
-3. **Faszien sind Leistungs-Gewebe**: Elastische Faszien verbessern Laufökonomie um 8-12%.
+3. **Faszien sind Leistungs-Gewebe**: Elastische Faszien werden als möglicher Faktor für eine bessere Laufökonomie diskutiert.
 
 4. **Mobilität ≠ Flexibilität**: Optimal bewegliche Gelenke + stabile Muskeln = beste Performance.
 
