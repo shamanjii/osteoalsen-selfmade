@@ -1,6 +1,8 @@
-# HWG-Review-Checkliste: Alle Artikel & Seiten einzeln
+# HWG-Review-Checkliste: Alle 33 Blog-Artikel
 
-Stand: 22. Juli 2026. Ziel: jeden Artikel/jede Seite mit Gesundheitsaussagen einzeln durchgehen und auf „grün" (HWG-konform) prüfen — nicht nur Scanner-Treffer, sondern auch Kausalketten, Zitatwahrheit und Gesamteindruck (siehe Maßstab in `2026-07-22-hwg-audit-nackenschmerzen-schwindel-hws-vagus.md`).
+Stand: 22. Juli 2026. **Scope-Korrektur (User, 22.07.2026): Nur die 33 Blog-Artikel (`posts/*.md`) sind online und müssen geprüft werden.** Behandlungsseiten und Kernseiten (ehem. Gruppe D/E) sind aus dem Scope raus — separates Thema, falls überhaupt.
+
+Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) prüfen — nicht nur Scanner-Treffer, sondern auch Kausalketten, Zitatwahrheit und Gesamteindruck (siehe Maßstab in `2026-07-22-hwg-audit-nackenschmerzen-schwindel-hws-vagus.md`).
 
 **Status-Legende:** ⬜ offen · 🟡 in Arbeit · ✅ grün (keine/nur redaktionelle Änderung nötig) · 🔧 bereinigt (Änderung vorgenommen) · 🔴 braucht Tiefenüberarbeitung (Struktur, nicht nur Wortlaut)
 
@@ -21,6 +23,7 @@ Stand: 22. Juli 2026. Ziel: jeden Artikel/jede Seite mit Gesundheitsaussagen ein
 - [x] 🔧 `zwerchfell-osteopathie-atmung-verdauung.md`
 - [x] 🔧 `chronische-kopfschmerzen-osteopathie-statt-tabletten.md`
 - [ ] ⬜ `schulter-impingement-rotatorenmanschette-uebungen.md` — nur Scanner-Treffer gecheckt (verifiziert korrekt zitiert), noch keine volle manuelle Lesung des ganzen Artikels
+- [ ] ⬜ `burnout-ganzheitlich-behandeln-glymphatisches-system.md` — nur zwei Scanner-Treffer gecheckt (beide ok, Mäusestudie korrekt gehedged), noch keine volle manuelle Lesung des ganzen Artikels
 
 ## Gruppe B — Darm-Rücken-Cluster, noch nie geprüft (Priorität hoch — `reizdarm...` hat bereits im Meta-Text eine ungeprüfte 50-80%-Zahl)
 
@@ -49,30 +52,8 @@ Stand: 22. Juli 2026. Ziel: jeden Artikel/jede Seite mit Gesundheitsaussagen ein
 - [ ] ⬜ `sportverletzung-schneller-zurueck-training.md`
 - [ ] ⬜ `vagusnerv-aktivieren-stress-uebungen.md` ("sofort beruhigen" im Titel — prüfen)
 
-## Gruppe D — Behandlungsseiten (`src/app/behandlungen/*`) — höchster Werbecharakter, da direkte Leistungsbeschreibung
-
-- [ ] ⬜ `behandlungen/page.tsx` (Übersicht)
-- [ ] ⬜ `behandlungen/arthrose-gelenkbeschwerden/page.tsx`
-- [ ] ⬜ `behandlungen/kopfschmerzen-migraene/page.tsx`
-- [ ] ⬜ `behandlungen/kraniosakrale-osteopathie/page.tsx`
-- [ ] ⬜ `behandlungen/nackenschmerzen/page.tsx`
-- [ ] ⬜ `behandlungen/rueckenschmerzen/page.tsx`
-- [ ] ⬜ `behandlungen/sportosteopathie/page.tsx`
-- [ ] ⬜ `behandlungen/stress-burnout/page.tsx`
-- [ ] ⬜ `behandlungen/verdauungsbeschwerden/page.tsx`
-
-## Gruppe E — Kernseiten mit Gesundheitsaussagen (niedrigere Priorität, aber sichtbar)
-
-- [ ] ⬜ `src/app/page.tsx` (Homepage)
-- [ ] ⬜ `src/app/osteopath-hamburg/page.tsx`
-- [ ] ⬜ `src/app/rueckenschmerzen-osteopathie-hamburg/page.tsx`
-- [ ] ⬜ `src/app/was-ist-osteopathie/page.tsx`
-- [ ] ⬜ `src/app/osteopathie-kosten-hamburg/page.tsx`
-- [ ] ⬜ `src/app/ueber-mich/page.tsx`
-- [ ] ⬜ `src/app/faq/page.tsx`
-
-*Nicht relevant (keine Gesundheitsaussagen): `datenschutz`, `impressum`, `terminbuchung`, `kosten-ablauf` (nur falls Erstattungs-% ohne Quelle — kurz querchecken), `osteopathie-eimsbuettel`, `osteopathie-rotherbaum` (Standort-Seiten, ggf. nur kurzer Check auf Duplicate-Claims).
-
 ---
 
-**Gesamt:** 33 Blog-Artikel + 9 Behandlungsseiten + 7 Kernseiten = 49 Positionen. Gruppe A ist der schnelle Verifikations-Durchgang, B–E sind der eigentliche neue Scope.
+**Out of Scope (nicht Teil dieses Durchgangs):** Behandlungsseiten (`src/app/behandlungen/*`) und Kernseiten (Homepage, `osteopath-hamburg`, `was-ist-osteopathie` etc.) — laut User nur die 33 Blog-Artikel sind relevant.
+
+**Gesamt:** 33 Blog-Artikel. Gruppe A ist der schnelle Verifikations-Durchgang (11 Artikel, davon 9 bereits fertig bereinigt), Gruppe B (4) und Gruppe C (17) sind der eigentliche neue Scope.
