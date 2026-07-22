@@ -20,7 +20,7 @@ author: "Admin"
 
 **8 Stunden täglich am Schreibtisch. 40 Stunden die Woche. 2.000 Stunden im Jahr. Und jede einzelne Stunde kann Ihrem Rücken schaden – wenn Sie diese 5 Fehler machen. Das Tückische: Sie merken es erst Jahre später, wenn der Schaden schon da ist. Aber es gibt eine gute Nachricht: Alle 5 Fehler lassen sich heute noch korrigieren.**
 
-> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf Schreibtisch-bedingte Rückenschmerzen. Für einen kompletten Guide siehe: [Rückenschmerzen verstehen – Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) | [Nackenschmerzen behandeln](/behandlungen/nackenschmerzen)
+> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf Schreibtisch-bedingte Rückenschmerzen. Für einen kompletten Guide siehe: [Rückenschmerzen verstehen – Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/) | [Nackenschmerzen behandeln](/behandlungen/nackenschmerzen/)
 
 ---
 
@@ -32,7 +32,7 @@ Aber es ist nicht normal. Und es wird nicht besser.
 
 **Nach 6 Monaten:** Der Nacken ist öfter verspannt als nicht. Sie greifen regelmäßig zu Schmerzmitteln.
 
-**Nach 2 Jahren:** [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene) kommen hinzu. Der untere [Rücken](/behandlungen/rueckenschmerzen) meldet sich. Sie können nicht mehr lange sitzen ohne Schmerzen.
+**Nach 2 Jahren:** [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene/) kommen hinzu. Der untere [Rücken](/behandlungen/rueckenschmerzen/) meldet sich. Sie können nicht mehr lange sitzen ohne Schmerzen.
 
 **Nach 5 Jahren:** Chronische Beschwerden. Bewegungseinschränkungen. Der Orthopäde spricht von "verschleißbedingten Veränderungen". Sie sind gerade Mitte 40.
 
@@ -77,7 +77,7 @@ Aber: **Pro 15° Neigung nach vorne verdoppelt sich die Belastung**[^2].
 ### Die Folgen (schleichend über Jahre)
 
 **Kurzfristig (Wochen-Monate):**
-- [Nackenverspannungen](/behandlungen/nackenschmerzen)
+- [Nackenverspannungen](/behandlungen/nackenschmerzen/)
 - Spannungskopfschmerzen (vom Nacken ausgehend)
 - Schmerzen zwischen Schulterblättern
 
@@ -88,9 +88,9 @@ Aber: **Pro 15° Neigung nach vorne verdoppelt sich die Belastung**[^2].
 - Blockierungen Halswirbelsäule/HWS (C5-C7)
 
 **Langfristig (5+ Jahre):**
-- Degenerative Veränderungen HWS ([Arthrose](/behandlungen/arthrose-gelenkbeschwerden))
+- Degenerative Veränderungen HWS ([Arthrose](/behandlungen/arthrose-gelenkbeschwerden/)/)
 - Bandscheibenvorfälle (Prolaps) C5-C6, C6-C7
-- [Chronische zervikogene Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten)
+- [Chronische zervikogene Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/)
 - Nervenwurzelkompression → Armschmerzen/Taubheit
 
 ### Die Lösung
@@ -138,9 +138,9 @@ Wenn bereits Beschwerden vorhanden:
 4. **Phase 4 (Jahre):** Strukturelle Veränderungen (Hyperkyphose/verstärkter Rundrücken BWS)
 
 **Die Kettenreaktion:**
-- Rundrücken (BWS/Brustwirbelsäule) → Kopf muss weiter nach vorne → [Nackenschmerzen](/behandlungen/nackenschmerzen)
+- Rundrücken (BWS/Brustwirbelsäule) → Kopf muss weiter nach vorne → [Nackenschmerzen](/behandlungen/nackenschmerzen/)
 - Schultern nach vorne → Engpass im Schulterdach (Subacromial-Raum) → Schulterimpingement
-- BWS blockiert → LWS (Lendenwirbelsäule) kompensiert → Überlastung [unterer Rücken](/behandlungen/rueckenschmerzen)
+- BWS blockiert → LWS (Lendenwirbelsäule) kompensiert → Überlastung [unterer Rücken](/behandlungen/rueckenschmerzen/)
 
 ### Die Folgen
 
@@ -157,7 +157,7 @@ Wenn bereits Beschwerden vorhanden:
 **Funktionell:**
 - Flache Atmung (Brustatmung statt Zwerchfellatmung)
 - Reduzierte Lungenkapazität (deutlich eingeschränkt bei starker Hyperkyphose)
-- [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden) (Druck auf Magen/Darm)
+- [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden/) (Druck auf Magen/Darm)
 
 ### Die Lösung
 
@@ -210,8 +210,8 @@ Wenn bereits Beschwerden vorhanden:
 **Wenn der Iliopsoas chronisch verkürzt ist:**
 1. Zieht die Lendenwirbel nach vorne
 2. Erhöht Druck auf LWS-Bandscheiben (Diskus)
-3. Komprimiert [Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis)
-4. Verursacht "unspezifische" [Rückenschmerzen](/behandlungen/rueckenschmerzen)
+3. Komprimiert [Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis/)
+4. Verursacht "unspezifische" [Rückenschmerzen](/behandlungen/rueckenschmerzen/)
 
 **Studien zeigen:** 75% der Menschen mit chronischen LWS-Schmerzen (Low Back Pain/LBP) haben verkürzte Hüftbeuger[^4]
 
@@ -223,10 +223,10 @@ Wenn bereits Beschwerden vorhanden:
 - "Anlaufschmerz" (erste Schritte nach Sitzen tun weh)
 
 **Langfristig:**
-- Chronische [LWS-Schmerzen](/behandlungen/rueckenschmerzen)
-- [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis) (Iliosakralgelenk)
+- Chronische [LWS-Schmerzen](/behandlungen/rueckenschmerzen/)
+- [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis/) (Iliosakralgelenk)
 - Bandscheibenprobleme L4-L5, L5-S1
-- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden) (durch Fehlbelastung)
+- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden/) (durch Fehlbelastung)
 
 ### Die Lösung
 
@@ -239,7 +239,7 @@ Wenn bereits Beschwerden vorhanden:
 → Schreibtisch höher stellen (höhenverstellbar ideal!)
 → Oder: Fußstütze verwenden (erhöht effektive Sitzhöhe)
 
-**Übung: [Iliopsoas-Stretch](/blog/dehnen-rueckenschmerzen-mythos)**
+**Übung: [Iliopsoas-Stretch](/blog/dehnen-rueckenschmerzen-mythos/)**
 1. Halber Kniestand (rechtes Knie am Boden, linker Fuß vorne)
 2. Becken nach vorne schieben (Hüfte strecken)
 3. Optional: Linken Arm nach oben/hinten strecken
@@ -274,7 +274,7 @@ Jeder Arm wiegt ~4 kg. Wenn Ihre Arme nicht abgestützt sind, **halten Ihre Schu
 
 ### Warum das ein Problem ist
 
-**"Schultern hochziehen" ist DAS [Stress](/behandlungen/stress-burnout)-Muster schlechthin:**
+**"Schultern hochziehen" ist DAS [Stress](/behandlungen/stress-burnout/)-Muster schlechthin:**
 - Passiert unbewusst (bei Konzentration, Stress, Anspannung)
 - Wird chronisch, wenn keine Ablage vorhanden
 - Führt zu "Upper Cross Syndrome" (oberes Kreuz-Syndrom)[^5]
@@ -282,12 +282,12 @@ Jeder Arm wiegt ~4 kg. Wenn Ihre Arme nicht abgestützt sind, **halten Ihre Schu
 **Upper Cross Syndrome:**
 - **Verkürzt/Verhärtet:** Oberer Trapezius, Levator Scapulae, Pectoralis
 - **Abgeschwächt:** Unterer Trapezius, Rhomboideus, tiefe Nackenmuskeln
-- **Folge:** Chronische [Nacken-Schulter-Schmerzen](/behandlungen/nackenschmerzen), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene), Bewegungseinschränkungen
+- **Folge:** Chronische [Nacken-Schulter-Schmerzen](/behandlungen/nackenschmerzen/), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene/), Bewegungseinschränkungen
 
 ### Die Folgen
 
 **Muskulär:**
-- Triggerpunkte in oberem Trapezius (→ [Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten))
+- Triggerpunkte in oberem Trapezius (→ [Kopfschmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/)/)
 - Verhärtung Levator Scapulae (→ Drehschmerz beim Schulterblick)
 - Schulterblatt-Dysbalance (→ Schulterschmerzen)
 
@@ -694,12 +694,12 @@ Rappstraße 7
 
 Interessieren Sie sich für verwandte Themen? Diese Artikel könnten Ihnen helfen:
 
-- [Rückenschmerzen verstehen – Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) – Umfassender Überblick
-- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis) – Häufig bei Büroarbeit
-- [Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) – Oft durch Nacken verursacht
-- [Sportosteopathie: Leistung optimieren](/blog/sportosteopathie-hamburg-leistung-optimieren) – Auch für Schreibtischsportler
-- [Behandlungen für Rückenschmerzen](/behandlungen/rueckenschmerzen) – Alle Leistungen im Überblick
-- [Behandlungen für Nackenschmerzen](/behandlungen/nackenschmerzen) – Spezialisierte Therapie
+- [Rückenschmerzen verstehen – Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/) – Umfassender Überblick
+- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/) – Häufig bei Büroarbeit
+- [Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) – Oft durch Nacken verursacht
+- [Sportosteopathie: Leistung optimieren](/blog/sportosteopathie-hamburg-leistung-optimieren/) – Auch für Schreibtischsportler
+- [Behandlungen für Rückenschmerzen](/behandlungen/rueckenschmerzen/) – Alle Leistungen im Überblick
+- [Behandlungen für Nackenschmerzen](/behandlungen/nackenschmerzen/) – Spezialisierte Therapie
 
 ---
 
@@ -709,7 +709,7 @@ Interessieren Sie sich für verwandte Themen? Diese Artikel könnten Ihnen helfe
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

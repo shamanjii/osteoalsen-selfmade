@@ -38,7 +38,7 @@ Die konventionelle Medizin konzentriert sich meist auf das schmerzende Gelenk se
 - **Behandlung**: Schmerzmittel, Cortison-Injektionen, im Extremfall OP
 - **Problem**: Die Ursache – warum verschleißt gerade dieses Gelenk? – bleibt ungeklärt
 
-In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen Ansatz: **Ich suche nicht nur nach dem "Was" (welches Gelenk schmerzt), sondern nach dem "Warum" (was hat zu dieser Überlastung geführt).**
+In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden/) mit einem ganzheitlichen Ansatz: **Ich suche nicht nur nach dem "Was" (welches Gelenk schmerzt), sondern nach dem "Warum" (was hat zu dieser Überlastung geführt).**
 
 ---
 
@@ -66,7 +66,7 @@ In der biomechanischen Forschung ist gut beschrieben, dass **Funktionsstörungen
 - Mobilisierung von Blockaden in Fuß, Becken, Wirbelsäule
 - Muskuläre Dysbalancen ausgleichen
 
-Mehr zur ganzheitlichen Behandlung von Kniearthrose: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln).
+Mehr zur ganzheitlichen Behandlung von Kniearthrose: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln/).
 
 ---
 
@@ -103,8 +103,8 @@ Viele Patient:innen mit Gelenkbeschwerden haben eine **low-grade systemic inflam
 
 **Ursachen chronischer Entzündung:**
 - **Ernährung**: Zucker, Transfette, hochverarbeitete Lebensmittel
-- **Darm-Dysbiose**: Gestörte Darmflora ("Leaky Gut") → Entzündungsmediatoren im Blut (mehr dazu: [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden))
-- **Chronischer Stress**: Cortisol-Dysregulation → pro-inflammatorische Zytokine (mehr dazu: [Stress und Burnout](/behandlungen/stress-burnout))
+- **Darm-Dysbiose**: Gestörte Darmflora ("Leaky Gut") → Entzündungsmediatoren im Blut (mehr dazu: [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/)/)
+- **Chronischer Stress**: Cortisol-Dysregulation → pro-inflammatorische Zytokine (mehr dazu: [Stress und Burnout](/behandlungen/stress-burnout/)/)
 - **Schlafmangel**: < 7 Stunden Schlaf → erhöhtes CRP (Entzündungsmarker)
 
 **Auswirkung auf Gelenke:**
@@ -133,10 +133,10 @@ Nerven müssen **frei gleiten** können, wenn wir uns bewegen. Verklebungen, Kom
 **Beispiel: Schulter-Arm-Schmerz durch Nervenkompression**
 - **Thoracic-Outlet-Syndrom**: Nervus brachialis (Armnerv) wird zwischen Schlüsselbein und erster Rippe eingeklemmt
 - **Symptome**: Schulterschmerzen, die bis in Hand ausstrahlen; oft fehldiagnostiziert als „Rotatorenmanschetten-Syndrom"
-- **Lösung**: Mobilisierung der ersten Rippe, Dehnung der Scaleni-Muskulatur (mehr zur HWS-Behandlung: [Nackenschmerzen](/behandlungen/nackenschmerzen))
+- **Lösung**: Mobilisierung der ersten Rippe, Dehnung der Scaleni-Muskulatur (mehr zur HWS-Behandlung: [Nackenschmerzen](/behandlungen/nackenschmerzen/)/)
 
 **Weitere häufige Nerven-Fallen:**
-- **Hüft-/Beinschmerzen**: Piriformis-Syndrom (Ischiasnerv wird von Piriformis-Muskel komprimiert) – mehr zu versteckten Ursachen: [3 versteckte Ursachen von Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen)
+- **Hüft-/Beinschmerzen**: Piriformis-Syndrom (Ischiasnerv wird von Piriformis-Muskel komprimiert) – mehr zu versteckten Ursachen: [3 versteckte Ursachen von Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen/)
 - **Knieschmerzen**: Femoralnerv-Kompression durch verkürzten Iliopsoas
 - **Fußschmerzen**: Tarsaltunnel-Syndrom (Nervus tibialis am Innenknöchel)
 
@@ -150,7 +150,7 @@ Nerven müssen **frei gleiten** können, wenn wir uns bewegen. Verklebungen, Kom
 - **Faszien-Release** um den Nerv herum
 - **Gelenksmobilisierung** an Kompressionsstellen (z.B. erste Rippe bei TOS)
 
-Mehr zur Verbindung zwischen Beckenblockaden und Gelenkschmerzen: [ISG-Blockierung und der Teufelskreis](/blog/isg-blockierung-teufelskreis).
+Mehr zur Verbindung zwischen Beckenblockaden und Gelenkschmerzen: [ISG-Blockierung und der Teufelskreis](/blog/isg-blockierung-teufelskreis/).
 
 ---
 
@@ -169,8 +169,8 @@ Chronischer Stress und emotionale Belastung haben **direkte Auswirkungen** auf d
 Eine Studie an 1.200 Patient:innen mit chronischen Gelenkschmerzen zeigte: **Psychischer Stress war der stärkste Prädiktor für Schmerzintensität** – stärker als radiologische Befunde oder Beweglichkeit[^9].
 
 **Gelenkspezifische Muster:**
-- **Schulter-Nacken-Bereich**: „Die Last auf den Schultern tragen" – Stressreaktion manifestiert sich oft hier (mehr zur Behandlung: [Nackenschmerzen](/behandlungen/nackenschmerzen))
-- **Kiefergelenk (TMJ)**: Nächtliches Zähneknirschen durch Stress → TMJ-Arthrose (mehr zum Zusammenhang: [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene))
+- **Schulter-Nacken-Bereich**: „Die Last auf den Schultern tragen" – Stressreaktion manifestiert sich oft hier (mehr zur Behandlung: [Nackenschmerzen](/behandlungen/nackenschmerzen/)/)
+- **Kiefergelenk (TMJ)**: Nächtliches Zähneknirschen durch Stress → TMJ-Arthrose (mehr zum Zusammenhang: [Kopfschmerzen und Migräne](/behandlungen/kopfschmerzen-migraene/)/)
 - **Hüfte**: „Nicht vorankommen" – psychosomatisch oft mit Hüftbeschwerden assoziiert
 
 **Ganzheitlicher Ansatz:**
@@ -287,7 +287,7 @@ Ein bewegliches Gelenk ohne muskuläre Stabilität ist **anfällig für erneute 
 
 **Warum wichtig?**
 Ein Gelenk schmerzt selten isoliert. Meist hat der Körper über Jahre **Kompensationsmuster** entwickelt:
-- Schmerzende rechte Hüfte → linkes Knie überlastet → LWS-Blockade → Nackenverspannung (mehr dazu: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen))
+- Schmerzende rechte Hüfte → linkes Knie überlastet → LWS-Blockade → Nackenverspannung (mehr dazu: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen/)/)
 
 **Ganzheitlicher Ansatz:**
 - **Becken-Alignment**: ISG, Symphyse, Kreuzbein
@@ -308,7 +308,7 @@ Ein Gelenk schmerzt selten isoliert. Meist hat der Körper über Jahre **Kompens
 **Die 5 Säulen der Gelenkprävention:**
 
 **1. Regelmäßige Bewegung (aber richtig!)**
-- **Gelenkschonende Sportarten**: Schwimmen, Radfahren, Yoga, Pilates (mehr zur Sportbegleitung: [Sportosteopathie](/behandlungen/sportosteopathie))
+- **Gelenkschonende Sportarten**: Schwimmen, Radfahren, Yoga, Pilates (mehr zur Sportbegleitung: [Sportosteopathie](/behandlungen/sportosteopathie/)/)
 - **Variabilität**: Unterschiedliche Bewegungsmuster (nicht nur Joggen oder nur Krafttraining)
 - **Dosierung**: 150 Min. moderate Aktivität/Woche (WHO-Empfehlung)
 
@@ -527,7 +527,7 @@ Ein Gelenk schmerzt selten isoliert. Meist hat der Körper über Jahre **Kompens
 - **Yoga/Pilates**: Kontrollierte Bewegung, Stabilität
 - **Walking** (nicht Joggen): Moderate Belastung
 
-Mehr zur optimalen Sportbegleitung: [Sportosteopathie Hamburg](/blog/sportosteopathie-hamburg-leistung-optimieren)
+Mehr zur optimalen Sportbegleitung: [Sportosteopathie Hamburg](/blog/sportosteopathie-hamburg-leistung-optimieren/)
 
 **Ungünstig bei akuten Beschwerden:**
 - **Joggen**: Stoßbelastung 3-4x Körpergewicht pro Schritt
@@ -689,7 +689,7 @@ Ich kombiniere osteopathische Behandlung mit **Bewegungsberatung**, **Ernährung
 
 ## Jetzt Termin buchen – für nachhaltige Gelenkgesundheit
 
-In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden) mit einem ganzheitlichen, evidenzbasierten Ansatz.
+In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/arthrose-gelenkbeschwerden/) mit einem ganzheitlichen, evidenzbasierten Ansatz.
 
 **Was Sie erwarten können:**
 - ✅ **Ausführliche Erstanamnese** (60 Min.): gemeinsam nach möglichen Ursachen-Zusammenhängen schauen
@@ -699,7 +699,7 @@ In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/art
 
 **Kostenerstattung**: Viele private Krankenversicherungen und Zusatzversicherungen übernehmen osteopathische Behandlungen.
 
-[**📅 Jetzt Termin buchen**](/terminbuchung) und den ersten Schritt zu schmerzfreier Bewegung machen.
+[**📅 Jetzt Termin buchen**](/terminbuchung/) und den ersten Schritt zu schmerzfreier Bewegung machen.
 
 ---
 
@@ -713,7 +713,7 @@ In meiner Praxis behandle ich [Arthrose und Gelenkbeschwerden](/behandlungen/art
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

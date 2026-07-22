@@ -70,7 +70,7 @@ Die Bereiche gehen während einer Behandlung fließend ineinander über – es g
 
 - **Bei Reizdarm:** Der Schwerpunkt liegt auf viszeralen Techniken (Darm, Mesenterium), aber ich behandle gleichzeitig die Lendenwirbelsäule (parietal) und den Vagusnerv (kranial), da alle drei Systeme miteinander interagieren.
 
-- **Bei Rückenschmerzen mit Verdauungsproblemen:** Die Behandlung wechselt zwischen parietalen Techniken (LWS, ISG) und viszeralen Techniken (Darm, Nieren), da beide Systeme über **viszero-somatische Reflexe** verbunden sind – mehr dazu in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang).
+- **Bei Rückenschmerzen mit Verdauungsproblemen:** Die Behandlung wechselt zwischen parietalen Techniken (LWS, ISG) und viszeralen Techniken (Darm, Nieren), da beide Systeme über **viszero-somatische Reflexe** verbunden sind – mehr dazu in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/).
 
 - **Bei primär muskuloskelettalen Beschwerden:** Auch hier prüfe ich viszerale Komponenten, da beispielsweise eine eingeschränkte Nierenmobilität Rückenschmerzen verursachen kann.
 
@@ -82,11 +82,11 @@ Viszerale Osteopathie basiert auf fundierten anatomischen und physiologischen Ke
 
 1. **Organe sind durch Bindegewebe verbunden:** Faszien, Bänder und das Peritoneum (Bauchfell) bilden ein zusammenhängendes Netzwerk, das alle Organe miteinander verbindet.
 
-2. **Organmobilität ist messbar:** Moderne Ultraschallstudien haben die Beweglichkeit innerer Organe präzise dokumentiert. So bewegt sich beispielsweise das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) bei gesunden Erwachsenen während normaler Atmung etwa 1,8 cm, bei maximaler Atmung sogar 5,7-7 cm -- messbar über die Leberbewegung als anatomisches Fenster [3]. Diese objektiven Messungen bestätigen, dass Organbeweglichkeit kein theoretisches Konzept ist, sondern eine physiologische Realität.
+2. **Organmobilität ist messbar:** Moderne Ultraschallstudien haben die Beweglichkeit innerer Organe präzise dokumentiert. So bewegt sich beispielsweise das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) bei gesunden Erwachsenen während normaler Atmung etwa 1,8 cm, bei maximaler Atmung sogar 5,7-7 cm -- messbar über die Leberbewegung als anatomisches Fenster [3]. Diese objektiven Messungen bestätigen, dass Organbeweglichkeit kein theoretisches Konzept ist, sondern eine physiologische Realität.
 
 3. **Bewegung ist essentiell für Funktion:** Wie Gelenke brauchen auch Organe Bewegung für optimale Durchblutung, Lymphdrainage und Nervenfunktion. Stagnation führt zu Dysfunktion.
 
-4. **Nervenverbindungen:** Jedes Organ ist über das autonome Nervensystem (Sympathikus und Parasympathikus) mit Wirbelsäule und Gehirn verbunden. Besonders der [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen) spielt als größter parasympathischer Nerv eine Schlüsselrolle bei der Steuerung der Organfunktionen. Störungen können sich in beide Richtungen auswirken.
+4. **Nervenverbindungen:** Jedes Organ ist über das autonome Nervensystem (Sympathikus und Parasympathikus) mit Wirbelsäule und Gehirn verbunden. Besonders der [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen/) spielt als größter parasympathischer Nerv eine Schlüsselrolle bei der Steuerung der Organfunktionen. Störungen können sich in beide Richtungen auswirken.
 
 Im nächsten Abschnitt schauen wir uns an, wie diese faszinierende Behandlungsmethode entwickelt wurde und wer die treibende Kraft dahinter war.
 
@@ -191,7 +191,7 @@ Organe sind nicht frei schwebend, sondern durch verschiedene Strukturen befestig
 
 - **Ligamente (Bänder):** Bindegewebige Aufhängungen, z.B. die Leberbänder, die die Leber unter dem Zwerchfell und an der Bauchwand fixieren.
 
-- **Mesenterium (Darmaufhängung):** Ein fächerförmiges Bindegewebe, das die Darmschlingen an der hinteren Bauchwand befestigt. Es enthält Blutgefäße, Lymphbahnen und Nerven. Verklebungen im Mesenterium können zu erheblichen Beschwerden führen – mehr dazu in meinem Artikel über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii).
+- **Mesenterium (Darmaufhängung):** Ein fächerförmiges Bindegewebe, das die Darmschlingen an der hinteren Bauchwand befestigt. Es enthält Blutgefäße, Lymphbahnen und Nerven. Verklebungen im Mesenterium können zu erheblichen Beschwerden führen – mehr dazu in meinem Artikel über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/).
 
 - **Faszien (Bindegewebshüllen):** Jedes Organ ist von Faszien umhüllt, die es mit benachbarten Strukturen verbinden. Diese bilden ein dreidimensionales Spannungsnetzwerk.
 
@@ -337,16 +337,16 @@ Viszerale Osteopathie wird bei einer Vielzahl von Beschwerden eingesetzt – ins
 - Blähungen, Völlegefühl
 - Sodbrennen und Reflux (oft in Kombination mit Zwerchfell-Behandlung)
 
-Mehr zur osteopathischen Behandlung von Verdauungsbeschwerden finden Sie auf meiner [Behandlungsseite Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden).
+Mehr zur osteopathischen Behandlung von Verdauungsbeschwerden finden Sie auf meiner [Behandlungsseite Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/).
 
-Viele Patienten mit Reizdarm berichten, dass nicht nur die Verdauung besser funktioniert, sondern auch begleitende Rückenschmerzen nachlassen – ein Zusammenhang, den ich in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) detailliert erkläre.
+Viele Patienten mit Reizdarm berichten, dass nicht nur die Verdauung besser funktioniert, sondern auch begleitende Rückenschmerzen nachlassen – ein Zusammenhang, den ich in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) detailliert erkläre.
 
 **2. Chronische Schmerzen mit viszeraler Komponente:**
 - Rückenschmerzen, die mit Verdauungsproblemen einhergehen
 - Unterbauchschmerzen ohne klare gynäkologische Ursache
 - Schmerzen im Bereich des Solarplexus (oft stressbedingt)
 
-Die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii), der Aufhängepunkt des Darms, spielt dabei eine zentrale Rolle – Verklebungen in diesem Bereich können zu erheblichen Rückenbeschwerden führen.
+Die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/), der Aufhängepunkt des Darms, spielt dabei eine zentrale Rolle – Verklebungen in diesem Bereich können zu erheblichen Rückenbeschwerden führen.
 
 **3. Post-operative Beschwerden:**
 - Verwachsungen und Narben nach Bauchoperationen (z.B. Blinddarm-OP, Kaiserschnitt, Gallen-OP)
@@ -370,7 +370,7 @@ Forschungsergebnisse zeigen vielversprechende Ansätze: Eine 2017 veröffentlich
 - Burnout-Symptomatik mit Verdauungsproblemen
 - Schlafstörungen in Verbindung mit Bauchbeschwerden
 
-Hier besteht oft eine Verbindung zum glymphatischen System und zur Stressverarbeitung – mehr dazu in meinem Artikel über [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system).
+Hier besteht oft eine Verbindung zum glymphatischen System und zur Stressverarbeitung – mehr dazu in meinem Artikel über [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/).
 
 **Wann ist viszerale Osteopathie NICHT geeignet?**
 
@@ -470,9 +470,9 @@ Wenn Sie unter chronischen Verdauungsbeschwerden, unerklärlichen Rückenschmerz
 
 **Weiterführende Artikel:**
 
-- [Reizdarm und Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [Radix Mesenterii: Warum der Darmaufhängepunkt Rückenschmerzen verursachen kann](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
-- [Burnout ganzheitlich behandeln: Das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
+- [Reizdarm und Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [Radix Mesenterii: Warum der Darmaufhängepunkt Rückenschmerzen verursachen kann](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
+- [Burnout ganzheitlich behandeln: Das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/)
 
 ---
 

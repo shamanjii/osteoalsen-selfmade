@@ -21,7 +21,7 @@ author: "Admin"
 
 In Hamburg leiden 27% der Bevölkerung an Rückenschmerzen [(1)](#quellen). Doch nur die wenigsten kennen die wahren Ursachen.
 
-> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel vertieft 3 häufig übersehene Ursachen. Für den kompletten Guide zu Rückenschmerzen und osteopathischer Behandlung lesen Sie: [Rückenschmerzen verstehen – Der komplette Osteopathie-Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg)
+> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel vertieft 3 häufig übersehene Ursachen. Für den kompletten Guide zu Rückenschmerzen und osteopathischer Behandlung lesen Sie: [Rückenschmerzen verstehen – Der komplette Osteopathie-Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/)
 
 ---
 
@@ -49,7 +49,7 @@ Bei Rückenschmerzen ist es ähnlich:
 Faszien sind das Bindegewebe, das Muskeln und Organe umhüllt. Bei chronischem Stress, Bewegungsmangel oder einseitiger Belastung verkleben diese Faszienschichten. Das schränkt die Beweglichkeit ein und erzeugt Dauerspannung – besonders in der Rückenfaszie (TLF) [(2)](#quellen).
 
 **Ursache 2: Blockierte Gelenke fern vom Schmerz (ISG-Blockierung)**
-Ein [blockiertes Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis) am Becken oder eine steife Hüfte zwingen die Lendenwirbelsäule (LWS) zu Kompensationsbewegungen. Das überlastet einzelne Wirbelsegmente – und irgendwann schmerzt es [(3)](#quellen).
+Ein [blockiertes Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis/) am Becken oder eine steife Hüfte zwingen die Lendenwirbelsäule (LWS) zu Kompensationsbewegungen. Das überlastet einzelne Wirbelsegmente – und irgendwann schmerzt es [(3)](#quellen).
 
 **Ursache 3: Stress im Nervensystem (ANS-Dysregulation)**
 Chronischer Stress hält Ihr Nervensystem (autonomes Nervensystem/ANS) in permanenter Alarmbereitschaft. Die Muskulatur bleibt angespannt, auch wenn keine Gefahr droht. Besonders betroffen: der untere Rücken [(4)](#quellen).
@@ -216,7 +216,7 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Selbstzahler:** Eine Sitzung kostet in Hamburg zwischen 100-180€ (je nach Praxis und Dauer). In meiner Praxis: 150€ pro Behandlung.
 
-[→ Mehr zu Kosten & Abrechnung erfahren](/kosten-ablauf)
+[→ Mehr zu Kosten & Abrechnung erfahren](/kosten-ablauf/)
 
 ---
 
@@ -224,7 +224,7 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Physiotherapie** fokussiert auf **aktive Übungen**, Gerätetraining und lokale Behandlung (z.B. Elektrotherapie, Massage).
 
-**Osteopathie** fokussiert auf **manuelle Diagnostik** und Behandlung des gesamten Körpers als System – inklusive [Organen](/behandlungen/verdauungsbeschwerden) und Nervensystem.
+**Osteopathie** fokussiert auf **manuelle Diagnostik** und Behandlung des gesamten Körpers als System – inklusive [Organen](/behandlungen/verdauungsbeschwerden/) und Nervensystem.
 
 **Ideal:** Beide ergänzen sich! Viele Patienten profitieren von einer Kombination: Osteopathie zum "Freischalten" blockierter Strukturen, Physiotherapie zum Aufbau von Kraft und Stabilität.
 
@@ -285,7 +285,7 @@ Osteopathie kann besonders helfen, wenn Sie:
 - ✅ **Chronische oder wiederkehrende** Rückenschmerzen haben (länger als 6 Wochen)
 - ✅ Schon **Physiotherapie oder Medikamente** versucht haben – ohne langfristigen Erfolg
 - ✅ **Keine Red Flags** haben (Lähmungen, Taubheit, Gewichtsverlust, Fieber)
-- ✅ **Begleitende Symptome** bemerken: z.B. [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene) oder [Schlafstörungen](/behandlungen/stress-burnout)
+- ✅ **Begleitende Symptome** bemerken: z.B. [Verdauungsprobleme](/behandlungen/verdauungsbeschwerden/), [Kopfschmerzen](/behandlungen/kopfschmerzen-migraene/) oder [Schlafstörungen](/behandlungen/stress-burnout/)
 - ✅ Bereit sind, **aktiv mitzuarbeiten** (Übungen zu Hause, Lebensstil-Anpassungen)
 - ✅ Eine **ursachenorientierte** Behandlung suchen, die funktionelle Zusammenhänge berücksichtigt
 
@@ -299,7 +299,7 @@ Osteopathie kann besonders helfen, wenn Sie:
 
 Buchen Sie Ihren **Ersttermin** (60 Min) bequem online. Freie Termine in Hamburg sind meist innerhalb von 1-2 Wochen verfügbar.
 
-[→ Jetzt Termin online buchen](/terminbuchung)
+[→ Jetzt Termin online buchen](/terminbuchung/)
 
 ---
 
@@ -318,11 +318,11 @@ Nutzen Sie das [Kontaktformular](/terminbuchung/) oder buchen Sie direkt einen T
 
 Möchten Sie sich erst weiter informieren? Diese Artikel könnten Sie interessieren:
 
-- [Rückenschmerzen verstehen - Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg)
-- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
-- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [Was ist Osteopathie? Der komplette Überblick](/was-ist-osteopathie)
-- [Alle FAQ zur Osteopathie](/faq)
+- [Rückenschmerzen verstehen - Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/)
+- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/)
+- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [Was ist Osteopathie? Der komplette Überblick](/was-ist-osteopathie/)
+- [Alle FAQ zur Osteopathie](/faq/)
 
 ---
 
@@ -348,7 +348,7 @@ Möchten Sie sich erst weiter informieren? Diese Artikel könnten Sie interessie
 - Teilweise Erstattung durch Krankenkasse möglich (40-60€ bei gesetzlichen Kassen)
 
 **Nächster Schritt:**
-[→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung)
+[→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung/)
 
 ---
 
@@ -394,12 +394,12 @@ Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt onlin
 **Autor:** Osteopathie-Praxis Hamburg
 **Disclaimer:** Dieser Artikel dient der Information und ersetzt keine ärztliche Diagnose oder Behandlung.
 
-[→ Zurück zum Blog](/blog)
+[→ Zurück zum Blog](/blog/)
 
 ---
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

@@ -86,12 +86,12 @@ Das Zwerchfell besteht aus drei funktionell unterschiedlichen Anteilen, die wäh
 Alle drei muskulären Anteile münden in eine **zentrale Sehnenplatte** (Centrum tendineum), die wie ein dreiblättriges Kleeblatt geformt ist. Diese zentrale Sehne ist fest mit dem Herzbeutel (Perikard) verbunden – eine anatomische Besonderheit mit weitreichenden Konsequenzen:
 
 - Bei tiefer Atmung zieht das Zwerchfell am Perikard
-- Dies stimuliert den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen), der im Perikard verläuft
+- Dies stimuliert den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen/), der im Perikard verläuft
 - Resultat: Verbesserung der Herzratenvariabilität (HRV), Aktivierung des Parasympathikus
 
 **Innervation – bewusst und unbewusst:**
 
-Das Zwerchfell wird durch den **Nervus phrenicus** (Zwerchfellnerv) versorgt, der aus den Nervenwurzeln C3, C4 und C5 (Halswirbelsäule) entspringt. Genau deshalb können [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung) die Zwerchfellfunktion beeinträchtigen -- eine Verbindung, die bei einem [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung) therapeutisch berücksichtigt werden muss.
+Das Zwerchfell wird durch den **Nervus phrenicus** (Zwerchfellnerv) versorgt, der aus den Nervenwurzeln C3, C4 und C5 (Halswirbelsäule) entspringt. Genau deshalb können [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung/) die Zwerchfellfunktion beeinträchtigen -- eine Verbindung, die bei einem [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung/) therapeutisch berücksichtigt werden muss.
 
 **Das Besondere:**
 Das Zwerchfell ist der **einzige Muskel im Körper, der sowohl willkürlich als auch unwillkürlich gesteuert wird**:
@@ -263,7 +263,7 @@ Flankenatmung bedeutet, die **Pars costalis** (Rippenanteil) und **Pars lumbalis
 - Am Schreibtisch: Alle 2 Stunden 3 tiefe Flanken-Atemzüge
 - Vor dem Schlafen: 5 Minuten Flankenatmung im Liegen
 
-Mehr zur Verbindung zwischen Atmung und [Stressbewältigung](/behandlungen/stress-burnout) finden Sie in meinem Artikel über ganzheitliche Behandlung von Burnout.
+Mehr zur Verbindung zwischen Atmung und [Stressbewältigung](/behandlungen/stress-burnout/) finden Sie in meinem Artikel über ganzheitliche Behandlung von Burnout.
 
 ---
 
@@ -336,7 +336,7 @@ Wenn Sie Ihre HRV verbessern möchten (messbar z.B. mit Apps oder Wearables):
 - **Zwerchfell nutzen:** Tief in Bauch und Flanken atmen, nicht flach in die Brust
 - **Täglich 10 Minuten:** Am besten morgens oder abends
 
-Chronischer Stress und seine Auswirkungen auf das autonome Nervensystem werden ausführlich in meinem Artikel über [Burnout und das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) beschrieben.
+Chronischer Stress und seine Auswirkungen auf das autonome Nervensystem werden ausführlich in meinem Artikel über [Burnout und das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) beschrieben.
 
 ---
 
@@ -377,7 +377,7 @@ Die wellenförmigen Kontraktionen des Darms (Peristaltik) werden nicht nur durch
 
 Studien zeigen: Patienten mit chronischer Verstopfung haben signifikant reduzierte Zwerchfell-Exkursion im Vergleich zu gesunden Kontrollgruppen.
 
-**Viszerale Osteopathie** setzt genau hier an: Durch Mobilisation des Zwerchfells und der Bauchorgane wird die Peristaltik wieder angeregt. Mehr dazu in meinem Artikel über [viszerale Osteopathie](/blog/viszerale-osteopathie).
+**Viszerale Osteopathie** setzt genau hier an: Durch Mobilisation des Zwerchfells und der Bauchorgane wird die Peristaltik wieder angeregt. Mehr dazu in meinem Artikel über [viszerale Osteopathie](/blog/viszerale-osteopathie/).
 
 ---
 
@@ -407,7 +407,7 @@ Jedes Organ im Bauchraum wird durch die Zwerchfell-Bewegung rhythmisch verschobe
 - Durchblutung ↓, Lymphabfluss ↓
 - Funktionsstörungen: Verdauungsprobleme, Leberstau, reduzierte Nierenfunktion
 
-Die Verbindung zwischen Organbeweglichkeit und Beschwerden wird ausführlich in meinem Artikel über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) beschrieben – der Aufhängepunkt des Darms kann bei eingeschränkter Mobilität zu erheblichen Rückenschmerzen führen.
+Die Verbindung zwischen Organbeweglichkeit und Beschwerden wird ausführlich in meinem Artikel über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) beschrieben – der Aufhängepunkt des Darms kann bei eingeschränkter Mobilität zu erheblichen Rückenschmerzen führen.
 
 ---
 
@@ -483,7 +483,7 @@ Der Neurowissenschaftler **Stephen Porges** entwickelte die **Polyvagal-Theorie*
 - Bei chronischem Stress bleibt das Zwerchfell oft in **teilweiser Kontraktion** – als wäre der Körper dauerhaft auf "Einatmen" eingestellt
 - Bei Trauma kann das Zwerchfell in **Schockstarre** verharren – eine Art "eingefrorene Atmung"
 
-**Die gute Nachricht:** Über bewusste Zwerchfell-Atmung können Sie Ihr Nervensystem aktiv regulieren und zwischen den Zuständen wechseln. Mehr zur Verbindung zwischen Stress und Körpersymptomen finden Sie in meinem Artikel über [Stress und Burnout](/behandlungen/stress-burnout).
+**Die gute Nachricht:** Über bewusste Zwerchfell-Atmung können Sie Ihr Nervensystem aktiv regulieren und zwischen den Zuständen wechseln. Mehr zur Verbindung zwischen Stress und Körpersymptomen finden Sie in meinem Artikel über [Stress und Burnout](/behandlungen/stress-burnout/).
 
 ---
 
@@ -845,7 +845,7 @@ In der osteopathischen Untersuchung nutze ich mehrere Methoden, um Zwerchfell-Dy
 - Bessere Beweglichkeit der LWS
 - Tiefere Atmung in den unteren Rücken (Flankenatmung)
 
-Mehr zur Verbindung zwischen Zwerchfell-Dysfunktion und Rückenschmerzen finden Sie in meinem Artikel über [ganzheitliche Rückenschmerz-Behandlung](/behandlungen/rueckenschmerzen).
+Mehr zur Verbindung zwischen Zwerchfell-Dysfunktion und Rückenschmerzen finden Sie in meinem Artikel über [ganzheitliche Rückenschmerz-Behandlung](/behandlungen/rueckenschmerzen/).
 
 ---
 
@@ -870,7 +870,7 @@ Mehr zur Verbindung zwischen Zwerchfell-Dysfunktion und Rückenschmerzen finden 
 - Bessere Verdauung in den folgenden Tagen
 - Verbesserter Schlaf
 
-Die Bedeutung des Vagusnervs für Verdauung und Stressregulation wird ausführlich in meinem Artikel über [viszerale Osteopathie](/blog/viszerale-osteopathie) beschrieben.
+Die Bedeutung des Vagusnervs für Verdauung und Stressregulation wird ausführlich in meinem Artikel über [viszerale Osteopathie](/blog/viszerale-osteopathie/) beschrieben.
 
 ---
 
@@ -1116,7 +1116,7 @@ Im nächsten Abschnitt beantworte ich die häufigsten Fragen zum Zwerchfell und 
 
 **Beispiel:** Patient mit chronischen LWS-Schmerzen + Verstopfung → Zwerchfell-Behandlung löst beides.
 
-Mehr dazu: [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) und [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii).
+Mehr dazu: [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) und [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/).
 
 ---
 
@@ -1321,7 +1321,7 @@ Es ist die Brücke zwischen Körper und Geist.
 
 Wenn Sie unter chronischen Beschwerden leiden, die mit dem Zwerchfell zusammenhängen könnten – Verdauungsprobleme, Rückenschmerzen, Atembeschwerden, Stress, Oberbauchspannungen – kann osteopathische Behandlung eine wertvolle Unterstützung sein.
 
-**→ [Jetzt Termin vereinbaren](/terminbuchung)**
+**→ [Jetzt Termin vereinbaren](/terminbuchung/)**
 
 **Oder haben Sie noch Fragen?**
 → [Kontakt aufnehmen](/terminbuchung/)
@@ -1337,19 +1337,19 @@ Rappstraße 7
 ### Weiterführende Artikel:
 
 **Viszerale Osteopathie:**
-- [Viszerale Osteopathie: Was ist das und wie funktioniert sie?](/blog/viszerale-osteopathie)
+- [Viszerale Osteopathie: Was ist das und wie funktioniert sie?](/blog/viszerale-osteopathie/)
 
 **Verdauung und Rückenschmerzen:**
-- [Reizdarm und Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [Radix Mesenterii: Warum der Darmaufhängepunkt Rückenschmerzen verursachen kann](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+- [Reizdarm und Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [Radix Mesenterii: Warum der Darmaufhängepunkt Rückenschmerzen verursachen kann](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 **Stress und autonomes Nervensystem:**
-- [Burnout ganzheitlich behandeln: Das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
+- [Burnout ganzheitlich behandeln: Das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/)
 
 **Behandlungsseiten:**
-- [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden)
-- [Stress & Burnout](/behandlungen/stress-burnout)
-- [Rückenschmerzen](/behandlungen/rueckenschmerzen)
+- [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/)
+- [Stress & Burnout](/behandlungen/stress-burnout/)
+- [Rückenschmerzen](/behandlungen/rueckenschmerzen/)
 
 ---
 

@@ -24,7 +24,7 @@ Trotzdem werden die beiden Beschwerden in der Praxis fast immer getrennt behande
 
 In diesem Artikel erkläre ich Ihnen als Osteopath, über welche anatomischen und neurologischen Wege Blähungen Rückenschmerzen auslösen können -- und wie eine ganzheitliche Behandlung aussieht.
 
-> Dieser Artikel vertieft einen speziellen Aspekt des Darm-Rücken-Zusammenhangs. Einen umfassenden Überblick finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+> Dieser Artikel vertieft einen speziellen Aspekt des Darm-Rücken-Zusammenhangs. Einen umfassenden Überblick finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 ---
 
@@ -45,7 +45,7 @@ Dieser Mechanismus ist wissenschaftlich gut dokumentiert und erklärt, warum:
 
 ### Mechanismus 2: Zwerchfell-Spannung durch Druck von unten
 
-Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) ist Ihr wichtigster Atemmuskel -- und gleichzeitig eine Trennwand zwischen Brust- und Bauchraum. Es hat direkte Ansatzpunkte an den **Lendenwirbeln L1 bis L3** (über die sogenannten Zwerchfellschenkel, Crus diaphragmatica).
+Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) ist Ihr wichtigster Atemmuskel -- und gleichzeitig eine Trennwand zwischen Brust- und Bauchraum. Es hat direkte Ansatzpunkte an den **Lendenwirbeln L1 bis L3** (über die sogenannten Zwerchfellschenkel, Crus diaphragmatica).
 
 **Bei starken Blähungen geschieht Folgendes:**
 
@@ -58,7 +58,7 @@ Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) ist Ihr wichtigs
 
 ### Mechanismus 3: Mechanischer Zug über das Darmgekröse
 
-Ihr Dünndarm ist über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) (Darmgekröse-Wurzel) direkt an der Lendenwirbelsäule aufgehängt. Wenn sich der Darm mit Gas füllt und ausdehnt, entsteht ein **mechanischer Zug** an dieser Aufhängung.
+Ihr Dünndarm ist über die [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) (Darmgekröse-Wurzel) direkt an der Lendenwirbelsäule aufgehängt. Wenn sich der Darm mit Gas füllt und ausdehnt, entsteht ein **mechanischer Zug** an dieser Aufhängung.
 
 Stellen Sie sich ein Segel vor, das im Wind flattert und am Mast zieht -- ähnlich zerrt ein geblähter Darm an der Wirbelsäule.
 
@@ -98,19 +98,19 @@ Das Zwerchfell ist bei Patienten mit chronischen Blähungen häufig in seiner Be
 
 ### 2. Viszerale Techniken am Darm
 
-Über sanfte Mobilisation des Dünn- und Dickdarms sowie der [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) wird die Beweglichkeit der Organe verbessert und Verklebungen gelöst.
+Über sanfte Mobilisation des Dünn- und Dickdarms sowie der [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) wird die Beweglichkeit der Organe verbessert und Verklebungen gelöst.
 
 **Effekt:** Reduktion des mechanischen Zugs auf die Wirbelsäule, bessere Gaspassage, weniger Blähungen.
 
 ### 3. Strukturelle Behandlung der Lendenwirbelsäule
 
-Durch die chronische reflexartige Verspannung haben sich oft Blockierungen in der Lendenwirbelsäule und im [Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis) entwickelt. Diese werden manuell gelöst.
+Durch die chronische reflexartige Verspannung haben sich oft Blockierungen in der Lendenwirbelsäule und im [Iliosakralgelenk (ISG)](/blog/isg-blockierung-teufelskreis/) entwickelt. Diese werden manuell gelöst.
 
 **Effekt:** Akute Schmerzlinderung, bessere Beweglichkeit, Unterbrechung des viszerosomatischen Reflexkreises.
 
 ### 4. Vagusnerv-Regulation
 
-Der Vagusnerv steuert die Darmbewegung (Peristaltik). Bei vielen Patienten mit chronischen Blähungen ist die Vagusnerv-Funktion eingeschränkt -- oft erkennbar an begleitenden [Nackenverspannungen](/blog/nackenschmerzen-schwindel-hws-vagus). Craniosacrale Techniken und gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) helfen, die Darmtätigkeit zu normalisieren.
+Der Vagusnerv steuert die Darmbewegung (Peristaltik). Bei vielen Patienten mit chronischen Blähungen ist die Vagusnerv-Funktion eingeschränkt -- oft erkennbar an begleitenden [Nackenverspannungen](/blog/nackenschmerzen-schwindel-hws-vagus/). Craniosacrale Techniken und gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen/) helfen, die Darmtätigkeit zu normalisieren.
 
 **Effekt:** Verbesserte Peristaltik, weniger Gasansammlungen, Regulation des autonomen Nervensystems.
 
@@ -177,11 +177,11 @@ Klassische Medizin behandelt Blähungen und Rückenschmerzen getrennt. Osteopath
 
 ## Verwandte Artikel
 
-- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) -- Die anatomische Darm-Rücken-Verbindung im Detail
-- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) -- Darm-Hirn-Achse und interozeptive Feedbackschleifen
-- [Verstopfung und Rückenschmerzen](/blog/verstopfung-rueckenschmerzen) -- Dickdarm, Psoas und Lendenwirbelsäule
-- [Durchfall und Rückenschmerzen](/blog/durchfall-rueckenschmerzen) -- Vegetatives Nervensystem und viszerale Schmerzprojektion
-- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis) -- Häufig begleitend bei Darmbeschwerden
+- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) -- Die anatomische Darm-Rücken-Verbindung im Detail
+- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) -- Darm-Hirn-Achse und interozeptive Feedbackschleifen
+- [Verstopfung und Rückenschmerzen](/blog/verstopfung-rueckenschmerzen/) -- Dickdarm, Psoas und Lendenwirbelsäule
+- [Durchfall und Rückenschmerzen](/blog/durchfall-rueckenschmerzen/) -- Vegetatives Nervensystem und viszerale Schmerzprojektion
+- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis/) -- Häufig begleitend bei Darmbeschwerden
 
 ---
 
@@ -197,7 +197,7 @@ Klassische Medizin behandelt Blähungen und Rückenschmerzen getrennt. Osteopath
 
 **Sie leiden unter Blähungen und Rückenschmerzen?**
 
-[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
+[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung/) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
 
 **Ihre Beschwerden hängen zusammen. Lassen Sie uns sie auch so behandeln.**
 
@@ -205,7 +205,7 @@ Klassische Medizin behandelt Blähungen und Rückenschmerzen getrennt. Osteopath
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 **Direkt zu den Behandlungsseiten:**
 - [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Blähungen, Reizdarm und Verdauungsproblemen

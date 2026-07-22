@@ -61,7 +61,7 @@ status: "published"
 **Was dabei oft übersehen wird:**
 - ✗ Brustwirbelsäulen-Blockaden (BWS-Steifigkeit ist bei einem erheblichen Anteil der Impingement-Patient:innen zu finden)[^3]
 - ✗ Rippen-Dysfunktionen (verklebte Rippen-Gelenke schränken Schulterblatt-Bewegung ein)
-- ✗ [Nacken-Verspannungen](/blog/hws-blockierung-nacken-verspannung) (HWS-Blockaden verändern Schulter-Biomechanik)
+- ✗ [Nacken-Verspannungen](/blog/hws-blockierung-nacken-verspannung/) (HWS-Blockaden verändern Schulter-Biomechanik)
 - ✗ **Fasziale Verkettungen** – die EIGENTLICHE Ursache!
 
 ---
@@ -81,11 +81,11 @@ Die Gelenkkapsel der Schulter entzündet sich, verdickt und schrumpft – das Ge
 **Risikofaktoren:**
 - Diabetes (20% erhöhtes Risiko!)
 - Schilddrüsenerkrankungen
-- Längere Ruhigstellung (z.B. nach Sturz, [Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln))
-- [Chronischer Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) (sympathisches Nervensystem-Dysregulation)
+- Längere Ruhigstellung (z.B. nach Sturz, [Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/)/)
+- [Chronischer Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) (sympathisches Nervensystem-Dysregulation)
 
 **Wie Osteopathie hilft:**
-- **Frühe Phase:** Schmerzlinderung durch [Faszien-Release](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung), [Vagusnerv-Stimulation](/blog/nackenschmerzen-schwindel-hws-vagus)
+- **Frühe Phase:** Schmerzlinderung durch [Faszien-Release](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/), [Vagusnerv-Stimulation](/blog/nackenschmerzen-schwindel-hws-vagus/)
 - **Frozen-Phase:** Sanfte Gelenkmobilisation, Kapsel-Stretching, BWS-Mobilisierung
 - **Thawing-Phase:** Intensivierung der Beweglichkeits-Therapie
 
@@ -113,7 +113,7 @@ Sehnen der Rotatorenmanschette werden im Subakromialraum (unter dem Schulterdach
 Das Impingement ist fast NIE ein anatomisches Problem (zu enger Raum), sondern ein **biomechanisches Problem:**
 - Schulterblatt bewegt sich nicht korrekt (Scapula-Dyskinesie)
 - Folge: Oberarmkopf wandert nach oben → Einklemmung
-- Ursachen: Schwacher Serratus anterior, verspannter oberer Trapezius, [BWS-Blockaden](/blog/schreibtisch-fehler-rueckenschmerzen)
+- Ursachen: Schwacher Serratus anterior, verspannter oberer Trapezius, [BWS-Blockaden](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 **Osteopathischer Ansatz:**
 1. **BWS-Mobilisierung:** Brustwirbelsäule beweglich machen (Basis für Schulterblatt-Bewegung!)
@@ -192,7 +192,7 @@ Teilriss oder kompletter Riss einer oder mehrerer Sehnen der Rotatorenmanschette
 - Schmerzreduktion durch Faszien-Release
 - Muskelaufbau: Stabilisatoren aktivieren (Serratus, Rhomboideen)
 
-Ähnlich wie bei [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln) können viele Schulterprobleme konservativ behandelt werden – wenn die Biomechanik optimiert wird!
+Ähnlich wie bei [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln/) können viele Schulterprobleme konservativ behandelt werden – wenn die Biomechanik optimiert wird!
 
 ---
 
@@ -204,7 +204,7 @@ Teilriss oder kompletter Riss einer oder mehrerer Sehnen der Rotatorenmanschette
 - Schmerzlokalisation (vorne, seitlich, hinten?)
 - Beginn: plötzlich oder schleichend?
 - Nachts schlimmer? (typisch für Frozen Shoulder, Kalkschulter)
-- Auslöser: Sport, Überkopf-Arbeit, [Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen)?
+- Auslöser: Sport, Überkopf-Arbeit, [Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen/)?
 - Vorerkrankungen: Diabetes? Schilddrüse?
 
 **B) Beweglichkeitstest (ROM - Range of Motion):**
@@ -229,9 +229,9 @@ Teilriss oder kompletter Riss einer oder mehrerer Sehnen der Rotatorenmanschette
 - **Faszien-Spannung:** Pectoralis minor, oberer Trapezius, Levator scapulae
 
 **E) Nacken-Check:**
-Warum? Weil [HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung) die Schulter-Biomechanik massiv beeinflussen!
+Warum? Weil [HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung/) die Schulter-Biomechanik massiv beeinflussen!
 - C4/C5-Blockade → veränderte Schulterblatt-Muskel-Aktivierung
-- [Vagusnerv-Irritation](/blog/nackenschmerzen-schwindel-hws-vagus) → erhöhter Muskeltonus
+- [Vagusnerv-Irritation](/blog/nackenschmerzen-schwindel-hws-vagus/) → erhöhter Muskeltonus
 
 ---
 
@@ -246,9 +246,9 @@ Bei einem erheblichen Anteil der Patient:innen mit chronischen Schulterschmerzen
 - Steife BWS → Schulterblatt kann nicht gleiten → Impingement!
 
 **Typische Ursachen für BWS-Steifigkeit:**
-- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen): Rundrücken-Haltung
-- [Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system): Atemmuskulatur verspannt → Rippen blockiert → BWS steif
-- Alte [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training)
+- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen/): Rundrücken-Haltung
+- [Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/): Atemmuskulatur verspannt → Rippen blockiert → BWS steif
+- Alte [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/)
 
 **Osteopathische BWS-Mobilisierung:**
 
@@ -280,7 +280,7 @@ Bei einem erheblichen Anteil der Patient:innen mit chronischen Schulterschmerzen
 Rippen sind über Gelenke mit der BWS verbunden. Bei jedem Atemzug, bei jeder Armbewegung müssen sie mitbewegen!
 
 **Verklebte Rippen → eingeschränkte Schulterblatt-Bewegung:**
-- Rippe 1-2: Häufig bei [Nacken-Verspannungen](/blog/hws-blockierung-nacken-verspannung) blockiert
+- Rippe 1-2: Häufig bei [Nacken-Verspannungen](/blog/hws-blockierung-nacken-verspannung/) blockiert
 - Rippe 3-6: Ansatz wichtiger Schulterblatt-Muskeln
 
 **Osteopathische Rippen-Mobilisierung:**
@@ -329,7 +329,7 @@ Ohne Schulterblatt-Stabilität kehren die Schulterschmerzen immer wieder zurück
 
 **A) Pectoralis minor:**
 - Zieht Schulterblatt nach vorne-unten
-- Bei [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen) oft massiv verkürzt
+- Bei [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen/) oft massiv verkürzt
 - **Folge:** Rundrücken, Impingement
 
 **B) Subscapularis:**
@@ -346,7 +346,7 @@ Ohne Schulterblatt-Stabilität kehren die Schulterschmerzen immer wieder zurück
 - **Indirect Release:** Faszie wird zunächst in Entspannungsrichtung gebracht
 - **Myofascial Unwinding:** Folgen der Gewebsspannung bis zur Lösung
 
-**Unterschied zu [Dehnung](/blog/dehnen-rueckenschmerzen-mythos):**
+**Unterschied zu [Dehnung](/blog/dehnen-rueckenschmerzen-mythos/):**
 Dehnung wirkt auf Muskel, Faszien-Release auf Bindegewebe – beides wichtig, aber unterschiedlich!
 
 ---
@@ -359,7 +359,7 @@ Bei Patient:innen mit Frozen Shoulder findet sich häufig nicht nur das Schulter
 - Blockaden in den oberen Rippen
 - Pectoralis-minor-Verspannung
 - Subscapularis-Verklebungen (schmerzhaft bei Palpation)
-- Begleitende [HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung) auf Höhe C5/C6
+- Begleitende [HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung/) auf Höhe C5/C6
 
 Der osteopathische Ansatz arbeitet daher nicht nur am Gelenk selbst, sondern an der gesamten Bewegungskette: BWS-Mobilisierung, Rippen-Release, HWS-Arbeit; in späteren Sitzungen sanfte Schultergelenk-Mobilisation und Subscapularis-Arbeit. Begleitend Heimübungen (Pendelübungen, Wand-Kletter-Übung).
 
@@ -462,7 +462,7 @@ Der osteopathische Ansatz arbeitet daher nicht nur am Gelenk selbst, sondern an 
 - **Spezial-Tests:** Impingement-Tests, Rotatorenmanschetten-Tests
 - **BWS-Check:** Rotation, Extension (oft DER Befund!)
 - **Rippen-Mobilität:** Rippen 1-6
-- **HWS-Check:** Blockaden, [Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung)
+- **HWS-Check:** Blockaden, [Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung/)
 - **Schulterblatt:** Scapula-Dyskinesie? Muskel-Balance?
 - **Faszien-Palpation:** Pectoralis, Subscapularis, Latissimus
 
@@ -527,7 +527,7 @@ Hamburger haben überdurchschnittlich häufig Schulterschmerzen. Warum?
 1. **Wetter:** Feucht-kaltes Klima → chronische Entzündung begünstigt
 2. **Fahrrad-Stadt:** Viele Radfahrer mit schlechter Oberkörper-Haltung (Rundrücken!)
 3. **Maritime Berufe:** Überkopf-Arbeit (Werften, Hafen)
-4. **Stress-Level:** [Chronischer Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) → erhöhter Muskeltonus → [Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung) → Schulterschmerzen
+4. **Stress-Level:** [Chronischer Stress](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) → erhöhter Muskeltonus → [Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung/) → Schulterschmerzen
 
 **Ganzheitlicher Ansatz in Hamburg:**
 Die Kombination aus Osteopathie, Bewegungstherapie und Stress-Management ist bei Hamburger Schulterschmerz-Patienten besonders erfolgreich!
@@ -552,7 +552,7 @@ A: Nicht unbedingt! Bei Teilrissen <1cm und Patient:innen >60 Jahre ist konserva
 A: Ja, sogar empfohlen! **Osteopathie** = Ursachen-Behandlung (BWS, Rippen, Faszien). **Physiotherapie** = Muskel-Kräftigung, Stabilisierung. Perfekte Kombination!
 
 **Q: „Zahlt die Krankenkasse Osteopathie bei Schulterschmerzen?"**
-A: Viele gesetzliche Krankenkassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten, je nach Kasse). Private Krankenkassen meist 100%. [Mehr zu Kosten & Erstattung →](/osteopathie-kosten-hamburg)
+A: Viele gesetzliche Krankenkassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kosten, je nach Kasse). Private Krankenkassen meist 100%. [Mehr zu Kosten & Erstattung →](/osteopathie-kosten-hamburg/)
 
 ---
 
@@ -560,7 +560,7 @@ A: Viele gesetzliche Krankenkassen erstatten 3-6 Sitzungen/Jahr (40-100% der Kos
 
 **Schulterschmerzen, die nicht weggehen?** Sie wollen die OP vermeiden oder zumindest hinauszögern?
 
-**→ [Jetzt Termin vereinbaren](/terminbuchung)**
+**→ [Jetzt Termin vereinbaren](/terminbuchung/)**
 
 **Oder haben Sie noch Fragen?**
 → [Kontakt aufnehmen](/terminbuchung/)
@@ -579,7 +579,7 @@ Rappstraße 7
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

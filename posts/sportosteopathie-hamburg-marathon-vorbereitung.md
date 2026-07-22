@@ -82,7 +82,7 @@ Hamburg ist ein **Lauf-Paradies** – aber mit Eigenheiten:
 
 - **Alsterrunden (7,4 km)** sind asphaltiert und überwiegend flach – das belastet immer dieselben Strukturen. Variieren Sie mit Stadtpark, Volksdorfer Wald, Niendorfer Gehege.
 - **Kopfsteinpflaster in der City** (Speicherstadt, Altona) – Vorsicht bei Sprunggelenk-Anamnese
-- **Wind und Wetter**: Hamburger Wetterumschwünge belasten das vegetative Nervensystem stärker als Lauftraining im Süden Deutschlands. Nutzen Sie [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) zur Erholung.
+- **Wind und Wetter**: Hamburger Wetterumschwünge belasten das vegetative Nervensystem stärker als Lauftraining im Süden Deutschlands. Nutzen Sie [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen/) zur Erholung.
 
 ## Wann Sie unbedingt zum Sportosteopathen sollten
 
@@ -113,7 +113,7 @@ Sie trainieren für den Hamburg-Marathon und möchten osteopathisch betreut werd
 - **[Rotherbaum](/osteopathie-rotherbaum/)** – nahe Alster, ideal nach dem Lauftraining
 - **[Eimsbüttel](/osteopathie-eimsbuettel/)** – nahe Stadtpark und Niendorfer Lauftrainings-Strecken
 
-Mehr zu meinem [sportosteopathischen Behandlungsschwerpunkt](/behandlungen/sportosteopathie/) und zur [Sportosteopathie für Hamburger Sportler:innen](/blog/sportosteopathie-hamburg-leistung-optimieren).
+Mehr zu meinem [sportosteopathischen Behandlungsschwerpunkt](/behandlungen/sportosteopathie/) und zur [Sportosteopathie für Hamburger Sportler:innen](/blog/sportosteopathie-hamburg-leistung-optimieren/).
 
 ---
 

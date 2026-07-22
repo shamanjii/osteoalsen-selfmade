@@ -270,7 +270,7 @@ Reaktive Muskelverspannung (sekundär!)
 - Stirn
 - Oberkiefer
 
-**Wichtig:** Bei Kiefergelenk-Problemen ([CMD](/blog/cmd-nackenschmerzen-kiefergelenk)) oft beteiligt!
+**Wichtig:** Bei Kiefergelenk-Problemen ([CMD](/blog/cmd-nackenschmerzen-kiefergelenk/)/) oft beteiligt!
 
 ## Eigenübungen: Das 10-Minuten-Programm
 
@@ -355,7 +355,7 @@ Ja, aber meist über den Umweg: Stress → Muskelverspannung → sekundäre HWS-
 
 Spannungskopfschmerz: beidseitig, drückend, KEINE Übelkeit, KEINE Licht-/Lärmempfindlichkeit
 Migräne: meist einseitig, pulsierend, Übelkeit, Licht-/Lärmempfindlichkeit
-→ Siehe auch: [Migräne ohne Aura](/blog/migraene-ohne-aura-osteopathie)
+→ Siehe auch: [Migräne ohne Aura](/blog/migraene-ohne-aura-osteopathie/)
 
 **Bezahlt Krankenkasse Osteopathie?**
 
@@ -366,17 +366,17 @@ Privat: Meist 80-100% Erstattung
 
 ## Verwandte Artikel
 
-[Migräne ohne Aura osteopathisch behandeln](/blog/migraene-ohne-aura-osteopathie) – HWS-Beteiligung bei Migräne
+[Migräne ohne Aura osteopathisch behandeln](/blog/migraene-ohne-aura-osteopathie/) – HWS-Beteiligung bei Migräne
 
-[Chronische Kopfschmerzen osteopathisch behandeln](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) – Warum Tabletten nicht helfen
+[Chronische Kopfschmerzen osteopathisch behandeln](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) – Warum Tabletten nicht helfen
 
-[Kopfschmerzen durch Trigeminus-Irritation](/blog/kopfschmerzen-trigeminus-ursache) – HWS-Blockierung → Kopfschmerz
+[Kopfschmerzen durch Trigeminus-Irritation](/blog/kopfschmerzen-trigeminus-ursache/) – HWS-Blockierung → Kopfschmerz
 
-[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) – Atlas-Behandlung
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung/) – Atlas-Behandlung
 
-[CMD & Nackenschmerzen](/blog/cmd-nackenschmerzen-kiefergelenk) – Kiefergelenk als Kopfschmerz-Trigger
+[CMD & Nackenschmerzen](/blog/cmd-nackenschmerzen-kiefergelenk/) – Kiefergelenk als Kopfschmerz-Trigger
 
-[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen-migraene) – Ganzheitliche Behandlung Hamburg
+[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen-migraene/) – Ganzheitliche Behandlung Hamburg
 
 ---
 
@@ -396,6 +396,6 @@ Privat: Meist 80-100% Erstattung
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

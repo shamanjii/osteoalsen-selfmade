@@ -22,7 +22,7 @@ alt: ""
 
 In meiner Praxis sehe ich dieses Beschwerdebild regelmäßig: Patienten kommen wegen chronischer Rückenschmerzen und berichten "nebenbei" von wiederkehrendem Durchfall. Oder umgekehrt. Die wenigsten bringen beides in Verbindung -- obwohl genau dort der Schlüssel zur Behandlung liegt.
 
-> Dieser Artikel ergänzt unsere Darm-Rücken-Serie. Den Grundlagenartikel finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+> Dieser Artikel ergänzt unsere Darm-Rücken-Serie. Den Grundlagenartikel finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 ---
 
@@ -40,7 +40,7 @@ Wenn der Sympathikus aktiv ist:
 
 ### Parasympathikus -- der "Ruhe-und-Verdau-Modus"
 
-Wenn der Parasympathikus aktiv ist (hauptsächlich über den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen)):
+Wenn der Parasympathikus aktiv ist (hauptsächlich über den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen/)/):
 - Herzfrequenz sinkt
 - Muskelspannung nimmt ab
 - **Darmbewegung wird gesteigert** (Verdauung läuft)
@@ -58,7 +58,7 @@ Bei vielen Patienten mit Durchfall und Rückenschmerzen finde ich eine **vegetat
 4. Über viszerosomatische Reflexe wird die Reizung auf die **Rückenmuskulatur** projiziert
 5. Rückenschmerzen und Durchfall treten gleichzeitig auf
 
-Diesen Mechanismus der gestörten Darm-Hirn-Achse habe ich ausführlich in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) beschrieben.
+Diesen Mechanismus der gestörten Darm-Hirn-Achse habe ich ausführlich in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) beschrieben.
 
 ---
 
@@ -111,7 +111,7 @@ Der Vagusnerv ist der Hauptnerv des Parasympathikus und steuert die Darmbewegung
 
 **Effekt:** Normalisierung der Darmperistaltik (weder zu schnell noch zu langsam), Reduktion der vegetativen Überreaktionen, bessere Stress-Resilienz.
 
-Mehr zum Vagusnerv und seiner Bedeutung lesen Sie hier: [Nackenschmerzen und Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus)
+Mehr zum Vagusnerv und seiner Bedeutung lesen Sie hier: [Nackenschmerzen und Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/)
 
 ### 2. Viszerale Behandlung des Darms
 
@@ -121,13 +121,13 @@ Durch sanfte Palpation und Mobilisation des Dünn- und Dickdarms wird die Eigenb
 
 ### 3. Zwerchfell-Mobilisation
 
-Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) hat direkten Einfluss auf das autonome Nervensystem: Tiefe Bauchatmung aktiviert den Vagusnerv (Parasympathikus), flache Brustatmung aktiviert den Sympathikus. Bei Patienten mit vegetativer Dysregulation ist das Zwerchfell fast immer verspannt.
+Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) hat direkten Einfluss auf das autonome Nervensystem: Tiefe Bauchatmung aktiviert den Vagusnerv (Parasympathikus), flache Brustatmung aktiviert den Sympathikus. Bei Patienten mit vegetativer Dysregulation ist das Zwerchfell fast immer verspannt.
 
 **Effekt:** Verbesserte Atemfunktion, Regulation des autonomen Nervensystems, Entlastung der Lendenwirbelsäule über die Zwerchfellschenkel.
 
 ### 4. Strukturelle Behandlung der LWS und des ISG
 
-Die durch viszerale Schmerzprojektion entstandenen Muskelverspannungen und Blockierungen in der Lendenwirbelsäule und im [ISG](/blog/isg-blockierung-teufelskreis) werden gelöst. Besonders wichtig ist es, die Segmente T10-L2 zu behandeln -- dort laufen die sympathischen Nervenfasern zum Darm.
+Die durch viszerale Schmerzprojektion entstandenen Muskelverspannungen und Blockierungen in der Lendenwirbelsäule und im [ISG](/blog/isg-blockierung-teufelskreis/) werden gelöst. Besonders wichtig ist es, die Segmente T10-L2 zu behandeln -- dort laufen die sympathischen Nervenfasern zum Darm.
 
 **Effekt:** Akute Schmerzlinderung, verbesserte Beweglichkeit, Unterbrechung des Reflexkreises zwischen Darm und Rückenmuskulatur.
 
@@ -189,11 +189,11 @@ Die Osteopathie bietet einen Rahmen, in dem Darm, Nervensystem und Bewegungsappa
 
 ## Verwandte Artikel
 
-- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) -- Die anatomische Verbindung im Detail
-- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) -- Darm-Hirn-Achse und Feedbackschleifen
-- [Blähungen und Rückenschmerzen](/blog/blaehungen-rueckenschmerzen) -- Viszerosomatische Reflexe und Zwerchfell-Spannung
-- [Verstopfung und Rückenschmerzen](/blog/verstopfung-rueckenschmerzen) -- Dickdarm, Psoas und Lendenwirbelsäule
-- [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) -- Stress und autonomes Nervensystem
+- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) -- Die anatomische Verbindung im Detail
+- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) -- Darm-Hirn-Achse und Feedbackschleifen
+- [Blähungen und Rückenschmerzen](/blog/blaehungen-rueckenschmerzen/) -- Viszerosomatische Reflexe und Zwerchfell-Spannung
+- [Verstopfung und Rückenschmerzen](/blog/verstopfung-rueckenschmerzen/) -- Dickdarm, Psoas und Lendenwirbelsäule
+- [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) -- Stress und autonomes Nervensystem
 
 ---
 
@@ -209,7 +209,7 @@ Die Osteopathie bietet einen Rahmen, in dem Darm, Nervensystem und Bewegungsappa
 
 **Sie leiden unter Durchfall und Rückenschmerzen?**
 
-[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
+[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung/) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
 
 **Ihr Nervensystem verbindet Darm und Rücken. Lassen Sie uns beide Seiten behandeln.**
 
@@ -217,7 +217,7 @@ Die Osteopathie bietet einen Rahmen, in dem Darm, Nervensystem und Bewegungsappa
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 **Direkt zu den Behandlungsseiten:**
 - [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Darm-Beschwerden und viszerosomatischen Beschwerden

@@ -71,10 +71,10 @@ Nach jeder Behandlung erhalten Sie eine GeBüH-Rechnung (Gebührenverzeichnis f�
 
 Aus meiner Praxis-Erfahrung mit Hamburger Patient:innen werden vor allem diese Behandlungsanlässe problemlos erstattet:
 
-- **Rückenschmerzen** (akut, chronisch, ISG-Blockaden) – siehe [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg)
-- **HWS-Syndrom & Nackenschmerzen** – siehe [HWS-Blockade lösen](/blog/hws-blockierung-nacken-verspannung)
-- **Spannungskopfschmerzen & Migräne** – siehe [Trigeminus-Ursache](/blog/kopfschmerzen-trigeminus-ursache)
-- **Reizdarm-Beschwerden in Verbindung mit Bewegungsbeschwerden** – siehe [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
+- **Rückenschmerzen** (akut, chronisch, ISG-Blockaden) – siehe [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/)
+- **HWS-Syndrom & Nackenschmerzen** – siehe [HWS-Blockade lösen](/blog/hws-blockierung-nacken-verspannung/)
+- **Spannungskopfschmerzen & Migräne** – siehe [Trigeminus-Ursache](/blog/kopfschmerzen-trigeminus-ursache/)
+- **Reizdarm-Beschwerden in Verbindung mit Bewegungsbeschwerden** – siehe [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
 - **Beschwerden nach Schleudertrauma** oder OPs
 
 ### Was ist mit privaten Krankenversicherungen (PKV)?

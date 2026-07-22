@@ -17,7 +17,7 @@ author: "Admin"
 ---
 # ISG-Blockierung? Warum sie immer wiederkommt (und wie Sie den Teufelskreis durchbrechen)
 
-> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf ISG-Blockierungen (Iliosakralgelenk). Für einen kompletten Guide zu allen Rückenschmerz-Ursachen siehe: [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg)
+> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf ISG-Blockierungen (Iliosakralgelenk). Für einen kompletten Guide zu allen Rückenschmerz-Ursachen siehe: [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg/)
 
 **Letzte Woche beim Chiropraktiker. Kurzes Knacken, sofortige Erleichterung. „Perfekt", denken Sie. Drei Tage später: Der gleiche stechende Schmerz im unteren Rücken. Wieder blockiert. Sie fragen sich: Warum hilft es nur kurz? Die Erfahrung in der Praxis zeigt: ISG-Blockierungen treten häufig wieder auf, wenn nur die Blockierung selbst behandelt wird – nicht die Ursache (warum es überhaupt blockiert). In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit chronischen ISG-Problemen. Der Unterschied zwischen 3 Tagen und 3 Monaten Schmerzfreiheit? Die richtige Ursachen-Behandlung.**
 
@@ -98,7 +98,7 @@ author: "Admin"
 - Beinlängendifferenz (funktionell oder anatomisch)
 - Schwache Rumpfmuskulatur (ISG kompensiert fehlende Stabilität)
 - Beckenverdrehung (Torsion)
-- [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (ISG übernimmt Bewegung der steifen Hüfte)
+- [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/) (ISG übernimmt Bewegung der steifen Hüfte)
 - Narben (Kaiserschnitt, Bauch-OP → Faszienzug auf Becken)
 
 **Wenn diese Ursachen nicht behandelt werden**, kommt es erfahrungsgemäß rasch wieder zu Blockierungen.
@@ -125,9 +125,9 @@ author: "Admin"
    - Eine Seite höher → Quadratus Lumborum auf dieser Seite meist verspannt
 
 **Lösung:**
-- Triggerpunkt-Behandlung überspannter Muskeln ([osteopathische Behandlung](/behandlungen/rueckenschmerzen))
-- [Dehnung](/blog/dehnen-rueckenschmerzen-mythos) verkürzter Strukturen (Iliopsoas, Piriformis)
-- Kräftigung geschwächter Muskeln (Gluteus Medius) mit [gezieltem Training](/blog/sportverletzung-schneller-zurueck-training)
+- Triggerpunkt-Behandlung überspannter Muskeln ([osteopathische Behandlung](/behandlungen/rueckenschmerzen/)/)
+- [Dehnung](/blog/dehnen-rueckenschmerzen-mythos/) verkürzter Strukturen (Iliopsoas, Piriformis)
+- Kräftigung geschwächter Muskeln (Gluteus Medius) mit [gezieltem Training](/blog/sportverletzung-schneller-zurueck-training/)
 
 ---
 
@@ -157,7 +157,7 @@ author: "Admin"
 **Wichtig:** Lassen Sie das von einem Osteopathen/Orthopäden differenzieren!
 
 **Lösung:**
-- **Funktionell:** [Beckenkorrektur](/behandlungen/rueckenschmerzen), ISG-/[Hüft-Behandlung](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) → Beinlänge gleicht sich an
+- **Funktionell:** [Beckenkorrektur](/behandlungen/rueckenschmerzen/), ISG-/[Hüft-Behandlung](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/) → Beinlänge gleicht sich an
 - **Anatomisch:** Einlage/Absatzerhöhung (erst ab >8-10 mm Differenz empfohlen), Beratung beim [Osteopathen Hamburg](/)
 
 ---
@@ -185,9 +185,9 @@ author: "Admin"
    - Schmerz im ISG beim Test → ISG kompensiert für schwachen Core
 
 **Lösung:**
-- Core-Training (siehe Übungen unten) unter [professioneller Anleitung](/behandlungen/rueckenschmerzen)
-- Besonders: Transversus-Aktivierung lernen ([osteopathische Therapie](/))
-- Beckenboden-Training (oft vernachlässigt!) – mehr bei [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden)
+- Core-Training (siehe Übungen unten) unter [professioneller Anleitung](/behandlungen/rueckenschmerzen/)
+- Besonders: Transversus-Aktivierung lernen ([osteopathische Therapie](/)/)
+- Beckenboden-Training (oft vernachlässigt!) – mehr bei [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/)
 
 ---
 
@@ -214,7 +214,7 @@ author: "Admin"
 **Lösung:**
 - Manuelle Beckenkorrektur ([Osteopathie Hamburg](/), Chiropraktik)
 - **Muskel-Energie-Techniken** (MET - Patient arbeitet aktiv mit)
-- Nach Korrektur: Stabilisation (sonst dreht es sich zurück!) mit [Sportosteopathie](/behandlungen/sportosteopathie)
+- Nach Korrektur: Stabilisation (sonst dreht es sich zurück!) mit [Sportosteopathie](/behandlungen/sportosteopathie/)
 
 ---
 
@@ -226,7 +226,7 @@ author: "Admin"
 - **Instabile Hüfte** → ISG muss stabilisieren → Überspannung
 
 **Besonders bei:**
-- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden) (Coxarthrose/Gelenkverschleiß Hüfte)
+- [Hüftarthrose](/behandlungen/arthrose-gelenkbeschwerden/) (Coxarthrose/Gelenkverschleiß Hüfte)
 - Hüft-Impingement (FAI - Femoroacetabuläres Impingement/Einklemmung)
 - Labrum-Läsion (Schädigung der Hüftgelenklippe)
 - Nach Hüft-OP (TEP - Totalendoprothese)
@@ -242,9 +242,9 @@ author: "Admin"
    - Schmerz im ISG (nicht Hüfte!) beim Test → ISG kompensiert
 
 **Lösung:**
-- [Hüftmobilisation](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) (Osteopathie, Physiotherapie)
+- [Hüftmobilisation](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/) (Osteopathie, Physiotherapie)
 - Hüftkapseldehnung
-- Bei [Arthrose](/blog/kniearthrose-ohne-op-behandeln): Angepasstes Training, ggf. Gewichtsreduktion
+- Bei [Arthrose](/blog/kniearthrose-ohne-op-behandeln/): Angepasstes Training, ggf. Gewichtsreduktion
 - Nach Hüft-Behandlung: ISG stabilisiert sich oft von selbst
 
 ---
@@ -272,9 +272,9 @@ author: "Admin"
 → Narben-bedingte ISG-Problematik möglich
 
 **Lösung:**
-- Narbenmobilisation ([manuelle Therapie](/behandlungen/rueckenschmerzen))
+- Narbenmobilisation ([manuelle Therapie](/behandlungen/rueckenschmerzen/)/)
 - Faszienbehandlung (myofasziale Techniken/MFR - Myofascial Release)
-- Narben-Massage (regelmäßig, ab 6 Wochen nach OP) – siehe auch [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden)
+- Narben-Massage (regelmäßig, ab 6 Wochen nach OP) – siehe auch [Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/)
 
 ---
 
@@ -285,9 +285,9 @@ author: "Admin"
 **Osteopathischer Ansatz:**
 1. **Diagnose:** Welche der 6 Ursachen liegt vor? (Oft mehrere gleichzeitig!)
 2. **Behandlung der Ursache:**
-   - Muskuläre Dysbalance → Triggerpunkt-Behandlung, [Dehnung](/blog/dehnen-rueckenschmerzen-mythos), Kräftigung
+   - Muskuläre Dysbalance → Triggerpunkt-Behandlung, [Dehnung](/blog/dehnen-rueckenschmerzen-mythos/), Kräftigung
    - Beckentorsion → Muskel-Energie-Techniken, Mobilisation
-   - [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung) → Hüftbehandlung (primär!)
+   - [Hüft-Dysfunktion](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/) → Hüftbehandlung (primär!)
    - Narben → Narbenmobilisation, Faszienarbeit
    - Core-Schwäche → Neuromuskuläre Aktivierung, Übungsanleitung
 3. **ISG-Behandlung** (sekundär) – oft löst sich Blockierung nach Ursachen-Behandlung von selbst
@@ -413,21 +413,21 @@ author: "Admin"
 - ❌ Nicht: Mit rundem Rücken aus Vorbeuge heben
 - ✓ Besser: In die Hocke gehen, Core anspannen, mit Beinen hochdrücken
 
-**[Langes Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen):**
+**[Langes Sitzen](/blog/schreibtisch-fehler-rueckenschmerzen/):**
 - Alle 30 Min: Aufstehen, 5x Glute Bridge
 - ISG-freundliches Sitzen: Beide Füße flach auf Boden, nicht überschlagen!
-- Ergonomische Tipps: [5 Fehler am Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen)
+- Ergonomische Tipps: [5 Fehler am Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 **Sport:**
 - Asymmetrische Sportarten meiden (in Akutphase): Golf, Tennis, Badminton
 - ISG-freundlich: Schwimmen (Rückenschwimmen!), Radfahren, Nordic Walking
-- Mehr zur [Sportosteopathie](/behandlungen/sportosteopathie) und [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training)
+- Mehr zur [Sportosteopathie](/behandlungen/sportosteopathie/) und [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/)
 
 ---
 
 ## Selbsttest: ISG oder LWS? (Oft verwechselt!)
 
-Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbelsäule](/behandlungen/rueckenschmerzen).
+Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbelsäule](/behandlungen/rueckenschmerzen/).
 
 ### ISG-Blockierung:
 
@@ -468,12 +468,12 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 - Beckentorsion (schwer selbst zu korrigieren)
 - Narben-bedingte Probleme
 - Nach Schwangerschaft/Geburt
-- Kombiniert mit [Hüft](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)-/[LWS](/behandlungen/rueckenschmerzen)-Problemen
+- Kombiniert mit [Hüft](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)-/[LWS](/behandlungen/rueckenschmerzen/)-Problemen
 
 **Prävention:**
 - Vor Schwangerschaft (Becken optimieren)
 - Nach Unfällen/Stürzen (frühzeitig korrigieren)
-- Bei einseitiger [Sportbelastung](/blog/sportverletzung-schneller-zurueck-training) (Golf, Tennis)
+- Bei einseitiger [Sportbelastung](/blog/sportverletzung-schneller-zurueck-training/) (Golf, Tennis)
 
 ### ⚠️ Red Flags – Sofort zum Arzt:
 
@@ -604,7 +604,7 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 
 **Mit Behandlung:**
 - Ab 6-8 Wochen postpartum: Osteopathie beginnen
-- Core-/[Beckenboden-Training](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) (professionell angeleitet!)
+- Core-/[Beckenboden-Training](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) (professionell angeleitet!)
 - Nach 3-6 Monaten: Meist stabil
 
 ### 6. Ist ISG-Blockierung gefährlich?
@@ -617,8 +617,8 @@ Viele denken, sie haben eine ISG-Blockierung – aber es ist die [Lendenwirbels�
 - Nicht lebensbedrohlich
 
 **Aber chronisch problematisch:**
-- [Chronische Schmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) (Lebensqualität!)
-- Kompensationsmuster → Folgeprobleme ([LWS](/behandlungen/rueckenschmerzen), [Hüfte](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung), [Knie](/blog/kniearthrose-ohne-op-behandeln))
+- [Chronische Schmerzen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) (Lebensqualität!)
+- Kompensationsmuster → Folgeprobleme ([LWS](/behandlungen/rueckenschmerzen/), [Hüfte](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/), [Knie](/blog/kniearthrose-ohne-op-behandeln/)/)
 - Einschränkung im Alltag/Sport
 - Psychische Belastung (Frustration, Angst vor Bewegung)
 
@@ -682,19 +682,19 @@ Rappstraße 7
 ## Weitere Artikel zum Thema
 
 **Rückenschmerzen & Wirbelsäule:**
-- [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg)
-- [Rückenschmerzen & Verdauung: Die überraschende Radix-Mesenterii-Connection](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
-- [5 Fehler am Schreibtisch, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen)
-- [Dehnen bei Rückenschmerzen: Der gefährliche Mythos](/blog/dehnen-rueckenschmerzen-mythos)
+- [Rückenschmerzen Osteopathie Hamburg – Ursachen finden & dauerhaft lösen](/rueckenschmerzen-osteopathie-hamburg/)
+- [Rückenschmerzen & Verdauung: Die überraschende Radix-Mesenterii-Connection](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
+- [5 Fehler am Schreibtisch, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen/)
+- [Dehnen bei Rückenschmerzen: Der gefährliche Mythos](/blog/dehnen-rueckenschmerzen-mythos/)
 
 **Gelenke & Bewegungsapparat:**
-- [Gelenkbeschwerden ganzheitlich behandeln – Osteopathischer Ansatz](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
-- [Kniearthrose ohne OP behandeln – Osteopathische Strategien](/blog/kniearthrose-ohne-op-behandeln)
-- [Sportverletzung: Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training)
+- [Gelenkbeschwerden ganzheitlich behandeln – Osteopathischer Ansatz](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)
+- [Kniearthrose ohne OP behandeln – Osteopathische Strategien](/blog/kniearthrose-ohne-op-behandeln/)
+- [Sportverletzung: Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training/)
 
 **Osteopathische Behandlung in Hamburg:**
 - [Osteopath Hamburg – Ganzheitliche Behandlung](/)
-- [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie)
+- [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie/)
 
 ---
 
@@ -704,7 +704,7 @@ Rappstraße 7
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

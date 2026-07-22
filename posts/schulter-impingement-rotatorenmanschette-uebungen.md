@@ -493,7 +493,7 @@ Falls die volle Kreisbewegung zu schwierig ist:
 Als VFO-zertifizierter Osteopath in Hamburg behandle ich Schulter-Impingement ganzheitlich – mit konservativen, ursachenorientierten osteopathischen Techniken.
 
 **📞 Termin buchen:**
-- **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung)
+- **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung/)
 - **Telefon:** [0176 43990001](tel:+4017643990001)
 
 **Standorte:** Rotherbaum (Rappstraße 7) & Eimsbüttel (Stresemannallee 118)
@@ -614,7 +614,7 @@ Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle 
 
 **Buchen Sie jetzt Ihren Termin:**
 - 📞 **Telefon:** [0176 43990001](tel:+4917643990001)
-- 🌐 **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung)
+- 🌐 **Online:** [www.osteoalsen.de/terminbuchung](/terminbuchung/)
 
 **Standorte:**
 - **Rotherbaum:** Rappstraße 7, 20146 Hamburg
@@ -628,12 +628,12 @@ Als VFO-zertifizierter Osteopath in Hamburg (Rotherbaum & Eimsbüttel) behandle 
 
 Wenn Sie mehr über ganzheitliche Behandlungsansätze erfahren möchten:
 
-- [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
-- [HWS-Blockierung und Nackenverspannung](/blog/hws-blockierung-nacken-verspannung)
-- [5 Schreibtisch-Fehler, die Schmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen)
-- [Sportosteopathie: Verletzungen vorbeugen](/blog/sportosteopathie-hamburg-leistung-optimieren)
+- [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)
+- [HWS-Blockierung und Nackenverspannung](/blog/hws-blockierung-nacken-verspannung/)
+- [5 Schreibtisch-Fehler, die Schmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen/)
+- [Sportosteopathie: Verletzungen vorbeugen](/blog/sportosteopathie-hamburg-leistung-optimieren/)
 
-Für allgemeine Informationen über osteopathische Behandlung: [Was ist Osteopathie?](/was-ist-osteopathie)
+Für allgemeine Informationen über osteopathische Behandlung: [Was ist Osteopathie?](/was-ist-osteopathie/)
 
 **Direkt zu den Behandlungsseiten:**
 - [Sportosteopathie Hamburg](/behandlungen/sportosteopathie/) — Ganzheitliche Behandlung bei Schulter-, Sport- und Überlastungsbeschwerden

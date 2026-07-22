@@ -191,25 +191,25 @@ Wenn Sie nur den Atlas korrigieren, wird das Becken ihn wieder "zurückziehen". 
 <!-- SEO OPTIMIZATION: Added 260 words on visceral compensation patterns after whiplash -->
 **Die versteckte Kettenreaktion: Wie Schleudertrauma Atmung und Verdauung beeinträchtigt**
 
-Eine in der Standard-Physiotherapie nach Schleudertrauma häufig wenig beachtete Komponente sind viszerale Kompensationen. Nach einem Auffahrunfall verspannt sich nicht nur die Nackenmuskulatur, sondern auch das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) und die umgebenden Strukturen. Der Grund: Der Schreck und die plötzliche Beschleunigung aktivieren den Sympathikus maximal – reflektorisches Anhalten der Luft, Zwerchfell-Verkrampfung.
+Eine in der Standard-Physiotherapie nach Schleudertrauma häufig wenig beachtete Komponente sind viszerale Kompensationen. Nach einem Auffahrunfall verspannt sich nicht nur die Nackenmuskulatur, sondern auch das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) und die umgebenden Strukturen. Der Grund: Der Schreck und die plötzliche Beschleunigung aktivieren den Sympathikus maximal – reflektorisches Anhalten der Luft, Zwerchfell-Verkrampfung.
 
 In der osteopathischen Untersuchung lassen sich bei vielen Schleudertrauma-Patient:innen mit anhaltenden Beschwerden folgende Befunde erheben:
 - Ein blockiertes Zwerchfell (eingeschränkte Atembewegung)
 - Verspannte untere Rippen (Rippengelenke fixiert)
 - Verdauungsprobleme (durch Vagusnerv-Irritation)
-- [Zusammenhang zwischen Rückenschmerzen und Darmproblemen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
+- [Zusammenhang zwischen Rückenschmerzen und Darmproblemen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
 
 **Warum ist das wichtig für die Heilung?**
 
 Das Zwerchfell hat direkte anatomische Verbindungen zur Lendenwirbelsäule (über die Zwerchfellschenkel) und zur Halswirbelsäule (über die Scalenusmuskeln). Wenn das Zwerchfell verspannt bleibt, zieht es permanent an der Halswirbelsäule – Ihre Atlas-Korrektur hält nicht dauerhaft.
 
-**Die [viszerale Osteopathie](/blog/viszerale-osteopathie) behandelt daher:**
+**Die [viszerale Osteopathie](/blog/viszerale-osteopathie/) behandelt daher:**
 1. Zwerchfell-Release (löst die zentrale Verspannung)
 2. Rippen-Mobilisation (stellt Atembeweglichkeit wieder her)
 3. Vagusnerv-Behandlung (normalisiert Verdauung und Stressreaktion)
 4. Faszien-Behandlung des gesamten Rumpfes
 
-Patienten berichten oft: "Ich kann endlich wieder tief durchatmen" oder "Meine Verdauung funktioniert plötzlich wieder besser." Das sind keine Zufälle, sondern die Folge einer ganzheitlichen Behandlung der Schleudertrauma-Spätfolgen. Besonders bei Patienten mit [chronischem Stress oder Burnout](/behandlungen/stress-burnout) ist dieser viszerale Ansatz essentiell für langfristigen Erfolg.
+Patienten berichten oft: "Ich kann endlich wieder tief durchatmen" oder "Meine Verdauung funktioniert plötzlich wieder besser." Das sind keine Zufälle, sondern die Folge einer ganzheitlichen Behandlung der Schleudertrauma-Spätfolgen. Besonders bei Patienten mit [chronischem Stress oder Burnout](/behandlungen/stress-burnout/) ist dieser viszerale Ansatz essentiell für langfristigen Erfolg.
 
 ### Phase 3: Stabilisierung (Monat 4-6)
 
@@ -463,25 +463,25 @@ Nein. Nach Stabilisierung: Jährliche Check-ups + Eigenübungen 3x/Woche.
 
 <!-- SEO OPTIMIZATION: Enhanced internal linking with visceral & stress articles -->
 
-[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) – Warum Nackenverspannungen Schwindel auslösen
+[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/) – Warum Nackenverspannungen Schwindel auslösen
 
-[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) – 5 häufigste Ursachen + Atlas-Behandlung
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung/) – 5 häufigste Ursachen + Atlas-Behandlung
 
-[Zwerchfell, Osteopathie, Atmung & Verdauung](/blog/zwerchfell-osteopathie-atmung-verdauung) – Wie Schleudertrauma die Atmung beeinträchtigt
+[Zwerchfell, Osteopathie, Atmung & Verdauung](/blog/zwerchfell-osteopathie-atmung-verdauung/) – Wie Schleudertrauma die Atmung beeinträchtigt
 
-[Viszerale Osteopathie](/blog/viszerale-osteopathie) – Ganzheitliche Behandlung der versteckten Kompensationen
+[Viszerale Osteopathie](/blog/viszerale-osteopathie/) – Ganzheitliche Behandlung der versteckten Kompensationen
 
-[Reizdarm & Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) – Viszerale Spätfolgen nach Unfällen
+[Reizdarm & Rückenschmerzen: Der Darm-Rücken-Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) – Viszerale Spätfolgen nach Unfällen
 
-[Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) – Kopfschmerzen als Schleudertrauma-Spätfolge
+[Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) – Kopfschmerzen als Schleudertrauma-Spätfolge
 
-[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) – Ganzheitliche Behandlung in Hamburg
+[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen/) – Ganzheitliche Behandlung in Hamburg
 
-[Stress & Burnout behandeln](/behandlungen/stress-burnout) – Stressverarbeitung nach Trauma
+[Stress & Burnout behandeln](/behandlungen/stress-burnout/) – Stressverarbeitung nach Trauma
 
-[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung/) – Alles über Ursachen, Formen und Behandlung
 
-[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Warum Kieferprobleme Nackenschmerzen verursachen
+[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk/) – Warum Kieferprobleme Nackenschmerzen verursachen
 
 ---
 
@@ -501,6 +501,6 @@ Nein. Nach Stabilisierung: Jährliche Check-ups + Eigenübungen 3x/Woche.
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

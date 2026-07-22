@@ -370,10 +370,10 @@ Manchmal sind die besten Übungen nicht ausreichend – dann können strukturell
 
 ### Häufige strukturelle Probleme
 
-**[HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung) (Halswirbelsäule):**
-Der Vagusnerv verläuft eng entlang der oberen Halswirbelsäule. Blockaden oder Verspannungen in diesem Bereich können den Nerv irritieren oder in seiner Funktion beeinträchtigen -- ein Zusammenhang, der auch beim [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung) eine zentrale Rolle spielt. Besonders die Atlasregion (erster Halswirbel) ist kritisch.
+**[HWS-Blockaden](/blog/hws-blockierung-nacken-verspannung/) (Halswirbelsäule):**
+Der Vagusnerv verläuft eng entlang der oberen Halswirbelsäule. Blockaden oder Verspannungen in diesem Bereich können den Nerv irritieren oder in seiner Funktion beeinträchtigen -- ein Zusammenhang, der auch beim [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung/) eine zentrale Rolle spielt. Besonders die Atlasregion (erster Halswirbel) ist kritisch.
 
-**[Zwerchfell-Verspannungen](/blog/zwerchfell-osteopathie-atmung-verdauung):**
+**[Zwerchfell-Verspannungen](/blog/zwerchfell-osteopathie-atmung-verdauung/):**
 Das Zwerchfell ist die wichtigste Durchtrittsstelle des Vagusnervs (Hiatus oesophageus). Chronische Verspannungen -- häufig durch Stress, flache Atmung oder Fehlhaltungen -- können die Vagus-Funktion massiv einschränken.
 
 **BWS-Blockaden (Brustwirbelsäule):**

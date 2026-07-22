@@ -24,7 +24,7 @@ Der Dickdarm liegt nicht irgendwo im Bauch, sondern verläuft wie ein Rahmen um 
 
 In diesem Artikel erkläre ich Ihnen die anatomischen Zusammenhänge, warum Abführmittel allein das Problem nicht lösen, und wie ein osteopathischer Ansatz beide Beschwerden gleichzeitig adressieren kann.
 
-> Dieser Artikel ist Teil unserer Darm-Rücken-Serie. Den Überblick finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+> Dieser Artikel ist Teil unserer Darm-Rücken-Serie. Den Überblick finden Sie hier: [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 ---
 
@@ -63,7 +63,7 @@ Zusätzlich zum mechanischen Druck gibt es einen **neurologischen** Mechanismus:
 - Die Schmerzen bei mehrtägiger Verstopfung zunehmen
 - Massagen der Rückenmuskulatur nur kurzfristig helfen
 
-> **Wissenschaftlicher Hintergrund:** Viszerosomatische Reflexe sind gut dokumentiert und erklären, wie Organstörungen zu Schmerzen im Bewegungsapparat führen können. Detaillierter beschrieben habe ich diesen Mechanismus in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang).
+> **Wissenschaftlicher Hintergrund:** Viszerosomatische Reflexe sind gut dokumentiert und erklären, wie Organstörungen zu Schmerzen im Bewegungsapparat führen können. Detaillierter beschrieben habe ich diesen Mechanismus in meinem Artikel über [Reizdarm und Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/).
 
 ---
 
@@ -114,13 +114,13 @@ Der verspannte Psoas wird durch gezielte Techniken entspannt -- sowohl direkt am
 
 ### 3. Zwerchfell-Mobilisation
 
-Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) ist essenziell für die Bauchpresse und damit für die Stuhlentleerung. Viele Patienten mit chronischer Verstopfung haben ein verspanntes, hochstehendes Zwerchfell. Durch die Mobilisation verbessert sich nicht nur die Atmung, sondern auch die Druckregulation im Bauchraum.
+Das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) ist essenziell für die Bauchpresse und damit für die Stuhlentleerung. Viele Patienten mit chronischer Verstopfung haben ein verspanntes, hochstehendes Zwerchfell. Durch die Mobilisation verbessert sich nicht nur die Atmung, sondern auch die Druckregulation im Bauchraum.
 
 **Effekt:** Bessere Bauchpresse, verbesserte Darmdurchblutung, Entlastung der Lendenwirbelsäule über die Zwerchfellschenkel.
 
 ### 4. Strukturelle Korrektur von LWS und ISG
 
-Die chronische Psoas-Spannung und die viszerosomatischen Reflexe führen häufig zu Blockierungen in der Lendenwirbelsäule und im [ISG](/blog/isg-blockierung-teufelskreis). Diese werden durch sanfte Mobilisations- und Manipulationstechniken gelöst.
+Die chronische Psoas-Spannung und die viszerosomatischen Reflexe führen häufig zu Blockierungen in der Lendenwirbelsäule und im [ISG](/blog/isg-blockierung-teufelskreis/). Diese werden durch sanfte Mobilisations- und Manipulationstechniken gelöst.
 
 **Effekt:** Akute Schmerzlinderung, verbesserte Segmentbeweglichkeit, Unterbrechung der Reflexkette Darm-Rückenmark-Muskulatur.
 
@@ -160,11 +160,11 @@ Bei einem direkten Zusammenhang zwischen Verstopfung und Rückenschmerzen berich
 
 ### Kann chronische Verstopfung die Wirbelsäule dauerhaft schädigen?
 
-Verstopfung allein führt nicht zu strukturellen Schäden an der Wirbelsäule. Allerdings kann die **chronische Psoas-Verspannung** und die reflexartige Muskelspannung über Monate und Jahre zu Fehlhaltungen, Bewegungseinschränkungen und sekundären Problemen (z.B. [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis)) führen. Eine frühzeitige ganzheitliche Behandlung kann das verhindern.
+Verstopfung allein führt nicht zu strukturellen Schäden an der Wirbelsäule. Allerdings kann die **chronische Psoas-Verspannung** und die reflexartige Muskelspannung über Monate und Jahre zu Fehlhaltungen, Bewegungseinschränkungen und sekundären Problemen (z.B. [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis/)/) führen. Eine frühzeitige ganzheitliche Behandlung kann das verhindern.
 
 ### Welche Rolle spielt Stress bei Verstopfung und Rückenschmerzen?
 
-Eine erhebliche. Stress aktiviert den **Sympathikus** (Kampf-oder-Flucht-Modus), der die Darmbewegung hemmt und gleichzeitig die Muskelspannung erhöht. Das Ergebnis: Verstopfung und Rückenschmerzen. Umgekehrt aktiviert Entspannung den **Parasympathikus** (über den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen)), der die Darmtätigkeit fördert und die Muskelspannung senkt. Stressmanagement ist daher ein wichtiger Baustein der Behandlung.
+Eine erhebliche. Stress aktiviert den **Sympathikus** (Kampf-oder-Flucht-Modus), der die Darmbewegung hemmt und gleichzeitig die Muskelspannung erhöht. Das Ergebnis: Verstopfung und Rückenschmerzen. Umgekehrt aktiviert Entspannung den **Parasympathikus** (über den [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen/)/), der die Darmtätigkeit fördert und die Muskelspannung senkt. Stressmanagement ist daher ein wichtiger Baustein der Behandlung.
 
 ### Wann sollte ich bei Verstopfung und Rückenschmerzen zum Arzt?
 
@@ -182,11 +182,11 @@ Wenn Sie seit Monaten oder Jahren unter beiden Beschwerden leiden und isolierte 
 
 ## Verwandte Artikel
 
-- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) -- Die Aufhängung des Dünndarms an der Wirbelsäule
-- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang) -- Darm-Hirn-Achse und Feedbackschleifen
-- [Blähungen und Rückenschmerzen](/blog/blaehungen-rueckenschmerzen) -- Viszerosomatische Reflexe und Zwerchfell-Spannung
-- [Durchfall und Rückenschmerzen](/blog/durchfall-rueckenschmerzen) -- Vegetatives Nervensystem und Schmerzprojektion
-- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis) -- Häufig begleitend bei Darmproblemen
+- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) -- Die Aufhängung des Dünndarms an der Wirbelsäule
+- [Reizdarm und Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/) -- Darm-Hirn-Achse und Feedbackschleifen
+- [Blähungen und Rückenschmerzen](/blog/blaehungen-rueckenschmerzen/) -- Viszerosomatische Reflexe und Zwerchfell-Spannung
+- [Durchfall und Rückenschmerzen](/blog/durchfall-rueckenschmerzen/) -- Vegetatives Nervensystem und Schmerzprojektion
+- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis/) -- Häufig begleitend bei Darmproblemen
 
 ---
 
@@ -202,7 +202,7 @@ Wenn Sie seit Monaten oder Jahren unter beiden Beschwerden leiden und isolierte 
 
 **Sie leiden unter Verstopfung und Rückenschmerzen?**
 
-[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
+[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung/) -- gemeinsam finden wir die Ursache und behandeln beide Beschwerden ganzheitlich.
 
 **Ihr Rücken und Ihr Darm sprechen dieselbe Sprache. Lassen Sie uns zuhören.**
 
@@ -210,7 +210,7 @@ Wenn Sie seit Monaten oder Jahren unter beiden Beschwerden leiden und isolierte 
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 **Direkt zu den Behandlungsseiten:**
 - [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Verstopfung, Reizdarm und Verdauungsproblemen

@@ -16,7 +16,7 @@ image: "https://images.unsplash.com/photo-1612736777093-461fb48101d7?q=80&w=1200
 alt: "CMD Nackenschmerzen Osteopathie Hamburg: Kiefergelenk-HWS-Zusammenhang behandeln - Trigeminusnerv und Atlas-Dysfunktion"
 ---
 
-Nackenschmerzen am Morgen und Kieferknacken beim Essen treten häufig gemeinsam auf. Das Kiefergelenk (Temporomandibulargelenk, TMJ) und die Halswirbelsäule (HWS) sind biomechanisch und neurologisch eng miteinander verknüpft, sodass Funktionsstörungen im einen System Auswirkungen auf das andere haben können. Dieser Artikel beschreibt die Zusammenhänge zwischen [Nackenschmerzen](/behandlungen/nackenschmerzen) und einer Craniomandibulären Dysfunktion (CMD) und wie eine osteopathische Untersuchung beide Bereiche einbezieht.
+Nackenschmerzen am Morgen und Kieferknacken beim Essen treten häufig gemeinsam auf. Das Kiefergelenk (Temporomandibulargelenk, TMJ) und die Halswirbelsäule (HWS) sind biomechanisch und neurologisch eng miteinander verknüpft, sodass Funktionsstörungen im einen System Auswirkungen auf das andere haben können. Dieser Artikel beschreibt die Zusammenhänge zwischen [Nackenschmerzen](/behandlungen/nackenschmerzen/) und einer Craniomandibulären Dysfunktion (CMD) und wie eine osteopathische Untersuchung beide Bereiche einbezieht.
 
 ## Was ist CMD? (und warum die Diagnose oft verzögert gestellt wird)
 
@@ -527,19 +527,19 @@ Intraoral-Behandlung (M. pterygoideus): NEIN, nur vom Therapeuten.
 
 ## Verwandte Artikel
 
-[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) – 5 häufigste Ursachen + Atlas-Behandlung
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung/) – 5 häufigste Ursachen + Atlas-Behandlung
 
-[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) – Warum Nackenverspannungen Schwindel auslösen
+[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/) – Warum Nackenverspannungen Schwindel auslösen
 
-[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – 6-Phasen-Protokoll (ohne Schmerzmittel)
+[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/) – 6-Phasen-Protokoll (ohne Schmerzmittel)
 
-[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung) – Alles über Ursachen, Formen und Behandlung
+[HWS-Syndrom: Symptome erkennen und behandeln](/blog/hws-syndrom-symptome-behandlung/) – Alles über Ursachen, Formen und Behandlung
 
-[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen) – ganzheitlicher Ansatz
+[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen/) – ganzheitlicher Ansatz
 
-[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) – Ganzheitliche Behandlung in Hamburg
+[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen/) – Ganzheitliche Behandlung in Hamburg
 
-[Chronische Schmerzen ganzheitlich behandeln](/blog/chronische-schmerzen-osteopathie-fibromyalgie-ursachen) – Warum Standardtherapie oft scheitert
+[Chronische Schmerzen ganzheitlich behandeln](/blog/chronische-schmerzen-osteopathie-fibromyalgie-ursachen/) – Warum Standardtherapie oft scheitert
 
 ---
 
@@ -559,6 +559,6 @@ Intraoral-Behandlung (M. pterygoideus): NEIN, nur vom Therapeuten.
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

@@ -22,7 +22,7 @@ author: "Admin"
 
 # HWS-Syndrom: Symptome erkennen, Ursachen verstehen, richtig behandeln
 
-**Der Nacken schmerzt. Der Kopf dröhnt. Die Schulter zieht. Die Finger kribbeln. Beim Arzt heißt es: "HWS-Syndrom." Aber was bedeutet das eigentlich? Das HWS-Syndrom ist keine einzelne Krankheit, sondern ein Sammelbegriff für verschiedene Beschwerden der Halswirbelsäule. In meiner Praxis in Hamburg sehe ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen), bei denen "HWS-Syndrom" im Befund steht -- aber niemand hat ihnen erklärt, was genau das bedeutet und was sie dagegen tun können. Dieser Artikel gibt Ihnen Klarheit.**
+**Der Nacken schmerzt. Der Kopf dröhnt. Die Schulter zieht. Die Finger kribbeln. Beim Arzt heißt es: "HWS-Syndrom." Aber was bedeutet das eigentlich? Das HWS-Syndrom ist keine einzelne Krankheit, sondern ein Sammelbegriff für verschiedene Beschwerden der Halswirbelsäule. In meiner Praxis in Hamburg sehe ich regelmäßig Patienten mit [Nackenschmerzen](/behandlungen/nackenschmerzen/), bei denen "HWS-Syndrom" im Befund steht -- aber niemand hat ihnen erklärt, was genau das bedeutet und was sie dagegen tun können. Dieser Artikel gibt Ihnen Klarheit.**
 
 ---
 
@@ -82,7 +82,7 @@ Eine Blockierung bedeutet: Ein Wirbel bewegt sich nicht mehr frei in seinem norm
 - **Axis (C2):** Drehachse des Kopfes. Blockierung schränkt die Rotation ein
 - **C5/C6:** Übergang zur Brustwirbelsäule. Blockierung strahlt in Schulter und Arm aus
 
-[Mehr zu HWS-Blockierungen](/blog/hws-blockierung-nacken-verspannung)
+[Mehr zu HWS-Blockierungen](/blog/hws-blockierung-nacken-verspannung/)
 
 **Muskelverspannungen**
 
@@ -98,7 +98,7 @@ Die tiefe Nackenmuskulatur reagiert auf Stress, Fehlhaltung und Blockierungen mi
 - **Smartphone-Nacken ("Text Neck"):** Bei 60 Grad Neigung lastet das Gewicht von 27 kg auf der Halswirbelsäule
 - **Falsche Schlafhaltung:** Ein ungeeignetes Kissen führt zu nächtlicher Fehlstellung der HWS
 
-[Ergonomie-Tipps](/blog/schreibtisch-fehler-rueckenschmerzen)
+[Ergonomie-Tipps](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 ### Strukturelle Ursachen
 
@@ -121,11 +121,11 @@ Verschleiß der HWS-Gelenke, der ab dem 40. Lebensjahr normal ist. Symptome: Mor
 
 Nach Autounfall, Sportunfall oder Sturz wird die HWS abrupt überstreckt und gebeugt. Das Tückische: Symptome können erst **Wochen bis Monate** nach dem Ereignis auftreten. Langzeitfolgen umfassen chronische Nackenschmerzen, Kopfschmerzen, Schwindel, Konzentrationsstörungen und psychische Belastung.
 
-[Mehr zu Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln)
+[Mehr zu Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/)
 
 ### Die psychosomatische Komponente
 
-Chronischer Stress aktiviert den Sympathikus -- den "Kampf-oder-Flucht-Modus". Die Schultern wandern nach oben, die Nackenmuskulatur steht unter Dauerspannung, die Atmung wird flach. Dadurch werden die Atemhilfsmuskeln im Nacken überlastet. Bei [Stress und Burnout](/behandlungen/stress-burnout) sehe ich regelmäßig HWS-Beschwerden. Oft ist das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung) blockiert, die Atmung eingeschränkt, der Nacken dadurch chronisch überlastet. Auch [Zähneknirschen](/blog/cmd-nackenschmerzen-kiefergelenk) überträgt Spannung direkt in die Kiefer-Nacken-Region.
+Chronischer Stress aktiviert den Sympathikus -- den "Kampf-oder-Flucht-Modus". Die Schultern wandern nach oben, die Nackenmuskulatur steht unter Dauerspannung, die Atmung wird flach. Dadurch werden die Atemhilfsmuskeln im Nacken überlastet. Bei [Stress und Burnout](/behandlungen/stress-burnout/) sehe ich regelmäßig HWS-Beschwerden. Oft ist das [Zwerchfell](/blog/zwerchfell-osteopathie-atmung-verdauung/) blockiert, die Atmung eingeschränkt, der Nacken dadurch chronisch überlastet. Auch [Zähneknirschen](/blog/cmd-nackenschmerzen-kiefergelenk/) überträgt Spannung direkt in die Kiefer-Nacken-Region.
 
 ---
 
@@ -144,7 +144,7 @@ Die häufigste und in der Regel harmloseste Form. Schmerzen und Verspannungen bl
 - Tastbare Muskelverhärtungen
 - Druckschmerz direkt an den Halswirbeln
 
-**Häufigste Ursachen:** [HWS-Blockierungen](/blog/hws-blockierung-nacken-verspannung) (Atlas, Axis), Muskelverspannungen, Fehlhaltung, Zugluft
+**Häufigste Ursachen:** [HWS-Blockierungen](/blog/hws-blockierung-nacken-verspannung/) (Atlas, Axis), Muskelverspannungen, Fehlhaltung, Zugluft
 
 **Prognose:** In der Regel gut behandelbar; der individuelle Verlauf ist unterschiedlich.
 
@@ -173,15 +173,15 @@ Schmerzen strahlen vom Nacken in Schulter, Arm oder Hand aus. Oft treten neurolo
 Beschwerden der HWS strahlen in den Kopf aus. Diese Form wird häufig mit "normalen" Kopfschmerzen oder Migräne verwechselt -- und deshalb lange falsch behandelt.
 
 **So fühlt es sich an:**
-- [Kopfschmerzen, die vom Nacken aufsteigen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten)
+- [Kopfschmerzen, die vom Nacken aufsteigen](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/)
 - Schmerzen meist einseitig, halbseitig oder im Hinterkopf
-- [Schwindel bei Kopfbewegung](/blog/nackenschmerzen-schwindel-hws-vagus)
+- [Schwindel bei Kopfbewegung](/blog/nackenschmerzen-schwindel-hws-vagus/)
 - Sehstörungen (Flimmern, Lichtempfindlichkeit)
 - Übelkeit
 - Ohrgeräusche (Tinnitus)
 - Konzentrationsstörungen
 
-**Häufigste Ursachen:** Atlas-Blockierung (C1), Irritation der Arteria vertebralis, Verspannung der suboccipitalen Muskulatur, [Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln)
+**Häufigste Ursachen:** Atlas-Blockierung (C1), Irritation der Arteria vertebralis, Verspannung der suboccipitalen Muskulatur, [Schleudertrauma-Spätfolgen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/)
 
 **Wichtig:** 70% aller Schwindelattacken haben ihre Ursache in der HWS, nicht im Ohr![^2]
 
@@ -224,7 +224,7 @@ Das Rückenmark selbst wird komprimiert. Die schwerwiegendste Form des HWS-Syndr
 
 **Vegetative Symptome bei Atlas-Blockierung:**
 
-Wenn der [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen) durch eine Atlas-Blockierung irritiert wird, können Symptome auftreten, die zunächst nichts mit dem Nacken zu tun haben: Übelkeit, Herzrasen, Schwitzen, innere Unruhe, Schlafstörungen, Verdauungsprobleme.
+Wenn der [Vagusnerv](/blog/vagusnerv-aktivieren-stress-uebungen/) durch eine Atlas-Blockierung irritiert wird, können Symptome auftreten, die zunächst nichts mit dem Nacken zu tun haben: Übelkeit, Herzrasen, Schwitzen, innere Unruhe, Schlafstörungen, Verdauungsprobleme.
 
 ---
 
@@ -254,7 +254,7 @@ Nach dem Lösen der Blockierung behandle ich die verspannte Muskulatur, das Bind
 
 Eine gelöste Blockierung kann wiederkommen, wenn die stabilisierende Muskulatur zu schwach ist. Deshalb bekommen Sie gezielte Übungen für die tiefe Nackenmuskulatur mit nach Hause.
 
-[Ausführlicher Artikel: HWS-Blockierung dauerhaft lösen](/blog/hws-blockierung-nacken-verspannung)
+[Ausführlicher Artikel: HWS-Blockierung dauerhaft lösen](/blog/hws-blockierung-nacken-verspannung/)
 
 ---
 
@@ -337,9 +337,9 @@ In meiner Praxis behandle ich das HWS-Syndrom nicht nur dort, wo es wehtut, sond
 - **Dehntechniken:** Verkürzte Muskeln behutsam längen
 
 **Bei viszeraler Beteiligung:**
-- **[Zwerchfell-Release](/blog/zwerchfell-osteopathie-atmung-verdauung):** Wenn die Atmung eingeschränkt ist
+- **[Zwerchfell-Release](/blog/zwerchfell-osteopathie-atmung-verdauung/):** Wenn die Atmung eingeschränkt ist
 - **Vagusnerv-Stimulation:** Bei vegetativen Symptomen wie Übelkeit oder Herzrasen
-- **[Viszerale Techniken](/blog/viszerale-osteopathie):** Bei stressbedingten Beschwerden
+- **[Viszerale Techniken](/blog/viszerale-osteopathie/):** Bei stressbedingten Beschwerden
 
 **4. Übungen für zuhause**
 - Stabilisationsübungen für die tiefe Nackenmuskulatur
@@ -461,7 +461,7 @@ In meiner Praxis behandle ich das HWS-Syndrom nicht nur dort, wo es wehtut, sond
 - Schwindel bei Kopfbewegung
 - Kribbeln in Armen oder Händen (ohne Lähmung)
 - Beschwerden nach Schleudertrauma (auch Wochen oder Monate später)
-- [Stress](/behandlungen/stress-burnout) mit hartnäckiger Nackenverspannung
+- [Stress](/behandlungen/stress-burnout/) mit hartnäckiger Nackenverspannung
 
 ---
 
@@ -480,7 +480,7 @@ In meiner Praxis behandle ich das HWS-Syndrom nicht nur dort, wo es wehtut, sond
 - Das richtige Kopfkissen finden
 
 **3. Stressmanagement**
-- [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) zur Regulation des Nervensystems
+- [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen/) zur Regulation des Nervensystems
 - Atemübungen (tiefe Bauchatmung statt flacher Brustatmung)
 - Ausreichend Schlaf (7-8 Stunden)
 
@@ -529,7 +529,7 @@ In meiner Praxis in Hamburg behandle ich regelmäßig Patienten mit HWS-Syndrom.
 
 **Das Ziel:** Nicht nur Schmerzen lindern, sondern die Ursache finden und beheben -- für langfristige Besserung statt kurzfristiger Symptomkosmetik.
 
-[Jetzt Termin buchen](/terminbuchung)
+[Jetzt Termin buchen](/terminbuchung/)
 
 ---
 
@@ -567,7 +567,7 @@ Die große Mehrheit der HWS-Syndrome lässt sich konservativ — also ohne Opera
 
 ### Kann eine HWS-Blockade Schwindel und Kopfschmerzen verursachen?
 
-**Ja, und das ist häufiger als die meisten denken.** Eine Blockierung des Atlas (C1) kann den Vagusnerv irritieren und dadurch Schwindel, Kopfschmerzen, Übelkeit und sogar Herzrasen auslösen. Studien deuten darauf hin, dass ein erheblicher Anteil von Schwindelattacken seinen Ursprung in der Halswirbelsäule hat – nicht im Ohr. [Mehr dazu in unserem ausführlichen Artikel](/blog/nackenschmerzen-schwindel-hws-vagus).
+**Ja, und das ist häufiger als die meisten denken.** Eine Blockierung des Atlas (C1) kann den Vagusnerv irritieren und dadurch Schwindel, Kopfschmerzen, Übelkeit und sogar Herzrasen auslösen. Studien deuten darauf hin, dass ein erheblicher Anteil von Schwindelattacken seinen Ursprung in der Halswirbelsäule hat – nicht im Ohr. [Mehr dazu in unserem ausführlichen Artikel](/blog/nackenschmerzen-schwindel-hws-vagus/).
 
 ### Was ist der Unterschied zwischen HWS-Syndrom und HWS-Blockade?
 
@@ -587,23 +587,23 @@ Das **HWS-Syndrom** ist der Oberbegriff für alle Beschwerden der Halswirbelsäu
 
 ## Verwandte Artikel
 
-[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) -- Atlas-Blockierung erkennen und dauerhaft behandeln
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung/) -- Atlas-Blockierung erkennen und dauerhaft behandeln
 
-[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) -- Wenn der Schwindel vom Nacken kommt
+[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/) -- Wenn der Schwindel vom Nacken kommt
 
-[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) -- 6-Phasen-Protokoll nach Autounfall
+[Schleudertrauma-Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/) -- 6-Phasen-Protokoll nach Autounfall
 
-[Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) -- Wenn Kopfschmerzen vom Nacken ausgehen
+[Chronische Kopfschmerzen: Osteopathie statt Tabletten](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) -- Wenn Kopfschmerzen vom Nacken ausgehen
 
-[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) -- Kieferprobleme und Nackenverspannung
+[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk/) -- Kieferprobleme und Nackenverspannung
 
-[Zwerchfell, Osteopathie, Atmung & Verdauung](/blog/zwerchfell-osteopathie-atmung-verdauung) -- Warum Atmung und HWS zusammenhängen
+[Zwerchfell, Osteopathie, Atmung & Verdauung](/blog/zwerchfell-osteopathie-atmung-verdauung/) -- Warum Atmung und HWS zusammenhängen
 
-[Schreibtisch-Fehler, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen) -- Ergonomie für schmerzfreies Arbeiten
+[Schreibtisch-Fehler, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen/) -- Ergonomie für schmerzfreies Arbeiten
 
-[Vagusnerv aktivieren: Übungen gegen Stress](/blog/vagusnerv-aktivieren-stress-uebungen) -- Stressregulation und Nackenverspannung
+[Vagusnerv aktivieren: Übungen gegen Stress](/blog/vagusnerv-aktivieren-stress-uebungen/) -- Stressregulation und Nackenverspannung
 
-[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen) -- Ganzheitliche Behandlung in Hamburg
+[Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen/) -- Ganzheitliche Behandlung in Hamburg
 
 ---
 
@@ -613,7 +613,7 @@ Das **HWS-Syndrom** ist der Oberbegriff für alle Beschwerden der Halswirbelsäu
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
 

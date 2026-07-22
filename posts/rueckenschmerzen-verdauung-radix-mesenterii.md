@@ -22,7 +22,7 @@ author: "Admin"
 
 In Deutschland haben 15-20% der Bevölkerung **Reizdarm-Symptome** [(1)](#quellen). Fast die Hälfte davon leidet auch an chronischen Rückenschmerzen [(2)](#quellen). Doch nur wenige Ärzte sehen den Zusammenhang.
 
-> 💡 **Weitere Perspektiven gewünscht?** Dieser Artikel fokussiert auf die anatomische Verbindung (Radix Mesenterii). Für umfassende Guides siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie) | [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) | [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
+> 💡 **Weitere Perspektiven gewünscht?** Dieser Artikel fokussiert auf die anatomische Verbindung (Radix Mesenterii). Für umfassende Guides siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie/) | [Rückenschmerzen verstehen](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/) | [Reizdarm & Rückenschmerzen](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
 
 ---
 
@@ -102,7 +102,7 @@ Wenn Druck auf den Bauch (z.B. rechter Unterbauch bei Colon) Rückenschmerzen au
 
 ### Verbindung 3: Zwerchfell-Spannung
 
-Das **[Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung)** - Hauptatemmuskel - ist über Faszien mit:
+Das **[Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung/)** - Hauptatemmuskel - ist über Faszien mit:
 - Der Lendenwirbelsäule verbunden (Zwerchfellschenkel/Crus-Ansätze an L1-L3)
 - Dem Magen, Leber und Dickdarm (Colon) verbunden
 
@@ -161,7 +161,7 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 
 **Rücken-Untersuchung:**
 - **Lendenwirbelsäule L2-L4:** Blockaden? Triggerpunkte?
-- **Becken/[Iliosakralgelenk](/blog/isg-blockierung-teufelskreis):** Beweglichkeit eingeschränkt?
+- **Becken/[Iliosakralgelenk](/blog/isg-blockierung-teufelskreis/):** Beweglichkeit eingeschränkt?
 - **Test:** Bauch-Druck → löst Rückenschmerz aus? → **Viszerosomatischer Reflex bestätigt**
 
 **3. Behandlung (25 Min):**
@@ -175,10 +175,10 @@ Osteopathen sind darauf trainiert, diese **viszerosomatischen Zusammenhänge** z
 **Parietale Techniken (Strukturbehandlung):**
 - **Iliopsoas-Release (Hüftbeuger-Lösung):** Entspannt den Hüftbeuger (oft durch Darm-Druck verspannt)
 - **Lendenwirbelsäulen-Mobilisation (LWS-Mobilisation):** Beseitigt segmentale Blockaden (L2-L4)
-- **Becken-Korrektur:** Optimiert [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis)-Beweglichkeit (ISG)
+- **Becken-Korrektur:** Optimiert [Iliosakralgelenk](/blog/isg-blockierung-teufelskreis/)-Beweglichkeit (ISG)
 
 **Kraniosakrale Techniken:**
-- **Parasympathikus-Aktivierung (Nervus vagus-Stimulation):** Beruhigt das Nervensystem (ANS) → verbessert Verdauung [(12)](#quellen). Gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) können diesen Effekt auch zwischen den Behandlungen unterstützen.
+- **Parasympathikus-Aktivierung (Nervus vagus-Stimulation):** Beruhigt das Nervensystem (ANS) → verbessert Verdauung [(12)](#quellen). Gezielte [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen/) können diesen Effekt auch zwischen den Behandlungen unterstützen.
 
 **Das Besondere:** Viszerale Osteopathie ist **sanft** – keine schmerzhaften Manipulationen, nur präzise Griffe.
 
@@ -391,7 +391,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 
 Buchen Sie Ihren **Ersttermin für viszerale Osteopathie** (60-75 Min) online.
 
-[→ Jetzt Termin online buchen – Darm-Rücken-Beschwerden](/terminbuchung)
+[→ Jetzt Termin online buchen – Darm-Rücken-Beschwerden](/terminbuchung/)
 
 ---
 
@@ -410,12 +410,12 @@ Nutzen Sie das [Kontaktformular](/terminbuchung/) oder buchen Sie direkt einen T
 
 Weitere Artikel, die Sie interessieren könnten:
 
-- [Rückenschmerzen verstehen - Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg)
-- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
-- [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden)
-- [Was ist viszerale Osteopathie?](/was-ist-osteopathie)
-- [Alle FAQ zur Osteopathie](/faq)
+- [Rückenschmerzen verstehen - Der komplette Guide](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/)
+- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/)
+- [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/)
+- [Was ist viszerale Osteopathie?](/was-ist-osteopathie/)
+- [Alle FAQ zur Osteopathie](/faq/)
 
 ---
 
@@ -499,12 +499,12 @@ Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt onlin
 **Autor:** Osteopathie-Praxis Hamburg
 **Disclaimer:** Dieser Artikel dient der Information und ersetzt keine ärztliche Diagnose oder Behandlung. Bei akuten oder unklaren Verdauungs- und Rückenbeschwerden konsultieren Sie bitte einen Arzt.
 
-[→ Zurück zum Blog](/blog)
+[→ Zurück zum Blog](/blog/)
 
 ---
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

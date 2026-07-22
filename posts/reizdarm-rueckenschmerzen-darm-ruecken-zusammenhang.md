@@ -20,7 +20,7 @@ Wenn Sie unter Reizdarmsyndrom (IBS) leiden und gleichzeitig chronische Rückens
 
 In diesem Artikel erkläre ich Ihnen als Osteopath die **neurophysiologischen Mechanismen** hinter diesem Zusammenhang – und zeige Ihnen, warum klassische Behandlungen oft versagen.
 
-> 💡 **Neu hier?** Dieser Artikel vertieft einen speziellen Aspekt der viszeralen Osteopathie. Für einen umfassenden Überblick siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie)
+> 💡 **Neu hier?** Dieser Artikel vertieft einen speziellen Aspekt der viszeralen Osteopathie. Für einen umfassenden Überblick siehe: [Was ist viszerale Osteopathie?](/blog/viszerale-osteopathie/)
 
 ## Das Problem: Zwei Symptome, eine falsche Behandlung
 
@@ -69,7 +69,7 @@ Diese **Dysregulation der Darm-Hirn-Achse** ist mittlerweile wissenschaftlich gu
 
 ### Das Zwerchfell: Ihr wichtigster Atemmuskel ist auch Ihr Darm-Stabilisator
 
-Das [Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung) ist nicht nur für die Atmung zuständig. Es ist auch:
+Das [Zwerchfell (Diaphragma)](/blog/zwerchfell-osteopathie-atmung-verdauung/) ist nicht nur für die Atmung zuständig. Es ist auch:
 - **Druckregulator** für Bauch- und Brustraum
 - **Stabilisator** für den gesamten Rumpf
 - **Teil des autonomen Nervensystems** (über den Phrenikus-Nerv)
@@ -103,7 +103,7 @@ Bei vielen Patient:innen, deren Zwerchfellfunktion und Atmung osteopathisch adre
 
 Die meisten Reizdarm-Patienten atmen **seit Jahren falsch**, ohne es zu merken. Diese dysfunktionalen Atemmuster werden neurologisch "eingebrannt" und müssen aktiv umtrainiert werden.
 
-**Mehr dazu:** Wie das autonome Nervensystem und Stress Ihre Körperhaltung beeinflussen, erkläre ich in meinem Artikel über [Burnout und das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system).
+**Mehr dazu:** Wie das autonome Nervensystem und Stress Ihre Körperhaltung beeinflussen, erkläre ich in meinem Artikel über [Burnout und das glymphatische System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/).
 
 ## Mechanismus #2: Radix Mesenterii – Der Darm-Aufhängeapparat
 
@@ -141,7 +141,7 @@ Stellen Sie sich vor:
 
 **Wissenschaftlich belegt:** Studien zeigen, dass viszerale Dysfunktionen (Organ-Probleme) zu somatischen Schmerzen (Muskel-/Skelett-Schmerzen) führen können – über genau diesen Mechanismus.
 
-**Mehr Details:** In meinem Artikel [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) gehe ich tiefer auf diesen Zusammenhang ein.
+**Mehr Details:** In meinem Artikel [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) gehe ich tiefer auf diesen Zusammenhang ein.
 
 ## Mechanismus #3: Viszerale Hypersensitivität & zentrale Sensibilisierung
 
@@ -234,7 +234,7 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 - ✓ Bessere Verdauung
 - ✓ Weniger Blähungen
 
-**Mehr zur viszeralen Osteopathie:** [Verdauungsbeschwerden osteopathisch behandeln](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+**Mehr zur viszeralen Osteopathie:** [Verdauungsbeschwerden osteopathisch behandeln](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 ### 3. Strukturelle Behandlung – LWS & ISG
 
@@ -250,23 +250,23 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 - ✓ Bessere Beweglichkeit
 - ✓ Reduzierte Muskelspannung
 
-**Verwandte Themen:** Mehr zu ISG-Blockierungen lesen Sie hier: [ISG-Blockierung – Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
+**Verwandte Themen:** Mehr zu ISG-Blockierungen lesen Sie hier: [ISG-Blockierung – Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/)
 
 ### 4. Vagusnerv-Stimulation
 
-**Ziel:** Autonomes Nervensystem ausbalancieren. Bei vielen Reizdarm-Patienten finde ich auch Beschwerden im Nackenbereich -- ein typisches Zeichen für ein [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung), das die Vagusnerv-Funktion zusätzlich beeinträchtigt.
+**Ziel:** Autonomes Nervensystem ausbalancieren. Bei vielen Reizdarm-Patienten finde ich auch Beschwerden im Nackenbereich -- ein typisches Zeichen für ein [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung/), das die Vagusnerv-Funktion zusätzlich beeinträchtigt.
 
 **Technik:**
 - Cranio-sacrale Techniken
 - Manuelle Vagusnerv-Stimulation
-- Atemübungen & [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen) für zuhause
+- Atemübungen & [Vagusnerv-Übungen](/blog/vagusnerv-aktivieren-stress-uebungen/) für zuhause
 
 **Effekt:**
 - ✓ Parasympathikus-Aktivierung (Entspannung)
 - ✓ Bessere Verdauung (Vagus steuert Darmbewegung)
 - ✓ Reduzierte viszerale Hypersensitivität
 
-**Lesetipp:** [Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus)
+**Lesetipp:** [Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/)
 
 ## Was Sie selbst tun können: 5 evidenzbasierte Strategien
 
@@ -334,7 +334,7 @@ Ibuprofen, Paracetamol & Co. wirken **peripher** (am Ort des Geschehens). Bei ze
 - Intensive HIIT-Workouts (Stress für Darm!)
 - Starkes Bauchmuskeltraining (Druck auf Darm)
 
-**Lesetipp:** [Warum Dehnen Ihre Rückenschmerzen schlimmer macht](/blog/dehnen-rueckenschmerzen-mythos)
+**Lesetipp:** [Warum Dehnen Ihre Rückenschmerzen schlimmer macht](/blog/dehnen-rueckenschmerzen-mythos/)
 
 ## Häufige Fragen (FAQ)
 
@@ -440,11 +440,11 @@ Als Osteopath in Hamburg behandle ich regelmäßig Patienten mit diesem Beschwer
 
 Vertiefen Sie Ihr Wissen mit diesen Artikeln:
 
-- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii) – Anatomische Details zum Darm-Aufhängeapparat
-- [Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) – Mehr zum Vagusnerv
-- [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) – Stress & autonomes Nervensystem
-- [ISG-Blockierung: Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis) – Häufig begleitend bei Reizdarm
-- [Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos) – Alternativen zu klassischer Physiotherapie
+- [Rückenschmerzen und Verdauung: Die Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) – Anatomische Details zum Darm-Aufhängeapparat
+- [Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/) – Mehr zum Vagusnerv
+- [Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) – Stress & autonomes Nervensystem
+- [ISG-Blockierung: Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis/) – Häufig begleitend bei Reizdarm
+- [Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos/) – Alternativen zu klassischer Physiotherapie
 
 ---
 
@@ -460,7 +460,7 @@ Vertiefen Sie Ihr Wissen mit diesen Artikeln:
 
 **Sie leiden unter Reizdarm und Rückenschmerzen?**
 
-[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung) – gemeinsam finden wir die Ursachen und entwickeln einen individuellen Behandlungsplan.
+[Termin in meiner Praxis in Hamburg-Rotherbaum vereinbaren](/terminbuchung/) – gemeinsam finden wir die Ursachen und entwickeln einen individuellen Behandlungsplan.
 
 **Ihre Beschwerden sind real. Lassen Sie uns ganzheitlich daran arbeiten.**
 
@@ -468,7 +468,7 @@ Vertiefen Sie Ihr Wissen mit diesen Artikeln:
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 **Direkt zu den Behandlungsseiten:**
 - [Verdauungsbeschwerden osteopathisch behandeln](/behandlungen/verdauungsbeschwerden/) — Viszerale Osteopathie bei Reizdarm, Blähungen und Darm-Beschwerden

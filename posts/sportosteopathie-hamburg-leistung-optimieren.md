@@ -21,7 +21,7 @@ image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200
 alt: "Sportosteopathie Hamburg Bewegungsanalyse – Leistungsoptimierung für Läufer, Triathleten und Kraftsportler"
 ---
 
-> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf Sportosteopathie zur Leistungsoptimierung. Für einen kompletten Guide zu allen sportosteopathischen Behandlungen siehe: [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie)
+> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf Sportosteopathie zur Leistungsoptimierung. Für einen kompletten Guide zu allen sportosteopathischen Behandlungen siehe: [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie/)
 
 ## Wenn gutes Training nicht mehr reicht: Die Grenzen der Leistung
 
@@ -47,7 +47,7 @@ Sie sind nicht allein. In der Sportmedizin gut dokumentiert:
 
 **Das Problem**: Die **Ursache** – biomechanische Dysfunktion, muskuläre Dysbalance, fasziale Restriktion – wurde nicht behoben.
 
-In meiner Praxis biete ich [Sportosteopathie](/behandlungen/sportosteopathie) mit einem ganzheitlichen Ansatz:
+In meiner Praxis biete ich [Sportosteopathie](/behandlungen/sportosteopathie/) mit einem ganzheitlichen Ansatz:
 **Ich optimiere nicht nur die verletzte Struktur, sondern das gesamte Bewegungssystem.**
 
 ---
@@ -89,7 +89,7 @@ In der biomechanischen Forschung wird ein Zusammenhang zwischen Beckenstellung, 
 
 Bei Läufer:innen mit einseitigen Knieschmerzen, die im MRT unauffällig sind und auf reine Knietherapie nicht ansprechen, lohnt sich der Blick auf die Beckenstatik: Eine ISG-Blockade kann eine Becken-Rotation verursachen, wodurch das gegenüberliegende Bein in der Standphase mehr Last übernehmen muss — das Knie wird überlastet, obwohl die Ursache woanders sitzt. Behandlungsansatz: ISG-Mobilisierung kombiniert mit Hüftstabilisations-Übungen. Der individuelle Verlauf ist unterschiedlich und nicht vorhersagbar.
 
-Mehr zur Behandlung von Sportverletzungen: [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training).
+Mehr zur Behandlung von Sportverletzungen: [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training/).
 
 ---
 
@@ -150,12 +150,12 @@ Zu beweglich (hypermobil) → Instabil, verletzungsanfällig
 
 **B. Hüfte (Extension + Innenrotation)**
 - **Warum wichtig**: Hüftstreckung ist entscheidend für Antriebsphase beim Laufen
-- **Problem**: Moderne Lebensweise ([Sitzen am Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen)) → Hüftbeuger verkürzt → Hüfte kann nicht voll strecken
+- **Problem**: Moderne Lebensweise ([Sitzen am Schreibtisch](/blog/schreibtisch-fehler-rueckenschmerzen/)/) → Hüftbeuger verkürzt → Hüfte kann nicht voll strecken
 - **Folge**: Überlastung der LWS (Lendenwirbelsäule kompensiert)
 
 **C. Brustwirbelsäule (Rotation)**
 - **Warum wichtig**: Rotation ist essentiell für Laufen, Werfen, Schwimmen
-- **Problem**: Steife BWS → HWS (Halswirbelsäule) oder LWS müssen überrotieren → [Nackenschmerzen](/behandlungen/kopfschmerzen-migraene), [Rückenschmerzen](/behandlungen/rueckenschmerzen)
+- **Problem**: Steife BWS → HWS (Halswirbelsäule) oder LWS müssen überrotieren → [Nackenschmerzen](/behandlungen/kopfschmerzen-migraene/), [Rückenschmerzen](/behandlungen/rueckenschmerzen/)
 - **Performance-Impact**: Bessere BWS-Rotation = längerer Schwimmzug, kraftvollerer Wurf
 
 **Osteopathische Mobilisierungstechniken:**
@@ -188,7 +188,7 @@ Mehr Training → Bessere Leistung
 **B. Durchblutung optimieren (Nährstoffzufuhr)**
 - **Faszien-Release** → bessere Mikrozirkulation
 - **Viszerale Osteopathie**: Darm-Mobilisierung → verbesserte Nährstoffaufnahme
-- **Autonomes Nervensystem balancieren**: Mehr Parasympathikus (Ruhe-Modus) → tiefere Erholung (mehr dazu: [Stress und Burnout](/behandlungen/stress-burnout))
+- **Autonomes Nervensystem balancieren**: Mehr Parasympathikus (Ruhe-Modus) → tiefere Erholung (mehr dazu: [Stress und Burnout](/behandlungen/stress-burnout/)/)
 
 **C. Schlafqualität verbessern**
 - **Cranio-sacrale Therapie**: Spannungen im Nervensystem lösen
@@ -224,7 +224,7 @@ Die meisten Sportler trainieren erst **nach** einer Verletzung präventiv.
 
 **A. Hüftstabilität (Gluteus medius-Schwäche)**
 - **Test**: Single Leg Squat – Knie knickt nach innen?
-- **Risiko**: Knie-Valgus → Patellaspitzensyndrom, Kreuzbandriss-Risiko (mehr zu [Hüftproblemen](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln))
+- **Risiko**: Knie-Valgus → Patellaspitzensyndrom, Kreuzbandriss-Risiko (mehr zu [Hüftproblemen](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln/)/)
 - **Prävention**: Copenhagen Adductor Raises, Monster Walks, Clamshells
 
 **B. Rumpfstabilität (Core-Kontrolle)**
@@ -283,17 +283,17 @@ Die meisten Sportler trainieren erst **nach** einer Verletzung präventiv.
 > **Behandlung**: BWS-Mobilisierung + Core-Stabilisationsübungen + Bike-Fitting-Empfehlungen
 > **Ergebnis**: Laufsplit bei Ironman um 18 Min. verbessert, keine Rückenschmerzen
 
-Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen)
+Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen/)
 
 ---
 
 ### Für Kraftsportler & CrossFitter
 
 **Typische Probleme:**
-- **Schulterimpingement** (Overhead-Bewegungen schmerzhaft) – mehr zur Gelenkbehandlung: [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
+- **Schulterimpingement** (Overhead-Bewegungen schmerzhaft) – mehr zur Gelenkbehandlung: [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)
 - **Ellenbogenschmerzen** (Golfer-/Tennisellenbogen – Epicondylitis)
 - **Handgelenkschmerzen** (Front Squats, Handstand)
-- **LWS-Schmerzen** (Deadlift, Squat) – mehr dazu: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen)
+- **LWS-Schmerzen** (Deadlift, Squat) – mehr dazu: [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen/)
 
 **Osteopathischer Fokus:**
 - **Schulterblatt-Stabilität**: Rotatorenmanschette + Serratus anterior
@@ -312,17 +312,17 @@ Mehr zur Behandlung von Rückenschmerzen: [Rückenschmerzen ganzheitlich behande
 > **Behandlung**: Rippen-Mobilisierung + Lat-Release + Thorax-Atmung
 > **Ergebnis**: Overhead Squat um 15kg gesteigert, Technik deutlich besser
 
-Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln).
+Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln/).
 
 ---
 
 ### Für Mannschaftssportler (Fußball, Handball, Basketball)
 
 **Typische Probleme:**
-- **Leisten-Schmerzen** (Adduktorenzerrung) – mehr zu Hüftproblemen: [Hüftschmerzen ohne OP behandeln](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln)
-- **Knöchelverletzungen** (Bänderrisse, Instabilität) – mehr zur Behandlung: [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training)
-- **Knieschmerzen** (Meniskus, Kreuzband) – mehr dazu: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln)
-- **Rückenschmerzen** (LWS durch Rotation + Sprint) – mehr zu ISG-Blockaden: [ISG-Blockierung durchbrechen](/blog/isg-blockierung-teufelskreis)
+- **Leisten-Schmerzen** (Adduktorenzerrung) – mehr zu Hüftproblemen: [Hüftschmerzen ohne OP behandeln](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln/)
+- **Knöchelverletzungen** (Bänderrisse, Instabilität) – mehr zur Behandlung: [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/)
+- **Knieschmerzen** (Meniskus, Kreuzband) – mehr dazu: [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln/)
+- **Rückenschmerzen** (LWS durch Rotation + Sprint) – mehr zu ISG-Blockaden: [ISG-Blockierung durchbrechen](/blog/isg-blockierung-teufelskreis/)
 
 **Osteopathischer Fokus:**
 - **Explosivität**: Hüftstreckung + Sprunggelenksmobilität optimieren
@@ -341,13 +341,13 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 ### Phase 1: Assessment & Foundation (Woche 1-2)
 
 **Woche 1: Ausführliche Analyse**
-- **Anamnese**: Trainingshistorie, [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training), Ziele
+- **Anamnese**: Trainingshistorie, [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/), Ziele
 - **Biomechanische Analyse**: Gang, Laufstil, sportartspezifische Bewegungen
 - **Funktionelle Tests**: FMS (Functional Movement Screen), Y-Balance-Test
 - **Manuelle Untersuchung**: Gelenkmobilität, Faszienqualität, Muskellängen
 
 **Woche 2: Erste Korrekturen**
-- **Osteopathische Behandlung**: Hauptdysfunktionen beheben (z.B. [ISG-Blockade](/blog/isg-blockierung-teufelskreis))
+- **Osteopathische Behandlung**: Hauptdysfunktionen beheben (z.B. [ISG-Blockade](/blog/isg-blockierung-teufelskreis/)/)
 - **Individuelle Übungen**: 3-4 Schlüsselübungen für Ihre Schwachstellen
 - **Trainingsplan-Review**: Welche Anpassungen sind sinnvoll?
 
@@ -438,7 +438,7 @@ Mehr zur Behandlung von Knieproblemen bei Kraftsportlern: [Kniearthrose ohne OP 
 
 **3. Atem-Arbeit (Parasympathikus aktivieren)**
 - **Bauchatmung**: 4 Sek. einatmen, 6 Sek. ausatmen, 10x wiederholen
-- **Effekt**: Nervensystem auf „Regenerations-Modus" umschalten (mehr zu [Stressmanagement](/behandlungen/stress-burnout))
+- **Effekt**: Nervensystem auf „Regenerations-Modus" umschalten (mehr zu [Stressmanagement](/behandlungen/stress-burnout/)/)
 
 ---
 
@@ -642,7 +642,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 ## Ihr Aktionsplan
 
 ### Woche 1: Assessment
-- Termin bei [Sportosteopathie Hamburg](/behandlungen/sportosteopathie) buchen
+- Termin bei [Sportosteopathie Hamburg](/behandlungen/sportosteopathie/) buchen
 - **Vorbereitung**: Trainingsplan mitbringen, Verletzungshistorie aufschreiben
 
 ### Woche 2-4: Foundations
@@ -664,7 +664,7 @@ Es ist ein **Optimierungs-Tool** – das letzte Prozent herausholen.
 
 ## Jetzt starten: Werden Sie zum optimierten Athleten
 
-In meiner Praxis in [Hamburg-Rotherbaum](/) biete ich [Sportosteopathie](/behandlungen/sportosteopathie) speziell für ambitionierte Sportler:
+In meiner Praxis in [Hamburg-Rotherbaum](/) biete ich [Sportosteopathie](/behandlungen/sportosteopathie/) speziell für ambitionierte Sportler:
 
 **Was Sie erwarten können:**
 - ✅ **Ausführliche Bewegungsanalyse** (60 Min. Ersttermin)
@@ -675,9 +675,9 @@ In meiner Praxis in [Hamburg-Rotherbaum](/) biete ich [Sportosteopathie](/behand
 
 **Kostenerstattung**: Viele private Krankenversicherungen und Zusatzversicherungen übernehmen osteopathische Behandlungen (60-100%).
 
-[**📅 Jetzt Termin buchen**](/terminbuchung) und Ihre Performance auf das nächste Level heben.
+[**📅 Jetzt Termin buchen**](/terminbuchung/) und Ihre Performance auf das nächste Level heben.
 
-Mehr zur Rückkehr nach Sportverletzungen: [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training).
+Mehr zur Rückkehr nach Sportverletzungen: [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training/).
 
 ---
 
@@ -688,20 +688,20 @@ Mehr zur Rückkehr nach Sportverletzungen: [Sportverletzung – Schneller zurüc
 ## Weitere Artikel zum Thema
 
 **Sportverletzungen & Regeneration:**
-- [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training)
-- [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie)
-- [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln)
+- [Sportverletzung – Schneller zurück ins Training](/blog/sportverletzung-schneller-zurueck-training/)
+- [Sportosteopathie Hamburg – Leistung optimieren & Verletzungen vorbeugen](/behandlungen/sportosteopathie/)
+- [Kniearthrose ohne OP behandeln](/blog/kniearthrose-ohne-op-behandeln/)
 
 **Biomechanik & Bewegungsqualität:**
-- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis)
-- [Hüftschmerzen & Hüftarthrose ohne OP behandeln](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln)
-- [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
-- [5 Fehler am Schreibtisch, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen)
+- [ISG-Blockierung: Den Teufelskreis durchbrechen](/blog/isg-blockierung-teufelskreis/)
+- [Hüftschmerzen & Hüftarthrose ohne OP behandeln](/blog/hueftschmerzen-hueftarthrose-ohne-op-behandeln/)
+- [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)
+- [5 Fehler am Schreibtisch, die Rückenschmerzen verursachen](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 **Regeneration & Ganzheitliche Gesundheit:**
-- [Stress & Burnout Behandlung Hamburg](/behandlungen/stress-burnout)
-- [Burnout ganzheitlich behandeln – Glymphatisches System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
-- [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen)
+- [Stress & Burnout Behandlung Hamburg](/behandlungen/stress-burnout/)
+- [Burnout ganzheitlich behandeln – Glymphatisches System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/)
+- [Rückenschmerzen ganzheitlich behandeln](/behandlungen/rueckenschmerzen/)
 
 ---
 
@@ -711,7 +711,7 @@ Mehr zur Rückkehr nach Sportverletzungen: [Sportverletzung – Schneller zurüc
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

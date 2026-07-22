@@ -65,9 +65,9 @@ status: "published"
 4. **Wenn keine Besserung:** Hüft-TEP (Totalendoprothese)
 
 **Was dabei oft übersehen wird:**
-- ✗ [Becken-Fehlstellungen](/blog/isg-blockierung-teufelskreis) (in der osteopathischen Untersuchung häufig befundet)
-- ✗ [LWS-Blockaden](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg) (Hüfte kompensiert steife Wirbelsäule)
-- ✗ Hüftbeuger-Verkürzung durch [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen)
+- ✗ [Becken-Fehlstellungen](/blog/isg-blockierung-teufelskreis/) (in der osteopathischen Untersuchung häufig befundet)
+- ✗ [LWS-Blockaden](/blog/rueckenschmerzen-osteopathie-ganzheitliche-behandlung-hamburg/) (Hüfte kompensiert steife Wirbelsäule)
+- ✗ Hüftbeuger-Verkürzung durch [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen/)
 - ✗ **Biomechanische Kompensationsmuster** – die EIGENTLICHE Ursache!
 
 ---
@@ -89,8 +89,8 @@ Knorpelabbau im Hüftgelenk – der Gelenkspalt wird enger, Knochen reibt auf Kn
 - Übergewicht (jedes kg = 3 kg Belastung auf Hüfte!)
 - Fehlstellungen (Hüftdysplasie, X-/O-Beine)
 - Alter >50 Jahre
-- [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training) (frühere Hüftprellungen, Stürze)
-- [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis) (chronische Becken-Fehlstellung)
+- [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/) (frühere Hüftprellungen, Stürze)
+- [ISG-Blockierungen](/blog/isg-blockierung-teufelskreis/) (chronische Becken-Fehlstellung)
 
 **Wichtig zur Einordnung:**
 Der Knorpelverschleiß auf dem Röntgenbild **korreliert nicht zwingend** mit dem Schmerzempfinden. Für Kniearthrose ist dieses Phänomen gut belegt; ein ähnliches Muster wird auch bei Hüftarthrose beschrieben.[^3]
@@ -144,10 +144,10 @@ Der Piriformis-Muskel (Gesäßmuskel) verkrampft und drückt auf den Ischiasnerv
 - „ISG-Blockierung"
 
 **Typische Ursachen:**
-- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen): Langes Sitzen → Piriformis verkürzt
-- [ISG-Blockierung](/blog/isg-blockierung-teufelskreis): Becken verdreht → Piriformis überlastet
+- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen/): Langes Sitzen → Piriformis verkürzt
+- [ISG-Blockierung](/blog/isg-blockierung-teufelskreis/): Becken verdreht → Piriformis überlastet
 - Ungleiche Beinlänge (funktionell!)
-- Nach [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training) (Sturz aufs Gesäß)
+- Nach [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/) (Sturz aufs Gesäß)
 
 **Osteopathische Behandlung:**
 - Piriformis-Release (Triggerpunkt-Behandlung)
@@ -155,7 +155,7 @@ Der Piriformis-Muskel (Gesäßmuskel) verkrampft und drückt auf den Ischiasnerv
 - LWS-Mobilisierung
 - Beckenboden-Entspannung
 
-Ähnlich wie bei [Rückenschmerzen durch Verdauungsprobleme](/blog/rueckenschmerzen-verdauung-radix-mesenterii) liegt die Ursache oft nicht dort, wo der Schmerz ist!
+Ähnlich wie bei [Rückenschmerzen durch Verdauungsprobleme](/blog/rueckenschmerzen-verdauung-radix-mesenterii/) liegt die Ursache oft nicht dort, wo der Schmerz ist!
 
 ---
 
@@ -189,7 +189,7 @@ Der Piriformis-Muskel (Gesäßmuskel) verkrampft und drückt auf den Ischiasnerv
 
 ### Das Problem: Es ist NICHT nur die Hüfte!
 
-Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung). Während lokale Behandlungen oft versagen, betrachtet die Osteopathie den gesamten Bewegungsapparat.
+Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/). Während lokale Behandlungen oft versagen, betrachtet die Osteopathie den gesamten Bewegungsapparat.
 
 **Hüftschmerzen können beeinflusst sein durch:**
 1. **Becken-Fehlstellungen** (häufig in der osteopathischen Praxis befundet)
@@ -198,7 +198,7 @@ Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden
 4. **Fasziale Verklebungen** (Iliopsoas, IT-Band, TFL)
 
 **Beispiel:**
-- Ihr rechtes ISG ist seit Jahren blockiert ([ISG-Blockierung](/blog/isg-blockierung-teufelskreis))
+- Ihr rechtes ISG ist seit Jahren blockiert ([ISG-Blockierung](/blog/isg-blockierung-teufelskreis/)/)
 - Becken steht schief → rechtes Bein funktionell kürzer
 - Rechte Hüfte muss bei jedem Schritt mehr arbeiten
 - → Einseitige Überlastung → Knorpelabrieb → Arthrose
@@ -216,7 +216,7 @@ Hüftarthrose und Hüftschmerzen sind Teil des großen Themas [Gelenkbeschwerden
 ### 1. Becken-Analyse: Die Basis-Korrektur
 
 **Problem:**
-Becken-Fehlstellungen und Funktionsstörungen des Iliosakralgelenks finden sich in der osteopathischen Praxis sehr häufig bei Patient:innen mit Hüftbeschwerden ([siehe ISG-Blockierung](/blog/isg-blockierung-teufelskreis)).
+Becken-Fehlstellungen und Funktionsstörungen des Iliosakralgelenks finden sich in der osteopathischen Praxis sehr häufig bei Patient:innen mit Hüftbeschwerden ([siehe ISG-Blockierung](/blog/isg-blockierung-teufelskreis/)/).
 
 **Osteopathische Untersuchung:**
 - **Beckenkamm-Höhe:** Steht eine Seite höher?
@@ -240,7 +240,7 @@ Becken-Fehlstellungen und Funktionsstörungen des Iliosakralgelenks finden sich 
 - Interne/externe Techniken zur Entspannung
 - **Wichtig:** Oft übersehen, aber sehr wirksam!
 
-Ähnlich wie bei [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln) liegt die Lösung oft in der Korrektur der gesamten Biomechanik!
+Ähnlich wie bei [Kniearthrose](/blog/kniearthrose-ohne-op-behandeln/) liegt die Lösung oft in der Korrektur der gesamten Biomechanik!
 
 ---
 
@@ -255,8 +255,8 @@ Eine steife Lendenwirbelsäule zwingt die Hüfte zu Kompensationsbewegungen!
 - Steife LWS → Hüfte übernimmt die Bewegung → Überlastung!
 
 **Typische Ursachen für LWS-Steifigkeit:**
-- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen): Rundrücken, Flexions-Fehlhaltung
-- Alte [Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen)
+- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen/): Rundrücken, Flexions-Fehlhaltung
+- Alte [Rückenschmerzen](/blog/rueckenschmerzen-3-versteckte-ursachen/)
 - Bandscheibenvorfall (Narbengewebe)
 
 **Osteopathische LWS-Techniken:**
@@ -301,7 +301,7 @@ Bei fast allen Hüftschmerz-Patienten: **Hüftbeuger verkürzt, Gesäßmuskulatu
 - **Zu schwach:** Gluteus maximus, Gluteus medius, Hamstrings
 
 **Warum?**
-- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen): 8 Stunden sitzen → Hüftbeuger verkürzt
+- [Schreibtisch-Arbeit](/blog/schreibtisch-fehler-rueckenschmerzen/): 8 Stunden sitzen → Hüftbeuger verkürzt
 - Kompensation bei Arthrose: Schmerzhafte Streckung wird vermieden → Beuger noch mehr verkürzt
 - Folge: Hüfte steht in Flexion → Druck auf vorderen Gelenkknorpel ↑
 
@@ -348,7 +348,7 @@ Bei fast allen Hüftschmerz-Patienten: **Hüftbeuger verkürzt, Gesäßmuskulatu
 - **Myofascial Unwinding:** Folgen der Gewebsspannung
 - **Instrument-Assisted:** Faszien-Tools für tiefe Verklebungen
 
-Mehr zu Faszien-Verklebungen: [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung)
+Mehr zu Faszien-Verklebungen: [Gelenkbeschwerden ganzheitlich behandeln](/blog/gelenkbeschwerden-osteopathie-ganzheitliche-behandlung/)
 
 ---
 
@@ -371,7 +371,7 @@ Der osteopathische Ansatz arbeitet daher nicht nur am Gelenk selbst, sondern an 
 
 ## Übungen für zuhause: Hüftschmerzen selbst behandeln
 
-**Wichtig:** Diese Übungen ersetzen KEINE osteopathische Behandlung, unterstützen aber den Heilungsprozess! Bei chronischen Schmerzen empfehlen wir die Kombination mit professioneller [Sportosteopathie](/behandlungen/sportosteopathie).
+**Wichtig:** Diese Übungen ersetzen KEINE osteopathische Behandlung, unterstützen aber den Heilungsprozess! Bei chronischen Schmerzen empfehlen wir die Kombination mit professioneller [Sportosteopathie](/behandlungen/sportosteopathie/).
 
 ### Übung 1: Hüftbeuger-Dehnung (Iliopsoas)
 
@@ -570,7 +570,7 @@ Der osteopathische Ansatz arbeitet daher nicht nur am Gelenk selbst, sondern an 
 - **Fußball, Tennis** (Stop-and-Go → Knorpelabrieb)
 - **Crossfit** (hohe Belastungsspitzen)
 
-Bei [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training) ist die richtige Wahl der Sportart entscheidend für die Regeneration!
+Bei [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training/) ist die richtige Wahl der Sportart entscheidend für die Regeneration!
 
 ---
 
@@ -581,7 +581,7 @@ Bei [Sportverletzungen](/blog/sportverletzung-schneller-zurueck-training) ist di
 - **Nicht:** Tief sitzen (verkürzt Hüftbeuger noch mehr!)
 - Stündlich aufstehen, Hüftbeuger dehnen (2 Min)
 
-Mehr dazu: [Schreibtisch-Fehler vermeiden](/blog/schreibtisch-fehler-rueckenschmerzen)
+Mehr dazu: [Schreibtisch-Fehler vermeiden](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 **Schlafen:**
 - **Seitenlage:** Kissen zwischen Knie (verhindert Innenrotation)
@@ -596,7 +596,7 @@ Mehr dazu: [Schreibtisch-Fehler vermeiden](/blog/schreibtisch-fehler-rueckenschm
 A: Nein, Knorpel regeneriert sich nach aktuellem Stand nicht. Osteopathische Behandlung kann jedoch die Biomechanik und Beweglichkeit unterstützen, was bei vielen Patient:innen zur Schmerzreduktion beiträgt. Der individuelle Verlauf ist unterschiedlich.
 
 **Q: „Mein Orthopäde sagt, ich brauche eine Hüft-TEP. Soll ich trotzdem Osteopathie versuchen?"**
-A: Eine OP-Empfehlung sollten Sie immer mit Ihrem behandelnden Arzt besprechen. Konservative Begleitung (Osteopathie, Physiotherapie, Bewegungstherapie) kann ergänzend sinnvoll sein und auch die postoperative Rehabilitation unterstützen. Eine Entscheidung gegen die OP ersetzt sie nicht – treffen Sie sie gemeinsam mit ärztlicher Beratung. [Mehr zu Kosten →](/osteopathie-kosten-hamburg)
+A: Eine OP-Empfehlung sollten Sie immer mit Ihrem behandelnden Arzt besprechen. Konservative Begleitung (Osteopathie, Physiotherapie, Bewegungstherapie) kann ergänzend sinnvoll sein und auch die postoperative Rehabilitation unterstützen. Eine Entscheidung gegen die OP ersetzt sie nicht – treffen Sie sie gemeinsam mit ärztlicher Beratung. [Mehr zu Kosten →](/osteopathie-kosten-hamburg/)
 
 **Q: „Wie schnell wirkt Osteopathie bei Hüftschmerzen?"**
 A: Das ist sehr individuell und nicht vorhersagbar. **Piriformis-Syndrom** spricht erfahrungsgemäß schneller auf gezielte Mobilisation an als degenerative Beschwerden. Bei **Hüftarthrose** ist die Behandlung längerfristig angelegt (mehrere Monate). Der individuelle Verlauf hängt u.a. von Schweregrad und Mitarbeit (Heimübungen, Lebensstil) ab.
@@ -616,7 +616,7 @@ A: Absolut! Nach Hüft-TEP: Osteopathie optimiert Gangbild, behandelt Kompensati
 
 **Hüftschmerzen, die nicht weggehen?** Sie wollen die **Hüft-OP vermeiden** oder hinauszögern?
 
-**→ [Jetzt Termin vereinbaren](/terminbuchung)**
+**→ [Jetzt Termin vereinbaren](/terminbuchung/)**
 
 **Oder haben Sie noch Fragen?**
 → [Kontakt aufnehmen](/terminbuchung/)
@@ -635,7 +635,7 @@ Rappstraße 7
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
 

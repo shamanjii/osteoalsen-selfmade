@@ -391,19 +391,19 @@ Botox (OnabotulinumtoxinA) wirkt bei **chronischer Migräne** (≥15 Tage/Monat)
 
 ## Verwandte Artikel
 
-[Chronische Kopfschmerzen osteopathisch behandeln](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten) – Warum Schmerztabletten nicht helfen
+[Chronische Kopfschmerzen osteopathisch behandeln](/blog/chronische-kopfschmerzen-osteopathie-statt-tabletten/) – Warum Schmerztabletten nicht helfen
 
-[Kopfschmerzen durch Trigeminus-Irritation](/blog/kopfschmerzen-trigeminus-ursache) – Wenn HWS-Blockierung Kopfschmerzen verursacht
+[Kopfschmerzen durch Trigeminus-Irritation](/blog/kopfschmerzen-trigeminus-ursache/) – Wenn HWS-Blockierung Kopfschmerzen verursacht
 
-[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung) – 5 häufigste Ursachen + Atlas-Behandlung
+[HWS-Blockierung: Warum Ihr Nacken immer wieder verspannt](/blog/hws-blockierung-nacken-verspannung/) – 5 häufigste Ursachen + Atlas-Behandlung
 
-[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus) – Atlas-Blockierung → vegetative Symptome
+[Nackenschmerzen & Schwindel: Die HWS-Vagus-Verbindung](/blog/nackenschmerzen-schwindel-hws-vagus/) – Atlas-Blockierung → vegetative Symptome
 
-[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk) – Kieferprobleme als Migräne-Trigger
+[CMD & Nackenschmerzen: Der Kiefer-HWS-Zusammenhang](/blog/cmd-nackenschmerzen-kiefergelenk/) – Kieferprobleme als Migräne-Trigger
 
-[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen-migraene) – Ganzheitliche Behandlung in Hamburg
+[Kopfschmerzen osteopathisch behandeln](/behandlungen/kopfschmerzen-migraene/) – Ganzheitliche Behandlung in Hamburg
 
-[Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system) – Stress als Migräne-Trigger
+[Burnout ganzheitlich behandeln](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/) – Stress als Migräne-Trigger
 
 ---
 
@@ -423,6 +423,6 @@ Botox (OnabotulinumtoxinA) wirkt bei **chronischer Migräne** (≥15 Tage/Monat)
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---

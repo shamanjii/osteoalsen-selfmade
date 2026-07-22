@@ -28,7 +28,7 @@ author: "Admin"
 
 Fast jeder zweite Deutsche leidet regelmäßig unter Kopfschmerzen [(1)](#quellen). Doch nur wenige wissen, dass der **Trigeminus** – der größte Hirnnerv – oft der Schlüssel zur Lösung ist.
 
-> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf den Trigeminus-Nerv als Ursache. Für den kompletten Guide zu allen Kopfschmerz-Arten und Behandlungen: [Kopfschmerzen & Migräne - Ganzheitliche Behandlung](/behandlungen/kopfschmerzen-migraene)
+> 💡 **Umfassender Überblick gewünscht?** Dieser Artikel fokussiert auf den Trigeminus-Nerv als Ursache. Für den kompletten Guide zu allen Kopfschmerz-Arten und Behandlungen: [Kopfschmerzen & Migräne - Ganzheitliche Behandlung](/behandlungen/kopfschmerzen-migraene/)
 
 ---
 
@@ -82,7 +82,7 @@ Wenn Ihr **Trigeminusnerv gereizt ist durch Verspannungen**, gibt es drei typisc
 
 ### 1. Trigeminusnerv gereizt durch Verspannungen im Nacken (HWS)
 
-Die obere Halswirbelsäule (C1-C3) ist über das trigeminozervikale System direkt mit dem Trigeminus verbunden. Bei chronischen Nackenverspannungen – etwa durch Büroarbeit, [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung) oder alte [Schleudertrauma-Verletzungen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln) – werden dauerhaft Signale an den Trigeminus gesendet.
+Die obere Halswirbelsäule (C1-C3) ist über das trigeminozervikale System direkt mit dem Trigeminus verbunden. Bei chronischen Nackenverspannungen – etwa durch Büroarbeit, [HWS-Syndrom](/blog/hws-syndrom-symptome-behandlung/) oder alte [Schleudertrauma-Verletzungen](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/) – werden dauerhaft Signale an den Trigeminus gesendet.
 
 **Typische Symptome:**
 - Kopfschmerz beginnt im Nacken und zieht zur Stirn
@@ -100,12 +100,12 @@ Stress führt zu unbewusstem Zähneknirschen (Bruxismus) und angespannter Kiefer
 
 ### 3. Trigeminusnerv gereizt durch HWS-Blockaden (Atlas/Axis)
 
-Blockierte obere Halswirbel (besonders C1 Atlas, C2 Axis) erzeugen mechanischen Stress, der über Nervenverbindungen Kopfschmerzen auslöst -- selbst wenn der Nacken sich "normal" anfühlt. In meinem Artikel über [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung) erkläre ich diese Mechanismen im Detail.
+Blockierte obere Halswirbel (besonders C1 Atlas, C2 Axis) erzeugen mechanischen Stress, der über Nervenverbindungen Kopfschmerzen auslöst -- selbst wenn der Nacken sich "normal" anfühlt. In meinem Artikel über [HWS-Blockierungen und Nackenverspannungen](/blog/hws-blockierung-nacken-verspannung/) erkläre ich diese Mechanismen im Detail.
 
 **Typische Symptome:**
 - Einseitige Kopfschmerzen
 - Gefühl, den Kopf nicht richtig drehen zu können
-- [Schwindel + Kopfschmerzen kombiniert](/blog/nackenschmerzen-schwindel-hws-vagus)
+- [Schwindel + Kopfschmerzen kombiniert](/blog/nackenschmerzen-schwindel-hws-vagus/)
 
 **Die gute Nachricht:** Alle drei Ursachen können osteopathisch adressiert werden — als konservativer Ansatz, der eine ärztliche Versorgung sinnvoll ergänzen kann.
 
@@ -266,7 +266,7 @@ Während Sie auf Ihren Termin warten, können diese Übungen erste Linderung bri
 
 **Wichtig:** Osteopathie ersetzt nicht die ärztliche Migräne-Therapie, kann diese aber **sinnvoll ergänzen**.
 
-[→ Mehr zu Migräne-Behandlung](/behandlungen/kopfschmerzen-migraene)
+[→ Mehr zu Migräne-Behandlung](/behandlungen/kopfschmerzen-migraene/)
 
 ---
 
@@ -315,7 +315,7 @@ Spannungskopfschmerz entsteht meist durch muskuläre Verspannungen (Nacken, Kief
 **Private Krankenversicherung:** Meist 80-100% Erstattung (mit Heilpraktiker-Zusatz)
 **Gesetzliche Krankenkasse:** Teilweise Zuschüsse (3-6 Sitzungen/Jahr mit ärztlichem Rezept)
 
-[→ Mehr zu Kosten & Abrechnung](/kosten-ablauf)
+[→ Mehr zu Kosten & Abrechnung](/kosten-ablauf/)
 
 ---
 
@@ -342,7 +342,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 - Akute Infektionen, Fieber
 - Hirnhautentzündung (Meningitis)
 - Hirntumor
-- Frische Traumata ([Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln), Unfall)
+- Frische Traumata ([Schleudertrauma](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/), Unfall)
 - Starke neurologische Symptome (Lähmungen, Seh-/Hörstörungen)
 
 **Wichtig:** Ein sorgfältiges **Red-Flag-Screening** vor jeder Behandlung ist Pflicht [(18)](#quellen).
@@ -374,7 +374,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 - **Zervikogene Kopfschmerzen** (beginnen im Nacken)
 - **Migräne** mit mechanischer Komponente (Nacken/Kiefer-Beteiligung)
 - **Schmerzmittel-Übergebrauch** (mehr als 10 Tage/Monat)
-- **Begleitende Symptome:** Kieferschmerzen, [Nackenverspannungen](/behandlungen/nackenschmerzen), Schwindel
+- **Begleitende Symptome:** Kieferschmerzen, [Nackenverspannungen](/behandlungen/nackenschmerzen/), Schwindel
 
 ### ⚠️ Wann NICHT zur Osteopathie (Red Flags):
 
@@ -394,7 +394,7 @@ Bei fachgerechter Anwendung sind Nebenwirkungen **selten und mild**:
 
 Buchen Sie Ihren **Ersttermin** (60 Min) bequem online. In Hamburg sind freie Termine meist innerhalb von 1-2 Wochen verfügbar.
 
-[→ Jetzt Termin online buchen](/terminbuchung)
+[→ Jetzt Termin online buchen](/terminbuchung/)
 
 ---
 
@@ -413,11 +413,11 @@ Nutzen Sie das [Kontaktformular](/terminbuchung/) oder buchen Sie direkt einen T
 
 Weitere Artikel, die Sie interessieren könnten:
 
-- [Kopfschmerzen & Migräne - Der komplette Guide](/behandlungen/kopfschmerzen-migraene)
-- [Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen)
-- [Schleudertrauma Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln)
-- [Was ist Osteopathie? Der komplette Überblick](/was-ist-osteopathie)
-- [Alle FAQ zur Osteopathie](/faq)
+- [Kopfschmerzen & Migräne - Der komplette Guide](/behandlungen/kopfschmerzen-migraene/)
+- [Nackenschmerzen osteopathisch behandeln](/behandlungen/nackenschmerzen/)
+- [Schleudertrauma Spätfolgen langfristig behandeln](/blog/schleudertrauma-spaetfolgen-langfristig-behandeln/)
+- [Was ist Osteopathie? Der komplette Überblick](/was-ist-osteopathie/)
+- [Alle FAQ zur Osteopathie](/faq/)
 
 ---
 
@@ -444,7 +444,7 @@ Weitere Artikel, die Sie interessieren könnten:
 - Teilweise Erstattung durch Krankenkasse
 
 **Nächster Schritt:**
-[→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung)
+[→ Jetzt Ersttermin buchen und Ursachen finden](/terminbuchung/)
 
 ---
 
@@ -498,13 +498,13 @@ Nutzen Sie unser [Kontaktformular](/terminbuchung/) oder buchen Sie direkt onlin
 **Autor:** Osteopathie-Praxis Hamburg
 **Disclaimer:** Dieser Artikel dient der Information und ersetzt keine ärztliche Diagnose oder Behandlung. Bei akuten oder unklaren Kopfschmerzen konsultieren Sie bitte einen Arzt.
 
-[→ Zurück zum Blog](/blog)
+[→ Zurück zum Blog](/blog/)
 
 ---
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
 

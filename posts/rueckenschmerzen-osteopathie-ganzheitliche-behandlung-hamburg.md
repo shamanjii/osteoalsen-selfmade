@@ -51,7 +51,7 @@ Manche Patient:innen erleben damit eine deutliche Besserung. Bei anderen kehren 
 → Studien zeigen: **60% der Menschen ohne Rückenschmerzen** haben Bandscheibenvorwölbungen im MRT. Sie sind oft **nicht** die Ursache.
 
 **3. "Es liegt an Ihrer Haltung"**
-→ Aber warum ist Ihre Haltung schlecht? Weil Ihr Körper **Einschränkungen** an anderer Stelle ausgleicht ([ISG-Blockierung](/blog/isg-blockierung-teufelskreis), Hüftsteife, viszerale Spannungen).
+→ Aber warum ist Ihre Haltung schlecht? Weil Ihr Körper **Einschränkungen** an anderer Stelle ausgleicht ([ISG-Blockierung](/blog/isg-blockierung-teufelskreis/), Hüftsteife, viszerale Spannungen).
 
 > **Die Wahrheit:** Rückenschmerzen sind fast nie ein **lokales** Problem. Sie sind das Ergebnis eines gestörten **Gesamtsystems**.
 
@@ -81,7 +81,7 @@ Die Blockierung liegt tiefer – im Gelenk selbst. Muskeln entspannen kurzzeitig
 - **Präziser Impuls (HVLA):** Kurzer, gezielter Impuls direkt am blockierten Gelenk (das typische "Knacken")
 - **Hüft-/Becken-Integration:** Behandlung der eigentlichen Ursache (oft Hüftsteife, alte Knöchelverletzung)
 
-**Mehr dazu:** [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
+**Mehr dazu:** [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/)
 
 ---
 
@@ -91,7 +91,7 @@ Die Blockierung liegt tiefer – im Gelenk selbst. Muskeln entspannen kurzzeitig
 - Diffuser, ziehender Schmerz über größere Bereiche
 - Schmerz verändert sich je nach Position
 - "Brennendes" oder "spannendes" Gefühl
-- Oft nach langem Sitzen oder [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen)
+- Oft nach langem Sitzen oder [Schreibtischarbeit](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 **Ursachen:**
 - **Thorakolumbale Faszie (TLF)** verklebt oder verspannt
@@ -104,7 +104,7 @@ Ihre **Faszien** (Bindegewebe) sind reich innerviert – sie können Schmerz erz
 Studien zeigen: Bei chronischen Rückenschmerzen ist die **Gleitfähigkeit der thorakolumbalen Faszie** um bis zu **20% reduziert**.
 
 **Warum Dehnen manchmal schadet:**
-Aggressive Dehnung kann verklebte Faszien **reizen** statt lösen. [Mehr dazu: Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos)
+Aggressive Dehnung kann verklebte Faszien **reizen** statt lösen. [Mehr dazu: Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos/)
 
 **Osteopathischer Ansatz:**
 - **Faszien-Lösung (MFR - Myofasziales Release):** Sanfter, anhaltender Druck auf verspanntes Gewebe – nach 60-90 Sekunden spüren Sie, wie die Faszie "schmilzt" und nachgibt
@@ -140,8 +140,8 @@ Ihre inneren Organe sind über **Ligamente** (Bänder) und **Faszien** mit der W
 - **Nerven-Beruhigung (Vagusnerv-Stimulation):** Stimulation des Hauptnervs Ihres Entspannungssystems – reduziert Stress und Schmerz gleichzeitig
 
 **Mehr dazu:**
-- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [Radix Mesenterii: Wie Darm und LWS verbunden sind](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
+- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [Radix Mesenterii: Wie Darm und LWS verbunden sind](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
 
 ---
 
@@ -210,7 +210,7 @@ Osteopathie ist kein "Passiv-Abo". **Ihre aktive Mitarbeit** entscheidet über l
 4. 4 Sek einatmen, 6 Sek ausatmen
 5. 5 Min morgens + abends
 
-**Fortgeschritten:** [Flankenatmung](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang#flankenatmung) für Pars lumbalis des Zwerchfells
+**Fortgeschritten:** [Flankenatmung](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/#flankenatmung) für Pars lumbalis des Zwerchfells
 
 ---
 
@@ -225,7 +225,7 @@ Osteopathie ist kein "Passiv-Abo". **Ihre aktive Mitarbeit** entscheidet über l
 4. Täglich 2x pro Seite
 
 **Warum nicht die Lendenwirbelsäule dehnen?**
-Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung das Problem](/blog/dehnen-rueckenschmerzen-mythos).
+Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung das Problem](/blog/dehnen-rueckenschmerzen-mythos/).
 
 ---
 
@@ -242,7 +242,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 
 💡 **Trick:** Legen Sie ein Handtuch unter die Lendenwirbelsäule – es darf sich nicht wegbewegen!
 
-**Mehr zu ISG:** [ISG-Blockierung: Der Teufelskreis](/blog/isg-blockierung-teufelskreis)
+**Mehr zu ISG:** [ISG-Blockierung: Der Teufelskreis](/blog/isg-blockierung-teufelskreis/)
 
 ---
 
@@ -253,7 +253,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 - Stuhl zu hoch → Füße hängen → Iliosakralgelenk (ISG) wird instabil
 - Keine Lendenstütze → Lendenwirbelsäule (LWS) kollabiert
 
-**Mehr dazu:** [5 Fehler am Schreibtisch, die Ihren Rücken zerstören](/blog/schreibtisch-fehler-rueckenschmerzen)
+**Mehr dazu:** [5 Fehler am Schreibtisch, die Ihren Rücken zerstören](/blog/schreibtisch-fehler-rueckenschmerzen/)
 
 ---
 
@@ -266,7 +266,7 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 - Herzratenvariabilität-Training (HRV) mit Apps (misst, wie entspannt Sie wirklich sind)
 - Progressive Muskelentspannung (PMR) nach Jacobson
 
-**Mehr zum Nervensystem:** [Burnout ganzheitlich behandeln: Glymphatisches System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system)
+**Mehr zum Nervensystem:** [Burnout ganzheitlich behandeln: Glymphatisches System](/blog/burnout-ganzheitlich-behandeln-glymphatisches-system/)
 
 ---
 
@@ -323,11 +323,11 @@ Bei [überbeweglicher Lendenwirbelsäule (hypermobile LWS) verschlimmert Dehnung
 
 Oft finde ich Ursachen, die bildgebend nicht sichtbar sind:
 - Fasziale Verklebungen
-- Viszerale Dysfunktionen ([Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden))
+- Viszerale Dysfunktionen ([Verdauungsbeschwerden](/behandlungen/verdauungsbeschwerden/)/)
 - Alte Narben/Operationen
-- [Stress-Muster](/behandlungen/stress-burnout) im Nervensystem (ANS-Dysregulation)
+- [Stress-Muster](/behandlungen/stress-burnout/) im Nervensystem (ANS-Dysregulation)
 
-**Mehr dazu:** [Rückenschmerzen: 3 häufige Ursachen, die übersehen werden](/blog/rueckenschmerzen-3-versteckte-ursachen)
+**Mehr dazu:** [Rückenschmerzen: 3 häufige Ursachen, die übersehen werden](/blog/rueckenschmerzen-3-versteckte-ursachen/)
 
 ---
 
@@ -338,7 +338,7 @@ Oft finde ich Ursachen, die bildgebend nicht sichtbar sind:
 - Chronischen, unspezifischen Rückenschmerzen (> 3 Monate)
 - Wiederkehrenden ISG-Blockierungen
 - Rückenschmerz + Verdauungsbeschwerden
-- Rückenschmerz + Stress/[Burnout](/behandlungen/stress-burnout)
+- Rückenschmerz + Stress/[Burnout](/behandlungen/stress-burnout/)
 - Versagen klassischer Behandlungen (Physio, Massage)
 
 ### ⚠️ Erst zum Arzt bei:
@@ -366,9 +366,9 @@ Rückenschmerzen sind **selten ein lokales Problem**. Sie sind das Ergebnis eine
 3. **Stress-Management** (Nervensystem/ANS regulieren, Entspannungsnerv/Vagus aktivieren)
 
 **Nächster Schritt:**
-- Wenn Sie in Hamburg sind: [Termin vereinbaren](/behandlungen/rueckenschmerzen)
+- Wenn Sie in Hamburg sind: [Termin vereinbaren](/behandlungen/rueckenschmerzen/)
 - Wenn Sie erstmal selbst probieren wollen: Starten Sie mit Zwerchfell-Atmung (5 Min/Tag) und Hüftmobilität
-- Wenn Sie mehr verstehen wollen: Lesen Sie die verlinkten Artikel ([ISG](/blog/isg-blockierung-teufelskreis), [Reizdarm-Rücken](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang), [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii))
+- Wenn Sie mehr verstehen wollen: Lesen Sie die verlinkten Artikel ([ISG](/blog/isg-blockierung-teufelskreis/), [Reizdarm-Rücken](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/), [Radix Mesenterii](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)/)
 
 > **"Der Körper heilt sich selbst – wir müssen nur die Hindernisse beseitigen."** – A.T. Still, Begründer der Osteopathie
 
@@ -376,22 +376,22 @@ Rückenschmerzen sind **selten ein lokales Problem**. Sie sind das Ergebnis eine
 
 ## Verwandte Artikel
 
-- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis)
-- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang)
-- [Radix Mesenterii: Wie Darm und LWS verbunden sind](/blog/rueckenschmerzen-verdauung-radix-mesenterii)
-- [Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos)
-- [5 Schreibtisch-Fehler, die Ihren Rücken zerstören](/blog/schreibtisch-fehler-rueckenschmerzen)
-- [Rückenschmerzen: 3 versteckte Ursachen](/blog/rueckenschmerzen-3-versteckte-ursachen)
+- [ISG-Blockierung: Warum sie immer wiederkommt](/blog/isg-blockierung-teufelskreis/)
+- [Reizdarm & Rückenschmerzen: Der unterschätzte Zusammenhang](/blog/reizdarm-rueckenschmerzen-darm-ruecken-zusammenhang/)
+- [Radix Mesenterii: Wie Darm und LWS verbunden sind](/blog/rueckenschmerzen-verdauung-radix-mesenterii/)
+- [Warum Dehnen Rückenschmerzen verschlimmert](/blog/dehnen-rueckenschmerzen-mythos/)
+- [5 Schreibtisch-Fehler, die Ihren Rücken zerstören](/blog/schreibtisch-fehler-rueckenschmerzen/)
+- [Rückenschmerzen: 3 versteckte Ursachen](/blog/rueckenschmerzen-3-versteckte-ursachen/)
 
 **Mehr Informationen:**
-- [Was ist Osteopathie?](/was-ist-osteopathie)
-- [Behandlungen: Rückenschmerzen](/behandlungen/rueckenschmerzen)
-- [Über mich: Joshua Alsen](/ueber-mich)
+- [Was ist Osteopathie?](/was-ist-osteopathie/)
+- [Behandlungen: Rückenschmerzen](/behandlungen/rueckenschmerzen/)
+- [Über mich: Joshua Alsen](/ueber-mich/)
 
 ---
 
 ## Mehr über Osteopathie erfahren
 
-Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
+Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
 ---
