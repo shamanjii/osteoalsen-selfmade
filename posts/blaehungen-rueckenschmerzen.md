@@ -14,6 +14,7 @@ keywords:
   - "Osteopathie Blähungen"
 image: ""
 alt: ""
+status: "draft"
 ---
 
 # Blähungen und Rückenschmerzen gleichzeitig: Was Ihr Darm mit dem Rücken zu tun hat

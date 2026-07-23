@@ -14,6 +14,7 @@ keywords:
   - "Osteopathie Durchfall"
 image: ""
 alt: ""
+status: "draft"
 ---
 
 # Durchfall und Rückenschmerzen gleichzeitig: Warum der Darm Schmerzsignale an den Rücken sendet

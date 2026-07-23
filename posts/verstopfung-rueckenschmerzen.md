@@ -14,6 +14,7 @@ keywords:
   - "Osteopathie Verstopfung"
 image: ""
 alt: ""
+status: "draft"
 ---
 
 # Verstopfung und Rückenschmerzen: Warum Ihr Dickdarm den Rücken blockiert
