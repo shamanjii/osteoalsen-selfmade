@@ -12,7 +12,7 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 
 ## Gruppe A — Bereits in dieser Session bearbeitet (Verifikations-Durchgang, niedrige Priorität)
 
-- [x] 🔧 `nackenschmerzen-schwindel-hws-vagus.md` — Tiefenaudit existiert bereits, **Status Rot, noch offen** (Selbsttest, Kausalkette, Live/Lokal-Drift)
+- [x] ✅ `nackenschmerzen-schwindel-hws-vagus.md` — **Korrektur 2026-07-23:** war fälschlich als "Status Rot" markiert (unreflektiert vom alten Audit übernommen, ohne den aktuellen Dateistand zu prüfen). Tatsächlich bereits am 22.07.2026 vor dieser Session vollständig überarbeitet (Commits `f327ae0`, `a45608d`) — verifiziert per vollständiger Lesung + Live-Check: kein Selbsttest, kein Fallbeispiel, keine erfundenen Zahlen, Atlas-Vagus-Kette explizit als unbelegt benannt, Epley korrekt dargestellt, keine festen Sitzungszahlen, vollständiger Notfall-Block, Bárány Society + Tramontano 2021 (114 Teilnehmende) + aktuelle 2025-Metaanalyse korrekt zitiert. Live und lokal identisch. Grün, keine Änderung nötig.
 - [x] 🔧 `hws-syndrom-symptome-behandlung.md`
 - [x] 🔧 `schulterschmerzen-frozen-shoulder-osteopathie-statt-op.md`
 - [x] 🔧 `hueftschmerzen-hueftarthrose-ohne-op-behandeln.md`
@@ -71,4 +71,6 @@ Ziel: jeden der 33 Artikel einzeln durchgehen und auf „grün" (HWG-konform) pr
 
 **Zusätzlicher Fund beim Entfernen von `sourceCount`:** Das Feld führte zu einer kaputten, sitebreiten React-Komponente (`ScientificCredibilityBox`), die auf **allen 33 Artikeln live** eine „Wissenschaftlich fundiert" / „+ StudienVFO-zertifiziert"-Box (fehlende Zahl, da Pflicht-Props nie übergeben wurden) mit totem Link zu `#literatur` anzeigte — verursacht durch `typescript.ignoreBuildErrors: true` in `next.config`, wodurch der Typfehler beim Build nie auffiel. Live-Check bestätigt: Text erschien wortwörtlich als "+ StudienVFO-zertifiziert". Nutzerentscheidung: Komponente komplett entfernen (nicht reparieren), da eine pauschale "peer-reviewed, evidenzbasiert"-Behauptung ohnehin nicht ehrlich für alle 33 Artikel gelten konnte. `ScientificCredibilityBox.tsx` + `LiteratureSection.tsx` gelöscht, Render-Aufrufe aus `src/app/blog/[slug]/page.tsx` entfernt, Produktions-Build erfolgreich verifiziert.
 
-**Damit sind alle bekannten offenen Punkte aus dieser Review-Session bearbeitet**, mit einer Ausnahme: `nackenschmerzen-schwindel-hws-vagus.md` bleibt Status Rot aus dem separaten Tiefenaudit (`2026-07-22-hwg-audit-nackenschmerzen-schwindel-hws-vagus.md`) — eigene, größere Überarbeitung nötig (Selbsttest, Kausalkette, Live/Lokal-Sync), noch nicht angegangen.
+**Nachtrag 2026-07-23 (2): `nackenschmerzen-schwindel-hws-vagus.md` überprüft — bereits vollständig grün.** Der im separaten Tiefenaudit (`2026-07-22-hwg-audit-nackenschmerzen-schwindel-hws-vagus.md`) beschriebene "Status Rot" bezog sich auf einen älteren Artikelstand vor dessen eigener Überarbeitung am 22.07.2026 (noch vor Beginn dieser Review-Session). Bei erneuter vollständiger Lesung + Live-Abgleich zeigt sich: alle 10 Freigaberegeln aus dem Audit sind bereits erfüllt. Keine weitere Bearbeitung nötig.
+
+**Damit sind alle 33 Artikel dieser Review-Session final grün bzw. bereinigt — keine offenen Punkte mehr.**
