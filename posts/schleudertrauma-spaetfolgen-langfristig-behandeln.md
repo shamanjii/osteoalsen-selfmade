@@ -12,6 +12,7 @@ keywords:
 date: "2025-12-12T12:00:00.000Z"
 status: "published"
 author: "Admin"
+category: "nacken-hws"
 image: "https://images.unsplash.com/photo-1714929818826-583ce7c11422?q=80&w=1200&auto=format&fit=crop"
 alt: "Schleudertrauma Spätfolgen Osteopathie Hamburg: Atlas-Dysfunktion und membranöse Verklebungen langfristig behandeln"
 ---

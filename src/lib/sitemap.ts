@@ -1,4 +1,5 @@
 import { getAllSlugs } from './posts';
+import { RUBRICS } from './taxonomy';
 
 export interface SitemapUrl {
   url: string;
@@ -160,14 +161,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
   ];
 
   // Blog-Kategorie-Seiten
-  const categories = [
-    'osteopathie',
-    'rueckenschmerzen',
-    'kopfschmerzen',
-    'sportverletzungen',
-    'verdauung',
-    'gesundheitstipps'
-  ];
+  const categories = RUBRICS.map(r => r.slug);
 
   const categoryPages: SitemapUrl[] = categories.map(category => ({
     url: ensureTrailingSlash(`${baseUrl}/blog/category/${category}`),

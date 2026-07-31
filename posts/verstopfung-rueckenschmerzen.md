@@ -12,6 +12,7 @@ keywords:
   - "Dickdarm Lendenwirbelsäule"
   - "Psoas Verstopfung"
   - "Osteopathie Verstopfung"
+category: "verdauung"
 image: ""
 alt: ""
 status: "draft"

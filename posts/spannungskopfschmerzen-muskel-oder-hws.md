@@ -12,6 +12,7 @@ keywords:
 date: "2025-12-13T10:00:00.000Z"
 status: "published"
 author: "Admin"
+category: "kopfschmerzen"
 image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop"
 alt: "Spannungskopfschmerzen Osteopathie Hamburg: HWS-Blockierung Atlas C2 behandeln - Selbsttest und neurobiomechanische Ursachen"
 ---

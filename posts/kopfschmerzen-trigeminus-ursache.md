@@ -16,6 +16,7 @@ keywords:
   - "Spannungskopfschmerz Behandlung"
   - "Trigeminus Kopfschmerzen"
   - "Trigeminus Nacken"
+category: "kopfschmerzen"
 image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&auto=format&fit=crop&q=80"
 alt: "Person mit Kopfschmerzen - Trigeminus-Nerv als Ursache verstehen und osteopathisch behandeln"
 date: "2025-10-13T21:53:58.719Z"

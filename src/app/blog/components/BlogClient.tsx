@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useMemo, memo, useEffect } from "react";
 import { detectCluster, getClusterEmoji, type ClusterName } from "@/lib/cluster-detection";
+import { RUBRICS, resolveRubric } from "@/lib/taxonomy";
 
 interface Post {
     slug: string;
@@ -22,17 +23,11 @@ interface BlogClientProps {
 
 // Cluster mapping - NO EMOJIS per user request
 // Keys must match the transformation: cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-')
+// Filter keys are rubric slugs from lib/taxonomy.ts - same identifiers the
+// category pages use, so chip and /blog/category/<slug> can never drift apart.
 const categoryMap: Record<string, { name: string }> = {
     'alle': { name: 'Alle Artikel' },
-    'rücken-wirbelsäule': { name: 'Rücken & Wirbelsäule' },
-    'nacken-hws': { name: 'Nacken & HWS' },
-    'kopf-nerven': { name: 'Kopf & Nerven' },
-    'knie-hüfte': { name: 'Knie & Hüfte' },
-    'sport-leistung': { name: 'Sport & Leistung' },
-    'verdauung-innere-organe': { name: 'Verdauung & Innere Organe' },
-    'stress-burnout': { name: 'Stress & Burnout' },
-    'osteopathie-allgemein': { name: 'Osteopathie Allgemein' },
-    'notizen': { name: 'Notizen' }
+    ...Object.fromEntries(RUBRICS.map(r => [r.slug, { name: r.name }]))
 };
 
 const POSTS_PER_PAGE = 12;
@@ -43,21 +38,24 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const [sortBy, setSortBy] = useState('date-desc');
     const [currentPage, setCurrentPage] = useState(1);
 
-    // Add cluster info to posts using automatic detection
+    // Resolve each post to its rubric (frontmatter category, keyword fallback)
     const postsWithClusters = useMemo(() => {
-        return posts.map(post => ({
-            ...post,
-            cluster: detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords, category: post.category }),
-            clusterEmoji: getClusterEmoji(detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords, category: post.category }))
-        }));
+        return posts.map(post => {
+            const rubric = resolveRubric(post);
+            return {
+                ...post,
+                rubricSlug: rubric.slug,
+                cluster: rubric.name,
+                clusterEmoji: rubric.emoji
+            };
+        });
     }, [posts]);
 
     // Calculate cluster stats for badge counts
     const clusterStats = useMemo(() => {
         const stats: Record<string, number> = {};
         postsWithClusters.forEach(post => {
-            const key = post.cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
-            stats[key] = (stats[key] || 0) + 1;
+            stats[post.rubricSlug] = (stats[post.rubricSlug] || 0) + 1;
         });
         return stats;
     }, [postsWithClusters]);
@@ -66,12 +64,9 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const filteredPosts = useMemo(() => {
         let filtered = [...postsWithClusters];
 
-        // Filter by cluster (instead of old category)
+        // Filter by rubric slug
         if (selectedCategory !== 'alle') {
-            filtered = filtered.filter(post => {
-                const clusterKey = post.cluster.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
-                return clusterKey === selectedCategory;
-            });
+            filtered = filtered.filter(post => post.rubricSlug === selectedCategory);
         }
 
         // Filter by search term
@@ -182,6 +177,20 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
                                     );
                                 })}
                         </div>
+
+                        {/* Crawlable rubric links - the chips above are client-side
+                            state only, so without these the category pages stay orphaned. */}
+                        <nav aria-label="Rubriken" className="mt-6 text-center text-xs sm:text-sm text-slate-500">
+                            <span className="mr-2">Rubriken:</span>
+                            {RUBRICS.filter(r => (clusterStats[r.slug] || 0) > 0).map((r, i, arr) => (
+                                <span key={r.slug}>
+                                    <Link href={`/blog/category/${r.slug}/`} className="hover:text-slate-900 hover:underline">
+                                        {r.name}
+                                    </Link>
+                                    {i < arr.length - 1 && <span className="mx-1.5 text-slate-300">·</span>}
+                                </span>
+                            ))}
+                        </nav>
                     </div>
                 </div>
             </section>

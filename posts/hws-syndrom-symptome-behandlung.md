@@ -13,6 +13,7 @@ keywords:
   - "Zervikalsyndrom"
   - "HWS Syndrom Behandlung Hamburg"
   - "Osteopathie HWS Hamburg"
+category: "nacken-hws"
 image: "https://images.unsplash.com/photo-1763198302249-db661c45bf7d?q=80&w=1200&auto=format&fit=crop"
 alt: "HWS-Syndrom Osteopathie Hamburg: Symptome der Halswirbelsäule verstehen und ganzheitlich behandeln"
 date: "2026-01-15T10:00:00.000Z"

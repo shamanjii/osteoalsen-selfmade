@@ -13,6 +13,7 @@ keywords:
   - "Viszerale Techniken"
   - "Organbeweglichkeit"
   - "Osteopathie Hamburg"
+category: "verdauung"
 image: "https://images.unsplash.com/photo-1743767587835-7a80fe384236?q=80&w=1200&auto=format&fit=crop"
 alt: "Viszerale Osteopathie - Anatomie der inneren Organe: 3D-Modell Verdauungssystem mit Magen, Darm, Leber und Speiseröhre"
 date: "2026-01-01T10:00:00.000Z"

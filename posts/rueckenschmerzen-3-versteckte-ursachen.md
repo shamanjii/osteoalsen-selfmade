@@ -9,6 +9,7 @@ keywords:
   - "chronische Rückenschmerzen Hilfe"
   - "Faszien Rückenschmerzen"
   - "Rückenschmerzen Hamburg Osteopath"
+category: "rueckenschmerzen"
 image: "https://images.unsplash.com/photo-1603309288245-c9b16e639aaf?q=80&w=1200&auto=format&fit=crop"
 alt: "Rückenschmerzen Osteopathie Hamburg: 3 versteckte Ursachen - Zwerchfell, Narben und ISG-Blockierung behandeln"
 date: "2025-10-13T21:39:53.510Z"

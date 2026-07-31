@@ -17,7 +17,7 @@ image: "https://images.unsplash.com/photo-1596546069639-be5c00252d8f?q=80&w=1740
 alt: "Vagusnerv aktivieren gegen Stress - Osteopathie Hamburg: Atemübungen und Meditation für Nervensystem-Balance"
 date: "2026-01-05T10:00:00.000Z"
 status: "published"
-category: "gesundheitstipps"
+category: "stress-burnout"
 ---
 
 # Vagusnerv aktivieren bei Stress: 5 wissenschaftlich fundierte Übungen

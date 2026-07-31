@@ -12,6 +12,7 @@ keywords:
 date: "2025-12-13T08:00:00.000Z"
 status: "published"
 author: "Admin"
+category: "kopfschmerzen"
 image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200"
 alt: "Migräne ohne Aura: Warum Schmerzmittel langfristig schaden (Osteopathie-Ansatz)"
 ---

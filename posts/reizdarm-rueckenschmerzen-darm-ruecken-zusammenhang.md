@@ -6,6 +6,7 @@ date: "2025-12-23"
 excerpt: "Warum Reizdarm und Rückenschmerzen häufig zusammenhängen – und wie gestörte Feedbackschleifen zwischen Zwerchfell, Vagusnerv und Dünndarm chronische Beschwerden begünstigen können. Evidenzbasierte Erklärung aus osteopathischer Sicht."
 metaDescription: "Reizdarm und Rückenschmerzen treten häufig gemeinsam auf. Die neurophysiologische Verbindung zwischen Darm und Wirbelsäule erklärt – mit viszeraler Osteopathie-Lösung in Hamburg. VFO-zertifiziert."
 keywords: ["Reizdarm Rückenschmerzen", "Rückenschmerzen Verdauung", "Darm Rücken Zusammenhang", "Reizdarm Symptome Rückenschmerzen", "Durchfall Rückenschmerzen", "Bauchschmerzen Rückenschmerzen", "Osteopathie Reizdarm", "Verdauung Rückenschmerzen"]
+category: "verdauung"
 image: "https://mt-togo.com/wp-content/uploads/2016/06/seitliche-Bauchschmerzen-Frau-bigstock-by-staras-ID-63507508.jpg"
 alt: "Frau mit seitlichen Bauchschmerzen und Rückenschmerzen"
 ---

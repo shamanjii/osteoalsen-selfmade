@@ -13,6 +13,7 @@ keywords:
   - "Barmer Osteopathie"
   - "Privatrezept Osteopathie"
   - "Osteopath Hamburg Krankenkasse"
+category: "osteopathie"
 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
 alt: "Osteopathie Krankenkasse Erstattung Hamburg 2026 – TK, AOK, Barmer Zuschuss"
 date: "2026-05-09T10:00:00.000Z"

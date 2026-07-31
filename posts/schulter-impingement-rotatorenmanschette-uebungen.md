@@ -14,6 +14,7 @@ keywords:
   - "Rotatorenmanschette stärken"
   - "Subakromialer Raum"
   - "Schulter Biomechanik"
+category: "gelenke"
 image: "https://images.unsplash.com/photo-1603309288253-08db72e5117d?q=80&w=1200&auto=format&fit=crop"
 alt: "Schulter-Impingement Osteopathie Hamburg: Rotatorenmanschette Schmerzen behandeln - BWS-Blockaden und Übungen"
 date: "2025-12-27T10:00:00.000Z"

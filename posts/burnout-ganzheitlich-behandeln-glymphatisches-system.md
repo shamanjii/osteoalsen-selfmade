@@ -12,6 +12,7 @@ keywords:
   - "Stress Osteopathie"
   - "Vagusnerv Stimulation"
   - "ganzheitliche Burnout Behandlung"
+category: "stress-burnout"
 image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200"
 alt: "Erschöpfter Mann mit Burnout-Syndrom – Glymphatisches System & chronische Erschöpfung ganzheitlich behandeln in Hamburg"
 date: "2025-12-06T22:00:00.000Z"

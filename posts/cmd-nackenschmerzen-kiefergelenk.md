@@ -12,6 +12,7 @@ keywords:
 date: "2025-12-12T14:00:00.000Z"
 status: "published"
 author: "Admin"
+category: "nacken-hws"
 image: "https://images.unsplash.com/photo-1612736777093-461fb48101d7?q=80&w=1200&auto=format&fit=crop"
 alt: "CMD Nackenschmerzen Osteopathie Hamburg: Kiefergelenk-HWS-Zusammenhang behandeln - Trigeminusnerv und Atlas-Dysfunktion"
 ---

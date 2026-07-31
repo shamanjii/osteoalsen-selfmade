@@ -12,6 +12,7 @@ keywords:
   - "Luft im Bauch Rückenschmerzen"
   - "viszerosomatische Reflexe"
   - "Osteopathie Blähungen"
+category: "verdauung"
 image: ""
 alt: ""
 status: "draft"

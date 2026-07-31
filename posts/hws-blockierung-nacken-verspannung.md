@@ -11,6 +11,7 @@ keywords:
   - "Atlas Blockierung"
   - "Osteopathie Nackenschmerzen Hamburg"
   - "HWS Syndrom"
+category: "nacken-hws"
 image: "https://images.unsplash.com/photo-1606677549026-762050b1e7ca?q=80&w=1200&auto=format&fit=crop"
 alt: "HWS-Blockierung Osteopathie Hamburg: Chronische Nackenverspannung behandeln - Atlas C1 und Axis C2 Lösung"
 date: "2025-12-12T08:00:00.000Z"

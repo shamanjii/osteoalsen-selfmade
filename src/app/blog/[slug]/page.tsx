@@ -2,6 +2,7 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { resolveRubric } from "@/lib/taxonomy";
 import Image from "next/image";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
@@ -163,6 +164,14 @@ export default async function BlogPost({ params }: PageProps) {
                             </time>
                             <span className="text-slate-400">•</span>
                             <span>Von Joshua Alsen</span>
+                            <span className="text-slate-400">•</span>
+                            <Link
+                                href={`/blog/category/${resolveRubric(post).slug}/`}
+                                className="inline-flex items-center gap-1 text-teal-700 hover:text-teal-900 hover:underline font-medium"
+                            >
+                                <span aria-hidden="true">{resolveRubric(post).emoji}</span>
+                                {resolveRubric(post).name}
+                            </Link>
                         </div>
 
                         {/* Tags - Compact on mobile, touch-optimized on larger screens */}

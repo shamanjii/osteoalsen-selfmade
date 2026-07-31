@@ -13,6 +13,7 @@ keywords:
   - "Deep Front Line"
   - "HRV Atmung"
   - "Osteopathie Hamburg"
+category: "verdauung"
 image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Diaphragma.png"
 alt: "Anatomische Illustration des Zwerchfells (Diaphragma) - zeigt Pars sternalis, costalis und lumbalis"
 date: "2026-01-11T10:00:00.000Z"

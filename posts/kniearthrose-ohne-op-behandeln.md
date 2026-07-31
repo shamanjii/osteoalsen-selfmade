@@ -16,6 +16,7 @@ keywords:
   - "Gonarthrose Behandlung"
   - "Knie Knorpelschaden Osteopathie"
   - "hilft Osteopathie bei Arthrose"
+category: "gelenke"
 image: "https://physiotutors.com/wp-content/uploads/2023/10/Knee-Osteoarthritis.jpg"
 alt: "Kniearthrose Röntgenbild mit Knorpelschaden – Gonarthrose ohne OP behandeln in Hamburg Osteopathie"
 date: "2025-12-07T10:00:00.000Z"

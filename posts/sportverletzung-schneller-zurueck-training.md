@@ -10,6 +10,7 @@ keywords:
   - "Return to Sport"
   - "Muskelfaserriss Behandlung"
   - "Läuferknie Osteopathie"
+category: "sportverletzungen"
 image: "https://images.unsplash.com/photo-1644492097509-ad78e11a7178?q=80&w=1200&auto=format&fit=crop"
 alt: "Sportverletzung Osteopathie Hamburg: Heilung osteopathisch begleiten – Return to Sport"
 date: "2025-10-13T22:50:35.892Z"

@@ -5,7 +5,7 @@ metaDescription: "Gelenkschmerzen an der Ursache behandeln ✓ Osteopathie Hambu
 date: "2025-12-10"
 slug: "gelenkbeschwerden-osteopathie-ganzheitliche-behandlung"
 status: "published"
-category: "osteopathie"
+category: "gelenke"
 keywords:
   - "Gelenkbeschwerden Osteopathie"
   - "Gelenkschmerzen Hamburg"

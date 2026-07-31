@@ -10,6 +10,7 @@ keywords:
   - "ergonomischer Arbeitsplatz"
   - "Nackenschmerzen Schreibtisch"
   - "Osteopathie Büro"
+category: "gesundheitstipps"
 image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
 alt: "Ergonomischer Büro-Arbeitsplatz: 5 Fehler vermeiden für gesunden Rücken ohne Schmerzen"
 date: "2025-10-17T08:04:49.049Z"

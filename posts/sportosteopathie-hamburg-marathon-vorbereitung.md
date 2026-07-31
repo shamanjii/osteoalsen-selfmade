@@ -13,6 +13,7 @@ keywords:
   - "Marathon Regeneration"
   - "Laufverletzung Hamburg"
   - "ITBS Hamburg"
+category: "sportverletzungen"
 image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1200&auto=format&fit=crop"
 alt: "Hamburg-Marathon Vorbereitung Sportosteopathie – Läufer Hamburg Alster"
 date: "2026-05-04T10:30:00.000Z"

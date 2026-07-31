@@ -14,6 +14,7 @@ keywords:
   - "Migräne Osteopathie"
   - "Kiefergelenk Kopfschmerzen"
   - "Atlas Blockade Kopfschmerzen"
+category: "kopfschmerzen"
 image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200"
 alt: "Chronische Kopfschmerzen loswerden durch Osteopathie statt Schmerztabletten"
 date: "2025-12-10T10:00:00.000Z"

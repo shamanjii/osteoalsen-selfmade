@@ -1,6 +1,7 @@
 // Static export - all pages generated at build time
 
 import type { Metadata } from "next";
+import { RUBRICS, resolveRubric } from "@/lib/taxonomy";
 import Link from "next/link";
 import BlogClient from "../../components/BlogClient";
 import BlogErrorBoundary from "@/components/BlogErrorBoundary";
@@ -9,51 +10,10 @@ import { getAllPosts } from "@/lib/posts";
 import { calculateReadingTime } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
-// Category metadata
-const categoryInfo = {
-    'osteopathie': {
-        name: 'Osteopathie',
-        icon: '🩺',
-        description: 'Entdecken Sie professionelle Fachartikel über Osteopathie, ganzheitliche Behandlungsmethoden und evidenzbasierte Therapieansätze.',
-        keywords: ['Osteopathie', 'Osteopathie Hamburg', 'Osteopathische Behandlung', 'Ganzheitliche Medizin']
-    },
-    'rueckenschmerzen': {
-        name: 'Rückenschmerzen',
-        icon: '🦴',
-        description: 'Erfahren Sie, wie Osteopathie bei Rückenschmerzen, Verspannungen und Wirbelsäulenproblemen nachhaltig helfen kann.',
-        keywords: ['Rückenschmerzen', 'Rückenschmerzen Behandlung', 'Osteopathie Rücken', 'HWS Blockade', 'LWS Schmerzen']
-    },
-    'kopfschmerzen': {
-        name: 'Kopfschmerzen',
-        icon: '🧠',
-        description: 'Lernen Sie osteopathische Ansätze zur Behandlung von Kopfschmerzen, Migräne und Spannungskopfschmerzen kennen.',
-        keywords: ['Kopfschmerzen', 'Migräne', 'Spannungskopfschmerzen', 'Kopfschmerzen Behandlung', 'Osteopathie Kopfschmerzen']
-    },
-    'sportverletzungen': {
-        name: 'Sportverletzungen',
-        icon: '⚽',
-        description: 'Professionelle osteopathische Behandlung von Sportverletzungen und Tipps für schnellere Regeneration.',
-        keywords: ['Sportverletzungen', 'Sportosteopathie', 'Sportverletzung Behandlung', 'Regeneration Sport']
-    },
-    'verdauung': {
-        name: 'Verdauung',
-        icon: '🍃',
-        description: 'Viszerale Osteopathie für Verdauungsbeschwerden: Erfahren Sie, wie osteopathische Behandlung bei Darmproblemen helfen kann.',
-        keywords: ['Verdauungsbeschwerden', 'Viszerale Osteopathie', 'Darm-Hirn-Achse', 'Reizdarm', 'Verdauung Behandlung']
-    },
-    'notizen': {
-        name: 'Notizen',
-        icon: '📓',
-        description: 'Texte, die keine Beschwerdefrage beantworten: Aufzeichnungen zu Themen aus der Osteopathie, die mich fachlich beschäftigen.',
-        keywords: ['Osteopathie Grundlagen', 'Motilität', 'Mobilität', 'primär respiratorischer Mechanismus', 'Osteopathie Theorie']
-    },
-    'gesundheitstipps': {
-        name: 'Gesundheitstipps',
-        icon: '💡',
-        description: 'Praktische Gesundheitstipps und evidenzbasierte Ratschläge für Ihr Wohlbefinden aus osteopathischer Sicht.',
-        keywords: ['Gesundheitstipps', 'Gesundheit', 'Prävention', 'Wohlbefinden', 'Gesundheit Hamburg']
-    }
-};
+// Rubric metadata comes from lib/taxonomy.ts (single source of truth)
+const categoryInfo = Object.fromEntries(
+    RUBRICS.map(r => [r.slug, { name: r.name, icon: r.emoji, description: r.description, keywords: r.keywords }])
+);
 
 type CategorySlug = keyof typeof categoryInfo;
 
@@ -105,35 +65,17 @@ export default async function CategoryPage({ params }: PageProps) {
     const allPosts = await getAllPosts();
 
     const processedPosts = allPosts
-        .map(post => {
-            // Extract category from keywords as fallback if CMS category not set
-            const extractCategory = (keywords?: string[], cmsCategory?: string): string => {
-                if (cmsCategory) return cmsCategory;
-
-                if (!keywords || keywords.length === 0) return 'osteopathie';
-                const keywordStr = keywords.join(' ').toLowerCase();
-
-                if (keywordStr.includes('rückenschmerzen') || keywordStr.includes('muskel')) return 'rueckenschmerzen';
-                if (keywordStr.includes('kopfschmerzen') || keywordStr.includes('migräne')) return 'kopfschmerzen';
-                if (keywordStr.includes('sport') || keywordStr.includes('verletzung')) return 'sportverletzungen';
-                if (keywordStr.includes('verdauung') || keywordStr.includes('darm')) return 'verdauung';
-                if (keywordStr.includes('gesundheit') || keywordStr.includes('tipps')) return 'gesundheitstipps';
-
-                return 'osteopathie';
-            };
-
-            return {
-                slug: post.slug,
-                title: post.title,
-                excerpt: post.excerpt,
-                date: post.date,
-                keywords: post.keywords,
-                image: post.image,
-                alt: post.alt || post.title,
-                category: extractCategory(post.keywords, post.category),
-                readingTime: calculateReadingTime(post.content)
-            };
-        })
+        .map(post => ({
+            slug: post.slug,
+            title: post.title,
+            excerpt: post.excerpt,
+            date: post.date,
+            keywords: post.keywords,
+            image: post.image,
+            alt: post.alt || post.title,
+            category: resolveRubric(post).slug,
+            readingTime: calculateReadingTime(post.content)
+        }))
         .filter(post => post.category === slug); // Filter by current category
 
     return (

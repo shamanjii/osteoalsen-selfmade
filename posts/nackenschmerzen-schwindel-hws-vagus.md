@@ -11,6 +11,7 @@ keywords:
   - "Schwindel bei Kopfbewegung"
   - "HWS Beschwerden"
   - "Osteopathie bei Schwindel"
+category: "nacken-hws"
 image: "https://images.unsplash.com/photo-1759096060007-527c89b7a951?q=80&w=1200&auto=format&fit=crop"
 alt: "Person mit Nackenschmerzen und Schwindel"
 date: "2025-12-12T10:00:00.000Z"

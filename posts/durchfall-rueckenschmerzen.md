@@ -12,6 +12,7 @@ keywords:
   - "Darm Rücken Zusammenhang"
   - "viszerale Schmerzprojektion"
   - "Osteopathie Durchfall"
+category: "verdauung"
 image: ""
 alt: ""
 status: "draft"
