@@ -97,6 +97,16 @@ function readMarkdownFile(filePath: string) {
 
 /**
  * Calculate reading time in minutes based on word count
+ * Wrap markdown tables in a scroll container.
+ * Without it, wide tables get clipped by the overflow-x: hidden on main/section.
+ */
+function wrapTables(html: string): string {
+    return html
+        .replace(/<table>/g, '<div class="table-wrap"><table>')
+        .replace(/<\/table>/g, '</table></div>');
+}
+
+/**
  * Average reading speed: 200 words per minute
  */
 function calculateReadingTime(content: string): number {
@@ -163,7 +173,7 @@ export async function getAllPosts(): Promise<Post[]> {
         const readingTime = calculateReadingTime(content);
         posts.push({
             ...(fm as PostFrontmatter),
-            content: String(processed),
+            content: wrapTables(String(processed)),
             readingTime,
             extractedCitations
         });
@@ -215,7 +225,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
         const readingTime = calculateReadingTime(content);
         return {
             ...(fm as PostFrontmatter),
-            content: String(processed),
+            content: wrapTables(String(processed)),
             readingTime,
             extractedCitations
         };
