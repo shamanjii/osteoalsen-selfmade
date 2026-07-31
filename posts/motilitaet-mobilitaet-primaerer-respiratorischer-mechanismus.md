@@ -12,6 +12,7 @@ keywords:
   - "Blechschmidt"
   - "Sutherland"
   - "kraniosakral"
+category: "notizen"
 image: "https://images.unsplash.com/photo-1583795970261-2d47c971835a?q=80&w=1200&auto=format&fit=crop"
 alt: "Eingerollter junger Farnwedel: die Spitze noch als Spirale zusammengelegt, die Fiederblätter am Stiel bereits geöffnet – eine Form mitten in ihrer eigenen Entstehungsbewegung"
 date: "2026-07-30T10:00:00.000Z"
@@ -19,6 +20,10 @@ status: "published"
 ---
 
 # Der erste Strich
+
+*Dieser Text gehört nicht zu den Ratgebern hier. Er beantwortet keine Beschwerdefrage und empfiehlt nichts – er steht hier, weil das Thema mich beschäftigt und ich es einmal ordentlich aufschreiben wollte.*
+
+---
 
 Am fünfzehnten Tag geschieht etwas, das leicht zu übersehen ist. In der Zellscheibe, aus der ein Mensch wird, verdichtet sich eine Straße. Keine Struktur mit Funktion, kein Organ, nichts, was später einen Namen im Anatomieatlas bekäme – nur eine Richtung. Zum ersten Mal hat dieses Wesen ein Vorn und ein Hinten. Es gibt noch kein Herz, das schlagen könnte, keinen Kopf, der sich wenden könnte. Es gibt eine Achse. Und alles, was in den nächsten neun Monaten und den folgenden achtzig Jahren geschieht, wird sich auf sie beziehen.
 

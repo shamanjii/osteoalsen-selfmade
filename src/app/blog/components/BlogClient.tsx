@@ -31,7 +31,8 @@ const categoryMap: Record<string, { name: string }> = {
     'sport-leistung': { name: 'Sport & Leistung' },
     'verdauung-innere-organe': { name: 'Verdauung & Innere Organe' },
     'stress-burnout': { name: 'Stress & Burnout' },
-    'osteopathie-allgemein': { name: 'Osteopathie Allgemein' }
+    'osteopathie-allgemein': { name: 'Osteopathie Allgemein' },
+    'notizen': { name: 'Notizen' }
 };
 
 const POSTS_PER_PAGE = 12;
@@ -46,8 +47,8 @@ const BlogClient = memo(function BlogClient({ posts }: BlogClientProps) {
     const postsWithClusters = useMemo(() => {
         return posts.map(post => ({
             ...post,
-            cluster: detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords }),
-            clusterEmoji: getClusterEmoji(detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords }))
+            cluster: detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords, category: post.category }),
+            clusterEmoji: getClusterEmoji(detectCluster({ title: post.title, excerpt: post.excerpt || '', keywords: post.keywords, category: post.category }))
         }));
     }, [posts]);
 

@@ -9,7 +9,17 @@ interface Article {
   title: string;
   excerpt: string;
   keywords?: string[];
+  /** Frontmatter category. Set it to opt out of keyword detection (see EXPLICIT_CLUSTERS). */
+  category?: string;
 }
+
+/**
+ * Clusters that describe a genre rather than a topic. Keyword detection cannot
+ * infer these, so they are opted into via the `category` frontmatter field.
+ */
+const EXPLICIT_CLUSTERS: Record<string, ClusterName> = {
+  notizen: 'Notizen',
+};
 
 // Cluster emoji mapping
 export const CLUSTER_EMOJIS = {
@@ -21,6 +31,7 @@ export const CLUSTER_EMOJIS = {
   'Verdauung & Innere Organe': '🫁',
   'Stress & Burnout': '🧘',
   'Osteopathie Allgemein': '🌿',
+  'Notizen': '📓',
 } as const;
 
 export type ClusterName = keyof typeof CLUSTER_EMOJIS;
@@ -29,6 +40,10 @@ export type ClusterName = keyof typeof CLUSTER_EMOJIS;
  * Detect which cluster an article belongs to
  */
 export const detectCluster = (article: Article): ClusterName => {
+  // Explicit genre clusters win over keyword detection
+  const explicit = article.category && EXPLICIT_CLUSTERS[article.category.toLowerCase()];
+  if (explicit) return explicit;
+
   const text = `${article.title} ${article.excerpt} ${article.keywords?.join(' ')}`.toLowerCase();
 
   // Priority order matters! More specific clusters checked first

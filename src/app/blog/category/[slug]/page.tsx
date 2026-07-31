@@ -41,6 +41,12 @@ const categoryInfo = {
         description: 'Viszerale Osteopathie für Verdauungsbeschwerden: Erfahren Sie, wie osteopathische Behandlung bei Darmproblemen helfen kann.',
         keywords: ['Verdauungsbeschwerden', 'Viszerale Osteopathie', 'Darm-Hirn-Achse', 'Reizdarm', 'Verdauung Behandlung']
     },
+    'notizen': {
+        name: 'Notizen',
+        icon: '📓',
+        description: 'Texte, die keine Beschwerdefrage beantworten: Aufzeichnungen zu Themen aus der Osteopathie, die mich fachlich beschäftigen.',
+        keywords: ['Osteopathie Grundlagen', 'Motilität', 'Mobilität', 'primär respiratorischer Mechanismus', 'Osteopathie Theorie']
+    },
     'gesundheitstipps': {
         name: 'Gesundheitstipps',
         icon: '💡',

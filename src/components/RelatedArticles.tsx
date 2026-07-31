@@ -10,6 +10,7 @@ interface RelatedArticle {
   title: string;
   excerpt: string;
   keywords?: string[];
+  category?: string;
   image?: string;
   alt?: string;
   date?: string;
