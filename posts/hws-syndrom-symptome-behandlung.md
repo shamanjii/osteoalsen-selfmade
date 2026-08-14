@@ -616,7 +616,7 @@ Das **HWS-Syndrom** ist der Oberbegriff für alle Beschwerden der Halswirbelsäu
 
 Wenn Sie mehr über die Grundlagen und Prinzipien der [**Osteopathie in Hamburg**](/was-ist-osteopathie/) erfahren möchten, lesen Sie unseren ausführlichen Artikel über die drei Säulen der Osteopathie, Behandlungsmethoden und Anwendungsgebiete.
 
-Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/osteopath-hamburg/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
+Zur Praxis: [Joshua Alsen — Osteopath Hamburg](/) — VFO-zertifiziert, 2 Standorte in Rotherbaum & Eimsbüttel.
 
 ---
 

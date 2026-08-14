@@ -839,7 +839,7 @@ export default function RueckenschmerzenOsteopathiePage() {
                   Jetzt Termin buchen
                 </Link>
                 <Link
-                  href="/kosten-ablauf/"
+                  href="/osteopathie-kosten-hamburg/"
                   className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10"
                 >
                   Kosten & Ablauf

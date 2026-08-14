@@ -8,7 +8,7 @@ import SiteFooter from "@/app/(site)/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Osteopathie Kosten Hamburg | Was kostet ein Osteopath?",
   description:
-    "Osteopathie Hamburg: 150€/60 Min. ✓ Kassenzuschuss 40-60€ ✓ Private Erstattung ✓ Transparente Preise ⭐ Jetzt informieren!",
+    "Osteopathie Hamburg: 150€/60 Min. ✓ Kassenzuschuss 40-60€ ✓ Private Erstattung ✓ Transparente Preise & Behandlungsablauf ⭐ Jetzt informieren!",
   keywords: [
     "Osteopathie Kosten Hamburg",
     "Was kostet Osteopathie Hamburg",
@@ -43,30 +43,84 @@ export const metadata: Metadata = {
   },
 };
 
+// Eine Quelle fuer Schema UND sichtbares Accordion. Vorher standen im
+// FAQPage-Schema drei Fragen, die im sichtbaren Text nirgends vorkamen -
+// das verstoesst gegen Googles Structured-Data-Richtlinie (Schema-Inhalt
+// muss auf der Seite sichtbar sein).
+const faqs = [
+  {
+    question: "Was kostet eine osteopathische Behandlung in Hamburg?",
+    answer:
+      "Eine osteopathische Behandlung kostet in Hamburg durchschnittlich 100-180€. Bei mir zahlen Sie 150€ für 45-60 Minuten Behandlung inkl. Anamnese und Nachbesprechung.",
+  },
+  {
+    question: "Übernimmt die Krankenkasse Osteopathie-Kosten in Hamburg?",
+    answer:
+      "Ja, viele private Krankenkassen übernehmen die vollen Kosten. Gesetzliche Kassen bezuschussen oft mit 40-60€ pro Sitzung (meist 3-6 Sitzungen pro Jahr).",
+  },
+  {
+    question: "Warum kostet Osteopathie mehr als Physiotherapie?",
+    answer:
+      "Osteopathen haben eine 4-5 jährige Vollzeitausbildung (1350-5000 Std.). Die Behandlung dauert 45-60 Min. statt 20 Min. und ist ganzheitlicher - nicht nur symptomorientiert.",
+  },
+  {
+    question: "Wie läuft die Erstbehandlung ab?",
+    answer:
+      "Die Erstbehandlung beginnt mit einem ausführlichen Anamnesegespräch (15-20 Min.), gefolgt von einer körperlichen Untersuchung (10-15 Min.), der osteopathischen Behandlung (25-30 Min.) und einer Nachbesprechung. Insgesamt dauert die Sitzung 60 Minuten.",
+  },
+  {
+    question: "Wie viele Behandlungen sind in der Regel nötig?",
+    answer:
+      "Das ist sehr individuell und hängt von Art und Dauer Ihrer Beschwerden ab. Bei akuten Beschwerden reichen oft 2-3 Sitzungen. Chronische Beschwerden können 4-6 oder mehr Behandlungen erfordern. Nach der ersten Sitzung kann ich Ihnen eine genauere Einschätzung geben.",
+  },
+  {
+    question: "Brauche ich eine Überweisung vom Arzt?",
+    answer:
+      "Nein, eine Überweisung ist nicht zwingend erforderlich. Sie können direkt einen Termin buchen. Für die Kostenerstattung bei gesetzlichen Krankenkassen ist jedoch oft eine ärztliche Verordnung/Empfehlung notwendig.",
+  },
+  {
+    question: "Welche Zahlungsmethoden werden akzeptiert?",
+    answer:
+      "Sie können bar oder per EC-Karte (Girocard) bezahlen. Die Rechnung erhalten Sie direkt nach der Behandlung und können diese bei Ihrer Krankenkasse zur Erstattung einreichen.",
+  },
+  {
+    question: "Kann ich einen Termin stornieren?",
+    answer:
+      "Termine können bis 24 Stunden vor dem Termin kostenfrei storniert oder umgebucht werden. Bei kurzfristigeren Absagen oder Nichterscheinen wird die volle Behandlungsgebühr in Rechnung gestellt.",
+  },
+  {
+    question: "Was muss ich zur ersten Behandlung mitbringen?",
+    answer:
+      "Versichertenkarte, ärztliche Verordnung/Empfehlung (falls vorhanden und für die Kassenerstattung benötigt), Befunde und Arztberichte zu Ihren Beschwerden (falls vorhanden) sowie bequeme Kleidung.",
+  },
+  {
+    question: "Wie reiche ich die Rechnung bei meiner Kasse ein?",
+    answer:
+      "Sie erhalten eine detaillierte Rechnung nach GebüH (Gebührenverzeichnis für Heilpraktiker). Diese reichen Sie zusammen mit einer eventuellen ärztlichen Verordnung bei Ihrer Kasse ein - meist online per App oder per Post. Die Erstattung erfolgt in der Regel innerhalb von 2-4 Wochen.",
+  },
+  {
+    question: "Kann ich in Raten zahlen?",
+    answer:
+      "Die Behandlung ist direkt nach der Sitzung zu bezahlen (bar oder EC-Karte). Ratenzahlung ist grundsätzlich nicht vorgesehen. In Einzelfällen und nach Absprache sind individuelle Lösungen möglich - sprechen Sie mich gerne an.",
+  },
+  {
+    question: "Gibt es Ermäßigungen für Studierende?",
+    answer:
+      "Aktuell biete ich keine generelle Studierenden-Ermäßigung an. In sozialen Härtefällen können wir nach individuellen Lösungen suchen. Bitte sprechen Sie mich direkt an.",
+  },
+  {
+    question: "Sind die Preise verhandelbar?",
+    answer:
+      "Nein, die Preise sind festgelegt und orientieren sich an der GebüH sowie den Marktpreisen in Hamburg. Sie garantieren eine hochqualitative, individuelle Behandlung mit ausreichend Zeit.",
+  },
+];
+
 export default function OsteopathieKostenHamburgPage() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
       <main>
-        <FAQSchema
-          faqs={[
-            {
-              question: "Was kostet eine osteopathische Behandlung in Hamburg?",
-              answer:
-                "Eine osteopathische Behandlung kostet in Hamburg durchschnittlich 100-180€. Bei mir zahlen Sie 150€ für 45-60 Minuten Behandlung inkl. Anamnese und Nachbesprechung.",
-            },
-            {
-              question: "Übernimmt die Krankenkasse Osteopathie-Kosten in Hamburg?",
-              answer:
-                "Ja, viele private Krankenkassen übernehmen die vollen Kosten. Gesetzliche Kassen bezuschussen oft mit 40-60€ pro Sitzung (meist 3-6 Sitzungen pro Jahr).",
-            },
-            {
-              question: "Warum kostet Osteopathie mehr als Physiotherapie?",
-              answer:
-                "Osteopathen haben eine 4-5 jährige Vollzeitausbildung (1350-5000 Std.). Die Behandlung dauert 45-60 Min. statt 20 Min. und ist ganzheitlicher - nicht nur symptomorientiert.",
-            },
-          ]}
-        />
+        <FAQSchema faqs={faqs} />
         <Breadcrumbs items={[{ label: "Osteopathie Kosten Hamburg" }]} />
 
         {/* Hero */}
@@ -358,65 +412,186 @@ export default function OsteopathieKostenHamburgPage() {
           </div>
         </section>
 
+        {/* Behandlungsablauf */}
+        <section className="bg-white py-16 sm:py-24">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-8 font-epilogue">
+              Wie läuft eine Behandlung ab?
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold shrink-0">
+                    1
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-slate-900 mb-3 font-epilogue">
+                      Erstbehandlung (60 Minuten)
+                    </h3>
+                    <div className="space-y-3 text-slate-700">
+                      <div>
+                        <strong>Anamnesegespräch (15-20 Min.)</strong>
+                        <p className="text-slate-600">
+                          Wir besprechen ausführlich Ihre aktuellen Beschwerden,
+                          Krankengeschichte, Lebensumstände und Erwartungen an die
+                          Behandlung.
+                        </p>
+                      </div>
+                      <div>
+                        <strong>Körperliche Untersuchung (10-15 Min.)</strong>
+                        <p className="text-slate-600">
+                          Ich untersuche Ihren gesamten Körper, um
+                          Bewegungseinschränkungen, Spannungen und die Ursachen
+                          Ihrer Beschwerden zu identifizieren.
+                        </p>
+                      </div>
+                      <div>
+                        <strong>Osteopathische Behandlung (25-30 Min.)</strong>
+                        <p className="text-slate-600">
+                          Mit sanften manuellen Techniken behandle ich die
+                          identifizierten Problembereiche und aktiviere die
+                          Selbstheilungskräfte Ihres Körpers.
+                        </p>
+                      </div>
+                      <div>
+                        <strong>Nachbesprechung (5 Min.)</strong>
+                        <p className="text-slate-600">
+                          Ich erkläre Ihnen meine Befunde, gebe Ihnen Übungen für
+                          zu Hause und wir besprechen das weitere Vorgehen.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-slate-50 to-white border border-slate-200 rounded-lg p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold shrink-0">
+                    2
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-slate-900 mb-3 font-epilogue">
+                      Folgebehandlungen (45-50 Minuten)
+                    </h3>
+                    <p className="text-slate-700 mb-3">
+                      Bei Folgeterminen liegt der Fokus auf der Behandlung. Wir
+                      besprechen kurz Ihre aktuelle Befindlichkeit und
+                      Veränderungen seit der letzten Sitzung, dann folgt die
+                      osteopathische Behandlung.
+                    </p>
+                    <p className="text-slate-600">
+                      Je nach Beschwerdebild empfehle ich meist 3-6 Behandlungen
+                      im Abstand von 1-3 Wochen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Zahlung & Stornierung */}
+        <section className="bg-slate-50 py-16 sm:py-24">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
+                  Zahlungsmethoden
+                </h2>
+                <div className="bg-white border border-slate-200 rounded-lg p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="text-2xl">💵</div>
+                      <div>
+                        <strong className="text-slate-900">Barzahlung</strong>
+                        <p className="text-sm text-slate-600">
+                          Zahlung direkt nach der Behandlung
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="text-2xl">💳</div>
+                      <div>
+                        <strong className="text-slate-900">EC-Karte</strong>
+                        <p className="text-sm text-slate-600">
+                          Zahlung per Girocard (Maestro/V-Pay)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4">
+                    Sie erhalten direkt nach der Behandlung eine detaillierte
+                    Rechnung zur Einreichung bei Ihrer Krankenkasse.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-6 font-epilogue">
+                  Stornierungsbedingungen
+                </h2>
+                <div className="bg-white border border-slate-200 rounded-lg p-6">
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="text-2xl">✅</div>
+                        <strong className="text-slate-900">Bis 24h vorher</strong>
+                      </div>
+                      <p className="text-slate-600">
+                        Kostenfreie Stornierung oder Umbuchung des Termins
+                      </p>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="text-2xl">⚠️</div>
+                        <strong className="text-slate-900">Weniger als 24h</strong>
+                      </div>
+                      <p className="text-slate-600">
+                        Bei kurzfristiger Absage wird die volle Behandlungsgebühr
+                        berechnet
+                      </p>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="text-2xl">❌</div>
+                        <strong className="text-slate-900">Nichterscheinen</strong>
+                      </div>
+                      <p className="text-slate-600">
+                        Bei Nichterscheinen ohne Absage wird die volle Gebühr in
+                        Rechnung gestellt
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight mb-12 font-epilogue text-center">
-              Häufige Fragen zu Kosten
+              Häufige Fragen zu Kosten & Ablauf
             </h2>
 
             <div className="space-y-4">
-              <details className="bg-slate-50 border border-slate-200 rounded-lg p-6 group">
-                <summary className="text-lg font-semibold text-slate-900 cursor-pointer list-none font-epilogue flex justify-between items-start">
-                  <span className="pr-4">Kann ich in Raten zahlen?</span>
-                  <span className="shrink-0 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div className="mt-4 text-slate-700 leading-relaxed">
-                  Die Behandlung ist direkt nach der Sitzung zu bezahlen (bar oder EC-Karte).
-                  Ratenzahlung ist grundsätzlich nicht vorgesehen. In Einzelfällen und nach
-                  Absprache sind individuelle Lösungen möglich - sprechen Sie mich gerne an.
-                </div>
-              </details>
-
-              <details className="bg-slate-50 border border-slate-200 rounded-lg p-6 group">
-                <summary className="text-lg font-semibold text-slate-900 cursor-pointer list-none font-epilogue flex justify-between items-start">
-                  <span className="pr-4">Gibt es Ermäßigungen für Studierende?</span>
-                  <span className="shrink-0 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div className="mt-4 text-slate-700 leading-relaxed">
-                  Aktuell biete ich keine generelle Studierenden-Ermäßigung an. In sozialen
-                  Härtefällen können wir nach individuellen Lösungen suchen. Bitte sprechen Sie
-                  mich direkt an.
-                </div>
-              </details>
-
-              <details className="bg-slate-50 border border-slate-200 rounded-lg p-6 group">
-                <summary className="text-lg font-semibold text-slate-900 cursor-pointer list-none font-epilogue flex justify-between items-start">
-                  <span className="pr-4">Wie reiche ich die Rechnung bei meiner Kasse ein?</span>
-                  <span className="shrink-0 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div className="mt-4 text-slate-700 leading-relaxed">
-                  <p className="mb-3">Sie erhalten von mir eine detaillierte Rechnung nach GebüH
-                  (Gebührenverzeichnis für Heilpraktiker). Diese reichen Sie ein:</p>
-                  <ol className="list-decimal list-inside space-y-2">
-                    <li>Rechnung + ggf. ärztliche Verordnung bei Ihrer Kasse einreichen</li>
-                    <li>Meist online per App oder per Post möglich</li>
-                    <li>Erstattung erfolgt meist innerhalb von 2-4 Wochen</li>
-                  </ol>
-                </div>
-              </details>
-
-              <details className="bg-slate-50 border border-slate-200 rounded-lg p-6 group">
-                <summary className="text-lg font-semibold text-slate-900 cursor-pointer list-none font-epilogue flex justify-between items-start">
-                  <span className="pr-4">Sind die Preise verhandelbar?</span>
-                  <span className="shrink-0 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div className="mt-4 text-slate-700 leading-relaxed">
-                  Nein, die Preise sind festgelegt und orientieren sich an der GebüH sowie
-                  den Marktpreisen in Hamburg. Sie garantieren eine hochqualitative,
-                  individuelle Behandlung mit ausreichend Zeit.
-                </div>
-              </details>
+              {faqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="bg-slate-50 border border-slate-200 rounded-lg p-6 group"
+                >
+                  <summary className="text-lg font-semibold text-slate-900 cursor-pointer list-none font-epilogue flex justify-between items-start">
+                    <span className="pr-4">{faq.question}</span>
+                    <span className="shrink-0 group-open:rotate-180 transition-transform">▼</span>
+                  </summary>
+                  <div className="mt-4 text-slate-700 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>
@@ -458,28 +633,28 @@ export default function OsteopathieKostenHamburgPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                href="/kosten-ablauf/"
+                href="/terminbuchung/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
-                <div className="text-3xl mb-3">💶</div>
+                <div className="text-3xl mb-3">📅</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
-                  Kosten & Ablauf
+                  Termin buchen
                 </h3>
                 <p className="text-slate-600">
-                  Detaillierte Informationen zu Preisen, Behandlungsablauf und Erstattung.
+                  Online buchen oder anrufen - Termine sind kurzfristig verfügbar.
                 </p>
               </Link>
 
               <Link
-                href="/faq/"
+                href="/behandlungen/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
               >
-                <div className="text-3xl mb-3">📋</div>
+                <div className="text-3xl mb-3">🩺</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2 font-epilogue">
-                  Patienteninfos
+                  Behandlungen
                 </h3>
                 <p className="text-slate-600">
-                  Was Sie zur Behandlung mitbringen sollten und wie Sie sich vorbereiten.
+                  Rücken, Nacken, Kopfschmerzen, Verdauung: alle Behandlungsschwerpunkte.
                 </p>
               </Link>
 

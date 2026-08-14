@@ -864,7 +864,7 @@ export default function RueckenschmerzenPage() {
               </p>
               <p className="text-slate-700">
                 Fragen zu Kosten und Kassenerstattung?{" "}
-                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/osteopathie-kosten-hamburg/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Alle Infos zu Kosten & Ablauf →
                 </Link>
               </p>

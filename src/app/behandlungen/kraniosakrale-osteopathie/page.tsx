@@ -269,7 +269,7 @@ export default function KraniosakraleOsteopathiePage() {
                     Anamnese & Einschätzung
                   </h3>
                   <p className="text-slate-700">
-                    Zunächst erfasse ich Ihre Beschwerden, Vorgeschichte und bisherige Behandlungen. Ich frage gezielt nach: Beginn, Lokalisation, auslösenden Faktoren, Schlafqualität und Stressbelastung. Vor der ersten Behandlung steht immer eine gründliche Untersuchung. Mehr zum <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline">Ablauf und den Kosten</Link>.
+                    Zunächst erfasse ich Ihre Beschwerden, Vorgeschichte und bisherige Behandlungen. Ich frage gezielt nach: Beginn, Lokalisation, auslösenden Faktoren, Schlafqualität und Stressbelastung. Vor der ersten Behandlung steht immer eine gründliche Untersuchung. Mehr zum <Link href="/osteopathie-kosten-hamburg/" className="text-slate-800 hover:text-slate-900 underline">Ablauf und den Kosten</Link>.
                   </p>
                 </div>
               </div>

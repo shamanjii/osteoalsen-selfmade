@@ -462,7 +462,7 @@ A: Das kann sinnvoll sein – die Entscheidung trifft aber Ihr behandelndes ärz
 A: Sehr individuell und nicht vorhersagbar. Die Behandlung ist erfahrungsgemäß über mehrere Wochen angelegt; der individuelle Verlauf ist unterschiedlich.
 
 **Q: „Zahlt die Krankenkasse Osteopathie bei Arthrose?"**
-A: Viele gesetzliche Kassen bezuschussen 3-4 Sitzungen/Jahr, meist als fester Betrag von 30-40€ pro Sitzung (Details je Kasse unterschiedlich – [siehe Kassenübersicht](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/)). Private Kassen meist deutlich mehr. → [Kosten & Ablauf](/kosten-ablauf/)
+A: Viele gesetzliche Kassen bezuschussen 3-4 Sitzungen/Jahr, meist als fester Betrag von 30-40€ pro Sitzung (Details je Kasse unterschiedlich – [siehe Kassenübersicht](/blog/osteopathie-hamburg-krankenkasse-erstattung-2026/)). Private Kassen meist deutlich mehr. → [Kosten & Ablauf](/osteopathie-kosten-hamburg/)
 
 **Q: „Kann ich Osteopathie mit Physiotherapie kombinieren?"**
 A: Ja, sogar empfohlen! Osteopathie = Ursachen-Behandlung. Physiotherapie = Muskelaufbau. Optimale Kombination!

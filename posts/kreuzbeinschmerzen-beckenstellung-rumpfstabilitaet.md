@@ -205,7 +205,7 @@ Das hängt stark von Ihrer Ausgangs-Mobilität ab und ist individuell sehr unter
 
 ### Übernimmt die Krankenkasse die Kosten für Osteopathie?
 
-Private Krankenkassen erstatten meist 80-100% mit Heilpraktiker-Zusatz. Gesetzliche Kassen bieten teilweise Zuschüsse. [Mehr zu Kosten und Ablauf →](/kosten-ablauf/)
+Private Krankenkassen erstatten meist 80-100% mit Heilpraktiker-Zusatz. Gesetzliche Kassen bieten teilweise Zuschüsse. [Mehr zu Kosten und Ablauf →](/osteopathie-kosten-hamburg/)
 
 ---
 
@@ -256,7 +256,7 @@ Rappstraße 7
 
 **Osteopathische Behandlung in Hamburg:**
 - [Behandlungen für Rückenschmerzen](/behandlungen/rueckenschmerzen/) – Alle Leistungen im Überblick
-- [Kosten und Ablauf](/kosten-ablauf/) – Erstattung, Termine, Ablauf
+- [Kosten und Ablauf](/osteopathie-kosten-hamburg/) – Erstattung, Termine, Ablauf
 
 ---
 

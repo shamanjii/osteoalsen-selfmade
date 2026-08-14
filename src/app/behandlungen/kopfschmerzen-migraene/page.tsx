@@ -487,7 +487,7 @@ export default function KopfschmerzenPage() {
                       Detaillierte Kopfschmerz-Anamnese
                     </h3>
                     <p className="text-slate-700">
-                      Wir klären: Wo genau sind die Schmerzen? Wie fühlen sie sich an (dumpf, pochend, stechend)? Wann treten sie auf? Gibt es Trigger (Stress, bestimmte Nahrungsmittel, Wetter)? Wie ist die Intensität auf einer Skala von 1-10? Gibt es Begleitsymptome (Übelkeit, Lichtempfindlichkeit, Aura)? Haben Sie bereits andere Behandlungen probiert? Ich erfasse auch Ihre allgemeine Gesundheit, Medikamente und Lebenssituation. Diese gründliche Anamnese hilft, die Art Ihrer Kopfschmerzen zu identifizieren und einen individuellen Behandlungsplan zu erstellen. Mehr zum <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline">Behandlungsablauf und Kosten</Link>.
+                      Wir klären: Wo genau sind die Schmerzen? Wie fühlen sie sich an (dumpf, pochend, stechend)? Wann treten sie auf? Gibt es Trigger (Stress, bestimmte Nahrungsmittel, Wetter)? Wie ist die Intensität auf einer Skala von 1-10? Gibt es Begleitsymptome (Übelkeit, Lichtempfindlichkeit, Aura)? Haben Sie bereits andere Behandlungen probiert? Ich erfasse auch Ihre allgemeine Gesundheit, Medikamente und Lebenssituation. Diese gründliche Anamnese hilft, die Art Ihrer Kopfschmerzen zu identifizieren und einen individuellen Behandlungsplan zu erstellen. Mehr zum <Link href="/osteopathie-kosten-hamburg/" className="text-slate-800 hover:text-slate-900 underline">Behandlungsablauf und Kosten</Link>.
                     </p>
                   </div>
                 </div>
@@ -885,7 +885,7 @@ export default function KopfschmerzenPage() {
                   <span>→</span> Was ist Osteopathie?
                 </Link>
                 <Link
-                  href="/kosten-ablauf/"
+                  href="/osteopathie-kosten-hamburg/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm flex items-center gap-2"
                 >
                   <span>→</span> Kosten & Behandlungsablauf

@@ -376,7 +376,7 @@ export default function OsteopathieEimsbuettelPage() {
               <p className="text-slate-600">
                 Eine Behandlung kostet 150€ (45-60 Minuten). Viele private und gesetzliche
                 Krankenkassen erstatten einen Teil der Kosten. Mehr Informationen zu{" "}
-                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/osteopathie-kosten-hamburg/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Kosten und Ablauf
                 </Link>.
               </p>

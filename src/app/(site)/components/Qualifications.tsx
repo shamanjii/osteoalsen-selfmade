@@ -230,7 +230,7 @@ export default function Qualifications() {
                         Sie haben weitere Fragen zu Kosten und Kassenerstattung?
                     </p>
                     <Link
-                        href="/kosten-ablauf/"
+                        href="/osteopathie-kosten-hamburg/"
                         className="inline-flex items-center text-slate-900 font-medium hover:text-slate-700 transition-colors group"
                     >
                         Mehr zu Kosten & Ablauf erfahren

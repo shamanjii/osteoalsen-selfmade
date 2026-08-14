@@ -115,12 +115,7 @@ export async function generateSitemap(): Promise<SitemapUrl[]> {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: ensureTrailingSlash(`${baseUrl}/kosten-ablauf`),
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // Removed: /kosten-ablauf (redirects to /osteopathie-kosten-hamburg/)
     {
       url: ensureTrailingSlash(`${baseUrl}/faq`),
       lastModified: now,

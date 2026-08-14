@@ -650,7 +650,7 @@ export default function StressBurnoutPage() {
                   → Was ist Osteopathie?
                 </Link>
                 <Link
-                  href="/kosten-ablauf/"
+                  href="/osteopathie-kosten-hamburg/"
                   className="text-slate-700 hover:text-slate-900 underline text-sm"
                 >
                   → Kosten & Behandlungsablauf

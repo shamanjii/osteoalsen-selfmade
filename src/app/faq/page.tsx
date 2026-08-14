@@ -355,7 +355,7 @@ export default function FAQPage() {
             </Link>
 
             <Link
-              href="/kosten-ablauf/"
+              href="/osteopathie-kosten-hamburg/"
               className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 transition-colors"
             >
               <div className="text-3xl mb-3">💶</div>

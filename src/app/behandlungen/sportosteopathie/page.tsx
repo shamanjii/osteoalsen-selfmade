@@ -715,7 +715,7 @@ export default function SportosteopathiePage() {
             <div className="space-y-3">
               <p className="text-slate-700">
                 Sie möchten mehr über den Behandlungsablauf erfahren?{" "}
-                <Link href="/kosten-ablauf/" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/osteopathie-kosten-hamburg/" className="text-blue-600 hover:text-blue-800 font-medium">
                   Alle Infos zu Kosten & Ablauf →
                 </Link>
               </p>

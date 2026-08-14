@@ -630,7 +630,7 @@ export default function WasIstOsteopathiePage() {
                 Die osteopathische Behandlung setzt Prozesse in Gang, die mehrere Tage nachwirken. In den ersten 24-48 Stunden kann es zu leichten Reaktionen kommen: Muskelkater, Müdigkeit oder vorübergehende Verstärkung der Symptome. Dies ist normal und zeigt, dass Ihr Körper auf die Behandlung reagiert.
               </p>
               <p className="text-slate-700 leading-normal">
-                Die eigentliche Verbesserung tritt oft erst 3-5 Tage nach der Behandlung ein. Deshalb sind die Abstände zwischen den Sitzungen wichtig – Ihr Körper braucht Zeit zur Selbstregulation. Weitere Informationen finden Sie auf der Seite <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>.
+                Die eigentliche Verbesserung tritt oft erst 3-5 Tage nach der Behandlung ein. Deshalb sind die Abstände zwischen den Sitzungen wichtig – Ihr Körper braucht Zeit zur Selbstregulation. Weitere Informationen finden Sie auf der Seite <Link href="/osteopathie-kosten-hamburg/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>.
               </p>
             </div>
           </div>
@@ -892,7 +892,7 @@ export default function WasIstOsteopathiePage() {
 
               <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
                 <p className="font-medium">
-                  Detaillierte Informationen zu Kosten, Ablauf und Erstattung finden Sie auf meiner <Link href="/kosten-ablauf/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>-Seite.
+                  Detaillierte Informationen zu Kosten, Ablauf und Erstattung finden Sie auf meiner <Link href="/osteopathie-kosten-hamburg/" className="text-slate-800 hover:text-slate-900 underline font-semibold">Kosten & Ablauf</Link>-Seite.
                 </p>
               </div>
             </div>
@@ -1084,7 +1084,7 @@ export default function WasIstOsteopathiePage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                href="/kosten-ablauf/"
+                href="/osteopathie-kosten-hamburg/"
                 className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-900 hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-3xl mb-3">💶</div>

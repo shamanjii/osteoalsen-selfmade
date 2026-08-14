@@ -217,7 +217,7 @@ Die meisten Techniken sind **angenehm bis neutral**. Manche Patienten beschreibe
 
 **Selbstzahler:** Eine Sitzung kostet in Hamburg zwischen 100-180€ (je nach Praxis und Dauer). In meiner Praxis: 150€ pro Behandlung.
 
-[→ Mehr zu Kosten & Abrechnung erfahren](/kosten-ablauf/)
+[→ Mehr zu Kosten & Abrechnung erfahren](/osteopathie-kosten-hamburg/)
 
 ---
 

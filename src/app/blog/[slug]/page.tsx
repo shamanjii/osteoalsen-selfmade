@@ -15,6 +15,19 @@ import BlogCTA from "@/components/BlogCTA";
 import HamburgPraxisBox from "@/components/HamburgPraxisBox";
 import { extractFAQs } from "@/lib/utils";
 
+// Rubrik -> Behandlungen-Seite. Verlinkt die CTA-Box auf die passende
+// kommerzielle Landingpage statt ausschließlich auf /terminbuchung/, damit
+// interne Linkkraft auch bei den Behandlungen-Seiten ankommt (GSC-Audit 2026-08-13).
+const RUBRIC_TO_TREATMENT: Record<string, { href: string; name: string }> = {
+    'rueckenschmerzen': { href: '/behandlungen/rueckenschmerzen/', name: 'Rückenschmerzen-Behandlung' },
+    'nacken-hws': { href: '/behandlungen/nackenschmerzen/', name: 'Nackenschmerzen-Behandlung' },
+    'kopfschmerzen': { href: '/behandlungen/kopfschmerzen-migraene/', name: 'Kopfschmerzen & Migräne-Behandlung' },
+    'gelenke': { href: '/behandlungen/arthrose-gelenkbeschwerden/', name: 'Arthrose & Gelenkbeschwerden-Behandlung' },
+    'sportverletzungen': { href: '/behandlungen/sportosteopathie/', name: 'Sportosteopathie' },
+    'verdauung': { href: '/behandlungen/verdauungsbeschwerden/', name: 'Verdauungsbeschwerden-Behandlung' },
+    'stress-burnout': { href: '/behandlungen/stress-burnout/', name: 'Stress & Burnout-Behandlung' },
+};
+
 // Symptom-Mapping für kontextuelle CTAs
 function getSymptomFromKeywords(keywords?: string[]): string | undefined {
     if (!keywords || keywords.length === 0) return undefined;
@@ -105,6 +118,7 @@ export default async function BlogPost({ params }: PageProps) {
 
     // Get symptom for contextual CTAs
     const symptom = getSymptomFromKeywords(post.keywords);
+    const treatment = RUBRIC_TO_TREATMENT[resolveRubric(post).slug];
 
     return (
         <>
@@ -209,14 +223,14 @@ export default async function BlogPost({ params }: PageProps) {
                     )}
 
                     {/* Inline CTA after image */}
-                    <BlogCTA variant="inline" symptom={symptom} />
+                    <BlogCTA variant="inline" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
 
                     <ArticleWithSidebar content={post.content} articleOnly>
                         {/* Hamburg Praxis Box for local SEO posts */}
                         {post.localBox && <HamburgPraxisBox />}
 
                         {/* Prominent CTA at the end of article */}
-                        <BlogCTA variant="prominent" symptom={symptom} />
+                        <BlogCTA variant="prominent" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
                     </ArticleWithSidebar>
 
                     <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200">

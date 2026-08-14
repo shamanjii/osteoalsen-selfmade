@@ -5,6 +5,9 @@ import Link from 'next/link';
 interface BlogCTAProps {
   variant?: 'inline' | 'prominent' | 'minimal';
   symptom?: string;
+  /** Link to the matching /behandlungen/ page, passes internal link equity beyond the /terminbuchung/ CTA. */
+  treatmentLink?: string;
+  treatmentName?: string;
   className?: string;
 }
 
@@ -19,6 +22,8 @@ interface BlogCTAProps {
 export default function BlogCTA({
   variant = 'inline',
   symptom,
+  treatmentLink,
+  treatmentName,
   className = ''
 }: BlogCTAProps) {
 
@@ -36,6 +41,14 @@ export default function BlogCTA({
             </p>
             <p className="text-slate-600 text-sm">
               Vereinbaren Sie einen Termin für eine persönliche Beratung. Termine in 24-48h verfügbar.
+              {treatmentLink && treatmentName && (
+                <>
+                  {' '}
+                  <Link href={treatmentLink} className="text-slate-900 underline decoration-1 underline-offset-2 hover:text-slate-600 font-medium">
+                    Mehr zur {treatmentName} →
+                  </Link>
+                </>
+              )}
             </p>
           </div>
           <Link
@@ -79,6 +92,14 @@ export default function BlogCTA({
               0176 4399 0001
             </a>
           </div>
+
+          {treatmentLink && treatmentName && (
+            <p className="mb-6">
+              <Link href={treatmentLink} className="text-slate-300 underline decoration-1 underline-offset-2 hover:text-white text-sm">
+                Mehr zur {treatmentName} →
+              </Link>
+            </p>
+          )}
 
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
             <span className="flex items-center gap-1">

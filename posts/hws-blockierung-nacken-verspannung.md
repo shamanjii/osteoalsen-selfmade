@@ -420,7 +420,7 @@ Eine "gelöste" Blockierung kann wiederkommen, wenn die Muskulatur sie nicht sta
 
 In meiner Praxis in Hamburg behandle ich regelmäßig [Nackenschmerzen](/behandlungen/nackenschmerzen/). Die erste Sitzung dauert 60 Minuten und beinhaltet:
 - Ausführliche Anamnese (Vorgeschichte, Unfälle, Arbeitsplatz)
-- Strukturelle Untersuchung (HWS, Atlas, Schultern, [Kiefergelenk](/behandlungen/kopfschmerzen-migraene/)/)
+- Strukturelle Untersuchung (HWS, Atlas, Schultern, [Kiefergelenk](/behandlungen/kopfschmerzen-migraene/))
 - Bewegungstests (Rotation, Neigung, Flexion/Extension)
 - Erste Behandlung (Atlas-Mobilisation, Faszien-Release)
 - Hausaufgaben (Übungen, Ergonomie-Tipps)

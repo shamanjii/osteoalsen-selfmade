@@ -25,7 +25,7 @@ export default function SiteFooter() {
                             </li>
                             <li>
                                 <Link
-                                    href="/kosten-ablauf/"
+                                    href="/osteopathie-kosten-hamburg/"
                                     className="text-slate-600 hover:text-slate-900 transition-colors"
                                 >
                                     Kosten & Ablauf
