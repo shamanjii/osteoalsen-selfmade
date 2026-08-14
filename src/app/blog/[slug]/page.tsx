@@ -65,7 +65,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
 
     return {
-        title: `${post.title} | Osteoalsen Blog`,
+        // Ohne Marken-Suffix: der Titel steht bei informationalen Suchanfragen
+        // gegen grosse Gesundheitsportale, und jedes Zeichen zaehlt. " | Osteoalsen
+        // Blog" kostete ~18 Zeichen des Anzeige-Budgets (Titel wurden dadurch
+        // abgeschnitten), warb fuer ein "Blog" statt fuer die Praxis und war
+        // redundant - Google zeigt den Seitennamen in der SERP ohnehin separat
+        // ueber dem Titel an. Betraf ~478.000 Impressionen/Monat.
+        title: post.title,
         description: post.metaDescription || post.excerpt,
         keywords: post.keywords,
         alternates: {
