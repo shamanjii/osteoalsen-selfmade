@@ -11,8 +11,8 @@ keywords:
   - "Dokumentation"
   - "Lucar"
 category: "notizen"
-image: "/assets/lucar-og.webp"
-alt: "Lucar – Leise. Klar. Lucar. Praxissoftware für Heilpraktiker und Osteopathen"
+image: "/assets/lucar-ordnung.webp"
+alt: "Ein Bündel unruhiger Linien, das sich nach rechts beruhigt, in geordnete Bahnen findet und ins warme Licht läuft – Sinnbild für Verwaltungsrauschen, das zur Ruhe kommt"
 date: "2026-08-15T10:00:00.000Z"
 status: "published"
 ---
