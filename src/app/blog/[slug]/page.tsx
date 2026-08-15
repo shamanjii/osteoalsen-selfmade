@@ -64,6 +64,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         };
     }
 
+    // Vorschaubild bevorzugt aus `ogImage` (PNG/JPEG), sonst das Artikelbild.
+    const previewImage = post.ogImage || post.image;
+
     return {
         // Ohne Marken-Suffix: der Titel steht bei informationalen Suchanfragen
         // gegen grosse Gesundheitsportale, und jedes Zeichen zaehlt. " | Osteoalsen
@@ -81,8 +84,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             title: post.title,
             description: post.metaDescription || post.excerpt || '',
             type: 'article',
-            images: post.image ? [post.image] : [],
+            images: previewImage ? [{ url: previewImage, alt: post.alt || post.title }] : [],
             url: `https://www.osteoalsen.de/blog/${slug}`,
+        },
+        // Muss explizit gesetzt werden: ohne diesen Block erbt jeder Artikel den
+        // twitter-Block aus dem Root-Layout und bewirbt sich auf X mit dem
+        // seitenweiten Standardbild statt mit dem eigenen.
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.metaDescription || post.excerpt || '',
+            images: previewImage ? [previewImage] : [],
         },
     };
 }

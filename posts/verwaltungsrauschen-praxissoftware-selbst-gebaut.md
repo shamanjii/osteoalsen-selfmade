@@ -12,6 +12,7 @@ keywords:
   - "Lucar"
 category: "notizen"
 image: "/assets/lucar-ordnung.webp"
+ogImage: "/assets/lucar-ordnung-og.png"
 alt: "Ein Bündel unruhiger Linien, das sich nach rechts beruhigt, in geordnete Bahnen findet und ins warme Licht läuft – Sinnbild für Verwaltungsrauschen, das zur Ruhe kommt"
 date: "2026-08-15T10:00:00.000Z"
 status: "published"

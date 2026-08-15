@@ -12,6 +12,14 @@ export type PostFrontmatter = {
     metaDescription?: string; // SEO-optimized description for search engines (separate from excerpt)
     keywords?: string[];
     image?: string;
+    /**
+     * Optionales Bild fuer Link-Vorschauen (og:image, twitter:image).
+     * Faellt auf `image` zurueck. Getrennt, weil das Artikelbild aus
+     * Performancegruenden WebP sein soll, mehrere Plattformen - darunter
+     * LinkedIn und WhatsApp - WebP in Vorschauen aber nicht zuverlaessig
+     * darstellen. Hier gehoert deshalb PNG oder JPEG hin, 1200x630.
+     */
+    ogImage?: string;
     alt?: string;
     date?: string; // ISO string
     status?: "draft" | "published";
