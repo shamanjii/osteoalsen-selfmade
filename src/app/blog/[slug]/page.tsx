@@ -124,7 +124,15 @@ export default async function BlogPost({ params }: PageProps) {
 
     // Get symptom for contextual CTAs
     const symptom = getSymptomFromKeywords(post.keywords);
-    const treatment = RUBRIC_TO_TREATMENT[resolveRubric(post).slug];
+    const rubric = resolveRubric(post);
+    const treatment = RUBRIC_TO_TREATMENT[rubric.slug];
+
+    // Die Rubrik "Notizen" sammelt laut Taxonomie ausdruecklich Texte, die keine
+    // Beschwerdefrage beantworten. Die Patienten-CTAs ("Vereinbaren Sie einen
+    // Termin fuer eine persoenliche Beratung") widersprechen dort dem Text
+    // selbst - im Lucar-Artikel stand die Box unmittelbar ueber dem Satz, dass
+    // er sich nicht an Patienten richtet, sondern an Kollegen.
+    const isNotiz = rubric.slug === 'notizen';
 
     return (
         <>
@@ -186,11 +194,11 @@ export default async function BlogPost({ params }: PageProps) {
                             <span>Von Joshua Alsen</span>
                             <span className="text-slate-400">•</span>
                             <Link
-                                href={`/blog/category/${resolveRubric(post).slug}/`}
+                                href={`/blog/category/${rubric.slug}/`}
                                 className="inline-flex items-center gap-1 text-teal-700 hover:text-teal-900 hover:underline font-medium"
                             >
-                                <span aria-hidden="true">{resolveRubric(post).emoji}</span>
-                                {resolveRubric(post).name}
+                                <span aria-hidden="true">{rubric.emoji}</span>
+                                {rubric.name}
                             </Link>
                         </div>
 
@@ -229,14 +237,18 @@ export default async function BlogPost({ params }: PageProps) {
                     )}
 
                     {/* Inline CTA after image */}
-                    <BlogCTA variant="inline" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
+                    {!isNotiz && (
+                        <BlogCTA variant="inline" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
+                    )}
 
                     <ArticleWithSidebar content={post.content} articleOnly>
                         {/* Hamburg Praxis Box for local SEO posts */}
                         {post.localBox && <HamburgPraxisBox />}
 
                         {/* Prominent CTA at the end of article */}
-                        <BlogCTA variant="prominent" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
+                        {!isNotiz && (
+                            <BlogCTA variant="prominent" symptom={symptom} treatmentLink={treatment?.href} treatmentName={treatment?.name} />
+                        )}
                     </ArticleWithSidebar>
 
                     <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200">
@@ -247,12 +259,14 @@ export default async function BlogPost({ params }: PageProps) {
                             >
                                 ← Zurück zur Übersicht
                             </Link>
-                            <Link
-                                href="/terminbuchung/"
-                                className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3.5 min-h-[48px] rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md touch-manipulation active:scale-95"
-                            >
-                                📅 Termin buchen
-                            </Link>
+                            {!isNotiz && (
+                                <Link
+                                    href="/terminbuchung/"
+                                    className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3.5 min-h-[48px] rounded-lg hover:bg-teal-700 transition-all font-semibold shadow-sm hover:shadow-md touch-manipulation active:scale-95"
+                                >
+                                    📅 Termin buchen
+                                </Link>
+                            )}
                         </div>
                         </footer>
                     </article>
