@@ -11,8 +11,8 @@ keywords:
   - "Dokumentation"
   - "Lucar"
 category: "notizen"
-image: "/assets/lucar-tagesansicht.webp"
-alt: "Tagesansicht in Lucar mit Terminliste, offenen Beträgen und dem nächsten Termin – dargestellt mit synthetischen Demo-Daten, nicht mit echten Patientendaten"
+image: "/assets/lucar-og.webp"
+alt: "Lucar – Leise. Klar. Lucar. Praxissoftware für Heilpraktiker und Osteopathen"
 date: "2026-08-15T10:00:00.000Z"
 status: "published"
 ---
